@@ -1,0 +1,16 @@
+  ARK_KINGSLAYER_CAT = {
+	desc = "ARK_KINGSLAYER_CAT_DESC"
+	picture = "GFX_evt_spaceship_debris"
+	level = 4
+	
+	spawn_chance = {
+		modifier = {
+			add = 3
+			has_planet_flag = kingslayer_planet
+		}
+	}
+	
+	on_success = {
+		1 = ark_kingslayer.12
+	}
+}

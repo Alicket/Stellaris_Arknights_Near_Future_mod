@@ -1,0 +1,715 @@
+# 卫生署
+building_ark_hospital = {
+	base_buildtime = @b1_time
+	base_cap_amount = 1
+
+	category = amenity
+	
+	potential = {
+		owner = { 
+			is_regular_empire = yes
+			has_civic = civic_pharmaceutical_enterprises
+		}
+		NOT = { has_modifier = slave_colony }
+	}
+
+	destroy_trigger = {
+		exists = owner
+		OR = {
+			owner = { is_regular_empire = no }
+			has_modifier = slave_colony
+			AND = {
+				buildings_stop_pop = yes
+				owner = { is_ai = yes }
+			}
+		}
+	}
+	
+	planet_modifier = {
+		planet_jobs_society_research_produces_mult = 0.15
+		pop_growth_speed = 0.15
+		planet_amenities_add = 5
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b1_minerals
+		}
+		upkeep = {
+			energy = @b1_upkeep
+			
+		}
+	}
+
+	upgrades = {
+		"building_ark_hospital1"
+	}
+}
+
+# 卫生部
+building_ark_hospital1 = {
+	base_buildtime = @b2_time
+	can_build = no
+
+	category = amenity
+	
+	potential = {
+		has_building = building_ark_hospital
+		owner = { has_country_flag = ark_hospital123 }
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+
+	destroy_trigger = {
+		exists = owner
+		OR = {
+			owner = { is_regular_empire = no }
+			has_modifier = slave_colony
+			AND = {
+				buildings_stop_pop = yes
+				owner = { is_ai = yes }
+			}
+		}
+	}
+	
+	planet_modifier = {
+		planet_jobs_society_research_produces_mult = 0.3
+		pop_growth_speed = 0.3
+		planet_amenities_add = 10
+		job_researcher_add = 1
+		job_healthcare_add = 1
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
+		upkeep = {
+			energy = @b2_upkeep
+			
+		}
+	}
+
+	upgrades = {
+		"building_ark_hospital2"
+		"building_ark_hospital3"
+	}
+}
+
+# 优生卫生部
+building_ark_hospital2 = {
+	base_buildtime = @b2_time
+	can_build = no
+
+	category = amenity
+	
+	potential = {
+		has_building = building_ark_hospital1
+		owner = { has_country_flag = ark_hospital123 }
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+
+	destroy_trigger = {
+		exists = owner
+		OR = {
+			owner = { is_regular_empire = no }
+			has_modifier = slave_colony
+			AND = {
+				buildings_stop_pop = yes
+				owner = { is_ai = yes }
+			}
+		}
+	}
+	
+	planet_modifier = {
+		pop_growth_speed = 0.5
+		planet_amenities_add = 10
+		job_healthcare_add = 3
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
+		upkeep = {
+			energy = @b2_upkeep
+			
+		}
+	}
+}
+
+# 科学卫生部
+building_ark_hospital3 = {
+	base_buildtime = @b2_time
+	can_build = no
+
+	category = amenity
+	
+	potential = {
+		has_building = building_ark_hospital1
+		owner = { has_country_flag = ark_hospital123 }
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+
+	destroy_trigger = {
+		exists = owner
+		OR = {
+			owner = { is_regular_empire = no }
+			has_modifier = slave_colony
+			AND = {
+				buildings_stop_pop = yes
+				owner = { is_ai = yes }
+			}
+		}
+	}
+	
+	planet_modifier = {
+		planet_jobs_society_research_produces_mult = 0.5
+		planet_amenities_add = 10
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_researcher_add = 3
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_brain_drone_add = 3
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
+		upkeep = {
+			energy = @b2_upkeep
+			
+		}
+	}
+}
+
+# 源石开采厂
+building_originiums_mining_plant = {
+	base_buildtime = @b1_time
+
+	is_capped_by_modifier = yes
+
+	category = resource
+	
+	potential = {
+		NOT = { has_modifier = resort_colony }
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_originiums_miner_add = 2
+			job_miner_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_originiums_mining_drone_add = 2
+			job_mining_drone_add = 2
+		}
+	}
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+	
+	prerequisites = {
+		"tech_originiums_mining"
+	}
+
+	upgrades = {
+		"building_originiums_mining_platform"
+	}
+}
+
+# 源石开采平台
+building_originiums_mining_platform = {
+	base_buildtime = @b2_time
+	can_build = no
+
+	category = resource
+	
+	potential = {
+		has_building = building_originiums_mining_plant
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_originiums_miner_add = 5
+			job_miner_add = 3
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_originiums_mining_drone_add = 5
+			job_mining_drone_add = 3
+		}
+	}
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+			d32_steels = 50
+			multipole_nanosheets = 50
+		}
+		upkeep = {
+			energy = @b2_upkeep
+			d32_steels = 1
+			multipole_nanosheets = 1
+		}
+	}
+}
+
+# 源石发电站
+building_originiums_power_plant = {
+	base_buildtime = @b1_time
+
+	category = resource
+	
+	potential = {
+		exists = owner
+		owner = {
+			OR = {
+				has_monthly_income = {
+					resource = originiums
+					value > 0
+				}
+				AND = {
+					is_ai = no
+					has_resource = {
+						type = originiums
+						amount > 0
+					}
+				}
+			}
+		}
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
+		building_basic_income_check = yes
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		upkeep = {
+			originiums = 1
+		}
+		produces = {
+			energy = 25
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_technician_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_technician_drone_add = 2
+		}
+	}
+
+	triggered_desc = {
+		trigger = { 
+			exists = owner
+			owner = { is_gestalt = no } 
+		}
+		text = job_technician_effect_desc
+	}
+	
+	triggered_desc = {
+		trigger = { 
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_technician_drone_effect_desc
+	}
+	
+	prerequisites = {
+		"tech_originiums_mining"
+	}
+}
+
+# D32钢冶炼厂
+building_d32steels_smelter = {
+	base_buildtime = @b2_time
+
+	category = manufacturing
+	
+	potential = {
+		NOT = { has_modifier = resort_colony }
+		NOT = { has_modifier = slave_colony }
+		building_basic_income_check = yes
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+	
+	destroy_trigger = {
+		free_building_slots = 0
+		exists = owner
+		owner = {
+			is_ai = yes
+			has_monthly_income = {
+				resource = d32_steels
+				value < 9
+			}
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_d32steels_smelting_expert_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_d32steels_smelting_drone_add = 1
+		}
+	}
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
+		upkeep = {
+			energy = 3
+			originiums = 2
+		}
+	}
+	
+	prerequisites = {
+		"tech_originiums_mining"
+	}
+
+	triggered_desc = {
+		trigger = { 
+			exists = owner
+			owner = { is_gestalt = no } 
+		}
+		text = job_d32steels_smelting_expert_effect_desc
+	}
+	
+	triggered_desc = {
+		trigger = { 
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_d32steels_smelting_drone_effect_desc
+	}
+}
+
+# 纳米片生产线
+building_nanosheets_production_line = {
+	base_buildtime = @b2_time
+
+	category = manufacturing
+	
+	potential = {
+		NOT = { has_modifier = resort_colony }
+		NOT = { has_modifier = slave_colony }
+		building_basic_income_check = yes
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+	
+	destroy_trigger = {
+		free_building_slots = 0
+		exists = owner
+		owner = {
+			is_ai = yes
+			has_monthly_income = {
+				resource = multipole_nanosheets
+				value < 9
+			}
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_nanosheets_manufacturer_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_nanosheets_manufacture_drone_add = 1
+		}
+	}
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
+		upkeep = {
+			energy = 3
+			originiums = 2
+		}
+	}
+	
+	prerequisites = {
+		"tech_originiums_mining"
+	}
+
+	triggered_desc = {
+		trigger = { 
+			exists = owner
+			owner = { is_gestalt = no } 
+		}
+		text = job_nanosheets_manufacturer_effect_desc
+	}
+	
+	triggered_desc = {
+		trigger = { 
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_nanosheets_manufacture_drone_effect_desc
+	}
+}
+
+# 军工企业
+building_military_enterprises = {
+	base_buildtime = @b2_time
+	base_cap_amount = 1
+
+	category = manufacturing
+
+	potential = {
+		exists = owner
+		owner = { is_regular_empire = yes }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
+	}
+
+	destroy_trigger = {
+		exists = owner
+		OR = {
+			owner = { is_regular_empire = no }
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			buildings_no_d32_steels = yes
+		}
+	}
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+
+	planet_modifier = {
+		planet_metallurgists_produces_mult = 0.30
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_foundry_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_alloy_drone_add = 2
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+			d32_steels = 50
+		}
+		upkeep = {
+			energy = @b2_upkeep
+			d32_steels = 1
+		}
+	}
+
+	prerequisites = {
+		"tech_originiums_mining"
+	}
+
+	triggered_desc = {
+		text = job_foundry_effect_desc
+	}
+}
+
+# 元件装配厂
+building_component_assembly_plant = {
+	base_buildtime = @b2_time
+	base_cap_amount = 1
+
+	category = manufacturing
+
+	potential = {
+		exists = owner
+		owner = { is_regular_empire = yes }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
+	}
+
+	destroy_trigger = {
+		exists = owner
+		OR = {
+			owner = { is_regular_empire = no }
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			buildings_no_multipole_nanosheets = yes
+		}
+	}
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+
+	planet_modifier = {
+		planet_artisans_produces_mult = 0.30
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_artisan_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_artisan_drone_add = 2
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+			multipole_nanosheets = 50
+		}
+		upkeep = {
+			energy = @b2_upkeep
+			multipole_nanosheets = 1
+		}
+	}
+
+	prerequisites = {
+		"tech_originiums_mining"
+	}
+
+	triggered_desc = {
+		text = job_artisan_effect_desc
+	}
+}

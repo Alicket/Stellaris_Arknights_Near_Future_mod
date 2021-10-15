@@ -1,0 +1,34 @@
+component_set = {
+	key = "ARK_ARMOR_1"
+	
+	icon = "GFX_ark_ship_part_armor_1"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ARK_ARMOR_2"
+	
+	icon = "GFX_ark_ship_part_armor_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "ARK_ARMOR_3"
+	
+	icon = "GFX_ark_ship_part_armor_3"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ARK_ARMOR_4A"
+	
+	icon = "GFX_ark_ship_part_armor_4a"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ARK_ARMOR_4B"
+	
+	icon = "GFX_ark_ship_part_armor_4b"
+	icon_frame = 1	
+}
