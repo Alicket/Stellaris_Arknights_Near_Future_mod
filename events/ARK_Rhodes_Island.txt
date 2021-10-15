@@ -1,0 +1,1529 @@
+namespace = ark_rhodes_island
+
+# council_meeting_flag 决定ark_rhodes_island.3事件描述文本
+
+# 罗德岛
+country_event = {
+	id = ark_rhodes_island.1
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		create_country = {
+			name = "NAME_Rhodes_Island"
+			type = rhodesisland
+			flag = {
+				icon= {
+					category = "hypergryph"
+					file = "flag_rhodes_island.dds"
+				}
+				background= {
+					category = "backgrounds"
+					file = "rounded_middle.dds"
+				}
+				colors={
+					"black"
+					"black"
+					"null"
+					"null"
+				}
+			}
+		}
+		last_created_country = {
+			establish_communications_no_message = root
+		}
+		save_global_event_target_as = rhodes_island
+	}
+}
+
+# 罗德岛本舰
+country_event = {
+	id = ark_rhodes_island.2
+	title = "ark_rhodes_island.2.name"
+	desc = "ark_rhodes_island.2.a.desc"
+	desc = "ark_rhodes_island.2.b.desc"
+	desc = "ark_rhodes_island.2.c.desc"
+	desc = "ark_rhodes_island.2.d.desc"
+
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = ARK002
+		planet_background = root.owner
+		room = personality_hegemonic_imperialists_room
+	}
+
+	is_triggered_only = yes
+
+	trigger = {
+		from = { is_country_type = rhodesisland }
+		is_same_value = event_target:rhodes_island
+		NOT = { has_country_flag = rhodes_island_diplomacy_engaged }
+	}
+
+	immediate = {
+		set_country_flag = rhodes_island_diplomacy_engaged
+	}
+
+	after = {
+		hidden_effect = { remove_country_flag = rhodes_island_diplomacy_engaged }
+	}
+
+	option = {
+		name = ark_rhodes_island.2.a	# 联合理事会
+		custom_tooltip = ark_rhodes_island.2.a_tooltip
+		hidden_effect = {
+			country_event = { id = ark_rhodes_island.3 }
+		}
+	}
+
+	option = {
+		name = ark_rhodes_island.2.b	# 档案中心
+		custom_tooltip = ark_rhodes_island.2.b_tooltip
+		hidden_effect = {
+			country_event = { id = ark_rhodes_island.5 }
+		}
+	}
+
+	option = {
+		name = ark_rhodes_island.2.g	# 确认对话
+		default_hide_option = yes
+	}
+}
+
+# 联合理事会
+country_event = {
+	id = ark_rhodes_island.3
+	title = "ark_rhodes_island.3.name"
+	desc = {
+		trigger = {
+			NOT = { has_country_flag = council_meeting_flag }
+			capital_scope = {
+				has_planet_flag = planet_terra
+				has_owner = yes
+				original_owner = yes
+				is_occupied_flag = no
+			}
+		}
+		text = ark_rhodes_island.3.1.desc
+	}
+	desc = {
+		trigger = {
+			has_country_flag = council_meeting_flag
+			NOT = { has_country_flag = interim_council_meeting }
+			capital_scope = {
+				has_planet_flag = planet_terra
+				has_owner = yes
+				original_owner = yes
+				is_occupied_flag = no
+			}
+		}
+		text = ark_rhodes_island.3.2.desc
+	}
+	desc = {
+		trigger = {
+			has_country_flag = council_meeting_flag
+			has_country_flag = interim_council_meeting
+		}
+		text = ark_rhodes_island.3.3.desc
+	}
+	desc = {
+		trigger = {
+			capital_scope = {
+				has_planet_flag = planet_terra
+				OR = {
+					has_owner = no
+					original_owner = no
+					is_occupied_flag = yes
+				}
+			}
+		}
+		text = ark_rhodes_island.3.4.desc
+	}
+	
+	diplomatic = yes
+	
+	picture_event_data = {
+		portrait = ARK002
+		planet_background = root.owner
+		room = personality_hegemonic_imperialists_room
+	}
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ark_rhodes_island.3.g1	# 精神世界建设（随机重复出现）
+		custom_tooltip = ark_rhodes_island.3.g1_tooltip
+		trigger = { has_country_flag = g_jssjjs }
+		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
+		add_resource = { influence = -25 }
+		add_modifier = { modifier = "terra_council" days = 1800 }
+		add_modifier = { modifier = g_jssjjs_modifier days = 1800 }
+		hidden_effect = {
+			set_country_flag = r_tllhscl_end
+			remove_country_flag = g_jssjjs
+			remove_country_flag = g_wzsjjs
+			remove_country_flag = g_gdzbzzzc
+			remove_country_flag = g_zlzycyzz
+			remove_country_flag = g_dqmszc
+			remove_country_flag = g_jyzdbt
+			remove_country_flag = y_zxddd_1
+			remove_country_flag = y_zxddd_2
+			remove_country_flag = y_zxddd_3
+			remove_country_flag = y_zxddd_4
+			remove_country_flag = y_znjxzc
+			remove_country_flag = y_xxfyzl
+			remove_country_flag = y_cbfzgh
+			remove_country_flag = y_tkjdjs
+			remove_country_flag = y_tsfxjh
+			remove_country_flag = r_tllhscl
+			remove_country_flag = council_meeting_flag
+			remove_country_flag = interim_council_meeting
+		}
+	}
+	option = {
+		name = ark_rhodes_island.3.g2	# 物质世界建设（随机重复出现）
+		custom_tooltip = ark_rhodes_island.3.g2_tooltip
+		trigger = { has_country_flag = g_wzsjjs }
+		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
+		add_resource = { influence = -25 }
+		add_modifier = { modifier = "terra_council" days = 1800 }
+		add_modifier = { modifier = g_wzsjjs_modifier days = 1800 }
+		hidden_effect = {
+			set_country_flag = r_tllhscl_end
+			remove_country_flag = g_jssjjs
+			remove_country_flag = g_wzsjjs
+			remove_country_flag = g_gdzbzzzc
+			remove_country_flag = g_zlzycyzz
+			remove_country_flag = g_dqmszc
+			remove_country_flag = g_jyzdbt
+			remove_country_flag = y_zxddd_1
+			remove_country_flag = y_zxddd_2
+			remove_country_flag = y_zxddd_3
+			remove_country_flag = y_zxddd_4
+			remove_country_flag = y_znjxzc
+			remove_country_flag = y_xxfyzl
+			remove_country_flag = y_cbfzgh
+			remove_country_flag = y_tkjdjs
+			remove_country_flag = y_tsfxjh
+			remove_country_flag = r_tllhscl
+			remove_country_flag = council_meeting_flag
+			remove_country_flag = interim_council_meeting
+		}
+	}
+	option = {
+		name = ark_rhodes_island.3.g3	# 高端装备制造支持（随机重复出现）
+		custom_tooltip = ark_rhodes_island.3.g3_tooltip
+		trigger = { has_country_flag = g_gdzbzzzc }
+		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
+		add_resource = { influence = -25 }
+		add_modifier = { modifier = "terra_council" days = 1800 }
+		add_modifier = { modifier = g_gdzbzzzc_modifier days = 1800 }
+		hidden_effect = {
+			set_country_flag = r_tllhscl_end
+			remove_country_flag = g_jssjjs
+			remove_country_flag = g_wzsjjs
+			remove_country_flag = g_gdzbzzzc
+			remove_country_flag = g_zlzycyzz
+			remove_country_flag = g_dqmszc
+			remove_country_flag = g_jyzdbt
+			remove_country_flag = y_zxddd_1
+			remove_country_flag = y_zxddd_2
+			remove_country_flag = y_zxddd_3
+			remove_country_flag = y_zxddd_4
+			remove_country_flag = y_znjxzc
+			remove_country_flag = y_xxfyzl
+			remove_country_flag = y_cbfzgh
+			remove_country_flag = y_tkjdjs
+			remove_country_flag = y_tsfxjh
+			remove_country_flag = r_tllhscl
+			remove_country_flag = council_meeting_flag
+			remove_country_flag = interim_council_meeting
+		}
+	}
+	option = {
+		name = ark_rhodes_island.3.g4	# 战略资源产业支持（随机重复出现）
+		custom_tooltip = ark_rhodes_island.3.g4_tooltip
+		trigger = { has_country_flag = g_zlzycyzz }
+		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
+		add_resource = { influence = -25 }
+		add_modifier = { modifier = "terra_council" days = 1800 }
+		add_modifier = { modifier = g_zlzycyzz_modifier days = 1800 }
+		hidden_effect = {
+			set_country_flag = r_tllhscl_end
+			remove_country_flag = g_jssjjs
+			remove_country_flag = g_wzsjjs
+			remove_country_flag = g_gdzbzzzc
+			remove_country_flag = g_zlzycyzz
+			remove_country_flag = g_dqmszc
+			remove_country_flag = g_jyzdbt
+			remove_country_flag = y_zxddd_1
+			remove_country_flag = y_zxddd_2
+			remove_country_flag = y_zxddd_3
+			remove_country_flag = y_zxddd_4
+			remove_country_flag = y_znjxzc
+			remove_country_flag = y_xxfyzl
+			remove_country_flag = y_cbfzgh
+			remove_country_flag = y_tkjdjs
+			remove_country_flag = y_tsfxjh
+			remove_country_flag = r_tllhscl
+			remove_country_flag = council_meeting_flag
+			remove_country_flag = interim_council_meeting
+		}
+	}
+	option = {
+		name = ark_rhodes_island.3.g5	# 地区免税政策（随机重复出现）
+		custom_tooltip = ark_rhodes_island.3.g5_tooltip
+		trigger = { has_country_flag = g_dqmszc }
+		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
+		add_resource = { influence = -25 }
+		add_modifier = { modifier = "terra_council" days = 1800 }
+		add_modifier = { modifier = g_dqmszc_modifier days = 1800 }
+		hidden_effect = {
+			set_country_flag = r_tllhscl_end
+			remove_country_flag = g_jssjjs
+			remove_country_flag = g_wzsjjs
+			remove_country_flag = g_gdzbzzzc
+			remove_country_flag = g_zlzycyzz
+			remove_country_flag = g_dqmszc
+			remove_country_flag = g_jyzdbt
+			remove_country_flag = y_zxddd_1
+			remove_country_flag = y_zxddd_2
+			remove_country_flag = y_zxddd_3
+			remove_country_flag = y_zxddd_4
+			remove_country_flag = y_znjxzc
+			remove_country_flag = y_xxfyzl
+			remove_country_flag = y_cbfzgh
+			remove_country_flag = y_tkjdjs
+			remove_country_flag = y_tsfxjh
+			remove_country_flag = r_tllhscl
+			remove_country_flag = council_meeting_flag
+			remove_country_flag = interim_council_meeting
+		}
+	}
+	option = {
+		name = ark_rhodes_island.3.g6	# 就业指导补贴（随机重复出现）
+		custom_tooltip = ark_rhodes_island.3.g6_tooltip
+		trigger = { has_country_flag = g_jyzdbt }
+		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
+		add_resource = { influence = -25 }
+		add_modifier = { modifier = "terra_council" days = 1800 }
+		add_modifier = { modifier = g_jyzdbt_modifier days = 1800 }
+		hidden_effect = {
+			set_country_flag = r_tllhscl_end
+			remove_country_flag = g_jssjjs
+			remove_country_flag = g_wzsjjs
+			remove_country_flag = g_gdzbzzzc
+			remove_country_flag = g_zlzycyzz
+			remove_country_flag = g_dqmszc
+			remove_country_flag = g_jyzdbt
+			remove_country_flag = y_zxddd_1
+			remove_country_flag = y_zxddd_2
+			remove_country_flag = y_zxddd_3
+			remove_country_flag = y_zxddd_4
+			remove_country_flag = y_znjxzc
+			remove_country_flag = y_xxfyzl
+			remove_country_flag = y_cbfzgh
+			remove_country_flag = y_tkjdjs
+			remove_country_flag = y_tsfxjh
+			remove_country_flag = r_tllhscl
+			remove_country_flag = council_meeting_flag
+			remove_country_flag = interim_council_meeting
+		}
+	}
+	option = {
+		name = ark_rhodes_island.3.y1_1	# 秩序的大地Ⅰ（只有一次，不选可重新出现）
+		custom_tooltip = ark_rhodes_island.3.y1_tooltip
+		trigger = { has_country_flag = y_zxddd_1 }
+		allow = { resource_stockpile_compare = { resource = energy value >= 100 } }
+		allow = { resource_stockpile_compare = { resource = influence value >= 50 } }
+		add_resource = {
+			energy = -100
+			influence = -50
+		}
+		add_modifier = { modifier = "terra_council" days = 1800 }
+		hidden_effect = {
+			country_event = { id = ark_rhodes_island.301 }
+			set_country_flag = y_zxddd_1_end
+			set_country_flag = r_tllhscl_end
+			remove_country_flag = g_jssjjs
+			remove_country_flag = g_wzsjjs
+			remove_country_flag = g_gdzbzzzc
+			remove_country_flag = g_zlzycyzz
+			remove_country_flag = g_dqmszc
+			remove_country_flag = g_jyzdbt
+			remove_country_flag = y_zxddd_1
+			remove_country_flag = y_zxddd_2
+			remove_country_flag = y_zxddd_3
+			remove_country_flag = y_zxddd_4
+			remove_country_flag = y_znjxzc
+			remove_country_flag = y_xxfyzl
+			remove_country_flag = y_cbfzgh
+			remove_country_flag = y_tkjdjs
+			remove_country_flag = y_tsfxjh
+			remove_country_flag = r_tllhscl
+			remove_country_flag = council_meeting_flag
+			remove_country_flag = interim_council_meeting
+		}
+	}
+	option = {
+		name = ark_rhodes_island.3.y1_2	# 秩序的大地Ⅱ（只有一次，不选可重新出现）
+		custom_tooltip = ark_rhodes_island.3.y1_tooltip
+		trigger = { has_country_flag = y_zxddd_2 }
+		allow = { resource_stockpile_compare = { resource = energy value >= 100 } }
+		allow = { resource_stockpile_compare = { resource = influence value >= 50 } }
+		add_resource = {
+			energy = -100
+			influence = -50
+		}
+		add_modifier = { modifier = "terra_council" days = 1800 }
+		hidden_effect = {
+			country_event = { id = ark_rhodes_island.302 }
+			set_country_flag = y_zxddd_2_end
+			set_country_flag = r_tllhscl_end
+			remove_country_flag = g_jssjjs
+			remove_country_flag = g_wzsjjs
+			remove_country_flag = g_gdzbzzzc
+			remove_country_flag = g_zlzycyzz
+			remove_country_flag = g_dqmszc
+			remove_country_flag = g_jyzdbt
+			remove_country_flag = y_zxddd_1
+			remove_country_flag = y_zxddd_2
+			remove_country_flag = y_zxddd_3
+			remove_country_flag = y_zxddd_4
+			remove_country_flag = y_znjxzc
+			remove_country_flag = y_xxfyzl
+			remove_country_flag = y_cbfzgh
+			remove_country_flag = y_tkjdjs
+			remove_country_flag = y_tsfxjh
+			remove_country_flag = r_tllhscl
+			remove_country_flag = council_meeting_flag
+			remove_country_flag = interim_council_meeting
+		}
+	}
+	option = {
+		name = ark_rhodes_island.3.y1_3	# 秩序的大地Ⅲ（只有一次，不选可重新出现）
+		custom_tooltip = ark_rhodes_island.3.y1_tooltip
+		trigger = { has_country_flag = y_zxddd_3 }
+		allow = { resource_stockpile_compare = { resource = energy value >= 100 } }
+		allow = { resource_stockpile_compare = { resource = influence value >= 50 } }
+		add_resource = {
+			energy = -100
+			influence = -50
+		}
+		add_modifier = { modifier = "terra_council" days = 1800 }
+		hidden_effect = {
+			country_event = { id = ark_rhodes_island.303 }
+			set_country_flag = y_zxddd_3_end
+			set_country_flag = r_tllhscl_end
+			remove_country_flag = g_jssjjs
+			remove_country_flag = g_wzsjjs
+			remove_country_flag = g_gdzbzzzc
+			remove_country_flag = g_zlzycyzz
+			remove_country_flag = g_dqmszc
+			remove_country_flag = g_jyzdbt
+			remove_country_flag = y_zxddd_1
+			remove_country_flag = y_zxddd_2
+			remove_country_flag = y_zxddd_3
+			remove_country_flag = y_zxddd_4
+			remove_country_flag = y_znjxzc
+			remove_country_flag = y_xxfyzl
+			remove_country_flag = y_cbfzgh
+			remove_country_flag = y_tkjdjs
+			remove_country_flag = y_tsfxjh
+			remove_country_flag = r_tllhscl
+			remove_country_flag = council_meeting_flag
+			remove_country_flag = interim_council_meeting
+		}
+	}
+	option = {
+		name = ark_rhodes_island.3.y1_4	# 秩序的大地 Ⅳ（只有一次，不选可重新出现）
+		custom_tooltip = ark_rhodes_island.3.y1_tooltip
+		trigger = { has_country_flag = y_zxddd_4 }
+		allow = { resource_stockpile_compare = { resource = energy value >= 100 } }
+		allow = { resource_stockpile_compare = { resource = influence value >= 50 } }
+		add_resource = {
+			energy = -100
+			influence = -50
+		}
+		add_modifier = { modifier = "terra_council" days = 1800 }
+		hidden_effect = {
+			country_event = { id = ark_rhodes_island.304 }
+			set_country_flag = y_zxddd_4_end
+			set_country_flag = r_tllhscl_end
+			remove_country_flag = g_jssjjs
+			remove_country_flag = g_wzsjjs
+			remove_country_flag = g_gdzbzzzc
+			remove_country_flag = g_zlzycyzz
+			remove_country_flag = g_dqmszc
+			remove_country_flag = g_jyzdbt
+			remove_country_flag = y_zxddd_1
+			remove_country_flag = y_zxddd_2
+			remove_country_flag = y_zxddd_3
+			remove_country_flag = y_zxddd_4
+			remove_country_flag = y_znjxzc
+			remove_country_flag = y_xxfyzl
+			remove_country_flag = y_cbfzgh
+			remove_country_flag = y_tkjdjs
+			remove_country_flag = y_tsfxjh
+			remove_country_flag = r_tllhscl
+			remove_country_flag = council_meeting_flag
+			remove_country_flag = interim_council_meeting
+		}
+	}
+	option = {
+		name = ark_rhodes_island.3.y2	# 智能机械支持（随机重复出现）
+		custom_tooltip = ark_rhodes_island.3.y2_tooltip
+		trigger = { has_country_flag = y_znjxzc }
+		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
+		add_resource = { influence = -25 }
+		add_modifier = { modifier = "terra_council" days = 1800 }
+		add_modifier = { modifier = y_znjxzc_modifier days = 1800 }
+		hidden_effect = {
+			set_country_flag = r_tllhscl_end
+			remove_country_flag = g_jssjjs
+			remove_country_flag = g_wzsjjs
+			remove_country_flag = g_gdzbzzzc
+			remove_country_flag = g_zlzycyzz
+			remove_country_flag = g_dqmszc
+			remove_country_flag = g_jyzdbt
+			remove_country_flag = y_zxddd_1
+			remove_country_flag = y_zxddd_2
+			remove_country_flag = y_zxddd_3
+			remove_country_flag = y_zxddd_4
+			remove_country_flag = y_znjxzc
+			remove_country_flag = y_xxfyzl
+			remove_country_flag = y_cbfzgh
+			remove_country_flag = y_tkjdjs
+			remove_country_flag = y_tsfxjh
+			remove_country_flag = r_tllhscl
+			remove_country_flag = council_meeting_flag
+			remove_country_flag = interim_council_meeting
+		}
+	}
+	option = {
+		name = ark_rhodes_island.3.y3	# 行星防御指令（随机重复出现）
+		custom_tooltip = ark_rhodes_island.3.y3_tooltip
+		trigger = { has_country_flag = y_xxfyzl }
+		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
+		add_resource = { influence = -25 }
+		add_modifier = { modifier = "terra_council" days = 1800 }
+		add_modifier = { modifier = y_xxfyzl_modifier days = 1800 }
+		hidden_effect = {
+			set_country_flag = r_tllhscl_end
+			remove_country_flag = g_jssjjs
+			remove_country_flag = g_wzsjjs
+			remove_country_flag = g_gdzbzzzc
+			remove_country_flag = g_zlzycyzz
+			remove_country_flag = g_dqmszc
+			remove_country_flag = g_jyzdbt
+			remove_country_flag = y_zxddd_1
+			remove_country_flag = y_zxddd_2
+			remove_country_flag = y_zxddd_3
+			remove_country_flag = y_zxddd_4
+			remove_country_flag = y_znjxzc
+			remove_country_flag = y_xxfyzl
+			remove_country_flag = y_cbfzgh
+			remove_country_flag = y_tkjdjs
+			remove_country_flag = y_tsfxjh
+			remove_country_flag = r_tllhscl
+			remove_country_flag = council_meeting_flag
+			remove_country_flag = interim_council_meeting
+		}
+	}
+	option = {
+		name = ark_rhodes_island.3.y4	# 城邦发展规划（随机重复出现）
+		custom_tooltip = ark_rhodes_island.3.y4_tooltip
+		trigger = { has_country_flag = y_cbfzgh }
+		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
+		add_resource = { influence = -25 }
+		add_modifier = { modifier = "terra_council" days = 1800 }
+		add_modifier = { modifier = y_cbfzgh_modifier days = 1800 }
+		hidden_effect = {
+			set_country_flag = r_tllhscl_end
+			remove_country_flag = g_jssjjs
+			remove_country_flag = g_wzsjjs
+			remove_country_flag = g_gdzbzzzc
+			remove_country_flag = g_zlzycyzz
+			remove_country_flag = g_dqmszc
+			remove_country_flag = g_jyzdbt
+			remove_country_flag = y_zxddd_1
+			remove_country_flag = y_zxddd_2
+			remove_country_flag = y_zxddd_3
+			remove_country_flag = y_zxddd_4
+			remove_country_flag = y_znjxzc
+			remove_country_flag = y_xxfyzl
+			remove_country_flag = y_cbfzgh
+			remove_country_flag = y_tkjdjs
+			remove_country_flag = y_tsfxjh
+			remove_country_flag = r_tllhscl
+			remove_country_flag = council_meeting_flag
+			remove_country_flag = interim_council_meeting
+		}
+	}
+	option = {
+		name = ark_rhodes_island.3.y5	# 太空舰队建设（随机重复出现）
+		custom_tooltip = ark_rhodes_island.3.y5_tooltip
+		trigger = { has_country_flag = y_tkjdjs }
+		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
+		add_resource = { influence = -25 }
+		add_modifier = { modifier = "terra_council" days = 1800 }
+		add_modifier = { modifier = y_tkjdjs_modifier days = 1800 }
+		hidden_effect = {
+			set_country_flag = r_tllhscl_end
+			remove_country_flag = g_jssjjs
+			remove_country_flag = g_wzsjjs
+			remove_country_flag = g_gdzbzzzc
+			remove_country_flag = g_zlzycyzz
+			remove_country_flag = g_dqmszc
+			remove_country_flag = g_jyzdbt
+			remove_country_flag = y_zxddd_1
+			remove_country_flag = y_zxddd_2
+			remove_country_flag = y_zxddd_3
+			remove_country_flag = y_zxddd_4
+			remove_country_flag = y_znjxzc
+			remove_country_flag = y_xxfyzl
+			remove_country_flag = y_cbfzgh
+			remove_country_flag = y_tkjdjs
+			remove_country_flag = y_tsfxjh
+			remove_country_flag = r_tllhscl
+			remove_country_flag = council_meeting_flag
+			remove_country_flag = interim_council_meeting
+		}
+	}
+	option = {
+		name = ark_rhodes_island.3.y6	# 探索发现计划（暂无）
+		custom_tooltip = ark_rhodes_island.3.y6_tooltip
+		trigger = { has_country_flag = y_tsfxjh }
+		hidden_effect = {
+			set_country_flag = r_tllhscl_end
+			remove_country_flag = g_jssjjs
+			remove_country_flag = g_wzsjjs
+			remove_country_flag = g_gdzbzzzc
+			remove_country_flag = g_zlzycyzz
+			remove_country_flag = g_dqmszc
+			remove_country_flag = g_jyzdbt
+			remove_country_flag = y_zxddd_1
+			remove_country_flag = y_zxddd_2
+			remove_country_flag = y_zxddd_3
+			remove_country_flag = y_zxddd_4
+			remove_country_flag = y_znjxzc
+			remove_country_flag = y_xxfyzl
+			remove_country_flag = y_cbfzgh
+			remove_country_flag = y_tkjdjs
+			remove_country_flag = y_tsfxjh
+			remove_country_flag = r_tllhscl
+			remove_country_flag = council_meeting_flag
+			remove_country_flag = interim_council_meeting
+		}
+	}
+	option = {
+		name = ark_rhodes_island.3.r1	# 泰拉联合搜查令（只有一次，不选即撤销）
+		custom_tooltip = ark_rhodes_island.3.r1_tooltip
+		trigger = { has_country_flag = r_tllhscl }
+		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
+		allow = { resource_stockpile_compare = { resource = unity value >= 25 } }
+		add_resource = {
+			influence = -25
+			unity = -25
+		}
+		add_modifier = { modifier = "terra_council" days = 1800 }
+		add_modifier = { modifier = r_tllhscl_modifier days = 1800 }
+		hidden_effect = {
+			set_country_flag = r_tllhscl_end
+			remove_country_flag = g_jssjjs
+			remove_country_flag = g_wzsjjs
+			remove_country_flag = g_gdzbzzzc
+			remove_country_flag = g_zlzycyzz
+			remove_country_flag = g_dqmszc
+			remove_country_flag = g_jyzdbt
+			remove_country_flag = y_zxddd_1
+			remove_country_flag = y_zxddd_2
+			remove_country_flag = y_zxddd_3
+			remove_country_flag = y_zxddd_4
+			remove_country_flag = y_znjxzc
+			remove_country_flag = y_xxfyzl
+			remove_country_flag = y_cbfzgh
+			remove_country_flag = y_tkjdjs
+			remove_country_flag = y_tsfxjh
+			remove_country_flag = r_tllhscl
+			remove_country_flag = council_meeting_flag
+			remove_country_flag = interim_council_meeting
+		}
+	}
+	option = {
+		name = ark_rhodes_island.3.v	# 召开临时会议
+		custom_tooltip = ark_rhodes_island.3.v_tooltip
+		trigger = {
+			has_modifier = terra_council
+			NOT = { has_country_flag = council_meeting_flag }
+		}
+		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
+		add_resource = { influence = -25 }
+		hidden_effect = {
+			set_country_flag = council_meeting_flag
+			set_country_flag = interim_council_meeting
+			remove_modifier = terra_council
+			remove_modifier = g_jssjjs_modifier
+			remove_modifier = g_wzsjjs_modifier
+			remove_modifier = g_gdzbzzzc_modifier
+			remove_modifier = g_zlzycyzz_modifier
+			remove_modifier = g_dqmszc_modifier
+			remove_modifier = g_jyzdbt_modifier
+			remove_modifier = y_znjxzc_modifier
+			remove_modifier = y_xxfyzl_modifier
+			remove_modifier = y_cbfzgh_modifier
+			remove_modifier = y_tkjdjs_modifier
+			remove_modifier = r_tllhscl_modifier
+			if = {	# 未选 秩序的大地Ⅰ
+				limit = { NOT = { has_country_flag = y_zxddd_1_end } }
+				set_country_flag = y_zxddd_1
+			}
+			if = {	# 未选 秩序的大地Ⅱ
+				limit = {
+					has_country_flag = y_zxddd_1_end
+					NOT = { has_country_flag = y_zxddd_2_end }
+				}
+				set_country_flag = y_zxddd_2
+			}
+			if = {	# 未选 秩序的大地Ⅲ
+				limit = {
+					has_country_flag = y_zxddd_2_end
+					NOT = { has_country_flag = y_zxddd_3_end }
+				}
+				set_country_flag = y_zxddd_3
+			}
+			if = {	# 未选 秩序的大地 Ⅳ
+				limit = {
+					has_country_flag = y_zxddd_3_end
+					NOT = { has_country_flag = y_zxddd_4_end }
+				}
+				set_country_flag = y_zxddd_4
+			}
+			set_country_flag = g_jssjjs
+			set_country_flag = g_wzsjjs
+			set_country_flag = g_gdzbzzzc
+			set_country_flag = g_zlzycyzz
+			set_country_flag = g_dqmszc
+			set_country_flag = g_jyzdbt
+			set_country_flag = y_znjxzc
+			set_country_flag = y_xxfyzl
+			set_country_flag = y_cbfzgh
+			set_country_flag = y_tkjdjs
+			country_event = { id = ark_rhodes_island.3 }
+		}
+	}
+	option = {
+		name = {
+			text = ark_rhodes_island.3.w	# 确认
+			trigger = {
+				OR = {
+					AND = {
+						NOT = { has_country_flag = council_meeting_flag }
+						capital_scope = {
+							has_planet_flag = planet_terra
+							has_owner = yes
+							original_owner = yes
+							is_occupied_flag = no
+						}
+					}
+					AND = {
+						OR = {
+							NOT = { has_country_flag = council_meeting_flag }
+							has_country_flag = council_meeting_flag
+						}
+						capital_scope = {
+							has_planet_flag = planet_terra
+							OR = {
+								has_owner = no
+								original_owner = no
+								is_occupied_flag = yes
+							}
+						}
+					}
+				}
+			}
+		}
+		name = {
+			text = ark_rhodes_island.3.x	# 不表态（只在绿色议案中选择）
+			trigger = {
+				has_country_flag = council_meeting_flag
+				capital_scope = {
+					has_planet_flag = planet_terra
+					has_owner = yes
+					original_owner = yes
+					is_occupied_flag = no
+				}
+			}
+		}
+		default_hide_option = yes
+		hidden_effect = {
+			add_modifier = { modifier = "terra_council" days = 1800 }
+			if = {
+				limit = { OR = { has_country_flag = g_jssjjs } }
+				add_modifier = { modifier = g_jssjjs_modifier days = 1800 }
+				set_country_flag = r_tllhscl_end
+				remove_country_flag = g_jssjjs
+				remove_country_flag = g_wzsjjs
+				remove_country_flag = g_gdzbzzzc
+				remove_country_flag = g_zlzycyzz
+				remove_country_flag = g_dqmszc
+				remove_country_flag = g_jyzdbt
+				remove_country_flag = y_zxddd_1
+				remove_country_flag = y_zxddd_2
+				remove_country_flag = y_zxddd_3
+				remove_country_flag = y_zxddd_4
+				remove_country_flag = y_znjxzc
+				remove_country_flag = y_xxfyzl
+				remove_country_flag = y_cbfzgh
+				remove_country_flag = y_tkjdjs
+				remove_country_flag = y_tsfxjh
+				remove_country_flag = r_tllhscl
+				remove_country_flag = council_meeting_flag
+			}
+			else_if = {
+				limit = { OR = { has_country_flag = g_wzsjjs } }
+				add_modifier = { modifier = g_wzsjjs_modifier days = 1800 }
+				set_country_flag = r_tllhscl_end
+				remove_country_flag = g_jssjjs
+				remove_country_flag = g_wzsjjs
+				remove_country_flag = g_gdzbzzzc
+				remove_country_flag = g_zlzycyzz
+				remove_country_flag = g_dqmszc
+				remove_country_flag = g_jyzdbt
+				remove_country_flag = y_zxddd_1
+				remove_country_flag = y_zxddd_2
+				remove_country_flag = y_zxddd_3
+				remove_country_flag = y_zxddd_4
+				remove_country_flag = y_znjxzc
+				remove_country_flag = y_xxfyzl
+				remove_country_flag = y_cbfzgh
+				remove_country_flag = y_tkjdjs
+				remove_country_flag = y_tsfxjh
+				remove_country_flag = r_tllhscl
+				remove_country_flag = council_meeting_flag
+			}
+			else_if = {
+				limit = { OR = { has_country_flag = g_gdzbzzzc } }
+				add_modifier = { modifier = g_gdzbzzzc_modifier days = 1800 }
+				set_country_flag = r_tllhscl_end
+				remove_country_flag = g_jssjjs
+				remove_country_flag = g_wzsjjs
+				remove_country_flag = g_gdzbzzzc
+				remove_country_flag = g_zlzycyzz
+				remove_country_flag = g_dqmszc
+				remove_country_flag = g_jyzdbt
+				remove_country_flag = y_zxddd_1
+				remove_country_flag = y_zxddd_2
+				remove_country_flag = y_zxddd_3
+				remove_country_flag = y_zxddd_4
+				remove_country_flag = y_znjxzc
+				remove_country_flag = y_xxfyzl
+				remove_country_flag = y_cbfzgh
+				remove_country_flag = y_tkjdjs
+				remove_country_flag = y_tsfxjh
+				remove_country_flag = r_tllhscl
+				remove_country_flag = council_meeting_flag
+			}
+			else_if = {
+				limit = { OR = { has_country_flag = g_zlzycyzz } }
+				add_modifier = { modifier = g_zlzycyzz_modifier days = 1800 }
+				set_country_flag = r_tllhscl_end
+				remove_country_flag = g_jssjjs
+				remove_country_flag = g_wzsjjs
+				remove_country_flag = g_gdzbzzzc
+				remove_country_flag = g_zlzycyzz
+				remove_country_flag = g_dqmszc
+				remove_country_flag = g_jyzdbt
+				remove_country_flag = y_zxddd_1
+				remove_country_flag = y_zxddd_2
+				remove_country_flag = y_zxddd_3
+				remove_country_flag = y_zxddd_4
+				remove_country_flag = y_znjxzc
+				remove_country_flag = y_xxfyzl
+				remove_country_flag = y_cbfzgh
+				remove_country_flag = y_tkjdjs
+				remove_country_flag = y_tsfxjh
+				remove_country_flag = r_tllhscl
+				remove_country_flag = council_meeting_flag
+			}
+			else_if = {
+				limit = { OR = { has_country_flag = g_dqmszc } }
+				add_modifier = { modifier = g_dqmszc_modifier days = 1800 }
+				set_country_flag = r_tllhscl_end
+				remove_country_flag = g_jssjjs
+				remove_country_flag = g_wzsjjs
+				remove_country_flag = g_gdzbzzzc
+				remove_country_flag = g_zlzycyzz
+				remove_country_flag = g_dqmszc
+				remove_country_flag = g_jyzdbt
+				remove_country_flag = y_zxddd_1
+				remove_country_flag = y_zxddd_2
+				remove_country_flag = y_zxddd_3
+				remove_country_flag = y_zxddd_4
+				remove_country_flag = y_znjxzc
+				remove_country_flag = y_xxfyzl
+				remove_country_flag = y_cbfzgh
+				remove_country_flag = y_tkjdjs
+				remove_country_flag = y_tsfxjh
+				remove_country_flag = r_tllhscl
+				remove_country_flag = council_meeting_flag
+			}
+			else_if = {
+				limit = { OR = { has_country_flag = g_jyzdbt } }
+				add_modifier = { modifier = g_jyzdbt_modifier days = 1800 }
+				set_country_flag = r_tllhscl_end
+				remove_country_flag = g_jssjjs
+				remove_country_flag = g_wzsjjs
+				remove_country_flag = g_gdzbzzzc
+				remove_country_flag = g_zlzycyzz
+				remove_country_flag = g_dqmszc
+				remove_country_flag = g_jyzdbt
+				remove_country_flag = y_zxddd_1
+				remove_country_flag = y_zxddd_2
+				remove_country_flag = y_zxddd_3
+				remove_country_flag = y_zxddd_4
+				remove_country_flag = y_znjxzc
+				remove_country_flag = y_xxfyzl
+				remove_country_flag = y_cbfzgh
+				remove_country_flag = y_tkjdjs
+				remove_country_flag = y_tsfxjh
+				remove_country_flag = r_tllhscl
+				remove_country_flag = council_meeting_flag
+			}
+		}
+	}
+}
+
+# 理事会5年会议(隐藏事件)
+country_event = {
+	id = ark_rhodes_island.31
+	hide_window = yes
+	location = ROOT
+
+	trigger = {
+		has_country_flag = arknight_1
+		NOT = { has_country_flag = council_meeting_flag }
+		NOT = { has_modifier = terra_council }
+		capital_scope = {
+			has_planet_flag = planet_terra
+			has_owner = yes
+			original_owner = yes
+			is_occupied_flag = no
+		}
+	}
+	
+	immediate = {
+		set_country_flag = council_meeting_flag
+		random_list = {
+			100 = {	# 未选 秩序的大地Ⅰ
+				modifier = {
+					factor = 0
+					has_country_flag = y_zxddd_1_end
+				}
+				set_country_flag = y_zxddd_1
+			}
+		}
+		random_list = {
+			100 = {	# 未选 秩序的大地Ⅱ
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = { has_country_flag = y_zxddd_1_end }
+						has_country_flag = y_zxddd_2_end
+					}
+				}
+				set_country_flag = y_zxddd_2
+			}
+		}
+		random_list = {
+			100 = {	# 未选 秩序的大地Ⅲ
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = { has_country_flag = y_zxddd_2_end }
+						has_country_flag = y_zxddd_3_end
+					}
+				}
+				set_country_flag = y_zxddd_3
+			}
+		}
+		random_list = {
+			100 = {	# 未选 秩序的大地 Ⅳ
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = { has_country_flag = y_zxddd_3_end }
+						has_country_flag = y_zxddd_4_end
+					}
+				}
+				set_country_flag = y_zxddd_4
+			}
+		}
+		random_list = {
+			100 = {	# 未选 泰拉联合搜查令
+				modifier = {
+					factor = 0
+					has_country_flag = r_tllhscl_end
+				}
+				set_country_flag = r_tllhscl
+			}
+		}
+		random_list = {
+			33 = { set_country_flag = g_jssjjs }
+			33 = { set_country_flag = g_wzsjjs }
+			33 = { set_country_flag = g_gdzbzzzc }
+		}
+		random_list = {
+			33 = { set_country_flag = g_zlzycyzz }
+			33 = { set_country_flag = g_dqmszc }
+			33 = { set_country_flag = g_jyzdbt }
+		}
+		random_list = {
+			50 = { set_country_flag = y_znjxzc }
+			50 = { set_country_flag = y_xxfyzl }
+		}
+		random_list = {
+			50 = { set_country_flag = y_cbfzgh }
+			50 = { set_country_flag = y_tkjdjs }
+		}
+		country_event = { id = ark_rhodes_island.3 }
+	}
+}
+
+# 秩序的大地：风雨晦冥
+country_event = {
+	id = ark_rhodes_island.301
+	title = "ark_rhodes_island.301.name"
+	desc = "ark_rhodes_island.301.desc"
+	picture = GFX_evt_snowconutry
+	location = ROOT
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ark_rhodes_island.301.a	# 确认
+		add_resource = { influence = 100 }
+	}
+}
+
+# 秩序的大地：发轫之始
+country_event = {
+	id = ark_rhodes_island.302
+	title = "ark_rhodes_island.302.name"
+	desc = "ark_rhodes_island.302.desc"
+	picture = GFX_evt_snowconutry
+	location = ROOT
+
+	is_triggered_only = yes
+
+	immediate = {
+		random_owned_planet = {
+			limit = { has_modifier = barbarian_growth }
+			remove_modifier = barbarian_growth
+			add_modifier = { modifier = "wheels_motion" days = -1 }	# 发轫之始
+		}
+	}
+
+	option = {
+		name = ark_rhodes_island.301.a	# 确认
+		custom_tooltip = land_of_order_pop
+		add_resource = { unity = 100 }
+		hidden_effect = {
+			capital_scope = {
+				while = {
+					count = 1
+					create_pop = { species = owner_main_species }
+				}
+			}
+		}
+	}
+}
+
+# 秩序的大地：荆棘丛生
+country_event = {
+	id = ark_rhodes_island.303
+	title = "ark_rhodes_island.303.name"
+	desc = "ark_rhodes_island.303.desc"
+	picture = GFX_evt_snowconutry
+	location = ROOT
+
+	is_triggered_only = yes
+	
+	immediate = {
+		random_owned_planet = {
+			limit = { has_modifier = wheels_motion }
+			remove_modifier = wheels_motion
+			add_modifier = { modifier = "strewn_thorns" days = -1 }	# 荆棘丛生
+		}
+	}
+
+	option = {
+		name = ark_rhodes_island.301.a	# 确认
+		custom_tooltip = land_of_order_pop
+		add_resource = { unity = 200 }
+		hidden_effect = {
+			capital_scope = {
+				while = {
+					count = 1
+					create_pop = { species = owner_main_species }
+				}
+			}
+		}
+	}
+}
+
+# 秩序的大地：层林尽染
+country_event = {
+	id = ark_rhodes_island.304
+	title = "ark_rhodes_island.304.name"
+	desc = "ark_rhodes_island.304.desc"
+	picture = GFX_evt_snowconutry
+	location = ROOT
+
+	is_triggered_only = yes
+	
+	immediate = {
+		random_owned_planet = {
+			limit = { has_modifier = strewn_thorns }
+			remove_modifier = strewn_thorns
+			add_modifier = { modifier = "autumn_sea" days = 7200 }	# 层林尽染
+		}
+	}
+
+	option = {
+		name = ark_rhodes_island.301.a	# 确认
+		custom_tooltip = land_of_order_pop
+		add_resource = {
+			influence = 250
+			unity = 2500
+		}
+		hidden_effect = {
+			capital_scope = {
+				while = {
+					count = 1
+					create_pop = { species = owner_main_species }
+				}
+			}
+		}
+	}
+}
+
+# 档案中心
+country_event = {
+	id = ark_rhodes_island.5
+	title = "ark_rhodes_island.5.name"
+	desc = "ark_rhodes_island.5.a.desc"
+	desc = "ark_rhodes_island.5.b.desc"
+	desc = "ark_rhodes_island.5.c.desc"
+	desc = "ark_rhodes_island.5.d.desc"
+	
+	diplomatic = yes
+	
+	picture_event_data = {
+		portrait = ARKS128
+		planet_background = root.owner
+		room = personality_hegemonic_imperialists_room
+	}
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ark_rhodes_island.5.a	# 天灾
+		hidden_effect = {
+			set_country_flag = ark_rhodes_island_51_flag
+			country_event = { id = ark_rhodes_island.50 }
+		}
+	}
+	option = {
+		name = ark_rhodes_island.5.b	# 源石
+		hidden_effect = {
+			set_country_flag = ark_rhodes_island_52_flag
+			country_event = { id = ark_rhodes_island.50 }
+		}
+	}
+	option = {
+		name = ark_rhodes_island.5.c	# 源石技艺
+		hidden_effect = {
+			set_country_flag = ark_rhodes_island_53_flag
+			country_event = { id = ark_rhodes_island.50 }
+		}
+	}
+	option = {
+		name = ark_rhodes_island.5.d	# 矿石病/感染者
+		hidden_effect = {
+			set_country_flag = ark_rhodes_island_54_flag
+			country_event = { id = ark_rhodes_island.50 }
+		}
+	}
+	option = {
+		name = ark_rhodes_island.5.e	# 移动城邦
+		hidden_effect = {
+			set_country_flag = ark_rhodes_island_55_flag
+			country_event = { id = ark_rhodes_island.50 }
+		}
+	}
+	option = {
+		name = ark_rhodes_island.back	# 返回
+		hidden_effect = {
+			country_event = { id = ark_rhodes_island.2 }
+		}
+	}
+	option = {
+		name = ark_rhodes_island.quit	# 退出
+		default_hide_option = yes
+	}
+}
+
+# 档案中心（天灾~移动城邦）
+country_event = {
+	id = ark_rhodes_island.50
+	title = "ark_rhodes_island.5.name"
+	desc = {
+		trigger = {
+			has_country_flag = ark_rhodes_island_51_flag
+		}
+		text = ark_rhodes_island.51.desc
+	}
+	desc = {
+		trigger = {
+			has_country_flag = ark_rhodes_island_52_flag
+		}
+		text = ark_rhodes_island.52.desc
+	}
+	desc = {
+		trigger = {
+			has_country_flag = ark_rhodes_island_53_flag
+		}
+		text = ark_rhodes_island.53.desc
+	}
+	desc = {
+		trigger = {
+			has_country_flag = ark_rhodes_island_54_flag
+		}
+		text = ark_rhodes_island.54.desc
+	}
+	desc = {
+		trigger = {
+			has_country_flag = ark_rhodes_island_55_flag
+		}
+		text = ark_rhodes_island.55.desc
+	}
+	
+	diplomatic = yes
+	
+	picture_event_data = {
+		portrait = ARKS128
+		planet_background = root.owner
+		room = personality_hegemonic_imperialists_room
+	}
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ark_rhodes_island.52.a	# 条目一（源石）
+		trigger = {	# 选择“源石档案”且已归档“源石简报1”
+			has_country_flag = ark_rhodes_island_52_flag
+			has_country_flag = originiums_bulletin_1_flag
+			NOT = {
+				has_country_flag = ark_rhodes_island_51_flag
+				has_country_flag = ark_rhodes_island_53_flag
+				has_country_flag = ark_rhodes_island_54_flag
+				has_country_flag = ark_rhodes_island_55_flag
+			}
+		}
+		hidden_effect = {
+			set_country_flag = ark_rhodes_island_521_flag
+			country_event = { id = ark_rhodes_island.52 }
+		}
+	}
+	option = {
+		name = ark_rhodes_island.52.b	# 条目二（源石）
+		trigger = {	# 选择“源石档案”且已归档“源石简报2”
+			has_country_flag = ark_rhodes_island_52_flag
+			has_country_flag = originiums_bulletin_2_flag 
+			NOT = {
+				has_country_flag = ark_rhodes_island_51_flag
+				has_country_flag = ark_rhodes_island_53_flag
+				has_country_flag = ark_rhodes_island_54_flag
+				has_country_flag = ark_rhodes_island_55_flag
+			}
+		}
+		hidden_effect = {
+			set_country_flag = ark_rhodes_island_522_flag
+			country_event = { id = ark_rhodes_island.52 }
+		}
+	}
+	option = {
+		name = ark_rhodes_island.52.c	# 条目三（源石）
+		trigger = {	# 选择“源石档案”且已归档“源石简报3”
+			has_country_flag = ark_rhodes_island_52_flag
+			has_country_flag = originiums_bulletin_3_flag 
+			NOT = {
+				has_country_flag = ark_rhodes_island_51_flag
+				has_country_flag = ark_rhodes_island_53_flag
+				has_country_flag = ark_rhodes_island_54_flag
+				has_country_flag = ark_rhodes_island_55_flag
+			}
+		}
+		hidden_effect = {
+			set_country_flag = ark_rhodes_island_523_flag
+			country_event = { id = ark_rhodes_island.52 }
+		}
+	}
+	option = {
+		name = ark_rhodes_island.52.d	# 条目四（源石）
+		trigger = {	# 选择“源石档案”且已归档“源石简报4”
+			has_country_flag = ark_rhodes_island_52_flag
+			has_country_flag = originiums_bulletin_4_flag 
+			NOT = {
+				has_country_flag = ark_rhodes_island_51_flag
+				has_country_flag = ark_rhodes_island_53_flag
+				has_country_flag = ark_rhodes_island_54_flag
+				has_country_flag = ark_rhodes_island_55_flag
+			}
+		}
+		hidden_effect = {
+			set_country_flag = ark_rhodes_island_524_flag
+			country_event = { id = ark_rhodes_island.52 }
+		}
+	}
+	option = {
+		name = ark_rhodes_island.54.a	# 条目一（矿石病）
+		trigger = {	# 选择“矿石病/感染者档案”且已归档“矿石病简报1”
+			has_country_flag = ark_rhodes_island_54_flag
+			has_country_flag = originiums_sufferer_bulletin_1_flag
+			NOT = {
+				has_country_flag = ark_rhodes_island_51_flag
+				has_country_flag = ark_rhodes_island_52_flag
+				has_country_flag = ark_rhodes_island_53_flag
+				has_country_flag = ark_rhodes_island_55_flag
+			}
+		}
+		hidden_effect = {
+			set_country_flag = ark_rhodes_island_541_flag
+			country_event = { id = ark_rhodes_island.54 }
+		}
+	}
+	option = {
+		name = ark_rhodes_island.54.b	# 条目二（矿石病）
+		trigger = {	# 选择“矿石病/感染者档案”且已归档“矿石病简报2”
+			has_country_flag = ark_rhodes_island_54_flag
+			has_country_flag = originiums_sufferer_bulletin_2_flag
+			NOT = {
+				has_country_flag = ark_rhodes_island_51_flag
+				has_country_flag = ark_rhodes_island_52_flag
+				has_country_flag = ark_rhodes_island_53_flag
+				has_country_flag = ark_rhodes_island_55_flag
+			}
+		}
+		hidden_effect = {
+			set_country_flag = ark_rhodes_island_542_flag
+			country_event = { id = ark_rhodes_island.54 }
+		}
+	}
+	option = {
+		name = ark_rhodes_island.54.c	# 条目三（矿石病）
+		trigger = {	# 选择“矿石病/感染者档案”且已归档“矿石病简报3”
+			has_country_flag = ark_rhodes_island_54_flag
+			has_country_flag = originiums_sufferer_bulletin_3_flag
+			NOT = {
+				has_country_flag = ark_rhodes_island_51_flag
+				has_country_flag = ark_rhodes_island_52_flag
+				has_country_flag = ark_rhodes_island_53_flag
+				has_country_flag = ark_rhodes_island_55_flag
+			}
+		}
+		hidden_effect = {
+			set_country_flag = ark_rhodes_island_543_flag
+			country_event = { id = ark_rhodes_island.54 }
+		}
+	}
+	option = {
+		name = ark_rhodes_island.54.d	# 条目四（矿石病）
+		trigger = {	# 选择“矿石病/感染者档案”且已归档“矿石病简报4”
+			has_country_flag = ark_rhodes_island_54_flag
+			has_country_flag = originiums_sufferer_bulletin_4_flag
+			NOT = {
+				has_country_flag = ark_rhodes_island_51_flag
+				has_country_flag = ark_rhodes_island_52_flag
+				has_country_flag = ark_rhodes_island_53_flag
+				has_country_flag = ark_rhodes_island_55_flag
+			}
+		}
+		hidden_effect = {
+			set_country_flag = ark_rhodes_island_544_flag
+			country_event = { id = ark_rhodes_island.54 }
+		}
+	}
+	option = {
+		name = ark_rhodes_island.54.e	# 条目五（矿石病）
+		trigger = {	# 选择“矿石病/感染者档案”且已归档“矿石病简报5”
+			has_country_flag = ark_rhodes_island_54_flag
+			has_country_flag = originiums_sufferer_bulletin_5_flag
+			NOT = {
+				has_country_flag = ark_rhodes_island_51_flag
+				has_country_flag = ark_rhodes_island_52_flag
+				has_country_flag = ark_rhodes_island_53_flag
+				has_country_flag = ark_rhodes_island_55_flag
+			}
+		}
+		hidden_effect = {
+			set_country_flag = ark_rhodes_island_545_flag
+			country_event = { id = ark_rhodes_island.54 }
+		}
+	}
+	option = {
+		name = ark_rhodes_island.back	# 返回
+		hidden_effect = {
+			remove_country_flag = ark_rhodes_island_51_flag
+			remove_country_flag = ark_rhodes_island_52_flag
+			remove_country_flag = ark_rhodes_island_53_flag
+			remove_country_flag = ark_rhodes_island_54_flag
+			remove_country_flag = ark_rhodes_island_55_flag
+			country_event = { id = ark_rhodes_island.5 }
+		}
+	}
+	option = {
+		name = ark_rhodes_island.quit	# 退出
+		hidden_effect = {
+			remove_country_flag = ark_rhodes_island_51_flag
+			remove_country_flag = ark_rhodes_island_52_flag
+			remove_country_flag = ark_rhodes_island_53_flag
+			remove_country_flag = ark_rhodes_island_54_flag
+			remove_country_flag = ark_rhodes_island_55_flag
+		}
+		default_hide_option = yes
+	}
+}
+
+# 档案中心（源石条目）
+country_event = {
+	id = ark_rhodes_island.52
+	title = "ark_rhodes_island.5.name"
+	desc = {
+		trigger = {
+			has_country_flag = ark_rhodes_island_521_flag
+		}
+		text = ark_rhodes_island.521.desc
+	}
+	desc = {
+		trigger = {
+			has_country_flag = ark_rhodes_island_522_flag
+		}
+		text = ark_rhodes_island.522.desc
+	}
+	desc = {
+		trigger = {
+			has_country_flag = ark_rhodes_island_523_flag
+		}
+		text = ark_rhodes_island.523.desc
+	}
+	desc = {
+		trigger = {
+			has_country_flag = ark_rhodes_island_524_flag
+		}
+		text = ark_rhodes_island.524.desc
+	}
+	
+	diplomatic = yes
+	
+	picture_event_data = {
+		portrait = ARKS128
+		planet_background = root.owner
+		room = personality_hegemonic_imperialists_room
+	}
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ark_rhodes_island.back	# 返回
+		hidden_effect = {
+			remove_country_flag = ark_rhodes_island_521_flag
+			remove_country_flag = ark_rhodes_island_522_flag
+			remove_country_flag = ark_rhodes_island_523_flag
+			remove_country_flag = ark_rhodes_island_524_flag
+			country_event = { id = ark_rhodes_island.50 }
+		}
+	}
+	option = {
+		name = ark_rhodes_island.quit	# 退出
+		hidden_effect = {
+			remove_country_flag = ark_rhodes_island_521_flag
+			remove_country_flag = ark_rhodes_island_522_flag
+			remove_country_flag = ark_rhodes_island_523_flag
+			remove_country_flag = ark_rhodes_island_524_flag
+		}
+		default_hide_option = yes
+	}
+}
+
+# 档案中心（矿石病/感染者条目）
+country_event = {
+	id = ark_rhodes_island.54
+	title = "ark_rhodes_island.5.name"
+	desc = {
+		trigger = {
+			has_country_flag = ark_rhodes_island_541_flag
+		}
+		text = ark_rhodes_island.541.desc
+	}
+	desc = {
+		trigger = {
+			has_country_flag = ark_rhodes_island_542_flag
+		}
+		text = ark_rhodes_island.542.desc
+	}
+	desc = {
+		trigger = {
+			has_country_flag = ark_rhodes_island_543_flag
+		}
+		text = ark_rhodes_island.543.desc
+	}
+	desc = {
+		trigger = {
+			has_country_flag = ark_rhodes_island_544_flag
+		}
+		text = ark_rhodes_island.544.desc
+	}
+	desc = {
+		trigger = {
+			has_country_flag = ark_rhodes_island_545_flag
+		}
+		text = ark_rhodes_island.545.desc
+	}
+	
+	diplomatic = yes
+	
+	picture_event_data = {
+		portrait = ARKS128
+		planet_background = root.owner
+		room = personality_hegemonic_imperialists_room
+	}
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ark_rhodes_island.back	# 返回
+		hidden_effect = {
+			remove_country_flag = ark_rhodes_island_541_flag
+			remove_country_flag = ark_rhodes_island_542_flag
+			remove_country_flag = ark_rhodes_island_543_flag
+			remove_country_flag = ark_rhodes_island_544_flag
+			remove_country_flag = ark_rhodes_island_545_flag
+			country_event = { id = ark_rhodes_island.50 }
+		}
+	}
+	option = {
+		name = ark_rhodes_island.quit	# 退出
+		hidden_effect = {
+			remove_country_flag = ark_rhodes_island_541_flag
+			remove_country_flag = ark_rhodes_island_542_flag
+			remove_country_flag = ark_rhodes_island_543_flag
+			remove_country_flag = ark_rhodes_island_544_flag
+			remove_country_flag = ark_rhodes_island_545_flag
+		}
+		default_hide_option = yes
+	}
+}

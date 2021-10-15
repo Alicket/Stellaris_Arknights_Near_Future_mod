@@ -1,0 +1,659 @@
+namespace = ark_rebellion
+
+# 暴乱流言
+country_event = {
+	id = ark_rebellion.1
+	title = "ark_rebellion.1.name"
+	desc = "ark_rebellion.1.desc"
+	picture = GFX_evt_terra_news
+	show_sound = event_planetary_riot
+	location = ROOT
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_country_flag = deathline_start_flag
+		NOT = { has_modifier = r_tllhscl_modifier }
+		NOT = { has_country_flag = newreunion_rebellion }
+		NOT = { has_country_flag = newreunion_rebellion_defeated }
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = ark_rebellion.1.a	# 确认（暴动4个月后爆发/"恶疫"5年后爆发）
+		custom_tooltip = build_armies_plan1
+		hidden_effect = {
+			capital_scope = {
+				planet_event = { id = ark_rebellion.11 days = 120 }
+				planet_event = { id = ark_rebellion.14 days = 1800 }
+			}
+		}
+	}
+}
+
+# 感染者暴动
+planet_event = {
+	id = ark_rebellion.11
+	title = "ark_rebellion.11.name"
+	desc = "ark_rebellion.11.desc"
+	picture = GFX_evt_armed_rebellion
+	location = ROOT
+
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+		original_owner = yes
+		has_ground_combat = no
+		is_occupied_flag = no
+	}
+	
+	trigger = {
+		owner = { 
+			has_country_flag = deathline_start_flag
+			NOT = { has_country_flag = newreunion_rebellion }
+			NOT = { has_country_flag = newreunion_rebellion_defeated }
+		}
+	}
+	
+	immediate = {
+		owner= { 
+			set_country_flag = newreunion_rebellion
+		}
+		create_country = {
+			name = "NAME_New_Reunion"
+			type = faction
+			effect = {
+				establish_communications_no_message = root.owner
+				establish_contact = { who = root.owner location = root.solar_system }
+			}
+		} 
+		create_species = {
+			name = this
+			class = this
+			portrait = this
+			traits = this
+		}
+		create_army = {
+			name = "NAME_Reunion_Rebel"
+			owner = last_created
+			species = last_created
+			type = "rebel_army"
+		}
+	}
+	
+	option = {
+		name = ark_rebellion.11.a
+		custom_tooltip = reunion_armies
+	}
+}
+
+# 暴动被镇压
+country_event = {
+	id = ark_rebellion.12
+	title = "ark_rebellion.12.name"
+	desc = "ark_rebellion.12.desc"
+	picture = GFX_evt_after_the_battle
+	show_sound = event_ground_battle
+	location = FROMFROM
+
+	trigger = {
+		has_country_flag = newreunion_rebellion
+		NOT = { has_country_flag = newreunion_rebellion_defeated }
+		capital_scope = { 
+			has_ground_combat = no
+			is_occupied_flag = no
+		 }
+	}
+
+	immediate = {
+		remove_country_flag = newreunion_rebellion
+		set_country_flag = newreunion_rebellion_defeated
+	}
+	
+	option = {
+		name = ark_rebellion.12.a
+		custom_tooltip = ark_rebellion.12_tooltip
+	}
+}
+
+# 感染者常态化暴动 普通 （隐藏事件）
+planet_event = {
+	id = ark_rebellion.13
+	hide_window = yes
+	location = ROOT
+
+	mean_time_to_happen = { months = 9 }
+
+	pre_triggers = {
+		is_capital = yes
+		has_owner = yes
+		original_owner = yes
+		has_ground_combat = no
+		is_occupied_flag = no
+	}
+	
+	trigger = {
+		owner = { 
+			has_country_flag = newreunion_rebellion_defeated
+		}
+	}
+	
+	immediate = {
+		create_country = {
+			name = "NAME_New_Reunion"
+			type = faction
+			effect = {
+				establish_communications_no_message = root.owner
+				establish_contact = { who = root.owner location = root.solar_system }
+			}
+		} 
+		create_species = {
+			name = this
+			class = this
+			portrait = this
+			traits = this
+		}
+		create_army = {
+			name = "NAME_Reunion_Rebel"
+			owner = last_created
+			species = last_created
+			type = "rebel_army"
+		}
+		create_army = {
+			name = "NAME_Reunion_Rebel"
+			owner = last_created
+			species = last_created
+			type = "rebel_army"
+		}
+		create_army = {
+			name = "NAME_Reunion_Rebel"
+			owner = last_created
+			species = last_created
+			type = "rebel_army"
+		}
+	}
+}
+
+# 感染者暴动：恶疫
+planet_event = {
+	id = ark_rebellion.14
+	title = "ark_rebellion.14.name"
+	desc = "ark_rebellion.14.desc"
+	picture = GFX_evt_armed_rebellion
+	location = ROOT
+
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+		original_owner = yes
+		has_ground_combat = no
+		is_occupied_flag = no
+	}
+	
+	trigger = {
+		owner = { 
+			NOT = { has_country_flag = deathline_end_flag }
+		}
+	}
+	
+	immediate = {
+		owner= { 
+			set_country_flag = newreunion_rebellion_eyi
+		}
+		create_country = {
+			name = "NAME_New_Reunion"
+			type = faction
+			effect = {
+				establish_communications_no_message = root.owner
+				establish_contact = { who = root.owner location = root.solar_system }
+			}
+		} 
+		create_species = {
+			name = this
+			class = this
+			portrait = this
+			traits = this
+		}
+		create_army = {
+			name = "NAME_Reunion_Rebel"
+			owner = last_created
+			species = last_created
+			type = "rebel_army"
+		}
+		create_army = {
+			name = "NAME_Reunion_Rebel"
+			owner = last_created
+			species = last_created
+			type = "rebel_army"
+		}
+		create_army = {
+			name = "NAME_Reunion_Rebel"
+			owner = last_created
+			species = last_created
+			type = "rebel_army"
+		}
+		create_army = {
+			name = "NAME_Racists_Rebel9"
+			owner = last_created
+			species = last_created
+			type = "racists_rebel9_army"
+		}
+		create_army = {
+			name = "NAME_Racists_Rebel9"
+			owner = last_created
+			species = last_created
+			type = "racists_rebel9_army"
+		}
+	}
+	
+	option = {
+		name = ark_rebellion.14.a
+		custom_tooltip = reunion_armies
+	}
+}
+
+# 感染者暴动：恶疫 被镇压
+country_event = {
+	id = ark_rebellion.15
+	title = "ark_rebellion.15.name"
+	desc = "ark_rebellion.15.desc"
+	picture = GFX_evt_after_the_battle
+	show_sound = event_ground_battle
+	location = FROMFROM
+
+	trigger = {
+		has_country_flag = newreunion_rebellion_eyi
+		NOT = { has_country_flag = newreunion_rebellion_eyi_defeated }
+		capital_scope = { 
+			has_ground_combat = no
+			is_occupied_flag = no
+		 }
+	}
+
+	immediate = {
+		remove_country_flag = newreunion_rebellion_eyi
+		set_country_flag = newreunion_rebellion_eyi_defeated
+	}
+	
+	option = {
+		name = ark_rebellion.15.a	#常态化暴动加强
+		hidden_effect = {
+			remove_country_flag = newreunion_rebellion_defeated
+		}
+	}
+
+	option = {
+		name = ark_rebellion.15.b	#联系萨卡兹地区领导
+		hidden_effect = {
+			capital_scope = { planet_event = { id = ark_liasion.1 } }
+		}
+	}
+}
+
+# 感染者常态化暴动 加强 （隐藏事件）
+planet_event = {
+	id = ark_rebellion.16
+	hide_window = yes
+	location = ROOT
+
+	mean_time_to_happen = { months = 9 }
+
+	pre_triggers = {
+		is_capital = yes
+		has_owner = yes
+		original_owner = yes
+		has_ground_combat = no
+		is_occupied_flag = no
+	}
+	
+	trigger = {
+		owner = { 
+			has_country_flag = newreunion_rebellion_eyi_defeated
+		}
+	}
+	
+	immediate = {
+		create_country = {
+			name = "NAME_New_Reunion"
+			type = faction
+			effect = {
+				establish_communications_no_message = root.owner
+				establish_contact = { who = root.owner location = root.solar_system }
+			}
+		} 
+		create_species = {
+			name = this
+			class = this
+			portrait = this
+			traits = this
+		}
+		create_army = {
+			name = "NAME_Reunion_Rebel"
+			owner = last_created
+			species = last_created
+			type = "rebel_army"
+		}
+		create_army = {
+			name = "NAME_Reunion_Rebel"
+			owner = last_created
+			species = last_created
+			type = "rebel_army"
+		}
+		create_army = {
+			name = "NAME_Racists_Rebel9"
+			owner = last_created
+			species = last_created
+			type = "racists_rebel9_army"
+		}
+	}
+}
+
+# 负隅顽抗的旧时代
+planet_event = {
+	id = ark_rebellion.2
+	title = "ark_rebellion.2.name"
+	desc = "ark_rebellion.2.desc"
+	picture = GFX_evt_terra_news
+	show_sound = event_planetary_riot
+	location = ROOT
+	
+	trigger = {
+		has_planet_flag = planet_terra	# 母星是泰拉
+		has_deposit = d_former_countries_controlled	# 拥有 分裂各国控制区
+		owner = {
+			NOT = { has_country_flag = ark_rebellion_2_flag }
+		}
+	}
+
+	mean_time_to_happen = { days = 540 }
+	
+	immediate = {
+		owner = {
+			set_country_flag = ark_rebellion_2_flag
+		}
+	}
+	
+	option = {
+		name = ark_rebellion.2.a	# 确认（叛乱4个月后爆发）
+		custom_tooltip = build_armies_plan1
+		hidden_effect = {
+			capital_scope = {
+				planet_event = { id = ark_rebellion.21 days = 120 }
+			}
+		}
+	}
+}
+
+# 复国者叛乱
+planet_event = {
+	id = ark_rebellion.21
+	title = "ark_rebellion.21.name"
+	desc = "ark_rebellion.21.desc"
+	picture = GFX_evt_ark_ground_combat
+	location = ROOT
+
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+		original_owner = yes
+		has_ground_combat = no
+		is_occupied_flag = no
+	}
+	
+	trigger = {
+		owner = {
+			NOT = { has_country_flag = racistscountry_rebellion }
+			NOT = { has_country_flag = racistscountry_rebellion_defeated }
+		}
+	}
+	
+	immediate = {
+		owner= {
+			set_country_flag = racistscountry_rebellion
+		}
+		create_country = {
+			name = "NAME_Racists_Country"
+			type = faction
+			effect = {
+				establish_communications_no_message = root.owner
+				establish_contact = { who = root.owner location = root.solar_system }
+			}
+		} 
+		create_species = {
+			name = this
+			class = this
+			portrait = this
+			traits = this
+		}
+		create_army = {
+			name = "NAME_Racists_Rebel1"
+			owner = last_created
+			species = last_created
+			type = "former_countries_army"
+		}
+		create_army = {
+			name = "NAME_Racists_Rebel2"
+			owner = last_created
+			species = last_created
+			type = "former_countries_army"
+		}
+		create_army = {
+			name = "NAME_Racists_Rebel3"
+			owner = last_created
+			species = last_created
+			type = "former_countries_army"
+		}
+	}
+	
+	option = {
+		name = ark_rebellion.21.a
+		custom_tooltip = racists_armies
+	}
+}
+
+# 叛乱被镇压
+country_event = {
+	id = ark_rebellion.22
+	title = "ark_rebellion.22.name"
+	desc = "ark_rebellion.22.desc"
+	picture = GFX_evt_after_the_battle
+	show_sound = event_ground_battle
+	location = FROMFROM
+
+	trigger = {
+		has_country_flag = racistscountry_rebellion
+		NOT = { has_country_flag = racistscountry_rebellion_defeated }
+		capital_scope = { 
+			has_ground_combat = no
+			is_occupied_flag = no
+		 }
+	}
+
+	immediate = {
+		remove_country_flag = racistscountry_rebellion
+		set_country_flag = racistscountry_rebellion_defeated
+	}
+	
+	option = {
+		name = ark_rebellion.22.a
+		custom_tooltip = ark_rebellion.22_tooltip
+	}
+}
+
+# 复国者常态化叛乱 普通 （隐藏事件）
+planet_event = {
+	id = ark_rebellion.23
+	hide_window = yes
+	location = ROOT
+
+	mean_time_to_happen = { months = 12 }
+
+	pre_triggers = {
+		is_capital = yes
+		has_owner = yes
+		original_owner = yes
+		has_ground_combat = no
+		is_occupied_flag = no
+	}
+	
+	trigger = {
+		has_deposit = d_former_countries_controlled
+		owner = {
+			has_country_flag = racistscountry_rebellion_defeated
+			NOT = { has_country_flag = r_tyggyd_end }
+		}
+	}
+	
+	immediate = {
+		create_country = {
+			name = "NAME_Racists_Country"
+			type = faction
+			effect = {
+				establish_communications_no_message = root.owner
+				establish_contact = { who = root.owner location = root.solar_system }
+			}
+		} 
+		create_species = {
+			name = this
+			class = this
+			portrait = this
+			traits = this
+		}
+		create_army = {
+			name = "NAME_Racists_Rebel1"
+			owner = last_created
+			species = last_created
+			type = "former_countries_army"
+		}
+		create_army = {
+			name = "NAME_Racists_Rebel2"
+			owner = last_created
+			species = last_created
+			type = "former_countries_army"
+		}
+		create_army = {
+			name = "NAME_Racists_Rebel3"
+			owner = last_created
+			species = last_created
+			type = "former_countries_army"
+		}
+		create_army = {
+			name = "NAME_Racists_Rebel4"
+			owner = last_created
+			species = last_created
+			type = "former_countries_army"
+		}
+		create_army = {
+			name = "NAME_Racists_Rebel5"
+			owner = last_created
+			species = last_created
+			type = "former_countries_army"
+		}
+	}
+}
+
+# 统一时代
+country_event = {
+	id = ark_rebellion.4
+	title = "ark_rebellion.4.name"
+	desc = "ark_rebellion.4.desc"
+	picture = GFX_evt_celebration
+	show_sound = event_celebration
+	location = ROOT
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = unification_era_flag }
+	}
+
+	immediate = {
+		set_country_flag = unification_era_flag
+		remove_country_flag = racistscountry_rebellion_defeated
+	}
+	
+	option = {
+		name = ark_rebellion.4.a
+		capital_scope = {
+			add_modifier = { modifier = prosp_uni_mod days = 7200 }
+		}
+		add_resource = {
+			influence = 250
+			unity = 2500
+		}
+	}
+}
+
+# 镇压失败
+country_event = {
+	id = ark_rebellion.5
+	title = "ark_rebellion.5.name"
+	desc = "ark_rebellion.5.desc"
+	picture = GFX_evt_derelict_interior
+	show_sound = event_criminal_activity
+	location = FROMFROM
+
+	trigger = {
+		NOT = {
+			has_country_flag = repression_failure_flag
+		}
+		is_at_war = no
+		OR = {
+			has_country_flag = newreunion_rebellion
+			has_country_flag = newreunion_rebellion_eyi
+			has_country_flag = racistscountry_rebellion
+		}
+		has_country_flag = deathline_start_flag
+		capital_scope = { 
+			has_ground_combat = no
+			is_occupied_flag = yes
+		}
+	}
+
+	immediate = {
+		capital_scope = { add_planet_devastation = 5 }
+		set_country_flag = repression_failure_flag
+	}
+	
+	option = {
+		name = ark_rebellion.5.a
+		hidden_effect = {
+			capital_scope = {
+				add_modifier = {
+					modifier = "repression_failure"
+					days = -1
+				}
+			}
+		}
+	}
+}
+
+# 收复星球（隐藏事件）
+country_event = {
+	id = ark_rebellion.51
+	hide_window = yes
+
+	trigger = {
+		is_at_war = no
+		has_country_flag = deathline_start_flag
+		capital_scope = { 
+			has_ground_combat = no
+			is_occupied_flag = no
+		}
+		capital_scope = {
+			has_modifier = repression_failure
+		}
+	}
+
+	immediate = {
+		remove_country_flag = repression_failure_flag
+		capital_scope = {
+			remove_modifier = repression_failure
+		}
+	}
+}

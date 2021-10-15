@@ -1,0 +1,231 @@
+namespace = ark_origins
+
+country_event = {
+	id = ark_origins.0
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		has_origin = origin_ark_tragedy_birth
+		OR = {
+		has_country_flag = arknight_1
+		has_country_flag = arknight_2
+		has_country_flag = arknight_4
+		}
+	}
+
+	immediate = {
+		initialize_ark_tragedy_birth_fleet = {
+			ICON_FILE = flag_victoria
+			COUNTRY_NAME = NAME_Victoria
+			FLEET_NAME = NAME_Victoria_fleet
+			NUM_SHIPS = 2
+			DISTANCE = 180
+			ANGLE = 45
+		}
+		initialize_ark_tragedy_birth_fleet = {
+			ICON_FILE = flag_ursus
+			COUNTRY_NAME = NAME_Ursus
+			FLEET_NAME = NAME_Ursus_fleet
+			FLEET_FLAG = ursus_fleet_flag
+			NUM_SHIPS = 2
+			DISTANCE = 200
+			ANGLE = 105
+		}
+		initialize_ark_tragedy_birth_fleet = {
+			ICON_FILE = flag_columbia
+			COUNTRY_NAME = NAME_Columbia
+			FLEET_NAME = NAME_Columbia_fleet
+			NUM_SHIPS = 3
+			DISTANCE = 150
+			ANGLE = 250
+		}
+		random_owned_planet = {
+			limit = { has_planet_flag = planet_terra }
+			add_deposit = d_former_countries_controlled	# 分裂各国控制区
+		}
+		create_species = {
+			name = "NAME_Robot"
+			plural = "NAME_Robots"
+			class = ROBOT
+			namelist = this
+			portrait = "default_robot"
+			traits = {
+				trait = "trait_robotic_1"
+			}
+			effect = {
+				save_event_target_as = ark_robot
+			}
+		}
+		create_leader = {
+			class = admiral
+			species = event_target:ark_robot
+			name = "NAME_Dumbness_Infinite"	# 无言infinite
+			skill = 1
+			set_age = 5
+			traits = {
+			}
+			effect = {
+				change_leader_portrait = EGG001
+				set_leader_flag = ark_leader_dumbness_infinite
+				save_event_target_as = leader_dumbness_infinite
+			}
+		}
+		capital_scope.solar_system = {
+			random_fleet_in_system = {
+				limit = { has_fleet_flag = ursus_fleet_flag }
+				set_leader = event_target:leader_dumbness_infinite
+			}
+		}
+		every_owned_leader = {
+			limit = { NOT = { leader_class = ruler } }
+			kill_leader = { show_notification = no }
+		}
+		random_list = {	# 总督
+			100 = {
+				create_leader = {
+					class = governor
+					species = owner_main_species
+					name = "NAME_Chen"	# 陈
+					gender = female
+					skill = 2
+					set_age = 28
+					traits = {
+						trait = leader_trait_righteous # 正义凌然
+						trait = leader_trait_eager # 活力四射
+						trait = leader_trait_oripathy # 源石病
+					}
+					effect = {
+						change_leader_portrait = ARKS010
+						set_leader_flag = ark_leader_chen
+						save_event_target_as = leader_chen
+					}
+				}
+			}
+		}
+		random_list = {	# 物理学
+			100 = {
+				create_leader = {
+					class = scientist
+					species = owner_main_species
+					name = "NAME_Closure"	# 可露希尔
+					gender = female
+					skill = 3
+					set_age = 240
+					traits = {
+						trait = leader_trait_vampire # 血魔
+						trait = leader_trait_expertise_materials # 专长：材料科学
+						trait = leader_trait_expertise_computing # 专长：计算技术
+					}
+					effect = {
+						change_leader_portrait = ARK007
+						set_leader_flag = ark_leader_closure
+						save_event_target_as = leader_closure
+					}
+				}
+			}
+		}
+		random_list = {	# 社会学
+			100 = {
+				create_leader = {
+					class = scientist
+					species = owner_main_species
+					name = "NAME_Silence"	# 赫默
+					gender = female
+					skill = 3
+					set_age = 32
+					traits = {
+						trait = leader_trait_meticulous # 细致
+						trait = leader_trait_expertise_biology # 专长：生物学
+						trait = leader_trait_oripathy # 源石病
+					}
+					effect = {
+						change_leader_portrait = ARKS108
+						set_leader_flag = ark_leader_silence
+						save_event_target_as = leader_silence
+					}
+				}
+			}
+		}
+		random_list = {	# 工程学
+			35 = {
+				create_leader = {
+					class = scientist
+					species = owner_main_species
+					name = "NAME_Weedy"	# 温蒂
+					gender = female
+					skill = 3
+					set_age = 25
+					traits = {
+						trait = leader_trait_expertise_biology # 专长：生物学
+						trait = leader_trait_expertise_propulsion # 专长：推进力学
+					}
+					effect = {
+						change_leader_portrait = ARKS400
+						set_leader_flag = ark_leader_weedy
+						save_event_target_as = leader_weedy
+					}
+				}
+			}
+			35 = {
+				create_leader = {
+					class = scientist
+					species = owner_main_species
+					name = "NAME_Mayer"	# 梅尔
+					gender = female
+					skill = 3
+					set_age = 26
+					traits = {
+						trait = leader_trait_spark_of_genius # 灵光一闪
+						trait = leader_trait_expertise_industry # 专长：工业
+					}
+					effect = {
+						change_leader_portrait = ARKS242
+						set_leader_flag = ark_leader_mayer
+						save_event_target_as = leader_mayer
+					}
+				}
+			}
+			30 = {
+				create_leader = {
+					class = scientist
+					species = owner_main_species
+					name = "NAME_Snowsant"	# 雪雉
+					gender = female
+					skill = 3
+					set_age = 24
+					traits = {
+						trait = leader_trait_tiandaochouqin # 天道酬勤
+						trait = leader_trait_expertise_industry # 专长：工业
+					}
+					effect = {
+						change_leader_portrait = ARKS383
+						set_leader_flag = ark_leader_snowsant
+						save_event_target_as = leader_snowsant
+					}
+				}
+			}
+		}
+		random_list = {	# 探索
+			100 = {
+				create_leader = {
+					class = scientist
+					species = owner_main_species
+					name = "NAME_Magallan"	# 麦哲伦
+					gender = female
+					skill = 3
+					set_age = 25
+					traits = {
+						trait = leader_trait_roamer # 漫游者
+						trait = leader_trait_archaeologist # 考古学家
+					}
+					effect = {
+						change_leader_portrait = ARKS248
+						set_leader_flag = ark_leader_magallan
+						save_event_target_as = leader_magallan
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,67 @@
+namespace = ark_leader
+
+# 巴别塔的恶灵W→R
+country_event = {
+	id = ark_leader.1
+	title = "ark_leader.1.name"
+	desc = "ark_leader.1.desc"
+	picture = no_video_feed_room
+	location = ROOT
+	
+	trigger = {
+		is_at_war = yes
+		any_owned_leader = {
+			has_trait = trait_ruler_babel_evil_spirit_w
+		}
+		NOT = { has_country_flag = doctor_r_flag }
+	}
+
+	mean_time_to_happen = { days = 360 }
+
+	immediate = {
+		every_owned_leader = {
+			limit = { has_trait = trait_ruler_babel_evil_spirit_w }
+			remove_ruler_trait = trait_ruler_babel_evil_spirit_w
+			add_ruler_trait = trait_ruler_babel_evil_spirit_r
+			change_leader_portrait = ARK001_R
+		}
+		set_country_flag = doctor_r_flag
+	}
+	
+	option = {
+		name = ark_leader.1.a
+	}
+}
+
+# 巴别塔的恶灵R→W
+country_event = {
+	id = ark_leader.11
+	title = "ark_leader.11.name"
+	desc = "ark_leader.11.desc"
+	picture = no_video_feed_room
+	location = ROOT
+	
+	trigger = {
+		is_at_war = no
+		any_owned_leader = {
+			has_trait = trait_ruler_babel_evil_spirit_r
+		}
+		has_country_flag = doctor_r_flag
+	}
+
+	mean_time_to_happen = { days = 360 }
+
+	immediate = {
+		every_owned_leader = {
+			limit = { has_trait = trait_ruler_babel_evil_spirit_r }
+			remove_ruler_trait = trait_ruler_babel_evil_spirit_r
+			add_ruler_trait = trait_ruler_babel_evil_spirit_w
+			change_leader_portrait = ARK001_W
+		}
+		remove_country_flag = doctor_r_flag
+	}
+	
+	option = {
+		name = ark_leader.11.a
+	}
+}

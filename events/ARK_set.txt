@@ -1,0 +1,153 @@
+namespace = ark_set
+
+# 强制修改非明日方舟国家选择的mod内容
+country_event = {
+	id = ark_set.1
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		NOR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+		OR = {
+			has_authority = auth_city_republic
+			has_authority = auth_city_despotism
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = { has_authority = auth_city_republic }
+			change_government = {
+				authority = auth_oligarchic
+				civics = {
+					civic = random
+					civic = random
+				}
+			}
+		}
+		if = {
+			limit = { has_authority = auth_city_despotism }
+			change_government = {
+				authority = auth_dictatorial
+				civics = {
+					civic = random
+					civic = random
+				}
+			}
+		}
+	}
+}
+
+# 检查并重置领袖肖像
+country_event = {
+	id = ark_set.3
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		every_owned_leader = {	# 凯尔希
+			limit = {
+				has_leader_flag = ark_leader_kaltsit
+			}
+			change_leader_portrait = ARK003
+		}
+		every_owned_leader = {	# 博士_L
+			limit = {
+				has_leader_flag = ark_leader_doctor
+				has_trait = trait_ruler_babel_evil_spirit_l
+			}
+			change_leader_portrait = ARK001
+		}
+		every_owned_leader = {	# 博士_W
+			limit = {
+				has_leader_flag = ark_leader_doctor
+				has_trait = trait_ruler_babel_evil_spirit_w
+			}
+			change_leader_portrait = ARK001_W
+		}
+		every_owned_leader = {	# 博士_R
+			limit = {
+				has_leader_flag = ark_leader_doctor
+				has_trait = trait_ruler_babel_evil_spirit_r
+			}
+			change_leader_portrait = ARK001_R
+		}
+		every_owned_leader = {	# 陈
+			limit = {
+				has_leader_flag = ark_leader_chen
+			}
+			change_leader_portrait = ARKS010
+		}
+		every_owned_leader = {	# 可露希尔
+			limit = {
+				has_leader_flag = ark_leader_closure
+			}
+			change_leader_portrait = ARK007
+		}
+		every_owned_leader = {	# 赫默
+			limit = {
+				has_leader_flag = ark_leader_silence
+			}
+			change_leader_portrait = ARKS108
+		}
+		every_owned_leader = {	# 温蒂
+			limit = {
+				has_leader_flag = ark_leader_weedy
+			}
+			change_leader_portrait = ARKS400
+		}
+		every_owned_leader = {	# 梅尔
+			limit = {
+				has_leader_flag = ark_leader_mayer
+			}
+			change_leader_portrait = ARKS242
+		}
+		every_owned_leader = {	# 雪雉
+			limit = {
+				has_leader_flag = ark_leader_snowsant
+			}
+			change_leader_portrait = ARKS383
+		}
+		every_owned_leader = {	# 麦哲伦
+			limit = {
+				has_leader_flag = ark_leader_magallan
+			}
+			change_leader_portrait = ARKS248
+		}
+	}
+}
+
+# 检查并清除“源石病”特性
+country_event = {
+	id = ark_set.4
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		has_country_flag = ark_hospital123
+	}
+
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				is_same_species = root
+				NOT = { species = { has_trait = trait_Originium_Arts } }
+				species = { has_trait = trait_latent_oripathy }
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_Originium_Arts
+				remove_trait = trait_latent_oripathy
+			}
+		}
+		every_owned_leader = {
+			limit = { has_trait = leader_trait_oripathy }
+			remove_trait = leader_trait_oripathy
+		}
+	}
+}

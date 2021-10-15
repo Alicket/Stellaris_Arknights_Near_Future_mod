@@ -1,0 +1,498 @@
+namespace = ark_civic
+
+# 商业联合：第1个国民理念
+country_event = {
+	id = ark_civic.1
+	title = ark_civic.1.name
+	desc = ark_civic.1.desc
+	picture = GFX_evt_kxstreet
+	location = ROOT
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_civic = civic_business_union
+		NOT = { has_country_flag = civic_business_union_selected }
+	}
+
+	immediate = {
+		set_country_flag = civic_business_union_selected
+	}
+
+	option = {
+		name = ark_civic.1.a	# 医药企业
+		trigger = {
+			NOT = { has_civic = civic_pharmaceutical_enterprises }
+		}
+		force_add_civic = civic_pharmaceutical_enterprises
+		hidden_effect = {
+			country_event = { id = ark_civic.11 }
+		}
+	}
+
+	option = {
+		name = ark_civic.1.b	# 物流公司
+		trigger = {
+			NOT = { has_civic = civic_logistics_companies }
+		}
+		force_add_civic = civic_logistics_companies
+		hidden_effect = {
+			country_event = { id = ark_civic.11 }
+		}
+	}
+
+	option = {
+		name = ark_civic.1.c	# 融资实验室
+		trigger = {
+			NOT = { has_civic = civic_financing_laboratories }
+		}
+		force_add_civic = civic_financing_laboratories
+		hidden_effect = {
+			country_event = { id = ark_civic.11 }
+		}
+	}
+
+	option = {
+		name = ark_civic.1.d	# 安全承包商
+		trigger = {
+			NOT = { has_civic = civic_security_contractors }
+		}
+		force_add_civic = civic_security_contractors
+		hidden_effect = {
+			country_event = { id = ark_civic.11 }
+		}
+	}
+
+	option = {
+		name = ark_civic.1.e	# 工业制造商
+		trigger = {
+			NOT = { has_civic = civic_industry_manufacturers }
+		}
+		force_add_civic = civic_industry_manufacturers
+		hidden_effect = {
+			country_event = { id = ark_civic.11 }
+		}
+	}
+
+	option = {
+		name = ark_civic.1.f	# 流通商业
+		trigger = {
+			NOT = { has_civic = civic_circulation_business }
+		}
+		force_add_civic = civic_circulation_business
+		hidden_effect = {
+			country_event = { id = ark_civic.11 }
+		}
+	}
+}
+
+# 商业联合：第2个国民理念
+country_event = {
+	id = ark_civic.11
+	title = ark_civic.11.name
+	desc = ark_civic.1.desc	# 沿用ark_civic.1的本地化
+	picture = GFX_evt_kxstreet
+	location = ROOT
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_civic = civic_business_union
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = ark_civic.1.a	# 沿用ark_civic.1的本地化
+		trigger = {
+			NOT = { has_civic = civic_pharmaceutical_enterprises }
+		}
+		force_add_civic = civic_pharmaceutical_enterprises
+	}
+
+	option = {
+		name = ark_civic.1.b	# 沿用ark_civic.1的本地化
+		trigger = {
+			NOT = { has_civic = civic_logistics_companies }
+		}
+		force_add_civic = civic_logistics_companies
+	}
+
+	option = {
+		name = ark_civic.1.c	# 沿用ark_civic.1的本地化
+		trigger = {
+			NOT = { has_civic = civic_financing_laboratories }
+		}
+		force_add_civic = civic_financing_laboratories
+	}
+
+	option = {
+		name = ark_civic.1.d	# 沿用ark_civic.1的本地化
+		trigger = {
+			NOT = { has_civic = civic_security_contractors }
+		}
+		force_add_civic = civic_security_contractors
+	}
+
+	option = {
+		name = ark_civic.1.e	# 沿用ark_civic.1的本地化
+		trigger = {
+			NOT = { has_civic = civic_industry_manufacturers }
+		}
+		force_add_civic = civic_industry_manufacturers
+	}
+
+	option = {
+		name = ark_civic.1.f	# 沿用ark_civic.1的本地化
+		trigger = {
+			NOT = { has_civic = civic_circulation_business }
+		}
+		force_add_civic = civic_circulation_business
+	}
+}
+
+## 医药企业 ##
+# 成立卫生部
+country_event = {
+	id = ark_civic.2
+	title = "ark_civic.2.name"
+	desc = "ark_civic.2.desc"
+	picture = GFX_evt_metropolis
+	location = ROOT
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_civic = civic_pharmaceutical_enterprises
+	}
+	
+	immediate = {
+		set_country_flag = ark_hospital123
+	}
+	
+	option = {
+		name = ark_civic.2.a
+		custom_tooltip = ark_civic.2_tooltip
+	}
+}
+
+# 创建国家用于存放领袖
+event = {
+	id = ark_civic.20
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		create_country = {
+			type = ark_institution
+			name = "medical_institution"
+			auto_delete = no
+			flag = {
+				icon= {
+					category = "hypergryph"
+					file = "flag_rhodes_island.dds"
+				}
+				background= {
+					category = "backgrounds"
+					file = "rounded_middle.dds"
+				}
+				colors={
+					"black"
+					"black"
+					"null"
+					"null"
+				}
+			}
+			effect = {
+				save_global_event_target_as = pharmaceutical_country
+			}
+		}
+	}
+}
+
+# 触发医疗会诊
+country_event = {
+	id = ark_civic.21
+	hide_window = yes
+
+	trigger = {
+	 	has_civic = civic_pharmaceutical_enterprises
+	 	any_owned_leader = {
+			OR = {
+				has_trait = leader_trait_substance_abuser	# 药物依赖
+				has_trait = leader_trait_traumatized		# 受挫
+				has_trait = leader_trait_maimed		# 伤残
+			}
+		}
+		NOR = {
+			has_country_flag = medical_consultation_1
+			has_country_flag = medical_consultation_2
+			has_country_flag = medical_consultation_3
+		}
+	}
+
+	mean_time_to_happen = { days = 30 }
+
+	immediate = {
+		if = {
+			limit = {
+				any_owned_leader = {
+					has_trait = leader_trait_substance_abuser
+				}
+			}
+			set_country_flag = medical_consultation_1
+		}
+		if = {
+			limit = {
+				any_owned_leader = {
+					has_trait = leader_trait_traumatized
+				}
+			}
+			set_country_flag = medical_consultation_2
+		}
+		if = {
+			limit = {
+				any_owned_leader = {
+					has_trait = leader_trait_maimed
+				}
+			}
+			set_country_flag = medical_consultation_3
+		}
+		random_owned_leader = {
+			limit = { has_trait = leader_trait_substance_abuser }
+			save_global_event_target_as = treatment_1
+		}
+		random_owned_leader = {
+			limit = { has_trait = leader_trait_traumatized }
+			save_global_event_target_as = treatment_2
+		}
+		random_owned_leader = {
+			limit = { has_trait = leader_trait_maimed }
+			save_global_event_target_as = treatment_3
+		}
+		country_event = { id = ark_civic.22 }
+		log = "[treatment_3.GetName] [treatment_1.GetName] [treatment_3.GetName]"
+	}
+}
+
+# 医疗会诊
+country_event = {
+	id = ark_civic.22
+	title = ark_civic.22.name
+	desc = {
+		trigger = {
+			has_country_flag = medical_consultation_1
+		}
+		text = ark_civic.22.desc
+	}
+	desc = {
+		trigger = {
+			has_country_flag = medical_consultation_2
+		}
+		text = ark_civic.22.desc2
+	}
+	desc = {
+		trigger = {
+			has_country_flag = medical_consultation_3
+		}
+		text = ark_civic.22.desc3
+	}
+	picture = GFX_evt_infirmary
+	location = ROOT
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+		name = ark_civic.22.a	# 我们的领袖将立刻前往医院报到
+		hidden_effect = {
+			if = {
+				limit = {
+					exists = event_target:treatment_1
+				}
+				event_target:treatment_1 = {
+					set_owner = event_target:pharmaceutical_country
+				}
+				country_event = { id = ark_civic.23 days = 360 }
+			}
+			if = {
+				limit = {
+					exists = event_target:treatment_2
+				}
+				event_target:treatment_2 = {
+					set_owner = event_target:pharmaceutical_country
+				}
+				country_event = { id = ark_civic.23 days = 360 }
+			}
+			if = {
+				limit = {
+					exists = event_target:treatment_3
+				}
+				event_target:treatment_3 = {
+					set_owner = event_target:pharmaceutical_country
+				}
+				country_event = { id = ark_civic.23 days = 1080 }
+			}
+		}
+	}
+
+	option = {
+		name = ark_civic.22.b	# （暂不）
+	}
+}
+
+# 领袖康复
+country_event = {
+	id = ark_civic.23
+	title = ark_civic.23.name
+	desc = "ark_civic.23.desc"
+	picture = GFX_evt_infirmary
+	location = ROOT
+
+	is_triggered_only = yes
+
+	immediate = {
+		remove_country_flag = medical_consultation_1
+		remove_country_flag = medical_consultation_2
+		remove_country_flag = medical_consultation_3
+	}
+
+	option = {
+		name = ark_civic.23.a	# 欢迎回到工作岗位
+		hidden_effect = {
+			if = {
+				limit = { 
+					exists = event_target:treatment_1
+				}
+				event_target:treatment_1 = {
+					set_owner = root
+					remove_trait = leader_trait_substance_abuser	# 药物依赖
+				}
+				clear_global_event_target = treatment_1
+			}
+			if = {
+				limit = { 
+					exists = event_target:treatment_2
+				}
+				event_target:treatement_2 = {
+					set_owner = root
+					remove_trait = leader_trait_traumatized	# 受挫
+				}
+				clear_global_event_target = treatment_2
+			}
+			if = {
+				limit = { 
+					exists = event_target:treatment_3
+				}
+				event_target:treatement_3 = {
+					set_owner = root
+					remove_trait = leader_trait_maimed	# 伤残
+				}
+				clear_global_event_target = treatment_3
+			}
+		}
+	}
+}
+
+# 不相容疫苗解析
+country_event = {
+	id = ark_civic.3
+	title = ark_civic.3.name
+	desc = ark_civic.3.desc
+	picture = GFX_evt_genetic_modification
+	location = ROOT
+
+	trigger = {
+		has_civic = civic_pharmaceutical_enterprises
+		has_modifier = machine_empire_mutations
+		NOT = { has_country_flag = ark_civic_3_flag }
+	}
+
+	mean_time_to_happen = { months = 1 }
+
+	immediate = {
+		set_country_flag = ark_civic_3_flag
+	}
+
+	option = {
+		name = ark_civic.3.a	# 尝试重制疫苗
+		capital_scope = {
+			enable_special_project = {
+				name = "MUTATIONS_PROJECT"
+				location = this
+				owner = root
+			}
+		}
+	}
+}
+
+# 良性的疫苗
+country_event = {
+	id = ark_civic.31
+	title = ark_civic.31.name
+	desc = ark_civic.31.desc
+	picture = GFX_evt_genetic_modification
+	location = ROOT
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+		name = ark_civic.31.a
+		remove_modifier = machine_empire_mutations
+		add_modifier = { 
+			modifier = machine_empire_health_boost
+			days = -1
+		}
+	}
+}
+
+# 骑士精神
+country_event = {
+	id = ark_civic.4
+	hide_window = yes
+	location = ROOT
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_civic = civic_chivalry
+		NOT = { has_country_flag = ark_civic_4_flag }
+	}
+
+	immediate = {
+		every_pool_leader = {
+			if = {
+				limit = {
+					leader_class = general
+					NOR = {
+						has_trait = leader_trait_general_chivalry
+						species = {
+							is_species_class = ROBOT
+						}
+					}
+				}
+				add_trait = leader_trait_general_chivalry
+			}
+			if = {
+				limit = {
+					leader_class = admiral
+					NOR = {
+						has_trait = leader_trait_admiral_chivalry
+						species = {
+							is_species_class = ROBOT
+						}
+					}
+				}
+				add_trait = leader_trait_admiral_chivalry
+			}
+		}
+		set_country_flag = ark_civic_4_flag
+	}
+}

@@ -1,0 +1,248 @@
+namespace = ark_originiums
+
+# 源石研究简报 1
+country_event = {
+	id = ark_originiums.1
+	title = "ark_originiums.1.name"
+	desc = "ark_originiums.1.desc"
+	picture = GFX_evt_originite_prime
+	location = ROOT
+
+	trigger = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_4
+		}
+		any_owned_planet = { has_deposit = d_originiums_mine }
+		has_country_flag = originiums_sufferer_start_flag
+		NOT = { has_country_flag = originiums_bulletin_1_flag }
+	}
+
+	mean_time_to_happen = { months = 12 }
+	
+	immediate = {
+		set_country_flag = originiums_bulletin_1_flag
+	}
+	
+	option = {
+		name = ark_originiums.1.a	# 归入档案
+		custom_tooltip = ark_originiums.uid_tooltip
+		add_monthly_resource_mult = {
+			resource = engineering_research
+			value = @tier1researchreward
+			min = @tier1researchmin
+			max = @tier1researchmax
+		}
+	}
+	option = {
+		name = ark_originiums_no_show	# 不再显示此类报告
+		custom_tooltip = ark_originiums_no_show_tooltip
+		set_country_flag = originiums_bulletin_no_show
+		add_monthly_resource_mult = {
+			resource = engineering_research
+			value = @tier1researchreward
+			min = @tier1researchmin
+			max = @tier1researchmax
+		}
+	}
+}
+
+# 源石研究简报 2
+country_event = {
+	id = ark_originiums.2
+	title = "ark_originiums.2.name"
+	desc = "ark_originiums.2.desc"
+	picture = GFX_evt_top
+	location = ROOT
+
+	trigger = {
+		has_country_flag = originiums_bulletin_1_flag
+		NOT = {
+			has_country_flag = originiums_bulletin_no_show
+			has_country_flag = originiums_bulletin_2_flag
+		}
+	}
+
+	mean_time_to_happen = { months = 24 }
+	
+	immediate = {
+		set_country_flag = originiums_bulletin_2_flag
+	}
+	
+	option = {
+		name = ark_originiums.2.a	# 归入档案
+		custom_tooltip = ark_originiums.uid_tooltip
+		add_monthly_resource_mult = {
+			resource = engineering_research
+			value = @tier1researchreward
+			min = @tier1researchmin
+			max = @tier1researchmax
+		}
+	}
+	option = {
+		name = ark_originiums_no_show	# 不再显示此类报告
+		custom_tooltip = ark_originiums_no_show_tooltip
+		set_country_flag = originiums_bulletin_no_show
+		add_monthly_resource_mult = {
+			resource = engineering_research
+			value = @tier1researchreward
+			min = @tier1researchmin
+			max = @tier1researchmax
+		}
+	}
+}
+
+# 源石研究简报 2（隐藏事件）
+country_event = {
+	id = ark_originiums.20
+	hide_window = yes
+	location = ROOT
+
+	trigger = {
+		has_country_flag = originiums_bulletin_1_flag
+		has_country_flag = originiums_bulletin_no_show
+		NOT = { has_country_flag = originiums_bulletin_2_flag }
+	}
+
+	mean_time_to_happen = { months = 24 }
+	
+	immediate = {
+		set_country_flag = originiums_bulletin_2_flag
+		add_monthly_resource_mult = {
+			resource = engineering_research
+			value = @tier1researchreward
+			min = @tier1researchmin
+			max = @tier1researchmax
+		}
+	}
+}
+
+# 源石研究简报 3
+country_event = {
+	id = ark_originiums.3
+	title = "ark_originiums.3.name"
+	desc = "ark_originiums.3.desc"
+	picture = GFX_evt_catastrophes_originiums
+	location = ROOT
+
+	trigger = {
+		has_country_flag = originiums_bulletin_2_flag
+		NOT = {
+			has_country_flag = originiums_bulletin_no_show
+			has_country_flag = originiums_bulletin_3_flag
+		}
+	}
+
+	mean_time_to_happen = { months = 24 }
+	
+	immediate = {
+		set_country_flag = originiums_bulletin_3_flag
+	}
+	
+	option = {
+		name = ark_originiums.3.a	# 归入档案
+		custom_tooltip = ark_originiums.uid_tooltip
+		add_monthly_resource_mult = {
+			resource = engineering_research
+			value = @tier1researchreward
+			min = @tier1researchmin
+			max = @tier1researchmax
+		}
+	}
+	option = {
+		name = ark_originiums_no_show	# 不再显示此类报告
+		custom_tooltip = ark_originiums_no_show_tooltip
+		set_country_flag = originiums_bulletin_no_show
+		add_monthly_resource_mult = {
+			resource = engineering_research
+			value = @tier1researchreward
+			min = @tier1researchmin
+			max = @tier1researchmax
+		}
+	}
+}
+
+# 源石研究简报 3（隐藏事件）
+country_event = {
+	id = ark_originiums.30
+	hide_window = yes
+	location = ROOT
+
+	trigger = {
+		has_country_flag = originiums_bulletin_2_flag
+		has_country_flag = originiums_bulletin_no_show
+		NOT = { has_country_flag = originiums_bulletin_3_flag }
+	}
+
+	mean_time_to_happen = { months = 24 }
+	
+	immediate = {
+		set_country_flag = originiums_bulletin_3_flag
+		add_monthly_resource_mult = {
+			resource = engineering_research
+			value = @tier1researchreward
+			min = @tier1researchmin
+			max = @tier1researchmax
+		}
+	}
+}
+
+# 源石研究简报 4
+country_event = {
+	id = ark_originiums.4
+	title = "ark_originiums.4.name"
+	desc = "ark_originiums.4.desc"
+	picture = GFX_evt_originite_prime
+	location = ROOT
+
+	trigger = {
+		has_country_flag = originiums_bulletin_3_flag
+		NOT = {
+			has_country_flag = originiums_bulletin_no_show
+			has_country_flag = originiums_bulletin_4_flag
+		}
+	}
+
+	mean_time_to_happen = { months = 24 }
+	
+	immediate = {
+		set_country_flag = originiums_bulletin_4_flag
+	}
+	
+	option = {
+		name = ark_originiums.3.a	# 归入档案
+		custom_tooltip = ark_originiums.uid_tooltip
+		add_monthly_resource_mult = {
+			resource = engineering_research
+			value = @tier1researchreward
+			min = @tier1researchmin
+			max = @tier1researchmax
+		}
+	}
+}
+
+# 源石研究简报 4（隐藏事件）
+country_event = {
+	id = ark_originiums.40
+	hide_window = yes
+	location = ROOT
+
+	trigger = {
+		has_country_flag = originiums_bulletin_3_flag
+		has_country_flag = originiums_bulletin_no_show
+		NOT = { has_country_flag = originiums_bulletin_4_flag }
+	}
+
+	mean_time_to_happen = { months = 24 }
+	
+	immediate = {
+		set_country_flag = originiums_bulletin_4_flag
+		add_monthly_resource_mult = {
+			resource = engineering_research
+			value = @tier1researchreward
+			min = @tier1researchmin
+			max = @tier1researchmax
+		}
+	}
+}

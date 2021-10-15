@@ -1,0 +1,123 @@
+namespace = ark_ascension_perks
+
+# 危机合约
+country_event = {
+	id = ark_ascension_perks.1
+	title = "ark_ascension_perks.1.name"
+	desc = "ark_ascension_perks.1.desc"
+	picture = GFX_evt_rhodes_island
+	location = capital_scope
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ark_ascension_perks.1.a
+		capital_scope = {
+			enable_special_project = {
+				name = "CONTINGENCY_CONTRACT_1_PROJECT"
+				location = this
+				owner = root
+			}
+			enable_special_project = {
+				name = "CONTINGENCY_CONTRACT_2_PROJECT"
+				location = this
+				owner = root
+			}
+			enable_special_project = {
+				name = "CONTINGENCY_CONTRACT_3_PROJECT"
+				location = this
+				owner = root
+			}
+			enable_special_project = {
+				name = "CONTINGENCY_CONTRACT_4_PROJECT"
+				location = this
+				owner = root
+			}
+			enable_special_project = {
+				name = "CONTINGENCY_CONTRACT_5_PROJECT"
+				location = this
+				owner = root
+			}
+		}
+	}
+}
+
+# 危机合约：军备
+country_event = {
+	id = ark_ascension_perks.11
+	title = "ark_ascension_perks.11.name"
+	desc = "ark_ascension_perks.11.desc"
+	picture = GFX_evt_rhodes_island
+	location = ROOT
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ark_ascension_perks.11.a
+		add_modifier = { modifier = "contingency_contract_1" days = -1 }
+	}
+}
+
+# 危机合约：突击
+country_event = {
+	id = ark_ascension_perks.12
+	title = "ark_ascension_perks.12.name"
+	desc = "ark_ascension_perks.12.desc"
+	picture = GFX_evt_rhodes_island
+	location = ROOT
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ark_ascension_perks.12.a
+		add_modifier = { modifier = "contingency_contract_2" days = -1 }
+	}
+}
+
+# 危机合约：备战
+country_event = {
+	id = ark_ascension_perks.13
+	title = "ark_ascension_perks.13.name"
+	desc = "ark_ascension_perks.13.desc"
+	picture = GFX_evt_rhodes_island
+	location = ROOT
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ark_ascension_perks.13.a
+		add_modifier = { modifier = "contingency_contract_3" days = -1 }
+	}
+}
+
+# 危机合约：工巧
+country_event = {
+	id = ark_ascension_perks.14
+	title = "ark_ascension_perks.14.name"
+	desc = "ark_ascension_perks.14.desc"
+	picture = GFX_evt_rhodes_island
+	location = ROOT
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ark_ascension_perks.14.a
+		add_modifier = { modifier = "contingency_contract_4" days = -1 }
+	}
+}
+
+# 危机合约：部署
+country_event = {
+	id = ark_ascension_perks.15
+	title = "ark_ascension_perks.15.name"
+	desc = "ark_ascension_perks.15.desc"
+	picture = GFX_evt_rhodes_island
+	location = ROOT
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ark_ascension_perks.15.a
+		add_modifier = { modifier = "contingency_contract_5" days = -1 }
+	}
+}
