@@ -1,0 +1,132 @@
+#输入	解释				默认值
+#NUM	循环次数			 20
+#MAX	初始感染者最大人数	  10	
+#理论感染人数：NUM/2
+initialize_ark_infected_population = {
+	create_species = {
+		class = Arknight
+		portrait="arknights"
+		name="Terraman"
+		plural="Terramen"
+		adjective="Terraman"
+		name_list="ark_01"
+		traits = {
+			trait = trait_latent_oripathy
+			trait = trait_natural_engineers
+			trait = trait_nomadic
+			trait = trait_quarrelsome
+			trait = trait_deviants
+			trait = trait_infected_persons
+		}
+		
+	}
+	while = {
+		count = $NUM|20$
+		limit = {
+			check_variable = {
+				which = start_infected_population
+				value <= $MAX_POP|10$
+			}
+		}
+		random_list = {
+			10 = {
+				random_owned_pop = {
+					limit = {
+						is_same_species = owner.species
+					}
+					kill_pop = yes
+				}
+				change_variable = {
+					which = start_infected_population
+					value = 1
+				}
+			}
+			10 = {
+
+			}
+		}
+	}
+	while = {
+		count = start_infected_population
+		capital_scope = {
+			create_pop = {
+				species = last_created_species
+				ethos = {
+					ethic = ethic_materialist
+				}
+			}
+			last_created_pop = {
+				set_citizenship_type = {
+					type = citizenship_slavery
+					country = root
+				}
+			}
+		}
+	}
+}
+#输入			解释			备注
+#COUNTRY_NAME 	国家本地化key	<string>必要
+#ICON_FILE		国家图标		<string>必要，默认为hypergryph文件夹，无需添加.dds后缀。
+#FLEET_NAME		舰队本地化key	<string>必要
+#NUM_SHIPS		舰船数量		<int>默认为3
+#COUNTRY_FLAG	添加国家flag	<string>非必要，不输入则不执行
+#FLEET_FLAG		添加舰队flag	<string>非必要，不输入则不执行
+#DISTANCE		选定舰队位置	<int>非必要，不输入则不执行。锚点为首都星系主恒星，极坐标定位中的距离
+#ANGLE			选定舰队位置	<int>非必要，不输入则不执行。锚点为首都星系主恒星，极坐标定位中的角度
+#输出
+#母星系敌对舰队
+initialize_ark_tragedy_birth_fleet = {
+	owner_species = {
+		save_event_target_as = ark_owner_species
+	}
+	create_country = {
+		type = faction
+		name = $COUNTRY_NAME$
+		species = event_target:ark_owner_species
+		name_list = root
+		auto_delete = no
+		flag = {
+			icon = {
+				category = hypergryph
+				file = $ICON_FILE$.dds
+			}
+			background={
+				category = backgrounds
+				file = rounded_middle.dds
+			}
+			colors = {
+				"black"
+				"black"
+				"null"
+				"null"
+			}
+		}
+		effect = {
+			set_graphical_culture = root
+			[[COUNTRY_FLAG] set_country_flag = $COUNTRY_FLAG$ ]
+			establish_communications_no_message = root
+			create_ship_design = {
+				design = "NAME_Dagger"
+			}
+			create_fleet = {
+				name = $FLEET_NAME$
+				effect = {
+					set_owner = prev
+					[[FLEET_FLAG] set_fleet_flag = $FLEET_FLAG$ ]
+					while = {
+						count = $NUM_SHIPS|3$
+						create_ship = {
+							name = random
+							design = last_created_design
+						}
+					}
+					set_location = {
+						target = root.capital_scope.solar_system.star
+						[[DISTANCE] distance = $DISTANCE$ ]
+						[[ANGLE] angle = $ANGLE$ ]
+					}
+				}
+			}
+		}
+	}
+}

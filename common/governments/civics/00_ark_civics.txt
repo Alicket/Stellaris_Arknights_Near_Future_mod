@@ -1,0 +1,247 @@
+# 商业联合
+civic_business_union = {
+	description = "civic_tooltip_business_union_effects"
+	potential = {
+		authority = {
+			OR = {
+				value = auth_city_republic
+				value = auth_city_despotism
+			}
+		}
+	}
+	possible = {
+		NOT = {
+			civics = { value = civic_merchant_guilds }
+		}
+	}
+	random_weight = { base = 0 }
+	modifier = {
+		country_government_civic_points_add = 2
+		country_admin_cap_add = -10
+		empire_size_penalty_mult = 0.5
+	}
+}
+
+# 医药企业
+civic_pharmaceutical_enterprises = {
+	description = "civic_tooltip_pharmaceutical_enterprises_effects"
+	potential = {
+		authority = {
+			OR = {
+				value = auth_city_republic
+				value = auth_city_despotism
+			}
+		}
+	}
+	possible = { civics = { value = civic_business_union } }
+	random_weight = { base = 0 }
+	modifier = {
+		pop_growth_speed = 0.1
+		leader_age = 10
+		planet_amenities_add = 5
+	}
+}
+
+# 物流公司
+civic_logistics_companies = {
+	description = "civic_tooltip_logistics_companies_effects"
+	potential = {
+		authority = {
+			OR = {
+				value = auth_city_republic
+				value = auth_city_despotism
+			}
+		}
+	}
+	possible = { civics = { value = civic_business_union } }
+	random_weight = { base = 0 }
+	modifier = {
+		empire_size_systems_mult = -0.1
+		empire_size_colonies_mult = -0.1
+	}
+}
+
+# 融资实验室
+civic_financing_laboratories = {
+	description = "civic_tooltip_financing_laboratories_effects"
+	potential = {
+		authority = {
+			OR = {
+				value = auth_city_republic
+				value = auth_city_despotism
+			}
+		}
+	}
+	possible = { civics = { value = civic_business_union } }
+	random_weight = { base = 0 }
+	modifier = {
+		planet_jobs_engineering_research_produces_mult = 0.1
+		planet_jobs_physics_research_produces_mult = 0.1
+		planet_jobs_society_research_produces_mult = 0.1
+	}
+}
+
+# 安全承包商
+civic_security_contractors = {
+	description = "civic_tooltip_security_contractors_effects"
+	potential = {
+		authority = {
+			OR = {
+				value = auth_city_republic
+				value = auth_city_despotism
+			}
+		}
+	}
+	possible = { civics = { value = civic_business_union } }
+	random_weight = { base = 0 }
+	modifier = {
+		army_starting_experience_add = 100
+		planet_army_build_speed_mult = 0.2
+		armies_upkeep_mult = -0.2
+	}
+}
+
+# 工业制造商
+civic_industry_manufacturers = {
+	description = "civic_tooltip_industry_manufacturers_effects"
+	potential = {
+		authority = {
+			OR = {
+				value = auth_city_republic
+				value = auth_city_despotism
+			}
+		}
+	}
+	possible = { civics = { value = civic_business_union } }
+	random_weight = { base = 0 }
+	modifier = {
+		planet_jobs_alloys_produces_mult = 0.1
+	}
+}
+
+# 流通商业
+civic_circulation_business = {
+	description = "civic_tooltip_circulation_business_effects"
+	potential = {
+		authority = {
+			OR = {
+				value = auth_city_republic
+				value = auth_city_despotism
+			}
+		}
+	}
+	possible = { civics = { value = civic_business_union } }
+	random_weight = { base = 0 }
+	modifier = {
+		planet_jobs_consumer_goods_produces_mult = 0.1
+	}
+}
+
+# 安全部门
+civic_security_services = {
+	description = "civic_tooltip_security_services_effects"
+	potential = {
+		authority = {
+			OR = {
+				value = auth_city_republic
+				value = auth_city_despotism
+			}
+		}
+	}
+	possible = {
+		NOT = {
+			civics = { value = civic_criminal_heritage }
+		}
+	}
+	random_weight = { base = 0 }
+	modifier = {
+		planet_stability_add = 5
+		planet_crime_add = -5
+	}
+}
+
+# 神圣公证所
+civic_holy_notarial_hall = {
+	description = "civic_tooltip_holy_notarial_hall_effects"
+	potential = {
+		authority = {
+			OR = {
+				value = auth_city_republic
+				value = auth_city_despotism
+			}
+		}
+	}
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_spiritualist
+				value = ethic_spiritualist
+				value = ethic_fanatic_spiritualist
+			}
+		}
+	}
+	random_weight = { base = 0 }
+	modifier = {
+		job_executor_per_pop = 0.05
+	}
+}
+
+# 骑士精神
+civic_chivalry = {
+	description = "civic_tooltip_chivalry_effects"
+	potential = {
+		authority = {
+			OR = {
+				value = auth_city_republic
+				value = auth_city_despotism
+			}
+		}
+	}
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_militarist
+				value = ethic_militarist
+				value = ethic_fanatic_militarist
+			}
+		}
+		NOT = {
+			civics = { value = civic_criminal_heritage }
+		}
+	}
+	random_weight = { base = 0 }
+	modifier = {
+		country_unity_produces_mult = 0.05
+		ship_fire_rate_mult = 0.05
+		army_damage_mult = 0.1
+	}
+}
+
+# 课征重税
+civic_heavy_taxation = {
+	description = "civic_tooltip_heavy_taxation_effects"
+	potential = {
+		authority = {
+			OR = {
+				value = auth_city_republic
+				value = auth_city_despotism
+			}
+		}
+	}
+	possible = {
+		ethics = {
+			NOR = {
+				text = civic_tooltip_not_egalitarian
+				value = ethic_egalitarian
+				value = ethic_fanatic_egalitarian
+			}
+		}
+	}
+	random_weight = { base = 0 }
+	modifier = {
+		planet_jobs_produces_mult = 0.1
+		pop_happiness = -0.1
+		planet_jobs_slave_produces_mult = 0.15
+		pop_cat_slave_happiness = -0.15
+	}
+}

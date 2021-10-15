@@ -1,0 +1,28 @@
+# Mon3tr
+leader_trait_mon3tr = {
+	cost = 0
+	initial = no
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_mon3tr.dds"
+	modifier = {
+		all_technology_research_speed = 0.15
+	}
+	self_modifier = {
+		leader_age = 250
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	randomized = no
+}
+
+# 在文明尽头相遇
+trait_scientist_meet_end = {
+	cost = 0
+	initial = no
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_trait_meet_end.dds"
+	immortal_leaders = yes
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	randomized = no
+}

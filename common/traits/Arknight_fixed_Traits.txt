@@ -1,0 +1,62 @@
+trait_latent_oripathy = {	# 矿石病潜势
+	cost = 2
+	allowed_archetypes = { BIOLOGICAL }
+
+	modification = no
+	randomized = no
+	advanced_trait = no
+	icon = "gfx/interface/icons/traits/trait_latent_oripathy.dds"
+
+	leader_age_min = 16
+	leader_age_max = 30
+	
+	opposites = { "trait_Originium_Arts" }
+	modifier = {
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+trait_Originium_Arts = {	# 源石技艺
+	cost = -1
+	allowed_archetypes = { BIOLOGICAL }
+
+	initial = no
+	modification = no
+	randomized = no
+	advanced_trait = yes
+	icon = "gfx/interface/icons/traits/trait_Originium_Arts.dds"
+
+	leader_age_min = 16
+	leader_age_max = 30
+	
+	opposites = { "trait_latent_oripathy" }
+	modifier = {
+		army_damage_mult = 0.25
+		planet_jobs_produces_mult = 0.25
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+trait_acute_oripathy = {	# 急性矿石病
+	cost = -2
+	allowed_archetypes = { BIOLOGICAL }
+
+	initial = no
+	randomized = no
+	advanced_trait = no
+	icon = "gfx/interface/icons/traits/trait_acute_oripathy.dds"
+	
+	opposites = {
+	}
+	modifier = {
+		planet_jobs_produces_mult = -0.75
+		leader_age = -75
+	}
+	ai_weight = {
+		weight = 0
+	}
+}

@@ -1,0 +1,279 @@
+## Possible Deposit Variables ##
+# resources, resource and amount
+# potential trigger (planet scope)
+# planet_modifier - applied to planet only when deposit blocker has been cleared
+# constant_modifier - applied to planet always
+# station = station class in orbit to gather
+
+@blocker_high = 10
+@blocker_low = 5
+
+# 感染封锁区
+d_infection_blockade = {
+	icon = d_originiums_place
+	time = 180
+
+	is_for_colonizeable = yes
+	category = deposit_cat_blockers	
+
+	potential = { always = no }
+
+	planet_modifier = {
+		planet_max_districts_add = -1
+	}
+
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 300
+		}
+	}
+	on_cleared = {
+		owner = {
+			add_resource = {
+				minerals = 500
+				originiums = 100
+			}
+		}
+	}
+}
+
+# 源石开采区
+d_originiums_mine = {
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	icon = d_originiums_mine
+
+	resources = {
+		produces = {
+			originiums = 2
+		}
+	}
+
+	planet_modifier = {
+		building_originiums_mining_plant_max = 2
+	}
+	
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# 龙门经济特区
+d_lungmen_special_economic_zone = {
+	is_for_colonizeable = yes
+	icon = d_lungmen
+	
+	planet_modifier = { 
+		district_generator_max = 3
+	}
+	
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# 喀兰圣山
+d_holy_mountain = {
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	
+	icon = d_holy_mountain
+
+	resources = {
+		category = planet_deposits
+		produces = {
+			unity = 5
+		}
+	}
+	
+	planet_modifier = {
+		pop_ethic_spiritualist_attraction_mult = 0.15
+	}
+	
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# 萨尔贡雨林
+d_sargon_rainforest = {
+	is_for_colonizeable = yes
+	icon = d_sargon_rainforest
+	
+	planet_modifier = {
+		district_farming_max = 2
+	}
+	
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# 焚风热土
+d_foehn_hot_earth = {
+	is_for_colonizeable = yes
+	icon = d_sargon_desert
+
+	category = deposit_cat_energy
+
+	planet_modifier = {
+		district_generator_max = 2
+	}
+	
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# 乌萨斯冻原
+d_ursus_tundra = {
+	icon = d_ursus_tundra
+	time = 120
+	
+	is_for_colonizeable = yes
+	category = deposit_cat_blockers	
+	
+	potential = { always = no }
+	
+	planet_modifier = { 
+		planet_max_districts_add = -2
+	}
+	
+	use_weights_for_blocker_swap_types = no
+
+	blocker_swap_types = {
+		d_ursus_development
+	}
+	
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 300
+		}
+	}
+}
+
+# 乌萨斯新开发区
+d_ursus_development = {
+	is_for_colonizeable = yes
+	icon = d_ursus_development
+	
+	planet_modifier = {
+		district_mining_max = 2
+	}
+	
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# 雷姆必拓工业带
+d_rimbilliton_industrial_belt = {
+	is_for_colonizeable = yes
+	icon = d_rimbilliton_industrial_belt
+	
+	planet_modifier = {
+		district_mining_max = 3
+	}
+	
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# 寂静深海
+d_silent_deep_sea = {
+	icon = d_silent_deep_sea
+
+	is_for_colonizeable = yes
+	category = deposit_cat_blockers
+	
+	potential = { always = no }
+	can_be_cleared = { always = no }
+
+	planet_modifier = {
+		district_farming_max = -1
+	}
+}
+
+# 分裂各国控制区
+d_former_countries_controlled = {
+	icon = d_former_countries_controlled
+	time = 1800
+
+	is_for_colonizeable = yes
+	category = deposit_cat_blockers
+
+	potential = { always = no }
+
+	planet_modifier = {
+		planet_max_districts_add = -3
+	}
+
+	on_cleared = {
+		if = {
+			limit = {
+				any_owned_pop = {
+					is_gestalt = no
+					is_robot_pop = no
+				}
+			}
+			owner = { country_event = { id = ark_rebellion.4 } }
+			random_owned_pop = {
+				limit = {
+					is_gestalt = no
+					is_robot_pop = no
+				}
+				root = {
+					create_pop = {
+						species = prev
+					}
+					create_pop = {
+						species = prev
+					}
+					create_pop = {
+						species = prev
+					}
+					create_pop = {
+						species = prev
+					}
+					create_pop = {
+						species = prev
+					}
+				}
+			}
+		}
+		else = {
+			owner = { country_event = { id = ark_rebellion.4 } }
+			random_owned_pop = {
+				root = {
+					create_pop = {
+						species = prev
+					}
+					create_pop = {
+						species = prev
+					}
+					create_pop = {
+						species = prev
+					}
+					create_pop = {
+						species = prev
+					}
+					create_pop = {
+						species = prev
+					}
+				}
+			}
+		}
+	}
+
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 1000
+			influence = 50
+			unity = 500
+		}
+	}
+}

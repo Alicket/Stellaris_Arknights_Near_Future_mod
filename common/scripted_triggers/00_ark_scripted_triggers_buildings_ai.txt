@@ -1,0 +1,35 @@
+buildings_no_originiums = {
+	exists = owner
+	owner = {
+		is_ai = yes
+		has_monthly_income = {
+			resource = originiums
+			value < 0
+		}
+		has_resource = { type = originiums amount = 0 }
+	}
+}	# 用于拆除需要源石但缺少源石的建筑物
+
+buildings_no_d32_steels = {
+	exists = owner
+	owner = {
+		is_ai = yes
+		has_monthly_income = {
+			resource = d32_steels
+			value < 0
+		}
+		has_resource = { type = d32_steels amount = 0 }
+	}
+}	# 用于拆除需要D32钢但缺少D32钢的建筑物
+
+buildings_no_multipole_nanosheets = {
+	exists = owner
+	owner = {
+		is_ai = yes
+		has_monthly_income = {
+			resource = multipole_nanosheets
+			value < 0
+		}
+		has_resource = { type = multipole_nanosheets amount = 0 }
+	}
+}	# 用于拆除需要多级纳米片但缺少多级纳米片的建筑物

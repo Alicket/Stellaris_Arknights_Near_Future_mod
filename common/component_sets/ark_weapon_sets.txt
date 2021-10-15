@@ -1,0 +1,86 @@
+# 此处设置的图标是组件编辑器列表中显示的图标
+
+component_set = {		# 技艺镭射炮
+	key = "ARK_LASER_1"
+	
+	icon = "GFX_ark_ship_part_laser_1"
+	icon_frame = 1	
+}
+
+component_set = {		# 聚能技艺镭射炮
+	key = "ARK_LASER_2"
+	
+	icon = "GFX_ark_ship_part_laser_2"
+	icon_frame = 1	
+}
+
+component_set = {		# 法术加农炮
+	key = "ARK_POLYMER"
+	
+	icon = "GFX_ark_ship_part_arts_polymer"
+	icon_frame = 1	
+}
+
+component_set = {		# 明色裂解炮
+	key = "ARK_DISRUPTOR_1_1"
+	
+	icon = "GFX_ark_ship_part_disruptor1_1"
+	icon_frame = 1	
+}
+
+component_set = {		# 晦色裂解炮
+	key = "ARK_DISRUPTOR_2_1"
+	
+	icon = "GFX_ark_ship_part_disruptor2_1"
+	icon_frame = 1	
+}
+
+component_set = {		# 法术近防炮
+	key = "ARK_POINT_DEFENCE"
+	
+	icon = "GFX_ark_ship_part_point_defence"
+	icon_frame = 1	
+}
+
+component_set = {		# 量子发射器
+	key = "ARK_ENERGY_TORPEDO_1"
+	
+	icon = "GFX_ark_ship_part_energy_torpedo_1"
+	icon_frame = 1	
+}
+
+component_set = {		# 改良型量子发射器
+	key = "ARK_ENERGY_TORPEDO_2"
+	
+	icon = "GFX_ark_ship_part_energy_torpedo_2"
+	icon_frame = 1	
+}
+
+
+component_set = {		# 量子二踢脚
+	key = "ARK_MISSILE_1"
+	
+	icon = "GFX_ark_ship_part_missile_1"
+	icon_frame = 1	
+}
+
+component_set = {		# 改良型量子二踢脚
+	key = "ARK_MISSILE_2"
+	
+	icon = "GFX_ark_ship_part_missile_2"
+	icon_frame = 1	
+}
+
+component_set = {		# 源能重炮
+	key = "ARK_MASS_ACCELERATOR_1"
+	
+	icon = "GFX_ark_ship_part_mass_accelerator_1"
+	icon_frame = 1	
+}
+
+component_set = {		# 源能宏炮
+	key = "ARK_MASS_ACCELERATOR_2"
+	
+	icon = "GFX_ark_ship_part_mass_accelerator_2"
+	icon_frame = 1	
+}

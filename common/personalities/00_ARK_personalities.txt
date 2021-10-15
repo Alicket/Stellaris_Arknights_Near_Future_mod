@@ -1,0 +1,98 @@
+# aggressiveness		# 侵略性:宣战的可能
+# trade_willingness	# 交易意愿:为1.0时，将接受对双方都同样有利的交易
+# bravery		# 勇气:选择实力相似的战争目标的机会而非弱者
+# combat_bravery		# 战斗勇气:很少在战斗中撤退
+# military_spending	# 军费开支:影响海军和军队的预算
+# colony_spending	# 殖民地开支:影响新殖民地的预算
+# threat_modifier		# 威胁修正:当他国被征服时，该国产生的威胁度
+# threat_others_modifier	# 威胁他国修正:当该国被征服时，他国产生的威胁度
+# friction_modifier		# 摩擦修正:影响边界摩擦系数
+# claims_modifier		# 宣称修正:影响宣称的意见惩罚
+
+# armor_ratio		# 装甲系数
+# shields_ratio		# 护盾系数
+# hull_ratio		# 船体系数
+
+# federation_acceptance	# 联邦接受度
+# nap_acceptance		# 互不侵犯接受度
+# commercial_pact_acceptance	# 商业协议接受度
+# research_agreement_acceptance	# 研究协议接受度
+# migration_pact_acceptance	# 移民协议接受度
+# defensive_pact_acceptance	# 共同防御接受度
+
+# advanced_start_chance	# 外交的先发制人机会
+
+# weapon_preferences	# 武器偏好
+
+### behaviour ###
+# conqueror	# 征服者:会征服他国行星吗？
+# subjugator	# 亡国者:会封死他国吗？
+# liberator	# 解放者:会解放被征服的国家吗？
+# opportunist	# 机会主义者:可能攻击已经卷入战争的国家吗？
+# uplifter		# 提升者:会提升并启发其他物种吗？
+# infiltrator	# 渗透者:会渗透原始世界吗？
+# dominator	# 支配者:会入侵原始世界吗？
+# slaver		# 奴隶主:会奴隶人口吗？
+# purger		# 清洗者:会清除外星人吗？
+# displacer	# 驱逐者:会驱逐人口吗？
+# robot_exploiter	# 机器人剥削者:会用机器人做体力劳动吗？
+# robot_liberator	# 机器人解放者:会给机器人权利吗？
+# propagator	# 传播者:会在被围困后变得咄咄逼人吗？
+# multispecies	# 多种族:会给外星人权利吗？
+# crisis_fighter	# 危机斗士
+
+medical_council = {
+	aggressiveness = 0.5		# 侵略性:和平贸易者
+	trade_willingness = 1.0		# 交易意愿:和平贸易者
+	bravery = 0.5			# 勇气:和平贸易者
+	combat_bravery = 1.0		# 战斗勇气:和平贸易者
+	military_spending = 1.1		# 军费开支:霸权帝国主义者
+	colony_spending = 1.1		# 殖民地开支:和平贸易者
+	threat_modifier = 1.3		# 威胁修正:和平贸易者
+	threat_others_modifier = 1.0	# 威胁他国修正:和平贸易者
+	friction_modifier = 0.25		# 摩擦修正:和平贸易者
+	claims_modifier = 1.0		# 宣称修正:和平贸易者
+
+	armor_ratio = 0.3		# 装甲系数:医院骑士
+	shields_ratio = 0.3		# 护盾系数:医院骑士
+	hull_ratio = 0.4		# 船体系数:医院骑士
+
+	federation_acceptance = 0			# 联邦接受度:博学探险家
+	nap_acceptance = 20			# 互不侵犯接受度:和平贸易者
+	commercial_pact_acceptance = 25		# 商业协议接受度:和平贸易者
+	research_agreement_acceptance = 25	# 研究协议接受度:和平贸易者
+	migration_pact_acceptance = 0		# 移民协议接受度:博学探险家
+	defensive_pact_acceptance = 5		# 共同防御接受度:博学探险家
+
+	advanced_start_chance = 50	# 外交的先发制人机会:博学探险家
+
+	weapon_preferences = weapon_type_energy	# 武器偏好:博学探险家
+
+
+	behaviour = {
+		conqueror = yes		# 征服者:霸权帝国主义者
+		subjugator = yes		# 亡国者:霸权帝国主义者
+		liberator = no		# 解放者:霸权帝国主义者
+		opportunist = yes		# 机会主义者:霸权帝国主义者
+		uplifter = yes		# 提升者:博学探险家
+		infiltrator = no		# 渗透者:医院骑士
+		dominator = no		# 支配者:医院骑士
+		slaver = no		# 奴隶主:博学探险家
+		purger = no		# 清洗者:博学探险家
+		displacer = no		# 驱逐者:博学探险家
+		robot_exploiter = yes	# 机器人剥削者:医院骑士
+		robot_liberator = yes	# 机器人解放者:医院骑士
+		propagator = no		# 传播者:博学探险家
+		multispecies = yes		# 多种族:博学探险家
+		crisis_fighter = yes		# 危机斗士:医院骑士
+	}
+
+	allow = {
+		is_country_type = default
+		has_civic = civic_pharmaceutical_enterprises
+	}
+
+	weight_modifier = {
+		weight = 10000
+	}
+}

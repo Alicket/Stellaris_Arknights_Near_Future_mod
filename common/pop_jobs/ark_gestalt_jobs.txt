@@ -1,0 +1,110 @@
+# 源石采矿子个体
+originiums_mining_drone = {	
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_originiums_mining_plant
+	
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible = {
+		drone_job_check_trigger = yes
+	}
+
+	resources = {
+		category = planet_jobs
+		produces = {
+			originiums = 2
+		}
+		upkeep = {
+			energy = 1
+		}
+	}	
+	
+	weight = {
+		weight = @complex_drone_job_weight
+		modifier = {
+			factor = 1.1
+			exists = owner
+			years_passed < 1
+			owner = { has_valid_civic = civic_machine_assimilator }
+			has_trait = trait_cybernetic
+		}		
+	}
+}
+
+# D32钢冶炼子个体
+d32steels_smelting_drone = {	
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_d32steels_smelter
+	
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible = {
+		drone_job_check_trigger = yes
+	}
+
+	resources = {
+		category = planet_metallurgists
+		produces = {
+			d32_steels = 2
+		}
+		upkeep = {
+			minerals = 5
+		}
+	}	
+	
+	weight = {
+		weight = @complex_drone_job_weight
+		modifier = {
+			factor = 0
+			jobs_work_minerals = yes
+		}		
+	}
+}
+
+# 纳米片制造子个体
+nanosheets_manufacture_drone = {	
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_nanosheets_production_line
+	
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible = {
+		drone_job_check_trigger = yes
+	}
+
+	resources = {
+		category = planet_metallurgists
+		produces = {
+			multipole_nanosheets = 2
+		}
+		upkeep = {
+			minerals = 5
+		}
+	}	
+	
+	weight = {
+		weight = @complex_drone_job_weight
+		modifier = {
+			factor = 0
+			jobs_work_minerals = yes
+		}		
+	}
+}

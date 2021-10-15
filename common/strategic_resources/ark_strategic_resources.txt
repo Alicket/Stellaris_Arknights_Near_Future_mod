@@ -1,0 +1,42 @@
+###########################
+### ARK Advanced Resources  ###
+###########################
+
+# 源石
+originiums = {
+	tradable = no
+	
+	prerequisites = { "tech_originiums_mining" }
+	
+	deficit_modifier = originiums_deficit
+	
+	ai_weight = {
+		weight = 100
+	}
+}
+
+# D32钢
+d32_steels = {
+	tradable = no
+	
+	prerequisites = { "tech_originiums_mining" }
+	
+	deficit_modifier = d32_steels_deficit
+	
+	ai_weight = {
+		weight = 100
+	}
+}
+
+# 多极纳米片
+multipole_nanosheets = {
+	tradable = no
+	
+	prerequisites = { "tech_originiums_mining" }
+	
+	deficit_modifier = multipole_nanosheets_deficit
+	
+	ai_weight = {
+		weight = 100
+	}
+}

@@ -1,0 +1,1874 @@
+# +号的护盾和装甲实质上是下一等级，但沿用上一等级的花费
+
+# 先锋陆行舰队
+tech_galaxy_warship_army = {
+  	icon = tech_galaxy_warship_army
+	cost = @tier1cost3
+	area = engineering
+	tier = 1
+	category = { voidcraft }
+	prerequisites = { "tech_assault_armies" "tech_reactor_boosters_2" }
+	weight = @tier1weight3
+	
+	# 解锁先锋陆行舰队
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+
+	ai_weight = {
+		factor = 0
+		modifier = {
+			factor = 100
+			OR = {
+				has_country_flag = arknight_1
+			}
+		}
+	}
+}
+
+# 源石开采
+tech_originiums_mining = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { materials }
+	prerequisites = { "tech_space_construction" }
+	weight = @tier2weight1
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+	
+	weight_modifier = {
+		factor = 2
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_planet = {
+					has_deposit = d_originiums_mine
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 4 #strategic resource
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}	
+}
+
+# 源岩材料
+tech_yuanyan_rawmaterial = {
+	cost = @tier1cost2
+	area = engineering
+	tier = 1
+	category = { industry }
+	prerequisites = { "tech_originiums_mining" }
+	weight = @tier1weight2
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}			
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+	
+	modifier = {
+		planet_jobs_originiums_produces_mult = 0.1
+	}
+}
+
+# 固源岩材料
+tech_guyuanyan_rawmaterial = {
+	cost = @tier1cost3
+	area = engineering
+	tier = 1
+	category = { industry }
+	prerequisites = { "tech_yuanyan_rawmaterial" }
+	weight = @tier1weight3
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+	
+	weight_modifier = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}			
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+	
+	modifier = {
+		planet_jobs_originiums_produces_mult = 0.2
+	}
+}
+
+# 固源岩组材料
+tech_guyuanyanzu_rawmaterial = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { industry }
+	prerequisites = { "tech_guyuanyan_rawmaterial" }
+	weight = @tier2weight1
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+	
+	weight_modifier = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}			
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+	
+	modifier = {
+		planet_jobs_originiums_produces_mult = 0.3
+	}
+}
+
+# 提纯源岩材料
+tech_tichunyuanyan_rawmaterial = {
+	cost = @tier2cost2
+	area = engineering
+	tier = 2
+	category = { industry }
+	prerequisites = { "tech_guyuanyanzu_rawmaterial" }
+	weight = @tier2weight2
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+	
+	weight_modifier = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}			
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+	
+	modifier = {
+		planet_jobs_originiums_produces_mult = 0.4
+	}
+}
+
+# 碳原料
+tech_carbon_stick = {
+	cost = @tier1cost3
+	area = engineering
+	tier = 1
+	category = { industry }
+	prerequisites = { "tech_originiums_mining" }
+	weight = @tier1weight3
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+
+	modifier = {
+		planet_building_build_speed_mult = 0.2
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}
+
+# 碳素砖
+tech_carbon_brick = {
+	cost = @tier2cost2
+	area = engineering
+	tier = 2
+	category = { industry }
+	prerequisites = { "tech_carbon_stick" }
+	weight = @tier2weight2
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+
+	modifier = {
+		planet_building_build_speed_mult = 0.3
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}
+
+# 碳素组
+tech_carbon_pack = {
+	cost = @tier3cost1
+	area = engineering
+	tier = 3
+	category = { industry }
+	prerequisites = { "tech_carbon_brick" }
+	weight = @tier3weight1
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+
+	modifier = {
+		planet_building_build_speed_mult = 0.5
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}
+
+# 基础加固建材
+tech_light_building_material = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { industry }
+	prerequisites = { "tech_originiums_mining" "tech_carbon_stick" }
+	weight = @tier2weight1
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+
+	modifier = {
+		planet_structures_upkeep_mult = -0.05
+		planet_max_buildings_add = 1
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}
+
+# 进阶加固建材
+tech_concrete_building_material = {
+	cost = @tier2cost3
+	area = engineering
+	tier = 2
+	category = { industry }
+	prerequisites = { "tech_light_building_material" }
+	weight = @tier2weight3
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+
+	modifier = {
+		planet_structures_upkeep_mult = -0.1
+		planet_max_buildings_add = 1
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}
+
+# 高级加固建材
+tech_reinforced_building_material = {
+	cost = @tier3cost2
+	area = engineering
+	tier = 3
+	category = { industry }
+	prerequisites = { "tech_concrete_building_material" }
+	weight = @tier3weight2
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+
+	modifier = {
+		planet_structures_upkeep_mult = -0.15
+		planet_max_buildings_add = 1
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}
+
+# 太空港制造站
+tech_manufacturing_station = {
+	cost = @tier1cost1
+	area = engineering
+	tier = 1
+	category = { industry }
+	prerequisites = { "tech_originiums_mining" }
+	weight = @tier1weight1
+
+	# 解锁制造站
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}
+
+# 太空港加工站
+tech_machining_station = {
+	cost = @tier1cost1
+	area = engineering
+	tier = 1
+	category = { industry }
+	prerequisites = { "tech_originiums_mining" }
+	weight = @tier1weight1
+
+	# 解锁加工站
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}
+
+# 技艺镭射
+tech_ark_laser_1 = {
+	area = physics
+	cost = @tier4cost1
+	tier = 4
+	category = { particles }
+	ai_update_type = military
+	prerequisites = { "tech_originiums_mining" "tech_lasers_5" }
+	weight = @tier4weight1
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+	
+	gateway = energy_weapons
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+# 聚能技艺镭射
+tech_ark_laser_2 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { particles }
+	ai_update_type = military
+	prerequisites = { "tech_originiums_mining" "tech_ark_laser_1" }
+	weight = @tier2weight1
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+	
+	gateway = energy_weapons
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+# 法术凝聚态
+tech_ark_polymer = {
+	area = physics
+	cost = @tier4cost1
+	tier = 4
+	category = { particles }
+	ai_update_type = military	
+	prerequisites = { "tech_originiums_mining" "tech_plasma_3" }
+	weight = @tier4weight1
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+# 明晦裂解炮
+tech_ark_disruptors = {
+	area = physics
+	cost = @tier4cost1
+	tier = 4
+	category = { particles }
+	ai_update_type = military
+	prerequisites = { "tech_originiums_mining" "tech_disruptors_3" }
+	weight = @tier4weight1
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}	
+	}	
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+# 法术近防系统
+tech_ark_point_defence = {
+	area = physics
+	tier = 4
+	cost = @tier4cost1
+	category = { computing }
+	ai_update_type = military
+	prerequisites = { "tech_originiums_mining" "tech_pd_tracking_3" }
+	weight = @tier4weight1
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}		
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}
+}
+
+# 量子发射器
+tech_ark_energy_torpedoes_1 = {
+	area = physics
+	cost = @tier3cost3
+	tier = 3
+	category = { particles }
+	ai_update_type = military	
+	prerequisites = { "tech_originiums_mining" "tech_energy_torpedoes_1" }
+	weight = @tier3weight3
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+# 量子二踢脚
+tech_ark_missiles_1 = {
+	area = engineering
+	cost = @tier4cost2
+	tier = 4
+	category = { propulsion }
+	ai_update_type = military
+	prerequisites = { "tech_originiums_mining" "tech_missiles_5" }
+	weight = @tier4weight2
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+}
+
+# 改良型量子二踢脚
+tech_ark_missiles_2 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { propulsion }
+	ai_update_type = military
+	prerequisites = { "tech_ark_missiles_1" }
+	weight = @tier2weight1
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+}
+
+# 源能重炮
+tech_ark_mass_accelerator_1 = {
+	area = engineering
+	cost = @tier4cost2
+	tier = 4
+	category = { propulsion }
+	ai_update_type = military
+	prerequisites = { "tech_originiums_mining" "tech_mass_accelerator_1" }
+	weight = @tier4weight2
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+}
+
+# 源能宏炮
+tech_ark_mass_accelerator_2 = {
+	area = engineering
+	cost = @tier4cost3
+	tier = 4
+	category = { propulsion }
+	ai_update_type = military
+	prerequisites = { "tech_originiums_mining" "tech_ark_mass_accelerator_1" }
+	weight = @tier4weight3
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+}
+
+# 源能涨落增压器
+tech_ark_booster = {
+	area = physics
+	cost = @tier3cost3
+	tier = 3
+	category = { particles }
+	ai_update_type = all
+	prerequisites = { "tech_originiums_mining" "tech_reactor_boosters_3" "tech_basic_science_lab_3" }
+	weight = @tier3weight3
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+
+	weight_modifier = {
+		factor = 1.5
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+# 质量感应弹
+tech_ark_mass_sensing_ammo = {
+	area = engineering
+	cost = @tier3cost3
+	icon = tech_ark_mass_sensing_ammo
+	tier = 3
+	category = { propulsion }
+	ai_update_type = military
+	prerequisites = { "tech_originiums_mining" "tech_mass_accelerator_1" }
+	weight = @tier3weight1
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}	
+	}	
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+}
+
+# 空间源能
+tech_ark_space_originium_power = {
+	area = physics
+	cost = @tier4cost2
+	tier = 4
+	category = { particles }
+	ai_update_type = all
+	prerequisites = { "tech_originiums_mining" "tech_basic_science_lab_3" "tech_zero_point_power" }
+	weight = @tier4weight2
+
+	gateway = power_generation
+
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		custom = {
+			title = "TECH_UNLOCK_ARK_SPACE_ORIGINIUM_POWER_TITLE"
+			desc = "TECH_UNLOCK_ARK_SPACE_ORIGINIUM_POWER_DESC"
+		}
+	}
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+
+	weight_modifier = {
+		factor = 2
+		modifier = {
+			factor = 2
+			has_technology = tech_battleships
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 3 #important component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+# D32钢均质材料
+tech_ark_ship_armor_1 = {
+	area = engineering
+	cost = @tier1cost1
+	tier = 0
+	category = { materials }
+	ai_update_type = all
+	prerequisites = { "tech_originiums_mining" "tech_ship_armor_1" }
+	weight = @tier1weight1
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+# D32钢复合材料
+tech_ark_ship_armor_2 = {
+	area = engineering
+	cost = @tier1cost2
+	tier = 1
+	category = { materials }
+	ai_update_type = all
+	prerequisites = { "tech_originiums_mining" "tech_ark_ship_armor_1" "tech_ship_armor_2" }
+	weight = @tier1weight1
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+# 纤维合金材料
+tech_ark_ship_armor_3 = {
+	area = engineering
+	cost = @tier2cost2
+	tier = 2
+	category = { materials }
+	ai_update_type = all
+	prerequisites = { "tech_originiums_mining" "tech_ark_ship_armor_2" "tech_ship_armor_3" }
+	weight = @tier1weight1
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+# 智能凝胶
+tech_ark_ship_armor_4a = {
+	area = engineering
+	cost = @tier3cost2
+	tier = 3
+	category = { materials }
+	ai_update_type = all
+	prerequisites = { "tech_originiums_mining" "tech_ark_ship_armor_3" "tech_ship_armor_4a" }
+	weight = @tier1weight1
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+# 超导装甲
+tech_ark_ship_armor_4b = {
+	area = engineering
+	cost = @tier3cost2
+	tier = 3
+	category = { materials }
+	ai_update_type = all
+	prerequisites = { "tech_originiums_mining" "tech_ark_ship_armor_4a" "tech_ship_armor_5" }
+	weight = @tier1weight1
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+# 骑士护盾
+tech_ark_shields_1 = {
+	area = physics
+	cost = @tier1cost1
+	tier = 0
+	category = { field_manipulation }
+	ai_update_type = all
+	prerequisites = { "tech_originiums_mining" "tech_shields_1" }
+	weight = @tier1weight1
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 2 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
+# 技艺护盾
+tech_ark_shields_2 = {
+	area = physics
+	cost = @tier1cost3
+	tier = 1
+	category = { field_manipulation }
+	ai_update_type = all
+	prerequisites = { "tech_originiums_mining" "tech_ark_shields_1" "tech_shields_2" }
+	weight = @tier1weight1
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 2 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
+# 铁卫护盾
+tech_ark_shields_3 = {
+	area = physics
+	cost = @tier2cost3
+	tier = 2
+	category = { field_manipulation }
+	ai_update_type = all
+	prerequisites = { "tech_originiums_mining" "tech_ark_shields_2" "tech_shields_3" }
+	weight = @tier1weight1
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 2 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
+# 先进法术护盾
+tech_ark_shields_4a = {
+	area = physics
+	cost = @tier3cost3
+	tier = 3
+	category = { field_manipulation }
+	ai_update_type = all
+	prerequisites = { "tech_originiums_mining""tech_ark_shields_3" "tech_ark_shields_4a" }
+	weight = @tier1weight1
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 2 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
+# 超级法术护盾
+tech_ark_shields_4b = {
+	area = physics
+	cost = @tier3cost3
+	tier = 3
+	category = { field_manipulation }
+	ai_update_type = all
+	prerequisites = { "tech_originiums_mining" "tech_ark_shields_4a" "tech_shields_5" }
+	weight = @tier1weight1
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 2 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
+# 守护立场
+tech_ark_shields_5a = {
+	area = physics
+	cost = @tier4cost3
+	tier = 4
+	category = { field_manipulation }
+	ai_update_type = all
+	prerequisites = { "tech_originiums_mining" "tech_ark_shields_4b" }
+	weight = @tier1weight1
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 2 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
+# 圣域护盾
+tech_ark_shields_5b = {
+	area = physics
+	cost = @tier4cost3
+	tier = 4
+	category = { field_manipulation }
+	ai_update_type = all
+	prerequisites = { "tech_originiums_mining" "tech_ark_shields_4b" }
+	weight = @tier1weight1
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 2 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
+# 铁御护盾
+tech_ark_shields_5c = {
+	area = physics
+	cost = @tier5cost3
+	tier = 5
+	category = { field_manipulation }
+	ai_update_type = all
+	prerequisites = { "tech_originiums_mining" "tech_ark_shields_4b" }
+	weight = @tier1weight1
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 2 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}

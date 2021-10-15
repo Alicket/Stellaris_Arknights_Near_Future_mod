@@ -1,0 +1,130 @@
+@cost0 = 0
+@cost1 = 5
+@cost2 = 10
+@cost3 = 20
+
+@power0 = -5
+@power1 = -10
+@power2 = -15
+@power3 = -25
+
+# Special
+utility_component_template = {
+	key = "ARK_COMPUTER_GHOST_BASIC"
+	size = small
+	icon = "GFX_ark_ship_part_computer_ghost_1"
+	icon_frame = 1
+	power = @power1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost2
+			multipole_nanosheets = 0.333
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = { corvette destroyer cruiser battleship titan juggernaut }
+	component_set = "combat_computers"
+	ship_behavior = "ghost"
+	prerequisites = { "tech_originiums_mining" "tech_combat_computers_1" }
+	upgrades_to = "ARK_COMPUTER_GHOST_ADVANCED"
+
+	ship_modifier = {
+		ship_accuracy_mult = -0.30
+		ship_evasion_mult = -0.30
+		ship_speed_mult = 0.10
+	}
+
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
+	key = "ARK_COMPUTER_GHOST_ADVANCED"
+	size = small
+	icon = "GFX_ark_ship_part_computer_ghost_2"
+	icon_frame = 1
+	power = @power2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost3
+			multipole_nanosheets = 0.666
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = { corvette destroyer cruiser battleship titan juggernaut }
+	component_set = "combat_computers"
+	ship_behavior = "ghost"
+	prerequisites = { "tech_originiums_mining" "tech_combat_computers_2" }
+	upgrades_to = "ARK_COMPUTER_GHOST_SAPIENT"
+
+	ship_modifier = {
+		ship_accuracy_mult = -0.15
+		ship_evasion_mult = -0.15
+		ship_speed_mult = 0.20
+	}
+
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
+	key = "ARK_COMPUTER_GHOST_SAPIENT"
+	size = small
+	icon = "GFX_ark_ship_part_computer_ghost_3"
+	icon_frame = 1
+	power = @power3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost4
+			multipole_nanosheets = 1
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = { corvette destroyer cruiser battleship titan juggernaut }
+	component_set = "combat_computers"
+	ship_behavior = "ghost"
+	prerequisites = { "tech_originiums_mining" "tech_combat_computers_3" }
+
+	ship_modifier = {
+		ship_accuracy_mult = -0.05
+		ship_evasion_mult = -0.05
+		ship_speed_mult = 0.30
+	}
+
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
+	key = "ARK_COMPUTER_GHOST_PRECOG"
+	size = small
+	icon = "GFX_ark_ship_part_computer_ghost_4"
+	icon_frame = 1
+	power = @power3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost4
+			multipole_nanosheets = 1
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = { corvette destroyer cruiser battleship titan juggernaut }
+	component_set = "combat_computers"
+	ship_behavior = "ghost"
+	prerequisites = { "tech_originiums_mining" "tech_precognition_interface" }
+
+	ship_modifier = {
+		ship_speed_mult = 0.40
+	}
+
+	ai_weight = {
+		weight = 4
+	}
+}

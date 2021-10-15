@@ -1,0 +1,890 @@
+# 此处设置的图标是实际插槽中显示的图标。原因是我们可以支持不同大小的不同图标。
+# 目前各级护盾s值:60,70,90,120,160,210,270。M为:s×2.5，L为:s×2.4
+# cost所需源石数：alloys×0.05
+
+# 骑士护盾
+utility_component_template = {
+	key = "SMALL_ARK_SHIELD_1"
+	size = small
+	icon = "GFX_ark_ship_part_shield_1"
+	icon_frame = 1
+	power = @power_S1
+	modifier = {
+		ship_shield_add = 60
+		ship_shield_regen_add_static = 0.6
+	}
+	
+	prerequisites = { "tech_ark_shields_1" }
+	component_set = "ARK_SHIELD_1"
+	upgrades_to = "SMALL_ARK_SHIELD_2"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_s_t1_cost
+			originiums = 0.25
+		}	
+		upkeep = {
+			energy = @shield_s_t1_upkeep_energy
+			alloys = @shield_s_t1_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = originiums value <= 0 }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_ARK_SHIELD_1"
+	size = medium
+	icon = "GFX_ark_ship_part_shield_1"
+	icon_frame = 1
+	power = @power_M1
+	modifier = {
+		ship_shield_add = 150
+		ship_shield_regen_add_static = 1.50
+	}
+	
+	prerequisites = { "tech_ark_shields_1" }
+	component_set = "ARK_SHIELD_1"
+	upgrades_to = "MEDIUM_ARK_SHIELD_2"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_m_t1_cost
+			originiums = 0.50
+		}
+		upkeep = {
+			energy = @shield_m_t1_upkeep_energy
+			alloys = @shield_m_t1_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = originiums value <= 0 }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_ARK_SHIELD_1"
+	size = large
+	icon = "GFX_ark_ship_part_shield_1"
+	icon_frame = 1
+	power = @power_L1
+	modifier = {
+		ship_shield_add = 360
+		ship_shield_regen_add_static = 3.6
+	}
+	
+	prerequisites = { "tech_ark_shields_1" }
+	component_set = "ARK_SHIELD_1"
+	upgrades_to = "LARGE_ARK_SHIELD_2"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_l_t1_cost
+			originiums = 1
+		}
+		upkeep = {
+			energy = @shield_l_t1_upkeep_energy
+			alloys = @shield_l_t1_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = originiums value <= 0 }
+		}
+	}
+}
+
+# 技艺护盾
+utility_component_template = {
+	key = "SMALL_ARK_SHIELD_2"
+	size = small
+	icon = "GFX_ark_ship_part_shield_2"
+	icon_frame = 1
+	power = @power_S2
+	modifier = {
+		ship_shield_add = 70
+		ship_shield_regen_add_static = 0.7
+	}
+	
+	prerequisites = { "tech_ark_shields_2" }
+	component_set = "ARK_SHIELD_2"
+	upgrades_to = "SMALL_ARK_SHIELD_3"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_s_t2_cost
+			originiums = 0.35
+		}	
+		upkeep = {
+			energy = @shield_s_t2_upkeep_energy
+			alloys = @shield_s_t2_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = originiums value <= 0 }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_ARK_SHIELD_2"
+	size = medium
+	icon = "GFX_ark_ship_part_shield_2"
+	icon_frame = 1
+	power = @power_M2
+	modifier = {
+		ship_shield_add = 175
+		ship_shield_regen_add_static = 1.75
+	}
+	
+	prerequisites = { "tech_ark_shields_2" }
+	component_set = "ARK_SHIELD_2"
+	upgrades_to = "MEDIUM_ARK_SHIELD_3"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_m_t2_cost
+			originiums = 0.65
+		}
+		upkeep = {
+			energy = @shield_m_t2_upkeep_energy
+			alloys = @shield_m_t2_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = originiums value <= 0 }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_ARK_SHIELD_2"
+	size = large
+	icon = "GFX_ark_ship_part_shield_2"
+	icon_frame = 1
+	power = @power_L2
+	modifier = {
+		ship_shield_add = 420
+		ship_shield_regen_add_static = 4.2
+	}
+	
+	prerequisites = { "tech_ark_shields_2" }
+	component_set = "ARK_SHIELD_2"
+	upgrades_to = "LARGE_ARK_SHIELD_3"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_l_t2_cost
+			originiums = 1.3
+		}
+		upkeep = {
+			energy = @shield_l_t2_upkeep_energy
+			alloys = @shield_l_t2_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = originiums value <= 0 }
+		}
+	}
+}
+
+# 铁卫护盾
+utility_component_template = {
+	key = "SMALL_ARK_SHIELD_3"
+	size = small
+	icon = "GFX_ark_ship_part_shield_3"
+	icon_frame = 1
+	power = @power_S3
+	modifier = {
+		ship_shield_add = 90
+		ship_shield_regen_add_static = 0.9
+	}
+	
+	prerequisites = { "tech_ark_shields_3" }
+	component_set = "ARK_SHIELD_3"
+	upgrades_to = "SMALL_ARK_SHIELD_4A"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_s_t3_cost
+			originiums = 0.45
+		}	
+		upkeep = {
+			energy = @shield_s_t3_upkeep_energy
+			alloys = @shield_s_t3_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = originiums value <= 0 }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_ARK_SHIELD_3"
+	size = medium
+	icon = "GFX_ark_ship_part_shield_3"
+	icon_frame = 1
+	power = @power_M3
+	modifier = {
+		ship_shield_add = 225
+		ship_shield_regen_add_static = 2.25
+	}
+	
+	prerequisites = { "tech_ark_shields_3" }
+	component_set = "ARK_SHIELD_3"
+	upgrades_to = "MEDIUM_ARK_SHIELD_4A"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_m_t3_cost
+			originiums = 0.85
+		}
+		upkeep = {
+			energy = @shield_m_t3_upkeep_energy
+			alloys = @shield_m_t3_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = originiums value <= 0 }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_ARK_SHIELD_3"
+	size = large
+	icon = "GFX_ark_ship_part_shield_3"
+	icon_frame = 1
+	power = @power_L3
+	modifier = {
+		ship_shield_add = 540
+		ship_shield_regen_add_static = 5.4
+	}
+	
+	prerequisites = { "tech_ark_shields_3" }
+	component_set = "ARK_SHIELD_3"
+	upgrades_to = "LARGE_ARK_SHIELD_4A"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_l_t3_cost
+			originiums = 1.7
+		}
+		upkeep = {
+			energy = @shield_l_t3_upkeep_energy
+			alloys = @shield_l_t3_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = originiums value <= 0 }
+		}
+	}
+}
+
+# 先进法术护盾
+utility_component_template = {
+	key = "SMALL_ARK_SHIELD_4A"
+	size = small
+	icon = "GFX_ark_ship_part_shield_4a"
+	icon_frame = 1
+	power = @power_S4
+	modifier = {
+		ship_shield_add = 120
+		ship_shield_regen_add_static = 1.2
+	}
+	
+	prerequisites = { "tech_ark_shields_4a" }
+	component_set = "ARK_SHIELD_4A"
+	upgrades_to = "SMALL_ARK_SHIELD_4B"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_s_t4_cost
+			originiums = 0.6
+		}	
+		upkeep = {
+			energy = @shield_s_t4_upkeep_energy
+			alloys = @shield_s_t4_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = originiums value <= 0 }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_ARK_SHIELD_4A"
+	size = medium
+	icon = "GFX_ark_ship_part_shield_4a"
+	icon_frame = 1
+	power = @power_M4
+	modifier = {
+		ship_shield_add = 300
+		ship_shield_regen_add_static = 3
+	}
+	
+	prerequisites = { "tech_ark_shields_4a" }
+	component_set = "ARK_SHIELD_4A"
+	upgrades_to = "MEDIUM_ARK_SHIELD_4B"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_m_t4_cost
+			originiums = 1.1
+		}
+		upkeep = {
+			energy = @shield_m_t4_upkeep_energy
+			alloys = @shield_m_t4_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = originiums value <= 0 }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_ARK_SHIELD_4A"
+	size = large
+	icon = "GFX_ark_ship_part_shield_4a"
+	icon_frame = 1
+	power = @power_L4
+	modifier = {
+		ship_shield_add = 720
+		ship_shield_regen_add_static = 7.2
+	}
+	
+	prerequisites = { "tech_ark_shields_4a" }
+	component_set = "ARK_SHIELD_4A"
+	upgrades_to = "LARGE_ARK_SHIELD_4B"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_l_t4_cost
+			originiums = 2.2
+		}
+		upkeep = {
+			energy = @shield_l_t4_upkeep_energy
+			alloys = @shield_l_t4_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = originiums value <= 0 }
+		}
+	}
+}
+
+# 超级法术护盾
+utility_component_template = {
+	key = "SMALL_ARK_SHIELD_4B"
+	size = small
+	icon = "GFX_ark_ship_part_shield_4b"
+	icon_frame = 1
+	power = @power_S4
+	modifier = {
+		ship_shield_add = 160
+		ship_shield_regen_add_static = 1.6
+	}
+	
+	prerequisites = { "tech_ark_shields_4b" }
+	component_set = "ARK_SHIELD_4B"
+	upgrades_to = "SMALL_ARK_SHIELD_5A"
+	upgrades_to = "SMALL_ARK_SHIELD_5B"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_s_t4_cost
+			originiums = 0.6
+		}	
+		upkeep = {
+			energy = @shield_s_t4_upkeep_energy
+			alloys = @shield_s_t4_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = originiums value <= 0 }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_ARK_SHIELD_4B"
+	size = medium
+	icon = "GFX_ark_ship_part_shield_4b"
+	icon_frame = 1
+	power = @power_M4
+	modifier = {
+		ship_shield_add = 400
+		ship_shield_regen_add_static = 4
+	}
+	
+	prerequisites = { "tech_ark_shields_4b" }
+	component_set = "ARK_SHIELD_4B"
+	upgrades_to = "MEDIUM_ARK_SHIELD_5A"
+	upgrades_to = "MEDIUM_ARK_SHIELD_5B"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_m_t4_cost
+			originiums = 1.1
+		}
+		upkeep = {
+			energy = @shield_m_t4_upkeep_energy
+			alloys = @shield_m_t4_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = originiums value <= 0 }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_ARK_SHIELD_4B"
+	size = large
+	icon = "GFX_ark_ship_part_shield_4b"
+	icon_frame = 1
+	power = @power_L4
+	modifier = {
+		ship_shield_add = 960
+		ship_shield_regen_add_static = 9.6
+	}
+	
+	prerequisites = { "tech_ark_shields_4b" }
+	component_set = "ARK_SHIELD_4B"
+	upgrades_to = "LARGE_ARK_SHIELD_5A"
+	upgrades_to = "LARGE_ARK_SHIELD_5B"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_l_t4_cost
+			originiums = 2.2
+		}
+		upkeep = {
+			energy = @shield_l_t4_upkeep_energy
+			alloys = @shield_l_t4_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = originiums value <= 0 }
+		}
+	}
+}
+
+# 守护立场
+utility_component_template = {
+	key = "SMALL_ARK_SHIELD_5A"
+	size = small
+	icon = "GFX_ark_ship_part_shield_5a"
+	icon_frame = 1
+	power = @power_S5
+	modifier = {
+		ship_shield_add = 210
+		ship_shield_regen_add_static = 2.1
+		ship_armor_mult = 0.05
+	}
+	
+	prerequisites = { "tech_ark_shields_5a" }
+	component_set = "ARK_SHIELD_5A"
+	upgrades_to = "SMALL_ARK_SHIELD_5C"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_s_t5_cost
+			originiums = 0.8
+		}	
+		upkeep = {
+			energy = @shield_s_t5_upkeep_energy
+			alloys = @shield_s_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = originiums value <= 0 }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_ARK_SHIELD_5A"
+	size = medium
+	icon = "GFX_ark_ship_part_shield_5a"
+	icon_frame = 1
+	power = @power_M5
+	modifier = {
+		ship_shield_add = 525
+		ship_shield_regen_add_static = 5.25
+		ship_armor_mult = 0.1
+	}
+	
+	prerequisites = { "tech_ark_shields_5a" }
+	component_set = "ARK_SHIELD_5A"
+	upgrades_to = "MEDIUM_ARK_SHIELD_5C"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_m_t5_cost
+			originiums = 1.45
+		}
+		upkeep = {
+			energy = @shield_m_t5_upkeep_energy
+			alloys = @shield_m_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = originiums value <= 0 }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_ARK_SHIELD_5A"
+	size = large
+	icon = "GFX_ark_ship_part_shield_5a"
+	icon_frame = 1
+	power = @power_L5
+	modifier = {
+		ship_shield_add = 1260
+		ship_shield_regen_add_static = 12.6
+		ship_armor_mult = 0.2
+	}
+	
+	prerequisites = { "tech_ark_shields_5a" }
+	component_set = "ARK_SHIELD_5A"
+	upgrades_to = "LARGE_ARK_SHIELD_5C"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_l_t5_cost
+			originiums = 2.85
+		}
+		upkeep = {
+			energy = @shield_l_t5_upkeep_energy
+			alloys = @shield_l_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = originiums value <= 0 }
+		}
+	}
+}
+
+# 圣域护盾
+utility_component_template = {
+	key = "SMALL_ARK_SHIELD_5B"
+	size = small
+	icon = "GFX_ark_ship_part_shield_5b"
+	icon_frame = 1
+	power = @power_S5
+	modifier = {
+		ship_shield_add = 210
+		ship_shield_regen_add_static = 2.1
+		ship_evasion_add = 1
+	}
+	
+	prerequisites = { "tech_ark_shields_5b" }
+	component_set = "ARK_SHIELD_5B"
+	upgrades_to = "SMALL_ARK_SHIELD_5C"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_s_t5_cost
+			originiums = 0.8
+		}	
+		upkeep = {
+			energy = @shield_s_t5_upkeep_energy
+			alloys = @shield_s_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = originiums value <= 0 }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_ARK_SHIELD_5B"
+	size = medium
+	icon = "GFX_ark_ship_part_shield_5b"
+	icon_frame = 1
+	power = @power_M5
+	modifier = {
+		ship_shield_add = 525
+		ship_shield_regen_add_static = 5.25
+		ship_evasion_add = 2
+	}
+	
+	prerequisites = { "tech_ark_shields_5b" }
+	component_set = "ARK_SHIELD_5B"
+	upgrades_to = "MEDIUM_ARK_SHIELD_5C"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_m_t5_cost
+			originiums = 1.45
+		}
+		upkeep = {
+			energy = @shield_m_t5_upkeep_energy
+			alloys = @shield_m_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = originiums value <= 0 }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_ARK_SHIELD_5B"
+	size = large
+	icon = "GFX_ark_ship_part_shield_5b"
+	icon_frame = 1
+	power = @power_L5
+	modifier = {
+		ship_shield_add = 1260
+		ship_shield_regen_add_static = 12.6
+		ship_evasion_add = 4
+	}
+	
+	prerequisites = { "tech_ark_shields_5b" }
+	component_set = "ARK_SHIELD_5B"
+	upgrades_to = "LARGE_ARK_SHIELD_5C"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_l_t5_cost
+			originiums = 2.85
+		}
+		upkeep = {
+			energy = @shield_l_t5_upkeep_energy
+			alloys = @shield_l_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = originiums value <= 0 }
+		}
+	}
+}
+
+# 铁御护盾
+utility_component_template = {
+	key = "SMALL_ARK_SHIELD_5C"
+	size = small
+	icon = "GFX_ark_ship_part_shield_5c"
+	icon_frame = 1
+	power = @power_S5
+	modifier = {
+		ship_shield_add = 270
+		ship_shield_regen_add_static = 2.7
+		ship_hull_mult = 0.05
+		ship_shield_mult = 0.05
+		ship_armor_mult = 0.05
+	}
+	
+	prerequisites = { "tech_ark_shields_5c" }
+	component_set = "ARK_SHIELD_5C"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_s_t5_cost
+			originiums = 1.05		# 铁御护盾所需源石是第6级值
+		}	
+		upkeep = {
+			energy = @shield_s_t5_upkeep_energy
+			alloys = @shield_s_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = originiums value <= 0 }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_ARK_SHIELD_5C"
+	size = medium
+	icon = "GFX_ark_ship_part_shield_5c"
+	icon_frame = 1
+	power = @power_M5
+	modifier = {
+		ship_shield_add = 675
+		ship_shield_regen_add_static = 6.75
+		ship_hull_mult = 0.1
+		ship_shield_mult = 0.1
+		ship_armor_mult = 0.1
+	}
+	
+	prerequisites = { "tech_ark_shields_5c" }
+	component_set = "ARK_SHIELD_5C"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_m_t5_cost
+			originiums = 1.9
+		}
+		upkeep = {
+			energy = @shield_m_t5_upkeep_energy
+			alloys = @shield_m_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = originiums value <= 0 }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_ARK_SHIELD_5C"
+	size = large
+	icon = "GFX_ark_ship_part_shield_5c"
+	icon_frame = 1
+	power = @power_L5
+	modifier = {
+		ship_shield_add = 1620
+		ship_shield_regen_add_static = 16.2
+		ship_hull_mult = 0.2
+		ship_shield_mult = 0.2
+		ship_armor_mult = 0.2
+	}
+	
+	prerequisites = { "tech_ark_shields_5c" }
+	component_set = "ARK_SHIELD_5C"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_l_t5_cost
+			originiums = 3.7
+		}
+		upkeep = {
+			energy = @shield_l_t5_upkeep_energy
+			alloys = @shield_l_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = originiums value <= 0 }
+		}
+	}
+}

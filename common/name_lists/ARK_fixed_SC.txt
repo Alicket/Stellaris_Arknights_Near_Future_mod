@@ -1,0 +1,205 @@
+﻿ark_01 = {
+
+	randomized = no
+	language = "l_simp_chinese"
+	ship_names = {
+
+		generic = {
+			"泡沫" "幻象" "斧子" "美人" "幻梦" "食物" "魔咒" "童年" "光芒" "破壳" "诺言" "酬劳" "独一" "日落" "泰梦" 
+			"先兆" "灾难" "代价" "无罪推定" "高空坠物" "不做约定" "病入膏肓" "龟裂" "黄昏" "不要恐慌" "各取所需" "灯火将熄"
+		}
+
+
+		corvette = {
+			"失去一切" "钟声响起" "沉入水底" "镜中光影" "火苗摇曳" "戏剧回环" "命中注定" "永不复返" "不问归宿" "自始至终" "如同谜底" "予之取之" "三而存有" "旋律依旧" "梦想成真" 
+		}
+		
+		constructor = {
+			"立方堆积" "分子扩散" "能层跃迁" "正态分布" "理想气体"
+		}
+		
+		colonizer = {
+			"希望城邦" "新世界" "彼岸方舟" "异乡来客"
+		}
+
+		sponsored_colonizer = {
+		}
+		
+		science = {
+			"认知迷云" "双曲函数" "七阶谜题" "节律探寻" "矩阵魔方"
+		}
+		
+		destroyer = {
+			"银灰色荣耀" "潮汐之剑" "鞘中赤红" "深夏守夜人" "久铸尘铁" "火舞之人" "冰封原野" "锁匙守卫者" "凝电之钻" "热情爆发" "地生五金" "百种兵器" "草垛风笛" "往日幻象" "遗愿焰火"
+		}
+		
+		cruiser = {
+			"石墨" "漆匠" "铁块" "威塞克斯的信件" "城市骑手" "清晨七点" "儿童派对" "燃灰" "遗石" "枯柏" "小鬼当家" "挽歌" "盛宴" "魔术师" "厚礼" "约克的寒风" "快乐卫士" "开斯特之霜" "报童" "新航线" "十字郡" "寒冬信使" "暗流" "守岁人" "四边形" "野地秘行" "辛味" "孤攀客" "植物种志" "静谧午夜" "沙滩护卫" "悠然假日" "夏卉" "温差" "日晒" "片厂一角" "春竜" "岁红霞" "富贵荣华" "君子兰" "幽静" "未知的旅行" "整装待发" "战医" "高原访客" "狩标浪人"
+		}
+		
+		battleship = {
+			"黑暗时代" "异卵同生" "二次呼吸" "急性衰竭" "靶向药物" "局部坏死" "苦难摇篮" "骑兵与猎人" "火蓝之心" "战地秘闻" "喧闹法则" "危机合约" "洪炉示岁" "午间逸话" "生于黑夜" 
+		}
+
+		titan = {
+			"结晶时代" "明智之举" "因果循环" "宁死不屈"
+		}
+
+		colossus = {
+			"保持距离" "梦游" "陷阱"
+		}
+		
+		transport = {
+			"抹香鲸"
+		}
+
+		military_station_small = { 
+			"禁卫军" "骑士" "主教" "战车" 
+		}
+		
+		ion_cannon = {
+			 "皇后" "国王"
+		}
+	}
+
+	fleet_names = {
+		random_names = {
+			"泰拉联合舰队" "荣耀骑士团舰队" "皇家卫士舰队" "SWEEP特勤舰队" "医院骑士团舰队"
+		}
+		sequential_name = "舰队 %C%"
+	}
+	
+	army_names = {
+	
+		defense_army = {
+			sequential_name = "近卫军团 %C%"
+		}
+
+		assault_army = {
+			sequential_name = "先锋军团 %C%"
+		}
+		
+		slave_army = {
+			sequential_name = "奴隶兵团 %C%"
+		}
+		
+		clone_army = { 
+			sequential_name = "克隆军团 %C%"
+		}
+		
+		robotic_army = {
+			sequential_name = "机械军团 %C%"
+		}
+
+		robotic_defense_army = {
+			sequential_name = "机械近卫军团 %C%"
+		}
+		
+		psionic_army = { 
+			sequential_name = "施术兵团 %C%"
+		}
+		
+		xenomorph_army = {
+			sequential_name = "生化兵团 %C%"
+		}
+		
+		gene_warrior_army = {
+			sequential_name = "强化军团 %C%"
+		}
+		occupation_army = {
+			sequential_name = "%O% 占领军团"
+		}
+
+		robotic_occupation_army = {
+			sequential_name = "%O% 机械占领军团"
+		}
+		primitive_army = {
+			sequential_name = "原始军队 %C%"
+		}
+		industrial_army = {
+			sequential_name = "工业军队 %C%"
+		}
+		postatomic_army = {
+			sequential_name = "后原子军 %C%"
+		}
+	}
+
+	planet_names = {
+
+		generic = {
+			names = {
+				"新罗德岛" "新莱塔尼亚" "新卡兹戴尔"
+			}
+		}
+		
+		pc_desert = {
+			names = {
+			}
+		}
+		
+		pc_arid = {
+			names = {
+			}
+		}
+		
+		pc_tropical = {
+			names = {
+				"新卡西米尔" 
+			}
+		}
+		
+		pc_continental = {
+			names = {
+				"新炎国" "新哥伦比亚"
+			}
+		}
+		
+		pc_gaia = {
+			names = {
+				"新拉特兰" "乌托邦" "桃源星" "天堂星" "乐土"
+			}
+		}
+		
+		pc_ocean = {
+			names = {
+				"新龙门" "新东国" "新阿戈尔" "新叙拉古" "新汐斯塔"
+			}
+		}
+		
+		pc_tundra = {
+			names = {
+			}
+		}
+		
+		pc_arctic = {
+			names = {
+				"新乌萨斯" "新谢拉格" "新雷姆必拓" "新萨米"
+			}
+		}
+
+		pc_savannah = {
+			names = {
+			}
+		}
+
+		pc_alpine = {
+			names = {
+			}
+		}
+	}
+
+
+	### CHARACTERS
+
+	character_names = {
+		default = {
+			first_names = {
+				Itsuka Takamiya Yatogami Tobiichi Yoshino Tokisaki Yamai Izayoi Natsumi Honjo Hoshimiya Takamiya Murasame Yamauchi Kannazuki Takamiya Kawagoe Mikimoto Shiizaki Nakatsugawa Minowa Baldwin Elliott Karen Nora Kusakabe Okamine Isaac Ellen Artemisia Jessica Tonomachi Okamine Sonogami Arusu Princess Angel Devil Efreet Hermit Nightmare Berserk Diva Witch Sister Zodiac Deus Phantom Ruler Irregular Cherub
+			}
+			
+			second_names = {
+				Shido Shinji Shiori Tohka Origami Kotori Kurumi Kaguya Yuzuru Miku Nia Mukuro Mio Reine Sawa Kyouhei Mana Kyouji Masaomi Hinako Munechika Kozue Woodman Mathers Tatsuo Haruko Maria Ryouko Mikie Westcott Mathers Ashcroft Nibeelcole Bailey Hiroto Tamae Rinne Maria Marina Rio Mayuri Ren
+			}
+		}
+	}
+}

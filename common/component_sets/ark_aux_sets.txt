@@ -1,0 +1,17 @@
+# 此处设置的图标是组件编辑器列表中显示的图标
+
+# 源能涨落增压器
+component_set = {
+	key = "ARK_BOOSTER"
+	
+	icon = "GFX_ark_ship_part_booster"
+	icon_frame = 1	
+}
+
+# 质量感应弹
+component_set = {
+	key = "ARK_MASS_SENSING_AMMO"
+	
+	icon = "GFX_ark_ship_part_mass_sensing_ammo"
+	icon_frame = 1	
+}

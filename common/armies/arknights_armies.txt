@@ -1,0 +1,121 @@
+# 前各国军团
+former_countries_army = {
+	damage = 0.6
+	health = 1
+	morale = 1
+	icon_frame = 5
+
+	potential = {
+		always = no
+	}
+}
+# 萨卡兹军团
+racists_rebel9_army = {
+	damage = 1.00
+	health = 1.00
+	morale = 1.00
+	icon_frame = 5
+
+	potential = {
+		always = no
+	}
+}
+
+# 陆行舰队
+land_warship_army = {
+	defensive = yes
+	damage = 4.0
+	health = 5.0
+	morale = 3.0
+	morale_damage = 1.5
+	collateral_damage = 3.0
+	war_exhaustion = 2.0
+	time = 400
+	icon_frame = 11
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 500
+		}
+
+		upkeep = {
+			energy = 5.0
+		}
+	}
+	potential = {
+		custom_tooltip = {
+			text = landwarship_troop_limit_tooltip
+			owner = {
+				OR = {
+					has_country_flag = arknight_1
+					has_country_flag = arknight_2
+					has_country_flag = arknight_4
+				}
+			}
+		}
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = landwarship_troop_limit_tooltip
+			owner = {
+				OR = {
+					has_country_flag = arknight_1
+					has_country_flag = arknight_2
+					has_country_flag = arknight_4
+				}
+			}
+		}
+	}
+}
+
+# 先锋陆行舰队
+galaxy_warship_army = {
+	damage = 3.5
+	health = 4.5
+	morale = 3.0
+	morale_damage = 1.5
+	collateral_damage = 3.0
+	war_exhaustion = 2.0
+	time = 360
+	icon_frame = 11
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 480
+		}
+
+		upkeep = {
+			energy = 4.5
+		}
+	}
+	potential = {
+		custom_tooltip = {
+			text = galaxywarship_troop_limit_tooltip
+			owner = {
+				OR = {
+					has_country_flag = arknight_1
+					has_country_flag = arknight_2
+					has_country_flag = arknight_4
+				}
+			}
+		}
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = landwarship_troop_limit_tooltip
+			owner = {
+				OR = {
+					has_country_flag = arknight_1
+					has_country_flag = arknight_2
+					has_country_flag = arknight_4
+				}
+			}
+		}
+	}
+
+	prerequisites = { "tech_galaxy_warship_army" }
+}

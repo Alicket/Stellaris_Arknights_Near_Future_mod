@@ -1,0 +1,18 @@
+ship_behavior = {
+	name = "ghost"
+	preferred_attack_range = max	# 舰船在“攻击移动模式”下想要到达其战斗位置的距离
+	formation_distance = max		# 舰船在“被动移动模式”下想要到达战斗位置的距离
+	return_to_formation_distance = 0	# 攻击时如果指定位置距离大于此值，舰船将切换到被动模式
+
+	combat_target_anchor = root
+
+	collision_awareness = 0.75		# 我们有多想避开别的船
+	collision_radius = 1.0		# 碰撞半径是舰船尺寸中指定半径的倍增
+	collision_strafe = 2.5		# 冲撞扫射允许舰船在与另一艘相撞时向任何方向移动
+	attack_move_pattern = none	# 静止/充电/跟随/静止/无
+	passive_move_pattern = none
+
+	ignore_combat_movement = yes
+	
+	desc = "GHOST_BEHAVIOR_DESC"
+}

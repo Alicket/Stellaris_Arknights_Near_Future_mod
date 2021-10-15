@@ -1,0 +1,112 @@
+# Mon3tr
+trait_ruler_mon3tr = {
+	cost = 0
+	initial = no
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_mon3tr.dds"
+	modifier = {
+		country_base_influence_produces_add = 1
+		country_unity_produces_mult = -0.05
+	}
+	self_modifier = {
+		leader_age = 250
+	}
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	randomized = no
+}
+
+# 高效基建
+trait_ruler_efficient_infrastructure = {
+	cost = 0
+	initial = no
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_ruler_efficient_infrastructure.dds"
+	modifier = {
+		planet_jobs_produces_mult = 0.1
+	}
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	randomized = no
+}
+
+# 无所不知
+trait_ruler_know_everything = {
+	cost = 0
+	initial = no
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_ruler_know_everything.dds"
+	modifier = {
+		planet_jobs_society_research_produces_mult = 0.15
+		planet_jobs_engineering_research_produces_mult = 0.05
+	}
+	self_modifier = {
+		species_leader_exp_gain = 0.25
+	}
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	randomized = no
+}
+
+# 在文明尽头相遇
+trait_ruler_meet_end = {
+	cost = 0
+	initial = no
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_trait_meet_end.dds"
+	immortal_leaders = yes
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	randomized = no
+}
+
+# 巴别塔的恶灵w
+trait_ruler_babel_evil_spirit_w = {
+	cost = 0
+	initial = no
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_trait_babel_evil_spirit_w.dds"
+	modifier = {
+		country_starbase_influence_cost_mult = -0.3
+		country_war_exhaustion_mult = -0.1
+	}
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	randomized = no
+}
+
+# 巴别塔的恶灵l
+trait_ruler_babel_evil_spirit_l = {
+	cost = 0
+	initial = no
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_trait_babel_evil_spirit_l.dds"
+	modifier = {
+		ship_disengage_chance_reduction = -0.2
+		army_disengage_chance_mult = 0.2
+	}
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	randomized = no
+}
+
+# 巴别塔的恶灵r
+trait_ruler_babel_evil_spirit_r = {
+	cost = 0
+	initial = no
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_trait_babel_evil_spirit_r.dds"
+	modifier = {
+		ship_weapon_damage = 0.33
+		army_damage_mult = 0.33
+		ship_disengage_chance_reduction = 1
+		army_disengage_chance_mult = -1
+		country_war_exhaustion_mult = -0.33
+	}
+	self_modifier = {
+		species_leader_exp_gain = 0.5
+	}
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	randomized = no
+}

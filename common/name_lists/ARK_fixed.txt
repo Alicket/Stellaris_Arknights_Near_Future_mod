@@ -1,0 +1,204 @@
+﻿ark_01 = {
+
+	randomized = no
+	ship_names = {
+
+		generic = {
+			"Bubble" "Phantom" "Axe" "Beauty" "Fantasy Dream" "Food" "Magic" "Childhood" "Ray" "Broken Shell" "Promise" "Payment" "Unique" "Sunset" "Thai Dream"
+"Aura" "Disaster" "Cost" "Innocent Presumption" "Falling Objects" "No Commitment" "Sickness" "Crack" "Dusk" "Don't Panic" "Take What You Need" "The Lights Will Turn Off"
+		}
+
+
+		corvette = {
+			"Lost everything" "Bells ringing" "Sinking to the bottom" "Light and shadow in the mirror" "Flame swaying" "Drama loop" "Fate destined" "Never return" "Do not ask about home" "From the beginning to the end" "Like the mystery" "Give and take", "melody still", "dream come true"
+		}
+		
+		constructor = {
+			"Cubic accumulation" "Molecular diffusion" "Energy layer transition" "Normal distribution" "Ideal gas"
+		}
+		
+		colonizer = {
+			"Hope City" "New World" "Ark Across the Shore" "Visitors from Other Countries"
+		}
+
+		sponsored_colonizer = {
+		}
+		
+		science = {
+			"Cognitive Miyun" "Hyperbolic Function" "Seven Order Puzzle" "Rhythm Search" "Matrix Cube"
+		}
+		
+		destroyer = {
+			"Silver Grey Glory" "Sword of the Tide" "Red in the Sheath" "Deep Summer Night Watcher" "Long Casting Dust Iron" "Fire Dancer" "Frozen Wilderness" "Key Guardian" "Condenser" Enthusiasm" "Ground Health Hardware" "Hundred Kinds of Weapons" "Hard Hay Bagpipes" "Phantom Illusion" "Last Will Fireworks"
+		}
+		
+		cruiser = {
+			"Graphite" "Lacquerist" "Iron" "Wessex's Letter" "City Rider" "Seven o'clock in the morning" "Children's Party" "Ashes" "Remains" "Kuba" "Little Ghost" "Elegy" "Feast" "Magician" "Hou Li" "York's Cold Wind" "Happy Guardian" "Kester Frost" "Newsboy" "New Route" "Cross County" "Cold Winter Courier" "Undercurrent" "Shou Shouren" " "Quadrangle" "Wild Field" "Spicy" "Lone Panker" "Plant Species" "Quiet Midnight" "Beach Guard" "Relaxed Holiday" "Summer Plant" "Temperature Difference" "Insolation" "A Factory Corner" "Spring "Long" "Sui Hongxia" "Rich and Glorious" "Gentleman" "Secred" "Unknown Trip" "Ready to Go" "Battle Doctor" "Plateau Visitor" "Guardian Wanderer"
+		}
+		
+		battleship = {
+			"Dark Ages" "Different Eggs and Same Life" "Second Breathing" "Acute Failure" "Targeted Drugs" "Local Necrosis" "Cradle of Misery" "Cavalry and Hunters" "Fire Blue Heart" "Battlefield Secrets" "Noisy Rule" ""Crisis Contract" "Honglu Sisui" "Luan Yihua" "Born in the Night"
+		}
+
+		titan = {
+			"Crystal Age" "Wise Action" "Cause and Effect Cycle" "Ning to Die"
+		}
+
+		colossus = {
+			"Keep the distance" "Sleepwalk" "Trap"
+		}
+		
+		transport = {
+			"Sperm Whale"
+		}
+
+		military_station_small = { 
+			"Imperial Guard" "Knight" "Bishop" "Chariot"
+		}
+		
+		ion_cannon = {
+			 "Queen" "King"
+		}
+	}
+
+	fleet_names = {
+		random_names = {
+			"Terra United Fleet" "Glory Knights Fleet" "Royal Guards Fleet" "SWEEP Secret Service Fleet" "Hospital Knights Fleet"
+		}
+		sequential_name = "Fleet %C%"
+	}
+	
+	army_names = {
+	
+		defense_army = {
+			sequential_name = "Guard Corps %C%"
+		}
+
+		assault_army = {
+			sequential_name = "Vanguard Corps %C%"
+		}
+		
+		slave_army = {
+			sequential_name = "Slave Corps %C%"
+		}
+		
+		clone_army = { 
+			sequential_name = "Clone Legion %C%"
+		}
+		
+		robotic_army = {
+			sequential_name = "Mechanical Legion %C%"
+		}
+
+		robotic_defense_army = {
+			sequential_name = "Mechanical Guard Legion %C%"
+		}
+		
+		psionic_army = { 
+			sequential_name = "Caster Corps %C%"
+		}
+		
+		xenomorph_army = {
+			sequential_name = "Biochemical Corps %C%"
+		}
+		
+		gene_warrior_army = {
+			sequential_name = "Enhanced Legion %C%"
+		}
+		occupation_army = {
+			sequential_name = "%O% Occupy Legion"
+		}
+
+		robotic_occupation_army = {
+			sequential_name = "%O% Mechanical Occupy Legion"
+		}
+		primitive_army = {
+			sequential_name = "Original Army %C%"
+		}
+		industrial_army = {
+			sequential_name = "Industrial Army %C%"
+		}
+		postatomic_army = {
+			sequential_name = "Post Atomic Force %C%"
+		}
+	}
+
+	planet_names = {
+
+		generic = {
+			names = {
+				"New Rhodes Island" "New Leithanien" "New Kazdel"
+			}
+		}
+		
+		pc_desert = {
+			names = {
+			}
+		}
+		
+		pc_arid = {
+			names = {
+			}
+		}
+		
+		pc_tropical = {
+			names = {
+				"New Kazimierz" 
+			}
+		}
+		
+		pc_continental = {
+			names = {
+				"New Yen" "New Columbia"
+			}
+		}
+		
+		pc_gaia = {
+			names = {
+				"New Laterano" "Utopia" "Taoyuan Star" "Heaven Star" "Paradise"
+			}
+		}
+		
+		pc_ocean = {
+			names = {
+				"New Lungmen" "New Higashi" "New Ægir" "New Siracusa" "New Siesta"
+			}
+		}
+		
+		pc_tundra = {
+			names = {
+			}
+		}
+		
+		pc_arctic = {
+			names = {
+				"New Ursus" "New Kjerag" "New RIM Billiton" "New Sami"
+			}
+		}
+
+		pc_savannah = {
+			names = {
+			}
+		}
+
+		pc_alpine = {
+			names = {
+			}
+		}
+	}
+
+
+	### CHARACTERS
+
+	character_names = {
+		default = {
+			first_names = {
+				Itsuka Takamiya Yatogami Tobiichi Yoshino Tokisaki Yamai Izayoi Natsumi Honjo Hoshimiya Takamiya Murasame Yamauchi Kannazuki Takamiya Kawagoe Mikimoto Shiizaki Nakatsugawa Minowa Baldwin Elliott Karen Nora Kusakabe Okamine Isaac Ellen Artemisia Jessica Tonomachi Okamine Sonogami Arusu Princess Angel Devil Efreet Hermit Nightmare Berserk Diva Witch Sister Zodiac Deus Phantom Ruler Irregular Cherub
+			}
+			
+			second_names = {
+				Shido Shinji Shiori Tohka Origami Kotori Kurumi Kaguya Yuzuru Miku Nia Mukuro Mio Reine Sawa Kyouhei Mana Kyouji Masaomi Hinako Munechika Kozue Woodman Mathers Tatsuo Haruko Maria Ryouko Mikie Westcott Mathers Ashcroft Nibeelcole Bailey Hiroto Tamae Rinne Maria Marina Rio Mayuri Ren
+			}
+		}
+	}
+}

@@ -1,0 +1,51 @@
+ap_resister_of_the_end = {
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_technology_starbase_5"
+			has_technology = tech_starbase_5
+		}
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_3"
+			num_ascension_perks > 2
+		}
+	}
+
+	modifier = {
+		country_starbase_capacity_mult = 1.0		# 恒星基地容量+100%
+		starbase_defense_platform_capacity_add = 10		# 防御平台+20
+		country_naval_cap_add = 100			# 海军容量+100
+		country_command_limit_add = 50			# 舰队指挥上限+50
+	}
+
+	on_enabled = {
+		custom_tooltip = enable_contingency_contract_project
+		custom_tooltip = describe_contingency_contract_project
+		hidden_effect = {
+			country_event = { id = ark_ascension_perks.1 }
+		}
+	}
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+		NOT = {
+			has_ascension_perk = ap_resister_of_the_end
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			has_country_flag = arknight_1
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_country_flag = arknight_1 }
+		}
+	}
+}

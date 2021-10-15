@@ -1,0 +1,132 @@
+##########################################################################
+# Empire edicts
+##########################################################################
+
+@Edict1Cost = 100
+@Edict2Cost = 200
+@Edict3Cost = 300
+
+@EdictDuration = 3600
+
+# Sets the cost for all campaigns with this variable
+@campaignCost = 1000
+@campaignDuration = 3600
+
+# 萨卡兹征兵体系
+sarkaz_conscription_system = {
+	length = @campaignDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = campaigns
+		cost = {
+			energy = @campaignCost
+		}
+	}
+
+	modifier = {
+		army_health = 0.15
+		army_damage_mult = 0.15
+	}
+
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_4
+		}
+		NOT = { has_ascension_perk = ap_the_flesh_is_weak }
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = @EdictHighPrio
+			is_at_war = yes
+		}
+	}
+}
+
+# 动力城邦模块
+power_city_module = {
+	length = @EdictDuration
+	resources = {
+		category = rare_edicts
+		cost = {
+			originiums = 50
+		}
+	}
+	
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_4
+		}
+		has_resource = { type = originiums amount > 0 }
+	}
+
+	modifier = {
+		planet_building_build_speed_mult = 0.25
+	}
+	
+	ai_weight = {
+		weight = 0
+	}	
+}
+
+# 动力太空模块
+power_space_module = {
+	length = @EdictDuration
+	resources = {
+		category = rare_edicts
+		cost = {
+			originiums = 50
+		}
+	}
+	
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_4
+		}
+		has_resource = { type = originiums amount > 0 }
+	}
+
+	modifier = {
+		starbase_shipyard_build_speed_mult = 0.25
+	}
+	
+	ai_weight = {
+		weight = 0
+	}	
+}
+
+# 动力巨构模块
+power_mega_engineering_module = {
+	length = @EdictDuration
+	resources = {
+		category = rare_edicts
+		cost = {
+			originiums = 100
+		}
+	}
+	
+	potential = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_4
+		}
+		has_technology = tech_mega_engineering
+		has_resource = { type = originiums amount > 0 }
+	}
+
+	modifier = {
+		megastructure_build_speed_mult = 0.25
+	}
+	
+	ai_weight = {
+		weight = 0
+	}	
+}

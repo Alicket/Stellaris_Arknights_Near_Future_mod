@@ -1,0 +1,7 @@
+# 源能涨落反应堆
+component_set = {
+	key = "ARK_SPACE_ORIGINIUM_REACTOR"
+	
+	icon = "GFX_ark_ship_part_reactor"
+	icon_frame = 1	
+}

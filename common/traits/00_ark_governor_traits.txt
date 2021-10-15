@@ -1,0 +1,258 @@
+leader_trait_biaozhunhua = {	# 标准化
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_trait_biaozhunhua.dds"
+	modifier = {
+		planet_jobs_produces_mult = 0.15
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		OR = {
+			from = { species = { has_trait = trait_latent_oripathy } }
+			from = { species = { has_trait = trait_Originium_Arts } }
+		}
+	}
+	leader_trait = { governor }
+	leader_class = { governor }
+	opposites = { "leader_trait_dizhixuejia" "leader_trait_jinshugongyi" "leader_trait_jixingzi" "leader_trait_manxingzi" "leader_trait_mafanzhizaozhe" "leader_trait_shihuangzhe" "leader_trait_zuozhanzhidaoluxiang" "leader_trait_jiaoji" "leader_trait_tanpan" "leader_trait_wuliuzhuanjia" }
+
+	ai_weight = {
+		weight = 200
+	}
+}
+
+leader_trait_dizhixuejia = {	# 地质学家
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_trait_dizhixuejia.dds"
+	modifier = {
+		planet_jobs_minerals_produces_mult = 0.15
+		planet_jobs_originiums_produces_mult = 0.2
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		OR = {
+			from = { species = { has_trait = trait_latent_oripathy } }
+			from = { species = { has_trait = trait_Originium_Arts } }
+		}
+	}
+	leader_trait = { governor }
+	leader_class = { governor }
+	opposites = { "leader_trait_biaozhunhua" "leader_trait_jinshugongyi" "leader_trait_jixingzi" "leader_trait_manxingzi" "leader_trait_mafanzhizaozhe" "leader_trait_shihuangzhe" "leader_trait_zuozhanzhidaoluxiang" "leader_trait_jiaoji" "leader_trait_tanpan" "leader_trait_wuliuzhuanjia" }
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+leader_trait_jinshugongyi = {	# 金属工艺
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_trait_jinshugongyi.dds"
+	modifier = {
+		planet_jobs_alloys_produces_mult = 0.3
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		OR = {
+			from = { species = { has_trait = trait_latent_oripathy } }
+			from = { species = { has_trait = trait_Originium_Arts } }
+		}
+	}
+	leader_trait = { governor }
+	leader_class = { governor }
+	opposites = { "leader_trait_biaozhunhua" "leader_trait_dizhixuejia" "leader_trait_jixingzi" "leader_trait_manxingzi" "leader_trait_mafanzhizaozhe" "leader_trait_shihuangzhe" "leader_trait_zuozhanzhidaoluxiang" "leader_trait_jiaoji" "leader_trait_tanpan" "leader_trait_wuliuzhuanjia" }
+
+	ai_weight = {
+		weight = 200
+	}
+}
+
+leader_trait_jixingzi = {	# 急性子
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_trait_jixingzi.dds"
+	modifier = {
+		planet_building_build_speed_mult = 0.25
+		planet_structures_cost_mult = 0.1
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		OR = {
+			from = { species = { has_trait = trait_latent_oripathy } }
+			from = { species = { has_trait = trait_Originium_Arts } }
+		}
+	}
+	leader_trait = { governor }
+	leader_class = { governor }
+	opposites = { "leader_trait_biaozhunhua" "leader_trait_dizhixuejia" "leader_trait_jinshugongyi" "leader_trait_manxingzi" "leader_trait_mafanzhizaozhe" "leader_trait_shihuangzhe" "leader_trait_zuozhanzhidaoluxiang" "leader_trait_jiaoji" "leader_trait_tanpan" "leader_trait_wuliuzhuanjia" }
+
+	ai_weight = {
+		weight = 200
+	}
+}
+
+leader_trait_manxingzi = {	# 慢性子
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_trait_manxingzi.dds"
+	modifier = {
+		planet_building_build_speed_mult = -0.1
+		planet_structures_cost_mult = -0.25
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		OR = {
+			from = { species = { has_trait = trait_latent_oripathy } }
+			from = { species = { has_trait = trait_Originium_Arts } }
+		}
+	}
+	leader_trait = { governor }
+	leader_class = { governor }
+	opposites = { "leader_trait_biaozhunhua" "leader_trait_dizhixuejia" "leader_trait_jinshugongyi" "leader_trait_jixingzi" "leader_trait_mafanzhizaozhe" "leader_trait_shihuangzhe" "leader_trait_zuozhanzhidaoluxiang" "leader_trait_jiaoji" "leader_trait_tanpan" "leader_trait_wuliuzhuanjia" }
+
+	ai_weight = {
+		weight = 200
+	}
+}
+
+leader_trait_mafanzhizaozhe = {	# 麻烦制造者
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_trait_mafanzhizaozhe.dds"
+	modifier = {
+		planet_jobs_produces_mult = 0.25
+		planet_jobs_unity_produces_mult = -0.12
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		OR = {
+			from = { species = { has_trait = trait_latent_oripathy } }
+			from = { species = { has_trait = trait_Originium_Arts } }
+		}
+	}
+	leader_trait = { governor }
+	leader_class = { governor }
+	opposites = { "leader_trait_biaozhunhua" "leader_trait_dizhixuejia" "leader_trait_jinshugongyi" "leader_trait_jixingzi" "leader_trait_manxingzi" "leader_trait_shihuangzhe" "leader_trait_zuozhanzhidaoluxiang" "leader_trait_jiaoji" "leader_trait_tanpan" "leader_trait_wuliuzhuanjia" }
+
+	ai_weight = {
+		weight = 200
+	}
+}
+
+leader_trait_shihuangzhe = {	# 拾荒者
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_trait_shihuangzhe.dds"
+	modifier = {
+		planet_structures_cost_mult = -0.08
+		planet_structures_upkeep_mult = -0.16
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		OR = {
+			from = { species = { has_trait = trait_latent_oripathy } }
+			from = { species = { has_trait = trait_Originium_Arts } }
+		}
+	}
+	leader_trait = { governor }
+	leader_class = { governor }
+	opposites = { "leader_trait_biaozhunhua" "leader_trait_dizhixuejia" "leader_trait_jinshugongyi" "leader_trait_jixingzi" "leader_trait_manxingzi" "leader_trait_mafanzhizaozhe" "leader_trait_zuozhanzhidaoluxiang" "leader_trait_jiaoji" "leader_trait_tanpan" "leader_trait_wuliuzhuanjia" }
+
+	ai_weight = {
+		weight = 200
+	}
+}
+
+leader_trait_zuozhanzhidaoluxiang = {	# 作战指导录像
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_trait_zuozhanzhidaoluxiang.dds"
+	modifier = {
+		species_leader_exp_gain = 0.3
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		OR = {
+			from = { species = { has_trait = trait_latent_oripathy } }
+			from = { species = { has_trait = trait_Originium_Arts } }
+		}
+	}
+	leader_trait = { governor }
+	leader_class = { governor }
+	opposites = { "leader_trait_biaozhunhua" "leader_trait_dizhixuejia" "leader_trait_jinshugongyi" "leader_trait_jixingzi" "leader_trait_manxingzi" "leader_trait_mafanzhizaozhe" "leader_trait_shihuangzhe" "leader_trait_jiaoji" "leader_trait_tanpan" "leader_trait_wuliuzhuanjia" "leader_trait_stubborn" }
+
+	ai_weight = {
+		weight = 200
+	}
+}
+
+leader_trait_jiaoji = {	# 交际
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_trait_jiaoji.dds"
+	modifier = {
+		trade_value_mult = 0.3
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		OR = {
+			from = { species = { has_trait = trait_latent_oripathy } }
+			from = { species = { has_trait = trait_Originium_Arts } }
+		}
+	}
+	leader_trait = { governor }
+	leader_class = { governor }
+	opposites = { "leader_trait_biaozhunhua" "leader_trait_dizhixuejia" "leader_trait_jinshugongyi" "leader_trait_jixingzi" "leader_trait_manxingzi" "leader_trait_mafanzhizaozhe" "leader_trait_shihuangzhe" "leader_trait_zuozhanzhidaoluxiang" "leader_trait_tanpan" "leader_trait_wuliuzhuanjia" }
+
+	ai_weight = {
+		weight = 200
+	}
+}
+
+leader_trait_tanpan = {	# 谈判
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_trait_tanpan.dds"
+	modifier = {
+		trade_value_mult = 0.15
+		planet_districts_cities_upkeep_mult = -0.15
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		OR = {
+			from = { species = { has_trait = trait_latent_oripathy } }
+			from = { species = { has_trait = trait_Originium_Arts } }
+		}
+	}
+	leader_trait = { governor }
+	leader_class = { governor }
+	opposites = { "leader_trait_biaozhunhua" "leader_trait_dizhixuejia" "leader_trait_jinshugongyi" "leader_trait_jixingzi" "leader_trait_manxingzi" "leader_trait_mafanzhizaozhe" "leader_trait_shihuangzhe" "leader_trait_zuozhanzhidaoluxiang" "leader_trait_jiaoji" "leader_trait_wuliuzhuanjia" }
+
+	ai_weight = {
+		weight = 200
+	}
+}
+
+leader_trait_wuliuzhuanjia = {	# 物流专家
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_trait_wuliuzhuanjia.dds"
+	modifier = {
+		trade_value_mult = 0.35
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		OR = {
+			from = { species = { has_trait = trait_latent_oripathy } }
+			from = { species = { has_trait = trait_Originium_Arts } }
+		}
+	}
+	leader_trait = { governor }
+	leader_class = { governor }
+	opposites = { "leader_trait_biaozhunhua" "leader_trait_dizhixuejia" "leader_trait_jinshugongyi" "leader_trait_jixingzi" "leader_trait_manxingzi" "leader_trait_mafanzhizaozhe" "leader_trait_shihuangzhe" "leader_trait_zuozhanzhidaoluxiang" "leader_trait_jiaoji" "leader_trait_tanpan" }
+
+	ai_weight = {
+		weight = 100
+	}
+}

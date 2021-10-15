@@ -1,0 +1,204 @@
+# 明日方舟星球buff #
+
+catastrophe = {	# 天灾
+	pop_environment_tolerance = -0.3
+	planet_jobs_originiums_produces_mult = 0.5
+	planet_jobs_energy_produces_mult = 0.25
+	planet_jobs_minerals_produces_mult = 0.25
+	icon = "gfx/interface/icons/planet_modifiers/pm_catastrophe.dds"
+	icon_frame = 2
+}
+nomadic_city = {	# 移动城邦
+	planet_structures_cost_mult = 0.3
+	planet_structures_upkeep_mult = 0.1
+	planet_building_build_speed_mult = 0.5
+	icon = "gfx/interface/icons/planet_modifiers/pm_nomadic_city.dds"
+	icon_frame = 2
+}
+barbarian_growth = {	# 野蛮生长
+	planet_crime_add = 50
+	planet_pops_upkeep_mult = -0.5
+	planet_jobs_produces_mult = -0.5
+	icon = "gfx/interface/icons/planet_modifiers/pm_barbarian_growth.dds"
+	icon_frame = 2
+}
+wheels_motion = {	# 发轫之始
+	planet_crime_add = 30
+	planet_pops_upkeep_mult = -0.3
+	planet_jobs_produces_mult = -0.3
+	icon = "gfx/interface/icons/planet_modifiers/pm_barbarian_growth.dds"
+	icon_frame = 2
+}
+strewn_thorns = {	# 荆棘丛生
+	planet_crime_add = 10
+	planet_pops_upkeep_mult = -0.1
+	planet_jobs_produces_mult = -0.1
+	icon = "gfx/interface/icons/planet_modifiers/pm_barbarian_growth.dds"
+	icon_frame = 2
+}
+autumn_sea = {	# 层林尽染
+	planet_crime_add = -10
+	planet_jobs_produces_mult = 0.1
+	icon = "gfx/interface/icons/planet_modifiers/pm_barbarian_growth.dds"
+	icon_frame = 1
+}
+infected_anxious = {	# 感染者焦虑
+	pop_happiness = -0.1
+	planet_jobs_produces_mult = -0.1
+	icon = "gfx/interface/icons/planet_modifiers/pm_infected_anxious.dds"
+	icon_frame = 3
+}
+torn_society = {	# 撕裂的社会
+	pop_happiness = -0.3
+	planet_jobs_produces_mult = -0.3
+	icon = "gfx/interface/icons/planet_modifiers/pm_torn_society.dds"
+	icon_frame = 3
+}
+celebration = {	# 攻克“矿石病”庆典
+	pop_happiness = 0.4
+	planet_jobs_produces_mult = 0.2
+	pop_growth_speed = 0.2
+	icon = "gfx/interface/icons/planet_modifiers/pm_celebration.dds"
+	icon_frame = 1
+}
+repression_failure = {	# 镇压失败
+	pop_happiness = -0.6
+	planet_jobs_produces_mult = -0.7
+	icon = "gfx/interface/icons/planet_modifiers/pm_derelict_interior.dds"
+	icon_frame = 3
+}
+catastrophe_panic = {	# 天灾恐慌
+	pop_happiness = -0.1
+	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
+	icon_frame = 3
+}
+g_jssjjs_modifier = {	# 精神世界建设
+	planet_jobs_unity_produces_mult = 0.2
+	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
+	icon_frame = 1
+}
+g_wzsjjs_modifier = {	# 物质世界建设
+	planet_jobs_consumer_goods_produces_mult = 0.2
+	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
+	icon_frame = 1
+}
+g_gdzbzzzc_modifier = {	# 高端装备制造支持
+	planet_jobs_alloys_produces_mult = 0.2
+	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
+	icon_frame = 1
+}
+g_zlzycyzz_modifier = {	# 战略资源产业支持
+	planet_jobs_volatile_motes_produces_mult = 0.1
+	planet_jobs_exotic_gases_produces_mult = 0.1
+	planet_jobs_rare_crystals_produces_mult = 0.1
+	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
+	icon_frame = 1
+}
+g_dqmszc_modifier = {	# 地区免税政策
+	trade_value_mult = 0.2
+	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
+	icon_frame = 1
+}
+g_jyzdbt_modifier = {	# 就业指导补贴
+	pop_demotion_time_mult = -0.25
+	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
+	icon_frame = 1
+}
+y_znjxzc_modifier = {	# 智能机械支持
+	pop_assembly_speed = 0.1
+	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
+	icon_frame = 1
+}
+y_xxfyzl_modifier = {	# 行星防御指令
+	planet_orbital_bombardment_damage = -0.25
+	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
+	icon_frame = 1
+}
+y_cbfzgh_modifier = {	# 城邦发展规划
+	planet_building_build_speed_mult = 0.1
+	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
+	icon_frame = 1
+}
+y_tkjdjs_modifier = {	# 太空舰队建设
+	starbase_shipyard_build_speed_mult = 0.1
+	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
+	icon_frame = 1
+}
+r_tllhscl_modifier = {	# 泰拉联合搜查令
+	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
+	planet_jobs_unity_produces_mult = -0.1
+	icon_frame = 2
+}
+terra_council = {	# 联合会议筹备中
+	icon = "gfx/interface/icons/planet_modifiers/pm_terra_council.dds"
+	icon_frame = 1
+}
+peak_plan_training = {	# 巅峰计划进行中
+	icon = "gfx/interface/icons/planet_modifiers/pm_peak_plan_training.dds"
+	country_energy_produces_mult = -0.05
+	icon_frame = 1
+}
+originium_bombs_contaminated_0 = {	# 遭到源石轰炸
+	icon = "gfx/interface/icons/planet_modifiers/pm_originium_bombs_contaminated_0.dds"
+	icon_frame = 3
+}
+originium_bombs_contaminated_1 = {	# 源石污染
+	icon = "gfx/interface/icons/planet_modifiers/pm_catastrophe.dds"
+	pop_environment_tolerance = -0.2
+	planet_max_districts_add = -2
+	icon_frame = 3
+}
+biochemical_protection = {	# 生化防护
+	planet_stability_add = 10
+	planet_jobs_produces_mult = -0.10
+	pop_growth_speed = -0.5
+	pop_assembly_speed = -0.5
+	icon = "gfx/interface/icons/planet_modifiers/pm_biochemical_protection.dds"
+	icon_frame = 2
+}
+contingency_contract_1 = {	# 危机合约：军备
+	shipclass_starbase_damage_mult = 0.75		# 恒星基地伤害
+	shipclass_military_station_damage_mult = 0.75	# 防御平台伤害
+	ship_weapon_damage = 0.25			# 舰船武器伤害
+	icon = "gfx/interface/icons/modifiers/contingency_contract_1.dds"
+	icon_frame = 1
+}
+contingency_contract_2 = {	# 危机合约：突击
+	ship_fire_rate_mult = 0.50				# 舰船武器射速
+	ship_speed_mult = 0.25				# 舰船亚光速
+	icon = "gfx/interface/icons/modifiers/contingency_contract_2.dds"
+	icon_frame = 1
+}
+contingency_contract_3 = {	# 危机合约：备战
+	shipclass_starbase_hull_mult = 0.75			# 恒星基地船体值
+	shipclass_military_station_hull_mult = 0.75		# 防御平台船体值
+	ship_hull_mult = 0.25				# 船体值
+	ship_shield_mult = 0.25				# 护盾承受值
+	ship_armor_mult = 0.25				# 装甲值
+	planet_orbital_bombardment_damage = -0.50	# 轨道轰炸伤害
+	icon = "gfx/interface/icons/modifiers/contingency_contract_3.dds"
+	icon_frame = 1
+}
+contingency_contract_4 = {	# 危机合约：工巧
+	shipclass_starbase_build_cost_mult = -0.50 		# 恒星基地建造花费
+	starbase_upgrade_cost_mult = -0.25 		# 恒星基地升级费用
+	starbases_upkeep_mult = -0.50			# 恒星基地维护费
+	starbase_buildings_cost_mult = -0.50		# 恒星基地建筑花费
+	starbase_modules_cost_mult = -0.50 		# 恒星基地模块花费
+	shipclass_military_station_build_cost_mult = -0.50	# 防御平台建造花费
+	shipsize_military_station_small_upkeep_mult = -0.50	# 防御平台维护费
+	starbase_shipyard_build_cost_mult = -0.25		# 造舰费用
+	country_ship_upgrade_cost_mult = -0.25		# 舰船升级花费
+	ships_upkeep_mult = -0.25				# 舰船维护费
+	icon = "gfx/interface/icons/modifiers/contingency_contract_4.dds"
+	icon_frame = 1
+}
+contingency_contract_5 = {	# 危机合约：部署
+	starbase_upgrade_speed_mult = 1.00		  # 恒星基地升级速度
+	starbase_building_build_speed_mult = 1.00		  # 恒星基地建筑建造速度
+	starbase_module_build_speed_mult = 1.00		  # 恒星基地模块建造速度
+	shipsize_military_station_small_build_speed_mult = 0.75 # 防御平台建造速度
+	starbase_shipyard_build_speed_mult = 0.25		  # 舰船建造速度
+	icon = "gfx/interface/icons/modifiers/contingency_contract_5.dds"
+	icon_frame = 1
+}

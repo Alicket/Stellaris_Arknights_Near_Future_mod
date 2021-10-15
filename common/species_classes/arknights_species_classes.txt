@@ -1,0 +1,20 @@
+Arknight = {
+	archetype = BIOLOGICAL
+	randomized = yes
+	gender = no
+	possible = {
+		authority = {
+			OR = {
+				value = auth_city_republic
+				value = auth_city_despotism
+			}
+		}
+	}
+
+	portraits = {
+		"arknights"
+	}
+
+	graphical_culture = arknights_01
+	move_pop_sound_effect = "moving_pop_confirmation"
+}

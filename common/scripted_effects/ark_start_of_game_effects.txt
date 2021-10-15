@@ -1,0 +1,109 @@
+# 泰拉初始地块
+generate_terra_deposits_and_blockers = {
+	clear_deposits = yes
+
+	# 发电区划
+	add_deposit = d_hot_springs			# +1 温泉
+	add_deposit = d_foehn_hot_earth			# +2 焚风热土
+	if = {
+		limit = { owner = { is_gestalt = no } }
+		if = {
+			limit = { owner = { is_lithoid_empire = no } }
+			add_deposit = d_lungmen_special_economic_zone	# +3 龙门经济特区
+		}
+		else = {
+			add_deposit = d_buzzing_plains	# +1 嗞嗡平原
+		}
+	}
+
+	# 采矿区划
+	add_deposit = d_veiny_cliffs		# +1 矿脉悬崖
+	add_deposit = d_rimbilliton_industrial_belt	# +3 雷姆必拓工业带
+
+	# 农业区划
+	add_deposit = d_rugged_woods	# +1 崎岖森林
+	add_deposit = d_green_hills	# +1 绿色山脉
+	add_deposit = d_sargon_rainforest	# +2 萨尔贡雨林
+
+	# 其它区划
+	add_deposit = d_infection_blockade		# 感染封锁区
+	add_deposit = d_originiums_mine		# 源石开采区
+	add_deposit = d_holy_mountain		# 喀兰圣山
+
+	# 障碍地块
+	add_deposit = d_failing_infrastructure	# 工业废土
+	add_deposit = d_decrepit_dwellings		# 贫民窟
+	add_deposit = d_decrepit_dwellings		# 贫民窟
+	add_deposit = d_ursus_tundra		# 乌萨斯冻原
+	add_deposit = d_silent_deep_sea		# 寂静深海  -2农业
+
+	if = {
+		limit = { owner = { is_machine_empire = yes } }
+		add_deposit = d_rushing_waterfalls
+	}
+	if = {
+		limit = { owner = { has_valid_civic = civic_machine_servitor } }
+		add_deposit = d_hot_springs
+	}
+
+	if = {
+		limit = {
+			owner = {
+				is_lithoid_empire = yes
+				NOT = { has_valid_civic = civic_hive_devouring_swarm }
+			}
+		}
+		while = {
+			count = 4
+			add_deposit = d_hibernating_lithoids
+		}
+	}
+
+	if = {
+		limit = {
+			owner = {
+				is_lithoid_empire = yes
+				has_valid_civic = civic_hive_devouring_swarm
+			}
+		}
+		while = {
+			count = 2
+			add_deposit = d_hibernating_lithoids
+		}
+	}
+
+	if = {
+		limit = {
+			owner = {
+				has_origin = origin_life_seeded
+			}
+		}
+
+		set_planet_size = 25
+
+		add_deposit = d_dust_caverns
+		add_deposit = d_bubbling_swamp
+		add_deposit = d_crystalline_caverns
+	}
+}
+
+# 医疗企业初始建筑
+civic_pharmaceutical_enterprises_start_buildings = {
+	if = {
+		limit = { owner = { is_regular_empire = yes } }
+
+		if = {
+			limit = { owner = { has_civic = civic_pharmaceutical_enterprises } }
+			remove_building = building_commercial_zone
+			add_building = building_ark_hospital
+		}
+	}
+}
+
+# 明日方舟国家初始区划
+arknight_start_districts = {
+	add_district = district_generator
+	add_district = district_generator
+	add_district = district_generator
+	add_district = district_farming
+}

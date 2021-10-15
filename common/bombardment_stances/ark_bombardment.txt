@@ -1,0 +1,45 @@
+# 源石轨道轰炸
+originium_bombs = {
+	trigger = {
+		owner = {
+			OR = {
+				has_authority = auth_city_republic
+				has_authority = auth_city_despotism
+			}
+			OR = {
+				has_monthly_income = {
+					resource = originiums
+					value > 30
+				}
+				has_resource = { type = originiums amount > 30 }
+			}
+		}
+	}
+	
+	icon_frame = 1
+	default = no
+	
+	stop_when_armies_dead = no
+	abduct_pops = no
+
+	planet_damage = 0.25
+	army_damage = 0.25	
+	
+	kill_pop_chance = {
+		base = 0.25
+	}
+	min_pops_to_kill_pop = 10
+	
+	# root = fleet
+	# from = planet
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.01
+			exists = from
+			from = {
+				owner = { NOT = { is_hostile = root.owner } }
+			}
+		}
+	}
+}

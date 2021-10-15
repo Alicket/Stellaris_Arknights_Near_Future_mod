@@ -1,0 +1,144 @@
+@section_cost = 80
+
+# 舰艏
+
+ship_section_template = {
+	key = "ARK_BATTLESHIP_BOW_THUNDER"
+	ship_size = battleship
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "battleship_bow_M1S2SHB_entity"
+	icon = "GFX_ship_part_core_bow"
+	
+	prerequisites = { tech_ark_missiles_1 }
+
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}		
+	}
+	
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "medium_missile_turret"
+		locatorname = "strike_craft_locator_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+
+	large_utility_slots = 3
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+# 核心
+
+ship_section_template = {
+	key = "ARK_BATTLESHIP_MID_THUNDER"
+	ship_size = battleship
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "battleship_mid_L2M2_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_ark_missiles_1 }
+
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "medium_missile_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_03"
+		template = "medium_missile_turret"
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "TORPEDO_04"
+		template = "medium_missile_turret"
+		locatorname = "large_gun_02"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "point_defence_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "point_defence_turret"
+		locatorname = "medium_gun_02"
+	}
+	
+	large_utility_slots = 3
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+# 舰艉
+
+ship_section_template = {
+	key = "ARK_BATTLESHIP_STERN_THUNDER"
+	ship_size = battleship
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "battleship_stern_M2_entity"
+	icon = "GFX_ship_part_core_stern"
+	
+	prerequisites = { tech_ark_missiles_1 }
+	
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_01"
+				
+	}
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_02"
+	}
+	
+	aux_utility_slots = 2
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}

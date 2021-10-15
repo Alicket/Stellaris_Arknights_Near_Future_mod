@@ -1,0 +1,164 @@
+# 矿石病攻克计划
+special_project = {
+	key = "ORIPATHY_PROJECT"
+	cost = 3000
+	tech_department = society_technology
+	timelimit = -1
+	picture = GFX_evt_ward
+	icon = "gfx/interface/icons/situation_log/situation_log_tick.dds"
+	location = no
+	
+	event_scope = planet_event
+
+	requirements = {
+	}
+
+	on_progress_75 = {
+		owner = {
+			country_event = { id = ark_originiums_sufferer.2 }
+		}
+	}
+	
+	on_success = {
+		owner = {
+			country_event = { id = ark_originiums_sufferer.3 }
+		}
+	}
+}
+
+# 重制远古守护者疫苗
+special_project = {
+	key = "MUTATIONS_PROJECT"
+	cost = 3000
+	tech_department = society_technology
+	timelimit = -1
+	picture = GFX_evt_genetic_modification
+	icon = "gfx/interface/icons/situation_log/situation_log_tick.dds"
+	location = no
+	
+	event_scope = planet_event
+	
+	on_success = {
+		owner = { country_event = { id = ark_civic.31 } }
+	}
+}
+
+# 危机合约：军备
+special_project = {
+	key = "CONTINGENCY_CONTRACT_1_PROJECT"
+	cost = 5000
+	tech_department = physics_technology
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_rhodes_island
+	location = no
+	
+	event_scope = planet_event
+	
+	requirements = {
+	}
+	
+	on_success = {
+		owner = {
+			country_event = { id = ark_ascension_perks.11 }
+		}
+	}
+	
+	on_fail = {
+	}
+}
+
+# 危机合约：突击
+special_project = {
+	key = "CONTINGENCY_CONTRACT_2_PROJECT"
+	cost = 5000
+	tech_department = physics_technology
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_rhodes_island
+	location = no
+	
+	event_scope = planet_event
+	
+	requirements = {
+	}
+	
+	on_success = {
+		owner = {
+			country_event = { id = ark_ascension_perks.12 }
+		}
+	}
+	
+	on_fail = {
+	}
+}
+
+# 危机合约：备战
+special_project = {
+	key = "CONTINGENCY_CONTRACT_3_PROJECT"
+	cost = 5000
+	tech_department = engineering_technology
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_rhodes_island
+	location = no
+	
+	event_scope = planet_event
+	
+	requirements = {
+	}
+	
+	on_success = {
+		owner = {
+			country_event = { id = ark_ascension_perks.13 }
+		}
+	}
+	
+	on_fail = {
+	}
+}
+
+# 危机合约：工巧
+special_project = {
+	key = "CONTINGENCY_CONTRACT_4_PROJECT"
+	cost = 5000
+	tech_department = society_technology
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_rhodes_island
+	location = no
+	
+	event_scope = planet_event
+	
+	requirements = {
+	}
+	
+	on_success = {
+		owner = {
+			country_event = { id = ark_ascension_perks.14 }
+		}
+	}
+	
+	on_fail = {
+	}
+}
+
+# 危机合约：部署
+special_project = {
+	key = "CONTINGENCY_CONTRACT_5_PROJECT"
+	cost = 5000
+	tech_department = engineering_technology
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_rhodes_island
+	location = no
+	
+	event_scope = planet_event
+	
+	requirements = {
+	}
+	
+	on_success = {
+		owner = {
+			country_event = { id = ark_ascension_perks.15 }
+		}
+	}
+	
+	on_fail = {
+	}
+}

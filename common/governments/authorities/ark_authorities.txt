@@ -1,0 +1,74 @@
+# 城邦共和制
+auth_city_republic = {
+	election_term_years = 20			# 选举任期
+	election_type = oligarchic			# 选举类型
+	can_have_emergency_elections = yes	# 能否紧急选举
+	emergency_election_cost = 250		# 紧急选举费用
+	max_election_candidates = 4		# 最大选举候选人数
+
+	has_agendas = yes	# 有议程
+
+	possible = {
+		ethics = {
+			NOR = {	# 非格式塔和威权主义
+				value = ethic_gestalt_consciousness
+				value = ethic_authoritarian
+				value = ethic_fanatic_authoritarian
+			}
+		}
+	}
+
+	random_weight = {
+		modifier = {
+			factor = 0
+		}
+	}
+
+	traits = {
+		trait = trait_latent_oripathy
+	}
+
+	country_modifier = {
+		edicts_cost_mult = -0.2
+	}
+
+	tags = {
+		AUTHORITY_ELECTION_OLIGARCHIC
+	}
+}
+
+# 城邦专制
+auth_city_despotism = {
+	election_type = oligarchic		# 选举类型
+	max_election_candidates = 4	# 最大选举候选人数
+
+	has_agendas = yes	# 有议程
+
+	possible = {
+		ethics = {
+			NOR = {	# 非格式塔和平等主义
+				value = ethic_gestalt_consciousness
+				value = ethic_egalitarian
+				value = ethic_fanatic_egalitarian
+			}
+		}
+	}
+
+	random_weight = {
+		modifier = {
+			factor = 0
+		}
+	}
+
+	traits = {
+		trait = trait_latent_oripathy
+	}
+
+	country_modifier = {
+		country_edict_cap_add = 1
+	}
+
+	tags = {
+		AUTHORITY_ELECTION_ON_RULER_DEATH
+	}
+}

@@ -1,0 +1,56 @@
+# 源能涨落增压器
+utility_component_template = {
+	key = "ARK_BOOSTER"
+	size = aux
+	icon = "GFX_ark_ship_part_booster"
+	icon_frame = 1
+	power = 200
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+			originiums = 0.333
+			multipole_nanosheets = 0.333
+		}
+	}
+	
+	prerequisites = { "tech_ark_booster" }
+	component_set = "ARK_BOOSTER"
+	
+	modifier = {
+		ship_weapon_damage = 0.1
+		ship_hull_mult = -0.05
+	}
+	
+	ai_weight = {
+		weight = 5
+	}
+}
+
+# 质量感应弹
+utility_component_template = {
+	key = "ARK_MASS_SENSING_AMMO"
+	size = aux
+	icon = "GFX_ark_ship_part_mass_sensing_ammo"
+	icon_frame = 1
+	power = -10
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+			originiums = 0.333
+			multipole_nanosheets = 0.666
+		}
+	}
+	
+	prerequisites = { "tech_ark_mass_sensing_ammo" }
+	component_set = "ARK_MASS_SENSING_AMMO"
+	
+	modifier = {
+		ship_tracking_add = 15
+	}
+	
+	ai_weight = {
+		weight = 5
+	}
+}

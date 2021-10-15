@@ -1,0 +1,28 @@
+# Start Screen Messages
+# Parameters:
+#   trigger, a trigger with country which decides if this is a valid part. Empty will be treated as always=yes.
+#   localization, a key to a localized string.
+#	location, decides where this chunk of text is located in the description, cannot be negative.
+
+
+### FIRST PARTS
+
+# 泰拉联合世界
+part = {
+	location = 0
+	localization = "START_SCREEN_ARK_1"
+
+	trigger = {
+		has_country_flag = arknight_1
+	}
+}
+
+# 泰拉文明秩序
+part = {
+	location = 0
+	localization = "START_SCREEN_ARK_2"
+
+	trigger = {
+		has_country_flag = arknight_2
+	}
+}

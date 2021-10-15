@@ -1,0 +1,55 @@
+component_set = {
+	key = "ARK_SHIELD_1"
+	
+	icon = "GFX_ark_ship_part_shield_1"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ARK_SHIELD_2"
+	
+	icon = "GFX_ark_ship_part_shield_2"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ARK_SHIELD_3"
+	
+	icon = "GFX_ark_ship_part_shield_3"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ARK_SHIELD_4A"
+	
+	icon = "GFX_ark_ship_part_shield_4a"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ARK_SHIELD_4B"
+	
+	icon = "GFX_ark_ship_part_shield_4b"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ARK_SHIELD_5A"
+	
+	icon = "GFX_ark_ship_part_shield_5a"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ARK_SHIELD_5B"
+	
+	icon = "GFX_ark_ship_part_shield_5b"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ARK_SHIELD_5C"
+	
+	icon = "GFX_ark_ship_part_shield_5c"
+	icon_frame = 1	
+}
