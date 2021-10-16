@@ -1,4 +1,4 @@
-# Stellaris_Arknights_Near_Futuer_mod
+# Stellaris_Arknights_Near_Future_mod
 #A repository for Arknights:Near Future and its submod Arknights:Distant Future.
 
 #This mod is developed for the video game "Stellaris" from Paradox Interactive.
