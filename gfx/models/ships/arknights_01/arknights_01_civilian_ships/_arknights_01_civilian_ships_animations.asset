@@ -1,0 +1,10 @@
+#殖民船idle
+animation = {
+	name = "arknights_01_colony_idle_animation"
+	file = "arknights_01_colony_anim_idle.anim"
+}
+#殖民船death
+animation = {
+	name = "arknights_01_colony_death_animation"
+	file = "arknights_01_colony_anim_death.anim"
+}

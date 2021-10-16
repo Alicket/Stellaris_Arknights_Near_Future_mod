@@ -1,0 +1,19 @@
+animation = {
+	name = "arknights_01_science_station_idle_animation"
+	file = "molluscoid_01_science_station_idle.anim"
+}
+
+animation = {
+	name = "arknights_01_science_station_death_animation"
+	file = "molluscoid_01_science_station_death.anim"
+}
+
+animation = {
+	name = "arknights_01_orbital_station_main_idle_animation"
+	file = "molluscoid_01_orbital_station_main_idle.anim"
+}
+
+animation = {
+	name = "arknights_01_orbital_station_main_death_animation"
+	file = "molluscoid_01_orbital_station_main_death.anim"
+}

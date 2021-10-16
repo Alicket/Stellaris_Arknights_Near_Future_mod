@@ -1,0 +1,228 @@
+objectTypes = {
+
+#普通炮塔#
+
+	pdxmesh = {
+		name = "arknights_01_turret_small_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_turrets/arknights_01_small_turret.mesh"
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "arknights_01_turret_medium_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_turrets/arknights_01_medium_turret.mesh"
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "arknights_01_turret_large_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_turrets/arknights_01_large_turret.mesh"
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "arknights_01_turret_xl_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_turrets/arknights_01_xl_turret.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			index = 0
+			texture_diffuse = "arknights_01_xl_turret_diffuse.dds"
+			texture_normal = "arknights_01_xl_turret_normal.dds"
+			texture_specular = "arknights_01_xl_turret_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "arknights_01_turret_point_defence_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_turrets/arknights_01_point_defence_R.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			index = 0
+			texture_diffuse = "arknights_01_point_defence_R_diffuse.dds"
+			texture_normal = "arknights_01_point_defence_R_normal.dds"
+			texture_specular = "arknights_01_point_defence_R_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+
+#导弹
+		pdxmesh = {
+		name = "arknights_01_turret_missile_small_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_turrets/arknights_01_turret_missile_small.mesh"
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "arknights_01_turret_missile_medium_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_turrets/arknights_01_turret_missile_medium.mesh"
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "arknights_01_turret_missile_large_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_turrets/arknights_01_turret_missile_large.mesh"
+		scale = 1.0
+	}
+	
+#法术加农炮#
+
+	pdxmesh = {
+		name = "arknights_01_turret_polymer_small_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_turrets/arknights_01_polymer_small.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "ark_polymer_small_mesh"
+			index = 0
+			texture_diffuse = "arknights_01_polymer_diffuse.dds"
+			texture_normal = "arknights_01_polymer_normal.dds"
+			texture_specular = "arknights_01_polymer_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "arknights_01_turret_polymer_medium_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_turrets/arknights_01_polymer_medium.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "ark_polymer_medium_mesh"
+			index = 0
+			texture_diffuse = "arknights_01_polymer_diffuse.dds"
+			texture_normal = "arknights_01_polymer_normal.dds"
+			texture_specular = "arknights_01_polymer_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "arknights_01_turret_polymer_large_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_turrets/arknights_01_polymer_large.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "ark_polymer_large_mesh"
+			index = 0
+			texture_diffuse = "arknights_01_polymer_diffuse.dds"
+			texture_normal = "arknights_01_polymer_normal.dds"
+			texture_specular = "arknights_01_polymer_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+#技艺脉冲炮#
+
+	pdxmesh = {
+		name = "arknights_01_pulse_small_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_turrets/arknights_01_pulse_small.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "pulse_small_mesh"
+			index = 0
+			texture_diffuse = "arknights_01_pulse_diffuse.dds"
+			texture_normal = "arknights_01_pulse_normal.dds"
+			texture_specular = "arknights_01_pulse_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+pdxmesh = {
+		name = "arknights_01_pulse_medium_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_turrets/arknights_01_pulse_medium.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "pulse_medium_mesh"
+			index = 0
+			texture_diffuse = "arknights_01_pulse_diffuse.dds"
+			texture_normal = "arknights_01_pulse_normal.dds"
+			texture_specular = "arknights_01_pulse_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+pdxmesh = {
+		name = "arknights_01_pulse_large_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_turrets/arknights_01_pulse_large.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "pulse_large_mesh"
+			index = 0
+			texture_diffuse = "arknights_01_pulse_diffuse.dds"
+			texture_normal = "arknights_01_pulse_normal.dds"
+			texture_specular = "arknights_01_pulse_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+#技艺重脉冲#
+
+pdxmesh = {
+		name = "arknights_01_pulse_2_small_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_turrets/arknights_01_pulse_2_small.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "ark_pulse_2_small_mesh"
+			index = 0
+			texture_diffuse = "arknights_01_pulse_2_diffuse.dds"
+			texture_normal = "arknights_01_pulse_2_normal.dds"
+			texture_specular = "arknights_01_pulse_2_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+pdxmesh = {
+		name = "arknights_01_pulse_2_medium_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_turrets/arknights_01_pulse_2_medium.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "ark_pulse_2_medium_mesh"
+			index = 0
+			texture_diffuse = "arknights_01_pulse_2_diffuse.dds"
+			texture_normal = "arknights_01_pulse_2_normal.dds"
+			texture_specular = "arknights_01_pulse_2_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+pdxmesh = {
+		name = "arknights_01_pulse_2_large_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_turrets/arknights_01_pulse_2_large.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "ark_pulse_2_large_mesh"
+			index = 0
+			texture_diffuse = "arknights_01_pulse_2_diffuse.dds"
+			texture_normal = "arknights_01_pulse_2_normal.dds"
+			texture_specular = "arknights_01_pulse_2_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+#法术近防炮#
+
+pdxmesh = {
+		name = "arknights_01_point_defence_O_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_turrets/arknights_01_point_defence_O.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "ark_point_defence_O_mesh"
+			index = 0
+			texture_diffuse = "arknights_01_point_defence_O_diffuse.dds"
+			texture_normal = "arknights_01_point_defence_O_normal.dds"
+			texture_specular = "arknights_01_point_defence_O_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

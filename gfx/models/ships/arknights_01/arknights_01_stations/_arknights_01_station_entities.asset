@@ -1,0 +1,96 @@
+@military_station_large = 15.0
+@orbital_station = 17
+@research_station = 13
+@mining_station = 13
+@terraforming_station = 13
+
+
+entity = {
+	name = "arknights_01_research_station_entity"
+	pdxmesh = "mammalian_01_science_station_frame_mesh"
+
+	locator = { name = "part1" 			position = { 0 	0 	0 } }
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+	}
+
+	state = { name = "death" animation = "death" looping = no
+		event = { time = 0.9 particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_large" } }
+	}
+	scale = 1.4
+
+	game_data = {
+		size = @research_station
+		emissive_recolor_crunch = 5.0
+	}
+
+	#attach = { part1 = "mammalian_01_research_station_section_entity" }
+}
+
+entity = {
+	name = "arknights_01_research_station_section_entity"
+	pdxmesh = "arknights_01_science_station_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_research_station_signals" } }
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 2.0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 4.0 node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 2.2 node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 2.9 node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "death" state_time = 2 looping = no
+		event = { time = 0.0 node = "explosion_1" particle = "lithoid_ship_explosion_s_effect" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 0.5 node = "explosion_2" particle = "lithoid_ship_explosion_s_effect" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 1.0 node = "explosion_3" particle = "lithoid_ship_explosion_s_effect" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+	
+		event = { time = 1.9 particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_large" } }
+	}
+}
+
+entity = {
+	name = "arknights_01_mining_station_entity"
+	pdxmesh = "mammalian_01_mining_station_frame_mesh"
+
+	locator = { name = "part1" 			position = { 0 	0 	0 } }
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+	}
+
+	state = { name = "death" animation = "death" looping = no
+		event = { time = 0.9 particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_large" } }
+	}
+	scale = 1.4
+
+	game_data = {
+		size = @mining_station
+		emissive_recolor_crunch = 5.0
+	}
+
+	#attach = { part1 = "mammalian_01_mining_station_section_entity" }
+}
+
+entity = {
+	name = "arknights_01_mining_station_section_entity"
+	pdxmesh = "arknights_01_mining_station_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_mining_station_signals" } }
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 2.0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 4.0 node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 2.2 node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 2.9 node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "death" state_time = 2 looping = no
+		event = { time = 0.0 node = "explosion_1" particle = "lithoid_ship_explosion_s_effect" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 0.5 node = "explosion_2" particle = "lithoid_ship_explosion_s_effect" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 1.0 node = "explosion_3" particle = "lithoid_ship_explosion_s_effect" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+	
+		event = { time = 1.9 particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_large" } }
+	}
+}

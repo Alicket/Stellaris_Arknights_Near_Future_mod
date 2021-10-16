@@ -1,0 +1,260 @@
+#####炮塔Turrets#####
+
+#脑子一抽就把特有炮塔也都做了，占用存储空间私密马赛
+#法术加农炮：留声机，但是显然百分比真伤对于小留声机来说有点子困难
+#点防御：麦麦的武装打击模块，但是这点防御不打导弹也不扔鲱鱼罐头
+#脉冲&重脉冲：根据衡菌陛下画的图标做的
+#近防炮别问我为啥那么大，问就是源石技艺（
+#导弹塔没有模型，将会直接整合进舰船模型上的固定发射井
+
+#s#
+
+entity = {
+	name = "arknights_01_small_kinetic_gun_entity"
+	pdxmesh = "arknights_01_turret_small_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+}
+
+entity = {
+	name = "arknights_01_small_laser_gun_entity"
+	pdxmesh = "arknights_01_turret_small_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+}
+
+#m#
+
+entity = {
+	name = "arknights_01_medium_kinetic_gun_entity"
+	pdxmesh = "arknights_01_turret_medium_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+}
+
+entity = {
+	name = "arknights_01_medium_laser_gun_entity"
+	pdxmesh = "arknights_01_turret_medium_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+}
+
+#l#
+
+entity = {
+	name = "arknights_01_large_kinetic_gun_entity"
+	pdxmesh = "arknights_01_turret_large_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+}
+
+entity = {
+	name = "arknights_01_large_laser_gun_entity"
+	pdxmesh = "arknights_01_turret_large_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+}
+#中子雷
+entity = {
+	name = "arknights_01_turret_energy_torpedo_entity"
+	pdxmesh = "arknights_01_turret_large_mesh"
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 0.85
+}
+
+#xl#
+
+entity = {
+	name = "arknights_01_turret_xl_entity"
+	pdxmesh = "arknights_01_turret_xl_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+}
+
+#pd#
+
+entity = {
+	name = "arknights_01_turret_point_defence_entity"
+	pdxmesh = "arknights_01_turret_point_defence_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+}
+
+#导弹#
+
+entity = {
+	name = "arknights_01_turret_missile_large_entity"
+	pdxmesh = "arknights_01_turret_missile_large_mesh"
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+}
+
+entity = {
+	name = "arknights_01_turret_missile_medium_entity"
+	pdxmesh = "arknights_01_turret_missile_medium_mesh"
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+}
+
+entity = {
+	name = "arknights_01_turret_missile_small_entity"
+	pdxmesh = "arknights_01_turret_missile_small_mesh"
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+}
+
+entity = {
+	name = "arknights_01_turret_torpedo_entity"
+	pdxmesh = "arknights_01_turret_missile_medium_mesh"
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 0.85
+}
+
+
+#法术加农炮polymer#
+
+entity = {
+	name = "arknights_01_turret_polymer_small_entity"
+	pdxmesh = "arknights_01_turret_polymer_small_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+}
+
+entity = {
+	name = "arknights_01_turret_polymer_medium_entity"
+	pdxmesh = "arknights_01_turret_polymer_medium_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+}
+
+entity = {
+	name = "arknights_01_turret_polymer_large_entity"
+	pdxmesh = "arknights_01_turret_polymer_large_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+}
+
+
+#技艺脉冲炮ark_pulse#
+
+entity = {
+	name = "arknights_01_pulse_small_entity"
+	pdxmesh = "arknights_01_pulse_small_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+}
+
+entity = {
+	name = "arknights_01_pulse_medium_entity"
+	pdxmesh = "arknights_01_pulse_medium_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+}
+
+entity = {
+	name = "arknights_01_pulse_large_entity"
+	pdxmesh = "arknights_01_pulse_large_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+}
+
+#技艺重脉冲ark_pulse_2#
+
+entity = {
+	name = "arknights_01_pulse_2_small_entity"
+	pdxmesh = "arknights_01_pulse_2_small_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+}
+
+entity = {
+	name = "arknights_01_pulse_2_medium_entity"
+	pdxmesh = "arknights_01_pulse_2_medium_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+}
+
+entity = {
+	name = "arknights_01_pulse_2_large_entity"
+	pdxmesh = "arknights_01_pulse_2_large_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+}
+
+#法术近防炮ark_point_defence#
+
+entity = {
+	name = "arknights_01_point_defence_O_entity"
+	pdxmesh = "arknights_01_point_defence_O_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+}
