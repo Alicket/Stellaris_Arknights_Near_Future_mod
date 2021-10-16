@@ -1,0 +1,29 @@
+sectors_others_group = {
+	resources = {
+		volatile_motes
+		exotic_gases
+		rare_crystals
+		sr_living_metal
+		sr_zro
+		sr_dark_matter
+		nanites
+		originiums
+		d32_steels
+		multipole_nanosheets
+		star_trek_armour
+		mind_club
+		azur_shippartbox
+		azur_red_diamond
+		sr_pantsu
+		sr_neo
+		sr_alpha
+		sr_se
+		sr_kyber_swgs
+		sr_tibanna_swgs
+		manpower
+	}
+	localization = {
+		"RESOURCE_GROUP_BALANCE_ONLY" = default
+		"RESOURCE_GROUP_BALANCE_ONLY_NEG" = { balance < 0 }
+	}
+}

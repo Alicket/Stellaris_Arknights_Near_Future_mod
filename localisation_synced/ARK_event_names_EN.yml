@@ -1,0 +1,37 @@
+﻿l_english:
+ 
+ NAME_Victoria:0 "Victoria"
+ NAME_Victoria_fleet:0 "Royal Space Fleet"
+ NAME_Ursus:0 "Ursus"
+ NAME_Ursus_fleet:0 "Imperial Navy"
+ NAME_Columbia:0 "Columbia"
+ NAME_Columbia_fleet:0 "Columbia Space Force"
+ 
+ NAME_New_Reunion:0 "Riot group"
+ NAME_Reunion_Rebel: "Infected rebels"
+ NAME_Racists_Country:0 "Split countries"
+ NAME_Racists_Rebel1:0 "Ursus rebels"
+ NAME_Racists_Rebel2:0 "Siracusa rebels"
+ NAME_Racists_Rebel3:0 "Kjerag rebels"
+ NAME_Racists_Rebel4:0 "Columbia rebels"
+ NAME_Racists_Rebel5:0 "Laterano rebels"
+ NAME_Racists_Rebel6:0 "Kazimierz rebels"
+ NAME_Racists_Rebel7:0 "Yen rebels"
+ NAME_Racists_Rebel8:0 "Higashi rebels"
+ NAME_Racists_Rebel9:0 "Kazdel rebels"
+
+ NAME_Doctor: "Doctor"		# 001
+ NAME_Kaltsit: "Kal'tsit"		# 003
+ NAME_Closure: "Closure"		# 007
+ NAME_Chen: "Ch'en"		# 010
+ NAME_Silence: "Silence"		# 108
+ NAME_Hellagur: "Hellagur"		# 188
+ NAME_Mayer: "Mayer"		# 242
+ NAME_Magallan: "Magallan"	# 248
+ NAME_Snowsant: "Snowsant"	# 383
+ NAME_Weedy: "Weedy"		# 400
+ NAME_Dumbness_Infinite: "Dumbness Infinite"	# 001
+ NAME_kingslayer: "弑君者"
+
+
+ NAME_Rhodes_Island: "Rhodes Island"

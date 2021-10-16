@@ -1,0 +1,38 @@
+﻿l_simp_chinese:
+ 
+ NAME_Victoria:0 "维多利亚"
+ NAME_Victoria_fleet:0 "皇家太空舰队"
+ NAME_Ursus:0 "乌萨斯"
+ NAME_Ursus_fleet:0 "帝国舰队"
+ NAME_Columbia:0 "哥伦比亚"
+ NAME_Columbia_fleet:0 "哥伦比亚太空军"
+
+
+ NAME_New_Reunion:0 "暴动组织"
+ NAME_Reunion_Rebel: "感染者叛军"
+ NAME_Racists_Country:0 "分裂各国"
+ NAME_Racists_Rebel1:0 "乌萨斯叛军"
+ NAME_Racists_Rebel2:0 "叙拉古叛军"
+ NAME_Racists_Rebel3:0 "谢拉格叛军"
+ NAME_Racists_Rebel4:0 "哥伦比亚叛军"
+ NAME_Racists_Rebel5:0 "拉特兰叛军"
+ NAME_Racists_Rebel6:0 "卡西米尔叛军"
+ NAME_Racists_Rebel7:0 "炎国叛军"
+ NAME_Racists_Rebel8:0 "东国叛军"
+ NAME_Racists_Rebel9:0 "卡兹戴尔叛军"
+
+ NAME_Doctor: "DOCTOR"	# 001
+ NAME_Kaltsit: "凯尔希"	# 003
+ NAME_Closure: "可露希尔"	# 007
+ NAME_Chen: "陈"		# 010
+ NAME_Silence: "赫默"	# 108
+ NAME_Hellagur: "赫拉格"	# 188
+ NAME_Mayer: "梅尔"	# 242
+ NAME_Magallan: "麦哲伦"	# 248
+ NAME_Snowsant: "雪雉"	# 383
+ NAME_Weedy: "温蒂"	# 400
+ NAME_Dumbness_Infinite: "Dumbness Infinite"	# 001
+ NAME_kingslayer: "弑君者"
+
+
+ NAME_Rhodes_Island: "罗德岛"

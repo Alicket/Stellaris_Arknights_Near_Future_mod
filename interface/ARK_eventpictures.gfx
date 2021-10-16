@@ -1,0 +1,178 @@
+spriteTypes = {	
+
+	
+	spriteType = {	# 开局:阿米娅
+		name = "GFX_evt_arknights_amiya"
+		texturefile = "gfx/event_pictures/arknights_amiya.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {	# 开局:罗德岛
+		name = "GFX_evt_rhodes_island"
+		texturefile = "gfx/event_pictures/rhodes_island.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {	# 卡西米尔街景
+		name = "GFX_evt_kxstreet"
+		texturefile = "gfx/event_pictures/kxstreet.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {	# 矿石病1
+		name = "GFX_evt_ori1"
+		texturefile = "gfx/event_pictures/ori1.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {	# 治疗矿石病
+		name = "GFX_evt_treating_oripathy"
+		texturefile = "gfx/event_pictures/treating_oripathy.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {	# 病房
+		name = "GFX_evt_ward"
+		texturefile = "gfx/event_pictures/ward.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {	# 源石病1
+		name = "GFX_evt_oripathy_1"
+		texturefile = "gfx/event_pictures/oripathy_1.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {	# 医务室
+		name = "GFX_evt_infirmary"
+		texturefile = "gfx/event_pictures/infirmary.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {	# 至纯源石
+		name = "GFX_evt_originite_prime"
+		texturefile = "gfx/event_pictures/originite_prime.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {	# 建筑顶部
+		name = "GFX_evt_top"
+		texturefile = "gfx/event_pictures/top.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {	# 天灾源石
+		name = "GFX_evt_catastrophes_originiums"
+		texturefile = "gfx/event_pictures/catastrophes_originiums.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {	# 雪原
+		name = "GFX_evt_snowconutry"
+		texturefile = "gfx/event_pictures/snowconutry.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {	# 泰拉新闻
+		name = "GFX_evt_terra_news"
+		texturefile = "gfx/event_pictures/terra_news.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_evt_armed_rebellion"
+		texturefile = "gfx/event_pictures/armed_rebellion.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_evt_deathline_approaching"
+		texturefile = "gfx/event_pictures/deathline_approaching.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_evt_attack_bombing"
+		texturefile = "gfx/event_pictures/attack_bombing.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {	# 地面战斗(与叛军)
+		name = "GFX_evt_ark_ground_combat"
+		texturefile = "gfx/event_pictures/ark_ground_combat.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {	# 战斗之后
+		name = "GFX_evt_after_the_battle"
+		texturefile = "gfx/event_pictures/after_the_battle.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_evt_celebration"
+		texturefile = "gfx/event_pictures/celebration.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_evt_about_kingslayer"
+		texturefile = "gfx/event_pictures/about_kingslayer.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {	# 天灾与撤离
+		name = "GFX_evt_catastrophe_evacuation"
+		texturefile = "gfx/event_pictures/catastrophe_evacuation.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {	# 天灾与撤离:海啸
+		name = "GFX_evt_catastrophe_evacuation2"
+		texturefile = "gfx/event_pictures/catastrophe_evacuation2.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {	# 前进中的飞船
+		name = "GFX_evt_spaceship_in_progress"
+		texturefile = "gfx/event_pictures/spaceship_in_progress.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {	# 不明飞船
+		name = "GFX_evt_unknown_spaceship"
+		texturefile = "gfx/event_pictures/unknown_spaceship.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {	# 残骸&解体
+		name = "GFX_evt_spaceship_debris"
+		texturefile = "gfx/event_pictures/spaceship_debris.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {	# 来自深海
+		name = "GFX_evt_fighting_with_deep_sea"
+		texturefile = "gfx/event_pictures/fighting_with_deep_sea.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {	# 巅峰计划:梅尔和麦哲伦
+		name = "GFX_evt_peak_plan1"
+		texturefile = "gfx/event_pictures/peak_plan1.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {	# 天灾中的城市1
+		name = "GFX_evt_city_in_catastrophe1"
+		texturefile = "gfx/event_pictures/city_in_catastrophe1.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {	# 天灾中的城市2
+		name = "GFX_evt_city_in_catastrophe2"
+		texturefile = "gfx/event_pictures/city_in_catastrophe2.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+}

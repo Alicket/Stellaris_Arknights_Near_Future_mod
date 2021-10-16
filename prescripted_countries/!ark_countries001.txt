@@ -1,0 +1,147 @@
+#泰拉联合世界
+ARK_country_1={
+	key="arknight1"
+	name="arknight1"
+	adjective="PRESCRIPTED_adjective_arknight1"
+	spawn_enabled = yes
+	ignore_portrait_duplication=no
+	
+	ship_prefix="PRESCRIPTED_ship_prefix_arknight1"
+	
+	species={
+		class="Arknight"
+		portrait="arknights"
+		name="Terraman"
+		plural="Terramen"
+		adjective="Terraman"
+		name_list="ark_01"
+		trait="trait_latent_oripathy"
+		trait="trait_natural_engineers"
+		trait="trait_nomadic"
+		trait="trait_quarrelsome"
+		trait="trait_deviants"
+	}
+	
+	room="personality_hegemonic_imperialists_room"
+	
+	flags = { arknight_1 custom_start_screen }
+	
+	authority="auth_city_republic"
+	civics={
+		"civic_business_union"
+		"civic_pharmaceutical_enterprises"
+	}
+	origin = "origin_ark_tragedy_birth"
+	government="gov_ark_commercial_republic"
+	advisor_voice_type="l_slick_corp"
+	
+	ethic="ethic_fanatic_militarist"
+	ethic="ethic_materialist"
+	
+	planet_name="NAME_Terra"
+	planet_class="pc_continental"
+	initializer="Tyra_system"
+	system_name="NAME_Tyra_system"
+	
+	graphical_culture="arknights_01"
+	city_graphical_culture="mammalian_01"
+	empire_flag={
+		icon={
+			category="hypergryph"
+			file="flag_rhodes_island.dds"
+		}
+		background={
+			category="backgrounds"
+			file="rounded_middle.dds"
+		}
+		colors={
+			"light_blue"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	
+	ruler={
+		name="NAME_Kaltsit"
+		gender=female
+		portrait="ARK003"
+		set_age = 30
+		ruler_title="PRESCRIPTED_ruler_title_arknight1"
+		ruler_title_female="PRESCRIPTED_ruler_title_female_arknight1"
+	}
+}
+
+#泰拉秩序
+ARK_country_2={
+	key="arknight2"
+	name="arknight2"
+	adjective="PRESCRIPTED_adjective_arknight2"
+	spawn_enabled = no
+	ignore_portrait_duplication=no
+	
+	ship_prefix="PRESCRIPTED_ship_prefix_arknight2"
+	
+	species={
+		class="Arknight"
+		portrait="arknights"
+		name="Terraman"
+		plural="Terramen"
+		adjective="Terraman"
+		name_list="ark_01"
+		trait="trait_latent_oripathy"
+		trait="trait_natural_engineers"
+		trait="trait_nomadic"
+		trait="trait_quarrelsome"
+		trait="trait_deviants"
+	}
+	
+	room="personality_democratic_crusaders_room"
+	
+	flags = { arknight_2 custom_start_screen }
+	
+	authority="auth_city_despotism"
+	civics={
+		"civic_distinguished_admiralty"
+		"civic_efficient_bureaucracy"
+	}
+	origin="origin_default"
+	government="gov_ark_military_despotism" 
+	advisor_voice_type="l_authoritarian"
+	
+	ethic="ethic_fanatic_militarist"
+	ethic="ethic_xenophobe"
+	
+	planet_name="NAME_Terra"
+	planet_class="pc_continental"
+	initializer="Tyra_system"
+	system_name="NAME_Tyra_system"
+	
+	graphical_culture="arknights_01"
+	city_graphical_culture="mammalian_01"
+	empire_flag={
+		icon={
+			category="hypergryph"
+			file="flag_babel.dds"
+		}
+		background={
+			category="backgrounds"
+			file="rounded_middle.dds"
+		}
+		colors={
+			"red"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	
+	ruler={
+		name="NAME_Doctor"
+		gender=male
+		portrait="ARK001_W"
+		set_age = 30
+		ruler_title="PRESCRIPTED_ruler_title_arknight1"
+		ruler_title_female="PRESCRIPTED_ruler_title_female_arknight1"
+	}
+}

@@ -1,0 +1,8 @@
+spriteTypes = {
+	
+	spriteType = {	# 终局抵抗者
+		name = "GFX_ap_resister_of_the_end"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_resister_of_the_end.dds"
+		alwaystransparent = yes
+	}
+}

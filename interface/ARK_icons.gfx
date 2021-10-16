@@ -1,0 +1,135 @@
+spriteTypes = {
+
+	spriteType = {	# 制造站
+		name = "GFX_spaceport_manufacturing_station"
+		texturefile = "gfx/interface/icons/modules/spaceport_manufacturing_station.dds"
+	}
+	spriteType = {	# 加工站
+		name = "GFX_spaceport_machining_station"
+		texturefile = "gfx/interface/icons/modules/spaceport_machining_station.dds"
+	}
+	spriteType = {
+		name = "GFX_ark_ship_part_armor_1"
+		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_armor_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ark_ship_part_armor_2"
+		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_armor_2.dds"
+	}
+	spriteType = {
+		name = "GFX_ark_ship_part_armor_3"
+		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_armor_3.dds"
+	}
+	spriteType = {
+		name = "GFX_ark_ship_part_armor_4a"
+		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_armor_4a.dds"
+	}
+	spriteType = {
+		name = "GFX_ark_ship_part_armor_4b"
+		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_armor_4b.dds"
+	}
+	spriteType = {
+		name = "GFX_ark_ship_part_shield_1"
+		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_shield_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ark_ship_part_shield_2"
+		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_shield_2.dds"
+	}
+	spriteType = {
+		name = "GFX_ark_ship_part_shield_3"
+		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_shield_3.dds"
+	}
+	spriteType = {
+		name = "GFX_ark_ship_part_shield_4a"
+		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_shield_4a.dds"
+	}
+	spriteType = {
+		name = "GFX_ark_ship_part_shield_4b"
+		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_shield_4b.dds"
+	}
+	spriteType = {
+		name = "GFX_ark_ship_part_shield_5a"
+		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_shield_5a.dds"
+	}
+	spriteType = {
+		name = "GFX_ark_ship_part_shield_5b"
+		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_shield_5b.dds"
+	}
+	spriteType = {
+		name = "GFX_ark_ship_part_shield_5c"
+		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_shield_5c.dds"
+	}
+	spriteType = {	# 技艺镭射炮
+		name = "GFX_ark_ship_part_laser_1"
+		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_laser_1.dds"
+	}
+	spriteType = {	# 聚能技艺镭射炮
+		name = "GFX_ark_ship_part_laser_2"
+		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_laser_2.dds"
+	}
+	spriteType = {	# 法术加农炮
+		name = "GFX_ark_ship_part_arts_polymer"
+		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_arts_polymer.dds"
+	}
+	spriteType = {	# 明色裂解炮
+		name = "GFX_ark_ship_part_disruptor1_1"
+		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_disruptor1_1.dds"
+	}
+	spriteType = {	# 晦色裂解炮
+		name = "GFX_ark_ship_part_disruptor2_1"
+		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_disruptor2_1.dds"
+	}
+	spriteType = {	# 法术近防炮
+		name = "GFX_ark_ship_part_point_defence"
+		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_point_defence.dds"
+	}
+	spriteType = {	# 量子二踢脚-岁
+		name = "GFX_ark_ship_part_energy_torpedo_1"
+		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_energy_torpedo_1.dds"
+	}
+	spriteType = {	# 量子二踢脚
+		name = "GFX_ark_ship_part_missile_1"
+		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_missile_1.dds"
+	}
+	spriteType = {	# 改良型量子二踢脚
+		name = "GFX_ark_ship_part_missile_2"
+		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_missile_2.dds"
+	}
+	spriteType = {	# 源能重炮
+		name = "GFX_ark_ship_part_mass_accelerator_1"
+		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_mass_accelerator_1.dds"
+	}
+	spriteType = {	# 源能宏炮
+		name = "GFX_ark_ship_part_mass_accelerator_2"
+		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_mass_accelerator_2.dds"
+	}
+	spriteType = {	# 源能涨落增压器
+		name = "GFX_ark_ship_part_booster"
+		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_booster.dds"
+	}
+	spriteType = {	# 质量感应弹
+		name = "GFX_ark_ship_part_mass_sensing_ammo"
+		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_mass_sensing_ammo.dds"
+	}
+	spriteType = {	# 源能涨落反应堆
+		name = "GFX_ark_ship_part_reactor"
+		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_reactor.dds"
+	}
+	spriteType = {	# 作战电脑（幽灵）
+		name = "GFX_ark_ship_part_computer_ghost_1"
+		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_computer_ghost_1.dds"
+	}
+	spriteType = {	# 先进作战电脑（幽灵）
+		name = "GFX_ark_ship_part_computer_ghost_2"
+		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_computer_ghost_2.dds"
+	}
+	spriteType = {	# 知性战斗电脑（幽灵）
+		name = "GFX_ark_ship_part_computer_ghost_3"
+		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_computer_ghost_3.dds"
+	}
+	spriteType = {	# 预知接口（幽灵）
+		name = "GFX_ark_ship_part_computer_ghost_4"
+		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_computer_ghost_4.dds"
+	}
+}
