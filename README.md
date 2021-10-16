@@ -5,7 +5,7 @@
 #Based on mobile phone anime game "Arknights" from Hypergryph,China(International agency:Yostar).
 
 #Main contributors:
-  #Hengjun
+  #Lappland_mush
   #infinite-create
   #KBIAstecepes
   #Alicket
