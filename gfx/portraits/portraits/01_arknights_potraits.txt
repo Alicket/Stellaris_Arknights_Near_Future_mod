@@ -1,0 +1,873 @@
+portraits = {
+ARK001 = {textureFile = "gfx/models/portraits/Custom/ARK001.dds"}
+ARK001_R = {textureFile = "gfx/models/portraits/Custom/ARK001_R.dds"}
+ARK001_W = {textureFile = "gfx/models/portraits/Custom/ARK001_W.dds"}
+ARK002 = {textureFile = "gfx/models/portraits/Custom/ARK002.dds"}
+ARK003 = {textureFile = "gfx/models/portraits/Custom/ARK003.dds"}
+ARK007 = {textureFile = "gfx/models/portraits/Custom/ARK007.dds"}
+ARK009 = {textureFile = "gfx/models/portraits/Custom/ARK009.dds"}
+ARK010 = {textureFile = "gfx/models/portraits/Custom/ARK010.dds"}
+ARK017 = {textureFile = "gfx/models/portraits/Custom/ARK017.dds"}
+ARK101 = {textureFile = "gfx/models/portraits/Custom/ARK101.dds"}
+ARK102 = {textureFile = "gfx/models/portraits/Custom/ARK102.dds"}
+ARK103 = {textureFile = "gfx/models/portraits/Custom/ARK103.dds"}
+ARK106 = {textureFile = "gfx/models/portraits/Custom/ARK106.dds"}
+ARK107 = {textureFile = "gfx/models/portraits/Custom/ARK107.dds"}
+ARK108 = {textureFile = "gfx/models/portraits/Custom/ARK108.dds"}
+ARK109 = {textureFile = "gfx/models/portraits/Custom/ARK109.dds"}
+ARK110 = {textureFile = "gfx/models/portraits/Custom/ARK110.dds"}
+ARK112 = {textureFile = "gfx/models/portraits/Custom/ARK112.dds"}
+ARK113 = {textureFile = "gfx/models/portraits/Custom/ARK113.dds"}
+ARK115 = {textureFile = "gfx/models/portraits/Custom/ARK115.dds"}
+ARK117 = {textureFile = "gfx/models/portraits/Custom/ARK117.dds"}
+ARK118 = {textureFile = "gfx/models/portraits/Custom/ARK118.dds"}
+ARK120 = {textureFile = "gfx/models/portraits/Custom/ARK120.dds"}
+ARK121 = {textureFile = "gfx/models/portraits/Custom/ARK121.dds"}
+ARK122 = {textureFile = "gfx/models/portraits/Custom/ARK122.dds"}
+ARK123 = {textureFile = "gfx/models/portraits/Custom/ARK123.dds"}
+ARK124 = {textureFile = "gfx/models/portraits/Custom/ARK124.dds"}
+ARK126 = {textureFile = "gfx/models/portraits/Custom/ARK126.dds"}
+ARK127 = {textureFile = "gfx/models/portraits/Custom/ARK127.dds"}
+ARK128 = {textureFile = "gfx/models/portraits/Custom/ARK128.dds"}
+ARK129 = {textureFile = "gfx/models/portraits/Custom/ARK129.dds"}
+ARK130 = {textureFile = "gfx/models/portraits/Custom/ARK130.dds"}
+ARK131 = {textureFile = "gfx/models/portraits/Custom/ARK131.dds"}
+ARK133 = {textureFile = "gfx/models/portraits/Custom/ARK133.dds"}
+ARK134 = {textureFile = "gfx/models/portraits/Custom/ARK134.dds"}
+ARK136 = {textureFile = "gfx/models/portraits/Custom/ARK136.dds"}
+ARK137 = {textureFile = "gfx/models/portraits/Custom/ARK137.dds"}
+ARK140 = {textureFile = "gfx/models/portraits/Custom/ARK140.dds"}
+ARK141 = {textureFile = "gfx/models/portraits/Custom/ARK141.dds"}
+ARK143 = {textureFile = "gfx/models/portraits/Custom/ARK143.dds"}
+ARK144 = {textureFile = "gfx/models/portraits/Custom/ARK144.dds"}
+ARK145 = {textureFile = "gfx/models/portraits/Custom/ARK145.dds"}
+ARK147 = {textureFile = "gfx/models/portraits/Custom/ARK147.dds"}
+ARK148 = {textureFile = "gfx/models/portraits/Custom/ARK148.dds"}
+ARK149 = {textureFile = "gfx/models/portraits/Custom/ARK149.dds"}
+ARK150 = {textureFile = "gfx/models/portraits/Custom/ARK150.dds"}
+ARK151 = {textureFile = "gfx/models/portraits/Custom/ARK151.dds"}
+ARK155 = {textureFile = "gfx/models/portraits/Custom/ARK155.dds"}
+ARK158 = {textureFile = "gfx/models/portraits/Custom/ARK158.dds"}
+ARK159 = {textureFile = "gfx/models/portraits/Custom/ARK159.dds"}
+ARK163 = {textureFile = "gfx/models/portraits/Custom/ARK163.dds"}
+ARK164 = {textureFile = "gfx/models/portraits/Custom/ARK164.dds"}
+ARK166 = {textureFile = "gfx/models/portraits/Custom/ARK166.dds"}
+ARK171 = {textureFile = "gfx/models/portraits/Custom/ARK171.dds"}
+ARK172 = {textureFile = "gfx/models/portraits/Custom/ARK172.dds"}
+ARK173 = {textureFile = "gfx/models/portraits/Custom/ARK173.dds"}
+ARK174 = {textureFile = "gfx/models/portraits/Custom/ARK174.dds"}
+ARK179 = {textureFile = "gfx/models/portraits/Custom/ARK179.dds"}
+ARK180 = {textureFile = "gfx/models/portraits/Custom/ARK180.dds"}
+ARK181 = {textureFile = "gfx/models/portraits/Custom/ARK181.dds"}
+ARK183 = {textureFile = "gfx/models/portraits/Custom/ARK183.dds"}
+ARK185 = {textureFile = "gfx/models/portraits/Custom/ARK185.dds"}
+ARK187 = {textureFile = "gfx/models/portraits/Custom/ARK187.dds"}
+ARK188 = {textureFile = "gfx/models/portraits/Custom/ARK188.dds"}
+ARK190 = {textureFile = "gfx/models/portraits/Custom/ARK190.dds"}
+ARK192 = {textureFile = "gfx/models/portraits/Custom/ARK192.dds"}
+ARK193 = {textureFile = "gfx/models/portraits/Custom/ARK193.dds"}
+ARK195 = {textureFile = "gfx/models/portraits/Custom/ARK195.dds"}
+ARK196 = {textureFile = "gfx/models/portraits/Custom/ARK196.dds"}
+ARK197 = {textureFile = "gfx/models/portraits/Custom/ARK197.dds"}
+ARK198 = {textureFile = "gfx/models/portraits/Custom/ARK198.dds"}
+ARK199 = {textureFile = "gfx/models/portraits/Custom/ARK199.dds"}
+ARK201 = {textureFile = "gfx/models/portraits/Custom/ARK201.dds"}
+ARK202 = {textureFile = "gfx/models/portraits/Custom/ARK202.dds"}
+ARK204 = {textureFile = "gfx/models/portraits/Custom/ARK204.dds"}
+ARK208 = {textureFile = "gfx/models/portraits/Custom/ARK208.dds"}
+ARK209 = {textureFile = "gfx/models/portraits/Custom/ARK209.dds"}
+ARK210 = {textureFile = "gfx/models/portraits/Custom/ARK210.dds"}
+ARK211 = {textureFile = "gfx/models/portraits/Custom/ARK211.dds"}
+ARK212 = {textureFile = "gfx/models/portraits/Custom/ARK212.dds"}
+ARK213 = {textureFile = "gfx/models/portraits/Custom/ARK213.dds"}
+ARK215 = {textureFile = "gfx/models/portraits/Custom/ARK215.dds"}
+ARK218 = {textureFile = "gfx/models/portraits/Custom/ARK218.dds"}
+ARK219 = {textureFile = "gfx/models/portraits/Custom/ARK219.dds"}
+ARK220 = {textureFile = "gfx/models/portraits/Custom/ARK220.dds"}
+ARK222 = {textureFile = "gfx/models/portraits/Custom/ARK222.dds"}
+ARK225 = {textureFile = "gfx/models/portraits/Custom/ARK225.dds"}
+ARK226 = {textureFile = "gfx/models/portraits/Custom/ARK226.dds"}
+ARK230 = {textureFile = "gfx/models/portraits/Custom/ARK230.dds"}
+ARK242 = {textureFile = "gfx/models/portraits/Custom/ARK242.dds"}
+ARK243 = {textureFile = "gfx/models/portraits/Custom/ARK243.dds"}
+ARK248 = {textureFile = "gfx/models/portraits/Custom/ARK248.dds"}
+ARK252 = {textureFile = "gfx/models/portraits/Custom/ARK252.dds"}
+ARK254 = {textureFile = "gfx/models/portraits/Custom/ARK254.dds"}
+ARK258 = {textureFile = "gfx/models/portraits/Custom/ARK258.dds"}
+ARK274 = {textureFile = "gfx/models/portraits/Custom/ARK274.dds"}
+ARK278 = {textureFile = "gfx/models/portraits/Custom/ARK278.dds"}
+ARK383 = {textureFile = "gfx/models/portraits/Custom/ARK383.dds"}
+ARK400 = {textureFile = "gfx/models/portraits/Custom/ARK400.dds"}
+ARKS002 = {textureFile = "gfx/models/portraits/Custom/ARKS002.dds"}
+ARKS010 = {textureFile = "gfx/models/portraits/Custom/ARKS010.dds"}
+ARKS017 = {textureFile = "gfx/models/portraits/Custom/ARKS017.dds"}
+ARKS101 = {textureFile = "gfx/models/portraits/Custom/ARKS101.dds"}
+ARKS102 = {textureFile = "gfx/models/portraits/Custom/ARKS102.dds"}
+ARKS103 = {textureFile = "gfx/models/portraits/Custom/ARKS103.dds"}
+ARKS106 = {textureFile = "gfx/models/portraits/Custom/ARKS106.dds"}
+ARKS107 = {textureFile = "gfx/models/portraits/Custom/ARKS107.dds"}
+ARKS108 = {textureFile = "gfx/models/portraits/Custom/ARKS108.dds"}
+ARKS109 = {textureFile = "gfx/models/portraits/Custom/ARKS109.dds"}
+ARKS110 = {textureFile = "gfx/models/portraits/Custom/ARKS110.dds"}
+ARKS112 = {textureFile = "gfx/models/portraits/Custom/ARKS112.dds"}
+ARKS113 = {textureFile = "gfx/models/portraits/Custom/ARKS113.dds"}
+ARKS115 = {textureFile = "gfx/models/portraits/Custom/ARKS115.dds"}
+ARKS117 = {textureFile = "gfx/models/portraits/Custom/ARKS117.dds"}
+ARKS118 = {textureFile = "gfx/models/portraits/Custom/ARKS118.dds"}
+ARKS126 = {textureFile = "gfx/models/portraits/Custom/ARKS126.dds"}
+ARKS127 = {textureFile = "gfx/models/portraits/Custom/ARKS127.dds"}
+ARKS128 = {textureFile = "gfx/models/portraits/Custom/ARKS128.dds"}
+ARKS129 = {textureFile = "gfx/models/portraits/Custom/ARKS129.dds"}
+ARKS130 = {textureFile = "gfx/models/portraits/Custom/ARKS130.dds"}
+ARKS131 = {textureFile = "gfx/models/portraits/Custom/ARKS131.dds"}
+ARKS133 = {textureFile = "gfx/models/portraits/Custom/ARKS133.dds"}
+ARKS134 = {textureFile = "gfx/models/portraits/Custom/ARKS134.dds"}
+ARKS136 = {textureFile = "gfx/models/portraits/Custom/ARKS136.dds"}
+ARKS137 = {textureFile = "gfx/models/portraits/Custom/ARKS137.dds"}
+ARKS140 = {textureFile = "gfx/models/portraits/Custom/ARKS140.dds"}
+ARKS141 = {textureFile = "gfx/models/portraits/Custom/ARKS141.dds"}
+ARKS143 = {textureFile = "gfx/models/portraits/Custom/ARKS143.dds"}
+ARKS144 = {textureFile = "gfx/models/portraits/Custom/ARKS144.dds"}
+ARKS145 = {textureFile = "gfx/models/portraits/Custom/ARKS145.dds"}
+ARKS147 = {textureFile = "gfx/models/portraits/Custom/ARKS147.dds"}
+ARKS148 = {textureFile = "gfx/models/portraits/Custom/ARKS148.dds"}
+ARKS149 = {textureFile = "gfx/models/portraits/Custom/ARKS149.dds"}
+ARKS150 = {textureFile = "gfx/models/portraits/Custom/ARKS150.dds"}
+ARKS151 = {textureFile = "gfx/models/portraits/Custom/ARKS151.dds"}
+ARKS155 = {textureFile = "gfx/models/portraits/Custom/ARKS155.dds"}
+ARKS158 = {textureFile = "gfx/models/portraits/Custom/ARKS158.dds"}
+ARKS159 = {textureFile = "gfx/models/portraits/Custom/ARKS159.dds"}
+ARKS163 = {textureFile = "gfx/models/portraits/Custom/ARKS163.dds"}
+ARKS164 = {textureFile = "gfx/models/portraits/Custom/ARKS164.dds"}
+ARKS166 = {textureFile = "gfx/models/portraits/Custom/ARKS166.dds"}
+ARKS171 = {textureFile = "gfx/models/portraits/Custom/ARKS171.dds"}
+ARKS172 = {textureFile = "gfx/models/portraits/Custom/ARKS172.dds"}
+ARKS173 = {textureFile = "gfx/models/portraits/Custom/ARKS173.dds"}
+ARKS174 = {textureFile = "gfx/models/portraits/Custom/ARKS174.dds"}
+ARKS179 = {textureFile = "gfx/models/portraits/Custom/ARKS179.dds"}
+ARKS180 = {textureFile = "gfx/models/portraits/Custom/ARKS180.dds"}
+ARKS181 = {textureFile = "gfx/models/portraits/Custom/ARKS181.dds"}
+ARKS183 = {textureFile = "gfx/models/portraits/Custom/ARKS183.dds"}
+ARKS185 = {textureFile = "gfx/models/portraits/Custom/ARKS185.dds"}
+ARKS187 = {textureFile = "gfx/models/portraits/Custom/ARKS187.dds"}
+ARKS188 = {textureFile = "gfx/models/portraits/Custom/ARKS188.dds"}
+ARKS190 = {textureFile = "gfx/models/portraits/Custom/ARKS190.dds"}
+ARKS193 = {textureFile = "gfx/models/portraits/Custom/ARKS193.dds"}
+ARKS195 = {textureFile = "gfx/models/portraits/Custom/ARKS195.dds"}
+ARKS196 = {textureFile = "gfx/models/portraits/Custom/ARKS196.dds"}
+ARKS197 = {textureFile = "gfx/models/portraits/Custom/ARKS197.dds"}
+ARKS198 = {textureFile = "gfx/models/portraits/Custom/ARKS198.dds"}
+ARKS199 = {textureFile = "gfx/models/portraits/Custom/ARKS199.dds"}
+ARKS201 = {textureFile = "gfx/models/portraits/Custom/ARKS201.dds"}
+ARKS202 = {textureFile = "gfx/models/portraits/Custom/ARKS202.dds"}
+ARKS204 = {textureFile = "gfx/models/portraits/Custom/ARKS204.dds"}
+ARKS213 = {textureFile = "gfx/models/portraits/Custom/ARKS213.dds"}
+ARKS215 = {textureFile = "gfx/models/portraits/Custom/ARKS215.dds"}
+ARKS218 = {textureFile = "gfx/models/portraits/Custom/ARKS218.dds"}
+ARKS219 = {textureFile = "gfx/models/portraits/Custom/ARKS219.dds"}
+ARKS220 = {textureFile = "gfx/models/portraits/Custom/ARKS220.dds"}
+ARKS222 = {textureFile = "gfx/models/portraits/Custom/ARKS222.dds"}
+ARKS225 = {textureFile = "gfx/models/portraits/Custom/ARKS225.dds"}
+ARKS226 = {textureFile = "gfx/models/portraits/Custom/ARKS226.dds"}
+ARKS230 = {textureFile = "gfx/models/portraits/Custom/ARKS230.dds"}
+ARKS235 = {textureFile = "gfx/models/portraits/Custom/ARKS235.dds"}
+ARKS242 = {textureFile = "gfx/models/portraits/Custom/ARKS242.dds"}
+ARKS243 = {textureFile = "gfx/models/portraits/Custom/ARKS243.dds"}
+ARKS248 = {textureFile = "gfx/models/portraits/Custom/ARKS248.dds"}
+ARKS250 = {textureFile = "gfx/models/portraits/Custom/ARKS250.dds"}
+ARKS252 = {textureFile = "gfx/models/portraits/Custom/ARKS252.dds"}
+ARKS254 = {textureFile = "gfx/models/portraits/Custom/ARKS254.dds"}
+ARKS258 = {textureFile = "gfx/models/portraits/Custom/ARKS258.dds"}
+ARKS274 = {textureFile = "gfx/models/portraits/Custom/ARKS274.dds"}
+ARKS383 = {textureFile = "gfx/models/portraits/Custom/ARKS383.dds"}
+ARKS400 = {textureFile = "gfx/models/portraits/Custom/ARKS400.dds"}
+RUON001 = {textureFile = "gfx/models/portraits/Custom/RUON001.dds"}
+RUON002 = {textureFile = "gfx/models/portraits/Custom/RUON002.dds"}
+EGG001 = {textureFile = "gfx/models/portraits/Custom/EGG001.dds"}
+
+}
+
+portrait_groups = {
+    arknights = {
+		  default = ARK002
+        	  game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+           		add = {
+                		portraits = {
+ARK001
+ARK001_R
+ARK001_W
+ARK002
+ARK003
+ARK007
+ARK009
+ARK010
+ARK017
+ARK101
+ARK102
+ARK103
+ARK106
+ARK107
+ARK108
+ARK109
+ARK110
+ARK112
+ARK113
+ARK115
+ARK117
+ARK118
+ARK120
+ARK121
+ARK122
+ARK123
+ARK124
+ARK126
+ARK127
+ARK128
+ARK129
+ARK130
+ARK131
+ARK133
+ARK134
+ARK136
+ARK137
+ARK140
+ARK141
+ARK143
+ARK144
+ARK145
+ARK147
+ARK148
+ARK149
+ARK150
+ARK151
+ARK155
+ARK158
+ARK159
+ARK163
+ARK164
+ARK166
+ARK171
+ARK172
+ARK173
+ARK174
+ARK179
+ARK180
+ARK181
+ARK183
+ARK185
+ARK187
+ARK188
+ARK190
+ARK192
+ARK193
+ARK195
+ARK196
+ARK197
+ARK198
+ARK199
+ARK201
+ARK202
+ARK204
+ARK208
+ARK209
+ARK210
+ARK211
+ARK212
+ARK213
+ARK215
+ARK218
+ARK219
+ARK220
+ARK222
+ARK225
+ARK226
+ARK230
+ARK242
+ARK243
+ARK248
+ARK252
+ARK254
+ARK258
+ARK274
+ARK278
+ARK383
+ARK400
+ARKS002
+ARKS010
+ARKS017
+ARKS101
+ARKS102
+ARKS103
+ARKS106
+ARKS107
+ARKS108
+ARKS109
+ARKS110
+ARKS112
+ARKS113
+ARKS115
+ARKS117
+ARKS118
+ARKS126
+ARKS127
+ARKS128
+ARKS129
+ARKS130
+ARKS131
+ARKS133
+ARKS134
+ARKS136
+ARKS137
+ARKS140
+ARKS141
+ARKS143
+ARKS144
+ARKS145
+ARKS147
+ARKS148
+ARKS149
+ARKS150
+ARKS151
+ARKS155
+ARKS158
+ARKS159
+ARKS163
+ARKS164
+ARKS166
+ARKS171
+ARKS172
+ARKS173
+ARKS174
+ARKS179
+ARKS180
+ARKS181
+ARKS183
+ARKS185
+ARKS187
+ARKS188
+ARKS190
+ARKS193
+ARKS195
+ARKS196
+ARKS197
+ARKS198
+ARKS199
+ARKS201
+ARKS202
+ARKS204
+ARKS213
+ARKS215
+ARKS218
+ARKS219
+ARKS220
+ARKS222
+ARKS225
+ARKS226
+ARKS230
+ARKS235
+ARKS242
+ARKS243
+ARKS248
+ARKS250
+ARKS252
+ARKS254
+ARKS258
+ARKS274
+ARKS383
+ARKS400
+RUON001
+RUON002
+EGG001
+
+				}
+			}
+
+		}
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				portraits = {
+ARK002
+ARK003
+ARK007
+ARK009
+ARK010
+ARK017
+ARK101
+ARK102
+ARK103
+ARK106
+ARK107
+ARK108
+ARK109
+ARK110
+ARK112
+ARK113
+ARK115
+ARK117
+ARK118
+ARK120
+ARK121
+ARK122
+ARK123
+ARK124
+ARK126
+ARK127
+ARK128
+ARK129
+ARK130
+ARK131
+ARK133
+ARK134
+ARK136
+ARK137
+ARK140
+ARK141
+ARK143
+ARK144
+ARK145
+ARK147
+ARK148
+ARK149
+ARK150
+ARK151
+ARK155
+ARK158
+ARK159
+ARK163
+ARK164
+ARK166
+ARK171
+ARK172
+ARK173
+ARK174
+ARK179
+ARK180
+ARK181
+ARK183
+ARK185
+ARK187
+ARK188
+ARK190
+ARK192
+ARK193
+ARK195
+ARK196
+ARK197
+ARK198
+ARK199
+ARK201
+ARK202
+ARK204
+ARK208
+ARK209
+ARK210
+ARK211
+ARK212
+ARK213
+ARK215
+ARK218
+ARK219
+ARK220
+ARK222
+ARK225
+ARK226
+ARK230
+ARK242
+ARK243
+ARK248
+ARK252
+ARK254
+ARK258
+ARK274
+ARK278
+ARK383
+ARK400
+ARKS002
+ARKS010
+ARKS017
+ARKS101
+ARKS102
+ARKS103
+ARKS106
+ARKS107
+ARKS108
+ARKS109
+ARKS110
+ARKS112
+ARKS113
+ARKS115
+ARKS117
+ARKS118
+ARKS126
+ARKS127
+ARKS128
+ARKS129
+ARKS130
+ARKS131
+ARKS133
+ARKS134
+ARKS136
+ARKS137
+ARKS140
+ARKS141
+ARKS143
+ARKS144
+ARKS145
+ARKS147
+ARKS148
+ARKS149
+ARKS150
+ARKS151
+ARKS155
+ARKS158
+ARKS159
+ARKS163
+ARKS164
+ARKS166
+ARKS171
+ARKS172
+ARKS173
+ARKS174
+ARKS179
+ARKS180
+ARKS181
+ARKS183
+ARKS185
+ARKS187
+ARKS188
+ARKS190
+ARKS193
+ARKS195
+ARKS196
+ARKS197
+ARKS198
+ARKS199
+ARKS201
+ARKS202
+ARKS204
+ARKS213
+ARKS215
+ARKS218
+ARKS219
+ARKS220
+ARKS222
+ARKS225
+ARKS226
+ARKS230
+ARKS235
+ARKS242
+ARKS243
+ARKS248
+ARKS250
+ARKS252
+ARKS254
+ARKS258
+ARKS274
+ARKS383
+ARKS400
+
+				}
+			}
+
+		}
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				portraits = {
+ARK002
+ARK003
+ARK007
+ARK009
+ARK010
+ARK017
+ARK101
+ARK102
+ARK103
+ARK106
+ARK107
+ARK108
+ARK109
+ARK110
+ARK112
+ARK113
+ARK115
+ARK117
+ARK118
+ARK120
+ARK121
+ARK122
+ARK123
+ARK124
+ARK126
+ARK127
+ARK128
+ARK129
+ARK130
+ARK131
+ARK133
+ARK134
+ARK136
+ARK137
+ARK140
+ARK141
+ARK143
+ARK144
+ARK145
+ARK147
+ARK148
+ARK149
+ARK150
+ARK151
+ARK155
+ARK158
+ARK159
+ARK163
+ARK164
+ARK166
+ARK171
+ARK172
+ARK173
+ARK174
+ARK179
+ARK180
+ARK181
+ARK183
+ARK185
+ARK187
+ARK188
+ARK190
+ARK192
+ARK193
+ARK195
+ARK196
+ARK197
+ARK198
+ARK199
+ARK201
+ARK202
+ARK204
+ARK208
+ARK209
+ARK210
+ARK211
+ARK212
+ARK213
+ARK215
+ARK218
+ARK219
+ARK220
+ARK222
+ARK225
+ARK226
+ARK230
+ARK242
+ARK243
+ARK248
+ARK252
+ARK254
+ARK258
+ARK274
+ARK278
+ARK383
+ARK400
+    				}
+			}
+
+		}
+		#leader scope
+		leader = { #scientists, generals, admirals, governor
+			add = {
+				portraits = {
+ARKS002
+ARKS010
+ARKS017
+ARKS101
+ARKS102
+ARKS103
+ARKS106
+ARKS107
+ARKS108
+ARKS109
+ARKS110
+ARKS112
+ARKS113
+ARKS115
+ARKS117
+ARKS118
+ARKS126
+ARKS127
+ARKS128
+ARKS129
+ARKS130
+ARKS131
+ARKS133
+ARKS134
+ARKS136
+ARKS137
+ARKS140
+ARKS141
+ARKS143
+ARKS144
+ARKS145
+ARKS147
+ARKS148
+ARKS149
+ARKS150
+ARKS151
+ARKS155
+ARKS158
+ARKS159
+ARKS163
+ARKS164
+ARKS166
+ARKS171
+ARKS172
+ARKS173
+ARKS174
+ARKS179
+ARKS180
+ARKS181
+ARKS183
+ARKS185
+ARKS187
+ARKS188
+ARKS190
+ARKS193
+ARKS195
+ARKS196
+ARKS197
+ARKS198
+ARKS199
+ARKS201
+ARKS202
+ARKS204
+ARKS213
+ARKS215
+ARKS218
+ARKS219
+ARKS220
+ARKS222
+ARKS225
+ARKS226
+ARKS230
+ARKS235
+ARKS242
+ARKS243
+ARKS248
+ARKS250
+ARKS252
+ARKS254
+ARKS258
+ARKS274
+ARKS383
+ARKS400
+								}
+			}
+
+		}	
+		#leader scope 
+		ruler = {
+			add = {
+				portraits = {
+ARK001
+ARK002
+ARK003
+ARK007
+ARK009
+ARK010
+ARK017
+ARK101
+ARK102
+ARK103
+ARK106
+ARK107
+ARK108
+ARK109
+ARK110
+ARK112
+ARK113
+ARK115
+ARK117
+ARK118
+ARK120
+ARK121
+ARK122
+ARK123
+ARK124
+ARK126
+ARK127
+ARK128
+ARK129
+ARK130
+ARK131
+ARK133
+ARK134
+ARK136
+ARK137
+ARK140
+ARK141
+ARK143
+ARK144
+ARK145
+ARK147
+ARK148
+ARK149
+ARK150
+ARK151
+ARK155
+ARK158
+ARK159
+ARK163
+ARK164
+ARK166
+ARK171
+ARK172
+ARK173
+ARK174
+ARK179
+ARK180
+ARK181
+ARK183
+ARK185
+ARK187
+ARK188
+ARK190
+ARK192
+ARK193
+ARK195
+ARK196
+ARK197
+ARK198
+ARK199
+ARK201
+ARK202
+ARK204
+ARK208
+ARK209
+ARK210
+ARK211
+ARK212
+ARK213
+ARK215
+ARK218
+ARK219
+ARK220
+ARK222
+ARK225
+ARK226
+ARK230
+ARK242
+ARK243
+ARK248
+ARK252
+ARK254
+ARK258
+ARK274
+ARK278
+ARK383
+ARK400
+					}
+			}
+		}
+}

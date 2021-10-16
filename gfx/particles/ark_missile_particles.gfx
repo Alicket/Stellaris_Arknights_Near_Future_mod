@@ -1,0 +1,32 @@
+objectTypes = {
+
+## 鱼雷 ##
+	
+	# 量子二踢脚
+	pdxparticle = {
+		name = "ark_torpedo_1_large_muzzle_particle"
+		type = "ark_torpedo_1_muzzle_particle"
+	
+		scale = 3.0
+	}
+	
+	pdxparticle = {
+		name = "ark_torpedo_1_large_idle_particle"
+		type = "ark_torpedo_1_idle_particle"
+	
+		scale = 0.5
+	}
+	pdxparticle = {
+		name = "ark_torpedo_1_large_idle_flame_particle"
+		type = "ark_torpedo_1_idle_flame_particle"
+	
+		scale = 1.25
+	}
+	
+	pdxparticle = {
+		name = "ark_torpedo_1_large_hit_effect"
+		type = "ark_torpedo_1_hit_effect"
+	
+		scale = 0.75
+	}
+}

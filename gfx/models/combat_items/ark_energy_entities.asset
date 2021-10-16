@@ -1,0 +1,255 @@
+# 技艺镭射炮 聚能技艺镭射炮
+#muzzle
+entity = {
+	name = "ark_laser_1_large_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 3 looping = no
+		event = { time = 0 particle = "ark_laser_1_large_muzzle_particle" keep_particle = yes sound = { soundeffect = laser_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_laser_fire" } } 
+	}
+}
+
+entity = {
+	name = "ark_laser_1_medium_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no
+		event = { time = 0 particle = "ark_laser_1_medium_muzzle_particle" keep_particle = yes sound = { soundeffect = laser_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_laser_fire" } }
+	}
+}
+
+entity = {
+	name = "ark_laser_1_small_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 1 looping = no
+		event = { time = 0 particle = "ark_laser_1_small_muzzle_particle" keep_particle = yes sound = { soundeffect = laser_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_laser_fire" } }
+	}
+}
+
+#hit
+entity = {
+	name = "ark_laser_1_small_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = "ark_laser_1_small_hit_effect" sound = { soundeffect = laser_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_laser_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "ark_laser_1_medium_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = "ark_laser_1_medium_hit_effect" sound = { soundeffect = laser_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_laser_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "ark_laser_1_large_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = "ark_laser_1_large_hit_effect" sound = { soundeffect = laser_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_laser_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+#shield hit
+entity = {
+	name = "ark_laser_1_small_shield_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = "ark_laser_1_small_hit_effect" sound = { soundeffect = shield_hit } }
+		start_event = { particle = laser_small_shield_hit_effect }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "ark_laser_1_medium_shield_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = "ark_laser_1_medium_hit_effect" sound = { soundeffect = shield_hit } }
+		start_event = { particle = laser_medium_shield_hit_effect }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "ark_laser_1_large_shield_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = "ark_laser_1_large_hit_effect" sound = { soundeffect = shield_hit } }
+		start_event = { particle = laser_large_shield_hit_effect }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+# 明晦裂解炮
+#muzzle
+entity = {
+	name = "ark_disruptor_1_1_small_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no
+		event = { time = 0 particle = "ark_disruptor_1_1_small_muzzle_particle" keep_particle = yes sound = { soundeffect = disruptor_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_disruptor_fire" } }
+	}
+}
+entity = {
+	name = "ark_disruptor_1_1_medium_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no
+		event = { time = 0 particle = "ark_disruptor_1_1_medium_muzzle_particle" keep_particle = yes sound = { soundeffect = disruptor_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_disruptor_fire" } }
+	}
+}
+entity = {
+	name = "ark_disruptor_1_1_large_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no
+		event = { time = 0 particle = "ark_disruptor_1_1_large_muzzle_particle" keep_particle = yes sound = { soundeffect = disruptor_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_disruptor_fire" } }
+	}
+}
+
+#hit
+entity = {
+	name = "ark_disruptor_1_1_small_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { particle = ark_disruptor_1_1_small_hit_effect sound = { soundeffect = disruptor_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_disruptor_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+entity = {
+	name = "ark_disruptor_1_1_medium_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { particle = ark_disruptor_1_1_medium_hit_effect sound = { soundeffect = disruptor_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_disruptor_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+entity = {
+	name = "ark_disruptor_1_1_large_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { particle = ark_disruptor_1_1_large_hit_effect sound = { soundeffect = disruptor_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_disruptor_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+#shield hit
+entity = {
+	name = "ark_disruptor_1_1_small_shield_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = ark_disruptor_1_1_small_hit_effect sound = { soundeffect = shield_hit } }
+		start_event = { particle = laser_medium_shield_hit_effect }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+entity = {
+	name = "ark_disruptor_1_1_medium_shield_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = ark_disruptor_1_1_medium_hit_effect sound = { soundeffect = shield_hit } }
+		start_event = { particle = laser_medium_shield_hit_effect }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+entity = {
+	name = "ark_disruptor_1_1_large_shield_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = ark_disruptor_1_1_large_hit_effect sound = { soundeffect = shield_hit } }
+		start_event = { particle = laser_medium_shield_hit_effect }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+# 量子发射器 改良型量子发射器
+#muzzle
+entity = {
+	name = "ark_energy_torpedo_1_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "ark_energy_torpedo_1_muzzle_particle" keep_particle = yes sound = { soundeffect = energy_torpedo_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_energy_torpedo_fire" } } 
+	}
+}
+
+#entity
+entity = {
+	name = "ark_energy_torpedo_1_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "ark_energy_torpedo_1_idle_particle" keep_particle = yes }
+		#event = { time = 0 particle = "ark_energy_torpedo_1_idle_trail_particle" keep_particle = yes }
+	}
+}
+
+#hit
+entity = {
+	name = "ark_energy_torpedo_1_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "ark_energy_torpedo_1_hit_effect" sound = { soundeffect = energy_torpedo_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_energy_torpedo_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+#shield hit
+entity = {
+	name = "ark_energy_torpedo_1_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "ark_energy_torpedo_1_hit_effect" }
+		event = { time = 0.0 particle = "projectile_large_shield_hit_effect" sound = { soundeffect = shield_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}

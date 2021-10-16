@@ -1,0 +1,24 @@
+objectTypes = {
+
+## 能量鱼雷 ##
+	
+	# 量子发射器 改良型量子发射器
+	pdxparticle = {
+		name = "ark_energy_torpedo_1_muzzle_particle"
+		type = "ark_energy_torpedo_1_muzzle_particle"
+	
+		scale = 1.0
+	}
+	pdxparticle = {
+		name = "ark_energy_torpedo_1_idle_particle"
+		type = "ark_energy_torpedo_1_idle_particle"
+	
+		scale = 1.0
+	}
+	pdxparticle = {
+		name = "ark_energy_torpedo_1_hit_effect"
+		type = "ark_energy_torpedo_1_hit_effect"
+	
+		scale = 1.0
+	}
+}

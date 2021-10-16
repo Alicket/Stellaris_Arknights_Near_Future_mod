@@ -1,0 +1,296 @@
+# 技艺镭射炮 聚能技艺镭射炮
+projectile_gfx_beam = {
+	name = "ark_laser_1_s"
+	color = { 1.0 1.0 1.0 0.15 }
+	hit_entity = "ark_laser_1_small_hit_entity"
+	shield_hit_entity = "ark_laser_1_small_shield_hit_entity"
+	muzzle_flash_entity = "ark_laser_1_small_muzzle_entity"
+	
+	width = 1.0
+	texture_scroll_speed = 2.5
+	texture_tiling = 20.0
+	
+	
+	hit = {
+		alpha_curve = { 
+			0.0 0.0
+			0.05	0.0
+			0.2 50.0
+			0.8 5.0
+			1.0 0.0
+		}
+		duration = 1.0
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 0.0
+			0.05	0.0
+			0.2 25.0
+			0.8 1.0
+			1.0 0.0
+		}
+		duration = 0.25
+	}
+	texture = "gfx/models/combat_items/laser_diffuse2.dds"
+	
+	shield_impact = {
+		size = small
+		loop_duration = 0.8
+		delay = 0.1
+	}
+}
+
+projectile_gfx_beam = {
+	name = "ark_laser_1_m"
+	color = { 1.0 1.0 1.0 0.15 }
+	hit_entity = "ark_laser_1_medium_hit_entity"
+	shield_hit_entity = "ark_laser_1_medium_shield_hit_entity"
+	muzzle_flash_entity = "ark_laser_1_medium_muzzle_entity"
+	
+	width = 1.0
+	texture_scroll_speed = 2.5
+	texture_tiling = 80.0
+	
+	hit = {
+		alpha_curve = { 
+			0.0 0.0
+			0.05	0.0
+			0.2 50.0
+			0.8 5.0
+			1.0 0.0
+		}
+		duration = 2.0
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 0.0
+			0.05	0.0
+			0.2 50.0
+			0.8 5.0
+			1.0 0.0
+		}
+		duration = 0.75
+	}
+	texture = "gfx/models/combat_items/laser_diffuse2.dds"
+	
+	shield_impact = {
+		size = medium
+		loop_duration = 1.95
+		delay = 0.1
+	}
+}
+
+projectile_gfx_beam = {
+	name = "ark_laser_1_l"
+	color = { 1.0 1.0 1.0 0.15 }
+	hit_entity = "ark_laser_1_large_hit_entity"
+	shield_hit_entity = "ark_laser_1_large_shield_hit_entity"
+	muzzle_flash_entity = "ark_laser_1_large_muzzle_entity"
+	
+	width = 2.0
+	texture_scroll_speed = 5.5
+	texture_tiling = 40.0
+	
+	hit = {
+		alpha_curve = { 
+			0.0 0.0
+			0.05	0.0
+			0.2 50.0
+			0.8 5.0
+			1.0 0.0
+		}
+		duration = 3.0
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 0.0
+			0.05	0.0
+			0.2 50.0
+			0.65 5.0
+			1.0 0.0
+		}
+		duration = 0.75
+	}
+	texture = "gfx/models/combat_items/laser_diffuse2.dds"
+	
+	shield_impact = {
+		size = large
+		loop_duration = 2.8
+		delay = 0.1
+	}
+}
+
+# 明晦裂解炮
+projectile_gfx_beam = {
+	name = "ark_disruptor_1_1_s"
+	color = { 1.0 1.0 1.0 2.5 }
+	hit_entity = "ark_disruptor_1_1_small_hit_entity"
+	shield_hit_entity = "ark_disruptor_1_1_small_shield_hit_entity"
+	muzzle_flash_entity = "ark_disruptor_1_1_small_muzzle_entity"
+	
+	width = 2.0
+	texture_scroll_speed = 2.0
+	stretch_to_fit = no
+	texture_tiling = 2.0	
+	hit = {
+		alpha_curve = { 
+			0.0 0.0
+			0.05	0.0
+			0.4 1.0
+			0.8 0.5
+			1.0 0.0
+		}
+		duration = 1.75
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 0.0
+			0.05	0.0
+			0.4 0.0
+			0.8 0.0
+			1.0 0.0
+		}
+		duration = 0.75
+
+	}
+	texture = "gfx/models/combat_items/disruptor_diffuse.dds"
+	
+	shield_impact = {
+		size = large
+		loop_duration = 1.25
+		delay = 0
+	}
+}
+
+projectile_gfx_beam = {
+	name = "ark_disruptor_1_1_m"
+	color = { 1.0 1.0 1.0 2.5 }
+	hit_entity = "ark_disruptor_1_1_medium_hit_entity"
+	shield_hit_entity = "ark_disruptor_1_1_medium_shield_hit_entity"
+	muzzle_flash_entity = "ark_disruptor_1_1_medium_muzzle_entity"
+	
+	width = 3.6
+	texture_scroll_speed = 1.0
+	stretch_to_fit = no
+	texture_tiling = 2.0	
+	hit = {
+		alpha_curve = { 
+			0.0 0.0
+			0.05	0.0
+			0.4 1.0
+			0.8 0.5
+			1.0 0.0
+		}
+		duration = 1.75
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 0.0
+			0.05	0.0
+			0.4 0.0
+			0.8 0.0
+			1.0 0.0
+		}
+		duration = 0.75
+
+	}
+	texture = "gfx/models/combat_items/disruptor_diffuse.dds"
+	
+	shield_impact = {
+		size = large
+		loop_duration = 1.25
+		delay = 0
+	}
+}
+
+projectile_gfx_beam = {
+	name = "ark_disruptor_1_1_l"
+	color = { 1.0 1.0 1.0 2.5 }
+	hit_entity = "ark_disruptor_1_1_large_hit_entity"
+	shield_hit_entity = "ark_disruptor_1_1_large_shield_hit_entity"
+	muzzle_flash_entity = "ark_disruptor_1_1_large_muzzle_entity"
+	
+	width = 5.3
+	texture_scroll_speed = -0.5
+	stretch_to_fit = no
+	texture_tiling = 2.0	
+	hit = {
+		alpha_curve = { 
+			0.0 0.0
+			0.05	0.0
+			0.4 1.0
+			0.8 0.5
+			1.0 0.0
+		}
+		duration = 1.75
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 0.0
+			0.05	0.0
+			0.4 0.0
+			0.8 0.0
+			1.0 0.0
+		}
+		duration = 0.75
+
+	}
+	texture = "gfx/models/combat_items/disruptor_diffuse.dds"
+	
+	shield_impact = {
+		size = large
+		loop_duration = 1.25
+		delay = 0
+	}
+}
+
+# 量子发射器 改良型量子发射器
+projectile_gfx_ballistic = {
+	name = "ark_energy_torpedo_1"
+	color = { 1.0 1.0 1.0 1.0 }
+	hit_entity = "ark_energy_torpedo_1_hit_entity"
+	shield_hit_entity = "ark_energy_torpedo_1_shield_hit_entity"
+	muzzle_flash_entity = "ark_energy_torpedo_1_muzzle_entity"
+	
+	entity = "ark_energy_torpedo_1_entity"
+	speed = 90.0			
+	max_duration = 3.0		
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+
+# 法术近防炮
+projectile_gfx_beam = {
+	name = "ark_pd"
+	color = { 1.0 0.9 0.45 1.5} #rgb调色，将三者参数/255，最后一个为亮度
+	hit_entity = "pd_red_laser_hit_entity" #命中调用的模型
+	muzzle_flash_entity = "pd_red_laser_muzzle_entity" #发射之时炮口调用的模型
+
+	width = 0.05 #激光宽度
+	texture_scroll_speed = 5.5 #传播速度
+	texture_tiling = 10.0
+	hit = { #击中特效
+		duration = 0.2 #持续时间
+		alpha_curve = { #定义随时间变化，激光的亮度变化，前者为时间段，后者为亮度
+			0.0 50.0
+			0.05 50.0
+			0.2 50.0
+			0.8 50.0
+			1.0 50.0
+		}
+	}
+	miss = { #未命中特效
+		alpha_curve = { 
+			0.0 50.0
+			0.05 50.0
+			0.2 50.0
+			0.8 50.0
+			1.0 50.0
+		}
+		duration = 0.2
+	}
+	texture = "gfx/models/combat_items/ark_pd.dds" #特效调用的图片
+}
