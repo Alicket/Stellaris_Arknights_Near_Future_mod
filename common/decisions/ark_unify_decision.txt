@@ -1,0 +1,88 @@
+#泰拉统一
+decision_terra_unify = {
+	enactment_time = 720
+	owned_planets_only = yes
+	sound = event_air_raid_siren
+	icon = decision_terra_unify
+	
+	resources = {
+		category = decisions
+		cost = {
+			energy = 1000
+			influence = 50
+			unity = 500
+		}
+	}
+	
+	potential = {
+		has_planet_flag = ark_unify_able_flag
+	}
+	
+	effect = {
+		hidden_effect = {
+			remove_deposit = d_former_countries_controlled
+			if = {
+				limit = {
+					any_owned_pop = {
+						is_gestalt = no
+						is_robot_pop = no
+					}
+				}
+				owner = { country_event = { id = ark_rebellion.4 } }
+				random_owned_pop = {
+					limit = {
+						is_gestalt = no
+						is_robot_pop = no
+					}
+					root = {
+						remove_planet_flag = ark_unify_able_flag
+	
+						create_pop = {
+							species = prev
+						}
+						create_pop = {
+							species = prev
+						}
+						create_pop = {
+							species = prev
+						}
+						create_pop = {
+							species = prev
+						}
+						create_pop = {
+							species = prev
+						}
+					}
+				}
+			}
+			else = {
+				owner = { country_event = { id = ark_rebellion.4 } }
+				random_owned_pop = {
+					root = {
+						remove_planet_flag = ark_unify_able_flag
+						create_pop = {
+							species = prev
+						}
+						create_pop = {
+							species = prev
+						}
+						create_pop = {
+							species = prev
+						}
+						create_pop = {
+							species = prev
+						}
+						create_pop = {
+							species = prev
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+	
+}

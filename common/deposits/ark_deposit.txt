@@ -202,6 +202,8 @@ d_former_countries_controlled = {
 	icon = d_former_countries_controlled
 	time = 1800
 
+	can_be_cleared = {always = no}
+
 	is_for_colonizeable = yes
 	category = deposit_cat_blockers
 
@@ -211,69 +213,72 @@ d_former_countries_controlled = {
 		planet_max_districts_add = -3
 	}
 
-	on_cleared = {
-		if = {
-			limit = {
-				any_owned_pop = {
-					is_gestalt = no
-					is_robot_pop = no
-				}
-			}
-			owner = { country_event = { id = ark_rebellion.4 } }
-			random_owned_pop = {
-				limit = {
-					is_gestalt = no
-					is_robot_pop = no
-				}
-				root = {
-					create_pop = {
-						species = prev
-					}
-					create_pop = {
-						species = prev
-					}
-					create_pop = {
-						species = prev
-					}
-					create_pop = {
-						species = prev
-					}
-					create_pop = {
-						species = prev
-					}
-				}
-			}
-		}
-		else = {
-			owner = { country_event = { id = ark_rebellion.4 } }
-			random_owned_pop = {
-				root = {
-					create_pop = {
-						species = prev
-					}
-					create_pop = {
-						species = prev
-					}
-					create_pop = {
-						species = prev
-					}
-					create_pop = {
-						species = prev
-					}
-					create_pop = {
-						species = prev
-					}
-				}
-			}
-		}
-	}
+	# on_cleared = {
+	# 	if = {
+	# 		limit = {
+	# 			any_owned_pop = {
+	# 				is_gestalt = no
+	# 				is_robot_pop = no
+	# 			}
+	# 		}
+	# 		owner = { country_event = { id = ark_rebellion.4 } }
+	# 		random_owned_pop = {
+	# 			limit = {
+	# 				is_gestalt = no
+	# 				is_robot_pop = no
+	# 			}
+	# 			root = {
+	# 				remove_planet_flag = ark_unify_able_flag
 
-	resources = {
-		category = deposit_blockers
-		cost = {
-			energy = 1000
-			influence = 50
-			unity = 500
-		}
-	}
+	# 				create_pop = {
+	# 					species = prev
+	# 				}
+	# 				create_pop = {
+	# 					species = prev
+	# 				}
+	# 				create_pop = {
+	# 					species = prev
+	# 				}
+	# 				create_pop = {
+	# 					species = prev
+	# 				}
+	# 				create_pop = {
+	# 					species = prev
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	else = {
+	# 		owner = { country_event = { id = ark_rebellion.4 } }
+	# 		random_owned_pop = {
+	# 			root = {
+	# 				remove_planet_flag = ark_unify_able_flag
+	# 				create_pop = {
+	# 					species = prev
+	# 				}
+	# 				create_pop = {
+	# 					species = prev
+	# 				}
+	# 				create_pop = {
+	# 					species = prev
+	# 				}
+	# 				create_pop = {
+	# 					species = prev
+	# 				}
+	# 				create_pop = {
+	# 					species = prev
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+#	resources = {
+#		category = deposit_blockers
+#		cost = {
+#			energy = 1000
+#			influence = 50
+#			unity = 500
+#		}
+#	}
 }

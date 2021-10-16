@@ -1,0 +1,62 @@
+tr_ark_terra_adopt = {
+    modifier = {
+        country_unity_produces_mult = 0.1
+    }
+}
+
+tr_ark_terra_finish = {
+    on_enabled = {
+        hidden_effect = {
+            country_event = {
+                id = ark_terra_unify.0
+            }
+        }
+    }
+    modifier = {
+		ascension_perks_add = 1
+        planet_stability_add = 5
+	}
+}
+#多元化作战#
+tr_ark_terra_1 = {
+    modifier = {
+        army_damage_mult = 0.25
+        army_health = 0.25
+    }
+}
+#高级采矿业#
+tr_ark_terra_2 = {
+    possible = {
+        has_tradition = tr_ark_terra_1
+    }
+    modifier = {
+        planet_jobs_originiums_produces_mult = 0.10
+        planet_jobs_minerals_produces_mult = 0.15
+        }
+}
+#移动建筑学#
+tr_ark_terra_3 = {
+    possible = {
+        has_tradition = tr_ark_terra_2
+    }
+    modifier = {
+        pop_housing_usage_mult = -0.10
+        country_engineering_tech_research_speed = 0.10
+    }
+}
+#感染者认同#
+tr_ark_terra_4 = {
+    modifier = {
+        country_influence_produces_add = 0.50
+        planet_amenities_mult = 0.10
+    }
+}
+#共同信仰#
+tr_ark_terra_5 = {
+    possible = {
+        has_tradition = tr_ark_terra_4
+    }
+    modifier = {
+        pop_government_ethic_attraction = 0.50
+    }
+}

@@ -1,0 +1,17 @@
+
+tradition_ark_terra = {
+	tree_template = "tree_111_11"
+	adoption_bonus = "tr_ark_terra_adopt"
+	finish_bonus = "tr_ark_terra_finish"
+	traditions = {
+		"tr_ark_terra_1"
+		"tr_ark_terra_2"
+		"tr_ark_terra_3"
+		"tr_ark_terra_4"
+		"tr_ark_terra_5"
+	}
+	potential = {
+		has_technology = tech_originiums_mining
+	}
+	ai_weight = { factor = 5 }
+}

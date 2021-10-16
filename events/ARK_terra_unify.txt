@@ -1,0 +1,20 @@
+namespace = ark_terra_unify
+
+country_event = {
+	id = ark_terra_unify.0
+	is_triggered_only = yes
+	title = ark_terra_unify.0.name
+	desc = ark_terra_unify.0.desc
+	picture = GFX_ark_terra_unify_picture
+	location = root
+
+	option = {
+		name = ark_terra_unify.0.option
+	}
+	
+	after = {
+		capital_scope = {
+			set_planet_flag = ark_unify_able_flag
+		}
+	}
+}
