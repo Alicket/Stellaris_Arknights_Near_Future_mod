@@ -1,6 +1,11 @@
 spriteTypes = {	
 
-	
+	spriteType = {
+		name = GFX_ark_mod_check_conflict
+		textureFile = "gfx/event_pictures/ark_mod_check.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes	
+	}
 	spriteType = {	# 开局:阿米娅
 		name = "GFX_evt_arknights_amiya"
 		texturefile = "gfx/event_pictures/arknights_amiya.dds"

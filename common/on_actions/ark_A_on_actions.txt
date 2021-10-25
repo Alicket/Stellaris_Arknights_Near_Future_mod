@@ -1,0 +1,11 @@
+# on_game_start = {
+# 	events = {
+# 		ark_mod_check.0
+# 	}
+# }
+
+on_game_start_country = {
+	events = {
+		ark_mod_check.1
+	}
+}
