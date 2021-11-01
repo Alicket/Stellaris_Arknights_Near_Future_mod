@@ -1,0 +1,28 @@
+objectTypes = {
+	pdxmesh = {
+		name = "arknights_01_colossus_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_colossus/arknights_01_colossus.mesh"
+
+		animation = { id = "opening"	type = "arknights_01_colossus_opening_animation" }
+		animation = { id = "closing"	type = "arknights_01_colossus_closing_animation" }
+		animation = { id = "idle"	type = "arknights_01_colossus_idle_animation" }
+		animation = { id = "open"	type = "arknights_01_colossus_open_animation" }
+
+		meshsettings = {
+			name = "gun"
+			texture_diffuse = "arknights_01_colossus_diffuse.dds"
+			texture_normal = "arknights_01_colossus_normal.dds"
+			texture_specular = "arknights_01_colossus_specular.dds"
+			shader = "PdxMeshShip"
+			index = 0
+		}
+		meshsettings = {
+			name = "engine"
+			texture_diffuse = "arknights_01_colossus_diffuse.dds"
+			texture_normal = "arknights_01_colossus_normal.dds"
+			texture_specular = "arknights_01_colossus_specular.dds"
+			shader = "PdxMeshShip"
+			index = 1
+		}
+	}
+}
