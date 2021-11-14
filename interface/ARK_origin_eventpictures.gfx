@@ -4,3 +4,4 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/origins/origin_ark_tragedy_birth.dds"
 		alwaystransparent = yes
 	}
+}

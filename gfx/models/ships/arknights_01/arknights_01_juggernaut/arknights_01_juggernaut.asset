@@ -39,8 +39,8 @@ entity = {
 		event = { time = 0 node = "engine_large_09" particle = "generic_1_25_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "engine_large_010" particle = "generic_1_25_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
 
-		event = { time = 0 node = "engine_flat_01" particle = "juggernaut_mam_exhaust_idle_l" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_flat_02" particle = "juggernaut_mam_exhaust_idle_l" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_flat_01" particle = "ark_flat1_exhaust_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_flat_02" particle = "ark_flat1_exhaust_idle" trigger_once = yes keep_particle = yes }
 
 		event = { time = 0 node = "engine_medium_01" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "engine_medium_02" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
@@ -59,8 +59,8 @@ entity = {
 		event = { time = 0 node = "engine_large_09" particle = "generic_1_5_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "engine_large_010" particle = "generic_1_5_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
 
-		event = { time = 0 node = "engine_flat_01" particle = "juggernaut_mam_exhaust_moving_l" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_flat_02" particle = "juggernaut_mam_exhaust_moving_l" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_flat_01" particle = "ark_flat1_exhaust_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_flat_02" particle = "ark_flat1_exhaust_moving" trigger_once = yes keep_particle = yes }
 
 		event = { time = 0 node = "engine_medium_01" particle = "generic_05_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "engine_medium_02" particle = "generic_05_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
