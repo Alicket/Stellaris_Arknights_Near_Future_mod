@@ -92,7 +92,7 @@ entity = {
 
 entity = {
 	name = "arknights_01_turret_point_defence_entity"
-	pdxmesh = "arknights_01_turret_point_defence_mesh"
+	pdxmesh = "arknights_01_turret_small_mesh"
 	
 	state = { name = "idle"	}
 	state = { name = "attack" looping = no next_state = "idle"

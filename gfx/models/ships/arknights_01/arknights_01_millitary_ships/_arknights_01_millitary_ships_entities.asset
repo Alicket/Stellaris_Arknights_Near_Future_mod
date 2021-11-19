@@ -29,19 +29,17 @@ entity = {
 
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "engine_medium_01" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_01" particle = "generic_015_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "generic_015_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_03" particle = "generic_015_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_flat_01" particle = "arknights_flat1_exhaust_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_flat_02" particle = "arknights_flat1_exhaust_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_flat_03" particle = "arknights_flat1_exhaust_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_flat_04" particle = "arknights_flat1_exhaust_idle" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "engine_medium_01" particle = "generic_05_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_01" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_03" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-	}
+		event = { time = 0 node = "engine_flat_01" particle = "arknights_flat1_exhaust_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_flat_02" particle = "arknights_flat1_exhaust_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_flat_03" particle = "arknights_flat1_exhaust_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_flat_04" particle = "arknights_flat1_exhaust_moving" trigger_once = yes keep_particle = yes }
+}
 	state = { name = "death" state_time = 5 }
 }
 
@@ -52,19 +50,17 @@ entity = {
 
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "engine_medium_01" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_01" particle = "generic_015_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "generic_015_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_03" particle = "generic_015_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-	}
+	event = { time = 0 node = "engine_flat_01" particle = "arknights_flat1_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_flat_02" particle = "arknights_flat1_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_flat_03" particle = "arknights_flat1_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_flat_04" particle = "arknights_flat1_exhaust_idle" trigger_once = yes keep_particle = yes }
+}
 	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "engine_medium_01" particle = "generic_05_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_01" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_03" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-	}
+	event = { time = 0 node = "engine_flat_01" particle = "arknights_flat1_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_flat_02" particle = "arknights_flat1_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_flat_03" particle = "arknights_flat1_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_flat_04" particle = "arknights_flat1_exhaust_moving" trigger_once = yes keep_particle = yes }
+}
 	state = { name = "death" state_time = 5 }
 }
 #护卫舰P1S2区段
@@ -74,19 +70,17 @@ entity = {
 
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "engine_medium_01" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_01" particle = "generic_015_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "generic_015_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_03" particle = "generic_015_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-	}
+	event = { time = 0 node = "engine_flat_01" particle = "arknights_flat1_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_flat_02" particle = "arknights_flat1_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_flat_03" particle = "arknights_flat1_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_flat_04" particle = "arknights_flat1_exhaust_idle" trigger_once = yes keep_particle = yes }
+}
 	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "engine_medium_01" particle = "generic_05_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_01" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_03" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-	}
+	event = { time = 0 node = "engine_flat_01" particle = "arknights_flat1_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_flat_02" particle = "arknights_flat1_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_flat_03" particle = "arknights_flat1_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_flat_04" particle = "arknights_flat1_exhaust_moving" trigger_once = yes keep_particle = yes }
+}
 	state = { name = "death" state_time = 5 }
 }
 
@@ -170,69 +164,21 @@ entity = {
 entity = {
 	name = "arknights_01_battleship_bow_L1M1S2_entity"
 	pdxmesh = "arknights_01_battleship_bow_L1M1S2_mesh"
-
-	default_state = "idle"
-	state = { name = idle	state_time = 5
-		event = { time = 0 node = "light_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "light_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-	}
-
-	state = { name = moving	state_time = 5
-		event = { time = 0 node = "light_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "light_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-	}
-
-	state = { name = "death" state_time = 5 }
 }
 
 entity = {
 	name = "arknights_01_battleship_bow_L2_entity"
 	pdxmesh = "arknights_01_battleship_bow_L2_mesh"
-
-	default_state = "idle"
-	state = { name = idle	state_time = 5
-		event = { time = 0 node = "light_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-	}
-
-	state = { name = moving	state_time = 5
-		event = { time = 0 node = "light_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-	}
-
-	state = { name = "death" state_time = 5 }
 }
 
 entity = {
 	name = "arknights_01_battleship_bow_M1S2SHB_entity"
 	pdxmesh = "arknights_01_battleship_bow_M1S2SHB_mesh"
-
-	default_state = "idle"
-	state = { name = idle	state_time = 5
-		event = { time = 0 node = "light_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-	}
-
-	state = { name = moving	state_time = 5
-		event = { time = 0 node = "light_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-	}
-
-	state = { name = "death" state_time = 5 }
 }
 
 entity = {
 	name = "arknights_01_battleship_bow_XL1_entity"
 	pdxmesh = "arknights_01_battleship_bow_XL1_mesh"
-
-	default_state = "idle"
-	state = { name = idle	state_time = 5
-		event = { time = 0 node = "light_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-	}
-
-	state = { name = moving	state_time = 5
-		event = { time = 0 node = "light_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-	}
-
-	state = { name = "death" state_time = 5 }
-
-	# XL weapon windup locator names: xl_windup_1-10
 }
 
 
@@ -243,18 +189,27 @@ entity = {
 
 	default_state = "idle"
 	state = { name = idle	state_time = 5
-		event = { time = 0 node = "light_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "light_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "medium_engine_01" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "medium_engine_02" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_01" particle = "arknights_battleship_exhaust_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_02" particle = "arknights_battleship_exhaust_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_03" particle = "arknights_battleship_exhaust_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_04" particle = "arknights_battleship_exhaust_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_05" particle = "arknights_battleship_exhaust_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_06" particle = "arknights_battleship_exhaust_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_07" particle = "arknights_battleship_exhaust_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_08" particle = "arknights_battleship_exhaust_idle" trigger_once = yes keep_particle = yes }
+
 	}
 
 	state = { name = moving	state_time = 5
-		event = { time = 0 node = "light_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "light_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "medium_engine_01" particle = "generic_05_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "medium_engine_02" particle = "generic_05_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
-	}
+	event = { time = 0 node = "engine_01" particle = "arknights_battleship_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_02" particle = "arknights_battleship_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_03" particle = "arknights_battleship_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_04" particle = "arknights_battleship_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_05" particle = "arknights_battleship_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_06" particle = "arknights_battleship_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_07" particle = "arknights_battleship_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_08" particle = "arknights_battleship_exhaust_moving" trigger_once = yes keep_particle = yes }
+}
 
 	state = { name = "death" state_time = 5 }
 }
@@ -265,17 +220,25 @@ entity = {
 
 	default_state = "idle"
 	state = { name = idle	state_time = 5
-		event = { time = 0 node = "light_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "light_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "medium_engine_01" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "medium_engine_02" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-	}
+	event = { time = 0 node = "engine_01" particle = "arknights_battleship_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_02" particle = "arknights_battleship_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_03" particle = "arknights_battleship_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_04" particle = "arknights_battleship_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_05" particle = "arknights_battleship_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_06" particle = "arknights_battleship_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_07" particle = "arknights_battleship_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_08" particle = "arknights_battleship_exhaust_idle" trigger_once = yes keep_particle = yes }
+}
 
 	state = { name = moving	state_time = 5
-		event = { time = 0 node = "light_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "light_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "medium_engine_01" particle = "generic_05_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "medium_engine_02" particle = "generic_05_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_01" particle = "arknights_battleship_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_02" particle = "arknights_battleship_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_03" particle = "arknights_battleship_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_04" particle = "arknights_battleship_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_05" particle = "arknights_battleship_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_06" particle = "arknights_battleship_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_07" particle = "arknights_battleship_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_08" particle = "arknights_battleship_exhaust_moving" trigger_once = yes keep_particle = yes }
 	}
 
 	state = { name = "death" state_time = 5 }
@@ -287,17 +250,25 @@ entity = {
 
 	default_state = "idle"
 	state = { name = idle	state_time = 5
-		event = { time = 0 node = "light_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "light_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "medium_engine_01" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "medium_engine_02" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-	}
+	event = { time = 0 node = "engine_01" particle = "arknights_battleship_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_02" particle = "arknights_battleship_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_03" particle = "arknights_battleship_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_04" particle = "arknights_battleship_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_05" particle = "arknights_battleship_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_06" particle = "arknights_battleship_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_07" particle = "arknights_battleship_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_08" particle = "arknights_battleship_exhaust_idle" trigger_once = yes keep_particle = yes }
+}
 
 	state = { name = moving	state_time = 5
-		event = { time = 0 node = "light_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "light_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "medium_engine_01" particle = "generic_05_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "medium_engine_02" particle = "generic_05_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_01" particle = "arknights_battleship_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_02" particle = "arknights_battleship_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_03" particle = "arknights_battleship_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_04" particle = "arknights_battleship_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_05" particle = "arknights_battleship_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_06" particle = "arknights_battleship_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_07" particle = "arknights_battleship_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_08" particle = "arknights_battleship_exhaust_moving" trigger_once = yes keep_particle = yes }
 	}
 
 	state = { name = "death" state_time = 5 }
@@ -309,17 +280,25 @@ entity = {
 
 	default_state = "idle"
 	state = { name = idle	state_time = 5
-		event = { time = 0 node = "light_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "light_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "medium_engine_01" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "medium_engine_02" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-	}
+	event = { time = 0 node = "engine_01" particle = "arknights_battleship_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_02" particle = "arknights_battleship_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_03" particle = "arknights_battleship_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_04" particle = "arknights_battleship_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_05" particle = "arknights_battleship_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_06" particle = "arknights_battleship_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_07" particle = "arknights_battleship_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_08" particle = "arknights_battleship_exhaust_idle" trigger_once = yes keep_particle = yes }
+}
 
 	state = { name = moving	state_time = 5
-		event = { time = 0 node = "light_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "light_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "medium_engine_01" particle = "generic_05_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "medium_engine_02" particle = "generic_05_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_01" particle = "arknights_battleship_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_02" particle = "arknights_battleship_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_03" particle = "arknights_battleship_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_04" particle = "arknights_battleship_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_05" particle = "arknights_battleship_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_06" particle = "arknights_battleship_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_07" particle = "arknights_battleship_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_08" particle = "arknights_battleship_exhaust_moving" trigger_once = yes keep_particle = yes }
 	}
 
 	state = { name = "death" state_time = 5 }
@@ -329,57 +308,11 @@ entity = {
 entity = {
 	name = "arknights_01_battleship_stern_L1_entity"
 	pdxmesh = "arknights_01_battleship_stern_L1_mesh"
-
-	default_state = idle
-	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "engine_medium_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_05" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-
-		event = { time = 0 node = "light_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-	}
-	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "engine_medium_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_05" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
-
-		event = { time = 0 node = "light_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-	}
-	state = { name = "death" state_time = 5 }
 }
 
 entity = {
 	name = "arknights_01_battleship_stern_M2_entity"
 	pdxmesh = "arknights_01_battleship_stern_M2_mesh"
-
-	default_state = idle
-	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "engine_medium_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_05" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-
-		event = { time = 0 node = "light_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-	}
-	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "engine_medium_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_05" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
-
-		event = { time = 0 node = "light_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-	}
-	state = { name = "death" state_time = 5 }
 }
 
 #驱逐舰
@@ -454,33 +387,11 @@ entity = {
 entity = {
 	name = "arknights_01_destroyer_bow_M1S2_entity"
 	pdxmesh = "arknights_01_destroyer_bow_M1S2_mesh"
-
-	default_state = "idle"
-	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-	}
-	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-	}
-	state = { name = "death" state_time = 5 }
 }
 
 entity = {
 	name = "arknights_01_destroyer_bow_S3_entity"
 	pdxmesh = "arknights_01_destroyer_bow_S3_mesh"
-
-	default_state = "idle"
-	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-	}
-	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-	}
-	state = { name = "death" state_time = 5 }
 }
 
 # STERN
@@ -491,18 +402,12 @@ entity = {
 
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "engine_large_01" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_01" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_01" particle = "arknights_destroyer_exhaust_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_02" particle = "arknights_destroyer_exhaust_idle" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "engine_large_01" particle = "generic_05_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_01" particle = "generic_05_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "generic_05_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_01" particle = "arknights_destroyer_exhaust_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_02" particle = "arknights_destroyer_exhaust_moving" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "death" state_time = 5 }
 }
@@ -513,18 +418,12 @@ entity = {
 
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "engine_large_01" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_01" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_01" particle = "arknights_destroyer_exhaust_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_02" particle = "arknights_destroyer_exhaust_idle" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "engine_large_01" particle = "generic_05_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_02" particle = "generic_05_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_03" particle = "generic_05_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_01" particle = "arknights_destroyer_exhaust_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_02" particle = "arknights_destroyer_exhaust_moving" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "death" state_time = 5 }
 }
@@ -570,69 +469,25 @@ entity = {
 	name = "arknights_01_titan_bow_entity"
 	pdxmesh = "arknights_01_titan_bow_mesh"
 	locator = { name = "root"				position = { 0	0  0 } }
-
-	
-	default_state = "idle"
-	state = { name = "idle" state_time = 5
-		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-	}
-	state = { name = "death" state_time = 5 looping = no }
 }
 
 entity = {
 	name = "arknights_01_titan_mid_entity"
 	pdxmesh = "arknights_01_titan_mid_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		start_event = { node = "engine_01" particle = "arknights_titan_exhaust_idle" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "moving" state_time = 5
+		start_event = { node = "engine_01" particle = "arknights_titan_exhaust_moving" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "death" state_time = 5 looping = no }
 }
 
 entity = {
 	name = "arknights_01_titan_stern_entity"
 	pdxmesh = "arknights_01_titan_stern_mesh"
-	
-	default_state = "idle"
-	state = { name = "idle" state_time = 5
-		start_event = { node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-	
-		start_event = { node = "engine_large_01" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_large_02" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_large_03" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_large_04" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_large_05" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_large_06" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_large_07" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_large_08" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_large_09" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_large_10" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_large_11" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_large_12" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_large_13" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_large_14" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_large_15" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-	}
-	state = { name = "moving" state_time = 5
-		start_event = { node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-	
-		start_event = { node = "engine_large_01" particle = "generic_1_5_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_large_02" particle = "generic_1_5_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_large_03" particle = "generic_1_5_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_large_04" particle = "generic_1_5_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_large_05" particle = "generic_1_5_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_large_06" particle = "generic_1_5_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_large_07" particle = "generic_1_5_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_large_08" particle = "generic_1_5_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_large_09" particle = "generic_1_5_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_large_10" particle = "generic_1_5_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_large_11" particle = "generic_1_5_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_large_12" particle = "generic_1_5_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_large_13" particle = "generic_1_5_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_large_14" particle = "generic_1_5_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_large_15" particle = "generic_1_5_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
-	}
-	state = { name = "death" state_time = 5 looping = no }
 }
 
 ###############巡洋舰################
@@ -716,50 +571,17 @@ entity = {
 # BOW
 entity = {
 	name = "arknights_01_cruiser_bow_L1_entity"
-	pdxmesh = "arknights_01_cruiser_bow_L1_mesh"
-
-	default_state = "idle"
-	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-	}
-	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-	}
-	state = { name = "death" state_time = 5 }
+	 pdxmesh = "arknights_01_cruiser_bow_L1_mesh"
 }
 
 entity = {
 	name = "arknights_01_cruiser_bow_M1S2_entity"
-	pdxmesh = "arknights_01_cruiser_bow_M1S2_mesh"
-
-	default_state = "idle"
-	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-	}
-	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-	}
-	state = { name = "death" state_time = 5 }
+	 pdxmesh = "arknights_01_cruiser_bow_M1S2_mesh"
 }
 
 entity = {
 	name = "arknights_01_cruiser_bow_M2_entity"
-	pdxmesh = "arknights_01_cruiser_bow_M2_mesh"
-
-	default_state = "idle"
-	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-
-	}
-	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-	}
-	state = { name = "death" state_time = 5 }
+	 pdxmesh = "arknights_01_cruiser_bow_M2_mesh"
 }
 
 # MID
@@ -770,30 +592,28 @@ entity = {
 
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_01" particle = "generic_015_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "generic_015_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_03" particle = "generic_015_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_04" particle = "generic_015_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_01" particle = "arknights_cruiser_exhaust_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_02" particle = "arknights_cruiser_exhaust_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_03" particle = "arknights_cruiser_exhaust_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_04" particle = "arknights_cruiser_exhaust_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_05" particle = "arknights_cruiser_exhaust_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_06" particle = "arknights_cruiser_exhaust_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_07" particle = "arknights_cruiser_exhaust_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_08" particle = "arknights_cruiser_exhaust_idle" trigger_once = yes keep_particle = yes }
 
 	}
 	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_01" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_03" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_04" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_01" particle = "arknights_cruiser_exhaust_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_02" particle = "arknights_cruiser_exhaust_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_03" particle = "arknights_cruiser_exhaust_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_04" particle = "arknights_cruiser_exhaust_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_05" particle = "arknights_cruiser_exhaust_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_06" particle = "arknights_cruiser_exhaust_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_07" particle = "arknights_cruiser_exhaust_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_08" particle = "arknights_cruiser_exhaust_moving" trigger_once = yes keep_particle = yes }
 
 	}
 	state = { name = "death" state_time = 5 }
-
-	#TEMP LOCATOR REPLACE IN SCENE
-	#locator = {
-	#	name = "strike_craft_locator_01"
-	#	rotation = { -90 0 0 }
-	#}
 }
 
 entity = {
@@ -802,21 +622,24 @@ entity = {
 
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_01" particle = "generic_015_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "generic_015_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_03" particle = "generic_015_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_04" particle = "generic_015_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-
-	}
+	event = { time = 0 node = "engine_01" particle = "arknights_cruiser_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_02" particle = "arknights_cruiser_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_03" particle = "arknights_cruiser_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_04" particle = "arknights_cruiser_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_05" particle = "arknights_cruiser_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_06" particle = "arknights_cruiser_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_07" particle = "arknights_cruiser_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_08" particle = "arknights_cruiser_exhaust_idle" trigger_once = yes keep_particle = yes }
+}
 	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_01" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_03" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_04" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_01" particle = "arknights_cruiser_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_02" particle = "arknights_cruiser_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_03" particle = "arknights_cruiser_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_04" particle = "arknights_cruiser_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_05" particle = "arknights_cruiser_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_06" particle = "arknights_cruiser_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_07" particle = "arknights_cruiser_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_08" particle = "arknights_cruiser_exhaust_moving" trigger_once = yes keep_particle = yes }
 
 	}
 	state = { name = "death" state_time = 5 }
@@ -828,21 +651,25 @@ entity = {
 
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_01" particle = "generic_015_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "generic_015_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_03" particle = "generic_015_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_04" particle = "generic_015_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_01" particle = "arknights_cruiser_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_02" particle = "arknights_cruiser_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_03" particle = "arknights_cruiser_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_04" particle = "arknights_cruiser_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_05" particle = "arknights_cruiser_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_06" particle = "arknights_cruiser_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_07" particle = "arknights_cruiser_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_08" particle = "arknights_cruiser_exhaust_idle" trigger_once = yes keep_particle = yes }
 
 	}
 	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_01" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_03" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_04" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_01" particle = "arknights_cruiser_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_02" particle = "arknights_cruiser_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_03" particle = "arknights_cruiser_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_04" particle = "arknights_cruiser_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_05" particle = "arknights_cruiser_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_06" particle = "arknights_cruiser_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_07" particle = "arknights_cruiser_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_08" particle = "arknights_cruiser_exhaust_moving" trigger_once = yes keep_particle = yes }
 
 	}
 	state = { name = "death" state_time = 5 }
@@ -854,21 +681,25 @@ entity = {
 
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_01" particle = "generic_015_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "generic_015_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_03" particle = "generic_015_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_04" particle = "generic_015_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_01" particle = "arknights_cruiser_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_02" particle = "arknights_cruiser_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_03" particle = "arknights_cruiser_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_04" particle = "arknights_cruiser_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_05" particle = "arknights_cruiser_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_06" particle = "arknights_cruiser_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_07" particle = "arknights_cruiser_exhaust_idle" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_08" particle = "arknights_cruiser_exhaust_idle" trigger_once = yes keep_particle = yes }
 
 	}
 	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_01" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_03" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_04" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_01" particle = "arknights_cruiser_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_02" particle = "arknights_cruiser_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_03" particle = "arknights_cruiser_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_04" particle = "arknights_cruiser_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_05" particle = "arknights_cruiser_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_06" particle = "arknights_cruiser_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_07" particle = "arknights_cruiser_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_08" particle = "arknights_cruiser_exhaust_moving" trigger_once = yes keep_particle = yes }
 
 	}
 	state = { name = "death" state_time = 5 }
@@ -878,43 +709,9 @@ entity = {
 entity = {
 	name = "arknights_01_cruiser_stern_M1_entity"
 	pdxmesh = "arknights_01_cruiser_stern_M1_mesh"
-
-	default_state = "idle"
-	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "engine_medium_01" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_02" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_03" particle = "juggernaut_mam_exhaust_idle_l" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-	}
-	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "engine_medium_03" particle = "juggernaut_mam_exhaust_moving_2_l" trigger_once = yes keep_particle = yes }		event = { time = 0 node = "engine_small_02" particle = "generic_05_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_01" particle = "generic_075_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_02" particle = "generic_075_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-	}
-	state = { name = "death" state_time = 5 }
 }
 
 entity = {
 	name = "arknights_01_cruiser_stern_S2_entity"
 	pdxmesh = "arknights_01_cruiser_stern_S2_mesh"
-
-	default_state = "idle"
-	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "engine_medium_01" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_02" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_03" particle = "juggernaut_mam_exhaust_idle_l" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-}
-	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "engine_medium_03" particle = "juggernaut_mam_exhaust_moving_2_l" trigger_once = yes keep_particle = yes }		event = { time = 0 node = "engine_small_02" particle = "generic_05_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_01" particle = "generic_075_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_02" particle = "generic_075_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-}
-	state = { name = "death" state_time = 5 }
 }

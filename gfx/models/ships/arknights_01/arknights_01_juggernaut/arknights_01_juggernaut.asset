@@ -28,44 +28,26 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle"
-		event = { time = 0 node = "engine_large_01" particle = "generic_1_25_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_02" particle = "generic_1_25_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_03" particle = "generic_1_25_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_04" particle = "generic_1_25_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_05" particle = "generic_1_25_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_06" particle = "generic_1_25_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_07" particle = "generic_1_25_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_08" particle = "generic_1_25_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_09" particle = "generic_1_25_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_010" particle = "generic_1_25_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-
-		event = { time = 0 node = "engine_flat_01" particle = "ark_flat1_exhaust_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_flat_02" particle = "ark_flat1_exhaust_idle" trigger_once = yes keep_particle = yes }
-
-		event = { time = 0 node = "engine_medium_01" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_02" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-		
+		event = { time = 0 node = "engine_01" particle = "arknights_juggernaut_exhaust_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_02" particle = "arknights_juggernaut_exhaust_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_03" particle = "arknights_juggernaut_exhaust_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_04" particle = "arknights_juggernaut_exhaust_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_05" particle = "arknights_juggernaut_exhaust_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_06" particle = "arknights_juggernaut_exhaust_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_07" particle = "arknights_juggernaut_exhaust_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_08" particle = "arknights_juggernaut_exhaust_idle" trigger_once = yes keep_particle = yes }
 		event = { trigger_once = yes sound = { soundeffect = juggernaut_mammalian_idle } }
 	}
 	state = { name = "moving" animation = "idle"
-		event = { time = 0 node = "engine_large_01" particle = "generic_1_5_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_02" particle = "generic_1_5_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_03" particle = "generic_1_5_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_04" particle = "generic_1_5_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_05" particle = "generic_1_5_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_06" particle = "generic_1_5_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_07" particle = "generic_1_5_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_08" particle = "generic_1_5_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_09" particle = "generic_1_5_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_010" particle = "generic_1_5_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
-
-		event = { time = 0 node = "engine_flat_01" particle = "ark_flat1_exhaust_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_flat_02" particle = "ark_flat1_exhaust_moving" trigger_once = yes keep_particle = yes }
-
-		event = { time = 0 node = "engine_medium_01" particle = "generic_05_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_02" particle = "generic_05_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
-
-		event = { sound = { soundeffect = juggernaut_mammalian_move } }
+	event = { time = 0 node = "engine_01" particle = "arknights_juggernaut_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_02" particle = "arknights_juggernaut_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_03" particle = "arknights_juggernaut_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_04" particle = "arknights_juggernaut_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_05" particle = "arknights_juggernaut_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_06" particle = "arknights_juggernaut_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_07" particle = "arknights_juggernaut_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { time = 0 node = "engine_08" particle = "arknights_juggernaut_exhaust_moving" trigger_once = yes keep_particle = yes }
+	event = { sound = { soundeffect = juggernaut_mammalian_move } }
 	}
 	state = { name = "death" animation = "death" looping = no 
 		event = { time = 1.1 node = "explosion_locator_01" particle = "juggernaut_hull_explosion_effect" keep_particle = yes trigger_once = no }
