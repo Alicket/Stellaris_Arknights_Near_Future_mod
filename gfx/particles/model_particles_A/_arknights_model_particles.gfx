@@ -1,3 +1,5 @@
+
+#护卫舰尾焰
 objectTypes = {
 	pdxparticle = {
 		name="arknights_flat1_exhaust_moving"
@@ -15,7 +17,7 @@ objectTypes = {
 		scale = 0.6
 	}
 }
-
+#驱逐舰尾焰
 objectTypes = {
 	pdxparticle = {
 		name="arknights_destroyer_exhaust_idle"
@@ -33,7 +35,7 @@ objectTypes = {
 		scale = 1.5
 	}
 }
-
+#巡洋舰尾焰
 objectTypes = {
 	pdxparticle = {
 		name="arknights_cruiser_exhaust_idle"
@@ -51,7 +53,7 @@ objectTypes = {
 		scale = 0.6
 	}
 }
-
+#战列舰尾焰
 objectTypes = {
 	pdxparticle = {
 		name="arknights_battleship_exhaust_moving"
@@ -69,7 +71,7 @@ objectTypes = {
 		scale = 1.7
 	}
 }
-
+#泰坦尾焰
 objectTypes = {
 	pdxparticle = {
 		name="arknights_titan_exhaust_moving"
@@ -87,7 +89,7 @@ objectTypes = {
 		scale = 5.5
 	}
 }
-
+#主宰尾焰
 objectTypes = {
 	pdxparticle = {
 		name="arknights_juggernaut_exhaust_moving"
@@ -103,5 +105,23 @@ objectTypes = {
 		type = "arknights_flat1_exhaust_idle_file"
 
 		scale = 2.2
+	}
+}
+#巨像尾焰
+objectTypes = {
+	pdxparticle = {
+		name="arknights_colossus_exhaust_moving"
+		type = "arknights_flat1_exhaust_moving_file"
+
+		scale = 5
+	}
+}
+
+objectTypes = {
+	pdxparticle = {
+		name="arknights_colossus_exhaust_idle"
+		type = "arknights_flat1_exhaust_idle_file"
+
+		scale = 4.7
 	}
 }

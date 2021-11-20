@@ -69,23 +69,10 @@ entity = {
 		}
 		
 		start_event = { trigger_once = yes sound = { soundeffect = "mammalian_colossus_idle" } }
-		event = { time = 0 node = "engine_main_02" particle = "juggernaut_mam_exhaust_idle_l" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_03" particle = "juggernaut_mam_exhaust_idle_l" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_04" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_05" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_06" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_07" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_08" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_09" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-
-		event = { time = 0 node = "engine_front_01" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_02" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_03" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_04" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_05" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_06" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_07" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_08" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_01" particle = "arknights_colossus_exhaust_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_02" particle = "arknights_colossus_exhaust_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_03" particle = "arknights_colossus_exhaust_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_04" particle = "arknights_colossus_exhaust_idle" keep_particle = yes trigger_once = yes }
 
 	}
 	# Idle state when going from opened state to idle. 
@@ -101,23 +88,10 @@ entity = {
 		}
 		
 		event = { trigger_once = yes sound = { soundeffect = "mammalian_colossus_closing" stop_on_state_change = yes } }
-		event = { time = 0 node = "engine_main_02" particle = "juggernaut_mam_exhaust_moving_l" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_03" particle = "juggernaut_mam_exhaust_moving_l" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_04" particle = "generic_1_25_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_05" particle = "generic_1_25_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_06" particle = "generic_1_25_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_07" particle = "generic_1_25_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_08" particle = "generic_1_25_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_09" particle = "generic_1_25_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
-
-		event = { time = 0 node = "engine_front_01" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_02" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_03" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_04" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_05" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_06" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_07" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_08" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_01" particle = "arknights_colossus_exhaust_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_02" particle = "arknights_colossus_exhaust_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_03" particle = "arknights_colossus_exhaust_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_04" particle = "arknights_colossus_exhaust_moving" keep_particle = yes trigger_once = yes }
 
 	}
 	# Actual moving state if going from idle/moving.
@@ -132,23 +106,10 @@ entity = {
 			}
 		}
 		event = { trigger_once = yes sound = { soundeffect = "moving_out_colossus" } }
-		event = { time = 0 node = "engine_main_02" particle = "juggernaut_mam_exhaust_moving_l" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_03" particle = "juggernaut_mam_exhaust_moving_l" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_04" particle = "generic_1_25_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_05" particle = "generic_1_25_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_06" particle = "generic_1_25_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_07" particle = "generic_1_25_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_08" particle = "generic_1_25_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_09" particle = "generic_1_25_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
-
-		event = { time = 0 node = "engine_front_01" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_02" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_03" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_04" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_05" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_06" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_07" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_08" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_01" particle = "arknights_colossus_exhaust_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_02" particle = "arknights_colossus_exhaust_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_03" particle = "arknights_colossus_exhaust_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_04" particle = "arknights_colossus_exhaust_moving" keep_particle = yes trigger_once = yes }
 
 	}
 	# Moving state if going from open/working, uses closing animation.
@@ -163,44 +124,18 @@ entity = {
 			}
 		}
 		event = { trigger_once = yes sound = { soundeffect = "mammalian_colossus_closing" stop_on_state_change = yes } }
-		event = { time = 0 node = "engine_main_02" particle = "juggernaut_mam_exhaust_moving_l" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_03" particle = "juggernaut_mam_exhaust_moving_l" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_04" particle = "generic_1_25_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_05" particle = "generic_1_25_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_06" particle = "generic_1_25_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_07" particle = "generic_1_25_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_08" particle = "generic_1_25_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_09" particle = "generic_1_25_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
-
-		event = { time = 0 node = "engine_front_01" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_02" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_03" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_04" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_05" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_06" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_07" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_08" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_01" particle = "arknights_colossus_exhaust_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_02" particle = "arknights_colossus_exhaust_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_03" particle = "arknights_colossus_exhaust_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_04" particle = "arknights_colossus_exhaust_moving" keep_particle = yes trigger_once = yes }
 	}
 	# Opened state, going after "opening" which is labeled "working".
 	state = { name = "working_looping" animation = "open"
 		event = { time = 0	id = "beam_start" }
-		event = { time = 0 node = "engine_main_02" particle = "juggernaut_mam_exhaust_idle_l" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_03" particle = "juggernaut_mam_exhaust_idle_l" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_04" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_05" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_06" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_07" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_08" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_09" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-
-		event = { time = 0 node = "engine_front_01" particle = "generic_1_25_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_02" particle = "generic_1_25_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_03" particle = "generic_1_25_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_04" particle = "generic_1_25_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_05" particle = "generic_1_25_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_06" particle = "generic_1_25_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_07" particle = "generic_1_25_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_08" particle = "generic_1_25_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_01" particle = "arknights_colossus_exhaust_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_02" particle = "arknights_colossus_exhaust_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_03" particle = "arknights_colossus_exhaust_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_04" particle = "arknights_colossus_exhaust_moving" keep_particle = yes trigger_once = yes }
 
 	}
 	# Opening state, goes into "open" state when done.
@@ -208,23 +143,10 @@ entity = {
 		event = { trigger_once = yes sound = { soundeffect = "mammalian_colossus_opening" stop_on_state_change = yes } }
 		
 		event = { time = 1000 id = "beam_start" } #will never fire, but lets the game know that an event with this ID exists
-		event = { time = 0 node = "engine_main_02" particle = "juggernaut_mam_exhaust_moving_l" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_03" particle = "juggernaut_mam_exhaust_moving_l" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_04" particle = "generic_1_25_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_05" particle = "generic_1_25_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_06" particle = "generic_1_25_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_07" particle = "generic_1_25_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_08" particle = "generic_1_25_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_main_09" particle = "generic_1_25_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
-
-		event = { time = 0 node = "engine_front_01" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_02" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_03" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_04" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_05" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_06" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_07" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_front_08" particle = "generic_1_25_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_01" particle = "arknights_colossus_exhaust_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_02" particle = "arknights_colossus_exhaust_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_03" particle = "arknights_colossus_exhaust_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_04" particle = "arknights_colossus_exhaust_moving" keep_particle = yes trigger_once = yes }
 
 	}
 	# Closed death state.
