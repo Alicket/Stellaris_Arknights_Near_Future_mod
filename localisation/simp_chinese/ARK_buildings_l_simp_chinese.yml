@@ -74,4 +74,4 @@ mod_job_executor_per_pop_short:0 "\n每$VALUE$ £pop£ §G+1§! £mod_job_execut
 sm_manufacturing_station:0 "制造站"
 sm_manufacturing_station_desc:0 "资源生产设施，可以制造合金。\n§L请勿将合金做成金条形状。§!\n"
 sm_machining_station:0 "加工站"
-sm_machining_station_desc:0 "资源加工设施，生产特殊的战略资源。\n§L建议减少使用人工以免工作者昏迷。§!\n"
+sm_machining_station_desc:0 "资源加工设施，提升合金生产效率。\n§L建议减少使用人工以免工作者昏迷。§!\n"

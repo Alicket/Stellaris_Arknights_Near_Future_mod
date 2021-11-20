@@ -1,0 +1,81 @@
+#Tooltips will be generated from these rules when they fail. Use of custom_tooltip is recommended
+#There are still multiple hard-coded rules that apply in addition to these.
+#If rules here evaluate to true, there might still be other rules that make the action unavailable.
+#If a rule here evaluates to false the action will become unavailable
+
+# This = country
+
+
+###_[swg][gsf][fq]	##################
+###_[swg/gsf/azl/fq]	##################
+# This = country
+can_build_branch_offices = {
+	custom_tooltip = {
+		fail_text = BRANCH_OFFICE_NOT_MEGACORP
+		#_+wsg/gsf/fq/ark
+		OR = {
+			has_authority = auth_corporate
+			has_civic = civic_galactic_sovereign_megacorp
+			has_authority = auth_warshipgirls	#_wsg
+			AND = {
+				has_authority = auth_shenhai
+				OR = {
+					has_country_flag = pantsu_shop_origin
+					has_civic = civic_sh_criminal_syndicate
+				}
+			}
+			has_civic = civic_gk				#_gsf
+			has_authority = auth_azur_lane_0	#_azl
+			has_authority = auth_azur_lane_1	#_azl
+			has_authority = auth_azur_lane_2	#_azl
+            has_valid_civic = civic_mutualistic_behavior	#_fq
+			has_civic = civic_business_union	#_ark
+		}
+	}
+}
+
+
+###_[swg/gsf/azl/zofe/sofe]	##################
+# This = country
+can_support_branch_offices = {
+	#_+[azlx]
+	custom_tooltip = {
+		fail_text = BRANCH_OFFICE_NOT_FALLEN_EMPIRES
+		NOR = {
+			is_country_type = fallen_empire
+			is_country_type = awakened_fallen_empire
+			has_authority = auth_azur_dictatorial		#_azlx
+		}
+	}
+	#_+[wsg/gsf/azl/ark/sofe]
+	custom_tooltip = {
+		fail_text = BRANCH_OFFICE_NOT_ON_MEGACORP_PLANET
+		NOR = {
+			has_authority = auth_corporate
+			has_civic = civic_galactic_sovereign_megacorp
+			has_authority = auth_warshipgirls			#_wsg
+			AND = {
+				has_authority = auth_shenhai
+				OR = {
+					has_country_flag = pantsu_shop_origin
+					has_civic = civic_sh_criminal_syndicate
+				}
+			}
+			has_civic = civic_gk						#_gsf
+			has_authority = auth_azur_lane_1			#_azl
+			has_valid_civic = civic_sofe_inner_strength	#_SOFE
+			has_civic = civic_business_union			#_ark
+		}
+	}
+	#_+[zofe]
+	custom_tooltip = {
+		fail_text = BRANCH_OFFICE_NOT_REGULAR_EMPIRE
+		OR = {
+			is_regular_empire = yes
+			AND = {
+				is_gestalt = no
+				is_country_type = ascended_empire		#_ZOFE
+			}
+		}
+	}
+}

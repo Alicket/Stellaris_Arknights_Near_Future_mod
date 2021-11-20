@@ -1,114 +1,148 @@
-namespace = ark_orbital_bombardment
+﻿namespace = ark_orbital_bombardment
 
-# 源石轨道轰炸消耗源石
+# 源石轨道轰炸每月消耗源石
 planet_event = {
 	id = ark_orbital_bombardment.0
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
 		has_orbital_bombardment_stance = originium_bombs
-		FROM = {
-			OR = {
-				has_authority = auth_city_republic
-				has_authority = auth_city_despotism
-			}
-		}
-		has_owner = yes	
+		NOT = { has_country_flag = originium_bombs_consumption }
 	}
-
-	mean_time_to_happen = { days = 30 }
 	
 	immediate = {
 		from = {
-			add_resource = { originiums = -30 }
+			set_timed_country_flag = { flag = originium_bombs_consumption days = 30 }
+			add_resource = { originiums = -300 }
 		}
 	}
 }
 
-# 源石轨道轰炸污染人口：15破坏度
+# 源石轨道轰炸污染人口：25破坏度
 planet_event = {
 	id = ark_orbital_bombardment.1
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
-		planet_devastation >= 15
 		has_orbital_bombardment_stance = originium_bombs
-		FROM = {
-			OR = {
-				has_authority = auth_city_republic
-				has_authority = auth_city_despotism
-			}
-		}
-		has_owner = yes
-		NOT = { has_planet_flag = originium_bombs_bombardment_flag }
-	}	
+		planet_devastation >= 25
+		planet_devastation <= 50
+		NOT = { has_modifier = biochemical_protection }	# 没有选择决议生化防护
+		NOT = { has_planet_flag = originium_orbital_bombardment }
+	}
 	
 	immediate = {
 		remove_modifier = "originium_bombs_contaminated_1"	# 清除“源石污染”当再次遭到源石轰炸
-		remove_modifier = "natural_beauty"			# 自然景观
-		remove_modifier = "atmospheric_aphrodisiac"		# 催情大气
-		remove_modifier = "atmospheric_hallucinogen"	# 致幻大气
-		remove_modifier = "lush_planet"			# 郁郁葱葱
-		remove_modifier = "dangerous_wildlife"		# 闹事的动物
 		add_modifier = {
 			modifier = "originium_bombs_contaminated_0"	# 遭到源石轰炸
 			days = -1
 		}
-		set_planet_flag = originium_bombs_bombardment_flag	# 使轰炸时事件不重复触发
+		set_planet_flag = originium_orbital_bombardment	# 使轰炸时事件不重复触发
 		if = {
-			limit = {
-				owner = { NOT = { has_country_flag = understood_originium_bombs_flag } }
-			}
-			planet_event = { id = ark_orbital_bombardment.4 }
+			limit = { has_planet_flag = originium_orbital_bombardment }
+			planet_event = { id = ark_orbital_bombardment.2 }	# 污染1有机人口
 		}
 	}
 }
 
-# 轰炸结束
+# 源石轨道轰炸污染人口：50破坏度
 planet_event = {
 	id = ark_orbital_bombardment.11
 	hide_window = yes
+	is_triggered_only = yes
 	trigger = {
-		NOT = {
-			has_orbital_bombardment_stance = originium_bombs
-		}
-		has_modifier = originium_bombs_contaminated_0
-		has_planet_flag = originium_bombs_bombardment_flag
+		has_orbital_bombardment_stance = originium_bombs
+		planet_devastation >= 50
+		planet_devastation <= 75
+		NOT = { has_modifier = biochemical_protection }	# 没有选择决议生化防护
+		NOT = { has_planet_flag = originium_orbital_bombardment }
 	}
 	
 	immediate = {
-		remove_modifier = "originium_bombs_contaminated_0" # 遭到源石轰炸
+		remove_modifier = "originium_bombs_contaminated_1"	# 清除“源石污染”当再次遭到源石轰炸
 		add_modifier = {
-			modifier = "originium_bombs_contaminated_1"	# 源石污染
-			days = 1800
+			modifier = "originium_bombs_contaminated_0"	# 遭到源石轰炸
+			days = -1
 		}
-		remove_planet_flag = originium_bombs_bombardment_flag
+		set_planet_flag = originium_orbital_bombardment	# 使轰炸时事件不重复触发
+		if = {
+			limit = { has_planet_flag = originium_orbital_bombardment }
+			planet_event = { id = ark_orbital_bombardment.2 }	# 污染1有机人口
+			planet_event = { id = ark_orbital_bombardment.2 }	# 污染1有机人口
+		}
 	}
 }
 
-# 每1个月污染1人口（自循环）
+# 源石轨道轰炸污染人口：75破坏度
+planet_event = {
+	id = ark_orbital_bombardment.12
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_orbital_bombardment_stance = originium_bombs
+		planet_devastation >= 75
+		planet_devastation <= 100
+		NOT = { has_modifier = biochemical_protection }	# 没有选择决议生化防护
+		NOT = { has_planet_flag = originium_orbital_bombardment }
+	}
+	
+	immediate = {
+		remove_modifier = "originium_bombs_contaminated_1"	# 清除“源石污染”当再次遭到源石轰炸
+		add_modifier = {
+			modifier = "originium_bombs_contaminated_0"	# 遭到源石轰炸
+			days = -1
+		}
+		set_planet_flag = originium_orbital_bombardment	# 使轰炸时事件不重复触发
+		if = {
+			limit = { has_planet_flag = originium_orbital_bombardment }
+			planet_event = { id = ark_orbital_bombardment.2 }	# 污染1有机人口
+			planet_event = { id = ark_orbital_bombardment.2 }	# 污染1有机人口
+			planet_event = { id = ark_orbital_bombardment.2 }	# 污染1有机人口
+			planet_event = { id = ark_orbital_bombardment.2 }	# 污染1有机人口
+			planet_event = { id = ark_orbital_bombardment.2 }	# 污染1有机人口
+		}
+	}
+}
+
+# 源石轨道轰炸污染人口：100破坏度
+planet_event = {
+	id = ark_orbital_bombardment.13
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_orbital_bombardment_stance = originium_bombs
+		planet_devastation = 100
+		NOT = { has_planet_flag = originium_orbital_bombardment }
+	}
+	
+	immediate = {
+		remove_modifier = "originium_bombs_contaminated_1"	# 清除“源石污染”当再次遭到源石轰炸
+		add_modifier = {
+			modifier = "originium_bombs_contaminated_0"	# 遭到源石轰炸
+			days = -1
+		}
+		set_planet_flag = originium_orbital_bombardment	# 使轰炸时事件不重复触发
+		if = {
+			limit = { has_planet_flag = originium_orbital_bombardment }
+			planet_event = { id = ark_orbital_bombardment.2 }	# 污染1有机人口
+			planet_event = { id = ark_orbital_bombardment.2 }	# 污染1有机人口
+			planet_event = { id = ark_orbital_bombardment.2 }	# 污染1有机人口
+			planet_event = { id = ark_orbital_bombardment.2 }	# 污染1有机人口
+			planet_event = { id = ark_orbital_bombardment.2 }	# 污染1有机人口
+			planet_event = { id = ark_orbital_bombardment.2 }	# 污染1有机人口
+			planet_event = { id = ark_orbital_bombardment.2 }	# 污染1有机人口
+			planet_event = { id = ark_orbital_bombardment.2 }	# 污染1有机人口
+			planet_event = { id = ark_orbital_bombardment.2 }	# 污染1有机人口
+			planet_event = { id = ark_orbital_bombardment.2 }	# 污染1有机人口
+		}
+	}
+}
+
+# 污染1有机人口
 planet_event = {
 	id = ark_orbital_bombardment.2
 	hide_window = yes
-
-	trigger = {
-		OR = {
-			has_modifier = originium_bombs_contaminated_0
-			has_modifier = originium_bombs_contaminated_1
-		}
-		any_owned_pop = {
-			species = {
-				NOR = {
-					has_trait = trait_lithoid
-					has_trait = trait_machine_unit
-					has_trait = trait_mechanical
-				}
-				NOT = { has_trait = trait_acute_oripathy }
-			}
-		}
-	}
-
-	mean_time_to_happen = { days = 30 }
+	is_triggered_only = yes
 	
 	immediate = {
 		random_owned_pop = {
@@ -123,33 +157,58 @@ planet_event = {
 				NOT = { species = { has_trait = trait_acute_oripathy } }
 			}
 			modify_species = { add_trait = trait_acute_oripathy }	# 急性矿石病
+			set_timed_pop_flag = { flag = oripathy_death_countdown days = 60 }
 		}
 	}
 }
 
-# 每2个月病死1人口（自循环）
+# 杀死感染人口
 country_event = {
-	id = ark_orbital_bombardment.3
+	id = ark_orbital_bombardment.21
 	hide_window = yes
 
 	trigger = {
 		any_owned_pop = {
 			species = { has_trait = trait_acute_oripathy }
+			NOT = { has_pop_flag = oripathy_death_countdown }
 		}
 	}
-
-	mean_time_to_happen = { days = 60 }
 	
 	immediate = {
 		random_owned_pop = {
-			limit = { species = { has_trait = trait_acute_oripathy } }
+			limit = {
+				species = { has_trait = trait_acute_oripathy }
+				NOT = { has_pop_flag = oripathy_death_countdown }
+			}
 			kill_pop = yes
 		}
 	}
 }
 
-# 源石轰炸污染！
+# 轰炸结束
 planet_event = {
+	id = ark_orbital_bombardment.3
+	hide_window = yes
+	trigger = {
+		NOT = {
+			has_orbital_bombardment_stance = originium_bombs
+		}
+		has_modifier = originium_bombs_contaminated_0
+		has_planet_flag = originium_orbital_bombardment
+	}
+	
+	immediate = {
+		remove_modifier = "originium_bombs_contaminated_0" # 遭到源石轰炸
+		add_modifier = {
+			modifier = "originium_bombs_contaminated_1"	# 源石污染
+			days = 1800
+		}
+		remove_planet_flag = originium_orbital_bombardment
+	}
+}
+
+# 源石轰炸污染！(当帝国首次被源石轨道轰炸)
+country_event = {
 	id = ark_orbital_bombardment.4
 	title = "ark_orbital_bombardment.4.name"
 	desc = "ark_orbital_bombardment.4.desc"
@@ -158,18 +217,17 @@ planet_event = {
 	location = ROOT
 	
 	is_triggered_only = yes
-
+	
 	trigger = {
-		owner = {
-			is_ai = no
-			NOT = { has_country_flag = understood_originium_bombs_flag }
+		is_ai = no
+		any_planet_within_border = {
+			has_orbital_bombardment_stance = originium_bombs
 		}
+		NOT = { has_country_flag = understood_originium_bombs }
 	}
 	
 	immediate = {
-		owner = {
-			set_country_flag = understood_originium_bombs_flag
-		}
+		set_country_flag = understood_originium_bombs
 	}
 	
 	option = {

@@ -11,7 +11,6 @@ on_game_start_country = {
 		ark_game_start.3		# 询问是否扮演明日方舟国家
 		ark_origins.0		# 起源效果（明日方舟）
 		ark_civic.1		# 商业联合（第一个国民理念）
-		ark_civic.4		# 骑士精神
 	}
 }
 
@@ -37,13 +36,23 @@ on_custom_diplomacy = {
 on_planet_bombarded = {
 	events = {
 		ark_orbital_bombardment.0	# 源石轨道轰炸消耗源石
-		ark_orbital_bombardment.1		# 源石轨道轰炸污染人口：15破坏度
+		ark_orbital_bombardment.1	# 源石轨道轰炸污染人口：25破坏度
+		ark_orbital_bombardment.11	# 源石轨道轰炸污染人口：50破坏度
+		ark_orbital_bombardment.12	# 源石轨道轰炸污染人口：75破坏度
+		ark_orbital_bombardment.13	# 源石轨道轰炸污染人口：100破坏度
+		ark_orbital_bombardment.4	# (当帝国首次被源石轨道轰炸)
 	}
 }
 
-on_monthly_laser_country = {
+on_monthly_pulse_country = {
 	events = {
 		ark_set.3		# 检查并重置领袖肖像
 		ark_set.4
+	}
+}
+
+on_leader_spawned = {
+	events = {
+		ark_civic.4		# 骑士精神
 	}
 }

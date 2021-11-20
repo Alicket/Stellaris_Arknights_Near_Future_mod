@@ -1,0 +1,37 @@
+# 制造站
+manufacturing_station = {
+	icon = "GFX_starbase_manufacturing_station"
+	section = "REFINERY_STARBASE_SECTION"
+	construction_days = 180
+
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_manufacturing_station }
+	}
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 50
+			d32_steels = 25
+			multipole_nanosheets = 25
+		}
+
+		produces = {
+			alloys = 5
+		}
+
+		upkeep = {
+			energy = 1
+			originiums = 1
+		}
+	}
+
+	show_in_tech = "tech_manufacturing_station"
+
+	ai_build_at_chokepoint = no
+	ai_build_outside_chokepoint = yes
+	ai_weight = {
+		weight = 100
+	}
+}

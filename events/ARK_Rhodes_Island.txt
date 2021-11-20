@@ -1,8 +1,8 @@
 namespace = ark_rhodes_island
 
-# council_meeting_flag ¾ö¶¨ark_rhodes_island.3ÊÂ¼şÃèÊöÎÄ±¾
+# council_meeting_flagå†³å®šark_rhodes_island.3äº‹ä»¶æè¿°æ–‡æœ¬
 
-# ÂŞµÂµº
+# ç½—å¾·å²›
 country_event = {
 	id = ark_rhodes_island.1
 	hide_window = yes
@@ -37,7 +37,7 @@ country_event = {
 	}
 }
 
-# ÂŞµÂµº±¾½¢
+# ç½—å¾·å²›æœ¬èˆ°
 country_event = {
 	id = ark_rhodes_island.2
 	title = "ark_rhodes_island.2.name"
@@ -71,7 +71,7 @@ country_event = {
 	}
 
 	option = {
-		name = ark_rhodes_island.2.a	# ÁªºÏÀíÊÂ»á
+		name = ark_rhodes_island.2.a	# è”åˆç†äº‹ä¼š
 		custom_tooltip = ark_rhodes_island.2.a_tooltip
 		hidden_effect = {
 			country_event = { id = ark_rhodes_island.3 }
@@ -79,7 +79,7 @@ country_event = {
 	}
 
 	option = {
-		name = ark_rhodes_island.2.b	# µµ°¸ÖĞĞÄ
+		name = ark_rhodes_island.2.b	# æ¡£æ¡ˆä¸­å¿ƒ
 		custom_tooltip = ark_rhodes_island.2.b_tooltip
 		hidden_effect = {
 			country_event = { id = ark_rhodes_island.5 }
@@ -87,12 +87,12 @@ country_event = {
 	}
 
 	option = {
-		name = ark_rhodes_island.2.g	# È·ÈÏ¶Ô»°
+		name = ark_rhodes_island.2.g	# ç¡®è®¤å¯¹è¯
 		default_hide_option = yes
 	}
 }
 
-# ÁªºÏÀíÊÂ»á
+# è”åˆç†äº‹ä¼š
 country_event = {
 	id = ark_rhodes_island.3
 	title = "ark_rhodes_island.3.name"
@@ -153,7 +153,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = ark_rhodes_island.3.g1	# ¾«ÉñÊÀ½ç½¨Éè£¨Ëæ»úÖØ¸´³öÏÖ£©
+		name = ark_rhodes_island.3.g1	# # ç²¾ç¥ä¸–ç•Œå»ºè®¾ï¼ˆéšæœºé‡å¤å‡ºç°ï¼‰
 		custom_tooltip = ark_rhodes_island.3.g1_tooltip
 		trigger = { has_country_flag = g_jssjjs }
 		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
@@ -183,7 +183,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_rhodes_island.3.g2	# ÎïÖÊÊÀ½ç½¨Éè£¨Ëæ»úÖØ¸´³öÏÖ£©
+		name = ark_rhodes_island.3.g2	# ç‰©è´¨ä¸–ç•Œå»ºè®¾ï¼ˆéšæœºé‡å¤å‡ºç°ï¼‰
 		custom_tooltip = ark_rhodes_island.3.g2_tooltip
 		trigger = { has_country_flag = g_wzsjjs }
 		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
@@ -213,7 +213,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_rhodes_island.3.g3	# ¸ß¶Ë×°±¸ÖÆÔìÖ§³Ö£¨Ëæ»úÖØ¸´³öÏÖ£©
+		name = ark_rhodes_island.3.g3	# é«˜ç«¯è£…å¤‡åˆ¶é€ æ”¯æŒï¼ˆéšæœºé‡å¤å‡ºç°ï¼‰
 		custom_tooltip = ark_rhodes_island.3.g3_tooltip
 		trigger = { has_country_flag = g_gdzbzzzc }
 		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
@@ -243,7 +243,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_rhodes_island.3.g4	# Õ½ÂÔ×ÊÔ´²úÒµÖ§³Ö£¨Ëæ»úÖØ¸´³öÏÖ£©
+		name = ark_rhodes_island.3.g4	# æˆ˜ç•¥èµ„æºäº§ä¸šæ”¯æŒï¼ˆéšæœºé‡å¤å‡ºç°ï¼‰
 		custom_tooltip = ark_rhodes_island.3.g4_tooltip
 		trigger = { has_country_flag = g_zlzycyzz }
 		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
@@ -273,7 +273,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_rhodes_island.3.g5	# µØÇøÃâË°Õş²ß£¨Ëæ»úÖØ¸´³öÏÖ£©
+		name = ark_rhodes_island.3.g5	# åœ°åŒºå…ç¨æ”¿ç­–ï¼ˆéšæœºé‡å¤å‡ºç°ï¼‰
 		custom_tooltip = ark_rhodes_island.3.g5_tooltip
 		trigger = { has_country_flag = g_dqmszc }
 		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
@@ -303,7 +303,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_rhodes_island.3.g6	# ¾ÍÒµÖ¸µ¼²¹Ìù£¨Ëæ»úÖØ¸´³öÏÖ£©
+		name = ark_rhodes_island.3.g6	# å°±ä¸šæŒ‡å¯¼è¡¥è´´ï¼ˆéšæœºé‡å¤å‡ºç°ï¼‰
 		custom_tooltip = ark_rhodes_island.3.g6_tooltip
 		trigger = { has_country_flag = g_jyzdbt }
 		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
@@ -333,7 +333,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_rhodes_island.3.y1_1	# ÖÈĞòµÄ´óµØ¢ñ£¨Ö»ÓĞÒ»´Î£¬²»Ñ¡¿ÉÖØĞÂ³öÏÖ£©
+		name = ark_rhodes_island.3.y1_1	# ç§©åºçš„å¤§åœ°â… ï¼ˆåªæœ‰ä¸€æ¬¡ï¼Œä¸é€‰å¯é‡æ–°å‡ºç°ï¼‰
 		custom_tooltip = ark_rhodes_island.3.y1_tooltip
 		trigger = { has_country_flag = y_zxddd_1 }
 		allow = { resource_stockpile_compare = { resource = energy value >= 100 } }
@@ -368,7 +368,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_rhodes_island.3.y1_2	# ÖÈĞòµÄ´óµØ¢ò£¨Ö»ÓĞÒ»´Î£¬²»Ñ¡¿ÉÖØĞÂ³öÏÖ£©
+		name = ark_rhodes_island.3.y1_2	# ç§©åºçš„å¤§åœ°â…¡ï¼ˆåªæœ‰ä¸€æ¬¡ï¼Œä¸é€‰å¯é‡æ–°å‡ºç°ï¼‰
 		custom_tooltip = ark_rhodes_island.3.y1_tooltip
 		trigger = { has_country_flag = y_zxddd_2 }
 		allow = { resource_stockpile_compare = { resource = energy value >= 100 } }
@@ -403,7 +403,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_rhodes_island.3.y1_3	# ÖÈĞòµÄ´óµØ¢ó£¨Ö»ÓĞÒ»´Î£¬²»Ñ¡¿ÉÖØĞÂ³öÏÖ£©
+		name = ark_rhodes_island.3.y1_3	# ç§©åºçš„å¤§åœ°â…¢ï¼ˆåªæœ‰ä¸€æ¬¡ï¼Œä¸é€‰å¯é‡æ–°å‡ºç°ï¼‰
 		custom_tooltip = ark_rhodes_island.3.y1_tooltip
 		trigger = { has_country_flag = y_zxddd_3 }
 		allow = { resource_stockpile_compare = { resource = energy value >= 100 } }
@@ -438,7 +438,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_rhodes_island.3.y1_4	# ÖÈĞòµÄ´óµØ ¢ô£¨Ö»ÓĞÒ»´Î£¬²»Ñ¡¿ÉÖØĞÂ³öÏÖ£©
+		name = ark_rhodes_island.3.y1_4	# ç§©åºçš„å¤§åœ° â…£ï¼ˆåªæœ‰ä¸€æ¬¡ï¼Œä¸é€‰å¯é‡æ–°å‡ºç°ï¼‰
 		custom_tooltip = ark_rhodes_island.3.y1_tooltip
 		trigger = { has_country_flag = y_zxddd_4 }
 		allow = { resource_stockpile_compare = { resource = energy value >= 100 } }
@@ -473,7 +473,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_rhodes_island.3.y2	# ÖÇÄÜ»úĞµÖ§³Ö£¨Ëæ»úÖØ¸´³öÏÖ£©
+		name = ark_rhodes_island.3.y2	# æ™ºèƒ½æœºæ¢°æ”¯æŒï¼ˆéšæœºé‡å¤å‡ºç°ï¼‰
 		custom_tooltip = ark_rhodes_island.3.y2_tooltip
 		trigger = { has_country_flag = y_znjxzc }
 		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
@@ -503,7 +503,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_rhodes_island.3.y3	# ĞĞĞÇ·ÀÓùÖ¸Áî£¨Ëæ»úÖØ¸´³öÏÖ£©
+		name = ark_rhodes_island.3.y3	# è¡Œæ˜Ÿé˜²å¾¡æŒ‡ä»¤ï¼ˆéšæœºé‡å¤å‡ºç°ï¼‰
 		custom_tooltip = ark_rhodes_island.3.y3_tooltip
 		trigger = { has_country_flag = y_xxfyzl }
 		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
@@ -533,7 +533,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_rhodes_island.3.y4	# ³Ç°î·¢Õ¹¹æ»®£¨Ëæ»úÖØ¸´³öÏÖ£©
+		name = ark_rhodes_island.3.y4	# åŸé‚¦å‘å±•è§„åˆ’ï¼ˆéšæœºé‡å¤å‡ºç°ï¼‰
 		custom_tooltip = ark_rhodes_island.3.y4_tooltip
 		trigger = { has_country_flag = y_cbfzgh }
 		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
@@ -563,7 +563,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_rhodes_island.3.y5	# Ì«¿Õ½¢¶Ó½¨Éè£¨Ëæ»úÖØ¸´³öÏÖ£©
+		name = ark_rhodes_island.3.y5	# Ì«å¤ªç©ºèˆ°é˜Ÿå»ºè®¾ï¼ˆéšæœºé‡å¤å‡ºç°ï¼‰
 		custom_tooltip = ark_rhodes_island.3.y5_tooltip
 		trigger = { has_country_flag = y_tkjdjs }
 		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
@@ -593,7 +593,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_rhodes_island.3.y6	# Ì½Ë÷·¢ÏÖ¼Æ»®£¨ÔİÎŞ£©
+		name = ark_rhodes_island.3.y6	# Ì½æ¢ç´¢å‘ç°è®¡åˆ’ï¼ˆæš‚æ— ï¼‰
 		custom_tooltip = ark_rhodes_island.3.y6_tooltip
 		trigger = { has_country_flag = y_tsfxjh }
 		hidden_effect = {
@@ -619,7 +619,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_rhodes_island.3.r1	# Ì©À­ÁªºÏËÑ²éÁî£¨Ö»ÓĞÒ»´Î£¬²»Ñ¡¼´³·Ïú£©
+		name = ark_rhodes_island.3.r1	# Ì©æ³°æ‹‰è”åˆæœæŸ¥ä»¤ï¼ˆåªæœ‰ä¸€æ¬¡ï¼Œä¸é€‰å³æ’¤é”€ï¼‰
 		custom_tooltip = ark_rhodes_island.3.r1_tooltip
 		trigger = { has_country_flag = r_tllhscl }
 		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
@@ -653,7 +653,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_rhodes_island.3.v	# ÕÙ¿ªÁÙÊ±»áÒé
+		name = ark_rhodes_island.3.v	# å¬å¼€ä¸´æ—¶ä¼šè®®
 		custom_tooltip = ark_rhodes_island.3.v_tooltip
 		trigger = {
 			has_modifier = terra_council
@@ -676,25 +676,25 @@ country_event = {
 			remove_modifier = y_cbfzgh_modifier
 			remove_modifier = y_tkjdjs_modifier
 			remove_modifier = r_tllhscl_modifier
-			if = {	# Î´Ñ¡ ÖÈĞòµÄ´óµØ¢ñ
+			if = {	# æœªé€‰ ç§©åºçš„å¤§åœ°â… 
 				limit = { NOT = { has_country_flag = y_zxddd_1_end } }
 				set_country_flag = y_zxddd_1
 			}
-			if = {	# Î´Ñ¡ ÖÈĞòµÄ´óµØ¢ò
+			if = {	# æœªé€‰ ç§©åºçš„å¤§åœ°â…¡
 				limit = {
 					has_country_flag = y_zxddd_1_end
 					NOT = { has_country_flag = y_zxddd_2_end }
 				}
 				set_country_flag = y_zxddd_2
 			}
-			if = {	# Î´Ñ¡ ÖÈĞòµÄ´óµØ¢ó
+			if = {	# æœªé€‰ ç§©åºçš„å¤§åœ°â…¢
 				limit = {
 					has_country_flag = y_zxddd_2_end
 					NOT = { has_country_flag = y_zxddd_3_end }
 				}
 				set_country_flag = y_zxddd_3
 			}
-			if = {	# Î´Ñ¡ ÖÈĞòµÄ´óµØ ¢ô
+			if = {	# æœªé€‰ ç§©åºçš„å¤§åœ° â…£
 				limit = {
 					has_country_flag = y_zxddd_3_end
 					NOT = { has_country_flag = y_zxddd_4_end }
@@ -716,7 +716,7 @@ country_event = {
 	}
 	option = {
 		name = {
-			text = ark_rhodes_island.3.w	# È·ÈÏ
+			text = ark_rhodes_island.3.w	# ç¡®è®¤
 			trigger = {
 				OR = {
 					AND = {
@@ -746,7 +746,7 @@ country_event = {
 			}
 		}
 		name = {
-			text = ark_rhodes_island.3.x	# ²»±íÌ¬£¨Ö»ÔÚÂÌÉ«Òé°¸ÖĞÑ¡Ôñ£©
+			text = ark_rhodes_island.3.x	# ä¸è¡¨æ€ï¼ˆåªåœ¨ç»¿è‰²è®®æ¡ˆä¸­é€‰æ‹©ï¼‰
 			trigger = {
 				has_country_flag = council_meeting_flag
 				capital_scope = {
@@ -896,7 +896,7 @@ country_event = {
 	}
 }
 
-# ÀíÊÂ»á5Äê»áÒé(Òş²ØÊÂ¼ş)
+# ç†äº‹ä¼š5å¹´ä¼šè®®(éšè—äº‹ä»¶)
 country_event = {
 	id = ark_rhodes_island.31
 	hide_window = yes
@@ -917,7 +917,7 @@ country_event = {
 	immediate = {
 		set_country_flag = council_meeting_flag
 		random_list = {
-			100 = {	# Î´Ñ¡ ÖÈĞòµÄ´óµØ¢ñ
+			100 = {	# æœªé€‰ ç§©åºçš„å¤§åœ°â… 
 				modifier = {
 					factor = 0
 					has_country_flag = y_zxddd_1_end
@@ -926,7 +926,7 @@ country_event = {
 			}
 		}
 		random_list = {
-			100 = {	# Î´Ñ¡ ÖÈĞòµÄ´óµØ¢ò
+			100 = {	# æœªé€‰ ç§©åºçš„å¤§åœ°â…¡
 				modifier = {
 					factor = 0
 					OR = {
@@ -938,7 +938,7 @@ country_event = {
 			}
 		}
 		random_list = {
-			100 = {	# Î´Ñ¡ ÖÈĞòµÄ´óµØ¢ó
+			100 = {	# æœªé€‰ ç§©åºçš„å¤§åœ°â…¢
 				modifier = {
 					factor = 0
 					OR = {
@@ -950,7 +950,7 @@ country_event = {
 			}
 		}
 		random_list = {
-			100 = {	# Î´Ñ¡ ÖÈĞòµÄ´óµØ ¢ô
+			100 = {	# æœªé€‰ ç§©åºçš„å¤§åœ° â…£
 				modifier = {
 					factor = 0
 					OR = {
@@ -962,7 +962,7 @@ country_event = {
 			}
 		}
 		random_list = {
-			100 = {	# Î´Ñ¡ Ì©À­ÁªºÏËÑ²éÁî
+			100 = {	# æœªé€‰ æ³°æ‹‰è”åˆæœæŸ¥ä»¤
 				modifier = {
 					factor = 0
 					has_country_flag = r_tllhscl_end
@@ -992,7 +992,7 @@ country_event = {
 	}
 }
 
-# ÖÈĞòµÄ´óµØ£º·çÓê»ŞÚ¤
+# ç§©åºçš„å¤§åœ°ï¼šé£é›¨æ™¦å†¥
 country_event = {
 	id = ark_rhodes_island.301
 	title = "ark_rhodes_island.301.name"
@@ -1003,12 +1003,12 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = ark_rhodes_island.301.a	# È·ÈÏ
+		name = ark_rhodes_island.301.a	# ç¡®è®¤
 		add_resource = { influence = 100 }
 	}
 }
 
-# ÖÈĞòµÄ´óµØ£º·¢éíÖ®Ê¼
+# ç§©åºçš„å¤§åœ°ï¼šå‘è½«ä¹‹å§‹
 country_event = {
 	id = ark_rhodes_island.302
 	title = "ark_rhodes_island.302.name"
@@ -1022,12 +1022,12 @@ country_event = {
 		random_owned_planet = {
 			limit = { has_modifier = barbarian_growth }
 			remove_modifier = barbarian_growth
-			add_modifier = { modifier = "wheels_motion" days = -1 }	# ·¢éíÖ®Ê¼
+			add_modifier = { modifier = "wheels_motion" days = -1 }	# å‘è½«ä¹‹å§‹
 		}
 	}
 
 	option = {
-		name = ark_rhodes_island.301.a	# È·ÈÏ
+		name = ark_rhodes_island.301.a	# ç¡®è®¤
 		custom_tooltip = land_of_order_pop
 		add_resource = { unity = 100 }
 		hidden_effect = {
@@ -1041,7 +1041,7 @@ country_event = {
 	}
 }
 
-# ÖÈĞòµÄ´óµØ£º¾£¼¬´ÔÉú
+# ç§©åºçš„å¤§åœ°ï¼šè†æ£˜ä¸›ç”Ÿ
 country_event = {
 	id = ark_rhodes_island.303
 	title = "ark_rhodes_island.303.name"
@@ -1055,12 +1055,12 @@ country_event = {
 		random_owned_planet = {
 			limit = { has_modifier = wheels_motion }
 			remove_modifier = wheels_motion
-			add_modifier = { modifier = "strewn_thorns" days = -1 }	# ¾£¼¬´ÔÉú
+			add_modifier = { modifier = "strewn_thorns" days = -1 }	# è†æ£˜ä¸›ç”Ÿ
 		}
 	}
 
 	option = {
-		name = ark_rhodes_island.301.a	# È·ÈÏ
+		name = ark_rhodes_island.301.a	# ç¡®è®¤
 		custom_tooltip = land_of_order_pop
 		add_resource = { unity = 200 }
 		hidden_effect = {
@@ -1074,7 +1074,7 @@ country_event = {
 	}
 }
 
-# ÖÈĞòµÄ´óµØ£º²ãÁÖ¾¡È¾
+# ç§©åºçš„å¤§åœ°ï¼šå±‚æ—å°½æŸ“
 country_event = {
 	id = ark_rhodes_island.304
 	title = "ark_rhodes_island.304.name"
@@ -1088,12 +1088,12 @@ country_event = {
 		random_owned_planet = {
 			limit = { has_modifier = strewn_thorns }
 			remove_modifier = strewn_thorns
-			add_modifier = { modifier = "autumn_sea" days = 7200 }	# ²ãÁÖ¾¡È¾
+			add_modifier = { modifier = "autumn_sea" days = 7200 }	# å±‚æ—å°½æŸ“
 		}
 	}
 
 	option = {
-		name = ark_rhodes_island.301.a	# È·ÈÏ
+		name = ark_rhodes_island.301.a	# ç¡®è®¤
 		custom_tooltip = land_of_order_pop
 		add_resource = {
 			influence = 250
@@ -1110,7 +1110,7 @@ country_event = {
 	}
 }
 
-# µµ°¸ÖĞĞÄ
+# æ¡£æ¡ˆä¸­å¿ƒ
 country_event = {
 	id = ark_rhodes_island.5
 	title = "ark_rhodes_island.5.name"
@@ -1130,53 +1130,53 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = ark_rhodes_island.5.a	# ÌìÔÖ
+		name = ark_rhodes_island.5.a	# å¤©ç¾
 		hidden_effect = {
 			set_country_flag = ark_rhodes_island_51_flag
 			country_event = { id = ark_rhodes_island.50 }
 		}
 	}
 	option = {
-		name = ark_rhodes_island.5.b	# Ô´Ê¯
+		name = ark_rhodes_island.5.b	# æºçŸ³
 		hidden_effect = {
 			set_country_flag = ark_rhodes_island_52_flag
 			country_event = { id = ark_rhodes_island.50 }
 		}
 	}
 	option = {
-		name = ark_rhodes_island.5.c	# Ô´Ê¯¼¼ÒÕ
+		name = ark_rhodes_island.5.c	# æºçŸ³æŠ€è‰º
 		hidden_effect = {
 			set_country_flag = ark_rhodes_island_53_flag
 			country_event = { id = ark_rhodes_island.50 }
 		}
 	}
 	option = {
-		name = ark_rhodes_island.5.d	# ¿óÊ¯²¡/¸ĞÈ¾Õß
+		name = ark_rhodes_island.5.d	# çŸ¿çŸ³ç—…/æ„ŸæŸ“è€…
 		hidden_effect = {
 			set_country_flag = ark_rhodes_island_54_flag
 			country_event = { id = ark_rhodes_island.50 }
 		}
 	}
 	option = {
-		name = ark_rhodes_island.5.e	# ÒÆ¶¯³Ç°î
+		name = ark_rhodes_island.5.e	# ç§»åŠ¨åŸé‚¦
 		hidden_effect = {
 			set_country_flag = ark_rhodes_island_55_flag
 			country_event = { id = ark_rhodes_island.50 }
 		}
 	}
 	option = {
-		name = ark_rhodes_island.back	# ·µ»Ø
+		name = ark_rhodes_island.back	# è¿”å›
 		hidden_effect = {
 			country_event = { id = ark_rhodes_island.2 }
 		}
 	}
 	option = {
-		name = ark_rhodes_island.quit	# ÍË³ö
+		name = ark_rhodes_island.quit	# é€€å‡º
 		default_hide_option = yes
 	}
 }
 
-# µµ°¸ÖĞĞÄ£¨ÌìÔÖ~ÒÆ¶¯³Ç°î£©
+# æ¡£æ¡ˆä¸­å¿ƒï¼ˆå¤©ç¾~ç§»åŠ¨åŸé‚¦ï¼‰
 country_event = {
 	id = ark_rhodes_island.50
 	title = "ark_rhodes_island.5.name"
@@ -1222,8 +1222,8 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = ark_rhodes_island.52.a	# ÌõÄ¿Ò»£¨Ô´Ê¯£©
-		trigger = {	# Ñ¡Ôñ¡°Ô´Ê¯µµ°¸¡±ÇÒÒÑ¹éµµ¡°Ô´Ê¯¼ò±¨1¡±
+		name = ark_rhodes_island.52.a	# æ¡ç›®ä¸€ï¼ˆæºçŸ³ï¼‰
+		trigger = {	# é€‰æ‹©â€œæºçŸ³æ¡£æ¡ˆâ€ä¸”å·²å½’æ¡£â€œæºçŸ³ç®€æŠ¥1â€
 			has_country_flag = ark_rhodes_island_52_flag
 			has_country_flag = originiums_bulletin_1_flag
 			NOT = {
@@ -1239,8 +1239,8 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_rhodes_island.52.b	# ÌõÄ¿¶ş£¨Ô´Ê¯£©
-		trigger = {	# Ñ¡Ôñ¡°Ô´Ê¯µµ°¸¡±ÇÒÒÑ¹éµµ¡°Ô´Ê¯¼ò±¨2¡±
+		name = ark_rhodes_island.52.b	# æ¡ç›®äºŒï¼ˆæºçŸ³ï¼‰
+		trigger = {	# é€‰æ‹©â€œæºçŸ³æ¡£æ¡ˆâ€ä¸”å·²å½’æ¡£â€œæºçŸ³ç®€æŠ¥2â€
 			has_country_flag = ark_rhodes_island_52_flag
 			has_country_flag = originiums_bulletin_2_flag 
 			NOT = {
@@ -1256,8 +1256,8 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_rhodes_island.52.c	# ÌõÄ¿Èı£¨Ô´Ê¯£©
-		trigger = {	# Ñ¡Ôñ¡°Ô´Ê¯µµ°¸¡±ÇÒÒÑ¹éµµ¡°Ô´Ê¯¼ò±¨3¡±
+		name = ark_rhodes_island.52.c	# æ¡ç›®ä¸‰ï¼ˆæºçŸ³ï¼‰
+		trigger = {	# é€‰æ‹©â€œæºçŸ³æ¡£æ¡ˆâ€ä¸”å·²å½’æ¡£â€œæºçŸ³ç®€æŠ¥3â€
 			has_country_flag = ark_rhodes_island_52_flag
 			has_country_flag = originiums_bulletin_3_flag 
 			NOT = {
@@ -1273,8 +1273,8 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_rhodes_island.52.d	# ÌõÄ¿ËÄ£¨Ô´Ê¯£©
-		trigger = {	# Ñ¡Ôñ¡°Ô´Ê¯µµ°¸¡±ÇÒÒÑ¹éµµ¡°Ô´Ê¯¼ò±¨4¡±
+		name = ark_rhodes_island.52.d	# æ¡ç›®å››ï¼ˆæºçŸ³ï¼‰
+		trigger = {	# é€‰æ‹©â€œæºçŸ³æ¡£æ¡ˆâ€ä¸”å·²å½’æ¡£â€œæºçŸ³ç®€æŠ¥4â€
 			has_country_flag = ark_rhodes_island_52_flag
 			has_country_flag = originiums_bulletin_4_flag 
 			NOT = {
@@ -1290,8 +1290,8 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_rhodes_island.54.a	# ÌõÄ¿Ò»£¨¿óÊ¯²¡£©
-		trigger = {	# Ñ¡Ôñ¡°¿óÊ¯²¡/¸ĞÈ¾Õßµµ°¸¡±ÇÒÒÑ¹éµµ¡°¿óÊ¯²¡¼ò±¨1¡±
+		name = ark_rhodes_island.54.a	# æ¡ç›®ä¸€ï¼ˆçŸ¿çŸ³ç—…ï¼‰
+		trigger = {	# é€‰æ‹©â€œçŸ¿çŸ³ç—…/æ„ŸæŸ“è€…æ¡£æ¡ˆâ€ä¸”å·²å½’æ¡£â€œçŸ¿çŸ³ç—…ç®€æŠ¥1â€
 			has_country_flag = ark_rhodes_island_54_flag
 			has_country_flag = originiums_sufferer_bulletin_1_flag
 			NOT = {
@@ -1307,8 +1307,8 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_rhodes_island.54.b	# ÌõÄ¿¶ş£¨¿óÊ¯²¡£©
-		trigger = {	# Ñ¡Ôñ¡°¿óÊ¯²¡/¸ĞÈ¾Õßµµ°¸¡±ÇÒÒÑ¹éµµ¡°¿óÊ¯²¡¼ò±¨2¡±
+		name = ark_rhodes_island.54.b	# æ¡ç›®äºŒï¼ˆçŸ¿çŸ³ç—…ï¼‰
+		trigger = {	# é€‰æ‹©â€œçŸ¿çŸ³ç—…/æ„ŸæŸ“è€…æ¡£æ¡ˆâ€ä¸”å·²å½’æ¡£â€œçŸ¿çŸ³ç—…ç®€æŠ¥2â€
 			has_country_flag = ark_rhodes_island_54_flag
 			has_country_flag = originiums_sufferer_bulletin_2_flag
 			NOT = {
@@ -1324,8 +1324,8 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_rhodes_island.54.c	# ÌõÄ¿Èı£¨¿óÊ¯²¡£©
-		trigger = {	# Ñ¡Ôñ¡°¿óÊ¯²¡/¸ĞÈ¾Õßµµ°¸¡±ÇÒÒÑ¹éµµ¡°¿óÊ¯²¡¼ò±¨3¡±
+		name = ark_rhodes_island.54.c	# æ¡ç›®ä¸‰ï¼ˆçŸ¿çŸ³ç—…ï¼‰
+		trigger = {	# é€‰æ‹©â€œçŸ¿çŸ³ç—…/æ„ŸæŸ“è€…æ¡£æ¡ˆâ€ä¸”å·²å½’æ¡£â€œçŸ¿çŸ³ç—…ç®€æŠ¥3â€
 			has_country_flag = ark_rhodes_island_54_flag
 			has_country_flag = originiums_sufferer_bulletin_3_flag
 			NOT = {
@@ -1341,8 +1341,8 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_rhodes_island.54.d	# ÌõÄ¿ËÄ£¨¿óÊ¯²¡£©
-		trigger = {	# Ñ¡Ôñ¡°¿óÊ¯²¡/¸ĞÈ¾Õßµµ°¸¡±ÇÒÒÑ¹éµµ¡°¿óÊ¯²¡¼ò±¨4¡±
+		name = ark_rhodes_island.54.d	# æ¡ç›®å››ï¼ˆçŸ¿çŸ³ç—…ï¼‰
+		trigger = {	# é€‰æ‹©â€œçŸ¿çŸ³ç—…/æ„ŸæŸ“è€…æ¡£æ¡ˆâ€ä¸”å·²å½’æ¡£â€œçŸ¿çŸ³ç—…ç®€æŠ¥4â€
 			has_country_flag = ark_rhodes_island_54_flag
 			has_country_flag = originiums_sufferer_bulletin_4_flag
 			NOT = {
@@ -1358,8 +1358,8 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_rhodes_island.54.e	# ÌõÄ¿Îå£¨¿óÊ¯²¡£©
-		trigger = {	# Ñ¡Ôñ¡°¿óÊ¯²¡/¸ĞÈ¾Õßµµ°¸¡±ÇÒÒÑ¹éµµ¡°¿óÊ¯²¡¼ò±¨5¡±
+		name = ark_rhodes_island.54.e	# æ¡ç›®äº”ï¼ˆçŸ¿çŸ³ç—…ï¼‰
+		trigger = {	# é€‰æ‹©â€œçŸ¿çŸ³ç—…/æ„ŸæŸ“è€…æ¡£æ¡ˆâ€ä¸”å·²å½’æ¡£â€œçŸ¿çŸ³ç—…ç®€æŠ¥5â€
 			has_country_flag = ark_rhodes_island_54_flag
 			has_country_flag = originiums_sufferer_bulletin_5_flag
 			NOT = {
@@ -1375,7 +1375,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_rhodes_island.back	# ·µ»Ø
+		name = ark_rhodes_island.back	# è¿”å›
 		hidden_effect = {
 			remove_country_flag = ark_rhodes_island_51_flag
 			remove_country_flag = ark_rhodes_island_52_flag
@@ -1386,7 +1386,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_rhodes_island.quit	# ÍË³ö
+		name = ark_rhodes_island.quit	# é€€å‡º
 		hidden_effect = {
 			remove_country_flag = ark_rhodes_island_51_flag
 			remove_country_flag = ark_rhodes_island_52_flag
@@ -1398,7 +1398,7 @@ country_event = {
 	}
 }
 
-# µµ°¸ÖĞĞÄ£¨Ô´Ê¯ÌõÄ¿£©
+# æ¡£æ¡ˆä¸­å¿ƒï¼ˆæºçŸ³æ¡ç›®ï¼‰
 country_event = {
 	id = ark_rhodes_island.52
 	title = "ark_rhodes_island.5.name"
@@ -1438,7 +1438,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = ark_rhodes_island.back	# ·µ»Ø
+		name = ark_rhodes_island.back	# è¿”å›
 		hidden_effect = {
 			remove_country_flag = ark_rhodes_island_521_flag
 			remove_country_flag = ark_rhodes_island_522_flag
@@ -1448,7 +1448,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_rhodes_island.quit	# ÍË³ö
+		name = ark_rhodes_island.quit	# é€€å‡º
 		hidden_effect = {
 			remove_country_flag = ark_rhodes_island_521_flag
 			remove_country_flag = ark_rhodes_island_522_flag
@@ -1459,7 +1459,7 @@ country_event = {
 	}
 }
 
-# µµ°¸ÖĞĞÄ£¨¿óÊ¯²¡/¸ĞÈ¾ÕßÌõÄ¿£©
+# æ¡£æ¡ˆä¸­å¿ƒï¼ˆçŸ¿çŸ³ç—…/æ„ŸæŸ“è€…æ¡ç›®ï¼‰
 country_event = {
 	id = ark_rhodes_island.54
 	title = "ark_rhodes_island.5.name"
@@ -1505,7 +1505,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = ark_rhodes_island.back	# ·µ»Ø
+		name = ark_rhodes_island.back	# è¿”å›
 		hidden_effect = {
 			remove_country_flag = ark_rhodes_island_541_flag
 			remove_country_flag = ark_rhodes_island_542_flag
@@ -1516,7 +1516,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_rhodes_island.quit	# ÍË³ö
+		name = ark_rhodes_island.quit	# é€€å‡º
 		hidden_effect = {
 			remove_country_flag = ark_rhodes_island_541_flag
 			remove_country_flag = ark_rhodes_island_542_flag

@@ -1,6 +1,6 @@
 namespace = ark_civic
 
-# ÉÌÒµÁªºÏ£ºµÚ1¸ö¹úÃñÀíÄî
+# å•†ä¸šè”åˆï¼šç¬¬1ä¸ªå›½æ°‘ç†å¿µ
 country_event = {
 	id = ark_civic.1
 	title = ark_civic.1.name
@@ -20,7 +20,7 @@ country_event = {
 	}
 
 	option = {
-		name = ark_civic.1.a	# Ò½Ò©ÆóÒµ
+		name = ark_civic.1.a	# åŒ»è¯ä¼ä¸š
 		trigger = {
 			NOT = { has_civic = civic_pharmaceutical_enterprises }
 		}
@@ -31,7 +31,7 @@ country_event = {
 	}
 
 	option = {
-		name = ark_civic.1.b	# ÎïÁ÷¹«Ë¾
+		name = ark_civic.1.b	# ç‰©æµå…¬å¸
 		trigger = {
 			NOT = { has_civic = civic_logistics_companies }
 		}
@@ -42,7 +42,7 @@ country_event = {
 	}
 
 	option = {
-		name = ark_civic.1.c	# ÈÚ×ÊÊµÑéÊÒ
+		name = ark_civic.1.c	# èèµ„å®éªŒå®¤
 		trigger = {
 			NOT = { has_civic = civic_financing_laboratories }
 		}
@@ -53,7 +53,7 @@ country_event = {
 	}
 
 	option = {
-		name = ark_civic.1.d	# °²È«³Ğ°üÉÌ
+		name = ark_civic.1.d	# å®‰å…¨æ‰¿åŒ…å•†
 		trigger = {
 			NOT = { has_civic = civic_security_contractors }
 		}
@@ -64,7 +64,7 @@ country_event = {
 	}
 
 	option = {
-		name = ark_civic.1.e	# ¹¤ÒµÖÆÔìÉÌ
+		name = ark_civic.1.e	# å·¥ä¸šåˆ¶é€ å•†
 		trigger = {
 			NOT = { has_civic = civic_industry_manufacturers }
 		}
@@ -75,7 +75,7 @@ country_event = {
 	}
 
 	option = {
-		name = ark_civic.1.f	# Á÷Í¨ÉÌÒµ
+		name = ark_civic.1.f	# æµé€šå•†ä¸š
 		trigger = {
 			NOT = { has_civic = civic_circulation_business }
 		}
@@ -86,11 +86,11 @@ country_event = {
 	}
 }
 
-# ÉÌÒµÁªºÏ£ºµÚ2¸ö¹úÃñÀíÄî
+# å•†ä¸šè”åˆï¼šç¬¬2ä¸ªå›½æ°‘ç†å¿µ
 country_event = {
 	id = ark_civic.11
 	title = ark_civic.11.name
-	desc = ark_civic.1.desc	# ÑØÓÃark_civic.1µÄ±¾µØ»¯
+	desc = ark_civic.1.desc	# æ²¿ç”¨ark_civic.1çš„æœ¬åœ°åŒ–
 	picture = GFX_evt_kxstreet
 	location = ROOT
 
@@ -104,7 +104,7 @@ country_event = {
 	}
 
 	option = {
-		name = ark_civic.1.a	# ÑØÓÃark_civic.1µÄ±¾µØ»¯
+		name = ark_civic.1.a	# æ²¿ç”¨ark_civic.1çš„æœ¬åœ°åŒ–
 		trigger = {
 			NOT = { has_civic = civic_pharmaceutical_enterprises }
 		}
@@ -112,7 +112,7 @@ country_event = {
 	}
 
 	option = {
-		name = ark_civic.1.b	# ÑØÓÃark_civic.1µÄ±¾µØ»¯
+		name = ark_civic.1.b	# æ²¿ç”¨ark_civic.1çš„æœ¬åœ°åŒ–
 		trigger = {
 			NOT = { has_civic = civic_logistics_companies }
 		}
@@ -120,7 +120,7 @@ country_event = {
 	}
 
 	option = {
-		name = ark_civic.1.c	# ÑØÓÃark_civic.1µÄ±¾µØ»¯
+		name = ark_civic.1.c	# æ²¿ç”¨ark_civic.1çš„æœ¬åœ°åŒ–
 		trigger = {
 			NOT = { has_civic = civic_financing_laboratories }
 		}
@@ -128,7 +128,7 @@ country_event = {
 	}
 
 	option = {
-		name = ark_civic.1.d	# ÑØÓÃark_civic.1µÄ±¾µØ»¯
+		name = ark_civic.1.d	# æ²¿ç”¨ark_civic.1çš„æœ¬åœ°åŒ–
 		trigger = {
 			NOT = { has_civic = civic_security_contractors }
 		}
@@ -136,7 +136,7 @@ country_event = {
 	}
 
 	option = {
-		name = ark_civic.1.e	# ÑØÓÃark_civic.1µÄ±¾µØ»¯
+		name = ark_civic.1.e	# æ²¿ç”¨ark_civic.1çš„æœ¬åœ°åŒ–
 		trigger = {
 			NOT = { has_civic = civic_industry_manufacturers }
 		}
@@ -144,7 +144,7 @@ country_event = {
 	}
 
 	option = {
-		name = ark_civic.1.f	# ÑØÓÃark_civic.1µÄ±¾µØ»¯
+		name = ark_civic.1.f	# æ²¿ç”¨ark_civic.1çš„æœ¬åœ°åŒ–
 		trigger = {
 			NOT = { has_civic = civic_circulation_business }
 		}
@@ -152,8 +152,8 @@ country_event = {
 	}
 }
 
-## Ò½Ò©ÆóÒµ ##
-# ³ÉÁ¢ÎÀÉú²¿
+## åŒ»è¯ä¼ä¸š ##
+# æˆç«‹å«ç”Ÿéƒ¨
 country_event = {
 	id = ark_civic.2
 	title = "ark_civic.2.name"
@@ -177,7 +177,7 @@ country_event = {
 	}
 }
 
-# ´´½¨¹ú¼ÒÓÃÓÚ´æ·ÅÁìĞä
+# åˆ›å»ºå›½å®¶ç”¨äºå­˜æ”¾é¢†è¢–
 event = {
 	id = ark_civic.20
 	hide_window = yes
@@ -212,7 +212,7 @@ event = {
 	}
 }
 
-# ´¥·¢Ò½ÁÆ»áÕï
+# è§¦å‘åŒ»ç–—ä¼šè¯Š
 country_event = {
 	id = ark_civic.21
 	hide_window = yes
@@ -221,9 +221,9 @@ country_event = {
 	 	has_civic = civic_pharmaceutical_enterprises
 	 	any_owned_leader = {
 			OR = {
-				has_trait = leader_trait_substance_abuser	# Ò©ÎïÒÀÀµ
-				has_trait = leader_trait_traumatized		# ÊÜ´ì
-				has_trait = leader_trait_maimed		# ÉË²Ğ
+				has_trait = leader_trait_substance_abuser	# è¯ç‰©ä¾èµ–
+				has_trait = leader_trait_traumatized		# å—æŒ«
+				has_trait = leader_trait_maimed				# ä¼¤æ®‹
 			}
 		}
 		NOR = {
@@ -277,7 +277,7 @@ country_event = {
 	}
 }
 
-# Ò½ÁÆ»áÕï
+# åŒ»ç–—ä¼šè¯Š
 country_event = {
 	id = ark_civic.22
 	title = ark_civic.22.name
@@ -308,7 +308,7 @@ country_event = {
 	}
 
 	option = {
-		name = ark_civic.22.a	# ÎÒÃÇµÄÁìĞä½«Á¢¿ÌÇ°ÍùÒ½Ôº±¨µ½
+		name = ark_civic.22.a	# æˆ‘ä»¬çš„é¢†è¢–å°†ç«‹åˆ»å‰å¾€åŒ»é™¢æŠ¥åˆ°
 		hidden_effect = {
 			if = {
 				limit = {
@@ -341,11 +341,14 @@ country_event = {
 	}
 
 	option = {
-		name = ark_civic.22.b	# £¨Ôİ²»£©
+		name = ark_civic.22.b	# ï¼ˆæš‚ä¸ï¼‰
+		hidden_effect = {
+			country_event = { id = ark_civic.22 days = 360 }
+		}
 	}
 }
 
-# ÁìĞä¿µ¸´
+# é¢†è¢–åº·å¤
 country_event = {
 	id = ark_civic.23
 	title = ark_civic.23.name
@@ -362,7 +365,7 @@ country_event = {
 	}
 
 	option = {
-		name = ark_civic.23.a	# »¶Ó­»Øµ½¹¤×÷¸ÚÎ»
+		name = ark_civic.23.a	# æ¬¢è¿å›åˆ°å·¥ä½œå²—ä½
 		hidden_effect = {
 			if = {
 				limit = { 
@@ -370,7 +373,7 @@ country_event = {
 				}
 				event_target:treatment_1 = {
 					set_owner = root
-					remove_trait = leader_trait_substance_abuser	# Ò©ÎïÒÀÀµ
+					remove_trait = leader_trait_substance_abuser	# è¯ç‰©ä¾èµ–
 				}
 				clear_global_event_target = treatment_1
 			}
@@ -380,7 +383,7 @@ country_event = {
 				}
 				event_target:treatement_2 = {
 					set_owner = root
-					remove_trait = leader_trait_traumatized	# ÊÜ´ì
+					remove_trait = leader_trait_traumatized	# å—æŒ«
 				}
 				clear_global_event_target = treatment_2
 			}
@@ -390,7 +393,7 @@ country_event = {
 				}
 				event_target:treatement_3 = {
 					set_owner = root
-					remove_trait = leader_trait_maimed	# ÉË²Ğ
+					remove_trait = leader_trait_maimed	# ä¼¤æ®‹
 				}
 				clear_global_event_target = treatment_3
 			}
@@ -398,7 +401,7 @@ country_event = {
 	}
 }
 
-# ²»ÏàÈİÒßÃç½âÎö
+# ä¸ç›¸å®¹ç–«è‹—è§£æ
 country_event = {
 	id = ark_civic.3
 	title = ark_civic.3.name
@@ -419,7 +422,7 @@ country_event = {
 	}
 
 	option = {
-		name = ark_civic.3.a	# ³¢ÊÔÖØÖÆÒßÃç
+		name = ark_civic.3.a	# å°è¯•é‡åˆ¶ç–«è‹—
 		capital_scope = {
 			enable_special_project = {
 				name = "MUTATIONS_PROJECT"
@@ -430,7 +433,7 @@ country_event = {
 	}
 }
 
-# Á¼ĞÔµÄÒßÃç
+# è‰¯æ€§çš„ç–«è‹—
 country_event = {
 	id = ark_civic.31
 	title = ark_civic.31.name
@@ -453,44 +456,37 @@ country_event = {
 	}
 }
 
-# ÆïÊ¿¾«Éñ
+# éª‘å£«ç²¾ç¥
 country_event = {
 	id = ark_civic.4
-	hide_window = yes
-	location = ROOT
-
 	is_triggered_only = yes
+	hide_window = yes
 
 	trigger = {
 		has_civic = civic_chivalry
-		NOT = { has_country_flag = ark_civic_4_flag }
 	}
 
 	immediate = {
-		every_pool_leader = {
-			if = {
-				limit = {
-					leader_class = general
-					NOR = {
-						has_trait = leader_trait_general_chivalry
-						species = {
-							is_species_class = ROBOT
-						}
-					}
-				}
-				add_trait = leader_trait_general_chivalry
-			}
+		from = {
 			if = {
 				limit = {
 					leader_class = admiral
-					NOR = {
+					NOT = {
 						has_trait = leader_trait_admiral_chivalry
-						species = {
-							is_species_class = ROBOT
-						}
+						species = { is_species_class = ROBOT }
 					}
 				}
 				add_trait = leader_trait_admiral_chivalry
+			}
+			if = {
+				limit = {
+					leader_class = general
+					NOT = {
+						has_trait = leader_trait_general_chivalry
+						species = { is_species_class = ROBOT }
+					}
+				}
+				add_trait = leader_trait_general_chivalry
 			}
 		}
 		set_country_flag = ark_civic_4_flag
