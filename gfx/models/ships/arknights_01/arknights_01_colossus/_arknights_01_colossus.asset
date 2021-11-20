@@ -1,5 +1,5 @@
 @colossus_scale = 24
-
+#巨像
 entity = {
 	name = "arknights_01_colossus_entity"
 	pdxmesh = "avian_01_colossus_frame_mesh"

@@ -1,6 +1,3 @@
-# 本repo内容为群星明日方舟MOD“Arknights:NearFuture”
-# 所有开发中的内容均在此托管
-
 # 开发人员：
 # 【粥城县长】衡菌（Lappland_mush）
 # 【六星策展人】无言infinite（infinite-create）
