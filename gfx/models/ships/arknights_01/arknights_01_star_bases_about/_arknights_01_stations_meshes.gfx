@@ -12,4 +12,98 @@ objectTypes = {
 
 		scale = 1.0
 	}
+
+	pdxmesh = {
+		name = "arknights_01_ion_cannon_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_star_bases_about/arknights_01_ion_cannon.mesh"
+
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "arknights_01_outpost_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_star_bases_about/arknights_01_outpost_mesh.mesh"
+
+		scale = 2.5
+	}
+
+	pdxmesh = {
+		name = "arknights_01_starport_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_star_bases_about/arknights_01_starport_mesh.mesh"
+
+		scale = 2.5
+	}
+	pdxmesh = {
+		name = "arknights_01_starport_frame_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_star_bases_about/arknights_01_starport_frame_mesh.mesh"
+
+		scale = 2.5
+	}
+
+	pdxmesh = {
+		name = "arknights_01_starhold_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_star_bases_about/arknights_01_starhold_mesh.mesh"
+
+		scale = 2.5
+	}
+	pdxmesh = {
+		name = "arknights_01_starhold_frame_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_star_bases_about/arknights_01_starhold_frame_mesh.mesh"
+
+		scale = 2.5
+	}
+
+	pdxmesh = {
+		name = "arknights_01_starfort_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_star_bases_about/arknights_01_starfort_mesh.mesh"
+
+		scale = 2.5
+	}
+	pdxmesh = {
+		name = "arknights_01_starfort_frame_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_star_bases_about/arknights_01_starfort_frame_mesh.mesh"
+
+		scale = 2.5
+	}
+
+	pdxmesh = {
+		name = "arknights_01_citadel_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_star_bases_about/arknights_01_citadel_mesh.mesh"
+
+		scale = 2.5
+	}
+	pdxmesh = {
+		name = "arknights_01_citadel_frame_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_star_bases_about/arknights_01_citadel_frame_mesh.mesh"
+
+		scale = 2.5
+	}
+
+	pdxmesh = {
+		name = "arknights_01_starbase_turret_section_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_star_bases_about/arknights_01_starbase_turret_section.mesh"
+
+		scale = 2.5
+	}
+
+	pdxmesh = {
+		name = "arknights_01_orbital_station_assemblyyard_section_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_star_bases_about/arknights_01_orbital_station_assemblyyard_section.mesh"
+
+		scale = 2.5
+	}
+
+	pdxmesh = {
+		name = "arknights_01_orbital_station_refinery_section_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_star_bases_about/arknights_01_orbital_station_refinery_section.mesh"
+
+		scale = 2.5
+	}
+
+	pdxmesh = {
+		name = "arknights_01_orbital_station_science_section_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_star_bases_about/arknights_01_orbital_station_science_section.mesh"
+
+		scale = 2.5
+	}
 }
