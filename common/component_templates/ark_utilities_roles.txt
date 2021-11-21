@@ -2,6 +2,7 @@
 @cost1 = 5
 @cost2 = 10
 @cost3 = 20
+@cost4 = 30
 
 @power0 = -5
 @power1 = -10

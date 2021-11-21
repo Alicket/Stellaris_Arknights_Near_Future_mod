@@ -23,7 +23,7 @@ weapon_component_template = {
 	prerequisites = { "tech_ark_laser_1" }
 	component_set = "ARK_LASER_1"
 	projectile_gfx = "ark_laser_1_s"
-	entity = "arknights_01_laser_small_entity"
+
 	tags = { weapon_type_energy }
 	upgrades_to = "SMALL_ARK_LASER_2"
 	ai_tags = { weapon_role_anti_armor }
@@ -75,7 +75,7 @@ weapon_component_template = {
 	prerequisites = { "tech_ark_laser_1" }
 	component_set = "ARK_LASER_1"
 	projectile_gfx = "ark_laser_1_m"
-	entity = "arknights_01_laser_medium_entity"
+
 	tags = { weapon_type_energy }
 	upgrades_to = "MEDIUM_ARK_LASER_2"
 	ai_tags = { weapon_role_anti_armor }
@@ -127,7 +127,7 @@ weapon_component_template = {
 	prerequisites = { "tech_ark_laser_1" }
 	component_set = "ARK_LASER_1"
 	projectile_gfx = "ark_laser_1_l"
-	entity = "arknights_01_laser_large_entity"
+
 	tags = { weapon_type_energy }
 	upgrades_to = "LARGE_ARK_LASER_2"
 	ai_tags = { weapon_role_anti_armor }
@@ -180,7 +180,7 @@ weapon_component_template = {
 	prerequisites = { "tech_ark_laser_2" }
 	component_set = "ARK_LASER_2"
 	projectile_gfx = "ark_laser_1_s"
-	entity = "arknights_01_laser_2_small_entity"
+
 	tags = { weapon_type_energy }
 	ai_tags = { weapon_role_anti_armor }
 	resources = {
@@ -231,7 +231,7 @@ weapon_component_template = {
 	prerequisites = { "tech_ark_laser_2" }
 	component_set = "ARK_LASER_2"
 	projectile_gfx = "ark_laser_1_m"
-	entity = "arknights_01_laser_2_medium_entity"
+
 	tags = { weapon_type_energy }
 	ai_tags = { weapon_role_anti_armor }
 	resources = {
@@ -282,7 +282,7 @@ weapon_component_template = {
 	prerequisites = { "tech_ark_laser_2" }
 	component_set = "ARK_LASER_2"
 	projectile_gfx = "ark_laser_1_l"
-	entity = "arknights_01_laser_2_large_entity"
+
 	tags = { weapon_type_energy }
 	ai_tags = { weapon_role_anti_armor }
 	resources = {
@@ -334,7 +334,7 @@ weapon_component_template = {
 	prerequisites = { "tech_ark_polymer" }
 	component_set = "ARK_POLYMER"
 	projectile_gfx = "plasma_accelerator_s"
-	entity = "arknights_01_turret_polymer_small_entity"
+
 	tags = { weapon_type_energy }
 	ai_tags = { weapon_role_anti_hull }
 	ai_tag_weight = 3
@@ -386,7 +386,7 @@ weapon_component_template = {
 	prerequisites = { "tech_ark_polymer" }
 	component_set = "ARK_POLYMER"
 	projectile_gfx = "plasma_accelerator_m"
-	entity = "arknights_01_turret_polymer_medium_entity"
+
 	tags = { weapon_type_energy }
 	ai_tags = { weapon_role_anti_hull }
 	ai_tag_weight = 3
@@ -438,7 +438,7 @@ weapon_component_template = {
 	prerequisites = { "tech_ark_polymer" }
 	component_set = "ARK_POLYMER"
 	projectile_gfx = "plasma_accelerator_l"
-	entity = "arknights_01_turret_polymer_large_entity"
+
 	tags = { weapon_type_energy }
 	ai_tags = { weapon_role_anti_hull }
 	ai_tag_weight = 3
@@ -799,7 +799,7 @@ weapon_component_template = {
 	component_set = "ARK_POINT_DEFENCE"
 	type = point_defence
 	projectile_gfx = "ark_pd"
-	entity = "arknights_01_point_defence_O_entity"
+
 	tags = { weapon_type_point_defense weapon_type_energy }
 	ai_tags = { weapon_role_point_defense }
 	resources = {
@@ -1087,7 +1087,7 @@ weapon_component_template = {
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = xl_t6_cost
+			alloys = @xl_t6_cost
 			volatile_motes = @xl_t6_rare
 			originiums = @xl_t6_rare
 			multipole_nanosheets = @xl_t6_rare

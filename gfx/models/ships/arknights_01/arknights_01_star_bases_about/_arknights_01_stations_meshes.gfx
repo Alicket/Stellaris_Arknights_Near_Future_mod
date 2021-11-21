@@ -1,0 +1,15 @@
+objectTypes = {
+	pdxmesh = {
+		name = "arknights_01_research_station_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_star_bases_about/arknights_01_research_station.mesh"
+
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "arknights_01_mining_station_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_star_bases_about/arknights_01_mining_station.mesh"
+
+		scale = 1.0
+	}
+}

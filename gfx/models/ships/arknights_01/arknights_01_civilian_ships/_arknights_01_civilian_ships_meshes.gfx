@@ -1,12 +1,8 @@
-#看起来。。。meshsettings大概确实已经没用了罢，炮塔里面那几个我就不改了qwq
-
-#注意objectTypes的大括号！！！
-
 objectTypes = {
 	pdxmesh = {
 		name = "arknights_01_construction_mesh"
 		file = "gfx/models/ships/arknights_01/arknights_01_civilian_ships/arknights_01_construction.mesh"
-		scale = 1.0
+		scale = 1.5
 		#meshsettings = {
 			#shader = "PdxMeshShip"
 			#Mipmap tweaking

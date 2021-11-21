@@ -20,11 +20,33 @@
 @large_trail_W = 50
 @large_trail_L =  300
 
-#本文件是民用船只（众所周知运输舰是民用船（bushi））的asset，但是我始终没有搞懂工程船既没有frame也没有自带骨骼却能正常显示death动画
-#的原理。。。另外香草里的gamedata貌似没有什么用，删了也没啥影响，写上去还会报错，所以干脆不写了（
-#上面那几个头数据就是gamedata里用到的，现在看来好像也没啥用了
-
 #工程船
+
+entity = {
+	name = "arknights_01_constructor_entity"
+	   pdxmesh = "molluscoid_01_corvette_frame_mesh"
+   
+	   default_state = "idle"
+	   state = { name = "idle"	 						animation = "idle" animation_blend_time = 0 }
+	   state = { name = "moving"						animation = "idle" animation_blend_time = 2 }
+	   state = { name = "working" 						animation = "idle" looping = no next_state = working_looping }
+	   state = { name = "working_looping"				animation = "idle" }
+	   state = { name = "death" animation = "death3" 	animation_blend_time = 0.0 chance = 1 looping = no
+		   event = { time = 4.63 node = "ship_main" particle = "large_ship_explosion_particle" }
+	   }
+   
+	   scale = 1.0
+   
+	   game_data = {
+		   size = @constructor_scale
+		   emissive_recolor_crunch = 5.0
+	   }
+
+	   attach = {
+		   root = "arknights_01_construction_ship_entity"
+	   }
+   }
+
 entity = {
 	name = "arknights_01_construction_ship_entity"
 	   pdxmesh = "arknights_01_construction_mesh"
@@ -33,21 +55,27 @@ entity = {
 	   state = { name = "idle" 						animation = "idle"
 		   event = { time = 0 node = "engine_small_01" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
 		   event = { time = 0 node = "engine_small_02" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		   event = { time = 0 node = "engine_small_03" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		   event = { time = 0 node = "engine_small_04" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
 		   start_event = { trigger_once = yes sound = { soundeffect = "amb_construction_ship_hum" } }
 	   }
 	   state = { name = "moving" 						animation = "idle"
 		   event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
 		   event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		   event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		   event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
 		   event = { trigger_once = yes sound = { soundeffect = moving_out_construction } }
 	   }
 	   state = { name = "working"						animation = "working"		looping = no	next_state = working_looping
 		   event = { time = 0 node = "engine_small_01" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
 		   event = { time = 0 node = "engine_small_02" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
-	}
-
+		   event = { time = 0 node = "engine_small_03" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		   event = { time = 0 node = "engine_small_04" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		}
 }  
 
-#科研船的frame，直接用了mollusciod的，抄香草哺乳护卫舰（
+#科研船的frame
 entity = {
 	name = "arknights_01_science_entity"
 	   pdxmesh = "molluscoid_01_corvette_frame_mesh"
@@ -74,8 +102,6 @@ entity = {
 	   state = { name = "idle" state_time = 5
 		   event = { time = 0.0 node = "engine_small_01" particle = "generic_05_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
 		   event = { time = 0.0 node = "engine_small_02" particle = "generic_05_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		   event = { time = 0.0 node = "engine_small_03" particle = "generic_05_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
-		   event = { time = 0.0 node = "engine_small_04" particle = "generic_05_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
 		   start_event = { trigger_once = yes sound = { soundeffect = "amb_science_ship_hum" } }
    
 		   event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
@@ -84,8 +110,6 @@ entity = {
 	   state = { name = "moving" state_time = 5
 		   event = { time = 0.0 node = "engine_small_01" particle = "generic_075_exhaust_circle_moving" keep_particle = yes trigger_once = yes  }
 		   event = { time = 0.0 node = "engine_small_02" particle = "generic_075_exhaust_circle_moving" keep_particle = yes trigger_once = yes  }
-		   event = { time = 0.0 node = "engine_small_03" particle = "generic_075_exhaust_circle_moving" keep_particle = yes trigger_once = yes  }
-		   event = { time = 0.0 node = "engine_small_04" particle = "generic_075_exhaust_circle_moving" keep_particle = yes trigger_once = yes  }
 		   event = { trigger_once = yes sound = { soundeffect = moving_out_science } }
    
 		   event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
@@ -164,9 +188,6 @@ entity = {
 	   }
    }
 
-#这个colonizer是个啥子玩意？？？localization里是殖民船，但是这里注释掉完全没影响qwq
-#（貌似是殖民船的frame，但是我的mesh里自带骨骼，所以不用了）
-
 #entity = {
 #	name = "arknights_01_colonizer_entity"
 #	pdxmesh = "molluscoid_01_corvette_frame_mesh"
@@ -184,7 +205,7 @@ entity = {
 #	}
 #}
 
-#殖民船的mesh，mesh内自带骨骼，不需要frame，其中的animation在gfx中定义，另一个asset里注册
+#殖民船的mesh
 entity = {
 	name = "arknights_01_colony_ship_entity"
 	   pdxmesh = "arknights_01_colony_ship_mesh"

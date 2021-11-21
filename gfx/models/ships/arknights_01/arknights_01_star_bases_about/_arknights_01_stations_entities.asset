@@ -1,0 +1,72 @@
+
+
+#科研轨道站
+entity = {
+	name = "arknights_01_research_station_entity"
+	pdxmesh = "mammalian_01_science_station_frame_mesh"
+
+	locator = { name = "part1" 			position = { 0 	0 	0 } }
+
+	default_state = "idle"
+
+	state = { name = "death" animation = "death" looping = no
+		event = { time = 0.9 particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_large" } }
+	}
+	scale = 1.4
+
+	attach = { root = "arknights_01_research_station_section_entity" }
+}
+
+entity = {
+	name = "arknights_01_research_station_section_entity"
+	pdxmesh = "arknights_01_research_station_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_research_station_signals" } }
+	}
+
+	state = { name = "death" animation = "death" looping = no
+		event = { time = 0.0 node = "root" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 0.5 node = "root" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+	}
+}
+
+
+
+
+#采矿轨道站
+entity = {
+	name = "arknights_01_mining_station_entity"
+	pdxmesh = "mammalian_01_mining_station_frame_mesh"
+
+	locator = { name = "part1" 			position = { 0 	0 	0 } }
+
+	default_state = "idle"
+
+	state = { name = "death" state_time = 5 looping = no
+
+		event = { time = 4.9 particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_large" } }
+	}
+
+	attach = { root = "arknights_01_mining_station_section_entity" }
+}
+
+entity = {
+	name = "arknights_01_mining_station_section_entity"
+	pdxmesh = "arknights_01_mining_station_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_mining_station_signals" } }
+	}
+
+	state = { name = "death" state_time = 5 looping = no
+		event = { time = 0.0 node = "root" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 0.5 node = "root" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 1.5 node = "root" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 2.0 node = "root" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 3.0 node = "root" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 4.0 node = "root" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+	}
+}
