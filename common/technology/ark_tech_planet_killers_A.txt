@@ -1,0 +1,26 @@
+tech_pk_ark_frostnova = {
+	icon = tech_ark_pk_frostnova
+	cost = @tier5cost3
+	tier = 5
+	is_rare = yes
+	is_reverse_engineerable = no
+	category = { voidcraft }
+	prerequisites = { tech_pk_cracker tech_originiums_mining }
+	weight = 100
+	area = engineering
+
+	ai_weight = {
+		factor = 1
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+		modifier = {
+			factor = 2
+			is_ai = no #auto-research
+		}
+	}
+}

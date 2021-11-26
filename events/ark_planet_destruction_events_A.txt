@@ -1,0 +1,267 @@
+namespace = ark_planet_destruction
+
+planet_event = {
+	id = ark_planet_destruction.100
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		#效果
+		every_owned_pop = { kill_pop = yes } #鲨人
+		remove_all_buildings = yes #移除建筑
+		if = {
+			limit = { is_planet_class = pc_ringworld_habitable } #环世界
+			change_pc = pc_ringworld_habitable_damaged
+		}
+		else = {  #星球
+			change_pc = pc_ark_frozen
+		}
+		clear_deposits = yes  #清除特征
+		add_deposit =  d_ark_frozen_planet_deposit #加特征，产出资源
+		
+ 		#第一次炸球事件弹窗
+		if = { 
+			limit = { is_planet_class = pc_ringworld_habitable } #环世界损坏
+			from.owner = {country_event = { id = ark_planet_destruction.211 }}
+		} 
+		else = {#星球
+			from.owner = {country_event = { id = ark_planet_destruction.210 }}
+		}
+
+
+
+		#Dismantle observation post 撤销观测站
+		if = {
+			limit = {
+				has_observation_outpost = yes
+			}
+			observation_outpost_owner = {
+				country_event = { id = ark_planet_destruction.1000 days = 1 } #planet_destruction.1000
+			}
+		}
+
+		# Contingency Final Machine World 肃正最后一个球
+		if = {
+			limit = {
+				is_planet_class = pc_ai
+				has_planet_flag = machine_lair
+			}
+			set_planet_flag = destroyed_by_colossus
+			set_planet_flag = planet_ark_frozen
+			stop_crisis_sound = yes
+			from.owner = { save_event_target_as = final_machine_world_destroyer }
+			planet_event = { id = crisis.2046 } #不用改
+		}
+		# Swarm Situation Log counter 虫灾
+		if = {
+			limit = {
+				exists = owner
+				owner = { is_country_type = swarm }
+			}
+			every_country = {
+				limit = { has_event_chain = "prethoryn_scourge_chain" }
+				add_event_chain_counter = {
+					event_chain = "prethoryn_scourge_chain"
+					counter = "infested_worlds"
+					amount = -1
+				}
+				add_event_chain_counter = {
+					event_chain = "prethoryn_scourge_chain"
+					counter = "infested_worlds_cleansed"
+					amount = 1
+				}
+			}
+		}
+		#对普通国家
+		if = {
+			limit = {
+				exists = owner
+				owner = {
+					NOT = { is_same_value = from.owner }
+					OR = {
+						is_country_type = default
+						is_country_type = fallen_empire
+						is_country_type = awakened_fallen_empire
+					}
+				}
+			}
+			# Generate threat
+			add_threat = { who = from.owner amount = 3 }
+			# modifier for allies + those upset by the shield
+			every_country = {
+				limit = {
+					NOR = {
+						is_same_value = from.owner
+						is_same_value = root.owner
+						AND = {
+							has_federation = yes
+							is_in_federation_with = from.owner
+						}
+					}
+					OR = {
+						has_communications = from.owner
+						has_communications = root.owner
+					}
+					OR = {
+						AND = {
+							has_federation = yes
+							is_in_federation_with = root.owner
+						}
+						has_ai_personality = awakened_fallen_empire_xenophile
+						AND = {
+							is_country_type = default
+							OR = {
+								is_egalitarian = yes
+								is_xenophile = yes
+								is_militarist = yes
+							}
+						}
+					}
+				}
+				add_opinion_modifier = {
+					modifier = ark_opinion_froze_a_world #opinion_shielded_a_world
+					who = from.owner
+				}
+			}
+			# modifiers for victim
+			owner = {
+				add_opinion_modifier = {
+					modifier = ark_opinion_froze_my_world #opinion_shielded_my_world
+					who = from.owner
+				}
+				if = {
+					limit = { NOT = { has_ethic = ethic_gestalt_consciousness } }
+					add_modifier = {
+						modifier = colossus_victim
+						days = 10800 # 30 years
+					}
+				}
+			}
+		}
+		# Add war exhaustion to planet owner 厌战度？
+		owner = {
+			if = {
+				limit = { #isn't the case when the crisis bombards planets, for instance
+					is_at_war_with = from.fleet.owner
+				}
+				add_static_war_exhaustion = {
+					attacker = from.fleet.owner
+					location = root
+					value_for_planet_destruction = 1.0
+				}
+			}
+		}
+	}
+}
+
+#第一次炸球弹出的事件
+#####################################################################################################################
+#####################################################################################################################
+#####################################################################################################################
+
+country_event = {#星球
+	id = ark_planet_destruction.210
+	title = ark_planet_destruction.210.name
+	desc = ark_planet_destruction.210.desc
+	picture = GFX_evt_exploding_planet
+	show_sound = pc_frozen
+	location = from
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = fired_ark_planet_killer_frostnova }
+	}
+
+	immediate = {
+		set_country_flag = fired_ark_planet_killer_frostnova
+	}
+
+	option = {
+		name = ark_planet_destruction.210.a #对于非和平主义
+		trigger = {
+			NOR = {
+				has_ethic = ethic_fanatic_pacifist
+				has_ethic = ethic_pacifist
+			}
+		}
+	}
+
+	option = {
+		name = ark_planet_destruction.210.b #对于和平主义
+		trigger = {
+			OR = {
+				has_ethic = ethic_fanatic_pacifist
+				has_ethic = ethic_pacifist
+			}
+		}
+	}
+}
+
+country_event = {#环形世界
+	id = ark_planet_destruction.211
+	title = ark_planet_destruction.211.name
+	desc = ark_planet_destruction.211.desc
+	picture = GFX_planet_type_ringworld
+	show_sound = pc_frozen
+	location = from
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = fired_ark_planet_killer_frostnova_ringworld }
+	}
+
+	immediate = {
+		set_country_flag = fired_ark_planet_killer_frostnova_ringworld
+	}
+
+	option = {
+		name = ark_planet_destruction.211.a #对于非和平主义
+		trigger = {
+			NOR = {
+				has_ethic = ethic_fanatic_pacifist
+				has_ethic = ethic_pacifist
+			}
+		}
+	}
+
+	option = {
+		name = ark_planet_destruction.210.b #对于和平主义
+		trigger = {
+			OR = {
+				has_ethic = ethic_fanatic_pacifist
+				has_ethic = ethic_pacifist
+			}
+		}
+	}
+}
+#观测站################################################################################################################
+#######################################################################################################################
+#######################################################################################################################
+#######################################################################################################################
+
+country_event = {
+	id = ark_planet_destruction.1000
+	title = ark_planet_destruction.1000.name
+	desc = ark_planet_destruction.1000.desc
+	picture = GFX_evt_exploding_planet
+
+	trigger = {
+		from = {
+			has_observation_outpost = yes
+		}
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = planet_destruction.1000.A
+		from = {
+			observation_outpost = {
+				dismantle = yes
+			}
+		}
+	}
+}
+
+
