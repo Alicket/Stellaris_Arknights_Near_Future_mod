@@ -70,6 +70,11 @@ mod_job_executor_add:0 "$job_executor$岗位"
 mod_job_executor_per_pop:0 "每§Y$VALUE$§!个£pop£ §Y人口§!提供§G1§!个 £job_executor£ §Y$job_executor$ 岗位§!"
 mod_job_executor_per_pop_short:0 "\n每$VALUE$ £pop£ §G+1§! £mod_job_executor_add£ "
 
+## 岗位 ##
+planet_d32steels_smelting:0 "D32钢冶炼岗位"
+planet_nanosheets_manufacturer:0 "纳米片制造岗位"
+planet_executor:0 "执行岗位"
+
 ## 空间站模块 ##
 sm_manufacturing_station:0 "制造站"
 sm_manufacturing_station_desc:0 "资源生产设施，可以制造合金。\n§L请勿将合金做成金条形状。§!\n"

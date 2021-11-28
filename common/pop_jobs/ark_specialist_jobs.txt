@@ -9,14 +9,13 @@ d32steels_smelting_expert = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
+		is_sapient = yes
 	}
 
-	possible = {
-		specialist_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_specialist_job
 
 	resources = {
-		category = planet_metallurgists
+		category = planet_d32steels_smelting
 		produces = {
 			d32_steels = 2
 		}
@@ -47,7 +46,23 @@ d32steels_smelting_expert = {
 				has_trait = trait_robust
 				has_trait = trait_robot_efficient_processors
 			}
-		}	
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_void_dweller_1
+			exists = planet
+			planet = { is_planet_class = pc_habitat }
+		}
+		modifier = {
+			factor = 0.85
+			has_trait = trait_void_dweller_1
+			exists = planet
+			planet = { is_artificial = no }
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_necrophage
+		}
 	}
 }
 
@@ -62,14 +77,13 @@ nanosheets_manufacturer = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
+		is_sapient = yes
 	}
 
-	possible = {
-		specialist_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_specialist_job
 
 	resources = {
-		category = planet_metallurgists
+		category = planet_nanosheets_manufacturer
 		produces = {
 			multipole_nanosheets = 2
 		}
@@ -100,7 +114,28 @@ nanosheets_manufacturer = {
 				has_trait = trait_robust
 				has_trait = trait_robot_efficient_processors
 			}
-		}	
+		}
+		modifier = {
+			factor = 1.2
+			is_enslaved = yes
+			has_slavery_type = { type = slavery_indentured }
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_void_dweller_1
+			exists = planet
+			planet = { is_planet_class = pc_habitat }
+		}
+		modifier = {
+			factor = 0.85
+			has_trait = trait_void_dweller_1
+			exists = planet
+			planet = { is_artificial = no }
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_necrophage
+		}
 	}
 }
 
@@ -115,6 +150,7 @@ executor = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
+		is_sapient = yes
 	}
 
 	possible = {
@@ -122,7 +158,7 @@ executor = {
 	}
 
 	resources = {
-		category = planet_enforcers
+		category = planet_executor
 		produces = {
 			unity = 3
 		}
@@ -167,7 +203,7 @@ executor = {
 		}
 		modifier = {
 			factor = 10
-			has_job = enforcer
+			has_job = executor
 		}
 		modifier = {
 			factor = 1.1
@@ -199,7 +235,7 @@ executor = {
 		}
 		modifier = {
 			factor = 20
-			has_job = enforcer
+			has_job = executor
 			OR = {
 				has_trait = trait_robust
 				has_trait = trait_robot_efficient_processors
@@ -222,6 +258,18 @@ executor = {
 			factor = 0.8
 			is_enslaved = yes
 			has_slavery_type = { type = slavery_indentured }
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_void_dweller_1
+			exists = planet
+			planet = { is_planet_class = pc_habitat }
+		}
+		modifier = {
+			factor = 0.85
+			has_trait = trait_void_dweller_1
+			exists = planet
+			planet = { is_artificial = no }
 		}
 		modifier = {
 			factor = 2

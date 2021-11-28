@@ -1,0 +1,17 @@
+planet_d32steels_smelting = {
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+	}
+}
+
+planet_nanosheets_manufacturer = {
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+	}
+}
+
+planet_executor = {
+	parent = planet_jobs
+}

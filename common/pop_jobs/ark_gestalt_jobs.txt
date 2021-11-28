@@ -9,14 +9,13 @@ originiums_mining_drone = {
 		is_enslaved = no
 		is_being_purged = no
 		is_being_assimilated = no
+		is_sapient = yes
 	}
 
-	possible = {
-		drone_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_drone_job
 
 	resources = {
-		category = planet_jobs
+		category = planet_miners
 		produces = {
 			originiums = 2
 		}
@@ -33,7 +32,19 @@ originiums_mining_drone = {
 			years_passed < 1
 			owner = { has_valid_civic = civic_machine_assimilator }
 			has_trait = trait_cybernetic
-		}		
+		}
+		modifier = {
+			factor = 5
+			has_job = originiums_mining_drone
+			OR = {
+				has_trait = trait_robust
+				has_trait = trait_robot_efficient_processors
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_necrophage
+		}	
 	}
 }
 
@@ -48,14 +59,15 @@ d32steels_smelting_drone = {
 		is_enslaved = no
 		is_being_purged = no
 		is_being_assimilated = no
+		is_sapient = yes
 	}
 
-	possible = {
-		drone_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_drone_job
+
+	possible = { NOT = { has_trait = trait_nerve_stapled } }
 
 	resources = {
-		category = planet_metallurgists
+		category = planet_d32steels_smelting
 		produces = {
 			d32_steels = 2
 		}
@@ -67,9 +79,24 @@ d32steels_smelting_drone = {
 	weight = {
 		weight = @complex_drone_job_weight
 		modifier = {
-			factor = 0
-			jobs_work_minerals = yes
-		}		
+			factor = 0.9
+			exists = owner
+			years_passed < 1
+			owner = { has_valid_civic = civic_machine_assimilator }
+			has_trait = trait_cybernetic
+		}
+		modifier = {
+			factor = 5
+			has_job = d32steels_smelting_drone
+			OR = {
+				has_trait = trait_robust
+				has_trait = trait_robot_efficient_processors
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_necrophage
+		}	
 	}
 }
 
@@ -84,14 +111,15 @@ nanosheets_manufacture_drone = {
 		is_enslaved = no
 		is_being_purged = no
 		is_being_assimilated = no
+		is_sapient = yes
 	}
 
-	possible = {
-		drone_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_drone_job
+
+	possible = { NOT = { has_trait = trait_nerve_stapled } }
 
 	resources = {
-		category = planet_metallurgists
+		category = planet_nanosheets_manufacturer
 		produces = {
 			multipole_nanosheets = 2
 		}
@@ -103,8 +131,23 @@ nanosheets_manufacture_drone = {
 	weight = {
 		weight = @complex_drone_job_weight
 		modifier = {
-			factor = 0
-			jobs_work_minerals = yes
-		}		
+			factor = 0.9
+			exists = owner
+			years_passed < 1
+			owner = { has_valid_civic = civic_machine_assimilator }
+			has_trait = trait_cybernetic
+		}
+		modifier = {
+			factor = 5
+			has_job = nanosheets_manufacture_drone
+			OR = {
+				has_trait = trait_robust
+				has_trait = trait_robot_efficient_processors
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_necrophage
+		}
 	}
 }

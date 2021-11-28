@@ -9,10 +9,13 @@ originiums_miner = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
+		is_sapient = yes
 	}
 
+	possible_precalc = can_fill_worker_job
 	possible = {
-		worker_job_check_trigger = yes
+		hidden_trigger = { exists = owner }
+		owner = { is_gestalt = no }
 	}
 
 	resources = {
@@ -23,7 +26,7 @@ originiums_miner = {
 	}
 	
 	weight = {
-		weight = @specialist_job_weight
+		weight = @specialist_job_weight # Important job
 		modifier = {
 			factor = 10
 			is_enslaved = yes
@@ -31,16 +34,16 @@ originiums_miner = {
 		}
 		modifier = {
 			factor = 2
-			OR = {	
+			OR = {
 				is_non_sapient_robot = yes
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
 			owner = { has_technology = tech_droid_workers }
-		}	
+		}
 		modifier = {
 			factor = 200
-			OR = {	
+			OR = {
 				is_non_sapient_robot = yes
 				is_shackled_robot = yes
 			}
@@ -50,7 +53,7 @@ originiums_miner = {
 		modifier = {
 			factor = 0.1
 			can_take_servant_job = yes
-		}	
+		}
 		modifier = {
 			factor = 5
 			has_trait = trait_syncretic_proles
@@ -68,11 +71,11 @@ originiums_miner = {
 		modifier = {
 			factor = 1.5
 			has_trait = trait_strong
-		}	
+		}
 		modifier = {
 			factor = 0.1
 			has_trait = trait_weak
-		}			
+		}
 		modifier = {
 			factor = 3
 			OR = {
@@ -83,6 +86,10 @@ originiums_miner = {
 		modifier = {
 			factor = 3
 			has_trait = trait_nerve_stapled
+		}
+		modifier = {
+			factor = 0.75
+			has_trait = trait_necrophage
 		}			
 	}
 }
