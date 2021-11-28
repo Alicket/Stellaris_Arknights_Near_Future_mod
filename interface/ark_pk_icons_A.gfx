@@ -1,0 +1,4 @@
+spriteTypes = {
+	spriteType = {name = "GFX_ship_part_ark_pk_frostnova" textureFile = gfx/interface/icons/ship_parts/ship_part_ark_pk_frostnova.dds }
+	#spriteType = {name = "GFX_pc_ark_frozen_picture" textureFile = gfx/portraits/environments/pc_ark_frozen_picture.dds }
+}

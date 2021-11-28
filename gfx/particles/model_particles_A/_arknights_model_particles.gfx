@@ -125,3 +125,41 @@ objectTypes = {
 		scale = 4.7
 	}
 }
+
+#运输舰尾焰
+objectTypes = {
+	pdxparticle = {
+		name="arknights_transport_exhaust_idle"
+		type = "generic_exhaust_idle_circle_file"
+
+		scale = 0.35
+	}
+}
+
+objectTypes = {
+	pdxparticle = {
+		name="arknights_transport_exhaust_moving"
+		type = "generic_exhaust_circle_moving_effect_file"
+
+		scale = 0.45
+	}
+}
+
+#殖民船尾焰
+objectTypes = {
+	pdxparticle = {
+		name="arknights_colonizer_exhaust_idle"
+		type = "generic_exhaust_idle_circle_file"
+
+		scale = 0.55
+	}
+}
+
+objectTypes = {
+	pdxparticle = {
+		name="arknights_colonizer_exhaust_moving"
+		type = "generic_exhaust_circle_moving_effect_file"
+
+		scale = 0.65
+	}
+}

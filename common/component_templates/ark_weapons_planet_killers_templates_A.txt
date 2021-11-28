@@ -1,0 +1,29 @@
+weapon_component_template = { # FROSTNOVA
+	key = "PLANET_KILLER_ARK_FROSTNOVA"
+	size = planet_killer
+	type = planet_killer
+	use_ship_kill_target = no
+
+	power = -7500
+    windup = {min = 90 max = 90 }
+    total_fire_time = 30
+    accuracy = 1
+    damage = {min = 0 max = 0 }
+    range = 0
+	resources = {
+		category = ship_components
+		cost = {
+			originiums = 50
+		}
+	}
+
+	prerequisites = { "tech_pk_ark_frostnova" }
+
+	icon = GFX_ship_part_ark_pk_frostnova
+	icon_frame = 1
+
+	size_restriction = { colossus }
+	component_set = "PLANET_KILLER_ARK_FROSTNOVA"
+
+	planet_destruction_gfx = "neutron_planet_gfx"
+}

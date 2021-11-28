@@ -1,0 +1,27 @@
+ark_opinion_froze_a_world = {
+	opinion = {
+		base = -20
+	}
+
+	accumulative = yes
+
+	min = -100
+
+	decay = {
+		base = 1
+	}
+}
+
+ark_opinion_froze_my_world = {
+	opinion = {
+		base = -200
+	}
+
+	accumulative = yes
+
+	min = -1000
+
+	decay = {
+		base = 1
+	}
+}

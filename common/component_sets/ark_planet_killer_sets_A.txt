@@ -1,0 +1,6 @@
+component_set = { # World Cracker
+	key = "PLANET_KILLER_ARK_FROSTNOVA"
+
+	icon = "GFX_ship_part_ark_pk_frostnova"
+	icon_frame = 1
+}
