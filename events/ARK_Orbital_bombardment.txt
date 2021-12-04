@@ -1,4 +1,4 @@
-﻿namespace = ark_orbital_bombardment
+namespace = ark_orbital_bombardment
 
 # 源石轨道轰炸每月消耗源石
 planet_event = {
@@ -7,7 +7,9 @@ planet_event = {
 	is_triggered_only = yes
 	trigger = {
 		has_orbital_bombardment_stance = originium_bombs
-		NOT = { has_country_flag = originium_bombs_consumption }
+		from = {
+			NOT = { has_country_flag = originium_bombs_consumption }
+		}
 	}
 	
 	immediate = {
@@ -33,11 +35,14 @@ planet_event = {
 	
 	immediate = {
 		remove_modifier = "originium_bombs_contaminated_1"	# 清除“源石污染”当再次遭到源石轰炸
-		add_modifier = {
-			modifier = "originium_bombs_contaminated_0"	# 遭到源石轰炸
-			days = -1
+		if = {
+			limit = { NOT = { has_modifier = originium_bombs_contaminated_0 } }
+			add_modifier = {
+				modifier = "originium_bombs_contaminated_0"	# 遭到源石轰炸
+				days = -1
+			}
 		}
-		set_planet_flag = originium_orbital_bombardment	# 使轰炸时事件不重复触发
+		set_timed_planet_flag = { flag = originium_orbital_bombardment days = 30 }	# 使轰炸时事件不重复触发
 		if = {
 			limit = { has_planet_flag = originium_orbital_bombardment }
 			planet_event = { id = ark_orbital_bombardment.2 }	# 污染1有机人口
@@ -60,11 +65,14 @@ planet_event = {
 	
 	immediate = {
 		remove_modifier = "originium_bombs_contaminated_1"	# 清除“源石污染”当再次遭到源石轰炸
-		add_modifier = {
-			modifier = "originium_bombs_contaminated_0"	# 遭到源石轰炸
-			days = -1
+		if = {
+			limit = { NOT = { has_modifier = originium_bombs_contaminated_0 } }
+			add_modifier = {
+				modifier = "originium_bombs_contaminated_0"	# 遭到源石轰炸
+				days = -1
+			}
 		}
-		set_planet_flag = originium_orbital_bombardment	# 使轰炸时事件不重复触发
+		set_timed_planet_flag = { flag = originium_orbital_bombardment days = 30 }	# 使轰炸时事件不重复触发
 		if = {
 			limit = { has_planet_flag = originium_orbital_bombardment }
 			planet_event = { id = ark_orbital_bombardment.2 }	# 污染1有机人口
@@ -88,11 +96,14 @@ planet_event = {
 	
 	immediate = {
 		remove_modifier = "originium_bombs_contaminated_1"	# 清除“源石污染”当再次遭到源石轰炸
-		add_modifier = {
-			modifier = "originium_bombs_contaminated_0"	# 遭到源石轰炸
-			days = -1
+		if = {
+			limit = { NOT = { has_modifier = originium_bombs_contaminated_0 } }
+			add_modifier = {
+				modifier = "originium_bombs_contaminated_0"	# 遭到源石轰炸
+				days = -1
+			}
 		}
-		set_planet_flag = originium_orbital_bombardment	# 使轰炸时事件不重复触发
+		set_timed_planet_flag = { flag = originium_orbital_bombardment days = 30 }	# 使轰炸时事件不重复触发
 		if = {
 			limit = { has_planet_flag = originium_orbital_bombardment }
 			planet_event = { id = ark_orbital_bombardment.2 }	# 污染1有机人口
@@ -117,11 +128,14 @@ planet_event = {
 	
 	immediate = {
 		remove_modifier = "originium_bombs_contaminated_1"	# 清除“源石污染”当再次遭到源石轰炸
-		add_modifier = {
-			modifier = "originium_bombs_contaminated_0"	# 遭到源石轰炸
-			days = -1
+		if = {
+			limit = { NOT = { has_modifier = originium_bombs_contaminated_0 } }
+			add_modifier = {
+				modifier = "originium_bombs_contaminated_0"	# 遭到源石轰炸
+				days = -1
+			}
 		}
-		set_planet_flag = originium_orbital_bombardment	# 使轰炸时事件不重复触发
+		set_timed_planet_flag = { flag = originium_orbital_bombardment days = 30 }	# 使轰炸时事件不重复触发
 		if = {
 			limit = { has_planet_flag = originium_orbital_bombardment }
 			planet_event = { id = ark_orbital_bombardment.2 }	# 污染1有机人口

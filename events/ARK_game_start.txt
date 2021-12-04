@@ -10,7 +10,6 @@ planet_event = {
 		if = {
 			limit = { has_planet_flag = planet_terra }	# 前提:是泰拉星球
 			generate_terra_deposits_and_blockers = yes	# 初始地块
-			civic_pharmaceutical_enterprises_start_buildings = yes	# 初始建筑
 			arknight_start_districts = yes	# 初始区划
 		}
 	}

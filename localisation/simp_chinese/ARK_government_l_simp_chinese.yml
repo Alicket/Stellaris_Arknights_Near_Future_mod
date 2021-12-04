@@ -68,7 +68,7 @@ civic_business_union_desc:0 "占据社会主导地位的寰宇企业组成的商
 civic_tooltip_business_union_effects:0 "游戏开始后获得§Y2§!个§Y城邦企业§!类型的国民理念。"
 civic_pharmaceutical_enterprises:0 "医药企业"
 civic_pharmaceutical_enterprises_desc:0 "此寰宇企业最初只是一家小型的制药公司，依靠先进的医疗手段和迅速扩展的其它业务使其从纷争战乱的世界中迅速崛起。"
-civic_tooltip_pharmaceutical_enterprises_effects:0 "游戏开始拥有一座医药企业的特殊建筑£building£ §Y$building_ark_hospital$§!，能够清除§Y领袖§!疾病类型的负面特性，以及更好地应对疫病等突发事件。"
+civic_tooltip_pharmaceutical_enterprises_effects:0 "允许建造医疗企业的特殊建筑£building£ §Y$building_ark_hospital$§!，能够清除§Y领袖§!疾病类型的负面特性，以及更好地应对疫病等突发事件。"
 civic_logistics_companies:0 "物流公司"
 civic_logistics_companies_desc:0 "此寰宇企业最初作为一家独立的私人信使公司成立，从事情报贩卖、武装押运和秘密运输的业务并藉此逐步壮大。"
 civic_tooltip_logistics_companies_effects:0 ""

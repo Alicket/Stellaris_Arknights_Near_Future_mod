@@ -421,7 +421,6 @@ country_event = {
 		}
 		hidden_effect = {
 			remove_modifier = "infected_anxious"
-			country_event = { id = ark_civic.2 days = 30 }
 		}
 	}
 }

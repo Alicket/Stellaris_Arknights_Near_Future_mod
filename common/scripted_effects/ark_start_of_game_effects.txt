@@ -87,19 +87,6 @@ generate_terra_deposits_and_blockers = {
 	}
 }
 
-# 医疗企业初始建筑
-civic_pharmaceutical_enterprises_start_buildings = {
-	if = {
-		limit = { owner = { is_regular_empire = yes } }
-
-		if = {
-			limit = { owner = { has_civic = civic_pharmaceutical_enterprises } }
-			remove_building = building_commercial_zone
-			add_building = building_ark_hospital
-		}
-	}
-}
-
 # 明日方舟国家初始区划
 arknight_start_districts = {
 	add_district = district_generator
