@@ -64,7 +64,7 @@ mod_job_nanosheets_manufacture_drone_add:0 "$job_nanosheets_manufacture_drone$�
 job_nanosheets_manufacture_drone_effect_desc:0 "£job_nanosheets_manufacture_drone£ $job_nanosheets_manufacture_drone_plural$将£originiums£ §Y$originiums$§!和£minerals£ §Y$minerals$§!变成£multipole_nanosheets£ §Y$multipole_nanosheets$§!"
 job_executor:0 "执行者"
 job_executor_plural:0 "执行者"
-job_executor_desc:1 执行者代表着公证所的意志。这些工作人员被派遣向各个城邦，督促公民完成各类法定义务，为公民提供种种权益维护服务，监督和推动种种事务的解决和落实。"
+job_executor_desc:1 "执行者代表着公证所的意志。这些工作人员被派遣向各个城邦，督促公民完成各类法定义务，为公民提供种种权益维护服务，监督和推动种种事务的解决和落实。"
 job_executor_effect_desc:0 "£job_executor£ $job_executor_plural$生产£unity£ §Y$unity$§!和£mod_planet_stability_add£ §Y$PLANET_STABILITY_TITLE$§!，并降低£crime£ §Y$PLANET_CRIME_TITLE$§!"
 mod_job_executor_add:0 "$job_executor$岗位"
 mod_job_executor_per_pop:0 "每§Y$VALUE$§!个£pop£ §Y人口§!提供§G1§!个 £job_executor£ §Y$job_executor$ 岗位§!"

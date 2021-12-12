@@ -6,7 +6,7 @@ entity = {
 	name = "planet_geosphereShape"
 	texture_diffuse = "ark_frozen_diffuse.dds"
 	texture_normal = "ark_frozen_normal.dds"
-	texture_specular = "ark_frozen_specular_1.dds"
+	texture_specular = "ark_frozen_specular.dds"
 	shader = "PdxMeshPlanetEmissive"
 	}
 	
