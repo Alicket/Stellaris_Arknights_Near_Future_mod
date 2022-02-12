@@ -1,0 +1,7 @@
+objectTypes = {
+	pdxmesh = {
+		name = "arknights_01_carrier_craft_mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_others/arknights_01_carrier_craft.mesh"
+		scale = 1.0
+	}
+}

@@ -1,0 +1,90 @@
+entity = {
+	name = "arknights_01_habitat_phase_01_entity"
+	pdxmesh = "mammalian_01_orbital_station_frame_mesh"
+
+	attach = { "part1" 		 		= "arknights_01_habitat_phase_01_core_entity" }
+
+	scale = 1.0
+
+	default_state = "habitat_idle"
+	state = { name = "habitat_idle" looping = yes }
+	state = { name = "construction" looping = yes }
+
+	game_data = {
+		shader_type = ship
+		emissive_recolor_crunch = 5.0
+	}
+}
+
+entity = {
+	name = "arknights_01_habitat_phase_01_core_entity"
+	pdxmesh = "arknights_01_starport_mesh"
+		default_state = "idle"
+		state = { name = "idle"
+			start_event = { trigger_once = yes sound = { soundeffect = "spaceport_hum_idle" stop_on_state_change = yes } }
+		}
+		state = { name = "death" }
+		state = { name = "construction" animation = "idle" }
+		state = { name = "habitat_idle" animation = "idle"
+			start_event = { trigger_once = yes sound = { soundeffect = "habitat_station_hum" } } }
+	scale = 1.0
+}
+
+entity = {
+	name = "orbital_habitat_01_entity" #Dummy entity to remove error logs from planet class
+	clone = "mammalian_01_habitat_phase_01_core_entity"
+}
+
+entity = {
+	name = "arknights_01_habitat_phase_02_entity"
+	pdxmesh = "mammalian_01_orbital_station_frame_mesh"
+	scale = 1.0
+
+	default_state = "habitat_idle"
+	state = { name = "habitat_idle" looping = yes }
+	state = { name = "construction" looping = yes }
+
+	game_data = {
+		shader_type = ship
+		emissive_recolor_crunch = 5.0
+	}
+}
+
+entity = {
+	name = "arknights_01_habitat_phase_02_section_entity"
+	pdxmesh = "arknights_01_starhold_mesh"
+}
+
+entity = {
+	name = "arknights_01_habitat_phase_03_entity"
+	scale = 1.0
+
+	default_state = "habitat_idle"
+	state = { name = "habitat_idle" state_time = 5 }
+	state = { name = "construction" state_time = 5 }
+
+	state = { name = "death" state_time = 5 looping = no
+		event = { time = 4.9 node = "explosion_effect" particle = "large_player_ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_large" } }
+	}
+
+	game_data = {
+		shader_type = ship
+		emissive_recolor_crunch = 5.0
+	}
+
+	attach = { name = "root" part1 = "arknights_01_habitat_phase_03_section_entity" }
+}
+
+entity = {
+	name = "arknights_01_habitat_phase_03_section_entity"
+	pdxmesh = "arknights_01_starfort_mesh"
+
+	default_state = "habitat_idle"
+	state = { name = "habitat_idle"
+		start_event = { trigger_once = yes sound = { soundeffect = "habitat_station_hum" } }
+	}
+
+	state = { name = "construction" animation = "idle" animation_speed = 0.0 }
+
+	state = { name = "death" }
+}

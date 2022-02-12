@@ -2,38 +2,20 @@ objectTypes = {
 	#护卫舰
 	pdxmesh = {
 		name = "arknights_01_corvette_S3_mesh"
-		file = "gfx/models/ships/arknights_01/arknights_01_millitary_ships/arknights_01_corvette_S3.mesh"
-		scale = 1.0
-		meshsettings = {
-			shader = "PdxMeshShip"
-			
-		#Mipmap tweaking
-		#texture_diffuse = "512x512.dds"
-		}
+		file = "gfx/models/ships/arknights_01/arknights_01_millitary_ships/arknights_01_corvette.mesh"
+		scale = 0.7
 	}
 
 	pdxmesh = {
 		name = "arknights_01_corvette_M1S1_mesh"
-		file = "gfx/models/ships/arknights_01/arknights_01_millitary_ships/arknights_01_corvette_M1S1.mesh"
-		scale = 1.0
-		meshsettings = {
-			shader = "PdxMeshShip"
-			
-		#Mipmap tweaking
-		#texture_diffuse = "512x512.dds"
-		}
+		file = "gfx/models/ships/arknights_01/arknights_01_millitary_ships/arknights_01_corvette.mesh"
+		scale = 0.7
 	}
 
 	pdxmesh = {
 		name = "arknights_01_corvette_S1_mesh"
-		file = "gfx/models/ships/arknights_01/arknights_01_millitary_ships/arknights_01_corvette_S3.mesh"
-		scale = 1.0
-		meshsettings = {
-			shader = "PdxMeshShip"
-			
-		#Mipmap tweaking
-		#texture_diffuse = "512x512.dds"
-		}
+		file = "gfx/models/ships/arknights_01/arknights_01_millitary_ships/arknights_01_corvette.mesh"
+		scale = 0.7
 	}	
 	
 	#战列舰
@@ -44,7 +26,7 @@ objectTypes = {
 				animation = { id = "death"			type = "mammalian_01_battleship_frame_death_animation" }
 				animation = { id = "death2"			type = "mammalian_01_battleship_frame_death2_animation" }
 				animation = { id = "death3"			type = "mammalian_01_battleship_frame_death3_animation" }
-		scale = 1.2
+		scale = 1.0
 		meshsettings = {
 			shader = "PdxMeshShip"
 		}
@@ -170,35 +152,20 @@ objectTypes = {
 	
 	pdxmesh = {
 		name = "arknights_01_cruiser_bow_L1_mesh"
-		file = "gfx/models/ships/arknights_01/arknights_01_millitary_ships/arknights_01_cruiser_bow_L1.mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_millitary_ships/arknights_01_cruiser_bow.mesh"
 		scale = 1.0
-		meshsettings = {
-			shader = "PdxMeshShip"
-			#Mipmap tweaking
-			#texture_diffuse = "1x1.dds"
-		}
 	}
 		
 	pdxmesh = {
 		name = "arknights_01_cruiser_bow_M1S2_mesh"
-		file = "gfx/models/ships/arknights_01/arknights_01_millitary_ships/arknights_01_cruiser_bow_M1S2.mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_millitary_ships/arknights_01_cruiser_bow.mesh"
 		scale = 1.0
-		meshsettings = {
-			shader = "PdxMeshShip"
-			#Mipmap tweaking
-			#texture_diffuse = "1x1.dds"
-		}
 	}	
 	
 	pdxmesh = {
 		name = "arknights_01_cruiser_bow_M2_mesh"
-		file = "gfx/models/ships/arknights_01/arknights_01_millitary_ships/arknights_01_cruiser_bow_M2.mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_millitary_ships/arknights_01_cruiser_bow.mesh"
 		scale = 1.0
-		meshsettings = {
-			shader = "PdxMeshShip"
-			#Mipmap tweaking
-			#texture_diffuse = "1x1.dds"
-		}
 	}
 		
 	#######  cruiser mid sections  #######			
@@ -206,69 +173,39 @@ objectTypes = {
 	
 	pdxmesh = {
 		name = "arknights_01_cruiser_mid_S2HB_mesh"
-		file = "gfx/models/ships/arknights_01/arknights_01_millitary_ships/arknights_01_cruiser_mid_S2HB.mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_millitary_ships/arknights_01_cruiser_mid.mesh"
 		scale = 1.0
-		meshsettings = {
-			shader = "PdxMeshShip"
-			#Mipmap tweaking
-			#texture_diffuse = "1x1.dds"
-		}
 	}
 	
 	pdxmesh = {
 		name = "arknights_01_cruiser_mid_L1M1_mesh"
-		file = "gfx/models/ships/arknights_01/arknights_01_millitary_ships/arknights_01_cruiser_mid_L1M1.mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_millitary_ships/arknights_01_cruiser_mid.mesh"
 		scale = 1.0
-		meshsettings = {
-			shader = "PdxMeshShip"
-			#Mipmap tweaking
-			#texture_diffuse = "1x1.dds"
-		}
 	}
 				
 	pdxmesh = {
 		name = "arknights_01_cruiser_mid_M3_mesh"
-		file = "gfx/models/ships/arknights_01/arknights_01_millitary_ships/arknights_01_cruiser_mid_M3.mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_millitary_ships/arknights_01_cruiser_mid.mesh"
 		scale = 1.0
-		meshsettings = {
-			shader = "PdxMeshShip"
-			#Mipmap tweaking
-			#texture_diffuse = "1x1.dds"
-		}
 	}		
 	
 	pdxmesh = {
 		name = "arknights_01_cruiser_mid_M2S2_mesh"
-		file = "gfx/models/ships/arknights_01/arknights_01_millitary_ships/arknights_01_cruiser_mid_M2S2.mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_millitary_ships/arknights_01_cruiser_mid.mesh"
 		scale = 1.0
-		meshsettings = {
-			shader = "PdxMeshShip"
-			#Mipmap tweaking
-			#texture_diffuse = "1x1.dds"
-		}
 	}
 	
 	#######  cruiser stern sections  #######	
 		
 	pdxmesh = {
 		name = "arknights_01_cruiser_stern_M1_mesh"
-		file = "gfx/models/ships/arknights_01/arknights_01_millitary_ships/arknights_01_cruiser_stern_M1.mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_millitary_ships/arknights_01_cruiser_stern.mesh"
 		scale = 1.0
-		meshsettings = {
-			shader = "PdxMeshShip"
-			#Mipmap tweaking
-			#texture_diffuse = "1x1.dds"
-		}
 	}
 	
 	pdxmesh = {
 		name = "arknights_01_cruiser_stern_S2_mesh"
-		file = "gfx/models/ships/arknights_01/arknights_01_millitary_ships/arknights_01_cruiser_stern_S2.mesh"
+		file = "gfx/models/ships/arknights_01/arknights_01_millitary_ships/arknights_01_cruiser_stern.mesh"
 		scale = 1.0
-		meshsettings = {
-			shader = "PdxMeshShip"
-			#Mipmap tweaking
-			#texture_diffuse = "1x1.dds"
-		}
 	}		
 }

@@ -1,0 +1,28 @@
+entity = {
+	name = "arknights_01_bomber_entity"
+	pdxmesh = "arknights_01_carrier_craft_mesh"
+	scale = 0.5
+
+	game_data = {
+		emissive_recolor_crunch = 3.0
+	}
+}
+
+entity = {
+	name = "arknights_01_droppod_entity"
+	pdxmesh = "mammalian_01_launcher_mesh"
+	scale = 0.85
+
+	game_data = {
+		emissive_recolor_crunch = 3.0
+	}
+}
+
+entity = {
+	name = "arknights_01_fighter_entity"
+	pdxmesh = "arknights_01_carrier_craft_mesh"
+	scale = 0.1
+	game_data = {
+		emissive_recolor_crunch = 3.0
+	}
+}

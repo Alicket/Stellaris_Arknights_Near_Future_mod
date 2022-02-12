@@ -20,6 +20,9 @@ objectTypes = {
 	pdxmesh = {
 		name = "arknights_01_colony_ship_mesh"
 		file = "gfx/models/ships/arknights_01/arknights_01_civilian_ships/arknights_01_colony.mesh"
+		animation = { id = "idle"	type = "arknights_01_colony_anim_idle" }
+		animation = { id = "moving"	type = "arknights_01_colony_anim_moving" }
+
 		scale = 1.0
 	}
 }

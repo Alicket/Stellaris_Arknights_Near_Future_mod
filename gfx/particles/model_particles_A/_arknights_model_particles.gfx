@@ -77,7 +77,7 @@ objectTypes = {
 		name="arknights_titan_exhaust_moving"
 		type = "arknights_titan_exhaust_moving_file"
 
-		scale = 6.0
+		scale = 3.0
 	}
 }
 
@@ -86,7 +86,7 @@ objectTypes = {
 		name="arknights_titan_exhaust_idle"
 		type = "generic_exhaust_idle_circle_file"
 
-		scale = 5.5
+		scale = 2.7
 	}
 }
 #主宰尾焰

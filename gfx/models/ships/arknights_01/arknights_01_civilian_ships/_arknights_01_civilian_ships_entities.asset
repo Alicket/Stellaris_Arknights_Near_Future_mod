@@ -20,9 +20,15 @@
 @large_trail_W = 50
 @large_trail_L =  300
 
-#工程船
 
-entity = {
+# frame用于偷懒，一个frame可以在多个mesh上使用，只要相应的骨骼都存在。
+# frame实际用于动画表现，frame作为通用骨骼，mesh附着在其上。
+# .anim文件用于驱动骨骼产生动画，这里的“骨骼”可以是外置的frame也可以是mesh中内置的骨骼。
+
+
+#————————————————————工程船————————Constructor————————————————————#
+
+entity = {		#frame
 	name = "arknights_01_constructor_entity"
 	   pdxmesh = "molluscoid_01_corvette_frame_mesh"
    
@@ -47,7 +53,7 @@ entity = {
 	   }
    }
 
-entity = {
+entity = {		#mesh
 	name = "arknights_01_construction_ship_entity"
 	   pdxmesh = "arknights_01_construction_mesh"
    
@@ -75,8 +81,11 @@ entity = {
 		}
 }  
 
-#科研船的frame
-entity = {
+
+
+#————————————————————科研船————————Science Ship————————————————————#
+
+entity = {		#frame
 	name = "arknights_01_science_entity"
 	   pdxmesh = "molluscoid_01_corvette_frame_mesh"
    
@@ -93,8 +102,7 @@ entity = {
    
    }
    
-   #科研船的mesh
-   entity = {
+   entity = {		#mesh
 	name = "arknights_01_science_ship_entity"
 	   pdxmesh = "arknights_01_science_ship_mesh"
    
@@ -130,8 +138,11 @@ entity = {
 	   scale = 1.0
    }
 
-   #运输舰的frame
-   entity = {
+
+   
+   #————————————————————运输舰————————Transport————————————————————#
+
+   entity = {	#frame
 	name = "arknights_01_transport_entity"
 	   pdxmesh = "molluscoid_01_corvette_frame_mesh"
    
@@ -151,8 +162,7 @@ entity = {
 	   }
    }
    
-   #运输舰的mesh
-   entity = {
+   entity = {	#mesh
 	name = "arknights_01_transport_ship_entity"
 	   pdxmesh = "arknights_01_transport_mesh"
    
@@ -185,39 +195,40 @@ entity = {
 	   }
    }
 
-entity = {
-	name = "arknights_01_colonizer_entity"
-	pdxmesh = "molluscoid_01_corvette_frame_mesh"
-	locator = { name = "part1" 		position = { 0  0  0 } }
 
-	default_state = "idle"
-	state = { name = "idle"	 animation = "idle" animation_blend_time = 4 }
-	state = { name = "moving"	animation = "idle" animation_blend_time = 2 }
-	state = { name = "death" animation = "death3" animation_blend_time = 0.0 chance = 1 looping = no
-		event = { time = 4.63 node = "ship_main" particle = "large_ship_explosion_particle" }
-	}
-	game_data = {
-		size = @colonizer_scale
-		emissive_recolor_crunch = 5.0
-	}
-}
 
-#殖民船的mesh
-entity = {
+#————————————————————殖民船————————Colonizer————————————————————#
+
+entity = {		#不再需要frame，mesh内置骨骼————No need frame, spines are set inside mesh
 	name = "arknights_01_colony_ship_entity"
 	   pdxmesh = "arknights_01_colony_ship_mesh"
    
 	   default_state = "idle" 
-	   state = { name = "idle"	 state_time = 5
-	   	animation = "idle" animation_blend_time = 4 
+	   state = { name = "idle"	 #state_time = 5
+	   	animation = "idle" #animation_blend_time = 4 
 		   	event = { time = 0 node = "engine_01" particle = "arknights_colonizer_exhaust_idle" trigger_once = yes keep_particle = yes }
 		   	event = { time = 0 node = "engine_02" particle = "arknights_colonizer_exhaust_idle" trigger_once = yes keep_particle = yes }
 		   	start_event = { trigger_once = yes sound = { soundeffect = "amb_transport_ship_hum" } }
 	   }
-	   state = { name = "moving" state_time = 5
-	   	animation = "moving" animation_blend_time = 4
+	   state = { name = "moving" #state_time = 5
+	   	animation = "moving" #animation_blend_time = 4
 		   event = { time = 0 node = "engine_01" particle = "arknights_colonizer_exhaust_moving" trigger_once = yes keep_particle = yes }
 		   event = { time = 0 node = "engine_02" particle = "arknights_colonizer_exhaust_moving" trigger_once = yes keep_particle = yes }
 		   event = { trigger_once = yes sound = { soundeffect = "moving_out_transport" } }
 	   }
+}
+
+
+
+
+#——————————————动画注册——————Animation register——————————————#
+
+
+animation = {	#殖民船idle————————Colonizer idle
+	name = "arknights_01_colony_anim_idle"
+	file = "arknights_01_colony_idle.anim"
+}
+animation = {	#殖民船moving————————Colonizer moving
+	name = "arknights_01_colony_anim_moving"
+	file = "arknights_01_colony_idle.anim"
 }
