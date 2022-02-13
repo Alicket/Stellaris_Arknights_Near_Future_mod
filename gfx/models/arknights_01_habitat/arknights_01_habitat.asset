@@ -7,12 +7,13 @@ entity = {
 	scale = 1.0
 
 	default_state = "habitat_idle"
-	state = { name = "habitat_idle" looping = yes }
-	state = { name = "construction" looping = yes }
+	state = { name = "habitat_idle" }
+	state = { name = "construction" }
 
 	game_data = {
 		shader_type = ship
 		emissive_recolor_crunch = 5.0
+		size = 50
 	}
 }
 
@@ -24,10 +25,13 @@ entity = {
 			start_event = { trigger_once = yes sound = { soundeffect = "spaceport_hum_idle" stop_on_state_change = yes } }
 		}
 		state = { name = "death" }
-		state = { name = "construction" animation = "idle" }
-		state = { name = "habitat_idle" animation = "idle"
+		state = { name = "construction" }
+		state = { name = "habitat_idle"
 			start_event = { trigger_once = yes sound = { soundeffect = "habitat_station_hum" } } }
 	scale = 1.0
+	game_data = {
+		size = 50	
+	}
 }
 
 entity = {
@@ -38,21 +42,39 @@ entity = {
 entity = {
 	name = "arknights_01_habitat_phase_02_entity"
 	pdxmesh = "mammalian_01_orbital_station_frame_mesh"
+	#pdxmesh = "arknights_01_starhold_mesh"
 	scale = 1.0
 
+	attach = {
+		"part1" = "arknights_01_habitat_phase_02_section_entity"
+	}
+
 	default_state = "habitat_idle"
-	state = { name = "habitat_idle" looping = yes }
-	state = { name = "construction" looping = yes }
+	state = { name = "habitat_idle" }
+	state = { name = "construction" }
 
 	game_data = {
 		shader_type = ship
 		emissive_recolor_crunch = 5.0
+		size = 50
 	}
 }
 
 entity = {
 	name = "arknights_01_habitat_phase_02_section_entity"
 	pdxmesh = "arknights_01_starhold_mesh"
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { trigger_once = yes sound = { soundeffect = "spaceport_hum_idle" stop_on_state_change = yes } }
+	}
+	state = { name = "death" }
+	state = { name = "construction" }
+	state = { name = "habitat_idle"
+		start_event = { trigger_once = yes sound = { soundeffect = "habitat_station_hum" } } }
+	scale = 1.0
+	game_data = {
+		size = 50	
+	}	
 }
 
 entity = {
@@ -70,6 +92,7 @@ entity = {
 	game_data = {
 		shader_type = ship
 		emissive_recolor_crunch = 5.0
+		size = 50
 	}
 
 	attach = { name = "root" part1 = "arknights_01_habitat_phase_03_section_entity" }
@@ -84,7 +107,10 @@ entity = {
 		start_event = { trigger_once = yes sound = { soundeffect = "habitat_station_hum" } }
 	}
 
-	state = { name = "construction" animation = "idle" animation_speed = 0.0 }
+	state = { name = "construction" }
 
 	state = { name = "death" }
+	game_data = {
+		size = 50	
+	}
 }
