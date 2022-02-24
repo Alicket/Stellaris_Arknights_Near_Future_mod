@@ -24,7 +24,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { corvette destroyer cruiser battleship titan juggernaut }
+	size_restriction = { corvette destroyer cruiser battleship titan juggernaut ark_nearl_dreadnought }
 	component_set = "combat_computers"
 	ship_behavior = "ghost"
 	prerequisites = { "tech_originiums_mining" "tech_combat_computers_1" }
@@ -55,7 +55,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { corvette destroyer cruiser battleship titan juggernaut }
+	size_restriction = { corvette destroyer cruiser battleship titan juggernaut ark_nearl_dreadnought }
 	component_set = "combat_computers"
 	ship_behavior = "ghost"
 	prerequisites = { "tech_originiums_mining" "tech_combat_computers_2" }
@@ -86,7 +86,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { corvette destroyer cruiser battleship titan juggernaut }
+	size_restriction = { corvette destroyer cruiser battleship titan juggernaut ark_nearl_dreadnought }
 	component_set = "combat_computers"
 	ship_behavior = "ghost"
 	prerequisites = { "tech_originiums_mining" "tech_combat_computers_3" }
@@ -116,7 +116,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { corvette destroyer cruiser battleship titan juggernaut }
+	size_restriction = { corvette destroyer cruiser battleship titan juggernaut ark_nearl_dreadnought }
 	component_set = "combat_computers"
 	ship_behavior = "ghost"
 	prerequisites = { "tech_originiums_mining" "tech_precognition_interface" }
