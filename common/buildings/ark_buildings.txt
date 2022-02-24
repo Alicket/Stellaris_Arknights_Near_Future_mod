@@ -323,31 +323,19 @@ building_originiums_power_plant = {
 	category = resource
 	
 	potential = {
+		NOT = { has_modifier = resort_colony }
+	}
+	
+	destroy_trigger = {
+		free_building_slots = 0
 		exists = owner
 		owner = {
-			OR = {
-				has_monthly_income = {
-					resource = originiums
-					value > 0
-				}
-				AND = {
-					is_ai = no
-					has_resource = {
-						type = originiums
-						amount > 0
-					}
-				}
+			is_ai = yes
+			has_monthly_income = {
+				resource = originiums
+				value < 1
 			}
 		}
-		NOR = {
-			has_modifier = resort_colony
-			has_modifier = slave_colony
-		}
-		building_basic_income_check = yes
-	}
-
-	allow = {
-		has_upgraded_capital = yes
 	}
 	
 	resources = {
@@ -408,12 +396,12 @@ building_originiums_power_plant = {
 building_d32steels_smelter = {
 	base_buildtime = @b2_time
 
+	exempt_from_ai_planet_specialization = no
 	category = manufacturing
 	
 	potential = {
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
-		building_basic_income_check = yes
 	}
 
 	allow = {
@@ -427,7 +415,7 @@ building_d32steels_smelter = {
 			is_ai = yes
 			has_monthly_income = {
 				resource = d32_steels
-				value < 9
+				value > 9
 			}
 		}
 	}
@@ -488,12 +476,12 @@ building_d32steels_smelter = {
 building_nanosheets_production_line = {
 	base_buildtime = @b2_time
 
+	exempt_from_ai_planet_specialization = no
 	category = manufacturing
 	
 	potential = {
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
-		building_basic_income_check = yes
 	}
 
 	allow = {
@@ -507,7 +495,7 @@ building_nanosheets_production_line = {
 			is_ai = yes
 			has_monthly_income = {
 				resource = multipole_nanosheets
-				value < 9
+				value > 9
 			}
 		}
 	}

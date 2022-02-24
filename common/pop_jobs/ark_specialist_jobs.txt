@@ -153,9 +153,7 @@ executor = {
 		is_sapient = yes
 	}
 
-	possible = {
-		specialist_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_specialist_job
 
 	resources = {
 		category = planet_executor
