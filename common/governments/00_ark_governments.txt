@@ -379,7 +379,7 @@ gov_ark_theocratic_despotism = {
 }
 
 # 神选裁决庭
-gov_ark_holy_public_hearing = {
+gov_ark_chosen_tribunal = {
 	possible = {
 		has_authority = auth_city_despotism
 		OR = {
