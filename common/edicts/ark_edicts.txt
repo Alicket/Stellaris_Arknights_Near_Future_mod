@@ -17,11 +17,8 @@ originiums_fire = {
 	icon = "GFX_edict_type_policy"
 	resources = {
 		category = ship_edicts
-		cost = {
-			originiums = 50
-		}
 		upkeep = {
-			unity = @Edict1Cost
+			originiums = 1
 			multiplier = value:edict_size_effect
 		}
 	}
@@ -33,7 +30,10 @@ originiums_fire = {
 			has_country_flag = arknight_3
 			has_country_flag = arknight_4
 		}
-		has_resource = { type = originiums amount > 50 }
+		OR = {
+			has_resource = { type = originiums amount > 0 }
+			has_edict = originiums_fire
+		}
 	}
 
 	modifier = {
@@ -43,7 +43,7 @@ originiums_fire = {
 	ai_weight = {
 		weight = 0
 		modifier = {
-			weight = 100
+			weight = @EdictHighPrio
 			is_at_war = yes
 		}
 	}
@@ -55,11 +55,8 @@ originiums_ahead = {
 	icon = "GFX_edict_type_policy"
 	resources = {
 		category = ship_edicts
-		cost = {
-			originiums = 50
-		}
 		upkeep = {
-			unity = @Edict1Cost
+			originiums = 1
 			multiplier = value:edict_size_effect
 		}
 	}
@@ -71,7 +68,10 @@ originiums_ahead = {
 			has_country_flag = arknight_3
 			has_country_flag = arknight_4
 		}
-		has_resource = { type = originiums amount > 50 }
+		OR = {
+			has_resource = { type = originiums amount > 0 }
+			has_edict = originiums_ahead
+		}
 	}
 
 	modifier = {
@@ -81,7 +81,7 @@ originiums_ahead = {
 	ai_weight = {
 		weight = 0
 		modifier = {
-			weight = 100
+			weight = @EdictHighPrio
 			is_at_war = yes
 		}
 	}
@@ -93,11 +93,8 @@ d32_steels_defense = {
 	icon = "GFX_edict_type_policy"
 	resources = {
 		category = ship_edicts
-		cost = {
-			d32_steels = 75
-		}
 		upkeep = {
-			unity = @Edict1Cost
+			d32_steels = 1
 			multiplier = value:edict_size_effect
 		}
 	}
@@ -109,7 +106,10 @@ d32_steels_defense = {
 			has_country_flag = arknight_3
 			has_country_flag = arknight_4
 		}
-		has_resource = { type = d32_steels amount > 75 }
+		OR = {
+			has_resource = { type = d32_steels amount > 0 }
+			has_edict = d32_steels_defense
+		}
 	}
 
 	modifier = {
@@ -120,7 +120,7 @@ d32_steels_defense = {
 	ai_weight = {
 		weight = 0
 		modifier = {
-			weight = 100
+			weight = @EdictHighPrio
 			is_at_war = yes
 		}
 	}
@@ -132,11 +132,8 @@ multipole_nanosheets_operation = {
 	icon = "GFX_edict_type_policy"
 	resources = {
 		category = ship_edicts
-		cost = {
-			multipole_nanosheets = 50
-		}
 		upkeep = {
-			unity = @Edict2Cost
+			multipole_nanosheets = 1
 			multiplier = value:edict_size_effect
 		}
 	}
@@ -148,7 +145,10 @@ multipole_nanosheets_operation = {
 			has_country_flag = arknight_3
 			has_country_flag = arknight_4
 		}
-		has_resource = { type = multipole_nanosheets amount > 50 }
+		OR = {
+			has_resource = { type = multipole_nanosheets amount > 0 }
+			has_edict = multipole_nanosheets_operation
+		}
 	}
 
 	modifier = {
@@ -158,7 +158,7 @@ multipole_nanosheets_operation = {
 	ai_weight = {
 		weight = 0
 		modifier = {
-			weight = 100
+			weight = @EdictHighPrio
 			is_at_war = yes
 		}
 	}
@@ -170,11 +170,8 @@ multipole_nanosheets_efficient_fleet = {
 	icon = "GFX_edict_type_policy"
 	resources = {
 		category = ship_edicts
-		cost = {
-			multipole_nanosheets = 50
-		}
 		upkeep = {
-			unity = @Edict1Cost
+			multipole_nanosheets = 1
 			multiplier = value:edict_size_effect
 		}
 	}
@@ -186,7 +183,10 @@ multipole_nanosheets_efficient_fleet = {
 			has_country_flag = arknight_3
 			has_country_flag = arknight_4
 		}
-		has_resource = { type = multipole_nanosheets amount > 50 }
+		OR = {
+			has_resource = { type = multipole_nanosheets amount > 0 }
+			has_edict = multipole_nanosheets_efficient_fleet
+		}
 	}
 
 	modifier = {
@@ -196,7 +196,7 @@ multipole_nanosheets_efficient_fleet = {
 	ai_weight = {
 		weight = 0
 		modifier = {
-			weight = 100
+			weight = @EdictHighPrio
 			is_at_war = yes
 		}
 	}
@@ -207,12 +207,9 @@ multipole_nanosheets_efficient_building = {
 	length = @EdictDuration
 	icon = "GFX_edict_type_policy"
 	resources = {
-		category = ship_edicts
-		cost = {
-			multipole_nanosheets = 50
-		}
+		category = rare_edicts
 		upkeep = {
-			unity = @Edict2Cost
+			multipole_nanosheets = 1
 			multiplier = value:edict_size_effect
 		}
 	}
@@ -224,7 +221,10 @@ multipole_nanosheets_efficient_building = {
 			has_country_flag = arknight_3
 			has_country_flag = arknight_4
 		}
-		has_resource = { type = multipole_nanosheets amount > 50 }
+		OR = {
+			has_resource = { type = multipole_nanosheets amount > 0 }
+			has_edict = multipole_nanosheets_efficient_building
+		}
 	}
 
 	modifier = {
@@ -233,25 +233,18 @@ multipole_nanosheets_efficient_building = {
 	}
 	
 	ai_weight = {
-		weight = 0
-		modifier = {
-			weight = 100
-			is_at_war = yes
-		}
+		weight = @EdictMedPrio
 	}
 }
 
 # 萨卡兹征兵体系
 sarkaz_conscription_system = {
-	length = @EdictDuration
+	length = @EdictPerpetual
 	icon = "GFX_edict_type_policy"
 	resources = {
-		category = campaigns
-		cost = {
-			energy = @campaignCost
-		}
+		category = edicts
 		upkeep = {
-			unity = @Edict2Cost
+			unity = @Edict1Cost
 			multiplier = value:edict_size_effect
 		}
 	}
@@ -286,11 +279,8 @@ power_city_module = {
 	icon = "GFX_edict_type_policy"
 	resources = {
 		category = rare_edicts
-		cost = {
-			originiums = 50
-		}
 		upkeep = {
-			unity = @Edict2Cost
+			originiums = 1
 			multiplier = value:edict_size_effect
 		}
 	}
@@ -302,7 +292,10 @@ power_city_module = {
 			has_country_flag = arknight_3
 			has_country_flag = arknight_4
 		}
-		has_resource = { type = originiums amount > 0 }
+		OR = {
+			has_resource = { type = originiums amount > 0 }
+			has_edict = power_city_module
+		}
 	}
 
 	modifier = {
@@ -310,7 +303,7 @@ power_city_module = {
 	}
 	
 	ai_weight = {
-		weight = 0
+		weight = @EdictMedPrio
 	}	
 }
 
@@ -320,11 +313,8 @@ power_space_module = {
 	icon = "GFX_edict_type_policy"
 	resources = {
 		category = rare_edicts
-		cost = {
-			originiums = 50
-		}
 		upkeep = {
-			unity = @Edict1Cost
+			originiums = 1
 			multiplier = value:edict_size_effect
 		}
 	}
@@ -336,7 +326,10 @@ power_space_module = {
 			has_country_flag = arknight_3
 			has_country_flag = arknight_4
 		}
-		has_resource = { type = originiums amount > 0 }
+		OR = {
+			has_resource = { type = originiums amount > 0 }
+			has_edict = power_space_module
+		}
 	}
 
 	modifier = {
@@ -345,7 +338,11 @@ power_space_module = {
 	
 	ai_weight = {
 		weight = 0
-	}	
+		modifier = {
+			weight = @EdictHighPrio
+			is_at_war = yes
+		}
+	}
 }
 
 # 动力巨构模块
@@ -354,11 +351,8 @@ power_mega_engineering_module = {
 	icon = "GFX_edict_type_policy"
 	resources = {
 		category = rare_edicts
-		cost = {
-			originiums = 100
-		}
 		upkeep = {
-			unity = @Edict3Cost
+			originiums = 1
 			multiplier = value:edict_size_effect
 		}
 	}
@@ -370,8 +364,10 @@ power_mega_engineering_module = {
 			has_country_flag = arknight_3
 			has_country_flag = arknight_4
 		}
-		has_technology = tech_mega_engineering
-		has_resource = { type = originiums amount > 0 }
+		OR = {
+			has_resource = { type = originiums amount > 0 }
+			has_edict = power_mega_engineering_module
+		}
 	}
 
 	modifier = {
@@ -379,6 +375,6 @@ power_mega_engineering_module = {
 	}
 	
 	ai_weight = {
-		weight = 0
+		weight = @EdictMedPrio
 	}	
 }
