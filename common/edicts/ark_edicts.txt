@@ -2,24 +2,27 @@
 # Empire edicts
 ##########################################################################
 
-@Edict1Cost = 100
-@Edict2Cost = 200
-@Edict3Cost = 300
+@Edict1Cost = 10
+@Edict2Cost = 20
+@Edict3Cost = 30
 
-@EdictDuration = 3600
+@EdictDuration = -1
 
 # Sets the cost for all campaigns with this variable
 @campaignCost = 1000
-@campaignDuration = 3600
 
 # 火力提升
 originiums_fire = {
 	length = @EdictDuration
-	icon = "GFX_edict_type_time"
+	icon = "GFX_edict_type_policy"
 	resources = {
 		category = ship_edicts
 		cost = {
 			originiums = 50
+		}
+		upkeep = {
+			unity = @Edict1Cost
+			multiplier = value:edict_size_effect
 		}
 	}
 	
@@ -49,11 +52,15 @@ originiums_fire = {
 # 全速前进
 originiums_ahead = {
 	length = @EdictDuration
-	icon = "GFX_edict_type_time"
+	icon = "GFX_edict_type_policy"
 	resources = {
 		category = ship_edicts
 		cost = {
 			originiums = 50
+		}
+		upkeep = {
+			unity = @Edict1Cost
+			multiplier = value:edict_size_effect
 		}
 	}
 	
@@ -83,11 +90,15 @@ originiums_ahead = {
 # 防御强化
 d32_steels_defense = {
 	length = @EdictDuration
-	icon = "GFX_edict_type_time"
+	icon = "GFX_edict_type_policy"
 	resources = {
 		category = ship_edicts
 		cost = {
 			d32_steels = 75
+		}
+		upkeep = {
+			unity = @Edict1Cost
+			multiplier = value:edict_size_effect
 		}
 	}
 	
@@ -118,11 +129,15 @@ d32_steels_defense = {
 # 武器运转
 multipole_nanosheets_operation = {
 	length = @EdictDuration
-	icon = "GFX_edict_type_time"
+	icon = "GFX_edict_type_policy"
 	resources = {
 		category = ship_edicts
 		cost = {
 			multipole_nanosheets = 50
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
 		}
 	}
 	
@@ -152,11 +167,15 @@ multipole_nanosheets_operation = {
 # 高效舰队
 multipole_nanosheets_efficient_fleet = {
 	length = @EdictDuration
-	icon = "GFX_edict_type_time"
+	icon = "GFX_edict_type_policy"
 	resources = {
 		category = ship_edicts
 		cost = {
 			multipole_nanosheets = 50
+		}
+		upkeep = {
+			unity = @Edict1Cost
+			multiplier = value:edict_size_effect
 		}
 	}
 	
@@ -186,11 +205,15 @@ multipole_nanosheets_efficient_fleet = {
 # 高效建筑
 multipole_nanosheets_efficient_building = {
 	length = @EdictDuration
-	icon = "GFX_edict_type_time"
+	icon = "GFX_edict_type_policy"
 	resources = {
 		category = ship_edicts
 		cost = {
 			multipole_nanosheets = 50
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
 		}
 	}
 	
@@ -220,12 +243,16 @@ multipole_nanosheets_efficient_building = {
 
 # 萨卡兹征兵体系
 sarkaz_conscription_system = {
-	length = @campaignDuration
-	icon = "GFX_edict_type_time"
+	length = @EdictDuration
+	icon = "GFX_edict_type_policy"
 	resources = {
 		category = campaigns
 		cost = {
 			energy = @campaignCost
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
 		}
 	}
 
@@ -256,10 +283,15 @@ sarkaz_conscription_system = {
 # 动力城邦模块
 power_city_module = {
 	length = @EdictDuration
+	icon = "GFX_edict_type_policy"
 	resources = {
 		category = rare_edicts
 		cost = {
 			originiums = 50
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
 		}
 	}
 	
@@ -285,10 +317,15 @@ power_city_module = {
 # 动力太空模块
 power_space_module = {
 	length = @EdictDuration
+	icon = "GFX_edict_type_policy"
 	resources = {
 		category = rare_edicts
 		cost = {
 			originiums = 50
+		}
+		upkeep = {
+			unity = @Edict1Cost
+			multiplier = value:edict_size_effect
 		}
 	}
 	
@@ -314,10 +351,15 @@ power_space_module = {
 # 动力巨构模块
 power_mega_engineering_module = {
 	length = @EdictDuration
+	icon = "GFX_edict_type_policy"
 	resources = {
 		category = rare_edicts
 		cost = {
 			originiums = 100
+		}
+		upkeep = {
+			unity = @Edict3Cost
+			multiplier = value:edict_size_effect
 		}
 	}
 	
