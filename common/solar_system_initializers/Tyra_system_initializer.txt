@@ -37,11 +37,19 @@
 
 	planet = {
 		name = "NAME_Tyra2"
-		class = "pc_barren"
+		class = "pc_desert"
+		entity = "ark_desert_planet_Talos_II"
 		orbit_distance = 25
 		orbit_angle = 125
-		size = 20
-		has_ring = no
+		size = 10
+		has_ring = yes
+		init_effect = {
+			prevent_anomaly = yes
+			add_modifier = {
+				modifier = "corrosion"
+				days = -1
+			}
+		}
 	}
 
 

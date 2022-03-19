@@ -72,6 +72,13 @@ catastrophe_panic = {	# 天灾恐慌
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
 	icon_frame = 3
 }
+corrosion = {	# 侵蚀
+	pop_environment_tolerance = -0.5
+	planet_building_build_speed_mult = -0.25
+	planet_jobs_physics_research_produces_mult = 0.20
+	planet_jobs_produces_mult = -0.25
+	icon = "gfx/interface/icons/planet_modifiers/pm_corrosion.dds"
+}
 g_jssjjs_modifier = {	# 精神世界建设
 	planet_jobs_unity_produces_mult = 0.2
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"

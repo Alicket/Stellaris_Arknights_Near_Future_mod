@@ -1,0 +1,8 @@
+objectTypes = {
+		pdxparticle = {
+			name = "ark_Talos_II_particle"
+			type = "ark_Talos_II_particle_file"
+			scale = 1
+		}
+	}
+	
