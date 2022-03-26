@@ -1,8 +1,5 @@
 # Triggers when the game starts
 on_game_start = {
-	events = {
-		ark_civic.20	# 创建国家用于存放领袖
-	}
 }
 
 on_game_start_country = {
