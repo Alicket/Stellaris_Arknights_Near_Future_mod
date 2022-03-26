@@ -13,3 +13,20 @@ d_ark_frozen_planet_deposit = {
 	drop_weight = { weight = 0 }
 }
 
+d_ark_moist_mys_area = {
+	is_for_colonizable = yes
+	potential = { always = no }
+	drop_weight = { weight = 0 }
+	category = deposit_cat_rare
+	icon = d_monument
+	planet_modifier = {
+		planet_amenities_add = 5
+	}
+	resources = {
+		produces = {
+			physics_research = 10
+			society_research = 10
+			engineering_research = 10
+		}
+	}
+}
