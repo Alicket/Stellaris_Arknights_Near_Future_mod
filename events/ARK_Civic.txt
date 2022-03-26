@@ -189,45 +189,30 @@ country_event = {
 	}
 }
 
-# 创建国家用于存放领袖
-event = {
-	id = ark_civic.20
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	immediate = {
-		create_country = {
-			type = ark_institution
-			name = "medical_institution"
-			auto_delete = no
-			flag = {
-				icon= {
-					category = "hypergryph"
-					file = "flag_rhodes_island.dds"
-				}
-				background= {
-					category = "backgrounds"
-					file = "rounded_middle.dds"
-				}
-				colors={
-					"black"
-					"black"
-					"null"
-					"null"
-				}
-			}
-			effect = {
-				save_global_event_target_as = pharmaceutical_country
-			}
-		}
-	}
-}
-
 # 触发医疗会诊
 country_event = {
-	id = ark_civic.21
-	hide_window = yes
+	id = ark_civic.20
+	title = ark_civic.20.name
+	desc = {
+		trigger = {
+			has_country_flag = medical_consultation_1
+		}
+		text = ark_civic.20.desc
+	}
+	desc = {
+		trigger = {
+			has_country_flag = medical_consultation_2
+		}
+		text = ark_civic.20.desc2
+	}
+	desc = {
+		trigger = {
+			has_country_flag = medical_consultation_3
+		}
+		text = ark_civic.20.desc3
+	}
+	picture = GFX_evt_infirmary
+	location = ROOT
 
 	trigger = {
 	 	has_civic = civic_pharmaceutical_enterprises
@@ -235,7 +220,7 @@ country_event = {
 			OR = {
 				has_trait = leader_trait_substance_abuser	# 药物依赖
 				has_trait = leader_trait_traumatized		# 受挫
-				has_trait = leader_trait_maimed				# 伤残
+				has_trait = leader_trait_maimed		# 伤残
 			}
 		}
 		NOR = {
@@ -284,87 +269,48 @@ country_event = {
 			limit = { has_trait = leader_trait_maimed }
 			save_global_event_target_as = treatment_3
 		}
-		country_event = { id = ark_civic.22 }
-		log = "[treatment_3.GetName] [treatment_1.GetName] [treatment_3.GetName]"
-	}
-}
-
-# 医疗会诊
-country_event = {
-	id = ark_civic.22
-	title = ark_civic.22.name
-	desc = {
-		trigger = {
-			has_country_flag = medical_consultation_1
-		}
-		text = ark_civic.22.desc
-	}
-	desc = {
-		trigger = {
-			has_country_flag = medical_consultation_2
-		}
-		text = ark_civic.22.desc2
-	}
-	desc = {
-		trigger = {
-			has_country_flag = medical_consultation_3
-		}
-		text = ark_civic.22.desc3
-	}
-	picture = GFX_evt_infirmary
-	location = ROOT
-
-	is_triggered_only = yes
-
-	immediate = {
 	}
 
 	option = {
-		name = ark_civic.22.a	# 我们的领袖将立刻前往医院报到
+		name = ark_civic.20.a	# 我们的领袖将立刻前往医院报到
 		hidden_effect = {
 			if = {
 				limit = {
 					exists = event_target:treatment_1
 				}
-				event_target:treatment_1 = {
-					set_owner = event_target:pharmaceutical_country
-				}
-				country_event = { id = ark_civic.23 days = 360 }
+				event_target:treatment_1 = { exile_leader_as = treatment_1 }
+				country_event = { id = ark_civic.21 days = 360 }
 			}
 			if = {
 				limit = {
 					exists = event_target:treatment_2
 				}
-				event_target:treatment_2 = {
-					set_owner = event_target:pharmaceutical_country
-				}
-				country_event = { id = ark_civic.23 days = 360 }
+				event_target:treatment_2 = { exile_leader_as = treatment_2 }
+				exile_leader_as = treatment_2
+				country_event = { id = ark_civic.21 days = 360 }
 			}
 			if = {
 				limit = {
 					exists = event_target:treatment_3
 				}
-				event_target:treatment_3 = {
-					set_owner = event_target:pharmaceutical_country
-				}
-				country_event = { id = ark_civic.23 days = 1080 }
+				event_target:treatment_3 = { exile_leader_as = treatment_3 }
+				exile_leader_as = treatment_3
+				country_event = { id = ark_civic.21 days = 1080 }
 			}
 		}
 	}
 
 	option = {
-		name = ark_civic.22.b	# （暂不）
-		hidden_effect = {
-			country_event = { id = ark_civic.22 days = 360 }
-		}
+		name = ark_civic.20.b	# 我们的领袖需要先忙完手头的工作。
+		country_event = { id = ark_civic.20 days = 360 }
 	}
 }
 
 # 领袖康复
 country_event = {
-	id = ark_civic.23
-	title = ark_civic.23.name
-	desc = "ark_civic.23.desc"
+	id = ark_civic.21
+	title = ark_civic.21.name
+	desc = "ark_civic.21.desc"
 	picture = GFX_evt_infirmary
 	location = ROOT
 
@@ -377,7 +323,7 @@ country_event = {
 	}
 
 	option = {
-		name = ark_civic.23.a	# 欢迎回到工作岗位
+		name = ark_civic.21.a	# 欢迎回到工作岗位
 		hidden_effect = {
 			if = {
 				limit = { 
