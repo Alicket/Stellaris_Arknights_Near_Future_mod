@@ -425,7 +425,9 @@ country_event = {
 	}
 	after = {
 		country_event = {
-			id = ark_archae.000
+			id = ark_archae.12
+			days = 60
+			random = 30
 		}
 	}
 }

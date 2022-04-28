@@ -1,0 +1,15 @@
+KOTA_unity_add = { #增加凝聚力产出
+	planet_jobs_unity_produces_mult = 0.05
+}
+KOTA_unity_dec = { #减少凝聚力产出
+    planet_jobs_unity_produces_mult = -0.05
+}
+KOTA_influence_dec = { #减少影响力产出
+	country_influence_produces_mult = -0.05
+}
+KOTA_science_add = { #科研强化
+	all_technology_research_speed = 0.3
+}
+KOTA_unity_super_add = { #强化凝聚力产出
+	country_unity_produces_mult = 0.2
+}

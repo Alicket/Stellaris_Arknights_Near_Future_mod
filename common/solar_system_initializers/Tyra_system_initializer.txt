@@ -139,6 +139,10 @@
 		has_ring = no
 	}
 
+	init_effect = {
+		save_global_event_target_as = ARK_TYRA_HOME_SYSTEM
+	}
+
 	neighbor_system = {
 	trigger = { num_guaranteed_colonies >= 2 }
 	distance = { min = 10 max = @distance }

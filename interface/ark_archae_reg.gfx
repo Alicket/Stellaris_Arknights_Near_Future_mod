@@ -1,0 +1,42 @@
+SpriteTypes = {
+	SpriteType = {
+		name = "GFX_evt_ark_archae_tips"
+		texturefile = "gfx/event_pictures/ark_archae_tips.dds"
+	}
+	SpriteType = {
+		name = "GFX_evt_ark_terra_map"
+		texturefile = "gfx/event_pictures/ark_archae_start.dds"
+	}
+	SpriteType = {
+		name = "GFX_evt_ark_rainfrost"
+		texturefile = "gfx/event_pictures/ark_rainfrost.dds"
+	}
+	SpriteType = {
+		name = "GFX_evt_ark_dark_rainfrost"
+		texturefile = "gfx/event_pictures/ark_dark_rainfrost.dds"
+	}
+	SpriteType = {
+		name = "GFX_evt_ark_outcounty"
+		texturefile = "gfx/event_pictures/ark_outcounty.dds"
+	}
+	SpriteType = {
+		name = "GFX_evt_ark_sargon"
+		texturefile = "gfx/event_pictures/ark_sargon.dds"
+	}
+	SpriteType = {
+		name = "GFX_evt_ark_rainfrost_village_1"
+		texturefile = "gfx/event_pictures/ark_rainfrost_village_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_evt_ark_rainfrost_village_2"
+		texturefile = "gfx/event_pictures/ark_rainfrost_village_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_evt_ark_rainfrost_village_3"
+		texturefile = "gfx/event_pictures/ark_rainfrost_village_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_evt_ark_archae_telescope"
+		texturefile = "gfx/event_pictures/ark_archae_telescope.dds"
+	}
+}

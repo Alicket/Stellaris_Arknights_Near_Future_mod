@@ -1,0 +1,448 @@
+namespace = arknights_KOTA
+country_event = { #开局给泰拉插旗
+	id = arknights_KOTA.0
+	is_triggered_only =yes
+	hide_window = yes
+	trigger = {
+		any_owned_planet = {  #这得是个泰拉
+			has_planet_flag = planet_terra
+		}
+		is_ai = no
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4
+		}
+	}
+	immediate = {
+		set_country_flag = havent_found_aborigines_yet #插旗，这之前玩家还没有找到过土著
+		set_country_flag = the_aborigines_are_still_there #插旗，土著和他们的球还在，判断事件是否继续的最关键点
+		country_event = {   #创建星系
+			id = arknights_KOTA.10086
+		}
+	}
+
+}
+country_event = { #创建星系，安置土著
+	id = arknights_KOTA.10086
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		capital_scope = {
+			spawn_system = {  #创建一个星系
+			initializer = bombstar_system_initializer
+			min_jumps = 1
+			max_jumps = 3
+			hyperlane = yes
+			is_discovered = no
+			}
+		}
+
+		create_species = { #创建一个故事对象的种族
+			class = REP #爬行类
+			name = "NAME_KB_ascetic_species"
+			plural = "NAME_KB_ascetic_species_plural"
+			portrait = random
+			homeworld = event_target:bombstar
+			sapient = no
+
+
+			traits = {
+				trait = trait_latent_psionic #拥有灵能潜质
+				trait = trait_slow_breeders #繁殖缓慢
+				trait = trait_industrious #勤勉
+				trait = trait_nerve_stapled #精神阉割
+			}
+
+
+		}
+		create_country = { #创建一个属于这些土著的国家
+			name = "NAME_KB_ascetic_country"  #misery
+			authority = auth_democratic
+			species = last_created_species
+			flag = {    #基础旗帜模板
+				icon = {
+					category = "special"
+					file = "primitive.dds"
+				}
+				background= {
+					category = "backgrounds"
+					file = "new_dawn.dds"
+				}
+				colors={
+					"turquoise"
+					"green"
+					"null"
+					"null"
+				}
+			}
+		
+			origin = "origin_enlightened" 
+			ethos = {
+				ethic = ethic_authoritarian
+				ethic = ethic_fanatic_spiritualist
+				#ethic = ethic_egalitarian
+			}
+			ignore_initial_colony_error = yes   #不知道是干嘛的
+			type = primitive #土著国家
+			effect = {
+				set_graphical_culture = preindustrial_01  #不知道是干嘛的
+				set_country_flag = late_medieval_age  #中古时代标签，用于土著星球初始化
+				set_primitive_age = late_medieval_age
+				change_country_flag = {     #二度修改国家旗帜
+					icon = {
+						category = "special"
+						file = "primitive.dds"
+					}
+					background= {
+						category = "backgrounds"
+						file = "new_dawn.dds"
+					}
+					colors={
+						"light_blue"
+						"blue"
+						"null"
+						"null"
+					}
+				}
+				save_global_event_target_as = the_aborigines_the_primitive #保存这个帝国为对象
+			}
+
+		}
+
+		event_target:bombstar = { #把目标星球的所属权划入帝国名下
+			setup_primitive_planet = yes
+
+		}
+
+	}
+
+}
+ship_event = {  #为观测站触发事件延迟一天
+	id = arknights_KOTA.250
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		owner = {
+			is_ai = no 
+			has_country_flag = havent_found_aborigines_yet   #先前还未修建过观察站而且是一个泰拉国家
+			has_country_flag = the_aborigines_are_still_there #事件进行中
+			not = {
+				has_country_flag = ark_originium_oripathy_cured #矿石病还未治愈
+				  }
+			}
+	}
+	after = {
+		owner = {
+			country_event = {
+				id = arknights_KOTA.1
+				days = 1
+			}
+		}
+
+		
+	}
+
+
+}
+country_event = {    #当矿石病未治愈，且这是第一次探索非赛特时，触发事件1，并移除旗帜《发现新球》
+	id = arknights_KOTA.1
+	is_triggered_only = yes
+	title = arknights_KOTA.1.name
+	desc= arknights_KOTA.1.desc
+	picture = GFX_evt_medieval_alien_civilization
+
+	trigger = {
+		event_target:bombstar = {
+			has_observation_outpost= yes
+		}
+	}
+	option = {
+		name = arknights_KOTA.1.a
+		custom_tooltip = arknights_KOTA.1.aa
+		hidden_effect = {
+			#from = {
+			#	save_global_event_target_as = bombstar #保存下这颗土著星球方便炸星
+			#}
+			owner = {
+				remove_country_flag = havent_found_aborigines_yet #折断旗子，防止二次触发
+
+			} 
+			
+
+		}
+	}
+	after = {
+		hidden_effect = {
+			owner = {
+				country_event = {    #一段时间后触发事件2
+				id = arknights_KOTA.2
+				days = 60
+				random = 25
+			     }
+				 set_country_flag = between_one_and_two  #事件进行到了1与2之间
+	
+			}
+
+		}
+		
+		
+	}
+
+}
+country_event = {  #这是事件2《第一分歧点，初见》
+	id = arknights_KOTA.2
+	is_triggered_only = yes
+	title = arknights_KOTA.2.name
+	desc = arknights_KOTA.2.desc
+	picture = GFX_evt_alien_propaganda
+	trigger = {
+		has_country_flag = the_aborigines_are_still_there
+	}
+	option = {
+		name = arknights_KOTA.2.a
+		custom_tooltip = arknights_KOTA.2.aa
+		add_resource = {
+			society_research = 300  #此事平平无奇，社会学+300
+		}
+	
+	}
+	option = {
+		name = arknights_KOTA.2.b
+		custom_tooltip = arknights_KOTA.2.bb  
+		add_modifier = {
+			modifier = KOTA_unity_add  #持续1年的凝聚力加成
+			years = 1
+		}
+		hidden_effect = {
+			country_event = {   #数月后事件3
+				id = arknights_KOTA.3
+				days = 50
+				random = 15
+			}
+			remove_country_flag = between_one_and_two 
+			set_country_flag = between_two_and_three   #现在事件来到了2与3之间，以后以此类推
+			
+
+		}
+	}
+	option = {
+		name = arknights_KOTA.2.c
+		custom_tooltip = arknights_KOTA.2.cc
+		add_resource = {
+			energy = -500
+		}
+		hidden_effect = {
+			country_event = {  #一年后事件4
+				id = arknights_KOTA.4
+				days = 360
+				random = 15
+			}
+			remove_country_flag = between_one_and_two
+			set_country_flag = between_two_and_four
+
+		}
+	}
+
+}
+country_event = {   #这是事件3《初次登陆》
+	id = arknights_KOTA.3
+	is_triggered_only = yes
+	title = arknights_KOTA.3.name
+	desc = arknights_KOTA.3.desc
+	picture = GFX_evt_victorious_army
+	trigger = {
+		has_country_flag = the_aborigines_are_still_there
+	}
+
+	option = {
+		name = arknights_KOTA.3.a
+		custom_tooltip = arknights_KOTA.3.aa
+		add_modifier= {
+			modifier = KOTA_unity_add
+			years =1
+		}
+		hidden_effect = {
+			country_event = {  #数月之后触发事件10
+				id = arknights_KOTA.10
+				days = 70
+				random = 25
+			}
+			remove_country_flag = between_two_and_three
+			set_country_flag= between_three_and_ten
+
+		}
+	}
+	option = {
+		name = arknights_KOTA.3.b
+		custom_tooltip = arknights_KOTA.3.bb
+		add_modifier = {
+			modifier = KOTA_influence_dec
+			years = 1
+		}
+		hidden_effect = {
+			country_event = { #一年左右后触发事件4
+				id = arknights_KOTA.4
+				days = 360
+				random = 45
+			}
+			remove_country_flag = between_two_and_three
+			set_country_flag = between_three_and_four
+
+		}
+	}
+
+}
+country_event = {  #这是事件10《星球毁灭》
+	id = arknights_KOTA.10
+	is_triggered_only =yes
+	title = arknights_KOTA.10.name
+	desc = arknights_KOTA.10.desc
+	picture = GFX_evt_shattered_planet
+	trigger = {
+		has_country_flag = the_aborigines_are_still_there
+	}
+	option = {
+		name = arknights_KOTA.10.a
+		add_modifier = {
+			modifier = KOTA_unity_dec
+			years =1
+
+		}
+		hidden_effect = {
+			event_target:bombstar = {   #锁定受害星球
+				planet_event = {
+					id = arknights_KOTA.100  #炸星球
+				}
+			}
+			remove_country_flag = between_three_and_ten
+			set_country_flag = the_ten_is_over
+
+		}
+	}
+
+}
+country_event = {  #这是事件4 《第一步探索》
+	id = arknights_KOTA.4
+	is_triggered_only = yes
+	title = arknights_KOTA.4.name
+	desc = arknights_KOTA.4.desc
+	picture = GFX_evt_worrying_signal
+	trigger = {
+		has_country_flag = the_aborigines_are_still_there
+	}
+	option = {
+		name = arknights_KOTA.4.a
+		hidden_effect = {
+			country_event = { #1年后触发事件5
+				id = arknights_KOTA.5
+				days = 360
+				random = 20
+
+			}
+			remove_country_flag = between_three_and_four
+			remove_country_flag = between_two_and_four
+			set_country_flag = between_four_and_five
+		}
+	}
+
+}
+country_event = { #这是事件5 《探索终了》
+	id = arknights_KOTA.5
+	is_triggered_only = yes
+	title = arknights_KOTA.5.name
+	desc = arknights_KOTA.5.desc
+	picture = GFX_evt_zro_4
+	trigger = {
+		has_country_flag = the_aborigines_are_still_there
+	}
+	option = {
+		name = arknights_KOTA.5.a
+		add_modifier = {
+			modifier = KOTA_science_add
+			years = 5
+		}
+		hidden_effect = {
+			event_target:bombstar = {   #锁定受害星球
+				planet_event = {
+					id = arknights_KOTA.100  #炸星球
+					days = 60
+					random = 15
+				}
+				
+			}
+			remove_country_flag = between_four_and_five
+				set_country_flag = five_is_over
+
+		}
+
+
+	}
+	option = {
+		name = arknights_KOTA.5.b
+		add_modifier = {
+			modifier = KOTA_unity_super_add
+			years = 5
+		}
+		hidden_effect = {
+			event_target:bombstar = {   #锁定受害星球
+				planet_event = {
+					id = arknights_KOTA.100  #炸星球
+					days = 60
+					random = 15
+				}
+			}
+			remove_country_flag = between_four_and_five
+				set_country_flag = five_is_over
+
+		}
+	}
+
+}
+planet_event = { #这是一个炸球事件
+	id = arknights_KOTA.100
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		every_owned_pop = { kill_pop = yes }
+		remove_all_buildings = yes
+		change_pc = pc_shattered
+		clear_deposits = yes
+		add_deposit = d_minerals_10
+		if = {
+			limit = {
+				has_observation_outpost = yes
+
+			}
+			observation_outpost_owner = {
+				country_event = {
+					id = arknights_KOTA.1000
+					days = 1
+				}
+			}
+		}
+
+	}
+
+
+}
+country_event = {#这是销毁观察站
+	id = arknights_KOTA.1000
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from = {
+			has_observation_outpost = yes
+
+		}
+	}
+	immediate = {
+		from = {
+			observation_outpost = {
+				dismantle = yes
+			}
+		}
+	}
+
+}

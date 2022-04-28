@@ -1,0 +1,461 @@
+ark_archae_kerrolli_homeworld = {
+	class = sc_black_hole
+	name = "Kalkan"
+	flags = { ark_archae_kerrolli_homeworld }
+	
+	planet = {
+		name = "NAME_ARK_kerrolli_system"
+		class = pc_black_hole
+		orbit_distance = 0
+		init_effect = {
+			save_global_event_target_as = ARK_KER_HOME_0
+			prevent_anomaly = yes
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 37
+					angle = 30
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 40
+					angle = 30
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 43
+					angle = 30
+				}
+			}
+			while = {
+				count = 2
+				create_ambient_object = {
+					type = "large_debris_object"
+					location = this
+				}
+				last_created_ambient_object = {
+					set_location = {
+						target = prev
+						distance = 65
+						angle = random
+					}
+				}
+			}
+			while = {
+				count = 1
+				create_ambient_object = {
+					type = "ancient_battlefield_object"
+					location = this
+				}
+				last_created_ambient_object = {
+					set_location = {
+						target = prev
+						distance = 65
+						angle = random
+					}
+				}
+			}
+			create_ambient_object = {
+				type = "derelict_ship_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 80
+					angle = random
+				}
+			}
+			while = {
+				count = 3
+				create_ambient_object = {
+					type = "medium_debris_01_object"
+					location = this
+				}
+				last_created_ambient_object = {
+					set_location = {
+						target = prev
+						distance = 80
+						angle = random
+					}
+				}
+			}
+			while = {
+				count = 4
+				create_ambient_object = {
+					type = "small_debris_object"
+					location = this
+				}
+				last_created_ambient_object = {
+					set_location = {
+						target = prev
+						distance = 90
+						angle = random
+					}
+				}
+			}
+			while = {
+				count = 3
+				create_ambient_object = {
+					type = "large_debris_object"
+					location = this
+				}
+				last_created_ambient_object = {
+					set_location = {
+						target = prev
+						distance = 100
+						angle = random
+					}
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 97
+					angle = 270
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 100
+					angle = 265
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 100
+					angle = 270
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 100
+					angle = 275
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 103
+					angle = 270
+				}
+			}
+			while = {
+				count = 2
+				create_ambient_object = {
+					type = "abandoned_ship_2_object"
+					location = this
+				}
+				last_created_ambient_object = {
+					set_location = {
+						target = prev
+						distance = 100
+						angle = random
+					}
+				}
+			}
+			create_ambient_object = {
+				type = "derelict_ship_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 110
+					angle = random
+				}
+			}
+			while = {
+				count = 4
+				create_ambient_object = {
+					type = "medium_debris_01_object"
+					location = solar_system
+				}
+				last_created_ambient_object = {
+					set_location = {
+						target = prev
+						distance = 110
+						angle = random
+					}
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 117
+					angle = 180
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 120
+					angle = 175
+				}
+			}
+			while = {
+				count = 4
+				create_ambient_object = {
+					type = "large_debris_object"
+					location = this
+				}
+				last_created_ambient_object = {
+					set_location = {
+						target = prev
+						distance = 120
+						angle = random
+					}
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 120
+					angle = 180
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 120
+					angle = 185
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 123
+					angle = 180
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 115
+					angle = 0
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 117
+					angle = 350
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 117
+					angle = 0
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 117
+					angle = 10
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 120
+					angle = 0
+				}
+			}
+		}
+	}
+	planet = {
+		name = "NAME_ARK_kerrolli_I_factory"
+		class = pc_molten
+		orbit_distance = 28
+		orbit_angle = { min = 0 max = 360 }
+		size = 10
+		has_ring = no
+		init_effect = {
+			prevent_anomaly = yes
+			save_global_event_target_as = ARK_KER_HOME_1
+			clear_deposits = yes
+		}
+	}
+	planet = {
+		name = "NAME_ARK_kerrolli_II_science"
+		class = pc_barren
+		orbit_distance = 30
+		orbit_angle = { min = 0 max = 360 }
+		size = 13
+		has_ring = no
+		init_effect = {
+			prevent_anomaly = yes
+			save_global_event_target_as = ARK_KER_HOME_2
+			clear_deposits = yes
+
+		}
+	}
+	planet = {
+		name = "NAME_ARK_kerrolli_III_major"
+		class = pc_relic
+		orbit_distance = 38
+		orbit_angle = { min = 0 max = 180 }
+		size = 18
+		has_ring = yes
+		init_effect = {
+			prevent_anomaly = yes
+			save_global_event_target_as = ARK_KER_HOME_3
+			clear_deposits = yes
+
+		}
+	}
+	planet = {
+		name = "NAME_ARK_kerrolli_IV_gas"
+		class = pc_gas_giant
+		orbit_distance = 51
+		orbit_angle = { min = 180 max = 360 }
+		size = 28
+		has_ring = yes
+		init_effect = {
+			prevent_anomaly = yes
+			save_global_event_target_as = ARK_KER_HOME_4
+			clear_deposits = yes
+
+		}
+		moon = {
+			name = "NAME_ARK_kerrolli_IVa_vacation"
+			class = pc_toxic
+			orbit_angle = { min = 0 max = 360 }
+			orbit_distance = 17
+			size = 6
+			init_effect = {
+				prevent_anomaly = yes
+				save_global_event_target_as = ARK_KER_HOME_4a
+				clear_deposits = yes
+
+			}
+		}
+		moon = {
+			name = "NAME_ARK_kerrolli_IVb_telescope"
+			class = pc_barren
+			orbit_angle = { min = 0 max = 360 }
+			orbit_distance = 21
+			size = 4
+			init_effect = {
+				prevent_anomaly = yes
+				save_global_event_target_as = ARK_KER_HOME_4b
+				clear_deposits = yes
+
+			}
+		}
+	}
+	planet = {
+		name = "NAME_ARK_kerrolli_V_fleet"
+		class = pc_shattered
+		orbit_distance = 60
+		orbit_angle = { min = 0 max = 360 }
+		size = 12
+		has_ring = no
+		init_effect = {
+			prevent_anomaly = yes
+			save_global_event_target_as = ARK_KER_HOME_5
+			clear_deposits = yes
+
+		}
+	}
+	planet = {
+		name = "NAME_ARK_kerrolli_VI_minerals"
+		class = pc_frozen
+		orbit_distance = 66
+		orbit_angle = { min = 0 max = 360 }
+		size = 10
+		has_ring = no
+		init_effect = {
+			prevent_anomaly = yes
+			save_global_event_target_as = ARK_KER_HOME_6
+			clear_deposits = yes
+
+		}
+	}
+	init_effect = {
+		set_surveyed = {
+			surveyed = yes
+		}
+	}
+}

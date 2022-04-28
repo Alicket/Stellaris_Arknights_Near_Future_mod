@@ -1,0 +1,1162 @@
+namespace = arknights_KWYATA
+#(以下事件请全部使用PRTS的图片谢谢)
+country_event = {    #一个不显示的事件，根据玩家所处阶段对陆军登陆进行判决
+	id = arknights_KWYATA.1
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_country_flag = the_aborigines_are_still_there #事件土著还在，而且进攻方是泰拉，这是最关键的
+		fromfrom = {
+			is_same_value = event_target:bombstar  #被登陆成功的是非塞特
+		}
+	}
+	immediate = {
+		remove_country_flag = the_aborigines_are_still_there #中断事件
+		remove_country_flag = havent_found_aborigines_yet
+		switch = {
+			trigger = has_country_flag
+			between_one_and_two = {
+				country_event = {
+					id = arknights_KWYATA.12
+				}
+			}
+			between_two_and_three = {
+				country_event = {
+					id = arknights_KWYATA.23
+				}
+			}
+			between_three_and_time = {
+				country_event = {
+					id = arknights_KWYATA.310
+				}
+			}
+			between_two_and_four = {
+				country_event = {
+					id = arknights_KWYATA.24
+				}
+			}
+			between_three_and_four = {
+				country_event = {
+					id = arknights_KWYATA.34
+				}
+			}
+			between_four_and_five = {
+				country_event = {
+					id = arknights_KWYATA.45
+				}
+			}
+			five_is_over = {
+				country_event = {
+					id = arknights_KWYATA.50
+				}
+			}
+		}
+	}
+
+}
+
+##########以下全部是陆军登陆分支###########
+country_event = {
+	id = arknights_KWYATA.12
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.12.DESC
+	picture = GFX_evt_victorious_army
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.23
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.23.DESC
+	picture = GFX_evt_star_chart
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.310
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.310.DESC
+	picture = GFX_evt_shattered_planet
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.24
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.24.DESC
+	picture = GFX_evt_sapient_AI
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.34
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.34.DESC
+	picture = GFX_evt_sapient_AI
+
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.45
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.45.DESC
+	picture = GFX_evt_sapient_AI
+
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.50
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.50.DESC
+	picture = GFX_evt_sapient_AI
+
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+				}
+			}
+		}
+	}
+
+}
+###############以上截止###################
+planet_event = { #一个不显示的事件，对进行了地爆天星的玩家进行判决
+	id = arknights_KWYATA.2
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		is_same_value = event_target:bombstar
+		from = {
+			owner = {
+				has_country_flag = the_aborigines_are_still_there
+			}
+		}
+	}
+	immediate = {
+		from = {
+			owner = {
+				remove_country_flag = the_aborigines_are_still_there #中断事件
+		        remove_country_flag = havent_found_aborigines_yet
+		        switch = {
+			       trigger = has_country_flag
+			between_one_and_two = {
+				country_event = {
+					id = arknights_KWYATA.120
+				}
+			}
+			between_two_and_three = {
+				country_event = {
+					id = arknights_KWYATA.230
+				}
+			}
+			between_three_and_time = {
+				country_event = {
+					id = arknights_KWYATA.3100
+				}
+			}
+			between_two_and_four = {
+				country_event = {
+					id = arknights_KWYATA.240
+				}
+			}
+			between_three_and_four = {
+				country_event = {
+					id = arknights_KWYATA.340
+				}
+			}
+			between_four_and_five = {
+				country_event = {
+					id = arknights_KWYATA.450
+				}
+			}
+			five_is_over = {
+				country_event = {
+					id = arknights_KWYATA.500
+				}
+			}
+		}
+			}
+		}
+		
+	}
+}
+###########以下全部是地爆天星事件##########
+country_event = {
+	id = arknights_KWYATA.120
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.120.DESC
+	picture = GFX_evt_shattered_planet
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+					
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.230
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.230.DESC
+	picture = GFX_evt_shattered_planet
+
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+					
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.3100
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.3100.DESC
+	picture = GFX_evt_shattered_planet
+
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+					
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.240
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.240.DESC
+	picture = GFX_evt_shattered_planet
+
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+					
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.340
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.340.DESC
+	picture = GFX_evt_shattered_planet
+
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+					
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.450
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.450.DESC
+	picture = GFX_evt_shattered_planet
+
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+					
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.500
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.500.DESC
+	picture = GFX_evt_shattered_planet
+
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+					
+				}
+			}
+		}
+	}
+
+}
+###############以上截止###################
+planet_event = { #一个不显示的事件，对进行了中子灭杀的玩家进行判决
+	id = arknights_KWYATA.3
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		is_same_value = event_target:bombstar
+		from = {
+			owner = {
+				has_country_flag = the_aborigines_are_still_there
+			}
+		}
+	}
+	immediate = {
+		from = {
+			owner = {
+				remove_country_flag = the_aborigines_are_still_there #中断事件
+		        remove_country_flag = havent_found_aborigines_yet
+		        switch = {
+			       trigger = has_country_flag
+			between_one_and_two = {
+				country_event = {
+					id = arknights_KWYATA.1200
+				}
+			}
+			between_two_and_three = {
+				country_event = {
+					id = arknights_KWYATA.2300
+				}
+			}
+			between_three_and_time = {
+				country_event = {
+					id = arknights_KWYATA.31000
+				}
+			}
+			between_two_and_four = {
+				country_event = {
+					id = arknights_KWYATA.2400
+				}
+			}
+			between_three_and_four = {
+				country_event = {
+					id = arknights_KWYATA.3400
+				}
+			}
+			between_four_and_five = {
+				country_event = {
+					id = arknights_KWYATA.4500
+				}
+			}
+			five_is_over = {
+				country_event = {
+					id = arknights_KWYATA.5000
+				}
+			}
+		}
+			}
+		}
+		
+	}
+}
+
+###########以下全部是中子灭杀事件##########
+country_event = {
+	id = arknights_KWYATA.1200
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.1200.DESC
+	picture = GFX_evt_planet_beam
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+					days = 60
+					random = 15
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.2300
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.2300.DESC
+	picture = GFX_evt_planet_beam
+
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+					days = 60
+					random = 15
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.31000
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.31000.DESC
+	picture = GFX_evt_planet_beam
+
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+					days = 60
+					random = 15
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.2400
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.2400.DESC
+	picture = GFX_evt_planet_beam
+
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+					days = 60
+					random = 15
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.3400
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.3400.DESC
+	picture = GFX_evt_planet_beam
+
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+					days = 60
+					random = 15
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.4500
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.4500.DESC
+	picture = GFX_evt_planet_beam
+
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+					days = 60
+					random = 15
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.5000
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.5000.DESC
+	picture = GFX_evt_planet_beam
+
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+					days = 60
+					random = 15
+				}
+			}
+		}
+	}
+
+}
+###############以上截止###################
+planet_event = { #一个不显示的事件，对进行了安乐天使的玩家进行判决
+	id = arknights_KWYATA.4
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		is_same_value = event_target:bombstar
+		from = {
+			owner = {
+				has_country_flag = the_aborigines_are_still_there
+			}
+		}
+	}
+	immediate = {
+		from = {
+			owner = {
+				remove_country_flag = the_aborigines_are_still_there #中断事件
+		        remove_country_flag = havent_found_aborigines_yet
+		        switch = {
+			       trigger = has_country_flag
+			between_one_and_two = {
+				country_event = {
+					id = arknights_KWYATA.12000
+				}
+			}
+			between_two_and_three = {
+				country_event = {
+					id = arknights_KWYATA.23000
+				}
+			}
+			between_three_and_time = {
+				country_event = {
+					id = arknights_KWYATA.310000
+				}
+			}
+			between_two_and_four = {
+				country_event = {
+					id = arknights_KWYATA.24000
+				}
+			}
+			between_three_and_four = {
+				country_event = {
+					id = arknights_KWYATA.34000
+				}
+			}
+			between_four_and_five = {
+				country_event = {
+					id = arknights_KWYATA.45000
+				}
+			}
+			five_is_over = {
+				country_event = {
+					id = arknights_KWYATA.50000
+				}
+			}
+		}
+			}
+		}
+		
+	}
+}
+
+###########以下全部是安乐天使事件##########
+country_event = {
+	id = arknights_KWYATA.12000
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.12000.DESC
+	picture = GFX_evt_shielded_planet
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+					days = 60
+					random = 15
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.23000
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.23000.DESC
+	picture = GFX_evt_shielded_planet
+
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+					days = 60
+					random = 15
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.310000
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.310000.DESC
+	picture = GFX_evt_shielded_planet
+
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+					days = 60
+					random = 15
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.24000
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.24000.DESC
+	picture = GFX_evt_shielded_planet
+
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+					days = 60
+					random = 15
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.34000
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.34000.DESC
+	picture = GFX_evt_shielded_planet
+
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+					days = 60
+					random = 15
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.45000
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.45000.DESC
+	picture = GFX_evt_shielded_planet
+
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+					days = 60
+					random = 15
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.50000
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.50000.DESC
+	picture = GFX_evt_shielded_planet
+
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+					days = 60
+					random = 15
+				}
+			}
+		}
+	}
+
+}
+###############以上截止###################
+planet_event = { #一个不显示的事件，对进行了天神裁决的玩家进行判决
+	id = arknights_KWYATA.5
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		is_same_value = event_target:bombstar
+		from = {
+			owner = {
+				has_country_flag = the_aborigines_are_still_there
+			}
+		}
+	}
+	immediate = {
+		from = {
+			owner = {
+				remove_country_flag = the_aborigines_are_still_there #中断事件
+		        remove_country_flag = havent_found_aborigines_yet
+		        switch = {
+			       trigger = has_country_flag
+			between_one_and_two = {
+				country_event = {
+					id = arknights_KWYATA.120000
+				}
+			}
+			between_two_and_three = {
+				country_event = {
+					id = arknights_KWYATA.230000
+				}
+			}
+			between_three_and_time = {
+				country_event = {
+					id = arknights_KWYATA.3100000
+				}
+			}
+			between_two_and_four = {
+				country_event = {
+					id = arknights_KWYATA.240000
+				}
+			}
+			between_three_and_four = {
+				country_event = {
+					id = arknights_KWYATA.340000
+				}
+			}
+			between_four_and_five = {
+				country_event = {
+					id = arknights_KWYATA.450000
+				}
+			}
+			five_is_over = {
+				country_event = {
+					id = arknights_KWYATA.500000
+				}
+			}
+		}
+			}
+		}
+		
+	}
+}
+
+###########以下全部是天神裁决事件##########
+country_event = {
+	id = arknights_KWYATA.120000
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.120000.DESC
+	picture = GFX_evt_planet_beam
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+					days = 60
+					random = 15
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.230000
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.230000.DESC
+	picture = GFX_evt_planet_beam
+
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+					days = 60
+					random = 15
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.3100000
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.3100000.DESC
+	picture = GFX_evt_planet_beam
+
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+					days = 60
+					random = 15
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.240000
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.240000.DESC
+	picture = GFX_evt_planet_beam
+
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+					days = 60
+					random = 15
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.340000
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.340000.DESC
+	picture = GFX_evt_planet_beam
+
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+					days = 60
+					random = 15
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.450000
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.450000.DESC
+	picture = GFX_evt_planet_beam
+
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+					days = 60
+					random = 15
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.500000
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.500000.DESC
+	picture = GFX_evt_planet_beam
+
+	option = {
+		name = arknights_KWYATA.00.a
+		hidden_effect = {
+			event_target:bombstar = {
+				planet_event = {
+					id = arknights_KOTA.100
+					days = 60
+					random = 15
+				}
+			}
+		}
+	}
+
+}
+###############以上截止###################
+planet_event = { #一个不显示的事件，对进行了冬痕的玩家进行判决
+	id = arknights_KWYATA.6
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		is_same_value = event_target:bombstar
+		from = {
+			owner = {
+				has_country_flag = the_aborigines_are_still_there
+			}
+		}
+	}
+	immediate = {
+		from = {
+			owner = {
+				remove_country_flag = the_aborigines_are_still_there #中断事件
+		        remove_country_flag = havent_found_aborigines_yet
+		        switch = {
+			       trigger = has_country_flag
+			between_one_and_two = {
+				country_event = {
+					id = arknights_KWYATA.129
+				}
+			}
+			between_two_and_three = {
+				country_event = {
+					id = arknights_KWYATA.239
+				}
+			}
+			between_three_and_time = {
+				country_event = {
+					id = arknights_KWYATA.3109
+				}
+			}
+			between_two_and_four = {
+				country_event = {
+					id = arknights_KWYATA.249
+				}
+			}
+			between_three_and_four = {
+				country_event = {
+					id = arknights_KWYATA.349
+				}
+			}
+			between_four_and_five = {
+				country_event = {
+					id = arknights_KWYATA.459
+				}
+			}
+			five_is_over = {
+				country_event = {
+					id = arknights_KWYATA.509
+				}
+			}
+		}
+			}
+		}
+		
+	}
+}
+
+###########以下全部是冬痕事件#############
+country_event = {
+	id = arknights_KWYATA.129
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.129.DESC
+	picture = GFX_evt_frozen
+	option = {
+		name = arknights_KWYATA.00.a
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.239
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.239.DESC
+	picture = GFX_evt_frozen
+
+	option = {
+		name = arknights_KWYATA.00.a
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.3109
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.3109.DESC
+	picture = GFX_evt_frozen
+
+	option = {
+		name = arknights_KWYATA.00.a
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.249
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.249.DESC
+	picture = GFX_evt_frozen
+
+	option = {
+		name = arknights_KWYATA.00.a
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.349
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.349.DESC
+	picture = GFX_evt_frozen
+
+	option = {
+		name = arknights_KWYATA.00.a
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.459
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.459.DESC
+	picture = GFX_evt_frozen
+
+	option = {
+		name = arknights_KWYATA.00.a
+	}
+
+}
+country_event = {
+	id = arknights_KWYATA.509
+	is_triggered_only = yes
+	title = arknights_KWYATA.00.name
+	desc = arknights_KWYATA.509.DESC
+	picture = GFX_evt_frozen
+
+	option = {
+		name = arknights_KWYATA.00.a
+	}
+
+}
+###############以上截止###################

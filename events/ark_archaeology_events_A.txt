@@ -1,0 +1,1554 @@
+namespace = ark_archae
+
+#DEBUG
+#a	 		节奏太快
+#	完成	特殊计划一出来直接可以研究，而且都tm没写文案
+#	完成	给的文物太多了
+#	完成	2-3简报间隔时间不到半年
+#a	  		观测者事件链没设时间
+#	完成	开局提示多次触发
+#	完成	观测者调查三个星系没写counter增加，调查数始终为0，更改counter文案
+#	完成	调查装置事件星球选取可能选不到
+#	完成	调查装置的星球名字没取到，环境改造modifier也没法加上去
+
+
+
+####################  #######    ######    #######  ########  ####################
+####################  ##    ##  ##    ##  ##        ##        ####################
+####################  #######   ########   ######   #####     ####################
+####################  ##    ##  ##    ##        ##  ##        ####################
+####################  #######   ##    ##  #######   ########  ####################
+
+
+country_event = {#储存event_target,开局提示,on_game_start_country
+	id = ark_archae.0
+	is_triggered_only = yes
+	title = ark_archae.0.title
+	desc = ark_archae.0.desc
+	picture = GFX_evt_ark_archae_tips
+	trigger = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4	
+		}
+		this.capital_scope = {
+			has_planet_flag = planet_terra
+		}
+		NOT = {
+			has_country_flag = ark_archae_tipped
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			set_country_flag = ark_archae_tipped
+			capital_scope = {
+				save_global_event_target_as = ARK_PLANET_TERRA
+			}
+			save_global_event_target_as = COUNTRY_ARKNIGHTS
+		}
+	}
+	option = {
+		name = ark_archae.0.a
+	}
+}
+country_event = {#Random List
+	id = ark_archae.10
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		random_list = {
+			1 = { 
+				modifier = { 
+					mult = 0 
+					has_country_flag = completed_ark_moist_mysterious_area 
+				}
+				country_event = { 
+					id = ark_archae.1000 
+					days = 30 
+					random = 10
+				} 
+			}
+			0 = { 
+				modifier = {
+					add = 1
+					has_country_flag = completed_ark_moist_mysterious_area 
+				}
+				modifier = {
+					mult = 0 
+					has_country_flag = completed_ark_archae_telescope
+				}
+				country_event = { 
+					id = ark_archae.2000 
+					days = 30 
+					random = 10
+				} 
+			}
+			# 0 = {
+			# 	modifier = {
+			# 		add = 1
+			# 		has_country_flag = completed_ark_archae_telescope
+			# 		has_country_flag = completed_ark_moist_mysterious_area
+			# 		NOT = {
+			# 			has_country_flag = ark_archae_kerrolli_disabled
+			# 		}
+			# 	}
+			# }
+			0 = {
+				modifier = {
+					add = 1
+					has_country_flag = completed_ark_moist_mysterious_area
+					has_country_flag = completed_ark_archae_telescope
+				}
+				country_event = {
+					id = ark_archae.14
+					days = 30
+				}
+			}
+		}
+	}
+}
+country_event = {#测试用
+	id = ark_archae.11
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		# this.capital_scope = {
+		# 	create_archaeological_site = ark_archae_moist_mysterious_area
+		# }
+		every_owned_leader = {
+			set_skill = 10
+		}
+	}
+	
+}
+country_event = {#矿石病治愈后30-90天触发事件
+	id = ark_archae.12
+	is_triggered_only = yes
+	title = ark_archae.000.title
+	desc = ark_archae.000.desc
+	picture = GFX_evt_ark_terra_map
+	trigger = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4	
+		}
+		any_owned_planet = {
+			has_planet_flag = planet_terra
+		}
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ark_archae.10
+				days = 60
+				random = 30
+			}
+		}
+	}
+	option = {
+		name = ark_archae.000.a
+		begin_event_chain = {
+			event_chain = ark_archae_main_chain
+		}
+	}
+}
+planet_event = {#不要地貌改造
+	id = ark_archae.13
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_planet_flag = planet_terra
+		owner = {
+			OR = {
+				has_country_flag = arknight_1
+				has_country_flag = arknight_2
+				has_country_flag = arknight_3
+				has_country_flag = arknight_4
+			}
+		}
+	}
+	immediate = {
+		remove_planet_flag = planet_terra
+	}
+}
+country_event = {#全部结束
+	id = ark_archae.14
+	is_triggered_only = yes
+	title = ark_archae.00000.title
+	desc = ark_archae.00000.desc
+	picture = GFX_evt_rhodes_island
+	option = {
+		name = ark_archae.00000.a
+		add_resource = {
+			unity = 20000
+			influence = 100
+		}
+	}
+}
+
+
+####################   ########    ######   ####   #######  ########  ####################
+####################  ##  ##  ##  ##    ##   ##   ##           ##     ####################
+####################  ##  ##  ##  ##    ##   ##    ######      ##     ####################
+####################  ##  ##  ##  ##    ##   ##         ##     ##     ####################
+####################  ##  ##  ##   ######   ####  #######      ##     ####################
+
+
+country_event = {#创建坟
+	id = ark_archae.1000
+	is_triggered_only = yes
+	title = ark_archae.1000.name
+	desc = ark_archae.1000.desc
+	picture = GFX_evt_tropical
+	option = {
+		name = ark_archae.1000.a
+		event_target:ARK_PLANET_TERRA = {
+			create_archaeological_site = ark_archae_moist_mysterious_area
+		}
+		set_country_flag = completed_ark_moist_mysterious_area
+
+	}
+}
+fleet_event = {
+	id = ark_archae.1001
+	title = ark_archae.1001.name
+	desc = ark_archae.1001.desc
+	picture = GFX_evt_ark_sargon
+	show_sound = event_wind_ruins
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ark_archae.1001.a
+	}
+}
+fleet_event = {
+	id = ark_archae.1002
+	title = ark_archae.1002.name
+	desc = ark_archae.1002.desc
+	picture = GFX_evt_ark_rainfrost_village_2
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+	option = {
+		name = ark_archae.1002.a
+		owner = {
+			add_resource = {
+				society_research = 600
+			}
+		}
+	}
+}
+fleet_event = {
+	id = ark_archae.1003
+	title = ark_archae.1003.name
+	desc = ark_archae.1003.desc
+	picture = GFX_evt_ark_dark_rainfrost
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ark_archae.1003.a
+		owner = {
+			add_resource = {
+				society_research = 1200
+			}
+		}
+	}
+}
+fleet_event = {
+	id = ark_archae.1004
+	title = ark_archae.1004.name
+	desc = ark_archae.1004.desc
+	picture = GFX_evt_discovered_hidden_door
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ark_archae.1004.a
+		small_artifact_reward = yes
+		owner = {
+			add_resource = {
+				society_research = 2400
+			}
+		}
+	}
+}
+fleet_event = {
+	id = ark_archae.1005
+	title = ark_archae.1005.name
+	desc = ark_archae.1005.desc
+	picture = GFX_evt_derelict_interior
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ark_archae.1005.a
+		small_artifact_reward = yes
+		owner = {
+			add_resource = {
+				society_research = 6000
+			}
+			hidden_effect = {
+				country_event = {
+					id = ark_archae.1006
+					days = 1
+				}
+			}
+		}
+	}
+}
+country_event = {#简报1
+	id = ark_archae.1006
+	title = ark_archae.1006.name
+	desc = ark_archae.1006.desc
+	picture = GFX_evt_unknown_spaceship
+	is_triggered_only = yes
+
+	option = {
+		name = ark_archae.1006.a
+		small_artifact_reward = yes
+		owner = {
+			add_resource = {
+				society_research = 1200
+			}
+			hidden_effect = {
+				country_event = {
+					id = ark_archae.1007
+					days = 30
+					random = 30
+				}
+			}
+		}
+	}
+}
+country_event = {#简报2
+	id = ark_archae.1007
+	title = ark_archae.1007.name
+	desc = ark_archae.1007.desc
+	picture = GFX_evt_hidden_door
+	is_triggered_only = yes
+
+	option = {
+		name = ark_archae.1007.a
+		small_artifact_reward = yes
+		owner = {
+			add_resource = {
+				society_research = 1200
+			}
+			hidden_effect = {
+				country_event = {
+					id = ark_archae.1008
+					days = 190
+					random = 10
+				}
+			}
+		}
+	}
+}
+country_event = {#简报3
+	id = ark_archae.1008
+	title = ark_archae.1008.name
+	desc = ark_archae.1008.desc
+	picture = GFX_evt_top
+	is_triggered_only = yes
+
+	option = {
+		name = ark_archae.1008.a
+		small_artifact_reward = yes
+		owner = {
+			add_resource = {
+				society_research = 1200
+			}
+			hidden_effect = {
+				country_event = {
+					id = ark_archae.1009
+					days = 30
+					random = 30
+				}
+			}
+		}
+	}
+}
+country_event = {#结束
+	id = ark_archae.1009
+	title = ark_archae.1009.name
+	desc = ark_archae.1009.desc
+	picture = GFX_evt_ark_sargon
+	is_triggered_only = yes
+	immediate = {
+		enable_special_project = {
+			name = ARK_ARCHAE_PROJ_MOIST_IN_MAIN
+		}
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ark_archae.10
+				days = 180
+				random = 45
+			}
+			complete_special_project = {
+				type = ARK_ARCHAE_PROJ_MOIST_IN_MAIN
+			}
+		}
+	}
+	option = {
+		name = ark_archae.1009.a
+		medium_artifact_reward = yes
+		capital_scope = {
+			
+		}
+		event_target:ARK_PLANET_TERRA = {
+			remove_deposit = d_sargon_rainforest
+		}
+		this = {
+			add_resource = {
+				society_research = 2400
+				physics_research = 2400
+				engineering_research = 2400
+			}
+			give_technology = {
+				tech = tech_climate_restoration
+			}
+		}
+	}
+	option = {
+		name = ark_archae.1009.b
+		medium_artifact_reward = yes
+		event_target:ARK_PLANET_TERRA = {
+			add_deposit = d_ark_moist_mys_area
+		}
+		this = {
+			add_resource = {
+				society_research = 2400
+				physics_research = 2400
+				engineering_research = 2400
+			}
+		}
+	}
+}
+#####  ########  ########  ##        ########   #######   #######   ######   #######   ########  #####
+#####     ##     ##        ##        ##        ##        ##        ##    ##  ##    ##  ##        #####
+#####     ##     #####     ##        #####      ######   ##        ##    ##  #######   #####     #####
+#####     ##     ##        ##        ##              ##  ##        ##    ##  ##        ##        #####
+#####     ##     ########  ########  ########  #######    #######   ######   ##        ########  #####
+
+country_event = {#发现射电望远镜
+	id = ark_archae.2000
+	is_triggered_only = yes
+	title = ark_archae.2000.name
+	desc = ark_archae.2000.desc
+	picture = GFX_evt_ark_archae_telescope
+	trigger = {
+		any_owned_planet = {
+			has_planet_flag = planet_terra
+		}
+	}
+	option = {
+		name = ark_archae.2000.a
+
+		hidden_effect = {
+			set_country_flag = completed_ark_archae_telescope
+			country_event = {
+				id = ark_archae.2001
+				days = 60
+				random = 5
+			}
+		}
+	}
+}
+country_event = {#进入中枢
+	id = ark_archae.2001
+	is_triggered_only = yes
+	title = ark_archae.2001.name
+	desc = ark_archae.2001.desc
+	picture = GFX_evt_dead_city
+	option = {#放弃调查，拆掉
+		name = ark_archae.2001.a
+		custom_tooltip = ark_archae_telescope_tooltip_warning
+		add_resource = {
+			minerals = 2000
+			alloys = 500
+			influence = 50
+		}
+		complete_special_project = {
+			type = ARK_ARCHAE_PROJ_TELESCOPE_IN_MAIN
+		}
+		hidden_effect = {
+			country_event = {
+				id = ark_archae.10
+			}
+			set_country_flag = ark_archae_kerrolli_disabled
+		}
+	}
+	option = {#继续调查
+		name = ark_archae.2001.b
+		custom_tooltip = ark_archae_telescope_tooltip_warning
+		hidden_effect = {
+			country_event = {
+				id = ark_archae.2002
+				days = 90
+				random = 10
+			}
+		}
+	}
+}
+country_event = {#进入控制室选择文件
+	id = ark_archae.2002
+	is_triggered_only = yes
+	title = ark_archae.2002.name
+	desc = ark_archae.2002.desc
+	picture = GFX_evt_ancient_databank
+	option = {
+		name = ark_archae.2002.a
+		hidden_effect = {
+			country_event = {#星海观测
+				id = ark_archae.2101
+				days = 90
+				random = 15
+			}
+		}
+	}
+	# option = {
+	# 	name = ark_archae.2002.b
+	# 	hidden_effect = {
+	# 		country_event = {#深空掠夺
+	# 			id = ark_archae.2201
+	# 		}
+	# 	}
+	# }
+	option = {
+		name = ark_archae.2002.c
+		custom_tooltip = ark_archae_telescope_tooltip_warning
+		add_resource = {
+			society_research = 5000
+			minerals = 2000
+			alloys = 500
+			influence = 50
+		}
+	}
+}
+
+#   <——————————————————————————    2100   ——————————————————————————>   #
+# <———————————————————————————— 星海观测者 ————————————————————————————> #
+#   <——————————————————————————           ——————————————————————————>   #
+
+country_event = {#调查星系
+	id = ark_archae.2101
+	is_triggered_only = yes
+	title = ark_archae.2101.name
+	desc =  ark_archae.2101.desc
+	picture = GFX_evt_ancient_databank
+	option = {
+		name = ark_archae.2101.a
+		begin_event_chain = {
+			event_chain = ark_archae_telescope_observe_chain
+		}
+		hidden_effect = {
+			random_system_within_border = {#1
+				limit = {
+					any_system_planet = {
+						NOT = { has_owner = yes }
+					}
+					any_system_planet = {
+						is_planet_class = pc_frozen
+					}
+				}
+				random_system_planet = {
+					limit = {
+						is_planet_class = pc_frozen
+					}
+					enable_special_project = {
+						name = ARK_ARCHAE_OBSERVE_PROJ_1
+						location = this
+						owner = root
+					}
+					save_global_event_target_as = ARK_OBSERVE_CHAIN_DEVICE_1
+				}
+			}
+			random_system_within_border = {#2
+				limit = {
+					any_system_planet = {
+						NOT = { has_owner = yes }
+					}
+					any_system_planet = {
+						is_planet_class = pc_gas_giant
+					}
+				}
+				random_system_planet = {
+					limit = {
+						is_planet_class = pc_gas_giant
+					}
+					enable_special_project = {
+						name = ARK_ARCHAE_OBSERVE_PROJ_2
+						location = this
+						owner = root
+					}
+					save_global_event_target_as = ARK_OBSERVE_CHAIN_DEVICE_2
+
+				}
+			}
+			random_system_within_border = {#3
+				limit = {
+					any_system_planet = {
+						NOT = { has_owner = yes }
+					}
+					any_system_planet = {
+						is_planet_class = pc_molten
+					}
+				}
+				random_system_planet = {
+					limit = {
+						is_planet_class = pc_molten
+					}
+					enable_special_project = {
+						name = ARK_ARCHAE_OBSERVE_PROJ_3
+						location = this
+						owner = root
+					}
+					save_global_event_target_as = ARK_OBSERVE_CHAIN_DEVICE_3
+
+				}
+			}
+		}
+	}
+}
+ship_event = {#第一个
+	id = ark_archae.21011
+	is_triggered_only = yes
+	title = ark_archae.21011.name
+	desc =  ark_archae.21011.desc
+	picture = GFX_evt_frozen
+	immediate = {
+		owner = {
+
+		}
+	}
+	option = {
+		name = ark_archae.21011.a
+		owner = {
+			add_resource = {
+				physics_research = 1200
+			}
+			add_event_chain_counter = {
+				event_chain = ark_archae_telescope_observe_chain
+				counter = ark_archae_observe_planet_surveyed
+				amount = 1
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_event_chain_counter = {
+							event_chain = "ark_archae_telescope_observe_chain"
+							counter = "ark_archae_observe_planet_surveyed"
+						}
+						NOT = { has_country_flag = ark_archae_tele_observe_system_surved }
+					}
+					country_event = { id = ark_archae.2102 }
+				}
+			}
+		}
+		event_target:ARK_OBSERVE_CHAIN_DEVICE_1 = {
+			add_modifier = {
+				modifier = terraforming_candidate
+			}
+		}
+	}
+}
+ship_event = {#第二个
+	id = ark_archae.21012
+	is_triggered_only = yes
+	title = ark_archae.21011.name
+	desc =  ark_archae.21012.desc
+	picture = GFX_evt_gas_giant
+	immediate = {
+		owner = {
+
+		}
+	}
+	option = {
+		name = ark_archae.21011.a
+		owner = {
+			add_event_chain_counter = {
+				event_chain = ark_archae_telescope_observe_chain
+				counter = ark_archae_observe_planet_surveyed
+				amount = 1
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_event_chain_counter = {
+							event_chain = "ark_archae_telescope_observe_chain"
+							counter = "ark_archae_observe_planet_surveyed"
+						}
+						NOT = { has_country_flag = ark_archae_tele_observe_system_surved }
+					}
+					country_event = { id = ark_archae.2102 }
+				}
+			}
+			add_resource = {
+				physics_research = 1200
+			}
+
+		}
+	}
+}
+ship_event = {#第三个
+	id = ark_archae.21013
+	is_triggered_only = yes
+	title = ark_archae.21011.name
+	desc =  ark_archae.21013.desc
+	picture = GFX_evt_atmospheric_entry
+	immediate = {
+		owner = {
+
+		}
+	}
+	option = {
+		name = ark_archae.21011.a
+		owner = {
+			add_event_chain_counter = {
+				event_chain = ark_archae_telescope_observe_chain
+				counter = ark_archae_observe_planet_surveyed
+				amount = 1
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_event_chain_counter = {
+							event_chain = "ark_archae_telescope_observe_chain"
+							counter = "ark_archae_observe_planet_surveyed"
+						}
+						NOT = { has_country_flag = ark_archae_tele_observe_system_surved }
+					}
+					country_event = { id = ark_archae.2102 }
+				}
+			}
+			add_resource = {
+				physics_research = 1200
+			}
+
+		}
+	}
+}
+country_event = {#调查完毕
+	id = ark_archae.2102
+	is_triggered_only = yes
+	title = ark_archae.2102.name
+	desc =  ark_archae.2102.desc
+	picture = GFX_evt_ancient_databank
+	trigger = {
+		has_completed_event_chain_counter = {
+			event_chain = ark_archae_telescope_observe_chain
+			counter = ark_archae_observe_planet_surveyed
+			
+		}
+		NOT = { has_country_flag = ark_archae_tele_observe_system_surved }
+	}
+	immediate = {
+		set_country_flag = ark_archae_tele_observe_system_surved
+	}
+	after = {
+		end_event_chain = ark_archae_telescope_observe_chain
+	}
+	option = {#放弃
+		name = ark_archae.2001.a
+		custom_tooltip = ark_archae_telescope_tooltip_warning
+		add_resource = {
+			minerals = 2000
+			alloys = 500
+			influence = 50
+		}
+		complete_special_project = {
+			type = ARK_ARCHAE_PROJ_TELESCOPE_IN_MAIN
+		}
+		hidden_effect = {
+			country_event = {
+				id = ark_archae.10
+			}
+			set_country_flag = ark_archae_kerrolli_disabled
+		}
+	}
+	option = {
+		name = ark_archae.2102.b
+		country_event = {
+			id = ark_archae.2103
+			days = 90
+			random = 10
+		}
+		every_owned_planet = {
+			add_modifier = {
+				modifier = pm_ark_unknown_panic
+			}
+		}
+	}
+}
+country_event = {#全盘破译，创建考古
+	id = ark_archae.2103
+	is_triggered_only = yes
+	title = ark_archae.2103.name
+	desc =  ark_archae.2103.desc
+	picture = GFX_evt_archaeological_dig
+	option = {
+		name = ark_archae.2103.a
+		event_target:ARK_PLANET_TERRA = {
+			create_archaeological_site = ark_archae_telescope_a
+		}
+	}
+}
+fleet_event = {
+	id = ark_archae.2104
+	title = ark_archae.2104.name
+	desc =  ark_archae.2104.desc
+	picture = GFX_evt_derelict_interior
+	show_sound = event_wind_ruins
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ark_archae.2104.a
+		small_artifact_reward = yes
+	}
+}
+fleet_event = {
+	id = ark_archae.2105
+	title = ark_archae.2105.name
+	desc =  ark_archae.2105.desc
+	picture = GFX_evt_hidden_door
+	show_sound = event_wind_ruins
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ark_archae.2104.a
+		small_artifact_reward = yes
+	}
+}
+fleet_event = {
+	id = ark_archae.2106
+	title = ark_archae.2106.name
+	desc =  ark_archae.2106.desc
+	picture = GFX_evt_ancient_databank
+	show_sound = event_wind_ruins
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ark_archae.2104.a
+		small_artifact_reward = yes
+	}
+}
+fleet_event = {
+	id = ark_archae.2107
+	title = ark_archae.2107.name
+	desc =  ark_archae.2107.desc
+	picture = GFX_evt_star_chart
+	show_sound = event_wind_ruins
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ark_archae.2107.a
+		medium_artifact_reward = yes
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = ark_archae.2108
+					days = 60
+					random = 15
+				}
+			}
+		}
+	}
+}
+country_event = {#给科技
+	id = ark_archae.2108
+	title = ark_archae.2108.name
+	desc =  ark_archae.2108.desc
+	picture = GFX_evt_star_chart
+	is_triggered_only = yes
+	option = {
+		name = ark_archae.2108.a
+		if = {
+			limit = { 
+				owner = {
+					OR = {
+						has_technology = tech_jump_drive_1
+						has_technology = tech_psi_jump_drive_1
+					}
+				} 
+			}
+			add_resource = {
+				physics_research = 32000
+				mult = trigger:empire_size
+			}
+		}
+		else = {
+			add_tech_progress = {
+				tech = tech_jump_drive_1
+				progress = 0.1
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = ark_archae.2109
+				days = 60
+				random = 15
+			}
+		}
+	}
+}
+country_event = {#添加资源
+	id = ark_archae.2109
+	title = ark_archae.2109.name
+	desc =  ark_archae.2109.desc
+	picture = GFX_evt_star_chart
+	is_triggered_only = yes
+	option = {
+		name = ark_archae.2109.a
+		hidden_effect = {
+			country_event = {
+				id = ark_archae.2110
+				days = 45
+				random = 10
+			}
+		}
+		random_system_within_border = {
+			random_system_planet = {
+				limit = {
+					is_planet_class = pc_frozen
+					# any_fleet_in_orbit = {
+					# 	NOR = {
+					# 		is_ship_class = shipclass_mining_station
+					# 		is_ship_class = shipclass_research_station	
+					# 	}
+					# }
+				}
+				random_list = {
+					6 = { add_deposit = d_minerals_10 }
+					3 = { add_deposit = d_rare_crystals_3 }
+					1 = { add_deposit = d_rare_crystals_5 }
+				}
+			}
+		}
+		random_system_within_border = {
+			random_system_planet = {
+				limit = {
+					is_planet_class = pc_molten
+					# any_fleet_in_orbit = {
+					# 	NOR = {
+					# 		is_ship_class = shipclass_mining_station
+					# 		is_ship_class = shipclass_research_station	
+					# 	}
+					# }
+				}
+				random_list = {
+					8 = { add_deposit = d_minerals_10 }
+					2 = { add_deposit = d_alloys_5 }
+				}
+			}
+		}
+		random_system_within_border = {
+			random_system_planet = {
+				limit = {
+					is_planet_class = pc_gas_giant
+					# any_fleet_in_orbit = {
+					# 	NOR = {
+					# 		is_ship_class = shipclass_mining_station
+					# 		is_ship_class = shipclass_research_station	
+					# 	}
+					# }
+				}
+				random_list = {
+					3 = { add_deposit = d_exotic_gases_2 }
+					2 = { add_deposit = d_exotic_gases_3 }
+					1 = { add_deposit = d_exotic_gases_5 }
+				}
+			}
+		}
+		random_system_within_border = {
+			random_system_planet = {
+				limit = {
+					is_planet_class = pc_barren
+					# any_fleet_in_orbit = {
+					# 	NOR = {
+					# 		is_ship_class = shipclass_mining_station
+					# 		is_ship_class = shipclass_research_station	
+					# 	}
+					# }
+				}
+				add_deposit = d_minerals_10
+				add_deposit = d_alloys_3
+			}
+		}
+		random_system_within_border = {
+			random_system_planet = {
+				limit = {
+					is_planet_class = pc_molten
+					# any_fleet_in_orbit = {
+					# 	NOR = {
+					# 		is_ship_class = shipclass_mining_station
+					# 		is_ship_class = shipclass_research_station	
+					# 	}
+					# }
+				}
+				add_deposit = d_energy_7
+				add_deposit = d_minerals_4
+			}
+		}
+		random_system_within_border = {
+			random_system_planet = {
+				limit = {
+					is_planet_class = pc_toxic
+					# any_fleet_in_orbit = {
+					# 	NOR = {
+					# 		is_ship_class = shipclass_mining_station
+					# 		is_ship_class = shipclass_research_station	
+					# 	}
+					# }
+				}
+				random_list = {
+					3 = { add_deposit = d_exotic_gases_2 }
+					2 = { add_deposit = d_exotic_gases_3 }
+					1 = { add_deposit = d_exotic_gases_5 }
+				}
+			}
+		}
+		random_system_within_border = {
+			random_system_planet = {
+				limit = {
+					is_planet_class = pc_gas_giant
+					# any_fleet_in_orbit = {
+					# 	NOR = {
+					# 		is_ship_class = shipclass_mining_station
+					# 		is_ship_class = shipclass_research_station	
+					# 	}
+					# }
+				}
+				random_list = {
+					3 = { add_deposit = d_hab_mote_2 }
+					2 = { add_deposit = d_hab_mote_3 }
+					1 = { add_deposit = d_hab_mote_5 }
+				}
+			}
+		}
+		random_system_within_border = {
+			random_system_planet = {
+				limit = {
+					is_planet_class = pc_barren
+					# any_fleet_in_orbit = {
+					# 	NOR = {
+					# 		is_ship_class = shipclass_mining_station
+					# 		is_ship_class = shipclass_research_station	
+					# 	}
+					# }
+				}
+				random_list = {
+					3 = { add_deposit = d_minerals_4 }
+					2 = { add_deposit = d_minerals_6 }
+					1 = { add_deposit = d_minerals_8 }
+				}
+			}
+		}
+		random_system_within_border = {
+			random_system_planet = {
+				limit = {
+					is_planet_class = pc_barren
+					# any_fleet_in_orbit = {
+					# 	NOR = {
+					# 		is_ship_class = shipclass_mining_station
+					# 		is_ship_class = shipclass_research_station	
+					# 	}
+					# }
+				}
+				random_list = {
+					3 = { add_deposit = d_minerals_3 }
+					2 = { add_deposit = d_minerals_5 }
+					1 = { add_deposit = d_minerals_7 }
+				}
+			}
+		}
+		random_system_within_border = {
+			random_system_planet = {
+				limit = {
+					is_planet_class = pc_frozen
+					# any_fleet_in_orbit = {
+					# 	NOR = {
+					# 		is_ship_class = shipclass_mining_station
+					# 		is_ship_class = shipclass_research_station	
+					# 	}
+					# }
+				}
+				random_list = {
+					3 = { add_deposit = d_engineering_3 }
+					2 = { add_deposit = d_engineering_6 }
+					1 = { add_deposit = d_engineering_9 }
+				}
+				random_list = {
+					3 = { add_deposit = d_physics_3 }
+					2 = { add_deposit = d_physics_6 }
+					1 = { add_deposit = d_physics_9 }
+				}
+				random_list = {
+					3 = { add_deposit = d_society_3 }
+					2 = { add_deposit = d_society_6 }
+					1 = { add_deposit = d_society_9 }
+				}
+			}
+		}
+	}
+}
+country_event = {#创建星系
+	id = ark_archae.2110
+	title = ark_archae.2110.name
+	desc =  ark_archae.2110.desc
+	picture = GFX_evt_federation_fleet
+	is_triggered_only = yes
+	option = {
+		name = ark_archae.2110.a
+		hidden_effect = {
+			capital_scope = {
+				spawn_system = {
+					initializer = ark_archae_kerrolli_homeworld
+					min_distance >= 20
+					max_distance <= 30
+					min_orientation_angle = 30
+					max_orientation_angle = 90
+					hyperlane = no
+				}
+			}
+		}
+	}
+}
+ship_event = {#第一次进入星系
+	id = ark_archae.2111
+	title = ark_archae.2111.name
+	desc =  ark_archae.2111.desc
+	picture = GFX_evt_federation_fleet
+	is_triggered_only = yes
+	trigger = {
+		from = {
+			has_star_flag = ark_archae_kerrolli_homeworld
+		}
+		fromfrom = {
+			OR = {
+				has_country_flag = arknight_1
+				has_country_flag = arknight_2
+				has_country_flag = arknight_3
+				has_country_flag = arknight_4
+			}
+		}
+	}
+	option = {
+		name = ark_archae.2111.a
+		begin_event_chain = {
+			event_chain = ark_archae_kerrolli_homeworld_chain
+		}
+		hidden_effect = {
+			enable_special_project = {
+				name = ARK_ARCHAE_KER_HOME_PROJ_1 #factory
+				location = event_target:ARK_KER_HOME_1
+				owner = owner
+			}
+			enable_special_project = {
+				name = ARK_ARCHAE_KER_HOME_PROJ_2 #science
+				location = event_target:ARK_KER_HOME_2
+				owner = owner
+			}
+			enable_special_project = {
+				name = ARK_ARCHAE_KER_HOME_PROJ_3 #major
+				location = event_target:ARK_KER_HOME_3
+				owner = owner
+			}
+			enable_special_project = {
+				name = ARK_ARCHAE_KER_HOME_PROJ_4 #gas
+				location = event_target:ARK_KER_HOME_4
+				owner = owner
+			}
+			enable_special_project = {
+				name = ARK_ARCHAE_KER_HOME_PROJ_4a #moon-vacation
+				location = event_target:ARK_KER_HOME_4a
+				owner = owner
+			}
+			enable_special_project = {
+				name = ARK_ARCHAE_KER_HOME_PROJ_4b #telescope
+				location = event_target:ARK_KER_HOME_4b
+				owner = owner
+			}
+			enable_special_project = {
+				name = ARK_ARCHAE_KER_HOME_PROJ_5 #fleet
+				location = event_target:ARK_KER_HOME_5
+				owner = owner
+			}
+			enable_special_project = {
+				name = ARK_ARCHAE_KER_HOME_PROJ_6 #minerals
+				location = event_target:ARK_KER_HOME_6
+				owner = owner
+			}	
+		}
+	}
+}
+ship_event = {#factory1
+	id = ark_archae.21111
+	is_triggered_only = yes
+	title = ark_archae.21111.name
+	desc =  ark_archae.21111.desc
+	picture = GFX_evt_molten
+	option = {
+		name = ark_archae.21111.a
+		owner = {
+			add_resource = {
+				society_research = 3600
+			}
+			add_event_chain_counter = {
+				event_chain = ark_archae_kerrolli_homeworld_chain
+				counter = ark_archae_kerrolli_homeworld_surveyed
+				amount = 1
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_event_chain_counter = {
+							event_chain = "ark_archae_kerrolli_homeworld_chain"
+							counter = "ark_archae_kerrolli_homeworld_surveyed"
+						}
+						NOT = { has_country_flag = ark_archae_tele_ker_system_surved }
+					}
+					country_event = { id = ark_archae.2112 }
+				}
+			}
+		}
+	}
+}
+ship_event = {#science
+	id = ark_archae.21112
+	is_triggered_only = yes
+	title = ark_archae.21112.name
+	desc =  ark_archae.21112.desc
+	picture = GFX_evt_barren_dig_site
+	option = {
+		name = ark_archae.21112.a
+		owner = {
+			add_resource = {
+				society_research = 12000
+				engineering_research = 12000
+				physics_research = 12000
+			}
+			add_event_chain_counter = {
+				event_chain = ark_archae_kerrolli_homeworld_chain
+				counter = ark_archae_kerrolli_homeworld_surveyed
+				amount = 1
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_event_chain_counter = {
+							event_chain = "ark_archae_kerrolli_homeworld_chain"
+							counter = "ark_archae_kerrolli_homeworld_surveyed"
+						}
+						NOT = { has_country_flag = ark_archae_tele_ker_system_surved }
+					}
+					country_event = { id = ark_archae.2112 }
+				}
+			}
+		}
+	}
+}
+ship_event = {#major
+	id = ark_archae.21113
+	is_triggered_only = yes
+	title = ark_archae.21113.name
+	desc =  ark_archae.21113.desc
+	picture = GFX_evt_relic_world
+	option = {
+		name = ark_archae.21113.a
+		owner = {
+			add_resource = {
+				society_research = 10800
+			}
+			add_event_chain_counter = {
+				event_chain = ark_archae_kerrolli_homeworld_chain
+				counter = ark_archae_kerrolli_homeworld_surveyed
+				amount = 1
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_event_chain_counter = {
+							event_chain = "ark_archae_kerrolli_homeworld_chain"
+							counter = "ark_archae_kerrolli_homeworld_surveyed"
+						}
+						NOT = { has_country_flag = ark_archae_tele_ker_system_surved }
+					}
+					country_event = { id = ark_archae.2112 }
+				}
+			}
+		}
+	}
+}
+ship_event = {#gas
+	id = ark_archae.21114
+	is_triggered_only = yes
+	title = ark_archae.21114.name
+	desc =  ark_archae.21114.desc
+	picture = GFX_evt_gas_giant
+	option = {
+		name = ark_archae.21114.a
+		owner = {
+			add_resource = {
+				society_research = 3600
+			}
+			add_event_chain_counter = {
+				event_chain = ark_archae_kerrolli_homeworld_chain
+				counter = ark_archae_kerrolli_homeworld_surveyed
+				amount = 1
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_event_chain_counter = {
+							event_chain = "ark_archae_kerrolli_homeworld_chain"
+							counter = "ark_archae_kerrolli_homeworld_surveyed"
+						}
+						NOT = { has_country_flag = ark_archae_tele_ker_system_surved }
+					}
+					country_event = { id = ark_archae.2112 }
+				}
+			}
+		}
+	}
+}
+ship_event = {#vacation
+	id = ark_archae.21117
+	is_triggered_only = yes
+	title = ark_archae.211141.name
+	desc =  ark_archae.211141.desc
+	picture = GFX_evt_toxic
+	option = {
+		name = ark_archae.211141.a
+		owner = {
+			add_resource = {
+				society_research = 3600
+			}
+			add_event_chain_counter = {
+				event_chain = ark_archae_kerrolli_homeworld_chain
+				counter = ark_archae_kerrolli_homeworld_surveyed
+				amount = 1
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_event_chain_counter = {
+							event_chain = "ark_archae_kerrolli_homeworld_chain"
+							counter = "ark_archae_kerrolli_homeworld_surveyed"
+						}
+						NOT = { has_country_flag = ark_archae_tele_ker_system_surved }
+					}
+					country_event = { id = ark_archae.2112 }
+				}
+			}
+		}
+	}
+}
+ship_event = {#telescope
+	id = ark_archae.21118
+	is_triggered_only = yes
+	title = ark_archae.211142.name
+	desc =  ark_archae.211142.desc
+	picture = GFX_evt_barren_dig_site
+	option = {
+		name = ark_archae.211142.a
+		owner = {
+			add_resource = {
+				engineering_research = 3600
+			}
+			add_event_chain_counter = {
+				event_chain = ark_archae_kerrolli_homeworld_chain
+				counter = ark_archae_kerrolli_homeworld_surveyed
+				amount = 1
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_event_chain_counter = {
+							event_chain = "ark_archae_kerrolli_homeworld_chain"
+							counter = "ark_archae_kerrolli_homeworld_surveyed"
+						}
+						NOT = { has_country_flag = ark_archae_tele_ker_system_surved }
+					}
+					country_event = { id = ark_archae.2112 }
+				}
+			}
+		}
+	}
+}
+ship_event = {#fleet
+	id = ark_archae.21115
+	is_triggered_only = yes
+	title = ark_archae.21115.name
+	desc =  ark_archae.21115.desc
+	picture = GFX_evt_shattered_planet
+	option = {
+		name = ark_archae.21115.a
+		owner = {
+			add_event_chain_counter = {
+				event_chain = ark_archae_kerrolli_homeworld_chain
+				counter = ark_archae_kerrolli_homeworld_surveyed
+				amount = 1
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_event_chain_counter = {
+							event_chain = "ark_archae_kerrolli_homeworld_chain"
+							counter = "ark_archae_kerrolli_homeworld_surveyed"
+						}
+						NOT = { has_country_flag = ark_archae_tele_ker_system_surved }
+					}
+					country_event = { id = ark_archae.2112 }
+				}
+			}
+		}
+	}
+}
+ship_event = {#minerals
+	id = ark_archae.21116
+	is_triggered_only = yes
+	title = ark_archae.21116.name
+	desc =  ark_archae.21116.desc
+	picture = GFX_evt_frozen
+	option = {
+		name = ark_archae.21116.a
+		owner = {
+			add_event_chain_counter = {
+				event_chain = ark_archae_kerrolli_homeworld_chain
+				counter = ark_archae_kerrolli_homeworld_surveyed
+				amount = 1
+			}
+			add_resource = {
+				minerals = 5000
+				rare_crystals = 200
+				alloys = 1000
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_event_chain_counter = {
+							event_chain = "ark_archae_kerrolli_homeworld_chain"
+							counter = "ark_archae_kerrolli_homeworld_surveyed"
+						}
+						NOT = { has_country_flag = ark_archae_tele_ker_system_surved }
+					}
+					country_event = { id = ark_archae.2112 }
+				}
+			}
+		}
+	}
+}
+country_event = {#调查完毕
+	id = ark_archae.2112
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_completed_event_chain_counter = {
+			event_chain = ark_archae_kerrolli_homeworld_chain
+			counter = ark_archae_kerrolli_homeworld_surveyed
+		}
+		NOT = { has_country_flag = ark_archae_tele_ker_system_surved }
+	}
+	immediate = {
+		set_country_flag = ark_archae_tele_ker_system_surved
+	}
+	after = {
+		country_event = {
+			id = ark_archae.2113
+			days = 10
+		}
+		end_event_chain = ark_archae_kerrolli_homeworld_chain
+	}
+}
+country_event = {#结束
+	id = ark_archae.2113
+	is_triggered_only = yes
+	title = ark_archae.2113.name
+	desc =  ark_archae.2113.desc
+	picture = GFX_evt_frozen
+	immediate = {
+		enable_special_project = {
+			name = ARK_ARCHAE_PROJ_TELESCOPE_IN_MAIN
+		}
+	}
+	option = {
+		name = ark_archae.2113.a
+		add_resource = {
+			unity = 36888
+		}
+		complete_special_project = {
+			type = ARK_ARCHAE_PROJ_TELESCOPE_IN_MAIN
+		}
+		hidden_effect = {
+			country_event = {
+				id = ark_archae.10
+				days = 180
+				random = 45
+			}
+		}
+	}
+}
+#################   #######   ########  #######   #######   ####   #######   #################
+#################   ##    ##  ##	    ##    ##  ##    ##   ##   ##         #################
+#################   ##    ##  #####	    #######   #######    ##    ######    #################
+#################   ##    ##  ##	    ##    ##  ##  ###    ##         ##   #################
+#################   #######   ########  #######   ##   ###  ####  #######    #################
+ 
+# country_event = {#飞行器残骸
+# 	id = ark_archae.3000
+# 	is_triggered_only = yes
+# 	title = ark_archae.3000.name
+# 	desc = ark_archae.3000.desc
+# 	picture = GFX_evt_ark_archae_debris_0
+# 	trigger = {
+# 		any_owned_planet = {
+# 			has_planet_flag = planet_terra
+# 		}
+# 	}
+# 	option = {
+# 		name = ark_archae.3000.a
+# 		event_target:ARK_PLANET_TERRA = {
+# 			create_archaeological_site = ark_archae_moist_mysterious_area
+# 		}
+# 		set_country_flag = completed_ark_moist_mysterious_area
+# 	}
+# }

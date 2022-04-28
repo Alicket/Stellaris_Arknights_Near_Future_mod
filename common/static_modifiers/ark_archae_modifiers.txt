@@ -1,0 +1,12 @@
+pm_ark_unknown_panic = {
+	planet_stability_add = -5
+	icon = "gfx/interface/icons/planet_modifiers/pm_burning_settlement.dds"
+	icon_frame = 1
+}
+cm_ark_kerrolli_battle_tech = {
+	ship_fire_rate_mult = 0.10
+	ship_evasion_add = 5
+	ship_base_speed_mult = 0.10
+	icon = "gfx/interface/icons/modifiers/mod_damage_vs_country_type.dds"
+	icon_frame = 1
+}
