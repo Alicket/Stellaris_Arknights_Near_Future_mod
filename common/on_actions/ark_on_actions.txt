@@ -58,3 +58,13 @@ on_leader_spawned = {
 		ark_civic.4		# 骑士精神
 	}
 }
+
+# A pop has finished assembling
+# This = Planet scope
+# From = Country
+# FromFrom = Pop
+on_pop_assembled = {
+	events = {
+		ark_set.51	# 将组建的机器/机械人修改立绘为泰拉小车
+	}
+}

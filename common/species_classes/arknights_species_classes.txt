@@ -18,3 +18,38 @@ Arknight = {
 	graphical_culture = arknights_01
 	move_pop_sound_effect = "moving_pop_confirmation"
 }
+
+ArkRobot = {
+	archetype = ROBOT
+	
+	playable = { has_global_flag = game_started }
+	randomized = no
+	gender = no
+	use_climate_preference = no
+	portrait_modding = yes
+
+	possible = {
+		authority = {
+			OR = {
+				value = auth_city_republic
+				value = auth_city_despotism
+			}
+		}
+	}
+
+	leader_age_min = 2
+	leader_age_max = 10
+
+	custom_portraits = {
+		randomized = { host_has_dlc = "Synthetic Dawn Story Pack" }
+		playable = { host_has_dlc = "Synthetic Dawn Story Pack" }
+		portraits = {
+			"terra_creation"
+		}
+	}
+
+	graphical_culture = arknights_01
+	move_pop_sound_effect = "robot_pops_move"
+
+	resources = {}
+}

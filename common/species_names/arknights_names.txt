@@ -2,10 +2,10 @@
 
 Arknight = {
 	arknights = {
-		name = "terraman"
-		plural = "terramen"
-		home_planet = "terra"
-		home_system = "Tyra"
+		name = terraman
+		plural = terramen
+		home_planet = Terra
+		home_system = Tyra
 		name_list = "ark_01"
 	}
 }

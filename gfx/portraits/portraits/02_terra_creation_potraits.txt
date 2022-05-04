@@ -1,0 +1,78 @@
+portraits = {
+ARK_R_145 = {textureFile = "gfx/models/portraits/Custom/ARK_R_145.dds"}
+ARK_R_285 = {textureFile = "gfx/models/portraits/Custom/ARK_R_285.dds"}
+ARK_R_286 = {textureFile = "gfx/models/portraits/Custom/ARK_R_286.dds"}
+ARK_R_376 = {textureFile = "gfx/models/portraits/Custom/ARK_R_376.dds"}
+ARK_R_424 = {textureFile = "gfx/models/portraits/Custom/ARK_R_424.dds"}
+ARK_R_4000 = {textureFile = "gfx/models/portraits/Custom/ARK_R_4000.dds"}
+}
+
+portrait_groups = {
+	terra_creation = {
+		  default = ARK_R_285
+        		  game_setup = {
+			add = {
+                			portraits = {
+					ARK_R_145
+					ARK_R_285
+					ARK_R_286
+					ARK_R_376
+					ARK_R_424
+					ARK_R_4000
+				}
+			}
+		}
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				portraits = {
+					ARK_R_145
+					ARK_R_285
+					ARK_R_286
+					ARK_R_376
+					ARK_R_424
+					ARK_R_4000
+				}
+			}
+		}
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				portraits = {
+					ARK_R_145
+					ARK_R_285
+					ARK_R_286
+					ARK_R_376
+					ARK_R_424
+					ARK_R_4000
+    				}
+			}
+		}
+		#leader scope
+		leader = { #scientists, generals, admirals, governor
+			add = {
+				portraits = {
+					ARK_R_145
+					ARK_R_285
+					ARK_R_286
+					ARK_R_376
+					ARK_R_424
+					ARK_R_4000
+				}
+			}
+		}	
+		#leader scope 
+		ruler = {
+			add = {
+				portraits = {
+					ARK_R_145
+					ARK_R_285
+					ARK_R_286
+					ARK_R_376
+					ARK_R_424
+					ARK_R_4000
+				}
+			}
+		}
+	}
+}
