@@ -54,62 +54,65 @@ country_event = {#储存event_target,开局提示,on_game_start_country
 		name = ark_archae.0.a
 	}
 }
-country_event = {#Random List
-	id = ark_archae.10
-	is_triggered_only = yes
-	hide_window = yes
-	immediate = {
-		random_list = {
-			1 = { 
-				modifier = { 
-					mult = 0 
-					has_country_flag = completed_ark_moist_mysterious_area 
-				}
-				country_event = { 
-					id = ark_archae.1000 
-					days = 30 
-					random = 10
-				} 
-			}
-			0 = { 
-				modifier = {
-					add = 1
-					has_country_flag = completed_ark_moist_mysterious_area 
-				}
-				modifier = {
-					mult = 0 
-					has_country_flag = completed_ark_archae_telescope
-				}
-				country_event = { 
-					id = ark_archae.2000 
-					days = 30 
-					random = 10
-				} 
-			}
-			# 0 = {
-			# 	modifier = {
-			# 		add = 1
-			# 		has_country_flag = completed_ark_archae_telescope
-			# 		has_country_flag = completed_ark_moist_mysterious_area
-			# 		NOT = {
-			# 			has_country_flag = ark_archae_kerrolli_disabled
-			# 		}
-			# 	}
-			# }
-			0 = {
-				modifier = {
-					add = 1
-					has_country_flag = completed_ark_moist_mysterious_area
-					has_country_flag = completed_ark_archae_telescope
-				}
-				country_event = {
-					id = ark_archae.14
-					days = 30
-				}
-			}
-		}
-	}
-}
+# country_event = {#Random List
+# 	id = ark_archae.10
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	immediate = {
+# 		country_event = {
+# 			id = ark_archae.1000
+# 		}
+# 		# random_list = {
+# 		# 	1 = { 
+# 		# 		modifier = { 
+# 		# 			mult = 0 
+# 		# 			has_country_flag = completed_ark_moist_mysterious_area 
+# 		# 		}
+# 		# 		country_event = { 
+# 		# 			id = ark_archae.1000 
+# 		# 			days = 30 
+# 		# 			random = 10
+# 		# 		} 
+# 		# 	}
+# 		# 	0 = { 
+# 		# 		modifier = {
+# 		# 			add = 1
+# 		# 			has_country_flag = completed_ark_moist_mysterious_area 
+# 		# 		}
+# 		# 		modifier = {
+# 		# 			mult = 0 
+# 		# 			has_country_flag = completed_ark_archae_telescope
+# 		# 		}
+# 		# 		country_event = { 
+# 		# 			id = ark_archae.2000 
+# 		# 			days = 30 
+# 		# 			random = 10
+# 		# 		} 
+# 		# 	}
+# 		# 	# 0 = {
+# 		# 	# 	modifier = {
+# 		# 	# 		add = 1
+# 		# 	# 		has_country_flag = completed_ark_archae_telescope
+# 		# 	# 		has_country_flag = completed_ark_moist_mysterious_area
+# 		# 	# 		NOT = {
+# 		# 	# 			has_country_flag = ark_archae_kerrolli_disabled
+# 		# 	# 		}
+# 		# 	# 	}
+# 		# 	# }
+# 		# 	0 = {
+# 		# 		modifier = {
+# 		# 			add = 1
+# 		# 			has_country_flag = completed_ark_moist_mysterious_area
+# 		# 			has_country_flag = completed_ark_archae_telescope
+# 		# 		}
+# 		# 		country_event = {
+# 		# 			id = ark_archae.14
+# 		# 			days = 30
+# 		# 		}
+# 		# 	}
+# 		# }
+# 	}
+# }
 country_event = {#测试用
 	id = ark_archae.11
 	is_triggered_only = yes
@@ -144,8 +147,8 @@ country_event = {#矿石病治愈后30-90天触发事件
 	after = {
 		hidden_effect = {
 			country_event = {
-				id = ark_archae.10
-				days = 60
+				id = ark_archae.1000      ##############################################################
+				days = 360
 				random = 30
 			}
 		}
@@ -155,6 +158,12 @@ country_event = {#矿石病治愈后30-90天触发事件
 		begin_event_chain = {
 			event_chain = ark_archae_main_chain
 		}
+		add_modifier = {
+			modifier = minus_10_energy_1_food_per_month
+		}
+	}
+	option = {
+		name = ark_archae.000.b
 	}
 }
 planet_event = {#不要地貌改造
@@ -176,20 +185,20 @@ planet_event = {#不要地貌改造
 		remove_planet_flag = planet_terra
 	}
 }
-country_event = {#全部结束
-	id = ark_archae.14
-	is_triggered_only = yes
-	title = ark_archae.00000.title
-	desc = ark_archae.00000.desc
-	picture = GFX_evt_rhodes_island
-	option = {
-		name = ark_archae.00000.a
-		add_resource = {
-			unity = 20000
-			influence = 100
-		}
-	}
-}
+# country_event = {#全部结束
+# 	id = ark_archae.14
+# 	is_triggered_only = yes
+# 	title = ark_archae.00000.title
+# 	desc = ark_archae.00000.desc
+# 	picture = GFX_evt_rhodes_island
+# 	option = {
+# 		name = ark_archae.00000.a
+# 		add_resource = {
+# 			unity = 20000
+# 			influence = 100
+# 		}
+# 	}
+# }
 
 
 ####################   ########    ######   ####   #######  ########  ####################
@@ -403,8 +412,8 @@ country_event = {#结束
 	after = {
 		hidden_effect = {
 			country_event = {
-				id = ark_archae.10
-				days = 180
+				id = ark_archae.2000   ############################################################
+				days = 540
 				random = 45
 			}
 			complete_special_project = {
@@ -494,12 +503,12 @@ country_event = {#进入中枢
 		complete_special_project = {
 			type = ARK_ARCHAE_PROJ_TELESCOPE_IN_MAIN
 		}
-		hidden_effect = {
-			country_event = {
-				id = ark_archae.10
-			}
-			set_country_flag = ark_archae_kerrolli_disabled
-		}
+		# hidden_effect = {
+		# 	 country_event = {
+		# 	 	id = ark_archae.10
+		# 	 }
+		# 	set_country_flag = ark_archae_kerrolli_disabled    ######################################################
+		# }
 	}
 	option = {#继续调查
 		name = ark_archae.2001.b
@@ -782,12 +791,12 @@ country_event = {#调查完毕
 		complete_special_project = {
 			type = ARK_ARCHAE_PROJ_TELESCOPE_IN_MAIN
 		}
-		hidden_effect = {
-			country_event = {
-				id = ark_archae.10
-			}
-			set_country_flag = ark_archae_kerrolli_disabled
-		}
+		# hidden_effect = {
+		# 	country_event = {
+		# 		id = ark_archae.10
+		# 	}
+		# 	set_country_flag = ark_archae_kerrolli_disabled     ################################################
+		# }
 	}
 	option = {
 		name = ark_archae.2102.b
@@ -1515,13 +1524,14 @@ country_event = {#结束
 		add_resource = {
 			unity = 36888
 		}
+		custom_tooltip = ark_archae_tooltip_four_number_bastard
 		complete_special_project = {
 			type = ARK_ARCHAE_PROJ_TELESCOPE_IN_MAIN
 		}
 		hidden_effect = {
 			country_event = {
-				id = ark_archae.10
-				days = 180
+				id = ark_archae.3000
+				days = 1080
 				random = 45
 			}
 		}
@@ -1532,7 +1542,7 @@ country_event = {#结束
 #################   ##    ##  #####	    #######   #######    ##    ######    #################
 #################   ##    ##  ##	    ##    ##  ##  ###    ##         ##   #################
 #################   #######   ########  #######   ##   ###  ####  #######    #################
- 
+
 # country_event = {#飞行器残骸
 # 	id = ark_archae.3000
 # 	is_triggered_only = yes

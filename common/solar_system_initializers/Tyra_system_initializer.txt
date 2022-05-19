@@ -7,7 +7,6 @@
 @moon_max_size = 10
 
 
-###Ì©À­ÐÇÏµ
 	Tyra_system = {
 	name = "NAME_Tyra_system"
 	class = "sc_f"
@@ -53,7 +52,7 @@
 	}
 
 
-	planet = { #Ì©À­
+	planet = { #ÃŒÂ©Ã€Â­
 		name = "NAME_Terra"
 		class = "pc_continental"
 		orbit_distance = 25

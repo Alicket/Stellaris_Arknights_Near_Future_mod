@@ -1,10 +1,10 @@
 ark_archae_kerrolli_homeworld = {
 	class = sc_black_hole
-	name = "Kalkan"
+	name = "Talkan"
 	flags = { ark_archae_kerrolli_homeworld }
 	
 	planet = {
-		name = "NAME_ARK_kerrolli_system"
+		name = "Talkan Vortex"
 		class = pc_black_hole
 		orbit_distance = 0
 		init_effect = {
@@ -345,7 +345,7 @@ ark_archae_kerrolli_homeworld = {
 		}
 	}
 	planet = {
-		name = "NAME_ARK_kerrolli_I_factory"
+		name = "Talkan-I"
 		class = pc_molten
 		orbit_distance = 28
 		orbit_angle = { min = 0 max = 360 }
@@ -358,7 +358,7 @@ ark_archae_kerrolli_homeworld = {
 		}
 	}
 	planet = {
-		name = "NAME_ARK_kerrolli_II_science"
+		name = "Talkan-II"
 		class = pc_barren
 		orbit_distance = 30
 		orbit_angle = { min = 0 max = 360 }
@@ -372,7 +372,7 @@ ark_archae_kerrolli_homeworld = {
 		}
 	}
 	planet = {
-		name = "NAME_ARK_kerrolli_III_major"
+		name = "Tan-oie Major"
 		class = pc_relic
 		orbit_distance = 38
 		orbit_angle = { min = 0 max = 180 }
@@ -386,7 +386,7 @@ ark_archae_kerrolli_homeworld = {
 		}
 	}
 	planet = {
-		name = "NAME_ARK_kerrolli_IV_gas"
+		name = "Talkan-IV"
 		class = pc_gas_giant
 		orbit_distance = 51
 		orbit_angle = { min = 180 max = 360 }
@@ -399,7 +399,7 @@ ark_archae_kerrolli_homeworld = {
 
 		}
 		moon = {
-			name = "NAME_ARK_kerrolli_IVa_vacation"
+			name = "Talkan-IVa"
 			class = pc_toxic
 			orbit_angle = { min = 0 max = 360 }
 			orbit_distance = 17
@@ -412,7 +412,7 @@ ark_archae_kerrolli_homeworld = {
 			}
 		}
 		moon = {
-			name = "NAME_ARK_kerrolli_IVb_telescope"
+			name = "Talkan-IVb"
 			class = pc_barren
 			orbit_angle = { min = 0 max = 360 }
 			orbit_distance = 21
@@ -426,7 +426,7 @@ ark_archae_kerrolli_homeworld = {
 		}
 	}
 	planet = {
-		name = "NAME_ARK_kerrolli_V_fleet"
+		name = "Talkan-V"
 		class = pc_shattered
 		orbit_distance = 60
 		orbit_angle = { min = 0 max = 360 }
@@ -440,7 +440,7 @@ ark_archae_kerrolli_homeworld = {
 		}
 	}
 	planet = {
-		name = "NAME_ARK_kerrolli_VI_minerals"
+		name = "Talkan-VI"
 		class = pc_frozen
 		orbit_distance = 66
 		orbit_angle = { min = 0 max = 360 }

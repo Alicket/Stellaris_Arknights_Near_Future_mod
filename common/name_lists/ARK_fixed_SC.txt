@@ -48,14 +48,6 @@
 		colossus = {
 			"保持距离" "梦游" "陷阱"
 		}
-
-		ark_nearl_dreadnought = {
-			"临光" "耀光" "瑕光"
-		}
-
-		ark_nearl_battleship = {
-			"青金" "白金" "钛金" "陨铁" "玄铁" "锻铁"
-		}
 		
 		transport = {
 			"抹香鲸"
