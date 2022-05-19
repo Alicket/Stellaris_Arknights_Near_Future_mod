@@ -1,0 +1,35 @@
+UPDATE 2022.5.19
+
+<————————————————————————>
+
+Note:
+[1]"\t" means the character [space], used to adjust position of English punctuation. Because in 3.4 Chinese punctuation will play the role of line break in a wrong way, so just ignore them. Use punctuation normally.
+[2]No need to translate annotated lines, because they won't be used in a high probablity lol.
+
+<————————————————————————>
+
+Known errors:
+[1]“明日方舟”(everywhere, first in ark_A_mod_check_l_simp_chinese.yml)referes to "Arknights"
+[2]“寰宇方舟”(In ark_A_mod_check_l_simp_chinese.yml)referes to "[Arknights]The Crusade to Stellaris"
+[3]“源石技艺”(Mainly in components, first in ark_planet_killer_about_l_simp_chinese_A.yml line5)refers to "Originium Art"
+[4]“土著”(ark_planet_killer_about_l_simp_chinese_A.yml line 8-10)refers to "Primitive"
+[5]“开智物种”(ark_planet_killer_about_l_simp_chinese_A.yml line 8-10)refers to "Sapient"——Opposite to 未开智物种Presapient
+[6]“机械星球”(ark_planet_killer_about_l_simp_chinese_A.yml line29)refers to "Machine Planet"
+[7]ARK_events_l_simp_english.yml Line 64 not translated(just copy from above)
+[8]Synced localisation file "Tyra_system_initializer_l_english.yml" has been totally changed, you can copy and paste it directly.
+
+<————————————————————————>
+
+Partly Changed Files:
+Add	[1]ARK_fixed_l_simp_chinese.yml line110-111 "Corrosion"
+Add	[2]ARK_name_lists_l_simp_chinese.yml line30-66
+
+Change	[1]ARK_events_l_simp_chinese.yml line72, replace line71
+Change	[2]ark_planet_killer_about_l_simp_chinese_A.yml line20
+
+<————————————————————————>
+
+Whole File Newly Added:
+[1]ark_archae_l_simp_chinese.yml
+[2]KB_observe_the_aborigines_l_simp_chinese.yml
+[3]KB_why_you_attack_the_aborigines_l_simp_chinese.yml
