@@ -18,7 +18,7 @@ civic_business_union = {
 	modifier = {
 		country_government_civic_points_add = 2
 		country_admin_cap_add = -10
-		empire_size_penalty_mult = 0.5
+		empire_size_penalty_mult = 0.2
 	}
 }
 

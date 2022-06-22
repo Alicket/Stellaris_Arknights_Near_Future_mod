@@ -1,6 +1,11 @@
 ark_archae_main_chain = {
 	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
 	picture = "GFX_evt_archaeological_dig"
+	counter = {
+		ark_archae_tanoie_counter = {
+			max = 4
+		}
+	}
 }
 
 ark_archae_telescope_observe_chain = {

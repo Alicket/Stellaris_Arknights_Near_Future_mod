@@ -1462,7 +1462,7 @@ tech_ark_ship_armor_4a = {
 	tier = 3
 	category = { materials }
 	ai_update_type = all
-	prerequisites = { "tech_originiums_mining" "tech_ark_ship_armor_3" "tech_ship_armor_4a" }
+	prerequisites = { "tech_originiums_mining" "tech_ark_ship_armor_3" "tech_ship_armor_4" }
 	weight = @tier1weight1
 
 	potential = {

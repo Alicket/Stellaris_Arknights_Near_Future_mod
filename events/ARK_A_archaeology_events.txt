@@ -1,18 +1,5 @@
 namespace = ark_archae
 
-#DEBUG
-#a	 		节奏太快
-#	完成	特殊计划一出来直接可以研究，而且都tm没写文案
-#	完成	给的文物太多了
-#	完成	2-3简报间隔时间不到半年
-#a	  		观测者事件链没设时间
-#	完成	开局提示多次触发
-#	完成	观测者调查三个星系没写counter增加，调查数始终为0，更改counter文案
-#	完成	调查装置事件星球选取可能选不到
-#	完成	调查装置的星球名字没取到，环境改造modifier也没法加上去
-
-
-
 ####################  #######    ######    #######  ########  ####################
 ####################  ##    ##  ##    ##  ##        ##        ####################
 ####################  #######   ########   ######   #####     ####################
@@ -410,6 +397,11 @@ country_event = {#结束
 		}
 	}
 	after = {
+		add_event_chain_counter = {
+			event_chain = ark_archae_main_chain
+			counter = ark_archae_tanoie_counter
+			amount = 1
+		}
 		hidden_effect = {
 			country_event = {
 				id = ark_archae.2000   ############################################################
@@ -1237,9 +1229,17 @@ ship_event = {#factory1
 	picture = GFX_evt_molten
 	option = {
 		name = ark_archae.21111.a
+		event_target:ARK_KER_HOME_1 = {
+			random_list = {
+				1 = { add_deposit = d_energy_10 }
+				2 = { add_deposit = d_energy_7 }
+				3 = { add_deposit = d_energy_6 }
+				5 = { add_deposit = d_energy_5 }
+			}
+		}
 		owner = {
 			add_resource = {
-				society_research = 3600
+				society_research = 2000
 			}
 			add_event_chain_counter = {
 				event_chain = ark_archae_kerrolli_homeworld_chain
@@ -1269,11 +1269,16 @@ ship_event = {#science
 	picture = GFX_evt_barren_dig_site
 	option = {
 		name = ark_archae.21112.a
+		event_target:ARK_KER_HOME_1 = {
+			add_deposit = d_society_7
+			add_deposit = d_engineering_7
+			add_deposit = d_physics_7
+		}
 		owner = {
 			add_resource = {
-				society_research = 12000
-				engineering_research = 12000
-				physics_research = 12000
+				society_research = 3600
+				engineering_research = 3600
+				physics_research = 3600
 			}
 			add_event_chain_counter = {
 				event_chain = ark_archae_kerrolli_homeworld_chain
@@ -1305,7 +1310,7 @@ ship_event = {#major
 		name = ark_archae.21113.a
 		owner = {
 			add_resource = {
-				society_research = 10800
+				society_research = 5400
 			}
 			add_event_chain_counter = {
 				event_chain = ark_archae_kerrolli_homeworld_chain
@@ -1335,9 +1340,17 @@ ship_event = {#gas
 	picture = GFX_evt_gas_giant
 	option = {
 		name = ark_archae.21114.a
+		event_target:ARK_KER_HOME_4 = {
+			random_list = {
+				1 = { add_deposit = d_energy_10 }
+				2 = { add_deposit = d_energy_7 }
+				3 = { add_deposit = d_energy_6 }
+				5 = { add_deposit = d_energy_5 }
+			}
+		}
 		owner = {
 			add_resource = {
-				society_research = 3600
+				society_research = 2000
 			}
 			add_event_chain_counter = {
 				event_chain = ark_archae_kerrolli_homeworld_chain
@@ -1367,9 +1380,17 @@ ship_event = {#vacation
 	picture = GFX_evt_toxic
 	option = {
 		name = ark_archae.211141.a
+		event_target:ARK_KER_HOME_4a = {
+			random_list = {
+				1 = { add_deposit = d_exotic_gases_4 }
+				2 = { add_deposit = d_exotic_gases_3 }
+				3 = { add_deposit = d_exotic_gases_2 }
+				5 = { add_deposit = d_exotic_gases_1 }
+			}
+		}
 		owner = {
 			add_resource = {
-				society_research = 3600
+				society_research = 2000
 			}
 			add_event_chain_counter = {
 				event_chain = ark_archae_kerrolli_homeworld_chain
@@ -1399,9 +1420,14 @@ ship_event = {#telescope
 	picture = GFX_evt_barren_dig_site
 	option = {
 		name = ark_archae.211142.a
+		event_target:ARK_KER_HOME_4b = {
+			add_deposit = d_society_5
+			add_deposit = d_engineering_5
+			add_deposit = d_physics_5
+		}
 		owner = {
 			add_resource = {
-				engineering_research = 3600
+				engineering_research = 2000
 			}
 			add_event_chain_counter = {
 				event_chain = ark_archae_kerrolli_homeworld_chain
@@ -1431,6 +1457,20 @@ ship_event = {#fleet
 	picture = GFX_evt_shattered_planet
 	option = {
 		name = ark_archae.21115.a
+		event_target:ARK_KER_HOME_5 = {
+			random_list = {
+				1 = { add_deposit = d_alloys_5 }
+				2 = { add_deposit = d_alloys_4 }
+				3 = { add_deposit = d_alloys_3 }
+				5 = { add_deposit = d_alloys_2 }
+			}
+			random_list = {
+				1 = { add_deposit = d_minerals_6 }
+				2 = { add_deposit = d_minerals_4 }
+				3 = { add_deposit = d_minerals_3 }
+				5 = { add_deposit = d_minerals_2 }
+			}
+		}
 		owner = {
 			add_event_chain_counter = {
 				event_chain = ark_archae_kerrolli_homeworld_chain
@@ -1460,6 +1500,20 @@ ship_event = {#minerals
 	picture = GFX_evt_frozen
 	option = {
 		name = ark_archae.21116.a
+		event_target:ARK_KER_HOME_6 = {
+			random_list = {
+				1 = { add_deposit = d_alloys_5 }
+				2 = { add_deposit = d_alloys_4 }
+				3 = { add_deposit = d_alloys_3 }
+				5 = { add_deposit = d_alloys_2 }
+			}
+			random_list = {
+				1 = { add_deposit = d_minerals_6 }
+				2 = { add_deposit = d_minerals_4 }
+				3 = { add_deposit = d_minerals_3 }
+				5 = { add_deposit = d_minerals_2 }
+			}
+		}
 		owner = {
 			add_event_chain_counter = {
 				event_chain = ark_archae_kerrolli_homeworld_chain
@@ -1531,34 +1585,195 @@ country_event = {#结束
 		hidden_effect = {
 			country_event = {
 				id = ark_archae.3000
+				
 				days = 1080
 				random = 45
 			}
 		}
+		add_event_chain_counter = {
+			event_chain = ark_archae_main_chain
+			counter = ark_archae_tanoie_counter
+			amount = 1
+		}
+	}
+}  
+#==========================================================================================================#
+
+##    ##  ###   ##  #######   ########  #######    ######   #######    ######   ##    ##  ###   ##  ####### 
+##    ##  ####  ##  ##    ##  ##        ##    ##  ###       ##    ##  ##    ##  ##    ##  ####  ##  ##    ##
+##    ##  ## ## ##  ##    ##  ######    #######   ##   ###  #######   ##    ##  ##    ##  ## ## ##  ##    ##
+##    ##  ##  ####  ##    ##  ##        ##   ##   ###   ##  ##   ##   ##    ##  ##    ##  ##  ####  ##    ##
+ ######   ##   ###  #######   ########  ##    ##   ######   ##    ##   ######    ######   ##   ###  ####### 
+
+#==========================================================================================================#
+
+country_event = {#地下
+	id = ark_archae.3000
+	is_triggered_only = yes
+	title = ark_archae.3000.name
+	desc = ark_archae.3000.desc
+	picture = GFX_evt_arid
+	show_sound = event_wind_ruins
+
+	trigger = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4	
+		}
+	}
+	option = {
+		name = ark_archae.3000.a
+		if = {
+			limit = { num_owned_planets > 1 }
+			random_owned_planet = {
+				limit = {
+					NOT = {
+						has_planet_flag = planet_terra
+					}
+				}
+				create_archaeological_site = ark_archae_underground
+				save_global_event_target_as = ark_archae_underground
+			}
+		}
+		if = {
+			limit = { num_owned_planets = 1 }
+			random_owned_planet = {
+				create_archaeological_site = ark_archae_underground
+			}
+		}
+		set_country_flag = completed_ark_archae_underground
 	}
 }
-#################   #######   ########  #######   #######   ####   #######   #################
-#################   ##    ##  ##	    ##    ##  ##    ##   ##   ##         #################
-#################   ##    ##  #####	    #######   #######    ##    ######    #################
-#################   ##    ##  ##	    ##    ##  ##  ###    ##         ##   #################
-#################   #######   ########  #######   ##   ###  ####  #######    #################
+fleet_event = {
+	id = ark_archae.3001
+	title = ark_archae.3001.name
+	desc = ark_archae.3001.desc
+	picture = GFX_evt_ark_sargon
+	show_sound = event_wind_ruins
+	location = from
 
-# country_event = {#飞行器残骸
-# 	id = ark_archae.3000
-# 	is_triggered_only = yes
-# 	title = ark_archae.3000.name
-# 	desc = ark_archae.3000.desc
-# 	picture = GFX_evt_ark_archae_debris_0
-# 	trigger = {
-# 		any_owned_planet = {
-# 			has_planet_flag = planet_terra
-# 		}
-# 	}
-# 	option = {
-# 		name = ark_archae.3000.a
-# 		event_target:ARK_PLANET_TERRA = {
-# 			create_archaeological_site = ark_archae_moist_mysterious_area
-# 		}
-# 		set_country_flag = completed_ark_moist_mysterious_area
-# 	}
-# }
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ark_archae.3001.a
+		owner = {
+			add_resource = {
+				society_research = 1200
+			}
+		}
+	}
+}
+fleet_event = {
+	id = ark_archae.3002
+	title = ark_archae.3002.name
+	desc = ark_archae.3002.desc
+	picture = GFX_evt_ark_rainfrost_village_2
+	location = from
+	show_sound = event_dig_site
+	archaeology = yes
+
+	is_triggered_only = yes
+	option = {
+		name = ark_archae.3002.a
+		owner = {
+			add_resource = {
+				society_research = 1200
+			}
+		}
+	}
+}
+fleet_event = {
+	id = ark_archae.3003
+	title = ark_archae.3003.name
+	desc = ark_archae.3003.desc
+	picture = GFX_evt_ark_dark_rainfrost
+	location = from
+	show_sound = event_metal_fatigue
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ark_archae.3003.a
+		owner = {
+			add_resource = {
+				engineering_research = 3600
+			}
+		}
+	}
+}
+fleet_event = {
+	id = ark_archae.3004
+	title = ark_archae.3004.name
+	desc = ark_archae.3004.desc
+	picture = GFX_evt_discovered_hidden_door
+	location = from
+	show_sound = event_power_down
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ark_archae.3004.a
+		small_artifact_reward = yes
+		owner = {
+			add_resource = {
+				society_research = 3600
+			}
+		}
+	}
+}
+fleet_event = {
+	id = ark_archae.3005
+	title = ark_archae.3005.name
+	desc = ark_archae.3005.desc
+	picture = GFX_evt_derelict_interior
+	location = from
+	show_sound = event_laboratory_sound
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ark_archae.3005.a
+		small_artifact_reward = yes
+		owner = {
+			hidden_effect = {
+				country_event = {
+					id = ark_archae.3006
+					days = 1
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = ark_archae.3006
+	is_triggered_only = yes
+	title = ark_archae.3006.name
+	desc = ark_archae.3006.desc
+	picture = GFX_evt_ark_lapplandZ
+	show_sound = event_activating_unknown_technology
+
+	trigger = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4	
+		}
+	}
+	option = {
+		name = ark_archae.3000.a
+		add_resource = {
+			originiums = 648
+			multipole_nanosheets = 128
+			d32_steels = 128
+		}
+	}
+}

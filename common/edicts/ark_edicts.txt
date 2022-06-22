@@ -239,7 +239,7 @@ multipole_nanosheets_efficient_building = {
 
 # 萨卡兹征兵体系
 sarkaz_conscription_system = {
-	length = @EdictPerpetual
+	length = @EdictDuration
 	icon = "GFX_edict_type_policy"
 	resources = {
 		category = edicts

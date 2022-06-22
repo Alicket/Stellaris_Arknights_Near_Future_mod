@@ -120,3 +120,67 @@ ark_archae_telescope_a = {
 		}
 	}
 }
+
+ark_archae_underground = {
+	desc = ark_archae_underground_desc
+	picture = GFX_evt_arid
+	stages = 4
+	max_instances = 1
+	allow = {
+		is_ship_class = shipclass_science_ship
+		exists = leader
+		hidden_trigger = {
+			owner = {
+				OR = {
+					has_country_flag = arknight_1
+					has_country_flag = arknight_2
+					has_country_flag = arknight_3
+					has_country_flag = arknight_4
+				}
+			}
+		}
+	}
+	visible = {
+		default_site_visible_trigger = yes
+		owner = {
+			OR = {
+				has_country_flag = arknight_1
+				has_country_flag = arknight_2
+				has_country_flag = arknight_3
+				has_country_flag = arknight_4
+			}
+		}
+	}
+
+	stage = {
+		difficulty = 4
+		icon = GFX_archaeology_runes_F1
+		event = ark_archae.3001
+	}
+	stage = {
+		difficulty = 4
+		icon = GFX_archaeology_runes_F2
+		event = ark_archae.3002
+	}
+	stage = {
+		difficulty = 5
+		icon = GFX_archaeology_runes_F3
+		event = ark_archae.3003
+	}
+	stage = {
+		difficulty = 5
+		icon = GFX_archaeology_runes_F3
+		event = ark_archae.3004
+	}
+	stage = {
+		difficulty = 6
+		icon = GFX_archaeology_runes_F3
+		event = ark_archae.3005
+	}
+
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events }
+		}
+	}
+}

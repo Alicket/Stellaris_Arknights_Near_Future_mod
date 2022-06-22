@@ -1,7 +1,6 @@
 #泰拉联合世界
 ARK_country_1={
-	key="arknight1"
-	name="arknight1"
+	name="EMPIRE_DESIGN_arknight1"
 	adjective="PRESCRIPTED_adjective_arknight1"
 	spawn_enabled = yes
 	ignore_portrait_duplication=no
@@ -74,8 +73,7 @@ ARK_country_1={
 
 #泰拉秩序
 ARK_country_2={
-	key="arknight2"
-	name="arknight2"
+	name="EMPIRE_DESIGN_arknight2"
 	adjective="PRESCRIPTED_adjective_arknight2"
 	spawn_enabled = no
 	ignore_portrait_duplication=no

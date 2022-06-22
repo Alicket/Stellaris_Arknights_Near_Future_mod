@@ -39,4 +39,8 @@ SpriteTypes = {
 		name = "GFX_evt_ark_archae_telescope"
 		texturefile = "gfx/event_pictures/ark_archae_telescope.dds"
 	}
+	SpriteType = {
+		name = "GFX_evt_ark_lapplandZ"
+		texturefile = "gfx/event_pictures/lapplandZ.dds"
+	}
 }

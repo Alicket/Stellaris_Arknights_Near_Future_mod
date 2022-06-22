@@ -355,6 +355,7 @@ ark_archae_kerrolli_homeworld = {
 			prevent_anomaly = yes
 			save_global_event_target_as = ARK_KER_HOME_1
 			clear_deposits = yes
+
 		}
 	}
 	planet = {
@@ -369,6 +370,7 @@ ark_archae_kerrolli_homeworld = {
 			save_global_event_target_as = ARK_KER_HOME_2
 			clear_deposits = yes
 
+
 		}
 	}
 	planet = {
@@ -382,6 +384,7 @@ ark_archae_kerrolli_homeworld = {
 			prevent_anomaly = yes
 			save_global_event_target_as = ARK_KER_HOME_3
 			clear_deposits = yes
+			relic_world_deposits = yes
 
 		}
 	}

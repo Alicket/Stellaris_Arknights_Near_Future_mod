@@ -5,12 +5,12 @@
 
 		generic = {
 			"Bubble" "Phantom" "Axe" "Beauty" "Fantasy Dream" "Food" "Magic" "Childhood" "Ray" "Broken Shell" "Promise" "Payment" "Unique" "Sunset" "Thai Dream"
-"Aura" "Disaster" "Cost" "Innocent Presumption" "Falling Objects" "No Commitment" "Sickness" "Crack" "Dusk" "Don't Panic" "Take What You Need" "The Lights Will Turn Off"
+"Aura" "Disaster" "Cost" "Innocent Presumption" "Falling Objects" "No Commitment" "Sickness" "Crack" "Don't Panic" "Take What You Need" "The Lights Will Turn Off"
 		}
 
 
 		corvette = {
-			"Lost everything" "Bells ringing" "Sinking to the bottom" "Light and shadow in the mirror" "Flame swaying" "Drama loop" "Fate destined" "Never return" "Do not ask about home" "From the beginning to the end" "Like the mystery" "Give and take", "melody still", "dream come true"
+			"Lost everything" "Bells ringing" "Sinking to the bottom" "Light and shadow in the mirror" "Flame swaying" "Drama loop" "Fate destined" "Never return" "Do not ask about home" "From the beginning to the end" "Like the mystery" "Give and take" "melody still" "dream come true"
 		}
 		
 		constructor = {
@@ -41,11 +41,11 @@
 		}
 
 		titan = {
-			"Crystal Age" "Wise Action" "Cause and Effect Cycle" "Ning to Die"
+			"Crystal Age" "Wise Action" "Cause and Effect Cycle" "Die Game"
 		}
 
 		colossus = {
-			"Keep the distance" "Sleepwalk" "Trap"
+			"Dusk" "Vocano" "Blast"
 		}
 		
 		transport = {
@@ -63,9 +63,9 @@
 
 	fleet_names = {
 		random_names = {
-			"Terra United Fleet" "Glory Knights Fleet" "Royal Guards Fleet" "SWEEP Secret Service Fleet" "Hospital Knights Fleet"
+			"Terra United Fleet" "Glory Knights Fleet" "Royal Guards Fleet" "SWEEP Secret Service Fleet" "Hospital Knights Fleet" "Aigo Assult Fleet" "Rim-Billton Guard Fleet"
 		}
-		sequential_name = "Fleet %C%"
+		sequential_name = "Terra Expeditionary Fleet %C%"
 	}
 	
 	army_names = {

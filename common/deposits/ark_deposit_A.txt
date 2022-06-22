@@ -2,8 +2,8 @@ d_ark_frozen_planet_deposit = {
 	resources = {
 		category = orbital_mining_deposits
 		produces = {
-			originiums = 1.333
-			rare_crystals = 5
+			originiums = 1
+			rare_crystals = 3
 		}
 	}
 	station = shipclass_mining_station
