@@ -406,14 +406,6 @@ ARK500 = {textureFile = "gfx/models/portraits/Custom/ARK500.dds"}
 ARK501 = {textureFile = "gfx/models/portraits/Custom/ARK501.dds"}
 ARK502 = {textureFile = "gfx/models/portraits/Custom/ARK502.dds"}
 ARK503 = {textureFile = "gfx/models/portraits/Custom/ARK503.dds"}
-ARK504 = {textureFile = "gfx/models/portraits/Custom/ARK504.dds"}
-ARK505 = {textureFile = "gfx/models/portraits/Custom/ARK505.dds"}
-ARK506 = {textureFile = "gfx/models/portraits/Custom/ARK506.dds"}
-ARK507 = {textureFile = "gfx/models/portraits/Custom/ARK507.dds"}
-ARK508 = {textureFile = "gfx/models/portraits/Custom/ARK508.dds"}
-ARK509 = {textureFile = "gfx/models/portraits/Custom/ARK509.dds"}
-ARK510 = {textureFile = "gfx/models/portraits/Custom/ARK510.dds"}
-ARK511 = {textureFile = "gfx/models/portraits/Custom/ARK511.dds"}
 ARK_npc_021 = {textureFile = "gfx/models/portraits/Custom/ARK_npc_021.dds"}
 ARK_npc_022 = {textureFile = "gfx/models/portraits/Custom/ARK_npc_022.dds"}
 ARK_npc_032 = {textureFile = "gfx/models/portraits/Custom/ARK_npc_032.dds"}
@@ -461,9 +453,6 @@ portrait_groups = {
 					}
 				}
             	portraits = {
-					ARK001
-					ARK001_R
-					ARK001_W
 					ARK009
 					ARK131
 					ARK131_S
@@ -1220,7 +1209,7 @@ portrait_groups = {
 				}
 			}
 			add = {	# 性别不明
-				portraits = {
+				portraits = {	# 没有博士
 					ARK159	# 断罪者
 				}
 			}
@@ -1240,6 +1229,7 @@ portrait_groups = {
 					ARK003
 					ARK010
 					ARK017
+					ARK1001
 					ARK101
 					ARK1011
 					ARK1012
