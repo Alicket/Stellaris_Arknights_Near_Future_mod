@@ -1,7 +1,6 @@
 Arknight = {
 	archetype = BIOLOGICAL
 	randomized = yes
-	gender = no
 	possible = {
 		authority = {
 			OR = {
