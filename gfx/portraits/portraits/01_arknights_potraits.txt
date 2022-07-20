@@ -7,6 +7,7 @@ ARK002_1 = {textureFile = "gfx/models/portraits/Custom/ARK002_1.dds"}
 ARK002_S = {textureFile = "gfx/models/portraits/Custom/ARK002_S.dds"}
 ARK003 = {textureFile = "gfx/models/portraits/Custom/ARK003.dds"}
 ARK003_S = {textureFile = "gfx/models/portraits/Custom/ARK003_S.dds"}
+ARK007 = {textureFile = "gfx/models/portraits/Custom/ARK007.dds"}
 ARK009 = {textureFile = "gfx/models/portraits/Custom/ARK009.dds"}
 ARK010 = {textureFile = "gfx/models/portraits/Custom/ARK010.dds"}
 ARK010_S = {textureFile = "gfx/models/portraits/Custom/ARK010_S.dds"}
@@ -540,6 +541,7 @@ portrait_groups = {
 					ARK002_S
 					ARK003
 					ARK003_S
+					ARK007
 					ARK010
 					ARK010_S
 					ARK017
@@ -1227,6 +1229,7 @@ portrait_groups = {
 					ARK002
 					ARK002_1
 					ARK003
+					ARK007
 					ARK010
 					ARK017
 					ARK1001
