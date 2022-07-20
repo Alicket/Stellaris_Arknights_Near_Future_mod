@@ -1122,7 +1122,7 @@ country_event = {
 	diplomatic = yes
 	
 	picture_event_data = {
-		portrait = ARKS128
+		portrait = ARK128
 		planet_background = root.owner
 		room = personality_hegemonic_imperialists_room
 	}
@@ -1214,7 +1214,7 @@ country_event = {
 	diplomatic = yes
 	
 	picture_event_data = {
-		portrait = ARKS128
+		portrait = ARK128
 		planet_background = root.owner
 		room = personality_hegemonic_imperialists_room
 	}
@@ -1430,7 +1430,7 @@ country_event = {
 	diplomatic = yes
 	
 	picture_event_data = {
-		portrait = ARKS128
+		portrait = ARK128
 		planet_background = root.owner
 		room = personality_hegemonic_imperialists_room
 	}
@@ -1497,7 +1497,7 @@ country_event = {
 	diplomatic = yes
 	
 	picture_event_data = {
-		portrait = ARKS128
+		portrait = ARK128
 		planet_background = root.owner
 		room = personality_hegemonic_imperialists_room
 	}

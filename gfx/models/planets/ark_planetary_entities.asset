@@ -73,12 +73,12 @@ entity = {
 	}
 	#
 	##pole texture override
-	#meshsettings = {
-	#name = "poles"
-	#texture_diffuse = "desert_03_diffuse.dds"
-	#texture_normal = "desert_03_normal.dds"
-	#texture_specular = "desert_03_spec.dds"
-	#}
+	meshsettings = {
+	name = "poles"
+	texture_diffuse = "desert_03_diffuse.dds"
+	texture_normal = "desert_03_normal.dds"
+	texture_specular = "desert_03_spec.dds"
+	}
 	locator = {
 		name = locator_aurora
 		position = {
