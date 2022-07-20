@@ -17,8 +17,7 @@ civic_business_union = {
 	random_weight = { base = 0 }
 	modifier = {
 		country_government_civic_points_add = 2
-		country_admin_cap_add = -10
-		empire_size_penalty_mult = 0.2
+		empire_size_penalty_mult = 0.25
 	}
 }
 
@@ -116,6 +115,7 @@ civic_industry_manufacturers = {
 	random_weight = { base = 0 }
 	modifier = {
 		planet_jobs_alloys_produces_mult = 0.1
+		planet_building_build_speed_mult = 0.1
 	}
 }
 
@@ -134,6 +134,7 @@ civic_circulation_business = {
 	random_weight = { base = 0 }
 	modifier = {
 		planet_jobs_consumer_goods_produces_mult = 0.1
+		planet_amenities_add = 10
 	}
 }
 
@@ -155,7 +156,8 @@ civic_security_services = {
 	}
 	random_weight = { base = 0 }
 	modifier = {
-		planet_stability_add = 5
+		intel_decryption_add = 2
+		intel_encryption_add = 2
 		planet_crime_add = -5
 	}
 }
@@ -212,7 +214,7 @@ civic_chivalry = {
 	random_weight = { base = 0 }
 	modifier = {
 		country_unity_produces_mult = 0.05
-		ship_fire_rate_mult = 0.05
+		ship_weapon_damage = 0.05
 		army_damage_mult = 0.1
 	}
 }
