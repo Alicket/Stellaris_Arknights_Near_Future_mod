@@ -85,7 +85,7 @@ country_event = {
 				limit = {
 					has_leader_flag = ark_leader_chen
 				}
-				change_leader_portrait = ARKS010
+				change_leader_portrait = ARK010
 			}
 				every_owned_leader = {	# 可露希尔
 				limit = {
@@ -97,31 +97,31 @@ country_event = {
 				limit = {
 					has_leader_flag = ark_leader_silence
 				}
-				change_leader_portrait = ARKS108
+				change_leader_portrait = ARK108
 			}
 			every_owned_leader = {	# 温蒂
 				limit = {
 					has_leader_flag = ark_leader_weedy
 				}
-				change_leader_portrait = ARKS400
+				change_leader_portrait = ARK400
 			}
 			every_owned_leader = {	# 梅尔
 				limit = {
 					has_leader_flag = ark_leader_mayer
 				}
-				change_leader_portrait = ARKS242
+				change_leader_portrait = ARK242
 			}
 			every_owned_leader = {	# 雪雉
 				limit = {
 					has_leader_flag = ark_leader_snowsant
 				}
-				change_leader_portrait = ARKS383
+				change_leader_portrait = ARK383
 			}
 			every_owned_leader = {	# 麦哲伦
 				limit = {
 					has_leader_flag = ark_leader_magallan
 				}
-				change_leader_portrait = ARKS248
+				change_leader_portrait = ARK248
 			}
 		}
 	}

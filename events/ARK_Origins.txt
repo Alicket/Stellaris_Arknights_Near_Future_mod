@@ -57,20 +57,6 @@ country_event = {
 				save_event_target_as = ark_robot
 			}
 		}
-		create_leader = {
-			class = admiral
-			species = event_target:ark_robot
-			name = "NAME_Dumbness_Infinite"	# 无言infinite
-			skill = 1
-			set_age = 5
-			traits = {
-			}
-			effect = {
-				change_leader_portrait = EGG001
-				set_leader_flag = ark_leader_dumbness_infinite
-				save_event_target_as = leader_dumbness_infinite
-			}
-		}
 		capital_scope.solar_system = {
 			random_fleet_in_system = {
 				limit = { has_fleet_flag = ursus_fleet_flag }
@@ -96,7 +82,7 @@ country_event = {
 						trait = leader_trait_oripathy # 源石病
 					}
 					effect = {
-						change_leader_portrait = ARKS010
+						change_leader_portrait = ARK010
 						set_leader_flag = ark_leader_chen
 						save_event_target_as = leader_chen
 					}
@@ -140,7 +126,7 @@ country_event = {
 						trait = leader_trait_oripathy # 源石病
 					}
 					effect = {
-						change_leader_portrait = ARKS108
+						change_leader_portrait = ARK108
 						set_leader_flag = ark_leader_silence
 						save_event_target_as = leader_silence
 					}
@@ -161,7 +147,7 @@ country_event = {
 						trait = leader_trait_expertise_propulsion # 专长：推进力学
 					}
 					effect = {
-						change_leader_portrait = ARKS400
+						change_leader_portrait = ARK400
 						set_leader_flag = ark_leader_weedy
 						save_event_target_as = leader_weedy
 					}
@@ -180,7 +166,7 @@ country_event = {
 						trait = leader_trait_expertise_industry # 专长：工业
 					}
 					effect = {
-						change_leader_portrait = ARKS242
+						change_leader_portrait = ARK242
 						set_leader_flag = ark_leader_mayer
 						save_event_target_as = leader_mayer
 					}
@@ -199,7 +185,7 @@ country_event = {
 						trait = leader_trait_expertise_industry # 专长：工业
 					}
 					effect = {
-						change_leader_portrait = ARKS383
+						change_leader_portrait = ARK383
 						set_leader_flag = ark_leader_snowsant
 						save_event_target_as = leader_snowsant
 					}
@@ -220,7 +206,7 @@ country_event = {
 						trait = leader_trait_archaeologist # 考古学家
 					}
 					effect = {
-						change_leader_portrait = ARKS248
+						change_leader_portrait = ARK248
 						set_leader_flag = ark_leader_magallan
 						save_event_target_as = leader_magallan
 					}
