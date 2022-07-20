@@ -19,7 +19,6 @@ country_event = {
 			ICON_FILE = flag_victoria
 			COUNTRY_NAME = NAME_Victoria
 			FLEET_NAME = NAME_Victoria_fleet
-			NUM_SHIPS = 2
 			DISTANCE = 180
 			ANGLE = 45
 		}
@@ -28,7 +27,6 @@ country_event = {
 			COUNTRY_NAME = NAME_Ursus
 			FLEET_NAME = NAME_Ursus_fleet
 			FLEET_FLAG = ursus_fleet_flag
-			NUM_SHIPS = 2
 			DISTANCE = 200
 			ANGLE = 105
 		}
@@ -36,7 +34,6 @@ country_event = {
 			ICON_FILE = flag_columbia
 			COUNTRY_NAME = NAME_Columbia
 			FLEET_NAME = NAME_Columbia_fleet
-			NUM_SHIPS = 3
 			DISTANCE = 150
 			ANGLE = 250
 		}
