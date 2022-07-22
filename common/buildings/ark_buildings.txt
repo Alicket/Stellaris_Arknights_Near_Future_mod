@@ -77,7 +77,7 @@ building_ark_hospital1 = {
 	
 	planet_modifier = {
 		planet_jobs_society_research_produces_mult = 0.3
-		pop_growth_speed = 0.3
+		pop_growth_speed = 0.2 #0.3→0.2
 		planet_amenities_add = 10
 		job_researcher_add = 1
 		job_healthcare_add = 1
@@ -129,9 +129,10 @@ building_ark_hospital2 = {
 	}
 	
 	planet_modifier = {
-		pop_growth_speed = 0.5
+		pop_growth_speed = 0.2 #0.5→0.2
+		job_healthcare_per_pop = 0.05 #new 每20人+1
 		planet_amenities_add = 10
-		job_healthcare_add = 3
+		job_healthcare_add = 2 #3→2
 	}
 
 	resources = {
@@ -175,8 +176,11 @@ building_ark_hospital3 = {
 	}
 	
 	planet_modifier = {
-		planet_jobs_society_research_produces_mult = 0.5
+		#planet_jobs_society_research_produces_mult = 0.3 #删掉
+		pop_growth_speed = 0.2 #new
+		job_researcher_per_pop = 0.05 #new 每20人+1
 		planet_amenities_add = 10
+		job_researcher_add = 2 #new
 	}
 
 	triggered_planet_modifier = {
