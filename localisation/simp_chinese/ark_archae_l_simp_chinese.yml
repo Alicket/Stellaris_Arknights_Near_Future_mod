@@ -208,7 +208,9 @@ ark_archae.2113.desc:0 "位于Tan-oie Major的调查小队找到了数据中心,
 ark_archae.2113.a:0 "该死的家伙！"
 ark_archae_tooltip_four_number_bastard:0 "那位叫什么来着?\t\t名字里好像有§R几个数字§!,\t\t记不太清了.\t\t"
 
-#地下
+
+
+#地下UNDERGROUND
 
 # ark_archae_underground:0 "$ark_archae.3001.name$"
 # ark_archae_underground_desc:0 "$ark_archae.3000.desc$"
@@ -231,7 +233,9 @@ ark_archae_tooltip_four_number_bastard:0 "那位叫什么来着?\t\t名字里好
 # ark_archae.3005.desc:0 "科学家们尽力抢救了剩下的数据并根据之前的研究结果很快破译出了文件的内容，现已传输至母星。"
 # ark_archae.3005.a:0 "确认"
 
+
+
 #lol
 ark_archae.3006.name:0 "大家多多催更"
-ark_archae.3006.desc:0 "由于人手不足等种种原因这个事件还没被做完就不得不放出来了，准确来讲这还是个半成品（指和源石没有半毛钱关系），所以暂时没有后文，前文也有待补充。将来本先驱者事件链将会添加更多随机事件以及更为完善的触发方式和故事线，以及最重要的后续——一个看起来像是天灾的中期危机（因为会很简单）。欢迎大家加群提供文案和脑洞，发挥想象为上天的泰拉人补充你自己的设定！"
+ark_archae.3006.desc:0 "由于人手不足等种种原因这个事件还没被做完就不得不放出来了，准确来讲这还是个半成品（指和源石没有半毛钱关系），所以暂时没有后文，前文也有待补充。将来本先驱者事件链将会添加更多随机事件以及更为完善的触发方式和故事线。欢迎大家加群提供文案和脑洞，发挥想象为上天的泰拉人补充你自己的设定！"
 ark_archae.3006.a:0 "啊这" #wtf

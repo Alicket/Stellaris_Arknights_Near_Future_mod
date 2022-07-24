@@ -1,9 +1,10 @@
-# UPDATE 2022.5.19
+# UPDATE 2022.7.24
 
 
 # Note:
 # [1]"\t" means the character [space], used to adjust position of English punctuation. Because in 3.4 Chinese punctuation will play the role of line break in a wrong way, so just ignore them. Use punctuation normally.Use Ctrl-F to replace all of "\t" with null.
 # [2]No need to translate annotated lines, because they won't be used in a high probablity lol.
+# [3]To [2], all contents below "UNDERGROUND" in ark_archae_l_simp_chinese.yml were annotated, no need to translate either.
 
 
 # Known errors:
@@ -24,10 +25,8 @@
 
 # Change
 # [1]ARK_events_l_simp_chinese.yml line72, replace line71
-# [2]ark_planet_killer_about_l_simp_chinese_A.yml line20
+# [2]ark_planet_killer_about_l_simp_chinese_A.yml line20/21
 
 
 # Whole File Newly Added:
 # [1]ark_archae_l_simp_chinese.yml
-# [2]KB_observe_the_aborigines_l_simp_chinese.yml
-# [3]KB_why_you_attack_the_aborigines_l_simp_chinese.yml
