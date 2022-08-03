@@ -12,7 +12,7 @@ on_game_start_country = {
 		ark_game_start.3		# 询问是否扮演明日方舟国家
 		ark_origins.0		# 起源效果（明日方舟）
 		ark_civic.1		# 商业联合（第一个国民理念）
-		ark_archae.0	#考古事件
+		ark_archae.1	#考古事件
 	}
 }
 

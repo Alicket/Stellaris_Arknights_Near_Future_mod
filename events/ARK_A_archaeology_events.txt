@@ -8,7 +8,7 @@ namespace = ark_archae
 
 
 country_event = {#储存event_target,开局提示,on_game_start_country
-	id = ark_archae.0
+	id = ark_archae.1
 	is_triggered_only = yes
 	title = ark_archae.0.title
 	desc = ark_archae.0.desc
@@ -1607,151 +1607,151 @@ country_event = {#结束
 
 #==========================================================================================================#
 
-# country_event = {#地下
-# 	id = ark_archae.3000
-# 	is_triggered_only = yes
-# 	title = ark_archae.3000.name
-# 	desc = ark_archae.3000.desc
-# 	picture = GFX_evt_arid
-# 	show_sound = event_wind_ruins
+country_event = {#地下
+	id = ark_archae.3000
+	is_triggered_only = yes
+	title = ark_archae.3000.name
+	desc = ark_archae.3000.desc
+	picture = GFX_evt_arid
+	show_sound = event_wind_ruins
 
-# 	trigger = {
-# 		OR = {
-# 			has_country_flag = arknight_1
-# 			has_country_flag = arknight_2
-# 			has_country_flag = arknight_3
-# 			has_country_flag = arknight_4	
-# 		}
-# 	}
-# 	option = {
-# 		name = ark_archae.3000.a
-# 		if = {
-# 			limit = { num_owned_planets > 1 }
-# 			random_owned_planet = {
-# 				limit = {
-# 					NOT = {
-# 						has_planet_flag = planet_terra
-# 					}
-# 				}
-# 				create_archaeological_site = ark_archae_underground
-# 				save_global_event_target_as = ark_archae_underground
-# 			}
-# 		}
-# 		if = {
-# 			limit = { num_owned_planets = 1 }
-# 			random_owned_planet = {
-# 				create_archaeological_site = ark_archae_underground
-# 			}
-# 		}
-# 		set_country_flag = completed_ark_archae_underground
-# 	}
-# }
-# fleet_event = {
-# 	id = ark_archae.3001
-# 	title = ark_archae.3001.name
-# 	desc = ark_archae.3001.desc
-# 	picture = GFX_evt_ark_sargon
-# 	show_sound = event_wind_ruins
-# 	location = from
+	trigger = {
+		OR = {
+			has_country_flag = arknight_1
+			has_country_flag = arknight_2
+			has_country_flag = arknight_3
+			has_country_flag = arknight_4	
+		}
+	}
+	option = {
+		name = ark_archae.3000.a
+		if = {
+			limit = { num_owned_planets > 1 }
+			random_owned_planet = {
+				limit = {
+					NOT = {
+						has_planet_flag = planet_terra
+					}
+				}
+				create_archaeological_site = ark_archae_underground
+				save_global_event_target_as = ark_archae_underground
+			}
+		}
+		if = {
+			limit = { num_owned_planets = 1 }
+			random_owned_planet = {
+				create_archaeological_site = ark_archae_underground
+			}
+		}
+		set_country_flag = completed_ark_archae_underground
+	}
+}
+fleet_event = {
+	id = ark_archae.3001
+	title = ark_archae.3001.name
+	desc = ark_archae.3001.desc
+	picture = GFX_evt_ark_sargon
+	show_sound = event_wind_ruins
+	location = from
 
-# 	archaeology = yes
+	archaeology = yes
 
-# 	is_triggered_only = yes
+	is_triggered_only = yes
 
-# 	option = {
-# 		name = ark_archae.3001.a
-# 		owner = {
-# 			add_resource = {
-# 				society_research = 1200
-# 			}
-# 		}
-# 	}
-# }
-# fleet_event = {
-# 	id = ark_archae.3002
-# 	title = ark_archae.3002.name
-# 	desc = ark_archae.3002.desc
-# 	picture = GFX_evt_ark_rainfrost_village_2
-# 	location = from
-# 	show_sound = event_dig_site
-# 	archaeology = yes
+	option = {
+		name = ark_archae.3001.a
+		owner = {
+			add_resource = {
+				society_research = 1200
+			}
+		}
+	}
+}
+fleet_event = {
+	id = ark_archae.3002
+	title = ark_archae.3002.name
+	desc = ark_archae.3002.desc
+	picture = GFX_evt_ark_rainfrost_village_2
+	location = from
+	show_sound = event_dig_site
+	archaeology = yes
 
-# 	is_triggered_only = yes
-# 	option = {
-# 		name = ark_archae.3002.a
-# 		owner = {
-# 			add_resource = {
-# 				society_research = 1200
-# 			}
-# 		}
-# 	}
-# }
-# fleet_event = {
-# 	id = ark_archae.3003
-# 	title = ark_archae.3003.name
-# 	desc = ark_archae.3003.desc
-# 	picture = GFX_evt_ark_dark_rainfrost
-# 	location = from
-# 	show_sound = event_metal_fatigue
+	is_triggered_only = yes
+	option = {
+		name = ark_archae.3002.a
+		owner = {
+			add_resource = {
+				society_research = 1200
+			}
+		}
+	}
+}
+fleet_event = {
+	id = ark_archae.3003
+	title = ark_archae.3003.name
+	desc = ark_archae.3003.desc
+	picture = GFX_evt_ark_dark_rainfrost
+	location = from
+	show_sound = event_metal_fatigue
 
-# 	archaeology = yes
+	archaeology = yes
 
-# 	is_triggered_only = yes
+	is_triggered_only = yes
 
-# 	option = {
-# 		name = ark_archae.3003.a
-# 		owner = {
-# 			add_resource = {
-# 				engineering_research = 3600
-# 			}
-# 		}
-# 	}
-# }
-# fleet_event = {
-# 	id = ark_archae.3004
-# 	title = ark_archae.3004.name
-# 	desc = ark_archae.3004.desc
-# 	picture = GFX_evt_discovered_hidden_door
-# 	location = from
-# 	show_sound = event_power_down
-# 	archaeology = yes
+	option = {
+		name = ark_archae.3003.a
+		owner = {
+			add_resource = {
+				engineering_research = 3600
+			}
+		}
+	}
+}
+fleet_event = {
+	id = ark_archae.3004
+	title = ark_archae.3004.name
+	desc = ark_archae.3004.desc
+	picture = GFX_evt_discovered_hidden_door
+	location = from
+	show_sound = event_power_down
+	archaeology = yes
 
-# 	is_triggered_only = yes
+	is_triggered_only = yes
 
-# 	option = {
-# 		name = ark_archae.3004.a
-# 		small_artifact_reward = yes
-# 		owner = {
-# 			add_resource = {
-# 				society_research = 3600
-# 			}
-# 		}
-# 	}
-# }
-# fleet_event = {
-# 	id = ark_archae.3005
-# 	title = ark_archae.3005.name
-# 	desc = ark_archae.3005.desc
-# 	picture = GFX_evt_derelict_interior
-# 	location = from
-# 	show_sound = event_laboratory_sound
-# 	archaeology = yes
+	option = {
+		name = ark_archae.3004.a
+		small_artifact_reward = yes
+		owner = {
+			add_resource = {
+				society_research = 3600
+			}
+		}
+	}
+}
+fleet_event = {
+	id = ark_archae.3005
+	title = ark_archae.3005.name
+	desc = ark_archae.3005.desc
+	picture = GFX_evt_derelict_interior
+	location = from
+	show_sound = event_laboratory_sound
+	archaeology = yes
 
-# 	is_triggered_only = yes
+	is_triggered_only = yes
 
-# 	option = {
-# 		name = ark_archae.3005.a
-# 		small_artifact_reward = yes
-# 		owner = {
-# 			hidden_effect = {
-# 				country_event = {
-# 					id = ark_archae.3006
-# 					days = 1
-# 				}
-# 			}
-# 		}
-# 	}
-# }
+	option = {
+		name = ark_archae.3005.a
+		small_artifact_reward = yes
+		owner = {
+			hidden_effect = {
+				country_event = {
+					id = ark_archae.3006
+					days = 1
+				}
+			}
+		}
+	}
+}
 country_event = {
 	id = ark_archae.3006
 	is_triggered_only = yes

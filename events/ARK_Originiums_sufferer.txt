@@ -423,13 +423,13 @@ country_event = {
 			remove_modifier = "infected_anxious"
 		}
 	}
-	# after = {
-	# 	country_event = {
-	# 		id = ark_archae.12
-	# 		days = 60
-	# 		random = 30
-	# 	}
-	# }
+	after = {
+		country_event = {
+			id = ark_archae.12
+			days = 60
+			random = 30
+		}
+	}
 }
 
 # 矿石病患者死亡报告（首次）
