@@ -1,14 +1,30 @@
-# Mon3tr
-leader_trait_mon3tr = {
+# 遗尘漫步（凯尔希专属）
+leader_trait_walk_in_dust_s = {
 	cost = 0
 	initial = no
 	modification = no
-	icon = "gfx/interface/icons/traits/trait_mon3tr.dds"
+	icon = "gfx/interface/icons/traits/trait_walk_in_dust.dds"
+	immortal_leaders = yes
 	modifier = {
-		all_technology_research_speed = 0.15
+		all_technology_research_speed = 0.05
+		ship_anomaly_generation_chance = 0.05
 	}
 	self_modifier = {
-		leader_age = 250
+		leader_age = 2000
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	randomized = no
+}
+
+# 未知技术（凯尔希专属）
+leader_trait_unknown_technology = {
+	cost = 0
+	initial = no
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_trait_unknown_technology.dds"
+	modifier = {
+		all_technology_research_speed = 0.1
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
@@ -22,6 +38,20 @@ trait_scientist_meet_end = {
 	modification = no
 	icon = "gfx/interface/icons/traits/leader_trait_meet_end.dds"
 	immortal_leaders = yes
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	randomized = no
+}
+
+# 精密计算（暂为灵知专属）
+leader_trait_precise_calculation = {
+	cost = 0
+	initial = no
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_trait_precise_calculation.dds"
+	modifier = {
+		all_technology_research_speed = 0.1
+	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
 	randomized = no

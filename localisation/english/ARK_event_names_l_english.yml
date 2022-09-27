@@ -24,12 +24,23 @@
  NAME_Kaltsit:0 "Kal'tsit"		# 003
  NAME_Closure:0 "Closure"		# 007
  NAME_Chen:0 "Ch'en"		# 010
+ NAME_:0 "Blaze"		# 017
  NAME_Silence:0 "Silence"		# 108
+ NAME_W:0 "W"	# 113
+ NAME_Dobermann:0 "Dobermann"	# 130
+ NAME_Astgenne:0 "Astgenne"	# 135
+ NAME_SilverAsh:0 "SilverAsh"	# 172
  NAME_Hellagur:0 "Hellagur"		# 188
+ NAME_Gnosis:0 "Gnosis"	# 206
+ NAME_Mostima:0 "Mostima"	# 213
  NAME_Mayer:0 "Mayer"		# 242
  NAME_Magallan:0 "Magallan"	# 248
+ NAME_Astesia:0 "Astesia"	# 274
+ NAME_Swire:0 "Swire"	# 308
  NAME_Snowsant:0 "Snowsant"	# 383
  NAME_Weedy:0 "Weedy"		# 400
+ NAME_Passenger:0 "Passenger"	# 472
+ NAME_Horn:0 "Horn"	# 4039
  NAME_Dumbness_Infinite:0 "Dumbness Infinite"	# 001
  NAME_kingslayer:0 "弑君者"
 

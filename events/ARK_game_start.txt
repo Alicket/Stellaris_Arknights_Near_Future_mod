@@ -159,22 +159,23 @@ country_event = {
 				species = owner_main_species
 				gender = female
 				name = NAME_Kaltsit
-				skill = 3
+				skill = 1
 				traits = {
-					add_trait = leader_trait_mon3tr
-					add_trait = leader_trait_expertise_biology
-					add_trait = leader_trait_expertise_statecraft
+					add_trait = trait_ruler_walk_in_dust_r
+					add_trait = trait_ruler_kaltsit_knowledgeable
 					add_trait = leader_trait_oripathy	# 源石病
 				}
 				effect = {
 					set_leader_flag = ark_leader_kaltsit
 					save_event_target_as = leader_kaltsit
-					add_trait = leader_trait_spark_of_genius
+					add_trait = leader_trait_walk_in_dust_s
+					add_trait = leader_trait_unknown_technology
+					add_trait = leader_trait_expertise_industry
 					add_trait = leader_trait_expertise_biology
-					add_trait = leader_trait_expertise_statecraft
+					add_trait = leader_trait_archaeologist
 					add_ruler_trait = leader_trait_oripathy	# 源石病
-					add_ruler_trait = trait_ruler_mon3tr
-					add_ruler_trait = trait_ruler_know_everything
+					add_ruler_trait = trait_ruler_walk_in_dust_r
+					add_ruler_trait = trait_ruler_kaltsit_knowledgeable
 				}				
 			}
 			last_created_leader = {
@@ -333,8 +334,8 @@ country_event = {
 	immediate = {
 		every_owned_leader = {
 			limit = { leader_class = ruler }
-			remove_ruler_trait = trait_ruler_know_everything
-			remove_ruler_trait = trait_ruler_mon3tr
+			remove_ruler_trait = trait_ruler_walk_in_dust_r
+			remove_ruler_trait = trait_ruler_kaltsit_knowledgeable
 			remove_ruler_trait = leader_trait_oripathy	# 源石病
 		}
 	}

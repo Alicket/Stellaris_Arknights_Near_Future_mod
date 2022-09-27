@@ -63,3 +63,48 @@ leader_trait_jujizhuanjing = {
 		weight = 200
 	}
 }
+
+# 紧急抽调
+leader_trait_emergency_appointment = {
+	cost = 0
+	initial = no
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_trait_emergency_appointment.dds"
+	modifier = {
+		leaders_upkeep_mult = -0.50
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		OR = {
+			from = { species = { has_trait = trait_latent_oripathy } }
+			from = { species = { has_trait = trait_Originium_Arts } }
+		}
+	}
+	leader_trait = { admiral }
+	leader_class = { admiral }
+	opposites = { "leader_trait_eager" }
+	randomized = no
+}
+
+# 锁与匙（莫斯提马专属）
+leader_trait_lock_keys = {
+	cost = 0
+	initial = no
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_trait_lock_keys.dds"
+	modifier = {
+		ship_fire_rate_mult = 0.15
+		ship_speed_mult = 0.15
+		ship_evasion_mult = 0.15
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		OR = {
+			from = { species = { has_trait = trait_latent_oripathy } }
+			from = { species = { has_trait = trait_Originium_Arts } }
+		}
+	}
+	leader_trait = { admiral }
+	leader_class = { admiral }
+	randomized = no
+}

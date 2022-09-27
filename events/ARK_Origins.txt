@@ -210,5 +210,28 @@ country_event = {
 				}
 			}
 		}
+		random_list = {	# 测试
+			100 = {
+				create_leader = {
+					class = general
+					species = owner_main_species
+					name = "NAME_Horn"	# 号角
+					gender = female
+					skill = 2
+					set_age = 31
+					traits = {
+						trait = leader_trait_zhongzhuangzhuanjing	# 重装专精
+						trait = leader_trait_military_fortress	# 军事要塞
+						trait = leader_trait_bloody_battle	# 血战
+						trait = leader_trait_glory_seeker	# 身先士卒
+					}
+					effect = {
+						change_leader_portrait = ARK4039
+						set_leader_flag = ark_leader_horn
+						save_event_target_as = leader_horn
+					}
+				}
+			}
+		}
 	}
 }
