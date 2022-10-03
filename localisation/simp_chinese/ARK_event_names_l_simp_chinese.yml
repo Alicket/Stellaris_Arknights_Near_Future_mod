@@ -22,25 +22,25 @@
 
  NAME_Doctor:0 "DOCTOR"	# 001
  NAME_Kaltsit:0 "凯尔希"	# 003
- NAME_Closure:0 "可露希尔"	# 007
- NAME_Chen:0 "陈"		# 010
- NAME_Blaze:0 "煌"		# 017
- NAME_Silence:0 "赫默"	# 108
+ NAME_Closure:0 "阿达·可露希尔·丘奇"	# 007 可露希尔
+ NAME_Chen:0 "陈晖洁"		# 010 陈
+ NAME_Blaze_ark:0 "煌"		# 017
+ NAME_Silence:0 "奥利维亚·赫默"	# 108 赫默
  NAME_W:0 "W"	# 113
  NAME_Dobermann:0 "杜宾"	# 130
- NAME_Astgenne:0 "星源"	# 135
- NAME_SilverAsh:0 "银灰"	# 172
+ NAME_Astgenne:0 "埃琳娜·乌比卡"	# 135 星源
+ NAME_SilverAsh:0 "恩希欧迪斯·希瓦艾什"	# 172 银灰
  NAME_Hellagur:0 "赫拉格"	# 188
- NAME_Gnosis:0 "灵知"	# 206
+ NAME_Gnosis:0 "诺希斯·埃德怀斯"	# 206 灵知
  NAME_Mostima:0 "莫斯提马"	# 213
- NAME_Mayer:0 "梅尔"	# 242
+ NAME_Mayer:0 "梅尔·斯托尼"	# 242 梅尔
  NAME_Magallan:0 "麦哲伦"	# 248
- NAME_Astesia:0 "星极"	# 274
- NAME_Swire:0 "诗怀雅"	# 308
+ NAME_Astesia:0 "阿丝忒希娅·乌比卡"	# 274 星极
+ NAME_Swire:0 "碧翠克斯·施怀雅"	# 308 诗怀雅
  NAME_Snowsant:0 "雪雉"	# 383
  NAME_Weedy:0 "温蒂"	# 400
- NAME_Passenger:0 "异客"	# 472
- NAME_Horn:0 "号角"	# 4039
+ NAME_Passenger:0 "艾利奥特·格罗夫"	# 472 异客
+ NAME_Horn:0 "丽塔·斯卡曼德罗斯"	# 4039 号角
  NAME_Dumbness_Infinite:0 "Dumbness Infinite"	# 001
  NAME_kingslayer:0 "弑君者"
 

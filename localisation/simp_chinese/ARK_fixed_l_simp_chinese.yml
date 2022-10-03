@@ -3,12 +3,12 @@
 FLAG_CATEGORY_hypergryph:0 "鹰角"
 
 ## 种族特性 ##
-trait_latent_oripathy:0 "矿石病潜势"
-trait_latent_oripathy_desc:0 "§L长期生活在受源石及其工业衍生品影响的环境中,\t\t人们更容易得一种被称为\t\t"矿石病"\t\t的不治之症.\t\t§!\n\n只有当§H种族§!是§H泰拉人§!、§H母星§!是§H泰拉§!以及不是§H格式塔意识§!,\t\t§H种族特性§!后续内容才会生效.\t\t"
+trait_latent_oripathy:0 "源石病潜势"
+trait_latent_oripathy_desc:0 "§L长期生活在受源石及其工业衍生品影响的环境中,\t\t人们更容易得一种被称为\t\t"源石病"\t\t的不治之症.\t\t§!\n\n只有当§H种族§!是§H泰拉人§!、§H母星§!是§H泰拉§!以及不是§H格式塔意识§!,\t\t§H种族特性§!后续内容才会生效.\t\t"
 trait_Originium_Arts:0 "源石技艺"
-trait_Originium_Arts_desc:0 "§L随着\t\t"上帝之锁"\t\t被突破,\t\t矿石病特效药的问世使\t\t"矿石病"\t\t不再是令人绝望的不治之症,\t\t它将转而成为一种优势.\t\t§!"
-trait_acute_oripathy:0 "急性矿石病"
-trait_acute_oripathy_desc:0 "短时间受到大量源石污染导致的矿石病急性感染,\t\t缺乏有效治疗的感染者在最迟两个月内就会死亡.\t\t"
+trait_Originium_Arts_desc:0 "§L随着\t\t"上帝之锁"\t\t被突破,\t\t源石病特效药的问世使\t\t"源石病"\t\t不再是令人绝望的不治之症,\t\t它将转而成为一种优势.\t\t§!"
+trait_acute_oripathy:0 "急性源石病"
+trait_acute_oripathy_desc:0 "短时间受到大量源石污染导致的源石病急性感染,\t\t缺乏有效治疗的感染者在最迟两个月内就会死亡.\t\t"
 
 ## 领袖特性 ##
 # 通用 #
@@ -60,6 +60,8 @@ leader_trait_superintendent:0 "前警司"
 leader_trait_superintendent_desc:0 "这名警司出身的领袖非常重视警务工作.\t\t"
 leader_trait_economy_measure:0 "经济手腕"
 leader_trait_economy_measure_desc:0 "这位领袖在经济贸易上拥有卓越的远见与执行力.\t\t"
+leader_trait_warlords:0 "旧军阀"
+leader_trait_warlords_desc:0 "这位领袖曾经是割据一方的军阀,\t\t他能随时动员老部下和家乡子弟投入正规军,\t\t但因此也遭到非议.\t\t"
 # 科学 #
 leader_trait_walk_in_dust_s:0 "遗尘漫步"
 leader_trait_walk_in_dust_s_desc:0 "在这场几乎没有尽头的漫长旅程中,\t\t她始终在寻找最初问题的答案.\t\t她的答案.\t\t"
@@ -103,8 +105,6 @@ leader_trait_frighten_box:0 "惊吓盒子"
 leader_trait_frighten_box_desc:0 "W乐此不疲地向前线投放大量地雷,\t\t对敌我双方都将造成了大量损伤.\t\t"
 leader_trait_treachery:0 "背信弃义"
 leader_trait_treachery_desc:0 "对W来说,\t\t抛弃深陷敌阵的部队或是无差别地消灭敌方与友军是不值得大惊小怪的事.\t\t"
-leader_trait_warlords:0 "旧军阀"
-leader_trait_warlords_desc:0 "这位领袖曾经是割据一方的军阀,\t\t他能随时动员老部下和家乡子弟投入正规军,\t\t但因此也遭到非议.\t\t"
 
 ## 星球特性 ##
 catastrophe:0 "天灾"
@@ -120,11 +120,11 @@ strewn_thorns_desc:0 "秩序建设的进程缓慢而坚定,\t\t在天灾威胁�
 autumn_sea:0 "层林尽染"
 autumn_sea_desc:0 "将秩序带给大地的人将被歌颂.\t\t而在很长一段时间内,\t\t无数受益者都将充满斗志地投身新世界的事业.\t\t"
 infected_anxious:0 "感染者焦虑"
-infected_anxious_desc:0 "超过预期的矿石病死亡率引发了感染者对相关医疗数据的质疑和人身焦虑.\t\t"
+infected_anxious_desc:0 "超过预期的源石病死亡率引发了感染者对相关医疗数据的质疑和人身焦虑.\t\t"
 torn_society:0 "撕裂的社会"
 torn_society_desc:0 "绝望的感染者正在摧毁社会秩序,\t\t分裂各国的残余势力和民族主义者正在趁机作乱.\t\t"
-celebration:0 "攻克\t\t"矿石病"\t\t庆典"
-celebration_desc:0 "庆祝\t\t"矿石病"\t\t被攻克的盛大庆典正在各地举办,\t\t很久之后,\t\t一些活动也会演变为当地的特色风俗流传下去.\t\t"
+celebration:0 "攻克\t\t"源石病"\t\t庆典"
+celebration_desc:0 "庆祝\t\t"源石病"\t\t被攻克的盛大庆典正在各地举办,\t\t很久之后,\t\t一些活动也会演变为当地的特色风俗流传下去.\t\t"
 repression_failure:0 "镇压失败"
 repression_failure_desc:0 "行星政府严重失败的镇暴行动导致几乎整个行星陷入无政府状态.\t\t"
 catastrophe_panic:0 "天灾恐慌"
@@ -160,7 +160,7 @@ terra_council_desc:0 "下一次理事会联合会议正在准备之中.\t\t"
 peak_plan_training:0 "巅峰计划进行中"
 peak_plan_training_desc:0 "一项为期5年的人才进修计划正在进行.\t\t"
 originium_bombs_contaminated_0:0 "遭到源石轰炸"
-originium_bombs_contaminated_0_desc:0 "行星正遭到源石炸弹的轰炸!\t\t当星球破坏度高于25%,\t\t源石将在轰炸后留下大量污染并使行星居民感染急性矿石病!\t\t"
+originium_bombs_contaminated_0_desc:0 "行星正遭到源石炸弹的轰炸!\t\t当星球破坏度高于25%,\t\t源石将在轰炸后留下大量污染并使行星居民感染急性源石病!\t\t"
 originium_bombs_contaminated_1:0 "源石污染"
 originium_bombs_contaminated_1_desc:0 "该行星曾遭受源石轨道轰炸,\t\t轰炸在行星上留下了暂时性的危险污染,\t\t并致使居民感染.\t\t"
 biochemical_protection:0 "生化防护"
@@ -299,8 +299,8 @@ bombardment_originium_bombs:0 "源石"
 bombardment_originium_bombs_desc:2 "$bombardment_originium_bombs$轰炸针对行星的生态环境和行星居民的生命健康.\t\t\n-对§Y军团§!造成§E轻度§!伤害\n-对§Y星球§!造成§E轻度§!伤害\n-对§Y人口§!造成§E轻度§!伤害\n-将会轰炸不设防的星球\n-§R不会§!消灭最后的§Y$MIN_POPS$§!个人口"
 
 ## 开场白 ##
-START_SCREEN_ARK_1:0 "先民降临世界,\t\t带来了不同的种族和文化.\t\t人们在天灾肆虐的大地上繁衍生息,\t\t使用天灾带来的产物\t\t"源石"\t\t发展族群和社会,\t\t并立足于源石打开了工业文明的大门.\t\t然而,\t\t源石带来的具有感染性和致死性的疾病埋下了灾难的种子,\t\t最终引发了尖锐不堪的社会矛盾和国家冲突并酿成世界大战.\t\t在泰拉世上最黑暗的时刻,\t\t医疗企业罗德岛因其和平包容的理念和果断的行动迅速崛起,\t\t在各方努力和妥协下,\t\t令各族付出惊人代价和鲜血的战乱结束了,\t\t一个统一的行星政府在各国的废墟上被建立了起来.\t\t\n\n然而,\t\t尽管新政府为不分种族和立场的和平付出了诸多努力,\t\t矿石病仍然无法治愈；因为妥协导致的许多遗留问题尚未解决.\t\t而那些原因不明的天灾、各种灵异事件和先进古代设备的发掘,\t\t似乎更是说明了我们的世界隐藏着重重谜团.\t\t"
-START_SCREEN_ARK_2:0 "先民降临世界,\t\t带来了不同的种族和文化.\t\t人们在天灾肆虐的大地上繁衍生息,\t\t使用天灾带来的产物\t\t"源石"\t\t发展族群和社会,\t\t并立足于源石打开了工业文明的大门.\t\t然而,\t\t源石带来的具有感染性和致死性的疾病埋下了灾难的种子,\t\t最终引发了尖锐不堪的社会矛盾和国家冲突并酿成世界大战.\t\t经过血与火的洗礼,\t\t来自前巴别塔的前线指挥官,\t\t以绝对的指挥才能和铁血手段颠覆了力量天平,\t\t击溃了诸多势力并在各国一片废墟的土地上建立了新的帝国,\t\t以胜利者的身份宣布成为苦难的大地的唯一主人.\t\t\n\n然而,\t\t尽管新帝国为这片苦难的大地带来了新的秩序.\t\t矿石病仍然无法治愈；顽固不灵的抵抗者和分裂组织仍潜伏在阴暗角落心怀恶意.\t\t而那些原因不明的天灾、各种灵异事件和先进古代设备的发掘,\t\t似乎更是说明了我们的世界隐藏着重重谜团.\t\t"
+START_SCREEN_ARK_1:0 "先民降临世界,\t\t带来了不同的种族和文化.\t\t人们在天灾肆虐的大地上繁衍生息,\t\t使用天灾带来的产物\t\t"源石"\t\t发展族群和社会,\t\t并立足于源石打开了工业文明的大门.\t\t然而,\t\t源石带来的具有感染性和致死性的疾病埋下了灾难的种子,\t\t最终引发了尖锐不堪的社会矛盾和国家冲突并酿成世界大战.\t\t在泰拉世上最黑暗的时刻,\t\t医疗企业罗德岛因其和平包容的理念和果断的行动迅速崛起,\t\t在各方努力和妥协下,\t\t令各族付出惊人代价和鲜血的战乱结束了,\t\t一个统一的行星政府在各国的废墟上被建立了起来.\t\t\n\n然而,\t\t尽管新政府为不分种族和立场的和平付出了诸多努力,\t\t源石病仍然无法治愈；因为妥协导致的许多遗留问题尚未解决.\t\t而那些原因不明的天灾、各种灵异事件和先进古代设备的发掘,\t\t似乎更是说明了我们的世界隐藏着重重谜团.\t\t"
+START_SCREEN_ARK_2:0 "先民降临世界,\t\t带来了不同的种族和文化.\t\t人们在天灾肆虐的大地上繁衍生息,\t\t使用天灾带来的产物\t\t"源石"\t\t发展族群和社会,\t\t并立足于源石打开了工业文明的大门.\t\t然而,\t\t源石带来的具有感染性和致死性的疾病埋下了灾难的种子,\t\t最终引发了尖锐不堪的社会矛盾和国家冲突并酿成世界大战.\t\t经过血与火的洗礼,\t\t来自前巴别塔的前线指挥官,\t\t以绝对的指挥才能和铁血手段颠覆了力量天平,\t\t击溃了诸多势力并在各国一片废墟的土地上建立了新的帝国,\t\t以胜利者的身份宣布成为苦难的大地的唯一主人.\t\t\n\n然而,\t\t尽管新帝国为这片苦难的大地带来了新的秩序.\t\t源石病仍然无法治愈；顽固不灵的抵抗者和分裂组织仍潜伏在阴暗角落心怀恶意.\t\t而那些原因不明的天灾、各种灵异事件和先进古代设备的发掘,\t\t似乎更是说明了我们的世界隐藏着重重谜团.\t\t"
 
 ## 泰拉星系初始设定 ##
 Tyra_system_NAME:0 "泰拉星系"

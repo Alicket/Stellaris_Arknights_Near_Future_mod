@@ -170,7 +170,7 @@ planet_event = {
 				}
 				NOT = { species = { has_trait = trait_acute_oripathy } }
 			}
-			modify_species = { add_trait = trait_acute_oripathy }	# 急性矿石病
+			modify_species = { add_trait = trait_acute_oripathy }	# 急性源石病
 			set_timed_pop_flag = { flag = oripathy_death_countdown days = 60 }
 		}
 	}

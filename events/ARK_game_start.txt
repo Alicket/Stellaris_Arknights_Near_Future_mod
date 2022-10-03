@@ -60,7 +60,7 @@ country_event = {
 	trigger = {
 		root = { is_species_class = Arknight }	# 是泰拉人种族
 		capital_scope = { has_planet_flag = planet_terra }	# 母星是泰拉
-		owner_species = { has_trait = trait_latent_oripathy }	# 有种族特性"矿石病潜势"
+		owner_species = { has_trait = trait_latent_oripathy }	# 有种族特性"源石病潜势"
 		NOT = { has_ethic = ethic_gestalt_consciousness }	# 非格式塔
 	}
 
@@ -179,7 +179,7 @@ country_event = {
 				}				
 			}
 			last_created_leader = {
-				set_age = 227
+				set_age = 25302
 				change_leader_portrait = ARK003
 				set_is_female = yes
 			}

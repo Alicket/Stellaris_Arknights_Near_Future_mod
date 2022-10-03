@@ -46,8 +46,7 @@ leader_trait_jujizhuanjing = {
 	modification = no
 	icon = "gfx/interface/icons/traits/leader_trait_jujizhuanjing.dds"
 	modifier = {
-		ship_weapon_range_mult = 0.3
-		ship_hull_mult = -0.1
+		ship_weapon_range_mult = 0.2
 	}
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }

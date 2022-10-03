@@ -264,7 +264,7 @@ leader_trait_superintendent = {
 	modification = no
 	icon = "gfx/interface/icons/traits/leader_trait_superintendent.dds"
 	modifier = {
-		planet_crime_add = -10
+		job_enforcer_add = 2
 	}
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -275,7 +275,6 @@ leader_trait_superintendent = {
 	}
 	leader_trait = { governor }
 	leader_class = { governor }
-	opposites = { "leader_trait_corrupt" }
 	randomized = no
 }
 
@@ -287,6 +286,29 @@ leader_trait_economy_measure = {
 	icon = "gfx/interface/icons/traits/leader_trait_economy_measure.dds"
 	modifier = {
 		trade_value_mult = 0.2
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		OR = {
+			from = { species = { has_trait = trait_latent_oripathy } }
+			from = { species = { has_trait = trait_Originium_Arts } }
+		}
+	}
+	leader_trait = { governor }
+	leader_class = { governor }
+	randomized = no
+}
+
+# 旧军阀（银灰专属）
+leader_trait_warlords = {
+	cost = 0
+	initial = no
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_trait_warlords.dds"
+	modifier = {
+		planet_army_build_speed_mult = 0.2
+		armies_cost_mult = -0.2
+		planet_jobs_unity_produces_mult = -0.05
 	}
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
