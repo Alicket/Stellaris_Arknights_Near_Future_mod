@@ -1,3 +1,17 @@
+# 执法者（因原版官僚岗位无效果 为特质“前警司”设定需要）
+planet_enforcers = {
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop
+}
+
 planet_d32steels_smelting = {
 	parent = planet_jobs_productive
 	generate_mult_modifiers = {
@@ -12,6 +26,17 @@ planet_nanosheets_manufacturer = {
 	}
 }
 
-planet_executor = {
-	parent = planet_jobs
+# 执行者
+planet_executor = {	
+	icon = "job_executor"
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop
 }

@@ -252,6 +252,25 @@ country_event = {
 					}
 				}
 				create_leader = {
+					class = general
+					species = owner_main_species
+					name = "NAME_W"	# W
+					gender = female
+					skill = 1
+					set_age = 28
+					traits = {
+						trait = leader_trait_butcher	# 屠夫
+						trait = leader_trait_oripathy # 源石病
+						trait = leader_trait_frighten_box	# 惊吓盒子
+						trait = leader_trait_treachery	# 背信弃义
+					}
+					effect = {
+						change_leader_portrait = ARK113
+						set_leader_flag = ark_leader_w
+						save_event_target_as = leader_w
+					}
+				}
+				create_leader = {
 					class = scientist
 					species = owner_main_species
 					name = "NAME_Astgenne"	# 星源
@@ -304,22 +323,37 @@ country_event = {
 					}
 				}
 				create_leader = {
-					class = general
+					class = admiral
 					species = owner_main_species
-					name = "NAME_W"	# W
+					name = "NAME_Dur_nar"	# 坚雷
 					gender = female
 					skill = 1
-					set_age = 28
+					set_age = 30
 					traits = {
-						trait = leader_trait_butcher	# 屠夫
-						trait = leader_trait_frighten_box	# 惊吓盒子
-						trait = leader_trait_treachery	# 背信弃义
-						trait = leader_trait_oripathy # 源石病
+						trait = leader_trait_emergency_appointment	# 紧急抽调
+						trait = leader_trait_snacks_network	# 零食网络
 					}
 					effect = {
-						change_leader_portrait = ARK113
-						set_leader_flag = ark_leader_w
-						save_event_target_as = leader_w
+						change_leader_portrait = ARK260
+						set_leader_flag = ark_leader_dur_nar
+						save_event_target_as = leader_dur_nar
+					}
+				}
+				create_leader = {
+					class = governor
+					species = owner_main_species
+					name = "NAME_Swire"	# 诗怀雅
+					gender = female
+					skill = 1
+					set_age = 27
+					traits = {
+						trait = leader_trait_superintendent # 前警司
+						trait = leader_trait_wealthy	# 多金
+					}
+					effect = {
+						change_leader_portrait = ARK308
+						set_leader_flag = ark_leader_swire
+						save_event_target_as = leader_swire
 					}
 				}
 				create_leader = {
