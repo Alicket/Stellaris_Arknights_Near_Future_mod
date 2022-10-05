@@ -1,0 +1,9 @@
+is_this_terra = {   #this=country
+	OR = {
+		has_country_flag = arknight_1
+		has_country_flag = arknight_2
+		#has_country_flag = arknight_3
+		has_country_flag = arknight_4	
+	}
+	
+}

@@ -56,6 +56,7 @@ on_monthly_pulse_country = {
 on_leader_spawned = {
 	events = {
 		ark_civic.4		# 骑士精神
+		ark_apex_leader.0 #随机生成精英领袖
 	}
 }
 
