@@ -114,7 +114,7 @@ country_event = {#测试用
 	}
 	
 }
-country_event = {#矿石病治愈后30-90天触发事件
+country_event = {#源石病治愈后30-90天触发事件
 	id = ark_archae.12
 	is_triggered_only = yes
 	title = ark_archae.000.title

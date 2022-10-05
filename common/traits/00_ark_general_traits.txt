@@ -45,8 +45,7 @@ leader_trait_xianfengzhuanjing = {
 	modification = no
 	icon = "gfx/interface/icons/traits/leader_trait_xianfengzhuanjing.dds"
 	modifier = {
-		army_damage_mult = 0.05
-		armies_upkeep_mult = -0.25
+		armies_upkeep_mult = -0.2
 	}
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -70,8 +69,8 @@ leader_trait_jinweizhuanjing = {
 	modification = no
 	icon = "gfx/interface/icons/traits/leader_trait_jinweizhuanjing.dds"
 	modifier = {
-		army_health = 0.15
-		army_damage_mult = 0.15
+		army_health = 0.1
+		army_damage_mult = 0.1
 	}
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -96,7 +95,7 @@ leader_trait_shushizhuanjing = {
 	icon = "gfx/interface/icons/traits/leader_trait_shushizhuanjing.dds"
 	modifier = {
 		armies_upkeep_mult = 0.15
-		army_damage_mult = 0.3
+		army_damage_mult = 0.2
 		army_morale_damage_mult = 0.15
 	}
 	leader_potential_add = {
@@ -121,8 +120,8 @@ leader_trait_zhongzhuangzhuanjing = {
 	modification = no
 	icon = "gfx/interface/icons/traits/leader_trait_zhongzhuangzhuanjing.dds"
 	modifier = {
-		army_health = 0.5
-		army_disengage_chance_mult = -0.2
+		army_health = 0.3
+		army_disengage_chance_mult = -0.1
 	}
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -147,7 +146,8 @@ leader_trait_tezhongzhuanjing = {
 	icon = "gfx/interface/icons/traits/leader_trait_tezhongzhuanjing.dds"
 	modifier = {
 		army_health = -0.1
-		army_disengage_chance_mult = 0.4
+		army_damage_mult = 0.15
+		army_disengage_chance_mult = 0.15
 	}
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -163,4 +163,96 @@ leader_trait_tezhongzhuanjing = {
 	ai_weight = {
 		weight = 100
 	}
+}
+
+# 军事要塞（号角专属）
+leader_trait_military_fortress = {
+	cost = 0
+	initial = no
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_trait_military_fortress.dds"
+	modifier = {
+		army_health = 0.5
+		army_disengage_chance_mult = -0.2
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		OR = {
+			from = { species = { has_trait = trait_latent_oripathy } }
+			from = { species = { has_trait = trait_Originium_Arts } }
+		}
+	}
+	leader_trait = { general }
+	leader_class = { general }
+	opposites = { "leader_trait_armchair_commander" "leader_trait_xianfengzhuanjing" "leader_trait_jinweizhuanjing" "leader_trait_jujizhuanjing" "leader_trait_shushizhuanjing" "leader_trait_tezhongzhuanjing" }
+	randomized = no
+}
+
+# 血战（号角专属）
+leader_trait_bloody_battle = {
+	cost = 0
+	initial = no
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_trait_bloody_battle.dds"
+	modifier = {
+		army_damage_mult = 0.1
+		army_morale = 0.3
+		army_disengage_chance_mult = -0.3
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		OR = {
+			from = { species = { has_trait = trait_latent_oripathy } }
+			from = { species = { has_trait = trait_Originium_Arts } }
+		}
+	}
+	leader_trait = { general }
+	leader_class = { general }
+	opposites = { "leader_trait_armchair_commander" "leader_trait_tezhongzhuanjing" }
+	randomized = no
+}
+
+# 惊吓盒子（W专属）
+leader_trait_frighten_box = {
+	cost = 0
+	initial = no
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_trait_frighten_box.dds"
+	modifier = {
+		army_damage_mult = 0.15
+		army_health = -0.05
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		OR = {
+			from = { species = { has_trait = trait_latent_oripathy } }
+			from = { species = { has_trait = trait_Originium_Arts } }
+		}
+	}
+	leader_trait = { general }
+	leader_class = { general }
+	randomized = no
+}
+
+# 背信弃义（W专属）
+leader_trait_treachery = {
+	cost = 0
+	initial = no
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_trait_treachery.dds"
+	modifier = {
+		army_morale = -0.1
+		army_disengage_chance_mult = -0.1
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		OR = {
+			from = { species = { has_trait = trait_latent_oripathy } }
+			from = { species = { has_trait = trait_Originium_Arts } }
+		}
+	}
+	leader_trait = { general }
+	leader_class = { general }
+	opposites = { "leader_trait_bloody_battle" }
+	randomized = no
 }

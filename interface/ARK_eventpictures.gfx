@@ -24,13 +24,13 @@ spriteTypes = {
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes		
 	}
-	spriteType = {	# 矿石病1
+	spriteType = {	# 源石病1
 		name = "GFX_evt_ori1"
 		texturefile = "gfx/event_pictures/ori1.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes		
 	}
-	spriteType = {	# 治疗矿石病
+	spriteType = {	# 治疗源石病
 		name = "GFX_evt_treating_oripathy"
 		texturefile = "gfx/event_pictures/treating_oripathy.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"

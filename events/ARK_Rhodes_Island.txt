@@ -1151,7 +1151,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_rhodes_island.5.d	# 矿石病/感染者
+		name = ark_rhodes_island.5.d	# 源石病/感染者
 		hidden_effect = {
 			set_country_flag = ark_rhodes_island_54_flag
 			country_event = { id = ark_rhodes_island.50 }
@@ -1290,8 +1290,8 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_rhodes_island.54.a	# 条目一（矿石病）
-		trigger = {	# 选择“矿石病/感染者档案”且已归档“矿石病简报1”
+		name = ark_rhodes_island.54.a	# 条目一（源石病）
+		trigger = {	# 选择“源石病/感染者档案”且已归档“源石病简报1”
 			has_country_flag = ark_rhodes_island_54_flag
 			has_country_flag = originiums_sufferer_bulletin_1_flag
 			NOT = {
@@ -1307,8 +1307,8 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_rhodes_island.54.b	# 条目二（矿石病）
-		trigger = {	# 选择“矿石病/感染者档案”且已归档“矿石病简报2”
+		name = ark_rhodes_island.54.b	# 条目二（源石病）
+		trigger = {	# 选择“源石病/感染者档案”且已归档“源石病简报2”
 			has_country_flag = ark_rhodes_island_54_flag
 			has_country_flag = originiums_sufferer_bulletin_2_flag
 			NOT = {
@@ -1324,8 +1324,8 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_rhodes_island.54.c	# 条目三（矿石病）
-		trigger = {	# 选择“矿石病/感染者档案”且已归档“矿石病简报3”
+		name = ark_rhodes_island.54.c	# 条目三（源石病）
+		trigger = {	# 选择“源石病/感染者档案”且已归档“源石病简报3”
 			has_country_flag = ark_rhodes_island_54_flag
 			has_country_flag = originiums_sufferer_bulletin_3_flag
 			NOT = {
@@ -1341,8 +1341,8 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_rhodes_island.54.d	# 条目四（矿石病）
-		trigger = {	# 选择“矿石病/感染者档案”且已归档“矿石病简报4”
+		name = ark_rhodes_island.54.d	# 条目四（源石病）
+		trigger = {	# 选择“源石病/感染者档案”且已归档“源石病简报4”
 			has_country_flag = ark_rhodes_island_54_flag
 			has_country_flag = originiums_sufferer_bulletin_4_flag
 			NOT = {
@@ -1358,8 +1358,8 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_rhodes_island.54.e	# 条目五（矿石病）
-		trigger = {	# 选择“矿石病/感染者档案”且已归档“矿石病简报5”
+		name = ark_rhodes_island.54.e	# 条目五（源石病）
+		trigger = {	# 选择“源石病/感染者档案”且已归档“源石病简报5”
 			has_country_flag = ark_rhodes_island_54_flag
 			has_country_flag = originiums_sufferer_bulletin_5_flag
 			NOT = {
@@ -1459,7 +1459,7 @@ country_event = {
 	}
 }
 
-# 档案中心（矿石病/感染者条目）
+# 档案中心（源石病/感染者条目）
 country_event = {
 	id = ark_rhodes_island.54
 	title = "ark_rhodes_island.5.name"

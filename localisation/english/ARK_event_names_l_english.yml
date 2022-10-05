@@ -20,16 +20,27 @@
  NAME_Racists_Rebel8:0 "Higashi rebels"
  NAME_Racists_Rebel9:0 "Kazdel rebels"
 
- NAME_Doctor:0 "Doctor"		# 001
- NAME_Kaltsit:0 "Kal'tsit"		# 003
- NAME_Closure:0 "Closure"		# 007
- NAME_Chen:0 "Ch'en"		# 010
- NAME_Silence:0 "Silence"		# 108
- NAME_Hellagur:0 "Hellagur"		# 188
- NAME_Mayer:0 "Mayer"		# 242
- NAME_Magallan:0 "Magallan"	# 248
- NAME_Snowsant:0 "Snowsant"	# 383
- NAME_Weedy:0 "Weedy"		# 400
+ NAME_Doctor:0 "Doctor"		# 001 博士
+ NAME_Kaltsit:0 "Kal'tsit"		# 003 凯尔希
+ NAME_Closure:0 "Ada Church"		# 007 可露希尔
+ NAME_Chen:0 "Ch'en Hui-chieh"		# 010 陈
+ NAME_Blaze_ark:0 "Blaze"		# 017 煌
+ NAME_Silence:0 "Olivia Silence"		# 108 赫默
+ NAME_W:0 "W"	# 113
+ NAME_Dobermann:0 "Dobermann"	# 130 杜宾
+ NAME_Astgenne:0 "Astgenne Urbica"	# 135 星源
+ NAME_SilverAsh:0 "Enciodes Silverash"	# 172 银灰
+ NAME_Hellagur:0 "Hellagur"		# 188 赫拉格
+ NAME_Gnosis:0 "Gnosis Edelweiss"	# 206 灵知
+ NAME_Mostima:0 "Mostima"	# 213 莫斯提马
+ NAME_Mayer:0 "Mayer Stony"		# 242 梅尔
+ NAME_Magallan:0 "Magallan"	# 248 麦哲伦
+ NAME_Astesia:0 "Astesia Urbica"	# 274 星极
+ NAME_Swire:0 "Beatrix Schwire"	# 308 诗怀雅
+ NAME_Snowsant:0 "Snowsant"	# 383 雪雉
+ NAME_Weedy:0 "Weedy"		# 400 温蒂
+ NAME_Passenger:0 "Elliot Glover"	# 472 异客
+ NAME_Horn:0 "Rita Skamandros"	# 4039 号角
  NAME_Dumbness_Infinite:0 "Dumbness Infinite"	# 001
  NAME_kingslayer:0 "弑君者"
 
