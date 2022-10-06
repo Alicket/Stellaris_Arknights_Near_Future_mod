@@ -1,0 +1,152 @@
+namespace = ark_apex_leader
+#本事件用于在领袖池随机生成精英领袖
+#调用on_leader_spawned触发器
+
+country_event = {
+	id = ark_apex_leader.0
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		is_this_terra = yes   #这个触发器在ark_triggers_easy_coding
+		not= {
+			has_ascension_perk = ap_synthetic_evolution #精英领袖只会在机械飞升前刷新
+		}
+		
+	}
+	immediate = { 
+		    if = {   #根据不同的职业刷新不同的领袖
+				limit = {	 #如果新生成的领袖是总督
+					from = {
+						leader_class = governor
+					}
+				}
+				random_list = {
+					100 = {  #刷新特殊领袖的概率在这里
+						ARK_K_APEX_born = {
+							check_name = "mostima"
+							name = "莫斯提马"
+							age = 233
+							skill_level = 3
+							port = 003
+						}				
+			       }					
+			    }
+				
+		    }
+	}
+
+}
+
+
+#本事件用于在游戏开局将所有领袖的生存变量置0
+#调用on_game_start_country
+country_event = {
+	id = ark_apex_leader.00
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		is_this_terra = yes
+	}
+	immediate = {  #目前有24个精英领袖
+#科学家
+		set_variable = {#多萝西
+			which = is_apex_dorothy_spawn
+			value = 0
+		}
+		set_variable = {#灵知
+			which = is_apex_gnosis_spawn
+			value = 0
+		}
+		set_variable = {#凯尔希
+			which = is_apex_kaltsit_spawn
+			value = 0
+		}
+		set_variable = {#异客
+			which = is_apex_passenger_spawn
+			value = 0
+		}
+		set_variable = {#温蒂
+			which = is_apex_weedy_spawn
+			value = 0
+		}
+		set_variable = {#麦哲伦
+			which = is_apex_magallan_spawn
+			value = 0
+		}
+		set_variable = {#艾雅法拉
+			which = is_apex_eyjafjalla_spawn
+			value = 0
+		}
+		set_variable = {#星源
+			which = is_apex_astgenne_spawn
+			value = 0
+		}
+		set_variable = {#雪雉
+			which = is_apex_snowsant_spawn
+			value = 0
+		}
+		set_variable = {#星极
+			which = is_apex_astesia_spawn
+			value = 0
+		}
+		set_variable = {#赫默
+			which = is_apex_silence_spawn
+			value = 0
+		}
+		set_variable = {#梅尔
+			which = is_apex_mayer_spawn
+			value = 0
+		}
+		set_variable = {#可露希尔
+			which = is_apex_closure_spawn
+			value = 0
+		}
+#总督
+		set_variable = {#陈
+			which = is_apex_chen_spawn
+			value = 0
+		}
+		set_variable = {#银灰
+			which = is_apex_silverash_spawn
+			value = 0
+		}
+		set_variable = {#耶拉
+			which = is_apex_kjera_spawn
+			value = 0
+		}
+		set_variable = {#诗怀雅
+			which = is_apex_swire_spawn
+			value = 0
+		}
+#陆军将领
+		set_variable = {#号角
+			which = is_apex_horn_spawn
+			value = 0
+		}
+		set_variable = {#w
+			which = is_apex_w_spawn
+			value = 0
+		}
+#海军将领
+		set_variable = {#煌
+			which = is_apex_blaze_spawn
+			value = 0
+		}
+		set_variable = {#莫斯提马
+			which = is_apex_mostima_spawn
+			value = 0
+		}
+		set_variable = {#塞雷亚
+			which = is_apex_saria_spawn
+			value = 0
+		}
+		set_variable = {#坚雷
+			which = is_apex_Durnar_spawn
+			value = 0
+		}
+		set_variable = {#杜宾
+			which = is_apex_dobermann_spawn
+			value = 0
+		}
+	}
+}
