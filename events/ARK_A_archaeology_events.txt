@@ -34,7 +34,6 @@ country_event = {#储存event_target,开局提示,on_game_start_country
 			capital_scope = {
 				save_global_event_target_as = ARK_PLANET_TERRA
 			}
-			save_global_event_target_as = COUNTRY_ARKNIGHTS
 		}
 	}
 	option = {

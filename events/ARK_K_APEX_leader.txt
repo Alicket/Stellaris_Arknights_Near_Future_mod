@@ -8,40 +8,35 @@ country_event = {
 	hide_window = yes
 	trigger = {
 		is_this_terra = yes   #这个触发器在ark_triggers_easy_coding
-		not= {
+		not = {
 			has_ascension_perk = ap_synthetic_evolution #精英领袖只会在机械飞升前刷新
-		}
-		
+		}	
 	}
 	immediate = { 
-		    if = {   #根据不同的职业刷新不同的领袖
-				limit = {	 #如果新生成的领袖是总督
-					from = {
-						leader_class = governor
+		from = {
+			if = {
+				limit = { leader_class = governor }
+				random_list = {
+					100 = {
+						ARK_K_APEX_born = {
+							check_name = mostima #这里最好不要加双引号
+							name = MOSTIMAAAAAAAAA #这里也是
+							age = 25
+							skill_level = 3
+							portrait = ARK003 #我把scripted_effect这里改了一下
+						}
 					}
 				}
-				random_list = {
-					100 = {  #刷新特殊领袖的概率在这里
-						ARK_K_APEX_born = {
-							check_name = "mostima"
-							name = "莫斯提马"
-							age = 233
-							skill_level = 3
-							port = 003
-						}				
-			       }					
-			    }
-				
-		    }
+			}
+		}
 	}
-
 }
 
 
 #本事件用于在游戏开局将所有领袖的生存变量置0
 #调用on_game_start_country
 country_event = {
-	id = ark_apex_leader.00
+	id = ark_apex_leader.1
 	is_triggered_only = yes
 	hide_window = yes
 	trigger = {
