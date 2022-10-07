@@ -16,17 +16,289 @@ country_event = {
 		from = {
 			if = {
 				limit = { leader_class = governor }
-				random_list = {
-					100 = {
-						ARK_K_APEX_born = {
-							check_name = mostima #这里最好不要加双引号
-							name = MOSTIMAAAAAAAAA #这里也是
-							age = 25
-							skill_level = 3
-							portrait = ARK003 #我把scripted_effect这里改了一下
+				if = {
+					limit = {
+						root = {
+							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave1 }
+						}
+					}
+					root = {
+						set_country_flag = ark_apex_leader_spawned_first_wave1
+					}
+					break = yes
+				}
+				if = {
+					limit = {
+						root = {
+							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave2 }
+							has_country_flag = ark_apex_leader_spawned_first_wave1	
+						}
+					}
+					root = {
+						set_country_flag = ark_apex_leader_spawned_first_wave2
+					}
+					break = yes
+				}
+				if = {
+					limit = {
+						root = {
+							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave3 }
+							has_country_flag = ark_apex_leader_spawned_first_wave1
+							has_country_flag = ark_apex_leader_spawned_first_wave2	
+						}
+					}
+					root = {
+						set_country_flag = ark_apex_leader_spawned_first_wave3
+					}
+					break = yes
+				}
+				if = {
+					limit = {
+						root = {
+							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave4 }
+							has_country_flag = ark_apex_leader_spawned_first_wave1
+							has_country_flag = ark_apex_leader_spawned_first_wave2	
+							has_country_flag = ark_apex_leader_spawned_first_wave3	
+						}
+					}
+					root = {
+						set_country_flag = ark_apex_leader_spawned_first_wave4
+					}
+					break = yes
+				}
+				if = {
+					limit = {
+						root = {
+							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave5 }
+							has_country_flag = ark_apex_leader_spawned_first_wave1
+							has_country_flag = ark_apex_leader_spawned_first_wave2	
+							has_country_flag = ark_apex_leader_spawned_first_wave3	
+							has_country_flag = ark_apex_leader_spawned_first_wave4	
+						}
+					}
+					root = {
+						set_country_flag = ark_apex_leader_spawned_first_wave5
+					}
+					break = yes
+				}
+				if = {
+					limit = {
+						root = {
+							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave6 }
+							has_country_flag = ark_apex_leader_spawned_first_wave1
+							has_country_flag = ark_apex_leader_spawned_first_wave2	
+							has_country_flag = ark_apex_leader_spawned_first_wave3	
+							has_country_flag = ark_apex_leader_spawned_first_wave4	
+							has_country_flag = ark_apex_leader_spawned_first_wave5	
+						}
+					}
+					root = {
+						set_country_flag = ark_apex_leader_spawned_first_wave6
+					}
+					break = yes
+				}
+				if = {
+					limit = {
+						root = {
+							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave7 }
+							has_country_flag = ark_apex_leader_spawned_first_wave1
+							has_country_flag = ark_apex_leader_spawned_first_wave2	
+							has_country_flag = ark_apex_leader_spawned_first_wave3	
+							has_country_flag = ark_apex_leader_spawned_first_wave4	
+							has_country_flag = ark_apex_leader_spawned_first_wave5	
+							has_country_flag = ark_apex_leader_spawned_first_wave6
+						}
+					}
+					root = {
+						set_country_flag = ark_apex_leader_spawned_first_wave7
+					}
+					break = yes
+				}
+				# if = {
+				# 	limit = {
+				# 		root = {
+				# 			NOT = {has_country_flag = ark_apex_leader_spawned_first_wave8 }
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave1
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave2	
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave3	
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave4	
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave5	
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave6
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave7
+				# 		}
+				# 	}
+				# 	root = {
+				# 		set_country_flag = ark_apex_leader_spawned_first_wave8
+				# 	}
+				# 	break = yes
+				# }
+				# if = {
+				# 	limit = {
+				# 		root = {
+				# 			NOT = {has_country_flag = ark_apex_leader_spawned_first_wave9 }
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave1
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave2	
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave3	
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave4	
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave5	
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave6
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave7
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave8
+				# 		}
+				# 	}
+				# 	root = {
+				# 		set_country_flag = ark_apex_leader_spawned_first_wave9
+				# 	}
+				# 	break = yes
+				# }
+				# if = {
+				# 	limit = {
+				# 		root = {
+				# 			NOT = {has_country_flag = ark_apex_leader_spawned_first_wave10 }
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave1
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave2	
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave3	
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave4	
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave5	
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave6
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave7
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave8
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave9
+				# 		}
+				# 	}
+				# 	root = {
+				# 		set_country_flag = ark_apex_leader_spawned_first_wave10
+				# 	}
+				# 	break = yes
+				# }
+				# if = {
+				# 	limit = {
+				# 		root = {
+				# 			NOT = {has_country_flag = ark_apex_leader_spawned_first_wave11 }
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave1
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave2	
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave3	
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave4	
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave5	
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave6
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave7
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave8
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave9
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave10
+
+				# 		}
+				# 	}
+				# 	root = {
+				# 		set_country_flag = ark_apex_leader_spawned_first_wave11
+				# 	}
+				# 	break = yes
+				# }
+				# if = {
+				# 	limit = {
+				# 		root = {
+				# 			NOT = {has_country_flag = ark_apex_leader_spawned_first_wave12 }
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave1
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave2	
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave3	
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave4	
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave5	
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave6
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave7
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave8
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave9
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave10
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave11
+				# 		}
+				# 	}
+				# 	root = {
+				# 		set_country_flag = ark_apex_leader_spawned_first_wave12
+				# 	}
+				# 	break = yes
+				# }
+				# if = {
+				# 	limit = {
+				# 		root = {
+				# 			NOT = {has_country_flag = ark_apex_leader_spawned_first_wave13 }
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave1
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave2	
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave3	
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave4	
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave5	
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave6
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave7
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave8
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave9
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave10
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave11
+				# 			has_country_flag = ark_apex_leader_spawned_first_wave12
+				# 		}
+				# 	}
+				# 	root = {
+				# 		set_country_flag = ark_apex_leader_spawned_first_wave13
+				# 	}
+				# 	break = yes
+				# }
+				if = {
+					limit = {
+						root = {
+							has_country_flag = ark_apex_leader_spawned_first_wave1
+							has_country_flag = ark_apex_leader_spawned_first_wave2
+							has_country_flag = ark_apex_leader_spawned_first_wave3
+							has_country_flag = ark_apex_leader_spawned_first_wave4	
+							has_country_flag = ark_apex_leader_spawned_first_wave5	
+							has_country_flag = ark_apex_leader_spawned_first_wave6	
+							has_country_flag = ark_apex_leader_spawned_first_wave7
+							#has_country_flag = ark_apex_leader_spawned_first_wave8
+							#has_country_flag = ark_apex_leader_spawned_first_wave9
+							#has_country_flag = ark_apex_leader_spawned_first_wave10
+							#has_country_flag = ark_apex_leader_spawned_first_wave11
+							#has_country_flag = ark_apex_leader_spawned_first_wave12
+							#has_country_flag = ark_apex_leader_spawned_first_wave13
+						}
+					}
+					random_list = {
+						5 = {}
+						1 = {
+							ARK_K_APEX_born = {
+								check_name = mostima
+								name = MOSTIMAAAAAAAAA
+								age = 25
+								skill_level = 3
+								portrait = ARK003
+							}
+						}
+						1 = {
+							ARK_K_APEX_born = {
+								check_name = dobermann
+								name = DUBBBBBB
+								age = 25
+								skill_level = 3
+								portrait = ARK003
+							}
+						}
+						1 = {
+							ARK_K_APEX_born = {
+								check_name = saria
+								name = SARIAAAAAAA
+								age = 25
+								skill_level = 3
+								portrait = ARK003
+							}
+						}
+						1 = {
+							ARK_K_APEX_born = {
+								check_name = kjera
+								name = KJERAAAAAAAA
+								age = 25
+								skill_level = 3
+								portrait = ARK003
+							}
 						}
 					}
 				}
+			}
+			else = {
+				
 			}
 		}
 	}
@@ -35,8 +307,24 @@ country_event = {
 
 #本事件用于在游戏开局将所有领袖的生存变量置0
 #调用on_game_start_country
+
+# country_event = {
+# 	id = ark_apex_leader.00
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	trigger = {
+# 		#is_this_terra = yes
+# 	}
+# 	immediate = {
+# 		country_event = {
+# 			id = ark_apex_leader.10
+# 			days = 31
+# 		}
+# 	}
+# }
+
 country_event = {
-	id = ark_apex_leader.1
+	id = ark_apex_leader.10
 	is_triggered_only = yes
 	hide_window = yes
 	trigger = {
