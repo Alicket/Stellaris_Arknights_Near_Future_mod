@@ -136,7 +136,7 @@ country_event = {
 			value = 0
 		}
 		set_variable = {#坚雷
-			which = is_apex_Durnar_spawn
+			which = is_apex_durnar_spawn
 			value = 0
 		}
 		set_variable = {#杜宾

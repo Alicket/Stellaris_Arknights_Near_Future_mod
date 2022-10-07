@@ -265,7 +265,6 @@ leader_trait_superintendent = {
 	icon = "gfx/interface/icons/traits/leader_trait_superintendent.dds"
 	modifier = {
 		job_enforcer_add = 2
-		planet_enforcers_produces_mult = 0.1
 	}
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -286,7 +285,7 @@ leader_trait_wealthy = {
 	modification = no
 	icon = "gfx/interface/icons/traits/leader_trait_wealthy.dds"
 	modifier = {
-		planet_enforcers_upkeep_mult = 0.1
+		planet_jobs_consumer_goods_upkeep_mult = -0.1
 	}
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
