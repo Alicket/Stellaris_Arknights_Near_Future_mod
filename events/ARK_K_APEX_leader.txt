@@ -2,7 +2,7 @@ namespace = ark_apex_leader
 #本事件用于在领袖池随机生成精英领袖
 #调用on_leader_spawned触发器
 
-country_event = {
+country_event = {   #总督的随机生成
 	id = ark_apex_leader.0
 	is_triggered_only = yes
 	hide_window = yes
@@ -14,9 +14,9 @@ country_event = {
 	}
 	immediate = { 
 		from = {
-			if = {
-				limit = { leader_class = governor }
-				if = {
+			if = {#进行总督的生成                    
+				limit = { leader_class = governor }  ##开始不知道为什么但应当进行的缓冲，原因不明，能跑就行（22年11月24日）
+				if = {                #第一次缓冲
 					limit = {
 						root = {
 							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave1 }
@@ -27,7 +27,7 @@ country_event = {
 					}
 					break = yes
 				}
-				if = {
+				if = {                #第二次缓冲
 					limit = {
 						root = {
 							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave2 }
@@ -39,7 +39,7 @@ country_event = {
 					}
 					break = yes
 				}
-				if = {
+				if = {                #第三次缓冲
 					limit = {
 						root = {
 							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave3 }
@@ -52,7 +52,7 @@ country_event = {
 					}
 					break = yes
 				}
-				if = {
+				if = {                #第四次缓冲
 					limit = {
 						root = {
 							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave4 }
@@ -66,7 +66,7 @@ country_event = {
 					}
 					break = yes
 				}
-				if = {
+				if = {                #第五次缓冲
 					limit = {
 						root = {
 							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave5 }
@@ -81,7 +81,7 @@ country_event = {
 					}
 					break = yes
 				}
-				if = {
+				if = {                #第六次缓冲
 					limit = {
 						root = {
 							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave6 }
@@ -97,7 +97,7 @@ country_event = {
 					}
 					break = yes
 				}
-				if = {
+				if = {                #第七次缓冲
 					limit = {
 						root = {
 							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave7 }
@@ -114,131 +114,7 @@ country_event = {
 					}
 					break = yes
 				}
-				# if = {
-				# 	limit = {
-				# 		root = {
-				# 			NOT = {has_country_flag = ark_apex_leader_spawned_first_wave8 }
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave1
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave2	
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave3	
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave4	
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave5	
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave6
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave7
-				# 		}
-				# 	}
-				# 	root = {
-				# 		set_country_flag = ark_apex_leader_spawned_first_wave8
-				# 	}
-				# 	break = yes
-				# }
-				# if = {
-				# 	limit = {
-				# 		root = {
-				# 			NOT = {has_country_flag = ark_apex_leader_spawned_first_wave9 }
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave1
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave2	
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave3	
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave4	
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave5	
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave6
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave7
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave8
-				# 		}
-				# 	}
-				# 	root = {
-				# 		set_country_flag = ark_apex_leader_spawned_first_wave9
-				# 	}
-				# 	break = yes
-				# }
-				# if = {
-				# 	limit = {
-				# 		root = {
-				# 			NOT = {has_country_flag = ark_apex_leader_spawned_first_wave10 }
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave1
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave2	
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave3	
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave4	
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave5	
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave6
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave7
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave8
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave9
-				# 		}
-				# 	}
-				# 	root = {
-				# 		set_country_flag = ark_apex_leader_spawned_first_wave10
-				# 	}
-				# 	break = yes
-				# }
-				# if = {
-				# 	limit = {
-				# 		root = {
-				# 			NOT = {has_country_flag = ark_apex_leader_spawned_first_wave11 }
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave1
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave2	
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave3	
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave4	
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave5	
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave6
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave7
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave8
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave9
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave10
-
-				# 		}
-				# 	}
-				# 	root = {
-				# 		set_country_flag = ark_apex_leader_spawned_first_wave11
-				# 	}
-				# 	break = yes
-				# }
-				# if = {
-				# 	limit = {
-				# 		root = {
-				# 			NOT = {has_country_flag = ark_apex_leader_spawned_first_wave12 }
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave1
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave2	
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave3	
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave4	
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave5	
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave6
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave7
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave8
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave9
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave10
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave11
-				# 		}
-				# 	}
-				# 	root = {
-				# 		set_country_flag = ark_apex_leader_spawned_first_wave12
-				# 	}
-				# 	break = yes
-				# }
-				# if = {
-				# 	limit = {
-				# 		root = {
-				# 			NOT = {has_country_flag = ark_apex_leader_spawned_first_wave13 }
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave1
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave2	
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave3	
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave4	
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave5	
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave6
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave7
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave8
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave9
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave10
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave11
-				# 			has_country_flag = ark_apex_leader_spawned_first_wave12
-				# 		}
-				# 	}
-				# 	root = {
-				# 		set_country_flag = ark_apex_leader_spawned_first_wave13
-				# 	}
-				# 	break = yes
-				# }
-				if = {
+				if = {                #七次缓冲完毕，进行领袖生成
 					limit = {
 						root = {
 							has_country_flag = ark_apex_leader_spawned_first_wave1
@@ -248,82 +124,1080 @@ country_event = {
 							has_country_flag = ark_apex_leader_spawned_first_wave5	
 							has_country_flag = ark_apex_leader_spawned_first_wave6	
 							has_country_flag = ark_apex_leader_spawned_first_wave7
-							#has_country_flag = ark_apex_leader_spawned_first_wave8
-							#has_country_flag = ark_apex_leader_spawned_first_wave9
-							#has_country_flag = ark_apex_leader_spawned_first_wave10
-							#has_country_flag = ark_apex_leader_spawned_first_wave11
-							#has_country_flag = ark_apex_leader_spawned_first_wave12
-							#has_country_flag = ark_apex_leader_spawned_first_wave13
+
 						}
 					}
-					random_list = {
-						5 = {}
-						1 = {
-							ARK_K_APEX_born = {
-								check_name = mostima
-								name = MOSTIMAAAAAAAAA
-								age = 25
-								skill_level = 3
-								portrait = ARK003
+					random_list = {   #领袖随机生成
+					        4 = {}
+							1 = { 
+							    if = {
+									limit = {  #如果生成标记0  或者  生成标记1且存活标记0，生成领袖，将生成与存活标记置1
+										or = {
+											 check_variable = { 
+												which = is_apex_chen_spawn
+												value = 0
+											 }
+											and = {
+												check_variable = {
+													which = is_apex_chen_spawn
+													value = 1
+												}
+												check_variable = {
+													which = is_apex_chen_alive
+													value = 0
+												}
+											}
+										}
+									}
+									ARK_K_APEX_born = {#总督陈
+									 check_name = chen
+									 name = "陈"
+									 age = 25
+									 skill_level = 3
+									 portrait = ARK010
+								    }
+								}
 							}
-						}
-						1 = {
-							ARK_K_APEX_born = {
-								check_name = dobermann
-								name = DUBBBBBB
-								age = 25
-								skill_level = 3
-								portrait = ARK003
+							1 ={
+							    if = {
+									limit = {
+										or = {
+											check_variable = {  
+											   which = is_apex_silverash_spawn
+											   value = 0
+											}
+										   and = {
+											   check_variable = {
+												   which = is_apex_silverash_spawn
+												   value = 1
+											   }
+											   check_variable = {
+												   which = is_apex_silverash_alive
+												   value = 0
+											   }
+										   }
+									   }
+									}
+									ARK_K_APEX_born = {#总督银灰
+									 check_name = silverash
+									 name = "银灰"
+									 is_female = false
+									 age = 25
+									 skill_level = 3
+									 portrait = ARK172
+								    }	
+							    }
 							}
-						}
-						1 = {
-							ARK_K_APEX_born = {
-								check_name = saria
-								name = SARIAAAAAAA
-								age = 25
-								skill_level = 3
-								portrait = ARK003
+                            1= {
+							    if = {
+									limit = {
+									   or = {
+										   check_variable = {  
+											  which = is_apex_kjera_spawn
+											  value = 0
+										   }
+										  and = {
+											  check_variable = {
+												  which = is_apex_kjera_spawn
+												  value = 1
+											  }
+											  check_variable = {
+												  which = is_apex_kjera_alive
+												  value = 0
+											  }
+										  }
+									  }
+									}
+									ARK_K_APEX_born = {#总督耶拉
+									 check_name = kjera
+									 name = "耶拉"
+									 age = 25
+									 skill_level = 3
+									 portrait = ARK4013
+									}	
+								   }
 							}
-						}
-						1 = {
-							ARK_K_APEX_born = {
-								check_name = kjera
-								name = KJERAAAAAAAA
-								age = 25
-								skill_level = 3
-								portrait = ARK003
+                            1={
+							    if = {
+									limit = {
+									   or = {
+										   check_variable = {  
+											  which = is_apex_swire_spawn
+											  value = 0
+										   }
+										  and = {
+											  check_variable = {
+												  which = is_apex_swire_spawn
+												  value = 1
+											  }
+											  check_variable = {
+												  which = is_apex_swire_alive
+												  value = 0
+											  }
+										  }
+									  }
+									}
+									ARK_K_APEX_born = {#总督诗怀雅
+									 check_name = swire
+									 name = "诗怀雅"
+									 age = 25
+									 skill_level = 3
+									 portrait = ARK308
+									}	
+								}
 							}
+					}
+				}   
+
+			}
+			else_if = {   #现在是科学家的改造生成                 
+				limit = { leader_class = scientist }
+				if = {                #第一次缓冲
+					limit = {
+						root = {
+							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave1 }
 						}
+					}
+					root = {
+						set_country_flag = ark_apex_leader_spawned_first_wave1
+					}
+					break = yes
+				}
+				if = {                #第二次缓冲
+					limit = {
+						root = {
+							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave2 }
+							has_country_flag = ark_apex_leader_spawned_first_wave1	
+						}
+					}
+					root = {
+						set_country_flag = ark_apex_leader_spawned_first_wave2
+					}
+					break = yes
+				}
+				if = {                #第三次缓冲
+					limit = {
+						root = {
+							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave3 }
+							has_country_flag = ark_apex_leader_spawned_first_wave1
+							has_country_flag = ark_apex_leader_spawned_first_wave2	
+						}
+					}
+					root = {
+						set_country_flag = ark_apex_leader_spawned_first_wave3
+					}
+					break = yes
+				}
+				if = {                #第四次缓冲
+					limit = {
+						root = {
+							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave4 }
+							has_country_flag = ark_apex_leader_spawned_first_wave1
+							has_country_flag = ark_apex_leader_spawned_first_wave2	
+							has_country_flag = ark_apex_leader_spawned_first_wave3	
+						}
+					}
+					root = {
+						set_country_flag = ark_apex_leader_spawned_first_wave4
+					}
+					break = yes
+				}
+				if = {                #第五次缓冲
+					limit = {
+						root = {
+							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave5 }
+							has_country_flag = ark_apex_leader_spawned_first_wave1
+							has_country_flag = ark_apex_leader_spawned_first_wave2	
+							has_country_flag = ark_apex_leader_spawned_first_wave3	
+							has_country_flag = ark_apex_leader_spawned_first_wave4	
+						}
+					}
+					root = {
+						set_country_flag = ark_apex_leader_spawned_first_wave5
+					}
+					break = yes
+				}
+				if = {                #第六次缓冲
+					limit = {
+						root = {
+							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave6 }
+							has_country_flag = ark_apex_leader_spawned_first_wave1
+							has_country_flag = ark_apex_leader_spawned_first_wave2	
+							has_country_flag = ark_apex_leader_spawned_first_wave3	
+							has_country_flag = ark_apex_leader_spawned_first_wave4	
+							has_country_flag = ark_apex_leader_spawned_first_wave5	
+						}
+					}
+					root = {
+						set_country_flag = ark_apex_leader_spawned_first_wave6
+					}
+					break = yes
+				}
+				if = {                #第七次缓冲
+					limit = {
+						root = {
+							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave7 }
+							has_country_flag = ark_apex_leader_spawned_first_wave1
+							has_country_flag = ark_apex_leader_spawned_first_wave2	
+							has_country_flag = ark_apex_leader_spawned_first_wave3	
+							has_country_flag = ark_apex_leader_spawned_first_wave4	
+							has_country_flag = ark_apex_leader_spawned_first_wave5	
+							has_country_flag = ark_apex_leader_spawned_first_wave6
+						}
+					}
+					root = {
+						set_country_flag = ark_apex_leader_spawned_first_wave7
+					}
+					break = yes
+				}
+				if = {                #七次缓冲完毕，进行领袖生成
+					limit = {
+						root = {
+							has_country_flag = ark_apex_leader_spawned_first_wave1
+							has_country_flag = ark_apex_leader_spawned_first_wave2
+							has_country_flag = ark_apex_leader_spawned_first_wave3
+							has_country_flag = ark_apex_leader_spawned_first_wave4	
+							has_country_flag = ark_apex_leader_spawned_first_wave5	
+							has_country_flag = ark_apex_leader_spawned_first_wave6	
+							has_country_flag = ark_apex_leader_spawned_first_wave7
+
+						}
+					}
+					random_list = {   #领袖随机生成
+					        7 = {}
+							1 = { 
+							    if = {
+									limit = {  #如果生成标记0  或者  生成标记1且存活标记0，生成领袖，将生成与存活标记置1
+										or = {
+											 check_variable = { 
+												which = is_apex_dorothy_spawn
+												value = 0
+											 }
+											and = {
+												check_variable = {
+													which = is_apex_dorothy_spawn
+													value = 1
+												}
+												check_variable = {
+													which = is_apex_dorothy_alive
+													value = 0
+												}
+											}
+										}
+									}
+									ARK_K_APEX_born = {#科学家多萝西
+									 check_name = dorothy
+									 name = "多萝西"
+									 age = 25
+									 skill_level = 3
+									 portrait = ARK001
+								    }
+								}
+							}
+							1 ={
+							    if = {
+									limit = {
+										or = {
+											check_variable = {  
+											   which = is_apex_gnosis_spawn
+											   value = 0
+											}
+										   and = {
+											   check_variable = {
+												   which = is_apex_gnosis_spawn
+												   value = 1
+											   }
+											   check_variable = {
+												   which = is_apex_gnosis_alive
+												   value = 0
+											   }
+										   }
+									   }
+									}
+									ARK_K_APEX_born = {#科学家灵知
+									 check_name = gnosis
+									 name = "诺希斯"
+									 is_female = false
+									 age = 25
+									 skill_level = 3
+									 portrait = ARK206
+								    }	
+							    }
+							}
+                            1= {
+							    if = {
+									limit = {
+									   or = {
+										   check_variable = {  
+											  which = is_apex_kaltsit_spawn
+											  value = 0
+										   }
+										  and = {
+											  check_variable = {
+												  which = is_apex_kaltsit_spawn
+												  value = 1
+											  }
+											  check_variable = {
+												  which = is_apex_kaltsit_alive
+												  value = 0
+											  }
+										  }
+									  }
+									}
+									ARK_K_APEX_born = {#科学家凯尔希
+									 check_name = kaltsit
+									 name = "凯尔希"
+									 age = 25
+									 skill_level = 3
+									 portrait = ARK003
+									}	
+								   }
+							}
+                            1={
+							    if = {
+									limit = {
+									   or = {
+										   check_variable = {  
+											  which = is_apex_passenger_spawn
+											  value = 0
+										   }
+										  and = {
+											  check_variable = {
+												  which = is_apex_passenger_spawn
+												  value = 1
+											  }
+											  check_variable = {
+												  which = is_apex_passenger_alive
+												  value = 0
+											  }
+										  }
+									  }
+									}
+									ARK_K_APEX_born = {#科学家异客
+									 check_name = passenger
+									 name = "异客"
+									 age = 25
+									 is_female = yes
+									 skill_level = 3
+									 portrait = ARK472
+									}	
+								}
+							}
+							1={
+							    if = {
+									limit = {
+									   or = {
+										   check_variable = {  
+											  which = is_apex_weedy_spawn
+											  value = 0
+										   }
+										  and = {
+											  check_variable = {
+												  which = is_apex_weedy_spawn
+												  value = 1
+											  }
+											  check_variable = {
+												  which = is_apex_weedy_alive
+												  value = 0
+											  }
+										  }
+									  }
+									}
+									ARK_K_APEX_born = {#科学家温蒂
+									 check_name = weedy
+									 name = "温蒂"
+									 age = 25
+									 skill_level = 3
+									 portrait = ARK400
+									}	
+								}
+							}
+							1={
+							    if = {
+									limit = {
+									   or = {
+										   check_variable = {  
+											  which = is_apex_magallan_spawn
+											  value = 0
+										   }
+										  and = {
+											  check_variable = {
+												  which = is_apex_magallan_spawn
+												  value = 1
+											  }
+											  check_variable = {
+												  which = is_apex_magallan_alive
+												  value = 0
+											  }
+										  }
+									  }
+									}
+									ARK_K_APEX_born = {#科学家麦哲伦
+									 check_name = magallan
+									 name = "麦哲伦"
+									 age = 25
+									 skill_level = 3
+									 portrait = ARK248
+									}	
+								}
+							}
+							1={
+							    if = {
+									limit = {
+									   or = {
+										   check_variable = {  
+											  which = is_apex_eyjafjalla_spawn
+											  value = 0
+										   }
+										  and = {
+											  check_variable = {
+												  which = is_apex_eyjafjalla_spawn
+												  value = 1
+											  }
+											  check_variable = {
+												  which = is_apex_eyjafjalla_alive
+												  value = 0
+											  }
+										  }
+									  }
+									}
+									ARK_K_APEX_born = {#科学家艾雅法拉
+									 check_name = eyjafjalla
+									 name = "艾雅法拉"
+									 age = 25
+									 skill_level = 3
+									 portrait = ARK180
+									}	
+								}
+							}
+							1={
+							    if = {
+									limit = {
+									   or = {
+										   check_variable = {  
+											  which = is_apex_astgenne_spawn
+											  value = 0
+										   }
+										  and = {
+											  check_variable = {
+												  which = is_apex_astgenne_spawn
+												  value = 1
+											  }
+											  check_variable = {
+												  which = is_apex_astgenne_alive
+												  value = 0
+											  }
+										  }
+									  }
+									}
+									ARK_K_APEX_born = {#科学家星源
+									 check_name = astgenne
+									 name = "星源"
+									 age = 25
+									 skill_level = 3
+									 portrait = ARK135
+									}	
+								}
+							}
+							1={
+							    if = {
+									limit = {
+									   or = {
+										   check_variable = {  
+											  which = is_apex_snowsant_spawn
+											  value = 0
+										   }
+										  and = {
+											  check_variable = {
+												  which = is_apex_snowsant_spawn
+												  value = 1
+											  }
+											  check_variable = {
+												  which = is_apex_snowsant_alive
+												  value = 0
+											  }
+										  }
+									  }
+									}
+									ARK_K_APEX_born = {#科学家雪雉
+									 check_name = snowsant
+									 name = "雪雉"
+									 age = 25
+									 skill_level = 3
+									 portrait = ARK383
+									}	
+								}
+							}
+							1={
+							    if = {
+									limit = {
+									   or = {
+										   check_variable = {  
+											  which = is_apex_astesia_spawn
+											  value = 0
+										   }
+										  and = {
+											  check_variable = {
+												  which = is_apex_astesia_spawn
+												  value = 1
+											  }
+											  check_variable = {
+												  which = is_apex_astesia_alive
+												  value = 0
+											  }
+										  }
+									  }
+									}
+									ARK_K_APEX_born = {#科学家星极
+									 check_name = astesia
+									 name = "星极"
+									 age = 25
+									 skill_level = 3
+									 portrait = ARK274
+									}	
+								}
+							}
+							1={
+							    if = {
+									limit = {
+									   or = {
+										   check_variable = {  
+											  which = is_apex_silence_spawn
+											  value = 0
+										   }
+										  and = {
+											  check_variable = {
+												  which = is_apex_silence_spawn
+												  value = 1
+											  }
+											  check_variable = {
+												  which = is_apex_silence_alive
+												  value = 0
+											  }
+										  }
+									  }
+									}
+									ARK_K_APEX_born = {#科学家赫默
+									 check_name = silence
+									 name = "赫默"
+									 age = 25
+									 skill_level = 3
+									 portrait = ARK108
+									}	
+								}
+							}
+							1={
+							    if = {
+									limit = {
+									   or = {
+										   check_variable = {  
+											  which = is_apex_mayer_spawn
+											  value = 0
+										   }
+										  and = {
+											  check_variable = {
+												  which = is_apex_mayer_spawn
+												  value = 1
+											  }
+											  check_variable = {
+												  which = is_apex_mayer_alive
+												  value = 0
+											  }
+										  }
+									  }
+									}
+									ARK_K_APEX_born = {#科学家梅尔
+									 check_name = mayer
+									 name = "梅尔"
+									 age = 25
+									 skill_level = 3
+									 portrait = ARK242
+									}	
+								}
+							}
+							1={
+							    if = {
+									limit = {
+									   or = {
+										   check_variable = {  
+											  which = is_apex_closure_spawn
+											  value = 0
+										   }
+										  and = {
+											  check_variable = {
+												  which = is_apex_closure_spawn
+												  value = 1
+											  }
+											  check_variable = {
+												  which = is_apex_closure_alive
+												  value = 0
+											  }
+										  }
+									  }
+									}
+									ARK_K_APEX_born = {#科学家可露希尔
+									 check_name = closure
+									 name = "可露希尔"
+									 age = 25
+									 skill_level = 3
+									 portrait = ARK007
+									}	
+								}
+							}
+					}
+				}   
+
+			}
+			else_if = {   #现在是海军将领的改造生成                
+			limit = { leader_class = admiral }
+			if = {                #第一次缓冲
+				limit = {
+					root = {
+						NOT = {has_country_flag = ark_apex_leader_spawned_first_wave1 }
 					}
 				}
+				root = {
+					set_country_flag = ark_apex_leader_spawned_first_wave1
+				}
+				break = yes
 			}
-			else = {
-				
+			if = {                #第二次缓冲
+				limit = {
+					root = {
+						NOT = {has_country_flag = ark_apex_leader_spawned_first_wave2 }
+						has_country_flag = ark_apex_leader_spawned_first_wave1	
+					}
+				}
+				root = {
+					set_country_flag = ark_apex_leader_spawned_first_wave2
+				}
+				break = yes
 			}
-		}
+			if = {                #第三次缓冲
+				limit = {
+					root = {
+						NOT = {has_country_flag = ark_apex_leader_spawned_first_wave3 }
+						has_country_flag = ark_apex_leader_spawned_first_wave1
+						has_country_flag = ark_apex_leader_spawned_first_wave2	
+					}
+				}
+				root = {
+					set_country_flag = ark_apex_leader_spawned_first_wave3
+				}
+				break = yes
+			}
+			if = {                #第四次缓冲
+				limit = {
+					root = {
+						NOT = {has_country_flag = ark_apex_leader_spawned_first_wave4 }
+						has_country_flag = ark_apex_leader_spawned_first_wave1
+						has_country_flag = ark_apex_leader_spawned_first_wave2	
+						has_country_flag = ark_apex_leader_spawned_first_wave3	
+					}
+				}
+				root = {
+					set_country_flag = ark_apex_leader_spawned_first_wave4
+				}
+				break = yes
+			}
+			if = {                #第五次缓冲
+				limit = {
+					root = {
+						NOT = {has_country_flag = ark_apex_leader_spawned_first_wave5 }
+						has_country_flag = ark_apex_leader_spawned_first_wave1
+						has_country_flag = ark_apex_leader_spawned_first_wave2	
+						has_country_flag = ark_apex_leader_spawned_first_wave3	
+						has_country_flag = ark_apex_leader_spawned_first_wave4	
+					}
+				}
+				root = {
+					set_country_flag = ark_apex_leader_spawned_first_wave5
+				}
+				break = yes
+			}
+			if = {                #第六次缓冲
+				limit = {
+					root = {
+						NOT = {has_country_flag = ark_apex_leader_spawned_first_wave6 }
+						has_country_flag = ark_apex_leader_spawned_first_wave1
+						has_country_flag = ark_apex_leader_spawned_first_wave2	
+						has_country_flag = ark_apex_leader_spawned_first_wave3	
+						has_country_flag = ark_apex_leader_spawned_first_wave4	
+						has_country_flag = ark_apex_leader_spawned_first_wave5	
+					}
+				}
+				root = {
+					set_country_flag = ark_apex_leader_spawned_first_wave6
+				}
+				break = yes
+			}
+			if = {                #第七次缓冲
+				limit = {
+					root = {
+						NOT = {has_country_flag = ark_apex_leader_spawned_first_wave7 }
+						has_country_flag = ark_apex_leader_spawned_first_wave1
+						has_country_flag = ark_apex_leader_spawned_first_wave2	
+						has_country_flag = ark_apex_leader_spawned_first_wave3	
+						has_country_flag = ark_apex_leader_spawned_first_wave4	
+						has_country_flag = ark_apex_leader_spawned_first_wave5	
+						has_country_flag = ark_apex_leader_spawned_first_wave6
+					}
+				}
+				root = {
+					set_country_flag = ark_apex_leader_spawned_first_wave7
+				}
+				break = yes
+			}
+			if = {                #七次缓冲完毕，进行领袖生成
+				limit = {
+					root = {
+						has_country_flag = ark_apex_leader_spawned_first_wave1
+						has_country_flag = ark_apex_leader_spawned_first_wave2
+						has_country_flag = ark_apex_leader_spawned_first_wave3
+						has_country_flag = ark_apex_leader_spawned_first_wave4	
+						has_country_flag = ark_apex_leader_spawned_first_wave5	
+						has_country_flag = ark_apex_leader_spawned_first_wave6	
+						has_country_flag = ark_apex_leader_spawned_first_wave7
+
+					}
+				}
+				random_list = {   #领袖随机生成
+						5 = {}
+						1 = { 
+							if = {
+								limit = {  #如果生成标记0  或者  生成标记1且存活标记0，生成领袖，将生成与存活标记置1
+									or = {
+										 check_variable = { 
+											which = is_apex_blaze_spawn
+											value = 0
+										 }
+										and = {
+											check_variable = {
+												which = is_apex_blaze_spawn
+												value = 1
+											}
+											check_variable = {
+												which = is_apex_blaze_alive
+												value = 0
+											}
+										}
+									}
+								}
+								ARK_K_APEX_born = {#舰长煌
+								 check_name = blaze
+								 name = "煌"
+								 age = 25
+								 skill_level = 3
+								 portrait = ARK017
+								}
+							}
+						}
+						1 ={
+							if = {
+								limit = {
+									or = {
+										check_variable = {  
+										   which = is_apex_mostima_spawn
+										   value = 0
+										}
+									   and = {
+										   check_variable = {
+											   which = is_apex_mostima_spawn
+											   value = 1
+										   }
+										   check_variable = {
+											   which = is_apex_mostima_alive
+											   value = 0
+										   }
+									   }
+								   }
+								}
+								ARK_K_APEX_born = {#舰长莫斯提马
+								 check_name = mostima
+								 name = "莫斯提马"
+								 age = 25
+								 skill_level = 3
+								 portrait = ARK213
+								}	
+							}
+						}
+						1= {
+							if = {
+								limit = {
+								   or = {
+									   check_variable = {  
+										  which = is_apex_saria_spawn
+										  value = 0
+									   }
+									  and = {
+										  check_variable = {
+											  which = is_apex_saria_spawn
+											  value = 1
+										  }
+										  check_variable = {
+											  which = is_apex_saria_alive
+											  value = 0
+										  }
+									  }
+								  }
+								}
+								ARK_K_APEX_born = {#舰长塞雷亚
+								 check_name = saria
+								 name = "塞雷亚"
+								 age = 25
+								 skill_level = 3
+								 portrait = ARK202
+								}	
+							   }
+						}
+						1={
+							if = {
+								limit = {
+								   or = {
+									   check_variable = {  
+										  which = is_apex_durnar_spawn
+										  value = 0
+									   }
+									  and = {
+										  check_variable = {
+											  which = is_apex_durnar_spawn
+											  value = 1
+										  }
+										  check_variable = {
+											  which = is_apex_durnar_alive
+											  value = 0
+										  }
+									  }
+								  }
+								}
+								ARK_K_APEX_born = {#舰长坚雷
+								 check_name = durnar
+								 name = "坚雷"
+								 age = 25
+								 skill_level = 3
+								 portrait = ARK001
+								}	
+							}
+						}
+						1={
+							if = {
+								limit = {
+								   or = {
+									   check_variable = {  
+										  which = is_apex_dobermann_spawn
+										  value = 0
+									   }
+									  and = {
+										  check_variable = {
+											  which = is_apex_dobermann_spawn
+											  value = 1
+										  }
+										  check_variable = {
+											  which = is_apex_dobermann_alive
+											  value = 0
+										  }
+									  }
+								  }
+								}
+								ARK_K_APEX_born = {#舰长杜宾
+								 check_name = dobermann
+								 name = "杜宾"
+								 age = 25
+								 skill_level = 3
+								 portrait = ARK130
+								}	
+							}
+						}
+				}
+			}   
+            }
+			else_if = {   #现在是陆军将领的改造生成                
+			limit = { leader_class = general }
+			if = {                #第一次缓冲
+				limit = {
+					root = {
+						NOT = {has_country_flag = ark_apex_leader_spawned_first_wave1 }
+					}
+				}
+				root = {
+					set_country_flag = ark_apex_leader_spawned_first_wave1
+				}
+				break = yes
+			}
+			if = {                #第二次缓冲
+				limit = {
+					root = {
+						NOT = {has_country_flag = ark_apex_leader_spawned_first_wave2 }
+						has_country_flag = ark_apex_leader_spawned_first_wave1	
+					}
+				}
+				root = {
+					set_country_flag = ark_apex_leader_spawned_first_wave2
+				}
+				break = yes
+			}
+			if = {                #第三次缓冲
+				limit = {
+					root = {
+						NOT = {has_country_flag = ark_apex_leader_spawned_first_wave3 }
+						has_country_flag = ark_apex_leader_spawned_first_wave1
+						has_country_flag = ark_apex_leader_spawned_first_wave2	
+					}
+				}
+				root = {
+					set_country_flag = ark_apex_leader_spawned_first_wave3
+				}
+				break = yes
+			}
+			if = {                #第四次缓冲
+				limit = {
+					root = {
+						NOT = {has_country_flag = ark_apex_leader_spawned_first_wave4 }
+						has_country_flag = ark_apex_leader_spawned_first_wave1
+						has_country_flag = ark_apex_leader_spawned_first_wave2	
+						has_country_flag = ark_apex_leader_spawned_first_wave3	
+					}
+				}
+				root = {
+					set_country_flag = ark_apex_leader_spawned_first_wave4
+				}
+				break = yes
+			}
+			if = {                #第五次缓冲
+				limit = {
+					root = {
+						NOT = {has_country_flag = ark_apex_leader_spawned_first_wave5 }
+						has_country_flag = ark_apex_leader_spawned_first_wave1
+						has_country_flag = ark_apex_leader_spawned_first_wave2	
+						has_country_flag = ark_apex_leader_spawned_first_wave3	
+						has_country_flag = ark_apex_leader_spawned_first_wave4	
+					}
+				}
+				root = {
+					set_country_flag = ark_apex_leader_spawned_first_wave5
+				}
+				break = yes
+			}
+			if = {                #第六次缓冲
+				limit = {
+					root = {
+						NOT = {has_country_flag = ark_apex_leader_spawned_first_wave6 }
+						has_country_flag = ark_apex_leader_spawned_first_wave1
+						has_country_flag = ark_apex_leader_spawned_first_wave2	
+						has_country_flag = ark_apex_leader_spawned_first_wave3	
+						has_country_flag = ark_apex_leader_spawned_first_wave4	
+						has_country_flag = ark_apex_leader_spawned_first_wave5	
+					}
+				}
+				root = {
+					set_country_flag = ark_apex_leader_spawned_first_wave6
+				}
+				break = yes
+			}
+			if = {                #第七次缓冲
+				limit = {
+					root = {
+						NOT = {has_country_flag = ark_apex_leader_spawned_first_wave7 }
+						has_country_flag = ark_apex_leader_spawned_first_wave1
+						has_country_flag = ark_apex_leader_spawned_first_wave2	
+						has_country_flag = ark_apex_leader_spawned_first_wave3	
+						has_country_flag = ark_apex_leader_spawned_first_wave4	
+						has_country_flag = ark_apex_leader_spawned_first_wave5	
+						has_country_flag = ark_apex_leader_spawned_first_wave6
+					}
+				}
+				root = {
+					set_country_flag = ark_apex_leader_spawned_first_wave7
+				}
+				break = yes
+			}
+			if = {                #七次缓冲完毕，进行领袖生成
+				limit = {
+					root = {
+						has_country_flag = ark_apex_leader_spawned_first_wave1
+						has_country_flag = ark_apex_leader_spawned_first_wave2
+						has_country_flag = ark_apex_leader_spawned_first_wave3
+						has_country_flag = ark_apex_leader_spawned_first_wave4	
+						has_country_flag = ark_apex_leader_spawned_first_wave5	
+						has_country_flag = ark_apex_leader_spawned_first_wave6	
+						has_country_flag = ark_apex_leader_spawned_first_wave7
+
+					}
+				}
+				random_list = {   #领袖随机生成
+						2 = {}
+						1 = { 
+							if = {
+								limit = {  #如果生成标记0  或者  生成标记1且存活标记0，生成领袖，将生成与存活标记置1
+									or = {
+										 check_variable = { 
+											which = is_apex_horn_spawn
+											value = 0
+										 }
+										and = {
+											check_variable = {
+												which = is_apex_horn_spawn
+												value = 1
+											}
+											check_variable = {
+												which = is_apex_horn_alive
+												value = 0
+											}
+										}
+									}
+								}
+								ARK_K_APEX_born = {#舰长号角
+								 check_name = horn
+								 name = "号角"
+								 age = 25
+								 skill_level = 3
+								 portrait = ARK4039
+								}
+							}
+						}
+						1 ={
+							if = {
+								limit = {
+									or = {
+										check_variable = {  
+										   which = is_apex_w_spawn
+										   value = 0
+										}
+									   and = {
+										   check_variable = {
+											   which = is_apex_w_spawn
+											   value = 1
+										   }
+										   check_variable = {
+											   which = is_apex_w_alive
+											   value = 0
+										   }
+									   }
+								   }
+								}
+								ARK_K_APEX_born = {#舰长w
+								 check_name = w
+								 name = "达卜纽"
+								 age = 25
+								 skill_level = 3
+								 portrait = ARK113
+								}	
+							}
+						}
+				}
+			}   
+            }
+
+			else = {}
+		}			
 	}
 }
 
 
-#本事件用于在游戏开局将所有领袖的生存变量置0
+
+#本事件用于在游戏开局将所有领袖的生成变量置0
 #调用on_game_start_country
-
-# country_event = {
-# 	id = ark_apex_leader.00
-# 	is_triggered_only = yes
-# 	hide_window = yes
-# 	trigger = {
-# 		#is_this_terra = yes
-# 	}
-# 	immediate = {
-# 		country_event = {
-# 			id = ark_apex_leader.10
-# 			days = 31
-# 		}
-# 	}
-# }
-
-country_event = {
+country_event = { 
 	id = ark_apex_leader.10
 	is_triggered_only = yes
 	hide_window = yes
@@ -431,5 +1305,79 @@ country_event = {
 			which = is_apex_dobermann_spawn
 			value = 0
 		}
+	}
+}
+country_event = {  #每个月扫描一次玩家仓库，标记玩家已经有的领袖
+	id = ark_apex_leader.20
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		is_this_terra = yes
+	}
+	immediate = {
+		every_owned_leader = { #遍历24名领袖，将已拥有的领袖生成标记置2
+			if = { limit = {has_leader_flag = ark_leader_dorothy} owner = {set_veriable = {which = is_apex_dorothy_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_gnosis} owner = {set_veriable = {which = is_apex_gnosis_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_kaltsit} owner = {set_veriable = {which = is_apex_kaltsit_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_passenger} owner = {set_veriable = {which = is_apex_passenger_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_weedy} owner = {set_veriable = {which = is_apex_weedy_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_magallan} owner = {set_veriable = {which = is_apex_magallan_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_eyjafjalla} owner = {set_veriable = {which = is_apex_eyjafjalla_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_astgenne} owner = {set_veriable = {which = is_apex_astgenne_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_snowsant} owner = {set_veriable = {which = is_apex_snowsant_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_astesia} owner = {set_veriable = {which = is_apex_astesia_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_silence} owner = {set_veriable = {which = is_apex_silence_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_mayer} owner = {set_veriable = {which = is_apex_mayer_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_closure} owner = {set_veriable = {which = is_apex_closure_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_chen} owner = {set_veriable = {which = is_apex_chen_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_silverash} owner = {set_veriable = {which = is_apex_silverash_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_kjera} owner = {set_veriable = {which = is_apex_kjera_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_swire} owner = {set_veriable = {which = is_apex_swire_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_horn} owner = {set_veriable = {which = is_apex_horn_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_w} owner = {set_veriable = {which = is_apex_w_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_blaze} owner = {set_veriable = {which = is_apex_blaze_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_mostima} owner = {set_veriable = {which = is_apex_mostima_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_saria} owner = {set_veriable = {which = is_apex_saria_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_durnar} owner = {set_veriable = {which = is_apex_durnar_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_dobermann} owner = {set_veriable = {which = is_apex_dobermann_spawn value = 2}}}
+            else = {}
+		}
+	}
+}
+country_event = {  #每当有领袖死亡时，将特殊领袖的存活标记置0
+	id = ark_apex_leader.200
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		is_this_terra = yes
+	}
+	immediate = {
+      from = {
+		if = { limit = {has_leader_flag = ark_leader_dorothy} owner = {set_veriable = {which = is_apex_dorothy_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_gnosis} owner = {set_veriable = {which = is_apex_gnosis_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_kaltsit} owner = {set_veriable = {which = is_apex_kaltsit_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_passenger} owner = {set_veriable = {which = is_apex_passenger_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_weedy} owner = {set_veriable = {which = is_apex_weedy_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_magallan} owner = {set_veriable = {which = is_apex_magallan_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_eyjafjalla} owner = {set_veriable = {which = is_apex_eyjafjalla_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_astgenne} owner = {set_veriable = {which = is_apex_astgenne_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_snowsant} owner = {set_veriable = {which = is_apex_snowsant_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_astesia} owner = {set_veriable = {which = is_apex_astesia_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_silence} owner = {set_veriable = {which = is_apex_silence_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_mayer} owner = {set_veriable = {which = is_apex_mayer_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_closure} owner = {set_veriable = {which = is_apex_closure_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_chen} owner = {set_veriable = {which = is_apex_chen_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_silverash} owner = {set_veriable = {which = is_apex_silverash_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_kjera} owner = {set_veriable = {which = is_apex_kjera_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_swire} owner = {set_veriable = {which = is_apex_swire_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_horn} owner = {set_veriable = {which = is_apex_horn_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_w} owner = {set_veriable = {which = is_apex_w_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_blaze} owner = {set_veriable = {which = is_apex_blaze_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_mostima} owner = {set_veriable = {which = is_apex_mostima_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_saria} owner = {set_veriable = {which = is_apex_saria_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_durnar} owner = {set_veriable = {which = is_apex_durnar_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_dobermann} owner = {set_veriable = {which = is_apex_dobermann_alive value = 0}}}
+		else = {}
+	  }
 	}
 }
