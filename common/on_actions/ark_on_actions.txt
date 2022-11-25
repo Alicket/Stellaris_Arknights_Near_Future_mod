@@ -51,13 +51,22 @@ on_monthly_pulse_country = {
 	events = {
 		ark_set.3		# 检查并重置领袖肖像
 		ark_set.4
+		ark_apex_leader.20 #KB：每个月扫一次玩家仓库，标记已经被玩家招募的领袖
 	}
 }
 
 on_leader_spawned = {
 	events = {
 		ark_civic.4		# 骑士精神
-		ark_apex_leader.0 #随机生成精英领袖
+		ark_apex_leader.0 #随机生成精英
+	}
+}
+# 当领袖死亡时执行
+# This = Country
+# From = Leader
+on_leader_death = {
+	events = {
+		ark_apex_leader.200 #KB:每当有领袖死亡（或者在池子里被杀死），触发事件
 	}
 }
 
