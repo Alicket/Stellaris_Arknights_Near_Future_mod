@@ -442,6 +442,9 @@ ARK_npc_367 = {textureFile = "gfx/models/portraits/Custom/ARK_npc_367.dds"}
 ARK_npc_368 = {textureFile = "gfx/models/portraits/Custom/ARK_npc_368.dds"}
 ARK_npc_460 = {textureFile = "gfx/models/portraits/Custom/ARK_npc_460.dds"}
 ARK_npc_462 = {textureFile = "gfx/models/portraits/Custom/ARK_npc_462.dds"}
+#斯卡蒂升华
+ARK1012_skin = {textureFile = "gfx/models/portraits/Custom/ARK1012_skin.dds"}
+
 }
 
 portrait_groups = {

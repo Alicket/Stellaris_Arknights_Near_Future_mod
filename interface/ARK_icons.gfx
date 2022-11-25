@@ -132,4 +132,18 @@ spriteTypes = {
 		name = "GFX_ark_ship_part_computer_ghost_4"
 		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_computer_ghost_4.dds"
 	}
+
+
+	spriteType = {	# message:进化增加
+	name = "GFX_ark_ocean_message_evolution_increase"
+	texturefile = "gfx/interface/icons/message/message_ark_evolution_increase.dds"
+	}
+	spriteType = {	# message:进化降低
+	name = "GFX_ark_ocean_message_evolution_reduce"
+	texturefile = "gfx/interface/icons/message/message_ark_evolution_reduce.dds"
+	}
+	spriteType = {	# message:进化完成
+	name = "GFX_ark_ocean_message_evolution_complete"
+	texturefile = "gfx/interface/icons/message/message_ark_evolution_complete.dds"
+	}
 }

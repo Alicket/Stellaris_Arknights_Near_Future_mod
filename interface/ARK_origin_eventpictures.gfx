@@ -4,4 +4,9 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/origins/origin_ark_tragedy_birth.dds"
 		alwaystransparent = yes
 	}
+	spriteType = {
+		name = "GFX_origin_ark_stella_caerula"
+		texturefile = "gfx/event_pictures/origins/origin_ark_stella_caerula.dds"
+		alwaystransparent = yes
+	}
 }
