@@ -25,3 +25,24 @@ origin_ark_tragedy_birth = {
 		base = 0
 	}
 }
+
+origin_ark_stella_caerula = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_ark_stella_caerula.dds"
+	picture = GFX_origin_ark_stella_caerula
+
+	starting_colony = pc_ark_continental_ocean
+	habitability_preference = pc_ark_continental_ocean
+	preferred_planet_class_neighbor = no
+
+	possible = {
+
+	}
+	advanced_start = yes
+
+	description = "origin_tooltip_ark_stella_caerula_effects"
+
+	random_weight = {
+		base = 0
+	}
+}
