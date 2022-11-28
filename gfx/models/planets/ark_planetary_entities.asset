@@ -95,8 +95,19 @@ entity = {
 }
 
 
+
+
+####   ########    ########   ##########   ########   ###     ##
+####  ##      ##  ##      ##  ##          ##      ##  ####    ##
+####  ##      ##  ##          ##          ##      ##  ## ##   ##
+####  ##      ##  ##          ######      ##########  ##  ##  ##
+####  ##      ##  ##          ##          ##      ##  ##   ## ##
+####  ##      ##  ##      ##  ##          ##      ##  ##    ####
+####   ########    ########   ##########  ##      ##  ##     ###
+
+#泰拉
 entity = {
-	name = "continental_planet_terra_ocean_entity"
+	name = "ark_planet_terra_ocean_entity"
 	pdxmesh = "planet_clouded_mesh"
 
 	#planet surface texture override	
@@ -141,16 +152,8 @@ entity = {
 }
 
 
-####   ########    ########   ##########   ########   ###     ##
-####  ##      ##  ##      ##  ##          ##      ##  ####    ##
-####  ##      ##  ##          ##          ##      ##  ## ##   ##
-####  ##      ##  ##          ######      ##########  ##  ##  ##
-####  ##      ##  ##          ##          ##      ##  ##   ## ##
-####  ##      ##  ##      ##  ##          ##      ##  ##    ####
-####   ########    ########   ##########  ##      ##  ##     ###
-
 entity = {
-	name = "ark_continental_ocean_entity"
+	name = "ark_continental_ocean_01_entity"
 	pdxmesh = "planet_clouded_mesh"
 
 	meshsettings = {

@@ -148,8 +148,9 @@ ARK_K_APEX_born = {
 		set_is_female = $is_female|yes$     #领袖性别，不写就是女性
 		set_skill = $skill_level$       #领袖技能等级
 		change_leader_portrait = $portrait$     #领袖肖像，仅需输入ARK后数字序号
+		set_leader_flag = ark_leader_$check_name$   #领袖旗帜，锁定其本人
 		root = {  #给这个领袖所属的国家打上变量标记领袖的刷新与否和存活与否
-		   set_variable = { #生成标记
+		   set_variable = { #生成标记：0表示未生成，1表示已生成，2表示已被招募
 			which = is_apex_$check_name$_spawn
 			value = 1
 		   }
@@ -182,7 +183,7 @@ ARK_K_leader_born = {   #国家scope事件
 			set_leader_flag = ark_leader_$check_name$
 			save_event_target_as = leader_$check_name$
 		    owner = {  #给这个领袖所属的国家打上变量标记领袖的刷新与否和存活与否
-			   set_variable = { #生成标记
+			   set_variable = { #生成标记：0表示未生成，1表示已生成，2表示已被招募
 				which = is_apex_$check_name$_spawn
 				value = 1
 			   }

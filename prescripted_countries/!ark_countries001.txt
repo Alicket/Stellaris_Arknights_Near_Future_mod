@@ -73,74 +73,74 @@ ARK_country_1={
 }
 
 #泰拉秩序
-ARK_country_2={
-	name="EMPIRE_DESIGN_arknight2"
-	adjective="PRESCRIPTED_adjective_arknight2"
-	spawn_enabled = no
-	ignore_portrait_duplication=no
+# ARK_country_2={
+# 	name="EMPIRE_DESIGN_arknight2"
+# 	adjective="PRESCRIPTED_adjective_arknight2"
+# 	spawn_enabled = no
+# 	ignore_portrait_duplication=no
 	
-	ship_prefix="PRESCRIPTED_ship_prefix_arknight2"
+# 	ship_prefix="PRESCRIPTED_ship_prefix_arknight2"
 	
-	species={
-		class="Arknight"
-		portrait="arknights"
-		name="Terraman"
-		plural="Terramen"
-		adjective="Terraman"
-		name_list="ark_01"
-		trait="trait_latent_oripathy"
-		trait="trait_natural_engineers"
-		trait="trait_nomadic"
-		trait="trait_quarrelsome"
-		trait="trait_deviants"
-	}
+# 	species={
+# 		class="Arknight"
+# 		portrait="arknights"
+# 		name="Terraman"
+# 		plural="Terramen"
+# 		adjective="Terraman"
+# 		name_list="ark_01"
+# 		trait="trait_latent_oripathy"
+# 		trait="trait_natural_engineers"
+# 		trait="trait_nomadic"
+# 		trait="trait_quarrelsome"
+# 		trait="trait_deviants"
+# 	}
 	
-	room="personality_democratic_crusaders_room"
+# 	room="personality_democratic_crusaders_room"
 	
-	flags = { arknight_2 custom_start_screen }
+# 	flags = { arknight_2 custom_start_screen }
 	
-	authority="auth_city_despotism"
-	civics={
-		"civic_distinguished_admiralty"
-		"civic_efficient_bureaucracy"
-	}
-	origin="origin_default"
-	government="gov_ark_military_despotism" 
-	advisor_voice_type="l_authoritarian"
+# 	authority="auth_city_despotism"
+# 	civics={
+# 		"civic_distinguished_admiralty"
+# 		"civic_efficient_bureaucracy"
+# 	}
+# 	origin="origin_default"
+# 	government="gov_ark_military_despotism" 
+# 	advisor_voice_type="l_authoritarian"
 	
-	ethic="ethic_fanatic_militarist"
-	ethic="ethic_xenophobe"
+# 	ethic="ethic_fanatic_militarist"
+# 	ethic="ethic_xenophobe"
 	
-	planet_name="NAME_Terra"
-	planet_class="pc_continental"
-	initializer="Tyra_system"
-	system_name="NAME_Tyra_system"
+# 	planet_name="NAME_Terra"
+# 	planet_class="pc_continental"
+# 	initializer="Tyra_system"
+# 	system_name="NAME_Tyra_system"
 	
-	graphical_culture="arknights_01"
-	city_graphical_culture="mammalian_01"
-	empire_flag={
-		icon={
-			category="hypergryph"
-			file="flag_babel.dds"
-		}
-		background={
-			category="backgrounds"
-			file="rounded_middle.dds"
-		}
-		colors={
-			"red"
-			"black"
-			"null"
-			"null"
-		}
-	}
+# 	graphical_culture="arknights_01"
+# 	city_graphical_culture="mammalian_01"
+# 	empire_flag={
+# 		icon={
+# 			category="hypergryph"
+# 			file="flag_babel.dds"
+# 		}
+# 		background={
+# 			category="backgrounds"
+# 			file="rounded_middle.dds"
+# 		}
+# 		colors={
+# 			"red"
+# 			"black"
+# 			"null"
+# 			"null"
+# 		}
+# 	}
 	
-	ruler={
-		name="NAME_Doctor"
-		gender=male
-		portrait="ARK001_W"
-		set_age = 30
-		ruler_title="PRESCRIPTED_ruler_title_arknight1"
-		ruler_title_female="PRESCRIPTED_ruler_title_female_arknight1"
-	}
-}
+# 	ruler={
+# 		name="NAME_Doctor"
+# 		gender=male
+# 		portrait="ARK001_W"
+# 		set_age = 30
+# 		ruler_title="PRESCRIPTED_ruler_title_arknight1"
+# 		ruler_title_female="PRESCRIPTED_ruler_title_female_arknight1"
+# 	}
+# }

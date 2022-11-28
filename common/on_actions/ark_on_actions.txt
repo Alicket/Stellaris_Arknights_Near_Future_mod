@@ -13,7 +13,7 @@ on_game_start_country = {
 		ark_apex_leader.10 #KB：将所有领袖的初始生成变量置0
 		ark_origins.0		# 起源效果（明日方舟）
 		ark_civic.1		# 商业联合（第一个国民理念）
-		ark_archae.1	#考古事件
+		#ark_archae.1	#考古事件
 	}
 }
 
@@ -51,13 +51,22 @@ on_monthly_pulse_country = {
 	events = {
 		ark_set.3		# 检查并重置领袖肖像
 		ark_set.4
+		ark_apex_leader.20 #KB：每个月扫一次玩家仓库，标记已经被玩家招募的领袖
 	}
 }
 
 on_leader_spawned = {
 	events = {
 		ark_civic.4		# 骑士精神
-		ark_apex_leader.0 #随机生成精英领袖
+		ark_apex_leader.0 #随机生成精英
+	}
+}
+# 当领袖死亡时执行
+# This = Country
+# From = Leader
+on_leader_death = {
+	events = {
+		ark_apex_leader.200 #KB:每当有领袖死亡（或者在池子里被杀死），触发事件
 	}
 }
 

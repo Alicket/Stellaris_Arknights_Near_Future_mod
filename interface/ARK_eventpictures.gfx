@@ -180,4 +180,10 @@ spriteTypes = {
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes		
 	}
+	spriteType = {	# 海嗣开局选择统治者立绘
+	name = "GFX_evt_seaborn_ruler_select"
+	texturefile = "gfx/event_pictures/ark_seaborn_ruler_select.dds"
+	masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	alwaystransparent = yes		
+	}
 }
