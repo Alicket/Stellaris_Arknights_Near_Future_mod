@@ -419,7 +419,7 @@ country_event = {
 			which = is_apex_mostima_spawn
 			value = 0
 		}
-		set_variable = {#塞雷亚
+		set_variable = {#赛雷娅
 			which = is_apex_saria_spawn
 			value = 0
 		}

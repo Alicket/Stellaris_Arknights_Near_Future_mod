@@ -411,6 +411,8 @@ ARK4013 = {textureFile = "gfx/models/portraits/Custom/ARK4013.dds"}
 ARK4013_S = {textureFile = "gfx/models/portraits/Custom/ARK4013_S.dds"}
 ARK4039 = {textureFile = "gfx/models/portraits/Custom/ARK4039.dds"}
 ARK4039_S = {textureFile = "gfx/models/portraits/Custom/ARK4039_S.dds"}
+ARK4048 = {textureFile = "gfx/models/portraits/Custom/ARK4048.dds"}
+ARK4048_S = {textureFile = "gfx/models/portraits/Custom/ARK4048_S.dds"}
 ARK_npc_021 = {textureFile = "gfx/models/portraits/Custom/ARK_npc_021.dds"}
 ARK_npc_022 = {textureFile = "gfx/models/portraits/Custom/ARK_npc_022.dds"}
 ARK_npc_032 = {textureFile = "gfx/models/portraits/Custom/ARK_npc_032.dds"}
@@ -877,6 +879,8 @@ portrait_groups = {
 					ARK4013_S
 					ARK4039
 					ARK4039_S
+					ARK4048
+					ARK4048_S
 				}
 			}
 			add = {	# 性别不明
@@ -1228,6 +1232,7 @@ portrait_groups = {
 					ARK501
 					ARK502
 					ARK4039
+					ARK4048
 				}
 			}
 			add = {
