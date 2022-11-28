@@ -941,7 +941,7 @@ country_event = {   #总督的随机生成
 									  }
 								  }
 								}
-								ARK_K_APEX_born = {#舰长塞雷亚
+								ARK_K_APEX_born = {#舰长塞雷娅
 								 check_name = saria
 								 name = "塞雷亚"
 								 age = 25
