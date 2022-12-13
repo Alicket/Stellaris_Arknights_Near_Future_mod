@@ -350,6 +350,24 @@ country_event = {
 						save_event_target_as = leader_horn
 					}
 				}
+				create_leader = {
+					class = scientist
+					species = owner_main_species
+					name = "NAME_Dorothy"	# 多萝西
+					gender = female
+					skill = 4
+					set_age = 37
+					traits = {
+						trait = leader_trait_adaptable	# 开明
+						trait = leader_trait_expertise_field_manipulation	# 专长：力场操控
+						trait = leader_trait_expertise_industry # 专长：工业
+					}
+					effect = {
+						change_leader_portrait = ARK4048
+						set_leader_flag = ark_leader_dorothy
+						save_event_target_as = leader_dorothy
+					}
+				}
 			}
 		}
 	}

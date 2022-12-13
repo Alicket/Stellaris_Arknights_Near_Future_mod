@@ -393,7 +393,7 @@ country_event = {   #总督的随机生成
 									 name = "多萝西"
 									 age = 25
 									 skill_level = 3
-									 portrait = ARK001
+									 portrait = ARK4048
 								    }
 									set_is_female = yes
 								}
@@ -957,7 +957,7 @@ country_event = {   #总督的随机生成
 									  }
 								  }
 								}
-								ARK_K_APEX_born = {#舰长塞雷亚
+								ARK_K_APEX_born = {#舰长塞雷娅
 								 check_name = saria
 								 name = "塞雷亚"
 								 age = 25
@@ -1314,7 +1314,7 @@ country_event = {
 			which = is_apex_mostima_spawn
 			value = 0
 		}
-		set_variable = {#塞雷亚
+		set_variable = {#赛雷娅
 			which = is_apex_saria_spawn
 			value = 0
 		}
