@@ -158,39 +158,41 @@ country_event = {
 }
 
 # 创建泰拉小车机器人
-country_event = {
+planet_event = {
 	id = ark_set.5
 	hide_window = yes
-
+	is_triggered_only = yes
 	trigger = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_4
-		}
-		any_owned_planet = {
+		owner = {
 			OR = {
-				has_building = building_robot_assembly_plant
-				has_building = building_machine_assembly_plant
+				has_country_flag = arknight_1
+				has_country_flag = arknight_2
+				has_country_flag = arknight_4
 			}
+			NOT = { has_country_flag = create_ark_robot }
 		}
-		NOT = { has_country_flag = create_ark_robot }
+		root = {
+			last_building_changed = building_robot_assembly_plant
+			last_building_changed = building_machine_assembly_plant
+		}
 	}
 
 	immediate = {
-		set_country_flag = create_ark_robot
-		create_species = {
-			name = terra_creation
-			namelist = root
-			plural = terra_creation_plural
-			class = ArkRobot
-			portrait = "terra_creation"
-			traits = {
-				trait = trait_mechanical
-			}
-			effect = {
-				save_global_event_target_as = ark_robot_species
-			}
+		owner = {
+			set_country_flag = create_ark_robot
+			create_species = {
+				name = terra_creation
+				namelist = root
+				plural = terra_creation_plural
+				class = ArkRobot
+				portrait = "terra_creation"
+				traits = {
+					trait = trait_mechanical
+				}
+				effect = {
+					save_global_event_target_as = ark_robot_species
+				}
+			}	
 		}
 	}
 }
@@ -228,7 +230,7 @@ planet_event = {
 country_event = {
 	id = ark_set.52
 	hide_window = yes
-
+	is_triggered_only = yes
 	trigger = {
 		OR = {
 			has_country_flag = arknight_1

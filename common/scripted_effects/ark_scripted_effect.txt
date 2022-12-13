@@ -131,34 +131,59 @@ initialize_ark_tragedy_birth_fleet = {
 	}
 }
 
-#KB：精英领袖的领袖生成模板
-ARK_K_APEX_born = {  
+# #KB：精英领袖的领袖生成模板
+# ARK_K_APEX_born = {  
+# 	if = {
+# 		limit = {
+# 			root = {
+# 			    #days_passed > 30
+# 			    check_variable = {
+# 				  which = is_apex_$check_name$_spawn
+# 				  value = 0
+# 			    }					  
+# 			}
+# 		}
+# 		set_name = $name$    #领袖姓名
+# 		set_age = $age$      #领袖年龄
+# 		#set_is_female = $is_female|yes$     #领袖性别，不写就是女性
+# 		set_skill = $skill_level$       #领袖技能等级
+# 		change_leader_portrait = $portrait$     #领袖肖像，仅需输入ARK后数字序号
+# 		set_leader_flag = ark_leader_$check_name$   #领袖旗帜，锁定其本人
+# 		root = {  #给这个领袖所属的国家打上变量标记领袖的刷新与否和存活与否
+# 		   set_variable = { #生成标记：0表示未生成，1表示已生成，2表示已被招募
+# 			which = is_apex_$check_name$_spawn
+# 			value = 1
+# 		   }
+# 		   set_variable = { #存活标记
+# 			which = is_apex_$check_name$_alive
+# 			value = 1
+# 		   }
+# 		}		
+# 	}
+# }
+ARK_Apex_Leader_Detect = {
 	if = {
 		limit = {
-			root = {
-			    #days_passed > 30
-			    check_variable = {
-				  which = is_apex_$check_name$_spawn
-				  value = 0
-			    }					  
-			}
+				NOT = { has_country_flag = arkleader_$ARK_Leader_Name$_EMPLOYED }
+				has_country_flag = arkleader_$ARK_Leader_Name$_SPAWNED	
 		}
-		set_name = $name$    #领袖姓名
-		set_age = $age$      #领袖年龄
-		#set_is_female = $is_female|yes$     #领袖性别，不写就是女性
-		set_skill = $skill_level$       #领袖技能等级
-		change_leader_portrait = $portrait$     #领袖肖像，仅需输入ARK后数字序号
-		set_leader_flag = ark_leader_$check_name$   #领袖旗帜，锁定其本人
-		root = {  #给这个领袖所属的国家打上变量标记领袖的刷新与否和存活与否
-		   set_variable = { #生成标记：0表示未生成，1表示已生成，2表示已被招募
-			which = is_apex_$check_name$_spawn
-			value = 1
-		   }
-		   set_variable = { #存活标记
-			which = is_apex_$check_name$_alive
-			value = 1
-		   }
-		}		
+		if = {
+			limit = {
+				any_owned_leader = { has_leader_flag = arkleader_$ARK_Leader_Name$_WHO }
+				any_pool_leader = { NOT = { has_leader_flag = arkleader_$ARK_Leader_Name$_WHO } }
+			}
+			set_country_flag = arkleader_$ARK_Leader_Name$_EMPLOYED
+		}
+		else_if = {
+			limit = {
+				any_owned_leader = { NOT = { has_leader_flag = arkleader_$ARK_Leader_Name$_WHO } }
+				any_pool_leader = { NOT = { has_leader_flag = arkleader_$ARK_Leader_Name$_WHO } }
+				has_country_flag = arkleader_$ARK_Leader_Name$_SPAWNED
+				NOT = { has_country_flag = arkleader_$ARK_Leader_Name$_EMPLOYED }
+			}
+			remove_country_flag = arkleader_$ARK_Leader_Name$_SPAWNED
+		}
+		else = {}
 	}
 }
 #KB：帮衡菌重写领袖生成

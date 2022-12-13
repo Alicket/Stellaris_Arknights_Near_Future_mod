@@ -203,6 +203,9 @@ country_event = {
 planet_event = {
 	id = ark_orbital_bombardment.3
 	hide_window = yes
+	mean_time_to_happen = {
+		months = 1
+	}
 	trigger = {
 		NOT = {
 			has_orbital_bombardment_stance = originium_bombs

@@ -12,8 +12,7 @@
 d_infection_blockade = {
 	icon = d_originiums_place
 	time = 180
-
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_blockers	
 
 	potential = { always = no }
@@ -40,7 +39,7 @@ d_infection_blockade = {
 
 # 源石开采区
 d_originiums_mine = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_rare
 	icon = d_originiums_mine
 
@@ -61,7 +60,7 @@ d_originiums_mine = {
 
 # 龙门经济特区
 d_lungmen_special_economic_zone = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	icon = d_lungmen
 	
 	planet_modifier = { 
@@ -75,7 +74,7 @@ d_lungmen_special_economic_zone = {
 
 # 喀兰圣山
 d_holy_mountain = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_rare
 	
 	icon = d_holy_mountain
@@ -98,7 +97,7 @@ d_holy_mountain = {
 
 # 萨尔贡雨林
 d_sargon_rainforest = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	icon = d_sargon_rainforest
 	
 	planet_modifier = {
@@ -112,7 +111,7 @@ d_sargon_rainforest = {
 
 # 焚风热土
 d_foehn_hot_earth = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	icon = d_sargon_desert
 
 	category = deposit_cat_energy
@@ -131,7 +130,7 @@ d_ursus_tundra = {
 	icon = d_ursus_tundra
 	time = 120
 	
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_blockers	
 	
 	potential = { always = no }
@@ -156,7 +155,7 @@ d_ursus_tundra = {
 
 # 乌萨斯新开发区
 d_ursus_development = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	icon = d_ursus_development
 	
 	planet_modifier = {
@@ -170,7 +169,7 @@ d_ursus_development = {
 
 # 雷姆必拓工业带
 d_rimbilliton_industrial_belt = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	icon = d_rimbilliton_industrial_belt
 	
 	planet_modifier = {
@@ -186,7 +185,7 @@ d_rimbilliton_industrial_belt = {
 d_silent_deep_sea = {
 	icon = d_silent_deep_sea
 
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_blockers
 	
 	potential = { always = no }
@@ -204,7 +203,7 @@ d_former_countries_controlled = {
 
 	#can_be_cleared = yes
 
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_blockers
 
 	potential = { always = no }
