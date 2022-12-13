@@ -961,8 +961,7 @@ country_event = {
 					}
 				}
 			}
-			else = {
-			}
+			else = {}
 		}
 	}
 }
