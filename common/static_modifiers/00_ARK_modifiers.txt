@@ -1,6 +1,6 @@
-# Ã÷ÈÕ·½ÖÛĞÇÇòbuff #
+# æ˜æ—¥æ–¹èˆŸæ˜Ÿçƒbuff #
 
-catastrophe = {	# ÌìÔÖ
+catastrophe = {	# å¤©ç¾
 	pop_environment_tolerance = -0.3
 	planet_jobs_originiums_produces_mult = 0.5
 	planet_jobs_energy_produces_mult = 0.25
@@ -8,154 +8,166 @@ catastrophe = {	# ÌìÔÖ
 	icon = "gfx/interface/icons/planet_modifiers/pm_catastrophe.dds"
 	icon_frame = 2
 }
-nomadic_city = {	# ÒÆ¶¯³Ç°î
+nomadic_city = {	# ç§»åŠ¨åŸé‚¦
 	planet_structures_cost_mult = 0.3
 	planet_structures_upkeep_mult = 0.1
 	planet_building_build_speed_mult = 0.5
 	icon = "gfx/interface/icons/planet_modifiers/pm_nomadic_city.dds"
 	icon_frame = 2
 }
-barbarian_growth = {	# Ò°ÂùÉú³¤
+barbarian_growth = {	# é‡è›®ç”Ÿé•¿
 	planet_crime_add = 50
 	planet_pops_upkeep_mult = -0.5
 	planet_jobs_produces_mult = -0.5
 	icon = "gfx/interface/icons/planet_modifiers/pm_barbarian_growth.dds"
 	icon_frame = 2
 }
-wheels_motion = {	# ·¢éíÖ®Ê¼
+wheels_motion = {	# å‘è½«ä¹‹å§‹
 	planet_crime_add = 30
 	planet_pops_upkeep_mult = -0.3
 	planet_jobs_produces_mult = -0.3
 	icon = "gfx/interface/icons/planet_modifiers/pm_barbarian_growth.dds"
 	icon_frame = 2
 }
-strewn_thorns = {	# ¾£¼¬´ÔÉú
+strewn_thorns = {	# è†æ£˜ä¸›ç”Ÿ
 	planet_crime_add = 10
 	planet_pops_upkeep_mult = -0.1
 	planet_jobs_produces_mult = -0.1
 	icon = "gfx/interface/icons/planet_modifiers/pm_barbarian_growth.dds"
 	icon_frame = 2
 }
-autumn_sea = {	# ²ãÁÖ¾¡È¾
+autumn_sea = {	# å±‚æ—å°½æŸ“
 	planet_crime_add = -10
 	planet_jobs_produces_mult = 0.1
 	icon = "gfx/interface/icons/planet_modifiers/pm_barbarian_growth.dds"
 	icon_frame = 1
 }
-infected_anxious = {	# ¸ĞÈ¾Õß½¹ÂÇ
+infected_anxious = {	# æ„ŸæŸ“è€…ç„¦è™‘
 	pop_happiness = -0.1
 	planet_jobs_produces_mult = -0.1
 	icon = "gfx/interface/icons/planet_modifiers/pm_infected_anxious.dds"
 	icon_frame = 3
 }
-torn_society = {	# ËºÁÑµÄÉç»á
+torn_society = {	# æ’•è£‚çš„ç¤¾ä¼š
 	pop_happiness = -0.3
 	planet_jobs_produces_mult = -0.3
 	icon = "gfx/interface/icons/planet_modifiers/pm_torn_society.dds"
 	icon_frame = 3
 }
-celebration = {	# ¹¥¿Ë¡°¿óÊ¯²¡¡±Çìµä
+celebration = {	# æ”»å…‹â€œçŸ¿çŸ³ç—…â€åº†å…¸
 	pop_happiness = 0.4
 	planet_jobs_produces_mult = 0.2
 	pop_growth_speed = 0.2
 	icon = "gfx/interface/icons/planet_modifiers/pm_celebration.dds"
 	icon_frame = 1
 }
-repression_failure = {	# ÕòÑ¹Ê§°Ü
+repression_failure = {	# é•‡å‹å¤±è´¥
 	pop_happiness = -0.6
 	planet_jobs_produces_mult = -0.7
 	icon = "gfx/interface/icons/planet_modifiers/pm_derelict_interior.dds"
 	icon_frame = 3
 }
-catastrophe_panic = {	# ÌìÔÖ¿Ö»Å
+catastrophe_panic = {	# å¤©ç¾ææ…Œ
 	pop_happiness = -0.1
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
 	icon_frame = 3
 }
-corrosion = {	# ÇÖÊ´
+corrosion = {	# ä¾µèš€
 	pop_environment_tolerance = -0.5
 	planet_building_build_speed_mult = -0.25
 	planet_jobs_physics_research_produces_mult = 0.20
 	planet_jobs_produces_mult = -0.25
 	icon = "gfx/interface/icons/planet_modifiers/pm_corrosion.dds"
 }
-g_jssjjs_modifier = {	# ¾«ÉñÊÀ½ç½¨Éè
+ark_ocean_evolution_start = {	#æµ·å—£è¿›åŒ–å¼€å§‹é˜¶æ®µ
+	planet_jobs_produces_mult = 1
+	icon = "gfx/interface/icons/planet_modifiers/ARK_ocean_colony_mod_evoluting_start.dds"
+}
+ark_ocean_evolution_mid = {	#æµ·å—£è¿›åŒ–ä¸­æœŸé˜¶æ®µ
+	planet_jobs_produces_mult = 1
+	icon = "gfx/interface/icons/planet_modifiers/ARK_ocean_colony_mod_evoluting_mid.dds"
+}
+ark_ocean_evolution_end = {	#æµ·å—£è¿›åŒ–ç»“æŸé˜¶æ®µ
+	planet_jobs_produces_mult = 1
+	icon = "gfx/interface/icons/planet_modifiers/ARK_ocean_colony_mod_evoluting_end.dds"
+}
+g_jssjjs_modifier = {	# ç²¾ç¥ä¸–ç•Œå»ºè®¾
 	planet_jobs_unity_produces_mult = 0.2
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
 	icon_frame = 1
 }
-g_wzsjjs_modifier = {	# ÎïÖÊÊÀ½ç½¨Éè
+g_wzsjjs_modifier = {	# ç‰©è´¨ä¸–ç•Œå»ºè®¾
 	planet_jobs_consumer_goods_produces_mult = 0.2
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
 	icon_frame = 1
 }
-g_gdzbzzzc_modifier = {	# ¸ß¶Ë×°±¸ÖÆÔìÖ§³Ö
+g_gdzbzzzc_modifier = {	# é«˜ç«¯è£…å¤‡åˆ¶é€ æ”¯æŒ
 	planet_jobs_alloys_produces_mult = 0.2
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
 	icon_frame = 1
 }
-g_zlzycyzz_modifier = {	# Õ½ÂÔ×ÊÔ´²úÒµÖ§³Ö
+g_zlzycyzz_modifier = {	# æˆ˜ç•¥èµ„æºäº§ä¸šæ”¯æŒ
 	planet_jobs_volatile_motes_produces_mult = 0.1
 	planet_jobs_exotic_gases_produces_mult = 0.1
 	planet_jobs_rare_crystals_produces_mult = 0.1
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
 	icon_frame = 1
 }
-g_dqmszc_modifier = {	# µØÇøÃâË°Õş²ß
+g_dqmszc_modifier = {	# åœ°åŒºå…ç¨æ”¿ç­–
 	trade_value_mult = 0.2
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
 	icon_frame = 1
 }
-g_jyzdbt_modifier = {	# ¾ÍÒµÖ¸µ¼²¹Ìù
+g_jyzdbt_modifier = {	# å°±ä¸šæŒ‡å¯¼è¡¥è´´
 	pop_demotion_time_mult = -0.25
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
 	icon_frame = 1
 }
-y_znjxzc_modifier = {	# ÖÇÄÜ»úĞµÖ§³Ö
+y_znjxzc_modifier = {	# æ™ºèƒ½æœºæ¢°æ”¯æŒ
 	pop_assembly_speed = 0.1
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
 	icon_frame = 1
 }
-y_xxfyzl_modifier = {	# ĞĞĞÇ·ÀÓùÖ¸Áî
+y_xxfyzl_modifier = {	# è¡Œæ˜Ÿé˜²å¾¡æŒ‡ä»¤
 	planet_orbital_bombardment_damage = -0.25
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
 	icon_frame = 1
 }
-y_cbfzgh_modifier = {	# ³Ç°î·¢Õ¹¹æ»®
+y_cbfzgh_modifier = {	# åŸé‚¦å‘å±•è§„åˆ’
 	planet_building_build_speed_mult = 0.1
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
 	icon_frame = 1
 }
-y_tkjdjs_modifier = {	# Ì«¿Õ½¢¶Ó½¨Éè
+y_tkjdjs_modifier = {	# å¤ªç©ºèˆ°é˜Ÿå»ºè®¾
 	starbase_shipyard_build_speed_mult = 0.1
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
 	icon_frame = 1
 }
-r_tllhscl_modifier = {	# Ì©À­ÁªºÏËÑ²éÁî
+r_tllhscl_modifier = {	# æ³°æ‹‰è”åˆæœæŸ¥ä»¤
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
 	planet_jobs_unity_produces_mult = -0.1
 	icon_frame = 2
 }
-terra_council = {	# ÁªºÏ»áÒé³ï±¸ÖĞ
+terra_council = {	# è”åˆä¼šè®®ç­¹å¤‡ä¸­
 	icon = "gfx/interface/icons/planet_modifiers/pm_terra_council.dds"
 	icon_frame = 1
 }
-peak_plan_training = {	# áÛ·å¼Æ»®½øĞĞÖĞ
+peak_plan_training = {	# å·…å³°è®¡åˆ’è¿›è¡Œä¸­
 	icon = "gfx/interface/icons/planet_modifiers/pm_peak_plan_training.dds"
 	country_energy_produces_mult = -0.05
 	icon_frame = 1
 }
-originium_bombs_contaminated_0 = {	# Ôâµ½Ô´Ê¯ºäÕ¨
+originium_bombs_contaminated_0 = {	# é­åˆ°æºçŸ³è½°ç‚¸
 	icon = "gfx/interface/icons/planet_modifiers/pm_originium_bombs_contaminated_0.dds"
 	icon_frame = 3
 }
-originium_bombs_contaminated_1 = {	# Ô´Ê¯ÎÛÈ¾
+originium_bombs_contaminated_1 = {	# æºçŸ³æ±¡æŸ“
 	icon = "gfx/interface/icons/planet_modifiers/pm_catastrophe.dds"
 	pop_environment_tolerance = -0.2
 	planet_max_districts_add = -2
 	icon_frame = 3
 }
-biochemical_protection = {	# Éú»¯·À»¤
+biochemical_protection = {	# ç”ŸåŒ–é˜²æŠ¤
 	planet_stability_add = 10
 	planet_jobs_produces_mult = -0.10
 	pop_growth_speed = -0.5
@@ -163,49 +175,49 @@ biochemical_protection = {	# Éú»¯·À»¤
 	icon = "gfx/interface/icons/planet_modifiers/pm_biochemical_protection.dds"
 	icon_frame = 2
 }
-contingency_contract_1 = {	# Î£»úºÏÔ¼£º¾ü±¸
-	shipclass_starbase_damage_mult = 0.75		# ºãĞÇ»ùµØÉËº¦
-	shipclass_military_station_damage_mult = 0.75	# ·ÀÓùÆ½Ì¨ÉËº¦
-	ship_weapon_damage = 0.25			# ½¢´¬ÎäÆ÷ÉËº¦
+contingency_contract_1 = {	# å±æœºåˆçº¦ï¼šå†›å¤‡
+	shipclass_starbase_damage_mult = 0.75		# æ’æ˜ŸåŸºåœ°ä¼¤å®³
+	shipclass_military_station_damage_mult = 0.75	# é˜²å¾¡å¹³å°ä¼¤å®³
+	ship_weapon_damage = 0.25			# èˆ°èˆ¹æ­¦å™¨ä¼¤å®³
 	icon = "gfx/interface/icons/modifiers/contingency_contract_1.dds"
 	icon_frame = 1
 }
-contingency_contract_2 = {	# Î£»úºÏÔ¼£ºÍ»»÷
-	ship_fire_rate_mult = 0.50				# ½¢´¬ÎäÆ÷ÉäËÙ
-	ship_speed_mult = 0.25				# ½¢´¬ÑÇ¹âËÙ
+contingency_contract_2 = {	# å±æœºåˆçº¦ï¼šçªå‡»
+	ship_fire_rate_mult = 0.50				# èˆ°èˆ¹æ­¦å™¨å°„é€Ÿ
+	ship_speed_mult = 0.25				# èˆ°èˆ¹äºšå…‰é€Ÿ
 	icon = "gfx/interface/icons/modifiers/contingency_contract_2.dds"
 	icon_frame = 1
 }
-contingency_contract_3 = {	# Î£»úºÏÔ¼£º±¸Õ½
-	shipclass_starbase_hull_mult = 0.75			# ºãĞÇ»ùµØ´¬ÌåÖµ
-	shipclass_military_station_hull_mult = 0.75		# ·ÀÓùÆ½Ì¨´¬ÌåÖµ
-	ship_hull_mult = 0.25				# ´¬ÌåÖµ
-	ship_shield_mult = 0.25				# »¤¶Ü³ĞÊÜÖµ
-	ship_armor_mult = 0.25				# ×°¼×Öµ
-	planet_orbital_bombardment_damage = -0.50	# ¹ìµÀºäÕ¨ÉËº¦
+contingency_contract_3 = {	# å±æœºåˆçº¦ï¼šå¤‡æˆ˜
+	shipclass_starbase_hull_mult = 0.75			# æ’æ˜ŸåŸºåœ°èˆ¹ä½“å€¼
+	shipclass_military_station_hull_mult = 0.75		# é˜²å¾¡å¹³å°èˆ¹ä½“å€¼
+	ship_hull_mult = 0.25				# èˆ¹ä½“å€¼
+	ship_shield_mult = 0.25				# æŠ¤ç›¾æ‰¿å—å€¼
+	ship_armor_mult = 0.25				# è£…ç”²å€¼
+	planet_orbital_bombardment_damage = -0.50	# è½¨é“è½°ç‚¸ä¼¤å®³
 	icon = "gfx/interface/icons/modifiers/contingency_contract_3.dds"
 	icon_frame = 1
 }
-contingency_contract_4 = {	# Î£»úºÏÔ¼£º¹¤ÇÉ
-	shipclass_starbase_build_cost_mult = -0.15 		# ºãĞÇ»ùµØ½¨Ôì»¨·Ñ
-	starbase_upgrade_cost_mult = -0.15 		# ºãĞÇ»ùµØÉı¼¶·ÑÓÃ
-	starbases_upkeep_mult = -0.25			# ºãĞÇ»ùµØÎ¬»¤·Ñ
-	starbase_buildings_cost_mult = -0.15		# ºãĞÇ»ùµØ½¨Öş»¨·Ñ
-	starbase_modules_cost_mult = -0.15 		# ºãĞÇ»ùµØÄ£¿é»¨·Ñ
-	shipclass_military_station_build_cost_mult = -0.15	# ·ÀÓùÆ½Ì¨½¨Ôì»¨·Ñ
-	shipsize_military_station_small_upkeep_mult = -0.25	# ·ÀÓùÆ½Ì¨Î¬»¤·Ñ
-	starbase_shipyard_build_cost_mult = -0.15		# Ôì½¢·ÑÓÃ
-	country_ship_upgrade_cost_mult = -0.15		# ½¢´¬Éı¼¶»¨·Ñ
-	ships_upkeep_mult = -0.1				# ½¢´¬Î¬»¤·Ñ
+contingency_contract_4 = {	# å±æœºåˆçº¦ï¼šå·¥å·§
+	shipclass_starbase_build_cost_mult = -0.15 		# æ’æ˜ŸåŸºåœ°å»ºé€ èŠ±è´¹
+	starbase_upgrade_cost_mult = -0.15 		# æ’æ˜ŸåŸºåœ°å‡çº§è´¹ç”¨
+	starbases_upkeep_mult = -0.25			# æ’æ˜ŸåŸºåœ°ç»´æŠ¤è´¹
+	starbase_buildings_cost_mult = -0.15		# æ’æ˜ŸåŸºåœ°å»ºç­‘èŠ±è´¹
+	starbase_modules_cost_mult = -0.15 		# æ’æ˜ŸåŸºåœ°æ¨¡å—èŠ±è´¹
+	shipclass_military_station_build_cost_mult = -0.15	# é˜²å¾¡å¹³å°å»ºé€ èŠ±è´¹
+	shipsize_military_station_small_upkeep_mult = -0.25	# é˜²å¾¡å¹³å°ç»´æŠ¤è´¹
+	starbase_shipyard_build_cost_mult = -0.15		# é€ èˆ°è´¹ç”¨
+	country_ship_upgrade_cost_mult = -0.15		# èˆ°èˆ¹å‡çº§èŠ±è´¹
+	ships_upkeep_mult = -0.1				# èˆ°èˆ¹ç»´æŠ¤è´¹
 	icon = "gfx/interface/icons/modifiers/contingency_contract_4.dds"
 	icon_frame = 1
 }
-contingency_contract_5 = {	# Î£»úºÏÔ¼£º²¿Êğ
-	starbase_upgrade_speed_mult = 0.5		  # ºãĞÇ»ùµØÉı¼¶ËÙ¶È
-	starbase_building_build_speed_mult = 0.5		  # ºãĞÇ»ùµØ½¨Öş½¨ÔìËÙ¶È
-	starbase_module_build_speed_mult = 0.5		  # ºãĞÇ»ùµØÄ£¿é½¨ÔìËÙ¶È
-	shipsize_military_station_small_build_speed_mult = 0.75 # ·ÀÓùÆ½Ì¨½¨ÔìËÙ¶È
-	starbase_shipyard_build_speed_mult = 0.2		  # ½¢´¬½¨ÔìËÙ¶È
+contingency_contract_5 = {	# å±æœºåˆçº¦ï¼šéƒ¨ç½²
+	starbase_upgrade_speed_mult = 0.5		  # æ’æ˜ŸåŸºåœ°å‡çº§é€Ÿåº¦
+	starbase_building_build_speed_mult = 0.5		  # æ’æ˜ŸåŸºåœ°å»ºç­‘å»ºé€ é€Ÿåº¦
+	starbase_module_build_speed_mult = 0.5		  # æ’æ˜ŸåŸºåœ°æ¨¡å—å»ºé€ é€Ÿåº¦
+	shipsize_military_station_small_build_speed_mult = 0.75 # é˜²å¾¡å¹³å°å»ºé€ é€Ÿåº¦
+	starbase_shipyard_build_speed_mult = 0.2		  # èˆ°èˆ¹å»ºé€ é€Ÿåº¦
 	icon = "gfx/interface/icons/modifiers/contingency_contract_5.dds"
 	icon_frame = 1
 }

@@ -19,111 +19,111 @@ country_event = {   #总督的随机生成
 				if = {                #第一次缓冲
 					limit = {
 						root = {
-							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave1 }
+							NOT = {has_country_flag = ark_apex_leaderg_spawned_first_wave1 }
 						}
 					}
 					root = {
-						set_country_flag = ark_apex_leader_spawned_first_wave1
+						set_country_flag = ark_apex_leaderg_spawned_first_wave1
 					}
 					break = yes
 				}
 				if = {                #第二次缓冲
 					limit = {
 						root = {
-							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave2 }
-							has_country_flag = ark_apex_leader_spawned_first_wave1	
+							NOT = {has_country_flag = ark_apex_leaderg_spawned_first_wave2 }
+							has_country_flag = ark_apex_leaderg_spawned_first_wave1	
 						}
 					}
 					root = {
-						set_country_flag = ark_apex_leader_spawned_first_wave2
+						set_country_flag = ark_apex_leaderg_spawned_first_wave2
 					}
 					break = yes
 				}
 				if = {                #第三次缓冲
 					limit = {
 						root = {
-							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave3 }
-							has_country_flag = ark_apex_leader_spawned_first_wave1
-							has_country_flag = ark_apex_leader_spawned_first_wave2	
+							NOT = {has_country_flag = ark_apex_leaderg_spawned_first_wave3 }
+							has_country_flag = ark_apex_leaderg_spawned_first_wave1
+							has_country_flag = ark_apex_leaderg_spawned_first_wave2	
 						}
 					}
 					root = {
-						set_country_flag = ark_apex_leader_spawned_first_wave3
+						set_country_flag = ark_apex_leaderg_spawned_first_wave3
 					}
 					break = yes
 				}
 				if = {                #第四次缓冲
 					limit = {
 						root = {
-							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave4 }
-							has_country_flag = ark_apex_leader_spawned_first_wave1
-							has_country_flag = ark_apex_leader_spawned_first_wave2	
-							has_country_flag = ark_apex_leader_spawned_first_wave3	
+							NOT = {has_country_flag = ark_apex_leaderg_spawned_first_wave4 }
+							has_country_flag = ark_apex_leaderg_spawned_first_wave1
+							has_country_flag = ark_apex_leaderg_spawned_first_wave2	
+							has_country_flag = ark_apex_leaderg_spawned_first_wave3	
 						}
 					}
 					root = {
-						set_country_flag = ark_apex_leader_spawned_first_wave4
+						set_country_flag = ark_apex_leaderg_spawned_first_wave4
 					}
 					break = yes
 				}
 				if = {                #第五次缓冲
 					limit = {
 						root = {
-							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave5 }
-							has_country_flag = ark_apex_leader_spawned_first_wave1
-							has_country_flag = ark_apex_leader_spawned_first_wave2	
-							has_country_flag = ark_apex_leader_spawned_first_wave3	
-							has_country_flag = ark_apex_leader_spawned_first_wave4	
+							NOT = {has_country_flag = ark_apex_leaderg_spawned_first_wave5 }
+							has_country_flag = ark_apex_leaderg_spawned_first_wave1
+							has_country_flag = ark_apex_leaderg_spawned_first_wave2	
+							has_country_flag = ark_apex_leaderg_spawned_first_wave3	
+							has_country_flag = ark_apex_leaderg_spawned_first_wave4	
 						}
 					}
 					root = {
-						set_country_flag = ark_apex_leader_spawned_first_wave5
+						set_country_flag = ark_apex_leaderg_spawned_first_wave5
 					}
 					break = yes
 				}
 				if = {                #第六次缓冲
 					limit = {
 						root = {
-							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave6 }
-							has_country_flag = ark_apex_leader_spawned_first_wave1
-							has_country_flag = ark_apex_leader_spawned_first_wave2	
-							has_country_flag = ark_apex_leader_spawned_first_wave3	
-							has_country_flag = ark_apex_leader_spawned_first_wave4	
-							has_country_flag = ark_apex_leader_spawned_first_wave5	
+							NOT = {has_country_flag = ark_apex_leaderg_spawned_first_wave6 }
+							has_country_flag = ark_apex_leaderg_spawned_first_wave1
+							has_country_flag = ark_apex_leaderg_spawned_first_wave2	
+							has_country_flag = ark_apex_leaderg_spawned_first_wave3	
+							has_country_flag = ark_apex_leaderg_spawned_first_wave4	
+							has_country_flag = ark_apex_leaderg_spawned_first_wave5	
 						}
 					}
 					root = {
-						set_country_flag = ark_apex_leader_spawned_first_wave6
+						set_country_flag = ark_apex_leaderg_spawned_first_wave6
 					}
 					break = yes
 				}
 				if = {                #第七次缓冲
 					limit = {
 						root = {
-							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave7 }
-							has_country_flag = ark_apex_leader_spawned_first_wave1
-							has_country_flag = ark_apex_leader_spawned_first_wave2	
-							has_country_flag = ark_apex_leader_spawned_first_wave3	
-							has_country_flag = ark_apex_leader_spawned_first_wave4	
-							has_country_flag = ark_apex_leader_spawned_first_wave5	
-							has_country_flag = ark_apex_leader_spawned_first_wave6
+							NOT = {has_country_flag = ark_apex_leaderg_spawned_first_wave7 }
+							has_country_flag = ark_apex_leaderg_spawned_first_wave1
+							has_country_flag = ark_apex_leaderg_spawned_first_wave2	
+							has_country_flag = ark_apex_leaderg_spawned_first_wave3	
+							has_country_flag = ark_apex_leaderg_spawned_first_wave4	
+							has_country_flag = ark_apex_leaderg_spawned_first_wave5	
+							has_country_flag = ark_apex_leaderg_spawned_first_wave6
 						}
 					}
 					root = {
-						set_country_flag = ark_apex_leader_spawned_first_wave7
+						set_country_flag = ark_apex_leaderg_spawned_first_wave7
 					}
 					break = yes
 				}
 				if = {                #七次缓冲完毕，进行领袖生成
 					limit = {
 						root = {
-							has_country_flag = ark_apex_leader_spawned_first_wave1
-							has_country_flag = ark_apex_leader_spawned_first_wave2
-							has_country_flag = ark_apex_leader_spawned_first_wave3
-							has_country_flag = ark_apex_leader_spawned_first_wave4	
-							has_country_flag = ark_apex_leader_spawned_first_wave5	
-							has_country_flag = ark_apex_leader_spawned_first_wave6	
-							has_country_flag = ark_apex_leader_spawned_first_wave7
+							has_country_flag = ark_apex_leaderg_spawned_first_wave1
+							has_country_flag = ark_apex_leaderg_spawned_first_wave2
+							has_country_flag = ark_apex_leaderg_spawned_first_wave3
+							has_country_flag = ark_apex_leaderg_spawned_first_wave4	
+							has_country_flag = ark_apex_leaderg_spawned_first_wave5	
+							has_country_flag = ark_apex_leaderg_spawned_first_wave6	
+							has_country_flag = ark_apex_leaderg_spawned_first_wave7
 
 						}
 					}
@@ -156,6 +156,7 @@ country_event = {   #总督的随机生成
 									 skill_level = 3
 									 portrait = ARK010
 								    }
+									set_is_female = yes
 								}
 							}
 							1 ={
@@ -181,11 +182,11 @@ country_event = {   #总督的随机生成
 									ARK_K_APEX_born = {#总督银灰
 									 check_name = silverash
 									 name = "银灰"
-									 is_female = false
 									 age = 25
 									 skill_level = 3
 									 portrait = ARK172
 								    }	
+									set_is_female = no
 							    }
 							}
                             1= {
@@ -215,6 +216,7 @@ country_event = {   #总督的随机生成
 									 skill_level = 3
 									 portrait = ARK4013
 									}	
+									set_is_female = yes
 								   }
 							}
                             1={
@@ -244,6 +246,7 @@ country_event = {   #总督的随机生成
 									 skill_level = 3
 									 portrait = ARK308
 									}	
+									set_is_female = yes
 								}
 							}
 					}
@@ -255,111 +258,111 @@ country_event = {   #总督的随机生成
 				if = {                #第一次缓冲
 					limit = {
 						root = {
-							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave1 }
+							NOT = {has_country_flag = ark_apex_leaders_spawned_first_wave1 }
 						}
 					}
 					root = {
-						set_country_flag = ark_apex_leader_spawned_first_wave1
+						set_country_flag = ark_apex_leaders_spawned_first_wave1
 					}
 					break = yes
 				}
 				if = {                #第二次缓冲
 					limit = {
 						root = {
-							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave2 }
-							has_country_flag = ark_apex_leader_spawned_first_wave1	
+							NOT = {has_country_flag = ark_apex_leaders_spawned_first_wave2 }
+							has_country_flag = ark_apex_leaders_spawned_first_wave1	
 						}
 					}
 					root = {
-						set_country_flag = ark_apex_leader_spawned_first_wave2
+						set_country_flag = ark_apex_leaders_spawned_first_wave2
 					}
 					break = yes
 				}
 				if = {                #第三次缓冲
 					limit = {
 						root = {
-							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave3 }
-							has_country_flag = ark_apex_leader_spawned_first_wave1
-							has_country_flag = ark_apex_leader_spawned_first_wave2	
+							NOT = {has_country_flag = ark_apex_leaders_spawned_first_wave3 }
+							has_country_flag = ark_apex_leaders_spawned_first_wave1
+							has_country_flag = ark_apex_leaders_spawned_first_wave2	
 						}
 					}
 					root = {
-						set_country_flag = ark_apex_leader_spawned_first_wave3
+						set_country_flag = ark_apex_leaders_spawned_first_wave3
 					}
 					break = yes
 				}
 				if = {                #第四次缓冲
 					limit = {
 						root = {
-							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave4 }
-							has_country_flag = ark_apex_leader_spawned_first_wave1
-							has_country_flag = ark_apex_leader_spawned_first_wave2	
-							has_country_flag = ark_apex_leader_spawned_first_wave3	
+							NOT = {has_country_flag = ark_apex_leaders_spawned_first_wave4 }
+							has_country_flag = ark_apex_leaders_spawned_first_wave1
+							has_country_flag = ark_apex_leaders_spawned_first_wave2	
+							has_country_flag = ark_apex_leaders_spawned_first_wave3	
 						}
 					}
 					root = {
-						set_country_flag = ark_apex_leader_spawned_first_wave4
+						set_country_flag = ark_apex_leaders_spawned_first_wave4
 					}
 					break = yes
 				}
 				if = {                #第五次缓冲
 					limit = {
 						root = {
-							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave5 }
-							has_country_flag = ark_apex_leader_spawned_first_wave1
-							has_country_flag = ark_apex_leader_spawned_first_wave2	
-							has_country_flag = ark_apex_leader_spawned_first_wave3	
-							has_country_flag = ark_apex_leader_spawned_first_wave4	
+							NOT = {has_country_flag = ark_apex_leaders_spawned_first_wave5 }
+							has_country_flag = ark_apex_leaders_spawned_first_wave1
+							has_country_flag = ark_apex_leaders_spawned_first_wave2	
+							has_country_flag = ark_apex_leaders_spawned_first_wave3	
+							has_country_flag = ark_apex_leaders_spawned_first_wave4	
 						}
 					}
 					root = {
-						set_country_flag = ark_apex_leader_spawned_first_wave5
+						set_country_flag = ark_apex_leaders_spawned_first_wave5
 					}
 					break = yes
 				}
 				if = {                #第六次缓冲
 					limit = {
 						root = {
-							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave6 }
-							has_country_flag = ark_apex_leader_spawned_first_wave1
-							has_country_flag = ark_apex_leader_spawned_first_wave2	
-							has_country_flag = ark_apex_leader_spawned_first_wave3	
-							has_country_flag = ark_apex_leader_spawned_first_wave4	
-							has_country_flag = ark_apex_leader_spawned_first_wave5	
+							NOT = {has_country_flag = ark_apex_leaders_spawned_first_wave6 }
+							has_country_flag = ark_apex_leaders_spawned_first_wave1
+							has_country_flag = ark_apex_leaders_spawned_first_wave2	
+							has_country_flag = ark_apex_leaders_spawned_first_wave3	
+							has_country_flag = ark_apex_leaders_spawned_first_wave4	
+							has_country_flag = ark_apex_leaders_spawned_first_wave5	
 						}
 					}
 					root = {
-						set_country_flag = ark_apex_leader_spawned_first_wave6
+						set_country_flag = ark_apex_leaders_spawned_first_wave6
 					}
 					break = yes
 				}
 				if = {                #第七次缓冲
 					limit = {
 						root = {
-							NOT = {has_country_flag = ark_apex_leader_spawned_first_wave7 }
-							has_country_flag = ark_apex_leader_spawned_first_wave1
-							has_country_flag = ark_apex_leader_spawned_first_wave2	
-							has_country_flag = ark_apex_leader_spawned_first_wave3	
-							has_country_flag = ark_apex_leader_spawned_first_wave4	
-							has_country_flag = ark_apex_leader_spawned_first_wave5	
-							has_country_flag = ark_apex_leader_spawned_first_wave6
+							NOT = {has_country_flag = ark_apex_leaders_spawned_first_wave7 }
+							has_country_flag = ark_apex_leaders_spawned_first_wave1
+							has_country_flag = ark_apex_leaders_spawned_first_wave2	
+							has_country_flag = ark_apex_leaders_spawned_first_wave3	
+							has_country_flag = ark_apex_leaders_spawned_first_wave4	
+							has_country_flag = ark_apex_leaders_spawned_first_wave5	
+							has_country_flag = ark_apex_leaders_spawned_first_wave6
 						}
 					}
 					root = {
-						set_country_flag = ark_apex_leader_spawned_first_wave7
+						set_country_flag = ark_apex_leaders_spawned_first_wave7
 					}
 					break = yes
 				}
 				if = {                #七次缓冲完毕，进行领袖生成
 					limit = {
 						root = {
-							has_country_flag = ark_apex_leader_spawned_first_wave1
-							has_country_flag = ark_apex_leader_spawned_first_wave2
-							has_country_flag = ark_apex_leader_spawned_first_wave3
-							has_country_flag = ark_apex_leader_spawned_first_wave4	
-							has_country_flag = ark_apex_leader_spawned_first_wave5	
-							has_country_flag = ark_apex_leader_spawned_first_wave6	
-							has_country_flag = ark_apex_leader_spawned_first_wave7
+							has_country_flag = ark_apex_leaders_spawned_first_wave1
+							has_country_flag = ark_apex_leaders_spawned_first_wave2
+							has_country_flag = ark_apex_leaders_spawned_first_wave3
+							has_country_flag = ark_apex_leaders_spawned_first_wave4	
+							has_country_flag = ark_apex_leaders_spawned_first_wave5	
+							has_country_flag = ark_apex_leaders_spawned_first_wave6	
+							has_country_flag = ark_apex_leaders_spawned_first_wave7
 
 						}
 					}
@@ -392,6 +395,7 @@ country_event = {   #总督的随机生成
 									 skill_level = 3
 									 portrait = ARK001
 								    }
+									set_is_female = yes
 								}
 							}
 							1 ={
@@ -417,11 +421,11 @@ country_event = {   #总督的随机生成
 									ARK_K_APEX_born = {#科学家灵知
 									 check_name = gnosis
 									 name = "诺希斯"
-									 is_female = false
 									 age = 25
 									 skill_level = 3
 									 portrait = ARK206
 								    }	
+									set_is_female = no
 							    }
 							}
                             1= {
@@ -451,6 +455,7 @@ country_event = {   #总督的随机生成
 									 skill_level = 3
 									 portrait = ARK003
 									}	
+									set_is_female = yes
 								   }
 							}
                             1={
@@ -477,10 +482,10 @@ country_event = {   #总督的随机生成
 									 check_name = passenger
 									 name = "异客"
 									 age = 25
-									 is_female = yes
 									 skill_level = 3
 									 portrait = ARK472
-									}	
+									}
+									set_is_female = no	
 								}
 							}
 							1={
@@ -509,7 +514,8 @@ country_event = {   #总督的随机生成
 									 age = 25
 									 skill_level = 3
 									 portrait = ARK400
-									}	
+									}
+									set_is_female = yes	
 								}
 							}
 							1={
@@ -538,7 +544,8 @@ country_event = {   #总督的随机生成
 									 age = 25
 									 skill_level = 3
 									 portrait = ARK248
-									}	
+									}
+									set_is_female = yes
 								}
 							}
 							1={
@@ -567,7 +574,8 @@ country_event = {   #总督的随机生成
 									 age = 25
 									 skill_level = 3
 									 portrait = ARK180
-									}	
+									}
+									set_is_female = yes	
 								}
 							}
 							1={
@@ -596,7 +604,8 @@ country_event = {   #总督的随机生成
 									 age = 25
 									 skill_level = 3
 									 portrait = ARK135
-									}	
+									}
+									set_is_female = yes	
 								}
 							}
 							1={
@@ -625,7 +634,8 @@ country_event = {   #总督的随机生成
 									 age = 25
 									 skill_level = 3
 									 portrait = ARK383
-									}	
+									}
+									set_is_female = yes	
 								}
 							}
 							1={
@@ -654,7 +664,8 @@ country_event = {   #总督的随机生成
 									 age = 25
 									 skill_level = 3
 									 portrait = ARK274
-									}	
+									}
+									set_is_female = yes	
 								}
 							}
 							1={
@@ -683,7 +694,8 @@ country_event = {   #总督的随机生成
 									 age = 25
 									 skill_level = 3
 									 portrait = ARK108
-									}	
+									}
+									set_is_female = yes	
 								}
 							}
 							1={
@@ -712,7 +724,8 @@ country_event = {   #总督的随机生成
 									 age = 25
 									 skill_level = 3
 									 portrait = ARK242
-									}	
+									}
+									set_is_female = yes	
 								}
 							}
 							1={
@@ -741,7 +754,8 @@ country_event = {   #总督的随机生成
 									 age = 25
 									 skill_level = 3
 									 portrait = ARK007
-									}	
+									}
+									set_is_female = yes	
 								}
 							}
 					}
@@ -753,111 +767,111 @@ country_event = {   #总督的随机生成
 			if = {                #第一次缓冲
 				limit = {
 					root = {
-						NOT = {has_country_flag = ark_apex_leader_spawned_first_wave1 }
+						NOT = {has_country_flag = ark_apex_leadera_spawned_first_wave1 }
 					}
 				}
 				root = {
-					set_country_flag = ark_apex_leader_spawned_first_wave1
+					set_country_flag = ark_apex_leadera_spawned_first_wave1
 				}
 				break = yes
 			}
 			if = {                #第二次缓冲
 				limit = {
 					root = {
-						NOT = {has_country_flag = ark_apex_leader_spawned_first_wave2 }
-						has_country_flag = ark_apex_leader_spawned_first_wave1	
+						NOT = {has_country_flag = ark_apex_leadera_spawned_first_wave2 }
+						has_country_flag = ark_apex_leadera_spawned_first_wave1	
 					}
 				}
 				root = {
-					set_country_flag = ark_apex_leader_spawned_first_wave2
+					set_country_flag = ark_apex_leadera_spawned_first_wave2
 				}
 				break = yes
 			}
 			if = {                #第三次缓冲
 				limit = {
 					root = {
-						NOT = {has_country_flag = ark_apex_leader_spawned_first_wave3 }
-						has_country_flag = ark_apex_leader_spawned_first_wave1
-						has_country_flag = ark_apex_leader_spawned_first_wave2	
+						NOT = {has_country_flag = ark_apex_leadera_spawned_first_wave3 }
+						has_country_flag = ark_apex_leadera_spawned_first_wave1
+						has_country_flag = ark_apex_leadera_spawned_first_wave2	
 					}
 				}
 				root = {
-					set_country_flag = ark_apex_leader_spawned_first_wave3
+					set_country_flag = ark_apex_leadera_spawned_first_wave3
 				}
 				break = yes
 			}
 			if = {                #第四次缓冲
 				limit = {
 					root = {
-						NOT = {has_country_flag = ark_apex_leader_spawned_first_wave4 }
-						has_country_flag = ark_apex_leader_spawned_first_wave1
-						has_country_flag = ark_apex_leader_spawned_first_wave2	
-						has_country_flag = ark_apex_leader_spawned_first_wave3	
+						NOT = {has_country_flag = ark_apex_leadera_spawned_first_wave4 }
+						has_country_flag = ark_apex_leadera_spawned_first_wave1
+						has_country_flag = ark_apex_leadera_spawned_first_wave2	
+						has_country_flag = ark_apex_leadera_spawned_first_wave3	
 					}
 				}
 				root = {
-					set_country_flag = ark_apex_leader_spawned_first_wave4
+					set_country_flag = ark_apex_leadera_spawned_first_wave4
 				}
 				break = yes
 			}
 			if = {                #第五次缓冲
 				limit = {
 					root = {
-						NOT = {has_country_flag = ark_apex_leader_spawned_first_wave5 }
-						has_country_flag = ark_apex_leader_spawned_first_wave1
-						has_country_flag = ark_apex_leader_spawned_first_wave2	
-						has_country_flag = ark_apex_leader_spawned_first_wave3	
-						has_country_flag = ark_apex_leader_spawned_first_wave4	
+						NOT = {has_country_flag = ark_apex_leadera_spawned_first_wave5 }
+						has_country_flag = ark_apex_leadera_spawned_first_wave1
+						has_country_flag = ark_apex_leadera_spawned_first_wave2	
+						has_country_flag = ark_apex_leadera_spawned_first_wave3	
+						has_country_flag = ark_apex_leadera_spawned_first_wave4	
 					}
 				}
 				root = {
-					set_country_flag = ark_apex_leader_spawned_first_wave5
+					set_country_flag = ark_apex_leadera_spawned_first_wave5
 				}
 				break = yes
 			}
 			if = {                #第六次缓冲
 				limit = {
 					root = {
-						NOT = {has_country_flag = ark_apex_leader_spawned_first_wave6 }
-						has_country_flag = ark_apex_leader_spawned_first_wave1
-						has_country_flag = ark_apex_leader_spawned_first_wave2	
-						has_country_flag = ark_apex_leader_spawned_first_wave3	
-						has_country_flag = ark_apex_leader_spawned_first_wave4	
-						has_country_flag = ark_apex_leader_spawned_first_wave5	
+						NOT = {has_country_flag = ark_apex_leadera_spawned_first_wave6 }
+						has_country_flag = ark_apex_leadera_spawned_first_wave1
+						has_country_flag = ark_apex_leadera_spawned_first_wave2	
+						has_country_flag = ark_apex_leadera_spawned_first_wave3	
+						has_country_flag = ark_apex_leadera_spawned_first_wave4	
+						has_country_flag = ark_apex_leadera_spawned_first_wave5	
 					}
 				}
 				root = {
-					set_country_flag = ark_apex_leader_spawned_first_wave6
+					set_country_flag = ark_apex_leadera_spawned_first_wave6
 				}
 				break = yes
 			}
 			if = {                #第七次缓冲
 				limit = {
 					root = {
-						NOT = {has_country_flag = ark_apex_leader_spawned_first_wave7 }
-						has_country_flag = ark_apex_leader_spawned_first_wave1
-						has_country_flag = ark_apex_leader_spawned_first_wave2	
-						has_country_flag = ark_apex_leader_spawned_first_wave3	
-						has_country_flag = ark_apex_leader_spawned_first_wave4	
-						has_country_flag = ark_apex_leader_spawned_first_wave5	
-						has_country_flag = ark_apex_leader_spawned_first_wave6
+						NOT = {has_country_flag = ark_apex_leadera_spawned_first_wave7 }
+						has_country_flag = ark_apex_leadera_spawned_first_wave1
+						has_country_flag = ark_apex_leadera_spawned_first_wave2	
+						has_country_flag = ark_apex_leadera_spawned_first_wave3	
+						has_country_flag = ark_apex_leadera_spawned_first_wave4	
+						has_country_flag = ark_apex_leadera_spawned_first_wave5	
+						has_country_flag = ark_apex_leadera_spawned_first_wave6
 					}
 				}
 				root = {
-					set_country_flag = ark_apex_leader_spawned_first_wave7
+					set_country_flag = ark_apex_leadera_spawned_first_wave7
 				}
 				break = yes
 			}
 			if = {                #七次缓冲完毕，进行领袖生成
 				limit = {
 					root = {
-						has_country_flag = ark_apex_leader_spawned_first_wave1
-						has_country_flag = ark_apex_leader_spawned_first_wave2
-						has_country_flag = ark_apex_leader_spawned_first_wave3
-						has_country_flag = ark_apex_leader_spawned_first_wave4	
-						has_country_flag = ark_apex_leader_spawned_first_wave5	
-						has_country_flag = ark_apex_leader_spawned_first_wave6	
-						has_country_flag = ark_apex_leader_spawned_first_wave7
+						has_country_flag = ark_apex_leadera_spawned_first_wave1
+						has_country_flag = ark_apex_leadera_spawned_first_wave2
+						has_country_flag = ark_apex_leadera_spawned_first_wave3
+						has_country_flag = ark_apex_leadera_spawned_first_wave4	
+						has_country_flag = ark_apex_leadera_spawned_first_wave5	
+						has_country_flag = ark_apex_leadera_spawned_first_wave6	
+						has_country_flag = ark_apex_leadera_spawned_first_wave7
 
 					}
 				}
@@ -890,6 +904,7 @@ country_event = {   #总督的随机生成
 								 skill_level = 3
 								 portrait = ARK017
 								}
+								set_is_female = yes
 							}
 						}
 						1 ={
@@ -918,7 +933,8 @@ country_event = {   #总督的随机生成
 								 age = 25
 								 skill_level = 3
 								 portrait = ARK213
-								}	
+								}
+								set_is_female = yes	
 							}
 						}
 						1= {
@@ -947,7 +963,8 @@ country_event = {   #总督的随机生成
 								 age = 25
 								 skill_level = 3
 								 portrait = ARK202
-								}	
+								}
+								set_is_female = yes	
 							   }
 						}
 						1={
@@ -976,7 +993,8 @@ country_event = {   #总督的随机生成
 								 age = 25
 								 skill_level = 3
 								 portrait = ARK001
-								}	
+								}
+								set_is_female = yes	
 							}
 						}
 						1={
@@ -1005,7 +1023,8 @@ country_event = {   #总督的随机生成
 								 age = 25
 								 skill_level = 3
 								 portrait = ARK130
-								}	
+								}
+								set_is_female = yes	
 							}
 						}
 				}
@@ -1016,111 +1035,111 @@ country_event = {   #总督的随机生成
 			if = {                #第一次缓冲
 				limit = {
 					root = {
-						NOT = {has_country_flag = ark_apex_leader_spawned_first_wave1 }
+						NOT = {has_country_flag = ark_apex_leadere_spawned_first_wave1 }
 					}
 				}
 				root = {
-					set_country_flag = ark_apex_leader_spawned_first_wave1
+					set_country_flag = ark_apex_leadere_spawned_first_wave1
 				}
 				break = yes
 			}
 			if = {                #第二次缓冲
 				limit = {
 					root = {
-						NOT = {has_country_flag = ark_apex_leader_spawned_first_wave2 }
-						has_country_flag = ark_apex_leader_spawned_first_wave1	
+						NOT = {has_country_flag = ark_apex_leadere_spawned_first_wave2 }
+						has_country_flag = ark_apex_leadere_spawned_first_wave1	
 					}
 				}
 				root = {
-					set_country_flag = ark_apex_leader_spawned_first_wave2
+					set_country_flag = ark_apex_leadere_spawned_first_wave2
 				}
 				break = yes
 			}
 			if = {                #第三次缓冲
 				limit = {
 					root = {
-						NOT = {has_country_flag = ark_apex_leader_spawned_first_wave3 }
-						has_country_flag = ark_apex_leader_spawned_first_wave1
-						has_country_flag = ark_apex_leader_spawned_first_wave2	
+						NOT = {has_country_flag = ark_apex_leadere_spawned_first_wave3 }
+						has_country_flag = ark_apex_leadere_spawned_first_wave1
+						has_country_flag = ark_apex_leadere_spawned_first_wave2	
 					}
 				}
 				root = {
-					set_country_flag = ark_apex_leader_spawned_first_wave3
+					set_country_flag = ark_apex_leadere_spawned_first_wave3
 				}
 				break = yes
 			}
 			if = {                #第四次缓冲
 				limit = {
 					root = {
-						NOT = {has_country_flag = ark_apex_leader_spawned_first_wave4 }
-						has_country_flag = ark_apex_leader_spawned_first_wave1
-						has_country_flag = ark_apex_leader_spawned_first_wave2	
-						has_country_flag = ark_apex_leader_spawned_first_wave3	
+						NOT = {has_country_flag = ark_apex_leadere_spawned_first_wave4 }
+						has_country_flag = ark_apex_leadere_spawned_first_wave1
+						has_country_flag = ark_apex_leadere_spawned_first_wave2	
+						has_country_flag = ark_apex_leadere_spawned_first_wave3	
 					}
 				}
 				root = {
-					set_country_flag = ark_apex_leader_spawned_first_wave4
+					set_country_flag = ark_apex_leadere_spawned_first_wave4
 				}
 				break = yes
 			}
 			if = {                #第五次缓冲
 				limit = {
 					root = {
-						NOT = {has_country_flag = ark_apex_leader_spawned_first_wave5 }
-						has_country_flag = ark_apex_leader_spawned_first_wave1
-						has_country_flag = ark_apex_leader_spawned_first_wave2	
-						has_country_flag = ark_apex_leader_spawned_first_wave3	
-						has_country_flag = ark_apex_leader_spawned_first_wave4	
+						NOT = {has_country_flag = ark_apex_leadere_spawned_first_wave5 }
+						has_country_flag = ark_apex_leadere_spawned_first_wave1
+						has_country_flag = ark_apex_leadere_spawned_first_wave2	
+						has_country_flag = ark_apex_leadere_spawned_first_wave3	
+						has_country_flag = ark_apex_leadere_spawned_first_wave4	
 					}
 				}
 				root = {
-					set_country_flag = ark_apex_leader_spawned_first_wave5
+					set_country_flag = ark_apex_leadere_spawned_first_wave5
 				}
 				break = yes
 			}
 			if = {                #第六次缓冲
 				limit = {
 					root = {
-						NOT = {has_country_flag = ark_apex_leader_spawned_first_wave6 }
-						has_country_flag = ark_apex_leader_spawned_first_wave1
-						has_country_flag = ark_apex_leader_spawned_first_wave2	
-						has_country_flag = ark_apex_leader_spawned_first_wave3	
-						has_country_flag = ark_apex_leader_spawned_first_wave4	
-						has_country_flag = ark_apex_leader_spawned_first_wave5	
+						NOT = {has_country_flag = ark_apex_leadere_spawned_first_wave6 }
+						has_country_flag = ark_apex_leadere_spawned_first_wave1
+						has_country_flag = ark_apex_leadere_spawned_first_wave2	
+						has_country_flag = ark_apex_leadere_spawned_first_wave3	
+						has_country_flag = ark_apex_leadere_spawned_first_wave4	
+						has_country_flag = ark_apex_leadere_spawned_first_wave5	
 					}
 				}
 				root = {
-					set_country_flag = ark_apex_leader_spawned_first_wave6
+					set_country_flag = ark_apex_leadere_spawned_first_wave6
 				}
 				break = yes
 			}
 			if = {                #第七次缓冲
 				limit = {
 					root = {
-						NOT = {has_country_flag = ark_apex_leader_spawned_first_wave7 }
-						has_country_flag = ark_apex_leader_spawned_first_wave1
-						has_country_flag = ark_apex_leader_spawned_first_wave2	
-						has_country_flag = ark_apex_leader_spawned_first_wave3	
-						has_country_flag = ark_apex_leader_spawned_first_wave4	
-						has_country_flag = ark_apex_leader_spawned_first_wave5	
-						has_country_flag = ark_apex_leader_spawned_first_wave6
+						NOT = {has_country_flag = ark_apex_leadere_spawned_first_wave7 }
+						has_country_flag = ark_apex_leadere_spawned_first_wave1
+						has_country_flag = ark_apex_leadere_spawned_first_wave2	
+						has_country_flag = ark_apex_leadere_spawned_first_wave3	
+						has_country_flag = ark_apex_leadere_spawned_first_wave4	
+						has_country_flag = ark_apex_leadere_spawned_first_wave5	
+						has_country_flag = ark_apex_leadere_spawned_first_wave6
 					}
 				}
 				root = {
-					set_country_flag = ark_apex_leader_spawned_first_wave7
+					set_country_flag = ark_apex_leadere_spawned_first_wave7
 				}
 				break = yes
 			}
 			if = {                #七次缓冲完毕，进行领袖生成
 				limit = {
 					root = {
-						has_country_flag = ark_apex_leader_spawned_first_wave1
-						has_country_flag = ark_apex_leader_spawned_first_wave2
-						has_country_flag = ark_apex_leader_spawned_first_wave3
-						has_country_flag = ark_apex_leader_spawned_first_wave4	
-						has_country_flag = ark_apex_leader_spawned_first_wave5	
-						has_country_flag = ark_apex_leader_spawned_first_wave6	
-						has_country_flag = ark_apex_leader_spawned_first_wave7
+						has_country_flag = ark_apex_leadere_spawned_first_wave1
+						has_country_flag = ark_apex_leadere_spawned_first_wave2
+						has_country_flag = ark_apex_leadere_spawned_first_wave3
+						has_country_flag = ark_apex_leadere_spawned_first_wave4	
+						has_country_flag = ark_apex_leadere_spawned_first_wave5	
+						has_country_flag = ark_apex_leadere_spawned_first_wave6	
+						has_country_flag = ark_apex_leadere_spawned_first_wave7
 
 					}
 				}
@@ -1153,6 +1172,7 @@ country_event = {   #总督的随机生成
 								 skill_level = 3
 								 portrait = ARK4039
 								}
+								set_is_female = yes
 							}
 						}
 						1 ={
@@ -1177,11 +1197,12 @@ country_event = {   #总督的随机生成
 								}
 								ARK_K_APEX_born = {#舰长w
 								 check_name = w
-								 name = "达卜纽"
+								 name = "W"
 								 age = 25
 								 skill_level = 3
 								 portrait = ARK113
-								}	
+								}
+								set_is_female = yes	
 							}
 						}
 				}
@@ -1316,30 +1337,30 @@ country_event = {  #每个月扫描一次玩家仓库，标记玩家已经有的
 	}
 	immediate = {
 		every_owned_leader = { #遍历24名领袖，将已拥有的领袖生成标记置2
-			if = { limit = {has_leader_flag = ark_leader_dorothy} owner = {set_veriable = {which = is_apex_dorothy_spawn value = 2}}}
-			if = { limit = {has_leader_flag = ark_leader_gnosis} owner = {set_veriable = {which = is_apex_gnosis_spawn value = 2}}}
-			if = { limit = {has_leader_flag = ark_leader_kaltsit} owner = {set_veriable = {which = is_apex_kaltsit_spawn value = 2}}}
-			if = { limit = {has_leader_flag = ark_leader_passenger} owner = {set_veriable = {which = is_apex_passenger_spawn value = 2}}}
-			if = { limit = {has_leader_flag = ark_leader_weedy} owner = {set_veriable = {which = is_apex_weedy_spawn value = 2}}}
-			if = { limit = {has_leader_flag = ark_leader_magallan} owner = {set_veriable = {which = is_apex_magallan_spawn value = 2}}}
-			if = { limit = {has_leader_flag = ark_leader_eyjafjalla} owner = {set_veriable = {which = is_apex_eyjafjalla_spawn value = 2}}}
-			if = { limit = {has_leader_flag = ark_leader_astgenne} owner = {set_veriable = {which = is_apex_astgenne_spawn value = 2}}}
-			if = { limit = {has_leader_flag = ark_leader_snowsant} owner = {set_veriable = {which = is_apex_snowsant_spawn value = 2}}}
-			if = { limit = {has_leader_flag = ark_leader_astesia} owner = {set_veriable = {which = is_apex_astesia_spawn value = 2}}}
-			if = { limit = {has_leader_flag = ark_leader_silence} owner = {set_veriable = {which = is_apex_silence_spawn value = 2}}}
-			if = { limit = {has_leader_flag = ark_leader_mayer} owner = {set_veriable = {which = is_apex_mayer_spawn value = 2}}}
-			if = { limit = {has_leader_flag = ark_leader_closure} owner = {set_veriable = {which = is_apex_closure_spawn value = 2}}}
-			if = { limit = {has_leader_flag = ark_leader_chen} owner = {set_veriable = {which = is_apex_chen_spawn value = 2}}}
-			if = { limit = {has_leader_flag = ark_leader_silverash} owner = {set_veriable = {which = is_apex_silverash_spawn value = 2}}}
-			if = { limit = {has_leader_flag = ark_leader_kjera} owner = {set_veriable = {which = is_apex_kjera_spawn value = 2}}}
-			if = { limit = {has_leader_flag = ark_leader_swire} owner = {set_veriable = {which = is_apex_swire_spawn value = 2}}}
-			if = { limit = {has_leader_flag = ark_leader_horn} owner = {set_veriable = {which = is_apex_horn_spawn value = 2}}}
-			if = { limit = {has_leader_flag = ark_leader_w} owner = {set_veriable = {which = is_apex_w_spawn value = 2}}}
-			if = { limit = {has_leader_flag = ark_leader_blaze} owner = {set_veriable = {which = is_apex_blaze_spawn value = 2}}}
-			if = { limit = {has_leader_flag = ark_leader_mostima} owner = {set_veriable = {which = is_apex_mostima_spawn value = 2}}}
-			if = { limit = {has_leader_flag = ark_leader_saria} owner = {set_veriable = {which = is_apex_saria_spawn value = 2}}}
-			if = { limit = {has_leader_flag = ark_leader_durnar} owner = {set_veriable = {which = is_apex_durnar_spawn value = 2}}}
-			if = { limit = {has_leader_flag = ark_leader_dobermann} owner = {set_veriable = {which = is_apex_dobermann_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_dorothy} owner = {set_variable = {which = is_apex_dorothy_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_gnosis} owner = {set_variable = {which = is_apex_gnosis_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_kaltsit} owner = {set_variable = {which = is_apex_kaltsit_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_passenger} owner = {set_variable = {which = is_apex_passenger_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_weedy} owner = {set_variable = {which = is_apex_weedy_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_magallan} owner = {set_variable = {which = is_apex_magallan_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_eyjafjalla} owner = {set_variable = {which = is_apex_eyjafjalla_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_astgenne} owner = {set_variable = {which = is_apex_astgenne_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_snowsant} owner = {set_variable = {which = is_apex_snowsant_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_astesia} owner = {set_variable = {which = is_apex_astesia_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_silence} owner = {set_variable = {which = is_apex_silence_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_mayer} owner = {set_variable = {which = is_apex_mayer_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_closure} owner = {set_variable = {which = is_apex_closure_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_chen} owner = {set_variable = {which = is_apex_chen_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_silverash} owner = {set_variable = {which = is_apex_silverash_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_kjera} owner = {set_variable = {which = is_apex_kjera_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_swire} owner = {set_variable = {which = is_apex_swire_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_horn} owner = {set_variable = {which = is_apex_horn_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_w} owner = {set_variable = {which = is_apex_w_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_blaze} owner = {set_variable = {which = is_apex_blaze_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_mostima} owner = {set_variable = {which = is_apex_mostima_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_saria} owner = {set_variable = {which = is_apex_saria_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_durnar} owner = {set_variable = {which = is_apex_durnar_spawn value = 2}}}
+			if = { limit = {has_leader_flag = ark_leader_dobermann} owner = {set_variable = {which = is_apex_dobermann_spawn value = 2}}}
             else = {}
 		}
 	}
@@ -1353,30 +1374,30 @@ country_event = {  #每当有领袖死亡时，将特殊领袖的存活标记置
 	}
 	immediate = {
       from = {
-		if = { limit = {has_leader_flag = ark_leader_dorothy} owner = {set_veriable = {which = is_apex_dorothy_alive value = 0}}}
-		if = { limit = {has_leader_flag = ark_leader_gnosis} owner = {set_veriable = {which = is_apex_gnosis_alive value = 0}}}
-		if = { limit = {has_leader_flag = ark_leader_kaltsit} owner = {set_veriable = {which = is_apex_kaltsit_alive value = 0}}}
-		if = { limit = {has_leader_flag = ark_leader_passenger} owner = {set_veriable = {which = is_apex_passenger_alive value = 0}}}
-		if = { limit = {has_leader_flag = ark_leader_weedy} owner = {set_veriable = {which = is_apex_weedy_alive value = 0}}}
-		if = { limit = {has_leader_flag = ark_leader_magallan} owner = {set_veriable = {which = is_apex_magallan_alive value = 0}}}
-		if = { limit = {has_leader_flag = ark_leader_eyjafjalla} owner = {set_veriable = {which = is_apex_eyjafjalla_alive value = 0}}}
-		if = { limit = {has_leader_flag = ark_leader_astgenne} owner = {set_veriable = {which = is_apex_astgenne_alive value = 0}}}
-		if = { limit = {has_leader_flag = ark_leader_snowsant} owner = {set_veriable = {which = is_apex_snowsant_alive value = 0}}}
-		if = { limit = {has_leader_flag = ark_leader_astesia} owner = {set_veriable = {which = is_apex_astesia_alive value = 0}}}
-		if = { limit = {has_leader_flag = ark_leader_silence} owner = {set_veriable = {which = is_apex_silence_alive value = 0}}}
-		if = { limit = {has_leader_flag = ark_leader_mayer} owner = {set_veriable = {which = is_apex_mayer_alive value = 0}}}
-		if = { limit = {has_leader_flag = ark_leader_closure} owner = {set_veriable = {which = is_apex_closure_alive value = 0}}}
-		if = { limit = {has_leader_flag = ark_leader_chen} owner = {set_veriable = {which = is_apex_chen_alive value = 0}}}
-		if = { limit = {has_leader_flag = ark_leader_silverash} owner = {set_veriable = {which = is_apex_silverash_alive value = 0}}}
-		if = { limit = {has_leader_flag = ark_leader_kjera} owner = {set_veriable = {which = is_apex_kjera_alive value = 0}}}
-		if = { limit = {has_leader_flag = ark_leader_swire} owner = {set_veriable = {which = is_apex_swire_alive value = 0}}}
-		if = { limit = {has_leader_flag = ark_leader_horn} owner = {set_veriable = {which = is_apex_horn_alive value = 0}}}
-		if = { limit = {has_leader_flag = ark_leader_w} owner = {set_veriable = {which = is_apex_w_alive value = 0}}}
-		if = { limit = {has_leader_flag = ark_leader_blaze} owner = {set_veriable = {which = is_apex_blaze_alive value = 0}}}
-		if = { limit = {has_leader_flag = ark_leader_mostima} owner = {set_veriable = {which = is_apex_mostima_alive value = 0}}}
-		if = { limit = {has_leader_flag = ark_leader_saria} owner = {set_veriable = {which = is_apex_saria_alive value = 0}}}
-		if = { limit = {has_leader_flag = ark_leader_durnar} owner = {set_veriable = {which = is_apex_durnar_alive value = 0}}}
-		if = { limit = {has_leader_flag = ark_leader_dobermann} owner = {set_veriable = {which = is_apex_dobermann_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_dorothy} owner = {set_variable = {which = is_apex_dorothy_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_gnosis} owner = {set_variable = {which = is_apex_gnosis_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_kaltsit} owner = {set_variable = {which = is_apex_kaltsit_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_passenger} owner = {set_variable = {which = is_apex_passenger_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_weedy} owner = {set_variable = {which = is_apex_weedy_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_magallan} owner = {set_variable = {which = is_apex_magallan_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_eyjafjalla} owner = {set_variable = {which = is_apex_eyjafjalla_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_astgenne} owner = {set_variable = {which = is_apex_astgenne_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_snowsant} owner = {set_variable = {which = is_apex_snowsant_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_astesia} owner = {set_variable = {which = is_apex_astesia_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_silence} owner = {set_variable = {which = is_apex_silence_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_mayer} owner = {set_variable = {which = is_apex_mayer_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_closure} owner = {set_variable = {which = is_apex_closure_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_chen} owner = {set_variable = {which = is_apex_chen_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_silverash} owner = {set_variable = {which = is_apex_silverash_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_kjera} owner = {set_variable = {which = is_apex_kjera_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_swire} owner = {set_variable = {which = is_apex_swire_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_horn} owner = {set_variable = {which = is_apex_horn_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_w} owner = {set_variable = {which = is_apex_w_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_blaze} owner = {set_variable = {which = is_apex_blaze_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_mostima} owner = {set_variable = {which = is_apex_mostima_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_saria} owner = {set_variable = {which = is_apex_saria_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_durnar} owner = {set_variable = {which = is_apex_durnar_alive value = 0}}}
+		if = { limit = {has_leader_flag = ark_leader_dobermann} owner = {set_variable = {which = is_apex_dobermann_alive value = 0}}}
 		else = {}
 	  }
 	}

@@ -145,7 +145,7 @@ ARK_K_APEX_born = {
 		}
 		set_name = $name$    #领袖姓名
 		set_age = $age$      #领袖年龄
-		set_is_female = $is_female|yes$     #领袖性别，不写就是女性
+		#set_is_female = $is_female|yes$     #领袖性别，不写就是女性
 		set_skill = $skill_level$       #领袖技能等级
 		change_leader_portrait = $portrait$     #领袖肖像，仅需输入ARK后数字序号
 		set_leader_flag = ark_leader_$check_name$   #领袖旗帜，锁定其本人
