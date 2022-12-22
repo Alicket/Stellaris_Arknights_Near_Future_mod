@@ -783,7 +783,7 @@ weapon_component_template = {
 	icon_frame = 1
 	
 	power = -10
-	damage = { min = 2 max = 9 }
+	damage = { min = 2 max = 15 }
 	hull_damage = 1
 	shield_damage = 1
 	shield_penetration = 0
@@ -801,7 +801,10 @@ weapon_component_template = {
 	projectile_gfx = "ark_pd"
 
 	tags = { weapon_type_point_defense weapon_type_energy }
-	ai_tags = { weapon_role_point_defense }
+	ai_tags = { weapon_role_point_defense screen }
+	point_defence_targets = { "missile" "strike_craft" }
+
+
 	resources = {
 		category = ship_components
 		cost = {
@@ -827,9 +830,10 @@ weapon_component_template = {
 }
 
 # 量子二踢脚-岁[除耗能、伤害和射程外，数值等同于中子发射器]
+# 3.6更新后上面一条不再适用
 weapon_component_template = {
 	key = "ARK_ENERGY_TORPEDO_1"
-	size = large
+	size = torpedo
 	entity = "turret_energy_torpedo_entity"
 	type = instant
 	
@@ -837,7 +841,7 @@ weapon_component_template = {
 	icon_frame = 1
 	
 	power = -110
-	damage = { min = 0 max = 3000 }
+	damage = { min = 0 max = 520 }
 	hull_damage = 1.75
 	shield_damage = 0.5
 	shield_penetration = 0
@@ -845,9 +849,10 @@ weapon_component_template = {
 	armor_penetration = 0
 	windup = { min = 1 max = 19 }
 	total_fire_time = 150
-	range = 200
+	range = 120
 	accuracy = 0.90
 	tracking = 0.00
+	size_damage_factor = 1  #根据目标舰容大小造成额外伤害
 	
 	prerequisites = { "tech_ark_energy_torpedoes_1" }
 	component_set = "ARK_ENERGY_TORPEDO_1"
@@ -890,17 +895,18 @@ weapon_component_template = {
 	type = missile
 	
 	power = -22	# 量子导弹
-	damage = { min = 0 max = 264 }	# 量子导弹最高伤害的3倍
+	damage = { min = 0 max = 320 }
 	hull_damage = 1.25
 	shield_damage = 1.00
 	shield_penetration = 1.00
-	armor_damage = 1.00
+	armor_damage = 0.50
 	armor_penetration = 0
 	windup = { min = 1 max = 15 }
 	total_fire_time = 60
-	range = 150
+	range = 30
 	accuracy = 1.00
 	tracking = 0.25
+	size_damage_factor = 1  #根据目标舰容大小造成额外伤害
 
 	missile_speed = 40		# 速度(400)
 	missile_evasion = 0.5		# 闪避
@@ -951,17 +957,18 @@ weapon_component_template = {
 	type = missile
 	
 	power = -26	# 掠夺者导弹
-	damage = { min = 0 max = 440 }	# 量子导弹最高伤害的5倍
+	damage = { min = 0 max = 440 }
 	hull_damage = 1.25
 	shield_damage = 1.00
 	shield_penetration = 1.00
-	armor_damage = 1.00
+	armor_damage = 0.50
 	armor_penetration = 0
 	windup = { min = 1 max = 15 }
 	total_fire_time = 60
-	range = 200	# 射程提高50
+	range = 30
 	accuracy = 1.00
 	tracking = 0.25
+	size_damage_factor = 1  #根据目标舰容大小造成额外伤害
 
 	missile_speed = 40		# 速度(400)
 	missile_evasion = 0.6		# 闪避 闪避提高0.1

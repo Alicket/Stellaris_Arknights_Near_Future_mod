@@ -171,6 +171,11 @@ country_event = {
 							change_leader_portrait = ARK010
 							set_skill = 1
 							set_age = 32
+							add_trait = leader_trait_eager # 活力四射
+							add_trait = leader_trait_righteous # 正义凌然
+							add_trait = leader_trait_oripathy # 源石病
+							add_trait = leader_trait_superintendent # 前警司
+							
 							set_leader_flag = arkleader_Chen_WHO
 							root = {
 								set_country_flag = arkleader_Chen_SPAWNED
@@ -583,6 +588,9 @@ country_event = {
 							change_leader_portrait = ARK400
 							set_skill = 3
 							set_age = 30
+							add_trait = leader_trait_expertise_biology # 专长：生物学
+							add_trait = leader_trait_expertise_propulsion # 专长：推进力学
+		
 							set_leader_flag = arkleader_Weedy_WHO
 							root = {
 								set_country_flag = arkleader_Weedy_SPAWNED
@@ -600,6 +608,9 @@ country_event = {
 							change_leader_portrait = ARK248
 							set_skill = 2
 							set_age = 29
+							add_trait = leader_trait_roamer # 漫游者
+							add_trait = leader_trait_archaeologist # 考古学家
+		
 							set_leader_flag = arkleader_Magallan_WHO
 							root = {
 								set_country_flag = arkleader_Magallan_SPAWNED
@@ -655,6 +666,9 @@ country_event = {
 							change_leader_portrait = ARK383
 							set_skill = 1
 							set_age = 24
+							add_trait = leader_trait_tiandaochouqin # 天道酬勤
+							add_trait = leader_trait_expertise_industry # 专长：工业
+		
 							set_leader_flag = arkleader_Snowsant_WHO
 							root = {
 								set_country_flag = arkleader_Snowsant_SPAWNED
@@ -689,6 +703,10 @@ country_event = {
 							change_leader_portrait = ARK108
 							set_skill = 2
 							set_age = 25
+							add_trait = leader_trait_meticulous # 细致
+							add_trait = leader_trait_expertise_biology # 专长：生物学
+							add_trait = leader_trait_oripathy # 源石病
+		
 							set_leader_flag = arkleader_Silence_WHO
 							root = {
 								set_country_flag = arkleader_Silence_SPAWNED
@@ -706,6 +724,9 @@ country_event = {
 							change_leader_portrait = ARK242
 							set_skill = 2
 							set_age = 26
+							add_trait = leader_trait_spark_of_genius # 灵光一闪
+							add_trait = leader_trait_expertise_industry # 专长：工业
+		
 							set_leader_flag = arkleader_Mayer_WHO
 							root = {
 								set_country_flag = arkleader_Mayer_SPAWNED
@@ -723,6 +744,10 @@ country_event = {
 							change_leader_portrait = ARK007
 							set_skill = 2
 							set_age = 240
+							add_trait = leader_trait_vampire # 血魔
+							add_trait = leader_trait_expertise_materials # 专长：材料科学
+							add_trait = leader_trait_expertise_computing # 专长：计算技术		
+		
 							set_leader_flag = arkleader_Closure_WHO
 							root = {
 								set_country_flag = arkleader_Closure_SPAWNED
@@ -1166,5 +1191,111 @@ country_event = {
 		ARK_Apex_Leader_Detect = { ARK_Leader_Name = Horn }
 		ARK_Apex_Leader_Detect = { ARK_Leader_Name = W }
 
+	}
+}
+country_event = {
+	id = ark_apex_leader.3
+	is_triggered_only = yes
+	trigger = {
+		is_this_terra = yes
+	}
+	immediate = {
+		every_owned_leader = {
+			if = {
+				limit = { has_leader_flag = arkleader_Chen_WHO }
+				change_leader_portrait = ARK010
+			}
+			if = {
+				limit = { has_leader_flag = arkleader_Silverash_WHO }
+				change_leader_portrait = ARK172
+			}
+			if = {
+				limit = { has_leader_flag = arkleader_Kjera_WHO }
+				change_leader_portrait = ARK4013
+			}
+			if = {
+				limit = { has_leader_flag = arkleader_Swire_WHO }
+				change_leader_portrait = ARK308
+			}
+			######
+			if = {
+				limit = { has_leader_flag = arkleader_Dorothy_WHO }
+				change_leader_portrait = ARK4048
+			}
+			if = {
+				limit = { has_leader_flag = arkleader_Gnosis_WHO }
+				change_leader_portrait = ARK206
+			}
+			if = {
+				limit = { has_leader_flag = arkleader_Passenger_WHO }
+				change_leader_portrait = ARK472
+			}
+			if = {
+				limit = { has_leader_flag = arkleader_Weedy_WHO }
+				change_leader_portrait = ARK400
+			}
+			if = {
+				limit = { has_leader_flag = arkleader_Magallan_WHO }
+				change_leader_portrait = ARK248
+			}
+			if = {
+				limit = { has_leader_flag = arkleader_Eyjafjalla_WHO }
+				change_leader_portrait = ARK180
+			}
+			if = {
+				limit = { has_leader_flag = arkleader_Astgenne_WHO }
+				change_leader_portrait = ARK135
+			}
+			if = {
+				limit = { has_leader_flag = arkleader_Snowsant_WHO }
+				change_leader_portrait = ARK383
+			}
+			if = {
+				limit = { has_leader_flag = arkleader_Astesia_WHO }
+				change_leader_portrait = ARK274
+			}
+			if = {
+				limit = { has_leader_flag = arkleader_Silence_WHO }
+				change_leader_portrait = ARK108
+			}
+			if = {
+				limit = { has_leader_flag = arkleader_Mayer_WHO }
+				change_leader_portrait = ARK242
+			}
+			if = {
+				limit = { has_leader_flag = arkleader_Closure_WHO }
+				change_leader_portrait = ARK007
+			}
+			######
+			if = {
+				limit = { has_leader_flag = arkleader_Blaze_WHO }
+				change_leader_portrait = ARK017
+			}
+			if = {
+				limit = { has_leader_flag = arkleader_Mostima_WHO }
+				change_leader_portrait = ARK213
+			}
+			if = {
+				limit = { has_leader_flag = arkleader_Saria_WHO }
+				change_leader_portrait = ARK202
+			}
+			if = {
+				limit = { has_leader_flag = arkleader_Durnar_WHO }
+				change_leader_portrait = ARK260
+			}
+			if = {
+				limit = { has_leader_flag = arkleader_Dobermann_WHO }
+				change_leader_portrait = ARK130
+			}
+			######
+			if = {
+				limit = { has_leader_flag = arkleader_Horn_WHO }
+				change_leader_portrait = ARK4039
+			}
+			if = {
+				limit = { has_leader_flag = arkleader_W_WHO }
+				change_leader_portrait = ARK113
+			}
+		}
 	}
 }

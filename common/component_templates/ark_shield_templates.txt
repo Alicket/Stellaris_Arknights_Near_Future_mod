@@ -1,5 +1,5 @@
 # 此处设置的图标是实际插槽中显示的图标。原因是我们可以支持不同大小的不同图标。
-# 目前各级护盾s值:60,70,90,120,160,210,270。M为:s×2.5，L为:s×2.4
+# 目前各级护盾s值:90,115,140,180,240,320。M为:s×2.5，L为:s×6
 # cost所需源石数：alloys×0.05
 
 # 骑士护盾
@@ -10,8 +10,8 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_S1
 	modifier = {
-		ship_shield_add = 60
-		ship_shield_regen_add_static = 0.6
+		ship_shield_add = 90
+		ship_shield_regen_add_static = 0.9
 	}
 	
 	prerequisites = { "tech_ark_shields_1" }
@@ -46,8 +46,8 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_M1
 	modifier = {
-		ship_shield_add = 150
-		ship_shield_regen_add_static = 1.50
+		ship_shield_add = 225
+		ship_shield_regen_add_static = 2.25
 	}
 	
 	prerequisites = { "tech_ark_shields_1" }
@@ -82,8 +82,8 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_L1
 	modifier = {
-		ship_shield_add = 360
-		ship_shield_regen_add_static = 3.6
+		ship_shield_add = 540
+		ship_shield_regen_add_static = 5.4
 	}
 	
 	prerequisites = { "tech_ark_shields_1" }
@@ -119,8 +119,8 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_S2
 	modifier = {
-		ship_shield_add = 70
-		ship_shield_regen_add_static = 0.7
+		ship_shield_add = 115
+		ship_shield_regen_add_static = 1.15
 	}
 	
 	prerequisites = { "tech_ark_shields_2" }
@@ -155,8 +155,8 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_M2
 	modifier = {
-		ship_shield_add = 175
-		ship_shield_regen_add_static = 1.75
+		ship_shield_add = 290
+		ship_shield_regen_add_static = 2.9
 	}
 	
 	prerequisites = { "tech_ark_shields_2" }
@@ -191,8 +191,8 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_L2
 	modifier = {
-		ship_shield_add = 420
-		ship_shield_regen_add_static = 4.2
+		ship_shield_add = 690
+		ship_shield_regen_add_static = 6.9
 	}
 	
 	prerequisites = { "tech_ark_shields_2" }
@@ -228,8 +228,8 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_S3
 	modifier = {
-		ship_shield_add = 90
-		ship_shield_regen_add_static = 0.9
+		ship_shield_add = 140
+		ship_shield_regen_add_static = 1.4
 	}
 	
 	prerequisites = { "tech_ark_shields_3" }
@@ -264,8 +264,8 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_M3
 	modifier = {
-		ship_shield_add = 225
-		ship_shield_regen_add_static = 2.25
+		ship_shield_add = 350
+		ship_shield_regen_add_static = 3.5
 	}
 	
 	prerequisites = { "tech_ark_shields_3" }
@@ -300,8 +300,8 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_L3
 	modifier = {
-		ship_shield_add = 540
-		ship_shield_regen_add_static = 5.4
+		ship_shield_add = 840
+		ship_shield_regen_add_static = 8.4
 	}
 	
 	prerequisites = { "tech_ark_shields_3" }
@@ -329,7 +329,7 @@ utility_component_template = {
 	}
 }
 
-# 先进法术护盾
+# 聚焦法术护盾
 utility_component_template = {
 	key = "SMALL_ARK_SHIELD_4A"
 	size = small
@@ -337,13 +337,14 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_S4
 	modifier = {
-		ship_shield_add = 120
-		ship_shield_regen_add_static = 1.2
+		ship_shield_add = 180
+		ship_shield_regen_add_static = 1.8
+		ship_shield_mult = 0.05
 	}
 	
 	prerequisites = { "tech_ark_shields_4a" }
 	component_set = "ARK_SHIELD_4A"
-	upgrades_to = "SMALL_ARK_SHIELD_4B"
+	upgrades_to = "SMALL_ARK_SHIELD_5A"
 	resources = {
 		category = ship_components
 		cost = {
@@ -373,13 +374,14 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_M4
 	modifier = {
-		ship_shield_add = 300
-		ship_shield_regen_add_static = 3
+		ship_shield_add = 450
+		ship_shield_regen_add_static = 4.5
+		ship_shield_mult = 0.075
 	}
 	
 	prerequisites = { "tech_ark_shields_4a" }
 	component_set = "ARK_SHIELD_4A"
-	upgrades_to = "MEDIUM_ARK_SHIELD_4B"
+	upgrades_to = "MEDIUM_ARK_SHIELD_5A"
 	resources = {
 		category = ship_components
 		cost = {
@@ -409,13 +411,14 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_L4
 	modifier = {
-		ship_shield_add = 720
-		ship_shield_regen_add_static = 7.2
+		ship_shield_add = 1080
+		ship_shield_regen_add_static = 10.8
+		ship_shield_mult = 0.10
 	}
 	
 	prerequisites = { "tech_ark_shields_4a" }
 	component_set = "ARK_SHIELD_4A"
-	upgrades_to = "LARGE_ARK_SHIELD_4B"
+	upgrades_to = "LARGE_ARK_SHIELD_5A"
 	resources = {
 		category = ship_components
 		cost = {
@@ -438,7 +441,7 @@ utility_component_template = {
 	}
 }
 
-# 超级法术护盾
+# 折射法术护盾
 utility_component_template = {
 	key = "SMALL_ARK_SHIELD_4B"
 	size = small
@@ -446,13 +449,13 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_S4
 	modifier = {
-		ship_shield_add = 160
-		ship_shield_regen_add_static = 1.6
+		ship_shield_add = 180
+		ship_shield_regen_add_static = 1.8
+		ship_evasion_mult = 0.05
 	}
 	
 	prerequisites = { "tech_ark_shields_4b" }
 	component_set = "ARK_SHIELD_4B"
-	upgrades_to = "SMALL_ARK_SHIELD_5A"
 	upgrades_to = "SMALL_ARK_SHIELD_5B"
 	resources = {
 		category = ship_components
@@ -483,13 +486,13 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_M4
 	modifier = {
-		ship_shield_add = 400
-		ship_shield_regen_add_static = 4
+		ship_shield_add = 450
+		ship_shield_regen_add_static = 4.5
+		ship_evasion_mult = 0.075
 	}
 	
 	prerequisites = { "tech_ark_shields_4b" }
 	component_set = "ARK_SHIELD_4B"
-	upgrades_to = "MEDIUM_ARK_SHIELD_5A"
 	upgrades_to = "MEDIUM_ARK_SHIELD_5B"
 	resources = {
 		category = ship_components
@@ -520,13 +523,13 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_L4
 	modifier = {
-		ship_shield_add = 960
-		ship_shield_regen_add_static = 9.6
+		ship_shield_add = 1080
+		ship_shield_regen_add_static = 10.8
+		ship_evasion_mult = 0.10
 	}
 	
 	prerequisites = { "tech_ark_shields_4b" }
 	component_set = "ARK_SHIELD_4B"
-	upgrades_to = "LARGE_ARK_SHIELD_5A"
 	upgrades_to = "LARGE_ARK_SHIELD_5B"
 	resources = {
 		category = ship_components
@@ -550,7 +553,7 @@ utility_component_template = {
 	}
 }
 
-# 守护立场
+# 教条力场
 utility_component_template = {
 	key = "SMALL_ARK_SHIELD_5A"
 	size = small
@@ -558,14 +561,13 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_S5
 	modifier = {
-		ship_shield_add = 210
-		ship_shield_regen_add_static = 2.1
-		ship_armor_mult = 0.05
+		ship_shield_add = 240
+		ship_shield_regen_add_static = 2.4
+		ship_shield_mult = 0.075
 	}
 	
 	prerequisites = { "tech_ark_shields_5a" }
 	component_set = "ARK_SHIELD_5A"
-	upgrades_to = "SMALL_ARK_SHIELD_5C"
 	resources = {
 		category = ship_components
 		cost = {
@@ -595,14 +597,13 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_M5
 	modifier = {
-		ship_shield_add = 525
-		ship_shield_regen_add_static = 5.25
-		ship_armor_mult = 0.1
+		ship_shield_add = 600
+		ship_shield_regen_add_static = 6
+		ship_shield_mult = 0.10
 	}
 	
 	prerequisites = { "tech_ark_shields_5a" }
 	component_set = "ARK_SHIELD_5A"
-	upgrades_to = "MEDIUM_ARK_SHIELD_5C"
 	resources = {
 		category = ship_components
 		cost = {
@@ -632,14 +633,13 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_L5
 	modifier = {
-		ship_shield_add = 1260
-		ship_shield_regen_add_static = 12.6
-		ship_armor_mult = 0.2
+		ship_shield_add = 1440
+		ship_shield_regen_add_static = 14.4
+		ship_shield_mult = 0.125
 	}
 	
 	prerequisites = { "tech_ark_shields_5a" }
 	component_set = "ARK_SHIELD_5A"
-	upgrades_to = "LARGE_ARK_SHIELD_5C"
 	resources = {
 		category = ship_components
 		cost = {
@@ -670,14 +670,13 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_S5
 	modifier = {
-		ship_shield_add = 210
-		ship_shield_regen_add_static = 2.1
-		ship_evasion_add = 1
+		ship_shield_add = 240
+		ship_shield_regen_add_static = 2.4
+		ship_evasion_mult = 0.075
 	}
 	
 	prerequisites = { "tech_ark_shields_5b" }
 	component_set = "ARK_SHIELD_5B"
-	upgrades_to = "SMALL_ARK_SHIELD_5C"
 	resources = {
 		category = ship_components
 		cost = {
@@ -707,14 +706,13 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_M5
 	modifier = {
-		ship_shield_add = 525
-		ship_shield_regen_add_static = 5.25
-		ship_evasion_add = 2
+		ship_shield_add = 600
+		ship_shield_regen_add_static = 6
+		ship_evasion_mult = 0.10
 	}
 	
 	prerequisites = { "tech_ark_shields_5b" }
 	component_set = "ARK_SHIELD_5B"
-	upgrades_to = "MEDIUM_ARK_SHIELD_5C"
 	resources = {
 		category = ship_components
 		cost = {
@@ -744,14 +742,13 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_L5
 	modifier = {
-		ship_shield_add = 1260
-		ship_shield_regen_add_static = 12.6
-		ship_evasion_add = 4
+		ship_shield_add = 1440
+		ship_shield_regen_add_static = 14.4
+		ship_evasion_mult = 0.125
 	}
 	
 	prerequisites = { "tech_ark_shields_5b" }
 	component_set = "ARK_SHIELD_5B"
-	upgrades_to = "LARGE_ARK_SHIELD_5C"
 	resources = {
 		category = ship_components
 		cost = {
@@ -782,10 +779,9 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_S5
 	modifier = {
-		ship_shield_add = 270
-		ship_shield_regen_add_static = 2.7
+		ship_shield_add = 320
+		ship_shield_regen_add_static = 3.2
 		ship_hull_mult = 0.05
-		ship_shield_mult = 0.05
 		ship_armor_mult = 0.05
 	}
 	
@@ -820,11 +816,10 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_M5
 	modifier = {
-		ship_shield_add = 675
-		ship_shield_regen_add_static = 6.75
-		ship_hull_mult = 0.1
-		ship_shield_mult = 0.1
-		ship_armor_mult = 0.1
+		ship_shield_add = 800
+		ship_shield_regen_add_static = 8
+		ship_hull_mult = 0.075
+		ship_armor_mult = 0.075
 	}
 	
 	prerequisites = { "tech_ark_shields_5c" }
@@ -858,11 +853,10 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_L5
 	modifier = {
-		ship_shield_add = 1620
-		ship_shield_regen_add_static = 16.2
-		ship_hull_mult = 0.2
-		ship_shield_mult = 0.2
-		ship_armor_mult = 0.2
+		ship_shield_add = 1920
+		ship_shield_regen_add_static = 19.2
+		ship_hull_mult = 0.10
+		ship_armor_mult = 0.10
 	}
 	
 	prerequisites = { "tech_ark_shields_5c" }
