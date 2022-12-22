@@ -843,8 +843,8 @@ weapon_component_template = {
 	power = -110
 	damage = { min = 0 max = 520 }
 	hull_damage = 1.75
-	shield_damage = 0.5
-	shield_penetration = 0
+	shield_damage = 1
+	shield_penetration = 0.25
 	armor_damage = 1.5
 	armor_penetration = 0
 	windup = { min = 1 max = 19 }
@@ -902,7 +902,7 @@ weapon_component_template = {
 	armor_damage = 0.50
 	armor_penetration = 0
 	windup = { min = 1 max = 15 }
-	total_fire_time = 60
+	total_fire_time = 130
 	range = 30
 	accuracy = 1.00
 	tracking = 0.25
@@ -964,7 +964,7 @@ weapon_component_template = {
 	armor_damage = 0.50
 	armor_penetration = 0
 	windup = { min = 1 max = 15 }
-	total_fire_time = 60
+	total_fire_time = 130
 	range = 30
 	accuracy = 1.00
 	tracking = 0.25
