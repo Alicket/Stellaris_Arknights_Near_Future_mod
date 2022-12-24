@@ -54,12 +54,12 @@ country_event = {
 			limit = {
 				NOT = { has_country_flag = ark_synthetic_evolution }
 			}
-			every_owned_leader = {	# 凯尔希
-				limit = {
-					has_leader_flag = ark_leader_kaltsit
-				}
-				change_leader_portrait = ARK003
-			}
+			# every_owned_leader = {	# 凯尔希
+			# 	limit = {
+			# 		has_leader_flag = ark_leader_kaltsit
+			# 	}
+			# 	change_leader_portrait = ARK003
+			# }
 			every_owned_leader = {	# 博士_L
 				limit = {
 					has_leader_flag = ark_leader_doctor
@@ -81,48 +81,48 @@ country_event = {
 				}
 				change_leader_portrait = ARK001_R
 			}
-			every_owned_leader = {	# 陈
-				limit = {
-					has_leader_flag = ark_leader_chen
-				}
-				change_leader_portrait = ARK010
-			}
-				every_owned_leader = {	# 可露希尔
-				limit = {
-					has_leader_flag = ark_leader_closure
-				}
-				change_leader_portrait = ARK007
-			}
-			every_owned_leader = {	# 赫默
-				limit = {
-					has_leader_flag = ark_leader_silence
-				}
-				change_leader_portrait = ARK108
-			}
-			every_owned_leader = {	# 温蒂
-				limit = {
-					has_leader_flag = ark_leader_weedy
-				}
-				change_leader_portrait = ARK400
-			}
-			every_owned_leader = {	# 梅尔
-				limit = {
-					has_leader_flag = ark_leader_mayer
-				}
-				change_leader_portrait = ARK242
-			}
-			every_owned_leader = {	# 雪雉
-				limit = {
-					has_leader_flag = ark_leader_snowsant
-				}
-				change_leader_portrait = ARK383
-			}
-			every_owned_leader = {	# 麦哲伦
-				limit = {
-					has_leader_flag = ark_leader_magallan
-				}
-				change_leader_portrait = ARK248
-			}
+			# every_owned_leader = {	# 陈
+			# 	limit = {
+			# 		has_leader_flag = ark_leader_chen
+			# 	}
+			# 	change_leader_portrait = ARK010
+			# }
+			# 	every_owned_leader = {	# 可露希尔
+			# 	limit = {
+			# 		has_leader_flag = ark_leader_closure
+			# 	}
+			# 	change_leader_portrait = ARK007
+			# }
+			# every_owned_leader = {	# 赫默
+			# 	limit = {
+			# 		has_leader_flag = ark_leader_silence
+			# 	}
+			# 	change_leader_portrait = ARK108
+			# }
+			# every_owned_leader = {	# 温蒂
+			# 	limit = {
+			# 		has_leader_flag = ark_leader_weedy
+			# 	}
+			# 	change_leader_portrait = ARK400
+			# }
+			# every_owned_leader = {	# 梅尔
+			# 	limit = {
+			# 		has_leader_flag = ark_leader_mayer
+			# 	}
+			# 	change_leader_portrait = ARK242
+			# }
+			# every_owned_leader = {	# 雪雉
+			# 	limit = {
+			# 		has_leader_flag = ark_leader_snowsant
+			# 	}
+			# 	change_leader_portrait = ARK383
+			# }
+			# every_owned_leader = {	# 麦哲伦
+			# 	limit = {
+			# 		has_leader_flag = ark_leader_magallan
+			# 	}
+			# 	change_leader_portrait = ARK248
+			# }
 		}
 	}
 }
@@ -158,7 +158,46 @@ country_event = {
 }
 
 # 创建泰拉小车机器人
-planet_event = {
+# planet_event = {
+# 	id = ark_set.5
+# 	hide_window = yes
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		owner = {
+# 			OR = {
+# 				has_country_flag = arknight_1
+# 				has_country_flag = arknight_2
+# 				has_country_flag = arknight_4
+# 			}
+# 			NOT = { has_country_flag = create_ark_robot }
+# 		}
+# 		root = {
+# 			last_building_changed = building_robot_assembly_plant
+# 			last_building_changed = building_machine_assembly_plant
+# 		}
+# 	}
+
+# 	immediate = {
+# 		owner = {
+# 			set_country_flag = create_ark_robot
+# 			create_species = {
+# 				name = terra_creation
+# 				namelist = root
+# 				plural = terra_creation_plural
+# 				class = ArkRobot
+# 				portrait = "terra_creation"
+# 				traits = {
+# 					trait = trait_mechanical
+# 				}
+# 				effect = {
+# 					save_global_event_target_as = ark_robot_species
+# 				}
+# 			}	
+# 		}
+# 	}
+# }
+
+country_event = {
 	id = ark_set.5
 	hide_window = yes
 	is_triggered_only = yes
@@ -171,29 +210,23 @@ planet_event = {
 			}
 			NOT = { has_country_flag = create_ark_robot }
 		}
-		root = {
-			last_building_changed = building_robot_assembly_plant
-			last_building_changed = building_machine_assembly_plant
-		}
 	}
 
 	immediate = {
-		owner = {
-			set_country_flag = create_ark_robot
-			create_species = {
-				name = terra_creation
-				namelist = root
-				plural = terra_creation_plural
-				class = ArkRobot
-				portrait = "terra_creation"
-				traits = {
-					trait = trait_mechanical
-				}
-				effect = {
-					save_global_event_target_as = ark_robot_species
-				}
-			}	
-		}
+		set_country_flag = create_ark_robot
+		create_species = {
+			name = terra_creation
+			namelist = root
+			plural = terra_creation_plural
+			class = ArkRobot
+			portrait = "terra_creation"
+			traits = {
+				trait = trait_mechanical
+			}
+			effect = {
+				save_global_event_target_as = ark_robot_species
+			}
+		}	
 	}
 }
 

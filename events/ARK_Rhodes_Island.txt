@@ -90,6 +90,21 @@ country_event = {
 		name = ark_rhodes_island.2.g	# 确认对话
 		default_hide_option = yes
 	}
+
+	option = {
+		name = ark_rhodes_island.2.h
+		custom_tooltip = ark_rhodes_island.2.h_tooltip
+		allow = {
+			NOT = {
+				has_country_flag = ark_synthetic_evolution
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = ark_apex_leader.3
+			}		
+		}
+	}
 }
 
 # 联合理事会

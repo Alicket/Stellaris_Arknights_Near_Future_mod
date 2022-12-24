@@ -1,4 +1,6 @@
 namespace = ark_apex_leader
+#on_leader_spawned
+#生成领袖
 country_event = {
 	id = ark_apex_leader.1
 	is_triggered_only = yes
@@ -156,6 +158,11 @@ country_event = {
 							has_country_flag = ark_apex_leaderg_spawned_first_wave7
 							has_country_flag = ark_apex_leaderg_spawned_first_wave8
 						}
+					}
+					root = {
+						country_event = {
+							id = ark_apex_leader.4
+						}					
 					}
 					random_list = {
 						4 = {}
@@ -514,6 +521,11 @@ country_event = {
 							has_country_flag = ark_apex_leaders_spawned_first_wave13
 
 						}
+					}
+					root = {
+						country_event = {
+							id = ark_apex_leader.4
+						}					
 					}
 					random_list = {
 						12 = {}
@@ -882,6 +894,11 @@ country_event = {
 							has_country_flag = ark_apex_leadera_spawned_first_wave7
 						}
 					}
+					root = {
+						country_event = {
+							id = ark_apex_leader.4
+						}					
+					}
 					random_list = {
 						5 = {
 						}
@@ -1106,6 +1123,11 @@ country_event = {
 							has_country_flag = ark_apex_leadere_spawned_first_wave7
 						}
 					}
+					root = {
+						country_event = {
+							id = ark_apex_leader.4
+						}
+					}
 					random_list = {
 						2 = {}
 						1 = {	#号角
@@ -1159,6 +1181,8 @@ country_event = {
 		}
 	}
 }
+#on_monthly_pulse_country
+#确定状态
 country_event = {
 	id = ark_apex_leader.2
 	is_triggered_only = yes
@@ -1193,109 +1217,136 @@ country_event = {
 
 	}
 }
+#ark_rhodes_island.2.h
+#重置肖像
 country_event = {
 	id = ark_apex_leader.3
 	is_triggered_only = yes
+	hide_window = yes
 	trigger = {
 		is_this_terra = yes
+		NOT = { has_country_flag = ark_synthetic_evolution }
 	}
 	immediate = {
+		set_country_flag = arkportraitchangetest
 		every_owned_leader = {
-			if = {
-				limit = { has_leader_flag = arkleader_Chen_WHO }
-				change_leader_portrait = ARK010
-			}
-			if = {
-				limit = { has_leader_flag = arkleader_Silverash_WHO }
-				change_leader_portrait = ARK172
-			}
-			if = {
+			limit = { has_leader_flag = ark_leader_kaltsit }
+			change_leader_portrait = ARK003
+		}
+		######
+		every_owned_leader = {
+			limit = { has_leader_flag = arkleader_Chen_WHO }
+			change_leader_portrait = ARK010
+		}
+		every_owned_leader = {
+			limit = { has_leader_flag = arkleader_Silverash_WHO }
+			change_leader_portrait = ARK172
+		}
+		every_owned_leader = {
 				limit = { has_leader_flag = arkleader_Kjera_WHO }
 				change_leader_portrait = ARK4013
-			}
-			if = {
+		}
+		every_owned_leader = {
 				limit = { has_leader_flag = arkleader_Swire_WHO }
 				change_leader_portrait = ARK308
-			}
-			######
-			if = {
+		}
+		######
+		every_owned_leader = {
 				limit = { has_leader_flag = arkleader_Dorothy_WHO }
 				change_leader_portrait = ARK4048
-			}
-			if = {
+		}
+		every_owned_leader = {
 				limit = { has_leader_flag = arkleader_Gnosis_WHO }
 				change_leader_portrait = ARK206
-			}
-			if = {
+		}
+		every_owned_leader = {
 				limit = { has_leader_flag = arkleader_Passenger_WHO }
 				change_leader_portrait = ARK472
-			}
-			if = {
+		}
+		every_owned_leader = {
 				limit = { has_leader_flag = arkleader_Weedy_WHO }
 				change_leader_portrait = ARK400
-			}
-			if = {
+		}
+		every_owned_leader = {
 				limit = { has_leader_flag = arkleader_Magallan_WHO }
 				change_leader_portrait = ARK248
-			}
-			if = {
+		}
+		every_owned_leader = {
 				limit = { has_leader_flag = arkleader_Eyjafjalla_WHO }
 				change_leader_portrait = ARK180
-			}
-			if = {
+		}
+		every_owned_leader = {
 				limit = { has_leader_flag = arkleader_Astgenne_WHO }
 				change_leader_portrait = ARK135
-			}
-			if = {
+		}
+		every_owned_leader = {
 				limit = { has_leader_flag = arkleader_Snowsant_WHO }
-				change_leader_portrait = ARK383
-			}
-			if = {
+				change_leader_portrait = ARK383			
+		}
+		every_owned_leader = {
 				limit = { has_leader_flag = arkleader_Astesia_WHO }
 				change_leader_portrait = ARK274
-			}
-			if = {
+		}
+		every_owned_leader = {
 				limit = { has_leader_flag = arkleader_Silence_WHO }
 				change_leader_portrait = ARK108
-			}
-			if = {
+		}
+		every_owned_leader = {
 				limit = { has_leader_flag = arkleader_Mayer_WHO }
 				change_leader_portrait = ARK242
-			}
-			if = {
+		}
+		every_owned_leader = {
 				limit = { has_leader_flag = arkleader_Closure_WHO }
 				change_leader_portrait = ARK007
-			}
-			######
-			if = {
+		}
+		every_owned_leader = {
 				limit = { has_leader_flag = arkleader_Blaze_WHO }
 				change_leader_portrait = ARK017
-			}
-			if = {
+		}
+		######
+		every_owned_leader = {
 				limit = { has_leader_flag = arkleader_Mostima_WHO }
 				change_leader_portrait = ARK213
-			}
-			if = {
+		}
+		every_owned_leader = {
 				limit = { has_leader_flag = arkleader_Saria_WHO }
 				change_leader_portrait = ARK202
-			}
-			if = {
+		}
+		every_owned_leader = {
 				limit = { has_leader_flag = arkleader_Durnar_WHO }
 				change_leader_portrait = ARK260
-			}
-			if = {
+		}
+		every_owned_leader = {
 				limit = { has_leader_flag = arkleader_Dobermann_WHO }
 				change_leader_portrait = ARK130
-			}
-			######
-			if = {
+		}
+		######
+		every_owned_leader = {
 				limit = { has_leader_flag = arkleader_Horn_WHO }
 				change_leader_portrait = ARK4039
-			}
-			if = {
+		}
+		every_owned_leader = {
 				limit = { has_leader_flag = arkleader_W_WHO }
 				change_leader_portrait = ARK113
-			}
 		}
+	}
+}
+#提示
+country_event = {
+	id = ark_apex_leader.4
+	is_triggered_only = yes
+	picture = GFX_evt_apex_leader_reset_portrait
+	trigger = {
+		NOT = {
+			has_country_flag = ark_apex_leader_tipped
+		}
+	}
+	title = ark_apex_leader.4.title
+	desc = ark_apex_leader.4.desc
+	immediate = {
+		set_country_flag = ark_apex_leader_tipped
+	}
+	option = {
+		name = ark_apex_leader.4.a
 	}
 }

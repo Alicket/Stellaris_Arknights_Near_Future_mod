@@ -1,7 +1,0 @@
-on_destroy_planet_with_PLANET_KILLER_ARK_FROSTNOVA = {
-	events = {
-		crisis.5015 # Menace Objective - Destroy World/Empire
-		ark_planet_destruction.100
-		planet_destruction.600 # frag holy world
-	}
-}

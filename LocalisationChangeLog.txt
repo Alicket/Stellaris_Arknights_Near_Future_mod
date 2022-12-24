@@ -1,4 +1,23 @@
-# UPDATE 2022.7.24
+#<-----------------------------------------------------------------UPDATE 2022.12.----------------------------------------------------------------->#
+
+
+#Note:
+# [1]ark_archae_l_simp_chinese.yml still no need to translate (may be never)
+
+
+# Partly Changed Files:
+# Add
+# [1]ARK_rhodes_Island_l_simp_chinese.yml Line 16-18 121-123
+# [2]Some of lines between 13-111 in ARK_fixed_l_simp_chinese.yml (some new leader traits)
+# [3]ARK_government_l_simp_chinese.yml line 87-93 103
+
+# Change
+# [1]ARK_origins_l_simp_chinese.yml line 4 5
+# [2]ARK_weapon_l_simp_chinese.yml line 107-115
+
+
+
+#<-----------------------------------------------------------------UPDATE 2022.7.24----------------------------------------------------------------->#
 
 
 # Note:
