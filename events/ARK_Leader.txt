@@ -65,3 +65,79 @@ country_event = {
 		name = ark_leader.11.a
 	}
 }
+
+# 坚雷的零食网络→零件网络
+country_event = {
+	id = ark_leader.2
+	hide_window = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = ark_synthetic_evolution	# 已经机飞变泰拉小车
+		any_owned_leader = {
+			has_trait = leader_trait_snacks_network
+		}
+	}
+
+	immediate = {
+		every_owned_leader = {
+			limit = { has_trait = leader_trait_snacks_network }
+			remove_trait = leader_trait_snacks_network
+			add_trait = leader_trait_parts_network
+		}
+	}
+}
+
+# 坚雷的零食网络（帝国效果）
+country_event = {
+	id = ark_leader.21
+	hide_window = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		any_owned_leader = {
+			has_trait = leader_trait_snacks_network
+		}
+	}
+
+	immediate = {
+		every_owned_leader = {
+			limit = { has_trait = leader_trait_snacks_network }
+			owner = {
+				add_modifier = {
+					modifier = "snacks_network"	# 零食网络
+					days = -1
+				}
+			}
+		}
+	}
+}
+
+# 坚雷的零件网络（帝国效果）
+country_event = {
+	id = ark_leader.22
+	hide_window = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		any_owned_leader = {
+			has_trait = leader_trait_parts_network
+		}
+	}
+
+	immediate = {
+		every_owned_leader = {
+			limit = { has_trait = leader_trait_parts_network }
+			owner = {
+				remove_modifier = snacks_network
+				add_modifier = {
+					modifier = "parts_network"	# 零件网络
+					days = -1
+				}
+			}
+		}
+	}
+}

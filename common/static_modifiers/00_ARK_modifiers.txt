@@ -1,3 +1,14 @@
+# 明日方舟帝国buff #
+
+snacks_network = {	# 零食网络
+	ships_upkeep_mult = -0.025	# 舰船维护费
+	icon = "gfx/interface/icons/modifiers/ark_snacks_parts_network.dds"
+}
+parts_network = {	# 零件网络
+	ships_upkeep_mult = -0.05	# 舰船维护费
+	icon = "gfx/interface/icons/modifiers/ark_snacks_parts_network.dds"
+}
+
 # 明日方舟星球buff #
 
 catastrophe = {	# 天灾

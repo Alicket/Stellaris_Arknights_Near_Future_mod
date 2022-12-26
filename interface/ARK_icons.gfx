@@ -1,5 +1,10 @@
 spriteTypes = {
 
+	spriteType = {	# 零食&零件网络
+		name = "GFX_ark_snacks_parts_network"
+		texturefile = "gfx/interface/icons/modifiers/ark_snacks_parts_network.dds"
+	}
+
 	spriteType = {	# 制造站
 		name = "GFX_starbase_manufacturing_station"
 		texturefile = "gfx/interface/icons/modules/starbase_manufacturing_station.dds"
