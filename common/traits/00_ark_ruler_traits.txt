@@ -2,7 +2,7 @@
 trait_ruler_walk_in_dust_r = {
 	cost = 0
 	initial = no
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/trait_walk_in_dust.dds"
 	immortal_leaders = yes
 	modifier = {
@@ -21,7 +21,7 @@ trait_ruler_walk_in_dust_r = {
 trait_ruler_kaltsit_knowledgeable = {
 	cost = 0
 	initial = no
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/trait_ruler_kaltsit_knowledgeable.dds"
 	modifier = {
 		planet_jobs_physics_research_produces_mult = 0.05
@@ -37,7 +37,7 @@ trait_ruler_kaltsit_knowledgeable = {
 trait_ruler_efficient_infrastructure = {
 	cost = 0
 	initial = no
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/trait_ruler_efficient_infrastructure.dds"
 	modifier = {
 		planet_jobs_produces_mult = 0.1
@@ -51,7 +51,7 @@ trait_ruler_efficient_infrastructure = {
 trait_ruler_meet_end = {
 	cost = 0
 	initial = no
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/leader_trait_meet_end.dds"
 	immortal_leaders = yes
 	leader_trait = { ruler }
@@ -63,7 +63,7 @@ trait_ruler_meet_end = {
 trait_ruler_babel_evil_spirit_w = {
 	cost = 0
 	initial = no
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/leader_trait_babel_evil_spirit_w.dds"
 	modifier = {
 		country_starbase_influence_cost_mult = -0.3
@@ -78,7 +78,7 @@ trait_ruler_babel_evil_spirit_w = {
 trait_ruler_babel_evil_spirit_l = {
 	cost = 0
 	initial = no
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/leader_trait_babel_evil_spirit_l.dds"
 	modifier = {
 		ship_disengage_chance_reduction = -0.2
@@ -93,7 +93,7 @@ trait_ruler_babel_evil_spirit_l = {
 trait_ruler_babel_evil_spirit_r = {
 	cost = 0
 	initial = no
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/leader_trait_babel_evil_spirit_r.dds"
 	modifier = {
 		ship_weapon_damage = 0.33

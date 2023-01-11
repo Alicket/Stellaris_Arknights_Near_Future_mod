@@ -64,6 +64,9 @@ leader_trait_economy_measure:0 "经济手腕"
 leader_trait_economy_measure_desc:0 "这位领袖在经济贸易上拥有卓越的远见与执行力.\t\t"
 leader_trait_warlords:0 "旧军阀"
 leader_trait_warlords_desc:0 "这位领袖曾经是割据一方的军阀,\t\t他能随时动员老部下和家乡子弟投入正规军,\t\t但因此也遭到非议.\t\t"
+leader_trait_governor_kjera:0 "耶拉岗德"
+leader_trait_governor_kjera_desc:0 "作为谢拉格圣山的神明洞察一切,\t也是圣女大人身边尽职尽责的女仆长,\t对于让星区'保持干净'有一套独特的见解."
+
 # 科学 #
 leader_trait_walk_in_dust_s:0 "遗尘漫步"
 leader_trait_walk_in_dust_s_desc:0 "在这场几乎没有尽头的漫长旅程中,\t\t她始终在寻找最初问题的答案.\t\t她的答案.\t\t"
@@ -88,6 +91,9 @@ leader_trait_snacks_network:0 "零食网络"
 leader_trait_snacks_network_desc:0 "帝国舰队维护费:§G-2.5%§!\n\n坚雷组织了一个遍布全舰队的庞大零食网络，力求给大家供应最美味，最廉价的零食。"
 leader_trait_parts_network:0 "零件网络"
 leader_trait_parts_network_desc:0 "帝国舰队维护费:§G-5%§!\n\n坚雷组织了一个遍布全舰队的庞大零件网络，力求给大家供应最物美价廉的零件。"
+leader_trait_calcium:0 "钙质化"
+leader_trait_calcium_desc:0 "塞雷娅控制钙元素的能力使得修复舰船损伤部位的效率大大提高。"
+
 # 陆军 #
 leader_trait_general_chivalry:0 "骑士精神"
 leader_trait_general_chivalry_desc:0 "这位领袖遵从着骑士精神的荣耀和信仰,\t\t并决定以骑士的意志战胜一切丑恶.\t\t"

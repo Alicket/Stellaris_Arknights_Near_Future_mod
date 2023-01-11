@@ -165,83 +165,88 @@ country_event = {
 						}					
 					}
 					random_list = {
-						4 = {}
-						1 = {	#陈
-							modifier = {
-								add = -1
-								root = {
-										has_country_flag = arkleader_Chen_SPAWNED	
-								}
-							}
-							set_name = "NAME_Chen"
-							set_is_female = yes
-							change_leader_portrait = ARK010
-							set_skill = 1
-							set_age = 32
-							add_trait = leader_trait_eager # 活力四射
-							add_trait = leader_trait_righteous # 正义凌然
-							add_trait = leader_trait_oripathy # 源石病
-							add_trait = leader_trait_superintendent # 前警司
-							
-							set_leader_flag = arkleader_Chen_WHO
-							root = {
-								set_country_flag = arkleader_Chen_SPAWNED
-							}
-						}
-						1 = {	#银灰
-							modifier = {
-								add = -1
-								root = {
-										has_country_flag = arkleader_SilverAsh_SPAWNED
-								}
-							}
-							set_name = "NAME_SilverAsh"
-							set_is_female = no
-							change_leader_portrait = ARK172
-							set_skill = 3
-							set_age = 35
-							add_trait = leader_trait_economy_measure
-							add_trait = leader_trait_warlords
+						85 = {}
+						15 = {
+							random_list = {
+								5 = {	#陈
+									modifier = {
+										add = -5
+										root = {
+												has_country_flag = arkleader_Chen_SPAWNED	
+										}
+									}
+									set_name = "NAME_Chen"
+									set_is_female = yes
+									change_leader_portrait = ARK010
+									set_skill = 1
+									set_age = 32
+									add_trait = leader_trait_eager # 活力四射
+									add_trait = leader_trait_righteous # 正义凌然
+									add_trait = leader_trait_oripathy # 源石病
+									add_trait = leader_trait_superintendent # 前警司
 
-							set_leader_flag = arkleader_SilverAsh_WHO
-							root = {
-								set_country_flag = arkleader_SilverAsh_SPAWNED
-							}
-						}
-						1 = {	#耶拉
-							modifier = {
-								add = -1
-								root = {
-										has_country_flag = arkleader_Kjera_SPAWNED	
+									set_leader_flag = arkleader_Chen_WHO
+									root = {
+										set_country_flag = arkleader_Chen_SPAWNED
+									}
 								}
-							}
-							set_name = "NAME_Kjera"
-							set_is_female = yes
-							change_leader_portrait = ARK4013
-							set_skill = 2
-							set_age = 1539
-							set_leader_flag = arkleader_Kjera_WHO
-							root = {
-								set_country_flag = arkleader_Kjera_SPAWNED
-							}
-						}
-						1 = {	#诗怀雅
-							modifier = {
-								add = -1
-								root = {
-										has_country_flag = arkleader_Swire_SPAWNED
+								4 = {	#银灰·
+									modifier = {
+										add = -4
+										root = {
+												has_country_flag = arkleader_SilverAsh_SPAWNED
+										}
+									}
+									set_name = "NAME_SilverAsh"
+									set_is_female = no
+									change_leader_portrait = ARK172
+									set_skill = 3
+									set_age = 35
+									add_trait = leader_trait_economy_measure #经济手腕
+									add_trait = leader_trait_warlords #旧军阀
+								
+									set_leader_flag = arkleader_SilverAsh_WHO
+									root = {
+										set_country_flag = arkleader_SilverAsh_SPAWNED
+									}
 								}
-							}
-							set_name = "NAME_Swire"
-							set_is_female = yes
-							change_leader_portrait = ARK308
-							set_skill = 1
-							set_age = 27
-							add_trait = leader_trait_superintendent
-							add_trait = leader_trait_wealthy
-							set_leader_flag = arkleader_Swire_WHO
-							root = {
-								set_country_flag = arkleader_Swire_SPAWNED
+								1 = {	#耶拉
+									modifier = {
+										add = -1
+										root = {
+												has_country_flag = arkleader_Kjera_SPAWNED	
+										}
+									}
+									set_name = "NAME_Kjera"
+									set_is_female = yes
+									change_leader_portrait = ARK4013
+									set_skill = 2
+									set_age = 3565
+									set_leader_flag = arkleader_Kjera_WHO
+									add_trait = leader_trait_governor_kjera
+									root = {
+										set_country_flag = arkleader_Kjera_SPAWNED
+									}
+								}
+								5 = {	#诗怀雅
+									modifier = {
+										add = -5
+										root = {
+												has_country_flag = arkleader_Swire_SPAWNED
+										}
+									}
+									set_name = "NAME_Swire"
+									set_is_female = yes
+									change_leader_portrait = ARK308
+									set_skill = 1
+									set_age = 27
+									add_trait = leader_trait_superintendent
+									add_trait = leader_trait_wealthy
+									set_leader_flag = arkleader_Swire_WHO
+									root = {
+										set_country_flag = arkleader_Swire_SPAWNED
+									}
+								}
 							}
 						}
 					}
@@ -528,241 +533,250 @@ country_event = {
 						}					
 					}
 					random_list = {
-						12 = {}
-						1 = {	#多萝西
-							modifier = {
-								add = -1
-								root = {
-									has_country_flag = arkleader_Dorothy_SPAWNED	
+						85 = {}
+						15 = {
+							random_list = {
+								1 = {	#多萝西
+									modifier = {
+										add = -1
+										root = {
+											has_country_flag = arkleader_Dorothy_SPAWNED	
+										}
+									}
+									set_name = "NAME_Dorothy"
+									set_is_female = yes
+									change_leader_portrait = ARK4048
+									set_skill = 4
+									set_age = 33
+									add_trait = leader_trait_adaptable
+									add_trait = leader_trait_expertise_field_manipulation
+									add_trait = leader_trait_expertise_industry
+								
+									set_leader_flag = arkleader_Dorothy_WHO
+									root = {
+										set_country_flag = arkleader_Dorothy_SPAWNED
+									}
 								}
-							}
-							set_name = "NAME_Dorothy"
-							set_is_female = yes
-							change_leader_portrait = ARK4048
-							set_skill = 4
-							set_age = 33
-							add_trait = leader_trait_adaptable
-							add_trait = leader_trait_expertise_field_manipulation
-							add_trait = leader_trait_expertise_industry
-
-							set_leader_flag = arkleader_Dorothy_WHO
-							root = {
-								set_country_flag = arkleader_Dorothy_SPAWNED
-							}
-						}
-						1 = {	#灵知
-							modifier = {
-								add = -1
-								root = {
-									has_country_flag = arkleader_Gnosis_SPAWNED	
+								1 = {	#灵知
+									modifier = {
+										add = -1
+										root = {
+											has_country_flag = arkleader_Gnosis_SPAWNED	
+										}
+									}
+									set_name = "NAME_Gnosis"
+									set_is_female = no
+									change_leader_portrait = ARK206
+									set_skill = 3
+									set_age = 31
+									add_trait = leader_trait_expertise_industry
+									add_trait = leader_trait_precise_calculation
+									set_leader_flag = arkleader_Gnosis_WHO
+									root = {
+										set_country_flag = arkleader_Gnosis_SPAWNED
+									}
 								}
-							}
-							set_name = "NAME_Gnosis"
-							set_is_female = no
-							change_leader_portrait = ARK206
-							set_skill = 3
-							set_age = 31
-							add_trait = leader_trait_expertise_industry
-							add_trait = leader_trait_precise_calculation
-							set_leader_flag = arkleader_Gnosis_WHO
-							root = {
-								set_country_flag = arkleader_Gnosis_SPAWNED
-							}
-						}
-						1 = {	#异客
-							modifier = {
-								add = -1
-								root = {
-									has_country_flag = arkleader_Passenger_SPAWNED	
+								1 = {	#异客
+									modifier = {
+										add = -1
+										root = {
+											has_country_flag = arkleader_Passenger_SPAWNED	
+										}
+									}
+									set_name = "NAME_Passenger"
+									set_is_female = no
+									change_leader_portrait = ARK472
+									set_skill = 2
+									set_age = 28
+									add_trait = leader_trait_oripathy
+									add_trait = leader_trait_expertise_industry
+									set_leader_flag = arkleader_Passenger_WHO
+									root = {
+										set_country_flag = arkleader_Passenger_SPAWNED
+									}
 								}
-							}
-							set_name = "NAME_Passenger"
-							set_is_female = no
-							change_leader_portrait = ARK472
-							set_skill = 2
-							set_age = 28
-							add_trait = leader_trait_oripathy
-							add_trait = leader_trait_expertise_industry
-							set_leader_flag = arkleader_Passenger_WHO
-							root = {
-								set_country_flag = arkleader_Passenger_SPAWNED
-							}
-						}
-						1 = {	#温蒂
-							modifier = {
-								add = -1
-								root = {
-									has_country_flag = arkleader_Weedy_SPAWNED	
+								3 = {	#温蒂
+									modifier = {
+										add = -3
+										root = {
+											has_country_flag = arkleader_Weedy_SPAWNED	
+										}
+									}
+									set_name = "NAME_Weedy"
+									set_is_female = yes
+									change_leader_portrait = ARK400
+									set_skill = 3
+									set_age = 30
+									add_trait = leader_trait_expertise_biology # 专长：生物学
+									add_trait = leader_trait_expertise_propulsion # 专长：推进力学
+								
+									set_leader_flag = arkleader_Weedy_WHO
+									root = {
+										set_country_flag = arkleader_Weedy_SPAWNED
+									}
 								}
-							}
-							set_name = "NAME_Weedy"
-							set_is_female = yes
-							change_leader_portrait = ARK400
-							set_skill = 3
-							set_age = 30
-							add_trait = leader_trait_expertise_biology # 专长：生物学
-							add_trait = leader_trait_expertise_propulsion # 专长：推进力学
-		
-							set_leader_flag = arkleader_Weedy_WHO
-							root = {
-								set_country_flag = arkleader_Weedy_SPAWNED
-							}
-						}
-						1 = {	#麦哲伦
-							modifier = {
-								add = -1
-								root = {
-									has_country_flag = arkleader_Magallan_SPAWNED	
+								3 = {	#麦哲伦
+									modifier = {
+										add = -3
+										root = {
+											has_country_flag = arkleader_Magallan_SPAWNED	
+										}
+									}
+									set_name = "NAME_Magallan"
+									set_is_female = yes
+									change_leader_portrait = ARK248
+									set_skill = 2
+									set_age = 29
+									add_trait = leader_trait_roamer # 漫游者
+									add_trait = leader_trait_archaeologist # 考古学家
+								
+									set_leader_flag = arkleader_Magallan_WHO
+									root = {
+										set_country_flag = arkleader_Magallan_SPAWNED
+									}
 								}
-							}
-							set_name = "NAME_Magallan"
-							set_is_female = yes
-							change_leader_portrait = ARK248
-							set_skill = 2
-							set_age = 29
-							add_trait = leader_trait_roamer # 漫游者
-							add_trait = leader_trait_archaeologist # 考古学家
-		
-							set_leader_flag = arkleader_Magallan_WHO
-							root = {
-								set_country_flag = arkleader_Magallan_SPAWNED
-							}
-						}
-						1 = {	#艾雅法拉
-							modifier = {
-								add = -1
-								root = {
-									has_country_flag = arkleader_Eyjafjalla_SPAWNED	
+								5 = {	#艾雅法拉
+									modifier = {
+										add = -5
+										root = {
+											has_country_flag = arkleader_Eyjafjalla_SPAWNED	
+										}
+									}
+									set_name = "NAME_Eyjafjalla"
+									set_is_female = yes
+									change_leader_portrait = ARK180
+									set_skill = 3
+									set_age = 30
+									set_leader_flag = arkleader_Eyjafjalla_WHO
+									add_trait = leader_trait_roamer # 漫游者
+									add_trait = leader_trait_meticulous
+									root = {
+										set_country_flag = arkleader_Eyjafjalla_SPAWNED
+									}
 								}
-							}
-							set_name = "NAME_Eyjafjalla"
-							set_is_female = yes
-							change_leader_portrait = ARK180
-							set_skill = 3
-							set_age = 30
-							set_leader_flag = arkleader_Eyjafjalla_WHO
-							root = {
-								set_country_flag = arkleader_Eyjafjalla_SPAWNED
-							}
-						}
-						1 = {	#星源
-							modifier = {
-								add = -1
-								root = {
-									has_country_flag = arkleader_Astgenne_SPAWNED	
+								5 = {	#星源
+									modifier = {
+										add = -5
+										root = {
+											has_country_flag = arkleader_Astgenne_SPAWNED	
+										}
+									}
+									set_name = "NAME_Astgenne"
+									set_is_female = yes
+									change_leader_portrait = ARK135
+									set_skill = 2
+									set_age = 25
+									add_trait = leader_trait_oripathy
+									add_trait = leader_trait_expertise_field_manipulation
+									add_trait = leader_trait_expertise_industry
+								
+									set_leader_flag = arkleader_Astgenne_WHO
+									root = {
+										set_country_flag = arkleader_Astgenne_SPAWNED
+									}
 								}
-							}
-							set_name = "NAME_Astgenne"
-							set_is_female = yes
-							change_leader_portrait = ARK135
-							set_skill = 2
-							set_age = 25
-							add_trait = leader_trait_oripathy
-							add_trait = leader_trait_expertise_field_manipulation
-							add_trait = leader_trait_expertise_industry
-
-							set_leader_flag = arkleader_Astgenne_WHO
-							root = {
-								set_country_flag = arkleader_Astgenne_SPAWNED
-							}
-						}
-						1 = {	#雪雉
-							modifier = {
-								add = -1
-								root = {
-									has_country_flag = arkleader_Snowsant_SPAWNED	
+								5 = {	#雪雉
+									modifier = {
+										add = -5
+										root = {
+											has_country_flag = arkleader_Snowsant_SPAWNED	
+										}
+									}
+									set_name = "NAME_Snowsant"
+									set_is_female = yes
+									change_leader_portrait = ARK383
+									set_skill = 1
+									set_age = 24
+									add_trait = leader_trait_tiandaochouqin # 天道酬勤
+									add_trait = leader_trait_expertise_industry # 专长：工业
+								
+									set_leader_flag = arkleader_Snowsant_WHO
+									root = {
+										set_country_flag = arkleader_Snowsant_SPAWNED
+									}
 								}
-							}
-							set_name = "NAME_Snowsant"
-							set_is_female = yes
-							change_leader_portrait = ARK383
-							set_skill = 1
-							set_age = 24
-							add_trait = leader_trait_tiandaochouqin # 天道酬勤
-							add_trait = leader_trait_expertise_industry # 专长：工业
-		
-							set_leader_flag = arkleader_Snowsant_WHO
-							root = {
-								set_country_flag = arkleader_Snowsant_SPAWNED
-							}
-						}
-						1 = {	#星极
-							modifier = {
-								add = -1
-								root = {
-									has_country_flag = arkleader_Astesia_SPAWNED	
+								9 = {	#星极
+									modifier = {
+										add = -9
+										root = {
+											has_country_flag = arkleader_Astesia_SPAWNED	
+										}
+									}
+									set_name = "NAME_Astesia"
+									set_is_female = yes
+									change_leader_portrait = ARK274
+									set_skill = 1
+									set_age = 22
+									add_trait = leader_trait_roamer # 漫游者
+									add_trait = leader_trait_oripathy # 源石病
+								
+									set_leader_flag = arkleader_Astesia_WHO
+									root = {
+										set_country_flag = arkleader_Astesia_SPAWNED
+									}
 								}
-							}
-							set_name = "NAME_Astesia"
-							set_is_female = yes
-							change_leader_portrait = ARK274
-							set_skill = 1
-							set_age = 26
-							set_leader_flag = arkleader_Astesia_WHO
-							root = {
-								set_country_flag = arkleader_Astesia_SPAWNED
-							}
-						}
-						1 = {	#赫默
-							modifier = {
-								add = -1
-								root = {
-									has_country_flag = arkleader_Silence_SPAWNED	
+								7 = {	#赫默
+									modifier = {
+										add = -7
+										root = {
+											has_country_flag = arkleader_Silence_SPAWNED	
+										}
+									}
+									set_name = "NAME_Silence"
+									set_is_female = yes
+									change_leader_portrait = ARK108
+									set_skill = 2
+									set_age = 25
+									add_trait = leader_trait_meticulous # 细致
+									add_trait = leader_trait_expertise_biology # 专长：生物学
+									add_trait = leader_trait_oripathy # 源石病
+								
+									set_leader_flag = arkleader_Silence_WHO
+									root = {
+										set_country_flag = arkleader_Silence_SPAWNED
+									}
 								}
-							}
-							set_name = "NAME_Silence"
-							set_is_female = yes
-							change_leader_portrait = ARK108
-							set_skill = 2
-							set_age = 25
-							add_trait = leader_trait_meticulous # 细致
-							add_trait = leader_trait_expertise_biology # 专长：生物学
-							add_trait = leader_trait_oripathy # 源石病
-		
-							set_leader_flag = arkleader_Silence_WHO
-							root = {
-								set_country_flag = arkleader_Silence_SPAWNED
-							}
-						}
-						1 = {	#梅尔
-							modifier = {
-								add = -1
-								root = {
-									has_country_flag = arkleader_Mayer_SPAWNED	
+								6 = {	#梅尔
+									modifier = {
+										add = -6
+										root = {
+											has_country_flag = arkleader_Mayer_SPAWNED	
+										}
+									}
+									set_name = "NAME_Mayer"
+									set_is_female = yes
+									change_leader_portrait = ARK242
+									set_skill = 2
+									set_age = 26
+									add_trait = leader_trait_spark_of_genius # 灵光一闪
+									add_trait = leader_trait_expertise_industry # 专长：工业
+								
+									set_leader_flag = arkleader_Mayer_WHO
+									root = {
+										set_country_flag = arkleader_Mayer_SPAWNED
+									}
 								}
-							}
-							set_name = "NAME_Mayer"
-							set_is_female = yes
-							change_leader_portrait = ARK242
-							set_skill = 2
-							set_age = 26
-							add_trait = leader_trait_spark_of_genius # 灵光一闪
-							add_trait = leader_trait_expertise_industry # 专长：工业
-		
-							set_leader_flag = arkleader_Mayer_WHO
-							root = {
-								set_country_flag = arkleader_Mayer_SPAWNED
-							}
-						}
-						1 = {	#可露希尔
-							modifier = {
-								add = -1
-								root = {
-									has_country_flag = arkleader_Closure_SPAWNED	
-								}
-							}
-							set_name = "NAME_Closure"
-							set_is_female = yes
-							change_leader_portrait = ARK007
-							set_skill = 2
-							set_age = 240
-							add_trait = leader_trait_vampire # 血魔
-							add_trait = leader_trait_expertise_materials # 专长：材料科学
-							add_trait = leader_trait_expertise_computing # 专长：计算技术		
-		
-							set_leader_flag = arkleader_Closure_WHO
-							root = {
-								set_country_flag = arkleader_Closure_SPAWNED
+								2 = {	#可露希尔
+									modifier = {
+										add = -2
+										root = {
+											has_country_flag = arkleader_Closure_SPAWNED	
+										}
+									}
+									set_name = "NAME_Closure"
+									set_is_female = yes
+									change_leader_portrait = ARK007
+									set_skill = 2
+									set_age = 240
+									add_trait = leader_trait_vampire # 血魔
+									add_trait = leader_trait_expertise_materials # 专长：材料科学
+									add_trait = leader_trait_expertise_computing # 专长：计算技术		
+								
+									set_leader_flag = arkleader_Closure_WHO
+									root = {
+										set_country_flag = arkleader_Closure_SPAWNED
+									}
+								}	
 							}
 						}
 					}
@@ -900,96 +914,106 @@ country_event = {
 						}					
 					}
 					random_list = {
-						5 = {
+						85 = {
 						}
-						1 = {	#煌
-							modifier = {
-								add = -1
-								root = {
-									has_country_flag = arkleader_Blaze_SPAWNED	
+						15 = {
+							random_list = {
+								5 = {	#煌
+									modifier = {
+										add = -5
+										root = {
+											has_country_flag = arkleader_Blaze_SPAWNED	
+										}
+									}
+									set_name = "NAME_Blaze_ark"
+									set_is_female = yes
+									change_leader_portrait = ARK017
+									set_skill = 2
+									set_age = 28
+									set_leader_flag = arkleader_Blaze_WHO
+									add_trait = leader_trait_oripathy
+									add_trait = leader_trait_emergency_appointment
+									root = {
+										set_country_flag = arkleader_Blaze_SPAWNED
+									}
 								}
-							}
-							set_name = "NAME_Blaze_ark"
-							set_is_female = yes
-							change_leader_portrait = ARK017
-							set_skill = 2
-							set_age = 28
-							set_leader_flag = arkleader_Blaze_WHO
-							add_trait = leader_trait_oripathy
-							add_trait = leader_trait_emergency_appointment
-							root = {
-								set_country_flag = arkleader_Blaze_SPAWNED
-							}
-						}
-						1 = {	#莫斯提马
-							modifier = {
-								add = -1
-								root = {
-									has_country_flag = arkleader_Mostima_SPAWNED	
+								1 = {	#莫斯提马
+									modifier = {
+										add = -1
+										root = {
+											has_country_flag = arkleader_Mostima_SPAWNED	
+										}
+									}
+									set_name = "NAME_Mostima"
+									set_is_female = yes
+									change_leader_portrait = ARK213
+									set_skill = 1
+									set_age = 30
+									add_trait = leader_trait_lock_keys
+									set_leader_flag = arkleader_Mostima_WHO
+									root = {
+										set_country_flag = arkleader_Mostima_SPAWNED
+									}
 								}
-							}
-							set_name = "NAME_Mostima"
-							set_is_female = yes
-							change_leader_portrait = ARK213
-							set_skill = 1
-							set_age = 30
-							set_leader_flag = arkleader_Mostima_WHO
-							root = {
-								set_country_flag = arkleader_Mostima_SPAWNED
-							}
-						}
-						1 = {	#塞雷娅
-							modifier = {
-								add = -1
-								root = {
-									has_country_flag = arkleader_Saria_SPAWNED	
+								1 = {	#塞雷娅
+									modifier = {
+										add = -1
+										root = {
+											has_country_flag = arkleader_Saria_SPAWNED	
+										}
+									}
+									set_name = "NAME_Saria"
+									set_is_female = yes
+									change_leader_portrait = ARK202
+									set_skill = 2
+									set_age = 33
+									add_trait = leader_trait_calcium
+								
+									set_leader_flag = arkleader_Saria_WHO
+									root = {
+										set_country_flag = arkleader_Saria_SPAWNED
+									}
 								}
-							}
-							set_name = "NAME_Saria"
-							set_is_female = yes
-							change_leader_portrait = ARK202
-							set_skill = 2
-							set_age = 33
-							set_leader_flag = arkleader_Saria_WHO
-							root = {
-								set_country_flag = arkleader_Saria_SPAWNED
-							}
-						}
-						1 = {	#坚雷
-							modifier = {
-								add = -1
-								root = {
-									has_country_flag = arkleader_Durnar_SPAWNED	
+								3 = {	#坚雷
+									modifier = {
+										add = -3
+										root = {
+											has_country_flag = arkleader_Durnar_SPAWNED	
+										}
+									}
+									set_name = "NAME_Dur_nar"
+									set_is_female = yes
+									change_leader_portrait = ARK260
+									set_skill = 1
+									set_age = 29
+									add_trait = leader_trait_emergency_appointment
+									add_trait = leader_trait_snacks_network
+								
+									set_leader_flag = arkleader_Durnar_WHO
+									root = {
+										set_country_flag = arkleader_Durnar_SPAWNED
+									}
 								}
-							}
-							set_name = "NAME_Dur_nar"
-							set_is_female = yes
-							change_leader_portrait = ARK260
-							set_skill = 1
-							set_age = 29
-							add_trait = leader_trait_emergency_appointment
-							add_trait = leader_trait_snacks_network
-
-							set_leader_flag = arkleader_Durnar_WHO
-							root = {
-								set_country_flag = arkleader_Durnar_SPAWNED
-							}
-						}
-						1 = {	#杜宾
-							modifier = {
-								add = -1
-								root = {
-									has_country_flag = arkleader_Dobermann_SPAWNED	
+								5 = {	#杜宾
+									modifier = {
+										add = -5
+										root = {
+											has_country_flag = arkleader_Dobermann_SPAWNED	
+										}
+									}
+									set_name = "NAME_Dobermann"
+									set_is_female = yes
+									change_leader_portrait = ARK130
+									set_skill = 2
+									set_age = 31
+									add_trait = leader_trait_oripathy
+									add_trait = leader_trait_emergency_appointment
+								
+									set_leader_flag = arkleader_Dobermann_WHO
+									root = {
+										set_country_flag = arkleader_Dobermann_SPAWNED
+									}
 								}
-							}
-							set_name = "NAME_Dobermann"
-							set_is_female = yes
-							change_leader_portrait = ARK130
-							set_skill = 2
-							set_age = 31
-							set_leader_flag = arkleader_Dobermann_WHO
-							root = {
-								set_country_flag = arkleader_Dobermann_SPAWNED
 							}
 						}
 					}
@@ -1129,49 +1153,53 @@ country_event = {
 						}
 					}
 					random_list = {
-						2 = {}
-						1 = {	#号角
-							modifier = {
-								add = -1
-								root = {
-									has_country_flag = arkleader_Horn_SPAWNED
+						85 = {}
+						15 = {
+							random_list = {
+								1 = {	#号角
+									modifier = {
+										add = -1
+										root = {
+											has_country_flag = arkleader_Horn_SPAWNED
+										}
+									}
+									set_name = "NAME_Horn"
+									set_is_female = yes
+									change_leader_portrait = ARK4039
+									set_skill = 2
+									set_age = 32
+									add_trait = leader_trait_zhongzhuangzhuanjing
+									add_trait = leader_trait_military_fortress
+									add_trait = leader_trait_bloody_battle
+									add_trait = leader_trait_glory_seeker
+								
+									set_leader_flag = arkleader_Horn_WHO
+									root = {
+										set_country_flag = arkleader_Horn_SPAWNED
+									}
 								}
-							}
-							set_name = "NAME_Horn"
-							set_is_female = yes
-							change_leader_portrait = ARK4039
-							set_skill = 2
-							set_age = 32
-							add_trait = leader_trait_zhongzhuangzhuanjing
-							add_trait = leader_trait_military_fortress
-							add_trait = leader_trait_bloody_battle
-							add_trait = leader_trait_glory_seeker
-
-							set_leader_flag = arkleader_Horn_WHO
-							root = {
-								set_country_flag = arkleader_Horn_SPAWNED
-							}
-						}
-						1 = {	#W
-							modifier = {
-								add = -1
-								root = {
-									has_country_flag = arkleader_W_SPAWNED
-								}
-							}
-							set_name = "NAME_W"
-							set_is_female = yes
-							change_leader_portrait = ARK113
-							set_skill = 1
-							set_age = 35
-							add_trait = leader_trait_butcher
-							add_trait = leader_trait_oripathy
-							add_trait = leader_trait_frighten_box
-							add_trait = leader_trait_treachery
-
-							set_leader_flag = arkleader_W_WHO
-							root = {
-								set_country_flag = arkleader_W_SPAWNED
+								1 = {	#W
+									modifier = {
+										add = -1
+										root = {
+											has_country_flag = arkleader_W_SPAWNED
+										}
+									}
+									set_name = "NAME_W"
+									set_is_female = yes
+									change_leader_portrait = ARK113
+									set_skill = 1
+									set_age = 35
+									add_trait = leader_trait_butcher
+									add_trait = leader_trait_oripathy
+									add_trait = leader_trait_frighten_box
+									add_trait = leader_trait_treachery
+								
+									set_leader_flag = arkleader_W_WHO
+									root = {
+										set_country_flag = arkleader_W_SPAWNED
+									}
+								}	
 							}
 						}
 					}
@@ -1228,7 +1256,6 @@ country_event = {
 		NOT = { has_country_flag = ark_synthetic_evolution }
 	}
 	immediate = {
-		set_country_flag = arkportraitchangetest
 		every_owned_leader = {
 			limit = { has_leader_flag = ark_leader_kaltsit }
 			change_leader_portrait = ARK003

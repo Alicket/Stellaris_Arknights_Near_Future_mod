@@ -1,6 +1,6 @@
 leader_trait_biaozhunhua = {	# 标准化
 	cost = 1
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/leader_trait_biaozhunhua.dds"
 	modifier = {
 		planet_jobs_produces_mult = 0.15
@@ -23,7 +23,7 @@ leader_trait_biaozhunhua = {	# 标准化
 
 leader_trait_dizhixuejia = {	# 地质学家
 	cost = 1
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/leader_trait_dizhixuejia.dds"
 	modifier = {
 		planet_jobs_minerals_produces_mult = 0.15
@@ -47,7 +47,7 @@ leader_trait_dizhixuejia = {	# 地质学家
 
 leader_trait_jinshugongyi = {	# 金属工艺
 	cost = 1
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/leader_trait_jinshugongyi.dds"
 	modifier = {
 		planet_jobs_alloys_produces_mult = 0.3
@@ -70,7 +70,7 @@ leader_trait_jinshugongyi = {	# 金属工艺
 
 leader_trait_jixingzi = {	# 急性子
 	cost = 1
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/leader_trait_jixingzi.dds"
 	modifier = {
 		planet_building_build_speed_mult = 0.25
@@ -94,7 +94,7 @@ leader_trait_jixingzi = {	# 急性子
 
 leader_trait_manxingzi = {	# 慢性子
 	cost = 1
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/leader_trait_manxingzi.dds"
 	modifier = {
 		planet_building_build_speed_mult = -0.1
@@ -118,7 +118,7 @@ leader_trait_manxingzi = {	# 慢性子
 
 leader_trait_mafanzhizaozhe = {	# 麻烦制造者
 	cost = 1
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/leader_trait_mafanzhizaozhe.dds"
 	modifier = {
 		planet_jobs_produces_mult = 0.25
@@ -142,7 +142,7 @@ leader_trait_mafanzhizaozhe = {	# 麻烦制造者
 
 leader_trait_shihuangzhe = {	# 拾荒者
 	cost = 1
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/leader_trait_shihuangzhe.dds"
 	modifier = {
 		planet_structures_cost_mult = -0.08
@@ -166,7 +166,7 @@ leader_trait_shihuangzhe = {	# 拾荒者
 
 leader_trait_zuozhanzhidaoluxiang = {	# 作战指导录像
 	cost = 1
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/leader_trait_zuozhanzhidaoluxiang.dds"
 	modifier = {
 		species_leader_exp_gain = 0.3
@@ -189,7 +189,7 @@ leader_trait_zuozhanzhidaoluxiang = {	# 作战指导录像
 
 leader_trait_jiaoji = {	# 交际
 	cost = 1
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/leader_trait_jiaoji.dds"
 	modifier = {
 		trade_value_mult = 0.3
@@ -212,7 +212,7 @@ leader_trait_jiaoji = {	# 交际
 
 leader_trait_tanpan = {	# 谈判
 	cost = 1
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/leader_trait_tanpan.dds"
 	modifier = {
 		trade_value_mult = 0.15
@@ -236,7 +236,7 @@ leader_trait_tanpan = {	# 谈判
 
 leader_trait_wuliuzhuanjia = {	# 物流专家
 	cost = 1
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/leader_trait_wuliuzhuanjia.dds"
 	modifier = {
 		trade_value_mult = 0.35
@@ -261,7 +261,7 @@ leader_trait_wuliuzhuanjia = {	# 物流专家
 leader_trait_superintendent = {
 	cost = 0
 	initial = no
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/leader_trait_superintendent.dds"
 	modifier = {
 		job_enforcer_add = 2
@@ -282,7 +282,7 @@ leader_trait_superintendent = {
 leader_trait_wealthy = {
 	cost = 0
 	initial = no
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/leader_trait_wealthy.dds"
 	modifier = {
 		planet_enforcers_unity_produces_add = 1
@@ -303,7 +303,7 @@ leader_trait_wealthy = {
 leader_trait_economy_measure = {
 	cost = 0
 	initial = no
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/leader_trait_economy_measure.dds"
 	modifier = {
 		trade_value_mult = 0.2
@@ -324,7 +324,7 @@ leader_trait_economy_measure = {
 leader_trait_warlords = {
 	cost = 0
 	initial = no
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/leader_trait_warlords.dds"
 	modifier = {
 		planet_army_build_speed_mult = 0.2
@@ -340,5 +340,20 @@ leader_trait_warlords = {
 	}
 	leader_trait = { governor }
 	leader_class = { governor }
+	randomized = no
+}
+
+#耶拉岗德
+leader_trait_governor_kjera = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_oracle.dds"
+	immortal_leaders = yes
+	modifier = {
+		planet_jobs_unity_produces_mult = 0.20
+		planet_crime_add = -15
+	}
+	leader_trait = { governor }
+	leader_class = { governor }
+	initial = no
 	randomized = no
 }

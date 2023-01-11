@@ -2,7 +2,7 @@
 leader_trait_walk_in_dust_s = {
 	cost = 0
 	initial = no
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/trait_walk_in_dust.dds"
 	immortal_leaders = yes
 	modifier = {
@@ -21,7 +21,7 @@ leader_trait_walk_in_dust_s = {
 leader_trait_unknown_technology = {
 	cost = 0
 	initial = no
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/leader_trait_unknown_technology.dds"
 	modifier = {
 		all_technology_research_speed = 0.1
@@ -35,7 +35,7 @@ leader_trait_unknown_technology = {
 trait_scientist_meet_end = {
 	cost = 0
 	initial = no
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/leader_trait_meet_end.dds"
 	immortal_leaders = yes
 	leader_trait = { scientist }
@@ -47,7 +47,7 @@ trait_scientist_meet_end = {
 leader_trait_precise_calculation = {
 	cost = 0
 	initial = no
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/leader_trait_precise_calculation.dds"
 	modifier = {
 		all_technology_research_speed = 0.1

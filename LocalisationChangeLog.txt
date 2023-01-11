@@ -1,4 +1,4 @@
-#<-----------------------------------------------------------------UPDATE 2022.12.----------------------------------------------------------------->#
+#<-----------------------------------------------------------------UPDATE 2023.1.11----------------------------------------------------------------->#
 
 
 #Note:
@@ -8,7 +8,7 @@
 # Partly Changed Files:
 # Add
 # [1]ARK_rhodes_Island_l_simp_chinese.yml Line 16-18 121-123
-# [2]Some of lines between 13-111 in ARK_fixed_l_simp_chinese.yml (some new leader traits)
+# [2]Some of lines between 13-119 in ARK_fixed_l_simp_chinese.yml (some new leader traits)
 # [3]ARK_government_l_simp_chinese.yml line 87-93 103
 
 # Change

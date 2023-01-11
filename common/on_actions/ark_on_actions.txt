@@ -58,6 +58,12 @@ on_monthly_pulse_country = {
 	}
 }
 
+on_yearly_pulse_country = {
+	events = {
+		ark_apex_leader.3
+	}
+}
+
 on_leader_spawned = {
 	events = {
 		ark_civic.4		# 骑士精神

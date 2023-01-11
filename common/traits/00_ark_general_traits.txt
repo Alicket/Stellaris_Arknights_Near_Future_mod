@@ -1,7 +1,7 @@
 # 骑士精神
 leader_trait_general_chivalry = {
 	cost = 0
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/leader_trait_chivalry.dds"
 	modifier = {
 		army_damage_mult = 0.05
@@ -17,7 +17,7 @@ leader_trait_general_chivalry = {
 # 一人成军
 leader_trait_army_of_one = {
 	cost = 1
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/leader_trait_army_of_one.dds"
 	modifier = {
 		army_damage_mult = 0.25
@@ -42,7 +42,7 @@ leader_trait_army_of_one = {
 # 先锋专精
 leader_trait_xianfengzhuanjing = {
 	cost = 1
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/leader_trait_xianfengzhuanjing.dds"
 	modifier = {
 		armies_upkeep_mult = -0.2
@@ -66,7 +66,7 @@ leader_trait_xianfengzhuanjing = {
 # 近卫专精
 leader_trait_jinweizhuanjing = {
 	cost = 1
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/leader_trait_jinweizhuanjing.dds"
 	modifier = {
 		army_health = 0.1
@@ -91,7 +91,7 @@ leader_trait_jinweizhuanjing = {
 # 术师专精
 leader_trait_shushizhuanjing = {
 	cost = 1
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/leader_trait_shushizhuanjing.dds"
 	modifier = {
 		armies_upkeep_mult = 0.15
@@ -117,7 +117,7 @@ leader_trait_shushizhuanjing = {
 # 重装专精
 leader_trait_zhongzhuangzhuanjing = {
 	cost = 1
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/leader_trait_zhongzhuangzhuanjing.dds"
 	modifier = {
 		army_health = 0.3
@@ -142,7 +142,7 @@ leader_trait_zhongzhuangzhuanjing = {
 # 特种专精
 leader_trait_tezhongzhuanjing = {
 	cost = 1
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/leader_trait_tezhongzhuanjing.dds"
 	modifier = {
 		army_health = -0.1
@@ -169,7 +169,7 @@ leader_trait_tezhongzhuanjing = {
 leader_trait_military_fortress = {
 	cost = 0
 	initial = no
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/leader_trait_military_fortress.dds"
 	modifier = {
 		army_health = 0.5
@@ -192,7 +192,7 @@ leader_trait_military_fortress = {
 leader_trait_bloody_battle = {
 	cost = 0
 	initial = no
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/leader_trait_bloody_battle.dds"
 	modifier = {
 		army_damage_mult = 0.1
@@ -216,7 +216,7 @@ leader_trait_bloody_battle = {
 leader_trait_frighten_box = {
 	cost = 0
 	initial = no
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/leader_trait_frighten_box.dds"
 	modifier = {
 		army_damage_mult = 0.15
@@ -238,7 +238,7 @@ leader_trait_frighten_box = {
 leader_trait_treachery = {
 	cost = 0
 	initial = no
-	modification = no
+	
 	icon = "gfx/interface/icons/traits/leader_trait_treachery.dds"
 	modifier = {
 		army_morale = -0.1
