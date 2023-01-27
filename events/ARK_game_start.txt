@@ -223,7 +223,7 @@ country_event = {
 			last_created_leader = {
 				set_age = 30
 				change_leader_portrait = ARK001
-				set_is_male = yes
+				set_is_female = no
 			}
 			set_leader = last_created_leader
 			add_resource = { influence = 100 }
@@ -261,7 +261,7 @@ country_event = {
 			last_created_leader = {
 				set_age = 30
 				change_leader_portrait = ARK001_W
-				set_is_male = yes
+				set_is_female = no
 			}
 			set_leader = last_created_leader
 			country_event = { id = ark_game_start.313 }
@@ -323,7 +323,7 @@ country_event = {
 	id = ark_game_start.312
 	hide_window = yes
 	location = ROOT
-
+	is_triggered_only = yes
 	trigger = {
 		any_owned_leader = {
 			leader_class = ruler
@@ -391,7 +391,7 @@ country_event = {
 	id = ark_game_start.314
 	hide_window = yes
 	location = ROOT
-
+	is_triggered_only = yes
 	trigger = {
 		any_owned_leader = {
 			leader_class = ruler

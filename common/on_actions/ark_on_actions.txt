@@ -53,8 +53,11 @@ on_monthly_pulse_country = {
 	events = {
 		#ark_set.3		# 检查并重置领袖肖像
 		ark_set.4
+		ark_civic.2
 		ark_apex_leader.2
 		ark_set.52
+		ark_game_start.314
+		ark_game_start.312
 	}
 }
 

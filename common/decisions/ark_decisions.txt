@@ -56,3 +56,36 @@ decision_end_biochemical_protection = {
 		weight = 1
 	}
 }
+
+decision_ark_seaborn_disable_evolution = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_politics
+	potential = {
+		owner = {
+			has_trait = trait_ARK_ocean_seaborn
+			has_country_flag = arknights_ocean_country
+		}
+		has_planet_flag = ark_ocean_col_evo_start
+	}
+	effect = {
+		set_planet_flag = ark_ocean_col_evo_disabled
+		remove_modifier = ark_ocean_evolution_start
+	}
+}
+
+decision_ark_seaborn_resume_evolution = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_politics
+	potential = {
+		owner = {
+			has_trait = trait_ARK_ocean_seaborn
+			has_country_flag = arknights_ocean_country
+		}
+	}
+	effect = {
+		remove_planet_flag = ark_ocean_col_evo_disabled
+		add_modifier = ark_ocean_col_evo_start
+	}
+}

@@ -33,6 +33,8 @@ trait_ruler_babel_evil_spirit_l:0 "§L巴别塔的恶灵§!"
 trait_ruler_babel_evil_spirit_l_desc:0 "§B博士§!什么都回忆不起来.\t\t他/她可以是一个教导者、研究者,\t\t也可以是倾斜力量天平的人.\t\t"
 trait_ruler_babel_evil_spirit_r:0 "§R巴别塔的恶灵§!"
 trait_ruler_babel_evil_spirit_r_desc:0 "§R博士§!现在是一台战争机器.\t\t在这个机器眼里只有战争和胜利,\t\t除此之外的一切一概都不重要.\t\t\n§R博士§!§L将在和平状态的§!§G1年后§!§L转变为§!巴别塔的恶灵§L.\t\t§!"
+trait_ruler_doctor_healing:0 "正在治疗"
+trait_ruler_doctor_healing_desc:0 "这位领袖正在进行生理或心理上的治疗,\t\t在此期间大部分工作将交由临时的团队负责,\t\t这会造成一定量的行政效率低下。"
 # 总督 #
 leader_trait_biaozhunhua:0 "标准化"
 leader_trait_biaozhunhua_desc:0 "这位领袖倡导工作和生产的制度化和标准化.\t\t"

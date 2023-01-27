@@ -1,0 +1,6 @@
+###
+# FROM is the actor ie the initiator of the diplomatic action
+# ROOT is the recipient of the diplomatic action
+greetings = {
+
+}

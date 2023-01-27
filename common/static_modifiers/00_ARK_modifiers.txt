@@ -92,6 +92,7 @@ corrosion = {	# 侵蚀
 }
 ark_ocean_evolution_start = {	#海嗣进化开始阶段
 	planet_jobs_produces_mult = 1
+	planet_pops_upkeep_mult = -1
 	icon = "gfx/interface/icons/planet_modifiers/ARK_ocean_colony_mod_evoluting_start.dds"
 }
 ark_ocean_evolution_mid = {	#海嗣进化中期阶段
@@ -101,6 +102,10 @@ ark_ocean_evolution_mid = {	#海嗣进化中期阶段
 ark_ocean_evolution_end = {	#海嗣进化结束阶段
 	planet_jobs_produces_mult = 1
 	icon = "gfx/interface/icons/planet_modifiers/ARK_ocean_colony_mod_evoluting_end.dds"
+}
+ark_ocean_evolution_disabled = {	#中止海嗣进化
+	planet_pops_upkeep_mult	= 0.33
+	icon = "gfx/interface/icons/planet_modifiers/ARK_ocean_colony_mod_evoluting_disabled.dds"
 }
 g_jssjjs_modifier = {	# 精神世界建设
 	planet_jobs_unity_produces_mult = 0.2

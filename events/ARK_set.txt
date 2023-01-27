@@ -60,27 +60,27 @@ country_event = {
 			# 	}
 			# 	change_leader_portrait = ARK003
 			# }
-			every_owned_leader = {	# 博士_L
-				limit = {
-					has_leader_flag = ark_leader_doctor
-					has_trait = trait_ruler_babel_evil_spirit_l
-			}
-				change_leader_portrait = ARK001
-			}
-			every_owned_leader = {	# 博士_W
-				limit = {
-					has_leader_flag = ark_leader_doctor
-					has_trait = trait_ruler_babel_evil_spirit_w
-				}
-				change_leader_portrait = ARK001_W
-			}
-			every_owned_leader = {	# 博士_R
-				limit = {
-					has_leader_flag = ark_leader_doctor
-					has_trait = trait_ruler_babel_evil_spirit_r
-				}
-				change_leader_portrait = ARK001_R
-			}
+			# every_owned_leader = {	# 博士_L
+			# 	limit = {
+			# 		has_leader_flag = ark_leader_doctor
+			# 		has_trait = trait_ruler_babel_evil_spirit_l
+			# }
+			# 	change_leader_portrait = ARK001
+			# }
+			# every_owned_leader = {	# 博士_W
+			# 	limit = {
+			# 		has_leader_flag = ark_leader_doctor
+			# 		has_trait = trait_ruler_babel_evil_spirit_w
+			# 	}
+			# 	change_leader_portrait = ARK001_W
+			# }
+			# every_owned_leader = {	# 博士_R
+			# 	limit = {
+			# 		has_leader_flag = ark_leader_doctor
+			# 		has_trait = trait_ruler_babel_evil_spirit_r
+			# 	}
+			# 	change_leader_portrait = ARK001_R
+			# }
 			# every_owned_leader = {	# 陈
 			# 	limit = {
 			# 		has_leader_flag = ark_leader_chen

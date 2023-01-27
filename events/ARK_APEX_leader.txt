@@ -182,19 +182,21 @@ country_event = {
 									set_age = 32
 									add_trait = leader_trait_eager # 活力四射
 									add_trait = leader_trait_righteous # 正义凌然
-									add_trait = leader_trait_oripathy # 源石病
 									add_trait = leader_trait_superintendent # 前警司
-
+									if = {
+										limit = { NOT = { has_country_flag = originiums_sufferer_end_flag } }
+										add_trait = leader_trait_oripathy # 源石病
+									}
 									set_leader_flag = arkleader_Chen_WHO
 									root = {
 										set_country_flag = arkleader_Chen_SPAWNED
 									}
 								}
-								4 = {	#银灰·
+								4 = {	#银灰
 									modifier = {
 										add = -4
 										root = {
-												has_country_flag = arkleader_SilverAsh_SPAWNED
+												has_country_flag = arkleader_Silverash_SPAWNED
 										}
 									}
 									set_name = "NAME_SilverAsh"
@@ -205,9 +207,9 @@ country_event = {
 									add_trait = leader_trait_economy_measure #经济手腕
 									add_trait = leader_trait_warlords #旧军阀
 								
-									set_leader_flag = arkleader_SilverAsh_WHO
+									set_leader_flag = arkleader_Silverash_WHO
 									root = {
-										set_country_flag = arkleader_SilverAsh_SPAWNED
+										set_country_flag = arkleader_Silverash_SPAWNED
 									}
 								}
 								1 = {	#耶拉
@@ -588,7 +590,10 @@ country_event = {
 									change_leader_portrait = ARK472
 									set_skill = 2
 									set_age = 28
-									add_trait = leader_trait_oripathy
+									if = {
+										limit = { NOT = { has_country_flag = originiums_sufferer_end_flag } }
+										add_trait = leader_trait_oripathy # 源石病
+									}
 									add_trait = leader_trait_expertise_industry
 									set_leader_flag = arkleader_Passenger_WHO
 									root = {
@@ -650,6 +655,10 @@ country_event = {
 									set_leader_flag = arkleader_Eyjafjalla_WHO
 									add_trait = leader_trait_roamer # 漫游者
 									add_trait = leader_trait_meticulous
+									if = {
+										limit = { NOT = { has_country_flag = originiums_sufferer_end_flag } }
+										add_trait = leader_trait_oripathy # 源石病
+									}
 									root = {
 										set_country_flag = arkleader_Eyjafjalla_SPAWNED
 									}
@@ -666,7 +675,10 @@ country_event = {
 									change_leader_portrait = ARK135
 									set_skill = 2
 									set_age = 25
-									add_trait = leader_trait_oripathy
+									if = {
+										limit = { NOT = { has_country_flag = originiums_sufferer_end_flag } }
+										add_trait = leader_trait_oripathy # 源石病
+									}
 									add_trait = leader_trait_expertise_field_manipulation
 									add_trait = leader_trait_expertise_industry
 								
@@ -708,7 +720,10 @@ country_event = {
 									set_skill = 1
 									set_age = 22
 									add_trait = leader_trait_roamer # 漫游者
-									add_trait = leader_trait_oripathy # 源石病
+									if = {
+										limit = { NOT = { has_country_flag = originiums_sufferer_end_flag } }
+										add_trait = leader_trait_oripathy # 源石病
+									}
 								
 									set_leader_flag = arkleader_Astesia_WHO
 									root = {
@@ -729,7 +744,10 @@ country_event = {
 									set_age = 25
 									add_trait = leader_trait_meticulous # 细致
 									add_trait = leader_trait_expertise_biology # 专长：生物学
-									add_trait = leader_trait_oripathy # 源石病
+									if = {
+										limit = { NOT = { has_country_flag = originiums_sufferer_end_flag } }
+										add_trait = leader_trait_oripathy # 源石病
+									}
 								
 									set_leader_flag = arkleader_Silence_WHO
 									root = {
@@ -931,7 +949,10 @@ country_event = {
 									set_skill = 2
 									set_age = 28
 									set_leader_flag = arkleader_Blaze_WHO
-									add_trait = leader_trait_oripathy
+									if = {
+										limit = { NOT = { has_country_flag = originiums_sufferer_end_flag } }
+										add_trait = leader_trait_oripathy # 源石病
+									}
 									add_trait = leader_trait_emergency_appointment
 									root = {
 										set_country_flag = arkleader_Blaze_SPAWNED
@@ -1006,7 +1027,10 @@ country_event = {
 									change_leader_portrait = ARK130
 									set_skill = 2
 									set_age = 31
-									add_trait = leader_trait_oripathy
+									if = {
+										limit = { NOT = { has_country_flag = originiums_sufferer_end_flag } }
+										add_trait = leader_trait_oripathy # 源石病
+									}
 									add_trait = leader_trait_emergency_appointment
 								
 									set_leader_flag = arkleader_Dobermann_WHO
@@ -1191,7 +1215,10 @@ country_event = {
 									set_skill = 1
 									set_age = 35
 									add_trait = leader_trait_butcher
-									add_trait = leader_trait_oripathy
+									if = {
+										limit = { NOT = { has_country_flag = originiums_sufferer_end_flag } }
+										add_trait = leader_trait_oripathy # 源石病
+									}
 									add_trait = leader_trait_frighten_box
 									add_trait = leader_trait_treachery
 								
@@ -1210,7 +1237,7 @@ country_event = {
 	}
 }
 #on_monthly_pulse_country
-#确定状态
+#确定状态+去除矿石病
 country_event = {
 	id = ark_apex_leader.2
 	is_triggered_only = yes
@@ -1219,8 +1246,14 @@ country_event = {
 		is_this_terra = yes
 	}
 	immediate = {
+		if = {
+			limit = { has_country_flag = originiums_sufferer_end_flag }
+			every_owned_leader = {
+				remove_trait = leader_trait_oripathy # 源石病
+			}
+		}
 		ARK_Apex_Leader_Detect = { ARK_Leader_Name = Chen }
-		ARK_Apex_Leader_Detect = { ARK_Leader_Name = SilverAsh }
+		ARK_Apex_Leader_Detect = { ARK_Leader_Name = Silverash }
 		ARK_Apex_Leader_Detect = { ARK_Leader_Name = Swire }
 		ARK_Apex_Leader_Detect = { ARK_Leader_Name = Kjera }
 		ARK_Apex_Leader_Detect = { ARK_Leader_Name = Dorothy }
@@ -1259,6 +1292,27 @@ country_event = {
 		every_owned_leader = {
 			limit = { has_leader_flag = ark_leader_kaltsit }
 			change_leader_portrait = ARK003
+		}
+		every_owned_leader = {	# 博士_L
+			limit = {
+				has_leader_flag = ark_leader_doctor
+				has_trait = trait_ruler_babel_evil_spirit_l
+			}
+			change_leader_portrait = ARK001
+		}
+		every_owned_leader = {	# 博士_W
+			limit = {
+				has_leader_flag = ark_leader_doctor
+				has_trait = trait_ruler_babel_evil_spirit_w
+			}
+			change_leader_portrait = ARK001_W
+		}
+		every_owned_leader = {	# 博士_R
+			limit = {
+				has_leader_flag = ark_leader_doctor
+				has_trait = trait_ruler_babel_evil_spirit_r
+			}
+			change_leader_portrait = ARK001_R
 		}
 		######
 		every_owned_leader = {
@@ -1358,6 +1412,7 @@ country_event = {
 		}
 	}
 }
+#ark_apex_leader.1
 #提示
 country_event = {
 	id = ark_apex_leader.4

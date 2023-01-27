@@ -109,3 +109,17 @@ trait_ruler_babel_evil_spirit_r = {
 	leader_class = { ruler }
 	randomized = no
 }
+
+# 正在治疗
+trait_ruler_doctor_healing = {
+	cost = 0
+	initial = no
+	
+	icon = "gfx/interface/icons/traits/leader_trait_doctor_healing.dds"
+	modifier = {
+		country_edict_fund_mult = -0.1
+	}
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	randomized = no
+}

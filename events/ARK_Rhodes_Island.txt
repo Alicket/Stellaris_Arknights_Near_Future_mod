@@ -32,6 +32,7 @@ country_event = {
 		}
 		last_created_country = {
 			establish_communications_no_message = root
+			save_global_event_target_as = rhodes_island_pharmacy
 		}
 		save_global_event_target_as = rhodes_island
 	}

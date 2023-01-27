@@ -2,7 +2,15 @@ trait_latent_oripathy = {	# 源石病潜势
 	cost = 2
 	allowed_archetypes = { BIOLOGICAL }
 
-	modification = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
 	randomized = no
 	advanced_trait = no
 	icon = "gfx/interface/icons/traits/trait_latent_oripathy.dds"
@@ -23,7 +31,15 @@ trait_Originium_Arts = {	# 源石技艺
 	allowed_archetypes = { BIOLOGICAL }
 
 	initial = no
-	modification = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
 	randomized = no
 	advanced_trait = yes
 	icon = "gfx/interface/icons/traits/trait_Originium_Arts.dds"
@@ -44,7 +60,15 @@ trait_Originium_Arts = {	# 源石技艺
 trait_acute_oripathy = {	# 急性源石病
 	cost = -2
 	allowed_archetypes = { BIOLOGICAL }
-
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
 	initial = no
 	randomized = no
 	advanced_trait = no
