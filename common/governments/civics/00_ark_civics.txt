@@ -10,8 +10,9 @@ civic_business_union = {
 		}
 	}
 	possible = {
-		NOT = {
+		NOR = {
 			civics = { value = civic_merchant_guilds }
+			civics = { value = civic_union_summit }
 		}
 	}
 	random_weight = { base = 0 }
@@ -135,6 +136,47 @@ civic_circulation_business = {
 	modifier = {
 		planet_jobs_consumer_goods_produces_mult = 0.1
 		planet_amenities_add = 10
+	}
+}
+
+# 联合峰会
+civic_union_summit = {
+	description = "civic_tooltip_union_summit_effects"
+	potential = {
+		authority = {
+			OR = {
+				value = auth_city_republic
+				value = auth_city_despotism
+			}
+		}
+	}
+	possible = {
+		NOT = {
+			civics = { value = civic_business_union }
+		}
+	}
+	random_weight = { base = 0 }
+	modifier = {
+		country_government_civic_points_add = 2
+		empire_size_penalty_mult = 0.25
+	}
+}
+
+# 信使网络
+civic_messenger_network = {
+	description = "civic_tooltip_messenger_network_effects"
+	potential = {
+		authority = {
+			OR = {
+				value = auth_city_republic
+				value = auth_city_despotism
+			}
+		}
+	}
+	random_weight = { base = 0 }
+	modifier = {
+		empire_size_systems_mult = -0.1
+		empire_size_colonies_mult = -0.1
 	}
 }
 

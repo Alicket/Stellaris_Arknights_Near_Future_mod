@@ -28,8 +28,8 @@ ARK_country_1={
 	
 	authority="auth_city_republic"
 	civics={
-		"civic_business_union"
-		"civic_pharmaceutical_enterprises"
+		"civic_union_summit"
+		"civic_messenger_network"
 	}
 	origin = "origin_ark_tragedy_birth"
 	government="gov_ark_commercial_republic"
