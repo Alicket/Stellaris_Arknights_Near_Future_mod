@@ -24,6 +24,12 @@ spriteTypes = {
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes		
 	}
+	spriteType = {	# 拉特兰大教堂
+		name = "GFX_evt_laterano_cathedralfront"
+		texturefile = "gfx/event_pictures/laterano_cathedralfront.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
 	spriteType = {	# 源石病1
 		name = "GFX_evt_ori1"
 		texturefile = "gfx/event_pictures/ori1.dds"

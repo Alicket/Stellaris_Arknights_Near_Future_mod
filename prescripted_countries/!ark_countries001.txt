@@ -32,7 +32,7 @@ ARK_country_1={
 		"civic_messenger_network"
 	}
 	origin = "origin_ark_tragedy_birth"
-	government="gov_ark_commercial_republic"
+	government="gov_ark_elite_republic"
 	advisor_voice_type="l_slick_corp"
 	
 	ethic="ethic_fanatic_militarist"

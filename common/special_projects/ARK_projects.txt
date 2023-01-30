@@ -39,7 +39,7 @@ special_project = {
 	event_scope = planet_event
 	
 	on_success = {
-		owner = { country_event = { id = ark_civic.31 } }
+		owner = { country_event = { id = ark_civic.91 } }
 	}
 }
 

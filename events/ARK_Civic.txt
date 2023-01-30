@@ -164,12 +164,183 @@ country_event = {
 	}
 }
 
+# 联合峰会：第1个国民理念
+country_event = {
+	id = ark_civic.2
+	title = ark_civic.2.name
+	desc = civic_union_summit_desc
+	picture = GFX_evt_laterano_cathedralfront
+	location = ROOT
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_civic = civic_union_summit
+		NOT = { has_country_flag = civic_union_summit_selected }
+	}
+
+	immediate = {
+		set_country_flag = civic_union_summit_selected
+	}
+
+	option = {
+		name = ark_civic.2.a	# 信使网络
+		trigger = {
+			NOT = { has_civic = civic_messenger_network }
+		}
+		custom_tooltip = messenger_network
+		force_add_civic = civic_messenger_network
+		hidden_effect = {
+			country_event = { id = ark_civic.21 }
+		}
+	}
+
+	option = {
+		name = ark_civic.2.b	# 安全部门
+		trigger = {
+			NOT = { has_civic = civic_security_services }
+			NOT = { has_civic = civic_criminal_heritage }
+		}
+		custom_tooltip = security_services
+		force_add_civic = civic_security_services
+		hidden_effect = {
+			country_event = { id = ark_civic.21 }
+		}
+	}
+
+	option = {
+		name = ark_civic.2.c	# 神圣公证所
+		trigger = {
+			NOT = { has_civic = civic_holy_notarial_hall }
+			OR = {
+				has_ethic = ethic_spiritualist
+				has_ethic = ethic_fanatic_spiritualist
+			}
+		}
+		custom_tooltip = holy_notarial_hall
+		force_add_civic = civic_holy_notarial_hall
+		hidden_effect = {
+			country_event = { id = ark_civic.21 }
+		}
+	}
+
+	option = {
+		name = ark_civic.2.d	# 骑士精神
+		trigger = {
+			NOT = { has_civic = civic_chivalry }
+			NOT = { has_civic = civic_criminal_heritage }
+			OR = {
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
+			}
+		}
+		custom_tooltip = chivalry
+		force_add_civic = civic_chivalry
+		hidden_effect = {
+			country_event = { id = ark_civic.21 }
+		}
+	}
+
+	option = {
+		name = ark_civic.2.e	# 课征重税
+		trigger = {
+			NOT = { has_civic = civic_heavy_taxation }
+			OR = {
+				has_ethic = ethic_egalitarian
+				has_ethic = ethic_fanatic_egalitarian
+			}
+		}
+		custom_tooltip = heavy_taxation
+		force_add_civic = civic_heavy_taxation
+		hidden_effect = {
+			country_event = { id = ark_civic.21 }
+		}
+	}
+}
+
+# 联合峰会：第2个国民理念
+country_event = {
+	id = ark_civic.21
+	title = ark_civic.21.name
+	desc = civic_union_summit_desc	# 沿用ark_civic.2的本地化
+	picture = GFX_evt_laterano_cathedralfront
+	location = ROOT
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_civic = civic_union_summit
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = ark_civic.2.a	# 沿用ark_civic.2的本地化
+		trigger = {
+			NOT = { has_civic = civic_messenger_network }
+		}
+		custom_tooltip = messenger_network
+		force_add_civic = civic_messenger_network
+	}
+
+	option = {
+		name = ark_civic.2.b	# 沿用ark_civic.2的本地化
+		trigger = {
+			NOT = { has_civic = civic_security_services }
+			NOT = { has_civic = civic_criminal_heritage }
+		}
+		custom_tooltip = security_services
+		force_add_civic = civic_security_services
+	}
+
+	option = {
+		name = ark_civic.2.c	# 沿用ark_civic.2的本地化
+		trigger = {
+			NOT = { has_civic = civic_holy_notarial_hall }
+			OR = {
+				has_ethic = ethic_spiritualist
+				has_ethic = ethic_fanatic_spiritualist
+			}
+		}
+		custom_tooltip = holy_notarial_hall
+		force_add_civic = civic_holy_notarial_hall
+	}
+
+	option = {
+		name = ark_civic.2.d	# 沿用ark_civic.2的本地化
+		trigger = {
+			NOT = { has_civic = civic_chivalry }
+			NOT = { has_civic = civic_criminal_heritage }
+			OR = {
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
+			}
+		}
+		custom_tooltip = chivalry
+		force_add_civic = civic_chivalry
+	}
+
+	option = {
+		name = ark_civic.2.e	# 沿用ark_civic.2的本地化
+		trigger = {
+			NOT = { has_civic = civic_heavy_taxation }
+			OR = {
+				has_ethic = ethic_egalitarian
+				has_ethic = ethic_fanatic_egalitarian
+			}
+		}
+		custom_tooltip = heavy_taxation
+		force_add_civic = civic_heavy_taxation
+	}
+}
+
 ## 医药企业 ##
 # 成立卫生部
 country_event = {
-	id = ark_civic.2
-	title = "ark_civic.2.name"
-	desc = "ark_civic.2.desc"
+	id = ark_civic.3
+	title = "ark_civic.3.name"
+	desc = "ark_civic.3.desc"
 	picture = GFX_evt_metropolis
 	location = ROOT
 	is_triggered_only = yes
@@ -184,56 +355,56 @@ country_event = {
 	}
 	
 	option = {
-		name = ark_civic.2.a
-		custom_tooltip = ark_civic.2_tooltip
+		name = ark_civic.3.a
+		custom_tooltip = ark_civic.3_tooltip
 	}
 }
 
 # 触发医疗会诊
 country_event = {
-	id = ark_civic.20
-	title = ark_civic.20.name
+	id = ark_civic.30
+	title = ark_civic.30.name
 	desc = {
 		trigger = {
 			has_country_flag = medical_consultation_1
 			NOT = { has_country_flag = ark_treatment_1_ruler_flag }
 		}
-		text = ark_civic.20.desc
+		text = ark_civic.30.desc
 	}
 	desc = {
 		trigger = {
 			has_country_flag = medical_consultation_2
 			NOT = { has_country_flag = ark_treatment_2_ruler_flag }
 		}
-		text = ark_civic.20.desc2
+		text = ark_civic.30.desc2
 	}
 	desc = {
 		trigger = {
 			has_country_flag = medical_consultation_3
 			NOT = { has_country_flag = ark_treatment_3_ruler_flag }
 		}
-		text = ark_civic.20.desc3
+		text = ark_civic.30.desc3
 	}
 	desc = {	#统治者药物依赖
 		trigger = {
 			has_country_flag = medical_consultation_1
 			has_country_flag = ark_treatment_1_ruler_flag
 		}
-		text = ark_civic.20.desc4
+		text = ark_civic.30.desc4
 	}
 	desc = {	#统治者受挫
 		trigger = {
 			has_country_flag = medical_consultation_2
 			has_country_flag = ark_treatment_2_ruler_flag
 		}
-		text = ark_civic.20.desc5
+		text = ark_civic.30.desc5
 	}
 	desc = {	#统治者伤残
 		trigger = {
 			has_country_flag = medical_consultation_3
 			has_country_flag = ark_treatment_3_ruler_flag
 		}
-		text = ark_civic.20.desc6
+		text = ark_civic.30.desc6
 	}
 	picture = GFX_evt_infirmary
 	location = ROOT
@@ -356,7 +527,7 @@ country_event = {
 	}
 
 	option = {
-		name = ark_civic.20.a	# 我们的领袖将立刻前往医院报到
+		name = ark_civic.30.a	# 我们的领袖将立刻前往医院报到
 		hidden_effect = {
 			if = {
 				limit = {
@@ -366,7 +537,7 @@ country_event = {
 					}
 				}
 				event_target:treatment_1 = { exile_leader_as = treatment_1 }
-				country_event = { id = ark_civic.21 days = 360 }
+				country_event = { id = ark_civic.31 days = 360 }
 			}
 			if = {
 				limit = {
@@ -376,7 +547,7 @@ country_event = {
 					}
 				}
 				event_target:treatment_2 = { exile_leader_as = treatment_2 }
-				country_event = { id = ark_civic.21 days = 360 }
+				country_event = { id = ark_civic.31 days = 360 }
 			}
 			if = {
 				limit = {
@@ -386,7 +557,7 @@ country_event = {
 					}
 				}
 				event_target:treatment_3 = { exile_leader_as = treatment_3 }
-				country_event = { id = ark_civic.21 days = 1080 }
+				country_event = { id = ark_civic.31 days = 1080 }
 			}
 			#<——————————星区总督——————————>#
 			if = {
@@ -399,7 +570,7 @@ country_event = {
 					add_trait = leader_trait_governor_chosen
 					remove_trait = leader_trait_substance_abuser
 				}
-				country_event = { id = ark_civic.21 days = 360 }
+				country_event = { id = ark_civic.31 days = 360 }
 			}
 			if = {
 				limit = {
@@ -411,7 +582,7 @@ country_event = {
 					add_trait = leader_trait_governor_chosen
 					remove_trait = leader_trait_traumatized
 				}
-				country_event = { id = ark_civic.21 days = 360 }
+				country_event = { id = ark_civic.31 days = 360 }
 			}
 			if = {
 				limit = {
@@ -423,7 +594,7 @@ country_event = {
 					add_trait = leader_trait_governor_chosen
 					remove_trait = leader_trait_maimed
 				}
-				country_event = { id = ark_civic.21 days = 1080 }
+				country_event = { id = ark_civic.31 days = 1080 }
 			}
 			#<———————————统治者———————————>#
 			if = {
@@ -435,7 +606,7 @@ country_event = {
 					add_trait = trait_ruler_doctor_healing
 					remove_trait = leader_trait_substance_abuser
 				}
-				country_event = { id = ark_civic.21 days = 360 }
+				country_event = { id = ark_civic.31 days = 360 }
 			}
 			if = {
 				limit = {
@@ -446,7 +617,7 @@ country_event = {
 					add_trait = trait_ruler_doctor_healing
 					remove_trait = leader_trait_traumatized
 				}
-				country_event = { id = ark_civic.21 days = 360 }
+				country_event = { id = ark_civic.31 days = 360 }
 			}
 			if = {
 				limit = {
@@ -457,22 +628,22 @@ country_event = {
 					add_trait = trait_ruler_doctor_healing
 					remove_trait = leader_trait_maimed
 				}
-				country_event = { id = ark_civic.21 days = 1080 }
+				country_event = { id = ark_civic.31 days = 1080 }
 			}
 		}
 	}
 
 	option = {
-		name = ark_civic.20.b	# 我们的领袖需要先忙完手头的工作。
-		country_event = { id = ark_civic.20 days = 360 }
+		name = ark_civic.30.b	# 我们的领袖需要先忙完手头的工作。
+		country_event = { id = ark_civic.30 days = 360 }
 	}
 }
 
 # 领袖康复
 country_event = {
-	id = ark_civic.21
-	title = "ark_civic.21.name"
-	desc = "ark_civic.21.desc"
+	id = ark_civic.31
+	title = "ark_civic.31.name"
+	desc = "ark_civic.31.desc"
 	picture = GFX_evt_infirmary
 	location = ROOT
 
@@ -485,7 +656,7 @@ country_event = {
 	}
 
 	option = {
-		name = ark_civic.21.a	# 欢迎回到工作岗位
+		name = ark_civic.31.a	# 欢迎回到工作岗位
 		hidden_effect = {
 			#<———————————科学家———————————>#
 			if = {	#药物依赖
@@ -836,126 +1007,6 @@ country_event = {
 	}
 }
 
-country_event = {	#测试用事件
-	id = ark_civic.22
-	is_triggered_only = yes
-	hide_window = yes
-	immediate = {
-		random_owned_leader = {
-			limit = {
-				leader_class = scientist
-			}
-			add_trait = leader_trait_substance_abuser
-		}
-	}
-}
-country_event = {	#测试用事件
-	id = ark_civic.23
-	is_triggered_only = yes
-	hide_window = yes
-	immediate = {
-		random_owned_leader = {
-			limit = {
-				leader_class = admiral
-			}
-			add_trait = leader_trait_substance_abuser
-		}
-	}
-}
-country_event = {	#测试用事件
-	id = ark_civic.24
-	is_triggered_only = yes
-	hide_window = yes
-	immediate = {
-		random_owned_leader = {
-			limit = {
-				leader_class = general
-			}
-			add_trait = leader_trait_substance_abuser
-		}
-	}
-}
-country_event = {	#测试用事件
-	id = ark_civic.25
-	is_triggered_only = yes
-	hide_window = yes
-	immediate = {
-		random_owned_leader = {
-			limit = {
-				leader_class = governor
-			}
-			add_trait = leader_trait_substance_abuser
-		}
-	}
-}
-country_event = {	#测试用事件
-	id = ark_civic.26
-	is_triggered_only = yes
-	hide_window = yes
-	immediate = {
-		random_owned_leader = {
-			limit = {
-				leader_class = ruler
-			}
-			add_trait = leader_trait_substance_abuser
-		}
-	}
-}
-# 不相容疫苗解析
-country_event = {
-	id = ark_civic.3
-	title = ark_civic.3.name
-	desc = ark_civic.3.desc
-	picture = GFX_evt_genetic_modification
-	location = ROOT
-
-	trigger = {
-		has_civic = civic_pharmaceutical_enterprises
-		has_modifier = machine_empire_mutations
-		NOT = { has_country_flag = ark_civic_3_flag }
-	}
-
-	mean_time_to_happen = { months = 1 }
-
-	immediate = {
-		set_country_flag = ark_civic_3_flag
-	}
-
-	option = {
-		name = ark_civic.3.a	# 尝试重制疫苗
-		capital_scope = {
-			enable_special_project = {
-				name = "MUTATIONS_PROJECT"
-				location = this
-				owner = root
-			}
-		}
-	}
-}
-
-# 良性的疫苗
-country_event = {
-	id = ark_civic.31
-	title = ark_civic.31.name
-	desc = ark_civic.31.desc
-	picture = GFX_evt_genetic_modification
-	location = ROOT
-
-	is_triggered_only = yes
-
-	immediate = {
-	}
-
-	option = {
-		name = ark_civic.31.a
-		remove_modifier = machine_empire_mutations
-		add_modifier = { 
-			modifier = machine_empire_health_boost
-			days = -1
-		}
-	}
-}
-
 # 骑士精神
 country_event = {
 	id = ark_civic.4
@@ -990,5 +1041,60 @@ country_event = {
 			}
 		}
 		set_country_flag = ark_civic_4_flag
+	}
+}
+
+# 不相容疫苗解析
+country_event = {
+	id = ark_civic.9
+	title = ark_civic.9.name
+	desc = ark_civic.9.desc
+	picture = GFX_evt_genetic_modification
+	location = ROOT
+
+	trigger = {
+		has_civic = civic_pharmaceutical_enterprises
+		has_modifier = machine_empire_mutations
+		NOT = { has_country_flag = ark_civic_3_flag }
+	}
+
+	mean_time_to_happen = { months = 1 }
+
+	immediate = {
+		set_country_flag = ark_civic_3_flag
+	}
+
+	option = {
+		name = ark_civic.9.a	# 尝试重制疫苗
+		capital_scope = {
+			enable_special_project = {
+				name = "MUTATIONS_PROJECT"
+				location = this
+				owner = root
+			}
+		}
+	}
+}
+
+# 良性的疫苗
+country_event = {
+	id = ark_civic.91
+	title = ark_civic.91.name
+	desc = ark_civic.91.desc
+	picture = GFX_evt_genetic_modification
+	location = ROOT
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+		name = ark_civic.91.a
+		remove_modifier = machine_empire_mutations
+		add_modifier = { 
+			modifier = machine_empire_health_boost
+			days = -1
+		}
 	}
 }

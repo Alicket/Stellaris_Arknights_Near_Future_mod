@@ -10,9 +10,11 @@ civic_business_union = {
 		}
 	}
 	possible = {
-		NOR = {
-			civics = { value = civic_merchant_guilds }
-			civics = { value = civic_union_summit }
+		civics = {
+			NOR = {
+				value = civic_merchant_guilds
+				value = civic_union_summit
+			}
 		}
 	}
 	random_weight = { base = 0 }
@@ -151,9 +153,7 @@ civic_union_summit = {
 		}
 	}
 	possible = {
-		NOT = {
-			civics = { value = civic_business_union }
-		}
+		civics = { NOT = { value = civic_business_union } }
 	}
 	random_weight = { base = 0 }
 	modifier = {

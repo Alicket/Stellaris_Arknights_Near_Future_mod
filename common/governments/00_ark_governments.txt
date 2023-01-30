@@ -10,6 +10,10 @@ gov_ark_elite_republic = {
 	}
 	weight = {
 		base = 1
+		modifier = {
+			factor = 800
+			has_valid_civic = civic_union_summit		# 联合峰会
+		}
 	}
 }
 
