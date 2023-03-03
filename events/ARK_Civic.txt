@@ -238,6 +238,18 @@ country_event = {
 		force_add_civic = civic_chivalry
 		hidden_effect = {
 			country_event = { id = ark_civic.21 }
+			every_owned_leader = {
+				limit = {
+					leader_class = admiral
+				}
+				add_trait = leader_trait_admiral_chivalry
+			}
+			every_owned_leader = {
+				limit = {
+					leader_class = general
+				}
+				add_trait = leader_trait_general_chivalry
+			}
 		}
 	}
 
@@ -1041,6 +1053,32 @@ country_event = {
 			}
 		}
 		set_country_flag = ark_civic_4_flag
+	}
+}
+#月检，为没有的领袖添加骑士精神
+country_event = {
+	id = ark_civic.41
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_this_terra = yes
+		has_civic = civic_chivalry
+	}
+	immediate = {
+		every_owned_leader = {
+			limit = {
+				leader_class = admiral
+				NOT = { has_trait = leader_trait_admiral_chivalry }
+			}
+			add_trait = leader_trait_admiral_chivalry
+		}
+		every_owned_leader = {
+			limit = {
+				leader_class = general
+				NOT = { has_trait = leader_trait_general_chivalry }
+			}
+			add_trait = leader_trait_general_chivalry
+		}
 	}
 }
 

@@ -9,9 +9,6 @@ trait_ruler_walk_in_dust_r = {
 		country_unity_produces_mult = 0.05
 		country_base_influence_produces_add = 1
 	}
-	self_modifier = {
-		leader_age = 2000
-	}
 	leader_trait = { ruler }
 	leader_class = { ruler }
 	randomized = no

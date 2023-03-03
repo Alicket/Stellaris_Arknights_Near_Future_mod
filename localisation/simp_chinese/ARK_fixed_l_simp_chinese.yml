@@ -68,6 +68,8 @@ leader_trait_warlords:0 "旧军阀"
 leader_trait_warlords_desc:0 "这位领袖曾经是割据一方的军阀,\t\t他能随时动员老部下和家乡子弟投入正规军,\t\t但因此也遭到非议.\t\t"
 leader_trait_governor_kjera:0 "耶拉岗德"
 leader_trait_governor_kjera_desc:0 "作为谢拉格圣山的神明洞察一切,\t也是圣女大人身边尽职尽责的女仆长,\t对于让星区'保持干净'有一套独特的见解."
+leader_trait_governor_kjera_ruler:0 "$leader_trait_governor_kjera$"
+leader_trait_governor_kjera_ruler_desc:0 "$leader_trait_governor_kjera_desc$"
 
 # 科学 #
 leader_trait_walk_in_dust_s:0 "遗尘漫步"

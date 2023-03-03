@@ -21,6 +21,7 @@ country_event = {
 							}
 						}
 					}
+
 					root = {
 						set_country_flag = ark_apex_leaderg_spawned_first_wave1
 					}
@@ -1430,5 +1431,140 @@ country_event = {
 	}
 	option = {
 		name = ark_apex_leader.4.a
+	}
+}
+
+#on_ruler_back_to_pre_ruler_class
+# From = Previous Ruler, already has the new class
+# This = Country
+#凯尔希退位为科学家
+country_event = {
+	id = ark_apex_leader.51
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from = {
+			has_leader_flag = ark_leader_kaltsit
+			leader_class = scientist
+			has_trait = trait_ruler_walk_in_dust_r
+		}
+	}
+	immediate = {
+		from = {
+			remove_trait = trait_ruler_walk_in_dust_r
+			remove_trait = trait_ruler_kaltsit_knowledgeable
+			#add_trait = leader_trait_walk_in_dust_s
+		}
+	}
+}
+#on_ruler_set
+#凯尔希被选举为统治者
+country_event = {
+	id = ark_apex_leader.52
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		any_owned_leader = {
+			has_leader_flag = ark_leader_kaltsit
+			leader_class = ruler
+			has_trait = leader_trait_walk_in_dust_s
+		}
+	}
+	immediate = {
+		every_owned_leader = {
+			limit = {
+				has_leader_flag = ark_leader_kaltsit
+			}
+			remove_trait = leader_trait_walk_in_dust_s
+			#add_trait = trait_ruler_walk_in_dust_r
+		}
+	}
+}
+#on_ruler_back_to_pre_ruler_class
+# From = Previous Ruler, already has the new class
+# This = Country
+#可露希尔退位为科学家
+country_event = {
+	id = ark_apex_leader.53
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from = {
+			has_leader_flag = arkleader_Closure_WHO
+			leader_class = scientist
+		}
+	}
+	immediate = {
+		from = {
+			add_trait = leader_trait_vampire
+			remove_trait = leader_trait_oripathy
+		}
+	}
+}
+#on_ruler_set
+#可露希尔被选举为统治者
+country_event = {
+	id = ark_apex_leader.54
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		any_owned_leader = {
+			has_leader_flag = arkleader_Closure_WHO
+			leader_class = ruler
+		}
+	}
+	immediate = {
+		every_owned_leader = {
+			limit = {
+				has_leader_flag = arkleader_Closure_WHO
+			}
+			add_trait = leader_trait_vampire
+			remove_trait = leader_trait_oripathy
+		}
+	}
+}
+#on_ruler_back_to_pre_ruler_class
+# From = Previous Ruler, already has the new class
+# This = Country
+#耶拉退位为总督
+country_event = {
+	id = ark_apex_leader.55
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from = {
+			has_leader_flag = arkleader_Kjera_WHO
+			leader_class = governor
+		}
+	}
+	immediate = {
+		from = {
+			add_trait = leader_trait_governor_kjera
+			remove_trait = leader_trait_governor_kjera_ruler
+			remove_trait = leader_trait_oripathy
+		}
+	}
+}
+#on_ruler_set
+#耶拉被选举为统治者
+country_event = {
+	id = ark_apex_leader.56
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		any_owned_leader = {
+			has_leader_flag = arkleader_Kjera_WHO
+			leader_class = ruler
+		}
+	}
+	immediate = {
+		every_owned_leader = {
+			limit = {
+				has_leader_flag = arkleader_Kjera_WHO
+			}
+			add_trait = leader_trait_governor_kjera_ruler
+			remove_trait = leader_trait_governor_kjera
+			remove_trait = leader_trait_oripathy
+		}
 	}
 }

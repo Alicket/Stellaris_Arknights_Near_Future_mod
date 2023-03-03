@@ -56,7 +56,7 @@ decision_end_biochemical_protection = {
 		weight = 1
 	}
 }
-
+#海嗣：中止殖民地进化
 decision_ark_seaborn_disable_evolution = {
 	owned_planets_only = yes
 	sound = event_administrative_work
@@ -73,7 +73,7 @@ decision_ark_seaborn_disable_evolution = {
 		remove_modifier = ark_ocean_evolution_start
 	}
 }
-
+#海嗣：恢复殖民地进化
 decision_ark_seaborn_resume_evolution = {
 	owned_planets_only = yes
 	sound = event_administrative_work
