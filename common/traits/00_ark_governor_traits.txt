@@ -357,3 +357,17 @@ leader_trait_governor_kjera = {
 	initial = no
 	randomized = no
 }
+leader_trait_governor_kjera_ruler = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_oracle.dds"
+	immortal_leaders = yes
+	modifier = {
+		country_unity_produces_mult = 0.05
+		planet_stability_add = 3
+		country_influence_produces_add = 0.5
+	}
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	initial = no
+	randomized = no
+}
