@@ -343,13 +343,13 @@ leader_trait_warlords = {
 	randomized = no
 }
 
-#耶拉岗德
+#耶拉冈德
 leader_trait_governor_kjera = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_oracle.dds"
 	immortal_leaders = yes
 	modifier = {
-		planet_jobs_unity_produces_mult = 0.20
+		planet_jobs_unity_produces_mult = 0.15
 		planet_crime_add = -15
 	}
 	leader_trait = { governor }
