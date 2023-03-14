@@ -5,6 +5,17 @@ gov_ark_elite_republic = {
 	ruler_title = RT_HIGH_COMMISSIONER
 	ruler_title_female = RT_HIGH_COMMISSIONER_FEMALE
 
+	election_candidates = {
+		modifier = {
+			add = 100
+			leader_class = ruler
+		}
+		modifier = {
+			add = 20
+			leader_class = governor
+		}
+	}
+
 	possible = {
 		has_authority = auth_city_republic
 	}

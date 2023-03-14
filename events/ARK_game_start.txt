@@ -274,7 +274,7 @@ country_event = {
 	}
 }
 
-# 凯尔希成为国家领导人
+# 凯尔希作为新的ruler开始游戏
 country_event = {
 	id = ark_game_start.311
 	hide_window = yes
@@ -318,7 +318,7 @@ country_event = {
 	}
 }
 
-# 凯尔希不再是国家领导人(用以清除错误的领袖技能)
+# 凯尔希卸任后清除新统治者错误的凯尔希技能
 country_event = {
 	id = ark_game_start.312
 	hide_window = yes
@@ -341,7 +341,7 @@ country_event = {
 	}
 }
 
-# 博士成为国家领导人
+# DOCTOR作为新的ruler开始游戏
 country_event = {
 	id = ark_game_start.313
 	hide_window = yes
