@@ -45,13 +45,14 @@ auth_city_despotism = {
 	has_agendas = yes	# 有议程
 
 	possible = {
-		ethics = {
-			NOR = {	# 非格式塔和平等主义
-				value = ethic_gestalt_consciousness
-				value = ethic_egalitarian
-				value = ethic_fanatic_egalitarian
-			}
-		}
+		always = no
+		# ethics = {
+		# 	NOR = {	# 非格式塔和平等主义
+		# 		value = ethic_gestalt_consciousness
+		# 		value = ethic_egalitarian
+		# 		value = ethic_fanatic_egalitarian
+		# 	}
+		# }
 	}
 
 	random_weight = {
@@ -65,7 +66,7 @@ auth_city_despotism = {
 	}
 
 	country_modifier = {
-		country_edict_cap_add = 1
+		country_government_civic_points_add = 1
 	}
 
 	tags = {

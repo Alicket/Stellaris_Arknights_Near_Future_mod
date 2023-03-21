@@ -67,6 +67,10 @@ decision_ark_seaborn_disable_evolution = {
 			has_country_flag = arknights_ocean_country
 		}
 		has_planet_flag = ark_ocean_col_evo_start
+		NOR = {
+			has_planet_flag = ark_ocean_col_evo_disabled
+			has_planet_flag = ark_ocean_col_evo_special
+		}
 	}
 	effect = {
 		set_planet_flag = ark_ocean_col_evo_disabled
@@ -83,9 +87,18 @@ decision_ark_seaborn_resume_evolution = {
 			has_trait = trait_ARK_ocean_seaborn
 			has_country_flag = arknights_ocean_country
 		}
+		OR = {
+			has_planet_flag = ark_ocean_col_evo_disabled
+			has_planet_flag = ark_ocean_col_evo_special
+		}
 	}
 	effect = {
 		remove_planet_flag = ark_ocean_col_evo_disabled
-		add_modifier = ark_ocean_col_evo_start
+		hidden_effect = {
+			add_modifier = {
+				modifier = ark_ocean_evolution_start
+				days = -1
+			}
+		}
 	}
 }

@@ -277,7 +277,7 @@ building_originiums_mining_platform = {
 	category = resource
 	
 	potential = {
-		has_building = building_originiums_mining_plant
+		#has_building = building_originiums_mining_plant
 	}
 
 	allow = {

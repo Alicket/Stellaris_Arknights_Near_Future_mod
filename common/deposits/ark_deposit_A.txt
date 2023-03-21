@@ -30,3 +30,63 @@ d_ark_moist_mys_area = {
 		}
 	}
 }
+
+d_arkocean_deepsea = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	icon = d_silent_deep_sea
+	planet_modifier = {
+		district_farming_max = 3
+		planet_housing_add = 5
+	}
+	
+	potential = { always = no }
+	drop_weight = { weight = 0 }
+}
+d_arkocean_generator = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	icon = d_reactor
+	planet_modifier = {
+		district_generator_max = 2
+	}
+	
+	potential = { always = no }
+	drop_weight = { weight = 0 }
+}
+d_arkocean_mine = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	icon = d_prospectorium_strip_mine
+	planet_modifier = {
+		district_mining_max = 2
+	}
+	
+	potential = { always = no }
+	drop_weight = { weight = 0 }
+}
+d_arkocean_terra_city = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	icon = d_quarantine_zone
+	triggered_planet_modifier = {
+		potential = {
+			owner = { has_country_flag = arkocean_gestalt_country }
+		}
+		job_warrior_drone_add = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			owner = { has_country_flag = arkocean_normal_country }
+		}
+		job_soldier_add = 1
+	}
+	resources = {
+		produces = {
+			society_research = 15
+		}
+	}
+
+	potential = { always = no }
+	drop_weight = { weight = 0 }
+}

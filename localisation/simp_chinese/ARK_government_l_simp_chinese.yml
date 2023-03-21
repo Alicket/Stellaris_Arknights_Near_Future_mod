@@ -4,7 +4,7 @@
 auth_city_republic:0 "城邦共和制"
 auth_city_republic_desc:0 "城邦共和政府的国家机关由选举产生,\t\t各城邦及地区将在联合理事会的基本框架下行使政治权力.\t\t"
 auth_city_despotism:0 "城邦专制"
-auth_city_despotism_desc:0 "城邦专制政府的最高统治者独自掌握国家权力,\t\t对所有城邦及地区实行专断统治.\t\t"
+auth_city_despotism_desc:0 "城邦专制政府的最高统治者独自掌握国家权力,\t\t对所有城邦及地区实行专断统治.\t\t\n§R这是尚未完成的内容！§!"
 
 ## government ##
 gov_ark_elite_republic:0 "精英共和制"
