@@ -897,9 +897,9 @@ weapon_component_template = {
 	power = -22	# 量子导弹
 	damage = { min = 0 max = 320 }
 	hull_damage = 1.25
-	shield_damage = 1.00
+	shield_damage = 0.50
 	shield_penetration = 1.00
-	armor_damage = 0.50
+	armor_damage = 1.00
 	armor_penetration = 0
 	windup = { min = 1 max = 15 }
 	total_fire_time = 130
@@ -959,9 +959,9 @@ weapon_component_template = {
 	power = -26	# 掠夺者导弹
 	damage = { min = 0 max = 440 }
 	hull_damage = 1.25
-	shield_damage = 1.00
+	shield_damage = 0.50
 	shield_penetration = 1.00
-	armor_damage = 0.50
+	armor_damage = 1.00
 	armor_penetration = 0
 	windup = { min = 1 max = 15 }
 	total_fire_time = 130

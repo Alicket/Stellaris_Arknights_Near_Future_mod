@@ -103,7 +103,7 @@ decision_ark_seaborn_resume_evolution = {
 	}
 }
 #海嗣：认知塑造
-decision_ark_seaborn_resume_evolution = {
+decision_ark_seaborn_mould = {
 	owned_planets_only = yes
 	sound = event_administrative_work
 	icon = decision_politics

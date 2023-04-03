@@ -56,6 +56,8 @@ NAME_Terra_ocean:0 "泰拉"
 Tyra_system_ocean_NAME:0 "塔罗斯"
 Tyra_system_ocean_DESC:0 "曾经是泰拉人母星的所在地，现在已经完全被大海吞噬。"
 opinion_arkocean_mould_6_5:0 "情感适应"
+decision_ark_seaborn_mould:0 "$NAME_arkocean_Isharmla_antenna$"
+decision_ark_seaborn_mould_desc:0 "开启$NAME_arkocean_Isharmla_antenna$面板"
 
 #种族特质
 trait_ARK_ocean_seaborn:0 "海嗣"
