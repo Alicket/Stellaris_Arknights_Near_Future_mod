@@ -80,7 +80,7 @@ initialize_ark_tragedy_birth_fleet = {
 		save_event_target_as = ark_owner_species
 	}
 	create_country = {
-		type = faction
+		type = terran_nations
 		name = $COUNTRY_NAME$
 		species = event_target:ark_owner_species
 		name_list = root

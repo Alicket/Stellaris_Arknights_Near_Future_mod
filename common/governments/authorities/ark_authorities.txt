@@ -1,6 +1,6 @@
 # 城邦共和制
 auth_city_republic = {
-	election_term_years = 1			# 选举任期
+	election_term_years = 20			# 选举任期
 	election_type = oligarchic			# 选举类型
 	can_have_emergency_elections = yes	# 能否紧急选举
 	emergency_election_cost = 250		# 紧急选举费用

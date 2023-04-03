@@ -44,3 +44,37 @@ ark_institution = {
 		basic_technology_module = {}
 	}
 }
+
+# 泰拉诸国
+terran_nations = {
+	observable = no
+	randomize_ethos = yes
+
+	ai = {
+		enabled = yes			# 为这个国家类型运行ai？默认否
+		declare_war = no		#允许ai宣战吗？默认是
+		colonizer = no			#允许ai殖民吗？默认是
+		internal_policies = no	#允许ai更新内部政策？如法令、改变政府类型等。默认为是
+		modification = no		#允许ai基因改造和地形改造？默认是
+		construction = no		#允许ai建造船只和建筑物吗？默认是
+		tech = no				#允许ai攀科技吗？默认是
+		espionage = no			#允许ai使用间谍活动吗？默认是
+	}
+	
+	hide_names_if_no_communication = no
+	show_in_contacts_list = yes
+	custom_diplomacy = yes
+
+	modules = {
+		standard_event_module = {}
+		#standard_economy_module = {}
+		standard_leader_module = {}
+		#standard_diplomacy_module = {}
+		exclusive_diplomacy_module = {
+			contact_rule = on_action_only
+		}
+		standard_technology_module = {}
+		standard_trade_routes_module = {}
+		#standard_species_rights_module = {}
+	}
+}
