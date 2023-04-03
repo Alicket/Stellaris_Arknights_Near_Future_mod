@@ -1,0 +1,8 @@
+ship_design = {
+	name = "NAME_arkocean_Isharmla_antenna"
+	ship_size = research_station
+	section = {
+		template = "arkocean_Isharmla_section"
+		slot = "mid"
+	}
+}
