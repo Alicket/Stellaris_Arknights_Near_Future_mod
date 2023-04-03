@@ -1,0 +1,62 @@
+portraits = {
+	#ark_ocean_darkblue = { textureFile = "gfx/models/portraits/ark_ocean/ark_ocean_portrait_darkblue.dds" }
+	#ark_ocean_blue = { textureFile = "gfx/models/portraits/ark_ocean/ark_ocean_portrait_blue.dds" }
+	#ark_ocean_green = { textureFile = "gfx/models/portraits/ark_ocean/ark_ocean_portrait_green.dds" }
+	#ark_ocean_purple = { textureFile = "gfx/models/portraits/ark_ocean/ark_ocean_portrait_purple.dds" }
+	#ark_ocean_red = { textureFile = "gfx/models/portraits/ark_ocean/ark_ocean_portrait_red.dds" }
+	#ark_ocean_yellow = { textureFile = "gfx/models/portraits/ark_ocean/ark_ocean_portrait_yellow.dds" }
+	ark_ocean_anim_portraits = {	entity = "portrait_ark_ocean_entity" clothes_selector = "no_texture" attachment_selector = "no_texture"	greeting_sound = "aqu_portrait_01"
+		character_textures = {
+			"gfx/models/portraits/arknights_ocean/ark_ocean_portrait_lightblue.dds"
+			"gfx/models/portraits/arknights_ocean/ark_ocean_portrait_darkblue.dds"
+			"gfx/models/portraits/arknights_ocean/ark_ocean_portrait_red.dds"
+			"gfx/models/portraits/arknights_ocean/ark_ocean_portrait_green.dds"
+			"gfx/models/portraits/arknights_ocean/ark_ocean_portrait_purple.dds"
+			"gfx/models/portraits/arknights_ocean/ark_ocean_portrait_pink.dds"
+			"gfx/models/portraits/arknights_ocean/ark_ocean_portrait_jade.dds"
+			"gfx/models/portraits/arknights_ocean/ark_ocean_portrait_yellow.dds"
+
+		}
+	}
+}
+
+portrait_groups = {
+	"ark_ocean" = {
+		default = ark_ocean_anim_portraits
+		game_setup = {
+			add = {
+				portraits = { 
+					ark_ocean_anim_portraits
+				}
+			}
+		}
+		ruler = {
+			add = {
+				portraits = { 
+					ark_ocean_anim_portraits
+				}
+			}
+		}
+		leader = {
+			add = {
+				portraits = {
+					ark_ocean_anim_portraits
+				}
+			}
+		}
+		pop = {
+			add = {
+				portraits = { 
+					ark_ocean_anim_portraits
+				}
+			}
+		}
+		species = {
+			add = {
+				portraits = { 
+					ark_ocean_anim_portraits
+				}
+			}
+		}
+	}
+}

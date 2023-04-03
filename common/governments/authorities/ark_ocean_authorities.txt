@@ -1,0 +1,36 @@
+#auth_arkocean_seaborn = {
+#	has_heir = no
+#	election_type = none
+#	has_factions = no
+#	can_reform = no
+#	localization_postfix = hive_mind
+#
+#	valid_for_released_vassal = yes
+#
+#	possible = {
+#		ethics = {
+#			value = ethic_gestalt_consciousness
+#		}
+#	}
+#	random_weight = {
+#		weight = 0
+#	}
+#
+#	traits = {
+#		trait = trait_hive_mind
+#		trait = trait_ARK_ocean_seaborn
+#	}
+#
+#
+#	country_modifier = {
+#		pop_growth_speed = 0.25
+#		empire_size_penalty_mult = -0.33
+#
+#
+#	}
+#
+#	tags = {
+#		AUTH_HIVE_MIND_AI_RESTRICTIONS
+#		AUTH_HIVE_MIND_ASCENSION_RESTRICTIONS
+#	}
+#}

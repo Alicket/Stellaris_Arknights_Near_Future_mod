@@ -1,0 +1,383 @@
+namespace = ark_seaborn_evo
+ ##########      ######     ###      ###  ############
+############    ########    ####    ####  ############
+###      ###   ###    ###   #####  #####  ###
+###           ###      ###  ### #### ###  #########
+###   ######  ############  ###  ##  ###  #########
+###   ######  ############  ###      ###  ###
+###      ###  ###      ###  ###      ###  ###
+############  ###      ###  ###      ###  ############
+ ##########   ###      ###  ###      ###  ############
+
+#on_game_start_country 添加抬头显示所用变量
+country_event = {
+	id = ark_seaborn_evo.1
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_trait = trait_ARK_ocean_seaborn
+		has_origin = origin_ark_stella_caerula
+	}
+	immediate = {
+		add_resource = {
+			arkseaborn_cells = 3
+		}
+		set_variable = { #同化人口数量
+			which = var_ark_seaborn_evolution_assimilation
+			value = 0
+		}
+		set_variable = { #同化星球数量
+			which = var_ark_seaborn_evolution_terraform
+			value = 0
+		}
+		set_variable = { #赢得战争数量
+			which = var_ark_seaborn_evolution_winning_war
+			value = 0
+		}
+		set_variable = { #暂时没用
+			which = var_ark_seaborn_evolution_test_lab
+			value = 0
+		}
+		#殖民地数量	var_ark_seaborn_evolution_colony
+		#生机细胞数量	var_ark_seaborn_evolution_cell
+
+		set_variable = { #1_2
+			which = var_ark_seaborn_mould_1_2
+			value = 0
+		}
+		set_variable = { #1_3
+			which = var_ark_seaborn_mould_1_3
+			value = 0
+		}
+		set_variable = { #1_4
+			which = var_ark_seaborn_mould_1_4
+			value = 0
+		}
+		set_variable = { #1_6
+			which = var_ark_seaborn_mould_1_6
+			value = 0
+		}
+		set_variable = { #1_6t
+			which = var_ark_seaborn_mould_1_6_times
+			value = 0
+		}
+		set_variable = { #2_1
+			which = var_ark_seaborn_mould_2_1
+			value = 0
+		}
+		set_variable = { #2_2
+			which = var_ark_seaborn_mould_2_2
+			value = 0
+		}
+		set_variable = { #2_3
+			which = var_ark_seaborn_mould_2_3
+			value = 0
+		}
+		set_variable = { #2_5
+			which = var_ark_seaborn_mould_2_5
+			value = 0
+		}
+		set_variable = { #2_6
+			which = var_ark_seaborn_mould_2_6
+			value = 0
+		}
+		set_variable = { #3_1
+			which = var_ark_seaborn_mould_3_1
+			value = 0
+		}
+		set_variable = { #3_2
+			which = var_ark_seaborn_mould_3_2
+			value = 0
+		}
+		set_variable = { #3_4
+			which = var_ark_seaborn_mould_3_4
+			value = 0
+		}
+
+	}
+}
+
+#on_monthly_pulse_country    on_game_start_country
+country_event = {
+	id = ark_seaborn_evo.10
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_trait = trait_ARK_ocean_seaborn
+		has_origin = origin_ark_stella_caerula
+	}
+	immediate = {
+		add_resource = { #基础每月产出
+			arkseaborn_cells = 0.0834
+		}
+		export_trigger_value_to_variable = {
+			trigger = num_owned_planets
+			variable = var_ark_seaborn_evolution_colony
+		}
+		export_resource_stockpile_to_variable = {
+			resource = arkseaborn_cells
+			variable = var_ark_seaborn_evolution_cell
+		}
+
+
+		add_resource = {
+			arkseaborn_cells = 1
+			mult = value:arkocean_mould_var_colonies_cells
+		}
+		change_variable = {
+			which = var_ark_seaborn_evolution_cell
+			value = value:arkocean_mould_var_colonies_cells
+		}
+	}
+}
+#创建抬头消息
+country_event = {
+	id = ark_seaborn_evo.11
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		country_event = {
+			id = ark_seaborn_evo.111
+			days = 1
+		}
+	}
+}
+country_event = {
+	id = ark_seaborn_evo.111
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_origin = origin_ark_stella_caerula
+		has_trait = trait_ARK_ocean_seaborn
+		has_country_resource = {
+			type = arkseaborn_cells
+			amount >= 2
+		}
+	}
+	immediate = {
+		create_message = {
+			type = MESSAGE_ARK_OCEAN_MOULD_INFORMATION_LIST
+			localization = MESSAGE_ARK_OCEAN_MOULD_INFORMATION_LIST_DESC
+			days = 30
+			target = event_target:arkocean_isharmla_antenna_station
+		}
+	}
+}
+#创建国家，首都刷空间站 on_game_start
+country_event = {
+	id = ark_seaborn_evo.12
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		has_origin = origin_ark_stella_caerula
+		has_trait = trait_ARK_ocean_seaborn
+	}
+	immediate = {
+		create_country = {
+			name = "NAME_arkocean_Isharmla_antenna"
+			type = Ishar_mla
+			flag = {
+				icon= {
+					category = "hypergryph"
+					file = "flag_arkocean.dds"
+				}
+				background= {
+					category = "backgrounds"
+					file = "rounded_middle.dds"
+				}
+				colors={
+					"dark_blue"
+					"purple"
+					"null"
+					"null"
+				}
+			}
+		}
+		last_created_country = {
+			save_global_event_target_as = arkocean_Isharmla_pad
+			establish_communications_no_message = root
+			save_global_event_target_as = arkocean_isarmla
+			create_fleet = {
+				name = NAME_arkocean_Isharmla_antenna
+				effect = {
+
+					set_owner = prev
+					create_ship = {
+						name = NAME_arkocean_Isharmla_antenna_desc
+						design = NAME_arkocean_Isharmla_antenna
+						graphical_culture = aquatic_01
+
+					}
+					set_location = {
+						target = root.capital_scope
+						distance = 0
+					}
+				}
+			}
+			last_created_fleet = {
+				set_event_locked = yes
+				save_global_event_target_as = arkocean_isharmla_antenna_station
+			}
+		}
+		save_global_event_target_as = arkocean_isharmla_me
+
+	}
+}
+#on_custom_diplomacy
+country_event = {
+	id = ark_seaborn_evo.13
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from = { is_country_type = Ishar_mla }
+		is_same_value = event_target:arkocean_isharmla_me
+	}
+	immediate = {
+		country_event = {
+			id = ark_seaborn_evo.14
+		}
+	}
+}
+country_event = {
+	id = ark_seaborn_evo.14
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "arkocean_gui_main"
+}
+
+#重置空间站位置
+country_event = {
+	id = ark_seaborn_evo.15
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		event_target:arkocean_isharmla_antenna_station = {
+			dismantle = yes
+		}
+		clear_global_event_target = arkocean_isharmla_antenna_station
+		event_target:arkocean_Isharmla_pad = {
+			create_fleet = {
+				name = NAME_arkocean_Isharmla_antenna
+				effect = {
+					set_owner = event_target:arkocean_Isharmla_pad
+					create_ship = {
+						name = NAME_arkocean_Isharmla_antenna_desc
+						design = NAME_arkocean_Isharmla_antenna
+						graphical_culture = aquatic_01
+					}
+					set_location = {
+						target = event_target:arkocean_isharmla_me.capital_scope
+						distance = 0
+					}
+				}
+			}
+			last_created_fleet = {
+				set_event_locked = yes
+				save_global_event_target_as = arkocean_isharmla_antenna_station
+			}
+		}
+	}
+}
+#3_6战略思维
+country_event = {
+	id = ark_seaborn_evo.16
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		every_owned_leader = {
+			limit = { leader_class = general }
+			add_trait = leader_trait_seaborn_arm_strategic_mind
+		}
+		every_pool_leader = {
+			limit = { leader_class = general }
+			add_trait = leader_trait_seaborn_arm_strategic_mind
+		}
+	}
+}
+country_event = {
+	id = ark_seaborn_evo.17
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_country_flag = arknights_ocean_country
+		has_country_flag = arkocean_gestalt_country
+		has_trait = trait_ARK_ocean_seaborn
+		has_country_flag = arkocean_mould_done_3_6
+
+	}
+	immediate = {
+		from = {
+			if = {
+				limit = {
+					leader_class = general
+				}
+				add_trait = leader_trait_seaborn_arm_strategic_mind
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ark_seaborn_evo.18
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		every_owned_leader = {
+			limit = {
+				leader_class = scientist
+				has_trait = leader_trait_seaborn_sci_simple_thoughts
+			}
+			remove_trait = leader_trait_seaborn_sci_simple_thoughts
+			add_trait = leader_trait_seaborn_sci_complex_thoughts
+		}
+		every_owned_leader = {
+			limit = {
+				leader_class = scientist
+				NOT = { has_trait = leader_trait_seaborn_sci_simple_thoughts }
+			}
+			add_trait = leader_trait_seaborn_sci_complex_thoughts
+		}
+		every_pool_leader = {
+			limit = {
+				leader_class = scientist
+				NOT = { has_trait = leader_trait_seaborn_sci_simple_thoughts }
+			}
+			add_trait = leader_trait_seaborn_sci_complex_thoughts
+		}
+		every_pool_leader = {
+			limit = {
+				leader_class = scientist
+				has_trait = leader_trait_seaborn_sci_simple_thoughts
+			}
+			remove_trait = leader_trait_seaborn_sci_simple_thoughts
+			add_trait = leader_trait_seaborn_sci_complex_thoughts
+		}
+	}
+}
+#战争胜利+5
+country_event = {
+	id = ark_seaborn_evo.19
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		root = {
+			has_country_flag = arknights_ocean_country
+			has_trait = trait_ARK_ocean_seaborn
+			has_origin = origin_ark_stella_caerula
+		}
+	}
+	immediate = {
+		root = {
+			add_resource = {
+				arkseaborn_cells = 5
+			}
+			change_variable = {
+				which = var_ark_seaborn_evolution_cell
+				value = 5
+			}
+		}
+	}
+}
+
+

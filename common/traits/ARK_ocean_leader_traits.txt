@@ -1,0 +1,74 @@
+leader_trait_ruler_seaborn = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/trait_ark_ocean_seaborn.dds"
+	modifier = {
+		country_unity_produces_mult = 0.15
+		country_food_produces_mult = 0.1
+	}
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	initial = no
+	randomized = no
+}
+leader_trait_Ishar_mla01 = { #回响意志
+	cost = 0
+	icon = "gfx/interface/icons/traits/trait_ark_ocean_Ishar_mla01.dds"
+	modifier = {
+		country_ruler_influence_produces_add = 1
+	}
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	initial = no
+	randomized = no
+}
+leader_trait_Ishar_mla02 = {#先祖导师
+	cost = 0
+	icon = "gfx/interface/icons/traits/trait_ark_ocean_Ishar_mla02.dds"
+	modifier = {
+		leader_skill_levels = 1
+		species_leader_exp_gain = 0.15
+	}
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	initial = no
+	randomized = no
+}
+
+
+leader_trait_seaborn_sci_simple_thoughts = {#简易思维
+	cost = 0
+	icon = "gfx/interface/icons/traits/trait_ark_ocean_simple_thought.dds"
+	modifier = {
+		all_technology_research_speed = -0.05
+		ship_anomaly_research_speed_mult = -0.1
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	initial = no
+	randomized = no
+}
+leader_trait_seaborn_sci_complex_thoughts = {#复杂回路
+	cost = 0
+	icon = "gfx/interface/icons/traits/trait_ark_ocean_complex_thought.dds"
+	modifier = {
+		all_technology_research_speed = 0.05
+		ship_anomaly_research_speed_mult = 0.1
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	initial = no
+	randomized = no
+}
+leader_trait_seaborn_arm_strategic_mind = {#战略思维
+	cost = 0
+	icon = "gfx/interface/icons/traits/trait_ark_ocean_army_stratigic_mind.dds"
+	modifier = {
+		army_morale = 0.33
+		army_morale_damage_mult = 0.10
+		army_collateral_damage_mult = -0.33
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	initial = no
+	randomized = no
+}

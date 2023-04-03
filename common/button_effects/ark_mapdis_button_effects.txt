@@ -1,0 +1,6490 @@
+
+#通用
+test_effeck_ark001 = {
+	potential = { always = yes }
+	allow = { always = 	yes }
+	effect = {
+		from = {
+			add_monthly_resource_mult = {
+				resource = minerals
+				value = 5
+				min = 5
+				max = 500
+			}
+		}
+	}
+}
+beffect_not_show = {
+	potential = {
+		always = no
+	}
+	allow = {
+		always = no
+	}
+	effect = {}
+}
+beffect_no_effect = {
+	potential = {
+		always = yes
+	}
+	allow = {
+		always = yes
+	}
+	effect = {}
+}
+
+#左下
+beffect_arkocean_reset_station = {
+	potential = {always = yes}
+	allow = {always = yes}
+	effect = {
+		custom_tooltip = arkocean_reset_station_tooltip
+		hidden_effect = {
+			from = {
+				country_event = {
+					id = ark_seaborn_evo.15
+				}
+			}
+		}
+	}
+}
+beffect_arkocean_reset_ruler = {
+	potential = {always = yes}
+	allow = {always = yes}
+	effect = {
+		custom_tooltip = arkocean_reset_ruler_tooltip
+		hidden_effect = {
+			from = {
+				country_event = {
+					id = ark_seaborn_base.11
+				}
+			}
+		}
+	}
+}
+beffect_arkocean_exchange_research = {
+	potential = {always = yes}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = arkocean_call_message_tooltip
+		from = {
+			add_resource = {
+				arkseaborn_cells = -1
+			}
+			add_monthly_resource_mult = {
+				resource = physics_research
+				value = @tier2researchreward
+				min = @tier2researchmin
+				max = @tier2researchmax
+			}
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = @tier3researchreward
+				min = @tier3researchmin
+				max = @tier3researchmax
+			}
+			add_monthly_resource_mult = {
+				resource = engineering_research
+				value = @tier1researchreward
+				min = @tier1researchmin
+				max = @tier1researchmax
+			}
+			change_variable = {
+				which = var_ark_seaborn_evolution_cell
+				value = -1
+			}
+		}
+	}
+}
+
+#1_1耐压组织
+beffect_arkocean_mould_1_1_waiting = {
+	potential = {
+		from = {
+			NOT = { has_technology = tech_corvettes }
+		}
+	}
+	allow = { always = yes }
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_1_1_waiting_tooltip
+	}
+}
+beffect_arkocean_mould_1_1_d1 = {
+	potential = {
+		from = {
+			has_technology = tech_corvettes
+			NOR = {
+				has_country_flag = arkocean_mould_done_1_1_d1
+				has_country_flag = arkocean_mould_done_1_1_d2
+				has_country_flag = arkocean_mould_done_1_1_d3
+				has_country_flag = arkocean_mould_done_1_1_d4
+				has_country_flag = arkocean_mould_done_1_1_d5
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_corvettes
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_1_1_d1_tooltip
+		hidden_effect = {
+			from = {
+				add_modifier = {
+					modifier = arkocean_mould_modifier_1_1a
+					days = -1
+				}
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				set_country_flag = arkocean_mould_done_1_1_d1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_1_1_d2 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_1_1_d1
+			NOR = {
+				has_country_flag = arkocean_mould_done_1_1_d2
+				has_country_flag = arkocean_mould_done_1_1_d3
+				has_country_flag = arkocean_mould_done_1_1_d4
+				has_country_flag = arkocean_mould_done_1_1_d5
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_destroyers
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_1_1_d2_tooltip
+		hidden_effect = {
+			from = {
+				add_modifier = {
+					modifier = arkocean_mould_modifier_1_1b
+					days = -1
+				}
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				set_country_flag = arkocean_mould_done_1_1_d2
+				remove_country_flag = arkocean_mould_done_1_1_d1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_1_1_d3 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_1_1_d2
+			NOR = {
+				has_country_flag = arkocean_mould_done_1_1_d1
+				has_country_flag = arkocean_mould_done_1_1_d3
+				has_country_flag = arkocean_mould_done_1_1_d4
+				has_country_flag = arkocean_mould_done_1_1_d5
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_cruisers
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_1_1_d3_tooltip
+		hidden_effect = {
+			from = {
+				add_modifier = {
+					modifier = arkocean_mould_modifier_1_1c
+					days = -1
+				}
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				set_country_flag = arkocean_mould_done_1_1_d3
+				remove_country_flag = arkocean_mould_done_1_1_d2
+			}
+		}
+	}
+}
+beffect_arkocean_mould_1_1_d4 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_1_1_d3
+			NOR = {
+				has_country_flag = arkocean_mould_done_1_1_d1
+				has_country_flag = arkocean_mould_done_1_1_d2
+				has_country_flag = arkocean_mould_done_1_1_d4
+				has_country_flag = arkocean_mould_done_1_1_d5
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_battleships
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_1_1_d4_tooltip
+		hidden_effect = {
+			from = {
+				add_modifier = {
+					modifier = arkocean_mould_modifier_1_1d
+					days = -1
+				}
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				set_country_flag = arkocean_mould_done_1_1_d4
+				remove_country_flag = arkocean_mould_done_1_1_d3
+			}
+		}
+	}
+}
+beffect_arkocean_mould_1_1_d5 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_1_1_d4
+			NOR = {
+				has_country_flag = arkocean_mould_done_1_1_d1
+				has_country_flag = arkocean_mould_done_1_1_d2
+				has_country_flag = arkocean_mould_done_1_1_d3
+				has_country_flag = arkocean_mould_done_1_1_d5
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_titans
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_1_1_d5_tooltip
+		hidden_effect = {
+			from = {
+				add_modifier = {
+					modifier = arkocean_mould_modifier_1_1e
+					days = -1
+				}
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				set_country_flag = arkocean_mould_done_1_1_d5
+				remove_country_flag = arkocean_mould_done_1_1_d4
+			}
+		}
+	}
+}
+beffect_arkocean_mould_level_1_1_d1 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_1_1_d1
+				has_country_flag = arkocean_mould_done_1_1_d2
+				has_country_flag = arkocean_mould_done_1_1_d3
+				has_country_flag = arkocean_mould_done_1_1_d4
+				has_country_flag = arkocean_mould_done_1_1_d5
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_1_1_d2 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_1_1_d2
+				has_country_flag = arkocean_mould_done_1_1_d3
+				has_country_flag = arkocean_mould_done_1_1_d4
+				has_country_flag = arkocean_mould_done_1_1_d5
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_1_1_d3 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_1_1_d3
+				has_country_flag = arkocean_mould_done_1_1_d4
+				has_country_flag = arkocean_mould_done_1_1_d5
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_1_1_d4 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_1_1_d4
+				has_country_flag = arkocean_mould_done_1_1_d5
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_1_1_d5 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_1_1_d5
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_done_1_1 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_1_1_d5
+		}
+	}
+	allow = { always = yes }
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_1_1_done_tooltip
+	}
+}
+
+#1_2附着导电层
+beffect_arkocean_mould_1_2_waiting = {
+	potential = {
+		from = {
+			OR = {
+				NOT = {has_technology = tech_shields_1}
+				NOR = {
+					has_country_flag = arkocean_mould_done_1_1_d1
+					has_country_flag = arkocean_mould_done_1_1_d2
+					has_country_flag = arkocean_mould_done_1_1_d3
+					has_country_flag = arkocean_mould_done_1_1_d4
+					has_country_flag = arkocean_mould_done_1_1_d5
+				}
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = { custom_tooltip = beffect_arkocean_mould_1_2_waiting_tooltip }
+}
+beffect_arkocean_mould_1_2_d1 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_1_1_d1
+				has_country_flag = arkocean_mould_done_1_1_d2
+				has_country_flag = arkocean_mould_done_1_1_d3
+				has_country_flag = arkocean_mould_done_1_1_d4
+				has_country_flag = arkocean_mould_done_1_1_d5
+			}
+			NOR = {
+				has_country_flag = arkocean_mould_done_1_2_d1
+				has_country_flag = arkocean_mould_done_1_2_d2
+				has_country_flag = arkocean_mould_done_1_2_d3
+				has_country_flag = arkocean_mould_done_1_2_d4
+				has_country_flag = arkocean_mould_done_1_2_d5
+				has_country_flag = arkocean_mould_done_1_2_d6
+			}
+			has_technology = tech_shields_1
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_shields_1
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_1_2_d1_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_1_2
+					value = 15
+				}
+				add_modifier = {
+					modifier = arkocean_mould_modifier_1_2
+					days = -1
+					mult = value:arkocean_mould_value_1_2
+				}
+				set_country_flag = arkocean_mould_done_1_2_d1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_1_2_d2 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_1_2_d1
+			NOR = {
+				has_country_flag = arkocean_mould_done_1_2_d2
+				has_country_flag = arkocean_mould_done_1_2_d3
+				has_country_flag = arkocean_mould_done_1_2_d4
+				has_country_flag = arkocean_mould_done_1_2_d5
+				has_country_flag = arkocean_mould_done_1_2_d6
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_shields_2
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_1_2_d2_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_1_2
+					value = 10
+				}
+				remove_modifier = arkocean_mould_modifier_1_2
+				add_modifier = {
+					modifier = arkocean_mould_modifier_1_2
+					days = -1
+					mult = value:arkocean_mould_value_1_2
+				}
+				set_country_flag = arkocean_mould_done_1_2_d2
+				remove_country_flag = arkocean_mould_done_1_2_d1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_1_2_d3 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_1_2_d2
+			NOR = {
+				has_country_flag = arkocean_mould_done_1_2_d1
+				has_country_flag = arkocean_mould_done_1_2_d3
+				has_country_flag = arkocean_mould_done_1_2_d4
+				has_country_flag = arkocean_mould_done_1_2_d5
+				has_country_flag = arkocean_mould_done_1_2_d6
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_shields_3
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_1_2_d3_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_1_2
+					value = 10
+				}
+				remove_modifier = arkocean_mould_modifier_1_2
+				add_modifier = {
+					modifier = arkocean_mould_modifier_1_2
+					days = -1
+					mult = value:arkocean_mould_value_1_2
+				}
+				set_country_flag = arkocean_mould_done_1_2_d3
+				remove_country_flag = arkocean_mould_done_1_2_d2
+			}
+		}
+	}
+}
+beffect_arkocean_mould_1_2_d4 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_1_2_d3
+			NOR = {
+				has_country_flag = arkocean_mould_done_1_2_d1
+				has_country_flag = arkocean_mould_done_1_2_d2
+				has_country_flag = arkocean_mould_done_1_2_d4
+				has_country_flag = arkocean_mould_done_1_2_d5
+				has_country_flag = arkocean_mould_done_1_2_d6
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_shields_4
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_1_2_d4_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_1_2
+					value = 8
+				}
+				remove_modifier = arkocean_mould_modifier_1_2
+				add_modifier = {
+					modifier = arkocean_mould_modifier_1_2
+					days = -1
+					mult = value:arkocean_mould_value_1_2
+				}
+				set_country_flag = arkocean_mould_done_1_2_d4
+				remove_country_flag = arkocean_mould_done_1_2_d3
+
+			}
+		}
+	}
+}
+beffect_arkocean_mould_1_2_d5 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_1_2_d4
+			NOR = {
+				has_country_flag = arkocean_mould_done_1_2_d1
+				has_country_flag = arkocean_mould_done_1_2_d2
+				has_country_flag = arkocean_mould_done_1_2_d3
+				has_country_flag = arkocean_mould_done_1_2_d5
+				has_country_flag = arkocean_mould_done_1_2_d6
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_shields_5
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_1_2_d5_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_1_2
+					value = 7
+				}
+				remove_modifier = arkocean_mould_modifier_1_2
+				add_modifier = {
+					modifier = arkocean_mould_modifier_1_2
+					days = -1
+					mult = value:arkocean_mould_value_1_2
+				}
+				set_country_flag = arkocean_mould_done_1_2_d5
+				remove_country_flag = arkocean_mould_done_1_2_d4
+
+			}
+		}
+	}
+}
+beffect_arkocean_mould_1_2_d6 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_1_2_d5
+			NOR = {
+				has_country_flag = arkocean_mould_done_1_2_d1
+				has_country_flag = arkocean_mould_done_1_2_d2
+				has_country_flag = arkocean_mould_done_1_2_d3
+				has_country_flag = arkocean_mould_done_1_2_d4
+				has_country_flag = arkocean_mould_done_1_2_d6
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			OR = {
+				has_technology = tech_psionic_shield
+				has_technology = tech_dark_matter_deflector
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_1_2_d6_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_1_2
+					value = 5
+				}
+				remove_modifier = arkocean_mould_modifier_1_2
+				add_modifier = {
+					modifier = arkocean_mould_modifier_1_2
+					days = -1
+					mult = value:arkocean_mould_value_1_2
+				}
+				set_country_flag = arkocean_mould_done_1_2_d6
+				remove_country_flag = arkocean_mould_done_1_2_d5
+
+			}
+		}
+	}
+}
+beffect_arkocean_mould_level_1_2_d1 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_1_2_d1
+				has_country_flag = arkocean_mould_done_1_2_d2
+				has_country_flag = arkocean_mould_done_1_2_d3
+				has_country_flag = arkocean_mould_done_1_2_d4
+				has_country_flag = arkocean_mould_done_1_2_d5
+				has_country_flag = arkocean_mould_done_1_2_d6
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_1_2_d2 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_1_2_d2
+				has_country_flag = arkocean_mould_done_1_2_d3
+				has_country_flag = arkocean_mould_done_1_2_d4
+				has_country_flag = arkocean_mould_done_1_2_d5
+				has_country_flag = arkocean_mould_done_1_2_d6
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_1_2_d3 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_1_2_d3
+				has_country_flag = arkocean_mould_done_1_2_d4
+				has_country_flag = arkocean_mould_done_1_2_d5
+				has_country_flag = arkocean_mould_done_1_2_d6
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_1_2_d4 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_1_2_d4
+				has_country_flag = arkocean_mould_done_1_2_d5
+				has_country_flag = arkocean_mould_done_1_2_d6
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_1_2_d5 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_1_2_d5
+				has_country_flag = arkocean_mould_done_1_2_d6
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_1_2_d6 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_1_2_d6
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_done_1_2 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_1_2_d6
+		}
+	}
+	allow = { always = yes }
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_1_2_done_tooltip
+	}
+}
+
+#1_3强化韧性外壳
+beffect_arkocean_mould_1_3_waiting = {
+	potential = {
+		from = {
+			OR = {
+				NOT = {has_technology = tech_ship_armor_1}
+				NOR = {
+					has_country_flag = arkocean_mould_done_1_2_d1
+					has_country_flag = arkocean_mould_done_1_2_d2
+					has_country_flag = arkocean_mould_done_1_2_d3
+					has_country_flag = arkocean_mould_done_1_2_d4
+					has_country_flag = arkocean_mould_done_1_2_d5
+					has_country_flag = arkocean_mould_done_1_2_d6
+				}
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = { custom_tooltip = beffect_arkocean_mould_1_3_waiting_tooltip }
+}
+beffect_arkocean_mould_1_3_d1 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_1_2_d1
+				has_country_flag = arkocean_mould_done_1_2_d2
+				has_country_flag = arkocean_mould_done_1_2_d3
+				has_country_flag = arkocean_mould_done_1_2_d4
+				has_country_flag = arkocean_mould_done_1_2_d5
+				has_country_flag = arkocean_mould_done_1_2_d6
+			}
+			NOR = {
+				has_country_flag = arkocean_mould_done_1_3_d1
+				has_country_flag = arkocean_mould_done_1_3_d2
+				has_country_flag = arkocean_mould_done_1_3_d3
+				has_country_flag = arkocean_mould_done_1_3_d4
+				has_country_flag = arkocean_mould_done_1_3_d5
+				has_country_flag = arkocean_mould_done_1_3_d6
+			}
+			has_technology = tech_ship_armor_1
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_ship_armor_1
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_1_3_d1_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_1_3
+					value = 15
+				}
+				add_modifier = {
+					modifier = arkocean_mould_modifier_1_3
+					days = -1
+					mult = value:arkocean_mould_value_1_3
+				}
+				set_country_flag = arkocean_mould_done_1_3_d1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_1_3_d2 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_1_3_d1
+			NOR = {
+				has_country_flag = arkocean_mould_done_1_3_d2
+				has_country_flag = arkocean_mould_done_1_3_d3
+				has_country_flag = arkocean_mould_done_1_3_d4
+				has_country_flag = arkocean_mould_done_1_3_d5
+				has_country_flag = arkocean_mould_done_1_3_d6
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_ship_armor_2
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_1_3_d2_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_1_3
+					value = 10
+				}
+				remove_modifier = arkocean_mould_modifier_1_3
+				add_modifier = {
+					modifier = arkocean_mould_modifier_1_3
+					days = -1
+					mult = value:arkocean_mould_value_1_3
+				}
+				set_country_flag = arkocean_mould_done_1_3_d2
+				remove_country_flag = arkocean_mould_done_1_3_d1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_1_3_d3 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_1_3_d2
+			NOR = {
+				has_country_flag = arkocean_mould_done_1_3_d1
+				has_country_flag = arkocean_mould_done_1_3_d3
+				has_country_flag = arkocean_mould_done_1_3_d4
+				has_country_flag = arkocean_mould_done_1_3_d5
+				has_country_flag = arkocean_mould_done_1_3_d6
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_ship_armor_3
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_1_3_d3_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_1_3
+					value = 10
+				}
+				remove_modifier = arkocean_mould_modifier_1_3
+				add_modifier = {
+					modifier = arkocean_mould_modifier_1_3
+					days = -1
+					mult = value:arkocean_mould_value_1_3
+				}
+				set_country_flag = arkocean_mould_done_1_3_d3
+				remove_country_flag = arkocean_mould_done_1_3_d2
+			}
+		}
+	}
+}
+beffect_arkocean_mould_1_3_d4 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_1_3_d3
+			NOR = {
+				has_country_flag = arkocean_mould_done_1_3_d1
+				has_country_flag = arkocean_mould_done_1_3_d2
+				has_country_flag = arkocean_mould_done_1_3_d4
+				has_country_flag = arkocean_mould_done_1_3_d5
+				has_country_flag = arkocean_mould_done_1_3_d6
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_ship_armor_4
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_1_3_d4_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_1_3
+					value = 8
+				}
+				remove_modifier = arkocean_mould_modifier_1_3
+				add_modifier = {
+					modifier = arkocean_mould_modifier_1_3
+					days = -1
+					mult = value:arkocean_mould_value_1_3
+				}
+				set_country_flag = arkocean_mould_done_1_3_d4
+				remove_country_flag = arkocean_mould_done_1_3_d3
+
+			}
+		}
+	}
+}
+beffect_arkocean_mould_1_3_d5 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_1_3_d4
+			NOR = {
+				has_country_flag = arkocean_mould_done_1_3_d1
+				has_country_flag = arkocean_mould_done_1_3_d2
+				has_country_flag = arkocean_mould_done_1_3_d3
+				has_country_flag = arkocean_mould_done_1_3_d5
+				has_country_flag = arkocean_mould_done_1_3_d6
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_ship_armor_5
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_1_3_d5_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_1_3
+					value = 7
+				}
+				remove_modifier = arkocean_mould_modifier_1_3
+				add_modifier = {
+					modifier = arkocean_mould_modifier_1_3
+					days = -1
+					mult = value:arkocean_mould_value_1_3
+				}
+				set_country_flag = arkocean_mould_done_1_3_d5
+				remove_country_flag = arkocean_mould_done_1_3_d4
+
+			}
+		}
+	}
+}
+beffect_arkocean_mould_1_3_d6 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_1_3_d5
+			NOR = {
+				has_country_flag = arkocean_mould_done_1_3_d1
+				has_country_flag = arkocean_mould_done_1_3_d2
+				has_country_flag = arkocean_mould_done_1_3_d3
+				has_country_flag = arkocean_mould_done_1_3_d4
+				has_country_flag = arkocean_mould_done_1_3_d6
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_dragon_armor
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_1_3_d6_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_1_3
+					value = 5
+				}
+				remove_modifier = arkocean_mould_modifier_1_3
+				add_modifier = {
+					modifier = arkocean_mould_modifier_1_3
+					days = -1
+					mult = value:arkocean_mould_value_1_3
+				}
+				set_country_flag = arkocean_mould_done_1_3_d6
+				remove_country_flag = arkocean_mould_done_1_3_d5
+
+			}
+		}
+	}
+}
+beffect_arkocean_mould_level_1_3_d1 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_1_3_d1
+				has_country_flag = arkocean_mould_done_1_3_d2
+				has_country_flag = arkocean_mould_done_1_3_d3
+				has_country_flag = arkocean_mould_done_1_3_d4
+				has_country_flag = arkocean_mould_done_1_3_d5
+				has_country_flag = arkocean_mould_done_1_3_d6
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_1_3_d2 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_1_3_d2
+				has_country_flag = arkocean_mould_done_1_3_d3
+				has_country_flag = arkocean_mould_done_1_3_d4
+				has_country_flag = arkocean_mould_done_1_3_d5
+				has_country_flag = arkocean_mould_done_1_3_d6
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_1_3_d3 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_1_3_d3
+				has_country_flag = arkocean_mould_done_1_3_d4
+				has_country_flag = arkocean_mould_done_1_3_d5
+				has_country_flag = arkocean_mould_done_1_3_d6
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_1_3_d4 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_1_3_d4
+				has_country_flag = arkocean_mould_done_1_3_d5
+				has_country_flag = arkocean_mould_done_1_3_d6
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_1_3_d5 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_1_3_d5
+				has_country_flag = arkocean_mould_done_1_3_d6
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_1_3_d6 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_1_3_d6
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_done_1_3 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_1_3_d6
+		}
+	}
+	allow = { always = yes }
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_1_3_done_tooltip
+	}
+}
+
+
+#1_4真空代谢
+beffect_arkocean_mould_1_4_waiting = {
+	potential = {
+		from = {
+			OR = {
+				NOT = {has_technology = tech_ship_armor_1}
+				NOR = {
+					has_country_flag = arkocean_mould_done_1_3_d1
+					has_country_flag = arkocean_mould_done_1_3_d2
+					has_country_flag = arkocean_mould_done_1_3_d3
+					has_country_flag = arkocean_mould_done_1_3_d4
+					has_country_flag = arkocean_mould_done_1_3_d5
+					has_country_flag = arkocean_mould_done_1_3_d6
+				}
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = { custom_tooltip = beffect_arkocean_mould_1_4_waiting_tooltip }
+}
+beffect_arkocean_mould_1_4_d1 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_1_3_d1
+				has_country_flag = arkocean_mould_done_1_3_d2
+				has_country_flag = arkocean_mould_done_1_3_d3
+				has_country_flag = arkocean_mould_done_1_3_d4
+				has_country_flag = arkocean_mould_done_1_3_d5
+				has_country_flag = arkocean_mould_done_1_3_d6
+			}
+			NOR = {
+				has_country_flag = arkocean_mould_done_1_4_d1
+				has_country_flag = arkocean_mould_done_1_4_d2
+				has_country_flag = arkocean_mould_done_1_4_d3
+				has_country_flag = arkocean_mould_done_1_4_d4
+				has_country_flag = arkocean_mould_done_1_4_d5
+			}
+			has_technology = tech_thrusters_1
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_thrusters_1
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_1_4_d1_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_1_4
+					value = 3
+				}
+				add_modifier = {
+					modifier = arkocean_mould_modifier_1_4
+					days = -1
+					mult = value:arkocean_mould_value_1_4
+				}
+				set_country_flag = arkocean_mould_done_1_4_d1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_1_4_d2 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_1_4_d1
+			NOR = {
+				has_country_flag = arkocean_mould_done_1_4_d2
+				has_country_flag = arkocean_mould_done_1_4_d3
+				has_country_flag = arkocean_mould_done_1_4_d4
+				has_country_flag = arkocean_mould_done_1_4_d5
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_thrusters_2
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_1_4_d2_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_1_4
+					value = 5
+				}
+				remove_modifier = arkocean_mould_modifier_1_4
+				add_modifier = {
+					modifier = arkocean_mould_modifier_1_4
+					days = -1
+					mult = value:arkocean_mould_value_1_4
+				}
+				set_country_flag = arkocean_mould_done_1_4_d2
+				remove_country_flag = arkocean_mould_done_1_4_d1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_1_4_d3 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_1_4_d2
+			NOR = {
+				has_country_flag = arkocean_mould_done_1_4_d1
+				has_country_flag = arkocean_mould_done_1_4_d3
+				has_country_flag = arkocean_mould_done_1_4_d4
+				has_country_flag = arkocean_mould_done_1_4_d5
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_thrusters_3
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_1_4_d3_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_1_4
+					value = 7
+				}
+				remove_modifier = arkocean_mould_modifier_1_4
+				add_modifier = {
+					modifier = arkocean_mould_modifier_1_4
+					days = -1
+					mult = value:arkocean_mould_value_1_4
+				}
+				set_country_flag = arkocean_mould_done_1_4_d3
+				remove_country_flag = arkocean_mould_done_1_4_d2
+			}
+		}
+	}
+}
+beffect_arkocean_mould_1_4_d4 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_1_4_d3
+			NOR = {
+				has_country_flag = arkocean_mould_done_1_4_d1
+				has_country_flag = arkocean_mould_done_1_4_d2
+				has_country_flag = arkocean_mould_done_1_4_d4
+				has_country_flag = arkocean_mould_done_1_4_d5
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_thrusters_4
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_1_4_d4_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_1_4
+					value = 7
+				}
+				remove_modifier = arkocean_mould_modifier_1_4
+				add_modifier = {
+					modifier = arkocean_mould_modifier_1_4
+					days = -1
+					mult = value:arkocean_mould_value_1_4
+				}
+				set_country_flag = arkocean_mould_done_1_4_d4
+				remove_country_flag = arkocean_mould_done_1_4_d3
+
+			}
+		}
+	}
+}
+beffect_arkocean_mould_1_4_d5 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_1_4_d4
+			NOR = {
+				has_country_flag = arkocean_mould_done_1_4_d1
+				has_country_flag = arkocean_mould_done_1_4_d2
+				has_country_flag = arkocean_mould_done_1_4_d3
+				has_country_flag = arkocean_mould_done_1_4_d5
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_dark_matter_propulsion
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_1_4_d5_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_1_4
+					value = 8
+				}
+				remove_modifier = arkocean_mould_modifier_1_4
+				add_modifier = {
+					modifier = arkocean_mould_modifier_1_4
+					days = -1
+					mult = value:arkocean_mould_value_1_4
+				}
+				set_country_flag = arkocean_mould_done_1_4_d5
+				remove_country_flag = arkocean_mould_done_1_4_d4
+
+			}
+		}
+	}
+}
+beffect_arkocean_mould_level_1_4_d1 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_1_4_d1
+				has_country_flag = arkocean_mould_done_1_4_d2
+				has_country_flag = arkocean_mould_done_1_4_d3
+				has_country_flag = arkocean_mould_done_1_4_d4
+				has_country_flag = arkocean_mould_done_1_4_d5
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_1_4_d2 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_1_4_d2
+				has_country_flag = arkocean_mould_done_1_4_d3
+				has_country_flag = arkocean_mould_done_1_4_d4
+				has_country_flag = arkocean_mould_done_1_4_d5
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_1_4_d3 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_1_4_d3
+				has_country_flag = arkocean_mould_done_1_4_d4
+				has_country_flag = arkocean_mould_done_1_4_d5
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_1_4_d4 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_1_4_d4
+				has_country_flag = arkocean_mould_done_1_4_d5
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_1_4_d5 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_1_4_d5
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_done_1_4 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_1_4_d5
+		}
+	}
+	allow = { always = yes }
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_1_4_done_tooltip
+	}
+}
+
+#1_6有机体维度适应
+beffect_arkocean_mould_1_6_waiting = {
+	potential = {
+		from = {
+			OR = {
+				NOT = {has_technology = tech_jump_drive_1}
+				NOR = {
+					has_country_flag = arkocean_mould_done_1_4_d1
+					has_country_flag = arkocean_mould_done_1_4_d2
+					has_country_flag = arkocean_mould_done_1_4_d3
+					has_country_flag = arkocean_mould_done_1_4_d4
+					has_country_flag = arkocean_mould_done_1_4_d5
+				}
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = { custom_tooltip = beffect_arkocean_mould_1_6_waiting_tooltip }
+}
+beffect_arkocean_mould_1_6 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_1_4_d1
+				has_country_flag = arkocean_mould_done_1_4_d2
+				has_country_flag = arkocean_mould_done_1_4_d3
+				has_country_flag = arkocean_mould_done_1_4_d4
+				has_country_flag = arkocean_mould_done_1_4_d5
+			}
+			check_variable = {
+				which = var_ark_seaborn_mould_1_6_times
+				value < 25
+			}
+			has_technology = tech_jump_drive_1
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			check_variable = {
+				which = var_ark_seaborn_mould_1_6_times
+				value < 25
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_1_6_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_1_6
+					value = 2
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_1_6_times
+					value = 1
+				}
+				add_modifier = {
+					modifier = arkocean_mould_modifier_1_6
+					days = -1
+					mult = value:arkocean_mould_value_1_6
+				}
+				set_country_flag = arkocean_mould_done_1_6
+			}
+		}
+	}
+}
+beffect_arkocean_mould_done_1_6 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_1_6
+			check_variable = {
+				which = var_ark_seaborn_mould_1_6_times
+				value >= 25
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_1_6_done_tooltip
+	}
+}
+
+#2_1聚焦晶状体
+beffect_arkocean_mould_2_1_waiting = {
+	potential = {
+		from = {
+			NOT = { has_technology = tech_lasers_1 }
+		}
+	}
+	allow = { always = yes }
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_2_1_waiting_tooltip
+	}
+}
+beffect_arkocean_mould_2_1_d1 = {
+	potential = {
+		from = {
+			has_technology = tech_lasers_1
+			NOR = {
+				has_country_flag = arkocean_mould_done_2_1_d1
+				has_country_flag = arkocean_mould_done_2_1_d2
+				has_country_flag = arkocean_mould_done_2_1_d3
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_lasers_1
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_2_1_d1_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_2_1
+					value = 10
+				}
+				add_modifier = {
+					modifier = arkocean_mould_modifier_2_1
+					days = -1
+					mult = value:arkocean_mould_value_2_1
+				}
+				set_country_flag = arkocean_mould_done_2_1_d1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_2_1_d2 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_2_1_d1
+			NOR = {
+				has_country_flag = arkocean_mould_done_2_1_d2
+				has_country_flag = arkocean_mould_done_2_1_d3
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_lasers_2
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_2_1_d2_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_2_1
+					value = 8
+				}
+				remove_modifier = arkocean_mould_modifier_2_1
+				add_modifier = {
+					modifier = arkocean_mould_modifier_2_1
+					days = -1
+					mult = value:arkocean_mould_value_2_1
+				}
+				set_country_flag = arkocean_mould_done_2_1_d2
+				remove_country_flag = arkocean_mould_done_2_1_d1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_2_1_d3 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_2_1_d2
+			NOR = {
+				has_country_flag = arkocean_mould_done_2_1_d1
+				has_country_flag = arkocean_mould_done_2_1_d3
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_lasers_3
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_2_1_d3_tooltip
+		hidden_effect = {
+			from = {
+				add_modifier = {
+					modifier = arkocean_mould_modifier_2_1
+					days = -1
+				}
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_2_1
+					value = 7
+				}
+				remove_modifier = arkocean_mould_modifier_2_1
+				add_modifier = {
+					modifier = arkocean_mould_modifier_2_1
+					days = -1
+					mult = value:arkocean_mould_value_2_1
+				}
+				set_country_flag = arkocean_mould_done_2_1_d3
+				remove_country_flag = arkocean_mould_done_2_1_d2
+			}
+		}
+	}
+}
+beffect_arkocean_mould_level_2_1_d1 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_2_1_d1
+				has_country_flag = arkocean_mould_done_2_1_d2
+				has_country_flag = arkocean_mould_done_2_1_d3
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_2_1_d2 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_2_1_d2
+				has_country_flag = arkocean_mould_done_2_1_d3
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_2_1_d3 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_2_1_d3
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_done_2_1 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_2_1_d3
+		}
+	}
+	allow = { always = yes }
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_2_1_done_tooltip
+	}
+}
+
+#2_2弹性骨骼肌
+beffect_arkocean_mould_2_2_waiting = {
+	potential = {
+		from = {
+			OR = {
+				NOT = {has_technology = tech_mass_drivers_1}
+				NOR = {
+					has_country_flag = arkocean_mould_done_2_1_d1
+					has_country_flag = arkocean_mould_done_2_1_d2
+					has_country_flag = arkocean_mould_done_2_1_d3
+				}
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = { custom_tooltip = beffect_arkocean_mould_2_2_waiting_tooltip }
+}
+beffect_arkocean_mould_2_2_d1 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_2_1_d1
+				has_country_flag = arkocean_mould_done_2_1_d2
+				has_country_flag = arkocean_mould_done_2_1_d3
+			}
+			NOR = {
+				has_country_flag = arkocean_mould_done_2_2_d1
+				has_country_flag = arkocean_mould_done_2_2_d2
+				has_country_flag = arkocean_mould_done_2_2_d3
+			}
+			has_technology = tech_mass_drivers_1
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_mass_drivers_1
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_2_2_d1_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_2_2
+					value = 10
+				}
+				add_modifier = {
+					modifier = arkocean_mould_modifier_2_2
+					days = -1
+					mult = value:arkocean_mould_value_2_2
+				}
+				set_country_flag = arkocean_mould_done_2_2_d1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_2_2_d2 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_2_2_d1
+			NOR = {
+				has_country_flag = arkocean_mould_done_2_2_d2
+				has_country_flag = arkocean_mould_done_2_2_d3
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_mass_drivers_2
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_2_2_d2_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_2_2
+					value = 8
+				}
+				remove_modifier = arkocean_mould_modifier_2_2
+				add_modifier = {
+					modifier = arkocean_mould_modifier_2_2
+					days = -1
+					mult = value:arkocean_mould_value_2_2
+				}
+				set_country_flag = arkocean_mould_done_2_2_d2
+				remove_country_flag = arkocean_mould_done_2_2_d1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_2_2_d3 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_2_2_d2
+			NOR = {
+				has_country_flag = arkocean_mould_done_2_2_d1
+				has_country_flag = arkocean_mould_done_2_2_d3
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_mass_drivers_3
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_2_2_d3_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_2_2
+					value = 7
+				}
+				remove_modifier = arkocean_mould_modifier_2_2
+				add_modifier = {
+					modifier = arkocean_mould_modifier_2_2
+					days = -1
+					mult = value:arkocean_mould_value_2_2
+				}
+				set_country_flag = arkocean_mould_done_2_2_d3
+				remove_country_flag = arkocean_mould_done_2_2_d2
+			}
+		}
+	}
+}
+beffect_arkocean_mould_level_2_2_d1 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_2_2_d1
+				has_country_flag = arkocean_mould_done_2_2_d2
+				has_country_flag = arkocean_mould_done_2_2_d3
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_2_2_d2 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_2_2_d2
+				has_country_flag = arkocean_mould_done_2_2_d3
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_2_2_d3 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_2_2_d3
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_done_2_2 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_2_2_d3
+		}
+	}
+	allow = { always = yes }
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_2_2_done_tooltip
+	}
+}
+
+#2_3蜂群战术规划
+beffect_arkocean_mould_2_3_waiting = {
+	potential = {
+		from = {
+			OR = {
+				NOT = {has_technology = tech_strike_craft_1}
+				NOR = {
+					has_country_flag = arkocean_mould_done_2_2_d1
+					has_country_flag = arkocean_mould_done_2_2_d2
+					has_country_flag = arkocean_mould_done_2_2_d3
+				}
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = { custom_tooltip = beffect_arkocean_mould_2_3_waiting_tooltip }
+}
+beffect_arkocean_mould_2_3_d1 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_2_2_d1
+				has_country_flag = arkocean_mould_done_2_2_d2
+				has_country_flag = arkocean_mould_done_2_2_d3
+			}
+			NOR = {
+				has_country_flag = arkocean_mould_done_2_3_d1
+				has_country_flag = arkocean_mould_done_2_3_d2
+				has_country_flag = arkocean_mould_done_2_3_d3
+			}
+			has_technology = tech_strike_craft_1
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_strike_craft_1
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_2_3_d1_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_2_3
+					value = 10
+				}
+				add_modifier = {
+					modifier = arkocean_mould_modifier_2_3
+					days = -1
+					mult = value:arkocean_mould_value_2_3
+				}
+				set_country_flag = arkocean_mould_done_2_3_d1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_2_3_d2 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_2_3_d1
+			NOR = {
+				has_country_flag = arkocean_mould_done_2_3_d2
+				has_country_flag = arkocean_mould_done_2_3_d3
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_strike_craft_2
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_2_3_d2_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_2_3
+					value = 8
+				}
+				remove_modifier = arkocean_mould_modifier_2_3
+				add_modifier = {
+					modifier = arkocean_mould_modifier_2_3
+					days = -1
+					mult = value:arkocean_mould_value_2_3
+				}
+				set_country_flag = arkocean_mould_done_2_3_d2
+				remove_country_flag = arkocean_mould_done_2_3_d1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_2_3_d3 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_2_3_d2
+			NOR = {
+				has_country_flag = arkocean_mould_done_2_3_d1
+				has_country_flag = arkocean_mould_done_2_3_d3
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_strike_craft_3
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_2_3_d3_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_2_3
+					value = 7
+				}
+				remove_modifier = arkocean_mould_modifier_2_3
+				add_modifier = {
+					modifier = arkocean_mould_modifier_2_3
+					days = -1
+					mult = value:arkocean_mould_value_2_3
+				}
+				set_country_flag = arkocean_mould_done_2_3_d3
+				remove_country_flag = arkocean_mould_done_2_3_d2
+			}
+		}
+	}
+}
+beffect_arkocean_mould_level_2_3_d1 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_2_3_d1
+				has_country_flag = arkocean_mould_done_2_3_d2
+				has_country_flag = arkocean_mould_done_2_3_d3
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_2_3_d2 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_2_3_d2
+				has_country_flag = arkocean_mould_done_2_3_d3
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_2_3_d3 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_2_3_d3
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_done_2_3 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_2_3_d3
+		}
+	}
+	allow = { always = yes }
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_2_3_done_tooltip
+	}
+}
+
+#2_5神经加速
+beffect_arkocean_mould_2_5_waiting = {
+	potential = {
+		from = {
+			OR = {
+				NOR = {
+					has_country_flag = arkocean_mould_done_2_3_d1
+					has_country_flag = arkocean_mould_done_2_3_d2
+					has_country_flag = arkocean_mould_done_2_3_d3
+				}
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = { custom_tooltip = beffect_arkocean_mould_2_5_waiting_tooltip }
+}
+beffect_arkocean_mould_2_5_d1 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_2_3_d1
+				has_country_flag = arkocean_mould_done_2_3_d2
+				has_country_flag = arkocean_mould_done_2_3_d3
+			}
+			NOR = {
+				has_country_flag = arkocean_mould_done_2_5_d1
+				has_country_flag = arkocean_mould_done_2_5_d2
+				has_country_flag = arkocean_mould_done_2_5_d3
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_2_5_d1_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_2_5
+					value = 10
+				}
+				add_modifier = {
+					modifier = arkocean_mould_modifier_2_5
+					days = -1
+					mult = value:arkocean_mould_value_2_5
+				}
+				set_country_flag = arkocean_mould_done_2_5_d1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_2_5_d2 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_2_5_d1
+			NOR = {
+				has_country_flag = arkocean_mould_done_2_5_d2
+				has_country_flag = arkocean_mould_done_2_5_d3
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_2_5_d2_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_2_5
+					value = 8
+				}
+				remove_modifier = arkocean_mould_modifier_2_5
+				add_modifier = {
+					modifier = arkocean_mould_modifier_2_5
+					days = -1
+					mult = value:arkocean_mould_value_2_5
+				}
+				set_country_flag = arkocean_mould_done_2_5_d2
+				remove_country_flag = arkocean_mould_done_2_5_d1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_2_5_d3 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_2_5_d2
+			NOR = {
+				has_country_flag = arkocean_mould_done_2_5_d1
+				has_country_flag = arkocean_mould_done_2_5_d3
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_2_5_d3_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_2_5
+					value = 7
+				}
+				remove_modifier = arkocean_mould_modifier_2_5
+				add_modifier = {
+					modifier = arkocean_mould_modifier_2_5
+					days = -1
+					mult = value:arkocean_mould_value_2_5
+				}
+				set_country_flag = arkocean_mould_done_2_5_d3
+				remove_country_flag = arkocean_mould_done_2_5_d2
+			}
+		}
+	}
+}
+beffect_arkocean_mould_level_2_5_d1 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_2_5_d1
+				has_country_flag = arkocean_mould_done_2_5_d2
+				has_country_flag = arkocean_mould_done_2_5_d3
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_2_5_d2 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_2_5_d2
+				has_country_flag = arkocean_mould_done_2_5_d3
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_2_5_d3 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_2_5_d3
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_done_2_5 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_2_5_d3
+		}
+	}
+	allow = { always = yes }
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_2_5_done_tooltip
+	}
+}
+
+#2_6群体同步
+beffect_arkocean_mould_2_6_waiting = {
+	potential = {
+		from = {
+			OR = {
+				NOT = {has_technology = tech_thrusters_1}
+				NOR = {
+					has_country_flag = arkocean_mould_done_2_5_d1
+					has_country_flag = arkocean_mould_done_2_5_d2
+					has_country_flag = arkocean_mould_done_2_5_d3
+				}
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = { custom_tooltip = beffect_arkocean_mould_2_6_waiting_tooltip }
+}
+beffect_arkocean_mould_2_6_d1 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_2_5_d1
+				has_country_flag = arkocean_mould_done_2_5_d2
+				has_country_flag = arkocean_mould_done_2_5_d3
+			}
+			NOR = {
+				has_country_flag = arkocean_mould_done_2_6_d1
+				has_country_flag = arkocean_mould_done_2_6_d2
+				has_country_flag = arkocean_mould_done_2_6_d3
+				has_country_flag = arkocean_mould_done_2_6_d4
+				has_country_flag = arkocean_mould_done_2_6_d5
+			}
+			has_technology = tech_thrusters_1
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_thrusters_1
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_2_6_d1_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_2_6
+					value = 10
+				}
+				add_modifier = {
+					modifier = arkocean_mould_modifier_2_6
+					days = -1
+					mult = value:arkocean_mould_value_2_6
+				}
+				set_country_flag = arkocean_mould_done_2_6_d1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_2_6_d2 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_2_6_d1
+			NOR = {
+				has_country_flag = arkocean_mould_done_2_6_d2
+				has_country_flag = arkocean_mould_done_2_6_d3
+				has_country_flag = arkocean_mould_done_2_6_d4
+				has_country_flag = arkocean_mould_done_2_6_d5
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_thrusters_2
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_2_6_d2_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_2_6
+					value = 10
+				}
+				remove_modifier = arkocean_mould_modifier_2_6
+				add_modifier = {
+					modifier = arkocean_mould_modifier_2_6
+					days = -1
+					mult = value:arkocean_mould_value_2_6
+				}
+				set_country_flag = arkocean_mould_done_2_6_d2
+				remove_country_flag = arkocean_mould_done_2_6_d1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_2_6_d3 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_2_6_d2
+			NOR = {
+				has_country_flag = arkocean_mould_done_2_6_d1
+				has_country_flag = arkocean_mould_done_2_6_d3
+				has_country_flag = arkocean_mould_done_2_6_d4
+				has_country_flag = arkocean_mould_done_2_6_d5
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_thrusters_3
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_2_6_d3_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_2_6
+					value = 8
+				}
+				remove_modifier = arkocean_mould_modifier_2_6
+				add_modifier = {
+					modifier = arkocean_mould_modifier_2_6
+					days = -1
+					mult = value:arkocean_mould_value_2_6
+				}
+				set_country_flag = arkocean_mould_done_2_6_d3
+				remove_country_flag = arkocean_mould_done_2_6_d2
+			}
+		}
+	}
+}
+beffect_arkocean_mould_2_6_d4 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_2_6_d3
+			NOR = {
+				has_country_flag = arkocean_mould_done_2_6_d1
+				has_country_flag = arkocean_mould_done_2_6_d2
+				has_country_flag = arkocean_mould_done_2_6_d4
+				has_country_flag = arkocean_mould_done_2_6_d5
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_thrusters_4
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_2_6_d4_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_2_6
+					value = 6
+				}
+				remove_modifier = arkocean_mould_modifier_2_6
+				add_modifier = {
+					modifier = arkocean_mould_modifier_2_6
+					days = -1
+					mult = value:arkocean_mould_value_2_6
+				}
+				set_country_flag = arkocean_mould_done_2_6_d4
+				remove_country_flag = arkocean_mould_done_2_6_d3
+
+			}
+		}
+	}
+}
+beffect_arkocean_mould_2_6_d5 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_2_6_d4
+			NOR = {
+				has_country_flag = arkocean_mould_done_2_6_d1
+				has_country_flag = arkocean_mould_done_2_6_d2
+				has_country_flag = arkocean_mould_done_2_6_d3
+				has_country_flag = arkocean_mould_done_2_6_d5
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+			has_technology = tech_dark_matter_propulsion
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_2_6_d5_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_2_6
+					value = 6
+				}
+				remove_modifier = arkocean_mould_modifier_2_6
+				add_modifier = {
+					modifier = arkocean_mould_modifier_2_6
+					days = -1
+					mult = value:arkocean_mould_value_2_6
+				}
+				set_country_flag = arkocean_mould_done_2_6_d5
+				remove_country_flag = arkocean_mould_done_2_6_d4
+
+			}
+		}
+	}
+}
+beffect_arkocean_mould_level_2_6_d1 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_2_6_d1
+				has_country_flag = arkocean_mould_done_2_6_d2
+				has_country_flag = arkocean_mould_done_2_6_d3
+				has_country_flag = arkocean_mould_done_2_6_d4
+				has_country_flag = arkocean_mould_done_2_6_d5
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_2_6_d2 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_2_6_d2
+				has_country_flag = arkocean_mould_done_2_6_d3
+				has_country_flag = arkocean_mould_done_2_6_d4
+				has_country_flag = arkocean_mould_done_2_6_d5
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_2_6_d3 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_2_6_d3
+				has_country_flag = arkocean_mould_done_2_6_d4
+				has_country_flag = arkocean_mould_done_2_6_d5
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_2_6_d4 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_2_6_d4
+				has_country_flag = arkocean_mould_done_2_6_d5
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_2_6_d5 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_2_6_d5
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_done_2_6 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_2_6_d5
+		}
+	}
+	allow = { always = yes }
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_2_6_done_tooltip
+	}
+}
+
+#3_1锋利骨刺
+beffect_arkocean_mould_3_1_waiting = {
+	potential = {
+		always = no
+	}
+	allow = { always = yes }
+	effect = { #custom_tooltip = beffect_arkocean_mould_3_1_waiting_tooltip
+	}
+}
+beffect_arkocean_mould_3_1_d1 = {
+	potential = {
+		from = {
+			NOR = {
+				has_country_flag = arkocean_mould_done_3_1_d1
+				has_country_flag = arkocean_mould_done_3_1_d2
+				has_country_flag = arkocean_mould_done_3_1_d3
+				has_country_flag = arkocean_mould_done_3_1_d4
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_3_1_d1_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_3_1
+					value = 10
+				}
+				add_modifier = {
+					modifier = arkocean_mould_modifier_3_1
+					days = -1
+					mult = value:arkocean_mould_value_3_1
+				}
+				set_country_flag = arkocean_mould_done_3_1_d1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_3_1_d2 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_3_1_d1
+			NOR = {
+				has_country_flag = arkocean_mould_done_3_1_d2
+				has_country_flag = arkocean_mould_done_3_1_d3
+				has_country_flag = arkocean_mould_done_3_1_d4
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_3_1_d2_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_3_1
+					value = 10
+				}
+				remove_modifier = arkocean_mould_modifier_3_1
+				add_modifier = {
+					modifier = arkocean_mould_modifier_3_1
+					days = -1
+					mult = value:arkocean_mould_value_3_1
+				}
+				set_country_flag = arkocean_mould_done_3_1_d2
+				remove_country_flag = arkocean_mould_done_3_1_d1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_3_1_d3 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_3_1_d2
+			NOR = {
+				has_country_flag = arkocean_mould_done_3_1_d1
+				has_country_flag = arkocean_mould_done_3_1_d3
+				has_country_flag = arkocean_mould_done_3_1_d4
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_3_1_d3_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_3_1
+					value = 10
+				}
+				remove_modifier = arkocean_mould_modifier_3_1
+				add_modifier = {
+					modifier = arkocean_mould_modifier_3_1
+					days = -1
+					mult = value:arkocean_mould_value_3_1
+				}
+				set_country_flag = arkocean_mould_done_3_1_d3
+				remove_country_flag = arkocean_mould_done_3_1_d2
+			}
+		}
+	}
+}
+beffect_arkocean_mould_3_1_d4 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_3_1_d3
+			NOR = {
+				has_country_flag = arkocean_mould_done_3_1_d1
+				has_country_flag = arkocean_mould_done_3_1_d2
+				has_country_flag = arkocean_mould_done_3_1_d4
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_3_1_d4_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_3_1
+					value = 10
+				}
+				remove_modifier = arkocean_mould_modifier_3_1
+				add_modifier = {
+					modifier = arkocean_mould_modifier_3_1
+					days = -1
+					mult = value:arkocean_mould_value_3_1
+				}
+				set_country_flag = arkocean_mould_done_3_1_d4
+				remove_country_flag = arkocean_mould_done_3_1_d3
+
+			}
+		}
+	}
+}
+beffect_arkocean_mould_level_3_1_d1 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_3_1_d1
+				has_country_flag = arkocean_mould_done_3_1_d2
+				has_country_flag = arkocean_mould_done_3_1_d3
+				has_country_flag = arkocean_mould_done_3_1_d4
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_3_1_d2 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_3_1_d2
+				has_country_flag = arkocean_mould_done_3_1_d3
+				has_country_flag = arkocean_mould_done_3_1_d4
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_3_1_d3 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_3_1_d3
+				has_country_flag = arkocean_mould_done_3_1_d4
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_3_1_d4 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_3_1_d4
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_done_3_1 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_3_1_d4
+		}
+	}
+	allow = { always = yes }
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_3_1_done_tooltip
+	}
+}
+
+#3_2壳状防御
+beffect_arkocean_mould_3_2_waiting = {
+	potential = {
+		from = {
+			OR = {
+				NOR = {
+					has_country_flag = arkocean_mould_done_3_1_d1
+					has_country_flag = arkocean_mould_done_3_1_d2
+					has_country_flag = arkocean_mould_done_3_1_d3
+					has_country_flag = arkocean_mould_done_3_1_d4
+				}
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = { custom_tooltip = beffect_arkocean_mould_3_2_waiting_tooltip }
+}
+beffect_arkocean_mould_3_2_d1 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_3_1_d1
+				has_country_flag = arkocean_mould_done_3_1_d2
+				has_country_flag = arkocean_mould_done_3_1_d3
+				has_country_flag = arkocean_mould_done_3_1_d4
+			}
+			NOR = {
+				has_country_flag = arkocean_mould_done_3_2_d1
+				has_country_flag = arkocean_mould_done_3_2_d2
+				has_country_flag = arkocean_mould_done_3_2_d3
+				has_country_flag = arkocean_mould_done_3_2_d4
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_3_2_d1_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_3_2
+					value = 10
+				}
+				add_modifier = {
+					modifier = arkocean_mould_modifier_3_2
+					days = -1
+					mult = value:arkocean_mould_value_3_2
+				}
+				set_country_flag = arkocean_mould_done_3_2_d1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_3_2_d2 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_3_2_d1
+			NOR = {
+				has_country_flag = arkocean_mould_done_3_2_d2
+				has_country_flag = arkocean_mould_done_3_2_d3
+				has_country_flag = arkocean_mould_done_3_2_d4
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_3_2_d2_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_3_2
+					value = 10
+				}
+				remove_modifier = arkocean_mould_modifier_3_2
+				add_modifier = {
+					modifier = arkocean_mould_modifier_3_2
+					days = -1
+					mult = value:arkocean_mould_value_3_2
+				}
+				set_country_flag = arkocean_mould_done_3_2_d2
+				remove_country_flag = arkocean_mould_done_3_2_d1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_3_2_d3 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_3_2_d2
+			NOR = {
+				has_country_flag = arkocean_mould_done_3_2_d1
+				has_country_flag = arkocean_mould_done_3_2_d3
+				has_country_flag = arkocean_mould_done_3_2_d4
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_3_2_d3_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_3_2
+					value = 10
+				}
+				remove_modifier = arkocean_mould_modifier_3_2
+				add_modifier = {
+					modifier = arkocean_mould_modifier_3_2
+					days = -1
+					mult = value:arkocean_mould_value_3_2
+				}
+				set_country_flag = arkocean_mould_done_3_2_d3
+				remove_country_flag = arkocean_mould_done_3_2_d2
+			}
+		}
+	}
+}
+beffect_arkocean_mould_3_2_d4 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_3_2_d3
+			NOR = {
+				has_country_flag = arkocean_mould_done_3_2_d1
+				has_country_flag = arkocean_mould_done_3_2_d2
+				has_country_flag = arkocean_mould_done_3_2_d4
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_3_2_d4_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_3_2
+					value = 10
+				}
+				remove_modifier = arkocean_mould_modifier_3_2
+				add_modifier = {
+					modifier = arkocean_mould_modifier_3_2
+					days = -1
+					mult = value:arkocean_mould_value_3_2
+				}
+				set_country_flag = arkocean_mould_done_3_2_d4
+				remove_country_flag = arkocean_mould_done_3_2_d3
+
+			}
+		}
+	}
+}
+beffect_arkocean_mould_level_3_2_d1 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_3_2_d1
+				has_country_flag = arkocean_mould_done_3_2_d2
+				has_country_flag = arkocean_mould_done_3_2_d3
+				has_country_flag = arkocean_mould_done_3_2_d4
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_3_2_d2 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_3_2_d2
+				has_country_flag = arkocean_mould_done_3_2_d3
+				has_country_flag = arkocean_mould_done_3_2_d4
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_3_2_d3 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_3_2_d3
+				has_country_flag = arkocean_mould_done_3_2_d4
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_3_2_d4 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_3_2_d4
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_done_3_2 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_3_2_d4
+		}
+	}
+	allow = { always = yes }
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_3_2_done_tooltip
+	}
+}
+
+#3_4冷冻预备
+beffect_arkocean_mould_3_4_waiting = {
+	potential = {
+		from = {
+			OR = {
+				NOR = {
+					has_country_flag = arkocean_mould_done_3_2_d1
+					has_country_flag = arkocean_mould_done_3_2_d2
+					has_country_flag = arkocean_mould_done_3_2_d3
+					has_country_flag = arkocean_mould_done_3_2_d4
+				}
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = { custom_tooltip = beffect_arkocean_mould_3_4_waiting_tooltip }
+}
+beffect_arkocean_mould_3_4_d1 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_3_2_d1
+				has_country_flag = arkocean_mould_done_3_2_d2
+				has_country_flag = arkocean_mould_done_3_2_d3
+				has_country_flag = arkocean_mould_done_3_2_d4
+			}
+			NOR = {
+				has_country_flag = arkocean_mould_done_3_4_d1
+				has_country_flag = arkocean_mould_done_3_4_d2
+				has_country_flag = arkocean_mould_done_3_4_d3
+				has_country_flag = arkocean_mould_done_3_4_d4
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_3_4_d1_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_3_4
+					value = 3.5
+				}
+				add_modifier = {
+					modifier = arkocean_mould_modifier_3_4
+					days = -1
+					mult = value:arkocean_mould_value_3_4
+				}
+				set_country_flag = arkocean_mould_done_3_4_d1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_3_4_d2 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_3_4_d1
+			NOR = {
+				has_country_flag = arkocean_mould_done_3_4_d2
+				has_country_flag = arkocean_mould_done_3_4_d3
+				has_country_flag = arkocean_mould_done_3_4_d4
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_3_4_d2_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_3_4
+					value = 2.5
+				}
+				remove_modifier = arkocean_mould_modifier_3_4
+				add_modifier = {
+					modifier = arkocean_mould_modifier_3_4
+					days = -1
+					mult = value:arkocean_mould_value_3_4
+				}
+				set_country_flag = arkocean_mould_done_3_4_d2
+				remove_country_flag = arkocean_mould_done_3_4_d1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_3_4_d3 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_3_4_d2
+			NOR = {
+				has_country_flag = arkocean_mould_done_3_4_d1
+				has_country_flag = arkocean_mould_done_3_4_d3
+				has_country_flag = arkocean_mould_done_3_4_d4
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_3_4_d3_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_3_4
+					value = 2.5
+				}
+				remove_modifier = arkocean_mould_modifier_3_4
+				add_modifier = {
+					modifier = arkocean_mould_modifier_3_4
+					days = -1
+					mult = value:arkocean_mould_value_3_4
+				}
+				set_country_flag = arkocean_mould_done_3_4_d3
+				remove_country_flag = arkocean_mould_done_3_4_d2
+			}
+		}
+	}
+}
+beffect_arkocean_mould_3_4_d4 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_3_4_d3
+			NOR = {
+				has_country_flag = arkocean_mould_done_3_4_d1
+				has_country_flag = arkocean_mould_done_3_4_d2
+				has_country_flag = arkocean_mould_done_3_4_d4
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_3_4_d4_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_3_4
+					value = 1.5
+				}
+				remove_modifier = arkocean_mould_modifier_3_4
+				add_modifier = {
+					modifier = arkocean_mould_modifier_3_4
+					days = -1
+					mult = value:arkocean_mould_value_3_4
+				}
+				set_country_flag = arkocean_mould_done_3_4_d4
+				remove_country_flag = arkocean_mould_done_3_4_d3
+
+			}
+		}
+	}
+}
+beffect_arkocean_mould_level_3_4_d1 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_3_4_d1
+				has_country_flag = arkocean_mould_done_3_4_d2
+				has_country_flag = arkocean_mould_done_3_4_d3
+				has_country_flag = arkocean_mould_done_3_4_d4
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_3_4_d2 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_3_4_d2
+				has_country_flag = arkocean_mould_done_3_4_d3
+				has_country_flag = arkocean_mould_done_3_4_d4
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_3_4_d3 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_3_4_d3
+				has_country_flag = arkocean_mould_done_3_4_d4
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_3_4_d4 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_3_4_d4
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_done_3_4 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_3_4_d4
+		}
+	}
+	allow = { always = yes }
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_3_4_done_tooltip
+	}
+}
+
+#3_6战略回路
+beffect_arkocean_mould_3_6_waiting = {
+	potential = {
+		from = {
+			OR = {
+				NOT = { has_technology = tech_combat_training }
+				NOR = {
+					has_country_flag = arkocean_mould_done_3_4_d1
+					has_country_flag = arkocean_mould_done_3_4_d2
+					has_country_flag = arkocean_mould_done_3_4_d3
+					has_country_flag = arkocean_mould_done_3_4_d4
+				}
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = { custom_tooltip = beffect_arkocean_mould_3_6_waiting_tooltip }
+}
+beffect_arkocean_mould_3_6 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_3_4_d1
+				has_country_flag = arkocean_mould_done_3_4_d2
+				has_country_flag = arkocean_mould_done_3_4_d3
+				has_country_flag = arkocean_mould_done_3_4_d4
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 3
+			}
+
+			has_technology = tech_combat_training
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_3_6_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -3
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -3
+				}
+				country_event = {
+					id = ark_seaborn_evo.16
+				}
+				set_country_flag = arkocean_mould_done_3_6
+			}
+		}
+	}
+}
+beffect_arkocean_mould_done_3_6 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_3_6
+		}
+	}
+	allow = { always = yes }
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_3_6_done_tooltip
+	}
+}
+
+#4_1未分化个体储备
+beffect_arkocean_mould_4_1_waiting = {
+	potential = {
+		always = no
+	}
+	allow = { always = yes }
+	effect = { #custom_tooltip = beffect_arkocean_mould_4_1_waiting_tooltip
+	}
+}
+beffect_arkocean_mould_4_1_d1 = {
+	potential = {
+		from = {
+			NOR = {
+				has_country_flag = arkocean_mould_done_4_1_d1
+				has_country_flag = arkocean_mould_done_4_1_d2
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_4_1_d1_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_4_1
+					value = 1
+				}
+				add_modifier = {
+					modifier = arkocean_mould_modifier_4_1
+					days = -1
+					mult = value:arkocean_mould_value_4_1
+				}
+				set_country_flag = arkocean_mould_done_4_1_d1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_4_1_d2 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_4_1_d1
+			NOR = {
+				has_country_flag = arkocean_mould_done_4_1_d2
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_4_1_d2_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_4_1
+					value = 1
+				}
+				remove_modifier = arkocean_mould_modifier_4_1
+				add_modifier = {
+					modifier = arkocean_mould_modifier_4_1
+					days = -1
+					mult = value:arkocean_mould_value_4_1
+				}
+				set_country_flag = arkocean_mould_done_4_1_d2
+				remove_country_flag = arkocean_mould_done_4_1_d1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_level_4_1_d1 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_4_1_d1
+				has_country_flag = arkocean_mould_done_4_1_d2
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_4_1_d2 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_4_1_d2
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_done_4_1 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_4_1_d2
+		}
+	}
+	allow = { always = yes }
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_4_1_done_tooltip
+	}
+}
+
+#4_2高速细胞增殖
+beffect_arkocean_mould_4_2_waiting = {
+	potential = {
+		from = {
+			OR = {
+				NOR = {
+					has_country_flag = arkocean_mould_done_4_1_d1
+					has_country_flag = arkocean_mould_done_4_1_d2
+				}
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = { custom_tooltip = beffect_arkocean_mould_4_2_waiting_tooltip }
+}
+beffect_arkocean_mould_4_2_d1 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_4_1_d1
+				has_country_flag = arkocean_mould_done_4_1_d2
+			}
+			NOR = {
+				has_country_flag = arkocean_mould_done_4_2_d1
+				has_country_flag = arkocean_mould_done_4_2_d2
+				has_country_flag = arkocean_mould_done_4_2_d3
+				has_country_flag = arkocean_mould_done_4_2_d4
+				has_country_flag = arkocean_mould_done_4_2_d5
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_4_2_d1_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_4_2
+					value = 3
+				}
+				add_modifier = {
+					modifier = arkocean_mould_modifier_4_2
+					days = -1
+					mult = value:arkocean_mould_value_4_2
+				}
+				set_country_flag = arkocean_mould_done_4_2_d1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_4_2_d2 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_4_2_d1
+			NOR = {
+				has_country_flag = arkocean_mould_done_4_2_d2
+				has_country_flag = arkocean_mould_done_4_2_d3
+				has_country_flag = arkocean_mould_done_4_2_d4
+				has_country_flag = arkocean_mould_done_4_2_d5
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_4_2_d2_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_4_2
+					value = 3
+				}
+				remove_modifier = arkocean_mould_modifier_4_2
+				add_modifier = {
+					modifier = arkocean_mould_modifier_4_2
+					days = -1
+					mult = value:arkocean_mould_value_4_2
+				}
+				set_country_flag = arkocean_mould_done_4_2_d2
+				remove_country_flag = arkocean_mould_done_4_2_d1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_4_2_d3 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_4_2_d2
+			NOR = {
+				has_country_flag = arkocean_mould_done_4_2_d1
+				has_country_flag = arkocean_mould_done_4_2_d3
+				has_country_flag = arkocean_mould_done_4_2_d4
+				has_country_flag = arkocean_mould_done_4_2_d5
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_4_2_d3_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_4_2
+					value = 3
+				}
+				remove_modifier = arkocean_mould_modifier_4_2
+				add_modifier = {
+					modifier = arkocean_mould_modifier_4_2
+					days = -1
+					mult = value:arkocean_mould_value_4_2
+				}
+				set_country_flag = arkocean_mould_done_4_2_d3
+				remove_country_flag = arkocean_mould_done_4_2_d2
+			}
+		}
+	}
+}
+beffect_arkocean_mould_4_2_d4 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_4_2_d3
+			NOR = {
+				has_country_flag = arkocean_mould_done_4_2_d1
+				has_country_flag = arkocean_mould_done_4_2_d2
+				has_country_flag = arkocean_mould_done_4_2_d4
+				has_country_flag = arkocean_mould_done_4_2_d5
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_4_2_d4_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_4_2
+					value = 3
+				}
+				remove_modifier = arkocean_mould_modifier_4_2
+				add_modifier = {
+					modifier = arkocean_mould_modifier_4_2
+					days = -1
+					mult = value:arkocean_mould_value_4_2
+				}
+				set_country_flag = arkocean_mould_done_4_2_d4
+				remove_country_flag = arkocean_mould_done_4_2_d3
+
+			}
+		}
+	}
+}
+beffect_arkocean_mould_4_2_d5 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_4_2_d4
+			NOR = {
+				has_country_flag = arkocean_mould_done_4_2_d1
+				has_country_flag = arkocean_mould_done_4_2_d2
+				has_country_flag = arkocean_mould_done_4_2_d3
+				has_country_flag = arkocean_mould_done_4_2_d5
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_4_2_d5_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_4_2
+					value = 3
+				}
+				remove_modifier = arkocean_mould_modifier_4_2
+				add_modifier = {
+					modifier = arkocean_mould_modifier_4_2
+					days = -1
+					mult = value:arkocean_mould_value_4_2
+				}
+				set_country_flag = arkocean_mould_done_4_2_d5
+				remove_country_flag = arkocean_mould_done_4_2_d4
+
+			}
+		}
+	}
+}
+beffect_arkocean_mould_level_4_2_d1 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_4_2_d1
+				has_country_flag = arkocean_mould_done_4_2_d2
+				has_country_flag = arkocean_mould_done_4_2_d3
+				has_country_flag = arkocean_mould_done_4_2_d4
+				has_country_flag = arkocean_mould_done_4_2_d5
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_4_2_d2 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_4_2_d2
+				has_country_flag = arkocean_mould_done_4_2_d3
+				has_country_flag = arkocean_mould_done_4_2_d4
+				has_country_flag = arkocean_mould_done_4_2_d5
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_4_2_d3 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_4_2_d3
+				has_country_flag = arkocean_mould_done_4_2_d4
+				has_country_flag = arkocean_mould_done_4_2_d5
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_4_2_d4 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_4_2_d4
+				has_country_flag = arkocean_mould_done_4_2_d5
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_4_2_d5 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_4_2_d5
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_done_4_2 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_4_2_d5
+		}
+	}
+	allow = { always = yes }
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_4_2_done_tooltip
+	}
+}
+
+#4_3溟痕性状改良
+beffect_arkocean_mould_4_3_waiting = {
+	potential = {
+		from = {
+			OR = {
+				NOR = {
+					has_country_flag = arkocean_mould_done_4_2_d1
+					has_country_flag = arkocean_mould_done_4_2_d2
+					has_country_flag = arkocean_mould_done_4_2_d3
+					has_country_flag = arkocean_mould_done_4_2_d4
+					has_country_flag = arkocean_mould_done_4_2_d5
+				}
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = { custom_tooltip = beffect_arkocean_mould_4_3_waiting_tooltip }
+}
+beffect_arkocean_mould_4_3_d1 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_4_2_d1
+				has_country_flag = arkocean_mould_done_4_2_d2
+				has_country_flag = arkocean_mould_done_4_2_d3
+				has_country_flag = arkocean_mould_done_4_2_d4
+				has_country_flag = arkocean_mould_done_4_2_d5
+			}
+			NOR = {
+				has_country_flag = arkocean_mould_done_4_3_d1
+				has_country_flag = arkocean_mould_done_4_3_d2
+				has_country_flag = arkocean_mould_done_4_3_d3
+				has_country_flag = arkocean_mould_done_4_3_d4
+				has_country_flag = arkocean_mould_done_4_3_d5
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_4_3_d1_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_4_3
+					value = 4
+				}
+				add_modifier = {
+					modifier = arkocean_mould_modifier_4_3
+					days = -1
+					mult = value:arkocean_mould_value_4_3
+				}
+				set_country_flag = arkocean_mould_done_4_3_d1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_4_3_d2 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_4_3_d1
+			NOR = {
+				has_country_flag = arkocean_mould_done_4_3_d2
+				has_country_flag = arkocean_mould_done_4_3_d3
+				has_country_flag = arkocean_mould_done_4_3_d4
+				has_country_flag = arkocean_mould_done_4_3_d5
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_4_3_d2_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_4_3
+					value = 4
+				}
+				remove_modifier = arkocean_mould_modifier_4_3
+				add_modifier = {
+					modifier = arkocean_mould_modifier_4_3
+					days = -1
+					mult = value:arkocean_mould_value_4_3
+				}
+				set_country_flag = arkocean_mould_done_4_3_d2
+				remove_country_flag = arkocean_mould_done_4_3_d1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_4_3_d3 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_4_3_d2
+			NOR = {
+				has_country_flag = arkocean_mould_done_4_3_d1
+				has_country_flag = arkocean_mould_done_4_3_d3
+				has_country_flag = arkocean_mould_done_4_3_d4
+				has_country_flag = arkocean_mould_done_4_3_d5
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_4_3_d3_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_4_3
+					value = 4
+				}
+				remove_modifier = arkocean_mould_modifier_4_3
+				add_modifier = {
+					modifier = arkocean_mould_modifier_4_3
+					days = -1
+					mult = value:arkocean_mould_value_4_3
+				}
+				set_country_flag = arkocean_mould_done_4_3_d3
+				remove_country_flag = arkocean_mould_done_4_3_d2
+			}
+		}
+	}
+}
+beffect_arkocean_mould_4_3_d4 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_4_3_d3
+			NOR = {
+				has_country_flag = arkocean_mould_done_4_3_d1
+				has_country_flag = arkocean_mould_done_4_3_d2
+				has_country_flag = arkocean_mould_done_4_3_d4
+				has_country_flag = arkocean_mould_done_4_3_d5
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_4_3_d4_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_4_3
+					value = 4
+				}
+				remove_modifier = arkocean_mould_modifier_4_3
+				add_modifier = {
+					modifier = arkocean_mould_modifier_4_3
+					days = -1
+					mult = value:arkocean_mould_value_4_3
+				}
+				set_country_flag = arkocean_mould_done_4_3_d4
+				remove_country_flag = arkocean_mould_done_4_3_d3
+
+			}
+		}
+	}
+}
+beffect_arkocean_mould_4_3_d5 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_4_3_d4
+			NOR = {
+				has_country_flag = arkocean_mould_done_4_3_d1
+				has_country_flag = arkocean_mould_done_4_3_d2
+				has_country_flag = arkocean_mould_done_4_3_d3
+				has_country_flag = arkocean_mould_done_4_3_d5
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_4_3_d5_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_4_3
+					value = 4
+				}
+				remove_modifier = arkocean_mould_modifier_4_3
+				add_modifier = {
+					modifier = arkocean_mould_modifier_4_3
+					days = -1
+					mult = value:arkocean_mould_value_4_3
+				}
+				set_country_flag = arkocean_mould_done_4_3_d5
+				remove_country_flag = arkocean_mould_done_4_3_d4
+
+			}
+		}
+	}
+}
+beffect_arkocean_mould_level_4_3_d1 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_4_3_d1
+				has_country_flag = arkocean_mould_done_4_3_d2
+				has_country_flag = arkocean_mould_done_4_3_d3
+				has_country_flag = arkocean_mould_done_4_3_d4
+				has_country_flag = arkocean_mould_done_4_3_d5
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_4_3_d2 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_4_3_d2
+				has_country_flag = arkocean_mould_done_4_3_d3
+				has_country_flag = arkocean_mould_done_4_3_d4
+				has_country_flag = arkocean_mould_done_4_3_d5
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_4_3_d3 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_4_3_d3
+				has_country_flag = arkocean_mould_done_4_3_d4
+				has_country_flag = arkocean_mould_done_4_3_d5
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_4_3_d4 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_4_3_d4
+				has_country_flag = arkocean_mould_done_4_3_d5
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_4_3_d5 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_4_3_d5
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_done_4_3 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_4_3_d5
+		}
+	}
+	allow = { always = yes }
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_4_3_done_tooltip
+	}
+}
+
+#4_4生物建筑模板
+beffect_arkocean_mould_4_4_waiting = {
+	potential = {
+		from = {
+			OR = {
+				NOR = {
+					has_country_flag = arkocean_mould_done_4_3_d1
+					has_country_flag = arkocean_mould_done_4_3_d2
+					has_country_flag = arkocean_mould_done_4_3_d3
+					has_country_flag = arkocean_mould_done_4_3_d4
+					has_country_flag = arkocean_mould_done_4_3_d5
+				}
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = { custom_tooltip = beffect_arkocean_mould_4_4_waiting_tooltip }
+}
+beffect_arkocean_mould_4_4_d1 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_4_3_d1
+				has_country_flag = arkocean_mould_done_4_3_d2
+				has_country_flag = arkocean_mould_done_4_3_d3
+				has_country_flag = arkocean_mould_done_4_3_d4
+				has_country_flag = arkocean_mould_done_4_3_d5
+			}
+			NOR = {
+				has_country_flag = arkocean_mould_done_4_4_d1
+				has_country_flag = arkocean_mould_done_4_4_d2
+				has_country_flag = arkocean_mould_done_4_4_d3
+				has_country_flag = arkocean_mould_done_4_4_d4
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_4_4_d1_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_4_4
+					value = 6
+				}
+				add_modifier = {
+					modifier = arkocean_mould_modifier_4_4
+					days = -1
+					mult = value:arkocean_mould_value_4_4
+				}
+				set_country_flag = arkocean_mould_done_4_4_d1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_4_4_d2 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_4_4_d1
+			NOR = {
+				has_country_flag = arkocean_mould_done_4_4_d2
+				has_country_flag = arkocean_mould_done_4_4_d3
+				has_country_flag = arkocean_mould_done_4_4_d4
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_4_4_d2_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_4_4
+					value = 5
+				}
+				remove_modifier = arkocean_mould_modifier_4_4
+				add_modifier = {
+					modifier = arkocean_mould_modifier_4_4
+					days = -1
+					mult = value:arkocean_mould_value_4_4
+				}
+				set_country_flag = arkocean_mould_done_4_4_d2
+				remove_country_flag = arkocean_mould_done_4_4_d1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_4_4_d3 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_4_4_d2
+			NOR = {
+				has_country_flag = arkocean_mould_done_4_4_d1
+				has_country_flag = arkocean_mould_done_4_4_d3
+				has_country_flag = arkocean_mould_done_4_4_d4
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_4_4_d3_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_4_4
+					value = 5
+				}
+				remove_modifier = arkocean_mould_modifier_4_4
+				add_modifier = {
+					modifier = arkocean_mould_modifier_4_4
+					days = -1
+					mult = value:arkocean_mould_value_4_4
+				}
+				set_country_flag = arkocean_mould_done_4_4_d3
+				remove_country_flag = arkocean_mould_done_4_4_d2
+			}
+		}
+	}
+}
+beffect_arkocean_mould_4_4_d4 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_4_4_d3
+			NOR = {
+				has_country_flag = arkocean_mould_done_4_4_d1
+				has_country_flag = arkocean_mould_done_4_4_d2
+				has_country_flag = arkocean_mould_done_4_4_d4
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_4_4_d4_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_4_4
+					value = 4
+				}
+				remove_modifier = arkocean_mould_modifier_4_4
+				add_modifier = {
+					modifier = arkocean_mould_modifier_4_4
+					days = -1
+					mult = value:arkocean_mould_value_4_4
+				}
+				set_country_flag = arkocean_mould_done_4_4_d4
+				remove_country_flag = arkocean_mould_done_4_4_d3
+
+			}
+		}
+	}
+}
+beffect_arkocean_mould_level_4_4_d1 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_4_4_d1
+				has_country_flag = arkocean_mould_done_4_4_d2
+				has_country_flag = arkocean_mould_done_4_4_d3
+				has_country_flag = arkocean_mould_done_4_4_d4
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_4_4_d2 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_4_4_d2
+				has_country_flag = arkocean_mould_done_4_4_d3
+				has_country_flag = arkocean_mould_done_4_4_d4
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_4_4_d3 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_4_4_d3
+				has_country_flag = arkocean_mould_done_4_4_d4
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_4_4_d4 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_4_4_d4
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_done_4_4 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_4_4_d4
+		}
+	}
+	allow = { always = yes }
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_4_4_done_tooltip
+	}
+}
+
+#4_5迭代进化
+beffect_arkocean_mould_4_5_waiting = {
+	potential = {
+		from = {
+			OR = {
+				NOR = {
+					has_country_flag = arkocean_mould_done_4_4_d1
+					has_country_flag = arkocean_mould_done_4_4_d2
+					has_country_flag = arkocean_mould_done_4_4_d3
+					has_country_flag = arkocean_mould_done_4_4_d4
+				}
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = { custom_tooltip = beffect_arkocean_mould_4_5_waiting_tooltip }
+}
+beffect_arkocean_mould_4_5_d1 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_4_4_d1
+				has_country_flag = arkocean_mould_done_4_4_d2
+				has_country_flag = arkocean_mould_done_4_4_d3
+				has_country_flag = arkocean_mould_done_4_4_d4
+			}
+			NOR = {
+				has_country_flag = arkocean_mould_done_4_5_d1
+				has_country_flag = arkocean_mould_done_4_5_d2
+				has_country_flag = arkocean_mould_done_4_5_d3
+				has_country_flag = arkocean_mould_done_4_5_d4
+				has_country_flag = arkocean_mould_done_4_5_d5
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_4_5_d1_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_4_5
+					value = 2
+				}
+				add_modifier = {
+					modifier = arkocean_mould_modifier_4_5
+					days = -1
+					mult = value:arkocean_mould_value_4_5
+				}
+				set_country_flag = arkocean_mould_done_4_5_d1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_4_5_d2 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_4_5_d1
+			NOR = {
+				has_country_flag = arkocean_mould_done_4_5_d2
+				has_country_flag = arkocean_mould_done_4_5_d3
+				has_country_flag = arkocean_mould_done_4_5_d4
+				has_country_flag = arkocean_mould_done_4_5_d5
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_4_5_d2_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_4_5
+					value = 2
+				}
+				remove_modifier = arkocean_mould_modifier_4_5
+				add_modifier = {
+					modifier = arkocean_mould_modifier_4_5
+					days = -1
+					mult = value:arkocean_mould_value_4_5
+				}
+				set_country_flag = arkocean_mould_done_4_5_d2
+				remove_country_flag = arkocean_mould_done_4_5_d1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_4_5_d3 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_4_5_d2
+			NOR = {
+				has_country_flag = arkocean_mould_done_4_5_d1
+				has_country_flag = arkocean_mould_done_4_5_d3
+				has_country_flag = arkocean_mould_done_4_5_d4
+				has_country_flag = arkocean_mould_done_4_5_d5
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_4_5_d3_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_4_5
+					value = 2
+				}
+				remove_modifier = arkocean_mould_modifier_4_5
+				add_modifier = {
+					modifier = arkocean_mould_modifier_4_5
+					days = -1
+					mult = value:arkocean_mould_value_4_5
+				}
+				set_country_flag = arkocean_mould_done_4_5_d3
+				remove_country_flag = arkocean_mould_done_4_5_d2
+			}
+		}
+	}
+}
+beffect_arkocean_mould_4_5_d4 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_4_5_d3
+			NOR = {
+				has_country_flag = arkocean_mould_done_4_5_d1
+				has_country_flag = arkocean_mould_done_4_5_d2
+				has_country_flag = arkocean_mould_done_4_5_d4
+				has_country_flag = arkocean_mould_done_4_5_d5
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_4_5_d4_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_4_5
+					value = 2
+				}
+				remove_modifier = arkocean_mould_modifier_4_5
+				add_modifier = {
+					modifier = arkocean_mould_modifier_4_5
+					days = -1
+					mult = value:arkocean_mould_value_4_5
+				}
+				set_country_flag = arkocean_mould_done_4_5_d4
+				remove_country_flag = arkocean_mould_done_4_5_d3
+
+			}
+		}
+	}
+}
+beffect_arkocean_mould_4_5_d5 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_4_5_d4
+			NOR = {
+				has_country_flag = arkocean_mould_done_4_5_d1
+				has_country_flag = arkocean_mould_done_4_5_d2
+				has_country_flag = arkocean_mould_done_4_5_d3
+				has_country_flag = arkocean_mould_done_4_5_d5
+			}
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_4_5_d5_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_mould_4_5
+					value = 2
+				}
+				remove_modifier = arkocean_mould_modifier_4_5
+				add_modifier = {
+					modifier = arkocean_mould_modifier_4_5
+					days = -1
+					mult = value:arkocean_mould_value_4_5
+				}
+				set_country_flag = arkocean_mould_done_4_5_d5
+				remove_country_flag = arkocean_mould_done_4_5_d4
+
+			}
+		}
+	}
+}
+beffect_arkocean_mould_level_4_5_d1 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_4_5_d1
+				has_country_flag = arkocean_mould_done_4_5_d2
+				has_country_flag = arkocean_mould_done_4_5_d3
+				has_country_flag = arkocean_mould_done_4_5_d4
+				has_country_flag = arkocean_mould_done_4_5_d5
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_4_5_d2 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_4_5_d2
+				has_country_flag = arkocean_mould_done_4_5_d3
+				has_country_flag = arkocean_mould_done_4_5_d4
+				has_country_flag = arkocean_mould_done_4_5_d5
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_4_5_d3 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_4_5_d3
+				has_country_flag = arkocean_mould_done_4_5_d4
+				has_country_flag = arkocean_mould_done_4_5_d5
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_4_5_d4 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_4_5_d4
+				has_country_flag = arkocean_mould_done_4_5_d5
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_level_4_5_d5 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_4_5_d5
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = {}
+}
+beffect_arkocean_mould_done_4_5 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_4_5_d5
+		}
+	}
+	allow = { always = yes }
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_4_5_done_tooltip
+	}
+}
+
+#4_6神经统一性
+beffect_arkocean_mould_4_6_waiting = {
+	potential = {
+		from = {
+			OR = {
+				NOR = {
+					has_country_flag = arkocean_mould_done_4_5_d1
+					has_country_flag = arkocean_mould_done_4_5_d2
+					has_country_flag = arkocean_mould_done_4_5_d3
+					has_country_flag = arkocean_mould_done_4_5_d4
+					has_country_flag = arkocean_mould_done_4_5_d5
+				}
+			}
+		}
+	}
+	allow = { always = yes }
+	effect = { custom_tooltip = beffect_arkocean_mould_4_6_waiting_tooltip }
+}
+beffect_arkocean_mould_4_6 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_4_5_d1
+				has_country_flag = arkocean_mould_done_4_5_d2
+				has_country_flag = arkocean_mould_done_4_5_d3
+				has_country_flag = arkocean_mould_done_4_5_d4
+				has_country_flag = arkocean_mould_done_4_5_d5
+			}
+			NOT = { has_country_flag = arkocean_mould_done_4_6 }
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 5
+			}
+
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_4_6_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -5
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -5
+				}
+				add_modifier = {
+					modifier = arkocean_mould_modifier_4_6
+					days = -1
+				}
+				set_country_flag = arkocean_mould_done_4_6
+			}
+		}
+	}
+}
+beffect_arkocean_mould_done_4_6 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_4_6
+		}
+	}
+	allow = { always = yes }
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_4_6_done_tooltip
+	}
+}
+
+#5_1高度警觉
+beffect_arkocean_mould_5_1_waiting = {
+	potential = {
+		always = no
+	}
+	allow = { always = yes }
+	effect = { custom_tooltip = beffect_arkocean_mould_5_1_waiting_tooltip }
+}
+beffect_arkocean_mould_5_1 = {
+	potential = {
+		from = {
+			NOT = { has_country_flag = arkocean_mould_done_5_1 }
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_5_1_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				add_modifier = {
+					modifier = arkocean_mould_modifier_5_1
+					days = -1
+				}
+				set_country_flag = arkocean_mould_done_5_1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_done_5_1 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_5_1
+		}
+	}
+	allow = { always = yes }
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_5_1_done_tooltip
+	}
+}
+
+#5_2开拓思维
+beffect_arkocean_mould_5_2_waiting = {
+	potential = {
+		from = {
+			NOT = { has_country_flag = arkocean_mould_done_5_1 }
+		}
+	}
+	allow = { always = yes }
+	effect = { custom_tooltip = beffect_arkocean_mould_5_2_waiting_tooltip }
+}
+beffect_arkocean_mould_5_2 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_5_1
+			NOT = { has_country_flag = arkocean_mould_done_5_2 }
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_5_2_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				add_modifier = {
+					modifier = arkocean_mould_modifier_5_2
+					days = -1
+				}
+				set_country_flag = arkocean_mould_done_5_2
+			}
+		}
+	}
+}
+beffect_arkocean_mould_done_5_2 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_5_2
+		}
+	}
+	allow = { always = yes }
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_5_2_done_tooltip
+	}
+}
+
+#5_3同步学习
+beffect_arkocean_mould_5_3_waiting = {
+	potential = {
+		from = {
+			NOT = { has_country_flag = arkocean_mould_done_5_2 }
+		}
+	}
+	allow = { always = yes }
+	effect = { custom_tooltip = beffect_arkocean_mould_5_3_waiting_tooltip }
+}
+beffect_arkocean_mould_5_3 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_5_2
+			NOT = { has_country_flag = arkocean_mould_done_5_3 }
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_5_3_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				add_modifier = {
+					modifier = arkocean_mould_modifier_5_3
+					days = -1
+				}
+				set_country_flag = arkocean_mould_done_5_3
+			}
+		}
+	}
+}
+beffect_arkocean_mould_done_5_3 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_5_3
+		}
+	}
+	allow = { always = yes }
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_5_3_done_tooltip
+	}
+}
+
+#5_4高效实验室
+beffect_arkocean_mould_5_4_waiting = {
+	potential = {
+		from = {
+			NOT = { has_country_flag = arkocean_mould_done_5_3 }
+		}
+	}
+	allow = { always = yes }
+	effect = { custom_tooltip = beffect_arkocean_mould_5_4_waiting_tooltip }
+}
+beffect_arkocean_mould_5_4 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_5_3
+			NOT = { has_country_flag = arkocean_mould_done_5_4 }
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 2
+			}
+
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_5_4_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -2
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -2
+				}
+				add_modifier = {
+					modifier = arkocean_mould_modifier_5_4
+					days = -1
+				}
+				set_country_flag = arkocean_mould_done_5_4
+			}
+		}
+	}
+}
+beffect_arkocean_mould_done_5_4 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_5_4
+		}
+	}
+	allow = { always = yes }
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_5_4_done_tooltip
+	}
+}
+
+#5_5研究独立个体
+beffect_arkocean_mould_5_5_waiting = {
+	potential = {
+		from = {
+			NOT = { has_country_flag = arkocean_mould_done_5_4 }
+		}
+	}
+	allow = { always = yes }
+	effect = { custom_tooltip = beffect_arkocean_mould_5_5_waiting_tooltip }
+}
+beffect_arkocean_mould_5_5 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_5_4
+			NOT = { has_country_flag = arkocean_mould_done_5_5 }
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 2
+			}
+
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_5_5_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -2
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -2
+				}
+				add_modifier = {
+					modifier = arkocean_mould_modifier_5_5
+					days = -1
+				}
+				set_country_flag = arkocean_mould_done_5_5
+			}
+		}
+	}
+}
+beffect_arkocean_mould_done_5_5 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_5_5
+		}
+	}
+	allow = { always = yes }
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_5_5_done_tooltip
+	}
+}
+
+#5_6复杂思维网
+beffect_arkocean_mould_5_6_waiting = {
+	potential = {
+		from = {
+			NOT = { has_country_flag = arkocean_mould_done_5_5 }
+		}
+	}
+	allow = { always = yes }
+	effect = { custom_tooltip = beffect_arkocean_mould_5_6_waiting_tooltip }
+}
+beffect_arkocean_mould_5_6 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_5_5
+			NOT = { has_country_flag = arkocean_mould_done_5_6 }
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 3
+			}
+
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_5_6_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -3
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -3
+				}
+				country_event = {
+					id = ark_seaborn_evo.18
+				}
+				set_country_flag = arkocean_mould_done_5_6
+			}
+		}
+	}
+}
+beffect_arkocean_mould_done_5_6 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_5_6
+		}
+	}
+	allow = { always = yes }
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_5_6_done_tooltip
+	}
+}
+
+#6_1好奇
+beffect_arkocean_mould_6_1_waiting = {
+	potential = {
+		always = no
+	}
+	allow = { always = yes }
+	effect = { custom_tooltip = beffect_arkocean_mould_6_1_waiting_tooltip }
+}
+beffect_arkocean_mould_6_1 = {
+	potential = {
+		always = yes
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_6_1_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				add_modifier = {
+					modifier = arkocean_mould_modifier_6_1
+					days = -1
+				}
+				set_country_flag = arkocean_mould_done_6_1
+			}
+		}
+	}
+}
+beffect_arkocean_mould_done_6_1 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_6_1
+		}
+	}
+	allow = { always = yes }
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_6_1_done_tooltip
+	}
+}
+
+#6_2信息控制
+beffect_arkocean_mould_6_2_waiting = {
+	potential = {
+		from = {
+			NOT = { has_country_flag = arkocean_mould_done_6_1 }
+		}
+	}
+	allow = { always = yes }
+	effect = { custom_tooltip = beffect_arkocean_mould_6_2_waiting_tooltip }
+}
+beffect_arkocean_mould_6_2 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_6_1
+			NOT = { has_country_flag = arkocean_mould_done_6_2 }
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_6_2_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				add_modifier = {
+					modifier = arkocean_mould_modifier_6_2
+					days = -1
+				}
+				set_country_flag = arkocean_mould_done_6_2
+			}
+		}
+	}
+}
+beffect_arkocean_mould_done_6_2 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_6_2
+		}
+	}
+	allow = { always = yes }
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_6_2_done_tooltip
+	}
+}
+
+#6_3思维壁垒
+beffect_arkocean_mould_6_3_waiting = {
+	potential = {
+		from = {
+			NOT = { has_country_flag = arkocean_mould_done_6_2 }
+		}
+	}
+	allow = { always = yes }
+	effect = { custom_tooltip = beffect_arkocean_mould_6_3_waiting_tooltip }
+}
+beffect_arkocean_mould_6_3 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_6_2
+			NOT = { has_country_flag = arkocean_mould_done_6_3 }
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_6_3_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				add_modifier = {
+					modifier = arkocean_mould_modifier_6_3
+					days = -1
+				}
+				set_country_flag = arkocean_mould_done_6_3
+			}
+		}
+	}
+}
+beffect_arkocean_mould_done_6_3 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_6_3
+		}
+	}
+	allow = { always = yes }
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_6_3_done_tooltip
+	}
+}
+
+#6_4政治参与
+beffect_arkocean_mould_6_4_waiting = {
+	potential = {
+		from = {
+			NOT = { has_country_flag = arkocean_mould_done_6_3 }
+		}
+	}
+	allow = { always = yes }
+	effect = { custom_tooltip = beffect_arkocean_mould_6_4_waiting_tooltip }
+}
+beffect_arkocean_mould_6_4 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_6_3
+			NOT = { has_country_flag = arkocean_mould_done_6_4 }
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_6_4_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -1
+				}
+				add_modifier = {
+					modifier = arkocean_mould_modifier_6_4
+					days = -1
+				}
+				set_country_flag = arkocean_mould_done_6_4
+			}
+		}
+	}
+}
+beffect_arkocean_mould_done_6_4 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_6_4
+		}
+	}
+	allow = { always = yes }
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_6_4_done_tooltip
+	}
+}
+
+#6_6情感适应
+beffect_arkocean_mould_6_5_waiting = {
+	potential = {
+		from = {
+			NOT = { has_country_flag = arkocean_mould_done_6_4 }
+		}
+	}
+	allow = { always = yes }
+	effect = { custom_tooltip = beffect_arkocean_mould_6_5_waiting_tooltip }
+}
+beffect_arkocean_mould_6_5 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_6_4
+			NOT = { has_country_flag = arkocean_mould_done_6_5 }
+		}
+	}
+	allow = {
+		from = {
+			has_country_resource = {
+				type = arkseaborn_cells
+				amount >= 1
+			}
+
+		}
+	}
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_6_5_tooltip
+		hidden_effect = {
+			from = {
+				add_resource = {
+					arkseaborn_cells = -2
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = -2
+				}
+				add_modifier = {
+					modifier = arkocean_mould_modifier_6_5
+					days = -1
+				}
+				set_country_flag = arkocean_mould_done_6_5
+			}
+		}
+	}
+}
+beffect_arkocean_mould_done_6_5 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_6_5
+		}
+	}
+	allow = { always = yes }
+	effect = {
+		custom_tooltip = beffect_arkocean_mould_6_5_done_tooltip
+	}
+}
+
+
+########################################################################################################################
+#连接线 waiting:排前面    doing:跟前面，排后面最后一个   done:直接用上面的done
+beffect_arkocean_mould_connect_waiting_1_12 = {
+	potential = {
+		from = {
+			OR = {
+				NOR = {
+					has_country_flag = arkocean_mould_done_1_1_d1
+					has_country_flag = arkocean_mould_done_1_1_d2
+					has_country_flag = arkocean_mould_done_1_1_d3
+					has_country_flag = arkocean_mould_done_1_1_d4
+					has_country_flag = arkocean_mould_done_1_1_d5
+				}
+			}
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_waiting_1_23 = {
+	potential = {
+		from = {
+			OR = {
+				NOR = {
+					has_country_flag = arkocean_mould_done_1_2_d1
+					has_country_flag = arkocean_mould_done_1_2_d2
+					has_country_flag = arkocean_mould_done_1_2_d3
+					has_country_flag = arkocean_mould_done_1_2_d4
+					has_country_flag = arkocean_mould_done_1_2_d5
+					has_country_flag = arkocean_mould_done_1_2_d6
+				}
+			}
+		}	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_waiting_1_34 = {
+	potential = {
+		from = {
+			OR = {
+				NOR = {
+					has_country_flag = arkocean_mould_done_1_3_d1
+					has_country_flag = arkocean_mould_done_1_3_d2
+					has_country_flag = arkocean_mould_done_1_3_d3
+					has_country_flag = arkocean_mould_done_1_3_d4
+					has_country_flag = arkocean_mould_done_1_3_d5
+					has_country_flag = arkocean_mould_done_1_3_d6
+				}
+			}
+		}	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_waiting_1_46 = {
+	potential = {
+		from = {
+			OR = {
+				NOR = {
+					has_country_flag = arkocean_mould_done_1_4_d1
+					has_country_flag = arkocean_mould_done_1_4_d2
+					has_country_flag = arkocean_mould_done_1_4_d3
+					has_country_flag = arkocean_mould_done_1_4_d4
+					has_country_flag = arkocean_mould_done_1_4_d5
+				}
+			}
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+
+beffect_arkocean_mould_connect_doing_1_12 = {
+	potential = {
+		OR = {
+			has_country_flag = arkocean_mould_done_1_1_d1
+			has_country_flag = arkocean_mould_done_1_1_d2
+			has_country_flag = arkocean_mould_done_1_1_d3
+			has_country_flag = arkocean_mould_done_1_1_d4
+			has_country_flag = arkocean_mould_done_1_1_d5
+		}
+		NOT = { has_country_flag = arkocean_mould_done_1_2_d6 }
+	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_doing_1_23 = {
+	potential = {
+		OR = {
+			has_country_flag = arkocean_mould_done_1_2_d1
+			has_country_flag = arkocean_mould_done_1_2_d2
+			has_country_flag = arkocean_mould_done_1_2_d3
+			has_country_flag = arkocean_mould_done_1_2_d4
+			has_country_flag = arkocean_mould_done_1_2_d5
+			has_country_flag = arkocean_mould_done_1_2_d6
+		}
+		NOT = {	has_country_flag = arkocean_mould_done_1_3_d6 }
+	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_doing_1_34 = {
+	potential = {
+		OR = {
+			has_country_flag = arkocean_mould_done_1_3_d1
+			has_country_flag = arkocean_mould_done_1_3_d2
+			has_country_flag = arkocean_mould_done_1_3_d3
+			has_country_flag = arkocean_mould_done_1_3_d4
+			has_country_flag = arkocean_mould_done_1_3_d5
+		}
+		NOT = {	has_country_flag = arkocean_mould_done_1_4_d5 }
+	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_doing_1_46 = {
+	potential = {
+		OR = {
+			has_country_flag = arkocean_mould_done_1_4_d1
+			has_country_flag = arkocean_mould_done_1_4_d2
+			has_country_flag = arkocean_mould_done_1_4_d3
+			has_country_flag = arkocean_mould_done_1_4_d4
+			has_country_flag = arkocean_mould_done_1_4_d5
+		}
+		NAND = {
+			has_country_flag = arkocean_mould_done_1_6
+			check_variable = {
+				which = var_ark_seaborn_mould_1_6_times
+				value >= 25
+			}
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+
+
+
+
+beffect_arkocean_mould_connect_waiting_2_12 = {
+	potential = {
+		from = {
+			OR = {
+				NOR = {
+					has_country_flag = arkocean_mould_done_2_1_d1
+					has_country_flag = arkocean_mould_done_2_1_d2
+					has_country_flag = arkocean_mould_done_2_1_d3
+				}
+			}
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_waiting_2_23 = {
+	potential = {
+		from = {
+			OR = {
+				NOR = {
+					has_country_flag = arkocean_mould_done_2_2_d1
+					has_country_flag = arkocean_mould_done_2_2_d2
+					has_country_flag = arkocean_mould_done_2_2_d3
+				}
+			}
+		}	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_waiting_2_35 = {
+	potential = {
+		from = {
+			OR = {
+				NOR = {
+					has_country_flag = arkocean_mould_done_2_3_d1
+					has_country_flag = arkocean_mould_done_2_3_d2
+					has_country_flag = arkocean_mould_done_2_3_d3
+				}
+			}
+		}	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_waiting_2_56 = {
+	potential = {
+		from = {
+			OR = {
+				NOR = {
+					has_country_flag = arkocean_mould_done_2_5_d1
+					has_country_flag = arkocean_mould_done_2_5_d2
+					has_country_flag = arkocean_mould_done_2_5_d3
+				}
+			}
+		}	}
+	allow = {always = yes}
+	effect = {}
+}
+
+beffect_arkocean_mould_connect_doing_2_12 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_2_1_d1
+				has_country_flag = arkocean_mould_done_2_1_d2
+				has_country_flag = arkocean_mould_done_2_1_d3
+			}
+			NOT = { has_country_flag = arkocean_mould_done_2_2_d3 }
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_doing_2_23 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_2_2_d1
+				has_country_flag = arkocean_mould_done_2_2_d2
+				has_country_flag = arkocean_mould_done_2_2_d3
+			}
+			NOT = { has_country_flag = arkocean_mould_done_2_3_d3 }
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_doing_2_35 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_2_3_d1
+				has_country_flag = arkocean_mould_done_2_3_d2
+				has_country_flag = arkocean_mould_done_2_3_d3
+			}
+			NOT = { has_country_flag = arkocean_mould_done_2_5_d3 }
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_doing_2_56 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_2_5_d1
+				has_country_flag = arkocean_mould_done_2_5_d2
+				has_country_flag = arkocean_mould_done_2_5_d3
+			}
+			NOT = { has_country_flag = arkocean_mould_done_2_6_d5 }
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+
+
+
+
+beffect_arkocean_mould_connect_waiting_3_12 = {
+	potential = {
+		from = {
+			OR = {
+				NOR = {
+					has_country_flag = arkocean_mould_done_3_1_d1
+					has_country_flag = arkocean_mould_done_3_1_d2
+					has_country_flag = arkocean_mould_done_3_1_d3
+					has_country_flag = arkocean_mould_done_3_1_d4
+				}
+			}
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_waiting_3_24 = {
+	potential = {
+		from = {
+			OR = {
+				NOR = {
+					has_country_flag = arkocean_mould_done_3_2_d1
+					has_country_flag = arkocean_mould_done_3_2_d2
+					has_country_flag = arkocean_mould_done_3_2_d3
+					has_country_flag = arkocean_mould_done_3_2_d4
+				}
+			}
+		}	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_waiting_3_46 = {
+	potential = {
+		from = {
+			OR = {
+				NOR = {
+					has_country_flag = arkocean_mould_done_3_4_d1
+					has_country_flag = arkocean_mould_done_3_4_d2
+					has_country_flag = arkocean_mould_done_3_4_d3
+					has_country_flag = arkocean_mould_done_3_4_d4
+				}
+			}
+		}	}
+	allow = {always = yes}
+	effect = {}
+}
+
+beffect_arkocean_mould_connect_doing_3_12 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_3_1_d1
+				has_country_flag = arkocean_mould_done_3_1_d2
+				has_country_flag = arkocean_mould_done_3_1_d3
+				has_country_flag = arkocean_mould_done_3_1_d4
+			}
+			NOT = { has_country_flag = arkocean_mould_done_3_2_d4 }
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_doing_3_24 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_3_2_d1
+				has_country_flag = arkocean_mould_done_3_2_d2
+				has_country_flag = arkocean_mould_done_3_2_d3
+				has_country_flag = arkocean_mould_done_3_2_d4
+			}
+			NOT = { has_country_flag = arkocean_mould_done_3_4_d4 }
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_doing_3_46 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_3_4_d1
+				has_country_flag = arkocean_mould_done_3_4_d2
+				has_country_flag = arkocean_mould_done_3_4_d3
+				has_country_flag = arkocean_mould_done_3_4_d4
+			}
+			NOT = { has_country_flag = arkocean_mould_done_2_6 }
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+
+
+
+
+beffect_arkocean_mould_connect_waiting_4_12 = {
+	potential = {
+		from = {
+			OR = {
+				NOR = {
+					has_country_flag = arkocean_mould_done_4_1_d1
+					has_country_flag = arkocean_mould_done_4_1_d2
+				}
+			}
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_waiting_4_23 = {
+	potential = {
+		from = {
+			OR = {
+				NOR = {
+					has_country_flag = arkocean_mould_done_4_2_d1
+					has_country_flag = arkocean_mould_done_4_2_d2
+					has_country_flag = arkocean_mould_done_4_2_d3
+					has_country_flag = arkocean_mould_done_4_2_d4
+					has_country_flag = arkocean_mould_done_4_2_d5
+				}
+			}
+		}	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_waiting_4_34 = {
+	potential = {
+		from = {
+			OR = {
+				NOR = {
+					has_country_flag = arkocean_mould_done_4_3_d1
+					has_country_flag = arkocean_mould_done_4_3_d2
+					has_country_flag = arkocean_mould_done_4_3_d3
+					has_country_flag = arkocean_mould_done_4_3_d4
+					has_country_flag = arkocean_mould_done_4_3_d5
+				}
+			}
+		}	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_waiting_4_45 = {
+	potential = {
+		from = {
+			OR = {
+				NOR = {
+					has_country_flag = arkocean_mould_done_4_4_d1
+					has_country_flag = arkocean_mould_done_4_4_d2
+					has_country_flag = arkocean_mould_done_4_4_d3
+					has_country_flag = arkocean_mould_done_4_4_d4
+				}
+			}
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_waiting_4_56 = {
+	potential = {
+		from = {
+			OR = {
+				NOR = {
+					has_country_flag = arkocean_mould_done_4_5_d1
+					has_country_flag = arkocean_mould_done_4_5_d2
+					has_country_flag = arkocean_mould_done_4_5_d3
+					has_country_flag = arkocean_mould_done_4_5_d4
+					has_country_flag = arkocean_mould_done_4_5_d5
+				}
+			}
+		}	}
+	allow = {always = yes}
+	effect = {}
+}
+
+beffect_arkocean_mould_connect_doing_4_12 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_4_1_d1
+				has_country_flag = arkocean_mould_done_4_1_d2
+			}
+			NOT = { has_country_flag = arkocean_mould_done_4_2_d5 }
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_doing_4_23 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_4_2_d1
+				has_country_flag = arkocean_mould_done_4_2_d2
+				has_country_flag = arkocean_mould_done_4_2_d3
+				has_country_flag = arkocean_mould_done_4_2_d4
+				has_country_flag = arkocean_mould_done_4_2_d5
+			}
+			NOT = { has_country_flag = arkocean_mould_done_4_3_d5 }
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_doing_4_34 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_4_3_d1
+				has_country_flag = arkocean_mould_done_4_3_d2
+				has_country_flag = arkocean_mould_done_4_3_d3
+				has_country_flag = arkocean_mould_done_4_3_d4
+				has_country_flag = arkocean_mould_done_4_3_d5
+			}
+			NOT = { has_country_flag = arkocean_mould_done_2_4_d4 }
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_doing_4_45 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_4_4_d1
+				has_country_flag = arkocean_mould_done_4_4_d2
+				has_country_flag = arkocean_mould_done_4_4_d3
+				has_country_flag = arkocean_mould_done_4_4_d4
+			}
+			NOT = { has_country_flag = arkocean_mould_done_4_5_d5 }
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_doing_4_56 = {
+	potential = {
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_4_5_d1
+				has_country_flag = arkocean_mould_done_4_5_d2
+				has_country_flag = arkocean_mould_done_4_5_d3
+				has_country_flag = arkocean_mould_done_4_5_d4
+				has_country_flag = arkocean_mould_done_4_5_d5
+			}
+			NOT = { has_country_flag = arkocean_mould_done_4_6 }
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+
+
+
+
+beffect_arkocean_mould_connect_waiting_5_12 = {
+	potential = {
+		from = {
+			NOT = { has_country_flag = arkocean_mould_done_5_1 }
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_waiting_5_23 = {
+	potential = {
+		from = {
+			NOT = { has_country_flag = arkocean_mould_done_5_2 }
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_waiting_5_34 = {
+	potential = {
+		from = {
+			NOT = { has_country_flag = arkocean_mould_done_5_3 }
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_waiting_5_45 = {
+	potential = {
+		from = {
+			NOT = { has_country_flag = arkocean_mould_done_5_4 }
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_waiting_5_56 = {
+	potential = {
+		from = {
+			NOT = { has_country_flag = arkocean_mould_done_5_5 }
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+
+beffect_arkocean_mould_connect_doing_5_12 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_5_1
+			NOT = { has_country_flag = arkocean_mould_done_5_2 }
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_doing_5_23 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_5_2
+			NOT = { has_country_flag = arkocean_mould_done_5_3 }
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_doing_5_34 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_5_3
+			NOT = { has_country_flag = arkocean_mould_done_5_4 }
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_doing_5_45 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_5_4
+			NOT = { has_country_flag = arkocean_mould_done_5_5 }
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_doing_5_56 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_5_5
+			NOT = { has_country_flag = arkocean_mould_done_5_6 }
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+
+
+
+
+beffect_arkocean_mould_connect_waiting_6_12 = {
+	potential = {
+		from = {
+			NOT = { has_country_flag = arkocean_mould_done_6_1 }
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_waiting_6_23 = {
+	potential = {
+		from = {
+			NOT = { has_country_flag = arkocean_mould_done_6_2 }
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_waiting_6_34 = {
+	potential = {
+		from = {
+			NOT = { has_country_flag = arkocean_mould_done_6_3 }
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_waiting_6_45 = {
+	potential = {
+		from = {
+			NOT = { has_country_flag = arkocean_mould_done_6_4 }
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+
+beffect_arkocean_mould_connect_doing_6_12 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_6_1
+			NOT = { has_country_flag = arkocean_mould_done_6_2 }
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_doing_6_23 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_6_2
+			NOT = { has_country_flag = arkocean_mould_done_6_3 }
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_doing_6_34 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_6_3
+			NOT = { has_country_flag = arkocean_mould_done_6_4 }
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}
+beffect_arkocean_mould_connect_doing_6_45 = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_mould_done_6_4
+			NOT = { has_country_flag = arkocean_mould_done_6_5 }
+		}
+	}
+	allow = {always = yes}
+	effect = {}
+}

@@ -1,0 +1,11 @@
+objectTypes = {
+	pdxmesh = {
+		name = "portrait_ark_ocean_mesh"
+		file = "gfx/models/portraits/arknights_ocean/ark_ocean_portrait_anim.mesh"
+		animation = { id = "idle1"	type = "ark_ocean_portrait_anim_idle1_animation" }
+		animation = { id = "idle2"	type = "ark_ocean_portrait_anim_idle2_animation" }
+		animation = { id = "idle3"	type = "ark_ocean_portrait_anim_idle3_animation" }
+
+		scale = 1.7
+	}
+}

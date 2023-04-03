@@ -40,3 +40,16 @@ multipole_nanosheets = {
 		weight = 100
 	}
 }
+
+# 生机细胞
+arkseaborn_cells = {
+	tradable = no
+	
+	prerequisites = {}
+	
+	deficit_modifier = seaborn_cells_deficit
+	
+	ai_weight = {
+		weight = 100
+	}
+}

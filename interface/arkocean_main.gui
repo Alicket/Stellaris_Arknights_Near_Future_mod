@@ -1,0 +1,4295 @@
+guiTypes = {
+	containerWindowType = {
+		name = "arkocean_gui_main"
+		orientation = center
+		origo = center
+		movable = yes
+		size = { width = 1361 height = 821 }
+		background = { #背景
+			name = "background" 
+			spriteType ="GFX_arkocean_background"
+		}
+		buttonType = {#关闭
+			name = "close"
+			spriteType = "GFX_arkocean_button_back"
+			position = { x= 59 y = 61 }
+			Orientation = "UPPER_LEFT"
+			shortcut = "ESCAPE"
+			clicksound = "back_click"
+			actionShortcut = "cancel"
+		}
+		iconType = {#关闭后面的渐变
+			name = "close_gradual"
+			spriteType = "GFX_arkocean_button_back_gradient"
+			position = { x= 191 y = 61 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {#tips
+			name = "tips"
+			spriteType = "GFX_arkocean_tips"
+			position = { x= 68 y = 112 }
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {#tips内容
+			name = "tips_text"
+			font = "cg_16b"
+			text = "ARKOCEAN_GUI_TIPS"
+			position = { x = 83 y = 130 }
+			maxWidth = 340
+			maxHeight = 287
+			fixedSize = yes
+			alwaysTransparent = yes
+		}
+		iconType = {#information
+			name = "information"
+			spriteType = "GFX_arkocean_information"
+			position = { x= 68 y = 413 }
+			Orientation = "UPPER_LEFT"
+		}
+		effectButtonType = {#information内容1
+			spriteType = GFX_arkocean_information_text
+			name = "information_text1"
+			font = "cg_16b"
+			text = "ARKOCEAN_GUI_INFORMATION1"
+			position = { x = 83 y = 432 }
+			alwaysTransparent = yes
+			effect = beffect_no_effect
+		}
+		effectButtonType = {#information内容2
+			spriteType = GFX_arkocean_information_text
+			name = "information_text2"
+			font = "cg_16b"
+			text = "ARKOCEAN_GUI_INFORMATION2"
+			position = { x = 83 y = 460 }
+			alwaysTransparent = yes
+			effect = beffect_no_effect
+		}
+		effectButtonType = {#information内容3
+			spriteType = GFX_arkocean_information_text
+			name = "information_text3"
+			font = "cg_16b"
+			text = "ARKOCEAN_GUI_INFORMATION3"
+			position = { x = 83 y = 488 }
+			alwaysTransparent = yes
+			effect = beffect_no_effect
+		}
+		effectButtonType = {#information内容4
+			spriteType = GFX_arkocean_information_text
+			name = "information_text4"
+			font = "cg_16b"
+			text = "ARKOCEAN_GUI_INFORMATION4"
+			position = { x = 83 y = 515 }
+			alwaysTransparent = yes
+			effect = beffect_no_effect
+		}
+		effectButtonType = {#information内容5
+			spriteType = GFX_arkocean_information_text
+			name = "information_text5"
+			font = "cg_16b"
+			text = "ARKOCEAN_GUI_INFORMATION5"
+			position = { x = 83 y = 543 }
+			alwaysTransparent = yes
+			effect = beffect_no_effect
+		}
+		effectButtonType = {#information内容6
+			spriteType = GFX_arkocean_information_text
+			name = "information_text6"
+			font = "cg_16b"
+			text = "ARKOCEAN_GUI_INFORMATION6"
+			position = { x = 83 y = 571 }
+			alwaysTransparent = yes
+			effect = beffect_no_effect
+		}
+		iconType = {#stock
+			name = "stock"
+			spriteType = "GFX_arkocean_stock"
+			position = { x= 292 y = 413 }
+			Orientation = "UPPER_LEFT"
+		}
+		effectButtonType = {#stock内容
+			alwaysTransparent = yes
+			name = stock_text
+			font = "large_title_font"
+			text = "ARKOCEAN_GUI_STOCK"
+			position = { x = 308 y = 534 }
+			effect = beffect_no_effect
+			spriteType = GFX_arkocean_stock_text
+		}
+		iconType = {#cells
+			name = "cells"
+			spriteType = "GFX_arkocean_cells"
+			position = { x= 317 y = 450 }
+			Orientation = "UPPER_LEFT"
+		}
+		effectButtonType = {#更换统治者肖像
+			name = "arkocean_reset_ruler"
+			effect = beffect_arkocean_reset_ruler
+			spriteType = GFX_arkocean_button_332_26
+
+			position = { x= 75 y= 619 }
+			orientation = upper_left
+
+			font = "cg_16b"
+			text = ARKOCEAN_GUI_RESET_RULER
+			text_color_code = "W"
+		}
+		effectButtonType = {#重置空间站位置
+			name = "arkocean_reset_station"
+			effect = beffect_arkocean_reset_station
+			spriteType = GFX_arkocean_button_332_26
+
+			position = { x= 75 y= 662 }
+			orientation = upper_left
+
+			font = "cg_16b"
+			text = ARKOCEAN_GUI_RESET_STATION
+			text_color_code = "W"
+		}
+		effectButtonType = {#进行科学研究
+			name = "arkocean_call_message"
+			effect = beffect_arkocean_exchange_research
+			spriteType = GFX_arkocean_button_332_26
+			position = { x= 75 y= 705 }
+			orientation = upper_left
+
+			font = "cg_16b"
+			text = ARKOCEAN_GUI_CALL_MESSAGE
+			text_color_code = "W"
+		}
+		effectButtonType = {#上 点
+			name = "lrsap_up_dot"
+			spriteType = "GFX_arkocean_lrsap_upd"
+			position = { x= 461 y = 109 }
+			Orientation = "UPPER_LEFT"
+			alwaysTransparent = yes
+			effect = beffect_no_effect
+		}
+		effectButtonType = {#下 点
+			name = "lrsap_down_dot"
+			spriteType = "GFX_arkocean_lrsap_downd"
+			position = { x= 461 y = 394 }
+			Orientation = "UPPER_LEFT"
+			alwaysTransparent = yes
+			effect = beffect_no_effect
+		}
+		effectButtonType = {#上 线
+			name = "lrsap_up_line"
+			spriteType = "GFX_arkocean_lrsap_upl"
+			position = { x= 467 y = 47 }
+			Orientation = "UPPER_LEFT"
+			alwaysTransparent = yes
+			effect = beffect_no_effect
+		}
+		effectButtonType = {#下 线
+			name = "lrsap_down_line"
+			spriteType = "GFX_arkocean_lrsap_downl"
+			position = { x= 467 y = 451 }
+			Orientation = "UPPER_LEFT"
+			alwaysTransparent = yes
+			effect = beffect_no_effect
+		}
+
+		###      ###   ##########   ###      ###  ###          ###########
+		####    ####  ############  ###      ###  ###          ############
+		#####  #####  ####    ####  ###      ###  ###          ###     ####
+		### #### ###  ###      ###  ###      ###  ###          ###      ###
+		###  ##  ###  ###      ###  ###      ###  ###          ###      ###
+		###      ###  ###      ###  ###      ###  ###          ###      ###
+		###      ###  ####    ####  ###      ###  ###          ###     ####
+		###      ###  ############  ############  ###########  ############
+		###      ###   ##########    ##########   ###########  ###########
+
+		#待完成状态
+		effectButtonType = {
+			name = "arkocean_mould_1_1_d1"
+			effect = beffect_arkocean_mould_1_1_d1
+			spriteType = GFX_arkocean_button_mould_1_1
+			position = { x= 564 y= 169 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_1_1_d2"
+			effect = beffect_arkocean_mould_1_1_d2
+			spriteType = GFX_arkocean_button_mould_1_1
+			position = { x= 564 y= 169 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_1_1_d3"
+			effect = beffect_arkocean_mould_1_1_d3
+			spriteType = GFX_arkocean_button_mould_1_1
+			position = { x= 564 y= 169 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_1_1_d4"
+			effect = beffect_arkocean_mould_1_1_d4
+			spriteType = GFX_arkocean_button_mould_1_1
+			position = { x= 564 y= 169 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_1_1_d5"
+			effect = beffect_arkocean_mould_1_1_d5
+			spriteType = GFX_arkocean_button_mould_1_1
+			position = { x= 564 y= 169 }
+			orientation = upper_left
+		}
+
+
+		effectButtonType = {
+			name = "arkocean_mould_1_2_d1"
+			effect = beffect_arkocean_mould_1_2_d1
+			spriteType = GFX_arkocean_button_mould_1_2
+			position = { x= 693 y= 169 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_1_2_d2"
+			effect = beffect_arkocean_mould_1_2_d2
+			spriteType = GFX_arkocean_button_mould_1_2
+			position = { x= 693 y= 169 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_1_2_d3"
+			effect = beffect_arkocean_mould_1_2_d3
+			spriteType = GFX_arkocean_button_mould_1_2
+			position = { x= 693 y= 169 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_1_2_d4"
+			effect = beffect_arkocean_mould_1_2_d4
+			spriteType = GFX_arkocean_button_mould_1_2
+			position = { x= 693 y= 169 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_1_2_d5"
+			effect = beffect_arkocean_mould_1_2_d5
+			spriteType = GFX_arkocean_button_mould_1_2
+			position = { x= 693 y= 169 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_1_2_d6"
+			effect = beffect_arkocean_mould_1_2_d6
+			spriteType = GFX_arkocean_button_mould_1_2
+			position = { x= 693 y= 169 }
+			orientation = upper_left
+		}
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_1_3_d1"
+			effect = beffect_arkocean_mould_1_3_d1
+			spriteType = GFX_arkocean_button_mould_1_3
+			position = { x= 822 y= 169 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_1_3_d2"
+			effect = beffect_arkocean_mould_1_3_d2
+			spriteType = GFX_arkocean_button_mould_1_3
+			position = { x= 822 y= 169 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_1_3_d3"
+			effect = beffect_arkocean_mould_1_3_d3
+			spriteType = GFX_arkocean_button_mould_1_3
+			position = { x= 822 y= 169 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_1_3_d4"
+			effect = beffect_arkocean_mould_1_3_d4
+			spriteType = GFX_arkocean_button_mould_1_3
+			position = { x= 822 y= 169 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_1_3_d5"
+			effect = beffect_arkocean_mould_1_3_d5
+			spriteType = GFX_arkocean_button_mould_1_3
+			position = { x= 822 y= 169 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_1_3_d6"
+			effect = beffect_arkocean_mould_1_3_d6
+			spriteType = GFX_arkocean_button_mould_1_3
+			position = { x= 822 y= 169 }
+			orientation = upper_left
+		}
+
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_1_4_d1"
+			effect = beffect_arkocean_mould_1_4_d1
+			spriteType = GFX_arkocean_button_mould_1_4
+			position = { x= 952 y= 169 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_1_4_d2"
+			effect = beffect_arkocean_mould_1_4_d2
+			spriteType = GFX_arkocean_button_mould_1_4
+			position = { x= 952 y= 169 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_1_4_d3"
+			effect = beffect_arkocean_mould_1_4_d3
+			spriteType = GFX_arkocean_button_mould_1_4
+			position = { x= 952 y= 169 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_1_4_d4"
+			effect = beffect_arkocean_mould_1_4_d4
+			spriteType = GFX_arkocean_button_mould_1_4
+			position = { x= 952 y= 169 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_1_4_d5"
+			effect = beffect_arkocean_mould_1_4_d5
+			spriteType = GFX_arkocean_button_mould_1_4
+			position = { x= 952 y= 169 }
+			orientation = upper_left
+		}
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_1_6"
+			effect = beffect_arkocean_mould_1_6
+			spriteType = GFX_arkocean_button_mould_1_6
+			position = { x= 1210 y= 169 }
+			orientation = upper_left
+		}
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_2_1_d1"
+			effect = beffect_arkocean_mould_2_1_d1
+			spriteType = GFX_arkocean_button_mould_2_1
+			position = { x= 564 y= 268 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_2_1_d2"
+			effect = beffect_arkocean_mould_2_1_d2
+			spriteType = GFX_arkocean_button_mould_2_1
+			position = { x= 564 y= 268 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_2_1_d3"
+			effect = beffect_arkocean_mould_2_1_d3
+			spriteType = GFX_arkocean_button_mould_2_1
+			position = { x= 564 y= 268 }
+			orientation = upper_left
+		}
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_2_2_d1"
+			effect = beffect_arkocean_mould_2_2_d1
+			spriteType = GFX_arkocean_button_mould_2_2
+			position = { x= 693 y= 268 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_2_2_d2"
+			effect = beffect_arkocean_mould_2_2_d2
+			spriteType = GFX_arkocean_button_mould_2_2
+			position = { x= 693 y= 268 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_2_2_d3"
+			effect = beffect_arkocean_mould_2_2_d3
+			spriteType = GFX_arkocean_button_mould_2_2
+			position = { x= 693 y= 268 }
+			orientation = upper_left
+		}
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_2_3_d1"
+			effect = beffect_arkocean_mould_2_3_d1
+			spriteType = GFX_arkocean_button_mould_2_3
+			position = { x= 822 y= 268 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_2_3_d2"
+			effect = beffect_arkocean_mould_2_3_d2
+			spriteType = GFX_arkocean_button_mould_2_3
+			position = { x= 822 y= 268 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_2_3_d3"
+			effect = beffect_arkocean_mould_2_3_d3
+			spriteType = GFX_arkocean_button_mould_2_3
+			position = { x= 822 y= 268 }
+			orientation = upper_left
+		}
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_2_5_d1"
+			effect = beffect_arkocean_mould_2_5_d1
+			spriteType = GFX_arkocean_button_mould_2_5
+			position = { x= 1081 y= 268 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_2_5_d2"
+			effect = beffect_arkocean_mould_2_5_d2
+			spriteType = GFX_arkocean_button_mould_2_5
+			position = { x= 1081 y= 268 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_2_5_d3"
+			effect = beffect_arkocean_mould_2_5_d3
+			spriteType = GFX_arkocean_button_mould_2_5
+			position = { x= 1081 y= 268 }
+			orientation = upper_left
+		}
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_2_6_d1"
+			effect = beffect_arkocean_mould_2_6_d1
+			spriteType = GFX_arkocean_button_mould_2_6
+			position = { x= 1210 y= 268 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_2_6_d2"
+			effect = beffect_arkocean_mould_2_6_d2
+			spriteType = GFX_arkocean_button_mould_2_6
+			position = { x= 1210 y= 268 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_2_6_d3"
+			effect = beffect_arkocean_mould_2_6_d3
+			spriteType = GFX_arkocean_button_mould_2_6
+			position = { x= 1210 y= 268 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_2_6_d4"
+			effect = beffect_arkocean_mould_2_6_d4
+			spriteType = GFX_arkocean_button_mould_2_6
+			position = { x= 1210 y= 268 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_2_6_d5"
+			effect = beffect_arkocean_mould_2_6_d5
+			spriteType = GFX_arkocean_button_mould_2_6
+			position = { x= 1210 y= 268 }
+			orientation = upper_left
+		}
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_3_1_d1"
+			effect = beffect_arkocean_mould_3_1_d1
+			spriteType = GFX_arkocean_button_mould_3_1
+			position = { x= 564 y= 367 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_3_1_d2"
+			effect = beffect_arkocean_mould_3_1_d2
+			spriteType = GFX_arkocean_button_mould_3_1
+			position = { x= 564 y= 367 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_3_1_d3"
+			effect = beffect_arkocean_mould_3_1_d3
+			spriteType = GFX_arkocean_button_mould_3_1
+			position = { x= 564 y= 367 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_3_1_d4"
+			effect = beffect_arkocean_mould_3_1_d4
+			spriteType = GFX_arkocean_button_mould_3_1
+			position = { x= 564 y= 367 }
+			orientation = upper_left
+		}
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_3_2_d1"
+			effect = beffect_arkocean_mould_3_2_d1
+			spriteType = GFX_arkocean_button_mould_3_2
+			position = { x= 693 y= 367 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_3_2_d2"
+			effect = beffect_arkocean_mould_3_2_d2
+			spriteType = GFX_arkocean_button_mould_3_2
+			position = { x= 693 y= 367 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_3_2_d3"
+			effect = beffect_arkocean_mould_3_2_d3
+			spriteType = GFX_arkocean_button_mould_3_2
+			position = { x= 693 y= 367 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_3_2_d4"
+			effect = beffect_arkocean_mould_3_2_d4
+			spriteType = GFX_arkocean_button_mould_3_2
+			position = { x= 693 y= 367 }
+			orientation = upper_left
+		}
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_3_4_d1"
+			effect = beffect_arkocean_mould_3_4_d1
+			spriteType = GFX_arkocean_button_mould_3_4
+			position = { x= 952 y= 367 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_3_4_d2"
+			effect = beffect_arkocean_mould_3_4_d2
+			spriteType = GFX_arkocean_button_mould_3_4
+			position = { x= 952 y= 367 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_3_4_d3"
+			effect = beffect_arkocean_mould_3_4_d3
+			spriteType = GFX_arkocean_button_mould_3_4
+			position = { x= 952 y= 367 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_3_4_d4"
+			effect = beffect_arkocean_mould_3_4_d4
+			spriteType = GFX_arkocean_button_mould_3_4
+			position = { x= 952 y= 367 }
+			orientation = upper_left
+		}
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_3_6"
+			effect = beffect_arkocean_mould_3_6
+			spriteType = GFX_arkocean_button_mould_3_6
+			position = { x= 1210 y= 367 }
+			orientation = upper_left
+		}
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_4_1_d1"
+			effect = beffect_arkocean_mould_4_1_d1
+			spriteType = GFX_arkocean_button_mould_4_1
+			position = { x= 564 y= 466 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_4_1_d2"
+			effect = beffect_arkocean_mould_4_1_d2
+			spriteType = GFX_arkocean_button_mould_4_1
+			position = { x= 564 y= 466 }
+			orientation = upper_left
+		}
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_4_2_d1"
+			effect = beffect_arkocean_mould_4_2_d1
+			spriteType = GFX_arkocean_button_mould_4_2
+			position = { x= 693 y= 466 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_4_2_d2"
+			effect = beffect_arkocean_mould_4_2_d2
+			spriteType = GFX_arkocean_button_mould_4_2
+			position = { x= 693 y= 466 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_4_2_d3"
+			effect = beffect_arkocean_mould_4_2_d3
+			spriteType = GFX_arkocean_button_mould_4_2
+			position = { x= 693 y= 466 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_4_2_d4"
+			effect = beffect_arkocean_mould_4_2_d4
+			spriteType = GFX_arkocean_button_mould_4_2
+			position = { x= 693 y= 466 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_4_2_d5"
+			effect = beffect_arkocean_mould_4_2_d5
+			spriteType = GFX_arkocean_button_mould_4_2
+			position = { x= 693 y= 466 }
+			orientation = upper_left
+		}
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_4_3_d1"
+			effect = beffect_arkocean_mould_4_3_d1
+			spriteType = GFX_arkocean_button_mould_4_3
+			position = { x= 822 y= 466 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_4_3_d2"
+			effect = beffect_arkocean_mould_4_3_d2
+			spriteType = GFX_arkocean_button_mould_4_3
+			position = { x= 822 y= 466 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_4_3_d3"
+			effect = beffect_arkocean_mould_4_3_d3
+			spriteType = GFX_arkocean_button_mould_4_3
+			position = { x= 822 y= 466 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_4_3_d4"
+			effect = beffect_arkocean_mould_4_3_d4
+			spriteType = GFX_arkocean_button_mould_4_3
+			position = { x= 822 y= 466 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_4_3_d5"
+			effect = beffect_arkocean_mould_4_3_d5
+			spriteType = GFX_arkocean_button_mould_4_3
+			position = { x= 822 y= 466 }
+			orientation = upper_left
+		}
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_4_4_d1"
+			effect = beffect_arkocean_mould_4_4_d1
+			spriteType = GFX_arkocean_button_mould_4_4
+			position = { x= 952 y= 466 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_4_4_d2"
+			effect = beffect_arkocean_mould_4_4_d2
+			spriteType = GFX_arkocean_button_mould_4_4
+			position = { x= 952 y= 466 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_4_4_d3"
+			effect = beffect_arkocean_mould_4_4_d3
+			spriteType = GFX_arkocean_button_mould_4_4
+			position = { x= 952 y= 466 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_4_4_d4"
+			effect = beffect_arkocean_mould_4_4_d4
+			spriteType = GFX_arkocean_button_mould_4_4
+			position = { x= 952 y= 466 }
+			orientation = upper_left
+		}
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_4_5_d1"
+			effect = beffect_arkocean_mould_4_5_d1
+			spriteType = GFX_arkocean_button_mould_4_5
+			position = { x= 1081 y= 466 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_4_5_d2"
+			effect = beffect_arkocean_mould_4_5_d2
+			spriteType = GFX_arkocean_button_mould_4_5
+			position = { x= 1081 y= 466 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_4_5_d3"
+			effect = beffect_arkocean_mould_4_5_d3
+			spriteType = GFX_arkocean_button_mould_4_5
+			position = { x= 1081 y= 466 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_4_5_d4"
+			effect = beffect_arkocean_mould_4_5_d4
+			spriteType = GFX_arkocean_button_mould_4_5
+			position = { x= 1081 y= 466 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_4_5_d5"
+			effect = beffect_arkocean_mould_4_5_d5
+			spriteType = GFX_arkocean_button_mould_4_5
+			position = { x= 1081 y= 466 }
+			orientation = upper_left
+		}
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_4_6"
+			effect = beffect_arkocean_mould_4_6
+			spriteType = GFX_arkocean_button_mould_4_6
+			position = { x= 1210 y= 466 }
+			orientation = upper_left
+		}
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_5_1"
+			effect = beffect_arkocean_mould_5_1
+			spriteType = GFX_arkocean_button_mould_5_1
+			position = { x= 564 y= 565 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_5_2"
+			effect = beffect_arkocean_mould_5_2
+			spriteType = GFX_arkocean_button_mould_5_2
+			position = { x= 693 y= 565 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_5_3"
+			effect = beffect_arkocean_mould_5_3
+			spriteType = GFX_arkocean_button_mould_5_3
+			position = { x= 822 y= 565 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_5_4"
+			effect = beffect_arkocean_mould_5_4
+			spriteType = GFX_arkocean_button_mould_5_4
+			position = { x= 952 y= 565 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_5_5"
+			effect = beffect_arkocean_mould_5_5
+			spriteType = GFX_arkocean_button_mould_5_5
+			position = { x= 1081 y= 565 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_5_6"
+			effect = beffect_arkocean_mould_5_6
+			spriteType = GFX_arkocean_button_mould_5_6
+			position = { x= 1210 y= 565 }
+			orientation = upper_left
+		}
+
+		effectButtonType = {
+			name = "arkocean_mould_6_1"
+			effect = beffect_arkocean_mould_6_1
+			spriteType = GFX_arkocean_button_mould_6_1
+			position = { x= 564 y= 664 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_6_2"
+			effect = beffect_arkocean_mould_6_2
+			spriteType = GFX_arkocean_button_mould_6_2
+			position = { x= 693 y= 664 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_6_3"
+			effect = beffect_arkocean_mould_6_3
+			spriteType = GFX_arkocean_button_mould_6_3
+			position = { x= 822 y= 664 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_6_4"
+			effect = beffect_arkocean_mould_6_4
+			spriteType = GFX_arkocean_button_mould_6_4
+			position = { x= 952 y= 664 }
+			orientation = upper_left
+		}
+		effectButtonType = {
+			name = "arkocean_mould_6_5"
+			effect = beffect_arkocean_mould_6_5
+			spriteType = GFX_arkocean_button_mould_6_5
+			position = { x= 1081 y= 664 }
+			orientation = upper_left
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_done_1_1"
+			effect = beffect_arkocean_mould_done_1_1
+			spriteType = GFX_arkocean_mould_1_1_done
+			position = { x= 564 y= 169 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_done_1_2"
+			effect = beffect_arkocean_mould_done_1_2
+			spriteType = GFX_arkocean_mould_1_2_done
+			position = { x= 693 y= 169 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_done_1_3"
+			effect = beffect_arkocean_mould_done_1_3
+			spriteType = GFX_arkocean_mould_1_3_done
+			position = { x= 822 y= 169 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_done_1_4"
+			effect = beffect_arkocean_mould_done_1_4
+			spriteType = GFX_arkocean_mould_1_4_done
+			position = { x= 952 y= 169 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_done_1_6"
+			effect = beffect_arkocean_mould_done_1_6
+			spriteType = GFX_arkocean_mould_1_6_done
+			position = { x= 1210 y= 169 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_done_2_1"
+			effect = beffect_arkocean_mould_done_2_1
+			spriteType = GFX_arkocean_mould_2_1_done
+			position = { x= 564 y= 268 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_done_2_2"
+			effect = beffect_arkocean_mould_done_2_2
+			spriteType = GFX_arkocean_mould_2_2_done
+			position = { x= 693 y= 268 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_done_2_3"
+			effect = beffect_arkocean_mould_done_2_3
+			spriteType = GFX_arkocean_mould_2_3_done
+			position = { x= 822 y= 268 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_done_2_5"
+			effect = beffect_arkocean_mould_done_2_5
+			spriteType = GFX_arkocean_mould_2_5_done
+			position = { x= 1081 y= 268 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_done_2_6"
+			effect = beffect_arkocean_mould_done_2_6
+			spriteType = GFX_arkocean_mould_2_6_done
+			position = { x= 1210 y= 268 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+
+		effectButtonType = {
+			name = "arkocean_mould_done_3_1"
+			effect = beffect_arkocean_mould_done_3_1
+			spriteType = GFX_arkocean_mould_3_1_done
+			position = { x= 564 y= 367 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_done_3_2"
+			effect = beffect_arkocean_mould_done_3_2
+			spriteType = GFX_arkocean_mould_3_2_done
+			position = { x= 693 y= 367 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_done_3_4"
+			effect = beffect_arkocean_mould_done_3_4
+			spriteType = GFX_arkocean_mould_3_4_done
+			position = { x= 952 y= 367 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_done_3_6"
+			effect = beffect_arkocean_mould_done_3_6
+			spriteType = GFX_arkocean_mould_3_6_done
+			position = { x= 1210 y= 367 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+
+		effectButtonType = {
+			name = "arkocean_mould_done_4_1"
+			effect = beffect_arkocean_mould_done_4_1
+			spriteType = GFX_arkocean_mould_4_1_done
+			position = { x= 564 y= 466 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_done_4_2"
+			effect = beffect_arkocean_mould_done_4_2
+			spriteType = GFX_arkocean_mould_4_2_done
+			position = { x= 693 y= 466 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_done_4_3"
+			effect = beffect_arkocean_mould_done_4_3
+			spriteType = GFX_arkocean_mould_4_3_done
+			position = { x= 822 y= 466 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_done_4_4"
+			effect = beffect_arkocean_mould_done_4_4
+			spriteType = GFX_arkocean_mould_4_4_done
+			position = { x= 952 y= 466 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_done_4_5"
+			effect = beffect_arkocean_mould_done_4_5
+			spriteType = GFX_arkocean_mould_4_5_done
+			position = { x= 1081 y= 466 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_done_4_6"
+			effect = beffect_arkocean_mould_done_4_6
+			spriteType = GFX_arkocean_mould_4_6_done
+			position = { x= 1210 y= 466 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+
+		effectButtonType = {
+			name = "arkocean_mould_done_5_1"
+			effect = beffect_arkocean_mould_done_5_1
+			spriteType = GFX_arkocean_mould_5_1_done
+			position = { x= 564 y= 565 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_done_5_2"
+			effect = beffect_arkocean_mould_done_5_2
+			spriteType = GFX_arkocean_mould_5_2_done
+			position = { x= 693 y= 565 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_done_5_3"
+			effect = beffect_arkocean_mould_done_5_3
+			spriteType = GFX_arkocean_mould_5_3_done
+			position = { x= 822 y= 565 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_done_5_4"
+			effect = beffect_arkocean_mould_done_5_4
+			spriteType = GFX_arkocean_mould_5_4_done
+			position = { x= 952 y= 565 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_done_5_5"
+			effect = beffect_arkocean_mould_done_5_5
+			spriteType = GFX_arkocean_mould_5_5_done
+			position = { x= 1081 y= 565 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_done_5_6"
+			effect = beffect_arkocean_mould_done_5_6
+			spriteType = GFX_arkocean_mould_5_6_done
+			position = { x= 1210 y= 565 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+
+		effectButtonType = {
+			name = "arkocean_mould_done_6_1"
+			effect = beffect_arkocean_mould_done_6_1
+			spriteType = GFX_arkocean_mould_6_1_done
+			position = { x= 564 y= 664 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_done_6_2"
+			effect = beffect_arkocean_mould_done_6_2
+			spriteType = GFX_arkocean_mould_6_2_done
+			position = { x= 693 y= 664 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_done_6_3"
+			effect = beffect_arkocean_mould_done_6_3
+			spriteType = GFX_arkocean_mould_6_3_done
+			position = { x= 822 y= 664 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_done_6_4"
+			effect = beffect_arkocean_mould_done_6_4
+			spriteType = GFX_arkocean_mould_6_4_done
+			position = { x= 952 y= 664 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_done_6_5"
+			effect = beffect_arkocean_mould_done_6_5
+			spriteType = GFX_arkocean_mould_6_5_done
+			position = { x= 1081 y= 664 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_waiting_1_1"
+			effect = beffect_arkocean_mould_1_1_waiting
+			spriteType = GFX_arkocean_mould_1_1_waiting
+			position = { x= 564 y= 169 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_waiting_1_2"
+			effect = beffect_arkocean_mould_1_2_waiting
+			spriteType = GFX_arkocean_mould_1_2_waiting
+			position = { x= 693 y= 169 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_waiting_1_3"
+			effect = beffect_arkocean_mould_1_3_waiting
+			spriteType = GFX_arkocean_mould_1_3_waiting
+			position = { x= 822 y= 169 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_waiting_1_4"
+			effect = beffect_arkocean_mould_1_4_waiting
+			spriteType = GFX_arkocean_mould_1_4_waiting
+			position = { x= 952 y= 169 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_waiting_1_6"
+			effect = beffect_arkocean_mould_1_6_waiting
+			spriteType = GFX_arkocean_mould_1_6_waiting
+			position = { x= 1210 y= 169 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_waiting_2_1"
+			effect = beffect_arkocean_mould_2_1_waiting
+			spriteType = GFX_arkocean_mould_2_1_waiting
+			position = { x= 564 y= 268 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_waiting_2_2"
+			effect = beffect_arkocean_mould_2_2_waiting
+			spriteType = GFX_arkocean_mould_2_2_waiting
+			position = { x= 693 y= 268 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_waiting_2_3"
+			effect = beffect_arkocean_mould_2_3_waiting
+			spriteType = GFX_arkocean_mould_2_3_waiting
+			position = { x= 822 y= 268 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_waiting_2_5"
+			effect = beffect_arkocean_mould_2_5_waiting
+			spriteType = GFX_arkocean_mould_2_5_waiting
+			position = { x= 1081 y= 268 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_waiting_2_6"
+			effect = beffect_arkocean_mould_2_6_waiting
+			spriteType = GFX_arkocean_mould_2_6_waiting
+			position = { x= 1210 y= 268 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+
+		effectButtonType = {
+			name = "arkocean_mould_waiting_3_1"
+			effect = beffect_arkocean_mould_3_1_waiting
+			spriteType = GFX_arkocean_mould_3_1_waiting
+			position = { x= 564 y= 367 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_waiting_3_2"
+			effect = beffect_arkocean_mould_3_2_waiting
+			spriteType = GFX_arkocean_mould_3_2_waiting
+			position = { x= 693 y= 367 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_waiting_3_4"
+			effect = beffect_arkocean_mould_3_4_waiting
+			spriteType = GFX_arkocean_mould_3_4_waiting
+			position = { x= 952 y= 367 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_waiting_3_6"
+			effect = beffect_arkocean_mould_3_6_waiting
+			spriteType = GFX_arkocean_mould_3_6_waiting
+			position = { x= 1210 y= 367 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+
+		effectButtonType = {
+			name = "arkocean_mould_waiting_4_1"
+			effect = beffect_arkocean_mould_4_1_waiting
+			spriteType = GFX_arkocean_mould_4_1_waiting
+			position = { x= 564 y= 466 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_waiting_4_2"
+			effect = beffect_arkocean_mould_4_2_waiting
+			spriteType = GFX_arkocean_mould_4_2_waiting
+			position = { x= 693 y= 466 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_waiting_4_3"
+			effect = beffect_arkocean_mould_4_3_waiting
+			spriteType = GFX_arkocean_mould_4_3_waiting
+			position = { x= 822 y= 466 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_waiting_4_4"
+			effect = beffect_arkocean_mould_4_4_waiting
+			spriteType = GFX_arkocean_mould_4_4_waiting
+			position = { x= 952 y= 466 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_waiting_4_5"
+			effect = beffect_arkocean_mould_4_5_waiting
+			spriteType = GFX_arkocean_mould_4_5_waiting
+			position = { x= 1081 y= 466 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_waiting_4_6"
+			effect = beffect_arkocean_mould_4_6_waiting
+			spriteType = GFX_arkocean_mould_4_6_waiting
+			position = { x= 1210 y= 466 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+
+		effectButtonType = {
+			name = "arkocean_mould_waiting_5_1"
+			effect = beffect_arkocean_mould_5_1_waiting
+			spriteType = GFX_arkocean_mould_5_1_waiting
+			position = { x= 564 y= 565 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_waiting_5_2"
+			effect = beffect_arkocean_mould_5_2_waiting
+			spriteType = GFX_arkocean_mould_5_2_waiting
+			position = { x= 693 y= 565 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_waiting_5_3"
+			effect = beffect_arkocean_mould_5_3_waiting
+			spriteType = GFX_arkocean_mould_5_3_waiting
+			position = { x= 822 y= 565 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_waiting_5_4"
+			effect = beffect_arkocean_mould_5_4_waiting
+			spriteType = GFX_arkocean_mould_5_4_waiting
+			position = { x= 952 y= 565 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_waiting_5_5"
+			effect = beffect_arkocean_mould_5_5_waiting
+			spriteType = GFX_arkocean_mould_5_5_waiting
+			position = { x= 1081 y= 565 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_waiting_5_6"
+			effect = beffect_arkocean_mould_5_6_waiting
+			spriteType = GFX_arkocean_mould_5_6_waiting
+			position = { x= 1210 y= 565 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+
+		effectButtonType = {
+			name = "arkocean_mould_waiting_6_1"
+			effect = beffect_arkocean_mould_6_1_waiting
+			spriteType = GFX_arkocean_mould_6_1_waiting
+			position = { x= 564 y= 664 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_waiting_6_2"
+			effect = beffect_arkocean_mould_6_2_waiting
+			spriteType = GFX_arkocean_mould_6_2_waiting
+			position = { x= 693 y= 664 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_waiting_6_3"
+			effect = beffect_arkocean_mould_6_3_waiting
+			spriteType = GFX_arkocean_mould_6_3_waiting
+			position = { x= 822 y= 664 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_waiting_6_4"
+			effect = beffect_arkocean_mould_6_4_waiting
+			spriteType = GFX_arkocean_mould_6_4_waiting
+			position = { x= 952 y= 664 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_waiting_6_5"
+			effect = beffect_arkocean_mould_6_5_waiting
+			spriteType = GFX_arkocean_mould_6_5_waiting
+			position = { x= 1081 y= 664 }
+			orientation = upper_left
+			oversound = no_sound
+			no_clicksound = yes
+		}
+
+		 ##########    ##########   ###      ###  ###      ###  ############   ##########   ############
+		############  ############  ####     ###  ####     ###  ############  ############  ############
+		####     ###  ###      ###  #####    ###  #####    ###  ###           ####     ###      ####
+		###           ###      ###  ### ##   ###  ### ##   ###  ############  ###               ####
+		###           ###      ###  ###  ##  ###  ###  ##  ###  ############  ###               ####
+		###           ###      ###  ###   ## ###  ###   ## ###  ###           ###               ####
+		####     ###  ###      ###  ###    #####  ###    #####  ###           ####     ###      ####
+		############  ############  ###     ####  ###     ####  ############  ############      ####
+		 ##########    ##########   ###      ###  ###      ###  ############   ##########       ####
+
+		#连接线
+		#正在进行
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_1_12a"
+			effect = beffect_arkocean_mould_connect_doing_1_12
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 624 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_1_12b"
+			effect = beffect_arkocean_mould_connect_doing_1_12
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 625 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_1_12c"
+			effect = beffect_arkocean_mould_connect_doing_1_12
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 626 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_1_23a"
+			effect = beffect_arkocean_mould_connect_doing_1_23
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 753 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_1_23b"
+			effect = beffect_arkocean_mould_connect_doing_1_23
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 754 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_1_23c"
+			effect = beffect_arkocean_mould_connect_doing_1_23
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 755 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_1_34a"
+			effect = beffect_arkocean_mould_connect_doing_1_34
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 882 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_1_34b"
+			effect = beffect_arkocean_mould_connect_doing_1_34
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 883 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_1_34c"
+			effect = beffect_arkocean_mould_connect_doing_1_34
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 884 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_1_46a"
+			effect = beffect_arkocean_mould_connect_doing_1_46
+			spriteType = GFX_arkocean_progress_doing_long
+			position = { x= 1012 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_1_46b"
+			effect = beffect_arkocean_mould_connect_doing_1_46
+			spriteType = GFX_arkocean_progress_doing_long
+			position = { x= 1013 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_1_46c"
+			effect = beffect_arkocean_mould_connect_doing_1_46
+			spriteType = GFX_arkocean_progress_doing_long
+			position = { x= 1014 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_2_12a"
+			effect = beffect_arkocean_mould_connect_doing_2_12
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 624 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_2_12b"
+			effect = beffect_arkocean_mould_connect_doing_2_12
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 625 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_2_12c"
+			effect = beffect_arkocean_mould_connect_doing_2_12
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 626 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_2_23a"
+			effect = beffect_arkocean_mould_connect_doing_2_23
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 753 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_2_23b"
+			effect = beffect_arkocean_mould_connect_doing_2_23
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 754 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_2_23c"
+			effect = beffect_arkocean_mould_connect_doing_2_23
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 755 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_2_35a"
+			effect = beffect_arkocean_mould_connect_doing_2_35
+			spriteType = GFX_arkocean_progress_doing_long
+			position = { x= 883 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_2_35b"
+			effect = beffect_arkocean_mould_connect_doing_2_35
+			spriteType = GFX_arkocean_progress_doing_long
+			position = { x= 884 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_2_35c"
+			effect = beffect_arkocean_mould_connect_doing_2_35
+			spriteType = GFX_arkocean_progress_doing_long
+			position = { x= 885 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_2_56a"
+			effect = beffect_arkocean_mould_connect_doing_2_56
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 1141 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_2_56b"
+			effect = beffect_arkocean_mould_connect_doing_2_56
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 1142 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_2_56c"
+			effect = beffect_arkocean_mould_connect_doing_2_56
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 1143 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_3_12a"
+			effect = beffect_arkocean_mould_connect_doing_3_12
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 624 y= 388 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_3_12b"
+			effect = beffect_arkocean_mould_connect_doing_3_12
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 625 y= 388 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_3_12c"
+			effect = beffect_arkocean_mould_connect_doing_3_12
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 626 y= 388 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_3_24a"
+			effect = beffect_arkocean_mould_connect_doing_3_24
+			spriteType = GFX_arkocean_progress_doing_long
+			position = { x= 753 y= 388 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_3_24b"
+			effect = beffect_arkocean_mould_connect_doing_3_24
+			spriteType = GFX_arkocean_progress_doing_long
+			position = { x= 754 y= 388 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_3_24c"
+			effect = beffect_arkocean_mould_connect_doing_3_24
+			spriteType = GFX_arkocean_progress_doing_long
+			position = { x= 755 y= 388 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_3_46a"
+			effect = beffect_arkocean_mould_connect_doing_3_46
+			spriteType = GFX_arkocean_progress_doing_long
+			position = { x= 1013 y= 388 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_3_46b"
+			effect = beffect_arkocean_mould_connect_doing_3_46
+			spriteType = GFX_arkocean_progress_doing_long
+			position = { x= 1014 y= 388 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_3_46c"
+			effect = beffect_arkocean_mould_connect_doing_3_46
+			spriteType = GFX_arkocean_progress_doing_long
+			position = { x= 1015 y= 388 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_4_12a"
+			effect = beffect_arkocean_mould_connect_doing_4_12
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 624 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_4_12b"
+			effect = beffect_arkocean_mould_connect_doing_4_12
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 625 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_4_12c"
+			effect = beffect_arkocean_mould_connect_doing_4_12
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 626 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_4_23a"
+			effect = beffect_arkocean_mould_connect_doing_4_23
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 753 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_4_23b"
+			effect = beffect_arkocean_mould_connect_doing_4_23
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 754 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_4_23c"
+			effect = beffect_arkocean_mould_connect_doing_4_23
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 755 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_4_34a"
+			effect = beffect_arkocean_mould_connect_doing_4_34
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 882 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_4_34b"
+			effect = beffect_arkocean_mould_connect_doing_4_34
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 883 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_4_34c"
+			effect = beffect_arkocean_mould_connect_doing_4_34
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 884 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_4_45a"
+			effect = beffect_arkocean_mould_connect_doing_4_45
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 1012 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_4_45b"
+			effect = beffect_arkocean_mould_connect_doing_4_45
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 1013 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_4_45c"
+			effect = beffect_arkocean_mould_connect_doing_4_45
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 1014 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_4_56a"
+			effect = beffect_arkocean_mould_connect_doing_4_56
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 1141 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_4_56b"
+			effect = beffect_arkocean_mould_connect_doing_4_56
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 1142 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_4_56c"
+			effect = beffect_arkocean_mould_connect_doing_4_56
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 1143 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_5_12a"
+			effect = beffect_arkocean_mould_connect_doing_5_12
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 624 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_5_12b"
+			effect = beffect_arkocean_mould_connect_doing_5_12
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 625 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_5_12c"
+			effect = beffect_arkocean_mould_connect_doing_5_12
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 626 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_5_23a"
+			effect = beffect_arkocean_mould_connect_doing_5_23
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 753 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_5_23b"
+			effect = beffect_arkocean_mould_connect_doing_5_23
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 754 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_5_23c"
+			effect = beffect_arkocean_mould_connect_doing_5_23
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 755 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_5_34a"
+			effect = beffect_arkocean_mould_connect_doing_5_34
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 882 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_5_34b"
+			effect = beffect_arkocean_mould_connect_doing_5_34
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 883 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_5_34c"
+			effect = beffect_arkocean_mould_connect_doing_5_34
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 884 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_5_45a"
+			effect = beffect_arkocean_mould_connect_doing_5_45
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 1012 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_5_45b"
+			effect = beffect_arkocean_mould_connect_doing_5_45
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 1013 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_5_45c"
+			effect = beffect_arkocean_mould_connect_doing_5_45
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 1014 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_5_56a"
+			effect = beffect_arkocean_mould_connect_doing_5_56
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 1141 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_5_56b"
+			effect = beffect_arkocean_mould_connect_doing_5_56
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 1142 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_5_56c"
+			effect = beffect_arkocean_mould_connect_doing_5_56
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 1143 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_6_12a"
+			effect = beffect_arkocean_mould_connect_doing_6_12
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 624 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_6_12b"
+			effect = beffect_arkocean_mould_connect_doing_6_12
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 625 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_6_12c"
+			effect = beffect_arkocean_mould_connect_doing_6_12
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 626 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_6_23a"
+			effect = beffect_arkocean_mould_connect_doing_6_23
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 753 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_6_23b"
+			effect = beffect_arkocean_mould_connect_doing_6_23
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 754 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_6_23c"
+			effect = beffect_arkocean_mould_connect_doing_6_23
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 755 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_6_34a"
+			effect = beffect_arkocean_mould_connect_doing_6_34
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 882 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_6_34b"
+			effect = beffect_arkocean_mould_connect_doing_6_34
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 883 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_6_34c"
+			effect = beffect_arkocean_mould_connect_doing_6_34
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 884 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_6_45a"
+			effect = beffect_arkocean_mould_connect_doing_6_45
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 1012 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_6_45b"
+			effect = beffect_arkocean_mould_connect_doing_6_45
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 1013 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_doing_6_45c"
+			effect = beffect_arkocean_mould_connect_doing_6_45
+			spriteType = GFX_arkocean_progress_doing_short
+			position = { x= 1014 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+
+
+
+
+		#已完成
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_1_12a"
+			effect = beffect_arkocean_mould_done_1_2
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 624 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_1_12b"
+			effect = beffect_arkocean_mould_done_1_2
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 625 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_1_12c"
+			effect = beffect_arkocean_mould_done_1_2
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 626 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_1_23a"
+			effect = beffect_arkocean_mould_done_1_3
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 753 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_1_23b"
+			effect = beffect_arkocean_mould_done_1_3
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 754 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_1_23c"
+			effect = beffect_arkocean_mould_done_1_3
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 755 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_1_34a"
+			effect = beffect_arkocean_mould_done_1_4
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 882 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_1_34b"
+			effect = beffect_arkocean_mould_done_1_4
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 883 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_1_34c"
+			effect = beffect_arkocean_mould_done_1_4
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 884 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_1_46a"
+			effect = beffect_arkocean_mould_done_1_6
+			spriteType = GFX_arkocean_progress_done_long
+			position = { x= 1012 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_1_46b"
+			effect = beffect_arkocean_mould_done_1_6
+			spriteType = GFX_arkocean_progress_done_long
+			position = { x= 1013 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_1_46c"
+			effect = beffect_arkocean_mould_done_1_6
+			spriteType = GFX_arkocean_progress_done_long
+			position = { x= 1014 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_2_12a"
+			effect = beffect_arkocean_mould_done_2_2
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 624 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_2_12b"
+			effect = beffect_arkocean_mould_done_2_2
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 625 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_2_12c"
+			effect = beffect_arkocean_mould_done_2_2
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 626 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_2_23a"
+			effect = beffect_arkocean_mould_done_2_3
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 753 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_2_23b"
+			effect = beffect_arkocean_mould_done_2_3
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 754 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_2_23c"
+			effect = beffect_arkocean_mould_done_2_3
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 755 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_2_35a"
+			effect = beffect_arkocean_mould_done_2_5
+			spriteType = GFX_arkocean_progress_done_long
+			position = { x= 883 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_2_35b"
+			effect = beffect_arkocean_mould_done_2_5
+			spriteType = GFX_arkocean_progress_done_long
+			position = { x= 884 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_2_35c"
+			effect = beffect_arkocean_mould_done_2_5
+			spriteType = GFX_arkocean_progress_done_long
+			position = { x= 885 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_2_56a"
+			effect = beffect_arkocean_mould_done_2_6
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 1141 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_2_56b"
+			effect = beffect_arkocean_mould_done_2_6
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 1142 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_2_56c"
+			effect = beffect_arkocean_mould_done_2_6
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 1143 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_3_12a"
+			effect = beffect_arkocean_mould_done_3_2
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 624 y= 388 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_3_12b"
+			effect = beffect_arkocean_mould_done_3_2
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 625 y= 388 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_3_12c"
+			effect = beffect_arkocean_mould_done_3_2
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 626 y= 388 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_3_24a"
+			effect = beffect_arkocean_mould_done_3_4
+			spriteType = GFX_arkocean_progress_done_long
+			position = { x= 753 y= 388 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_3_24b"
+			effect = beffect_arkocean_mould_done_3_4
+			spriteType = GFX_arkocean_progress_done_long
+			position = { x= 754 y= 388 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_3_24c"
+			effect = beffect_arkocean_mould_done_3_4
+			spriteType = GFX_arkocean_progress_done_long
+			position = { x= 755 y= 388 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_3_46a"
+			effect = beffect_arkocean_mould_done_3_6
+			spriteType = GFX_arkocean_progress_done_long
+			position = { x= 1013 y= 388 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_3_46b"
+			effect = beffect_arkocean_mould_done_3_6
+			spriteType = GFX_arkocean_progress_done_long
+			position = { x= 1014 y= 388 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_3_46c"
+			effect = beffect_arkocean_mould_done_3_6
+			spriteType = GFX_arkocean_progress_done_long
+			position = { x= 1015 y= 388 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_4_12a"
+			effect = beffect_arkocean_mould_done_4_2
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 624 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_4_12b"
+			effect = beffect_arkocean_mould_done_4_2
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 625 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_4_12c"
+			effect = beffect_arkocean_mould_done_4_2
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 626 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_4_23a"
+			effect = beffect_arkocean_mould_done_4_3
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 753 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_4_23b"
+			effect = beffect_arkocean_mould_done_4_3
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 754 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_4_23c"
+			effect = beffect_arkocean_mould_done_4_3
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 755 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_4_34a"
+			effect = beffect_arkocean_mould_done_4_4
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 882 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_4_34b"
+			effect = beffect_arkocean_mould_done_4_4
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 883 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_4_34c"
+			effect = beffect_arkocean_mould_done_4_4
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 884 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_4_45a"
+			effect = beffect_arkocean_mould_done_4_5
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 1012 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_4_45b"
+			effect = beffect_arkocean_mould_done_4_5
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 1013 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_4_45c"
+			effect = beffect_arkocean_mould_done_4_5
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 1014 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_4_56a"
+			effect = beffect_arkocean_mould_done_4_6
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 1141 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_4_56b"
+			effect = beffect_arkocean_mould_done_4_6
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 1142 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_4_56c"
+			effect = beffect_arkocean_mould_done_4_6
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 1143 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_5_12a"
+			effect = beffect_arkocean_mould_done_5_2
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 624 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_5_12b"
+			effect = beffect_arkocean_mould_done_5_2
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 625 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_5_12c"
+			effect = beffect_arkocean_mould_done_5_2
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 626 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_5_23a"
+			effect = beffect_arkocean_mould_done_5_3
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 753 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_5_23b"
+			effect = beffect_arkocean_mould_done_5_3
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 754 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_5_23c"
+			effect = beffect_arkocean_mould_done_5_3
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 755 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_5_34a"
+			effect = beffect_arkocean_mould_done_5_4
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 882 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_5_34b"
+			effect = beffect_arkocean_mould_done_5_4
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 883 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_5_34c"
+			effect = beffect_arkocean_mould_done_5_4
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 884 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_5_45a"
+			effect = beffect_arkocean_mould_done_5_5
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 1012 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_5_45b"
+			effect = beffect_arkocean_mould_done_5_5
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 1013 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_5_45c"
+			effect = beffect_arkocean_mould_done_5_5
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 1014 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_5_56a"
+			effect = beffect_arkocean_mould_done_5_6
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 1141 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_5_56b"
+			effect = beffect_arkocean_mould_done_5_6
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 1142 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_5_56c"
+			effect = beffect_arkocean_mould_done_5_6
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 1143 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_6_12a"
+			effect = beffect_arkocean_mould_done_6_2
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 624 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_6_12b"
+			effect = beffect_arkocean_mould_done_6_2
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 625 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_6_12c"
+			effect = beffect_arkocean_mould_done_6_2
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 626 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_6_23a"
+			effect = beffect_arkocean_mould_done_6_3
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 753 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_6_23b"
+			effect = beffect_arkocean_mould_done_6_3
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 754 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_6_23c"
+			effect = beffect_arkocean_mould_done_6_3
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 755 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_6_34a"
+			effect = beffect_arkocean_mould_done_6_4
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 882 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_6_34b"
+			effect = beffect_arkocean_mould_done_6_4
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 883 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_6_34c"
+			effect = beffect_arkocean_mould_done_6_4
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 884 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_6_45a"
+			effect = beffect_arkocean_mould_done_6_5
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 1012 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_6_45b"
+			effect = beffect_arkocean_mould_done_6_5
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 1013 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_done_6_45c"
+			effect = beffect_arkocean_mould_done_6_5
+			spriteType = GFX_arkocean_progress_done_short
+			position = { x= 1014 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+
+
+		#未解锁
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_1_12a"
+			effect = beffect_arkocean_mould_connect_waiting_1_12
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 624 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_1_12b"
+			effect = beffect_arkocean_mould_connect_waiting_1_12
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 625 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_1_12c"
+			effect = beffect_arkocean_mould_connect_waiting_1_12
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 626 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_1_23a"
+			effect = beffect_arkocean_mould_connect_waiting_1_23
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 753 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_1_23b"
+			effect = beffect_arkocean_mould_connect_waiting_1_23
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 754 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_1_23c"
+			effect = beffect_arkocean_mould_connect_waiting_1_23
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 755 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_1_34a"
+			effect = beffect_arkocean_mould_connect_waiting_1_34
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 882 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_1_34b"
+			effect = beffect_arkocean_mould_connect_waiting_1_34
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 883 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_1_34c"
+			effect = beffect_arkocean_mould_connect_waiting_1_34
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 884 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_1_46a"
+			effect = beffect_arkocean_mould_connect_waiting_1_46
+			spriteType = GFX_arkocean_progress_waiting_long
+			position = { x= 1012 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_1_46b"
+			effect = beffect_arkocean_mould_connect_waiting_1_46
+			spriteType = GFX_arkocean_progress_waiting_long
+			position = { x= 1013 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_1_46c"
+			effect = beffect_arkocean_mould_connect_waiting_1_46
+			spriteType = GFX_arkocean_progress_waiting_long
+			position = { x= 1014 y= 190 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_2_12a"
+			effect = beffect_arkocean_mould_connect_waiting_2_12
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 624 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_2_12b"
+			effect = beffect_arkocean_mould_connect_waiting_2_12
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 625 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_2_12c"
+			effect = beffect_arkocean_mould_connect_waiting_2_12
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 626 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_2_23a"
+			effect = beffect_arkocean_mould_connect_waiting_2_23
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 753 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_2_23b"
+			effect = beffect_arkocean_mould_connect_waiting_2_23
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 754 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_2_23c"
+			effect = beffect_arkocean_mould_connect_waiting_2_23
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 755 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_2_35a"
+			effect = beffect_arkocean_mould_connect_waiting_2_35
+			spriteType = GFX_arkocean_progress_waiting_long
+			position = { x= 883 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_2_35b"
+			effect = beffect_arkocean_mould_connect_waiting_2_35
+			spriteType = GFX_arkocean_progress_waiting_long
+			position = { x= 884 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_2_35c"
+			effect = beffect_arkocean_mould_connect_waiting_2_35
+			spriteType = GFX_arkocean_progress_waiting_long
+			position = { x= 885 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_2_56a"
+			effect = beffect_arkocean_mould_connect_waiting_2_56
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 1141 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_2_56b"
+			effect = beffect_arkocean_mould_connect_waiting_2_56
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 1142 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_2_56c"
+			effect = beffect_arkocean_mould_connect_waiting_2_56
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 1143 y= 289 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_3_12a"
+			effect = beffect_arkocean_mould_connect_waiting_3_12
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 624 y= 388 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_3_12b"
+			effect = beffect_arkocean_mould_connect_waiting_3_12
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 625 y= 388 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_3_12c"
+			effect = beffect_arkocean_mould_connect_waiting_3_12
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 626 y= 388 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_3_24a"
+			effect = beffect_arkocean_mould_connect_waiting_3_24
+			spriteType = GFX_arkocean_progress_waiting_long
+			position = { x= 753 y= 388 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_3_24b"
+			effect = beffect_arkocean_mould_connect_waiting_3_24
+			spriteType = GFX_arkocean_progress_waiting_long
+			position = { x= 754 y= 388 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_3_24c"
+			effect = beffect_arkocean_mould_connect_waiting_3_24
+			spriteType = GFX_arkocean_progress_waiting_long
+			position = { x= 755 y= 388 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_3_46a"
+			effect = beffect_arkocean_mould_connect_waiting_3_46
+			spriteType = GFX_arkocean_progress_waiting_long
+			position = { x= 1013 y= 388 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_3_46b"
+			effect = beffect_arkocean_mould_connect_waiting_3_46
+			spriteType = GFX_arkocean_progress_waiting_long
+			position = { x= 1014 y= 388 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_3_46c"
+			effect = beffect_arkocean_mould_connect_waiting_3_46
+			spriteType = GFX_arkocean_progress_waiting_long
+			position = { x= 1015 y= 388 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_4_12a"
+			effect = beffect_arkocean_mould_connect_waiting_4_12
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 624 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_4_12b"
+			effect = beffect_arkocean_mould_connect_waiting_4_12
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 625 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_4_12c"
+			effect = beffect_arkocean_mould_connect_waiting_4_12
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 626 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_4_23a"
+			effect = beffect_arkocean_mould_connect_waiting_4_23
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 753 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_4_23b"
+			effect = beffect_arkocean_mould_connect_waiting_4_23
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 754 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_4_23c"
+			effect = beffect_arkocean_mould_connect_waiting_4_23
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 755 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_4_34a"
+			effect = beffect_arkocean_mould_connect_waiting_4_34
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 882 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_4_34b"
+			effect = beffect_arkocean_mould_connect_waiting_4_34
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 883 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_4_34c"
+			effect = beffect_arkocean_mould_connect_waiting_4_34
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 884 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_4_45a"
+			effect = beffect_arkocean_mould_connect_waiting_4_45
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 1012 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_4_45b"
+			effect = beffect_arkocean_mould_connect_waiting_4_45
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 1013 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_4_45c"
+			effect = beffect_arkocean_mould_connect_waiting_4_45
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 1014 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_4_56a"
+			effect = beffect_arkocean_mould_connect_waiting_4_56
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 1141 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_4_56b"
+			effect = beffect_arkocean_mould_connect_waiting_4_56
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 1142 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_4_56c"
+			effect = beffect_arkocean_mould_connect_waiting_4_56
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 1143 y= 487 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_5_12a"
+			effect = beffect_arkocean_mould_connect_waiting_5_12
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 624 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_5_12b"
+			effect = beffect_arkocean_mould_connect_waiting_5_12
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 625 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_5_12c"
+			effect = beffect_arkocean_mould_connect_waiting_5_12
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 626 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_5_23a"
+			effect = beffect_arkocean_mould_connect_waiting_5_23
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 753 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_5_23b"
+			effect = beffect_arkocean_mould_connect_waiting_5_23
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 754 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_5_23c"
+			effect = beffect_arkocean_mould_connect_waiting_5_23
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 755 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_5_34a"
+			effect = beffect_arkocean_mould_connect_waiting_5_34
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 882 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_5_34b"
+			effect = beffect_arkocean_mould_connect_waiting_5_34
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 883 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_5_34c"
+			effect = beffect_arkocean_mould_connect_waiting_5_34
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 884 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_5_45a"
+			effect = beffect_arkocean_mould_connect_waiting_5_45
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 1012 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_5_45b"
+			effect = beffect_arkocean_mould_connect_waiting_5_45
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 1013 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_5_45c"
+			effect = beffect_arkocean_mould_connect_waiting_5_45
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 1014 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_5_56a"
+			effect = beffect_arkocean_mould_connect_waiting_5_56
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 1141 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_5_56b"
+			effect = beffect_arkocean_mould_connect_waiting_5_56
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 1142 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_5_56c"
+			effect = beffect_arkocean_mould_connect_waiting_5_56
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 1143 y= 586 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_6_12a"
+			effect = beffect_arkocean_mould_connect_waiting_6_12
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 624 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_6_12b"
+			effect = beffect_arkocean_mould_connect_waiting_6_12
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 625 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_6_12c"
+			effect = beffect_arkocean_mould_connect_waiting_6_12
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 626 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_6_23a"
+			effect = beffect_arkocean_mould_connect_waiting_6_23
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 753 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_6_23b"
+			effect = beffect_arkocean_mould_connect_waiting_6_23
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 754 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_6_23c"
+			effect = beffect_arkocean_mould_connect_waiting_6_23
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 755 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_6_34a"
+			effect = beffect_arkocean_mould_connect_waiting_6_34
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 882 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_6_34b"
+			effect = beffect_arkocean_mould_connect_waiting_6_34
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 883 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_6_34c"
+			effect = beffect_arkocean_mould_connect_waiting_6_34
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 884 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_6_45a"
+			effect = beffect_arkocean_mould_connect_waiting_6_45
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 1012 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_6_45b"
+			effect = beffect_arkocean_mould_connect_waiting_6_45
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 1013 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_progress_waiting_6_45c"
+			effect = beffect_arkocean_mould_connect_waiting_6_45
+			spriteType = GFX_arkocean_progress_waiting_short
+			position = { x= 1014 y= 685 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		###           ############  ###      ###  ############  ###
+		###           ############  ###      ###  ############  ###
+		###           ####          ####    ####  ###           ###
+		###           ############   ###    ###   ############  ###
+		###           ############   ####  ####   ############  ###
+		###           ####            ###  ###    ###           ###
+		###           ####            ########    ###           ###
+		############  ############     ######     ############  ############
+		############  ############      ####      ############  ############
+
+		#等级
+		effectButtonType = {
+			name = "arkocean_mould_level2_41_base"
+			effect = beffect_no_effect
+			spriteType = GFX_arkocean_level_base_2
+			position = { x= 574 y= 525 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level2_41_l1"
+			effect = beffect_arkocean_mould_level_4_1_d1
+			spriteType = GFX_arkocean_level_done_2_blue
+			position = { x= 574 y= 525 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level2_41_l2"
+			effect = beffect_arkocean_mould_level_4_1_d2
+			spriteType = GFX_arkocean_level_done_2_blue
+			position = { x= 593 y= 525 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+########
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_level3_21_base"
+			effect = beffect_no_effect
+			spriteType = GFX_arkocean_level_base_3
+			position = { x= 574 y= 327 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level3_21_l1"
+			effect = beffect_arkocean_mould_level_2_1_d1
+			spriteType = GFX_arkocean_level_done_3_blue
+			position = { x= 574 y= 327 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level3_21_l2"
+			effect = beffect_arkocean_mould_level_2_1_d2
+			spriteType = GFX_arkocean_level_done_3_blue
+			position = { x= 586 y= 327 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level3_21_l3"
+			effect = beffect_arkocean_mould_level_2_1_d3
+			spriteType = GFX_arkocean_level_done_3_blue
+			position = { x= 598 y= 327 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_level3_22_base"
+			effect = beffect_no_effect
+			spriteType = GFX_arkocean_level_base_3
+			position = { x= 703 y= 327 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level3_22_l1"
+			effect = beffect_arkocean_mould_level_2_2_d1
+			spriteType = GFX_arkocean_level_done_3_blue
+			position = { x= 703 y= 327 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level3_22_l2"
+			effect = beffect_arkocean_mould_level_2_2_d2
+			spriteType = GFX_arkocean_level_done_3_blue
+			position = { x= 715 y= 327 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level3_22_l3"
+			effect = beffect_arkocean_mould_level_2_2_d3
+			spriteType = GFX_arkocean_level_done_3_blue
+			position = { x= 727 y= 327 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_level3_23_base"
+			effect = beffect_no_effect
+			spriteType = GFX_arkocean_level_base_3
+			position = { x= 832 y= 327 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level3_23_l1"
+			effect = beffect_arkocean_mould_level_2_3_d1
+			spriteType = GFX_arkocean_level_done_3_blue
+			position = { x= 832 y= 327 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level3_23_l2"
+			effect = beffect_arkocean_mould_level_2_3_d2
+			spriteType = GFX_arkocean_level_done_3_blue
+			position = { x= 844 y= 327 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level3_23_l3"
+			effect = beffect_arkocean_mould_level_2_3_d3
+			spriteType = GFX_arkocean_level_done_3_blue
+			position = { x= 856 y= 327 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_level3_25_base"
+			effect = beffect_no_effect
+			spriteType = GFX_arkocean_level_base_3
+			position = { x= 1091 y= 327 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level3_25_l1"
+			effect = beffect_arkocean_mould_level_2_5_d1
+			spriteType = GFX_arkocean_level_done_3_blue
+			position = { x= 1091 y= 327 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level3_25_l2"
+			effect = beffect_arkocean_mould_level_2_5_d2
+			spriteType = GFX_arkocean_level_done_3_blue
+			position = { x= 1103 y= 327 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level3_25_l3"
+			effect = beffect_arkocean_mould_level_2_5_d3
+			spriteType = GFX_arkocean_level_done_3_blue
+			position = { x= 1115 y= 327 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+########
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_level4_31_base"
+			effect = beffect_no_effect
+			spriteType = GFX_arkocean_level_base_4
+			position = { x= 574 y= 426 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level4_31_l1"
+			effect = beffect_arkocean_mould_level_3_1_d1
+			spriteType = GFX_arkocean_level_done_4_blue
+			position = { x= 574 y= 426 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level4_31_l2"
+			effect = beffect_arkocean_mould_level_3_1_d2
+			spriteType = GFX_arkocean_level_done_4_blue
+			position = { x= 583 y= 426 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level4_31_l3"
+			effect = beffect_arkocean_mould_level_3_1_d3
+			spriteType = GFX_arkocean_level_done_4_blue
+			position = { x= 592 y= 426 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level4_31_l4"
+			effect = beffect_arkocean_mould_level_3_1_d4
+			spriteType = GFX_arkocean_level_done_4_blue
+			position = { x= 601 y= 426 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_level4_32_base"
+			effect = beffect_no_effect
+			spriteType = GFX_arkocean_level_base_4
+			position = { x= 703 y= 426 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level4_32_l1"
+			effect = beffect_arkocean_mould_level_3_2_d1
+			spriteType = GFX_arkocean_level_done_4_blue
+			position = { x= 703 y= 426 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level4_32_l2"
+			effect = beffect_arkocean_mould_level_3_2_d2
+			spriteType = GFX_arkocean_level_done_4_blue
+			position = { x= 712 y= 426 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level4_32_l3"
+			effect = beffect_arkocean_mould_level_3_2_d3
+			spriteType = GFX_arkocean_level_done_4_blue
+			position = { x= 721 y= 426 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level4_32_l4"
+			effect = beffect_arkocean_mould_level_3_2_d4
+			spriteType = GFX_arkocean_level_done_4_blue
+			position = { x= 730 y= 426 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_level4_34_base"
+			effect = beffect_no_effect
+			spriteType = GFX_arkocean_level_base_4
+			position = { x= 962 y= 426 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level4_34_l1"
+			effect = beffect_arkocean_mould_level_3_4_d1
+			spriteType = GFX_arkocean_level_done_4_blue
+			position = { x= 962 y= 426 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level4_34_l2"
+			effect = beffect_arkocean_mould_level_3_4_d2
+			spriteType = GFX_arkocean_level_done_4_blue
+			position = { x= 971 y= 426 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level4_34_l3"
+			effect = beffect_arkocean_mould_level_3_4_d3
+			spriteType = GFX_arkocean_level_done_4_blue
+			position = { x= 980 y= 426 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level4_34_l4"
+			effect = beffect_arkocean_mould_level_3_4_d4
+			spriteType = GFX_arkocean_level_done_4_blue
+			position = { x= 989 y= 426 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_level4_44_base"
+			effect = beffect_no_effect
+			spriteType = GFX_arkocean_level_base_4
+			position = { x= 962 y= 525 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level4_44_l1"
+			effect = beffect_arkocean_mould_level_4_4_d1
+			spriteType = GFX_arkocean_level_done_4_blue
+			position = { x= 962 y= 525 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level4_44_l2"
+			effect = beffect_arkocean_mould_level_4_4_d2
+			spriteType = GFX_arkocean_level_done_4_blue
+			position = { x= 971 y= 525 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level4_44_l3"
+			effect = beffect_arkocean_mould_level_4_4_d3
+			spriteType = GFX_arkocean_level_done_4_blue
+			position = { x= 980 y= 525 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level4_44_l4"
+			effect = beffect_arkocean_mould_level_4_4_d4
+			spriteType = GFX_arkocean_level_done_4_blue
+			position = { x= 989 y= 525 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+########
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_level5_11_base"
+			effect = beffect_no_effect
+			spriteType = GFX_arkocean_level_base_5
+			position = { x= 574 y= 228 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5_11_l1"
+			effect = beffect_arkocean_mould_level_1_1_d1
+			spriteType = GFX_arkocean_level_done_5a_blue
+			position = { x= 574 y= 228 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5_11_l2"
+			effect = beffect_arkocean_mould_level_1_1_d2
+			spriteType = GFX_arkocean_level_done_5a_blue
+			position = { x= 581 y= 228 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5_11_l3"
+			effect = beffect_arkocean_mould_level_1_1_d3
+			spriteType = GFX_arkocean_level_done_5b_blue
+			position = { x= 588 y= 228 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5_11_l4"
+			effect = beffect_arkocean_mould_level_1_1_d4
+			spriteType = GFX_arkocean_level_done_5a_blue
+			position = { x= 596 y= 228 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5_11_l5"
+			effect = beffect_arkocean_mould_level_1_1_d5
+			spriteType = GFX_arkocean_level_done_5a_blue
+			position = { x= 603 y= 228 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_level5_14_base"
+			effect = beffect_no_effect
+			spriteType = GFX_arkocean_level_base_5
+			position = { x= 962 y= 228 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5_14_l1"
+			effect = beffect_arkocean_mould_level_1_4_d1
+			spriteType = GFX_arkocean_level_done_5a_blue
+			position = { x= 962 y= 228 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5_14_l2"
+			effect = beffect_arkocean_mould_level_1_4_d2
+			spriteType = GFX_arkocean_level_done_5a_blue
+			position = { x= 969 y= 228 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5_14_l3"
+			effect = beffect_arkocean_mould_level_1_4_d3
+			spriteType = GFX_arkocean_level_done_5b_blue
+			position = { x= 976 y= 228 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5_14_l4"
+			effect = beffect_arkocean_mould_level_1_4_d4
+			spriteType = GFX_arkocean_level_done_5a_blue
+			position = { x= 984 y= 228 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5_14_l5"
+			effect = beffect_arkocean_mould_level_1_4_d5
+			spriteType = GFX_arkocean_level_done_5a_blue
+			position = { x= 991 y= 228 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_level5_26_base"
+			effect = beffect_no_effect
+			spriteType = GFX_arkocean_level_base_5
+			position = { x= 1220 y= 327 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5_26_l1"
+			effect = beffect_arkocean_mould_level_2_6_d1
+			spriteType = GFX_arkocean_level_done_5a_blue
+			position = { x= 1220 y= 327 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5_26_l2"
+			effect = beffect_arkocean_mould_level_2_6_d2
+			spriteType = GFX_arkocean_level_done_5a_blue
+			position = { x= 1227 y= 327 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5_26_l3"
+			effect = beffect_arkocean_mould_level_2_6_d3
+			spriteType = GFX_arkocean_level_done_5b_blue
+			position = { x= 1234 y= 327 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5_26_l4"
+			effect = beffect_arkocean_mould_level_2_6_d4
+			spriteType = GFX_arkocean_level_done_5a_blue
+			position = { x= 1242 y= 327 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5_26_l5"
+			effect = beffect_arkocean_mould_level_2_6_d5
+			spriteType = GFX_arkocean_level_done_5a_blue
+			position = { x= 1249 y= 327 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_level5_42_base"
+			effect = beffect_no_effect
+			spriteType = GFX_arkocean_level_base_5
+			position = { x= 703 y= 525 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5_42_l1"
+			effect = beffect_arkocean_mould_level_4_2_d1
+			spriteType = GFX_arkocean_level_done_5a_blue
+			position = { x= 703 y= 525 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5_42_l2"
+			effect = beffect_arkocean_mould_level_4_2_d2
+			spriteType = GFX_arkocean_level_done_5a_blue
+			position = { x= 710 y= 525 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5_42_l3"
+			effect = beffect_arkocean_mould_level_4_2_d3
+			spriteType = GFX_arkocean_level_done_5b_blue
+			position = { x= 717 y= 525 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5_42_l4"
+			effect = beffect_arkocean_mould_level_4_2_d4
+			spriteType = GFX_arkocean_level_done_5a_blue
+			position = { x= 725 y= 525 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5_42_l5"
+			effect = beffect_arkocean_mould_level_4_2_d5
+			spriteType = GFX_arkocean_level_done_5a_blue
+			position = { x= 732 y= 525 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_level5_43_base"
+			effect = beffect_no_effect
+			spriteType = GFX_arkocean_level_base_5
+			position = { x= 832 y= 525 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5_43_l1"
+			effect = beffect_arkocean_mould_level_4_3_d1
+			spriteType = GFX_arkocean_level_done_5a_blue
+			position = { x= 832 y= 525 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5_43_l2"
+			effect = beffect_arkocean_mould_level_4_3_d2
+			spriteType = GFX_arkocean_level_done_5a_blue
+			position = { x= 839 y= 525 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5_43_l3"
+			effect = beffect_arkocean_mould_level_4_3_d3
+			spriteType = GFX_arkocean_level_done_5b_blue
+			position = { x= 846 y= 525 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5_43_l4"
+			effect = beffect_arkocean_mould_level_4_3_d4
+			spriteType = GFX_arkocean_level_done_5a_blue
+			position = { x= 854 y= 525 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5_43_l5"
+			effect = beffect_arkocean_mould_level_4_3_d5
+			spriteType = GFX_arkocean_level_done_5a_blue
+			position = { x= 861 y= 525 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_level5_45_base"
+			effect = beffect_no_effect
+			spriteType = GFX_arkocean_level_base_5
+			position = { x= 1091 y= 525 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5_45_l1"
+			effect = beffect_arkocean_mould_level_4_5_d1
+			spriteType = GFX_arkocean_level_done_5a_blue
+			position = { x= 1091 y= 525 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5_45_l2"
+			effect = beffect_arkocean_mould_level_4_5_d2
+			spriteType = GFX_arkocean_level_done_5a_blue
+			position = { x= 1098 y= 525 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5_45_l3"
+			effect = beffect_arkocean_mould_level_4_5_d3
+			spriteType = GFX_arkocean_level_done_5b_blue
+			position = { x= 1105 y= 525 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5_45_l4"
+			effect = beffect_arkocean_mould_level_4_5_d4
+			spriteType = GFX_arkocean_level_done_5a_blue
+			position = { x= 1113 y= 525 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5_45_l5"
+			effect = beffect_arkocean_mould_level_4_5_d5
+			spriteType = GFX_arkocean_level_done_5a_blue
+			position = { x= 1120 y= 525 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+########
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_level5p1_12_base"
+			effect = beffect_no_effect
+			spriteType = GFX_arkocean_level_base_5p1
+			position = { x= 703 y= 229 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5p1_12_l1"
+			effect = beffect_arkocean_mould_level_1_2_d1
+			spriteType = GFX_arkocean_level_done_6_blue
+			position = { x= 703 y= 229 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5p1_12_l2"
+			effect = beffect_arkocean_mould_level_1_2_d2
+			spriteType = GFX_arkocean_level_done_6_blue
+			position = { x= 709 y= 229 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5p1_12_l3"
+			effect = beffect_arkocean_mould_level_1_2_d3
+			spriteType = GFX_arkocean_level_done_6_blue
+			position = { x= 715 y= 229 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5p1_12_l4"
+			effect = beffect_arkocean_mould_level_1_2_d4
+			spriteType = GFX_arkocean_level_done_6_blue
+			position = { x= 721 y= 229 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5p1_12_l5"
+			effect = beffect_arkocean_mould_level_1_2_d5
+			spriteType = GFX_arkocean_level_done_6_blue
+			position = { x= 727 y= 229 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5p1_12_l6"
+			effect = beffect_arkocean_mould_level_1_2_d6
+			spriteType = GFX_arkocean_level_done_5p1_purple
+			position = { x= 733 y= 229 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+
+
+
+
+		effectButtonType = {
+			name = "arkocean_mould_level5p1_13_base"
+			effect = beffect_no_effect
+			spriteType = GFX_arkocean_level_base_5p1
+			position = { x= 832 y= 229 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5p1_13_l1"
+			effect = beffect_arkocean_mould_level_1_3_d1
+			spriteType = GFX_arkocean_level_done_6_blue
+			position = { x= 832 y= 229 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5p1_13_l2"
+			effect = beffect_arkocean_mould_level_1_3_d2
+			spriteType = GFX_arkocean_level_done_6_blue
+			position = { x= 838 y= 229 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5p1_13_l3"
+			effect = beffect_arkocean_mould_level_1_3_d3
+			spriteType = GFX_arkocean_level_done_6_blue
+			position = { x= 844 y= 229 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5p1_13_l4"
+			effect = beffect_arkocean_mould_level_1_3_d4
+			spriteType = GFX_arkocean_level_done_6_blue
+			position = { x= 850 y= 229 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5p1_13_l5"
+			effect = beffect_arkocean_mould_level_1_3_d5
+			spriteType = GFX_arkocean_level_done_6_blue
+			position = { x= 856 y= 229 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "arkocean_mould_level5p1_13_l6"
+			effect = beffect_arkocean_mould_level_1_3_d6
+			spriteType = GFX_arkocean_level_done_5p1_purple
+			position = { x= 862 y= 229 }
+			orientation = upper_left
+			alwaysTransparent = yes
+		}
+##    ##    ##    ##    ##    ##    ##    ##    ##    ##    ##    ##
+    ##    ##    ##    ##    ##    ##    ##    ##    ##    ##    ##
+  ##    ##    ##    ##    ##    ##    ##    ##    ##    ##    ##
+##    ##    ##    ##    ##    ##    ##    ##    ##    ##    ##    ##
+    ##    ##    ##    ##    ##    ##    ##    ##    ##    ##    ##
+  ##    ##    ##    ##    ##    ##    ##    ##    ##    ##    ##
+##    ##    ##    ##    ##    ##    ##    ##    ##    ##    ##    ##
+    ##    ##    ##    ##    ##    ##    ##    ##    ##    ##    ##
+  ##    ##    ##    ##    ##    ##    ##    ##    ##    ##    ##
+##    ##    ##    ##    ##    ##    ##    ##    ##    ##    ##    ##
+		### ALL OF THIS IS HIDDEN OR DISPLACED ! ###
+		instantTextBoxType = {#左上角标题
+			name = "irm_some_header"
+			font = "malgun_goth_24"
+			text = "GO EXPLORE" 	# header text
+			position = { x = 20000 y = 50000 }
+			maxWidth = 543
+			maxHeight = 22
+			fixedSize = yes
+			alwaysTransparent = yes
+		}
+		buttonType = {
+			name = "tts_button"
+			position = { x = 46600 y = 63900 }
+			spriteType = "GFX_button_tts_start"
+			buttonFont = "cg_16b"
+			shortCut = "t"
+		}
+		buttonType = {
+			name = "empire_flag"
+			quadTextureSprite = "GFX_empire_flag_128"
+			position = { x = 25000 y = 23500 }
+			orientation = UPPER_LEFT
+		}
+		iconType = { 
+			name = "empire_header_line" 
+			quadTextureSprite = "GFX_line_long" 
+			position = { x = 60000 y = 22000 } 
+			alwaysTransparent = yes 
+		}#上方的长线
+		iconType = { 
+			name = "hex_bg" 
+			spriteType = "GFX_hex_bg" 
+			position = { x = -10000 y = -14000 } 
+			alwaysTransparent = yes 
+		}#左上角的六边形网格
+		buttonType = { 
+			name = "focus_button" 
+			position = { x = -1180 y = -1112 } 
+			spriteType = "GFX_fleetview_focus" 
+		} # hidden
+		instantTextBoxType = { 
+			name = "heading" 
+			font = "malgun_goth_24" 
+			position = { x = -1120 y = -115 } 
+		} # hidden
+		buttonType = { 
+			name = "alien_message_background" 
+			size = { x = 0 y = 0 } 
+			position = { x = -1110 y = -11430 } 
+			spriteType = "GFX_tiles_dark_area_cut_8" 
+		} # hidden
+		buttonType = { 
+			name = "confirm_button" 
+			quadTextureSprite = "GFX_standard_button_142_34_button" 
+		} # hidden
+		containerWindowType = {
+			name = "portrait_background"
+			position = { x = -1117 y = -1145 }
+			size = { width = 0 height = 0 } 	# hide portrait window
+			iconType = { 
+				name = "event_picture" 
+				spriteType = "GFX_diplomacy_portrait_frame" 
+			} # hidden
+			iconType = { 
+				name = "portrait" 
+				spriteType = "GFX_portrait_character" 
+			} # hidden
+		}
+		containerWindowType = {
+			name = "portrait"
+			position = { x = -1117 y = -1145 }
+			size = { width = 0 height = 0 } # hide portrait window
+			iconType = { name = "portrait" spriteType = "GFX_portrait_gamesetup_mask" } # hidden
+			iconType = { name = "black_frame" spriteType = "GFX_diplomacy_portrait_shadow_frame" } # hidden
+			iconType = { name = "stripes_1" spriteType = "GFX_diplomacy_stripes_2" } # hidden
+			iconType = { name = "city_frame" spriteType = "GFX_diplomacy_portrait_frame" } # hidden
+		}
+		iconType = { name = "empire_info_bg" spriteType = "GFX_diplomacy_dark_fade_bg" } # hidden
+		instantTextBoxType={ name = "empire_name" font = "malgun_goth_24" } # hidden
+		instantTextBoxType={ name = "empire_government_type" font = "cg_16b" } # hidden
+		instantTextBoxType={ name = "empire_personality_type" font = "cg_16b" } # hidden
+		OverlappingElementsBoxType = { name = "empire_ethics_icons" position = { x = -1145 y = -11138 } } # hidden
+		iconType = { name = "empire_flag" spriteType = "GFX_empire_flag_128" position = { x = -1125 y = -11235 } } # hidden
+		containerWindowType = {
+			name = "leader_details"
+			position = { x = -11250 y = -11750 }
+			containerWindowType = { name = "empire_traits_box" } # hidden
+			instantTextBoxType = { name = "empire_traits_label" font = "cg_16b" } # hidden
+			overlappingElementsBoxType = { name = "leader_traits" } # hidden
+			instantTextBoxType = { name = "leader_name" font = "cg_16b" } # hidden
+			instantTextBoxType = { name = "leader_species" font = "cg_16b" } # hidden
+		}
+		containerWindowType = {
+			name = "opinion_window"
+			position = { x = -1127 y = -11110 }
+			size = { width = 94 height = 30 }
+			iconType = { name = "their_opinion_icon" spriteType = "GFX_diplomacy_opinion" } # hidden
+			instantTextBoxType = { name = "their_opinion" font = "cg_16b" }
+		}
+		containerWindowType = {
+			name = "EVENT_DIPLO"
+			position = { x = 20000 y = 500000 }
+			#size = { width=563 height=220 }
+			movable = no
+
+			instantTextBoxType={
+			 name = "action_title"
+			 font = "malgun_goth_24"
+			 position = { x = 200000 y = 00000 }
+			 maxWidth = 200
+			 alwaysTransparent = yes
+			}
+			instantTextBoxType={
+			 name = "action_desc"
+			 font = "malgun_goth_24"
+			 position = { x = 4900000 y = 0 }
+			 maxWidth = 500
+			 maxHeight = 180
+			 Orientation = "UPPER_LEFT"
+			 format = center
+			 alwaysTransparent = yes
+			 text_color_code = "H"
+			}
+			listboxType = { name = "option_list" position = { x = -11500 y = -1130 } } # hidden option list
+		}
+		# Description Section
+		instantTextBoxType = {
+			name = "alien_message"
+			font = "cg_16b"
+			position = { x = 200000 y = 1000000 }
+			maxWidth = 465
+			maxHeight = 220
+			format = left
+			scrollbartype = "standardtext_slider"
+		}
+	}
+}

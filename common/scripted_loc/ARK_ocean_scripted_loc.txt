@@ -1,0 +1,53 @@
+# Allows you to create your own dynamic keys to be called in localization.
+
+# defined_text = {
+# 	name = GetExampleText 					#The key to refer to in locs, e.g. [Root.GetExampleText]
+# 	random = no								#If "random = no" is specified (default is "yes"), it will pick the entry with the highest weight (rather than weighted
+# 											#random among valid entries). If several entries have the same weight (or none is specified), the first will be picked.
+# 	text = {
+# 		localization_key = text_something	#The loc key used if this text entry is picked.
+# 		trigger = {							#Triggers that determine if this text entry can be picked.
+# 		}
+# 		weight = {							#Weight field to determine how likely this one is to be picked if multiple are possible.
+# 			weight = 1 						#Works like weight fields everywhere, with modifiers etc. Weight is 1 if not specified.
+# 			modifier = {
+# 				factor = 2
+# 			}
+# 		}
+# 	}
+# 	text = { 								#You can specify as many text entries as you want
+# 		localization_key = text_something_else
+# 		trigger = {
+# 		}
+# 	}
+# 	default = default_text 					#You can specify a default text, which is used in case the triggers of all entries fail.
+# }
+
+
+# You can also do this to use script values in loc:
+# defined_text = {
+# 	name = scripted_value_test
+# 	value = value:desired_science_ships_system_mult
+# }
+
+
+arkocean_mould_var_cells_loc = {
+	name = arkocean_mould_var_cells_loc
+	value = value:arkocean_mould_var_cells
+}
+arkocean_mould_var_colonies_loc = {
+	name = arkocean_mould_var_colonies_loc
+	value = value:arkocean_mould_var_colonies
+}
+arkocean_mould_var_assimilation_loc = {
+	name = arkocean_mould_var_assimilation_loc
+	value = value:arkocean_mould_var_assimilation
+}
+arkocean_mould_var_terraform_loc = {
+	name = arkocean_mould_var_terraform_loc
+	value = value:arkocean_mould_var_terraform
+}
+arkocean_mould_var_winning_war_loc = {
+	name = arkocean_mould_var_winning_war_loc
+	value = value:arkocean_mould_var_winning_war
+}

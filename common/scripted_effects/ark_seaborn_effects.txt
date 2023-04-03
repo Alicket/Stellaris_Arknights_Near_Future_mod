@@ -1,0 +1,30 @@
+ark_seaborn_assimilation = {
+	random_owned_pop = {
+		limit =  {
+			NOR = {
+				has_trait = trait_ARK_ocean_seaborn
+				has_trait = trait_machine_unit
+			}
+		}
+		kill_pop = yes
+		root = {
+			create_pop = {
+				species = root.owner
+			}
+			owner = {
+				add_resource = {
+					arkseaborn_cells = 0.04
+					unity = 10
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = 0.04
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_assimilation
+					value = 1
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,188 @@
+ark_ocean_evolution_variable = {
+	base = 0
+	modifier = {
+		add = this.var_ark_ocean_colony_evolution
+		this = { is_variable_set = var_ark_ocean_colony_evolution }
+	}
+	mult = 0.001
+}
+
+# ark_ocean_evolution_modifier_start = {
+# 	base = 0
+# 	modifier = {
+# 		add = @\[ 0.001 * var_ark_ocean_colony_evolution ]
+# 	}
+# }
+
+# ark_ocean_evolution_modifier_mid = {
+# 	base = 0
+# 	modifier = {
+# 		add = @\[ 0.0005 * this.value:ark_ocean_evolution_variable ]
+# 	}
+# }
+
+arkocean_mould_var_cells = {
+	base = 0
+	modifier = {
+		add = this.var_ark_seaborn_evolution_cell
+		this = { is_variable_set = var_ark_seaborn_evolution_cell }
+	}
+}
+arkocean_mould_var_colonies = {
+	base = 0
+	modifier = {
+		add = this.var_ark_seaborn_evolution_colony
+		this = { is_variable_set = var_ark_seaborn_evolution_colony }
+	}
+}
+arkocean_mould_var_colonies_cells = {
+	base = 0.02
+	modifier = {
+		mult = this.var_ark_seaborn_evolution_colony
+		this = { is_variable_set = var_ark_seaborn_evolution_colony }
+	}
+}
+arkocean_mould_var_assimilation = {
+	base = 0
+	modifier = {
+		add = this.var_ark_seaborn_evolution_assimilation
+		this = { is_variable_set = var_ark_seaborn_evolution_assimilation }
+	}
+}
+arkocean_mould_var_terraform = {
+	base = 0
+	modifier = {
+		add = this.var_ark_seaborn_evolution_terraform
+		this = { is_variable_set = var_ark_seaborn_evolution_terraform }
+	}
+}
+arkocean_mould_var_winning_war = {
+	base = 0
+	modifier = {
+		add = this.var_ark_seaborn_evolution_winning_war
+		this = { is_variable_set = var_ark_seaborn_evolution_winning_war }
+	}
+}
+
+
+
+arkocean_mould_value_1_2 = {
+	base = 0
+	modifier = {
+		add = event_target:arkocean_isharmla_me.var_ark_seaborn_mould_1_2
+		event_target:arkocean_isharmla_me = { is_variable_set = var_ark_seaborn_mould_1_2 }
+	}
+}
+arkocean_mould_value_1_3 = {
+	base = 0
+	modifier = {
+		add = event_target:arkocean_isharmla_me.var_ark_seaborn_mould_1_3
+		event_target:arkocean_isharmla_me = { is_variable_set = var_ark_seaborn_mould_1_3 }
+	}
+}
+arkocean_mould_value_1_4 = {
+	base = 0
+	modifier = {
+		add = event_target:arkocean_isharmla_me.var_ark_seaborn_mould_1_4
+		event_target:arkocean_isharmla_me = { is_variable_set = var_ark_seaborn_mould_1_4 }
+	}
+}
+arkocean_mould_value_1_6 = {
+	base = 0
+	modifier = {
+		add = event_target:arkocean_isharmla_me.var_ark_seaborn_mould_1_6
+		event_target:arkocean_isharmla_me = { is_variable_set = var_ark_seaborn_mould_1_6 }
+	}
+}
+arkocean_mould_value_2_1 = {
+	base = 0
+	modifier = {
+		add = event_target:arkocean_isharmla_me.var_ark_seaborn_mould_2_1
+		event_target:arkocean_isharmla_me = { is_variable_set = var_ark_seaborn_mould_2_1 }
+	}
+}
+arkocean_mould_value_2_2 = {
+	base = 0
+	modifier = {
+		add = event_target:arkocean_isharmla_me.var_ark_seaborn_mould_2_2
+		event_target:arkocean_isharmla_me = { is_variable_set = var_ark_seaborn_mould_2_2 }
+	}
+}
+arkocean_mould_value_2_3 = {
+	base = 0
+	modifier = {
+		add = event_target:arkocean_isharmla_me.var_ark_seaborn_mould_2_3
+		event_target:arkocean_isharmla_me = { is_variable_set = var_ark_seaborn_mould_2_3 }
+	}
+}
+arkocean_mould_value_2_5 = {
+	base = 0
+	modifier = {
+		add = event_target:arkocean_isharmla_me.var_ark_seaborn_mould_2_5
+		event_target:arkocean_isharmla_me = { is_variable_set = var_ark_seaborn_mould_2_5 }
+	}
+}
+arkocean_mould_value_2_6 = {
+	base = 0
+	modifier = {
+		add = event_target:arkocean_isharmla_me.var_ark_seaborn_mould_2_6
+		event_target:arkocean_isharmla_me = { is_variable_set = var_ark_seaborn_mould_2_6 }
+	}
+}
+arkocean_mould_value_3_1 = {
+	base = 0
+	modifier = {
+		add = event_target:arkocean_isharmla_me.var_ark_seaborn_mould_3_1
+		event_target:arkocean_isharmla_me = { is_variable_set = var_ark_seaborn_mould_3_1 }
+	}
+}
+arkocean_mould_value_3_2 = {
+	base = 0
+	modifier = {
+		add = event_target:arkocean_isharmla_me.var_ark_seaborn_mould_3_2
+		event_target:arkocean_isharmla_me = { is_variable_set = var_ark_seaborn_mould_3_2 }
+	}
+}
+arkocean_mould_value_3_4 = {
+	base = 0
+	modifier = {
+		add = event_target:arkocean_isharmla_me.var_ark_seaborn_mould_3_4
+		event_target:arkocean_isharmla_me = { is_variable_set = var_ark_seaborn_mould_3_4 }
+	}
+}
+arkocean_mould_value_4_1 = {
+	base = 0
+	modifier = {
+		add = event_target:arkocean_isharmla_me.var_ark_seaborn_mould_4_1
+		event_target:arkocean_isharmla_me = { is_variable_set = var_ark_seaborn_mould_4_1 }
+	}
+}
+arkocean_mould_value_4_2 = {
+	base = 0
+	modifier = {
+		add = event_target:arkocean_isharmla_me.var_ark_seaborn_mould_4_2
+		event_target:arkocean_isharmla_me = { is_variable_set = var_ark_seaborn_mould_4_2 }
+	}
+}
+arkocean_mould_value_4_3 = {
+	base = 0
+	modifier = {
+		add = event_target:arkocean_isharmla_me.var_ark_seaborn_mould_4_3
+		event_target:arkocean_isharmla_me = { is_variable_set = var_ark_seaborn_mould_4_3 }
+	}
+}
+arkocean_mould_value_4_4 = {
+	base = 0
+	modifier = {
+		add = event_target:arkocean_isharmla_me.var_ark_seaborn_mould_4_4
+		event_target:arkocean_isharmla_me = { is_variable_set = var_ark_seaborn_mould_4_4 }
+	}
+}
+arkocean_mould_value_4_5 = {
+	base = 0
+	modifier = {
+		add = event_target:arkocean_isharmla_me.var_ark_seaborn_mould_4_5
+		event_target:arkocean_isharmla_me = { is_variable_set = var_ark_seaborn_mould_4_5 }
+	}
+}
+

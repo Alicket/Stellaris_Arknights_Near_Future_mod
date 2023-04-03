@@ -1,0 +1,23 @@
+animation = {
+	name = "ark_ocean_portrait_anim_idle1_animation"
+	file = "ark_ocean_portrait_anim_idle1.anim"
+}
+animation = {
+	name = "ark_ocean_portrait_anim_idle2_animation"
+	file = "ark_ocean_portrait_anim_idle2.anim"
+}
+animation = {
+	name = "ark_ocean_portrait_anim_idle3_animation"
+	file = "ark_ocean_portrait_anim_idle3.anim"
+}
+entity = {
+	name = "portrait_ark_ocean_entity"
+	pdxmesh = "portrait_ark_ocean_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0.1 chance = 2.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle2"    animation_blend_time = 0.1 chance = 2.0 looping = no next_state = idle}
+	state = { name = "idle"       animation = "idle3"    animation_blend_time = 0.1 chance = 2.0 looping = no next_state = idle}
+
+	scale = 1
+}

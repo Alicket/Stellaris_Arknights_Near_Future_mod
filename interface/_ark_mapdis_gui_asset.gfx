@@ -1,0 +1,1230 @@
+spriteTypes = {
+	spriteType = {#生机细胞text
+		name = "GFX_text_arkocean_cells_small"
+		textureFile = "gfx/interface/icons/text_icons/arkocean_cells_text.dds"
+	}
+	spriteType = {#主面板背景
+		name = "GFX_message_ark_mould_information"
+		textureFile = "gfx/interface/icons/message/message_ark_mould_information.dds"
+	}
+	spriteType = {#主面板背景
+		name = "GFX_arkocean_background"
+		textureFile = "gfx/interface/gui/pic/arkocean_background.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {#返回
+		name = GFX_arkocean_button_back
+		texturefile = "gfx/interface/gui/button/arkocean_button_back.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {#返回后渐变
+		name = GFX_arkocean_button_back_gradient
+		texturefile = "gfx/interface/gui/pic/arkocean_button_back_gradient.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {#tip
+		name = GFX_arkocean_tips
+		textureFile = "gfx/interface/gui/pic/arkocean_tips.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {#information
+		name = GFX_arkocean_information
+		textureFile = "gfx/interface/gui/pic/arkocean_information.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {#stock
+		name = GFX_arkocean_stock
+		textureFile = "gfx/interface/gui/pic/arkocean_stock.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {#information text
+		name = GFX_arkocean_information_text
+		textureFile = "gfx/interface/gui/pic/arkocean_information_text_box.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {#stock value
+		name = GFX_arkocean_stock_text
+		textureFile = "gfx/interface/gui/pic/arkocean_stock_value_box.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {#cells
+		name = GFX_arkocean_cells
+		textureFile = "gfx/interface/gui/pic/arkocean_cells_pic.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {#2
+		name = GFX_arkocean_level_base_2
+		textureFile = "gfx/interface/gui/pic/arkocean_level_base_2.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {#3
+		name = GFX_arkocean_level_base_3
+		textureFile = "gfx/interface/gui/pic/arkocean_level_base_3.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {#4
+		name = GFX_arkocean_level_base_4
+		textureFile = "gfx/interface/gui/pic/arkocean_level_base_4.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {#5
+		name = GFX_arkocean_level_base_5
+		textureFile = "gfx/interface/gui/pic/arkocean_level_base_5.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {#6
+		name = GFX_arkocean_level_base_6
+		textureFile = "gfx/interface/gui/pic/arkocean_level_base_6.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {#5p1
+		name = GFX_arkocean_level_base_5p1
+		textureFile = "gfx/interface/gui/pic/arkocean_level_base_5p1.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+
+	spriteType = {#2 b
+		name = GFX_arkocean_level_done_2_blue
+		textureFile = "gfx/interface/gui/pic/arkocean_level_done_2_blue.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {#3 b
+		name = GFX_arkocean_level_done_3_blue
+		textureFile = "gfx/interface/gui/pic/arkocean_level_done_3_blue.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {#4 b
+		name = GFX_arkocean_level_done_4_blue
+		textureFile = "gfx/interface/gui/pic/arkocean_level_done_4_blue.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {#5 b a
+		name = GFX_arkocean_level_done_5a_blue
+		textureFile = "gfx/interface/gui/pic/arkocean_level_done_5a_blue.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {#5 b b
+		name = GFX_arkocean_level_done_5b_blue
+		textureFile = "gfx/interface/gui/pic/arkocean_level_done_5b_blue.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {#6 b
+		name = GFX_arkocean_level_done_6_blue
+		textureFile = "gfx/interface/gui/pic/arkocean_level_done_6_blue.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {#5p1 p
+		name = GFX_arkocean_level_done_5p1_purple
+		textureFile = "gfx/interface/gui/pic/arkocean_level_done_5p1_purple.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {#上 线
+		name = GFX_arkocean_lrsap_upl
+		textureFile = "gfx/interface/gui/pic/arkocean_lrsap_upl.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {#下 线
+		name = GFX_arkocean_lrsap_downl
+		textureFile = "gfx/interface/gui/pic/arkocean_lrsap_downl.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {#上 点
+		name = GFX_arkocean_lrsap_upd
+		textureFile = "gfx/interface/gui/pic/arkocean_lrsap_upd.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_lrsap_upd_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_lrsap_dot_up_effect.dds"
+			animationrotation = 270
+			animationlooping = yes
+			animationtime = 36
+			animationdelay = 0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			#animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#下 点
+		name = GFX_arkocean_lrsap_downd
+		textureFile = "gfx/interface/gui/pic/arkocean_lrsap_downd.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_lrsap_downd_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_lrsap_dot_down_effect.dds"
+			animationrotation = 270
+			animationlooping = yes
+			animationtime = 36
+			animationdelay = 0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#未完成 短
+		name = GFX_arkocean_progress_waiting_short
+		textureFile = "gfx/interface/gui/pic/arkocean_progress_waiting_short.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {#进行中 短
+		name = GFX_arkocean_progress_doing_short
+		textureFile = "gfx/interface/gui/pic/arkocean_progress_doing_short.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_progress_doing_short_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_progress_doing_effect.dds"
+			animationrotation = 270
+			animationlooping = yes
+			animationtime = 30
+			animationdelay = 0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#已完成 短
+		name = GFX_arkocean_progress_done_short
+		textureFile = "gfx/interface/gui/pic/arkocean_progress_done_short.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {#未完成 长
+		name = GFX_arkocean_progress_waiting_long
+		textureFile = "gfx/interface/gui/pic/arkocean_progress_waiting_long.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {#进行中 长
+		name = GFX_arkocean_progress_doing_long
+		textureFile = "gfx/interface/gui/pic/arkocean_progress_doing_long.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_progress_doing_long_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_progress_doing_long_effect.dds"
+			animationrotation = 270
+			animationlooping = yes
+			animationtime = 75
+			animationdelay = 0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#已完成 长
+		name = GFX_arkocean_progress_done_long
+		textureFile = "gfx/interface/gui/pic/arkocean_progress_done_long.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	#############################################################################################################################
+	#############################################################################################################################
+	#############################################################################################################################
+	spriteType = {#mould waiting
+		name = GFX_arkocean_mould_1_1_waiting
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_1_1_waiting.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould waiting
+		name = GFX_arkocean_mould_1_2_waiting
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_1_2_waiting.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould waiting
+		name = GFX_arkocean_mould_1_3_waiting
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_1_3_waiting.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould waiting
+		name = GFX_arkocean_mould_1_4_waiting
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_1_4_waiting.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould waiting
+		name = GFX_arkocean_mould_1_6_waiting
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_1_6_waiting.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould waiting
+		name = GFX_arkocean_mould_2_1_waiting
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_2_1_waiting.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould waiting
+		name = GFX_arkocean_mould_2_2_waiting
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_2_2_waiting.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould waiting
+		name = GFX_arkocean_mould_2_3_waiting
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_2_3_waiting.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould waiting
+		name = GFX_arkocean_mould_2_5_waiting
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_2_5_waiting.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould waiting
+		name = GFX_arkocean_mould_2_6_waiting
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_2_6_waiting.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould waiting
+		name = GFX_arkocean_mould_3_1_waiting
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_3_1_waiting.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould waiting
+		name = GFX_arkocean_mould_3_2_waiting
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_3_2_waiting.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould waiting
+		name = GFX_arkocean_mould_3_4_waiting
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_3_4_waiting.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould waiting
+		name = GFX_arkocean_mould_3_6_waiting
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_3_6_waiting.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould waiting
+		name = GFX_arkocean_mould_4_1_waiting
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_4_1_waiting.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould waiting
+		name = GFX_arkocean_mould_4_2_waiting
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_4_2_waiting.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould waiting
+		name = GFX_arkocean_mould_4_3_waiting
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_4_3_waiting.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould waiting
+		name = GFX_arkocean_mould_4_4_waiting
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_4_4_waiting.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould waiting
+		name = GFX_arkocean_mould_4_5_waiting
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_4_5_waiting.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould waiting
+		name = GFX_arkocean_mould_4_6_waiting
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_4_6_waiting.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould waiting
+		name = GFX_arkocean_mould_5_1_waiting
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_5_1_waiting.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould waiting
+		name = GFX_arkocean_mould_5_2_waiting
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_5_2_waiting.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould waiting
+		name = GFX_arkocean_mould_5_3_waiting
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_5_3_waiting.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould waiting
+		name = GFX_arkocean_mould_5_4_waiting
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_5_4_waiting.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould waiting
+		name = GFX_arkocean_mould_5_5_waiting
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_5_5_waiting.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould waiting
+		name = GFX_arkocean_mould_5_6_waiting
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_5_6_waiting.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould waiting
+		name = GFX_arkocean_mould_6_1_waiting
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_6_1_waiting.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould waiting
+		name = GFX_arkocean_mould_6_2_waiting
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_6_2_waiting.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould waiting
+		name = GFX_arkocean_mould_6_3_waiting
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_6_3_waiting.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould waiting
+		name = GFX_arkocean_mould_6_4_waiting
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_6_4_waiting.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould waiting
+		name = GFX_arkocean_mould_6_5_waiting
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_6_5_waiting.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+
+
+
+	#############################################################################################################################
+	#############################################################################################################################
+	#############################################################################################################################
+	spriteType = {#mould done
+		name = GFX_arkocean_mould_1_1_done
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_1_1_done.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould done
+		name = GFX_arkocean_mould_1_2_done
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_1_2_done.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould done
+		name = GFX_arkocean_mould_1_3_done
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_1_3_done.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould done
+		name = GFX_arkocean_mould_1_4_done
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_1_4_done.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould done
+		name = GFX_arkocean_mould_1_6_done
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_1_6_done.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould done
+		name = GFX_arkocean_mould_2_1_done
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_2_1_done.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould done
+		name = GFX_arkocean_mould_2_2_done
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_2_2_done.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould done
+		name = GFX_arkocean_mould_2_3_done
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_2_3_done.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould done
+		name = GFX_arkocean_mould_2_5_done
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_2_5_done.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould done
+		name = GFX_arkocean_mould_2_6_done
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_2_6_done.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould done
+		name = GFX_arkocean_mould_3_1_done
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_3_1_done.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould done
+		name = GFX_arkocean_mould_3_2_done
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_3_2_done.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould done
+		name = GFX_arkocean_mould_3_4_done
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_3_4_done.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould done
+		name = GFX_arkocean_mould_3_6_done
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_3_6_done.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould done
+		name = GFX_arkocean_mould_4_1_done
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_4_1_done.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould done
+		name = GFX_arkocean_mould_4_2_done
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_4_2_done.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould done
+		name = GFX_arkocean_mould_4_3_done
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_4_3_done.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould done
+		name = GFX_arkocean_mould_4_4_done
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_4_4_done.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould done
+		name = GFX_arkocean_mould_4_5_done
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_4_5_done.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould done
+		name = GFX_arkocean_mould_4_6_done
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_4_6_done.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould done
+		name = GFX_arkocean_mould_5_1_done
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_5_1_done.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould done
+		name = GFX_arkocean_mould_5_2_done
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_5_2_done.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould done
+		name = GFX_arkocean_mould_5_3_done
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_5_3_done.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould done
+		name = GFX_arkocean_mould_5_4_done
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_5_4_done.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould done
+		name = GFX_arkocean_mould_5_5_done
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_5_5_done.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould done
+		name = GFX_arkocean_mould_5_6_done
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_5_6_done.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould done
+		name = GFX_arkocean_mould_6_1_done
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_6_1_done.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould done
+		name = GFX_arkocean_mould_6_2_done
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_6_2_done.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould done
+		name = GFX_arkocean_mould_6_3_done
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_6_3_done.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould done
+		name = GFX_arkocean_mould_6_4_done
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_6_4_done.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#mould done
+		name = GFX_arkocean_mould_6_5_done
+		textureFile = "gfx/interface/gui/pic/arkocean_button_mould_6_5_done.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	#############################################################################################################################
+	#############################################################################################################################
+	#############################################################################################################################
+	spriteType = {#按钮332*26
+		name = "GFX_arkocean_button_332_26"
+		texturefile = "gfx/interface/gui/button/arkocean_button_332_26.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_332_26_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 90
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+
+	spriteType = {#mould
+		name = "GFX_arkocean_button_mould_1_1"
+		texturefile = "gfx/interface/gui/button/arkocean_button_mould_1_1.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_mould_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 60
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#mould
+		name = "GFX_arkocean_button_mould_1_2"
+		texturefile = "gfx/interface/gui/button/arkocean_button_mould_1_2.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_mould_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 60
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#mould
+		name = "GFX_arkocean_button_mould_1_3"
+		texturefile = "gfx/interface/gui/button/arkocean_button_mould_1_3.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_mould_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 60
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#mould
+		name = "GFX_arkocean_button_mould_1_4"
+		texturefile = "gfx/interface/gui/button/arkocean_button_mould_1_4.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_mould_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 60
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#mould
+		name = "GFX_arkocean_button_mould_1_6"
+		texturefile = "gfx/interface/gui/button/arkocean_button_mould_1_6.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_mould_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 60
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#mould
+		name = "GFX_arkocean_button_mould_2_1"
+		texturefile = "gfx/interface/gui/button/arkocean_button_mould_2_1.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_mould_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 60
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#mould
+		name = "GFX_arkocean_button_mould_2_2"
+		texturefile = "gfx/interface/gui/button/arkocean_button_mould_2_2.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_mould_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 60
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#mould
+		name = "GFX_arkocean_button_mould_2_3"
+		texturefile = "gfx/interface/gui/button/arkocean_button_mould_2_3.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_mould_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 60
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#mould
+		name = "GFX_arkocean_button_mould_2_5"
+		texturefile = "gfx/interface/gui/button/arkocean_button_mould_2_5.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_mould_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 60
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#mould
+		name = "GFX_arkocean_button_mould_2_6"
+		texturefile = "gfx/interface/gui/button/arkocean_button_mould_2_6.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_mould_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 60
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#mould
+		name = "GFX_arkocean_button_mould_3_1"
+		texturefile = "gfx/interface/gui/button/arkocean_button_mould_3_1.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_mould_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 60
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#mould
+		name = "GFX_arkocean_button_mould_3_2"
+		texturefile = "gfx/interface/gui/button/arkocean_button_mould_3_2.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_mould_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 60
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#mould
+		name = "GFX_arkocean_button_mould_3_4"
+		texturefile = "gfx/interface/gui/button/arkocean_button_mould_3_4.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_mould_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 60
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#mould
+		name = "GFX_arkocean_button_mould_3_6"
+		texturefile = "gfx/interface/gui/button/arkocean_button_mould_3_6.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_mould_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 60
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#mould
+		name = "GFX_arkocean_button_mould_4_1"
+		texturefile = "gfx/interface/gui/button/arkocean_button_mould_4_1.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_mould_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 60
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#mould
+		name = "GFX_arkocean_button_mould_4_2"
+		texturefile = "gfx/interface/gui/button/arkocean_button_mould_4_2.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_mould_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 60
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#mould
+		name = "GFX_arkocean_button_mould_4_3"
+		texturefile = "gfx/interface/gui/button/arkocean_button_mould_4_3.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_mould_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 60
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#mould
+		name = "GFX_arkocean_button_mould_4_4"
+		texturefile = "gfx/interface/gui/button/arkocean_button_mould_4_4.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_mould_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 60
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#mould
+		name = "GFX_arkocean_button_mould_4_5"
+		texturefile = "gfx/interface/gui/button/arkocean_button_mould_4_5.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_mould_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 60
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#mould
+		name = "GFX_arkocean_button_mould_4_6"
+		texturefile = "gfx/interface/gui/button/arkocean_button_mould_4_6.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_mould_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 60
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#mould
+		name = "GFX_arkocean_button_mould_5_1"
+		texturefile = "gfx/interface/gui/button/arkocean_button_mould_5_1.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_mould_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 60
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#mould
+		name = "GFX_arkocean_button_mould_5_2"
+		texturefile = "gfx/interface/gui/button/arkocean_button_mould_5_2.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_mould_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 60
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#mould
+		name = "GFX_arkocean_button_mould_5_3"
+		texturefile = "gfx/interface/gui/button/arkocean_button_mould_5_3.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_mould_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 60
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#mould
+		name = "GFX_arkocean_button_mould_5_4"
+		texturefile = "gfx/interface/gui/button/arkocean_button_mould_5_4.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_mould_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 60
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#mould
+		name = "GFX_arkocean_button_mould_5_5"
+		texturefile = "gfx/interface/gui/button/arkocean_button_mould_5_5.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_mould_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 60
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#mould
+		name = "GFX_arkocean_button_mould_5_6"
+		texturefile = "gfx/interface/gui/button/arkocean_button_mould_5_6.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_mould_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 60
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#mould
+		name = "GFX_arkocean_button_mould_6_1"
+		texturefile = "gfx/interface/gui/button/arkocean_button_mould_6_1.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_mould_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 60
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#mould
+		name = "GFX_arkocean_button_mould_6_2"
+		texturefile = "gfx/interface/gui/button/arkocean_button_mould_6_2.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_mould_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 60
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#mould
+		name = "GFX_arkocean_button_mould_6_3"
+		texturefile = "gfx/interface/gui/button/arkocean_button_mould_6_3.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_mould_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 60
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#mould
+		name = "GFX_arkocean_button_mould_6_4"
+		texturefile = "gfx/interface/gui/button/arkocean_button_mould_6_4.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_mould_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 60
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#mould
+		name = "GFX_arkocean_button_mould_6_5"
+		texturefile = "gfx/interface/gui/button/arkocean_button_mould_6_5.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_mould_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 60
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+
+	# frameAnimatedSpriteType = {#扩大圆环，无法实现功能，废弃
+	# 	name = "GFX_ark_mapdis_expansing_circle_50_50_anim"
+	# 	textureFile = "gfx/interface/gui/icon/ark_mapdis_expansing_circle_50_50.dds"
+	# 	noOfFrames = 24
+	# 	transParencecheck = no
+	# 	alwaysTransparent = yes
+	# 	animation_rate_fps = 15
+	# 	looping = yes
+	# 	play_on_show = yes
+	# }
+}

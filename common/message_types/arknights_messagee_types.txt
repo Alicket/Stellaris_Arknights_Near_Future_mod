@@ -1,0 +1,45 @@
+message_type = {
+	key = "MESSAGE_ARK_OCEAN_EVOLUTION_INCREASE"
+	icon = "GFX_ark_ocean_message_evolution_increase"
+	icon_frame = 1
+
+	name = "MESSAGE_ARK_OCEAN_EVOLUTION_INCREASE_TITLE"
+	sound = "notification"
+	ping = "ping_notification_green"
+}
+message_type = {
+	key = "MESSAGE_ARK_OCEAN_EVOLUTION_REDUCE"
+	icon = "GFX_ark_ocean_message_evolution_reduce"
+	icon_frame = 1
+
+	name = "MESSAGE_ARK_OCEAN_EVOLUTION_REDUCE_TITLE"
+	sound = "notification"
+	ping = "ping_notification_red"
+}
+message_type = {
+	key = "MESSAGE_ARK_OCEAN_EVOLUTION_COMPLETE"
+	icon = "GFX_ark_ocean_message_evolution_complete"
+	icon_frame = 1
+
+	name = "MESSAGE_ARK_OCEAN_EVOLUTION_COMPLETE_TITLE"
+	sound = "notification"
+	ping = "ping_notification_green"
+}
+message_type = {
+	key = "MESSAGE_ARK_OCEAN_EVOLUTION_REDUCE_TERRAFORM"
+	icon = "GFX_ark_ocean_message_evolution_reduce"
+	icon_frame = 1
+
+	name = "MESSAGE_ARK_OCEAN_EVOLUTION_REDUCE_TERRAFORM_TITLE"
+	sound = "notification"
+	ping = "ping_notification_red"
+}
+message_type = {
+	key = "MESSAGE_ARK_OCEAN_MOULD_INFORMATION_LIST"
+	icon = "GFX_message_ark_mould_information"
+	icon_frame = 1
+
+	name = "MESSAGE_ARK_OCEAN_MOULD_INFORMATION_LIST_TITLE"
+	sound = "notification"
+	ping = "ping_notification_green"
+}

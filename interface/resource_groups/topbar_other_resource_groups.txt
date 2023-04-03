@@ -10,6 +10,7 @@ tb_others_group = {
 		originiums
 		d32_steels
 		multipole_nanosheets
+		arkseaborn_cells
 		star_trek_armour
 		mind_club
 		azur_shippartbox

@@ -1,0 +1,18 @@
+﻿l_simp_chinese:
+
+tech_ark_nearl_titanic:0 "临光"
+tech_ark_nearl_titanic_desc:0 "“听着，所谓骑士，就是照亮整片大地的崇高者”"
+ARK_NEARL_TITANIC:0 "耀阳锋刃"
+ARK_NEARL_TITANIC_DESC:0 "以耀骑士玛嘉烈·临光所拥有的源石技艺为原型制造出的无比强大的武器"
+
+ ARK_MAPDIS_MAIN_MODIFIER_CHECK_TEXT:0 "查看星球总修正"
+ARK_MAPDIS_MAIN_GUILD_TEXT:0 "系统介绍"
+
+ARK_MAPDIS_MAIN_QUICK_GUILD_TEXT:0 "点击感叹号按钮进行探索\n点击齿轮按钮进行开发\n右下角查看总体状况"
+ARK_MAPDIS_MAIN_ASBESTOS_TEXT_IDLE:0 "有没啥好玩的地方让我逛逛？"
+ARK_MAPDIS_MAIN_ASBESTOS_TEXT_BUSY:0 "有事快说，有屁快放，姑奶奶忙得很。"
+
+ark_nearl_dreadnought:0 "银枪无畏舰"
+ark_nearl_dreadnought_plural:0 "待定"
+
+ark_tooltip_hahaha:0 "嘿嘿£ARK_HEIHEI£蒂蒂£ARK_WUWU££ARK_WUWU£我的蒂蒂£ARK_WUWU££ARK_WUWU££ARK_WUWU£蒂蒂我好喜欢你啊£ARK_WUWU£为了你我要炸掉全银河£ARK_WUWU££ARK_WUWU£呜呜呜£ARK_WUWU£我的蒂蒂£ARK_WUWU£ARK_WUWU£嘿嘿£ARK_HEIHEI£蒂蒂£ARK_HEIHEI£嘿嘿嘿£ARK_HEIHEI££ARK_HEIHEI££ARK_HEIHEI£"

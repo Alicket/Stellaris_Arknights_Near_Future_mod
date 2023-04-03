@@ -16,3 +16,156 @@ minus_10_energy_1_food_per_month = {
 	icon = "gfx/interface/icons/modifiers/mod_country_terraforming_cost_mult.dds"
 	icon_frame = 1
 }
+
+arkocean_mould_modifier_1_1a = {
+	ship_corvette_food_cost_add = 50
+	ship_corvette_alloys_cost_mult = -0.2
+	ship_frigate_food_cost_add = 50
+	ship_frigate_alloys_cost_mult = -0.2
+	shipsize_corvette_hull_mult = 0.25
+	shipsize_frigate_hull_mult = 0.25
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_1_1a.dds"
+}
+arkocean_mould_modifier_1_1b = {
+	ship_destroyer_food_cost_add = 90
+	ship_destroyer_alloys_cost_mult = -0.2
+	shipsize_destroyer_hull_mult = 0.20
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_1_1b.dds"
+}
+arkocean_mould_modifier_1_1c = {
+	ship_cruiser_food_cost_add = 210
+	ship_cruiser_alloys_cost_mult = -0.2
+	shipsize_cruiser_hull_mult = 0.15
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_1_1c.dds"
+}
+arkocean_mould_modifier_1_1d = {
+	ship_battleship_food_cost_add = 460
+	ship_battleship_alloys_cost_mult = -0.2
+	shipsize_battleship_hull_mult = 0.10
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_1_1d.dds"
+}
+arkocean_mould_modifier_1_1e = {
+	ship_titan_food_cost_add = 1080
+	ship_titan_alloys_cost_mult = -0.2
+	shipsize_titan_hull_mult = 0.05
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_1_1e.dds"
+}
+arkocean_mould_modifier_1_2 = {
+	ship_shield_mult = 0.01
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_1_2.dds"
+}
+arkocean_mould_modifier_1_3 = {
+	ship_armor_mult = 0.01
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_1_3.dds"
+}
+arkocean_mould_modifier_1_4 = {
+	ship_speed_mult = 0.01
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_1_4.dds"
+}
+arkocean_mould_modifier_1_6 = {
+	ship_ftl_jumpdrive_range_mult = 0.01
+	ship_jumpdrive_cooldown_mult = -0.01
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_1_6.dds"
+}
+arkocean_mould_modifier_2_1 = {
+	weapon_type_energy_weapon_damage_mult = 0.01
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_2_1.dds"
+}
+arkocean_mould_modifier_2_2 = {
+	weapon_type_kinetic_weapon_damage_mult = 0.01
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_2_2.dds"
+}
+arkocean_mould_modifier_2_3 = {
+	weapon_type_strike_craft_weapon_damage_mult = 0.01
+	weapon_type_strike_craft_weapon_fire_rate_mult = 0.01
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_2_3.dds"
+}
+arkocean_mould_modifier_2_5 = {
+	ship_fire_rate_mult = 0.01
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_2_5.dds"
+}
+arkocean_mould_modifier_2_6 = {
+	country_command_limit_add = 1
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_2_6.dds"
+}
+arkocean_mould_modifier_3_1 = {
+	army_damage_mult = 0.01
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_3_1.dds"
+}
+arkocean_mould_modifier_3_2 = {
+	army_health = 0.01
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_3_2.dds"
+}
+arkocean_mould_modifier_3_4 = {
+	ships_upkeep_mult = -0.01
+	armies_upkeep_mult = -0.02
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_3_4.dds"
+}
+arkocean_mould_modifier_4_1 = {
+	planet_colony_development_speed_mult = 0.25
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_4_1.dds"
+}
+arkocean_mould_modifier_4_2 = {
+	pop_growth_speed = 0.01
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_4_2.dds"
+}
+arkocean_mould_modifier_4_3 = {
+	pop_amenities_usage_mult = -0.01
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_4_3.dds"
+}
+arkocean_mould_modifier_4_4 = {
+	planet_buildings_cost_mult = -0.01
+	planet_building_build_speed_mult = 0.02
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_4_4.dds"
+}
+arkocean_mould_modifier_4_5 = {
+	planet_jobs_produces_mult = 0.01
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_4_5.dds"
+}
+arkocean_mould_modifier_4_6 = {
+	empire_size_pops_mult = -0.1
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_4_6.dds"
+}
+arkocean_mould_modifier_5_1 = {
+	shipclass_science_ship_disengage_mult = 0.50
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_5_1.dds"
+}
+arkocean_mould_modifier_5_2 = {
+	all_technology_research_speed = 0.05
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_5_2.dds"
+}
+arkocean_mould_modifier_5_3 = {
+	species_leader_exp_gain = 0.25
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_5_3.dds"
+}
+arkocean_mould_modifier_5_4 = {
+	planet_researchers_upkeep_mult = -0.15
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_5_4.dds"
+}
+arkocean_mould_modifier_5_5 = {
+	planet_researchers_produces_mult = 0.15
+	planet_researchers_energy_upkeep_add = 0.15
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_5_5.dds"
+}
+arkocean_mould_modifier_6_1 = {
+	ship_anomaly_generation_chance_mult = 0.1
+	science_ship_survey_speed = 0.25
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_6_1.dds"
+}
+arkocean_mould_modifier_6_2 = {
+	intel_decryption_add = 2
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_6_2.dds"
+}
+arkocean_mould_modifier_6_3 = {
+	intel_encryption_add = 2
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_6_3.dds"
+}
+arkocean_mould_modifier_6_4 = {
+	diplo_weight_mult = 0.15
+	envoys_add = 1
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_6_4.dds"
+}
+arkocean_mould_modifier_6_5 = {
+	country_trust_cap_add = 50
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_6_5.dds"
+}

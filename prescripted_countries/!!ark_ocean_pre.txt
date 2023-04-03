@@ -1,0 +1,73 @@
+
+ARK_country_3 = {
+	name = "EMPIRE_DESIGN_arknights_seaborn"
+	adjective = "PRESCRIPTED_adjective_arknights_seaborn"
+	spawn_enabled = yes
+	ignore_portrait_duplication = no
+
+	ship_prefix = "PRESCRIPTED_ship_prefix_arknights_seaborn"
+	
+	species = {
+		class = "CLASS_Arknights_ocean"
+		portrait = "ark_ocean_anim_portraits"
+		name = "PRESCRIPTED_species_name_arknights_ocean"
+		plural = "PRESCRIPTED_species_plural_arknights_ocean"
+		adjective = "PRESCRIPTED_species_adjective_arknights_ocean"
+		name_list = "ark_01"
+		#trait = "trait_pc_ark_continental_ocean_preference"
+		trait = "trait_ARK_ocean_seaborn"
+		trait = "trait_hive_mind"
+		trait = "trait_sedentary"
+		trait = "trait_strong"
+	}
+		
+	room = "aquatics_room"
+	
+	authority = "auth_hive_mind"
+	civics = { "civic_hive_natural_neural_network" "civic_hive_pooled_knowledge" }
+	government = gov_hive_mind
+	
+	ethic = ethic_gestalt_consciousness
+	advisor_voice_type="l_slick_corp"
+
+	origin = "origin_ark_stella_caerula"
+
+	flags = { arknights_ocean_country custom_start_screen }
+	
+	planet_name = "NAME_Terra_ocean"
+	planet_class = pc_continental
+	initializer = "Tyra_system_ocean"
+	system_name = "NAME_Tyra_system"
+	
+	graphical_culture = "aquatic_01"
+	city_graphical_culture = "aquatic_01"
+	
+	empire_flag = {
+		icon= {
+			category = "aquatic"
+			file = "aquatic_01.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "rounded_middle.dds"
+		}
+		colors={
+			"blue"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_arknights_ocean"
+		gender = not_set
+		portrait = "ARK1012"
+		texture = 0
+		leader_class = ruler
+		ruler_title="PRESCRIPTED_ruler_title_arknight3"
+		trait = leader_trait_ruler_seaborn
+		trait = leader_trait_Ishar_mla01
+		trait = leader_trait_Ishar_mla02
+	}
+}

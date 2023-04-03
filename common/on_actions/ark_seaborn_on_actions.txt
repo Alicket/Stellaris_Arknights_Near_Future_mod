@@ -1,0 +1,64 @@
+on_leader_spawned = {
+	events = {
+		ark_seaborn_base.1
+		ark_seaborn_evo.17
+	}
+}
+
+on_game_start_country = {
+	events = {
+		ark_seaborn_base.3
+		ark_seaborn_base.10
+		ark_seaborn_evo.1
+		ark_seaborn_evo.12 #ui
+		ark_seaborn_evo.10
+	}
+}
+
+on_colonized = {
+	events = {
+		ark_seaborn_base.20
+	}
+}
+
+on_monthly_pulse_country = {
+	events = {
+		ark_seaborn_base.22
+		ark_seaborn_evo.10
+		ark_seaborn_evo.111
+	}
+}
+
+on_yearly_pulse_country = {
+	events = {
+		ark_seaborn_base.4
+
+	}
+}
+
+on_planet_class_changed = {
+	events = {
+		ark_seaborn_base.24
+	}
+}
+
+# Triggers when trying to open the diplomacy view for countries with custom diplomacy.
+# Country scope
+# This = target country (player)
+# From = source country
+on_custom_diplomacy = {
+	events = {
+		ark_seaborn_evo.13
+	}
+}
+
+
+# A war has been won
+# Root = Winner Warleader
+# From = Loser Warleader
+# FromFrom = War
+on_war_won = {
+	events = {
+		ark_seaborn_evo.19
+	}
+}

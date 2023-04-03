@@ -1,0 +1,1022 @@
+namespace = ark_seaborn_base
+
+###       ########   ######   #######   ########  #######  
+###       ########  ########  ########  ########  ######## 
+###       ###       ###  ###  ###  ###  ###       ###  ### 
+###       ######    ###  ###  ###  ###  ######    ######## 
+###       ######    ########  ###  ###  ######    #######  
+###       ###       ########  ###  ###  ###       #######  
+########  ########  ###  ###  ########  ########  ### #### 
+########  ########  ###  ###  #######   ########  ###  ####
+
+country_event = {#所有领袖添加特殊特质
+	id = ark_seaborn_base.1
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_country_flag = arknights_ocean_country
+		has_trait = trait_ARK_ocean_seaborn
+	}
+	immediate = {
+		from = {
+			if = {
+				limit = { 
+					leader_class = scientist
+				}
+				random_list = {
+					2 = {
+						add_trait = leader_trait_seaborn_sci_complex_thoughts
+					}
+					98 = {
+						add_trait = leader_trait_seaborn_sci_simple_thoughts
+						modifier = {
+							add = -98
+							root = { has_country_flag = arkocean_mould_done_5_6 }
+						}
+					}
+				}
+			}
+		}
+	}
+}
+country_event = { #开局伊莎玛拉选肖像，同时判定国家类型
+	id = ark_seaborn_base.10
+
+	is_triggered_only = yes
+	title = ark_seaborn_base.10.title
+	desc = ark_seaborn_base.10.desc
+	picture = GFX_evt_seaborn_ruler_select
+	trigger = {
+		has_trait = trait_ARK_ocean_seaborn
+		has_origin = origin_ark_stella_caerula
+	}
+	immediate = {
+		hidden_effect = {
+			save_global_event_target_as = arkocean_country
+			set_country_flag = arknights_ocean_country
+			if = {
+				limit = { has_trait = trait_hive_mind }
+				set_country_flag = arkocean_gestalt_country
+			}
+			else = {
+				set_country_flag = arkocean_normal_country
+			}
+			country_event = {
+				id = ark_seaborn_evo.11
+			}
+		}
+	}
+	option = {
+		name = ark_seaborn_base.10.a
+		hidden_effect = {
+			every_owned_leader = {
+				limit = {
+					leader_class = ruler
+				}
+				change_leader_portrait = ARK1012
+				set_name = "NAME_Ishar_mla"
+			}
+		}
+	}
+	option = {
+		name = ark_seaborn_base.10.b
+		hidden_effect = {
+			every_owned_leader = {
+				limit = {
+					leader_class = ruler
+				}
+				change_leader_portrait = ARK1012_S
+				set_name = "NAME_Ishar_mla"
+			}
+		}
+	}
+	option = {
+		name = ark_seaborn_base.10.c
+		hidden_effect = {
+			every_owned_leader = {
+				limit = {
+					leader_class = ruler
+				}
+				change_leader_portrait = ARK1012_skin
+				set_name = "NAME_Ishar_mla"
+			}
+		}
+	}
+	option = {
+		name = ark_seaborn_base.10.d
+		hidden_effect = {
+			every_owned_leader = {
+				limit = {
+					leader_class = ruler
+				}
+				change_leader_portrait = ark_ocean_anim_portraits
+				set_name = "NAME_Ishar_mla"
+			}
+		}
+	}
+}
+#通用选肖像
+country_event = {
+	id = ark_seaborn_base.11
+
+	is_triggered_only = yes
+	title = ark_seaborn_base.10.title
+	desc = ark_seaborn_base.10.desc
+	picture = GFX_evt_seaborn_ruler_select
+	option = {
+		name = ark_seaborn_base.10.a
+		hidden_effect = {
+			every_owned_leader = {
+				limit = {
+					leader_class = ruler
+				}
+				change_leader_portrait = ARK1012
+				set_name = "NAME_Ishar_mla"
+			}
+		}
+	}
+	option = {
+		name = ark_seaborn_base.10.b
+		hidden_effect = {
+			every_owned_leader = {
+				limit = {
+					leader_class = ruler
+				}
+				change_leader_portrait = ARK1012_S
+				set_name = "NAME_Ishar_mla"
+			}
+		}
+	}
+	option = {
+		name = ark_seaborn_base.10.c
+		hidden_effect = {
+			every_owned_leader = {
+				limit = {
+					leader_class = ruler
+				}
+				change_leader_portrait = ARK1012_skin
+				set_name = "NAME_Ishar_mla"
+			}
+		}
+	}
+	option = {
+		name = ark_seaborn_base.10.d
+		hidden_effect = {
+			every_owned_leader = {
+				limit = {
+					leader_class = ruler
+				}
+				change_leader_portrait = ark_ocean_anim_portraits
+				set_name = "NAME_Ishar_mla"
+			}
+		}
+	}
+}
+########  ###   ###   ######   ###       ###  ###  ########  ###   ######   ###  ###
+########  ###   ###  ########  ###       ###  ###  ########  ###  ########  #### ###
+###       ###   ###  ###  ###  ###       ###  ###     ##     ###  ###  ###  ########
+######     ### ###   ###  ###  ###       ###  ###     ##     ###  ###  ###  ########
+######     ### ###   ###  ###  ###       ###  ###     ##     ###  ###  ###  ########
+###        ### ###   ###  ###  ###       ###  ###     ##     ###  ###  ###  ########
+########    #####    ########  ########  ########     ##     ###  ########  ### ####
+########    #####     ######   ########   ######      ##     ###   ######   ###  ###
+
+#测试用事件
+planet_event = {
+	id = ark_seaborn_base.2
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		change_pc = pc_ocean
+	}
+}
+#殖民完成添加进化修正
+planet_event = {
+	id = ark_seaborn_base.20
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		owner = {
+			has_trait = trait_ARK_ocean_seaborn
+			has_country_flag = arknights_ocean_country
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				OR = {
+					is_planet_class = pc_city
+					is_planet_class = pc_habitat
+					is_planet_class = pc_ringworld_habitable
+					is_planet_class = pc_shattered_ring_habitable
+					is_planet_class = pc_gaia
+					is_planet_class = pc_relic
+				}
+			}
+			set_planet_flag = ark_ocean_col_evo_special
+		}
+		else = {
+			set_variable = {
+				which = var_ark_ocean_colony_evolution
+				value = -200
+			}
+			set_planet_flag = ark_ocean_col_evo_start
+			owner = {
+				country_event = {
+					id = ark_seaborn_base.21
+				}
+			}
+			if = {#海洋星球有几率加快进化速度
+				limit = { 
+					is_planet_class = pc_ocean
+				}
+				random_list = { 
+					16 = { #8% 半年后完成进化
+						change_variable = {
+							which = var_ark_ocean_colony_evolution
+							value = 394
+						}
+						owner = {
+							country_event = {
+								id = ark_seaborn_base.201
+							}
+						}
+					}
+					32 = { #16% 获得50%进度
+						change_variable = {
+							which = var_ark_ocean_colony_evolution
+							value = 200
+						}
+						owner = {
+							country_event = {
+								id = ark_seaborn_base.202
+							}	
+						}
+					}
+					52 = {}
+				}
+			}	
+		}
+	}
+}
+country_event = { #完美家园 殖民时变量+394
+	id = ark_seaborn_base.201
+	is_triggered_only = yes
+	title = ark_seaborn_base.201.title
+	desc = ark_seaborn_base.201.desc
+	option = {
+		name = ark_seaborn_base.201.a
+		custom_tooltip = ark_seaborn_base.201.a.tooltip
+	}
+}
+country_event = { #合适家园 殖民时变量+150
+	id = ark_seaborn_base.202
+	is_triggered_only = yes
+	title = ark_seaborn_base.202.title
+	desc = ark_seaborn_base.202.desc
+	option = {
+		name = ark_seaborn_base.202.a
+		custom_tooltip = ark_seaborn_base.202.a.tooltip
+	}
+}
+
+country_event = { #第一次殖民
+	id = ark_seaborn_base.21
+	is_triggered_only = yes
+	title = ark_seaborn_base.21.title
+	desc = ark_seaborn_base.21.desc
+	trigger = {
+		NOT = {
+			has_country_flag = ark_ocean_colonied_first_time
+		}
+	}
+	immediate = {
+		set_country_flag = ark_ocean_colonied_first_time
+	}
+	option = {
+		name = ark_seaborn_base.21.a
+		custom_tooltip = ark_seaborn_base.21.a.tooltip
+	}
+}
+
+
+
+country_event = {#每月触发，跳板到planet_event，已完成进化或手动disable的星球不触发
+	id = ark_seaborn_base.22
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		every_owned_planet = {
+			limit = {
+				NOR = {
+					has_planet_flag = ark_ocean_col_evo_end 
+					has_planet_flag = ark_ocean_col_evo_disabled
+					has_planet_flag = ark_ocean_col_evo_special
+				}
+				OR = {
+					has_planet_flag = ark_ocean_col_evo_start
+					has_planet_flag = ark_ocean_col_evo_mid
+				}
+			}
+			planet_event = {
+				id = ark_seaborn_base.23
+			}
+		}
+	}
+}
+
+ #############################################################################
+####								核心事件								####
+ #############################################################################
+
+planet_event = { #每月变量增加，并检测变量数值添加或删除flag/modifier，抬头提醒阶段性变化
+	id = ark_seaborn_base.23
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		if = { #消除debuff阶段每月+1
+			limit = {
+				has_planet_flag = ark_ocean_col_evo_start
+				NOT = { has_planet_flag = ark_ocean_col_evo_mid }
+			}
+			if = {
+				limit = {
+					OR = {
+						is_planet_class = pc_desert
+						is_planet_class = pc_arid
+						is_planet_class = pc_savannah
+					}
+				}
+				change_variable = {
+					which = var_ark_ocean_colony_evolution
+					value = 0.9
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						is_planet_class = pc_arctic
+						is_planet_class = pc_tundra
+						is_planet_class = pc_alpine
+					}
+				}
+				change_variable = {
+					which = var_ark_ocean_colony_evolution
+					value = 0.95
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						is_planet_class = pc_nuked
+					}
+				}
+				change_variable = {
+					which = var_ark_ocean_colony_evolution
+					value = 0.2
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						is_planet_class = pc_ocean
+						is_planet_class = pc_tropical
+					}
+				}
+				change_variable = {
+					which = var_ark_ocean_colony_evolution
+					value = 1.1
+				}
+			}
+			else = {
+				change_variable = {
+					which = var_ark_ocean_colony_evolution
+					value = 1
+				}
+			}
+			add_modifier = {
+				modifier = ark_ocean_evolution_start
+				days = -1
+				mult = value:ark_ocean_evolution_variable
+			}
+			remove_modifier = ark_ocean_evolution_mid
+		}
+		if = { #消除完成，添加buff阶段每月+0.5
+			limit = {
+				has_planet_flag = ark_ocean_col_evo_mid
+				NOT = { has_planet_flag = ark_ocean_col_evo_start }
+			}
+			change_variable = {
+				which = var_ark_ocean_colony_evolution
+				value = 0.5
+			}
+			add_modifier = {
+				modifier = ark_ocean_evolution_mid
+				days = -1
+				mult = value:ark_ocean_evolution_variable
+			}
+			remove_modifier = ark_ocean_evolution_start
+		}
+		if = { #检测变量从[<0]增长到[0]-[200] flag替换：start → mid
+			limit = {
+				check_variable = {
+					which = var_ark_ocean_colony_evolution
+					value >= 0
+				}
+				check_variable = {
+					which = var_ark_ocean_colony_evolution
+					value < 100
+				}
+				has_planet_flag = ark_ocean_col_evo_start
+			}
+			remove_planet_flag = ark_ocean_col_evo_start
+			set_planet_flag = ark_ocean_col_evo_mid
+			create_message = {
+				type = MESSAGE_ARK_OCEAN_EVOLUTION_INCREASE
+				localization = MESSAGE_ARK_OCEAN_EVOLUTION_INCREASE_LOC
+				days = 30
+				target = THIS
+			}
+		}
+		if = { #检测变量从[<0]增长到[>=200] flag替换：start → end
+			limit = {
+				check_variable = {
+					which = var_ark_ocean_colony_evolution
+					value >= 100
+				}
+				has_planet_flag = ark_ocean_col_evo_start
+			}
+			remove_planet_flag = ark_ocean_col_evo_start
+			set_planet_flag = ark_ocean_col_evo_end
+			create_message = {
+				type = MESSAGE_ARK_OCEAN_EVOLUTION_COMPLETE
+				localization = MESSAGE_ARK_OCEAN_EVOLUTION_COMPLETE_LOC
+				days = 30
+				target = THIS
+			}
+			remove_modifier = ark_ocean_evolution_start
+			add_modifier = {
+				modifier = ark_ocean_evolution_end
+				days = -1
+				mult = value:ark_ocean_evolution_variable
+			}
+			change_pc = pc_ark_continental_ocean
+			owner = {
+				add_resource = {
+					arkseaborn_cells = 1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = 1
+				}
+			}
+		}
+		if = { #检测变量[>=200] flag替换：mid → end
+			limit = {
+				check_variable = {
+					which = var_ark_ocean_colony_evolution
+					value >= 100
+				}
+				has_planet_flag = ark_ocean_col_evo_mid
+			}
+			remove_planet_flag = ark_ocean_col_evo_mid
+			set_planet_flag = ark_ocean_col_evo_end
+			create_message = {
+				type = MESSAGE_ARK_OCEAN_EVOLUTION_COMPLETE
+				localization = MESSAGE_ARK_OCEAN_EVOLUTION_COMPLETE_LOC
+				days = 30
+				target = THIS
+			}
+			remove_modifier = ark_ocean_evolution_mid
+			add_modifier = {
+				modifier = ark_ocean_evolution_end
+				days = -1
+				mult = value:ark_ocean_evolution_variable
+			}
+			change_pc = pc_ark_continental_ocean
+			owner = {
+				add_resource = {
+					arkseaborn_cells = 1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_cell
+					value = 1
+				}
+			}
+		}
+		if = { #检测变量从[0]-[200]降低到[<0] flag替换：mid → start
+			limit = {
+				check_variable = {
+					which = var_ark_ocean_colony_evolution
+					value < 0
+				}
+				has_planet_flag = ark_ocean_col_evo_mid
+			}
+			remove_planet_flag = ark_ocean_col_evo_mid
+			set_planet_flag = ark_ocean_col_evo_start
+			create_message = {
+				type = MESSAGE_ARK_OCEAN_EVOLUTION_REDUCE
+				localization = MESSAGE_ARK_OCEAN_EVOLUTION_REDUCE_LOC
+				days = 30
+				target = THIS
+			}
+		}
+		#不需要end → mid与end → start，因为end阶段直接结束进化
+		# else = { #debug
+		# 	planet_event = {
+		# 		id = ark_seaborn_base.25
+		# 	}
+		# }
+	}
+}
+
+ #############################################################################
+####								临时事件								####
+ #############################################################################
+planet_event = {
+	id = ark_seaborn_base.2300
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		OR = {
+			has_planet_flag = ark_ocean_col_evo_start
+			has_planet_flag = ark_ocean_col_evo_mid	
+		}
+		NOT = {
+			has_planet_flag = ark_seaborn_anomaly_happened
+		}
+	}
+	immediate = {
+		random_list = {
+			9 = {}
+			1 = {
+				random_list = {
+						##  ┌─────────────────────────┐  ##
+						##  │ -30 -20 -10 +10 +20 +30 │  ##
+						##  │  1   2   4   12  9   3  │  ##
+						##  └─────────────────────────┘  ##
+					2 = {	#-20
+						planet_event = {
+							id = ark_seaborn_base.2301
+						}
+					}
+					4 = {	#-10
+						planet_event = {
+							id = ark_seaborn_base.2302
+						}
+					}
+					9 = {	#+20
+						planet_event = {
+							id = ark_seaborn_base.2303
+						}
+					}
+					2 = {	#-20
+						planet_event = {
+							id = ark_seaborn_base.2304
+						}
+					}
+					4 = {	#-10
+						planet_event = {
+							id = ark_seaborn_base.2305
+						}
+					}
+					12 = {	#+10
+						planet_event = {
+							id = ark_seaborn_base.2306
+						}
+					}
+					3 = {	#+30
+						planet_event = {
+							id = ark_seaborn_base.2307
+						}
+					}
+				}
+			}
+		}
+	}
+}
+planet_event = { #莫测无常的气候
+	   id = ark_seaborn_base.2301 		 #缩进不对是为了方便复制粘贴改编号
+	title = ark_seaborn_base.2301.title
+	desc =  ark_seaborn_base.2301.desc
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_planet_flag = ark_seaborn_anomaly_happened
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			change_variable = {
+				which = var_ark_ocean_colony_evolution
+				value = -20
+			}	
+			set_planet_flag = ark_seaborn_anomaly_happened
+		}
+	}
+	option = {
+		name = ark_seaborn_base.2301.a
+		custom_tooltip = ark_seaborn_base.2301.a.tooltip
+
+	}
+}
+planet_event = { #狂暴的巨兽
+	   id = ark_seaborn_base.2302
+	title = ark_seaborn_base.2302.title
+	desc =  ark_seaborn_base.2302.desc
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_planet_flag = ark_seaborn_anomaly_happened
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			change_variable = {
+				which = var_ark_ocean_colony_evolution
+				value = -10
+			}	
+			set_planet_flag = ark_seaborn_anomaly_happened
+		}
+	}
+	option = {
+		name = ark_seaborn_base.2302.a
+		custom_tooltip = ark_seaborn_base.2302.a.tooltip
+	}
+}
+planet_event = { #温顺的食物
+	   id = ark_seaborn_base.2303
+	title = ark_seaborn_base.2303.title
+	desc =  ark_seaborn_base.2303.desc
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_planet_flag = ark_seaborn_anomaly_happened
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			change_variable = {
+				which = var_ark_ocean_colony_evolution
+				value = 20
+			}
+			set_planet_flag = ark_seaborn_anomaly_happened
+		}
+	}
+	option = {
+		name = ark_seaborn_base.2303.a
+		custom_tooltip = ark_seaborn_base.2303.a.tooltip
+	}
+}
+planet_event = { #贫瘠的资源
+	   id = ark_seaborn_base.2304
+	title = ark_seaborn_base.2304.title
+	desc =  ark_seaborn_base.2304.desc
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_planet_flag = ark_seaborn_anomaly_happened
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			change_variable = {
+				which = var_ark_ocean_colony_evolution
+				value = -20
+			}
+			set_planet_flag = ark_seaborn_anomaly_happened
+		}
+	}
+	option = {
+		name = ark_seaborn_base.2304.a
+		custom_tooltip = ark_seaborn_base.2304.a.tooltip
+	}
+}
+planet_event = { #寒潮
+	   id = ark_seaborn_base.2305
+	title = ark_seaborn_base.2305.title
+	desc =  ark_seaborn_base.2305.desc
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_planet_flag = ark_seaborn_anomaly_happened
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			change_variable = {
+				which = var_ark_ocean_colony_evolution
+				value = -10
+			}
+			set_planet_flag = ark_seaborn_anomaly_happened
+		}
+	}
+	option = {
+		name = ark_seaborn_base.2305.a
+		custom_tooltip = ark_seaborn_base.2305.a.tooltip
+	}
+}
+planet_event = { #岩层下的水源
+	   id = ark_seaborn_base.2306
+	title = ark_seaborn_base.2306.title
+	desc =  ark_seaborn_base.2306.desc
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_planet_flag = ark_seaborn_anomaly_happened
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			change_variable = {
+				which = var_ark_ocean_colony_evolution
+				value = 10
+			}
+			set_planet_flag = ark_seaborn_anomaly_happened
+		}
+	}
+	option = {
+		name = ark_seaborn_base.2306.a
+		custom_tooltip = ark_seaborn_base.2306.a.tooltip
+	}
+}
+planet_event = { #春满嗣间
+	   id = ark_seaborn_base.2307
+	title = ark_seaborn_base.2307.title
+	desc =  ark_seaborn_base.2307.desc
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_planet_flag = ark_seaborn_anomaly_happened
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			change_variable = {
+				which = var_ark_ocean_colony_evolution
+				value = 30
+			}
+			set_planet_flag = ark_seaborn_anomaly_happened
+		}
+	}
+	option = {
+		name = ark_seaborn_base.2307.a
+		custom_tooltip = ark_seaborn_base.2307.a.tooltip
+	}
+}
+ #############################################################################
+####								检测事件								####
+ #############################################################################
+
+planet_event = { #检测到已经完成进化或正在进化过程中但不是溟海星球或特殊星球时重新进化
+	id = ark_seaborn_base.24
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		exists = owner
+		owner = {
+			has_country_flag = arknights_ocean_country
+			has_trait = trait_ARK_ocean_seaborn
+		}
+		OR = {
+			has_planet_flag = ark_ocean_col_evo_end
+			has_planet_flag = ark_ocean_col_evo_mid
+			has_planet_flag = ark_ocean_col_evo_start
+		}
+		NOT = {
+			OR = {
+				is_planet_class = pc_ark_continental_ocean
+				has_planet_flag = ark_ocean_col_evo_disabled
+				has_planet_flag = ark_ocean_col_evo_special
+			}
+		}
+	}
+	immediate = {
+		remove_planet_flag = ark_ocean_col_evo_end
+		remove_planet_flag = ark_ocean_col_evo_mid
+		set_planet_flag = ark_ocean_col_evo_start
+		set_variable = {
+			which = var_ark_ocean_colony_evolution
+			value = -200
+		}
+		create_message = {
+			type = MESSAGE_ARK_OCEAN_EVOLUTION_REDUCE_TERRAFORM
+			localization = MESSAGE_ARK_OCEAN_EVOLUTION_REDUCE_TERRAFORM_LOC
+			days = 30
+			target = THIS
+		}
+	}
+}
+
+# planet_event = { #debug
+# 	id = ark_seaborn_base.25
+# 	is_triggered_only = yes
+# 	title = ark_seaborn_base.25.title
+# 	desc =  ark_seaborn_base.25.desc
+# 	picture = GFX_evt_seaborn_ruler_select
+# 	option = {
+# 		name = ark_seaborn_base.25.a
+# 	}
+# }
+
+
+ ######   #######    ###   #######   ###  ###  ###
+########  ########   ###  #########  ###  ###  ###
+###  ###  ###  ###   ###  ###   ###  ###  #### ###
+###  ###  ########   ###  ###        ###  ########
+###  ###  #######    ###  ###  ####  ###  ########
+###  ###  #######    ###  ###   ###  ###  ### ####
+########  ### ####   ###  #########  ###  ###  ###
+ ######   ###  ####  ###   #######   ###  ###  ###
+
+
+#起源事件
+country_event = {
+	id = ark_seaborn_base.3
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_country_flag = arknights_ocean_country
+		has_origin = origin_ark_stella_caerula
+		has_trait = trait_ARK_ocean_seaborn
+	}
+	immediate = {
+		capital_scope = {
+			clear_blockers = yes
+			clear_deposits = yes
+			add_deposit = d_arkocean_deepsea
+			add_deposit = d_arkocean_deepsea
+			add_deposit = d_arkocean_deepsea
+			add_deposit = d_arkocean_generator
+			add_deposit = d_arkocean_generator
+			add_deposit = d_arkocean_generator
+			add_deposit = d_arkocean_generator
+			add_deposit = d_arkocean_mine
+			add_deposit = d_arkocean_mine
+			add_deposit = d_arkocean_mine
+			add_deposit = d_arkocean_mine
+			add_deposit = d_arkocean_terra_city
+		}
+	}
+}
+
+
+#######    #######   #######
+########  #########  ########
+###  ###  ###   ###  ###  ###
+########  ###   ###  ########
+#######   ###   ###  #######
+###       ###   ###  ###
+###       #########  ###
+###        #######   ###
+
+#测试用
+planet_event = {
+	id = ark_seaborn_base.40
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		owner = {
+			create_species = {
+				name = arktest_species
+				class = random_non_machine
+				portrait = random
+				traits = random
+				extra_trait_points = 3
+				allow_negative_traits = no
+			}
+		}
+		while = {
+			count = 7
+			create_pop = {
+				species = last_created_species
+				ethos = random
+			}
+		}
+		owner = {
+			create_species = {
+				name = random
+				class = MACHINE
+				namelist = MACHINE3
+				portrait = random
+				traits = {
+					trait = trait_machine_unit
+					trait = random_traits
+				}
+				extra_trait_points = 3
+				allow_negative_traits = no
+			}
+		}
+		while = {
+			count = 12
+			create_pop = {
+				species = last_created_species
+			}
+		}
+	}
+}
+
+#强制同化 on_yearly_pulse
+country_event = {
+	id = ark_seaborn_base.4
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_trait = trait_ARK_ocean_seaborn
+		has_origin = origin_ark_stella_caerula
+	}
+	immediate = {
+		every_owned_planet = {
+			limit = {
+				any_owned_species = {
+					NOR = {
+						has_trait = trait_ARK_ocean_seaborn
+						has_trait = trait_machine_unit
+					}
+				}
+			}
+			planet_event = { id = ark_seaborn_base.41 }
+		}
+	}
+}
+planet_event = {
+	id = ark_seaborn_base.41
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		set_update_modifiers_batch = begin
+		random_list = {
+			1 = {
+				set_variable = {
+					which = assimilation_counter
+					value = 3
+				}
+				while = {
+					count = 3
+					limit = {
+						any_owned_pop = {
+							NOR = {
+								has_trait = trait_ARK_ocean_seaborn
+								has_trait = trait_machine_unit
+							}
+						}
+						check_variable = {
+							which = assimilation_counter
+							value > 0
+						}
+					}
+					ark_seaborn_assimilation = yes
+				}
+			}
+			1 = {
+				set_variable = {
+					which = assimilation_counter
+					value = 6
+				}
+				while = {
+					count = 6
+					limit = {
+						any_owned_pop = {
+							NOR = {
+								has_trait = trait_ARK_ocean_seaborn
+								has_trait = trait_machine_unit
+							}
+						}
+						check_variable = {
+							which = assimilation_counter
+							value > 0
+						}
+					}
+					ark_seaborn_assimilation = yes
+				}
+			}
+			1 = {
+				set_variable = {
+					which = assimilation_counter
+					value = 12
+				}
+				while = {
+					count = 12
+					limit = {
+						any_owned_pop = {
+							NOR = {
+								has_trait = trait_ARK_ocean_seaborn
+								has_trait = trait_machine_unit
+							}
+						}
+						check_variable = {
+							which = assimilation_counter
+							value > 0
+						}
+					}
+					ark_seaborn_assimilation = yes
+				}
+			}
+		}
+		set_variable = {
+			which = assimilation_counter
+			value = 0
+		}
+		set_update_modifiers_batch = end
+	}
+}

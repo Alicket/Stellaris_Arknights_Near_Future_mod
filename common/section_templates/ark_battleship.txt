@@ -142,3 +142,12 @@ ship_section_template = {
 		}
 	}
 }
+
+ship_section_template = {
+	key = "arkocean_Isharmla_section"
+	ship_size = research_station
+	should_draw_components = no
+	fits_on_slot = "mid"
+	entity = aquatic_01_research_station_section_entity
+	icon = "GFX_ship_part_core_mid"
+}

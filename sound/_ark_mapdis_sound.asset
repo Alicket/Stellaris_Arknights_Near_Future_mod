@@ -1,0 +1,68 @@
+sound = {
+	name = "ark_mapdis_sound_click"
+	file = "ark_mapdis_yj_click.wav"
+	always_load = no
+}
+soundeffect = {
+	name = ark_mapdis_sound_click
+	sounds = {
+		sound = ark_mapdis_sound_click
+	}
+	#volume = 0.5
+}
+
+
+sound = {
+	name = "ark_mapdis_sound_back"
+	file = "ark_mapdis_yj_back.wav"
+	always_load = no
+}
+soundeffect = {
+	name = ark_mapdis_sound_back
+	sounds = {
+		sound = ark_mapdis_sound_back
+	}
+	#volume = 0.5
+}
+
+
+sound = {
+	name = "ark_mapdis_sound_confirm"
+	file = "ark_mapdis_yj_confirm.wav"
+	always_load = no
+}
+soundeffect = {
+	name = ark_mapdis_sound_confirm
+	sounds = {
+		sound = ark_mapdis_sound_confirm
+	}
+	#volume = 0.5
+}
+
+
+sound = {
+	name = "ark_mapdis_sound_danger"
+	file = "ark_mapdis_yj_danger.wav"
+	always_load = no
+}
+soundeffect = {
+	name = ark_mapdis_sound_danger
+	sounds = {
+		sound = ark_mapdis_sound_danger
+	}
+	#volume = 0.5
+}
+
+
+sound = {
+	name = "ark_mapdis_sound_levelup"
+	file = "ark_mapdis_yj_levelup.wav"
+	always_load = no
+}
+soundeffect = {
+	name = ark_mapdis_sound_levelup
+	sounds = {
+		sound = ark_mapdis_sound_levelup
+	}
+	#volume = 0.5
+}
