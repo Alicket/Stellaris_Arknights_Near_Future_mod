@@ -102,3 +102,24 @@ decision_ark_seaborn_resume_evolution = {
 		}
 	}
 }
+#海嗣：认知塑造
+decision_ark_seaborn_resume_evolution = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_politics
+	potential = {
+		is_capital = yes
+		owner = {
+			has_trait = trait_ARK_ocean_seaborn
+			has_country_flag = arknights_ocean_country
+			has_origin = origin_ark_stella_caerula
+		}
+	}
+	effect = {
+		owner = {
+			country_event = {
+				id = ark_seaborn_evo.14
+			}
+		}
+	}
+}
