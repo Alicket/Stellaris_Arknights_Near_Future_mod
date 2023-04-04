@@ -626,7 +626,63 @@ spriteTypes = {
 			animationframes = { 1 2 3 }
 		}
 	}
-
+	spriteType = {#按钮304*26
+		name = "GFX_arkocean_button_304_26"
+		texturefile = "gfx/interface/gui/button/arkocean_button_304_26.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_304_26_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 90
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#按钮 禁用消息 禁用状态
+		name = "GFX_arkocean_button_disable_message_disable"
+		texturefile = "gfx/interface/gui/button/arkocean_button_disable_message_disable.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_disable_message_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 90
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {#按钮 禁用消息 启用状态
+		name = "GFX_arkocean_button_disable_message_enable"
+		texturefile = "gfx/interface/gui/button/arkocean_button_disable_message_enable.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/mask/arkocean_button_disable_message_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 90
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
 	spriteType = {#mould
 		name = "GFX_arkocean_button_mould_1_1"
 		texturefile = "gfx/interface/gui/button/arkocean_button_mould_1_1.dds"

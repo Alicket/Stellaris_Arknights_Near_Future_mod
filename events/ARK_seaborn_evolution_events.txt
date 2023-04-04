@@ -20,7 +20,7 @@ country_event = {
 	}
 	immediate = {
 		add_resource = {
-			arkseaborn_cells = 3
+			arkseaborn_cells = 5
 		}
 		set_variable = { #同化人口数量
 			which = var_ark_seaborn_evolution_assimilation
@@ -151,8 +151,9 @@ country_event = {
 		has_trait = trait_ARK_ocean_seaborn
 		has_country_resource = {
 			type = arkseaborn_cells
-			amount >= 3
+			amount >= 5
 		}
+		NOT = {has_country_flag = arkocean_disable_cell_message}
 	}
 	immediate = {
 		create_message = {

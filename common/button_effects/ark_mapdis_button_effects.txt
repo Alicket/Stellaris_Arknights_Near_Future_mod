@@ -32,7 +32,38 @@ beffect_no_effect = {
 	}
 	effect = {}
 }
-
+beffect_arkocean_disable_message_disable = {
+	potential = {
+		from= {
+			NOT = {has_country_flag = arkocean_disable_cell_message}
+		}
+	}
+	allow = {always = yes}
+	effect = {
+		custom_tooltip = arkocean_disable_message_disable_tooltip
+		hidden_effect = {
+			from = {
+				set_country_flag = arkocean_disable_cell_message
+			}
+		}
+	}
+}
+beffect_arkocean_disable_message_enable = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_disable_cell_message
+		}
+	}
+	allow = {always = yes}
+	effect = {
+		custom_tooltip = arkocean_disable_message_enable_tooltip
+		hidden_effect = {
+			from = {
+				remove_country_flag = arkocean_disable_cell_message
+			}
+		}
+	}
+}
 #左下
 beffect_arkocean_reset_station = {
 	potential = {always = yes}

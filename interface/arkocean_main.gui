@@ -40,6 +40,7 @@ guiTypes = {
 			fixedSize = yes
 			alwaysTransparent = yes
 		}
+
 		iconType = {#information
 			name = "information"
 			spriteType = "GFX_arkocean_information"
@@ -188,7 +189,20 @@ guiTypes = {
 			alwaysTransparent = yes
 			effect = beffect_no_effect
 		}
-
+		effectButtonType = {
+			spriteType = GFX_arkocean_button_disable_message_disable
+			name = "disable_message_disable"
+			position = { x = 377 y = 418 }
+			effect = beffect_arkocean_disable_message_disable
+			orientation = upper_left
+		}
+		effectButtonType = {
+			spriteType = GFX_arkocean_button_disable_message_enable
+			name = "disable_message_enable"
+			position = { x = 377 y = 418 }
+			effect = beffect_arkocean_disable_message_enable
+			orientation = upper_left
+		}
 		###      ###   ##########   ###      ###  ###          ###########
 		####    ####  ############  ###      ###  ###          ############
 		#####  #####  ####    ####  ###      ###  ###          ###     ####

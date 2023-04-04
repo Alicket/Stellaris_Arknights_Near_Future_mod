@@ -58,7 +58,8 @@ Tyra_system_ocean_DESC:0 "曾经是泰拉人母星的所在地，现在已经完
 opinion_arkocean_mould_6_5:0 "情感适应"
 decision_ark_seaborn_mould:0 "$NAME_arkocean_Isharmla_antenna$"
 decision_ark_seaborn_mould_desc:0 "开启$NAME_arkocean_Isharmla_antenna$面板"
-
+arkocean_disable_message_disable_tooltip:0 "点击以禁用生机细胞消息提示"
+arkocean_disable_message_enable_tooltip:0 "点击以启用生机细胞消息提示\n\n§g将会在拥有生机细胞大于等于5.0000时提示§!"
 #种族特质
 trait_ARK_ocean_seaborn:0 "海嗣"
 trait_ARK_ocean_seaborn_desc:0 "祂只说千万鳞片将汇成一体，飞向深空。只说大海将被光芒涂抹，此消彼长，永不干涸。"
@@ -186,7 +187,7 @@ ARKOCEAN_GUI_INFORMATION1:0 "拥有殖民地：[from.arkocean_mould_var_colonies
 ARKOCEAN_GUI_INFORMATION2:0 "同化人口：[from.arkocean_mould_var_assimilation_loc]§g|+0.04§!"
 ARKOCEAN_GUI_INFORMATION3:0 "同化星球：[from.arkocean_mould_var_terraform_loc]§g|+1§!"
 ARKOCEAN_GUI_INFORMATION4:0 "赢得战争：[from.arkocean_mould_var_winning_war_loc]§g|+5§!"
-ARKOCEAN_GUI_INFORMATION5:0 "" #留空
+ARKOCEAN_GUI_INFORMATION5:0 "§g每月基础+0.0834§!"
 ARKOCEAN_GUI_INFORMATION6:0 "" #留空
 ARKOCEAN_GUI_STOCK:0 "§E[from.var_ark_seaborn_evolution_cell]§!"
 MESSAGE_ARK_OCEAN_MOULD_INFORMATION_LIST_TITLE:0 "$NAME_arkocean_Isharmla_antenna$"
