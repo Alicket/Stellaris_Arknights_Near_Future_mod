@@ -2,7 +2,7 @@
 ARK_country_1={
 	name="EMPIRE_DESIGN_arknight1"
 	adjective="PRESCRIPTED_adjective_arknight1"
-	spawn_enabled = yes
+	spawn_enabled = no
 	ignore_portrait_duplication=no
 	ship_prefix="PRESCRIPTED_ship_prefix_arknight1"
 	species_bio = "先民降临人世，带来了不同的种族和文化，造就了泰拉的亚人种族。他们在天灾肆虐的大地上繁衍生息，使用天灾带来的产物“源石”发展族群和社会，并逐步建立起以源石为基础的工业体系。
