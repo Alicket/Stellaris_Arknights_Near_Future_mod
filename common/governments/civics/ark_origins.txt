@@ -33,10 +33,14 @@ origin_ark_stella_caerula = {
 
 	starting_colony = pc_ark_continental_ocean
 	habitability_preference = pc_ark_continental_ocean
+	initializers = { Tyra_system_ocean }
+
 	preferred_planet_class_neighbor = no
 
-	possible = {
-
+	possible = {}
+	traits = {
+		trait = trait_ARK_ocean_seaborn
+		trait = trait_hive_mind
 	}
 	advanced_start = yes
 

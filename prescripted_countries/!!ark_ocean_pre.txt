@@ -18,7 +18,6 @@ ARK_country_3 = {
 		trait = "trait_ARK_ocean_seaborn"
 		trait = "trait_hive_mind"
 		trait = "trait_sedentary"
-		trait = "trait_strong"
 	}
 		
 	room = "default_room"

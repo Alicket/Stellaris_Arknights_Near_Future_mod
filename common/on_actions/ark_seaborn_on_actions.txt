@@ -7,8 +7,8 @@ on_leader_spawned = {
 
 on_game_start_country = {
 	events = {
-		ark_seaborn_base.3
 		ark_seaborn_base.10
+		ark_seaborn_base.3
 		ark_seaborn_evo.1
 		ark_seaborn_evo.12 #ui
 		ark_seaborn_evo.10

@@ -14,12 +14,12 @@ trait_ARK_ocean_seaborn = {
 	}
 	immortal_leaders = no
 	icon = "gfx/interface/icons/traits/trait_ark_ocean_seaborn.dds"
-	allowed_archetypes = { ARK_OCEAN }
+	allowed_archetypes = { BIOLOGICAL }
 
 	opposites = {
-		trait_aquatic trait_lithoid
+		trait_aquatic trait_lithoid trait_noxious
 	}
-
+	allowed_origins = { origin_ark_stella_caerula }
 	#forced_happiness = yes
 	modifier = {
 		pop_environment_tolerance = 2.0

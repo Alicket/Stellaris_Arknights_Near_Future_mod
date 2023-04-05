@@ -3,7 +3,7 @@ CLASS_Arknights_ocean = {
 	randomized = yes
 	gender = no
 	graphical_culture = arknights_01
-	archetype = ARK_OCEAN
+	archetype = BIOLOGICAL
 	leader_age_min = 13
 	leader_age_max = 20
 	possible = {
@@ -14,6 +14,6 @@ CLASS_Arknights_ocean = {
 	portraits = {
 		"ark_ocean_anim_portraits"
 	}
-	trait = trait_ARK_ocean_seaborn
+	#trait = trait_ARK_ocean_seaborn
 	move_pop_sound_effect = "moving_pop_confirmation"
 }
