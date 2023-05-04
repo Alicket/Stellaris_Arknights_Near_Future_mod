@@ -5,13 +5,14 @@ Arknight = {
 		authority = {
 			OR = {
 				value = auth_city_republic
-				value = auth_city_despotism
 			}
 		}
 	}
 
 	portraits = {
-		"arknights"
+		"arknights_npc"
+		"arknights_s12LEADER_NPCpop"
+		"arknights_s1LEADER_NPCpop"
 	}
 
 	graphical_culture = arknights_01
@@ -31,7 +32,6 @@ ArkRobot = {
 		authority = {
 			OR = {
 				value = auth_city_republic
-				value = auth_city_despotism
 			}
 		}
 	}

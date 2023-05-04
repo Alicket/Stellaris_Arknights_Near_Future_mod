@@ -23,7 +23,10 @@ ARK_country_3 = {
 	room = "default_room"
 	
 	authority = "auth_hive_mind"
-	civics = { "civic_hive_natural_neural_network" "civic_hive_pooled_knowledge" }
+	civics = {
+		"civic_hive_strength_of_legions"
+		"civic_hive_one_mind"
+	}
 	government = gov_hive_mind
 	
 	ethic = ethic_gestalt_consciousness
@@ -61,7 +64,7 @@ ARK_country_3 = {
 	ruler = {
 		name = "PRESCRIPTED_ruler_name_arknights_ocean"
 		gender = not_set
-		portrait = "ARK1012"
+		portrait = "ARK_F_Skadi_G"
 		texture = 0
 		leader_class = ruler
 		ruler_title="PRESCRIPTED_ruler_title_arknight3"

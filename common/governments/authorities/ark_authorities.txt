@@ -38,38 +38,38 @@ auth_city_republic = {
 }
 
 # 城邦专制
-auth_city_despotism = {
-	election_type = oligarchic		# 选举类型
-	max_election_candidates = 4	# 最大选举候选人数
-
-	has_agendas = yes	# 有议程
-
-	possible = {
-		always = no
-		# ethics = {
-		# 	NOR = {	# 非格式塔和平等主义
-		# 		value = ethic_gestalt_consciousness
-		# 		value = ethic_egalitarian
-		# 		value = ethic_fanatic_egalitarian
-		# 	}
-		# }
-	}
-
-	random_weight = {
-		modifier = {
-			factor = 0
-		}
-	}
-
-	traits = {
-		trait = trait_latent_oripathy
-	}
-
-	country_modifier = {
-		country_government_civic_points_add = 1
-	}
-
-	tags = {
-		AUTHORITY_ELECTION_ON_RULER_DEATH
-	}
-}
+#auth_city_despotism = {
+#	election_type = oligarchic		# 选举类型
+#	max_election_candidates = 4	# 最大选举候选人数
+#
+#	has_agendas = yes	# 有议程
+#
+#	possible = {
+#		always = no
+#		# ethics = {
+#		# 	NOR = {	# 非格式塔和平等主义
+#		# 		value = ethic_gestalt_consciousness
+#		# 		value = ethic_egalitarian
+#		# 		value = ethic_fanatic_egalitarian
+#		# 	}
+#		# }
+#	}
+#
+#	random_weight = {
+#		modifier = {
+#			factor = 0
+#		}
+#	}
+#
+#	traits = {
+#		trait = trait_latent_oripathy
+#	}
+#
+#	country_modifier = {
+#		country_government_civic_points_add = 1
+#	}
+#
+#	tags = {
+#		AUTHORITY_ELECTION_ON_RULER_DEATH
+#	}
+#}
