@@ -2,9 +2,11 @@ Arknight = {
 	archetype = BIOLOGICAL
 	randomized = yes
 	possible = {
-		authority = {
-			OR = {
-				value = auth_city_republic
+		ethics = {
+			NOR = {	# 非格式塔
+				value = ethic_gestalt_consciousness
+				#value = ethic_authoritarian
+				#value = ethic_fanatic_authoritarian
 			}
 		}
 	}
@@ -29,11 +31,7 @@ ArkRobot = {
 	portrait_modding = yes
 
 	possible = {
-		authority = {
-			OR = {
-				value = auth_city_republic
-			}
-		}
+
 	}
 
 	leader_age_min = 2

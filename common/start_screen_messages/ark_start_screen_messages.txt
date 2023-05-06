@@ -13,16 +13,16 @@ part = {
 	localization = "START_SCREEN_ARK_1"
 
 	trigger = {
-		has_country_flag = arknight_1
+		has_origin = origin_ark_tragedy_birth
 	}
 }
 
 # 泰拉文明秩序
-part = {
-	location = 0
-	localization = "START_SCREEN_ARK_2"
-
-	trigger = {
-		has_country_flag = arknight_2
-	}
-}
+#part = {
+#	location = 0
+#	localization = "START_SCREEN_ARK_2"
+#
+#	trigger = {
+#		has_country_flag = arknight_2
+#	}
+#}

@@ -2,10 +2,7 @@
 originium_bombs = {
 	trigger = {
 		owner = {
-			OR = {
-				has_authority = auth_city_republic
-				has_authority = auth_city_despotism
-			}
+			has_originium_traits = yes
 			OR = {
 				has_monthly_income = {
 					resource = originiums

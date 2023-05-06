@@ -7,11 +7,6 @@ country_event = {
 
 	trigger = {
 		has_origin = origin_ark_tragedy_birth
-		OR = {
-		has_country_flag = arknight_1
-		has_country_flag = arknight_2
-		has_country_flag = arknight_4
-		}
 	}
 
 	immediate = {
@@ -37,10 +32,6 @@ country_event = {
 			DISTANCE = 150
 			ANGLE = 250
 		}
-		random_owned_planet = {
-			limit = { has_planet_flag = planet_terra }
-			add_deposit = d_former_countries_controlled	# 分裂各国控制区
-		}
 		create_species = {
 			name = "NAME_Robot"
 			plural = "NAME_Robots"
@@ -60,154 +51,154 @@ country_event = {
 				set_leader = event_target:leader_dumbness_infinite
 			}
 		}
-		every_owned_leader = {
-			limit = { NOT = { leader_class = ruler } }
-			kill_leader = { show_notification = no }
-		}
-		random_list = {	# 总督
-			100 = {
-				ARK_K_leader_born = {
-					class = governor
-					species = owner_main_species
-					name = "NAME_Chen"	# 陈
-					check_name = "chen"  #陈的英文名（全小写，用于代码）
-					skill = 1
-					age = 32
-					trait1 = leader_trait_eager # 活力四射
-					trait2 = leader_trait_righteous # 正义凌然
-					trait3 = leader_trait_oripathy # 源石病
-					trait4 = leader_trait_superintendent # 前警司
-					portrait = ARK010
-				}
-				last_created_leader = {
-					set_leader_flag = arkleader_Chen_WHO
-				}
-				set_country_flag = arkleader_Chen_SPAWNED
-				set_country_flag = arkleader_Chen_EMPLOYED
-			}
-		}
-		random_list = {	# 物理学
-			100 = {
-				ARK_K_leader_born = {
-					class = scientist
-					species = owner_main_species
-					name = "NAME_Closure"	# 可露希尔
-					check_name = "closure"
-					skill = 2
-					age = 240
-					trait1 = leader_trait_vampire # 血魔
-					trait2 = leader_trait_expertise_materials # 专长：材料科学
-					trait3 = leader_trait_expertise_computing # 专长：计算技术		
-					portrait = ARK007
-				}
-				last_created_leader = {
-					set_leader_flag = arkleader_Closure_WHO
-				}
-				set_country_flag = arkleader_Closure_SPAWNED
-				set_country_flag = arkleader_Closure_EMPLOYED
-			}
-		}
-		random_list = {	# 社会学
-			100 = {
-				ARK_K_leader_born = {
-					class = scientist
-					species = owner_main_species
-					name = "NAME_Silence"	# 赫默
-					check_name = "silence"
-					skill = 2
-					age = 25
-					trait1 = leader_trait_meticulous # 细致
-					trait2 = leader_trait_expertise_biology # 专长：生物学
-					trait3 = leader_trait_oripathy # 源石病
-					portrait = ARK108
-				}
-				last_created_leader = {
-					set_leader_flag = arkleader_Silence_WHO
-				}
-				set_country_flag = arkleader_Silence_SPAWNED
-				set_country_flag = arkleader_Silence_EMPLOYED
-			}
-		}
-		random_list = {	# 工程学
-			35 = {
-				ARK_K_leader_born = {
-					class = scientist
-					species = owner_main_species
-					name = "NAME_Weedy"	# 温蒂
-					check_name = "weedy"
-					skill = 3
-					age = 30
-					trait1 = leader_trait_expertise_biology # 专长：生物学
-					trait2 = leader_trait_expertise_propulsion # 专长：推进力学
-					portrait = ARK400
-				}
-				last_created_leader = {
-					set_leader_flag = arkleader_Weedy_WHO
-				}
-				set_country_flag = arkleader_Weedy_SPAWNED
-				set_country_flag = arkleader_Weedy_EMPLOYED
-
-			}
-			35 = {
-				ARK_K_leader_born = {
-					class = scientist
-					species = owner_main_species
-					name = "NAME_Mayer"	# 梅尔
-					check_name = "mayer"
-					skill = 2
-					age = 26
-					trait1 = leader_trait_spark_of_genius # 灵光一闪
-					trait2 = leader_trait_expertise_industry # 专长：工业
-					portrait = ARK242
-				}
-				last_created_leader = {
-					set_leader_flag = arkleader_Mayer_WHO
-				}
-				set_country_flag = arkleader_Mayer_SPAWNED
-				set_country_flag = arkleader_Mayer_EMPLOYED
-
-			}
-			30 = {
-				ARK_K_leader_born = {
-					class = scientist
-					species = owner_main_species
-					name = "NAME_Snowsant"	# 雪雉
-					check_name = "snowsant"
-					skill = 1
-					age = 24
-					trait1 = leader_trait_tiandaochouqin # 天道酬勤
-					trait2 = leader_trait_expertise_industry # 专长：工业
-					portrait = ARK383
-				}
-				last_created_leader = {
-					set_leader_flag = arkleader_Snowsant_WHO
-				}
-				set_country_flag = arkleader_Snowsant_SPAWNED
-				set_country_flag = arkleader_Snowsant_EMPLOYED
-
-			}
-		}
-		random_list = {	# 探索
-			100 = {
-				ARK_K_leader_born = {
-					class = scientist
-					species = owner_main_species
-					name = "NAME_Magallan"	# 麦哲伦
-					check_name = "magallan"
-					skill = 2
-					age = 29
-					trait1 = leader_trait_roamer # 漫游者
-					trait2 = leader_trait_archaeologist # 考古学家
-					portrait = ARK248
-				}
-				last_created_leader = {
-					set_leader_flag = arkleader_Magallan_WHO
-				}
-				set_country_flag = arkleader_Magallan_SPAWNED
-				set_country_flag = arkleader_Magallan_EMPLOYED
-
-			}
-		}
+		#every_owned_leader = {
+		#	limit = { NOT = { leader_class = ruler } }
+		#	kill_leader = { show_notification = no }
+		#}
+		#random_list = {	# 总督
+		#	100 = {
+		#		ARK_K_leader_born = {
+		#			class = governor
+		#			species = owner_main_species
+		#			name = "NAME_Chen"	# 陈
+		#			check_name = "chen"  #陈的英文名（全小写，用于代码）
+		#			skill = 1
+		#			age = 32
+		#			trait1 = leader_trait_eager # 活力四射
+		#			trait2 = leader_trait_righteous # 正义凌然
+		#			trait3 = leader_trait_oripathy # 源石病
+		#			trait4 = leader_trait_superintendent # 前警司
+		#			portrait = ARK010
+		#		}
+		#		last_created_leader = {
+		#			set_leader_flag = arkleader_Chen_WHO
+		#		}
+		#		set_country_flag = arkleader_Chen_SPAWNED
+		#		set_country_flag = arkleader_Chen_EMPLOYED
+		#	}
+		#}
+		#random_list = {	# 物理学
+		#	100 = {
+		#		ARK_K_leader_born = {
+		#			class = scientist
+		#			species = owner_main_species
+		#			name = "NAME_Closure"	# 可露希尔
+		#			check_name = "closure"
+		#			skill = 2
+		#			age = 240
+		#			trait1 = leader_trait_vampire # 血魔
+		#			trait2 = leader_trait_expertise_materials # 专长：材料科学
+		#			trait3 = leader_trait_expertise_computing # 专长：计算技术
+		#			portrait = ARK007
+		#		}
+		#		last_created_leader = {
+		#			set_leader_flag = arkleader_Closure_WHO
+		#		}
+		#		set_country_flag = arkleader_Closure_SPAWNED
+		#		set_country_flag = arkleader_Closure_EMPLOYED
+		#	}
+		#}
+		#random_list = {	# 社会学
+		#	100 = {
+		#		ARK_K_leader_born = {
+		#			class = scientist
+		#			species = owner_main_species
+		#			name = "NAME_Silence"	# 赫默
+		#			check_name = "silence"
+		#			skill = 2
+		#			age = 25
+		#			trait1 = leader_trait_meticulous # 细致
+		#			trait2 = leader_trait_expertise_biology # 专长：生物学
+		#			trait3 = leader_trait_oripathy # 源石病
+		#			portrait = ARK108
+		#		}
+		#		last_created_leader = {
+		#			set_leader_flag = arkleader_Silence_WHO
+		#		}
+		#		set_country_flag = arkleader_Silence_SPAWNED
+		#		set_country_flag = arkleader_Silence_EMPLOYED
+		#	}
+		#}
+		#random_list = {	# 工程学
+		#	35 = {
+		#		ARK_K_leader_born = {
+		#			class = scientist
+		#			species = owner_main_species
+		#			name = "NAME_Weedy"	# 温蒂
+		#			check_name = "weedy"
+		#			skill = 3
+		#			age = 30
+		#			trait1 = leader_trait_expertise_biology # 专长：生物学
+		#			trait2 = leader_trait_expertise_propulsion # 专长：推进力学
+		#			portrait = ARK400
+		#		}
+		#		last_created_leader = {
+		#			set_leader_flag = arkleader_Weedy_WHO
+		#		}
+		#		set_country_flag = arkleader_Weedy_SPAWNED
+		#		set_country_flag = arkleader_Weedy_EMPLOYED
+#
+		#	}
+		#	35 = {
+		#		ARK_K_leader_born = {
+		#			class = scientist
+		#			species = owner_main_species
+		#			name = "NAME_Mayer"	# 梅尔
+		#			check_name = "mayer"
+		#			skill = 2
+		#			age = 26
+		#			trait1 = leader_trait_spark_of_genius # 灵光一闪
+		#			trait2 = leader_trait_expertise_industry # 专长：工业
+		#			portrait = ARK242
+		#		}
+		#		last_created_leader = {
+		#			set_leader_flag = arkleader_Mayer_WHO
+		#		}
+		#		set_country_flag = arkleader_Mayer_SPAWNED
+		#		set_country_flag = arkleader_Mayer_EMPLOYED
+#
+		#	}
+		#	30 = {
+		#		ARK_K_leader_born = {
+		#			class = scientist
+		#			species = owner_main_species
+		#			name = "NAME_Snowsant"	# 雪雉
+		#			check_name = "snowsant"
+		#			skill = 1
+		#			age = 24
+		#			trait1 = leader_trait_tiandaochouqin # 天道酬勤
+		#			trait2 = leader_trait_expertise_industry # 专长：工业
+		#			portrait = ARK383
+		#		}
+		#		last_created_leader = {
+		#			set_leader_flag = arkleader_Snowsant_WHO
+		#		}
+		#		set_country_flag = arkleader_Snowsant_SPAWNED
+		#		set_country_flag = arkleader_Snowsant_EMPLOYED
+#
+		#	}
+		#}
+		#random_list = {	# 探索
+		#	100 = {
+		#		ARK_K_leader_born = {
+		#			class = scientist
+		#			species = owner_main_species
+		#			name = "NAME_Magallan"	# 麦哲伦
+		#			check_name = "magallan"
+		#			skill = 2
+		#			age = 29
+		#			trait1 = leader_trait_roamer # 漫游者
+		#			trait2 = leader_trait_archaeologist # 考古学家
+		#			portrait = ARK248
+		#		}
+		#		last_created_leader = {
+		#			set_leader_flag = arkleader_Magallan_WHO
+		#		}
+		#		set_country_flag = arkleader_Magallan_SPAWNED
+		#		set_country_flag = arkleader_Magallan_EMPLOYED
+#
+		#	}
+		#}
 		# random_list = {	# 测试
 		# 	100 = {
 		# 		create_leader = {

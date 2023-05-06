@@ -16,7 +16,7 @@ namespace = ark_mod_check    #用于检测别的明日方舟mod，开局弹窗�
 # 	}
 # }
 
-event = {  #检测明日方舟mod：[Arknights]The Crusade to Stellaris  (AKS寰宇方舟)  by:Pathfinder开拓者 制作组
+country_event = {  #检测明日方舟mod：[Arknights]The Crusade to Stellaris  (AKS寰宇方舟)  by:Pathfinder开拓者 制作组
 	id = ark_mod_check.1
 	title = "ark_mod_check.1.name"
 	desc = "ark_mod_check.1.desc"

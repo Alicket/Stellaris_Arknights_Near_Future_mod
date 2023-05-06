@@ -47,11 +47,7 @@ land_warship_army = {
 		custom_tooltip = {
 			text = landwarship_troop_limit_tooltip
 			owner = {
-				OR = {
-					has_country_flag = arknight_1
-					has_country_flag = arknight_2
-					has_country_flag = arknight_4
-				}
+				has_trait = trait_latent_oripathy
 			}
 		}
 	}
@@ -60,11 +56,7 @@ land_warship_army = {
 		custom_tooltip = {
 			text = landwarship_troop_limit_tooltip
 			owner = {
-				OR = {
-					has_country_flag = arknight_1
-					has_country_flag = arknight_2
-					has_country_flag = arknight_4
-				}
+				has_trait = trait_latent_oripathy
 			}
 		}
 	}
@@ -95,11 +87,7 @@ galaxy_warship_army = {
 		custom_tooltip = {
 			text = galaxywarship_troop_limit_tooltip
 			owner = {
-				OR = {
-					has_country_flag = arknight_1
-					has_country_flag = arknight_2
-					has_country_flag = arknight_4
-				}
+				has_trait = trait_latent_oripathy
 			}
 		}
 	}
@@ -108,11 +96,7 @@ galaxy_warship_army = {
 		custom_tooltip = {
 			text = landwarship_troop_limit_tooltip
 			owner = {
-				OR = {
-					has_country_flag = arknight_1
-					has_country_flag = arknight_2
-					has_country_flag = arknight_4
-				}
+				has_trait = trait_latent_oripathy
 			}
 		}
 	}

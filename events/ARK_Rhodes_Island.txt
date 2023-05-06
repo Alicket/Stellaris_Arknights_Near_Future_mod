@@ -50,7 +50,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		portrait = ARK002
+		portrait = ARK_F_Amiya
 		planet_background = root.owner
 		room = personality_hegemonic_imperialists_room
 	}
@@ -92,20 +92,20 @@ country_event = {
 		default_hide_option = yes
 	}
 
-	option = {
-		name = ark_rhodes_island.2.h
-		custom_tooltip = ark_rhodes_island.2.h_tooltip
-		allow = {
-			NOT = {
-				has_country_flag = ark_synthetic_evolution
-			}
-		}
-		hidden_effect = {
-			country_event = {
-				id = ark_apex_leader.3
-			}		
-		}
-	}
+	#option = {
+	#	name = ark_rhodes_island.2.h
+	#	custom_tooltip = ark_rhodes_island.2.h_tooltip
+	#	allow = {
+	#		NOT = {
+	#			has_country_flag = ark_synthetic_evolution
+	#		}
+	#	}
+	#	hidden_effect = {
+	#		country_event = {
+	#			id = ark_apex_leader.3
+	#		}
+	#	}
+	#}
 }
 
 # 联合理事会
@@ -115,12 +115,7 @@ country_event = {
 	desc = {
 		trigger = {
 			NOT = { has_country_flag = council_meeting_flag }
-			capital_scope = {
-				has_planet_flag = planet_terra
-				has_owner = yes
-				original_owner = yes
-				is_occupied_flag = no
-			}
+			has_origin = origin_ark_tragedy_birth
 		}
 		text = ark_rhodes_island.3.1.desc
 	}
@@ -128,12 +123,7 @@ country_event = {
 		trigger = {
 			has_country_flag = council_meeting_flag
 			NOT = { has_country_flag = interim_council_meeting }
-			capital_scope = {
-				has_planet_flag = planet_terra
-				has_owner = yes
-				original_owner = yes
-				is_occupied_flag = no
-			}
+			has_origin = origin_ark_tragedy_birth
 		}
 		text = ark_rhodes_island.3.2.desc
 	}
@@ -146,14 +136,7 @@ country_event = {
 	}
 	desc = {
 		trigger = {
-			capital_scope = {
-				has_planet_flag = planet_terra
-				OR = {
-					has_owner = no
-					original_owner = no
-					is_occupied_flag = yes
-				}
-			}
+			has_origin = origin_ark_tragedy_birth
 		}
 		text = ark_rhodes_island.3.4.desc
 	}
@@ -161,7 +144,7 @@ country_event = {
 	diplomatic = yes
 	
 	picture_event_data = {
-		portrait = ARK002
+		portrait = ARK_F_Amiya
 		planet_background = root.owner
 		room = personality_hegemonic_imperialists_room
 	}
@@ -737,26 +720,14 @@ country_event = {
 				OR = {
 					AND = {
 						NOT = { has_country_flag = council_meeting_flag }
-						capital_scope = {
-							has_planet_flag = planet_terra
-							has_owner = yes
-							original_owner = yes
-							is_occupied_flag = no
-						}
+						has_origin = origin_ark_tragedy_birth
 					}
 					AND = {
 						OR = {
 							NOT = { has_country_flag = council_meeting_flag }
 							has_country_flag = council_meeting_flag
 						}
-						capital_scope = {
-							has_planet_flag = planet_terra
-							OR = {
-								has_owner = no
-								original_owner = no
-								is_occupied_flag = yes
-							}
-						}
+						has_origin = origin_ark_tragedy_birth
 					}
 				}
 			}
@@ -765,12 +736,7 @@ country_event = {
 			text = ark_rhodes_island.3.x	# 不表态（只在绿色议案中选择）
 			trigger = {
 				has_country_flag = council_meeting_flag
-				capital_scope = {
-					has_planet_flag = planet_terra
-					has_owner = yes
-					original_owner = yes
-					is_occupied_flag = no
-				}
+				has_origin = origin_ark_tragedy_birth
 			}
 		}
 		default_hide_option = yes
@@ -919,15 +885,9 @@ country_event = {
 	location = ROOT
 
 	trigger = {
-		has_country_flag = arknight_1
 		NOT = { has_country_flag = council_meeting_flag }
 		NOT = { has_modifier = terra_council }
-		capital_scope = {
-			has_planet_flag = planet_terra
-			has_owner = yes
-			original_owner = yes
-			is_occupied_flag = no
-		}
+		has_origin = origin_ark_tragedy_birth
 	}
 	
 	immediate = {
@@ -1138,7 +1098,7 @@ country_event = {
 	diplomatic = yes
 	
 	picture_event_data = {
-		portrait = ARK128
+		portrait = ARK_F_Ptilopsis
 		planet_background = root.owner
 		room = personality_hegemonic_imperialists_room
 	}
@@ -1230,7 +1190,7 @@ country_event = {
 	diplomatic = yes
 	
 	picture_event_data = {
-		portrait = ARK128
+		portrait = ARK_F_Ptilopsis
 		planet_background = root.owner
 		room = personality_hegemonic_imperialists_room
 	}
@@ -1446,7 +1406,7 @@ country_event = {
 	diplomatic = yes
 	
 	picture_event_data = {
-		portrait = ARK128
+		portrait = ARK_F_Ptilopsis
 		planet_background = root.owner
 		room = personality_hegemonic_imperialists_room
 	}
@@ -1513,7 +1473,7 @@ country_event = {
 	diplomatic = yes
 	
 	picture_event_data = {
-		portrait = ARK128
+		portrait = ARK_F_Ptilopsis
 		planet_background = root.owner
 		room = personality_hegemonic_imperialists_room
 	}

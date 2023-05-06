@@ -34,7 +34,7 @@ ARK_country_3 = {
 
 	origin = "origin_ark_stella_caerula"
 
-	flags = { arknights_ocean_country custom_start_screen }
+	flags = { custom_start_screen }
 	
 	planet_name = "NAME_Terra_ocean"
 	planet_class = pc_continental

@@ -1,59 +1,59 @@
 namespace = ark_set
 
 # 强制修改非明日方舟国家选择的mod内容
-country_event = {
-	id = ark_set.1
-	is_triggered_only = yes
-	hide_window = yes
-
-	trigger = {
-		NOR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
-		OR = {
-			has_authority = auth_city_republic
-			has_authority = auth_city_despotism
-		}
-	}
-
-	immediate = {
-		if = {
-			limit = { has_authority = auth_city_republic }
-			change_government = {
-				authority = auth_oligarchic
-				civics = {
-					civic = random
-					civic = random
-				}
-			}
-		}
-		if = {
-			limit = { has_authority = auth_city_despotism }
-			change_government = {
-				authority = auth_dictatorial
-				civics = {
-					civic = random
-					civic = random
-				}
-			}
-		}
-	}
-}
+#country_event = {
+#	id = ark_set.1
+#	is_triggered_only = yes
+#	hide_window = yes
+#
+#	trigger = {
+#		NOR = {
+#			has_country_flag = arknight_1
+#			has_country_flag = arknight_2
+#			has_country_flag = arknight_3
+#			has_country_flag = arknight_4
+#		}
+#		OR = {
+#			has_authority = auth_city_republic
+#			has_authority = auth_city_despotism
+#		}
+#	}
+#
+#	immediate = {
+#		if = {
+#			limit = { has_authority = auth_city_republic }
+#			change_government = {
+#				authority = auth_oligarchic
+#				civics = {
+#					civic = random
+#					civic = random
+#				}
+#			}
+#		}
+#		if = {
+#			limit = { has_authority = auth_city_despotism }
+#			change_government = {
+#				authority = auth_dictatorial
+#				civics = {
+#					civic = random
+#					civic = random
+#				}
+#			}
+#		}
+#	}
+#}
 
 # 检查并重置领袖肖像
-country_event = {
-	id = ark_set.3
-	is_triggered_only = yes
-	hide_window = yes
-
-	immediate = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ark_synthetic_evolution }
-			}
+#country_event = {
+#	id = ark_set.3
+#	is_triggered_only = yes
+#	hide_window = yes
+#
+#	immediate = {
+#		if = {
+#			limit = {
+#				NOT = { has_country_flag = ark_synthetic_evolution }
+#			}
 			# every_owned_leader = {	# 凯尔希
 			# 	limit = {
 			# 		has_leader_flag = ark_leader_kaltsit
@@ -123,9 +123,9 @@ country_event = {
 			# 	}
 			# 	change_leader_portrait = ARK248
 			# }
-		}
-	}
-}
+#		}
+#	}
+#}
 
 # 检查并清除“源石病”特性
 country_event = {
@@ -203,11 +203,7 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		owner = {
-			OR = {
-				has_country_flag = arknight_1
-				has_country_flag = arknight_2
-				has_country_flag = arknight_4
-			}
+			has_origin = origin_ark_tragedy_birth
 			NOT = { has_country_flag = create_ark_robot }
 		}
 	}
@@ -238,11 +234,7 @@ planet_event = {
 
 	trigger = {
 		owner = {
-			OR = {
-				has_country_flag = arknight_1
-				has_country_flag = arknight_2
-				has_country_flag = arknight_4
-			}
+			has_origin = origin_ark_tragedy_birth
 			NOT = { has_country_flag = had_ark_robot }
 		}
 		fromfrom = { has_trait = trait_mechanical }
@@ -265,11 +257,7 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_4
-		}
+		has_origin = origin_ark_tragedy_birth
 		has_ascension_perk = ap_synthetic_evolution	# 已选飞升：合成进化
 		has_country_flag = synthetic_empire			# 是合成人帝国
 		NOT = { has_country_flag = ark_synthetic_evolution }

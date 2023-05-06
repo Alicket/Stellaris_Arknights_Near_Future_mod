@@ -26,12 +26,7 @@ ap_resister_of_the_end = {
 	}
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_origin = origin_ark_tragedy_birth
 		NOT = {
 			has_ascension_perk = ap_resister_of_the_end
 		}

@@ -108,6 +108,7 @@
 			}
 		}
 	}
+	flags = { custom_start_screen }
 	authority="auth_city_republic"
 	government="gov_ark_commercial_republic"
 	advisor_voice_type="l_english"

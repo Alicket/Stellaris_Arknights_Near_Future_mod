@@ -225,7 +225,7 @@ planet_event = {
 }
 
 # 源石轰炸污染！(当帝国首次被源石轨道轰炸)
-country_event = {
+planet_event = {
 	id = ark_orbital_bombardment.4
 	title = "ark_orbital_bombardment.4.name"
 	desc = "ark_orbital_bombardment.4.desc"
@@ -236,15 +236,19 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		is_ai = no
-		any_planet_within_border = {
-			has_orbital_bombardment_stance = originium_bombs
+		owner = {
+			is_ai = no
+			any_planet_within_border = {
+				has_orbital_bombardment_stance = originium_bombs
+			}
+			NOT = { has_country_flag = understood_originium_bombs }
 		}
-		NOT = { has_country_flag = understood_originium_bombs }
 	}
 	
 	immediate = {
-		set_country_flag = understood_originium_bombs
+		owner = {
+			set_country_flag = understood_originium_bombs
+		}
 	}
 	
 	option = {

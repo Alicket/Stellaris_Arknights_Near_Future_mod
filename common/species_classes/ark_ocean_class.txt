@@ -8,7 +8,9 @@ CLASS_Arknights_ocean = {
 	leader_age_max = 20
 	possible = {
 		authority = {
-			value = auth_hive_mind
+			not = {
+				value = auth_machine_intelligence
+			}
 		}
 	}
 	portraits = {

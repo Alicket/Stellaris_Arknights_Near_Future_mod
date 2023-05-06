@@ -1,6 +1,6 @@
 namespace = ark_originiums
 
-# Ô´Ê¯ÑÐ¾¿¼ò±¨ 1
+# Ô´Ê¯ï¿½Ð¾ï¿½ï¿½ï¿½ 1
 country_event = {
 	id = ark_originiums.1
 	title = "ark_originiums.1.name"
@@ -9,12 +9,7 @@ country_event = {
 	location = ROOT
 
 	trigger = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_4
-		}
-		any_owned_planet = { has_deposit = d_originiums_mine }
+		has_originium_traits = yes
 		has_country_flag = originiums_sufferer_start_flag
 		NOT = { has_country_flag = originiums_bulletin_1_flag }
 	}
@@ -26,7 +21,7 @@ country_event = {
 	}
 	
 	option = {
-		name = ark_originiums.1.a	# ¹éÈëµµ°¸
+		name = ark_originiums.1.a	# ï¿½ï¿½ï¿½ëµµï¿½ï¿½
 		custom_tooltip = ark_originiums.uid_tooltip
 		add_monthly_resource_mult = {
 			resource = engineering_research
@@ -36,7 +31,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_originiums_no_show	# ²»ÔÙÏÔÊ¾´ËÀà±¨¸æ
+		name = ark_originiums_no_show	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½à±¨ï¿½ï¿½
 		custom_tooltip = ark_originiums_no_show_tooltip
 		set_country_flag = originiums_bulletin_no_show
 		add_monthly_resource_mult = {
@@ -48,7 +43,7 @@ country_event = {
 	}
 }
 
-# Ô´Ê¯ÑÐ¾¿¼ò±¨ 2
+# Ô´Ê¯ï¿½Ð¾ï¿½ï¿½ï¿½ 2
 country_event = {
 	id = ark_originiums.2
 	title = "ark_originiums.2.name"
@@ -71,7 +66,7 @@ country_event = {
 	}
 	
 	option = {
-		name = ark_originiums.2.a	# ¹éÈëµµ°¸
+		name = ark_originiums.2.a	# ï¿½ï¿½ï¿½ëµµï¿½ï¿½
 		custom_tooltip = ark_originiums.uid_tooltip
 		add_monthly_resource_mult = {
 			resource = engineering_research
@@ -81,7 +76,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_originiums_no_show	# ²»ÔÙÏÔÊ¾´ËÀà±¨¸æ
+		name = ark_originiums_no_show	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½à±¨ï¿½ï¿½
 		custom_tooltip = ark_originiums_no_show_tooltip
 		set_country_flag = originiums_bulletin_no_show
 		add_monthly_resource_mult = {
@@ -93,7 +88,7 @@ country_event = {
 	}
 }
 
-# Ô´Ê¯ÑÐ¾¿¼ò±¨ 2£¨Òþ²ØÊÂ¼þ£©
+# Ô´Ê¯ï¿½Ð¾ï¿½ï¿½ï¿½ 2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½
 country_event = {
 	id = ark_originiums.20
 	hide_window = yes
@@ -118,7 +113,7 @@ country_event = {
 	}
 }
 
-# Ô´Ê¯ÑÐ¾¿¼ò±¨ 3
+# Ô´Ê¯ï¿½Ð¾ï¿½ï¿½ï¿½ 3
 country_event = {
 	id = ark_originiums.3
 	title = "ark_originiums.3.name"
@@ -141,7 +136,7 @@ country_event = {
 	}
 	
 	option = {
-		name = ark_originiums.3.a	# ¹éÈëµµ°¸
+		name = ark_originiums.3.a	# ï¿½ï¿½ï¿½ëµµï¿½ï¿½
 		custom_tooltip = ark_originiums.uid_tooltip
 		add_monthly_resource_mult = {
 			resource = engineering_research
@@ -151,7 +146,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_originiums_no_show	# ²»ÔÙÏÔÊ¾´ËÀà±¨¸æ
+		name = ark_originiums_no_show	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½à±¨ï¿½ï¿½
 		custom_tooltip = ark_originiums_no_show_tooltip
 		set_country_flag = originiums_bulletin_no_show
 		add_monthly_resource_mult = {
@@ -163,7 +158,7 @@ country_event = {
 	}
 }
 
-# Ô´Ê¯ÑÐ¾¿¼ò±¨ 3£¨Òþ²ØÊÂ¼þ£©
+# Ô´Ê¯ï¿½Ð¾ï¿½ï¿½ï¿½ 3ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½
 country_event = {
 	id = ark_originiums.30
 	hide_window = yes
@@ -188,7 +183,7 @@ country_event = {
 	}
 }
 
-# Ô´Ê¯ÑÐ¾¿¼ò±¨ 4
+# Ô´Ê¯ï¿½Ð¾ï¿½ï¿½ï¿½ 4
 country_event = {
 	id = ark_originiums.4
 	title = "ark_originiums.4.name"
@@ -211,7 +206,7 @@ country_event = {
 	}
 	
 	option = {
-		name = ark_originiums.3.a	# ¹éÈëµµ°¸
+		name = ark_originiums.3.a	# ï¿½ï¿½ï¿½ëµµï¿½ï¿½
 		custom_tooltip = ark_originiums.uid_tooltip
 		add_monthly_resource_mult = {
 			resource = engineering_research
@@ -222,7 +217,7 @@ country_event = {
 	}
 }
 
-# Ô´Ê¯ÑÐ¾¿¼ò±¨ 4£¨Òþ²ØÊÂ¼þ£©
+# Ô´Ê¯ï¿½Ð¾ï¿½ï¿½ï¿½ 4ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½
 country_event = {
 	id = ark_originiums.40
 	hide_window = yes

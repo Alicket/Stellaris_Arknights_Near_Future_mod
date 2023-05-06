@@ -1,0 +1,6 @@
+has_originium_traits = {
+    OR = {
+        has_trait = trait_Originium_Arts
+        has_trait = trait_latent_oripathy
+    }
+}

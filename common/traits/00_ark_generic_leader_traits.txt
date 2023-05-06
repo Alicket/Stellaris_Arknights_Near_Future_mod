@@ -1,7 +1,7 @@
 leader_trait_oripathy = {	# 源石病
 	cost = 0
 	modification = no
-	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_oripathy.dds"
+	icon = "gfx/interface/icons/traits/leader_trait_oripathy.dds"
 	self_modifier = {
 		leader_age = -20
 	}
@@ -26,7 +26,7 @@ leader_trait_oripathy = {	# 源石病
 leader_trait_tiandaochouqin = {	# 天道酬勤
 	cost = 1
 	modification = no
-	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_tiandaochouqin.dds"
+	icon = "gfx/interface/icons/traits/leader_trait_tiandaochouqin.dds"
 	self_modifier = {
 		species_leader_exp_gain = 0.25
 	}

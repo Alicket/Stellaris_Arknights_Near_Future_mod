@@ -12,6 +12,15 @@ planet_event = {
 			limit = { is_planet_class = pc_ringworld_habitable } #环世界
 			change_pc = pc_ringworld_habitable_damaged
 		}
+		if = {
+			limit = {
+				OR = {
+					is_planet_class = pc_crystal_habitat
+					is_planet_class = pc_habitat
+				}
+			}
+			remove_planet = yes
+		}
 		else = {  #星球
 			change_pc = pc_ark_frozen
 		}
@@ -19,6 +28,15 @@ planet_event = {
 		add_deposit =  d_ark_frozen_planet_deposit #加特征，产出资源
 		
  		#第一次炸球事件弹窗
+		if = { #居住站
+			limit = {
+				OR = {
+					is_planet_class = pc_crystal_habitat #这啥？
+					is_planet_class = pc_habitat
+				}
+			}
+			from.owner = {country_event = { id = ark_planet_destruction.212 }}
+		}
 		if = { 
 			limit = { is_planet_class = pc_ringworld_habitable } #环世界损坏
 			from.owner = {country_event = { id = ark_planet_destruction.211 }}
@@ -213,6 +231,45 @@ country_event = {#环形世界
 
 	immediate = {
 		set_country_flag = fired_ark_planet_killer_frostnova_ringworld
+	}
+
+	option = {
+		name = ark_planet_destruction.211.a #对于非和平主义
+		trigger = {
+			NOR = {
+				has_ethic = ethic_fanatic_pacifist
+				has_ethic = ethic_pacifist
+			}
+		}
+	}
+
+	option = {
+		name = ark_planet_destruction.210.b #对于和平主义
+		trigger = {
+			OR = {
+				has_ethic = ethic_fanatic_pacifist
+				has_ethic = ethic_pacifist
+			}
+		}
+	}
+}
+
+country_event = {#居住站
+	id = ark_planet_destruction.212
+	title = ark_planet_destruction.211.name
+	desc = ark_planet_destruction.212.desc
+	picture = GFX_planet_type_ringworld
+	show_sound = pc_frozen
+	location = from
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = fired_ark_planet_killer_frostnova_habitat }
+	}
+
+	immediate = {
+		set_country_flag = fired_ark_planet_killer_frostnova_habitat
 	}
 
 	option = {

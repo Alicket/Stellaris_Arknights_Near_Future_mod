@@ -10,10 +10,10 @@ auth_city_republic = {
 
 	possible = {
 		ethics = {
-			NOR = {	# 非格式塔和威权主义
+			NOR = {	# 非格式塔
 				value = ethic_gestalt_consciousness
-				value = ethic_authoritarian
-				value = ethic_fanatic_authoritarian
+				#value = ethic_authoritarian
+				#value = ethic_fanatic_authoritarian
 			}
 		}
 	}
@@ -22,10 +22,6 @@ auth_city_republic = {
 		modifier = {
 			factor = 0
 		}
-	}
-
-	traits = {
-		trait = trait_latent_oripathy
 	}
 
 	country_modifier = {

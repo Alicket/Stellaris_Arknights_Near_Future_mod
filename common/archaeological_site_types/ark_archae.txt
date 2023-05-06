@@ -8,24 +8,14 @@ ark_archae_moist_mysterious_area = {
 		exists = leader
 		hidden_trigger = {
 			owner = {
-				OR = {
-					has_country_flag = arknight_1
-					has_country_flag = arknight_2
-					has_country_flag = arknight_3
-					has_country_flag = arknight_4
-				}
+				has_origin = origin_ark_tragedy_birth
 			}
 		}
 	}
 	visible = {
 		default_site_visible_trigger = yes
 		owner = {
-			OR = {
-				has_country_flag = arknight_1
-				has_country_flag = arknight_2
-				has_country_flag = arknight_3
-				has_country_flag = arknight_4
-			}
+			has_origin = origin_ark_tragedy_birth
 		}
 	}
 
@@ -72,24 +62,14 @@ ark_archae_telescope_a = {
 		exists = leader
 		hidden_trigger = {
 			owner = {
-				OR = {
-					has_country_flag = arknight_1
-					has_country_flag = arknight_2
-					has_country_flag = arknight_3
-					has_country_flag = arknight_4
-				}
+has_origin = origin
 			}
 		}
 	}
 	visible = {
 		default_site_visible_trigger = yes
 		owner = {
-			OR = {
-				has_country_flag = arknight_1
-				has_country_flag = arknight_2
-				has_country_flag = arknight_3
-				has_country_flag = arknight_4
-			}
+			has_origin = origin_ark_tragedy_birth
 		}
 	}
 
@@ -131,24 +111,14 @@ ark_archae_underground = {
 		exists = leader
 		hidden_trigger = {
 			owner = {
-				OR = {
-					has_country_flag = arknight_1
-					has_country_flag = arknight_2
-					has_country_flag = arknight_3
-					has_country_flag = arknight_4
-				}
+has_origin = origin
 			}
 		}
 	}
 	visible = {
 		default_site_visible_trigger = yes
 		owner = {
-			OR = {
-				has_country_flag = arknight_1
-				has_country_flag = arknight_2
-				has_country_flag = arknight_3
-				has_country_flag = arknight_4
-			}
+			has_origin = origin_ark_tragedy_birth
 		}
 	}
 

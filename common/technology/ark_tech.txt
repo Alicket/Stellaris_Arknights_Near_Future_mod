@@ -13,21 +13,14 @@ tech_galaxy_warship_army = {
 	# 解锁先锋陆行舰队
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 
 	ai_weight = {
 		factor = 0
 		modifier = {
 			factor = 100
-			OR = {
-				has_country_flag = arknight_1
-			}
+			has_originium_traits = yes
 		}
 	}
 }
@@ -39,45 +32,15 @@ tech_originiums_mining = {
 	tier = 2
 	category = { materials }
 	prerequisites = { "tech_space_construction" }
-	weight = @tier2weight1
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 	
-	weight_modifier = {
-		factor = 2
-		modifier = {
-			factor = 2
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_materials"
-			}
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_planet = {
-					has_deposit = d_originiums_mine
-				}
-			}
-		}
-	}
+	weight = 0
 	
 	ai_weight = {
-		factor = 4 #strategic resource
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_materials"
-			}
-		}
+		weight = 0
 	}	
 }
 
@@ -91,12 +54,7 @@ tech_yuanyan_rawmaterial = {
 	weight = @tier1weight2
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 	
 	weight_modifier = {
@@ -134,12 +92,7 @@ tech_guyuanyan_rawmaterial = {
 	weight = @tier1weight3
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 	
 	weight_modifier = {
@@ -178,12 +131,7 @@ tech_guyuanyanzu_rawmaterial = {
 	weight = @tier2weight1
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 	
 	weight_modifier = {
@@ -222,12 +170,7 @@ tech_tichunyuanyan_rawmaterial = {
 	weight = @tier2weight2
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 	
 	weight_modifier = {
@@ -266,12 +209,7 @@ tech_carbon_stick = {
 	weight = @tier1weight3
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 
 	modifier = {
@@ -316,12 +254,7 @@ tech_carbon_brick = {
 	weight = @tier2weight2
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 
 	modifier = {
@@ -366,12 +299,7 @@ tech_carbon_pack = {
 	weight = @tier3weight1
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 
 	modifier = {
@@ -416,12 +344,7 @@ tech_light_building_material = {
 	weight = @tier2weight1
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 
 	modifier = {
@@ -460,12 +383,7 @@ tech_concrete_building_material = {
 	weight = @tier2weight3
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 
 	modifier = {
@@ -504,12 +422,7 @@ tech_reinforced_building_material = {
 	weight = @tier3weight2
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 
 	modifier = {
@@ -550,12 +463,7 @@ tech_manufacturing_station = {
 	# 解锁制造站
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 
 	weight_modifier = {
@@ -591,12 +499,7 @@ tech_machining_station = {
 	# 解锁加工站
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 
 	weight_modifier = {
@@ -631,12 +534,7 @@ tech_ark_laser_1 = {
 	weight = @tier4weight1
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 	
 	gateway = energy_weapons
@@ -690,12 +588,7 @@ tech_ark_laser_2 = {
 	weight = @tier2weight1
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 	
 	gateway = energy_weapons
@@ -749,12 +642,7 @@ tech_ark_polymer = {
 	weight = @tier4weight1
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 	
 	weight_modifier = {
@@ -806,12 +694,7 @@ tech_ark_disruptors = {
 	weight = @tier4weight1
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 	
 	weight_modifier = {
@@ -863,12 +746,7 @@ tech_ark_point_defence = {
 	weight = @tier4weight1
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 	
 	weight_modifier = {
@@ -903,12 +781,7 @@ tech_ark_energy_torpedoes_1 = {
 	weight = @tier3weight3
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 	
 	weight_modifier = {
@@ -960,12 +833,7 @@ tech_ark_missiles_1 = {
 	weight = @tier4weight2
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 	
 	weight_modifier = {
@@ -1017,12 +885,7 @@ tech_ark_missiles_2 = {
 	weight = @tier2weight1
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 	
 	weight_modifier = {
@@ -1074,12 +937,7 @@ tech_ark_mass_accelerator_1 = {
 	weight = @tier4weight2
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 	
 	weight_modifier = {
@@ -1131,12 +989,7 @@ tech_ark_mass_accelerator_2 = {
 	weight = @tier4weight3
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 	
 	weight_modifier = {
@@ -1188,12 +1041,7 @@ tech_ark_booster = {
 	weight = @tier3weight3
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 
 	weight_modifier = {
@@ -1230,12 +1078,7 @@ tech_ark_mass_sensing_ammo = {
 	weight = @tier3weight1
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 
 	weight_modifier = {
@@ -1297,12 +1140,7 @@ tech_ark_space_originium_power = {
 	}
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 
 	weight_modifier = {
@@ -1343,12 +1181,7 @@ tech_ark_ship_armor_1 = {
 	weight = @tier1weight1
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 
 	weight_modifier = {
@@ -1384,12 +1217,7 @@ tech_ark_ship_armor_2 = {
 	weight = @tier1weight1
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 
 	weight_modifier = {
@@ -1425,12 +1253,7 @@ tech_ark_ship_armor_3 = {
 	weight = @tier1weight1
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 
 	weight_modifier = {
@@ -1466,12 +1289,7 @@ tech_ark_ship_armor_4a = {
 	weight = @tier1weight1
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 
 	weight_modifier = {
@@ -1507,12 +1325,7 @@ tech_ark_ship_armor_4b = {
 	weight = @tier1weight1
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 
 	weight_modifier = {
@@ -1548,12 +1361,7 @@ tech_ark_shields_1 = {
 	weight = @tier1weight1
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 
 	weight_modifier = {
@@ -1590,12 +1398,7 @@ tech_ark_shields_2 = {
 	weight = @tier1weight1
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 
 	weight_modifier = {
@@ -1632,12 +1435,7 @@ tech_ark_shields_3 = {
 	weight = @tier1weight1
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 
 	weight_modifier = {
@@ -1670,16 +1468,11 @@ tech_ark_shields_4a = {
 	tier = 3
 	category = { field_manipulation }
 	ai_update_type = all
-	prerequisites = { "tech_originiums_mining""tech_ark_shields_3" "tech_ark_shields_4a" }
+	prerequisites = { "tech_originiums_mining" "tech_ark_shields_3" "tech_ark_shields_4a" }
 	weight = @tier1weight1
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 
 	weight_modifier = {
@@ -1716,12 +1509,7 @@ tech_ark_shields_4b = {
 	weight = @tier1weight1
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 
 	weight_modifier = {
@@ -1758,12 +1546,7 @@ tech_ark_shields_5a = {
 	weight = @tier1weight1
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 
 	weight_modifier = {
@@ -1800,12 +1583,7 @@ tech_ark_shields_5b = {
 	weight = @tier1weight1
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 
 	weight_modifier = {
@@ -1842,12 +1620,7 @@ tech_ark_shields_5c = {
 	weight = @tier1weight1
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
+		has_originium_traits = yes
 	}
 
 	weight_modifier = {

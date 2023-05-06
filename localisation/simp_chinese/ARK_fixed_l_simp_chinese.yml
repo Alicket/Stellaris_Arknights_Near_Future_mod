@@ -4,7 +4,7 @@ FLAG_CATEGORY_hypergryph:0 "鹰角"
 
 ## 种族特性 ##
 trait_latent_oripathy:0 "源石病潜势"
-trait_latent_oripathy_desc:0 "§L长期生活在受源石及其工业衍生品影响的环境中,\t\t人们更容易得一种被称为\t\t"源石病"\t\t的不治之症.\t\t§!\n\n只有当§H种族§!是§H泰拉人§!、§H母星§!是§H泰拉§!以及不是§H格式塔意识§!,\t\t§H种族特性§!后续内容才会生效.\t\t"
+trait_latent_oripathy_desc:0 "§L长期生活在受源石及其工业衍生品影响的环境中,\t\t人们更容易得一种被称为\t\t"源石病"\t\t的不治之症。"
 trait_Originium_Arts:0 "源石技艺"
 trait_Originium_Arts_desc:0 "§L随着\t\t"上帝之锁"\t\t被突破,\t\t源石病特效药的问世使\t\t"源石病"\t\t不再是令人绝望的不治之症,\t\t它将转而成为一种优势.\t\t§!"
 trait_acute_oripathy:0 "急性源石病"

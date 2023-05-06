@@ -1,3 +1,8 @@
+
+
+### 因为新版本的更改，本文件所有事件的触发已经全部禁用
+
+
 namespace = ark_apex_leader
 #on_leader_spawned
 #生成领袖

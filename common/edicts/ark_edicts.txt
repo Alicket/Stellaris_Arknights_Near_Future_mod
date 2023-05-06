@@ -24,16 +24,7 @@ originiums_fire = {
 	}
 	
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
-		OR = {
-			has_resource = { type = originiums amount > 0 }
-			has_edict = originiums_fire
-		}
+		has_originium_traits = yes
 	}
 
 	modifier = {
@@ -62,16 +53,7 @@ originiums_ahead = {
 	}
 	
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
-		OR = {
-			has_resource = { type = originiums amount > 0 }
-			has_edict = originiums_ahead
-		}
+		has_originium_traits = yes
 	}
 
 	modifier = {
@@ -100,16 +82,7 @@ d32_steels_defense = {
 	}
 	
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
-		OR = {
-			has_resource = { type = d32_steels amount > 0 }
-			has_edict = d32_steels_defense
-		}
+		has_originium_traits = yes
 	}
 
 	modifier = {
@@ -139,16 +112,7 @@ multipole_nanosheets_operation = {
 	}
 	
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
-		OR = {
-			has_resource = { type = multipole_nanosheets amount > 0 }
-			has_edict = multipole_nanosheets_operation
-		}
+		has_originium_traits = yes
 	}
 
 	modifier = {
@@ -177,16 +141,7 @@ multipole_nanosheets_efficient_fleet = {
 	}
 	
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
-		OR = {
-			has_resource = { type = multipole_nanosheets amount > 0 }
-			has_edict = multipole_nanosheets_efficient_fleet
-		}
+		has_originium_traits = yes
 	}
 
 	modifier = {
@@ -215,16 +170,7 @@ multipole_nanosheets_efficient_building = {
 	}
 	
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
-		OR = {
-			has_resource = { type = multipole_nanosheets amount > 0 }
-			has_edict = multipole_nanosheets_efficient_building
-		}
+		has_originium_traits = yes
 	}
 
 	modifier = {
@@ -255,13 +201,7 @@ sarkaz_conscription_system = {
 	}
 
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
-		NOT = { has_ascension_perk = ap_the_flesh_is_weak }
+		has_originium_traits = yes
 	}
 
 	ai_weight = {
@@ -286,16 +226,7 @@ power_city_module = {
 	}
 	
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
-		OR = {
-			has_resource = { type = originiums amount > 0 }
-			has_edict = power_city_module
-		}
+		has_originium_traits = yes
 	}
 
 	modifier = {
@@ -320,16 +251,7 @@ power_space_module = {
 	}
 	
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
-		OR = {
-			has_resource = { type = originiums amount > 0 }
-			has_edict = power_space_module
-		}
+		has_originium_traits = yes
 	}
 
 	modifier = {
@@ -358,16 +280,7 @@ power_mega_engineering_module = {
 	}
 	
 	potential = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_3
-			has_country_flag = arknight_4
-		}
-		OR = {
-			has_resource = { type = originiums amount > 0 }
-			has_edict = power_mega_engineering_module
-		}
+		has_originium_traits = yes
 	}
 
 	modifier = {

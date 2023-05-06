@@ -7,13 +7,18 @@ origin_ark_tragedy_birth = {
 		authority = {
 			OR = {
 				value = auth_city_republic
-				value = auth_city_despotism
 			}
 		}
 		ethics = {
 			NOT = { value = ethic_gestalt_consciousness }
 		}
 	}
+
+	traits = {
+		trait = trait_latent_oripathy
+	}
+	initializers = { Tyra_system }
+
 
 	flags = { origin_ark_tragedy_birth_flag }
 

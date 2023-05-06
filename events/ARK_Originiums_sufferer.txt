@@ -1,6 +1,6 @@
 namespace = ark_originiums_sufferer
 
-# ¿óÊ¯²¡
+# ï¿½ï¿½Ê¯ï¿½ï¿½
 country_event = {
 	id = ark_originiums_sufferer.1
 	title = "ark_originiums_sufferer.1.name"
@@ -10,15 +10,7 @@ country_event = {
 	location = ROOT
 
 	trigger = {
-		OR = {
-			has_country_flag = arknight_1
-			has_country_flag = arknight_2
-			has_country_flag = arknight_4
-		}
-		root = { is_species_class = Arknight }	# ÊÇÌ©À­ÈËÖÖ×å
-		capital_scope = { has_planet_flag = planet_terra }	# Ä¸ÐÇÊÇÌ©À­
-		owner_species = { has_trait = trait_latent_oripathy }	# ÓÐÖÖ×åÌØÐÔ"¿óÊ¯²¡Ç±ÊÆ"
-		NOT = { has_ethic = ethic_gestalt_consciousness }	# ·Ç¸ñÊ½Ëþ
+		owner_species = { has_trait = trait_latent_oripathy }
 		NOT = { has_country_flag = originiums_sufferer_start_flag }
 		NOT = { has_country_flag = originiums_sufferer_end_flag }
 	}
@@ -30,7 +22,7 @@ country_event = {
 	}
 	
 	option = {
-		name = ark_originiums_sufferer.1.a	# È·ÈÏ
+		name = ark_originiums_sufferer.1.a	# È·ï¿½ï¿½
 		custom_tooltip = ark_originiums_sufferer.1_tooltip
 		capital_scope = {
 			enable_special_project = {
@@ -45,7 +37,7 @@ country_event = {
 	}
 }
 
-# ¿óÊ¯²¡ÑÐ¾¿¼ò±¨ 1
+# ï¿½ï¿½Ê¯ï¿½ï¿½ï¿½Ð¾ï¿½ï¿½ï¿½ 1
 country_event = {
 	id = ark_originiums_sufferer.11
 	title = "ark_originiums_sufferer.11.name"
@@ -65,7 +57,7 @@ country_event = {
 	}
 	
 	option = {
-		name = ark_originiums_sufferer.11.a	# ¹éÈëµµ°¸
+		name = ark_originiums_sufferer.11.a	# ï¿½ï¿½ï¿½ëµµï¿½ï¿½
 		custom_tooltip = ark_originiums_sufferer.uid_tooltip
 		add_monthly_resource_mult = {
      			resource = society_research
@@ -75,7 +67,7 @@ country_event = {
      		}
 	}
 	option = {
-		name = ark_originiums_sufferer_no_show	# ²»ÔÙÏÔÊ¾´ËÀà±¨¸æ
+		name = ark_originiums_sufferer_no_show	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½à±¨ï¿½ï¿½
 		custom_tooltip = ark_originiums_sufferer_no_show_tooltip
 		set_country_flag = originiums_sufferer_bulletin_no_show
 		add_monthly_resource_mult = {
@@ -87,7 +79,7 @@ country_event = {
 	}
 }
 
-# ¿óÊ¯²¡ÑÐ¾¿¼ò±¨ 2
+# ï¿½ï¿½Ê¯ï¿½ï¿½ï¿½Ð¾ï¿½ï¿½ï¿½ 2
 country_event = {
 	id = ark_originiums_sufferer.12
 	title = "ark_originiums_sufferer.12.name"
@@ -110,7 +102,7 @@ country_event = {
 	}
 	
 	option = {
-		name = ark_originiums_sufferer.12.a	# ¹éÈëµµ°¸
+		name = ark_originiums_sufferer.12.a	# ï¿½ï¿½ï¿½ëµµï¿½ï¿½
 		custom_tooltip = ark_originiums_sufferer.uid_tooltip
 		add_monthly_resource_mult = {
      			resource = society_research
@@ -120,7 +112,7 @@ country_event = {
      		}
 	}
 	option = {
-		name = ark_originiums_sufferer_no_show	# ²»ÔÙÏÔÊ¾´ËÀà±¨¸æ
+		name = ark_originiums_sufferer_no_show	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½à±¨ï¿½ï¿½
 		custom_tooltip = ark_originiums_sufferer_no_show_tooltip
 		set_country_flag = originiums_sufferer_bulletin_no_show
 		add_monthly_resource_mult = {
@@ -132,7 +124,7 @@ country_event = {
 	}
 }
 
-# ¿óÊ¯²¡ÑÐ¾¿¼ò±¨ 2£¨Òþ²ØÊÂ¼þ£©
+# ï¿½ï¿½Ê¯ï¿½ï¿½ï¿½Ð¾ï¿½ï¿½ï¿½ 2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½
 country_event = {
 	id = ark_originiums_sufferer.120
 	hide_window = yes
@@ -157,7 +149,7 @@ country_event = {
 	}
 }
 
-# ¿óÊ¯²¡ÑÐ¾¿¼ò±¨ 3
+# ï¿½ï¿½Ê¯ï¿½ï¿½ï¿½Ð¾ï¿½ï¿½ï¿½ 3
 country_event = {
 	id = ark_originiums_sufferer.13
 	title = "ark_originiums_sufferer.13.name"
@@ -180,7 +172,7 @@ country_event = {
 	}
 	
 	option = {
-		name = ark_originiums_sufferer.13.a	# ¹éÈëµµ°¸
+		name = ark_originiums_sufferer.13.a	# ï¿½ï¿½ï¿½ëµµï¿½ï¿½
 		custom_tooltip = ark_originiums_sufferer.uid_tooltip
 		add_monthly_resource_mult = {
      			resource = society_research
@@ -190,7 +182,7 @@ country_event = {
      		}
 	}
 	option = {
-		name = ark_originiums_sufferer_no_show	# ²»ÔÙÏÔÊ¾´ËÀà±¨¸æ
+		name = ark_originiums_sufferer_no_show	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½à±¨ï¿½ï¿½
 		custom_tooltip = ark_originiums_sufferer_no_show_tooltip
 		set_country_flag = originiums_sufferer_bulletin_no_show
 		add_monthly_resource_mult = {
@@ -202,7 +194,7 @@ country_event = {
 	}
 }
 
-# ¿óÊ¯²¡ÑÐ¾¿¼ò±¨ 3£¨Òþ²ØÊÂ¼þ£©
+# ï¿½ï¿½Ê¯ï¿½ï¿½ï¿½Ð¾ï¿½ï¿½ï¿½ 3ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½
 country_event = {
 	id = ark_originiums_sufferer.130
 	hide_window = yes
@@ -227,7 +219,7 @@ country_event = {
 	}
 }
 
-# ¿óÊ¯²¡ÑÐ¾¿¼ò±¨ 4
+# ï¿½ï¿½Ê¯ï¿½ï¿½ï¿½Ð¾ï¿½ï¿½ï¿½ 4
 country_event = {
 	id = ark_originiums_sufferer.14
 	title = "ark_originiums_sufferer.14.name"
@@ -250,7 +242,7 @@ country_event = {
 	}
 	
 	option = {
-		name = ark_originiums_sufferer.14.a	# ¹éÈëµµ°¸
+		name = ark_originiums_sufferer.14.a	# ï¿½ï¿½ï¿½ëµµï¿½ï¿½
 		custom_tooltip = ark_originiums_sufferer.uid_tooltip
 		add_monthly_resource_mult = {
      			resource = society_research
@@ -260,7 +252,7 @@ country_event = {
      		}
 	}
 	option = {
-		name = ark_originiums_sufferer_no_show	# ²»ÔÙÏÔÊ¾´ËÀà±¨¸æ
+		name = ark_originiums_sufferer_no_show	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½à±¨ï¿½ï¿½
 		custom_tooltip = ark_originiums_sufferer_no_show_tooltip
 		set_country_flag = originiums_sufferer_bulletin_no_show
 		add_monthly_resource_mult = {
@@ -272,7 +264,7 @@ country_event = {
 	}
 }
 
-# ¿óÊ¯²¡ÑÐ¾¿¼ò±¨ 4£¨Òþ²ØÊÂ¼þ£©
+# ï¿½ï¿½Ê¯ï¿½ï¿½ï¿½Ð¾ï¿½ï¿½ï¿½ 4ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½
 country_event = {
 	id = ark_originiums_sufferer.140
 	hide_window = yes
@@ -297,7 +289,7 @@ country_event = {
 	}
 }
 
-# ¿óÊ¯²¡ÑÐ¾¿¼ò±¨ 5
+# ï¿½ï¿½Ê¯ï¿½ï¿½ï¿½Ð¾ï¿½ï¿½ï¿½ 5
 country_event = {
 	id = ark_originiums_sufferer.15
 	title = "ark_originiums_sufferer.15.name"
@@ -320,7 +312,7 @@ country_event = {
 	}
 	
 	option = {
-		name = ark_originiums_sufferer.15.a	# ¹éÈëµµ°¸
+		name = ark_originiums_sufferer.15.a	# ï¿½ï¿½ï¿½ëµµï¿½ï¿½
 		custom_tooltip = ark_originiums_sufferer.uid_tooltip
 		add_monthly_resource_mult = {
      			resource = society_research
@@ -331,7 +323,7 @@ country_event = {
 	}
 }
 
-# ¿óÊ¯²¡ÑÐ¾¿¼ò±¨ 5£¨Òþ²ØÊÂ¼þ£©
+# ï¿½ï¿½Ê¯ï¿½ï¿½ï¿½Ð¾ï¿½ï¿½ï¿½ 5ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½
 country_event = {
 	id = ark_originiums_sufferer.150
 	hide_window = yes
@@ -356,7 +348,7 @@ country_event = {
 	}
 }
 
-# ¿óÊ¯²¡ÌØÐ§Ò©ÑÐ·¢½øÕ¹Ñ¸ËÙ
+# ï¿½ï¿½Ê¯ï¿½ï¿½ï¿½ï¿½Ð§Ò©ï¿½Ð·ï¿½ï¿½ï¿½Õ¹Ñ¸ï¿½ï¿½
 country_event = {
 	id = ark_originiums_sufferer.2
 	title = "ark_originiums_sufferer.2.name"
@@ -366,19 +358,16 @@ country_event = {
 	location = ROOT
 
 	is_triggered_only = yes
-	
-	immediate = {
-	}
-	
+
 	option = {
-		name = ark_originiums_sufferer.2.a	# ×£Ô¸ÎÒÃÇµÄ¸¶³öÖÕÓÐÊÕ»ñ
+		name = ark_originiums_sufferer.2.a	# ×£Ô¸ï¿½ï¿½ï¿½ÇµÄ¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ»ï¿½
 		hidden_effect = {
 			remove_modifier = "infected_anxious"
 		}
 	}
 }
 
-# ¹¥¿Ë¿óÊ¯²¡£¡
+# ï¿½ï¿½ï¿½Ë¿ï¿½Ê¯ï¿½ï¿½ï¿½ï¿½
 country_event = {
 	id = ark_originiums_sufferer.3
 	title = "ark_originiums_sufferer.3.name"
@@ -432,7 +421,7 @@ country_event = {
 	# }
 }
 
-# ¿óÊ¯²¡»¼ÕßËÀÍö±¨¸æ£¨Ê×´Î£©
+# ï¿½ï¿½Ê¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æ£¨ï¿½×´Î£ï¿½
 country_event = {
 	id = ark_originiums_sufferer.4
 	title = "ark_originiums_sufferer.4.name"
@@ -451,7 +440,7 @@ country_event = {
 	}
 	
 	option = {
-		name = ark_originiums_sufferer.4.a	# ÁîÈËÍ´ÐÄ¼²Ê×
+		name = ark_originiums_sufferer.4.a	# ï¿½ï¿½ï¿½ï¿½Í´ï¿½Ä¼ï¿½ï¿½ï¿½
 		random_owned_pop = {
 			limit = {
 				NOT = { species = { has_trait = trait_Originium_Arts } }
@@ -483,7 +472,7 @@ country_event = {
 	}
 
 	option = {
-		name = ark_originiums_sufferer.4.b	# ²»ÔÊÐíÔÙ·¸´ËÀà¹¤×÷Ê§Îó
+		name = ark_originiums_sufferer.4.b	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù·ï¿½ï¿½ï¿½ï¿½à¹¤ï¿½ï¿½Ê§ï¿½ï¿½
 		random_owned_pop = {
 			limit = {
 				NOT = { species = { has_trait = trait_Originium_Arts } }
@@ -515,7 +504,7 @@ country_event = {
 	}
 
 	option = {
-		name = ark_originiums_sufferer.4.c	# ²»ÔÙÏÔÊ¾´ËÀà±¨¸æ
+		name = ark_originiums_sufferer.4.c	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½à±¨ï¿½ï¿½
 		random_owned_pop = {
 			limit = {
 				NOT = { species = { has_trait = trait_Originium_Arts } }
@@ -544,7 +533,7 @@ country_event = {
 	}
 }
 
-# ¿óÊ¯²¡»¼ÕßËÀÍö±¨¸æ£¨15ÄêÑ­»·£©
+# ï¿½ï¿½Ê¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æ£¨15ï¿½ï¿½Ñ­ï¿½ï¿½ï¿½ï¿½
 country_event = {
 	id = ark_originiums_sufferer.41
 	title = "ark_originiums_sufferer.41.name"
@@ -563,7 +552,7 @@ country_event = {
 	}
 	
 	option = {
-		name = ark_originiums_sufferer.4.a	# ÁîÈËÍ´ÐÄ¼²Ê×
+		name = ark_originiums_sufferer.4.a	# ï¿½ï¿½ï¿½ï¿½Í´ï¿½Ä¼ï¿½ï¿½ï¿½
 		random_owned_pop = {
 			limit = {
 				NOT = { species = { has_trait = trait_Originium_Arts } }
@@ -577,7 +566,7 @@ country_event = {
 	}
 
 	option = {
-		name = ark_originiums_sufferer.4.c	# ²»ÔÙÏÔÊ¾´ËÀà±¨¸æ
+		name = ark_originiums_sufferer.4.c	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½à±¨ï¿½ï¿½
 		random_owned_pop = {
 			limit = {
 				NOT = { species = { has_trait = trait_Originium_Arts } }
@@ -591,7 +580,7 @@ country_event = {
 	}
 }
 
-# ¿óÊ¯²¡»¼ÕßËÀÍö±¨¸æ£¨15ÄêÑ­»·£©£¨Òþ²ØÊÂ¼þ£©
+# ï¿½ï¿½Ê¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æ£¨15ï¿½ï¿½Ñ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½
 country_event = {
 	id = ark_originiums_sufferer.42
 	hide_window = yes

@@ -8,21 +8,19 @@ on_planet_class_changed = {
 }
 on_game_start_country = {
 	events = {
-		ark_set.1			# 强制修改非明日方舟国家选择的mod内容
-		ark_game_start.3		# 询问是否扮演明日方舟国家
 		ark_origins.0		# 起源效果（明日方舟）
 		ark_civic.1		# 商业联合（第一个国民理念）
 		ark_civic.2		# 联合峰会（第一个国民理念）
-		#ark_archae.1	#考古事件
 		ark_set.5		#创建泰拉造物
 		#ark_mod_check.0	#检测mod冲突（测试用）
 		ark_mod_check.1	#检测mod冲突
+		ark_game_start.1
+		ark_game_start.11
 	}
 }
 
 empire_init_capital_planet = {
 	events = {
-		ark_game_start.1
 	}
 }
 
@@ -52,27 +50,21 @@ on_planet_bombarded = {
 
 on_monthly_pulse_country = {
 	events = {
-		#ark_set.3		# 检查并重置领袖肖像
 		ark_set.4
 		ark_civic.3
 		ark_civic.41
-		#ark_apex_leader.2
 		ark_set.52
-		ark_game_start.314
-		ark_game_start.312
 	}
 }
 
 on_yearly_pulse_country = {
 	events = {
-		#ark_apex_leader.3
 	}
 }
 
 on_leader_spawned = {
 	events = {
 		ark_civic.4		# 骑士精神
-		#ark_apex_leader.1 #随机生成精英
 	}
 }
 # 当领袖死亡时执行
@@ -87,9 +79,6 @@ on_leader_death = {
 # This = Country
 on_ruler_set = {
 	events = {
-		#ark_apex_leader.52
-		#ark_apex_leader.54
-		#ark_apex_leader.56
 	}
 }
 
@@ -98,9 +87,6 @@ on_ruler_set = {
 # This = Country
 on_ruler_back_to_pre_ruler_class = {
 	events = {
-		#ark_apex_leader.51
-		#ark_apex_leader.53
-		#ark_apex_leader.55
 	}
 }
 
@@ -118,7 +104,6 @@ on_pop_assembled = {
 # This = Planet
 on_building_complete = {
 	events = {
-		#ark_set.5
 	}
 }
 

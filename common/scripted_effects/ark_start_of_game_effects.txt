@@ -27,7 +27,6 @@ generate_terra_deposits_and_blockers = {
 
 	# 其它区划
 	add_deposit = d_infection_blockade		# 感染封锁区
-	add_deposit = d_originiums_mine		# 源石开采区
 	add_deposit = d_holy_mountain		# 喀兰圣山
 
 	# 障碍地块
