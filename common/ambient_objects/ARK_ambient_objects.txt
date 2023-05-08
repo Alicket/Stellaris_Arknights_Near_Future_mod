@@ -1,0 +1,8 @@
+ambient_object = {
+	name = "ark_arclight_one_object"
+	entity = "ark_arclight1_entity"
+	selectable = yes
+	show_name = yes
+	description = ark_arclight_one_object_desc
+	tooltip = ark_arclight_one_object_tooltip
+}

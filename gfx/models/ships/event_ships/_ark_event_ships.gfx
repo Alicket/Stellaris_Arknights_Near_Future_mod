@@ -1,0 +1,7 @@
+objectTypes = {
+	pdxmesh = {
+		name = "ark_arclight1_mesh"
+		file = "gfx/models/ships/event_ships/ark_arclight1_mesh.mesh"
+		scale = 1.5
+	}
+}

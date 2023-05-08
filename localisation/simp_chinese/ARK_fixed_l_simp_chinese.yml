@@ -197,6 +197,10 @@ decision_biochemical_protection_effects_custom:0 "星球遭受的$bombardment_or
 decision_end_biochemical_protection:0 "结束生化防护"
 decision_end_biochemical_protection_desc:0 "结束当前的生化防护,\t\t恢复社会的正常秩序.\t\t"
 decision_end_biochemical_protection_effects_short:0 "该星球上的生化防护已经结束.\t\t"
+decision_ark_arclight_well4a:0 "建造能量井阵列"
+decision_ark_arclight_well4a_desc:0 "以现有的十四号井基础上在赤道均匀分布再建造三座能量井。\n\n§R警告：新建筑将会以§Y960§!£energy£§Y能量币§!的基础维护费运行一年！§!"
+decision_ark_arclight_well4b:0 "$decision_ark_arclight_well4a$"
+decision_ark_arclight_well4b_desc:0 "以现有的十四号井基础上在赤道均匀分布再建造三座能量井。\n\n§R警告：新建筑将会以§Y300§!£energy£§Y能量币§!的基础维护费长久运行下去！§!"
 
 ## 资源 ##
 originiums:0 "源石"
@@ -235,6 +239,13 @@ d_silent_deep_sea:0 "寂静深海"
 d_silent_deep_sea_desc:0 "一片毫无生机的海域,\t\t任何农业生产的尝试在这里都是无用功.\t\t"
 d_former_countries_controlled:0 "分裂各国控制区"
 d_former_countries_controlled_desc:0 "仍被各国残余势力控制的区域,\t\t清除它们并非军事打击那样简单.\t\t"
+d_ark_aegir_generator: "弧光计划能源阵列"
+d_ark_aegir_generator_desc: "基于先进的阿戈尔科技建造的大规模能源设施，计划为位于海洋之上的弧光井提供源源不断的能量。"
+
+
+
+
+
 
 ## edict ##
 edict_originiums_fire:0 "火力提升"

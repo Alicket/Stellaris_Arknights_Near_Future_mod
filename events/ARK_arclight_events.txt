@@ -1,0 +1,340 @@
+namespace = ark_arclight
+
+country_event = {
+	id = ark_arclight.1
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		create_ambient_object = {
+			type = ark_arclight_one_object
+			use_3d_location = yes
+			entity_offset_height = -15
+			scale = 0.6
+		}
+		last_created_ambient_object = {
+			set_location = {
+				target = root.capital_scope
+				distance = 8
+				angle = random
+			}
+		}
+	}
+}
+
+
+
+#十一号井升级
+country_event = {
+	id = ark_arclight.21
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		last_increased_tech = tech_basic_science_lab_2
+		has_origin = origin_ark_tragedy_birth
+		NOT = { has_country_flag = well12_upgrading }
+	}
+
+	immediate = {
+		country_event = {
+			id = ark_arclight.211
+			days = 160
+			random = 20
+		}
+		set_country_flag = well12_upgrading
+	}
+}
+country_event = {
+	id = ark_arclight.211
+	is_triggered_only = yes
+	title = ark_arclight.211.title
+	desc =  ark_arclight.211.desc
+	picture = GFX_evt_arclight_well_project
+	show_sound = event_structural_collapse
+
+	immediate = {
+		hidden_effect = {
+			give_technology = {
+				tech = tech_ark_arclight_12prereq
+				message = no
+			}
+		}
+	}
+	option = {
+		name = ark_arclight.211.a
+	}
+}
+#十三号井
+country_event = {
+	id = ark_arclight.22
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		event_target:ark_planet_terra = {
+			has_building = building_ark_energy_well2
+		}
+		has_technology = tech_energy_lance_2
+		has_origin = origin_ark_tragedy_birth
+		NOT = { has_country_flag = well13_happened }
+	}
+
+	immediate = {
+		country_event = {
+			id = ark_arclight.2211
+			days = 160
+			random = 20
+		}
+		set_country_flag = well13_happened
+	}
+}
+country_event = {
+	id = ark_arclight.2211
+	is_triggered_only = yes
+	title = ark_arclight.2211.title
+	desc =  ark_arclight.2211.desc
+	picture = GFX_evt_arclight_well_project
+	show_sound = event_construction
+
+	immediate = {
+		hidden_effect = {
+			enable_special_project = {
+				name = ARCLIGHT_WELL12_UPGRADE_PROJECT
+				location = event_target:ark_planet_terra
+				owner = this
+			}
+		}
+	}
+	option = {
+		name = ark_arclight.2211.a
+		custom_tooltip = ark_arclight.2211.a.tooltip
+	}
+}
+country_event = {
+	id = ark_arclight.222
+	is_triggered_only = yes
+	title = ark_arclight.222.title
+	desc =  ark_arclight.222.desc
+	picture = GFX_evt_ark_explosive
+	show_sound = amb_super_explosion
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ark_arclight.223
+				days = 180
+				random = 35
+			}
+		}
+	}
+	option = {
+		name = ark_arclight.222.a
+	}
+}
+country_event = {
+	id = ark_arclight.223
+	is_triggered_only = yes
+	title = ark_arclight.223.title
+	desc =  ark_arclight.223.desc
+	picture = GFX_evt_ark_explosive
+	show_sound = event_construction
+
+	immediate = {
+		hidden_effect = {
+			give_technology = {
+				tech = tech_ark_arclight_14prereq
+				message = no
+			}
+		}
+	}
+	option = {
+		name = ark_arclight.223.a
+
+	}
+}
+# 选择路线
+planet_event = {
+	id = ark_arclight.23
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_building = building_ark_energy_well3
+		owner = {
+			has_origin = origin_ark_tragedy_birth
+			NOT = { has_country_flag = arclight23_happened }
+		}
+		is_same_value = event_target:ark_planet_terra
+	}
+	immediate = {
+		owner = {
+			country_event = {
+				id = ark_arclight.231
+				days = 3600
+				random = 360
+			}
+			set_country_flag = arclight23_happened
+		}
+	}
+}
+
+country_event = {
+	id = ark_arclight.231
+	is_triggered_only = yes
+	title = ark_arclight.231.title
+	desc =  ark_arclight.231.desc
+	picture = GFX_evt_arclight_well_project
+	show_sound = event_construction
+
+	option = {
+		name = ark_arclight.231.a
+		hidden_effect = {
+			country_event = {
+				id = ark_arclight.2311
+			}
+		}
+	}
+	option = {
+		name = ark_arclight.231.b
+		hidden_effect = {
+			country_event = {
+				id = ark_arclight.2312
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ark_arclight.2311
+	is_triggered_only = yes
+	title = ark_arclight.2311.title
+	desc =  ark_arclight.2311.desc
+	picture = GFX_evt_busy_spaceport
+	show_sound = event_construction
+
+	option = {
+		name = ark_arclight.2311.a
+		custom_tooltip = ark_arclight.2311.a.tooltip
+		hidden_effect = {
+			event_target:ark_planet_terra = {
+				set_planet_flag = ready_to_build_well4a
+			}
+		}
+	}
+}
+country_event = {
+	id = ark_arclight.2312
+	is_triggered_only = yes
+	title = ark_arclight.2312.title
+	desc =  ark_arclight.2312.desc
+	picture = GFX_evt_busy_spaceport
+	show_sound = event_construction
+
+	option = {
+		name = ark_arclight.2312.a
+		custom_tooltip = ark_arclight.2312.a.tooltip
+		hidden_effect = {
+			event_target:ark_planet_terra = {
+				set_planet_flag = ready_to_build_well4b
+			}
+		}
+	}
+}
+country_event = {
+	id = ark_arclight.241
+	is_triggered_only = yes
+	title = ark_arclight.241.title
+	desc =  ark_arclight.241.desc
+	picture = GFX_evt_arclight_well_tear_the_sky
+	show_sound = distance_titan_laser_fire_01
+
+	option = {
+		name = ark_arclight.241.a
+		hidden_effect = {
+			event_target:ark_planet_terra = {
+				set_planet_entity = {
+					entity = continental_planet_terra_4swells_entity
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = ark_arclight.242
+	is_triggered_only = yes
+	title = ark_arclight.242.title
+	desc =  ark_arclight.242.desc
+	picture = GFX_evt_arclight_well_tear_the_sky
+	show_sound = distance_titan_laser_fire_01
+
+	option = {
+		name = ark_arclight.242.a
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier2unityreward
+		}
+		add_monthly_resource_mult = {
+			resource = physics_research
+			value = @tier2researchreward
+		}
+		add_monthly_resource_mult = {
+			resource = society_research
+			value = @tier2researchreward
+		}
+		add_monthly_resource_mult = {
+			resource = engineering_research
+			value = @tier2researchreward
+		}
+		hidden_effect = {
+			event_target:ark_planet_terra = {
+				set_planet_entity = {
+					entity = continental_planet_terra_4wells_entity
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = ark_arclight.25
+	is_triggered_only = yes
+	title = ark_arclight.25.title
+	desc =  ark_arclight.25.desc
+	picture = GFX_evt_arclight_well_tear_the_sky
+	show_sound = distance_titan_laser_fire_01
+
+	option = {
+		name = ark_arclight.25.a
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier1unityreward
+		}
+		add_monthly_resource_mult = {
+			resource = physics_research
+			value = @tier1researchreward
+		}
+		add_monthly_resource_mult = {
+			resource = society_research
+			value = @tier1researchreward
+		}
+		add_monthly_resource_mult = {
+			resource = engineering_research
+			value = @tier1researchreward
+		}
+		hidden_effect = {
+			event_target:ark_planet_terra = {
+				remove_building = building_ark_energy_well4a
+				add_building = building_ark_energy_well5
+				set_planet_entity = {
+					entity = continental_planet_terra_entity_unshielded
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+

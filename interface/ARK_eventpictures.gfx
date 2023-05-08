@@ -198,4 +198,22 @@ spriteTypes = {
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes		
 	}
+	spriteType = {	# 弧光井计划
+		name = "GFX_evt_arclight_well_project"
+		texturefile = "gfx/event_pictures/arclight_well_project.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {	# 弧光井计划
+		name = "GFX_evt_ark_explosive"
+		texturefile = "gfx/event_pictures/ark_explosive.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {	# 弧光井计划
+		name = "GFX_evt_arclight_well_tear_the_sky"
+		texturefile = "gfx/event_pictures/arclight_well_tear_the_sky.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
 }

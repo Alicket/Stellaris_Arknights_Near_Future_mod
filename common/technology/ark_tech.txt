@@ -1645,3 +1645,36 @@ tech_ark_shields_5c = {
 		}
 	}
 }
+
+
+#弧光计划科技
+
+#十二号井前置
+tech_ark_arclight_12prereq = {
+	area = physics
+	cost = @tier5cost3
+	tier = 5
+	category = { field_manipulation }
+	prerequisites = {  }
+	weight = 0
+	potential = {
+	}
+}
+#十四号井前置
+tech_ark_arclight_14prereq = {
+	area = physics
+	cost = @tier5cost3
+	tier = 5
+	category = { field_manipulation }
+	prerequisites = {  }
+	weight = 0
+	potential = {
+	}
+}
+
+
+
+
+
+
+

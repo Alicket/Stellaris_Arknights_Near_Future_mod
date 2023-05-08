@@ -80,3 +80,23 @@ sm_manufacturing_station:0 "制造站"
 sm_manufacturing_station_desc:0 "资源生产设施,\t\t可以制造合金.\t\t\n§L请勿将合金做成金条形状.\t\t§!\n"
 sm_machining_station:0 "加工站"
 sm_machining_station_desc:0 "资源加工设施,\t\t提升合金生产效率.\t\t\n§L建议减少使用人工以免工作者昏迷.\t\t§!\n"
+
+#弧光十一号井
+building_ark_energy_well1: "弧光十一号井"
+building_ark_energy_well1_desc: "自弧光计划被新组建的联合政府重启以来已经过了很久，第十一号井是第一个正式投入使用的设施，利用大量能量持续不断地冲击阻隔层，打开了一条通往太空的通路。[root.owner.GetSpeciesName]得以开始探索那片神秘的天空。\n可惜由于这是唯一的通道，星球与外界的信息和物质交流被严重限制。"
+building_ark_energy_well2: "弧光十二号井"
+building_ark_energy_well2_desc: "弧光十一号井的升级版，拥有更加高效的能源利用率，击穿阻隔层所形成的通道更为稳定。联合政府围绕整个设施建设了全世界最完善的实验基地，也为远道而来的艺术家兴建了一座宏伟的艺术馆，象征着[root.owner.GetSpeciesName]征服天空的第一步。"
+building_ark_energy_well3: "弧光十四号井"
+building_ark_energy_well3_desc: "弧光十三号井的事故之后，科研人员成功完成了归零任务，第十四号井拔地而起。它拥有着无与伦比的能量利用率，采用了快子光矛同款的发射装置直击那层厚厚的幕布。"
+building_ark_energy_well4a: "弧光井阵列"
+building_ark_energy_well4a_desc: "十四号、十五号、十六号、十七号四座宏伟的弧光井直指天际，以脉冲的形式不断向虚假的天幕发起冲击。波峰与波峰相遇，阻隔层表面涟漪不断。"
+building_ark_energy_well4b: "弧光井阵列"
+building_ark_energy_well4b_desc: "十四号、十五号、十六号、十七号四座宏伟的弧光井直指天际，用能量流在阻隔层上打开了四条稳定的通路。虽然并不知道是谁在数万年前将[root.owner.GetSpeciesName]困在这颗星球表面，但此时这片天幕是文明最坚固的保护罩。"
+building_ark_energy_well5: "关闭的弧光井阵列"
+building_ark_energy_well5_desc: "随着第十七号井的光柱慢慢消散，四座弧光井归于沉寂，弧光计划完美收官，这一伟大的计划将永远载入史册，所有的[root.owner.GetSpeciesName]都将生活在同一片真实的天空下。\n这四座弧光井将作为永久的科研与艺术基地向所有公民开放。"
+
+
+
+
+
+

@@ -121,3 +121,84 @@ decision_ark_seaborn_mould = {
 		}
 	}
 }
+
+decision_ark_arclight_well4a = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_resources
+	potential = {
+		this = {
+			is_same_value = event_target:ark_planet_terra
+		}
+		owner = {has_origin = origin_ark_tragedy_birth}
+		has_planet_flag = ready_to_build_well4a
+		NOT = { has_planet_flag = well4a_built }
+	}
+	enactment_time = 1080
+	resources = {
+		category = decisions
+		cost = {
+			alloys = 2400
+			minerals = 4000
+			energy = 8000
+			rare_crystals = 150
+		}
+	}
+	effect = {
+		hidden_effect = {
+			remove_building = building_ark_energy_well3
+			add_building = building_ark_energy_well4a
+			set_planet_flag = well4a_built
+			owner = {
+				country_event = {
+					id = ark_arclight.241
+				}
+				country_event = {
+					id = ark_arclight.25
+					days = 360
+					random = 15
+				}
+			}
+		}
+	}
+}
+decision_ark_arclight_well4b = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_resources
+	potential = {
+		this = {
+			is_same_value = event_target:ark_planet_terra
+		}
+		owner = {has_origin = origin_ark_tragedy_birth}
+		has_planet_flag = ready_to_build_well4b
+		NOT = { has_planet_flag = well4b_built }
+	}
+	enactment_time = 1080
+	resources = {
+		category = decisions
+		cost = {
+			alloys = 2400
+			minerals = 4000
+			energy = 8000
+			rare_crystals = 150
+		}
+	}
+	effect = {
+		hidden_effect = {
+			remove_building = building_ark_energy_well3
+			add_building = building_ark_energy_well4b
+			set_planet_flag = well4b_built
+			owner = {
+				country_event = {
+					id = ark_arclight.242
+				}
+			}
+		}
+	}
+}
+
+
+
+
+

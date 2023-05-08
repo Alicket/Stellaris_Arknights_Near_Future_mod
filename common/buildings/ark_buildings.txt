@@ -706,3 +706,223 @@ building_component_assembly_plant = {
 		text = job_artisan_effect_desc
 	}
 }
+
+building_ark_energy_well1 = {
+	 can_build = no
+	 can_demolish = no
+	 can_be_ruined = no
+	 can_be_disabled = no
+	 position_priority = 1		# used to determine where to place the building in the building list. The lower the value, the closest to the beginning it'll be.
+	 category = research
+	 desc = {
+		trigger = {
+		}
+		text = building_ark_energy_well1_desc
+	 }
+	 planet_modifier = {
+		 planet_jobs_physics_research_produces_mult = 0.10
+		 planet_jobs_engineering_research_produces_mult = 0.075
+		 planet_jobs_society_research_produces_mult = 0.05
+		 job_researcher_add = 1
+		 job_culture_worker_add = 1
+	 }
+	 country_modifier = {
+		 trade_value_mult = -0.35
+		 empire_size_penalty_mult = 0.25
+	 }
+	 resources = {
+		 category = planet_buildings
+		 upkeep = {
+			energy = 100
+		 }
+	 }
+	 upgrades = {
+		 building_ark_energy_well2
+	 }
+}
+building_ark_energy_well2 = {
+	can_build = no
+	can_demolish = no
+	can_be_ruined = no
+	can_be_disabled = no
+	position_priority = 1		# used to determine where to place the building in the building list. The lower the value, the closest to the beginning it'll be.
+	category = research
+	desc = {
+		trigger = {
+		}
+		text = building_ark_energy_well2_desc
+	}
+	planet_modifier = {
+		planet_jobs_physics_research_produces_mult = 0.25
+		planet_jobs_engineering_research_produces_mult = 0.1875
+		planet_jobs_society_research_produces_mult = 0.125
+		job_culture_worker_add = 3
+		job_researcher_add = 5
+	}
+	country_modifier = {
+		trade_value_mult = -0.20
+		empire_size_penalty_mult = 0.20
+	}
+	resources = {
+		category = planet_buildings
+		upkeep = {
+			energy = 90
+		}
+		cost = {
+			alloys = 300
+			minerals = 800
+			energy = 1000
+		}
+	}
+	upgrades = {
+		building_ark_energy_well3
+	}
+	base_buildtime = 720
+	prerequisites = { tech_ark_arclight_12prereq }
+}
+building_ark_energy_well3 = {
+	can_build = no
+	can_demolish = no
+	can_be_ruined = no
+	can_be_disabled = no
+	position_priority = 1		# used to determine where to place the building in the building list. The lower the value, the closest to the beginning it'll be.
+	category = research
+	desc = {
+		trigger = {
+		}
+		text = building_ark_energy_well3_desc
+	}
+	planet_modifier = {
+		planet_jobs_physics_research_produces_mult = 0.35
+		planet_jobs_engineering_research_produces_mult = 0.2625
+		planet_jobs_society_research_produces_mult = 0.175
+		job_culture_worker_add = 6
+		job_researcher_add = 6
+	}
+	country_modifier = {
+		trade_value_mult = -0.10
+		empire_size_penalty_mult = 0.15
+	}
+	resources = {
+		category = planet_buildings
+		upkeep = {
+			energy = 80
+		}
+		cost = {
+			alloys = 500
+			minerals = 1200
+			energy = 3000
+			rare_crystals = 50
+		}
+	}
+	base_buildtime = 720
+	prerequisites = { tech_ark_arclight_14prereq }
+}
+
+building_ark_energy_well4a = {
+	can_build = no
+	can_demolish = no
+	can_be_ruined = no
+	can_be_disabled = no
+	position_priority = 1		# used to determine where to place the building in the building list. The lower the value, the closest to the beginning it'll be.
+	category = research
+	desc = {
+		trigger = {
+		}
+		text = building_ark_energy_well4a_desc
+	}
+	planet_modifier = {
+		planet_jobs_physics_research_produces_mult = 0.35
+		planet_jobs_engineering_research_produces_mult = 0.2625
+		planet_jobs_society_research_produces_mult = 0.175
+		job_culture_worker_add = 6
+		job_researcher_add = 6
+	}
+	country_modifier = {
+		trade_value_mult = -0.10
+		empire_size_penalty_mult = 0.15
+	}
+	resources = {
+		category = planet_buildings
+		upkeep = {
+			energy = 960
+		}
+		cost = {
+		}
+	}
+
+	upgrades = {
+
+	}
+}
+building_ark_energy_well4b = {
+	can_build = no
+	can_demolish = no
+	can_be_ruined = no
+	can_be_disabled = no
+	position_priority = 1		# used to determine where to place the building in the building list. The lower the value, the closest to the beginning it'll be.
+	category = research
+	desc = {
+		trigger = {
+		}
+		text = building_ark_energy_well4b_desc
+	}
+	planet_modifier = {
+		planet_jobs_physics_research_produces_mult = 0.50
+		planet_jobs_engineering_research_produces_mult = 0.375
+		planet_jobs_society_research_produces_mult = 0.25
+		job_culture_worker_add = 8
+		job_researcher_add = 8
+		planet_orbital_bombardment_damage = -1
+		planet_stability_add = 10
+	}
+	country_modifier = {
+		country_unity_produces_mult = 0.15
+
+	}
+	resources = {
+		category = planet_buildings
+		upkeep = {
+			energy = 300
+		}
+		cost = {
+			alloys = 750
+			minerals = 2000
+			energy = 6000
+			rare_crystals = 150
+		}
+	}
+	upgrades = {
+
+	}
+}
+
+building_ark_energy_well5 = {
+	can_build = no
+	can_demolish = yes
+	can_be_ruined = no
+	can_be_disabled = yes
+	position_priority = 1		# used to determine where to place the building in the building list. The lower the value, the closest to the beginning it'll be.
+	category = research
+	desc = {
+		trigger = {
+		}
+		text = building_ark_energy_well5_desc
+	}
+	planet_modifier = {
+		planet_jobs_physics_research_produces_mult = 0.50
+		planet_jobs_engineering_research_produces_mult = 0.375
+		planet_jobs_society_research_produces_mult = 0.25
+		job_culture_worker_add = 8
+		job_researcher_add = 8
+	}
+	country_modifier = {
+		country_unity_produces_mult = 0.15
+	}
+	resources = {
+		category = planet_buildings
+		upkeep = {
+			energy = 10
+		}
+	}
+}

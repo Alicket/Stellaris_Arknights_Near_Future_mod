@@ -90,3 +90,19 @@ d_arkocean_terra_city = {
 	potential = { always = no }
 	drop_weight = { weight = 0 }
 }
+d_ark_aegir_generator = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	icon = d_station_reactor
+	resources = {
+		produces = {
+			energy = 125
+		}
+	}
+	potential = { always = no }
+	drop_weight = { weight = 0 }
+}
+
+
+
+

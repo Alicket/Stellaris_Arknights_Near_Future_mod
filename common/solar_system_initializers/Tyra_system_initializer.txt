@@ -59,7 +59,7 @@
 		orbit_angle = 120
 		size = 25
 		starting_planet = yes
-		has_ring = no
+		has_ring = yes
 		entity = "continental_planet_terra_entity"
 		deposit_blockers = none
 		flags = { planet_terra }

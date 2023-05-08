@@ -52,3 +52,7 @@
 
 
  NAME_Rhodes_Island:0 "罗德岛"
+
+ ark_arclight_one_object:0 "弧光一号"
+ ark_arclight_one_object_desc:0 ""
+ ark_arclight_one_object_tooltip:0 "$ark_arclight_one_object_desc$"

@@ -80,3 +80,14 @@ tech_ark_shields_5b:0 "圣域护盾"
 tech_ark_shields_5b_desc:0 "$ARK_SHIELD_5B_DESC$"
 tech_ark_shields_5c:0 "铁御护盾"
 tech_ark_shields_5c_desc:0 "$ARK_SHIELD_5C_DESC$"
+
+
+#弧光井前置
+tech_ark_arclight_12prereq: "十二号弧光井"
+tech_ark_arclight_12prereq_desc: "你现在可以将十一号井升级为十二号井"
+tech_ark_arclight_14prereq: "十四号弧光井"
+tech_ark_arclight_14prereq_desc: "你现在可以将十二号井升级为十四号井"
+
+
+
+

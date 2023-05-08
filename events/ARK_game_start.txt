@@ -12,11 +12,14 @@ country_event = { #选择苦难摇篮起源
 
 	immediate = {
 		capital_scope = {
+			save_global_event_target_as = ark_planet_terra
 			generate_terra_deposits_and_blockers = yes	# 初始地块
 			arknight_start_districts = yes	# 初始区划
 			add_modifier = { modifier = "barbarian_growth" days = -1 }	# 野蛮生长
 			add_deposit = d_former_countries_controlled	# 分裂各国控制区
-
+			add_building = building_ark_energy_well1
+			add_deposit = d_ark_aegir_generator
+			remove_building = building_research_lab_1
 		}
 		add_modifier = { modifier = "terra_council" days = 120 }			# 联合会议准备中
 		country_event = { id = ark_rhodes_island.1 }				# 创建罗德岛

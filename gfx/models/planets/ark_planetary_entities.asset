@@ -1,3 +1,4 @@
+#带护盾和一个井的泰拉
 entity = {
 	name = "continental_planet_terra_entity"
 	pdxmesh = "planet_clouded_mesh"
@@ -39,10 +40,162 @@ entity = {
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 } 
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
-	}
-	
-}
+		start_event = { time = 0 node = "planet" particle = "ark_arc_generator_particle" trigger_once = yes keep_particle = yes }
+		start_event = { time = 0 node = "planet" particle = "ark_arc_generator_exhaust_particle" trigger_once = yes keep_particle = yes }
 
+	}
+	attach = {
+		"root" = "planet_shield_effect_entity"
+	}
+}
+#带护盾和四个井的泰拉
+entity = {
+	name = "continental_planet_terra_4wells_entity"
+	pdxmesh = "planet_clouded_mesh"
+
+	#planet surface texture override
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "ark_planetterra_diffuse.dds"
+		texture_normal = "ark_planetterra_normal.dds"
+		texture_specular = "ark_planetterra_specular.dds"
+		#shader = "PdxMeshPlanetEmissive"
+	}
+
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "clouds_medium_diffuse.dds"
+		texture_normal = "clouds_medium_normal.dds"
+		texture_specular = "clouds_medium_specular.dds"
+	}
+
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "clouds_medium_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+
+	##pole texture override
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "poles_barren_1_diffuse"
+		texture_normal = "poles_barren_1_normal"
+		texture_specular = "poles_barren_1_specular"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+		start_event = { time = 0 node = "planet" particle = "ark_arc_generator_particle" trigger_once = yes keep_particle = yes }
+		start_event = { time = 0 node = "planet" particle = "ark_arc_generator2_particle" trigger_once = yes keep_particle = yes }
+		start_event = { time = 0 node = "planet" particle = "ark_arc_generator3_particle" trigger_once = yes keep_particle = yes }
+		start_event = { time = 0 node = "planet" particle = "ark_arc_generator4_particle" trigger_once = yes keep_particle = yes }
+
+	}
+	attach = {
+		"root" = "planet_shield_effect_entity"
+	}
+}
+#带护盾和四个井的泰拉（正在瓦解阻隔层）
+entity = {
+	name = "continental_planet_terra_4swells_entity"
+	pdxmesh = "planet_clouded_mesh"
+
+	#planet surface texture override
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "ark_planetterra_diffuse.dds"
+		texture_normal = "ark_planetterra_normal.dds"
+		texture_specular = "ark_planetterra_specular.dds"
+		#shader = "PdxMeshPlanetEmissive"
+	}
+
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "clouds_medium_diffuse.dds"
+		texture_normal = "clouds_medium_normal.dds"
+		texture_specular = "clouds_medium_specular.dds"
+	}
+
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "clouds_medium_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+
+	##pole texture override
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "poles_barren_1_diffuse"
+		texture_normal = "poles_barren_1_normal"
+		texture_specular = "poles_barren_1_specular"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+		start_event = { time = 0 node = "planet" particle = "ark_arc_generators_particle" trigger_once = yes keep_particle = yes }
+		start_event = { time = 0 node = "planet" particle = "ark_arc_generators2_particle" trigger_once = yes keep_particle = yes }
+		start_event = { time = 0 node = "planet" particle = "ark_arc_generators3_particle" trigger_once = yes keep_particle = yes }
+		start_event = { time = 0 node = "planet" particle = "ark_arc_generators4_particle" trigger_once = yes keep_particle = yes }
+
+	}
+	attach = {
+		"root" = "planet_shield_effect_entity"
+	}
+}
+#没有护盾的泰拉
+entity = {
+	name = "continental_planet_terra_entity_unshielded"
+	pdxmesh = "planet_clouded_mesh"
+
+	#planet surface texture override
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "ark_planetterra_diffuse.dds"
+		texture_normal = "ark_planetterra_normal.dds"
+		texture_specular = "ark_planetterra_specular.dds"
+		#shader = "PdxMeshPlanetEmissive"
+	}
+
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "clouds_medium_diffuse.dds"
+		texture_normal = "clouds_medium_normal.dds"
+		texture_specular = "clouds_medium_specular.dds"
+	}
+
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "clouds_medium_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+
+	##pole texture override
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "poles_barren_1_diffuse"
+		texture_normal = "poles_barren_1_normal"
+		texture_specular = "poles_barren_1_specular"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
 entity = {
 	name = "ark_desert_planet_Talos_II"
 	pdxmesh = "planet_clouded_mesh"

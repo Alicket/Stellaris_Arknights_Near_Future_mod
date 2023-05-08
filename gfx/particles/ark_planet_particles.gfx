@@ -1,8 +1,47 @@
 objectTypes = {
-		pdxparticle = {
-			name = "ark_Talos_II_particle"
-			type = "ark_Talos_II_particle_file"
-			scale = 1
-		}
+	pdxparticle = {
+		name = "ark_Talos_II_particle"
+		type = "ark_Talos_II_particle_file"
+		scale = 1
 	}
-	
+	pdxparticle = {
+		name = "ark_arc_generator_particle"
+		type = "ark_arc_generator_file"
+		scale = 1
+	}
+	pdxparticle = {
+		name = "ark_arc_generator2_particle"
+		type = "ark_arc_generator2_file"
+		scale = 1
+	}
+	pdxparticle = {
+		name = "ark_arc_generator3_particle"
+		type = "ark_arc_generator3_file"
+		scale = 1
+	}
+	pdxparticle = {
+		name = "ark_arc_generator4_particle"
+		type = "ark_arc_generator4_file"
+		scale = 1
+	}
+	pdxparticle = {
+		name = "ark_arc_generators_particle"
+		type = "ark_arc_generators_file"
+		scale = 1
+	}
+	pdxparticle = {
+		name = "ark_arc_generators2_particle"
+		type = "ark_arc_generators2_file"
+		scale = 1
+	}
+	pdxparticle = {
+		name = "ark_arc_generators3_particle"
+		type = "ark_arc_generators3_file"
+		scale = 1
+	}
+	pdxparticle = {
+		name = "ark_arc_generators4_particle"
+		type = "ark_arc_generators4_file"
+		scale = 1
+	}
+}
