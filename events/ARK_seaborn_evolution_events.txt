@@ -9,6 +9,49 @@ namespace = ark_seaborn_evo
 ############  ###      ###  ###      ###  ############
  ##########   ###      ###  ###      ###  ############
 
+#设置界面
+country_event = {
+	id = ark_seaborn_evo.1000
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_trait = trait_ARK_ocean_seaborn
+	}
+	immediate = {
+		country_event = {
+			id = ark_seaborn_evo.1001
+		}
+		country_event = {
+			id = ark_seaborn_evo.1002
+			days = 1
+		}
+	}
+}
+country_event = {
+	id = ark_seaborn_evo.1001
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "arkocean_gui_settings"
+}
+country_event = {
+	id = ark_seaborn_evo.1002
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = arkocean_option_disable_planet_evolutionA
+			}
+			set_country_flag = arkocean_option_disable_planet_evolution
+		}
+		else = {  }
+	}
+}
+
+
+
+
+
 #on_game_start_country 添加抬头显示所用变量
 country_event = {
 	id = ark_seaborn_evo.1
@@ -16,7 +59,6 @@ country_event = {
 	hide_window = yes
 	trigger = {
 		has_trait = trait_ARK_ocean_seaborn
-		has_origin = origin_ark_stella_caerula
 	}
 	immediate = {
 		add_resource = {
@@ -104,7 +146,7 @@ country_event = {
 	hide_window = yes
 	trigger = {
 		has_trait = trait_ARK_ocean_seaborn
-		has_origin = origin_ark_stella_caerula
+		NOT = { has_country_flag = arkocean_option_disable_mould }
 	}
 	immediate = {
 		add_resource = { #基础每月产出
@@ -120,14 +162,14 @@ country_event = {
 		}
 
 
-		add_resource = {
-			arkseaborn_cells = 1
-			mult = value:arkocean_mould_var_colonies_cells
-		}
-		change_variable = {
-			which = var_ark_seaborn_evolution_cell
-			value = value:arkocean_mould_var_colonies_cells
-		}
+		#add_resource = {
+		#	arkseaborn_cells = 1
+		#	mult = value:arkocean_mould_var_colonies_cells
+		#}
+		#change_variable = {
+		#	which = var_ark_seaborn_evolution_cell
+		#	value = value:arkocean_mould_var_colonies_cells
+		#}
 	}
 }
 #创建抬头消息
@@ -147,7 +189,6 @@ country_event = {
 	is_triggered_only = yes
 	hide_window = yes
 	trigger = {
-		has_origin = origin_ark_stella_caerula
 		has_trait = trait_ARK_ocean_seaborn
 		has_country_resource = {
 			type = arkseaborn_cells
@@ -171,7 +212,6 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		has_origin = origin_ark_stella_caerula
 		has_trait = trait_ARK_ocean_seaborn
 	}
 	immediate = {
@@ -301,10 +341,8 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
-		has_country_flag = arknights_ocean_country
 		has_trait = trait_ARK_ocean_seaborn
 		has_country_flag = arkocean_mould_done_3_6
-
 	}
 	immediate = {
 		from = {
@@ -362,9 +400,8 @@ country_event = {
 	hide_window = yes
 	trigger = {
 		root = {
-			has_country_flag = arknights_ocean_country
 			has_trait = trait_ARK_ocean_seaborn
-			has_origin = origin_ark_stella_caerula
+			NOT = { has_country_flag = arkocean_option_disable_mould }
 		}
 	}
 	immediate = {

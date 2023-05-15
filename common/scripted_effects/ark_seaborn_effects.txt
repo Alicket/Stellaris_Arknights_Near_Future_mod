@@ -12,17 +12,24 @@ ark_seaborn_assimilation = {
 				species = root.owner
 			}
 			owner = {
-				add_resource = {
-					arkseaborn_cells = 0.04
-					unity = 10
-				}
-				change_variable = {
-					which = var_ark_seaborn_evolution_cell
-					value = 0.04
+				if = {
+					limit = {
+						NOT = { has_country_flag = arkocean_option_disable_mould }
+					}
+					add_resource = {
+						arkseaborn_cells = 0.08
+					}
+					change_variable = {
+						which = var_ark_seaborn_evolution_cell
+						value = 0.08
+					}
 				}
 				change_variable = {
 					which = var_ark_seaborn_evolution_assimilation
 					value = 1
+				}
+				add_resource = {
+					unity = 10
 				}
 			}
 		}

@@ -43,3 +43,16 @@ message_type = {
 	sound = "notification"
 	ping = "ping_notification_green"
 }
+message_type = {
+	key = "MESSAGE_ARK_TRAIT_UPGRADE"
+	icon = "GFX_toast_positive_trait_gained"
+	icon_frame = 1
+
+	name = "MESSAGE_ARK_TRAIT_UPGRADE_TITLE"
+	sound = "notification"
+	ping = "ping_notification_green"
+
+	default_toast = yes
+
+	category = leaders
+}

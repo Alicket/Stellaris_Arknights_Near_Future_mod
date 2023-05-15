@@ -64,7 +64,7 @@ decision_ark_seaborn_disable_evolution = {
 	potential = {
 		owner = {
 			has_trait = trait_ARK_ocean_seaborn
-			has_country_flag = arknights_ocean_country
+			NOT = { has_country_flag = arkocean_option_disable_planet_evolution }
 		}
 		has_planet_flag = ark_ocean_col_evo_start
 		NOR = {
@@ -85,7 +85,7 @@ decision_ark_seaborn_resume_evolution = {
 	potential = {
 		owner = {
 			has_trait = trait_ARK_ocean_seaborn
-			has_country_flag = arknights_ocean_country
+			NOT = { has_country_flag = arkocean_option_disable_planet_evolution }
 		}
 		OR = {
 			has_planet_flag = ark_ocean_col_evo_disabled

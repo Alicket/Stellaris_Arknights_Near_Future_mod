@@ -1044,7 +1044,7 @@ country_event = {
 						species = { is_species_class = ROBOT }
 					}
 				}
-				add_trait = leader_trait_admiral_chivalry
+				add_trait_no_notify = leader_trait_admiral_chivalry
 			}
 			if = {
 				limit = {
@@ -1054,7 +1054,7 @@ country_event = {
 						species = { is_species_class = ROBOT }
 					}
 				}
-				add_trait = leader_trait_general_chivalry
+				add_trait_no_notify = leader_trait_general_chivalry
 			}
 		}
 		set_country_flag = ark_civic_4_flag
@@ -1075,14 +1075,14 @@ country_event = {
 				leader_class = admiral
 				NOT = { has_trait = leader_trait_admiral_chivalry }
 			}
-			add_trait = leader_trait_admiral_chivalry
+			add_trait_notify = leader_trait_admiral_chivalry
 		}
 		every_owned_leader = {
 			limit = {
 				leader_class = general
 				NOT = { has_trait = leader_trait_general_chivalry }
 			}
-			add_trait = leader_trait_general_chivalry
+			add_trait_notify = leader_trait_general_chivalry
 		}
 	}
 }

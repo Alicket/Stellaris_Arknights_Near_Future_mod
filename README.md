@@ -58,5 +58,5 @@
 ## **圆粥率制作组**
 
 制作：衡菌 | 光圈辞职员工<br>
-内容贡献：Fen'sorbed | KBIAstecepes | Pride of Terra | 妈妈咪呀马切诺 | 劳伦斯 | 活在梦里 | 雪风为您护航 | 黎明的刻痕 | 加持西瓜专卖店<br>
+内容贡献：Fen'sorbed | KBIAstecepes | Pride of Terra | 雪风为您护航 | 蜜瓜Yubari | 活在梦里 | 黎明的刻痕 | 劳伦斯 | 妈妈咪呀马切诺 | 加持西瓜专卖店<br>
 特别感谢：无言Infinite | 小伞

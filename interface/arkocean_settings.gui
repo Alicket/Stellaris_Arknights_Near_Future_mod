@@ -1,0 +1,343 @@
+guiTypes = {
+	containerWindowType = {
+		name = "arkocean_gui_settings"
+		orientation = center
+		origo = center
+		movable = yes
+		size = { width = 288 height = 640 }
+		background = { #背景
+			name = "background" 
+			spriteType ="GFX_arkocean_background_settings"
+		}
+		buttonType = {#关闭
+			name = "close"
+			spriteType = "GFX_arkocean_settings_button_exit"
+			position = { x= 19 y = 591 }
+			Orientation = "UPPER_LEFT"
+			shortcut = "ESCAPE"
+			clicksound = "back_click"
+			actionShortcut = "cancel"
+			font = "cg_16b"
+			text = "ARKOCEAN_SET_CLOSE"
+
+		}
+		iconType = {#info
+			name = "tips"
+			spriteType = "GFX_arkocean_settings_info"
+			position = { x= 19 y = 87 }
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {#info内容
+			name = "info_text"
+			font = "cg_16b"
+			text = "ARKOCEAN_SETTINGS_INFO"
+			position = { x = 24 y = 89 }
+			maxWidth = 249
+			maxHeight = 231
+			fixedSize = yes
+			alwaysTransparent = yes
+		}
+		instantTextBoxType = {#设置1
+			name = "set1"
+			font = "cg_16b"
+			text = "ARKOCEAN_SETTINGS1"
+			position = { x = 24 y = 342 }
+			maxWidth = 249
+			maxHeight = 231
+			fixedSize = yes
+			alwaysTransparent = yes
+		}
+		instantTextBoxType = {#设置2
+			name = "set2"
+			font = "cg_16b"
+			text = "ARKOCEAN_SETTINGS2"
+			position = { x = 24 y = 403 }
+			maxWidth = 249
+			maxHeight = 231
+			fixedSize = yes
+			alwaysTransparent = yes
+		}
+		instantTextBoxType = {#设置3
+			name = "set3"
+			font = "cg_16b"
+			text = "ARKOCEAN_SETTINGS3"
+			position = { x = 24 y = 464 }
+			maxWidth = 249
+			maxHeight = 231
+			fixedSize = yes
+			alwaysTransparent = yes
+		}
+
+		effectButtonType = {
+			spriteType = GFX_arkocean_settings_button_small_not_activated
+			name = "set11a"
+			font = "cg_16b"
+			text = "arkocean_settings_disable"
+			position = { x = 217 y = 339 }
+			effect = beffect_arkocean_set11a
+		}
+		effectButtonType = {
+			spriteType = GFX_arkocean_settings_button_small_activated
+			name = "set11b"
+			font = "cg_16b"
+			text = "arkocean_settings_disable"
+			position = { x = 217 y = 339 }
+			effect = beffect_arkocean_set11b
+		}
+		effectButtonType = {
+			spriteType = GFX_arkocean_settings_button_small_not_activated
+			name = "set12a"
+			font = "cg_16b"
+			text = "arkocean_settings_enable"
+			position = { x = 217 y = 360 }
+			effect = beffect_arkocean_set12a
+		}
+		effectButtonType = {
+			spriteType = GFX_arkocean_settings_button_small_activated
+			name = "set12b"
+			font = "cg_16b"
+			text = "arkocean_settings_enable"
+			position = { x = 217 y = 360 }
+			effect = beffect_arkocean_set12b
+		}
+
+
+
+		effectButtonType = {
+			spriteType = GFX_arkocean_settings_button_small_not_activated
+			name = "set21a"
+			font = "cg_16b"
+			text = "arkocean_settings_disable"
+			position = { x = 217 y = 400 }
+			effect = beffect_arkocean_set21a
+		}
+		effectButtonType = {
+			spriteType = GFX_arkocean_settings_button_small_activated
+			name = "set21b"
+			font = "cg_16b"
+			text = "arkocean_settings_disable"
+			position = { x = 217 y = 400 }
+			effect = beffect_arkocean_set21b
+		}
+		effectButtonType = {
+			spriteType = GFX_arkocean_settings_button_small_not_activated
+			name = "set22a"
+			font = "cg_16b"
+			text = "arkocean_settings_enable"
+			position = { x = 217 y = 421 }
+			effect = beffect_arkocean_set22a
+		}
+		effectButtonType = {
+			spriteType = GFX_arkocean_settings_button_small_activated
+			name = "set22b"
+			font = "cg_16b"
+			text = "arkocean_settings_enable"
+			position = { x = 217 y = 421 }
+			effect = beffect_arkocean_set22b
+		}
+
+
+
+		effectButtonType = {
+			spriteType = GFX_arkocean_settings_button_small_not_activated
+			name = "set31a"
+			font = "cg_16b"
+			text = "arkocean_settings_disable"
+			position = { x = 217 y = 461 }
+			effect = beffect_arkocean_set31a
+		}
+		effectButtonType = {
+			spriteType = GFX_arkocean_settings_button_small_activated
+			name = "set31b"
+			font = "cg_16b"
+			text = "arkocean_settings_disable"
+			position = { x = 217 y = 461 }
+			effect = beffect_arkocean_set31b
+		}
+		effectButtonType = {
+			spriteType = GFX_arkocean_settings_button_small_not_activated
+			name = "set32a"
+			font = "cg_16b"
+			text = "arkocean_settings_enable"
+			position = { x = 217 y = 482 }
+			effect = beffect_arkocean_set32a
+		}
+		effectButtonType = {
+			spriteType = GFX_arkocean_settings_button_small_activated
+			name = "set32b"
+			font = "cg_16b"
+			text = "arkocean_settings_enable"
+			position = { x = 217 y = 482 }
+			effect = beffect_arkocean_set32b
+		}
+
+
+
+		effectButtonType = {
+			spriteType = GFX_arkocean_settings_button_small_not_activated
+			name = "set41a"
+			font = "cg_16b"
+			text = "arkocean_settings_disable"
+			position = { x = 217 y = 522 }
+			effect = beffect_no_effect
+		}
+		effectButtonType = {
+			spriteType = GFX_arkocean_settings_button_small_not_activated
+			name = "set42a"
+			font = "cg_16b"
+			text = "arkocean_settings_enable"
+			position = { x = 217 y = 543 }
+			effect = beffect_no_effect
+		}
+
+
+
+
+##    ##    ##    ##    ##    ##    ##    ##    ##    ##    ##    ##
+    ##    ##    ##    ##    ##    ##    ##    ##    ##    ##    ##
+  ##    ##    ##    ##    ##    ##    ##    ##    ##    ##    ##
+##    ##    ##    ##    ##    ##    ##    ##    ##    ##    ##    ##
+    ##    ##    ##    ##    ##    ##    ##    ##    ##    ##    ##
+  ##    ##    ##    ##    ##    ##    ##    ##    ##    ##    ##
+##    ##    ##    ##    ##    ##    ##    ##    ##    ##    ##    ##
+    ##    ##    ##    ##    ##    ##    ##    ##    ##    ##    ##
+  ##    ##    ##    ##    ##    ##    ##    ##    ##    ##    ##
+##    ##    ##    ##    ##    ##    ##    ##    ##    ##    ##    ##
+		### ALL OF THIS IS HIDDEN OR DISPLACED ! ###
+		instantTextBoxType = {#左上角标题
+			name = "irm_some_header"
+			font = "malgun_goth_24"
+			text = "GO EXPLORE" 	# header text
+			position = { x = 20000 y = 50000 }
+			maxWidth = 543
+			maxHeight = 22
+			fixedSize = yes
+			alwaysTransparent = yes
+		}
+		buttonType = {
+			name = "tts_button"
+			position = { x = 46600 y = 63900 }
+			spriteType = "GFX_button_tts_start"
+			buttonFont = "cg_16b"
+			shortCut = "t"
+		}
+		buttonType = {
+			name = "empire_flag"
+			quadTextureSprite = "GFX_empire_flag_128"
+			position = { x = 25000 y = 23500 }
+			orientation = UPPER_LEFT
+		}
+		iconType = { 
+			name = "empire_header_line" 
+			quadTextureSprite = "GFX_line_long" 
+			position = { x = 60000 y = 22000 } 
+			alwaysTransparent = yes 
+		}#上方的长线
+		iconType = { 
+			name = "hex_bg" 
+			spriteType = "GFX_hex_bg" 
+			position = { x = -10000 y = -14000 } 
+			alwaysTransparent = yes 
+		}#左上角的六边形网格
+		buttonType = { 
+			name = "focus_button" 
+			position = { x = -1180 y = -1112 } 
+			spriteType = "GFX_fleetview_focus" 
+		} # hidden
+		instantTextBoxType = { 
+			name = "heading" 
+			font = "malgun_goth_24" 
+			position = { x = -1120 y = -115 } 
+		} # hidden
+		buttonType = { 
+			name = "alien_message_background" 
+			size = { x = 0 y = 0 } 
+			position = { x = -1110 y = -11430 } 
+			spriteType = "GFX_tiles_dark_area_cut_8" 
+		} # hidden
+		buttonType = { 
+			name = "confirm_button" 
+			quadTextureSprite = "GFX_standard_button_142_34_button" 
+		} # hidden
+		containerWindowType = {
+			name = "portrait_background"
+			position = { x = -1117 y = -1145 }
+			size = { width = 0 height = 0 } 	# hide portrait window
+			iconType = { 
+				name = "event_picture" 
+				spriteType = "GFX_diplomacy_portrait_frame" 
+			} # hidden
+			iconType = { 
+				name = "portrait" 
+				spriteType = "GFX_portrait_character" 
+			} # hidden
+		}
+		containerWindowType = {
+			name = "portrait"
+			position = { x = -1117 y = -1145 }
+			size = { width = 0 height = 0 } # hide portrait window
+			iconType = { name = "portrait" spriteType = "GFX_portrait_gamesetup_mask" } # hidden
+			iconType = { name = "black_frame" spriteType = "GFX_diplomacy_portrait_shadow_frame" } # hidden
+			iconType = { name = "stripes_1" spriteType = "GFX_diplomacy_stripes_2" } # hidden
+			iconType = { name = "city_frame" spriteType = "GFX_diplomacy_portrait_frame" } # hidden
+		}
+		iconType = { name = "empire_info_bg" spriteType = "GFX_diplomacy_dark_fade_bg" } # hidden
+		instantTextBoxType={ name = "empire_name" font = "malgun_goth_24" } # hidden
+		instantTextBoxType={ name = "empire_government_type" font = "cg_16b" } # hidden
+		instantTextBoxType={ name = "empire_personality_type" font = "cg_16b" } # hidden
+		OverlappingElementsBoxType = { name = "empire_ethics_icons" position = { x = -1145 y = -11138 } } # hidden
+		iconType = { name = "empire_flag" spriteType = "GFX_empire_flag_128" position = { x = -1125 y = -11235 } } # hidden
+		containerWindowType = {
+			name = "leader_details"
+			position = { x = -11250 y = -11750 }
+			containerWindowType = { name = "empire_traits_box" } # hidden
+			instantTextBoxType = { name = "empire_traits_label" font = "cg_16b" } # hidden
+			overlappingElementsBoxType = { name = "leader_traits" } # hidden
+			instantTextBoxType = { name = "leader_name" font = "cg_16b" } # hidden
+			instantTextBoxType = { name = "leader_species" font = "cg_16b" } # hidden
+		}
+		containerWindowType = {
+			name = "opinion_window"
+			position = { x = -1127 y = -11110 }
+			size = { width = 94 height = 30 }
+			iconType = { name = "their_opinion_icon" spriteType = "GFX_diplomacy_opinion" } # hidden
+			instantTextBoxType = { name = "their_opinion" font = "cg_16b" }
+		}
+		containerWindowType = {
+			name = "EVENT_DIPLO"
+			position = { x = 20000 y = 500000 }
+			#size = { width=563 height=220 }
+			movable = no
+
+			instantTextBoxType={
+			 name = "action_title"
+			 font = "malgun_goth_24"
+			 position = { x = 200000 y = 00000 }
+			 maxWidth = 200
+			 alwaysTransparent = yes
+			}
+			instantTextBoxType={
+			 name = "action_desc"
+			 font = "malgun_goth_24"
+			 position = { x = 4900000 y = 0 }
+			 maxWidth = 500
+			 maxHeight = 180
+			 Orientation = "UPPER_LEFT"
+			 format = center
+			 alwaysTransparent = yes
+			 text_color_code = "H"
+			}
+			listboxType = { name = "option_list" position = { x = -11500 y = -1130 } } # hidden option list
+		}
+		# Description Section
+		instantTextBoxType = {
+			name = "alien_message"
+			font = "cg_16b"
+			position = { x = 200000 y = 1000000 }
+			maxWidth = 465
+			maxHeight = 220
+			format = left
+			scrollbartype = "standardtext_slider"
+		}
+	}
+}

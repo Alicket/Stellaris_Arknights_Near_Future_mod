@@ -19,10 +19,10 @@ trait_ARK_ocean_seaborn = {
 	opposites = {
 		trait_aquatic trait_lithoid trait_noxious
 	}
-	allowed_origins = { origin_ark_stella_caerula }
+	#allowed_origins = { origin_ark_stella_caerula }
 	#forced_happiness = yes
 	modifier = {
-		pop_environment_tolerance = 2.0
+		pop_environment_tolerance = 0.20
 		leader_age = 50
 		army_attack_health_mult = 0.33
 		army_defense_health_mult = 0.33

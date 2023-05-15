@@ -8,12 +8,8 @@ leader_trait_admiral_chivalry = {
 		ship_weapon_damage = 0.05
 		ship_disengage_chance_reduction = 0.1
 	}
-	leader_trait = { admiral }
 	leader_class = { admiral }
-	initial = no
-	randomized = no
 }
-
 # 舰船运维
 leader_trait_ship_operation_maintenance = {
 	cost = 1

@@ -2,7 +2,8 @@
 #起源
 origin_ark_stella_caerula:0 "深蓝之星"
 origin_ark_stella_caerula_desc:0 "扮演强大的海嗣物种，不断进化，将整个星系化为血亲。"
-origin_tooltip_ark_stella_caerula_effects:0 "不管拥有何种公民权，所有未拥有§B海嗣§!特质的外族有机人口每年会以一定速率被强制同化为主体物种。\n开启独特的进化路线，你所做的大部分决策都会推进这一过程。\n殖民地会被逐渐转化为§B溟海星球§!，提供生产力加成。"
+#origin_tooltip_ark_stella_caerula_effects:0 "不管拥有何种公民权，所有未拥有§B海嗣§!特质的外族有机人口每年会以一定速率被强制同化为主体物种，同化人口会获得生机细胞与少量凝聚力。\n开启独特的进化路线。\n殖民地会被逐渐转化为§B溟海星球§!，提供生产力加成。"
+origin_tooltip_ark_stella_caerula_effects:0 "目前版本此起源没有任何内容，仅作为占位符使用，所有海嗣相关内容与特质绑定！\n这也意味着可以随意选择其他起源或将海嗣特质视为类似§B水生§!、§G剧毒§!等带有附加内容的特质，不做特别限制。"
 
 #资源
 arkseaborn_cells:0 "生机细胞"
@@ -68,9 +69,9 @@ trait_ARK_ocean_seaborn_desc:0 "祂只说千万鳞片将汇成一体，飞向深
 leader_trait_ruler_seaborn:0 "海嗣"
 leader_trait_ruler_seaborn_desc:0 "§B$trait_ARK_ocean_seaborn_desc$§!"
 leader_trait_Ishar_mla01:0 "回响意志"
-leader_trait_Ishar_mla01_desc:0 "§B神明从不预言虚无缥缈的未来，从不许下不切实际的承诺。§!"
+leader_trait_Ishar_mla01_desc:0 "§B神明从不预言虚无缥缈的未来，从不许下不切实际的承诺，会永远毫无吝啬地将自己千万春秋积累而来的知识分享给每一个个体。§!"
 leader_trait_Ishar_mla02:0 "先祖导师"
-leader_trait_Ishar_mla02_desc:0 "§B神明毫无吝啬地将自己千万春秋积累而来的知识分享给每一个个体。§!"
+leader_trait_Ishar_mla02_desc:0 "§B神明§!"
 leader_trait_seaborn_sci_simple_thoughts:0 "简易思维"
 leader_trait_seaborn_sci_simple_thoughts_desc:0 "§B海嗣的脑袋似乎对这些东西并不是很敏感...§!"
 leader_trait_seaborn_sci_complex_thoughts:0 "复杂回路"
@@ -119,7 +120,7 @@ d_arkocean_terra_city_desc:0 "大静谧发生后旧泰拉人溃不成军，这�
 
 #events
 ark_seaborn_base.10.title:0 "选择统治者肖像"
-ark_seaborn_base.10.desc:0 "你认为伊莎玛拉会以什么样的外貌统领大群呢？"
+ark_seaborn_base.10.desc:0 "你认为伊莎玛拉会以什么样的外貌统领大群呢？\n注：由于精二立绘与“升华”在内阁中会非常不协调，所以现仅有以下两个选择。"
 ark_seaborn_base.10.a:0 "浊心斯卡蒂-精英一"
 ark_seaborn_base.10.b:0 "浊心斯卡蒂-精英二"
 ark_seaborn_base.10.c:0 "浊心斯卡蒂-升华"
@@ -185,11 +186,11 @@ ARKOCEAN_GUI_CALL_MESSAGE:0 "将细胞用于科学研究"
 arkocean_call_message_tooltip:0 "§Y这与你的科研月收入有关！§!\n"
 ARKOCEAN_GUI_TIPS:0 ">深海研究中心\n>——连接中——\n>...\n§R>警告！不明有机体入侵！正在启]]]§!\n§R>§!\n§G>已接入！§![管理员：§l!未识别§!]\n>>通过消耗生机细胞完成定向进化\n>>通过首都轨道内的研究站快速访问本面板\n>>此面板也可以通过首都星球决议开启\n>>_"
 #用loc是因为之前测试时的操作，懒得改了
-ARKOCEAN_GUI_INFORMATION1:0 "拥有殖民地：[from.arkocean_mould_var_colonies_loc]§g|+0.02§!"
-ARKOCEAN_GUI_INFORMATION2:0 "同化人口：[from.arkocean_mould_var_assimilation_loc]§g|+0.04§!"
+ARKOCEAN_GUI_INFORMATION1:0 "§g每月基础+0.0834§!"
+ARKOCEAN_GUI_INFORMATION2:0 "同化人口：[from.arkocean_mould_var_assimilation_loc]§g|+0.08§!"
 ARKOCEAN_GUI_INFORMATION3:0 "同化星球：[from.arkocean_mould_var_terraform_loc]§g|+1§!"
-ARKOCEAN_GUI_INFORMATION4:0 "赢得战争：[from.arkocean_mould_var_winning_war_loc]§g|+5§!"
-ARKOCEAN_GUI_INFORMATION5:0 "§g每月基础+0.0834§!"
+ARKOCEAN_GUI_INFORMATION4:0 "赢得战争：[from.arkocean_mould_var_winning_war_loc]§g|+3§!"
+ARKOCEAN_GUI_INFORMATION5:0 ""
 ARKOCEAN_GUI_INFORMATION6:0 "" #留空
 ARKOCEAN_GUI_STOCK:0 "§E[from.var_ark_seaborn_evolution_cell]§!"
 MESSAGE_ARK_OCEAN_MOULD_INFORMATION_LIST_TITLE:0 "$NAME_arkocean_Isharmla_antenna$"
@@ -198,6 +199,13 @@ var_ark_seaborn_evolution_cell:0 "生机细胞库存"
 
 
 #to translators: SORRY!!! XD
+ARKOCEAN_SET_CLOSE:0 "退出设置"
+ARKOCEAN_SETTINGS_INFO:0 "这里是海嗣机制设置面板，当你开局选择了§B海嗣§!特质之后可以在这里进行功能开关。\n本面板也可以从认知塑造面板左上角开启。"
+arkocean_settings_enable:0 "开"
+arkocean_settings_disable:0 "关"
+ARKOCEAN_SETTINGS1:0 "是否同化星球为溟海星球\n§R此选项开局一天后更改无效！§!"
+ARKOCEAN_SETTINGS2:0 "是否开启人口同化"
+ARKOCEAN_SETTINGS3:0 "是否开启认知塑造\n§g关闭后将不会获取生机细胞§!"
 
 arkocean_mould_modifier_1_1:0 "耐压组织"
 arkocean_mould_modifier_1_1_tooltip_base:0 "想要在真空中生存，必须要考虑压强差。相比让自己的体内变成真空，还是进化出更为坚固的身体组织要方便一些。"

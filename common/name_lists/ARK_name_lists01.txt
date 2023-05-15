@@ -2,8 +2,7 @@ ark_01 = {
 
 	randomized = no
 	ship_names = {
-		corvette = {
-		}
+
 		
 		constructor = {
 			ark_01_NL_constructor_01 ark_01_NL_constructor_02 ark_01_NL_constructor_03 ark_01_NL_constructor_04 ark_01_NL_constructor_05
@@ -24,14 +23,253 @@ ark_01 = {
 			ark_01_NL_science_06 ark_01_NL_science_07 ark_01_NL_science_08 ark_01_NL_science_09 ark_01_NL_science_10
 			ark_01_NL_science_11 ark_01_NL_science_12 ark_01_NL_science_13 ark_01_NL_science_14 ark_01_NL_science_15
 		}
-		
+		corvette = {
+			ark_01_NL_corvette_01
+			ark_01_NL_corvette_02
+			ark_01_NL_corvette_03
+			ark_01_NL_corvette_04
+			ark_01_NL_corvette_05
+			ark_01_NL_corvette_06
+			ark_01_NL_corvette_07
+			ark_01_NL_corvette_08
+			ark_01_NL_corvette_09
+			ark_01_NL_corvette_10
+			ark_01_NL_corvette_11
+			ark_01_NL_corvette_12
+			ark_01_NL_corvette_13
+			ark_01_NL_corvette_14
+			ark_01_NL_corvette_15
+			ark_01_NL_corvette_16
+			ark_01_NL_corvette_17
+			ark_01_NL_corvette_18
+			ark_01_NL_corvette_19
+			ark_01_NL_corvette_20
+			ark_01_NL_corvette_21
+			ark_01_NL_corvette_22
+			ark_01_NL_corvette_23
+			ark_01_NL_corvette_24
+			ark_01_NL_corvette_25
+			ark_01_NL_corvette_26
+			ark_01_NL_corvette_27
+			ark_01_NL_corvette_28
+			ark_01_NL_corvette_29
+			ark_01_NL_corvette_30
+			ark_01_NL_corvette_31
+			ark_01_NL_corvette_32
+			ark_01_NL_corvette_33
+			ark_01_NL_corvette_34
+			ark_01_NL_corvette_35
+			ark_01_NL_corvette_36
+			ark_01_NL_corvette_37
+			ark_01_NL_corvette_38
+			ark_01_NL_corvette_39
+			ark_01_NL_corvette_40
+			ark_01_NL_corvette_41
+			ark_01_NL_corvette_42
+			ark_01_NL_corvette_43
+			ark_01_NL_corvette_44
+			ark_01_NL_corvette_45
+			ark_01_NL_corvette_46
+			ark_01_NL_corvette_47
+			ark_01_NL_corvette_48
+			ark_01_NL_corvette_49
+			ark_01_NL_corvette_50
+			ark_01_NL_corvette_51
+			ark_01_NL_corvette_52
+			ark_01_NL_corvette_53
+			ark_01_NL_corvette_54
+			ark_01_NL_corvette_55
+			ark_01_NL_corvette_56
+			ark_01_NL_corvette_57
+			ark_01_NL_corvette_58
+			ark_01_NL_corvette_59
+			ark_01_NL_corvette_60
+		}
+		frigate = {
+			ark_01_NL_corvette_01
+			ark_01_NL_corvette_02
+			ark_01_NL_corvette_03
+			ark_01_NL_corvette_04
+			ark_01_NL_corvette_05
+			ark_01_NL_corvette_06
+			ark_01_NL_corvette_07
+			ark_01_NL_corvette_08
+			ark_01_NL_corvette_09
+			ark_01_NL_corvette_10
+			ark_01_NL_corvette_11
+			ark_01_NL_corvette_12
+			ark_01_NL_corvette_13
+			ark_01_NL_corvette_14
+			ark_01_NL_corvette_15
+			ark_01_NL_corvette_16
+			ark_01_NL_corvette_17
+			ark_01_NL_corvette_18
+			ark_01_NL_corvette_19
+			ark_01_NL_corvette_20
+			ark_01_NL_corvette_21
+			ark_01_NL_corvette_22
+			ark_01_NL_corvette_23
+			ark_01_NL_corvette_24
+			ark_01_NL_corvette_25
+			ark_01_NL_corvette_26
+			ark_01_NL_corvette_27
+			ark_01_NL_corvette_28
+			ark_01_NL_corvette_29
+			ark_01_NL_corvette_30
+			ark_01_NL_corvette_31
+			ark_01_NL_corvette_32
+			ark_01_NL_corvette_33
+			ark_01_NL_corvette_34
+			ark_01_NL_corvette_35
+			ark_01_NL_corvette_36
+			ark_01_NL_corvette_37
+			ark_01_NL_corvette_38
+			ark_01_NL_corvette_39
+			ark_01_NL_corvette_40
+			ark_01_NL_corvette_41
+			ark_01_NL_corvette_42
+			ark_01_NL_corvette_43
+			ark_01_NL_corvette_44
+			ark_01_NL_corvette_45
+			ark_01_NL_corvette_46
+			ark_01_NL_corvette_47
+			ark_01_NL_corvette_48
+			ark_01_NL_corvette_49
+			ark_01_NL_corvette_50
+			ark_01_NL_corvette_51
+			ark_01_NL_corvette_52
+			ark_01_NL_corvette_53
+			ark_01_NL_corvette_54
+			ark_01_NL_corvette_55
+			ark_01_NL_corvette_56
+			ark_01_NL_corvette_57
+			ark_01_NL_corvette_58
+			ark_01_NL_corvette_59
+			ark_01_NL_corvette_60
+		}
 		destroyer = {
+			ark_01_NL_destroyer_01
+			ark_01_NL_destroyer_02
+			ark_01_NL_destroyer_03
+			ark_01_NL_destroyer_04
+			ark_01_NL_destroyer_05
+			ark_01_NL_destroyer_06
+			ark_01_NL_destroyer_07
+			ark_01_NL_destroyer_08
+			ark_01_NL_destroyer_09
+			ark_01_NL_destroyer_10
+			ark_01_NL_destroyer_11
+			ark_01_NL_destroyer_12
+			ark_01_NL_destroyer_13
+			ark_01_NL_destroyer_14
+			ark_01_NL_destroyer_15
+			ark_01_NL_destroyer_16
+			ark_01_NL_destroyer_17
+			ark_01_NL_destroyer_18
+			ark_01_NL_destroyer_19
+			ark_01_NL_destroyer_20
+			ark_01_NL_destroyer_21
+			ark_01_NL_destroyer_22
+			ark_01_NL_destroyer_23
+			ark_01_NL_destroyer_24
+			ark_01_NL_destroyer_25
+			ark_01_NL_destroyer_26
+			ark_01_NL_destroyer_27
+			ark_01_NL_destroyer_28
+			ark_01_NL_destroyer_29
+			ark_01_NL_destroyer_30
 		}
 		
 		cruiser = {
+			ark_01_NL_cruiser_01
+			ark_01_NL_cruiser_02
+			ark_01_NL_cruiser_03
+			ark_01_NL_cruiser_04
+			ark_01_NL_cruiser_05
+			ark_01_NL_cruiser_06
+			ark_01_NL_cruiser_07
+			ark_01_NL_cruiser_08
+			ark_01_NL_cruiser_09
+			ark_01_NL_cruiser_10
+			ark_01_NL_cruiser_11
+			ark_01_NL_cruiser_12
+			ark_01_NL_cruiser_13
+			ark_01_NL_cruiser_14
+			ark_01_NL_cruiser_15
+			ark_01_NL_cruiser_16
+			ark_01_NL_cruiser_17
+			ark_01_NL_cruiser_18
+			ark_01_NL_cruiser_19
+			ark_01_NL_cruiser_20
+			ark_01_NL_cruiser_21
+			ark_01_NL_cruiser_22
+			ark_01_NL_cruiser_23
+			ark_01_NL_cruiser_24
+			ark_01_NL_cruiser_25
+			ark_01_NL_cruiser_26
 		}
 		
 		battleship = {
+			ark_01_NL_battleship_01
+			ark_01_NL_battleship_02
+			ark_01_NL_battleship_03
+			ark_01_NL_battleship_04
+			ark_01_NL_battleship_05
+			ark_01_NL_battleship_06
+			ark_01_NL_battleship_07
+			ark_01_NL_battleship_08
+			ark_01_NL_battleship_09
+			ark_01_NL_battleship_10
+			ark_01_NL_battleship_11
+			ark_01_NL_battleship_12
+			ark_01_NL_battleship_13
+			ark_01_NL_battleship_14
+			ark_01_NL_battleship_15
+			ark_01_NL_battleship_16
+			ark_01_NL_battleship_17
+			ark_01_NL_battleship_18
+			ark_01_NL_battleship_19
+			ark_01_NL_battleship_20
+			ark_01_NL_battleship_21
+			ark_01_NL_battleship_22
+			ark_01_NL_battleship_23
+			ark_01_NL_battleship_24
+			ark_01_NL_battleship_25
+			ark_01_NL_battleship_26
+			ark_01_NL_battleship_27
+			ark_01_NL_battleship_28
+			ark_01_NL_battleship_29
+			ark_01_NL_battleship_30
+			ark_01_NL_battleship_31
+			ark_01_NL_battleship_32
+			ark_01_NL_battleship_33
+			ark_01_NL_battleship_34
+			ark_01_NL_battleship_35
+			ark_01_NL_battleship_36
+			ark_01_NL_battleship_37
+			ark_01_NL_battleship_38
+			ark_01_NL_battleship_39
+			ark_01_NL_battleship_40
+			ark_01_NL_battleship_41
+			ark_01_NL_battleship_42
+			ark_01_NL_battleship_43
+			ark_01_NL_battleship_44
+			ark_01_NL_battleship_45
+			ark_01_NL_battleship_46
+			ark_01_NL_battleship_47
+			ark_01_NL_battleship_48
+			ark_01_NL_battleship_49
+			ark_01_NL_battleship_50
+			ark_01_NL_battleship_51
+			ark_01_NL_battleship_52
+			ark_01_NL_battleship_53
+			ark_01_NL_battleship_54
+			ark_01_NL_battleship_55
+			ark_01_NL_battleship_56
+			ark_01_NL_battleship_57
+			ark_01_NL_battleship_58
+			ark_01_NL_battleship_59
+			ark_01_NL_battleship_60
 		}
 
 		titan = {

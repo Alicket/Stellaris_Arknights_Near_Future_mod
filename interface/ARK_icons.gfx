@@ -151,4 +151,10 @@ spriteTypes = {
 	name = "GFX_ark_ocean_message_evolution_complete"
 	texturefile = "gfx/interface/icons/message/message_ark_evolution_complete.dds"
 	}
+
+
+	spriteType = { # 内阁（没用了）
+		name = "GFX_icon_councilor_ark_doctor"
+		texturefile = "gfx/interface/council_view/icon_councilor_ark_doctor.dds"
+	}
 }

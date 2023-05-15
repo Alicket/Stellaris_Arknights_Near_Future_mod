@@ -64,6 +64,232 @@ beffect_arkocean_disable_message_enable = {
 		}
 	}
 }
+
+#设置
+beffect_arkocean_settings = {
+	potential = {
+		always = yes
+	}
+	allow = {
+		always = yes
+	}
+	effect = {
+		hidden_effect = {
+			from = {
+				country_event = {
+					id = ark_seaborn_evo.1001
+				}
+			}
+		}
+	}
+}
+beffect_arkocean_set11a = {
+	potential = {
+		from = {
+			NOT = { has_country_flag = arkocean_option_disable_planet_evolutionA }
+		}
+	}
+	allow = {
+		from = {
+			NOT = { has_country_flag = arkocean_option_disable_planet_evolutionA }
+		}
+	}
+	effect = {
+		hidden_effect = {
+			from = {
+				set_country_flag = arkocean_option_disable_planet_evolutionA
+			}
+		}
+	}
+}
+beffect_arkocean_set11b = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_option_disable_planet_evolutionA
+		}
+	}
+	allow = {
+		from = {
+			has_country_flag = arkocean_option_disable_planet_evolutionA
+			NOT = { has_country_flag = arkocean_option_disable_planet_evolution_selectedA }
+		}
+	}
+	effect = {
+	}
+}
+beffect_arkocean_set12a = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_option_disable_planet_evolutionA
+		}
+	}
+	allow = {
+		from = {
+			has_country_flag = arkocean_option_disable_planet_evolutionA
+
+		}
+	}
+	effect = {
+		hidden_effect = {
+			from = {
+				remove_country_flag = arkocean_option_disable_planet_evolutionA
+			}
+		}
+	}
+}
+beffect_arkocean_set12b = {
+	potential = {
+		from = {
+			NOT = { has_country_flag = arkocean_option_disable_planet_evolutionA }
+		}
+	}
+	allow = {
+		from = {
+			NOT = { has_country_flag = arkocean_option_disable_planet_evolutionA }
+		}
+	}
+	effect = {
+	}
+}
+
+
+beffect_arkocean_set21a = {
+	potential = {
+		from = {
+			NOT = { has_country_flag = arkocean_option_disable_pop_assimilation }
+		}
+	}
+	allow = {
+		from = {
+			NOT = { has_country_flag = arkocean_option_disable_pop_assimilation }
+		}
+	}
+	effect = {
+		hidden_effect = {
+			from = {
+				set_country_flag = arkocean_option_disable_pop_assimilation
+			}
+		}
+	}
+}
+beffect_arkocean_set21b = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_option_disable_pop_assimilation
+		}
+	}
+	allow = {
+		from = {
+			has_country_flag = arkocean_option_disable_pop_assimilation
+		}
+	}
+	effect = {
+	}
+}
+beffect_arkocean_set22a = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_option_disable_pop_assimilation
+		}
+	}
+	allow = {
+		from = {
+			has_country_flag = arkocean_option_disable_pop_assimilation
+		}
+	}
+	effect = {
+		hidden_effect = {
+			from = {
+				remove_country_flag = arkocean_option_disable_pop_assimilation
+			}
+		}
+	}
+}
+beffect_arkocean_set22b = {
+	potential = {
+		from = {
+			NOT = { has_country_flag = arkocean_option_disable_pop_assimilation }
+		}
+	}
+	allow = {
+		from = {
+			NOT = { has_country_flag = arkocean_option_disable_pop_assimilation }
+		}
+	}
+	effect = {
+	}
+}
+
+
+
+beffect_arkocean_set31a = {
+	potential = {
+		from = {
+			NOT = { has_country_flag = arkocean_option_disable_mould }
+		}
+	}
+	allow = {
+		from = {
+			NOT = { has_country_flag = arkocean_option_disable_mould }
+		}
+	}
+	effect = {
+		hidden_effect = {
+			from = {
+				set_country_flag = arkocean_option_disable_mould
+			}
+		}
+	}
+}
+beffect_arkocean_set31b = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_option_disable_mould
+		}
+	}
+	allow = {
+		from = {
+			has_country_flag = arkocean_option_disable_mould
+		}
+	}
+	effect = {
+	}
+}
+beffect_arkocean_set32a = {
+	potential = {
+		from = {
+			has_country_flag = arkocean_option_disable_mould
+		}
+	}
+	allow = {
+		from = {
+			has_country_flag = arkocean_option_disable_mould
+		}
+	}
+	effect = {
+		hidden_effect = {
+			from = {
+				remove_country_flag = arkocean_option_disable_mould
+			}
+		}
+	}
+}
+beffect_arkocean_set32b = {
+	potential = {
+		from = {
+			NOT = { has_country_flag = arkocean_option_disable_mould }
+		}
+	}
+	allow = {
+		from = {
+			NOT = { has_country_flag = arkocean_option_disable_mould }
+		}
+	}
+	effect = {
+	}
+}
+
+
 #左下
 beffect_arkocean_reset_station = {
 	potential = {always = yes}

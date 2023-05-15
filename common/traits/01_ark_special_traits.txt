@@ -1,0 +1,181 @@
+leader_trait_meet_at_the_end = {
+	councilor_trait = yes
+	inline_script = {
+		script = trait/icon
+		ICON = "GFX_ark_leader_trait_meet_at_the_end"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	immortal_leaders = yes
+	modifier = {
+		country_base_unity_produces_add = 16
+		planet_jobs_unity_produces_mult = 0.10
+		country_base_influence_produces_add = 1
+	}
+	triggered_modifier = {
+		potential = { has_leader_flag = doctor_upgrade_1 }
+		all_technology_research_speed = 0.10
+	}
+	triggered_modifier = {
+		potential = { has_leader_flag = doctor_upgrade_2 }
+		planet_stability_add = 5
+	}
+	triggered_modifier = {
+		potential = { has_leader_flag = doctor_upgrade_3 }
+		planet_jobs_unity_produces_mult = 0.20
+	}
+	leader_class = { governor admiral scientist general }
+	initial = no
+	randomized = no
+}
+
+leader_trait_unstopable_pioneer = {
+	councilor_trait = yes
+	inline_script = {
+		script = trait/icon
+		ICON = "GFX_ark_leader_trait_unstopable_pioneer"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	modifier = {
+		all_technology_research_speed = 0.20
+		planet_researchers_upkeep_mult = 0.075
+		planet_stability_add = -5
+	}
+	triggered_modifier = {
+		potential = { has_leader_flag = kristen_upgrade_1 }
+		diplo_weight_technology_mult = 0.35
+	}
+	triggered_modifier = {
+		potential = { has_leader_flag = kristen_upgrade_2 }
+		pop_category_workers_physics_research_produces_add = 0.1
+		pop_category_specialists_physics_research_produces_add = 0.15
+		pop_category_rulers_physics_research_produces_add = 0.3
+
+		pop_category_workers_society_research_produces_add = 0.1
+		pop_category_specialists_society_research_produces_add = 0.15
+		pop_category_rulers_society_research_produces_add = 0.3
+
+		pop_category_workers_engineering_research_produces_add = 0.1
+		pop_category_specialists_engineering_research_produces_add = 0.15
+		pop_category_rulers_engineering_research_produces_add = 0.3
+	}
+
+	
+	leader_class = { governor admiral scientist general }
+	initial = no
+	randomized = no
+}
+
+leader_trait_rhine_lab = {
+	#councilor_trait = yes
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		ICON = "GFX_ark_leader_trait_rhine_lab"
+		RARITY = veteran
+		CLASS = scientist
+		COUNCIL = no
+		TIER = 1
+	}
+	modifier = {
+		science_ship_survey_speed = 0.20
+		ship_anomaly_research_speed_mult = 0.15
+		ship_anomaly_generation_chance = 0.10
+		ship_archaeological_site_excavation_speed_mult = 0.15
+	}
+	self_modifier = {
+		leader_age = 30
+	}
+	
+	leader_class = { scientist }
+	initial = no
+	randomized = no
+}
+
+leader_trait_rhine_lab_2 = {
+	replace_traits = { "leader_trait_rhine_lab" }
+	veteran_class_locked_trait = yes
+	#councilor_trait = yes
+	inline_script = {
+		script = trait/icon
+		ICON = "GFX_ark_leader_trait_rhine_lab"
+		RARITY = veteran
+		CLASS = scientist
+		COUNCIL = no
+		TIER = 2
+	}
+	modifier = {
+		science_ship_survey_speed = 0.33
+		ship_anomaly_research_speed_mult = 0.20
+		ship_anomaly_generation_chance = 0.10
+		ship_archaeological_site_excavation_speed_mult = 0.25
+	}
+	self_modifier = {
+		leader_age = 30
+	}
+	
+	leader_class = { scientist }
+	initial = no
+}
+
+leader_trait_rhine_lab_3 = {
+	replace_traits = { "leader_trait_rhine_lab_2" }
+	veteran_class_locked_trait = yes
+	#councilor_trait = yes
+	inline_script = {
+		script = trait/icon
+		ICON = "GFX_ark_leader_trait_rhine_lab"
+		RARITY = veteran
+		CLASS = scientist
+		COUNCIL = no
+		TIER = 3
+	}
+	modifier = {
+		science_ship_survey_speed = 0.50
+		ship_anomaly_research_speed_mult = 0.30
+		ship_anomaly_generation_chance = 0.10
+		ship_archaeological_site_excavation_speed_mult = 0.33
+	}
+	self_modifier = {
+		leader_age = 30
+	}
+	
+	leader_class = { scientist }
+	initial = no
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

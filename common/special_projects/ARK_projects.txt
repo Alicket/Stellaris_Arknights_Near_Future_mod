@@ -166,7 +166,7 @@ special_project = {
 #十二号井升级
 special_project = {
 	key = "ARCLIGHT_WELL12_UPGRADE_PROJECT"
-	cost = 3000
+	cost = 5000
 	tech_department = engineering_technology
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_arclight_well_project
@@ -200,6 +200,40 @@ special_project = {
 	}
 }
 
+special_project = {
+	key = "SEARCHING_FOR_ARCLIGHT1_PROJECT"
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_arclight_1_in_orbit
+	location = yes
+	event_scope = planet_event
+	days_to_research = 90
+
+	on_success = {
+		owner = {
+			country_event = {
+				id = ark_arclight.11
+			}
+		}
+	}
+}
+special_project = {
+	key = "OPENING_ARCLIGHT1_PROJECT"
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_arclight_1_in_orbit
+	location = yes
+	event_scope = ship_event
+	days_to_research = 30
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+	}
+	on_success = {
+		ship_event = {
+			id = ark_arclight.12
+		}
+	}
+}
 
 
 

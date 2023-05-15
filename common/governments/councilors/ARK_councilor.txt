@@ -1,0 +1,218 @@
+# Councilor Documentation
+#
+# councilor_name_key = {
+#    civic = civic_imperial_cult		Civic that is required for this council position. Also used by UI. Default = none.
+#    leader_class = { }					Which leader classes can have this council position. Currently only used for the Recruit new Leader buttons. Default = none.
+#    is_leader_possible = { }			Can a leader have this council position. Used to filter leaders. Scope: THIS = Leader.
+#    modifier = { }						Country Modifier, that is multiplied by assigned Leader's level.
+#	 custom_tooltip = "LOC_KEY"			Custom tooltip text shown for the modifier of the council position.
+#	 conditional_tooltip = "LOC_KEY"	Custom tooltip text shown for the requirements of the council position.
+# }
+
+
+councilor_ruler_ark_doctor = {
+	leader_class = { governor admiral scientist general }
+	possible = { always = no }
+	is_leader_possible = { always = yes }
+	modifier = {
+		trade_value_mult = 0.02
+		country_edict_fund_add = 5
+	}
+	icon = "GFX_icon_councilor_ruler"
+}
+####
+####Civics
+####
+
+councilor_business_union = {
+	leader_class = { admiral governor }
+	is_leader_possible = {
+		OR = {
+			leader_class = admiral
+			leader_class = governor
+		}
+	}
+	civic = civic_business_union
+	modifier = {
+		branch_office_value_mult = 0.02
+		empire_size_branch_office_mult = -0.03
+	}
+}
+
+councilor_pharmaceutical_enterprises = {
+	leader_class = { scientist governor }
+	is_leader_possible = {
+		OR = {
+			leader_class = scientist
+			leader_class = governor
+		}
+	}
+	civic = civic_pharmaceutical_enterprises
+	modifier = {
+		pop_growth_speed = 0.015
+		planet_amenities_mult = 0.02
+	}
+}
+
+councilor_logistics_companies = {
+	leader_class = { admiral general scientist governor }
+	is_leader_possible = {
+		OR = {
+			leader_class = admiral
+			leader_class = general
+			leader_class = scientist
+			leader_class = governor
+		}
+	}
+	civic = civic_logistics_companies
+	modifier = {
+		empire_size_systems_mult = -0.02
+		empire_size_colonies_mult = -0.02
+	}
+}
+
+councilor_financing_laboratories = {
+	leader_class = { scientist }
+	is_leader_possible = {
+		OR = {
+			leader_class = scientist
+		}
+	}
+	civic = civic_financing_laboratories
+	modifier = {
+		planet_jobs_engineering_research_produces_mult = 0.015
+		planet_jobs_physics_research_produces_mult = 0.015
+		planet_jobs_society_research_produces_mult = 0.015
+	}
+}
+
+councilor_security_contractors = {
+	leader_class = { admiral general }
+	is_leader_possible = {
+		OR = {
+			leader_class = admiral
+			leader_class = general
+		}
+	}
+	civic = civic_security_contractors
+	modifier = {
+		planet_crime_mult = -0.03
+	}
+}
+
+councilor_holy_notarial_hall = {
+	leader_class = { admiral general scientist governor }
+	is_leader_possible = {
+		OR = {
+			leader_class = admiral
+			leader_class = general
+			leader_class = scientist
+			leader_class = governor
+		}
+	}
+	civic = civic_holy_notarial_hall
+	modifier = {
+		spiritualist_attraction = 0.1
+	}
+}
+
+councilor_chivalry = {
+	leader_class = { admiral general }
+	is_leader_possible = {
+		OR = {
+			leader_class = admiral
+			leader_class = general
+		}
+	}
+	civic = civic_chivalry
+	modifier = {
+		country_unity_produces_mult = 0.02
+		ship_weapon_damage = 0.02
+	}
+}
+
+councilor_heavy_taxation = {
+	leader_class = { governor }
+	is_leader_possible = {
+		OR = {
+			leader_class = governor
+		}
+	}
+	civic = civic_heavy_taxation
+	modifier = {
+		planet_jobs_produces_mult = 0.01
+		pop_happiness = -0.01
+		planet_jobs_slave_produces_mult = 0.02
+		pop_cat_slave_happiness = -0.015
+	}
+}
+
+councilor_industry_manufacturers = {
+	leader_class = { admiral general scientist governor }
+	is_leader_possible = {
+		OR = {
+			leader_class = admiral
+			leader_class = general
+			leader_class = scientist
+			leader_class = governor
+		}
+	}
+	civic = civic_industry_manufacturers
+	modifier = {
+		planet_jobs_alloys_produces_mult = 0.02
+		planet_building_build_speed_mult = 0.02
+	}
+}
+
+councilor_circulation_business = {
+	leader_class = { admiral general scientist governor }
+	is_leader_possible = {
+		OR = {
+			leader_class = admiral
+			leader_class = general
+			leader_class = scientist
+			leader_class = governor
+		}
+	}
+	civic = civic_circulation_business
+	modifier = {
+		planet_jobs_consumer_goods_produces_mult = 0.02
+		planet_amenities_add = 2
+	}
+}
+
+councilor_union_summit = {
+	leader_class = { admiral general scientist governor }
+	is_leader_possible = {
+		OR = {
+			leader_class = admiral
+			leader_class = general
+			leader_class = scientist
+			leader_class = governor
+		}
+	}
+	civic = civic_union_summit
+	modifier = {
+		country_unity_produces_mult = 0.03
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -3,26 +3,471 @@ namespace = ark_arclight
 country_event = {
 	id = ark_arclight.1
 	is_triggered_only = yes
-	hide_window = yes
+	title = ark_arclight.1.title
+	desc =  ark_arclight.1.desc
+	picture = GFX_evt_arclight_1_in_orbit
+	show_sound = event_default
+
+	trigger = {
+		has_origin = origin_ark_tragedy_birth
+	}
+	option = {
+		name = ark_arclight.1.a
+		event_target:ark_planet_terra = {
+			enable_special_project = {
+				name = SEARCHING_FOR_ARCLIGHT1_PROJECT
+				location = this
+				owner = this
+			}
+		}
+	}
+}
+country_event = {
+	id = ark_arclight.11
+	is_triggered_only = yes
+	title = ark_arclight.11.title
+	desc =  ark_arclight.11.desc
+	picture = GFX_evt_arclight_1_in_orbit
+	show_sound = event_default
+
+	trigger = {
+	}
+	option = {
+		name = ark_arclight.11.a
+		hidden_effect = {
+			create_ambient_object = {
+				type = ark_arclight_one_object
+				use_3d_location = yes
+				entity_offset_height = -15
+				scale = 0.6
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = event_target:ark_planet_terra
+					distance = 8
+					angle = random
+				}
+				save_global_event_target_as = arclight_1
+			}
+			event_target:arclight_1 = {
+				enable_special_project = {
+					name = OPENING_ARCLIGHT1_PROJECT
+					location = this
+					owner = event_target:ark_planet_terra.owner
+				}
+			}
+		}
+	}
+}
+ship_event = {
+	id = ark_arclight.12
+	is_triggered_only = yes
+	title = ark_arclight.12.title
+	desc =  ark_arclight.12.desc
+	picture = GFX_evt_derelict_interior
+	show_sound = event_default
+
+	after = {
+
+	}
+	option = {
+		name = ark_arclight.12.a
+		owner = {
+			country_event = {
+				id = ark_arclight.13
+			}	
+		}
+	}
+	option = {
+		name = ark_arclight.12.b
+		owner = {
+			country_event = {
+				id = ark_arclight.13
+			}	
+		}
+	}
+}
+country_event = {
+	id = ark_arclight.121
+	is_triggered_only = yes
+	title = ark_arclight.121.title
+	desc =  ark_arclight.121.desc
+	picture = GFX_evt_infirmary
+
+	trigger = {
+	}
+	option = {
+		name = ark_arclight.121.a
+		hidden_effect = {
+			country_event = {
+				id = ark_arclight.122
+				days = 120
+			}
+		}
+	}
+}
+country_event = {
+	id = ark_arclight.122
+	is_triggered_only = yes
+	title = ark_arclight.122.title
+	desc =  ark_arclight.122.desc
+	picture = GFX_evt_infirmary
+
+	trigger = {
+	}
+	option = {
+		name = ark_arclight.122.a
+		custom_tooltip = ark_arclight.122.a.tooltip
+		hidden_effect = {
+			country_event = {
+				id = ark_arclight.123
+				days = 240
+			}
+		}
+	}
+}
+country_event = {
+	id = ark_arclight.123
+	is_triggered_only = yes
+	title = ark_arclight.123.title
+	desc =  ark_arclight.123.desc
+	picture = GFX_evt_spaceship_in_progress
+
+	trigger = {
+	}
+	option = {
+		name = ark_arclight.123.a
+		custom_tooltip = kristen_hire_tooltip
+		hidden_effect = {
+			country_event = {
+				id = ark_archae.141
+				days = 3600
+			}
+			set_country_flag = spawning_renowned_leader
+
+			clone_leader = {
+				target = event_target:ark_leader_kristen_spawning
+			}
+			last_created_leader = {
+				save_global_event_target_as = ark_leader_kristen
+				set_leader_flag = ark_leader_kristen
+				set_leader_flag = legendary_leader
+				set_leader_flag = leader_death_events_blocked
+				set_leader_flag = immune_to_negative_traits
+				set_variable = {
+					which = kristen_surveyed_planet
+					value = 0
+				}
+			}
+		
+			remove_country_flag = spawning_renowned_leader
+		
+			create_message = {
+				type = MESSAGE_RECRUITED_LEADER
+				localization =  MESSAGE_RECRUITED_LEADER_DESC
+				days = @toast_message_days
+				target = event_target:ark_leader_kristen_spawning
+				variable = {
+					type = name
+					localization = LEADER
+					scope = event_target:ark_leader_kristen_spawning
+				}
+				variable = {
+						key = "border"
+						value = "GFX_border_veteran" #TODO Add real rarity frame gfx
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = ark_arclight.13
+	title = "ark_arclight.13.name"
+	desc =  "ark_arclight.13.desc"
+	show_sound = event_default
+	is_triggered_only = yes
+	
+	picture = GFX_ark_leader_recruitment_bg_kristen
+	auto_opens = yes
+	notification_event_icon = "GFX_message_leader_recruitment_vyctor"
+
+	event_window_type = leader_recruit
 
 	immediate = {
-		create_ambient_object = {
-			type = ark_arclight_one_object
-			use_3d_location = yes
-			entity_offset_height = -15
-			scale = 0.6
+		create_country = {
+			name = "NAME_Kristen"
+			type = faction
+			auto_delete = yes
+			flag = {
+				icon = {
+					category = "special"
+					file = "unknown.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "00_solid.dds"
+				}
+				colors = {
+					"red"
+					"red"
+					"null"
+					"null"
+				}
+			}
+			effect = {
+				save_event_target_as = leader_country
+			}
 		}
-		last_created_ambient_object = {
-			set_location = {
-				target = root.capital_scope
-				distance = 8
-				angle = random
+		event_target:leader_country = {
+			create_species = {
+				name = UNKNOWN
+				class = Arknight
+				name_list = ark_01
+				portrait = ARK_Kristen
+				traits = {
+					trait = "trait_enduring"
+				}
+				allow_negative_traits = no
+				effect = {
+					save_event_target_as = leader_species
+				}
+			}
+			create_leader = {
+				class = scientist
+				species = event_target:leader_species
+				name = NAME_Kristen
+				skill = 2
+				gender = female
+				event_leader = no # Leader is allowed to lead factions and win elections
+				background_ethic = ethic_materialist
+				skip_background_generation = yes
+				custom_description = kristen_description
+				custom_catch_phrase = kristen_catch_phrase
+				immortal = no
+				hide_age = no # Right now it will always match immortal
+	
+				randomize_traits = no
+				effect = {
+					set_skill = 2
+					save_global_event_target_as = ark_leader_kristen_spawning
+					set_leader_flag = legendary_leader
+					set_leader_flag = is_in_recruit_window
+					set_variable = { which = leader_pending_negative_traits_unmodified value = 0 }
+				}
+			}
+		}
+		event_target:ark_leader_kristen_spawning = {
+			set_owner = root
+			exile_leader_as = ethic_leader_exile
+		}
+		last_created_leader = {
+			add_trait = leader_trait_rhine_lab
+			#add_trait = leader_trait_unstopable_pioneer
+
+			set_age = 34
+		}
+	}
+
+	picture_event_data = {
+		portrait = event_target:ark_leader_kristen_spawning
+		room = ethic_spaceship_room
+	}
+
+	option = {
+		name = DISMISS
+		tag = dismiss_leader
+	}
+	option = {
+		name = ark_arclight.13.a
+		response_text = ark_arclight.13.a.response
+		is_dialog_only = yes
+	}
+	option = {
+		name = ark_arclight.13.b
+		response_text = ark_arclight.13.b.response
+		is_dialog_only = yes
+	}
+	option = {
+		name = ark_arclight.13.c
+		response_text = ark_arclight.13.c.response
+		is_dialog_only = yes
+	}
+	option = {
+		name = ark_arclight.13.d
+		response_text = ark_arclight.13.d.response
+		is_dialog_only = yes
+	}
+	option = {
+		name = kristen_finish_talk
+		tag = hire_leader
+		 hidden_effect = {
+			country_event = {
+				id = ark_arclight.121
+			}
+		# 	set_country_flag = spawning_renowned_leader
+
+		# 	clone_leader = {
+		# 		target = event_target:ethic_leader
+		# 	}
+		# 	last_created_leader = {
+		# 		save_global_event_target_as = ark_kristen
+		# 		set_leader_flag = ark_kristen
+		# 		set_leader_flag = legendary_leader
+		# 		set_leader_flag = leader_death_events_blocked
+		# 		set_leader_flag = immune_to_negative_traits
+		# 	}
+		
+		# 	remove_country_flag = spawning_renowned_leader
+		
+		# 	create_message = {
+		# 		type = MESSAGE_RECRUITED_LEADER
+		# 		localization =  MESSAGE_RECRUITED_LEADER_DESC
+		# 		days = @toast_message_days
+		# 		target = event_target:ethic_leader
+		# 		variable = {
+		# 			type = name
+		# 			localization = LEADER
+		# 			scope = event_target:ethic_leader
+		# 		}
+		# 		variable = {
+		# 				key = "border"
+		# 				value = "GFX_border_veteran" #TODO Add real rarity frame gfx
+		# 		}
+		# 	}
+		 }
+	}
+}
+
+
+country_event = {
+	id = ark_arclight.141
+	is_triggered_only = yes
+	title = ark_arclight.141.title
+	desc =  ark_arclight.141.desc
+	picture = GFX_evt_infirmary
+
+	trigger = {
+		NOT = { has_country_flag = kristen_has_got_paragon_trait }
+	}
+	immediate = {
+		set_country_flag = kristen_has_got_paragon_trait
+	}
+	option = {
+		name = ark_arclight.141.a
+		custom_tooltip = ark_arclight.141.a.tooltip
+		hidden_effect = {
+			event_target:ark_leader_kristen = {
+				add_trait = leader_trait_unstopable_pioneer
+			}
+			country_event = {
+				id = ark_arclight.15
+				days = 5400
+				random = 180
 			}
 		}
 	}
 }
 
+#他说fromfrom是个无效scope？？？
+# Root = Planet
+# From = Country
+# FromFrom = Fleet of the science ship that surveyed it, if any
+#planet_event = {
+#	id = ark_arclight.142
+#	is_triggered_only = yes
+#	hide_window = yes
+#
+#	trigger = {
+#		from = {
+#			NOT = { has_country_flag = kristen_has_got_paragon_trait }
+#		}
+#		FromFrom = {
+#			leader = {
+#				has_leader_flag = ark_leader_kristen
+#			}
+#		}
+#	}
+#	immediate = {
+#		fromfrom = {
+#			change_variable = {
+#				which = kristen_surveyed_planet
+#				value = 1
+#			}
+#		}
+#	}
+#	after = {
+#		if = {
+#			limit = {
+#				fromfrom = {
+#					check_variable = {
+#						which = kristen_surveyed_planet
+#						value >= 1
+#					}
+#				}
+#			}
+#			from = {
+#				set_country_flag = kristen_has_got_paragon_trait
+#				country_event = {
+#					id = ark_archae.141
+#				}
+#			}
+#		}
+#	}
+#}
 
+
+country_event = {
+	id = ark_arclight.15
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+	}
+	immediate = {
+		event_target:ark_leader_kristen = {
+			set_leader_flag = kristen_upgrade_1
+		}
+		country_event = {
+			id = ark_arclight.16
+			days = 7200
+			random = 180
+		}
+		create_message = {
+			type = MESSAGE_ARK_TRAIT_UPGRADE
+			localization =  MESSAGE_ARK_TRAIT_UPGRADE_KRISTEN_DESC
+			days = @toast_message_days
+		}
+	}
+}
+
+country_event = {
+	id = ark_arclight.16
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+	}
+	immediate = {
+		event_target:ark_leader_kristen = {
+			set_leader_flag = kristen_upgrade_2
+		}	
+		create_message = {
+			type = MESSAGE_ARK_TRAIT_UPGRADE
+			localization =  MESSAGE_ARK_TRAIT_UPGRADE_KRISTEN_DESC
+			days = @toast_message_days
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+#弧光井事件
+#####################################################################################################################
+#####################################################################################################################
 
 #十一号井升级
 country_event = {
@@ -70,6 +515,7 @@ country_event = {
 	is_triggered_only = yes
 	hide_window = yes
 	trigger = {
+		exists = event_target:ark_planet_terra
 		event_target:ark_planet_terra = {
 			has_building = building_ark_energy_well2
 		}
@@ -152,27 +598,24 @@ country_event = {
 	}
 }
 # 选择路线
-planet_event = {
+country_event = {
 	id = ark_arclight.23
 	is_triggered_only = yes
 	hide_window = yes
 	trigger = {
-		has_building = building_ark_energy_well3
-		owner = {
-			has_origin = origin_ark_tragedy_birth
-			NOT = { has_country_flag = arclight23_happened }
+		event_target:ark_planet_terra = {
+			has_building = building_ark_energy_well3
 		}
-		is_same_value = event_target:ark_planet_terra
+		has_origin = origin_ark_tragedy_birth
+		NOT = { has_country_flag = arclight23_happened }
 	}
 	immediate = {
-		owner = {
-			country_event = {
-				id = ark_arclight.231
-				days = 3600
-				random = 360
-			}
-			set_country_flag = arclight23_happened
+		country_event = {
+			id = ark_arclight.231
+			days = 3600
+			random = 360
 		}
+		set_country_flag = arclight23_happened
 	}
 }
 

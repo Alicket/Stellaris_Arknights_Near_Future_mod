@@ -11,6 +11,15 @@ country_event = { #选择苦难摇篮起源
 	}
 
 	immediate = {
+		ruler = {
+			set_skill = 3
+			add_trait_no_notify = leader_trait_meet_at_the_end
+			add_trait_no_notify = leader_trait_legendary_great_teacher
+
+			set_leader_flag = leader_death_events_blocked
+			set_leader_flag = immune_to_negative_traits
+			save_global_event_target_as = ark_ruler_doctor
+		}
 		capital_scope = {
 			save_global_event_target_as = ark_planet_terra
 			generate_terra_deposits_and_blockers = yes	# 初始地块
@@ -23,9 +32,107 @@ country_event = { #选择苦难摇篮起源
 		}
 		add_modifier = { modifier = "terra_council" days = 120 }			# 联合会议准备中
 		country_event = { id = ark_rhodes_island.1 }				# 创建罗德岛
+		country_event = { #克丽丝滕
+			id = ark_arclight.1
+			days = 90
+			random = 30
+		}
 
 	}
 }
+
+
+
+#博士命定特质升级
+country_event = {
+	id = ark_arclight.101
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+	}
+	immediate = {
+		event_target:ark_ruler_doctor = {
+			set_leader_flag = doctor_upgrade_1
+		}
+		country_event = {
+			id = ark_arclight.16
+			days = 7200
+			random = 180
+		}
+		create_message = {
+			type = MESSAGE_ARK_TRAIT_UPGRADE
+			localization =  MESSAGE_ARK_TRAIT_UPGRADE_DOCTOR_DESC
+			days = @toast_message_days
+		}
+	}
+}
+country_event = {
+	id = ark_arclight.102
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+	}
+	immediate = {
+		event_target:ark_ruler_doctor = {
+			set_leader_flag = doctor_upgrade_2
+		}	
+		country_event = {
+			id = ark_arclight.17
+			days = 9600
+			random = 360
+		}
+		create_message = {
+			type = MESSAGE_ARK_TRAIT_UPGRADE
+			localization =  MESSAGE_ARK_TRAIT_UPGRADE_DOCTOR_DESC
+			days = @toast_message_days
+		}
+	}
+}
+country_event = {
+	id = ark_arclight.103
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+	}
+	immediate = {
+		event_target:ark_ruler_doctor = {
+			set_leader_flag = doctor_upgrade_3
+		}	
+		create_message = {
+			type = MESSAGE_ARK_TRAIT_UPGRADE
+			localization =  MESSAGE_ARK_TRAIT_UPGRADE_DOCTOR_DESC
+			days = @toast_message_days
+		}
+	}
+}
+
+
+
+
+country_event = { #选择统治者
+	id = ark_game_start.10
+	is_triggered_only = yes
+	title = ark_game_start.10.title
+	desc =  ark_game_start.10.desc
+	show_sound = event_default
+	picture = GFX_ark_select_doctor_portrait
+
+	trigger = {
+		has_origin = origin_ark_tragedy_birth
+	}
+	option = {
+		name = ark_game_start.10.a
+		ruler = {
+			change_leader_portrait = ARK_N_Doctor_N
+			set_age = 13258
+		}
+	}
+	option = {
+		name = ark_game_start.10.b
+	}
+}
+
+
 
  country_event = { #选择源石病潜势
 	 id = ark_game_start.11

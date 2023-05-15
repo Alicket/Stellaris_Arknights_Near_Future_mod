@@ -18,10 +18,16 @@ guiTypes = {
 			clicksound = "back_click"
 			actionShortcut = "cancel"
 		}
+		effectButtonType = {#设置
+			spriteType = GFX_arkocean_settings_open
+			name = "arkocean_settings"
+			position = { x = 191 y = 61 }
+			effect = beffect_arkocean_settings
+		}
 		iconType = {#关闭后面的渐变
 			name = "close_gradual"
 			spriteType = "GFX_arkocean_button_back_gradient"
-			position = { x= 191 y = 61 }
+			position = { x= 258 y = 61 }
 			Orientation = "UPPER_LEFT"
 		}
 		iconType = {#tips

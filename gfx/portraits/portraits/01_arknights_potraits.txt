@@ -1,5 +1,7 @@
 portraits = {
-#未确定性别
+	#特殊
+	ARK_Kristen								= {textureFile = "gfx/models/portraits/Custom/ARK_Kristen.dds"}
+	#未确定性别
 	ARK_N_Doctor_N							= {textureFile = "gfx/models/portraits/Custom/ARK_Doctor_N.dds"}
 	ARK_N_Doctor_R							= {textureFile = "gfx/models/portraits/Custom/ARK_Doctor_R.dds"}
 	ARK_N_Doctor_W							= {textureFile = "gfx/models/portraits/Custom/ARK_Doctor_W.dds"}
@@ -1729,421 +1731,220 @@ portrait_groups = {
 				portraits = {
 					ARK_F_Closure
 					ARK_F_Chen
-					ARK_F_Chen_S
 					ARK_F_Blaze
-					ARK_F_Blaze_S
 					ARK_F_Sora
-					ARK_F_Sora_S
 					ARK_F_Texas
-					ARK_F_Texas_S
 					ARK_F_Exusiai
-					ARK_F_Exusiai_S
 					ARK_F_Franka
-					ARK_F_Franka_S
 					ARK_F_Liskarm
-					ARK_F_Liskarm_S
 					ARK_F_Silence
-					ARK_F_Silence_S
 					ARK_F_Gitano
-					ARK_F_Gitano_S
 					ARK_F_Deepcolor
-					ARK_F_Deepcolor_S
 					ARK_F_Siege
-					ARK_F_Siege_S
 					ARK_F_W
-					ARK_F_W_S
 					ARK_F_Myrrh
-					ARK_F_Myrrh_S
 					ARK_F_Winter
-					ARK_F_Winter_S
 					ARK_F_ShiraYuki
-					ARK_F_ShiraYuki_S
 					ARK_F_Hibiscus
 					ARK_F_Lava
 					ARK_F_Beagle
 					ARK_F_Fen
 					ARK_F_Kroos
 					ARK_F_Meteor
-					ARK_F_Meteor_S
 					ARK_F_Estelle
-					ARK_F_Estelle_S
 					ARK_F_Ptilopsis
-					ARK_F_Ptilopsis_S
 					ARK_F_BluePoison
-					ARK_F_BluePoison_S
 					ARK_F_Dobermann
-					ARK_F_Dobermann_S
 					ARK_F_May
-					ARK_F_May_S
 					ARK_F_Ifrit
-					ARK_F_Ifrit_S
 					ARK_F_Astgenne
-					ARK_F_Astgenne_S
 					ARK_F_Hoshiguma
-					ARK_F_Hoshiguma_S
 					ARK_F_Beehunter
-					ARK_F_Beehunter_S
 					ARK_F_Lappland
-					ARK_F_Lappland_S
 					ARK_F_Haze
-					ARK_F_Haze_S
 					ARK_F_Specter
-					ARK_F_Specter_S
 					ARK_F_ProjektRed
-					ARK_F_ProjektRed_S
 					ARK_F_Provence
-					ARK_F_Provence_S
 					ARK_F_Shining
-					ARK_F_Shining_S
 					ARK_F_Nearl
-					ARK_F_Nearl_S
 					ARK_F_Scavenger
-					ARK_F_Scavenger_S
 					ARK_F_Cuora
-					ARK_F_Cuora_S
 					ARK_F_Myrtle
-					ARK_F_Myrtle_S
 					ARK_F_Indra
-					ARK_F_Indra_S
 					ARK_F_Firewatch
-					ARK_F_Firewatch_S
 					ARK_F_Vulcan
-					ARK_F_Vulcan_S
 					ARK_F_Nightmare
-					ARK_F_Nightmare_S
 					ARK_F_Skyfire
-					ARK_F_Skyfire_S
 					ARK_F_Warfarin
-					ARK_F_Warfarin_S
 					ARK_F_Cliffheart
-					ARK_F_Cliffheart_S
 					ARK_F_Pramanix
-					ARK_F_Pramanix_S
 					ARK_F_Nightingale
-					ARK_F_Nightingale_S
 					ARK_F_Eyjafjalla
-					ARK_F_Eyjafjalla_S
 					ARK_F_Perfumer
-					ARK_F_Perfumer_S
 					ARK_F_Earthspirit
-					ARK_F_Earthspirit_S
 					ARK_F_Mousse
-					ARK_F_Mousse_S
 					ARK_F_Gavial
-					ARK_F_Gavial_S
 					ARK_F_Vermeil
-					ARK_F_Vermeil_S
 					ARK_F_Plume
 					ARK_F_Frostleaf
-					ARK_F_Frostleaf_S
 					ARK_F_Truth
-					ARK_F_Truth_S
 					ARK_F_Gumi
-					ARK_F_Gumi_S
 					ARK_F_Poca
-					ARK_F_Poca_S
 					ARK_F_Croissant
-					ARK_F_Croissant_S
 					ARK_F_Saria
-					ARK_F_Saria_S
 					ARK_F_Platinum
-					ARK_F_Platinum_S
 					ARK_F_Melantha
 					ARK_F_Cardigan
 					ARK_F_Mostima
-					ARK_F_Mostima_S
 					ARK_F_Kafka
-					ARK_F_Kafka_S
 					ARK_F_Manticore
-					ARK_F_Manticore_S
 					ARK_F_Andreana
-					ARK_F_Andreana_S
 					ARK_F_Meteorite
-					ARK_F_Meteorite_S
 					ARK_F_Grani
-					ARK_F_Grani_S
 					ARK_F_Bagpipe
-					ARK_F_Bagpipe_S
 					ARK_F_Savage
-					ARK_F_Savage_S
 					ARK_F_Jessica
-					ARK_F_Jessica_S
 					ARK_F_Rope
-					ARK_F_Rope_S
 					ARK_F_Gravel
-					ARK_F_Gravel_S
 					ARK_F_Vanilla
 					ARK_F_FEater
-					ARK_F_FEater_S
 					ARK_F_Mayer
-					ARK_F_Mayer_S
 					ARK_F_WaaiFu
-					ARK_F_WaaiFu_S
 					ARK_F_Magallan
-					ARK_F_Magallan_S
 					ARK_F_Bibeak
-					ARK_F_Bibeak_S
 					ARK_F_Shamare
-					ARK_F_Shamare_S
 					ARK_F_Podenco
-					ARK_F_Podenco_S
 					ARK_F_Durnar
-					ARK_F_Durnar_S
 					ARK_F_Reed
-					ARK_F_Reed_S
 					ARK_F_Skadi
-					ARK_F_Skadi_S
 					ARK_F_Whislash
-					ARK_F_Whislash_S
 					ARK_F_Astesia
-					ARK_F_Astesia_S
 					ARK_F_Breeze
-					ARK_F_Breeze_S
 					ARK_F_Shaw
-					ARK_F_Shaw_S
 					ARK_F_Orchid
 					ARK_F_Executor
-					ARK_F_Executor_S
 					ARK_F_Popukar
 					ARK_F_Catapult
 					ARK_F_Matoimaru
-					ARK_F_Matoimaru_S
 					ARK_F_Vigna
-					ARK_F_Vigna_S
 					ARK_F_Angelina
-					ARK_F_Angelina_S
 					ARK_F_Sussurro
-					ARK_F_Sussurro_S
 					ARK_F_Cutter
-					ARK_F_Cutter_S
 					ARK_F_Ambriel
-					ARK_F_Ambriel_S
 					ARK_F_Heavyrain
-					ARK_F_Heavyrain_S
 					ARK_F_Leizi
-					ARK_F_Leizi_S
 					ARK_F_Swire
-					ARK_F_Swire_S
 					ARK_F_Mudrock
-					ARK_F_Mudrock_S
 					ARK_F_Glaucus
-					ARK_F_Glaucus_S
 					ARK_F_Click
-					ARK_F_Click_S
 					ARK_F_Archetto
-					ARK_F_Archetto_S
 					ARK_F_Sideroca
-					ARK_F_Sideroca_S
 					ARK_F_Scene
-					ARK_F_Scene_S
 					ARK_F_Utage
-					ARK_F_Utage_S
 					ARK_F_Iris
-					ARK_F_Iris_S
 					ARK_F_Schwarz
-					ARK_F_Schwarz_S
 					ARK_F_Tsukinogi
-					ARK_F_Tsukinogi_S
 					ARK_F_Beeswax
-					ARK_F_Beeswax_S
 					ARK_F_Folinic
-					ARK_F_Folinic_S
 					ARK_F_Jackie
-					ARK_F_Jackie_S
 					ARK_F_Ceylon
-					ARK_F_Ceylon_S
 					ARK_F_Surtr
-					ARK_F_Surtr_S
 					ARK_F_Suzuran
-					ARK_F_Suzuran_S
 					ARK_F_Saga
-					ARK_F_Saga_S
 					ARK_F_Toddifons
-					ARK_F_Toddifons_S
 					ARK_F_April
-					ARK_F_April_S
 					ARK_F_Aciddrop
-					ARK_F_Aciddrop_S
 					ARK_F_GreyThroat
-					ARK_F_GreyThroat_S
 					ARK_F_Bena
-					ARK_F_Bena_S
 					ARK_F_Asbestos
-					ARK_F_Asbestos_S
 					ARK_F_Sesa
-					ARK_F_Sesa_S
 					ARK_F_Bubble
-					ARK_F_Bubble_S
 					ARK_F_Snowsant
-					ARK_F_Snowsant_S
 					ARK_F_Purestream
-					ARK_F_Purestream_S
 					ARK_F_Mint
-					ARK_F_Mint_S
 					ARK_F_Rosmontis
-					ARK_F_Rosmontis_S
 					ARK_F_Weedy
-					ARK_F_Weedy_S
 					ARK_F_Tuye
-					ARK_F_Tuye_S
 					ARK_F_Absinthe
-					ARK_F_Absinthe_S
 					ARK_F_Tomimi
-					ARK_F_Tomimi_S
 					ARK_F_Flint
-					ARK_F_Flint_S
 					ARK_F_Eunectes
-					ARK_F_Eunectes_S
 					ARK_F_Flametail
-					ARK_F_Flametail_S
 					ARK_F_LaPluma
-					ARK_F_LaPluma_S
 					ARK_F_Aurora
-					ARK_F_Aurora_S
 					ARK_F_Blemishine
-					ARK_F_Blemishine_S
 					ARK_F_Carnelian
-					ARK_F_Carnelian_S
 					ARK_F_Fartooth
-					ARK_F_Fartooth_S
 					ARK_F_Ashlock
-					ARK_F_Ashlock_S
 					ARK_F_Whisperain
-					ARK_F_Whisperain_S
 					ARK_F_Pinecone
-					ARK_F_Pinecone_S
 					ARK_F_Honeyberry
-					ARK_F_Honeyberry_S
 					ARK_F_Robin
-					ARK_F_Robin_S
 					ARK_F_Beanstalk
-					ARK_F_Beanstalk_S
 					ARK_F_Ash
-					ARK_F_Ash_S
 					ARK_F_Blitz
-					ARK_F_Blitz_S
 					ARK_F_Frost
-					ARK_F_Frost_S
 					ARK_F_Indigo
-					ARK_F_Indigo_S
 					ARK_F_Mulberry
-					ARK_F_Mulberry_S
 					ARK_F_Gladiia
-					ARK_F_Gladiia_S
 					ARK_F_Akafuyu
-					ARK_F_Akafuyu_S
 					ARK_F_Kirara
-					ARK_F_Kirara_S
 					ARK_F_Saileach
-					ARK_F_Saileach_S
 					ARK_F_Roberta
-					ARK_F_Roberta_S
 					ARK_F_Pallas
-					ARK_F_Pallas_S
 					ARK_F_WildMane
-					ARK_F_WildMane_S
 					ARK_F_Durin
 					ARK_F_Yato
 					ARK_F_Lava_G
-					ARK_F_Lava_G_S
 					ARK_F_Skadi_G
-					ARK_F_Skadi_G_S
-					ARK_F_Skadi_G_skin
 					ARK_F_Chen_G
-					ARK_F_Chen_G_S
 					ARK_F_Nearl_G
-					ARK_F_Nearl_G_S
 					ARK_F_Ceobe
-					ARK_F_Ceobe_S
 					ARK_F_Nian
-					ARK_F_Nian_S
 					ARK_F_Dusk
-					ARK_F_Dusk_S
 					ARK_F_Pudding
-					ARK_F_Pudding_S
 					ARK_F_Kjera
-					ARK_F_Kjera_S
 					ARK_F_Horn
-					ARK_F_Horn_S
 					ARK_F_Dorothy
-					ARK_F_Dorothy_S
 					ARK_F_Texas_G
-					ARK_F_Texas_G_S
 					ARK_F_Yato_G
-					ARK_F_Yato_G_S
 					ARK_F_Goldenglow
-					ARK_F_Goldenglow_S
 					ARK_F_Lin
-					ARK_F_Lin_S
 					ARK_F_Hoolheyak
-					ARK_F_Hoolheyak_S
 					ARK_F_Ling
-					ARK_F_Ling_S
 					ARK_F_Silence_G
-					ARK_F_Silence_G_S
 					ARK_F_Reed_G
-					ARK_F_Reed_G_S
 					ARK_F_Penance
-					ARK_F_Penance_S
 					ARK_F_Fiammetta
-					ARK_F_Fiammetta_S
 					ARK_F_Heavysnow
-					ARK_F_Heavysnow_S
 					ARK_F_Irene
-					ARK_F_Irene_S
 					ARK_F_Gavial_G
-					ARK_F_Gavial_G_S
 					ARK_F_Qiubai
-					ARK_F_Qiubai_S
 					ARK_F_Ines
-					ARK_F_Ines_S
 					ARK_F_Muelsyse
-					ARK_F_Muelsyse_S
 					ARK_F_Blacknight
-					ARK_F_Blacknight_S
 					ARK_F_Cantabile
-					ARK_F_Cantabile_S
 					ARK_F_Highmore
-					ARK_F_Highmore_S
 					ARK_F_Dagda
-					ARK_F_Dagda_S
 					ARK_F_WindChimes
-					ARK_F_WindChimes_S
 					ARK_F_Morgan
-					ARK_F_Morgan_S
 					ARK_F_Kroos
-					ARK_F_Kroos_S
 					ARK_F_Erato
-					ARK_F_Erato_S
 					ARK_F_Lunacub
-					ARK_F_Lunacub_S
 					ARK_F_Jieyun
-					ARK_F_Jieyun_S
 					ARK_F_Melanite
-					ARK_F_Melanite_S
 					ARK_F_Firewhistle
-					ARK_F_Firewhistle_S
 					ARK_F_Cement
-					ARK_F_Cement_S
 					ARK_F_Hibiscus_G
-					ARK_F_Hibiscus_G_S
 					ARK_F_Paprika
-					ARK_F_Paprika_S
 					ARK_F_NineColoredDeer
-					ARK_F_NineColoredDeer_S
 					ARK_F_Quercus
-					ARK_F_Quercus_S
 					ARK_F_Heidi
-					ARK_F_Heidi_S
 					ARK_F_Proviso
-					ARK_F_Proviso_S
 					ARK_F_Harmonie
-					ARK_F_Harmonie_S
 					ARK_F_Kazemaru
-					ARK_F_Kazemaru_S
 					ARK_F_UOfficial
 					ARK_F_Quartz
-					ARK_F_Quartz_S
 				}
 			}
 			add = {
@@ -2154,107 +1955,59 @@ portrait_groups = {
 				portraits = {
 					ARK_M_12F
 					ARK_M_Flamebringer
-					ARK_M_Flamebringer_S
 					ARK_M_SilverAsh
-					ARK_M_SilverAsh_S
 					ARK_M_Hellagur
-					ARK_M_Hellagur_S
 					ARK_M_Courier
-					ARK_M_Courier_S
 					ARK_M_Matterhorn
-					ARK_M_Matterhorn_S
 					ARK_M_Gnosis
-					ARK_M_Gnosis_S
 					ARK_M_Steward
 					ARK_M_Adnachiel
 					ARK_M_Ansel
 					ARK_M_Aak
-					ARK_M_Aak_S
 					ARK_M_Hung
-					ARK_M_Hung_S
 					ARK_M_Phantom
-					ARK_M_Phantom_S
 					ARK_M_Greyy
-					ARK_M_Greyy_S
 					ARK_M_Mountain
-					ARK_M_Mountain_S
 					ARK_M_Arene
-					ARK_M_Arene_S
 					ARK_M_Jaye
-					ARK_M_Jaye_S
 					ARK_M_Midnight
 					ARK_M_Spot
 					ARK_M_Thorns
-					ARK_M_Thorns_S
 					ARK_M_Ayerscarpe
-					ARK_M_Ayerscarpe_S
 					ARK_M_Bison
-					ARK_M_Bison_S
 					ARK_M_Aosta
-					ARK_M_Aosta_S
 					ARK_M_Chiave
-					ARK_M_Chiave_S
 					ARK_M_Ethan
-					ARK_M_Ethan_S
 					ARK_M_Broca
-					ARK_M_Broca_S
 					ARK_M_Leonhardt
-					ARK_M_Leonhardt_S
 					ARK_M_Elysium
-					ARK_M_Elysium_S
 					ARK_M_Mizuki
-					ARK_M_Mizuki_S
 					ARK_M_MrNothing
-					ARK_M_MrNothing_S
 					ARK_M_Tachanka
-					ARK_M_Tachanka_S
 					ARK_M_Passenger
-					ARK_M_Passenger_S
 					ARK_M_Tequila
-					ARK_M_Tequila_S
 					ARK_M_Corroserum
-					ARK_M_Corroserum_S
 					ARK_M_NoirCorne
 					ARK_M_Rangers
-					ARK_M_Rangers_S
 					ARK_M_Ebenholz
-					ARK_M_Ebenholz_S
 					ARK_M_Stainless
-					ARK_M_Stainless_S
 					ARK_M_Lumen
-					ARK_M_Lumen_S
 					ARK_M_Mlynar
-					ARK_M_Mlynar_S
 					ARK_M_Chongyue
-					ARK_M_Chongyue_S
 					ARK_M_Vigil
-					ARK_M_Vigil_S
 					ARK_M_Puzzle
-					ARK_M_Puzzle_S
 					ARK_M_Enforcer
-					ARK_M_Enforcer_S
 					ARK_M_Noir_G
-					ARK_M_Noir_G_S
 					ARK_M_Greyy_G
-					ARK_M_Greyy_G_S
 					ARK_M_Shalem
-					ARK_M_Shalem_S
 					ARK_M_Czerny
-					ARK_M_Czerny_S
 					ARK_M_Windflit
-					ARK_M_Windflit_S
 					ARK_M_Minimalist
-					ARK_M_Minimalist_S
 					ARK_M_Qanipalaat
-					ARK_M_Qanipalaat_S
 					ARK_M_LuoXiaohei
-					ARK_M_LuoXiaohei_S
 					ARK_M_Humus
-					ARK_M_Humus_S
 					ARK_M_Totter
-					ARK_M_Totter_S
 					ARK_M_Chestnut
-					ARK_M_Chestnut_S
 				}
 			}
 		}

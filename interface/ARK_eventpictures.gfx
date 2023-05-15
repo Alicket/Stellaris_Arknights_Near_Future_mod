@@ -1,8 +1,17 @@
 spriteTypes = {	
-
+	spriteType = { #克丽丝滕雇佣事件
+		name = "GFX_ark_leader_recruitment_bg_kristen"
+		textureFile = "gfx/interface/leaders/recruitment_bgs/leader_recruitment_bg_kristen.dds"
+	}
 	spriteType = {
-		name = GFX_ark_mod_check_conflict
+		name = "GFX_ark_mod_check_conflict"
 		textureFile = "gfx/event_pictures/ark_mod_check.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes	
+	}
+	spriteType = {
+		name = "GFX_ark_select_doctor_portrait"
+		textureFile = "gfx/event_pictures/select_doctor_portrait.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes	
 	}
@@ -213,6 +222,12 @@ spriteTypes = {
 	spriteType = {	# 弧光井计划
 		name = "GFX_evt_arclight_well_tear_the_sky"
 		texturefile = "gfx/event_pictures/arclight_well_tear_the_sky.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {	# 聚焦发生器
+		name = "GFX_evt_arclight_1_in_orbit"
+		texturefile = "gfx/event_pictures/arklight_1_in_orbit.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes
 	}

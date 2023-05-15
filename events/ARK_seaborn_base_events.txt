@@ -1,37 +1,5 @@
 namespace = ark_seaborn_base
 
-# 	>——————LEADER——————<
-#
-# on_leader_spawn		——>.1	生成科学家时添加简易思维或复杂回路			无需起源|已排除合成进化
-# on_game_start_country	——>.10	开局选择统治者肖像，判断海嗣国家类型			无需起源|已排除合成进化		*新设置
-# 认知塑造面板			——>.11	游戏过程中选择统治者肖像					【绑定面板】
-#
-# 	>—————EVOLUTION————<
-#
-# 							.2	测试事件：选中星球更改为海洋星球
-# on_colonized			——>.20	殖民完成添加修正，排除特殊星球			*	无需起源|已排除合成进化		*新设置
-# 					 .201/.202	殖民完成时海洋星球概率加进化					{附属事件}
-# ark_seaborn_base.21	——>.21	第一次殖民提示								{附属事件}
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-
 ###       ########   ######   #######   ########  #######  
 ###       ########  ########  ########  ########  ######## 
 ###       ###       ###  ###  ###  ###  ###       ###  ### 
@@ -85,51 +53,24 @@ country_event = { #开局伊莎玛拉选肖像，同时判定国家类型
 	immediate = {
 		hidden_effect = {
 			save_global_event_target_as = arkocean_country
-			set_country_flag = arknights_ocean_country
-			if = {
-				limit = { has_trait = trait_hive_mind }
-				set_country_flag = arkocean_gestalt_country
-			}
-			else = {
-				set_country_flag = arkocean_normal_country
-			}
-			country_event = {
-				id = ark_seaborn_evo.11
-			}
+			#set_country_flag = arknights_ocean_country
+			#if = {
+			#	limit = { has_trait = trait_hive_mind }
+			#	set_country_flag = arkocean_gestalt_country
+			#}
+			#else = {
+			#	set_country_flag = arkocean_normal_country
+			#}
+			#country_event = {
+			#	id = ark_seaborn_evo.11
+			#}
 		}
 	}
 	option = {
 		name = ark_seaborn_base.10.a
 		hidden_effect = {
-			every_owned_leader = {
-				limit = {
-					leader_class = ruler
-				}
-				change_leader_portrait = ARK1012
-				set_name = "NAME_Ishar_mla"
-			}
-		}
-	}
-	option = {
-		name = ark_seaborn_base.10.b
-		hidden_effect = {
-			every_owned_leader = {
-				limit = {
-					leader_class = ruler
-				}
-				change_leader_portrait = ARK1012_S
-				set_name = "NAME_Ishar_mla"
-			}
-		}
-	}
-	option = {
-		name = ark_seaborn_base.10.c
-		hidden_effect = {
-			every_owned_leader = {
-				limit = {
-					leader_class = ruler
-				}
-				change_leader_portrait = ARK1012_skin
+			ruler = {
+				change_leader_portrait = ARK_F_Skadi_G
 				set_name = "NAME_Ishar_mla"
 			}
 		}
@@ -137,10 +78,7 @@ country_event = { #开局伊莎玛拉选肖像，同时判定国家类型
 	option = {
 		name = ark_seaborn_base.10.d
 		hidden_effect = {
-			every_owned_leader = {
-				limit = {
-					leader_class = ruler
-				}
+			ruler = {
 				change_leader_portrait = ark_ocean_anim_portraits
 				set_name = "NAME_Ishar_mla"
 			}
@@ -162,35 +100,8 @@ country_event = {
 	option = {
 		name = ark_seaborn_base.10.a
 		hidden_effect = {
-			every_owned_leader = {
-				limit = {
-					leader_class = ruler
-				}
-				change_leader_portrait = ARK1012
-				set_name = "NAME_Ishar_mla"
-			}
-		}
-	}
-	option = {
-		name = ark_seaborn_base.10.b
-		hidden_effect = {
-			every_owned_leader = {
-				limit = {
-					leader_class = ruler
-				}
-				change_leader_portrait = ARK1012_S
-				set_name = "NAME_Ishar_mla"
-			}
-		}
-	}
-	option = {
-		name = ark_seaborn_base.10.c
-		hidden_effect = {
-			every_owned_leader = {
-				limit = {
-					leader_class = ruler
-				}
-				change_leader_portrait = ARK1012_skin
+			ruler = {
+				change_leader_portrait = ARK_F_Skadi_G
 				set_name = "NAME_Ishar_mla"
 			}
 		}
@@ -198,10 +109,7 @@ country_event = {
 	option = {
 		name = ark_seaborn_base.10.d
 		hidden_effect = {
-			every_owned_leader = {
-				limit = {
-					leader_class = ruler
-				}
+			ruler = {
 				change_leader_portrait = ark_ocean_anim_portraits
 				set_name = "NAME_Ishar_mla"
 			}
@@ -238,8 +146,8 @@ planet_event = {
 	trigger = {
 		owner = {
 			has_trait = trait_ARK_ocean_seaborn
-			has_country_flag = arknights_ocean_country
 			NOT = { has_country_flag = synthetic_empire }
+			NOT = { has_country_flag = arkocean_option_disable_planet_evolution }
 		}
 	}
 	immediate = {
@@ -334,6 +242,7 @@ country_event = { #第一次殖民
 			has_country_flag = ark_ocean_colonied_first_time
 		}
 		NOT = { has_country_flag = synthetic_empire }
+		NOT = { has_country_flag = arkocean_option_disable_planet_evolution }
 	}
 	immediate = {
 		set_country_flag = ark_ocean_colonied_first_time
@@ -353,6 +262,7 @@ country_event = {#每月触发，跳板到planet_event，已完成进化或手�
 	trigger = {
 		NOT = { has_country_flag = synthetic_empire }
 		has_trait = trait_ARK_ocean_seaborn
+		NOT = { has_country_flag = arkocean_option_disable_planet_evolution }
 	}
 	immediate = {
 		every_owned_planet = {
@@ -382,6 +292,11 @@ planet_event = { #每月变量增加，并检测变量数值添加或删除flag/
 	id = ark_seaborn_base.23
 	is_triggered_only = yes
 	hide_window = yes
+	trigger = {
+		owner = {
+			NOT = { has_country_flag = arkocean_option_disable_planet_evolution }
+		}
+	}
 	immediate = {
 		if = { #消除debuff阶段每月+1
 			limit = {
@@ -593,6 +508,9 @@ planet_event = {
 		}
 		NOT = {
 			has_planet_flag = ark_seaborn_anomaly_happened
+		}
+		owner = {
+			NOT = { has_country_flag = arkocean_option_disable_planet_evolution }
 		}
 	}
 	immediate = {
@@ -824,8 +742,8 @@ planet_event = { #检测到已经完成进化或正在进化过程中但不是�
 	trigger = {
 		exists = owner
 		owner = {
-			has_country_flag = arknights_ocean_country
 			has_trait = trait_ARK_ocean_seaborn
+			NOT = { has_country_flag = arkocean_option_disable_planet_evolution }
 		}
 		OR = {
 			has_planet_flag = ark_ocean_col_evo_end
@@ -885,7 +803,6 @@ country_event = {
 	is_triggered_only = yes
 	hide_window = yes
 	trigger = {
-		has_country_flag = arknights_ocean_country
 		has_origin = origin_ark_stella_caerula
 		has_trait = trait_ARK_ocean_seaborn
 	}
@@ -972,7 +889,7 @@ country_event = {
 	hide_window = yes
 	trigger = {
 		has_trait = trait_ARK_ocean_seaborn
-		has_origin = origin_ark_stella_caerula
+		NOT = { has_country_flag = arkocean_option_disable_pop_assimilation }
 	}
 	immediate = {
 		every_owned_planet = {
@@ -984,7 +901,9 @@ country_event = {
 					}
 				}
 			}
-			planet_event = { id = ark_seaborn_base.41 }
+			planet_event = { 
+				id = ark_seaborn_base.41
+			}
 		}
 	}
 }

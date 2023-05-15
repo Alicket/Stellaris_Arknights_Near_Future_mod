@@ -35,6 +35,9 @@ trait_ruler_babel_evil_spirit_r:0 "§R巴别塔的恶灵§!"
 trait_ruler_babel_evil_spirit_r_desc:0 "§R博士§!现在是一台战争机器.\t\t在这个机器眼里只有战争和胜利,\t\t除此之外的一切一概都不重要.\t\t\n§R博士§!§L将在和平状态的§!§G1年后§!§L转变为§!巴别塔的恶灵§L.\t\t§!"
 trait_ruler_doctor_healing:0 "正在治疗"
 trait_ruler_doctor_healing_desc:0 "这位领袖正在进行生理或心理上的治疗,\t\t在此期间大部分工作将交由临时的团队负责,\t\t这会造成一定量的行政效率低下。"
+leader_trait_meet_at_the_end:0 "$trait_scientist_meet_end$"
+leader_trait_meet_at_the_end_desc:0 "$trait_scientist_meet_end_desc$"
+
 # 总督 #
 leader_trait_biaozhunhua:0 "标准化"
 leader_trait_biaozhunhua_desc:0 "这位领袖倡导工作和生产的制度化和标准化.\t\t"
@@ -80,6 +83,26 @@ trait_scientist_meet_end:0 "在文明尽头相遇"
 trait_scientist_meet_end_desc:0 "§L在那用黑暗与星点光芒装饰过的文明尽头,\t\t我们也一样会再见面……§!"
 leader_trait_precise_calculation:0 "精密计算"
 leader_trait_precise_calculation_desc:0 "这位领袖在参与过的诸多实验中从没有犯过一点错误.\t\t"
+leader_trait_rhine_lab:0 "莱茵生命前总辖"
+leader_trait_rhine_lab_desc:0 "多年过去，仍有许多公民无法理解她的做法，克丽斯滕也拒绝了返回莱茵生命的请求，选择成为一名活跃在科研前线的科学家。即使岁月如梭，但她脑内的科学精神与科研方法永不过时。"
+leader_trait_rhine_lab_2:0 "$leader_trait_rhine_lab$"
+leader_trait_rhine_lab_2_desc:0 "$leader_trait_rhine_lab_desc$"
+leader_trait_rhine_lab_3:0 "$leader_trait_rhine_lab$"
+leader_trait_rhine_lab_3_desc:0 "$leader_trait_rhine_lab_desc$"
+leader_trait_unstopable_pioneer:0 "无畏的开拓者"
+leader_trait_unstopable_pioneer_desc:0 "克丽丝滕无疑是长久以来最伟大的科研工作者之一，她无惧一切挑战，敢于向未知发起冲锋。但有时不择手段的做法与让常人无法理解的超前想法还是在公众领域产生了些许不好的影响。"
+
+mod_pop_category_workers_physics_research_produces_add:0 "£pop_cat_worker£ $pop_cat_worker_plural$工人产出的£physics_research£ $physics_research$"
+mod_pop_category_specialists_physics_research_produces_add:0 "£pop_cat_specialist£ $pop_cat_specialist_plural$工人产出的£physics_research£ $physics_research$"
+mod_pop_category_rulers_physics_research_produces_add:0 "£pop_cat_ruler£ $pop_cat_ruler_plural$工人产出的£physics_research£ $physics_research$"
+mod_pop_category_workers_engineering_research_produces_add:0 "£pop_cat_worker£ $pop_cat_worker_plural$工人产出的£engineering_research£ $engineering_research$"
+mod_pop_category_specialists_engineering_research_produces_add:0 "£pop_cat_specialist£ $pop_cat_specialist_plural$工人产出的£engineering_research£ $engineering_research$"
+mod_pop_category_rulers_engineering_research_produces_add:0 "£pop_cat_ruler£ $pop_cat_ruler_plural$工人产出的£engineering_research£ $engineering_research$"
+
+
+
+
+
 # 舰队 #
 leader_trait_admiral_chivalry:0 "骑士精神"
 leader_trait_admiral_chivalry_desc:0 "这位领袖遵从着骑士精神的荣耀和信仰,\t\t并决定以骑士的意志战胜一切丑恶.\t\t"
@@ -339,3 +362,14 @@ START_SCREEN_ARK_2:0 "先民降临世界,\t\t带来了不同的种族和文化.\
 ## 泰拉星系初始设定 ##
 Tyra_system_NAME:0 "泰拉星系"
 Tyra_system_DESC:0 "泰拉亚人的母星所在的星系.\t\t\n\n$system_initializer_DESC$"
+
+
+
+## MESSAGE ##
+MESSAGE_ARK_TRAIT_UPGRADE_TITLE:0 "特质升级"
+MESSAGE_ARK_TRAIT_UPGRADE_KRISTEN_DESC:0 "[ark_leader_kristen.GetName]命定特质升级！"
+MESSAGE_ARK_TRAIT_UPGRADE_DOCTOR_DESC:0 "[ark_ruler_doctor.GetName]命定特质升级！"
+
+
+
+

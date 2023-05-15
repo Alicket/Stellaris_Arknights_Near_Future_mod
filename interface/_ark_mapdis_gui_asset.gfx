@@ -1283,4 +1283,55 @@ spriteTypes = {
 	# 	looping = yes
 	# 	play_on_show = yes
 	# }
+
+
+
+	##设置界面
+	spriteType = {#开启设置
+		name = "GFX_arkocean_settings_open"
+		texturefile = "gfx/interface/gui/ocean_settings/arkocean_button_settings.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#主面板背景
+		name = "GFX_arkocean_background_settings"
+		textureFile = "gfx/interface/gui/ocean_settings/arkocean_setting_bg.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {#主面板背景
+		name = "GFX_arkocean_settings_info"
+		textureFile = "gfx/interface/gui/ocean_settings/arkocean_setting_info.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {#小按钮
+		name = "GFX_arkocean_settings_button_small_not_activated"
+		texturefile = "gfx/interface/gui/ocean_settings/arkocean_setting_switch_not_activated.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#小按钮2
+		name = "GFX_arkocean_settings_button_small_activated"
+		texturefile = "gfx/interface/gui/ocean_settings/arkocean_setting_switch_activated.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {#退出
+		name = "GFX_arkocean_settings_button_exit"
+		texturefile = "gfx/interface/gui/ocean_settings/arkocean_setting_exit.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/gui/ocean_settings/arkocean_setting_exit_mask.dds"
+			animationtexturefile = "gfx/interface/gui/effect/arkocean_button_mould_effect.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 90
+			animationdelay = 0.0
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
 }

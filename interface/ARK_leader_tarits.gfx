@@ -1,0 +1,29 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ark_leader_admiral_admiral_chivalry"
+		texturefile = "gfx/interface/icons/traits/leader_trait_chivalry.dds"
+	}
+	spriteType = {
+		name = "GFX_ark_leader_trait_meet_at_the_end"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/leader_traits_ark_meet_at_the_end.dds"
+	}
+	spriteType = {
+		name = "GFX_ark_leader_trait_unstopable_pioneer"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/leader_traits_ark_unstopable_pioneer.dds"
+	}
+	spriteType = {
+		name = "GFX_ark_leader_trait_rhine_lab"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/leader_traits_ark_rhine_lab.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ark_leader_trait_ishar_mla"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/leader_traits_ishar_mla.dds"
+	}
+
+
+
+
+
+
+}

@@ -48,11 +48,16 @@
  NAME_Kjera:0 "耶拉"
  NAME_Eyjafjalla:0 "阿黛尔·瑙曼"
  NAME_Saria:0 "塞雷娅"
-
+ NAME_Kristen:0 "克丽丝滕·莱特"
 
 
  NAME_Rhodes_Island:0 "罗德岛"
 
  ark_arclight_one_object:0 "弧光一号"
- ark_arclight_one_object_desc:0 ""
- ark_arclight_one_object_tooltip:0 "$ark_arclight_one_object_desc$"
+ ark_arclight_one_object_desc:0 "“环形”“空间站”“外壳印有莱茵生命标识”，每一位泰拉人都记得它的形态，如果认不出来，那说明他的历史成绩不及格，以至于无法认出这第一座突破星荚的空间站——弧光一号。"
+ ark_arclight_one_object_tooltip:0 "弧光一号聚焦发生器"
+
+
+
+
+
