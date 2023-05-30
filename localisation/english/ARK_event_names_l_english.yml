@@ -7,8 +7,8 @@
  NAME_Columbia:0 "Columbia"
  NAME_Columbia_fleet:0 "Columbia Space Force"
  
- NAME_New_Reunion:0 "Riot group"
- NAME_Reunion_Rebel:0 "Infected rebels"
+ NAME_New_Reunion:0 "New Reunion"
+ NAME_Reunion_Rebel:0 "Reunion Rebel"
  NAME_Racists_Country:0 "Split countries"
  NAME_Racists_Rebel1:0 "Ursus rebels"
  NAME_Racists_Rebel2:0 "Siracusa rebels"
@@ -16,37 +16,48 @@
  NAME_Racists_Rebel4:0 "Columbia rebels"
  NAME_Racists_Rebel5:0 "Laterano rebels"
  NAME_Racists_Rebel6:0 "Kazimierz rebels"
- NAME_Racists_Rebel7:0 "Yen rebels"
+ NAME_Racists_Rebel7:0 "Yan rebels"
  NAME_Racists_Rebel8:0 "Higashi rebels"
  NAME_Racists_Rebel9:0 "Kazdel rebels"
 
  NAME_Doctor:0 "Doctor"		# 001 博士
  NAME_Kaltsit:0 "Kal'tsit"		# 003 凯尔希
- NAME_Closure:0 "Ada Church"		# 007 可露希尔
- NAME_Chen:0 "Ch'en Hui-chieh"		# 010 陈
+ NAME_Closure:0 "Closure"		# 007 可露希尔
+ NAME_Chen:0 "Ch'en"		# 010 陈
  NAME_Blaze_ark:0 "Blaze"		# 017 煌
- NAME_Silence:0 "Olivia Silence"		# 108 赫默
+ NAME_Silence:0 "Silence"		# 108 赫默
  NAME_W:0 "W"	# 113
  NAME_Dobermann:0 "Dobermann"	# 130 杜宾
- NAME_Astgenne:0 "Astgenne Urbica"	# 135 星源
- NAME_SilverAsh:0 "Enciodes Silverash"	# 172 银灰
+ NAME_Astgenne:0 "Astgenne"	# 135 星源
+ NAME_SilverAsh:0 "SilverAsh"	# 172 银灰
  NAME_Hellagur:0 "Hellagur"		# 188 赫拉格
- NAME_Gnosis:0 "Gnosis Edelweiss"	# 206 灵知
+ NAME_Gnosis:0 "Gnosis"	# 206 灵知
  NAME_Mostima:0 "Mostima"	# 213 莫斯提马
- NAME_Mayer:0 "Mayer Stony"		# 242 梅尔
+ NAME_Mayer:0 "Mayer"		# 242 梅尔
  NAME_Magallan:0 "Magallan"	# 248 麦哲伦
- NAME_Dur_nar:0 "Makayla Springthunder"	# 260 坚雷
- NAME_Astesia:0 "Astesia Urbica"	# 274 星极
- NAME_Swire:0 "Beatrix Schwire"	# 308 诗怀雅
+ NAME_Dur_nar:0 "Dur-nar"	# 260 坚雷
+ NAME_Astesia:0 "Astesia"	# 274 星极
+ NAME_Swire:0 "Swire"	# 308 诗怀雅
  NAME_Snowsant:0 "Snowsant"	# 383 雪雉
  NAME_Weedy:0 "Weedy"		# 400 温蒂
- NAME_Passenger:0 "Elliot Glover"	# 472 异客
- NAME_Horn:0 "Rita Skamandros"	# 4039 号角
- NAME_Dorothy:0 "Dorothy Franks"	# 4048 多萝西
+ NAME_Passenger:0 "Passenger"	# 472 异客
+ NAME_Horn:0 "Horn"	# 4039 号角
+ NAME_Dorothy:0 "Dorothy"	# 4048 多萝西
  NAME_Dumbness_Infinite:0 "Dumbness Infinite"	# 001
- NAME_kingslayer:0 "弑君者"
+ NAME_kingslayer:0 "Crownslayer"
  NAME_Kjera:0 "Kjera"
- NAME_Eyjafjalla:0 "Adele Nauman"
+ NAME_Eyjafjalla:0 "Eyjafjalla"
  NAME_Saria:0 "Saria"
+ NAME_Kristen:0 "Kristen Wright"
+
 
  NAME_Rhodes_Island:0 "Rhodes Island"
+
+ ark_arclight_one_object:0 "Arc-0I"
+ ark_arclight_one_object_desc:0 "A "Circular space station with Rhine Lab's logo stamped on its side," just the way how every Terran rememers it. If one fails to identify it, they must have failed their history class, for they could not even recognize the first spacecraft to ever break through the Starveil, Arc-0I"
+ ark_arclight_one_object_tooltip:0 "H.A.M.H.R.R. of Arc-0I"
+
+
+
+
+

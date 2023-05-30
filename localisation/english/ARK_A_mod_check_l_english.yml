@@ -1,0 +1,5 @@
+l_english:
+
+ark_mod_check.1.name:0 "Arknights mod conflict warning"
+ark_mod_check.1.desc:0 "It appears you have installed §B[Arknights]Near Future§! and §B[Arknights]The Crusade to Stellaris§! at the same time. To avoid §Rbugs and crashes§! caused by mod settings and storyline conflicts, it is highly recommended to disable one of them for a better gaming experience. Sorry for the inconvenience and thank you for your understanding."
+ark_mod_check.1.a:0 "Confirm"
