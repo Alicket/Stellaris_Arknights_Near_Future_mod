@@ -1,1 +1,6 @@
 l_english:
+
+origin_ark_tragedy_birth:0 "Birth of Tragedy"
+# origin_ark_tragedy_birth_desc:0 "This civilization did not enter the interstellar era by will but was instead forced to march toward the stars in the ordeal. They have yet to fully grasp their home galaxy. It seems they don't have what it takes to compete with the vast interstellar civilizations."
+origin_ark_tragedy_birth_desc:0 "$EMPIRE_DESIGN_arknight1_desc$"
+origin_tooltip_ark_tragedy_birth_effects:0 "At the beginning of the game, your §Hleaders§! already have §Ha certain levels§!.\nA chain of related events will occur.\nAdds the "Oripathy Latent Symptoms" trait to your species.\nStart with Talos as the home galaxy and Terra as the starting planet."
