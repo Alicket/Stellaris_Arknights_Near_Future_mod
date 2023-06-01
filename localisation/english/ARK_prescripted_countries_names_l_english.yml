@@ -1,10 +1,14 @@
 ﻿l_english:
-EMPIRE_DESIGN_arknight1:0 "Terra United Worlds"
-EMPIRE_DESIGN_arknight2:0 "Terra Order"
+ EMPIRE_DESIGN_arknight1:0 "Terra United World"
+ EMPIRE_DESIGN_arknight1_desc:0 "The ancestors came to the world, brought different races and cultures, and created the demihuman race of Terra. They thrive on the land ravaged by natural disasters, and use the §LOriginium§!, the product of natural disasters, to develop ethnic groups and societies. The development of Originium enabled civilization to enter the modern era smoothly, and a technology system based on Originium was established. "
+ EMPIRE_DESIGN_arknight2:0 "Terra Order"
+ EMPIRE_DESIGN_arknight2_desc:0 "The ancestors came to the world, brought different races and cultures, and created the demihuman race of Terra. They thrive on the land ravaged by natural disasters, and use the §LOriginium§!, the product of natural disasters, to develop ethnic groups and societies. The development of Originium enabled civilization to enter the modern era smoothly, and a technology system based on Originium was established. "
  PRESCRIPTED_ship_prefix_arknight1:0 "Terra"
  Terraman:0 "Terran"
  Terramen:0 "Terrans"
- PRESCRIPTED_adjective_arknight1:0 "Terra United Worlds"
+ PRESCRIPTED_adjective_arknight1:0 "Terra United World's"
+ PRESCRIPTED_adjective_arknight2:0 "Terra Order's"
  PRESCRIPTED_ruler_name_arknight1:0 "Kal'tsit"
  PRESCRIPTED_ruler_title_arknight1:0 "Doctor"
  PRESCRIPTED_ruler_title_female_arknight1:0 "Doctor"
+ 
