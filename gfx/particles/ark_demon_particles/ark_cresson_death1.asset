@@ -1,0 +1,297 @@
+particle={
+	name="ark_cresson_weapon_hit_file"
+	subsystem={
+		name="shockwave"
+		max_amount=100
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		spritesheet_animation=no
+		spritesheet_animation_loop=1.000000
+		local_space=yes
+		billboard=yes
+		hide=no
+		texture={
+			file="gfx/particles/rain.dds"
+			x=1
+			y=1
+			shader="ParticleAdditive"
+		}
+		color={
+			x={ 100 155 }
+			y=0
+			z=200
+			alpha=10000,grow
+		}
+		position={
+			x=0
+			y=0
+			z=0
+		}
+		start=0.5
+		duration=0.1
+		emitter_yaw=0
+		emitter_pitch=0
+		velocity_pitch=180
+		velocity_yaw={ 0 20 }
+		velocity={ 3 2 }
+		life={ 0.8 0 }
+		emission={ 100 0 }
+		size={ 1.5,REALGROW 1 }
+		particle_yaw={ 0 360 }
+		particle_pitch={ 0 360 }
+		rotation={ 0 360 }
+	}
+	subsystem={
+		name="center"
+		max_amount=100
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		spritesheet_animation=no
+		spritesheet_animation_loop=1.000000
+		local_space=yes
+		billboard=yes
+		hide=no
+		texture={
+			file="gfx/particles/glow.dds"
+			x=1
+			y=1
+			shader="ParticleAdditive"
+		}
+		color={
+			x=200
+			y=220
+			z=255
+			alpha=1000,flash_fade
+		}
+		position={
+			x=0
+			y=0
+			z=0
+		}
+		start=0
+		duration=0.1
+		emitter_yaw={ 0 0 }
+		emitter_pitch={ 0 0 }
+		velocity_pitch={ 0 180 }
+		velocity_yaw={ 90 0 }
+		life={ 0.3 0.2 }
+		emission=100
+		size={ 1 1 }
+		particle_yaw={ 0 10 }
+		particle_pitch={ 0 10 }
+		rotation={ 0 180 }
+		rotation_speed={ 20 0 }
+	}
+	subsystem={
+		name="particle"
+		max_amount=100
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		spritesheet_animation=no
+		spritesheet_animation_loop=1.000000
+		local_space=yes
+		billboard=yes
+		hide=no
+		texture={
+			file="gfx/particles/star_zoom_2.dds"
+			x=1
+			y=1
+			shader="ParticleAdditive"
+		}
+		color={
+			x={ 100 155 }
+			y=0
+			z=200
+			alpha=300,flash_fade
+		}
+		position={
+			x=0
+			y=0
+			z=0
+		}
+		start=0
+		duration=0.1
+		emitter_yaw={ 0 0 }
+		emitter_pitch={ 0 0 }
+		velocity_pitch=0
+		velocity_yaw=0
+		life={ 0.2 0.1 }
+		emission=100
+		size={ 12,grow 3 }
+		particle_yaw={ 0 360 }
+		particle_pitch={ 0 360 }
+		rotation={ 0 360 }
+		rotation_speed={ 20 0 }
+	}
+	subsystem={
+		name="ring"
+		max_amount=25
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		spritesheet_animation=no
+		spritesheet_animation_loop=1.000000
+		local_space=yes
+		billboard=yes
+		hide=no
+		texture={
+			file="gfx/particles/blast.dds"
+			x=1
+			y=1
+			shader="ParticleAdditive"
+		}
+		color={
+			x={ 100 155 }
+			y=0
+			z=200
+			alpha=50,flash_fade
+		}
+		position={
+			x=0
+			y=0
+			z=0
+		}
+		start=0
+		duration=0.1
+		emitter_yaw={ 0 0 }
+		emitter_pitch={ 0 0 }
+		velocity_pitch={ 0 180 }
+		velocity_yaw={ 90 0 }
+		life={ 0.5 0.2 }
+		emission=100
+		size={ 6,grow 3 }
+		particle_yaw={ 0 10 }
+		particle_pitch={ 0 10 }
+		rotation={ 0 180 }
+		rotation_speed={ 20 0 }
+	}
+	subsystem={
+		name="shockwave"
+		max_amount=100
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		spritesheet_animation=no
+		spritesheet_animation_loop=1.000000
+		local_space=no
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/eclipse.dds"
+			x=1
+			y=1
+			shader="ParticleAdditive"
+		}
+		color={
+			x={ 100 155 }
+			y=0
+			z=200
+			alpha=100,shockwave_fade
+		}
+		position={
+			x=0
+			y=0
+			z=0
+		}
+		start=0
+		duration=0.1
+		emitter_yaw={ 0 0 }
+		emitter_pitch={ 0 0 }
+		velocity_pitch={ 0 180 }
+		velocity_yaw={ 90 0 }
+		life={ 0.7 0 }
+		emission={ 100 0 }
+		size=10,spread
+		particle_yaw={ 0 10 }
+		particle_pitch={ 0 10 }
+		rotation={ 0 180 }
+		rotation_speed={ 20 0 }
+	}
+	animation={
+		name="flash_fade"
+		start=0
+		duration=1
+		repeat=no
+		minValue=0
+		maxValue=1
+		curve={
+			0 0 0.35294 1 0.84706 1 1 0 
+		}
+		op="MUL"
+		time="life"
+	}
+	animation={
+		name="grow"
+		start=0
+		duration=1
+		repeat=no
+		minValue=0
+		maxValue=1
+		curve={
+			0 1 1 0 
+		}
+		op="MUL"
+		time="life"
+	}
+	animation={
+		name="spread"
+		start=0
+		duration=1
+		repeat=no
+		minValue=0
+		maxValue=1
+		curve={
+			0 0 0.74412 0.14844 1 1 
+		}
+		op="MUL"
+		time="life"
+	}
+	animation={
+		name="shockwave_fade"
+		start=0
+		duration=1
+		repeat=no
+		minValue=0
+		maxValue=1
+		curve={
+			0 1 0.90294 1 1 0 
+		}
+		op="MUL"
+		time="life"
+	}
+	animation={
+		name="REALGROW"
+		start=0
+		duration=1
+		repeat=no
+		minValue=0
+		maxValue=1
+		curve={
+			0 0.19531 1 1 
+		}
+		op="MUL"
+		time="life"
+	}
+	force={
+		type="planar"
+		name="force0"
+		position={
+			0 0 0 
+		}
+		direction={
+			0 1 0 
+		}
+		local_force=yes
+		yaw=0
+		division=16
+		amount=5
+	}
+}

@@ -1,0 +1,93 @@
+
+entity = {
+	name = "ark_turret_empty_entity"
+	locator = { name = "turret_muzzle_01" 		position = { 0  0 	0 	} }
+}
+
+
+#BASE
+
+entity = {
+	name = "ark_demon_cresson_base_entity"
+	pdxmesh = "ark_demon_cresson_mesh"
+	cull_radius = 1.0
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 16 looping = no animation = "idle"
+		event = { time = 0 particle = "ark_cresson_base_particle" keep_particle = yes sound = { soundeffect = ark_demon_cresson_idle_sound } }
+	}
+	state = { name = "moving"		state_time = 16 animation = "idle"
+		event = { time = 0 particle = "ark_cresson_base_particle"	keep_particle = yes sound = { soundeffect = ark_demon_cresson_idle_sound } }
+	}
+
+	state = { name = "death"		state_time = 6 animation = "death"
+		event = { time = 0 particle = "ark_cresson_base_particle"	keep_particle = yes sound = { soundeffect = ark_demon_cresson_idle_sound } }
+		event = { trigger_once = yes sound = { soundeffect = "extra_dimensional_ship_death" } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_extra_dimensional_ship_death" } }
+	}
+}
+animation = {
+	name = "ark_demon_cresson_idle_animation"
+	file = "ark_demon_cresson_idle.anim"
+}
+animation = {
+	name = "ark_demon_cresson_death_animation"
+	file = "ark_demon_cresson_death.anim"
+}
+# MUZZLE FLASH
+
+entity = {
+	name = "ark_demon_cresson_muzzle_entity"
+	cull_radius = 1.0
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "ark_cresson_atk_particle" keep_particle = yes sound = { soundeffect = plasma_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_disruptor_fire" } }
+	}
+}
+
+# PROJECTILE
+
+entity = {
+	name = "ark_demon_cresson_projectile_entity"
+	pdxmesh = "railgun_tracer_round_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" }
+
+	scale = 1
+}
+
+
+# HIT EFFECT
+
+entity = {
+	name = "ark_demon_cresson_hit_entity"
+	cull_radius = 1.0
+
+	state = { name = "explode_med_hp" state_time = 5.0 looping = no
+		event = { time = 0.0 particle = "ark_cresson_hit_particle" sound = { soundeffect = kinectic_artillery_hit } }
+		event = { time = 0.5 trigger_once = yes sound = { soundeffect = "shield_hit" } }
+	}
+	default_state = "explode_med_hp"
+	scale = 2
+}
+
+entity = {
+	name = "ark_demon_cresson_shield_hit_entity"
+	cull_radius = 1.0
+
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "ark_cresson_hit_particle" }
+		event = { time = 0.0 particle = "projectile_medium_shield_hit_effect" }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } }
+		event = { time = 0.5 trigger_once = yes sound = { soundeffect = "shield_hit" } }
+	}
+	default_state = "explode_med_hp"
+	scale = 2
+}
+
+
+
+
