@@ -1,7 +1,7 @@
 trait_ARK_ocean_seaborn = {
 	cost = 3
 	sorting_priority = 20
-	initial = no
+	initial = yes
 	randomized = no
 	species_potential_add = {
 		always = no

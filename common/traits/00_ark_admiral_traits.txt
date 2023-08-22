@@ -9,6 +9,8 @@ leader_trait_admiral_chivalry = {
 		ship_disengage_chance_reduction = 0.1
 	}
 	leader_class = { admiral }
+	initial = no
+	randomized = no
 }
 # 舰船运维
 leader_trait_ship_operation_maintenance = {
@@ -27,7 +29,6 @@ leader_trait_ship_operation_maintenance = {
 			from = { species = { has_trait = trait_Originium_Arts } }
 		}
 	}
-	leader_trait = { admiral }
 	leader_class = { admiral }
 	opposites = { "leader_trait_fleet_logistician" }
 
@@ -51,7 +52,6 @@ leader_trait_jujizhuanjing = {
 			from = { species = { has_trait = trait_Originium_Arts } }
 		}
 	}
-	leader_trait = { admiral }
 	leader_class = { admiral }
 
 	ai_weight = {
@@ -75,7 +75,6 @@ leader_trait_emergency_appointment = {
 			from = { species = { has_trait = trait_Originium_Arts } }
 		}
 	}
-	leader_trait = { admiral }
 	leader_class = { admiral }
 	opposites = { "leader_trait_eager" }
 	randomized = no

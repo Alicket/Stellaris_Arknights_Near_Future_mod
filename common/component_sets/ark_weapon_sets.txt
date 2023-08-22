@@ -84,3 +84,17 @@ component_set = {		# 源能宏炮
 	icon = "GFX_ark_ship_part_mass_accelerator_2"
 	icon_frame = 1	
 }
+
+component_set = {		# 现实坍缩
+	key = "ARK_REALITY_COLLAPSE"
+
+	icon = "GFX_ark_ship_part_mass_accelerator_2"
+	icon_frame = 1
+}
+
+component_set = {		# 虚空凝聚
+	key = "ARK_VOID_CONDENSATION"
+
+	icon = "GFX_ark_ship_part_mass_accelerator_2"
+	icon_frame = 1
+}

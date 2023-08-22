@@ -6,24 +6,100 @@ entity = {
 
 
 #BASE
-
+entity = {
+	name = "ark_cresson_base_idle_particle_entity"
+	#default_state = "idle"
+	state = { name = "idle"
+		event = { time = 0 particle = "ark_cresson_base_particle" keep_particle = yes trigger_once = yes }
+	}
+	#scale = 40
+}
+entity = {
+	name = "ark_cresson_base_moving_particle_entity"
+	#default_state = "moving"
+	state = { name = "moving"
+		event = { time = 0 particle = "ark_cresson_base_particle" keep_particle = yes trigger_once = yes }
+	}
+	#scale = 40
+}
+entity = {
+	name = "ark_cresson_base_attack_particle_entity"
+	#default_state = "idle"
+	state = { name = "attack"
+		event = { time = 0 particle = "ark_cresson_base_particle" keep_particle = yes trigger_once = yes }
+	}
+	#scale = 40
+}
+entity = {
+	name = "ark_cresson_base_death_particle_entity"
+	#default_state = "idle"
+	state = { name = "death"
+		event = { time = 0 particle = "ark_cresson_base_particle" keep_particle = yes trigger_once = yes }
+	}
+	#scale = 40
+}
 entity = {
 	name = "ark_demon_cresson_base_entity"
 	pdxmesh = "ark_demon_cresson_mesh"
 	cull_radius = 1.0
+	#scale = 40
 
 	default_state = "idle"
-	state = { name = "idle" state_time = 16 looping = no animation = "idle"
-		event = { time = 0 particle = "ark_cresson_base_particle" keep_particle = yes sound = { soundeffect = ark_demon_cresson_idle_sound } }
+	state = { name = "idle" looping = yes animation = "idle" state_time = 16
+		event = {
+			node = "ship_main"
+			time = 0
+			#particle = "ark_cresson_base_particle"
+			#keep_particle = yes
+			#trigger_once = yes
+			sound = { soundeffect = ark_demon_cresson_idle_sound }
+		}
 	}
-	state = { name = "moving"		state_time = 16 animation = "idle"
-		event = { time = 0 particle = "ark_cresson_base_particle"	keep_particle = yes sound = { soundeffect = ark_demon_cresson_idle_sound } }
+	state = { name = "moving"	looping = yes	state_time = 16 animation = "idle"
+		event = {
+			node = "ship_main"
+			time = 0
+			#particle = "ark_cresson_base_particle"
+			#keep_particle = yes
+			#trigger_once = yes
+			sound = { soundeffect = ark_demon_cresson_idle_sound }
+		}
 	}
-
-	state = { name = "death"		state_time = 6 animation = "death"
-		event = { time = 0 particle = "ark_cresson_base_particle"	keep_particle = yes sound = { soundeffect = ark_demon_cresson_idle_sound } }
-		event = { trigger_once = yes sound = { soundeffect = "extra_dimensional_ship_death" } }
+	state = { name = "attack"	looping = yes	state_time = 16 animation = "idle"
+		event = {
+			node = "ship_main"
+			time = 0
+			#particle = "ark_cresson_base_particle"
+			#keep_particle = yes
+			#trigger_once = yes
+			sound = { soundeffect = ark_demon_cresson_idle_sound }
+		}
+	}
+	state = { name = "death"	 state_time = 20	 animation = "death" looping = no #base:6s
+		event = {
+			node = "ship_main"
+			time = 0
+			particle = "ark_cresson_base_particle"
+			keep_particle = yes
+			trigger_once = yes
+			sound = { soundeffect = ark_demon_cresson_idle_sound }
+		}
+		event = { #爆炸 5.6s lag1.6s
+			node = "root"
+			time = 4
+			particle = "ark_cresson_death1_particle"
+			keep_particle = yes
+			trigger_once = yes
+		}
+		event = { trigger_once = yes time = 5.6 sound = { soundeffect = "extra_dimensional_ship_death" } }
 		event = { trigger_once = yes sound = { soundeffect = "distance_extra_dimensional_ship_death" } }
+		event = { trigger_once = yes time = 5.6 sound = { soundeffect = "distance_extra_dimensional_ship_death" } }
+	}
+	attach = {
+		"ship_main" = "ark_cresson_base_idle_particle_entity"
+		"ship_main" = "ark_cresson_base_moving_particle_entity"
+		"ship_main" = "ark_cresson_base_attack_particle_entity"
+		#"ship_main" = "ark_cresson_base_death_particle_entity"
 	}
 }
 animation = {
@@ -39,7 +115,7 @@ animation = {
 entity = {
 	name = "ark_demon_cresson_muzzle_entity"
 	cull_radius = 1.0
-
+	scale = 20
 	default_state = "idle"
 	state = { name = "idle" state_time = 7 looping = no
 		event = { time = 0 particle = "ark_cresson_atk_particle" keep_particle = yes sound = { soundeffect = plasma_fire } }
@@ -56,7 +132,7 @@ entity = {
 	default_state = "idle"
 	state = { name = "idle" }
 
-	scale = 1
+	scale = 4
 }
 
 
@@ -71,7 +147,7 @@ entity = {
 		event = { time = 0.5 trigger_once = yes sound = { soundeffect = "shield_hit" } }
 	}
 	default_state = "explode_med_hp"
-	scale = 2
+	scale = 10
 }
 
 entity = {
@@ -85,7 +161,7 @@ entity = {
 		event = { time = 0.5 trigger_once = yes sound = { soundeffect = "shield_hit" } }
 	}
 	default_state = "explode_med_hp"
-	scale = 2
+	scale = 10
 }
 
 

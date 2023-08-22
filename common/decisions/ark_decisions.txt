@@ -56,7 +56,32 @@ decision_end_biochemical_protection = {
 		weight = 1
 	}
 }
-#海嗣：中止殖民地进化
+#海嗣：开始殖民地进化
+decision_ark_seaborn_start_evolution = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = descision_progenitor_empty
+	potential = {
+		owner = {
+			has_trait = trait_ARK_ocean_seaborn
+			NOT = { has_country_flag = arkocean_option_disable_planet_evolution }
+		}
+	}
+	effect = {
+		hidden_effect = {
+			planet_event = {
+				id = ark_seaborn_base.20
+			}
+		}
+	}
+	resources = {
+		category = decisions
+		cost = {
+			food = 1000
+		}
+	}
+}
+#海嗣：暂停殖民地进化
 decision_ark_seaborn_disable_evolution = {
 	owned_planets_only = yes
 	sound = event_administrative_work

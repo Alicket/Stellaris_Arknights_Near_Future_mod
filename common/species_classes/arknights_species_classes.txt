@@ -14,7 +14,7 @@ Arknight = {
 	portraits = {
 		"arknights_npc"
 		"arknights_s12LEADER_NPCpop"
-		"arknights_s1LEADER_NPCpop"
+		#"arknights_s1LEADER_NPCpop"
 	}
 
 	graphical_culture = arknights_01

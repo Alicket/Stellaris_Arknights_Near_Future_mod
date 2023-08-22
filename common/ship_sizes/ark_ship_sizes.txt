@@ -1,0 +1,32 @@
+ark_size_demon_cresson = {
+	graphical_culture = no
+	can_be_inspected = no
+	max_speed = @speed_default
+	acceleration = 1
+	rotation_speed = 0.1
+	collision_radius = 7
+	modifier = {
+		ships_upkeep_mult = -1
+		ship_shield_add = 100000
+		ship_armor_add = 100000
+	}
+	max_hitpoints = 200000
+	size_multiplier = 32
+	fleet_slot_size = 4
+	section_slots = { "mid" = { locator = "ship_main" } }
+	num_target_locators = 5
+	is_space_station = no
+	icon = ship_size_ark_collapse32
+	entity = "ark_demon_cresson_base_entity"
+	class = shipclass_military
+	is_designable = no
+
+	components_add_to_cost = no
+	#resources = {
+	#	category = ships
+	#	cost = {
+	#		alloys = 1
+	#		minerals = 1
+	#	}
+	#}
+}

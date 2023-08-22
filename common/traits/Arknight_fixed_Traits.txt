@@ -1,4 +1,4 @@
-trait_latent_oripathy = {	# 源石病潜势
+trait_latent_oripathy = {	# 源石锟斤拷潜锟斤拷
 	cost = 2
 	allowed_archetypes = { BIOLOGICAL }
 
@@ -11,6 +11,7 @@ trait_latent_oripathy = {	# 源石病潜势
 	species_possible_merge_add = {
 		always = no
 	}
+
 	randomized = no
 	advanced_trait = no
 	icon = "gfx/interface/icons/traits/trait_latent_oripathy.dds"
@@ -26,7 +27,7 @@ trait_latent_oripathy = {	# 源石病潜势
 	}
 }
 
-trait_Originium_Arts = {	# 源石技艺
+trait_Originium_Arts = {	# 源石锟斤拷锟斤拷
 	cost = -1
 	allowed_archetypes = { BIOLOGICAL }
 
@@ -57,7 +58,7 @@ trait_Originium_Arts = {	# 源石技艺
 	}
 }
 
-trait_acute_oripathy = {	# 急性源石病
+trait_acute_oripathy = {	# 锟斤拷锟斤拷源石锟斤拷
 	cost = -2
 	allowed_archetypes = { BIOLOGICAL }
 	species_potential_add = {

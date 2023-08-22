@@ -157,4 +157,23 @@ spriteTypes = {
 		name = "GFX_icon_councilor_ark_doctor"
 		texturefile = "gfx/interface/council_view/icon_councilor_ark_doctor.dds"
 	}
+
+
+	#邪魔ship_size
+	spriteType = {
+		name = "GFX_ship_size_ark_collapse32"
+		texturefile = "gfx/interface/icons/ship_parts/ship_size_ark_collapse32.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_size_ark_collapse32_top"
+		texturefile = "gfx/interface/icons/ship_parts/ship_size_ark_collapse32_top.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_size_ark_collapse32_top_damaged"
+		texturefile = "gfx/interface/icons/ship_parts/ship_size_ark_collapse32_top_damaged.dds"
+	}
+	spriteType = {
+		name = "GFX_text_ship_size_ark_collapse32"
+		texturefile = "gfx/interface/icons/text_icons/icon_text_military_size_ark_collapse32.dds"
+	}
 }

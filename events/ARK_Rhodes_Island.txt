@@ -134,12 +134,12 @@ country_event = {
 		}
 		text = ark_rhodes_island.3.3.desc
 	}
-	desc = {
-		trigger = {
-			has_origin = origin_ark_tragedy_birth
-		}
-		text = ark_rhodes_island.3.4.desc
-	}
+	#desc = {
+	#	trigger = {
+	#		has_origin = origin_ark_tragedy_birth
+	#	}
+	#	text = ark_rhodes_island.3.4.desc
+	#}
 	
 	diplomatic = yes
 	

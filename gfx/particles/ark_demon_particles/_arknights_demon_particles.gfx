@@ -2,164 +2,31 @@
 #护卫舰尾焰
 objectTypes = {
 	pdxparticle = {
-		name="arknights_flat1_exhaust_moving"
-		type = "arknights_flat1_exhaust_moving_file"
+		name="ark_cresson_base_particle"
+		type = "ark_demon_cresson_base_file"
 
-		scale = 0.8
+		scale = 50
 	}
-}
-
-objectTypes = {
 	pdxparticle = {
-		name="arknights_flat1_exhaust_idle"
-		type = "arknights_flat1_exhaust_idle_file"
+		name="ark_cresson_atk_particle"
+		type = "ark_cresson_weapon_atk_file"
 
-		scale = 0.6
+		scale = 1
 	}
-}
-#驱逐舰尾焰
-objectTypes = {
 	pdxparticle = {
-		name="arknights_destroyer_exhaust_idle"
-		type = "generic_exhaust_idle_circle_file"
+		name="ark_cresson_hit_particle"
+		type = "ark_cresson_weapon_hit_file"
 
-		scale = 1.5
+		scale = 1
 	}
-}
-
-objectTypes = {
 	pdxparticle = {
-		name="arknights_destroyer_exhaust_moving"
-		type = "generic_exhaust_circle_moving_effect_file"
+		name="ark_cresson_death1_particle"
+		type = "ark_cresson_death1_file"
 
-		scale = 1.5
+		scale = 1
+
 	}
-}
-#巡洋舰尾焰
-objectTypes = {
-	pdxparticle = {
-		name="arknights_cruiser_exhaust_idle"
-		type = "generic_exhaust_idle_circle_file"
 
-		scale = 0.5
-	}
-}
 
-objectTypes = {
-	pdxparticle = {
-		name="arknights_cruiser_exhaust_moving"
-		type = "generic_exhaust_circle_moving_effect_file"
 
-		scale = 0.6
-	}
-}
-#战列舰尾焰
-objectTypes = {
-	pdxparticle = {
-		name="arknights_battleship_exhaust_moving"
-		type = "arknights_flat1_exhaust_moving_file"
-
-		scale = 2.0
-	}
-}
-
-objectTypes = {
-	pdxparticle = {
-		name="arknights_battleship_exhaust_idle"
-		type = "arknights_flat1_exhaust_idle_file"
-
-		scale = 1.7
-	}
-}
-#泰坦尾焰
-objectTypes = {
-	pdxparticle = {
-		name="arknights_titan_exhaust_moving"
-		type = "arknights_titan_exhaust_moving_file"
-
-		scale = 3.0
-	}
-}
-
-objectTypes = {
-	pdxparticle = {
-		name="arknights_titan_exhaust_idle"
-		type = "generic_exhaust_idle_circle_file"
-
-		scale = 2.7
-	}
-}
-#主宰尾焰
-objectTypes = {
-	pdxparticle = {
-		name="arknights_juggernaut_exhaust_moving"
-		type = "arknights_flat1_exhaust_moving_file"
-
-		scale = 2.5
-	}
-}
-
-objectTypes = {
-	pdxparticle = {
-		name="arknights_juggernaut_exhaust_idle"
-		type = "arknights_flat1_exhaust_idle_file"
-
-		scale = 2.2
-	}
-}
-#巨像尾焰
-objectTypes = {
-	pdxparticle = {
-		name="arknights_colossus_exhaust_moving"
-		type = "arknights_flat1_exhaust_moving_file"
-
-		scale = 5
-	}
-}
-
-objectTypes = {
-	pdxparticle = {
-		name="arknights_colossus_exhaust_idle"
-		type = "arknights_flat1_exhaust_idle_file"
-
-		scale = 4.7
-	}
-}
-
-#运输舰尾焰
-objectTypes = {
-	pdxparticle = {
-		name="arknights_transport_exhaust_idle"
-		type = "generic_exhaust_idle_circle_file"
-
-		scale = 0.35
-	}
-}
-
-objectTypes = {
-	pdxparticle = {
-		name="arknights_transport_exhaust_moving"
-		type = "generic_exhaust_circle_moving_effect_file"
-
-		scale = 0.45
-	}
-}
-
-#殖民船尾焰
-objectTypes = {
-	pdxparticle = {
-		name="arknights_colonizer_exhaust_idle"
-		type = "generic_exhaust_idle_circle_file"
-
-		scale = 0.55
-	}
-}
-
-objectTypes = {
-	pdxparticle = {
-		name="arknights_colonizer_exhaust_moving"
-		type = "generic_exhaust_circle_moving_effect_file"
-
-		scale = 0.65
-	}
 }

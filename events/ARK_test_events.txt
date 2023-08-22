@@ -1,0 +1,56 @@
+namespace = ark_test_evt
+
+planet_event = {
+	id = ark_test_evt.1
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		create_country = {
+			name = "NAME_ark_demon_country"
+			type = guardian_scavenger_bot
+			flag = {
+				icon = {
+					category = "spherical"
+					file = "flag_spherical_4.dds"
+				}
+				background= {
+					category = "backgrounds"
+					file = "00_solid.dds"
+				}
+				colors={
+					"dark_blue"
+					"dark_blue"
+					"null"
+					"null"
+				}
+			}
+		}
+		last_created_country = {
+			save_global_event_target_as = ark_demon_cresson_country
+		}
+		event_target:ark_demon_cresson_country = {
+			create_fleet = {
+				name = "NAME_ark_gardener"
+				settings = {
+					spawn_debris = no
+					#is_boss = yes
+				}
+
+				effect = {
+					set_owner = event_target:ark_demon_cresson_country
+					create_ship = {
+						name = "NAME_ark_high_density_collapsed_body"
+						design = "NAME_ark_high_density_collapsed_body"
+					}
+					set_location = root
+					set_fleet_stance = aggressive
+					set_aggro_range_measure_from = self
+					set_aggro_range = 50
+					queue_actions = {
+
+					}
+				}
+			}
+		}
+	}
+}

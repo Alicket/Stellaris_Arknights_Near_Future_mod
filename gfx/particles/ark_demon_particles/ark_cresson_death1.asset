@@ -1,50 +1,7 @@
 particle={
-	name="ark_cresson_weapon_hit_file"
+	name="ark_cresson_death1_file"
 	subsystem={
-		name="shockwave"
-		max_amount=100
-		slave_particles=0
-		emitter_type="point"
-		invert=no
-		trail=no
-		spritesheet_animation=no
-		spritesheet_animation_loop=1.000000
-		local_space=yes
-		billboard=yes
-		hide=no
-		texture={
-			file="gfx/particles/rain.dds"
-			x=1
-			y=1
-			shader="ParticleAdditive"
-		}
-		color={
-			x={ 100 155 }
-			y=0
-			z=200
-			alpha=10000,grow
-		}
-		position={
-			x=0
-			y=0
-			z=0
-		}
-		start=0.5
-		duration=0.1
-		emitter_yaw=0
-		emitter_pitch=0
-		velocity_pitch=180
-		velocity_yaw={ 0 20 }
-		velocity={ 3 2 }
-		life={ 0.8 0 }
-		emission={ 100 0 }
-		size={ 1.5,REALGROW 1 }
-		particle_yaw={ 0 360 }
-		particle_pitch={ 0 360 }
-		rotation={ 0 360 }
-	}
-	subsystem={
-		name="center"
+		name="center_SEC"
 		max_amount=100
 		slave_particles=0
 		emitter_type="point"
@@ -65,22 +22,22 @@ particle={
 			x=200
 			y=220
 			z=255
-			alpha=1000,flash_fade
+			alpha=100,flash_fade
 		}
 		position={
 			x=0
 			y=0
 			z=0
 		}
-		start=0
+		start=1.5
 		duration=0.1
 		emitter_yaw={ 0 0 }
 		emitter_pitch={ 0 0 }
 		velocity_pitch={ 0 180 }
 		velocity_yaw={ 90 0 }
-		life={ 0.3 0.2 }
+		life={ 0.2 0.1 }
 		emission=100
-		size={ 1 1 }
+		size={ 50 1 }
 		particle_yaw={ 0 10 }
 		particle_pitch={ 0 10 }
 		rotation={ 0 180 }
@@ -108,7 +65,7 @@ particle={
 			x={ 100 155 }
 			y=0
 			z=200
-			alpha=300,flash_fade
+			alpha=1000,flash_fade
 		}
 		position={
 			x=0
@@ -116,14 +73,14 @@ particle={
 			z=0
 		}
 		start=0
-		duration=0.1
+		duration=1
 		emitter_yaw={ 0 0 }
 		emitter_pitch={ 0 0 }
 		velocity_pitch=0
 		velocity_yaw=0
-		life={ 0.2 0.1 }
-		emission=100
-		size={ 12,grow 3 }
+		life={ 1 0.1 }
+		emission={ 25 10 }
+		size={ 200,grow 3 }
 		particle_yaw={ 0 360 }
 		particle_pitch={ 0 360 }
 		rotation={ 0 360 }
@@ -131,46 +88,88 @@ particle={
 	}
 	subsystem={
 		name="ring"
-		max_amount=25
+		max_amount=100
 		slave_particles=0
 		emitter_type="point"
 		invert=no
 		trail=no
 		spritesheet_animation=no
 		spritesheet_animation_loop=1.000000
-		local_space=yes
-		billboard=yes
+		local_space=no
+		billboard=no
 		hide=no
 		texture={
-			file="gfx/particles/blast.dds"
+			file="gfx/particles/chromatic_halo_2.dds"
 			x=1
 			y=1
 			shader="ParticleAdditive"
 		}
 		color={
-			x={ 100 155 }
-			y=0
-			z=200
-			alpha=50,flash_fade
+			x={ 255 0 }
+			y=255
+			z=255
+			alpha=100,RING_ALPHA
 		}
 		position={
 			x=0
 			y=0
 			z=0
 		}
-		start=0
+		start=1.6
 		duration=0.1
 		emitter_yaw={ 0 0 }
 		emitter_pitch={ 0 0 }
 		velocity_pitch={ 0 180 }
 		velocity_yaw={ 90 0 }
-		life={ 0.5 0.2 }
-		emission=100
-		size={ 6,grow 3 }
-		particle_yaw={ 0 10 }
-		particle_pitch={ 0 10 }
-		rotation={ 0 180 }
+		life={ 3 0 }
+		emission={ 25 0 }
+		size=400,RING_GROW
+		particle_yaw={ 0 360 }
+		particle_pitch={ 90 33 }
+		rotation={ 0 360 }
 		rotation_speed={ 20 0 }
+	}
+	subsystem={
+		name="SPREAD_PARTICLES"
+		max_amount=100
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		spritesheet_animation=no
+		spritesheet_animation_loop=1.000000
+		local_space=no
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/rain.dds"
+			x=1
+			y=1
+			shader="ParticleAdditive"
+		}
+		color={
+			x={ 180 155 }
+			y=160
+			z=255
+			alpha=100,RING_ALPHA
+		}
+		position={
+			x=0
+			y=0
+			z=0
+		}
+		start=1.5
+		duration=0.1
+		emitter_yaw={ 0 0 }
+		emitter_pitch={ 0 0 }
+		velocity_pitch={ 0 180 }
+		velocity_yaw={ 90 0 }
+		life={ 5 0 }
+		emission={ 100 75 }
+		size=200,RING_GROW
+		particle_yaw={ 0 360 }
+		particle_pitch={ 0 360 }
+		rotation={ 0 360 }
 	}
 	subsystem={
 		name="shockwave"
@@ -185,16 +184,59 @@ particle={
 		billboard=no
 		hide=no
 		texture={
-			file="gfx/particles/eclipse.dds"
+			file="gfx/particles/cloud_distorted_1.dds"
 			x=1
 			y=1
 			shader="ParticleAdditive"
 		}
 		color={
-			x={ 100 155 }
+			x={ 180 30 }
+			y={ 180 30 }
+			z={ 255 30 }
+			alpha=20,shockwave_fade
+		}
+		position={
+			x=0
 			y=0
-			z=200
-			alpha=100,shockwave_fade
+			z=0
+		}
+		start=1.5
+		duration=0.1
+		emitter_yaw={ 0 0 }
+		emitter_pitch={ 0 0 }
+		velocity_pitch={ 0 180 }
+		velocity_yaw={ 90 0 }
+		life={ 4 0 }
+		emission={ 100 0 }
+		size=350,RING_GROW
+		particle_yaw={ 0 10 }
+		particle_pitch={ 90 30 }
+		rotation={ 0 180 }
+		rotation_speed={ 20 0 }
+	}
+	subsystem={
+		name="center"
+		max_amount=100
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		spritesheet_animation=no
+		spritesheet_animation_loop=1.000000
+		local_space=yes
+		billboard=yes
+		hide=no
+		texture={
+			file="gfx/particles/glow.dds"
+			x=1
+			y=1
+			shader="ParticleAdditive"
+		}
+		color={
+			x=200
+			y=220
+			z=255
+			alpha=100,flash_fade
 		}
 		position={
 			x=0
@@ -207,9 +249,9 @@ particle={
 		emitter_pitch={ 0 0 }
 		velocity_pitch={ 0 180 }
 		velocity_yaw={ 90 0 }
-		life={ 0.7 0 }
-		emission={ 100 0 }
-		size=10,spread
+		life={ 1.5 0.2 }
+		emission=10
+		size={ 80 1 }
 		particle_yaw={ 0 10 }
 		particle_pitch={ 0 10 }
 		rotation={ 0 180 }
@@ -242,19 +284,6 @@ particle={
 		time="life"
 	}
 	animation={
-		name="spread"
-		start=0
-		duration=1
-		repeat=no
-		minValue=0
-		maxValue=1
-		curve={
-			0 0 0.74412 0.14844 1 1 
-		}
-		op="MUL"
-		time="life"
-	}
-	animation={
 		name="shockwave_fade"
 		start=0
 		duration=1
@@ -268,14 +297,27 @@ particle={
 		time="life"
 	}
 	animation={
-		name="REALGROW"
+		name="RING_GROW"
 		start=0
 		duration=1
 		repeat=no
 		minValue=0
 		maxValue=1
 		curve={
-			0 0.19531 1 1 
+			0 0 1 1 
+		}
+		op="MUL"
+		time="life"
+	}
+	animation={
+		name="RING_ALPHA"
+		start=0
+		duration=1
+		repeat=no
+		minValue=0
+		maxValue=1
+		curve={
+			0 1 0.27353 0.32031 1 0 
 		}
 		op="MUL"
 		time="life"

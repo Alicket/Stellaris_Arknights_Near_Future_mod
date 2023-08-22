@@ -66,3 +66,20 @@ soundeffect = {
 	}
 	#volume = 0.5
 }
+
+
+soundeffect = {
+	name = ark_demon_cresson_idle_sound
+	sounds = {
+		sound = sfx_amb_nebula_turbulent_01
+	}
+	random_sound_when_looping = no
+	falloff = falloff_fleet
+	volume = 0.4
+	loop = yes
+	max_audible = 2
+	max_audible_behaviour = fail
+	volume_random_offset = { -0.05 0.05 }
+	is3d = yes
+
+}

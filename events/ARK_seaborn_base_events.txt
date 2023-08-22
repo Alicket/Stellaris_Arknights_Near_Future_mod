@@ -14,7 +14,6 @@ country_event = {#所有领袖添加特殊特质
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
-		has_country_flag = arknights_ocean_country
 		has_trait = trait_ARK_ocean_seaborn
 		NOT = { has_country_flag = synthetic_empire }
 	}
@@ -151,20 +150,20 @@ planet_event = {
 		}
 	}
 	immediate = {
-		if = {
-			limit = {
-				OR = {
-					is_planet_class = pc_city
-					is_planet_class = pc_habitat
-					is_planet_class = pc_ringworld_habitable
-					is_planet_class = pc_shattered_ring_habitable
-					is_planet_class = pc_gaia
-					is_planet_class = pc_relic
-				}
-			}
-			set_planet_flag = ark_ocean_col_evo_special
-		}
-		else = {
+		#if = {
+		#	limit = {
+		#		OR = {
+		#			is_planet_class = pc_city
+		#			is_planet_class = pc_habitat
+		#			is_planet_class = pc_ringworld_habitable
+		#			is_planet_class = pc_shattered_ring_habitable
+		#			is_planet_class = pc_gaia
+		#			is_planet_class = pc_relic
+		#		}
+		#	}
+		#	set_planet_flag = ark_ocean_col_evo_special
+		#}
+		#else = {
 			set_variable = {
 				which = var_ark_ocean_colony_evolution
 				value = -200
@@ -205,7 +204,7 @@ planet_event = {
 					52 = {}
 				}
 			}	
-		}
+		#}
 	}
 }
 country_event = { #完美家园 殖民时变量+394
@@ -285,7 +284,7 @@ country_event = {#每月触发，跳板到planet_event，已完成进化或手�
 }
 
  #############################################################################
-####								核心事件								####
+####								核心事件									####
  #############################################################################
 
 planet_event = { #每月变量增加，并检测变量数值添加或删除flag/modifier，抬头提醒阶段性变化
@@ -389,7 +388,7 @@ planet_event = { #每月变量增加，并检测变量数值添加或删除flag/
 				}
 				check_variable = {
 					which = var_ark_ocean_colony_evolution
-					value < 100
+					value < 200
 				}
 				has_planet_flag = ark_ocean_col_evo_start
 			}
@@ -406,7 +405,7 @@ planet_event = { #每月变量增加，并检测变量数值添加或删除flag/
 			limit = {
 				check_variable = {
 					which = var_ark_ocean_colony_evolution
-					value >= 100
+					value >= 200
 				}
 				has_planet_flag = ark_ocean_col_evo_start
 			}
@@ -439,7 +438,7 @@ planet_event = { #每月变量增加，并检测变量数值添加或删除flag/
 			limit = {
 				check_variable = {
 					which = var_ark_ocean_colony_evolution
-					value >= 100
+					value >= 200
 				}
 				has_planet_flag = ark_ocean_col_evo_mid
 			}

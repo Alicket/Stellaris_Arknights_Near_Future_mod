@@ -6,3 +6,49 @@ ship_design = {
 		slot = "mid"
 	}
 }
+
+ship_design = {
+	name = "NAME_ark_high_density_collapsed_body"
+	ship_size = ark_size_demon_cresson
+	is_event_design = yes
+
+	section = {
+		template = "ark_demon_cresson_section"
+		slot = "mid"
+
+		#component = {
+		#	slot = "TITAN_01"
+		#	template = "invisible_titanic_fixed"
+		#}
+		component = {
+			slot = "LARGE_01"
+			template = "ARK_REALITY_COLLAPSE"
+		}
+		#component = {
+		#	slot = "LARGE_02"
+		#	template = "ARK_REALITY_COLLAPSE"
+		#}
+		#component = {
+		#	slot = "LARGE_03"
+		#	template = "ARK_REALITY_COLLAPSE"
+		#}
+		#component = {
+		#	slot = "LARGE_04"
+		#	template = "ARK_REALITY_COLLAPSE"
+		#}
+		#component = {
+		#	slot = "PD_01"
+		#	template = "ARK_VOID_CONDENSATION"
+		#}
+		#component = {
+		#	slot = "PD_02"
+		#	template = "ARK_VOID_CONDENSATION"
+		#}
+	}
+
+	required_component = "HYPER_DRIVE_3"
+	required_component = "COMBAT_COMPUTER_LINE_SAPIENT"
+	required_component = "BATTLESHIP_COLD_FUSION_REACTOR"
+	required_component = "SHIP_THRUSTER_3"
+	required_component = "SENSOR_3"
+}

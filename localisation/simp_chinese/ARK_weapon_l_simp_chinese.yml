@@ -127,3 +127,12 @@ ARK_COMPUTER_GHOST_BASIC_DESC:0 "请§Y不要§!在装备有§R基轴武器§!�
 ARK_COMPUTER_GHOST_ADVANCED_DESC:0 "请§Y不要§!在装备有§R基轴武器§!的飞船上使用!\t\t"
 ARK_COMPUTER_GHOST_SAPIENT_DESC:0 "请§Y不要§!在装备有§R基轴武器§!的飞船上使用!\t\t"
 GHOST_BEHAVIOR_DESC:0 "§H幽灵战术：§!舰船将不受阻挡地移动到要求的部署地点.\t\t"
+
+ARK_REALITY_COLLAPSE:0 "现实坍缩"
+ARK_VOID_CONDENSATION:0 "虚空凝聚"
+ark_size_demon_cresson:0 "高密度坍缩体"
+ark_size_demon_cresson_plural:0 "高密度坍缩体"
+ark_demon_cresson_section:0 "高密度坍缩体"
+NAME_ark_demon_country:0 "邪魔"
+NAME_ark_high_density_collapsed_body:0 "$NAME_ark_gardener$"
+NAME_ark_gardener:0 "“园艺师”"

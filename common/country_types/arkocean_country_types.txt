@@ -1,5 +1,5 @@
 Ishar_mla = {
-	show_in_contacts_list = no
+	show_in_contacts_list = yes
 	minimalist_contacts_list_profile = yes
 	share_communications = no
 	default_ships = no

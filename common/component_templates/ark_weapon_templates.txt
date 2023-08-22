@@ -1109,3 +1109,73 @@ weapon_component_template = {
 		weight = 1
 	}
 }
+
+#园丁 现实坍缩
+weapon_component_template = {
+	key = "ARK_REALITY_COLLAPSE"
+	size = large
+	type = instant
+
+	icon = "GFX_ark_ship_part_disruptor2_1"
+	icon_frame = 1
+	entity = "ark_turret_empty_entity"
+
+	power = 0
+	damage = { min = 1 max = 1 }
+	hull_damage = 1
+	shield_damage = 1
+	shield_penetration = 1
+	armor_damage = 2
+	armor_penetration = 0
+	windup = { min = 2 max = 20 }
+	total_fire_time = 50
+	range = 240
+	accuracy = 1.0
+	tracking = 0.3
+	prio_projectile = yes
+	hidden = yes
+	#prerequisites = { "tech_ark_disruptors" }
+	component_set = "ARK_REALITY_COLLAPSE"
+	projectile_gfx = "ark_reality_collapse_projectile"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 5
+	ai_weight = {
+		weight = 0
+	}
+}
+#园丁 虚无凝聚
+weapon_component_template = {
+	key = "ARK_VOID_CONDENSATION"
+	size = point_defence
+
+	icon = "GFX_ark_ship_part_point_defence"
+	icon_frame = 1
+	entity = "ark_turret_empty_entity"
+
+	power = 0
+	damage = { min = 1 max = 1 }
+	hull_damage = 1
+	shield_damage = 1
+	shield_penetration = 0
+	armor_damage = 1
+	armor_penetration = 0
+	windup = { min = 0 max = 0 }
+	total_fire_time = 5.00
+	range = 30
+	accuracy = 0.75
+	tracking = 0.5
+	#prerequisites = { "tech_ark_point_defence" }
+	component_set = "ARK_VOID_CONDENSATION"
+	type = point_defence
+	projectile_gfx = "blue_laser_pd"
+	prio_projectile = no
+	hidden = yes
+
+	tags = { weapon_type_point_defense weapon_type_energy }
+	ai_tags = { weapon_role_point_defense screen }
+	point_defence_targets = { "missile" "strike_craft" }
+	ai_weight = {
+		weight = 0
+	}
+}

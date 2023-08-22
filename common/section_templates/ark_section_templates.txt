@@ -151,3 +151,51 @@ ship_section_template = {
 	entity = aquatic_01_research_station_section_entity
 	icon = "GFX_ship_part_core_mid"
 }
+
+
+ship_section_template = {
+	key = "ark_demon_cresson_section"
+	ship_size = ark_size_demon_cresson
+	fits_on_slot = mid
+	entity = "ark_demon_cresson_base_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name = "TITAN_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "ship_main"
+	}
+	component_slot = {
+		name = "LARGE_01"
+		template = "invisible_large_turret"
+		locatorname = "ship_main"
+	}
+	component_slot = {
+		name = "LARGE_02"
+		template = "invisible_large_turret"
+		locatorname = "ship_main"
+	}
+	component_slot = {
+		name = "LARGE_03"
+		template = "invisible_large_turret"
+		locatorname = "ship_main"
+	}
+	component_slot = {
+		name = "LARGE_04"
+		template = "invisible_large_turret"
+		locatorname = "ship_main"
+	}
+	component_slot = {
+		name = "PD_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "ship_main"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "ship_main"
+	}
+
+	#large_utility_slots = 20
+	aux_utility_slots = 5
+}

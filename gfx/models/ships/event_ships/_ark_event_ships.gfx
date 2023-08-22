@@ -5,3 +5,19 @@ objectTypes = {
 		scale = 1.5
 	}
 }
+objectTypes = {
+	pdxmesh = {
+		name = "ark_demon_cresson_mesh"
+		file = "gfx/models/ships/event_ships/ark_demon_cresson.mesh"
+
+		animation = { id = "idle"	type = "ark_demon_cresson_idle_animation" }
+		animation = { id = "death"	type = "ark_demon_cresson_death_animation" }
+
+		scale = 20
+		meshsettings = {
+			texture_diffuse = "nodiffuse.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+		}
+	}
+}

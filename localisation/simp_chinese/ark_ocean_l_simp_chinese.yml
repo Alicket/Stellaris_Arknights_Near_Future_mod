@@ -137,9 +137,11 @@ ark_seaborn_base.202.desc:0 "当开拓者完成对星球的大致勘探后传来
 ark_seaborn_base.202.a:0 "很好。"
 ark_seaborn_base.202.a.tooltip:0 "获得§G200§!进化点数"
 ark_seaborn_base.21.title:0 "到达新家园"
-ark_seaborn_base.21.desc:0 "这是我们第一次在母星以外的全新环境生活，虽然最开始有着十分严重的水土不服，但海嗣优秀的进化能力可以在未来的时间里一点一点将这颗星球同化为完美的家园。"
+ark_seaborn_base.21.desc:0 "这是我们第一次在母星以外的全新环境生活，首先需要做的是像其他物种一样，以最稳妥的方式站稳脚跟，等时机成熟，同胞们可以尽全力将整颗星球将变为海洋的天堂。"
 ark_seaborn_base.21.a:0 "那么开始吧。"
-ark_seaborn_base.21.a.tooltip:0 "如果不想让这颗星球最终变为溟海星球，可以在进化度位于§R-200§!至§Y0§!之间时，通过行星决议暂停进化过程"
+ark_seaborn_base.21.a.tooltip:0 "在行星决议中开启进化过程，这颗星球最终会变成溟海星球，提供一定量的加成。进化度位于§R-200§!至§Y0§!之间时可以通过行星决议暂停进化过程"
+decision_ark_seaborn_start_evolution:0 "§B<海嗣>§!开始行星进化"
+decision_ark_seaborn_start_evolution_desc:0 "不断地进化、同化，这是海嗣的基本繁衍之道，初来乍到一颗陌生的星球，我们可以先站稳脚跟。等时机成熟，同胞们将尽全力将整颗星球将变为海洋的天堂。\n§g开启同化进程，一开始会有§!§R严重的减益§g，随时间最终会将这颗星球变为§!§B溟海星球§g，并提供大量加成。§!"
 
 #暂时没什么用
 #ark_seaborn_base.25.title:0 "海嗣殖民进化可能出现问题！"

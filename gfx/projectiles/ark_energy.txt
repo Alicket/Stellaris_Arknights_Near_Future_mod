@@ -294,3 +294,24 @@ projectile_gfx_beam = {
 	}
 	texture = "gfx/models/combat_items/ark_pd.dds" #特效调用的图片
 }
+
+#现实坍缩
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "ark_reality_collapse_projectile"
+	color = { 1.0	1.0		1.0		1.0 }
+	hit_entity = "ark_demon_cresson_hit_entity"
+	shield_hit_entity = "ark_demon_cresson_shield_hit_entity"
+	muzzle_flash_entity = "ark_demon_cresson_muzzle_entity"
+	#windup_entity = "adv_kinetic_artillery_windup_entity"
+
+	#ballistic specific
+	entity = "ark_demon_cresson_projectile_entity"
+	speed = 800			#preferred speed of the projectile
+	max_duration = 0.2		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
