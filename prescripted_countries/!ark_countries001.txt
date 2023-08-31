@@ -10,7 +10,7 @@ ARK_country_1 = {
 
 	species = {
 		class = "Arknight"
-		portrait = "arknights_s1LEADER_NPCpop"
+		portrait = "arknights_s12LEADER_NPCpop"
 		name = "Terraman"
 		plural = "Terramen"
 		adjective = "Terraman"

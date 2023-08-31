@@ -842,6 +842,40 @@ portrait_groups = {
 		}
 	}
 	#领袖精一，人口NPC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	arknights_s12LEADER_NPCpop = {
 		default = ARK_F_Amiya
 		game_setup = {
