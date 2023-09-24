@@ -140,7 +140,7 @@ country_event = {
 		custom_tooltip = kristen_hire_tooltip
 		hidden_effect = {
 			country_event = {
-				id = ark_archae.141
+				id = ark_arclight.141
 				days = 3600
 			}
 			set_country_flag = spawning_renowned_leader

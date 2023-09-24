@@ -36,8 +36,8 @@ origin_ark_stella_caerula = {
 	icon = "gfx/interface/icons/origins/origins_ark_stella_caerula.dds"
 	picture = GFX_origin_ark_stella_caerula
 
-	starting_colony = pc_ark_continental_ocean
-	habitability_preference = pc_ark_continental_ocean
+	#starting_colony = pc_ark_continental_ocean
+	#habitability_preference = pc_ark_continental_ocean
 	initializers = { Tyra_system_ocean }
 
 	preferred_planet_class_neighbor = no

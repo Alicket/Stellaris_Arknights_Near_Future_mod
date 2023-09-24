@@ -14,7 +14,7 @@ ap_resister_of_the_end = {
 		country_starbase_capacity_mult = 1.0		# 恒星基地容量+100%
 		starbase_defense_platform_capacity_add = 10		# 防御平台+20
 		country_naval_cap_add = 100			# 海军容量+100
-		country_command_limit_add = 50			# 舰队指挥上限+50
+		command_limit_add = 50			# 舰队指挥上限+50
 	}
 
 	on_enabled = {

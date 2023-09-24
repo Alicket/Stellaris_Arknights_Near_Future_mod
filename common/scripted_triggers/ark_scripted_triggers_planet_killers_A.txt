@@ -1,14 +1,41 @@
 can_destroy_planet_with_PLANET_KILLER_ARK_FROSTNOVA = {
-	custom_tooltip = {
-		fail_text = is_not_a_habitable_planet_or_megastructure
-		is_a_habitable_planet_megastructure = yes
-	}
+	#custom_tooltip = {
+	#	fail_text = is_not_a_habitable_planet_or_megastructure
+	#	is_a_habitable_planet_megastructure = yes
+	#}
 	custom_tooltip = {
 		fail_text = is_shielded
 		NOR = {
 			is_planet_class = pc_shielded
 			is_planet_class = pc_ringworld_shielded
 			is_planet_class = pc_habitat_shielded
+		}
+	}
+	custom_tooltip = {
+		fail_text = ark_too_hot
+		NOR = {
+			is_planet_class = pc_molten
+		}
+	}
+	custom_tooltip = {
+		fail_text = ark_gas_giant
+		NOR = {
+			is_planet_class = pc_gas_giant
+		}
+	}
+	custom_tooltip = {
+		fail_text = ark_psionic
+		NOR = {
+			is_planet_class = pc_shrouded
+		}
+	}
+	custom_tooltip = {
+		fail_text = ark_shattered
+		NOR = {
+			is_planet_class = pc_shattered
+			is_planet_class = pc_shattered_2
+			is_planet_class = pc_broken
+			is_planet_class = pc_machine_broken
 		}
 	}
 	custom_tooltip = {
@@ -37,11 +64,11 @@ can_destroy_planet_with_PLANET_KILLER_ARK_FROSTNOVA = {
 			}
 		}
 	}
-	custom_tooltip = {
-		fail_text = ark_is_ai_planet
-		NOR = {
-			is_planet_class = pc_ai
-			is_planet_class = pc_machine
-		}
-	}
+	#custom_tooltip = {
+	#	fail_text = ark_is_ai_planet
+	#	NOR = {
+	#		is_planet_class = pc_ai
+	#		is_planet_class = pc_machine
+	#	}
+	#}
 }

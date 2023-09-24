@@ -806,9 +806,14 @@ country_event = {
 		has_trait = trait_ARK_ocean_seaborn
 	}
 	immediate = {
+
+		set_country_flag = arkocean_option_disable_planet_evolution
+
+
 		capital_scope = {
 			clear_blockers = yes
 			clear_deposits = yes
+
 			add_deposit = d_arkocean_deepsea
 			add_deposit = d_arkocean_deepsea
 			add_deposit = d_arkocean_deepsea

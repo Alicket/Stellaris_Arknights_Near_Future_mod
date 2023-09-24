@@ -37,7 +37,11 @@ country_event = { #选择苦难摇篮起源
 			days = 90
 			random = 30
 		}
-
+		country_event = { #博士命定特质升级
+			id = ark_game_start.101
+			days = 7200
+			random = 720
+		}
 	}
 }
 
@@ -45,17 +49,18 @@ country_event = { #选择苦难摇篮起源
 
 #博士命定特质升级
 country_event = {
-	id = ark_arclight.101
+	id = ark_game_start.101
 	is_triggered_only = yes
 	hide_window = yes
 	trigger = {
+		has_origin = origin_ark_tragedy_birth
 	}
 	immediate = {
 		event_target:ark_ruler_doctor = {
 			set_leader_flag = doctor_upgrade_1
 		}
 		country_event = {
-			id = ark_arclight.16
+			id = ark_game_start.102
 			days = 7200
 			random = 180
 		}
@@ -67,7 +72,7 @@ country_event = {
 	}
 }
 country_event = {
-	id = ark_arclight.102
+	id = ark_game_start.102
 	is_triggered_only = yes
 	hide_window = yes
 	trigger = {
@@ -77,7 +82,7 @@ country_event = {
 			set_leader_flag = doctor_upgrade_2
 		}	
 		country_event = {
-			id = ark_arclight.17
+			id = ark_game_start.103
 			days = 9600
 			random = 360
 		}
@@ -89,7 +94,7 @@ country_event = {
 	}
 }
 country_event = {
-	id = ark_arclight.103
+	id = ark_game_start.103
 	is_triggered_only = yes
 	hide_window = yes
 	trigger = {
@@ -122,9 +127,11 @@ country_event = { #选择统治者
 	}
 	option = {
 		name = ark_game_start.10.a
+		custom_tooltip = "ark_game_start.10.a.tooltip"
 		ruler = {
 			change_leader_portrait = ARK_N_Doctor_N
 			set_age = 13258
+			save_global_event_target_as = ARKNIGHTS_SET_DOCTOR
 		}
 	}
 	option = {

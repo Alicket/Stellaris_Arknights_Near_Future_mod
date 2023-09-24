@@ -488,10 +488,10 @@ country_event = {
 				limit = { leader_class = general }
 				owner = { set_country_flag = ark_treatment_1_general_flag }
 			}
-			if = {
-				limit = { leader_class = ruler }
-				owner = { set_country_flag = ark_treatment_1_ruler_flag }
-			}
+			#if = {
+			#	limit = { leader_class = ruler }
+			#	owner = { set_country_flag = ark_treatment_1_ruler_flag }
+			#}
 		}
 		random_owned_leader = {
 			limit = { has_trait = leader_trait_traumatized }
@@ -512,10 +512,10 @@ country_event = {
 				limit = { leader_class = general }
 				owner = { set_country_flag = ark_treatment_2_general_flag }
 			}
-			if = {
-				limit = { leader_class = ruler }
-				owner = { set_country_flag = ark_treatment_2_ruler_flag }
-			}
+			#if = {
+			#	limit = { leader_class = ruler }
+			#	owner = { set_country_flag = ark_treatment_2_ruler_flag }
+			#}
 		}
 		random_owned_leader = {
 			limit = { has_trait = leader_trait_maimed }
@@ -536,10 +536,10 @@ country_event = {
 				limit = { leader_class = general }
 				owner = { set_country_flag = ark_treatment_3_general_flag }
 			}
-			if = {
-				limit = { leader_class = ruler }
-				owner = { set_country_flag = ark_treatment_3_ruler_flag }
-			}
+			#if = {
+			#	limit = { leader_class = ruler }
+			#	owner = { set_country_flag = ark_treatment_3_ruler_flag }
+			#}
 		}
 	}
 
@@ -584,7 +584,7 @@ country_event = {
 				}
 				event_target:treatment_1 = {
 					set_owner = event_target:rhodes_island_pharmacy
-					add_trait = leader_trait_governor_chosen
+					#add_trait = leader_trait_governor_chosen
 					remove_trait = leader_trait_substance_abuser
 				}
 				country_event = { id = ark_civic.31 days = 360 }
@@ -596,7 +596,7 @@ country_event = {
 				}
 				event_target:treatment_2 = {
 					set_owner = event_target:rhodes_island_pharmacy
-					add_trait = leader_trait_governor_chosen
+					#add_trait = leader_trait_governor_chosen
 					remove_trait = leader_trait_traumatized
 				}
 				country_event = { id = ark_civic.31 days = 360 }
@@ -608,7 +608,7 @@ country_event = {
 				}
 				event_target:treatment_3 = {
 					set_owner = event_target:rhodes_island_pharmacy
-					add_trait = leader_trait_governor_chosen
+					#add_trait = leader_trait_governor_chosen
 					remove_trait = leader_trait_maimed
 				}
 				country_event = { id = ark_civic.31 days = 1080 }
@@ -697,7 +697,7 @@ country_event = {
 					}
 				}
 				last_created_fleet = {
-					set_leader = event_target:treatment_1
+					#set_leader = event_target:treatment_1
 				}
 				last_created_fleet = {
 					dismantle = yes
@@ -729,7 +729,7 @@ country_event = {
 					}
 				}
 				last_created_fleet = {
-					set_leader = event_target:treatment_2
+					#set_leader = event_target:treatment_2
 				}
 				last_created_fleet = {
 					dismantle = yes
@@ -761,7 +761,7 @@ country_event = {
 					}
 				}
 				last_created_fleet = {
-					set_leader = event_target:treatment_3
+					#set_leader = event_target:treatment_3
 				}
 				last_created_fleet = {
 					dismantle = yes
@@ -795,7 +795,7 @@ country_event = {
 					}
 				}
 				last_created_fleet = {
-					set_leader = event_target:treatment_1
+					#set_leader = event_target:treatment_1
 				}
 				last_created_fleet = {
 					dismantle = yes
@@ -827,7 +827,7 @@ country_event = {
 					}
 				}
 				last_created_fleet = {
-					set_leader = event_target:treatment_2
+					#set_leader = event_target:treatment_2
 				}
 				last_created_fleet = {
 					dismantle = yes
@@ -859,7 +859,7 @@ country_event = {
 					}
 				}
 				last_created_fleet = {
-					set_leader = event_target:treatment_3
+					#set_leader = event_target:treatment_3
 				}
 				last_created_fleet = {
 					dismantle = yes
@@ -886,7 +886,7 @@ country_event = {
 					}
 				}
 				last_created_fleet = {
-					set_leader = event_target:treatment_1
+					#set_leader = event_target:treatment_1
 				}
 				last_created_fleet = {
 					dismantle = yes
@@ -911,7 +911,7 @@ country_event = {
 					}
 				}
 				last_created_fleet = {
-					set_leader = event_target:treatment_2
+					#set_leader = event_target:treatment_2
 				}
 				last_created_fleet = {
 					dismantle = yes
@@ -936,7 +936,7 @@ country_event = {
 					}
 				}
 				last_created_fleet = {
-					set_leader = event_target:treatment_3
+					#set_leader = event_target:treatment_3
 				}
 				last_created_fleet = {
 					dismantle = yes
@@ -956,7 +956,7 @@ country_event = {
 				}
 				event_target:treatment_1 = {
 					set_owner = root
-					remove_trait = leader_trait_governor_chosen
+					#remove_trait = leader_trait_governor_chosen
 				}
 				clear_global_event_target = treatment_1
 				remove_country_flag = ark_treatment_1_governor_flag
@@ -968,7 +968,7 @@ country_event = {
 				}
 				event_target:treatment_2 = {
 					set_owner = root
-					remove_trait = leader_trait_governor_chosen
+					#remove_trait = leader_trait_governor_chosen
 				}
 				clear_global_event_target = treatment_2
 				remove_country_flag = ark_treatment_2_governor_flag
@@ -980,7 +980,7 @@ country_event = {
 				}
 				event_target:treatment_3 = {
 					set_owner = root
-					remove_trait = leader_trait_governor_chosen
+					#remove_trait = leader_trait_governor_chosen
 				}
 				clear_global_event_target = treatment_3
 				remove_country_flag = ark_treatment_3_governor_flag
@@ -1066,7 +1066,6 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
-		is_this_terra = yes
 		has_civic = civic_chivalry
 	}
 	immediate = {
@@ -1075,14 +1074,14 @@ country_event = {
 				leader_class = admiral
 				NOT = { has_trait = leader_trait_admiral_chivalry }
 			}
-			add_trait_notify = leader_trait_admiral_chivalry
+			add_trait_no_notify = leader_trait_admiral_chivalry
 		}
 		every_owned_leader = {
 			limit = {
 				leader_class = general
 				NOT = { has_trait = leader_trait_general_chivalry }
 			}
-			add_trait_notify = leader_trait_general_chivalry
+			add_trait_no_notify = leader_trait_general_chivalry
 		}
 	}
 }

@@ -15,11 +15,22 @@ guiTypes = {
 			position = { x= 19 y = 591 }
 			Orientation = "UPPER_LEFT"
 			shortcut = "ESCAPE"
+			defaultSelection = yes
 			clicksound = "back_click"
 			actionShortcut = "cancel"
 			font = "cg_16b"
 			text = "ARKOCEAN_SET_CLOSE"
 
+		}
+		buttonType = {
+			name = "close_button"
+			quadTextureSprite = "GFX_close"
+			position = { x = 19 y = 620 }
+			shortcut = "ESCAPE"
+			clicksound = "back_click"
+			actionShortcut = "cancel"
+			orientation = UPPER_RIGHT
+			pdx_tooltip = "CLOSE_TITLE"
 		}
 		iconType = {#info
 			name = "tips"

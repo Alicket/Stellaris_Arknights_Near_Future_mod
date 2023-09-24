@@ -1,17 +1,17 @@
-trait_pc_ark_continental_ocean_preference = {
-	icon = "gfx/interface/icons/traits/trait_pc_ark_continental_ocean_preference.dds"
-	species_potential_add = {
-		always = no
-	}
-	species_possible_merge_add = {
-		always = yes
-	}
-	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
-	sorting_priority = 30
-	modifier = {
-		pc_ark_continental_ocean_habitability = 2.0
-	}
-	ai_weight = {
-		weight = 0
-	}
-}
+#trait_pc_ark_continental_ocean_preference = {
+#	icon = "gfx/interface/icons/traits/trait_pc_ark_continental_ocean_preference.dds"
+#	species_potential_add = {
+#		always = no
+#	}
+#	species_possible_merge_add = {
+#		always = yes
+#	}
+#	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+#	sorting_priority = 30
+#	modifier = {
+#		pc_ark_continental_ocean_habitability = 2.0
+#	}
+#	ai_weight = {
+#		weight = 0
+#	}
+#}

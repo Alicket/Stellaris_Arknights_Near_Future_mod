@@ -83,7 +83,7 @@ leader_trait_rhine_lab = {
 	modifier = {
 		science_ship_survey_speed = 0.20
 		ship_anomaly_research_speed_mult = 0.15
-		ship_anomaly_generation_chance = 0.10
+		ship_anomaly_generation_chance_mult = 0.10
 		ship_archaeological_site_excavation_speed_mult = 0.15
 	}
 	self_modifier = {
@@ -110,7 +110,7 @@ leader_trait_rhine_lab_2 = {
 	modifier = {
 		science_ship_survey_speed = 0.33
 		ship_anomaly_research_speed_mult = 0.20
-		ship_anomaly_generation_chance = 0.10
+		ship_anomaly_generation_chance_mult = 0.10
 		ship_archaeological_site_excavation_speed_mult = 0.25
 	}
 	self_modifier = {
@@ -136,7 +136,7 @@ leader_trait_rhine_lab_3 = {
 	modifier = {
 		science_ship_survey_speed = 0.50
 		ship_anomaly_research_speed_mult = 0.30
-		ship_anomaly_generation_chance = 0.10
+		ship_anomaly_generation_chance_mult = 0.10
 		ship_archaeological_site_excavation_speed_mult = 0.33
 	}
 	self_modifier = {
