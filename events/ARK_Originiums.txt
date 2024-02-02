@@ -1,6 +1,6 @@
 namespace = ark_originiums
 
-# Դʯ�о��� 1
+# 源石研究简报 1
 country_event = {
 	id = ark_originiums.1
 	title = "ark_originiums.1.name"
@@ -21,7 +21,7 @@ country_event = {
 	}
 	
 	option = {
-		name = ark_originiums.1.a	# ���뵵��
+		name = ark_originiums.1.a	# 归入档案
 		custom_tooltip = ark_originiums.uid_tooltip
 		add_monthly_resource_mult = {
 			resource = engineering_research
@@ -31,7 +31,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_originiums_no_show	# ������ʾ���౨��
+		name = ark_originiums_no_show	# 不再显示此类报告
 		custom_tooltip = ark_originiums_no_show_tooltip
 		set_country_flag = originiums_bulletin_no_show
 		add_monthly_resource_mult = {
@@ -43,7 +43,7 @@ country_event = {
 	}
 }
 
-# Դʯ�о��� 2
+# 源石研究简报 2
 country_event = {
 	id = ark_originiums.2
 	title = "ark_originiums.2.name"
@@ -66,7 +66,7 @@ country_event = {
 	}
 	
 	option = {
-		name = ark_originiums.2.a	# ���뵵��
+		name = ark_originiums.2.a	# 归入档案
 		custom_tooltip = ark_originiums.uid_tooltip
 		add_monthly_resource_mult = {
 			resource = engineering_research
@@ -76,7 +76,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_originiums_no_show	# ������ʾ���౨��
+		name = ark_originiums_no_show	# 不再显示此类报告
 		custom_tooltip = ark_originiums_no_show_tooltip
 		set_country_flag = originiums_bulletin_no_show
 		add_monthly_resource_mult = {
@@ -88,7 +88,7 @@ country_event = {
 	}
 }
 
-# Դʯ�о��� 2�������¼���
+# 源石研究简报 2（隐藏事件）
 country_event = {
 	id = ark_originiums.20
 	hide_window = yes
@@ -113,7 +113,7 @@ country_event = {
 	}
 }
 
-# Դʯ�о��� 3
+# 源石研究简报 3
 country_event = {
 	id = ark_originiums.3
 	title = "ark_originiums.3.name"
@@ -136,7 +136,7 @@ country_event = {
 	}
 	
 	option = {
-		name = ark_originiums.3.a	# ���뵵��
+		name = ark_originiums.3.a	# 归入档案
 		custom_tooltip = ark_originiums.uid_tooltip
 		add_monthly_resource_mult = {
 			resource = engineering_research
@@ -146,7 +146,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = ark_originiums_no_show	# ������ʾ���౨��
+		name = ark_originiums_no_show	# 不再显示此类报告
 		custom_tooltip = ark_originiums_no_show_tooltip
 		set_country_flag = originiums_bulletin_no_show
 		add_monthly_resource_mult = {
@@ -158,7 +158,7 @@ country_event = {
 	}
 }
 
-# Դʯ�о��� 3�������¼���
+# 源石研究简报 3（隐藏事件）
 country_event = {
 	id = ark_originiums.30
 	hide_window = yes
@@ -183,7 +183,7 @@ country_event = {
 	}
 }
 
-# Դʯ�о��� 4
+# 源石研究简报 4
 country_event = {
 	id = ark_originiums.4
 	title = "ark_originiums.4.name"
@@ -206,7 +206,7 @@ country_event = {
 	}
 	
 	option = {
-		name = ark_originiums.3.a	# ���뵵��
+		name = ark_originiums.3.a	# 归入档案
 		custom_tooltip = ark_originiums.uid_tooltip
 		add_monthly_resource_mult = {
 			resource = engineering_research
@@ -217,7 +217,7 @@ country_event = {
 	}
 }
 
-# Դʯ�о��� 4�������¼���
+# 源石研究简报 4（隐藏事件）
 country_event = {
 	id = ark_originiums.40
 	hide_window = yes

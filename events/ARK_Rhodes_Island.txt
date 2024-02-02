@@ -1072,8 +1072,11 @@ country_event = {
 		name = ark_rhodes_island.301.a	# 确认
 		custom_tooltip = land_of_order_pop
 		add_resource = {
-			influence = 250
-			unity = 2500
+			influence = 100
+		}
+		add_monthly_resource_mult = {
+			resource = unity
+			value = 12
 		}
 		hidden_effect = {
 			capital_scope = {
@@ -1202,12 +1205,6 @@ country_event = {
 		trigger = {	# 选择“源石档案”且已归档“源石简报1”
 			has_country_flag = ark_rhodes_island_52_flag
 			has_country_flag = originiums_bulletin_1_flag
-			NOT = {
-				has_country_flag = ark_rhodes_island_51_flag
-				has_country_flag = ark_rhodes_island_53_flag
-				has_country_flag = ark_rhodes_island_54_flag
-				has_country_flag = ark_rhodes_island_55_flag
-			}
 		}
 		hidden_effect = {
 			set_country_flag = ark_rhodes_island_521_flag
@@ -1218,13 +1215,7 @@ country_event = {
 		name = ark_rhodes_island.52.b	# 条目二（源石）
 		trigger = {	# 选择“源石档案”且已归档“源石简报2”
 			has_country_flag = ark_rhodes_island_52_flag
-			has_country_flag = originiums_bulletin_2_flag 
-			NOT = {
-				has_country_flag = ark_rhodes_island_51_flag
-				has_country_flag = ark_rhodes_island_53_flag
-				has_country_flag = ark_rhodes_island_54_flag
-				has_country_flag = ark_rhodes_island_55_flag
-			}
+			has_country_flag = originiums_bulletin_2_flag
 		}
 		hidden_effect = {
 			set_country_flag = ark_rhodes_island_522_flag
@@ -1235,13 +1226,7 @@ country_event = {
 		name = ark_rhodes_island.52.c	# 条目三（源石）
 		trigger = {	# 选择“源石档案”且已归档“源石简报3”
 			has_country_flag = ark_rhodes_island_52_flag
-			has_country_flag = originiums_bulletin_3_flag 
-			NOT = {
-				has_country_flag = ark_rhodes_island_51_flag
-				has_country_flag = ark_rhodes_island_53_flag
-				has_country_flag = ark_rhodes_island_54_flag
-				has_country_flag = ark_rhodes_island_55_flag
-			}
+			has_country_flag = originiums_bulletin_3_flag
 		}
 		hidden_effect = {
 			set_country_flag = ark_rhodes_island_523_flag
@@ -1252,13 +1237,7 @@ country_event = {
 		name = ark_rhodes_island.52.d	# 条目四（源石）
 		trigger = {	# 选择“源石档案”且已归档“源石简报4”
 			has_country_flag = ark_rhodes_island_52_flag
-			has_country_flag = originiums_bulletin_4_flag 
-			NOT = {
-				has_country_flag = ark_rhodes_island_51_flag
-				has_country_flag = ark_rhodes_island_53_flag
-				has_country_flag = ark_rhodes_island_54_flag
-				has_country_flag = ark_rhodes_island_55_flag
-			}
+			has_country_flag = originiums_bulletin_4_flag
 		}
 		hidden_effect = {
 			set_country_flag = ark_rhodes_island_524_flag
@@ -1270,12 +1249,6 @@ country_event = {
 		trigger = {	# 选择“源石病/感染者档案”且已归档“源石病简报1”
 			has_country_flag = ark_rhodes_island_54_flag
 			has_country_flag = originiums_sufferer_bulletin_1_flag
-			NOT = {
-				has_country_flag = ark_rhodes_island_51_flag
-				has_country_flag = ark_rhodes_island_52_flag
-				has_country_flag = ark_rhodes_island_53_flag
-				has_country_flag = ark_rhodes_island_55_flag
-			}
 		}
 		hidden_effect = {
 			set_country_flag = ark_rhodes_island_541_flag
@@ -1287,12 +1260,6 @@ country_event = {
 		trigger = {	# 选择“源石病/感染者档案”且已归档“源石病简报2”
 			has_country_flag = ark_rhodes_island_54_flag
 			has_country_flag = originiums_sufferer_bulletin_2_flag
-			NOT = {
-				has_country_flag = ark_rhodes_island_51_flag
-				has_country_flag = ark_rhodes_island_52_flag
-				has_country_flag = ark_rhodes_island_53_flag
-				has_country_flag = ark_rhodes_island_55_flag
-			}
 		}
 		hidden_effect = {
 			set_country_flag = ark_rhodes_island_542_flag
@@ -1304,12 +1271,6 @@ country_event = {
 		trigger = {	# 选择“源石病/感染者档案”且已归档“源石病简报3”
 			has_country_flag = ark_rhodes_island_54_flag
 			has_country_flag = originiums_sufferer_bulletin_3_flag
-			NOT = {
-				has_country_flag = ark_rhodes_island_51_flag
-				has_country_flag = ark_rhodes_island_52_flag
-				has_country_flag = ark_rhodes_island_53_flag
-				has_country_flag = ark_rhodes_island_55_flag
-			}
 		}
 		hidden_effect = {
 			set_country_flag = ark_rhodes_island_543_flag
@@ -1321,12 +1282,6 @@ country_event = {
 		trigger = {	# 选择“源石病/感染者档案”且已归档“源石病简报4”
 			has_country_flag = ark_rhodes_island_54_flag
 			has_country_flag = originiums_sufferer_bulletin_4_flag
-			NOT = {
-				has_country_flag = ark_rhodes_island_51_flag
-				has_country_flag = ark_rhodes_island_52_flag
-				has_country_flag = ark_rhodes_island_53_flag
-				has_country_flag = ark_rhodes_island_55_flag
-			}
 		}
 		hidden_effect = {
 			set_country_flag = ark_rhodes_island_544_flag
@@ -1338,12 +1293,6 @@ country_event = {
 		trigger = {	# 选择“源石病/感染者档案”且已归档“源石病简报5”
 			has_country_flag = ark_rhodes_island_54_flag
 			has_country_flag = originiums_sufferer_bulletin_5_flag
-			NOT = {
-				has_country_flag = ark_rhodes_island_51_flag
-				has_country_flag = ark_rhodes_island_52_flag
-				has_country_flag = ark_rhodes_island_53_flag
-				has_country_flag = ark_rhodes_island_55_flag
-			}
 		}
 		hidden_effect = {
 			set_country_flag = ark_rhodes_island_545_flag

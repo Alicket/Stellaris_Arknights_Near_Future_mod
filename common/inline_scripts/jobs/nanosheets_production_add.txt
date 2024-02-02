@@ -1,0 +1,35 @@
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = { is_gestalt = no }
+	}
+	modifier = {
+		job_nanosheets_manufacturer_add = $AMOUNT$
+	}
+}
+
+triggered_desc = {
+	trigger = {
+		exists = owner
+		owner = { is_gestalt = no }
+	}
+	text = job_nanosheets_manufacturer_effect_desc
+}
+
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = { is_gestalt = yes }
+	}
+	modifier = {
+		job_nanosheets_manufacture_drone_add = $AMOUNT$
+	}
+}
+
+triggered_desc = {
+	trigger = {
+		exists = owner
+		owner = { is_gestalt = yes }
+	}
+	text = job_nanosheets_manufacture_drone_effect_desc
+}

@@ -49,7 +49,8 @@ strewn_thorns = {	# 荆棘丛生
 }
 autumn_sea = {	# 层林尽染
 	planet_crime_add = -10
-	planet_jobs_produces_mult = 0.1
+	planet_jobs_produces_mult = 0.2
+	planet_jobs_unity_produces_mult = 0.1
 	icon = "gfx/interface/icons/planet_modifiers/pm_barbarian_growth.dds"
 	icon_frame = 1
 }
@@ -66,9 +67,9 @@ torn_society = {	# 撕裂的社会
 	icon_frame = 3
 }
 celebration = {	# 攻克“矿石病”庆典
-	pop_happiness = 0.4
+	pop_happiness = 0.1
 	planet_jobs_produces_mult = 0.2
-	pop_growth_speed = 0.2
+	planet_jobs_unity_produces_mult = 0.1
 	icon = "gfx/interface/icons/planet_modifiers/pm_celebration.dds"
 	icon_frame = 1
 }

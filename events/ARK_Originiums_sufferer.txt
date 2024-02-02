@@ -1,6 +1,6 @@
 namespace = ark_originiums_sufferer
 
-# ��ʯ��
+# 矿石病
 country_event = {
 	id = ark_originiums_sufferer.1
 	title = "ark_originiums_sufferer.1.name"
@@ -22,7 +22,7 @@ country_event = {
 	}
 	
 	option = {
-		name = ark_originiums_sufferer.1.a	# ȷ��
+		name = ark_originiums_sufferer.1.a	# 确认
 		custom_tooltip = ark_originiums_sufferer.1_tooltip
 		capital_scope = {
 			enable_special_project = {
@@ -37,7 +37,7 @@ country_event = {
 	}
 }
 
-# ��ʯ���о��� 1
+# 矿石病研究简报 1
 country_event = {
 	id = ark_originiums_sufferer.11
 	title = "ark_originiums_sufferer.11.name"
@@ -57,7 +57,7 @@ country_event = {
 	}
 	
 	option = {
-		name = ark_originiums_sufferer.11.a	# ���뵵��
+		name = ark_originiums_sufferer.11.a	# 归入档案
 		custom_tooltip = ark_originiums_sufferer.uid_tooltip
 		add_monthly_resource_mult = {
      			resource = society_research
@@ -67,7 +67,7 @@ country_event = {
      		}
 	}
 	option = {
-		name = ark_originiums_sufferer_no_show	# ������ʾ���౨��
+		name = ark_originiums_sufferer_no_show	# 不再显示此类报告
 		custom_tooltip = ark_originiums_sufferer_no_show_tooltip
 		set_country_flag = originiums_sufferer_bulletin_no_show
 		add_monthly_resource_mult = {
@@ -79,7 +79,7 @@ country_event = {
 	}
 }
 
-# ��ʯ���о��� 2
+# 矿石病研究简报 2
 country_event = {
 	id = ark_originiums_sufferer.12
 	title = "ark_originiums_sufferer.12.name"
@@ -102,7 +102,7 @@ country_event = {
 	}
 	
 	option = {
-		name = ark_originiums_sufferer.12.a	# ���뵵��
+		name = ark_originiums_sufferer.12.a	# 归入档案
 		custom_tooltip = ark_originiums_sufferer.uid_tooltip
 		add_monthly_resource_mult = {
      			resource = society_research
@@ -112,7 +112,7 @@ country_event = {
      		}
 	}
 	option = {
-		name = ark_originiums_sufferer_no_show	# ������ʾ���౨��
+		name = ark_originiums_sufferer_no_show	# 不再显示此类报告
 		custom_tooltip = ark_originiums_sufferer_no_show_tooltip
 		set_country_flag = originiums_sufferer_bulletin_no_show
 		add_monthly_resource_mult = {
@@ -124,7 +124,7 @@ country_event = {
 	}
 }
 
-# ��ʯ���о��� 2�������¼���
+# 矿石病研究简报 2（隐藏事件）
 country_event = {
 	id = ark_originiums_sufferer.120
 	hide_window = yes
@@ -149,7 +149,7 @@ country_event = {
 	}
 }
 
-# ��ʯ���о��� 3
+# 矿石病研究简报 3
 country_event = {
 	id = ark_originiums_sufferer.13
 	title = "ark_originiums_sufferer.13.name"
@@ -172,7 +172,7 @@ country_event = {
 	}
 	
 	option = {
-		name = ark_originiums_sufferer.13.a	# ���뵵��
+		name = ark_originiums_sufferer.13.a	# 归入档案
 		custom_tooltip = ark_originiums_sufferer.uid_tooltip
 		add_monthly_resource_mult = {
      			resource = society_research
@@ -182,7 +182,7 @@ country_event = {
      		}
 	}
 	option = {
-		name = ark_originiums_sufferer_no_show	# ������ʾ���౨��
+		name = ark_originiums_sufferer_no_show	# 不再显示此类报告
 		custom_tooltip = ark_originiums_sufferer_no_show_tooltip
 		set_country_flag = originiums_sufferer_bulletin_no_show
 		add_monthly_resource_mult = {
@@ -194,7 +194,7 @@ country_event = {
 	}
 }
 
-# ��ʯ���о��� 3�������¼���
+# 矿石病研究简报 3（隐藏事件）
 country_event = {
 	id = ark_originiums_sufferer.130
 	hide_window = yes
@@ -219,7 +219,7 @@ country_event = {
 	}
 }
 
-# ��ʯ���о��� 4
+# 矿石病研究简报 4
 country_event = {
 	id = ark_originiums_sufferer.14
 	title = "ark_originiums_sufferer.14.name"
@@ -242,7 +242,7 @@ country_event = {
 	}
 	
 	option = {
-		name = ark_originiums_sufferer.14.a	# ���뵵��
+		name = ark_originiums_sufferer.14.a	# 归入档案
 		custom_tooltip = ark_originiums_sufferer.uid_tooltip
 		add_monthly_resource_mult = {
      			resource = society_research
@@ -252,7 +252,7 @@ country_event = {
      		}
 	}
 	option = {
-		name = ark_originiums_sufferer_no_show	# ������ʾ���౨��
+		name = ark_originiums_sufferer_no_show	# 不再显示此类报告
 		custom_tooltip = ark_originiums_sufferer_no_show_tooltip
 		set_country_flag = originiums_sufferer_bulletin_no_show
 		add_monthly_resource_mult = {
@@ -264,7 +264,7 @@ country_event = {
 	}
 }
 
-# ��ʯ���о��� 4�������¼���
+# 矿石病研究简报 4（隐藏事件）
 country_event = {
 	id = ark_originiums_sufferer.140
 	hide_window = yes
@@ -289,7 +289,7 @@ country_event = {
 	}
 }
 
-# ��ʯ���о��� 5
+# 矿石病研究简报 5
 country_event = {
 	id = ark_originiums_sufferer.15
 	title = "ark_originiums_sufferer.15.name"
@@ -312,7 +312,7 @@ country_event = {
 	}
 	
 	option = {
-		name = ark_originiums_sufferer.15.a	# ���뵵��
+		name = ark_originiums_sufferer.15.a	# 归入档案
 		custom_tooltip = ark_originiums_sufferer.uid_tooltip
 		add_monthly_resource_mult = {
      			resource = society_research
@@ -323,7 +323,7 @@ country_event = {
 	}
 }
 
-# ��ʯ���о��� 5�������¼���
+# 矿石病研究简报 5（隐藏事件）
 country_event = {
 	id = ark_originiums_sufferer.150
 	hide_window = yes
@@ -348,7 +348,7 @@ country_event = {
 	}
 }
 
-# ��ʯ����Чҩ�з���չѸ��
+# 矿石病特效药研发进展迅速
 country_event = {
 	id = ark_originiums_sufferer.2
 	title = "ark_originiums_sufferer.2.name"
@@ -358,16 +358,16 @@ country_event = {
 	location = ROOT
 
 	is_triggered_only = yes
-
+	
 	option = {
-		name = ark_originiums_sufferer.2.a	# ףԸ���ǵĸ��������ջ�
+		name = ark_originiums_sufferer.2.a	# 祝愿我们的付出终有收获
 		hidden_effect = {
 			remove_modifier = "infected_anxious"
 		}
 	}
 }
 
-# ���˿�ʯ����
+# 攻克矿石病！
 country_event = {
 	id = ark_originiums_sufferer.3
 	title = "ark_originiums_sufferer.3.name"
@@ -402,8 +402,15 @@ country_event = {
 	option = {
 		name = ark_originiums_sufferer.3.a
 		custom_tooltip = ark_originiums_sufferer.3.a_tooltip
-		add_resource = { influence = 500 }
-		add_resource = { unity = 5000 }
+		add_resource = { influence = 100 }
+		add_monthly_resource_mult = {
+			resource = unity
+			value = 12
+		}
+		add_monthly_resource_mult = {
+			resource = society_research
+			value = 60
+		}
 		add_modifier = {
 			modifier = "celebration"
 			days = 3600
@@ -421,7 +428,7 @@ country_event = {
 	# }
 }
 
-# ��ʯ�������������棨�״Σ�
+# 矿石病患者死亡报告（首次）
 country_event = {
 	id = ark_originiums_sufferer.4
 	title = "ark_originiums_sufferer.4.name"
@@ -440,7 +447,7 @@ country_event = {
 	}
 	
 	option = {
-		name = ark_originiums_sufferer.4.a	# ����ʹ�ļ���
+		name = ark_originiums_sufferer.4.a	# 令人痛心疾首
 		random_owned_pop = {
 			limit = {
 				NOT = { species = { has_trait = trait_Originium_Arts } }
@@ -472,7 +479,7 @@ country_event = {
 	}
 
 	option = {
-		name = ark_originiums_sufferer.4.b	# �������ٷ����๤��ʧ��
+		name = ark_originiums_sufferer.4.b	# 不允许再犯此类工作失误
 		random_owned_pop = {
 			limit = {
 				NOT = { species = { has_trait = trait_Originium_Arts } }
@@ -504,7 +511,7 @@ country_event = {
 	}
 
 	option = {
-		name = ark_originiums_sufferer.4.c	# ������ʾ���౨��
+		name = ark_originiums_sufferer.4.c	# 不再显示此类报告
 		random_owned_pop = {
 			limit = {
 				NOT = { species = { has_trait = trait_Originium_Arts } }
@@ -533,7 +540,7 @@ country_event = {
 	}
 }
 
-# ��ʯ�������������棨15��ѭ����
+# 矿石病患者死亡报告（15年循环）
 country_event = {
 	id = ark_originiums_sufferer.41
 	title = "ark_originiums_sufferer.41.name"
@@ -552,7 +559,7 @@ country_event = {
 	}
 	
 	option = {
-		name = ark_originiums_sufferer.4.a	# ����ʹ�ļ���
+		name = ark_originiums_sufferer.4.a	# 令人痛心疾首
 		random_owned_pop = {
 			limit = {
 				NOT = { species = { has_trait = trait_Originium_Arts } }
@@ -566,7 +573,7 @@ country_event = {
 	}
 
 	option = {
-		name = ark_originiums_sufferer.4.c	# ������ʾ���౨��
+		name = ark_originiums_sufferer.4.c	# 不再显示此类报告
 		random_owned_pop = {
 			limit = {
 				NOT = { species = { has_trait = trait_Originium_Arts } }
@@ -580,7 +587,7 @@ country_event = {
 	}
 }
 
-# ��ʯ�������������棨15��ѭ�����������¼���
+# 矿石病患者死亡报告（15年循环）（隐藏事件）
 country_event = {
 	id = ark_originiums_sufferer.42
 	hide_window = yes

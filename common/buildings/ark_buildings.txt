@@ -217,15 +217,18 @@ building_ark_hospital3 = {
 }
 
 # 源石开采厂
-building_originiums_mining_plant = {
+building_originiums_mining_plant_1 = {
 	base_buildtime = @b1_time
 
 	is_capped_by_modifier = yes
 
 	category = resource
-	
+
 	potential = {
-		NOT = { has_modifier = resort_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = crucible_colony
+		}
 	}
 
 	triggered_planet_modifier = {
@@ -235,7 +238,6 @@ building_originiums_mining_plant = {
 		}
 		modifier = {
 			job_originiums_miner_add = 2
-			job_miner_add = 2
 		}
 	}
 
@@ -246,42 +248,41 @@ building_originiums_mining_plant = {
 		}
 		modifier = {
 			job_originiums_mining_drone_add = 2
-			job_mining_drone_add = 2
 		}
 	}
-	
+
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 200
+			minerals = @b1_minerals
 		}
 		upkeep = {
-			energy = 1
+			energy = @b1_upkeep
 		}
 	}
-	
+
 	prerequisites = {
 		"tech_originiums_mining"
 	}
 
 	upgrades = {
-		"building_originiums_mining_platform"
+		"building_originiums_mining_plant_2"
 	}
 }
 
-# 源石开采平台
-building_originiums_mining_platform = {
+# 源石矿产园区
+building_originiums_mining_plant_2 = {
 	base_buildtime = @b2_time
-	can_build = no
+
+	is_capped_by_modifier = yes
 
 	category = resource
-	
-	potential = {
-		#has_building = building_originiums_mining_plant
-	}
 
-	allow = {
-		has_upgraded_capital = yes
+	potential = {
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = crucible_colony
+		}
 	}
 
 	triggered_planet_modifier = {
@@ -290,8 +291,7 @@ building_originiums_mining_platform = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_originiums_miner_add = 5
-			job_miner_add = 3
+			job_originiums_miner_add = 4
 		}
 	}
 
@@ -301,259 +301,370 @@ building_originiums_mining_platform = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_originiums_mining_drone_add = 5
-			job_mining_drone_add = 3
+			job_originiums_mining_drone_add = 4
 		}
 	}
-	
+
 	resources = {
 		category = planet_buildings
 		cost = {
 			minerals = @b2_minerals
-			d32_steels = 50
-			multipole_nanosheets = 50
 		}
 		upkeep = {
 			energy = @b2_upkeep
-			d32_steels = 1
-			multipole_nanosheets = 1
 		}
+	}
+
+	prerequisites = {
+		"tech_yuanyan_rawmaterial"
+	}
+
+	upgrades = {
+		"building_originiums_mining_plant_3"
+	}
+}
+
+# 源石矿业集群
+building_originiums_mining_plant_3 = {
+	base_buildtime = @b3_time
+
+	is_capped_by_modifier = yes
+
+	category = resource
+
+	potential = {
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = crucible_colony
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_originiums_miner_add = 6
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_originiums_mining_drone_add = 6
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+		}
+		upkeep = {
+			energy = @b3_upkeep
+		}
+	}
+
+	prerequisites = {
+		"tech_guyuanyan_rawmaterial"
+	}
+
+	upgrades = {
+		"building_originiums_mining_plant_4"
+	}
+}
+
+# 源石精炼网络
+building_originiums_mining_plant_4 = {
+	base_buildtime = @b4_time
+
+	is_capped_by_modifier = yes
+
+	category = resource
+
+	potential = {
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = crucible_colony
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_originiums_miner_add = 8
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_originiums_mining_drone_add = 8
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b4_minerals
+		}
+		upkeep = {
+			energy = @b4_upkeep
+		}
+	}
+
+	prerequisites = {
+		"tech_guyuanyanzu_rawmaterial"
 	}
 }
 
 # 源石发电站
-building_originiums_power_plant = {
+building_originiums_power_plant_1 = {
 	base_buildtime = @b1_time
 
 	category = resource
 	
 	potential = {
-		NOT = { has_modifier = resort_colony }
-	}
-	
-	destroy_trigger = {
-		free_building_slots = 0
-		exists = owner
-		owner = {
-			is_ai = yes
-			has_monthly_income = {
-				resource = originiums
-				value < 1
-			}
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = crucible_colony
 		}
 	}
 	
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 200
+			minerals = @b1_minerals
 		}
 		upkeep = {
 			originiums = 1
 		}
 		produces = {
-			energy = 25
+			energy = 6	# 1×6
 		}
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		modifier = {
-			job_technician_add = 2
-		}
+	inline_script = {
+		script = jobs/technicians_add
+		AMOUNT = 2
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		modifier = {
-			job_technician_drone_add = 2
-		}
+	upgrades = {
+		building_originiums_power_plant_2
 	}
 
-	triggered_desc = {
-		trigger = { 
-			exists = owner
-			owner = { is_gestalt = no } 
-		}
-		text = job_technician_effect_desc
-	}
-	
-	triggered_desc = {
-		trigger = { 
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		text = job_technician_drone_effect_desc
-	}
-	
 	prerequisites = {
 		"tech_originiums_mining"
+	}
+}
+
+# 高能源石发电站
+building_originiums_power_plant_2 = {
+	base_buildtime = @b2_time
+	can_build = no
+	category = resource
+	
+	potential = {
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = crucible_colony
+		}
+	}
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
+		upkeep = {
+			originiums = 2
+		}
+		produces = {
+			energy = 13	# 2×6.5
+		}
+	}
+
+	planet_modifier = {
+		planet_technician_energy_produces_add = 1
+	}
+
+	inline_script = {
+		script = jobs/technicians_add
+		AMOUNT = 2
+	}
+
+	upgrades = {
+		building_originiums_power_plant_3
+	}
+
+	prerequisites = {
+		"tech_carbon_stick"	# 碳原料
+	}
+}
+
+# 先进源能反应炉
+building_originiums_power_plant_3 = {
+	base_buildtime = @b3_time
+	can_build = no
+	category = resource
+	
+	potential = {
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = crucible_colony
+		}
+	}
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+		}
+		upkeep = {
+			originiums = 3
+		}
+		produces = {
+			energy = 21	# 3×7
+		}
+	}
+
+	planet_modifier = {
+		planet_technician_energy_produces_add = 2
+	}
+
+	inline_script = {
+		script = jobs/technicians_add
+		AMOUNT = 2
+	}
+
+	upgrades = {
+		building_originiums_power_plant_4
+	}
+
+	prerequisites = {
+		"tech_carbon_brick"	# 碳素砖
+	}
+}
+
+# 超级源能反应堆
+building_originiums_power_plant_4 = {
+	base_buildtime = @b4_time
+	can_build = no
+	category = resource
+	
+	potential = {
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = crucible_colony
+		}
+	}
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b4_minerals
+		}
+		upkeep = {
+			originiums = 4
+		}
+		produces = {
+			energy = 30	# 4×7.5
+		}
+	}
+
+	planet_modifier = {
+		planet_technician_energy_produces_add = 3
+	}
+
+	inline_script = {
+		script = jobs/technicians_add
+		AMOUNT = 2
+	}
+
+	prerequisites = {
+		"tech_carbon_pack"	# 碳素组
 	}
 }
 
 # D32钢冶炼厂
 building_d32steels_smelter = {
-	base_buildtime = @b2_time
+	base_buildtime = @b1_time
 
 	exempt_from_ai_planet_specialization = no
 	category = manufacturing
 	
 	potential = {
-		NOT = { has_modifier = resort_colony }
-		NOT = { has_modifier = slave_colony }
-	}
-
-	allow = {
-		has_upgraded_capital = yes
-	}
-	
-	destroy_trigger = {
-		free_building_slots = 0
-		exists = owner
-		owner = {
-			is_ai = yes
-			has_monthly_income = {
-				resource = d32_steels
-				value > 9
-			}
-		}
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = no }
-		}
-		modifier = {
-			job_d32steels_smelting_expert_add = 1
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			has_modifier = crucible_colony
 		}
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		modifier = {
-			job_d32steels_smelting_drone_add = 1
-		}
+	inline_script = {
+		script = jobs/d32steels_smelter_add
+		AMOUNT = 1
 	}
 	
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = @b2_minerals
+			minerals = @b1_minerals
 		}
 		upkeep = {
-			energy = 3
-			originiums = 2
+			energy = @b1_upkeep
+			originiums = 1
 		}
 	}
 	
 	prerequisites = {
 		"tech_originiums_mining"
-	}
-
-	triggered_desc = {
-		trigger = { 
-			exists = owner
-			owner = { is_gestalt = no } 
-		}
-		text = job_d32steels_smelting_expert_effect_desc
-	}
-	
-	triggered_desc = {
-		trigger = { 
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		text = job_d32steels_smelting_drone_effect_desc
 	}
 }
 
 # 纳米片生产线
 building_nanosheets_production_line = {
-	base_buildtime = @b2_time
+	base_buildtime = @b1_time
 
 	exempt_from_ai_planet_specialization = no
 	category = manufacturing
 	
 	potential = {
-		NOT = { has_modifier = resort_colony }
-		NOT = { has_modifier = slave_colony }
-	}
-
-	allow = {
-		has_upgraded_capital = yes
-	}
-	
-	destroy_trigger = {
-		free_building_slots = 0
-		exists = owner
-		owner = {
-			is_ai = yes
-			has_monthly_income = {
-				resource = multipole_nanosheets
-				value > 9
-			}
-		}
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = no }
-		}
-		modifier = {
-			job_nanosheets_manufacturer_add = 1
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			has_modifier = crucible_colony
 		}
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		modifier = {
-			job_nanosheets_manufacture_drone_add = 1
-		}
+	inline_script = {
+		script = jobs/nanosheets_production_add
+		AMOUNT = 1
 	}
 	
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = @b2_minerals
+			minerals = @b1_minerals
 		}
 		upkeep = {
-			energy = 3
-			originiums = 2
+			energy = @b1_upkeep
+			originiums = 1
 		}
 	}
 	
 	prerequisites = {
 		"tech_originiums_mining"
-	}
-
-	triggered_desc = {
-		trigger = { 
-			exists = owner
-			owner = { is_gestalt = no } 
-		}
-		text = job_nanosheets_manufacturer_effect_desc
-	}
-	
-	triggered_desc = {
-		trigger = { 
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		text = job_nanosheets_manufacture_drone_effect_desc
 	}
 }
 

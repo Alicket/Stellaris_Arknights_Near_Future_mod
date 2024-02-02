@@ -2,7 +2,7 @@
 originiums_miner = {
 	category = worker
 	condition_string = WORKER_JOB_TRIGGER
-	building_icon = building_originiums_mining_plant
+	building_icon = building_originiums_mining_plant_1
 	clothes_texture_index = 2
 
 	possible_pre_triggers = {
@@ -27,10 +27,12 @@ originiums_miner = {
 	
 	weight = {
 		weight = @specialist_job_weight # Important job
+		mult = value:job_weights_modifier|JOB|crystal_miner|RESOURCE|rare_crystals|
 		modifier = {
 			factor = 10
 			is_enslaved = yes
 			can_take_servant_job = no
+			NOT = { has_slavery_type = { type = slavery_indentured } }
 		}
 		modifier = {
 			factor = 2
@@ -54,42 +56,5 @@ originiums_miner = {
 			factor = 0.1
 			can_take_servant_job = yes
 		}
-		modifier = {
-			factor = 5
-			has_trait = trait_syncretic_proles
-		}
-		modifier = {
-			factor = 2
-			species = {
-				has_species_flag = racket_species_flag
-			}
-		}
-		modifier = {
-			factor = 3
-			has_trait = trait_very_strong
-		}
-		modifier = {
-			factor = 1.5
-			has_trait = trait_strong
-		}
-		modifier = {
-			factor = 0.1
-			has_trait = trait_weak
-		}
-		modifier = {
-			factor = 3
-			OR = {
-				has_trait = trait_robust
-				has_trait = trait_robot_efficient_processors
-			}
-		}
-		modifier = {
-			factor = 3
-			has_trait = trait_nerve_stapled
-		}
-		modifier = {
-			factor = 0.75
-			has_trait = trait_necrophage
-		}			
 	}
 }

@@ -1,0 +1,35 @@
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = { is_gestalt = no }
+	}
+	modifier = {
+		job_d32steels_smelting_expert_add = $AMOUNT$
+	}
+}
+
+triggered_desc = {
+	trigger = {
+		exists = owner
+		owner = { is_gestalt = no }
+	}
+	text = job_d32steels_smelting_expert_effect_desc
+}
+
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = { is_gestalt = yes }
+	}
+	modifier = {
+		job_d32steels_smelting_drone_add = $AMOUNT$
+	}
+}
+
+triggered_desc = {
+	trigger = {
+		exists = owner
+		owner = { is_gestalt = yes }
+	}
+	text = job_d32steels_smelting_drone_effect_desc
+}
