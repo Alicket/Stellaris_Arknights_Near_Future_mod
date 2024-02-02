@@ -68,8 +68,8 @@ trait_ARK_ocean_seaborn_desc:0 "祂只说千万鳞片将汇成一体，飞向深
 #领袖特质
 leader_trait_ruler_seaborn:0 "海嗣"
 leader_trait_ruler_seaborn_desc:0 "§B$trait_ARK_ocean_seaborn_desc$§!"
-leader_trait_Ishar_mla01:0 "回响意志"
-leader_trait_Ishar_mla01_desc:0 "§B神明从不预言虚无缥缈的未来，从不许下不切实际的承诺，会永远毫无吝啬地将自己千万春秋积累而来的知识分享给每一个个体。§!"
+leader_trait_Ishar_mla:0 "回响意志"
+leader_trait_Ishar_mla_desc:0 "§B神明从不预言虚无缥缈的未来，从不许下不切实际的承诺.§!"
 leader_trait_Ishar_mla02:0 "先祖导师"
 leader_trait_Ishar_mla02_desc:0 "§B神明§!"
 leader_trait_seaborn_sci_simple_thoughts:0 "简易思维"

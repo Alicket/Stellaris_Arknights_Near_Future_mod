@@ -1,23 +1,23 @@
-pc_ark_continental_ocean = {
-	entity = "ark_continental_ocean"
-	entity_scale = @planet_standard_scale
-	icon = GFX_planet_type_continental
-
-	climate = "wet"
-
-	atmosphere_color		= hsv { 0.59 0.45 0.95 }		#DONE
-	atmosphere_intensity	= 1.0
-	atmosphere_width		= 0.5
-
-	show_city = no
-	extra_orbit_size = 0
-	extra_planet_count = 0
-
-	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
-	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
-
-	colonizable = yes
-	district_set = standard
-
-	carry_cap_per_free_district = @carry_cap_normal
-}
+#pc_ark_continental_ocean = {
+#	entity = "ark_continental_ocean"
+#	entity_scale = @planet_standard_scale
+#	icon = GFX_planet_type_continental
+#
+#	climate = "wet"
+#
+#	atmosphere_color		= hsv { 0.59 0.45 0.95 }		#DONE
+#	atmosphere_intensity	= 1.0
+#	atmosphere_width		= 0.5
+#
+#	show_city = no
+#	extra_orbit_size = 0
+#	extra_planet_count = 0
+#
+#	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+#	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+#
+#	colonizable = yes
+#	district_set = standard
+#
+#	carry_cap_per_free_district = @carry_cap_normal
+#}

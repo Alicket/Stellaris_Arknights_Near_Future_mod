@@ -35,7 +35,7 @@ civic_pharmaceutical_enterprises = {
 	possible = { civics = { value = civic_business_union } }
 	random_weight = { base = 0 }
 	modifier = {
-		leader_age = 10
+		leader_lifespan_add = 10
 	}
 }
 

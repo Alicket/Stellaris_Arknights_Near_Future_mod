@@ -1,0 +1,54 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_ark_frontend_ste_logo"
+		texturefile = "gfx/interface/frontend/ste_logo.dds"
+	}
+    spriteType = {
+		name = "GFX_ark_frontend_single"
+		texturefile = "gfx/interface/frontend/01_single.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3	
+	}
+    spriteType = {
+		name = "GFX_ark_frontend_load"
+		texturefile = "gfx/interface/frontend/02_load.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3	
+	}
+    spriteType = {
+		name = "GFX_ark_frontend_multi"
+		texturefile = "gfx/interface/frontend/03_multi.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3	
+	}
+    spriteType = {
+		name = "GFX_ark_frontend_coop"
+		texturefile = "gfx/interface/frontend/04_coop.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3	
+	}
+    spriteType = {
+		name = "GFX_ark_frontend_add"
+		texturefile = "gfx/interface/frontend/05_add.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3	
+	}
+    spriteType = {
+		name = "GFX_ark_frontend_settings"
+		texturefile = "gfx/interface/frontend/06_settings.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3	
+	}
+    spriteType = {
+		name = "GFX_ark_frontend_credits"
+		texturefile = "gfx/interface/frontend/07_credits.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3	
+	}
+    spriteType = {
+		name = "GFX_ark_frontend_exit"
+		texturefile = "gfx/interface/frontend/08_exit.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3	
+	}
+}

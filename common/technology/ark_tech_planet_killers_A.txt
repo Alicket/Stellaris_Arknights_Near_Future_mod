@@ -12,11 +12,8 @@ tech_pk_ark_frostnova = {
 	ai_weight = {
 		factor = 1
 		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
+			factor = 5
+
 		}
 		modifier = {
 			factor = 2

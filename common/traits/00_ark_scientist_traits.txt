@@ -9,7 +9,7 @@ leader_trait_walk_in_dust_s = {
 		all_technology_research_speed = 0.05
 		ship_anomaly_generation_chance_mult = 0.2
 	}
-	leader_trait = { scientist }
+	
 	leader_class = { scientist }
 	randomized = no
 }
@@ -23,7 +23,7 @@ leader_trait_unknown_technology = {
 	modifier = {
 		all_technology_research_speed = 0.1
 	}
-	leader_trait = { scientist }
+	
 	leader_class = { scientist }
 	randomized = no
 }
@@ -35,7 +35,7 @@ trait_scientist_meet_end = {
 	
 	icon = "gfx/interface/icons/traits/leader_trait_meet_end.dds"
 	immortal_leaders = yes
-	leader_trait = { scientist }
+	
 	leader_class = { scientist }
 	randomized = no
 }
@@ -49,22 +49,21 @@ leader_trait_precise_calculation = {
 	modifier = {
 		all_technology_research_speed = 0.1
 	}
-	leader_trait = { scientist }
+	
 	leader_class = { scientist }
 	randomized = no
 }
 
 # 血魔（可露希尔专属）
-leader_trait_vampire = {
-	cost = 0
-	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_vampire.dds"
-	self_modifier = {
-		leader_age = 700
-	}
-
-	leader_trait = { scientist ruler }
-	leader_class = { scientist ruler }
-
-	initial = no
-	randomized = no
-}
+#leader_trait_vampire = {
+#	cost = 0
+#	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_vampire.dds"
+#	self_modifier = {
+#		leader_age = 700
+#	}
+#
+#	leader_class = { scientist  }
+#
+#	initial = no
+#	randomized = no
+#}

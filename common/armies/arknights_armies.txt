@@ -47,7 +47,10 @@ land_warship_army = {
 		custom_tooltip = {
 			text = landwarship_troop_limit_tooltip
 			owner = {
-				has_trait = trait_latent_oripathy
+				OR = {
+					has_trait = trait_latent_oripathy
+					has_trait = trait_Originium_Arts
+				}
 			}
 		}
 	}
@@ -56,7 +59,10 @@ land_warship_army = {
 		custom_tooltip = {
 			text = landwarship_troop_limit_tooltip
 			owner = {
-				has_trait = trait_latent_oripathy
+				OR = {
+					has_trait = trait_latent_oripathy
+					has_trait = trait_Originium_Arts
+				}
 			}
 		}
 	}
@@ -87,7 +93,10 @@ galaxy_warship_army = {
 		custom_tooltip = {
 			text = galaxywarship_troop_limit_tooltip
 			owner = {
-				has_trait = trait_latent_oripathy
+				OR = {
+					has_trait = trait_latent_oripathy
+					has_trait = trait_Originium_Arts
+				}
 			}
 		}
 	}
@@ -96,7 +105,10 @@ galaxy_warship_army = {
 		custom_tooltip = {
 			text = landwarship_troop_limit_tooltip
 			owner = {
-				has_trait = trait_latent_oripathy
+				OR = {
+					has_trait = trait_latent_oripathy
+					has_trait = trait_Originium_Arts
+				}
 			}
 		}
 	}

@@ -86,6 +86,15 @@ country_event = {
 			country_event = { id = ark_rhodes_island.5 }
 		}
 	}
+	option = {
+		name = ark_rhodes_island.2.c	# 重置肖像
+		custom_tooltip = ark_rhodes_island.2.c_tooltip
+		hidden_effect = {
+			event_target:ARKNIGHTS_SET_DOCTOR = {
+				change_leader_portrait = ARK_N_Doctor_N
+			}
+		}
+	}
 
 	option = {
 		name = ark_rhodes_island.2.g	# 确认对话

@@ -128,24 +128,24 @@ decision_ark_seaborn_resume_evolution = {
 	}
 }
 #海嗣：认知塑造
-decision_ark_seaborn_mould = {
-	owned_planets_only = yes
-	sound = event_administrative_work
-	icon = decision_politics
-	potential = {
-		is_capital = yes
-		owner = {
-			has_trait = trait_ARK_ocean_seaborn
-		}
-	}
-	effect = {
-		owner = {
-			country_event = {
-				id = ark_seaborn_evo.14
-			}
-		}
-	}
-}
+#decision_ark_seaborn_mould = {
+#	owned_planets_only = yes
+#	sound = event_administrative_work
+#	icon = decision_politics
+#	potential = {
+#		is_capital = yes
+#		owner = {
+#			has_trait = trait_ARK_ocean_seaborn
+#		}
+#	}
+#	effect = {
+#		owner = {
+#			country_event = {
+#				id = ark_seaborn_evo.14
+#			}
+#		}
+#	}
+#}
 
 decision_ark_arclight_well4a = {
 	owned_planets_only = yes

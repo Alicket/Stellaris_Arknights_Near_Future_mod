@@ -56,7 +56,7 @@ Tyra_system_ocean = {
 
 	planet = { #Ì©À­
 		name = "NAME_Terra_ocean"
-		class = "pc_ark_continental_ocean"
+		class = "pc_continental"
 		orbit_distance = 25
 		orbit_angle = 120
 		size = 25

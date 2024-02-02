@@ -1,5 +1,5 @@
-leader_trait_Ishar_mla = {
-	councilor_trait = yes
+leader_trait_Ishar_mla = { #回响意志
+	cost = 0
 	inline_script = {
 		script = trait/icon
 		ICON = "GFX_ark_leader_trait_ishar_mla"
@@ -8,24 +8,12 @@ leader_trait_Ishar_mla = {
 		TIER = none
 	}
 	immortal_leaders = yes
-	modifier = {
+	councilor_modifier = {
 		country_base_influence_produces_add = 1
 		country_unity_produces_mult = 0.15
 		country_food_produces_mult = 0.1
 	}
-	triggered_modifier = {
-		potential = { has_leader_flag = doctor_upgrade_1 }
-		all_technology_research_speed = 0.10
-	}
-	triggered_modifier = {
-		potential = { has_leader_flag = doctor_upgrade_2 }
-		planet_stability_add = 5
-	}
-	triggered_modifier = {
-		potential = { has_leader_flag = doctor_upgrade_3 }
-		planet_jobs_unity_produces_mult = 0.20
-	}
-	leader_class = { governor admiral scientist general }
+	leader_class = { official scientist commander }
 	initial = no
 	randomized = no
 }
@@ -34,30 +22,18 @@ leader_trait_ruler_seaborn = {
 	icon = "gfx/interface/icons/traits/trait_ark_ocean_seaborn.dds"
 	modifier = {
 	}
-	leader_trait = { ruler }
-	leader_class = { ruler }
-	initial = no
-	randomized = no
-}
-leader_trait_Ishar_mla01 = { #回响意志
-	cost = 0
-	icon = "gfx/interface/icons/traits/trait_ark_ocean_Ishar_mla01.dds"
-	modifier = {
-	}
-	leader_trait = { ruler }
-	leader_class = { ruler }
+	leader_class = { official scientist commander }
 	initial = no
 	randomized = no
 }
 leader_trait_Ishar_mla02 = {#先祖导师
 	cost = 0
 	icon = "gfx/interface/icons/traits/trait_ark_ocean_Ishar_mla02.dds"
-	modifier = {
+	councilor_modifier = {
 		leader_skill_levels = 1
 		species_leader_exp_gain = 0.15
 	}
-	leader_trait = { ruler }
-	leader_class = { ruler }
+	leader_class = { official scientist commander }
 	initial = no
 	randomized = no
 }
@@ -67,10 +43,9 @@ leader_trait_seaborn_sci_simple_thoughts = {#简易思维
 	cost = 0
 	icon = "gfx/interface/icons/traits/trait_ark_ocean_simple_thought.dds"
 	modifier = {
-		all_technology_research_speed = -0.05
 		ship_anomaly_research_speed_mult = -0.1
+		science_ship_survey_speed = -0.05
 	}
-	leader_trait = { scientist }
 	leader_class = { scientist }
 	initial = no
 	randomized = no
@@ -79,10 +54,9 @@ leader_trait_seaborn_sci_complex_thoughts = {#复杂回路
 	cost = 0
 	icon = "gfx/interface/icons/traits/trait_ark_ocean_complex_thought.dds"
 	modifier = {
-		all_technology_research_speed = 0.05
 		ship_anomaly_research_speed_mult = 0.1
+		science_ship_survey_speed = 0.15
 	}
-	leader_trait = { scientist }
 	leader_class = { scientist }
 	initial = no
 	randomized = no
@@ -95,7 +69,6 @@ leader_trait_seaborn_arm_strategic_mind = {#战略思维
 		army_morale_damage_mult = 0.10
 		army_collateral_damage_mult = -0.33
 	}
-	leader_trait = { scientist }
 	leader_class = { scientist }
 	initial = no
 	randomized = no

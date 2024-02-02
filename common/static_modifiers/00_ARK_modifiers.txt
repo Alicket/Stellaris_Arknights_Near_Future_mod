@@ -141,7 +141,7 @@ g_jyzdbt_modifier = {	# 就业指导补贴
 	icon_frame = 1
 }
 y_znjxzc_modifier = {	# 智能机械支持
-	pop_assembly_speed = 0.1
+	planet_pop_assembly_mult = 0.1
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
 	icon_frame = 1
 }
@@ -188,7 +188,7 @@ biochemical_protection = {	# 生化防护
 	planet_stability_add = 10
 	planet_jobs_produces_mult = -0.10
 	pop_growth_speed = -0.5
-	pop_assembly_speed = -0.5
+	planet_pop_assembly_mult = -0.5
 	icon = "gfx/interface/icons/planet_modifiers/pm_biochemical_protection.dds"
 	icon_frame = 2
 }
@@ -222,7 +222,6 @@ contingency_contract_4 = {	# 危机合约：工巧
 	starbase_buildings_cost_mult = -0.15		# 恒星基地建筑花费
 	starbase_modules_cost_mult = -0.15 		# 恒星基地模块花费
 	shipclass_military_station_build_cost_mult = -0.15	# 防御平台建造花费
-	shipsize_military_station_small_upkeep_mult = -0.25	# 防御平台维护费
 	starbase_shipyard_build_cost_mult = -0.15		# 造舰费用
 	country_ship_upgrade_cost_mult = -0.15		# 舰船升级花费
 	ships_upkeep_mult = -0.1				# 舰船维护费

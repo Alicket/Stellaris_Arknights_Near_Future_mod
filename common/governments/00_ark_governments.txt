@@ -5,17 +5,6 @@ gov_ark_elite_republic = {
 	ruler_title = RT_HIGH_COMMISSIONER
 	ruler_title_female = RT_HIGH_COMMISSIONER_FEMALE
 
-	election_candidates = {
-		modifier = {
-			add = 100
-			leader_class = ruler
-		}
-		modifier = {
-			add = 20
-			leader_class = governor
-		}
-	}
-
 	possible = {
 		has_authority = auth_city_republic
 	}
@@ -32,17 +21,6 @@ gov_ark_elite_republic = {
 gov_ark_holy_republic = {
 	ruler_title = RT_CHIEF_PRECENTOR
 	ruler_title_female = RT_CHIEF_PRECENTOR_FEMALE
-
-	election_candidates = {
-		modifier = {
-			add = 100
-			leader_class = ruler
-		}
-		modifier = {
-			add = 10
-			leader_class = governor
-		}
-	}
 
 	possible = {
 		has_authority = auth_city_republic
@@ -63,17 +41,6 @@ gov_ark_holy_witness_meeting = {
 	
 	should_force_rename = yes
 
-	election_candidates = {
-		modifier = {
-			add = 100
-			leader_class = ruler
-		}
-		modifier = {
-			add = 10
-			leader_class = governor
-		}
-	}
-
 	possible = {
 		has_authority = auth_city_republic
 		OR = {
@@ -93,20 +60,6 @@ gov_ark_holy_witness_meeting = {
 gov_ark_military_republic = {
 	ruler_title = RT_ARCHON
 	ruler_title_female = RT_ARCHON_FEMALE
-
-	election_candidates = {
-		modifier = {
-			add = 100
-			leader_class = ruler
-		}
-		modifier = {
-			add = 10
-			OR = {
-				leader_class = admiral
-				leader_class = general
-			}
-		}
-	}
 
 	possible = {
 		has_authority = auth_city_republic
@@ -137,22 +90,7 @@ gov_ark_warrior_corps = {
 	ruler_title_female = RT_GRAND_MASTER_FEMALE
 	
 	should_force_rename = yes
-	
-	leader_class = admiral 	# Initial ruler will become this if elected out of office
 
-	election_candidates = {
-		modifier = {
-			add = 100
-			leader_class = ruler
-		}
-		modifier = {
-			add = 10
-			OR = {
-				leader_class = admiral
-				leader_class = general
-			}
-		}
-	}
 
 	possible = {
 		has_authority = auth_city_republic
@@ -169,22 +107,6 @@ gov_ark_star_knight = {
 	ruler_title_female = RT_GRAND_MASTER_FEMALE
 	
 	should_force_rename = yes
-	
-	leader_class = admiral 	# Initial ruler will become this if elected out of office
-
-	election_candidates = {
-		modifier = {
-			add = 100
-			leader_class = ruler
-		}
-		modifier = {
-			add = 10
-			OR = {
-				leader_class = admiral
-				leader_class = general
-			}
-		}
-	}
 
 	possible = {
 		has_authority = auth_city_republic
@@ -199,25 +121,6 @@ gov_ark_star_knight = {
 gov_ark_harmonious_republic = {
 	ruler_title = RT_COORDINATOR
 	ruler_title_female = RT_COORDINATOR_FEMALE
-
-	election_candidates = {
-		modifier = {
-			add = 100
-			leader_class = ruler
-		}
-		modifier = {
-			add = 10
-			OR = {
-				leader_class = scientist
-				leader_class = governor
-			}
-		}
-		modifier = {
-			factor = 0
-			leader_class = admiral
-			leader_class = general
-		}
-	}
 
 	possible = {
 		has_authority = auth_city_republic
@@ -270,19 +173,6 @@ gov_ark_technology_federation = {
 	ruler_title_female = RT_DIRECTOR_GENERAL_FEMALE
 	
 	should_force_rename = yes
-	
-	leader_class = scientist
-
-	election_candidates = {
-		modifier = {
-			add = 100
-			leader_class = ruler
-		}
-		modifier = {
-			add = 10
-			leader_class = scientist
-		}
-	}
 
 	possible = {
 		has_authority = auth_city_republic
@@ -317,17 +207,6 @@ gov_ark_commercial_republic = {
 	
 	should_force_rename = yes
 
-	election_candidates = {
-		modifier = {
-			add = 100
-			leader_class = ruler
-		}
-		modifier = {
-			add = 10
-			leader_class = governor
-		}
-	}
-
 	possible = {
 		has_authority = auth_city_republic
 		NOR = {
@@ -350,322 +229,305 @@ gov_ark_commercial_republic = {
 	}
 }
 
+#全部隐藏，因为城邦专制无效
 ##############################################################################
 
 # 宪政专制
-gov_ark_constitutional_despotism = {
-	ruler_title = RT_EXECUTOR
-	ruler_title_female = RT_EXECUTOR_FEMALE
-
-	possible = {
-		has_authority = auth_city_despotism
-	}
-	weight = {
-		base = 1
-	}
-}
+#gov_ark_constitutional_despotism = {
+#	ruler_title = RT_EXECUTOR
+#	ruler_title_female = RT_EXECUTOR_FEMALE
+#
+#	possible = {
+#		has_authority = auth_city_despotism
+#	}
+#	weight = {
+#		base = 1
+#	}
+#}
 
 # 神权专制
-gov_ark_theocratic_despotism = {
-	ruler_title = RT_PATRIARCH
-	ruler_title_female = RT_MATRIARCH
-
-	election_candidates = {
-		modifier = {
-			add = 100
-			leader_class = ruler
-		}
-		modifier = {
-			add = 10
-			leader_class = governor
-		}
-	}
-
-	possible = {
-		has_authority = auth_city_despotism
-		OR = {
-			has_ethic = ethic_spiritualist		# 唯心主义
-			has_ethic = ethic_fanatic_spiritualist	# 极端唯心主义	
-		}
-	}
-	weight = {
-		base = 5
-	}
-}
+#gov_ark_theocratic_despotism = {
+#	ruler_title = RT_PATRIARCH
+#	ruler_title_female = RT_MATRIARCH
+#
+#	election_candidates = {
+#
+#		modifier = {
+#			add = 10
+#			leader_class = governor
+#		}
+#	}
+#
+#	possible = {
+#		has_authority = auth_city_despotism
+#		OR = {
+#			has_ethic = ethic_spiritualist		# 唯心主义
+#			has_ethic = ethic_fanatic_spiritualist	# 极端唯心主义
+#		}
+#	}
+#	weight = {
+#		base = 5
+#	}
+#}
 
 # 神选裁决庭
-gov_ark_chosen_tribunal = {
-	possible = {
-		has_authority = auth_city_despotism
-		OR = {
-			has_ethic = ethic_spiritualist	# 唯心主义
-			has_ethic = ethic_fanatic_spiritualist	# 极端唯心主义		
-		}
-		has_valid_civic = civic_holy_notarial_hall		# 神圣公证所
-		NOT = { has_valid_civic = civic_corporate_dominion }	# 企业国度
-		NOT = { has_valid_civic = civic_business_union }	# 商业联合
-	}
-	weight = {
-		base = 1000
-	}
-}
+#gov_ark_chosen_tribunal = {
+#	possible = {
+#		has_authority = auth_city_despotism
+#		OR = {
+#			has_ethic = ethic_spiritualist	# 唯心主义
+#			has_ethic = ethic_fanatic_spiritualist	# 极端唯心主义
+#		}
+#		has_valid_civic = civic_holy_notarial_hall		# 神圣公证所
+#		NOT = { has_valid_civic = civic_corporate_dominion }	# 企业国度
+#		NOT = { has_valid_civic = civic_business_union }	# 商业联合
+#	}
+#	weight = {
+#		base = 1000
+#	}
+#}
 
 # 军事专制
-gov_ark_military_despotism = {
-	ruler_title = RT_GRAND_MARSHAL
-	ruler_title_female = RT_GRAND_MARSHAL_FEMALE
-
-	election_candidates = {
-		modifier = {
-			add = 100
-			leader_class = ruler
-		}
-		modifier = {
-			add = 10
-			OR = {
-				leader_class = admiral
-				leader_class = general
-			}
-		}
-	}
-
-	possible = {
-		has_authority = auth_city_despotism
-		OR = {
-			has_ethic = ethic_militarist		# 军国主义
-			has_ethic = ethic_fanatic_militarist	# 极端军国主义
-		}
-	}
-	weight = {
-		base = 5
-		modifier = {
-			factor = 2
-			has_ethic = ethic_fanatic_militarist	# 极端军国主义
-		}
-		modifier = {
-			factor = 1.10
-			OR = {
-				has_valid_civic = civic_distinguished_admiralty	 # 卓越海军
-				has_valid_civic = civic_nationalistic_zeal	 # 国民主义热忱
-			}
-		}
-	}
-}
+#gov_ark_military_despotism = {
+#	ruler_title = RT_GRAND_MARSHAL
+#	ruler_title_female = RT_GRAND_MARSHAL_FEMALE
+#
+#	election_candidates = {
+#
+#		modifier = {
+#			add = 10
+#			OR = {
+#				leader_class = admiral
+#				leader_class = general
+#			}
+#		}
+#	}
+#
+#	possible = {
+#		has_authority = auth_city_despotism
+#		OR = {
+#			has_ethic = ethic_militarist		# 军国主义
+#			has_ethic = ethic_fanatic_militarist	# 极端军国主义
+#		}
+#	}
+#	weight = {
+#		base = 5
+#		modifier = {
+#			factor = 2
+#			has_ethic = ethic_fanatic_militarist	# 极端军国主义
+#		}
+#		modifier = {
+#			factor = 1.10
+#			OR = {
+#				has_valid_civic = civic_distinguished_admiralty	 # 卓越海军
+#				has_valid_civic = civic_nationalistic_zeal	 # 国民主义热忱
+#			}
+#		}
+#	}
+#}
 
 # 强者世界
-gov_ark_strong_world = {
-	ruler_title = RT_IMPERATOR
-	ruler_title_female = RT_IMPERATRIX
-	
-	should_force_rename = yes
-	
-	leader_class = admiral 	# Initial ruler will become this if elected out of office
-
-	election_candidates = {
-		modifier = {
-			add = 100
-			leader_class = ruler
-		}
-		modifier = {
-			add = 10
-			OR = {
-				leader_class = admiral
-				leader_class = general
-			}
-		}
-	}
-
-	possible = {
-		has_authority = auth_city_despotism
-		has_valid_civic = civic_warrior_culture		# 尚武文化
-	}
-	weight = {
-		base = 800
-	}
-}
+#gov_ark_strong_world = {
+#	ruler_title = RT_IMPERATOR
+#	ruler_title_female = RT_IMPERATRIX
+#
+#	should_force_rename = yes
+#
+#	leader_class = admiral 	# Initial ruler will become this if elected out of office
+#
+#	election_candidates = {
+#
+#		modifier = {
+#			add = 10
+#			OR = {
+#				leader_class = admiral
+#				leader_class = general
+#			}
+#		}
+#	}
+#
+#	possible = {
+#		has_authority = auth_city_despotism
+#		has_valid_civic = civic_warrior_culture		# 尚武文化
+#	}
+#	weight = {
+#		base = 800
+#	}
+#}
 
 # 骑士国
-gov_ark_knight_kingdom = {
-	ruler_title = RT_KNIGHT_KING
-	ruler_title_female = RT_KNIGHT_KING_FEMALE
-	
-	should_force_rename = yes
-	
-	leader_class = admiral 	# Initial ruler will become this if elected out of office
-
-	election_candidates = {
-		modifier = {
-			add = 100
-			leader_class = ruler
-		}
-		modifier = {
-			add = 10
-			OR = {
-				leader_class = admiral
-				leader_class = general
-			}
-		}
-	}
-
-	possible = {
-		has_authority = auth_city_despotism
-		has_valid_civic = civic_chivalry	# 骑士精神
-	}
-	weight = {
-		base = 800
-	}
-}
+#gov_ark_knight_kingdom = {
+#	ruler_title = RT_KNIGHT_KING
+#	ruler_title_female = RT_KNIGHT_KING_FEMALE
+#
+#	should_force_rename = yes
+#
+#	leader_class = admiral 	# Initial ruler will become this if elected out of office
+#
+#	election_candidates = {
+#
+#		modifier = {
+#			add = 10
+#			OR = {
+#				leader_class = admiral
+#				leader_class = general
+#			}
+#		}
+#	}
+#
+#	possible = {
+#		has_authority = auth_city_despotism
+#		has_valid_civic = civic_chivalry	# 骑士精神
+#	}
+#	weight = {
+#		base = 800
+#	}
+#}
 
 # 和平专制
-gov_ark_peaceful_despotism = {
-	ruler_title = RT_SERENE_PROTECTOR
-	ruler_title_female = RT_SERENE_PROTECTOR_FEMALE
-
-	election_candidates = {
-		modifier = {
-			add = 100
-			leader_class = ruler
-		}
-		modifier = {
-			add = 10
-			OR = {
-				leader_class = scientist
-				leader_class = governor
-			}
-		}
-		modifier = {
-			factor = 0
-			leader_class = admiral
-			leader_class = general
-		}
-	}
-
-	possible = {
-		has_authority = auth_city_despotism
-		OR = {
-			has_ethic = ethic_pacifist		# 和平主义
-			has_ethic = ethic_fanatic_pacifist	# 极端和平主义
-		}
-	}
-	weight = {
-		base = 5
-		modifier = {
-			factor = 2
-			has_ethic = ethic_fanatic_pacifist	# 极端和平主义
-		}
-		modifier = {
-			factor = 1.5
-			has_valid_civic = civic_agrarian_idyll	# 田园牧歌
-		}
-	}
-}
+#gov_ark_peaceful_despotism = {
+#	ruler_title = RT_SERENE_PROTECTOR
+#	ruler_title_female = RT_SERENE_PROTECTOR_FEMALE
+#
+#	election_candidates = {
+#
+#		modifier = {
+#			add = 10
+#			OR = {
+#				leader_class = scientist
+#				leader_class = governor
+#			}
+#		}
+#		modifier = {
+#			factor = 0
+#			leader_class = admiral
+#			leader_class = general
+#		}
+#	}
+#
+#	possible = {
+#		has_authority = auth_city_despotism
+#		OR = {
+#			has_ethic = ethic_pacifist		# 和平主义
+#			has_ethic = ethic_fanatic_pacifist	# 极端和平主义
+#		}
+#	}
+#	weight = {
+#		base = 5
+#		modifier = {
+#			factor = 2
+#			has_ethic = ethic_fanatic_pacifist	# 极端和平主义
+#		}
+#		modifier = {
+#			factor = 1.5
+#			has_valid_civic = civic_agrarian_idyll	# 田园牧歌
+#		}
+#	}
+#}
 
 # 全体专制
-gov_ark_totalitarian_despotism = {
-	ruler_title = RT_PRIMARCH
-	ruler_title_female = RT_PRIMARCH_FEMALE
-
-	possible = {
-		has_authority = auth_city_despotism
-		OR = {
-			has_ethic = ethic_materialist	# 唯物主义
-			has_ethic = ethic_fanatic_materialist	# 极端唯物主义
-		}
-	}
-	weight = {
-		base = 5
-		modifier = {
-			factor = 2
-			has_ethic = ethic_fanatic_materialist	# 极端唯物主义
-		}
-		modifier = {
-			factor = 1.5
-			has_origin = origin_mechanists	# 机械师
-		}
-	}
-}
+#gov_ark_totalitarian_despotism = {
+#	ruler_title = RT_PRIMARCH
+#	ruler_title_female = RT_PRIMARCH_FEMALE
+#
+#	possible = {
+#		has_authority = auth_city_despotism
+#		OR = {
+#			has_ethic = ethic_materialist	# 唯物主义
+#			has_ethic = ethic_fanatic_materialist	# 极端唯物主义
+#		}
+#	}
+#	weight = {
+#		base = 5
+#		modifier = {
+#			factor = 2
+#			has_ethic = ethic_fanatic_materialist	# 极端唯物主义
+#		}
+#		modifier = {
+#			factor = 1.5
+#			has_origin = origin_mechanists	# 机械师
+#		}
+#	}
+#}
 
 # 学阀专制
-gov_ark_technocratic_despotism = {
-	ruler_title = RT_OVERSEER
-	ruler_title_female = RT_OVERSEER_FEMALE
-	
-	should_force_rename = yes
-	
-	leader_class = scientist 	# Initial ruler will become this if elected out of office
-
-	election_candidates = {
-		modifier = {
-			add = 100
-			leader_class = ruler
-		}
-		modifier = {
-			add = 10
-			leader_class = scientist
-		}
-	}
-
-	possible = {
-		has_authority = auth_city_despotism
-		has_valid_civic = civic_technocracy	# 技术治国
-	}
-	weight = {
-		base = 900
-	}
-}
+#gov_ark_technocratic_despotism = {
+#	ruler_title = RT_OVERSEER
+#	ruler_title_female = RT_OVERSEER_FEMALE
+#
+#	should_force_rename = yes
+#
+#	leader_class = scientist 	# Initial ruler will become this if elected out of office
+#
+#	election_candidates = {
+#
+#		modifier = {
+#			add = 10
+#			leader_class = scientist
+#		}
+#	}
+#
+#	possible = {
+#		has_authority = auth_city_despotism
+#		has_valid_civic = civic_technocracy	# 技术治国
+#	}
+#	weight = {
+#		base = 900
+#	}
+#}
 
 # 杀戮帝国
-gov_ark_killing_empire = {
-	ruler_title = RT_KING
-	ruler_title_female = RT_QUEEN
-	
-	should_force_rename = yes
-
-	possible = {
-		has_authority = auth_city_despotism
-		has_valid_civic = civic_fanatic_purifiers	# 种族洁癖
-	}
-	weight = {
-		base = 2000
-	}
-}
+#gov_ark_killing_empire = {
+#	ruler_title = RT_KING
+#	ruler_title_female = RT_QUEEN
+#
+#	should_force_rename = yes
+#
+#	possible = {
+#		has_authority = auth_city_despotism
+#		has_valid_civic = civic_fanatic_purifiers	# 种族洁癖
+#	}
+#	weight = {
+#		base = 2000
+#	}
+#}
 
 # 商业帝国
-gov_ark_business_empire = {
-	possible = {
-		has_authority = auth_city_despotism
-		OR = {
-			has_valid_civic = civic_corporate_dominion		# 企业国度
-			has_valid_civic = civic_business_union		# 商业联合
-			has_valid_civic = civic_pharmaceutical_enterprises	# 医药企业
-			has_valid_civic = civic_logistics_companies		# 物流公司
-			has_valid_civic = civic_financing_laboratories		# 融资实验室
-			has_valid_civic = civic_security_contractors		# 安全承包商
-			has_valid_civic = civic_industry_manufacturers		# 工业制造商
-			has_valid_civic = civic_circulation_business		# 流通商业
-		}
-	}
-	weight = {
-		base = 700
-	}
-}
+#gov_ark_business_empire = {
+#	possible = {
+#		has_authority = auth_city_despotism
+#		OR = {
+#			has_valid_civic = civic_corporate_dominion		# 企业国度
+#			has_valid_civic = civic_business_union		# 商业联合
+#			has_valid_civic = civic_pharmaceutical_enterprises	# 医药企业
+#			has_valid_civic = civic_logistics_companies		# 物流公司
+#			has_valid_civic = civic_financing_laboratories		# 融资实验室
+#			has_valid_civic = civic_security_contractors		# 安全承包商
+#			has_valid_civic = civic_industry_manufacturers		# 工业制造商
+#			has_valid_civic = civic_circulation_business		# 流通商业
+#		}
+#	}
+#	weight = {
+#		base = 700
+#	}
+#}
 
 ##############################################################################
 
 # 罪恶城邦
-gov_ark_evil_city_state = {
-	ruler_title = RT_WARLORD
-	
-	should_force_rename = yes
-
-	possible = {
-		OR = {
-			has_authority = auth_city_republic
-			has_authority = auth_city_despotism
-		}
-		has_valid_civic = civic_barbaric_despoilers	# 野蛮掠夺者
-	}
-	weight = {
-		base = 10000
-	}
-}
+#gov_ark_evil_city_state = {
+#	ruler_title = RT_WARLORD
+#
+#	should_force_rename = yes
+#
+#	possible = {
+#		OR = {
+#			has_authority = auth_city_republic
+#			has_authority = auth_city_despotism
+#		}
+#		has_valid_civic = civic_barbaric_despoilers	# 野蛮掠夺者
+#	}
+#	weight = {
+#		base = 10000
+#	}
+#}

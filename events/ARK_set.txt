@@ -128,34 +128,34 @@ namespace = ark_set
 #}
 
 # 检查并清除“源石病”特性
-country_event = {
-	id = ark_set.4
-	is_triggered_only = yes
-	hide_window = yes
+# country_event = {
+# 	id = ark_set.4
+# 	is_triggered_only = yes
+# 	hide_window = yes
 
-	trigger = {
-		has_country_flag = ark_hospital123
-	}
+# 	trigger = {
+# 		has_country_flag = ark_hospital123
+# 	}
 
-	immediate = {
-		every_owned_pop = {
-			limit = {
-				is_same_species = root
-				NOT = { species = { has_trait = trait_Originium_Arts } }
-				species = { has_trait = trait_latent_oripathy }
-			}
-			modify_species = {
-				species = this
-				add_trait = trait_Originium_Arts
-				remove_trait = trait_latent_oripathy
-			}
-		}
-		every_owned_leader = {
-			limit = { has_trait = leader_trait_oripathy }
-			remove_trait = leader_trait_oripathy
-		}
-	}
-}
+# 	immediate = {
+# 		every_owned_pop = {
+# 			limit = {
+# 				is_same_species = root
+# 				NOT = { species = { has_trait = trait_Originium_Arts } }
+# 				species = { has_trait = trait_latent_oripathy }
+# 			}
+# 			modify_species = {
+# 				species = this
+# 				add_trait = trait_Originium_Arts
+# 				remove_trait = trait_latent_oripathy
+# 			}
+# 		}
+# 		every_owned_leader = {
+# 			limit = { has_trait = leader_trait_oripathy }
+# 			remove_trait = leader_trait_oripathy
+# 		}
+# 	}
+# }
 
 # 创建泰拉小车机器人
 # planet_event = {
@@ -197,138 +197,138 @@ country_event = {
 # 	}
 # }
 
-country_event = {
-	id = ark_set.5
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		owner = {
-			has_origin = origin_ark_tragedy_birth
-			NOT = { has_country_flag = create_ark_robot }
-		}
-	}
-
-	immediate = {
-		set_country_flag = create_ark_robot
-		create_species = {
-			name = terra_creation
-			namelist = root
-			plural = terra_creation_plural
-			class = ArkRobot
-			portrait = "terra_creation"
-			traits = {
-				trait = trait_mechanical
-			}
-			effect = {
-				save_global_event_target_as = ark_robot_species
-			}
-		}	
-	}
-}
+#country_event = {
+#	id = ark_set.5
+#	hide_window = yes
+#	is_triggered_only = yes
+#	trigger = {
+#		owner = {
+#			has_origin = origin_ark_tragedy_birth
+#			NOT = { has_country_flag = create_ark_robot }
+#		}
+#	}
+#
+#	immediate = {
+#		set_country_flag = create_ark_robot
+#		create_species = {
+#			name = terra_creation
+#			namelist = root
+#			plural = terra_creation_plural
+#			class = ArkRobot
+#			portrait = "terra_creation"
+#			traits = {
+#				trait = trait_mechanical
+#			}
+#			effect = {
+#				save_global_event_target_as = ark_robot_species
+#			}
+#		}
+#	}
+#}
 
 # 将组建的一个机器/机械人修改物种为泰拉小车
-planet_event = {
-	id = ark_set.51
-	is_triggered_only = yes
-	hide_window = yes
-
-	trigger = {
-		owner = {
-			has_origin = origin_ark_tragedy_birth
-			NOT = { has_country_flag = had_ark_robot }
-		}
-		fromfrom = { has_trait = trait_mechanical }
-	}
-
-	immediate = {
-		owner = { set_country_flag = had_ark_robot }
-		fromfrom = {
-			if = { 
-				limit = { has_trait = trait_mechanical }
-				change_species = event_target:ark_robot_species
-			}
-		}
-	}
-}
+#planet_event = {
+#	id = ark_set.51
+#	is_triggered_only = yes
+#	hide_window = yes
+#
+#	trigger = {
+#		owner = {
+#			has_origin = origin_ark_tragedy_birth
+#			NOT = { has_country_flag = had_ark_robot }
+#		}
+#		fromfrom = { has_trait = trait_mechanical }
+#	}
+#
+#	immediate = {
+#		owner = { set_country_flag = had_ark_robot }
+#		fromfrom = {
+#			if = {
+#				limit = { has_trait = trait_mechanical }
+#				change_species = event_target:ark_robot_species
+#			}
+#		}
+#	}
+#}
 
 # 机飞之后全员成为泰拉小车
-country_event = {
-	id = ark_set.52
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		has_origin = origin_ark_tragedy_birth
-		has_ascension_perk = ap_synthetic_evolution	# 已选飞升：合成进化
-		has_country_flag = synthetic_empire			# 是合成人帝国
-		NOT = { has_country_flag = ark_synthetic_evolution }
-	}
-
-	immediate = {
-		set_country_flag = ark_synthetic_evolution
-		if = {
-			limit = {
-				NOT = { has_country_flag = had_ark_robot }
-			}
-			set_country_flag = had_ark_robot
-		}
-		every_owned_pop = {
-			limit = {
-				species = {
-					has_trait = trait_mechanical
-				}
-			}
-			change_species = event_target:ark_robot_species
-		}
-
-		every_owned_ship = {
-			limit = {
-				is_ship_class = shipclass_colonizer
-				species = {
-					has_trait = trait_mechanical
-				}
-			}
-			change_species = event_target:ark_robot_species
-		}
-
-		every_owned_army = {
-			limit = {
-				exists = species
-				exists = planet
-				species = {
-					has_trait = trait_mechanical
-				}
-			}
-			modify_army = {
-				species = event_target:ark_robot_species
-			}
-		}
-
-		every_owned_leader = {
-			limit = {
-				OR = {
-					has_trait = leader_trait_admiral_synthetic
-					has_trait = leader_trait_general_synthetic
-					has_trait = leader_trait_governor_synthetic
-					has_trait = leader_trait_scientist_synthetic
-					has_trait = leader_trait_ruler_synthetic
-				}
-			}
-			change_species = event_target:ark_robot_species
-			change_leader_portrait = species
-		}
-		every_pool_leader = {
-			limit = {
-				OR = {
-					has_trait = leader_trait_admiral_synthetic
-					has_trait = leader_trait_general_synthetic
-					has_trait = leader_trait_governor_synthetic
-					has_trait = leader_trait_scientist_synthetic
-					has_trait = leader_trait_ruler_synthetic
-				}
-			}
-			change_species = event_target:ark_robot_species
-			change_leader_portrait = species
-		}
-		change_dominant_species = { species = event_target:ark_robot_species }
-	}
-}
+#country_event = {
+#	id = ark_set.52
+#	hide_window = yes
+#	is_triggered_only = yes
+#	trigger = {
+#		has_origin = origin_ark_tragedy_birth
+#		has_ascension_perk = ap_synthetic_evolution	# 已选飞升：合成进化
+#		has_country_flag = synthetic_empire			# 是合成人帝国
+#		NOT = { has_country_flag = ark_synthetic_evolution }
+#	}
+#
+#	immediate = {
+#		set_country_flag = ark_synthetic_evolution
+#		if = {
+#			limit = {
+#				NOT = { has_country_flag = had_ark_robot }
+#			}
+#			set_country_flag = had_ark_robot
+#		}
+#		every_owned_pop = {
+#			limit = {
+#				species = {
+#					has_trait = trait_mechanical
+#				}
+#			}
+#			change_species = event_target:ark_robot_species
+#		}
+#
+#		every_owned_ship = {
+#			limit = {
+#				is_ship_class = shipclass_colonizer
+#				species = {
+#					has_trait = trait_mechanical
+#				}
+#			}
+#			change_species = event_target:ark_robot_species
+#		}
+#
+#		every_owned_army = {
+#			limit = {
+#				exists = species
+#				exists = planet
+#				species = {
+#					has_trait = trait_mechanical
+#				}
+#			}
+#			modify_army = {
+#				species = event_target:ark_robot_species
+#			}
+#		}
+#
+#		every_owned_leader = {
+#			limit = {
+#				OR = {
+#					has_trait = leader_trait_admiral_synthetic
+#					has_trait = leader_trait_general_synthetic
+#					has_trait = leader_trait_governor_synthetic
+#					has_trait = leader_trait_scientist_synthetic
+#					has_trait = leader_trait_ruler_synthetic
+#				}
+#			}
+#			change_species = event_target:ark_robot_species
+#			change_leader_portrait = species
+#		}
+#		every_pool_leader = {
+#			limit = {
+#				OR = {
+#					has_trait = leader_trait_admiral_synthetic
+#					has_trait = leader_trait_general_synthetic
+#					has_trait = leader_trait_governor_synthetic
+#					has_trait = leader_trait_scientist_synthetic
+#					has_trait = leader_trait_ruler_synthetic
+#				}
+#			}
+#			change_species = event_target:ark_robot_species
+#			change_leader_portrait = species
+#		}
+#		change_dominant_species = { species = event_target:ark_robot_species }
+#	}
+#}

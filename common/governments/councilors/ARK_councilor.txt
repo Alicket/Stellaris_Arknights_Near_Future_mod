@@ -11,7 +11,7 @@
 
 
 councilor_ruler_ark_doctor = {
-	leader_class = { governor admiral scientist general }
+	leader_class = { official commander scientist  }
 	possible = { always = no }
 	is_leader_possible = { always = yes }
 	modifier = {
@@ -25,11 +25,11 @@ councilor_ruler_ark_doctor = {
 ####
 
 councilor_business_union = {
-	leader_class = { admiral governor }
+	leader_class = { commander official }
 	is_leader_possible = {
 		OR = {
-			leader_class = admiral
-			leader_class = governor
+			leader_class = commander
+			leader_class = official
 		}
 	}
 	civic = civic_business_union
@@ -40,11 +40,11 @@ councilor_business_union = {
 }
 
 councilor_pharmaceutical_enterprises = {
-	leader_class = { scientist governor }
+	leader_class = { scientist official }
 	is_leader_possible = {
 		OR = {
 			leader_class = scientist
-			leader_class = governor
+			leader_class = official
 		}
 	}
 	civic = civic_pharmaceutical_enterprises
@@ -55,13 +55,12 @@ councilor_pharmaceutical_enterprises = {
 }
 
 councilor_logistics_companies = {
-	leader_class = { admiral general scientist governor }
+	leader_class = { commander  scientist official }
 	is_leader_possible = {
 		OR = {
-			leader_class = admiral
-			leader_class = general
+			leader_class = commander
 			leader_class = scientist
-			leader_class = governor
+			leader_class = official
 		}
 	}
 	civic = civic_logistics_companies
@@ -87,11 +86,10 @@ councilor_financing_laboratories = {
 }
 
 councilor_security_contractors = {
-	leader_class = { admiral general }
+	leader_class = { commander  }
 	is_leader_possible = {
 		OR = {
-			leader_class = admiral
-			leader_class = general
+			leader_class = commander
 		}
 	}
 	civic = civic_security_contractors
@@ -101,13 +99,12 @@ councilor_security_contractors = {
 }
 
 councilor_holy_notarial_hall = {
-	leader_class = { admiral general scientist governor }
+	leader_class = { commander  scientist official }
 	is_leader_possible = {
 		OR = {
-			leader_class = admiral
-			leader_class = general
+			leader_class = commander
 			leader_class = scientist
-			leader_class = governor
+			leader_class = official
 		}
 	}
 	civic = civic_holy_notarial_hall
@@ -117,11 +114,10 @@ councilor_holy_notarial_hall = {
 }
 
 councilor_chivalry = {
-	leader_class = { admiral general }
+	leader_class = { commander  }
 	is_leader_possible = {
 		OR = {
-			leader_class = admiral
-			leader_class = general
+			leader_class = commander
 		}
 	}
 	civic = civic_chivalry
@@ -132,10 +128,10 @@ councilor_chivalry = {
 }
 
 councilor_heavy_taxation = {
-	leader_class = { governor }
+	leader_class = { official }
 	is_leader_possible = {
 		OR = {
-			leader_class = governor
+			leader_class = official
 		}
 	}
 	civic = civic_heavy_taxation
@@ -148,13 +144,12 @@ councilor_heavy_taxation = {
 }
 
 councilor_industry_manufacturers = {
-	leader_class = { admiral general scientist governor }
+	leader_class = { commander  scientist official }
 	is_leader_possible = {
 		OR = {
-			leader_class = admiral
-			leader_class = general
+			leader_class = commander
 			leader_class = scientist
-			leader_class = governor
+			leader_class = official
 		}
 	}
 	civic = civic_industry_manufacturers
@@ -165,13 +160,12 @@ councilor_industry_manufacturers = {
 }
 
 councilor_circulation_business = {
-	leader_class = { admiral general scientist governor }
+	leader_class = { commander  scientist official }
 	is_leader_possible = {
 		OR = {
-			leader_class = admiral
-			leader_class = general
+			leader_class = commander
 			leader_class = scientist
-			leader_class = governor
+			leader_class = official
 		}
 	}
 	civic = civic_circulation_business
@@ -182,13 +176,12 @@ councilor_circulation_business = {
 }
 
 councilor_union_summit = {
-	leader_class = { admiral general scientist governor }
+	leader_class = { commander  scientist official }
 	is_leader_possible = {
 		OR = {
-			leader_class = admiral
-			leader_class = general
+			leader_class = commander
 			leader_class = scientist
-			leader_class = governor
+			leader_class = official
 		}
 	}
 	civic = civic_union_summit

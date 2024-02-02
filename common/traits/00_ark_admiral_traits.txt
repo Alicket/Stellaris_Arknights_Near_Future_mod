@@ -1,14 +1,14 @@
 # 骑士精神
-leader_trait_admiral_chivalry = {
+leader_trait_commander_chivalry = {
 	cost = 0
 	
 	icon = "gfx/interface/icons/traits/leader_trait_chivalry.dds"
-	modifier = {
+	fleet_modifier = {
 		ship_fire_rate_mult = 0.05
 		ship_weapon_damage = 0.05
 		ship_disengage_chance_reduction = 0.1
 	}
-	leader_class = { admiral }
+	leader_class = { commander }
 	initial = no
 	randomized = no
 }
@@ -17,19 +17,18 @@ leader_trait_ship_operation_maintenance = {
 	cost = 1
 	
 	icon = "gfx/interface/icons/traits/leader_trait_ship_operation_maintenance.dds"
-	modifier = {
+	fleet_modifier = {
 		ship_hull_regen_add_perc = 1
 		ship_armor_regen_add_perc = 1
 		ships_upkeep_mult = 0.1
 	}
 	leader_potential_add = {
-		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
 		OR = {
 			from = { species = { has_trait = trait_latent_oripathy } }
 			from = { species = { has_trait = trait_Originium_Arts } }
 		}
 	}
-	leader_class = { admiral }
+	leader_class = { commander }
 	opposites = { "leader_trait_fleet_logistician" }
 
 	ai_weight = {
@@ -42,17 +41,16 @@ leader_trait_jujizhuanjing = {
 	cost = 1
 	
 	icon = "gfx/interface/icons/traits/leader_trait_jujizhuanjing.dds"
-	modifier = {
+	fleet_modifier = {
 		ship_weapon_range_mult = 0.2
 	}
 	leader_potential_add = {
-		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
 		OR = {
 			from = { species = { has_trait = trait_latent_oripathy } }
 			from = { species = { has_trait = trait_Originium_Arts } }
 		}
 	}
-	leader_class = { admiral }
+	leader_class = { commander }
 
 	ai_weight = {
 		weight = 200
@@ -65,17 +63,16 @@ leader_trait_emergency_appointment = {
 	initial = no
 	
 	icon = "gfx/interface/icons/traits/leader_trait_emergency_appointment.dds"
-	modifier = {
+	fleet_modifier = {
 		leaders_upkeep_mult = -0.50
 	}
 	leader_potential_add = {
-		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
 		OR = {
 			from = { species = { has_trait = trait_latent_oripathy } }
 			from = { species = { has_trait = trait_Originium_Arts } }
 		}
 	}
-	leader_class = { admiral }
+	leader_class = { commander }
 	opposites = { "leader_trait_eager" }
 	randomized = no
 }
@@ -86,20 +83,18 @@ leader_trait_lock_keys = {
 	initial = no
 	
 	icon = "gfx/interface/icons/traits/leader_trait_lock_keys.dds"
-	modifier = {
+	fleet_modifier = {
 		ship_fire_rate_mult = 0.15
 		ship_speed_mult = 0.15
 		ship_evasion_mult = 0.15
 	}
 	leader_potential_add = {
-		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
 		OR = {
 			from = { species = { has_trait = trait_latent_oripathy } }
 			from = { species = { has_trait = trait_Originium_Arts } }
 		}
 	}
-	leader_trait = { admiral }
-	leader_class = { admiral }
+	leader_class = { commander }
 	randomized = no
 }
 
@@ -109,17 +104,15 @@ leader_trait_snacks_network = {
 	initial = no
 	
 	icon = "gfx/interface/icons/traits/leader_trait_snacks_network.dds"
-	modifier = {
+	fleet_modifier = {
 	}
 	leader_potential_add = {
-		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
 		OR = {
 			from = { species = { has_trait = trait_latent_oripathy } }
 			from = { species = { has_trait = trait_Originium_Arts } }
 		}
 	}
-	leader_trait = { admiral }
-	leader_class = { admiral }
+	leader_class = { commander }
 	randomized = no
 }
 
@@ -129,41 +122,17 @@ leader_trait_parts_network = {
 	initial = no
 	
 	icon = "gfx/interface/icons/traits/leader_trait_parts_network.dds"
-	modifier = {
+	fleet_modifier = {
 	}
 	leader_potential_add = {
-		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
 		OR = {
 			from = { species = { has_trait = trait_latent_oripathy } }
 			from = { species = { has_trait = trait_Originium_Arts } }
 		}
 	}
-	leader_trait = { admiral }
-	leader_class = { admiral }
+	leader_class = { commander }
 	randomized = no
 }
-
-# 主观缓时（莫斯提马）      *原来已经有了
-# leader_trait_positive_slowdown = {
-# 	cost = 0
-# 	initial = no
-	
-# 	icon = "gfx/interface/icons/traits/leader_trait_positive_slowdown.dds"
-# 	modifier = {
-# 		ship_fire_rate_mult = 0.15
-# 		ship_evasion_mult = 0.15
-# 	}
-# 	leader_potential_add = {
-# 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
-# 		OR = {
-# 			from = { species = { has_trait = trait_latent_oripathy } }
-# 			from = { species = { has_trait = trait_Originium_Arts } }
-# 		}
-# 	}
-# 	leader_trait = { admiral }
-# 	leader_class = { admiral }
-# 	randomized = no
-# }
 
 # 钙质化
 leader_trait_calcium = {
@@ -171,19 +140,17 @@ leader_trait_calcium = {
 	initial = no
 	
 	icon = "gfx/interface/icons/traits/leader_trait_calcium.dds"
-	modifier = {
+	fleet_modifier = {
 		ship_hull_regen_add_perc = 0.05
 		ship_armor_regen_add_perc = 0.10
 		ship_shield_regen_add_perc = 0.10
 	}
 	leader_potential_add = {
-		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
 		OR = {
 			from = { species = { has_trait = trait_latent_oripathy } }
 			from = { species = { has_trait = trait_Originium_Arts } }
 		}
 	}
-	leader_trait = { admiral }
-	leader_class = { admiral }
+	leader_class = { commander }
 	randomized = no
 }

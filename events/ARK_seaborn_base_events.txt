@@ -48,6 +48,7 @@ country_event = { #开局伊莎玛拉选肖像，同时判定国家类型
 	picture = GFX_evt_seaborn_ruler_select
 	trigger = {
 		has_trait = trait_ARK_ocean_seaborn
+		has_ethic = ethic_gestalt_consciousness
 	}
 	immediate = {
 		hidden_effect = {
@@ -806,9 +807,14 @@ country_event = {
 		has_trait = trait_ARK_ocean_seaborn
 	}
 	immediate = {
+
+		set_country_flag = arkocean_option_disable_planet_evolution
+
+
 		capital_scope = {
 			clear_blockers = yes
 			clear_deposits = yes
+
 			add_deposit = d_arkocean_deepsea
 			add_deposit = d_arkocean_deepsea
 			add_deposit = d_arkocean_deepsea

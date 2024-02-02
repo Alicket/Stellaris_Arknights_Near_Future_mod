@@ -140,7 +140,7 @@ country_event = {
 		custom_tooltip = kristen_hire_tooltip
 		hidden_effect = {
 			country_event = {
-				id = ark_archae.141
+				id = ark_arclight.141
 				days = 3600
 			}
 			set_country_flag = spawning_renowned_leader
@@ -154,10 +154,6 @@ country_event = {
 				set_leader_flag = legendary_leader
 				set_leader_flag = leader_death_events_blocked
 				set_leader_flag = immune_to_negative_traits
-				set_variable = {
-					which = kristen_surveyed_planet
-					value = 0
-				}
 			}
 		
 			remove_country_flag = spawning_renowned_leader
@@ -174,7 +170,7 @@ country_event = {
 				}
 				variable = {
 						key = "border"
-						value = "GFX_border_veteran" #TODO Add real rarity frame gfx
+						value = "GFX_border_veteran"
 				}
 			}
 		}
@@ -331,7 +327,7 @@ country_event = {
 		# 		}
 		# 		variable = {
 		# 				key = "border"
-		# 				value = "GFX_border_veteran" #TODO Add real rarity frame gfx
+		# 				value = "GFX_border_veteran"
 		# 		}
 		# 	}
 		 }
@@ -367,54 +363,6 @@ country_event = {
 		}
 	}
 }
-
-#他说fromfrom是个无效scope？？？
-# Root = Planet
-# From = Country
-# FromFrom = Fleet of the science ship that surveyed it, if any
-#planet_event = {
-#	id = ark_arclight.142
-#	is_triggered_only = yes
-#	hide_window = yes
-#
-#	trigger = {
-#		from = {
-#			NOT = { has_country_flag = kristen_has_got_paragon_trait }
-#		}
-#		FromFrom = {
-#			leader = {
-#				has_leader_flag = ark_leader_kristen
-#			}
-#		}
-#	}
-#	immediate = {
-#		fromfrom = {
-#			change_variable = {
-#				which = kristen_surveyed_planet
-#				value = 1
-#			}
-#		}
-#	}
-#	after = {
-#		if = {
-#			limit = {
-#				fromfrom = {
-#					check_variable = {
-#						which = kristen_surveyed_planet
-#						value >= 1
-#					}
-#				}
-#			}
-#			from = {
-#				set_country_flag = kristen_has_got_paragon_trait
-#				country_event = {
-#					id = ark_archae.141
-#				}
-#			}
-#		}
-#	}
-#}
-
 
 country_event = {
 	id = ark_arclight.15
