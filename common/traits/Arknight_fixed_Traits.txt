@@ -6,18 +6,22 @@ trait_latent_oripathy = {	# Դʯ��Ǳ��
 		always = no
 	}
 	species_possible_remove = {
-		always = no
+		from = {
+			has_country_flag = originiums_sufferer_end_flag
+		}
 	}
 	species_possible_merge_add = {
-		always = no
+		always = yes
+	}
+	species_possible_merge_remove = {
+		from = {
+			has_country_flag = originiums_sufferer_end_flag
+		}
 	}
 
 	randomized = no
 	advanced_trait = no
 	icon = "gfx/interface/icons/traits/trait_latent_oripathy.dds"
-
-	leader_age_min = 16
-	leader_age_max = 30
 	
 	opposites = { "trait_Originium_Arts" }
 	modifier = {
@@ -33,25 +37,29 @@ trait_Originium_Arts = {	# Դʯ����
 
 	initial = no
 	species_potential_add = {
-		always = no
+		from = {
+			has_country_flag = originiums_sufferer_end_flag
+		}
 	}
 	species_possible_remove = {
 		always = no
 	}
 	species_possible_merge_add = {
+		from = {
+			has_country_flag = originiums_sufferer_end_flag
+		}
+	}
+	species_possible_merge_remove = {
 		always = no
 	}
 	randomized = no
 	advanced_trait = yes
 	icon = "gfx/interface/icons/traits/trait_Originium_Arts.dds"
-
-	leader_age_min = 16
-	leader_age_max = 30
 	
 	opposites = { "trait_latent_oripathy" }
 	modifier = {
 		army_damage_mult = 0.25
-		planet_jobs_produces_mult = 0.25
+		planet_jobs_produces_mult = 0.15
 	}
 	ai_weight = {
 		weight = 0
@@ -70,6 +78,9 @@ trait_acute_oripathy = {	# ����Դʯ��
 	species_possible_merge_add = {
 		always = no
 	}
+	species_possible_merge_remove = {
+		always = no
+	}
 	initial = no
 	randomized = no
 	advanced_trait = no
@@ -79,7 +90,7 @@ trait_acute_oripathy = {	# ����Դʯ��
 	}
 	modifier = {
 		planet_jobs_produces_mult = -0.75
-		leader_age = -75
+		leader_lifespan_add = -75
 	}
 	ai_weight = {
 		weight = 0

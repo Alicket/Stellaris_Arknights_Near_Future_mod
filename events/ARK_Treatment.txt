@@ -1,0 +1,12 @@
+namespace = ark_treatment
+
+country_event = {
+	id = ark_treatment.1
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		every_owned_leader = {
+			add_experience = 100000
+		}
+	}
+}

@@ -353,40 +353,41 @@ planet_event = {
 }
 
 # �����翹�ľ�ʱ��
-planet_event = {
-	id = ark_rebellion.2
-	title = "ark_rebellion.2.name"
-	desc = "ark_rebellion.2.desc"
-	picture = GFX_evt_terra_news
-	show_sound = event_planetary_riot
-	location = ROOT
-	
-	trigger = {
-		has_planet_flag = planet_terra	# ĸ����̩��
-		has_deposit = d_former_countries_controlled	# ӵ�� ���Ѹ���������
-		owner = {
-			NOT = { has_country_flag = ark_rebellion_2_flag }
-		}
-	}
-
-	#mean_time_to_happen = { days = 540 }
-	
-	immediate = {
-		owner = {
-			set_country_flag = ark_rebellion_2_flag
-		}
-	}
-	
-	option = {
-		name = ark_rebellion.2.a	# ȷ�ϣ�����4���º󱬷���
-		custom_tooltip = build_armies_plan1
-		hidden_effect = {
-			capital_scope = {
-				planet_event = { id = ark_rebellion.21 days = 120 }
-			}
-		}
-	}
-}
+#planet_event = {
+#	id = ark_rebellion.2
+#	title = "ark_rebellion.2.name"
+#	desc = "ark_rebellion.2.desc"
+#	picture = GFX_evt_terra_news
+#	show_sound = event_planetary_riot
+#	location = ROOT
+#	is_triggered_only = yes
+#
+#	trigger = {
+#		has_planet_flag = planet_terra	# ĸ����̩��
+#		has_deposit = d_former_countries_controlled	# ӵ�� ���Ѹ���������
+#		owner = {
+#			NOT = { has_country_flag = ark_rebellion_2_flag }
+#		}
+#	}
+#
+#	#mean_time_to_happen = { days = 540 }
+#
+#	immediate = {
+#		owner = {
+#			set_country_flag = ark_rebellion_2_flag
+#		}
+#	}
+#
+#	option = {
+#		name = ark_rebellion.2.a	# ȷ�ϣ�����4���º󱬷���
+#		custom_tooltip = build_armies_plan1
+#		hidden_effect = {
+#			capital_scope = {
+#				planet_event = { id = ark_rebellion.21 days = 120 }
+#			}
+#		}
+#	}
+#}
 
 # ����������
 planet_event = {

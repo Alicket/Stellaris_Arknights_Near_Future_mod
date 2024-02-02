@@ -15,7 +15,6 @@ ARK_country_1 = {
 		plural = "Terramen"
 		adjective = "Terraman"
 		name_list = "ark_01"
-		#trait = "trait_pc_ark_continental_ocean_preference"
 		trait = "trait_latent_oripathy"
 		trait = "trait_quarrelsome"
 		trait = "trait_natural_engineers"
@@ -69,11 +68,8 @@ ARK_country_1 = {
 		gender = male
 		portrait = "ARK_N_Doctor_N"
 		texture = 0
-		leader_class = ruler
+		leader_class = official
 		ruler_title="PRESCRIPTED_ruler_title_arknight1"
-		trait = leader_trait_ruler_seaborn
-		trait = leader_trait_Ishar_mla01
-		trait = leader_trait_Ishar_mla02
 	}
 }
 #泰拉秩序
@@ -165,7 +161,6 @@ ARK_country_3 = {
 		plural = "PRESCRIPTED_species_plural_arknights_ocean"
 		adjective = "PRESCRIPTED_species_adjective_arknights_ocean"
 		name_list = "HIVE1"
-		#trait = "trait_pc_ark_continental_ocean_preference"
 		trait = "trait_ARK_ocean_seaborn"
 		trait = "trait_hive_mind"
 		trait = "trait_sedentary"
@@ -217,10 +212,10 @@ ARK_country_3 = {
 		gender = not_set
 		portrait = "ARK_F_Skadi_G"
 		texture = 0
-		leader_class = ruler
+		leader_class = official
 		ruler_title="PRESCRIPTED_ruler_title_arknight3"
 		trait = leader_trait_ruler_seaborn
-		trait = leader_trait_Ishar_mla01
+		trait = leader_trait_Ishar_mla
 		trait = leader_trait_Ishar_mla02
 	}
 }

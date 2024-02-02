@@ -60,20 +60,14 @@ tech_yuanyan_rawmaterial = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}			
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 		}
 	}
 	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 		}
 	}
 	
@@ -99,20 +93,14 @@ tech_guyuanyan_rawmaterial = {
 		factor = 2
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}			
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 		}
 	}
 	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 		}
 	}
 	
@@ -138,20 +126,14 @@ tech_guyuanyanzu_rawmaterial = {
 		factor = 2
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}			
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }	
 		}
 	}
 	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 		}
 	}
 	
@@ -177,20 +159,14 @@ tech_tichunyuanyan_rawmaterial = {
 		factor = 2
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}			
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }		
 		}
 	}
 	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 		}
 	}
 	
@@ -219,13 +195,11 @@ tech_carbon_stick = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 		}
 		modifier = {
 			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 			OR = {
 				has_ethic = ethic_militarist
 				has_ethic = ethic_fanatic_militarist
@@ -236,10 +210,7 @@ tech_carbon_stick = {
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 		}
 	}
 }
@@ -264,13 +235,11 @@ tech_carbon_brick = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 		}
 		modifier = {
 			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 			OR = {
 				has_ethic = ethic_militarist
 				has_ethic = ethic_fanatic_militarist
@@ -281,10 +250,7 @@ tech_carbon_brick = {
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 		}
 	}
 }
@@ -309,13 +275,11 @@ tech_carbon_pack = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 		}
 		modifier = {
 			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 			OR = {
 				has_ethic = ethic_militarist
 				has_ethic = ethic_fanatic_militarist
@@ -326,10 +290,7 @@ tech_carbon_pack = {
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 		}
 	}
 }
@@ -355,20 +316,14 @@ tech_light_building_material = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 		}
 	}
 
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 		}
 	}
 }
@@ -394,20 +349,14 @@ tech_concrete_building_material = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 		}
 	}
 
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 		}
 	}
 }
@@ -433,20 +382,14 @@ tech_reinforced_building_material = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 		}
 	}
 
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 		}
 	}
 }
@@ -469,20 +412,14 @@ tech_manufacturing_station = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 		}
 	}
 
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 		}
 	}
 }
@@ -505,20 +442,14 @@ tech_machining_station = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 		}
 	}
 
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 		}
 	}
 }
@@ -550,10 +481,7 @@ tech_ark_laser_1 = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}
 	}
 	
@@ -569,10 +497,7 @@ tech_ark_laser_1 = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}
 	}
 }
@@ -604,10 +529,7 @@ tech_ark_laser_2 = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}
 	}
 	
@@ -623,10 +545,7 @@ tech_ark_laser_2 = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}
 	}
 }
@@ -656,10 +575,7 @@ tech_ark_polymer = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}	
 	}
 	
@@ -675,10 +591,7 @@ tech_ark_polymer = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}
 	}
 }
@@ -708,10 +621,7 @@ tech_ark_disruptors = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}	
 	}	
 	
@@ -727,10 +637,7 @@ tech_ark_disruptors = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}
 	}
 }
@@ -752,20 +659,14 @@ tech_ark_point_defence = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_computing"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
 		}
 	}		
 	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_computing"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
 		}
 	}
 }
@@ -795,10 +696,7 @@ tech_ark_energy_torpedoes_1 = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}	
 	}
 	
@@ -814,10 +712,7 @@ tech_ark_energy_torpedoes_1 = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}
 	}
 }
@@ -847,10 +742,7 @@ tech_ark_missiles_1 = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_propulsion"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_propulsion }
 		}	
 	}
 	
@@ -866,10 +758,7 @@ tech_ark_missiles_1 = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_propulsion"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_propulsion }
 		}
 	}
 }
@@ -899,10 +788,7 @@ tech_ark_missiles_2 = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_propulsion"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_propulsion }
 		}	
 	}
 	
@@ -918,10 +804,7 @@ tech_ark_missiles_2 = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_propulsion"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_propulsion }
 		}
 	}
 }
@@ -951,10 +834,7 @@ tech_ark_mass_accelerator_1 = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_propulsion"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_propulsion }
 		}
 	}
 	
@@ -970,10 +850,7 @@ tech_ark_mass_accelerator_1 = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_propulsion"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_propulsion }
 		}
 	}
 }
@@ -1003,10 +880,7 @@ tech_ark_mass_accelerator_2 = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_propulsion"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_propulsion }
 		}
 	}
 	
@@ -1022,10 +896,7 @@ tech_ark_mass_accelerator_2 = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_propulsion"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_propulsion }
 		}
 	}
 }
@@ -1048,20 +919,14 @@ tech_ark_booster = {
 		factor = 1.5
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}
 	}
 
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}
 	}
 }
@@ -1092,10 +957,7 @@ tech_ark_mass_sensing_ammo = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_propulsion"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_propulsion }
 		}	
 	}	
 	
@@ -1111,10 +973,7 @@ tech_ark_mass_sensing_ammo = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_propulsion"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_propulsion }
 		}
 	}
 }
@@ -1151,10 +1010,7 @@ tech_ark_space_originium_power = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}
 	}
 
@@ -1162,10 +1018,7 @@ tech_ark_space_originium_power = {
 		factor = 3 #important component
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}
 	}
 }
@@ -1188,20 +1041,14 @@ tech_ark_ship_armor_1 = {
 		factor = 1.25
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_materials"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_materials }
 		}
 	}
 
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_materials"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_materials }
 		}
 	}
 }
@@ -1224,20 +1071,14 @@ tech_ark_ship_armor_2 = {
 		factor = 1.25
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_materials"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_materials }
 		}
 	}
 
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_materials"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_materials }
 		}
 	}
 }
@@ -1260,20 +1101,14 @@ tech_ark_ship_armor_3 = {
 		factor = 1.25
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_materials"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_materials }
 		}
 	}
 
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_materials"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_materials }
 		}
 	}
 }
@@ -1296,20 +1131,14 @@ tech_ark_ship_armor_4a = {
 		factor = 1.25
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_materials"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_materials }
 		}
 	}
 
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_materials"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_materials }
 		}
 	}
 }
@@ -1332,20 +1161,14 @@ tech_ark_ship_armor_4b = {
 		factor = 1.25
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_materials"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_materials }
 		}
 	}
 
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_materials"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_materials }
 		}
 	}
 }
@@ -1368,10 +1191,7 @@ tech_ark_shields_1 = {
 		factor = 1.25
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_field_manipulation }
 		}
 	}
 
@@ -1379,10 +1199,7 @@ tech_ark_shields_1 = {
 		factor = 2 #good component
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_field_manipulation }
 		}
 	}
 }
@@ -1405,10 +1222,7 @@ tech_ark_shields_2 = {
 		factor = 1.25
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_field_manipulation }
 		}
 	}
 
@@ -1416,10 +1230,7 @@ tech_ark_shields_2 = {
 		factor = 2 #good component
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_field_manipulation }
 		}
 	}
 }
@@ -1442,10 +1253,7 @@ tech_ark_shields_3 = {
 		factor = 1.25
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_field_manipulation }
 		}
 	}
 
@@ -1453,10 +1261,7 @@ tech_ark_shields_3 = {
 		factor = 2 #good component
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_field_manipulation }
 		}
 	}
 }
@@ -1479,10 +1284,7 @@ tech_ark_shields_4a = {
 		factor = 1.25
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_field_manipulation }
 		}
 	}
 
@@ -1490,10 +1292,7 @@ tech_ark_shields_4a = {
 		factor = 2 #good component
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_field_manipulation }
 		}
 	}
 }
@@ -1516,10 +1315,7 @@ tech_ark_shields_4b = {
 		factor = 1.25
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_field_manipulation }
 		}
 	}
 
@@ -1527,10 +1323,7 @@ tech_ark_shields_4b = {
 		factor = 2 #good component
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_field_manipulation }
 		}
 	}
 }
@@ -1553,10 +1346,7 @@ tech_ark_shields_5a = {
 		factor = 1.25
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_field_manipulation }
 		}
 	}
 
@@ -1564,10 +1354,7 @@ tech_ark_shields_5a = {
 		factor = 2 #good component
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_field_manipulation }
 		}
 	}
 }
@@ -1590,10 +1377,7 @@ tech_ark_shields_5b = {
 		factor = 1.25
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_field_manipulation }
 		}
 	}
 
@@ -1601,10 +1385,7 @@ tech_ark_shields_5b = {
 		factor = 2 #good component
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_field_manipulation }
 		}
 	}
 }
@@ -1627,10 +1408,7 @@ tech_ark_shields_5c = {
 		factor = 1.25
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_field_manipulation }
 		}
 	}
 
@@ -1638,10 +1416,7 @@ tech_ark_shields_5c = {
 		factor = 2 #good component
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_field_manipulation }
 		}
 	}
 }

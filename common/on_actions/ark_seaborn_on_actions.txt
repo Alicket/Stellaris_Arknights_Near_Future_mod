@@ -24,9 +24,9 @@ on_colonized = {
 
 on_monthly_pulse_country = {
 	events = {
-		ark_seaborn_base.22
-		ark_seaborn_evo.10
-		ark_seaborn_evo.111
+		#ark_seaborn_base.22
+		#ark_seaborn_evo.10
+		#ark_seaborn_evo.111
 	}
 }
 

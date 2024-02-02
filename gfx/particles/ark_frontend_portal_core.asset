@@ -1,0 +1,99 @@
+particle=
+{
+	name="ark_frontend_portal_core_file"
+	subsystem=
+	{
+		name="shockwave_center"
+		max_amount=25
+		slave_particles=0
+		sort="depth"
+		emitter_type="point"
+		invert=no
+		trail=no
+		spritesheet_animation=no
+		spritesheet_animation_loop=1.000000
+		local_space=no
+		billboard=no
+		hide=no
+		texture=
+		{
+			file="gfx/particles/ARK_demon_eyelrSIDE.dds"
+			x=1
+			y=1
+			shader="ParticleAdditive"
+		}
+		color=
+		{
+			x={ 127 75 }
+			y={ 127 25 }
+			z={ 255 0 }
+			alpha=10000,alpha_fade
+		}
+		position=
+		{
+			x=-0.1
+			y=0.02
+			z=-0.1
+		}
+		start=0
+		duration=-1
+		emitter_yaw={ 0 0 }
+		emitter_pitch={ 0 0 }
+		velocity_pitch={ 0 0 }
+		velocity_yaw={ 0 0 }
+		velocity={ 0 0 }
+		life={ 20 10 }
+		emission=2
+		size=1,grow
+		particle_yaw={ 15 0 }
+		particle_pitch={ 15 0 }
+		rotation={ 0 360 }
+	}
+	animation=
+	{
+		name="alpha_fade"
+		start=0
+		duration=1
+		repeat=no
+		minValue=0
+		maxValue=1
+		curve=
+		{
+			0 0 0.16765 0.0625 0.38824 0.49219 0.77353 0.15625 1 0 
+		}
+		op="MUL"
+		time="life"
+	}
+	animation=
+	{
+		name="grow"
+		start=0
+		duration=1
+		repeat=no
+		minValue=0
+		maxValue=1
+		curve=
+		{
+			0 0.141 1 1 
+		}
+		op="MUL"
+		time="life"
+	}
+	force=
+	{
+		type="planar"
+		name="force0"
+		position=
+		{
+			0 0 0 
+		}
+		direction=
+		{
+			0 1 0 
+		}
+		local_force=yes
+		yaw=0
+		division=16
+		amount=5
+	}
+}

@@ -4,6 +4,13 @@ can_destroy_planet_with_PLANET_KILLER_ARK_FROSTNOVA = {
 	#	is_a_habitable_planet_megastructure = yes
 	#}
 	custom_tooltip = {
+		fail_text = is_not_a_standard_planet_or_megastructure
+		NOR = {
+			is_star = yes
+			is_planet_class = pc_asteroid
+		}
+	}
+	custom_tooltip = {
 		fail_text = is_shielded
 		NOR = {
 			is_planet_class = pc_shielded

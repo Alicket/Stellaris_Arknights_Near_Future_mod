@@ -219,7 +219,7 @@ country_event = {#环形世界
 	id = ark_planet_destruction.211
 	title = ark_planet_destruction.211.name
 	desc = ark_planet_destruction.211.desc
-	picture = GFX_planet_type_ringworld
+	picture = GFX_evt_ringworld
 	show_sound = pc_frozen
 	location = from
 
@@ -258,7 +258,7 @@ country_event = {#居住站
 	id = ark_planet_destruction.212
 	title = ark_planet_destruction.211.name
 	desc = ark_planet_destruction.212.desc
-	picture = GFX_planet_type_ringworld
+	picture = GFX_evt_habitat
 	show_sound = pc_frozen
 	location = from
 

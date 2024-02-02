@@ -128,34 +128,34 @@ namespace = ark_set
 #}
 
 # 检查并清除“源石病”特性
-country_event = {
-	id = ark_set.4
-	is_triggered_only = yes
-	hide_window = yes
+# country_event = {
+# 	id = ark_set.4
+# 	is_triggered_only = yes
+# 	hide_window = yes
 
-	trigger = {
-		has_country_flag = ark_hospital123
-	}
+# 	trigger = {
+# 		has_country_flag = ark_hospital123
+# 	}
 
-	immediate = {
-		every_owned_pop = {
-			limit = {
-				is_same_species = root
-				NOT = { species = { has_trait = trait_Originium_Arts } }
-				species = { has_trait = trait_latent_oripathy }
-			}
-			modify_species = {
-				species = this
-				add_trait = trait_Originium_Arts
-				remove_trait = trait_latent_oripathy
-			}
-		}
-		every_owned_leader = {
-			limit = { has_trait = leader_trait_oripathy }
-			remove_trait = leader_trait_oripathy
-		}
-	}
-}
+# 	immediate = {
+# 		every_owned_pop = {
+# 			limit = {
+# 				is_same_species = root
+# 				NOT = { species = { has_trait = trait_Originium_Arts } }
+# 				species = { has_trait = trait_latent_oripathy }
+# 			}
+# 			modify_species = {
+# 				species = this
+# 				add_trait = trait_Originium_Arts
+# 				remove_trait = trait_latent_oripathy
+# 			}
+# 		}
+# 		every_owned_leader = {
+# 			limit = { has_trait = leader_trait_oripathy }
+# 			remove_trait = leader_trait_oripathy
+# 		}
+# 	}
+# }
 
 # 创建泰拉小车机器人
 # planet_event = {

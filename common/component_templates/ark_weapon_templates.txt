@@ -852,6 +852,7 @@ weapon_component_template = {
 	range = 120
 	accuracy = 0.90
 	tracking = 0.00
+	
 	size_damage_factor = 1  #根据目标舰容大小造成额外伤害
 	
 	prerequisites = { "tech_ark_energy_torpedoes_1" }

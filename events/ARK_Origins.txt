@@ -39,7 +39,7 @@ country_event = {
 			namelist = this
 			portrait = "default_robot"
 			traits = {
-				trait = "trait_robotic_1"
+				trait = trait_machine_unit
 			}
 			effect = {
 				save_event_target_as = ark_robot

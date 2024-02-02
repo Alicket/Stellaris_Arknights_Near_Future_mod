@@ -1,0 +1,8 @@
+objectTypes = {
+	pdxparticle = {
+		name = "ark_frontend_portal_core_particle"
+		type = "ark_frontend_portal_core_file"
+	
+		scale = 1.0
+	}
+}

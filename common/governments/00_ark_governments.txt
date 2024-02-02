@@ -5,14 +5,6 @@ gov_ark_elite_republic = {
 	ruler_title = RT_HIGH_COMMISSIONER
 	ruler_title_female = RT_HIGH_COMMISSIONER_FEMALE
 
-	election_candidates = {
-
-		modifier = {
-			add = 20
-			leader_class = governor
-		}
-	}
-
 	possible = {
 		has_authority = auth_city_republic
 	}
@@ -29,14 +21,6 @@ gov_ark_elite_republic = {
 gov_ark_holy_republic = {
 	ruler_title = RT_CHIEF_PRECENTOR
 	ruler_title_female = RT_CHIEF_PRECENTOR_FEMALE
-
-	election_candidates = {
-
-		modifier = {
-			add = 10
-			leader_class = governor
-		}
-	}
 
 	possible = {
 		has_authority = auth_city_republic
@@ -57,14 +41,6 @@ gov_ark_holy_witness_meeting = {
 	
 	should_force_rename = yes
 
-	election_candidates = {
-
-		modifier = {
-			add = 10
-			leader_class = governor
-		}
-	}
-
 	possible = {
 		has_authority = auth_city_republic
 		OR = {
@@ -84,17 +60,6 @@ gov_ark_holy_witness_meeting = {
 gov_ark_military_republic = {
 	ruler_title = RT_ARCHON
 	ruler_title_female = RT_ARCHON_FEMALE
-
-	election_candidates = {
-
-		modifier = {
-			add = 10
-			OR = {
-				leader_class = admiral
-				leader_class = general
-			}
-		}
-	}
 
 	possible = {
 		has_authority = auth_city_republic
@@ -125,19 +90,7 @@ gov_ark_warrior_corps = {
 	ruler_title_female = RT_GRAND_MASTER_FEMALE
 	
 	should_force_rename = yes
-	
-	leader_class = admiral 	# Initial ruler will become this if elected out of office
 
-	election_candidates = {
-
-		modifier = {
-			add = 10
-			OR = {
-				leader_class = admiral
-				leader_class = general
-			}
-		}
-	}
 
 	possible = {
 		has_authority = auth_city_republic
@@ -154,19 +107,6 @@ gov_ark_star_knight = {
 	ruler_title_female = RT_GRAND_MASTER_FEMALE
 	
 	should_force_rename = yes
-	
-	leader_class = admiral 	# Initial ruler will become this if elected out of office
-
-	election_candidates = {
-
-		modifier = {
-			add = 10
-			OR = {
-				leader_class = admiral
-				leader_class = general
-			}
-		}
-	}
 
 	possible = {
 		has_authority = auth_city_republic
@@ -181,22 +121,6 @@ gov_ark_star_knight = {
 gov_ark_harmonious_republic = {
 	ruler_title = RT_COORDINATOR
 	ruler_title_female = RT_COORDINATOR_FEMALE
-
-	election_candidates = {
-
-		modifier = {
-			add = 10
-			OR = {
-				leader_class = scientist
-				leader_class = governor
-			}
-		}
-		modifier = {
-			factor = 0
-			leader_class = admiral
-			leader_class = general
-		}
-	}
 
 	possible = {
 		has_authority = auth_city_republic
@@ -249,16 +173,6 @@ gov_ark_technology_federation = {
 	ruler_title_female = RT_DIRECTOR_GENERAL_FEMALE
 	
 	should_force_rename = yes
-	
-	leader_class = scientist
-
-	election_candidates = {
-
-		modifier = {
-			add = 10
-			leader_class = scientist
-		}
-	}
 
 	possible = {
 		has_authority = auth_city_republic
@@ -292,14 +206,6 @@ gov_ark_commercial_republic = {
 	ruler_title_female = RT_CEO_FEMALE
 	
 	should_force_rename = yes
-
-	election_candidates = {
-
-		modifier = {
-			add = 10
-			leader_class = governor
-		}
-	}
 
 	possible = {
 		has_authority = auth_city_republic

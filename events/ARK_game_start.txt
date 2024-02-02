@@ -11,8 +11,16 @@ country_event = { #选择苦难摇篮起源
 	}
 
 	immediate = {
+		every_owned_leader = {
+			random_list ={
+				1 = {add_experience = 1600}
+				3 = {add_experience = 1300}
+				4 = {add_experience = 1000}
+				4 = {add_experience = 800}
+			}
+		}
+		
 		ruler = {
-			set_skill = 3
 			add_trait_no_notify = leader_trait_meet_at_the_end
 			add_trait_no_notify = leader_trait_legendary_great_teacher
 
@@ -45,6 +53,31 @@ country_event = { #选择苦难摇篮起源
 	}
 }
 
+country_event = { #选择海嗣特质
+	id = ark_game_start.1000
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_trait = trait_ARK_ocean_seaborn
+	}
+
+	immediate = {
+		random_owned_leader = {
+			limit = {
+				leader_class = scientist
+			}
+			remove_trait = leader_trait_seaborn_sci_simple_thoughts
+			add_trait_no_notify = leader_trait_seaborn_sci_complex_thoughts
+		}
+		ruler = {
+			add_trait_no_notify = leader_trait_Ishar_mla
+			add_trait_no_notify = leader_trait_Ishar_mla02
+			set_leader_flag = leader_death_events_blocked
+			set_leader_flag = immune_to_negative_traits
+		}
+	}
+}
 
 
 #博士命定特质升级

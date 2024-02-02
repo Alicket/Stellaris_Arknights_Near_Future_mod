@@ -48,6 +48,7 @@ country_event = { #开局伊莎玛拉选肖像，同时判定国家类型
 	picture = GFX_evt_seaborn_ruler_select
 	trigger = {
 		has_trait = trait_ARK_ocean_seaborn
+		has_ethic = ethic_gestalt_consciousness
 	}
 	immediate = {
 		hidden_effect = {

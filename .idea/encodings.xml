@@ -5,5 +5,6 @@
     <file url="file://$PROJECT_DIR$/events/ARK_Ascension_Perks.txt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/events/ARK_CatastrophesGBK.txt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/events/ARK_Rebellion.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/localisation/simp_chinese/ARK_treatment_l_chinese.yml" charset="UTF-8" />
   </component>
 </project>

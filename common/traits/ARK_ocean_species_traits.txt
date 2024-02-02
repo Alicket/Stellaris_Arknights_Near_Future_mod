@@ -23,7 +23,7 @@ trait_ARK_ocean_seaborn = {
 	#forced_happiness = yes
 	modifier = {
 		pop_environment_tolerance = 0.20
-		leader_age = 50
+		leader_lifespan_add = 50
 		army_attack_health_mult = 0.33
 		army_defense_health_mult = 0.33
 	}

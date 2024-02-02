@@ -240,16 +240,11 @@ country_event = {
 			country_event = { id = ark_civic.21 }
 			every_owned_leader = {
 				limit = {
-					leader_class = admiral
+					leader_class = commander
 				}
-				add_trait = leader_trait_admiral_chivalry
+				add_trait_no_notify = leader_trait_commander_chivalry
 			}
-			every_owned_leader = {
-				limit = {
-					leader_class = general
-				}
-				add_trait = leader_trait_general_chivalry
-			}
+
 		}
 	}
 
@@ -377,652 +372,656 @@ country_event = {
 ####################################################################################################################
 ####################################################################################################################
 
+
+#已废除的医疗会诊代码
+
 # 触发医疗会诊
-country_event = {
-	id = ark_civic.30
-	title = ark_civic.30.name
-	desc = {
-		trigger = {
-			has_country_flag = medical_consultation_1
-			NOT = { has_country_flag = ark_treatment_1_ruler_flag }
-		}
-		text = ark_civic.30.desc
-	}
-	desc = {
-		trigger = {
-			has_country_flag = medical_consultation_2
-			NOT = { has_country_flag = ark_treatment_2_ruler_flag }
-		}
-		text = ark_civic.30.desc2
-	}
-	desc = {
-		trigger = {
-			has_country_flag = medical_consultation_3
-			NOT = { has_country_flag = ark_treatment_3_ruler_flag }
-		}
-		text = ark_civic.30.desc3
-	}
-	desc = {	#统治者药物依赖
-		trigger = {
-			has_country_flag = medical_consultation_1
-			has_country_flag = ark_treatment_1_ruler_flag
-		}
-		text = ark_civic.30.desc4
-	}
-	desc = {	#统治者受挫
-		trigger = {
-			has_country_flag = medical_consultation_2
-			has_country_flag = ark_treatment_2_ruler_flag
-		}
-		text = ark_civic.30.desc5
-	}
-	desc = {	#统治者伤残
-		trigger = {
-			has_country_flag = medical_consultation_3
-			has_country_flag = ark_treatment_3_ruler_flag
-		}
-		text = ark_civic.30.desc6
-	}
-	picture = GFX_evt_infirmary
-	location = ROOT
-
-	trigger = {
-	 	has_civic = civic_pharmaceutical_enterprises
-	 	any_owned_leader = {
-			OR = {
-				has_trait = leader_trait_substance_abuser	# 药物依赖
-				has_trait = leader_trait_traumatized		# 受挫
-				has_trait = leader_trait_maimed		# 伤残
-			}
-		}
-		NOR = {
-			has_country_flag = medical_consultation_1
-			has_country_flag = medical_consultation_2
-			has_country_flag = medical_consultation_3
-		}
-	}
-
-	mean_time_to_happen = { days = 30 }
-
-	immediate = {
-		if = {
-			limit = {
-				any_owned_leader = {
-					has_trait = leader_trait_substance_abuser
-				}
-			}
-			set_country_flag = medical_consultation_1
-		}
-		if = {
-			limit = {
-				any_owned_leader = {
-					has_trait = leader_trait_traumatized
-				}
-			}
-			set_country_flag = medical_consultation_2
-		}
-		if = {
-			limit = {
-				any_owned_leader = {
-					has_trait = leader_trait_maimed
-				}
-			}
-			set_country_flag = medical_consultation_3
-		}
-		random_owned_leader = {
-			limit = { has_trait = leader_trait_substance_abuser }
-			save_global_event_target_as = treatment_1
-			if = {
-				limit = { leader_class = governor }
-				owner = { set_country_flag = ark_treatment_1_governor_flag }
-			}
-			if = {
-				limit = { leader_class = scientist }
-				owner = { set_country_flag = ark_treatment_1_scientist_flag }
-			}
-			if = {
-				limit = { leader_class = admiral }
-				owner = { set_country_flag = ark_treatment_1_admiral_flag }
-			}
-			if = {
-				limit = { leader_class = general }
-				owner = { set_country_flag = ark_treatment_1_general_flag }
-			}
-			#if = {
-			#	limit = { leader_class = ruler }
-			#	owner = { set_country_flag = ark_treatment_1_ruler_flag }
-			#}
-		}
-		random_owned_leader = {
-			limit = { has_trait = leader_trait_traumatized }
-			save_global_event_target_as = treatment_2
-			if = {
-				limit = { leader_class = governor }
-				owner = { set_country_flag = ark_treatment_2_governor_flag }
-			}
-			if = {
-				limit = { leader_class = scientist }
-				owner = { set_country_flag = ark_treatment_2_scientist_flag }
-			}
-			if = {
-				limit = { leader_class = admiral }
-				owner = { set_country_flag = ark_treatment_2_admiral_flag }
-			}
-			if = {
-				limit = { leader_class = general }
-				owner = { set_country_flag = ark_treatment_2_general_flag }
-			}
-			#if = {
-			#	limit = { leader_class = ruler }
-			#	owner = { set_country_flag = ark_treatment_2_ruler_flag }
-			#}
-		}
-		random_owned_leader = {
-			limit = { has_trait = leader_trait_maimed }
-			save_global_event_target_as = treatment_3
-			if = {
-				limit = { leader_class = governor }
-				owner = { set_country_flag = ark_treatment_3_governor_flag }
-			}
-			if = {
-				limit = { leader_class = scientist }
-				owner = { set_country_flag = ark_treatment_3_scientist_flag }
-			}
-			if = {
-				limit = { leader_class = admiral }
-				owner = { set_country_flag = ark_treatment_3_admiral_flag }
-			}
-			if = {
-				limit = { leader_class = general }
-				owner = { set_country_flag = ark_treatment_3_general_flag }
-			}
-			#if = {
-			#	limit = { leader_class = ruler }
-			#	owner = { set_country_flag = ark_treatment_3_ruler_flag }
-			#}
-		}
-	}
-
-	option = {
-		name = ark_civic.30.a	# 我们的领袖将立刻前往医院报到
-		hidden_effect = {
-			if = {
-				limit = {
-					exists = event_target:treatment_1
-					NOT = {
-						has_country_flag = ark_treatment_1_governor_flag
-					}
-				}
-				event_target:treatment_1 = { exile_leader_as = treatment_1 }
-				country_event = { id = ark_civic.31 days = 360 }
-			}
-			if = {
-				limit = {
-					exists = event_target:treatment_2
-					NOT = {
-						has_country_flag = ark_treatment_2_governor_flag
-					}
-				}
-				event_target:treatment_2 = { exile_leader_as = treatment_2 }
-				country_event = { id = ark_civic.31 days = 360 }
-			}
-			if = {
-				limit = {
-					exists = event_target:treatment_3
-					NOT = {
-						has_country_flag = ark_treatment_3_governor_flag
-					}
-				}
-				event_target:treatment_3 = { exile_leader_as = treatment_3 }
-				country_event = { id = ark_civic.31 days = 1080 }
-			}
-			#<——————————星区总督——————————>#
-			if = {
-				limit = {
-					exists = event_target:treatment_1
-					has_country_flag = ark_treatment_1_governor_flag
-				}
-				event_target:treatment_1 = {
-					set_owner = event_target:rhodes_island_pharmacy
-					#add_trait = leader_trait_governor_chosen
-					remove_trait = leader_trait_substance_abuser
-				}
-				country_event = { id = ark_civic.31 days = 360 }
-			}
-			if = {
-				limit = {
-					exists = event_target:treatment_2
-					has_country_flag = ark_treatment_2_governor_flag
-				}
-				event_target:treatment_2 = {
-					set_owner = event_target:rhodes_island_pharmacy
-					#add_trait = leader_trait_governor_chosen
-					remove_trait = leader_trait_traumatized
-				}
-				country_event = { id = ark_civic.31 days = 360 }
-			}
-			if = {
-				limit = {
-					exists = event_target:treatment_3
-					has_country_flag = ark_treatment_3_governor_flag
-				}
-				event_target:treatment_3 = {
-					set_owner = event_target:rhodes_island_pharmacy
-					#add_trait = leader_trait_governor_chosen
-					remove_trait = leader_trait_maimed
-				}
-				country_event = { id = ark_civic.31 days = 1080 }
-			}
-			#<———————————统治者———————————>#
-			if = {
-				limit = {
-					exists = event_target:treatment_1
-					has_country_flag = ark_treatment_1_ruler_flag
-				}
-				event_target:treatment_1 = {
-					add_trait = trait_ruler_doctor_healing
-					remove_trait = leader_trait_substance_abuser
-				}
-				country_event = { id = ark_civic.31 days = 360 }
-			}
-			if = {
-				limit = {
-					exists = event_target:treatment_2
-					has_country_flag = ark_treatment_2_ruler_flag
-				}
-				event_target:treatment_2 = {
-					add_trait = trait_ruler_doctor_healing
-					remove_trait = leader_trait_traumatized
-				}
-				country_event = { id = ark_civic.31 days = 360 }
-			}
-			if = {
-				limit = {
-					exists = event_target:treatment_3
-					has_country_flag = ark_treatment_3_ruler_flag
-				}
-				event_target:treatment_3 = {
-					add_trait = trait_ruler_doctor_healing
-					remove_trait = leader_trait_maimed
-				}
-				country_event = { id = ark_civic.31 days = 1080 }
-			}
-		}
-	}
-
-	option = {
-		name = ark_civic.30.b	# 我们的领袖需要先忙完手头的工作。
-		country_event = { id = ark_civic.30 days = 360 }
-	}
-}
+#country_event = {
+#	id = ark_civic.30
+#	title = ark_civic.30.name
+#	desc = {
+#		trigger = {
+#			has_country_flag = medical_consultation_1
+#			NOT = { has_country_flag = ark_treatment_1_ruler_flag }
+#		}
+#		text = ark_civic.30.desc
+#	}
+#	desc = {
+#		trigger = {
+#			has_country_flag = medical_consultation_2
+#			NOT = { has_country_flag = ark_treatment_2_ruler_flag }
+#		}
+#		text = ark_civic.30.desc2
+#	}
+#	desc = {
+#		trigger = {
+#			has_country_flag = medical_consultation_3
+#			NOT = { has_country_flag = ark_treatment_3_ruler_flag }
+#		}
+#		text = ark_civic.30.desc3
+#	}
+#	desc = {	#统治者药物依赖
+#		trigger = {
+#			has_country_flag = medical_consultation_1
+#			has_country_flag = ark_treatment_1_ruler_flag
+#		}
+#		text = ark_civic.30.desc4
+#	}
+#	desc = {	#统治者受挫
+#		trigger = {
+#			has_country_flag = medical_consultation_2
+#			has_country_flag = ark_treatment_2_ruler_flag
+#		}
+#		text = ark_civic.30.desc5
+#	}
+#	desc = {	#统治者伤残
+#		trigger = {
+#			has_country_flag = medical_consultation_3
+#			has_country_flag = ark_treatment_3_ruler_flag
+#		}
+#		text = ark_civic.30.desc6
+#	}
+#	picture = GFX_evt_infirmary
+#	location = ROOT
+#
+#	is_triggered_only = yes
+#	trigger = {
+#	 	has_civic = civic_pharmaceutical_enterprises
+#	 	any_owned_leader = {
+#			OR = {
+#				has_trait = leader_trait_substance_abuser	# 药物依赖
+##				has_trait = leader_trait_traumatized		# 受挫
+#				has_trait = leader_trait_maimed		# 伤残
+#			}
+#		}
+#		NOR = {
+#			has_country_flag = medical_consultation_1
+#			has_country_flag = medical_consultation_2
+#			has_country_flag = medical_consultation_3
+#		}
+#	}
+#
+#	#mean_time_to_happen = { days = 30 }
+#
+#	immediate = {
+#		if = {
+#			limit = {
+#				any_owned_leader = {
+#					has_trait = leader_trait_substance_abuser
+#				}
+#			}
+#			set_country_flag = medical_consultation_1
+#		}
+#		if = {
+#			limit = {
+#				any_owned_leader = {
+#					has_trait = leader_trait_traumatized
+#				}
+#			}
+#			set_country_flag = medical_consultation_2
+#		}
+#		if = {
+#			limit = {
+#				any_owned_leader = {
+#					has_trait = leader_trait_maimed
+#				}
+#			}
+#			set_country_flag = medical_consultation_3
+#		}
+#		random_owned_leader = {
+#			limit = { has_trait = leader_trait_substance_abuser }
+#			save_global_event_target_as = treatment_1
+#			if = {
+#				limit = { leader_class = governor }
+#				owner = { set_country_flag = ark_treatment_1_governor_flag }
+#			}
+#			if = {
+#				limit = { leader_class = scientist }
+#				owner = { set_country_flag = ark_treatment_1_scientist_flag }
+#			}
+#			if = {
+#				limit = { leader_class = admiral }
+#				owner = { set_country_flag = ark_treatment_1_admiral_flag }
+#			}
+#			if = {
+#				limit = { leader_class = general }
+#				owner = { set_country_flag = ark_treatment_1_general_flag }
+#			}
+#			#if = {
+#			#	limit = { leader_class = ruler }
+#			#	owner = { set_country_flag = ark_treatment_1_ruler_flag }
+#			#}
+#		}
+#		random_owned_leader = {
+#			limit = { has_trait = leader_trait_traumatized }
+#			save_global_event_target_as = treatment_2
+#			if = {
+#				limit = { leader_class = governor }
+#				owner = { set_country_flag = ark_treatment_2_governor_flag }
+#			}
+#			if = {
+#				limit = { leader_class = scientist }
+#				owner = { set_country_flag = ark_treatment_2_scientist_flag }
+#			}
+#			if = {
+#				limit = { leader_class = admiral }
+#				owner = { set_country_flag = ark_treatment_2_admiral_flag }
+#			}
+#			if = {
+#				limit = { leader_class = general }
+#				owner = { set_country_flag = ark_treatment_2_general_flag }
+#			}
+#			#if = {
+#			#	limit = { leader_class = ruler }
+#			#	owner = { set_country_flag = ark_treatment_2_ruler_flag }
+#			#}
+#		}
+#		random_owned_leader = {
+#			limit = { has_trait = leader_trait_maimed }
+#			save_global_event_target_as = treatment_3
+#			if = {
+#				limit = { leader_class = governor }
+#				owner = { set_country_flag = ark_treatment_3_governor_flag }
+#			}
+#			if = {
+#				limit = { leader_class = scientist }
+#				owner = { set_country_flag = ark_treatment_3_scientist_flag }
+#			}
+#			if = {
+#				limit = { leader_class = admiral }
+#				owner = { set_country_flag = ark_treatment_3_admiral_flag }
+#			}
+#			if = {
+#				limit = { leader_class = general }
+#				owner = { set_country_flag = ark_treatment_3_general_flag }
+#			}
+#			#if = {
+#			#	limit = { leader_class = ruler }
+#			#	owner = { set_country_flag = ark_treatment_3_ruler_flag }
+#			#}
+#		}
+#	}
+#
+#	option = {
+#		name = ark_civic.30.a	# 我们的领袖将立刻前往医院报到
+#		hidden_effect = {
+#			if = {
+#				limit = {
+#					exists = event_target:treatment_1
+#					NOT = {
+#						has_country_flag = ark_treatment_1_governor_flag
+#					}
+#				}
+#				event_target:treatment_1 = { exile_leader_as = treatment_1 }
+#				country_event = { id = ark_civic.31 days = 360 }
+#			}
+#			if = {
+#				limit = {
+#					exists = event_target:treatment_2
+#					NOT = {
+#						has_country_flag = ark_treatment_2_governor_flag
+#					}
+#				}
+#				event_target:treatment_2 = { exile_leader_as = treatment_2 }
+#				country_event = { id = ark_civic.31 days = 360 }
+#			}
+#			if = {
+#				limit = {
+#					exists = event_target:treatment_3
+#					NOT = {
+#						has_country_flag = ark_treatment_3_governor_flag
+#					}
+#				}
+#				event_target:treatment_3 = { exile_leader_as = treatment_3 }
+#				country_event = { id = ark_civic.31 days = 1080 }
+#			}
+#			#<——————————星区总督——————————>#
+#			if = {
+#				limit = {
+#					exists = event_target:treatment_1
+#					has_country_flag = ark_treatment_1_governor_flag
+#				}
+#				event_target:treatment_1 = {
+#					set_owner = event_target:rhodes_island_pharmacy
+#					#add_trait = leader_trait_governor_chosen
+#					remove_trait = leader_trait_substance_abuser
+#				}
+#				country_event = { id = ark_civic.31 days = 360 }
+#			}
+#			if = {
+#				limit = {
+#					exists = event_target:treatment_2
+#					has_country_flag = ark_treatment_2_governor_flag
+#				}
+#				event_target:treatment_2 = {
+#					set_owner = event_target:rhodes_island_pharmacy
+#					#add_trait = leader_trait_governor_chosen
+#					remove_trait = leader_trait_traumatized
+#				}
+#				country_event = { id = ark_civic.31 days = 360 }
+#			}
+#			if = {
+#				limit = {
+#					exists = event_target:treatment_3
+#					has_country_flag = ark_treatment_3_governor_flag
+#				}
+#				event_target:treatment_3 = {
+#					set_owner = event_target:rhodes_island_pharmacy
+#					#add_trait = leader_trait_governor_chosen
+#					remove_trait = leader_trait_maimed
+#				}
+#				country_event = { id = ark_civic.31 days = 1080 }
+#			}
+#			#<———————————统治者———————————>#
+#			if = {
+#				limit = {
+#					exists = event_target:treatment_1
+#					has_country_flag = ark_treatment_1_ruler_flag
+#				}
+#				event_target:treatment_1 = {
+#					add_trait = trait_ruler_doctor_healing
+#					remove_trait = leader_trait_substance_abuser
+#				}
+#				country_event = { id = ark_civic.31 days = 360 }
+#			}
+#			if = {
+#				limit = {
+#					exists = event_target:treatment_2
+#					has_country_flag = ark_treatment_2_ruler_flag
+#				}
+#				event_target:treatment_2 = {
+#					add_trait = trait_ruler_doctor_healing
+#					remove_trait = leader_trait_traumatized
+#				}
+#				country_event = { id = ark_civic.31 days = 360 }
+#			}
+#			if = {
+#				limit = {
+#					exists = event_target:treatment_3
+#					has_country_flag = ark_treatment_3_ruler_flag
+#				}
+#				event_target:treatment_3 = {
+#					add_trait = trait_ruler_doctor_healing
+#					remove_trait = leader_trait_maimed
+#				}
+#				country_event = { id = ark_civic.31 days = 1080 }
+#			}
+#		}
+#	}
+#
+#	option = {
+#		name = ark_civic.30.b	# 我们的领袖需要先忙完手头的工作。
+#		country_event = { id = ark_civic.30 days = 360 }
+#	}
+#}
 
 # 领袖康复
-country_event = {
-	id = ark_civic.31
-	title = "ark_civic.31.name"
-	desc = "ark_civic.31.desc"
-	picture = GFX_evt_infirmary
-	location = ROOT
-
-	is_triggered_only = yes
-
-	immediate = {
-		remove_country_flag = medical_consultation_1
-		remove_country_flag = medical_consultation_2
-		remove_country_flag = medical_consultation_3
-	}
-
-	option = {
-		name = ark_civic.31.a	# 欢迎回到工作岗位
-		hidden_effect = {
-			#<———————————科学家———————————>#
-			if = {	#药物依赖
-				limit = {
-					exists = event_target:treatment_1
-					has_country_flag = ark_treatment_1_scientist_flag
-				}
-				create_fleet = {
-					effect = {
-						set_owner = prevprev
-						create_ship_design = {
-							design = "NAME_Prototype"
-						}
-						create_ship = {
-							design = last_created_design
-							graphical_culture = root
-							prefix = no
-							upgradable = yes
-						}
-						set_location = root.capital_scope
-					}
-				}
-				last_created_fleet = {
-					#set_leader = event_target:treatment_1
-				}
-				last_created_fleet = {
-					dismantle = yes
-				}
-				event_target:treatment_1 = {
-					remove_trait = leader_trait_substance_abuser
-				}
-				clear_global_event_target = treatment_1
-				remove_country_flag = ark_treatment_1_scientist_flag
-			}
-			if = {	#受挫
-				limit = {
-					exists = event_target:treatment_2
-					has_country_flag = ark_treatment_2_scientist_flag
-				}
-				create_fleet = {
-					effect = {
-						set_owner = prevprev
-						create_ship_design = {
-							design = "NAME_Prototype"
-						}
-						create_ship = {
-							design = last_created_design
-							graphical_culture = root
-							prefix = no
-							upgradable = yes
-						}
-						set_location = root.capital_scope
-					}
-				}
-				last_created_fleet = {
-					#set_leader = event_target:treatment_2
-				}
-				last_created_fleet = {
-					dismantle = yes
-				}
-				event_target:treatment_2 = {
-					remove_trait = leader_trait_traumatized
-				}
-				clear_global_event_target = treatment_2
-				remove_country_flag = ark_treatment_2_scientist_flag
-			}
-			if = {	#伤残
-				limit = {
-					exists = event_target:treatment_3
-					has_country_flag = ark_treatment_3_scientist_flag
-				}
-				create_fleet = {
-					effect = {
-						set_owner = root
-						create_ship_design = {
-							design = "NAME_Prototype"
-						}
-						create_ship = {
-							design = last_created_design
-							graphical_culture = root
-							prefix = no
-							upgradable = yes
-						}
-						set_location = root.capital_scope
-					}
-				}
-				last_created_fleet = {
-					#set_leader = event_target:treatment_3
-				}
-				last_created_fleet = {
-					dismantle = yes
-				}
-				event_target:treatment_3 = {
-					remove_trait = leader_trait_maimed
-				}
-				clear_global_event_target = treatment_3
-				remove_country_flag = ark_treatment_3_scientist_flag
-			}
-
-			#<——————————舰队司令——————————>#
-			if = {	#药物依赖
-				limit = {
-					exists = event_target:treatment_1
-					has_country_flag = ark_treatment_1_admiral_flag
-				}
-				create_fleet = {
-					effect = {
-						set_owner = root
-						create_ship_design = {
-							design = "NAME_Dagger"
-						}
-						create_ship = {
-							design = last_created_design
-							graphical_culture = root
-							prefix = no
-							upgradable = yes
-						}
-						set_location = root.capital_scope
-					}
-				}
-				last_created_fleet = {
-					#set_leader = event_target:treatment_1
-				}
-				last_created_fleet = {
-					dismantle = yes
-				}
-				event_target:treatment_1 = {
-					remove_trait = leader_trait_substance_abuser
-				}
-				clear_global_event_target = treatment_1
-				remove_country_flag = ark_treatment_1_admiral_flag
-			}
-			if = {	#受挫
-				limit = {
-					exists = event_target:treatment_2
-					has_country_flag = ark_treatment_2_admiral_flag
-				}
-				create_fleet = {
-					effect = {
-						set_owner = root
-						create_ship_design = {
-							design = "NAME_Dagger"
-						}
-						create_ship = {
-							design = last_created_design
-							graphical_culture = root
-							prefix = no
-							upgradable = yes
-						}
-						set_location = root.capital_scope
-					}
-				}
-				last_created_fleet = {
-					#set_leader = event_target:treatment_2
-				}
-				last_created_fleet = {
-					dismantle = yes
-				}
-				event_target:treatment_2 = {
-					remove_trait = leader_trait_traumatized
-				}
-				clear_global_event_target = treatment_2
-				remove_country_flag = ark_treatment_2_admiral_flag
-			}
-			if = {	#伤残
-				limit = {
-					exists = event_target:treatment_3
-					has_country_flag = ark_treatment_3_admiral_flag
-				}
-				create_fleet = {
-					effect = {
-						set_owner = root
-						create_ship_design = {
-							design = "NAME_Dagger"
-						}
-						create_ship = {
-							design = last_created_design
-							graphical_culture = root
-							prefix = no
-							upgradable = no
-						}
-						set_location = root.capital_scope
-					}
-				}
-				last_created_fleet = {
-					#set_leader = event_target:treatment_3
-				}
-				last_created_fleet = {
-					dismantle = yes
-				}
-				event_target:treatment_3 = {
-					remove_trait = leader_trait_maimed
-				}
-				clear_global_event_target = treatment_3
-				remove_country_flag = ark_treatment_3_admiral_flag
-			}
-
-			#<——————————陆军将领——————————>#
-			if = {	#药物依赖
-				limit = {
-					exists = event_target:treatment_1
-					has_country_flag = ark_treatment_1_general_flag
-				}
-				create_fleet = {
-					effect = {
-						create_army_transport = {
-							army_type = assault_army
-						}
-						set_owner = root
-					}
-				}
-				last_created_fleet = {
-					#set_leader = event_target:treatment_1
-				}
-				last_created_fleet = {
-					dismantle = yes
-				}
-				event_target:treatment_1 = {
-					remove_trait = leader_trait_substance_abuser
-				}
-				clear_global_event_target = treatment_1
-				remove_country_flag = ark_treatment_1_general_flag
-			}
-			if = {	#受挫
-				limit = {
-					exists = event_target:treatment_2
-					has_country_flag = ark_treatment_2_general_flag
-				}
-				create_fleet = {
-					effect = {
-						create_army_transport = {
-							army_type = assault_army
-						}
-						set_owner = root
-					}
-				}
-				last_created_fleet = {
-					#set_leader = event_target:treatment_2
-				}
-				last_created_fleet = {
-					dismantle = yes
-				}
-				event_target:treatment_2 = {
-					remove_trait = leader_trait_traumatized
-				}
-				clear_global_event_target = treatment_2
-				remove_country_flag = ark_treatment_2_general_flag
-			}
-			if = {	#伤残
-				limit = {
-					exists = event_target:treatment_3
-					has_country_flag = ark_treatment_3_general_flag
-				}
-				create_fleet = {
-					effect = {
-						create_army_transport = {
-							army_type = assault_army
-						}
-						set_owner = root
-					}
-				}
-				last_created_fleet = {
-					#set_leader = event_target:treatment_3
-				}
-				last_created_fleet = {
-					dismantle = yes
-				}
-				event_target:treatment_3 = {
-					remove_trait = leader_trait_maimed
-				}
-				clear_global_event_target = treatment_3
-				remove_country_flag = ark_treatment_3_general_flag
-			}
-
-			#<——————————星区总督——————————>#
-			if = {	#药物依赖
-				limit = {
-					exists = event_target:treatment_1
-					has_country_flag = ark_treatment_1_governor_flag
-				}
-				event_target:treatment_1 = {
-					set_owner = root
-					#remove_trait = leader_trait_governor_chosen
-				}
-				clear_global_event_target = treatment_1
-				remove_country_flag = ark_treatment_1_governor_flag
-			}
-			if = {	#受挫
-				limit = {
-					exists = event_target:treatment_2
-					has_country_flag = ark_treatment_2_governor_flag
-				}
-				event_target:treatment_2 = {
-					set_owner = root
-					#remove_trait = leader_trait_governor_chosen
-				}
-				clear_global_event_target = treatment_2
-				remove_country_flag = ark_treatment_2_governor_flag
-			}
-			if = {	#伤残
-				limit = {
-					exists = event_target:treatment_3
-					has_country_flag = ark_treatment_3_governor_flag
-				}
-				event_target:treatment_3 = {
-					set_owner = root
-					#remove_trait = leader_trait_governor_chosen
-				}
-				clear_global_event_target = treatment_3
-				remove_country_flag = ark_treatment_3_governor_flag
-			}
-
-			#<———————————统治者———————————>#
-			if = {
-				limit = {
-					exists = event_target:treatment_1
-					has_country_flag = ark_treatment_1_ruler_flag
-				}
-				event_target:treatment_1 = {
-					remove_trait = trait_ruler_doctor_healing
-				}
-				clear_global_event_target = treatment_1
-				remove_country_flag = ark_treatment_1_ruler_flag
-			}
-			if = {
-				limit = {
-					exists = event_target:treatment_2
-					has_country_flag = ark_treatment_2_ruler_flag
-				}
-				event_target:treatment_2 = {
-					remove_trait = trait_ruler_doctor_healing
-				}
-				clear_global_event_target = treatment_2
-				remove_country_flag = ark_treatment_2_ruler_flag
-			}
-			if = {
-				limit = {
-					exists = event_target:treatment_3
-					has_country_flag = ark_treatment_3_ruler_flag
-				}
-				event_target:treatment_3 = {
-					remove_trait = trait_ruler_doctor_healing
-				}
-				clear_global_event_target = treatment_3
-				remove_country_flag = ark_treatment_3_ruler_flag
-			}
-		}
-	}
-}
+#country_event = {
+#	id = ark_civic.31
+#	title = "ark_civic.31.name"
+#	desc = "ark_civic.31.desc"
+#	picture = GFX_evt_infirmary
+#	location = ROOT
+#
+#	is_triggered_only = yes
+#
+#	immediate = {
+#		remove_country_flag = medical_consultation_1
+#		remove_country_flag = medical_consultation_2
+#		remove_country_flag = medical_consultation_3
+#	}
+#
+#	option = {
+#		name = ark_civic.31.a	# 欢迎回到工作岗位
+#		hidden_effect = {
+#			#<———————————科学家———————————>#
+#			if = {	#药物依赖
+#				limit = {
+#					exists = event_target:treatment_1
+#					has_country_flag = ark_treatment_1_scientist_flag
+#				}
+#				create_fleet = {
+#					effect = {
+#						set_owner = prevprev
+#						create_ship_design = {
+#							design = "NAME_Prototype"
+#						}
+#						create_ship = {
+#							design = last_created_design
+#							graphical_culture = root
+#							prefix = no
+#							upgradable = yes
+#						}
+#						set_location = root.capital_scope
+#					}
+#				}
+#				last_created_fleet = {
+#					#set_leader = event_target:treatment_1
+#				}
+#				last_created_fleet = {
+#					dismantle = yes
+#				}
+#				event_target:treatment_1 = {
+#					remove_trait = leader_trait_substance_abuser
+#				}
+#				clear_global_event_target = treatment_1
+#				remove_country_flag = ark_treatment_1_scientist_flag
+#			}
+#			if = {	#受挫
+#				limit = {
+#					exists = event_target:treatment_2
+#					has_country_flag = ark_treatment_2_scientist_flag
+#				}
+#				create_fleet = {
+#					effect = {
+#						set_owner = prevprev
+#						create_ship_design = {
+#							design = "NAME_Prototype"
+#						}
+#						create_ship = {
+#							design = last_created_design
+#							graphical_culture = root
+#							prefix = no
+#							upgradable = yes
+#						}
+#						set_location = root.capital_scope
+#					}
+#				}
+#				last_created_fleet = {
+#					#set_leader = event_target:treatment_2
+#				}
+#				last_created_fleet = {
+#					dismantle = yes
+#				}
+#				event_target:treatment_2 = {
+#					remove_trait = leader_trait_traumatized
+#				}
+#				clear_global_event_target = treatment_2
+#				remove_country_flag = ark_treatment_2_scientist_flag
+#			}
+#			if = {	#伤残
+#				limit = {
+#					exists = event_target:treatment_3
+#					has_country_flag = ark_treatment_3_scientist_flag
+#				}
+#				create_fleet = {
+#					effect = {
+#						set_owner = root
+#						create_ship_design = {
+#							design = "NAME_Prototype"
+#						}
+#						create_ship = {
+#							design = last_created_design
+#							graphical_culture = root
+#							prefix = no
+#							upgradable = yes
+#						}
+#						set_location = root.capital_scope
+#					}
+#				}
+#				last_created_fleet = {
+#					#set_leader = event_target:treatment_3
+#				}
+#				last_created_fleet = {
+#					dismantle = yes
+#				}
+#				event_target:treatment_3 = {
+#					remove_trait = leader_trait_maimed
+#				}
+#				clear_global_event_target = treatment_3
+#				remove_country_flag = ark_treatment_3_scientist_flag
+#			}
+#
+#			#<——————————舰队司令——————————>#
+#			if = {	#药物依赖
+#				limit = {
+#					exists = event_target:treatment_1
+#					has_country_flag = ark_treatment_1_admiral_flag
+#				}
+#				create_fleet = {
+#					effect = {
+#						set_owner = root
+#						create_ship_design = {
+#							design = "NAME_Dagger"
+#						}
+#						create_ship = {
+#							design = last_created_design
+#							graphical_culture = root
+#							prefix = no
+#							upgradable = yes
+#						}
+#						set_location = root.capital_scope
+#					}
+#				}
+#				last_created_fleet = {
+#					#set_leader = event_target:treatment_1
+#				}
+#				last_created_fleet = {
+#					dismantle = yes
+#				}
+#				event_target:treatment_1 = {
+#					remove_trait = leader_trait_substance_abuser
+#				}
+#				clear_global_event_target = treatment_1
+#				remove_country_flag = ark_treatment_1_admiral_flag
+#			}
+#			if = {	#受挫
+#				limit = {
+#					exists = event_target:treatment_2
+#					has_country_flag = ark_treatment_2_admiral_flag
+#				}
+#				create_fleet = {
+#					effect = {
+#						set_owner = root
+#						create_ship_design = {
+#							design = "NAME_Dagger"
+#						}
+#						create_ship = {
+#							design = last_created_design
+#							graphical_culture = root
+#							prefix = no
+#							upgradable = yes
+#						}
+#						set_location = root.capital_scope
+#					}
+#				}
+#				last_created_fleet = {
+#					#set_leader = event_target:treatment_2
+#				}
+#				last_created_fleet = {
+#					dismantle = yes
+#				}
+#				event_target:treatment_2 = {
+#					remove_trait = leader_trait_traumatized
+#				}
+#				clear_global_event_target = treatment_2
+#				remove_country_flag = ark_treatment_2_admiral_flag
+#			}
+#			if = {	#伤残
+#				limit = {
+#					exists = event_target:treatment_3
+#					has_country_flag = ark_treatment_3_admiral_flag
+#				}
+#				create_fleet = {
+#					effect = {
+#						set_owner = root
+#						create_ship_design = {
+#							design = "NAME_Dagger"
+#						}
+#						create_ship = {
+#							design = last_created_design
+#							graphical_culture = root
+#							prefix = no
+#							upgradable = no
+#						}
+#						set_location = root.capital_scope
+#					}
+#				}
+#				last_created_fleet = {
+#					#set_leader = event_target:treatment_3
+#				}
+#				last_created_fleet = {
+#					dismantle = yes
+#				}
+#				event_target:treatment_3 = {
+#					remove_trait = leader_trait_maimed
+#				}
+#				clear_global_event_target = treatment_3
+#				remove_country_flag = ark_treatment_3_admiral_flag
+#			}
+#
+#			#<——————————陆军将领——————————>#
+#			if = {	#药物依赖
+#				limit = {
+#					exists = event_target:treatment_1
+#					has_country_flag = ark_treatment_1_general_flag
+#				}
+#				create_fleet = {
+#					effect = {
+#						create_army_transport = {
+#							army_type = assault_army
+#						}
+#						set_owner = root
+#					}
+#				}
+#				last_created_fleet = {
+#					#set_leader = event_target:treatment_1
+#				}
+#				last_created_fleet = {
+#					dismantle = yes
+#				}
+#				event_target:treatment_1 = {
+#					remove_trait = leader_trait_substance_abuser
+#				}
+#				clear_global_event_target = treatment_1
+#				remove_country_flag = ark_treatment_1_general_flag
+#			}
+#			if = {	#受挫
+#				limit = {
+#					exists = event_target:treatment_2
+#					has_country_flag = ark_treatment_2_general_flag
+#				}
+#				create_fleet = {
+#					effect = {
+#						create_army_transport = {
+#							army_type = assault_army
+#						}
+#						set_owner = root
+#					}
+#				}
+#				last_created_fleet = {
+#					#set_leader = event_target:treatment_2
+#				}
+#				last_created_fleet = {
+#					dismantle = yes
+#				}
+#				event_target:treatment_2 = {
+#					remove_trait = leader_trait_traumatized
+#				}
+#				clear_global_event_target = treatment_2
+#				remove_country_flag = ark_treatment_2_general_flag
+#			}
+#			if = {	#伤残
+#				limit = {
+#					exists = event_target:treatment_3
+#					has_country_flag = ark_treatment_3_general_flag
+#				}
+#				create_fleet = {
+#					effect = {
+#						create_army_transport = {
+#							army_type = assault_army
+#						}
+#						set_owner = root
+#					}
+#				}
+#				last_created_fleet = {
+#					#set_leader = event_target:treatment_3
+#				}
+#				last_created_fleet = {
+#					dismantle = yes
+#				}
+#				event_target:treatment_3 = {
+#					remove_trait = leader_trait_maimed
+#				}
+#				clear_global_event_target = treatment_3
+#				remove_country_flag = ark_treatment_3_general_flag
+#			}
+#
+#			#<——————————星区总督——————————>#
+#			if = {	#药物依赖
+#				limit = {
+#					exists = event_target:treatment_1
+#					has_country_flag = ark_treatment_1_governor_flag
+#				}
+#				event_target:treatment_1 = {
+#					set_owner = root
+#					#remove_trait = leader_trait_governor_chosen
+#				}
+#				clear_global_event_target = treatment_1
+#				remove_country_flag = ark_treatment_1_governor_flag
+#			}
+#			if = {	#受挫
+#				limit = {
+#					exists = event_target:treatment_2
+#					has_country_flag = ark_treatment_2_governor_flag
+#				}
+#				event_target:treatment_2 = {
+#					set_owner = root
+#					#remove_trait = leader_trait_governor_chosen
+#				}
+#				clear_global_event_target = treatment_2
+#				remove_country_flag = ark_treatment_2_governor_flag
+#			}
+#			if = {	#伤残
+#				limit = {
+#					exists = event_target:treatment_3
+#					has_country_flag = ark_treatment_3_governor_flag
+#				}
+#				event_target:treatment_3 = {
+#					set_owner = root
+#					#remove_trait = leader_trait_governor_chosen
+#				}
+#				clear_global_event_target = treatment_3
+#				remove_country_flag = ark_treatment_3_governor_flag
+#			}
+#
+#			#<———————————统治者———————————>#
+#			if = {
+#				limit = {
+#					exists = event_target:treatment_1
+#					has_country_flag = ark_treatment_1_ruler_flag
+#				}
+#				event_target:treatment_1 = {
+#					remove_trait = trait_ruler_doctor_healing
+#				}
+#				clear_global_event_target = treatment_1
+#				remove_country_flag = ark_treatment_1_ruler_flag
+#			}
+#			if = {
+#				limit = {
+#					exists = event_target:treatment_2
+#					has_country_flag = ark_treatment_2_ruler_flag
+#				}
+#				event_target:treatment_2 = {
+#					remove_trait = trait_ruler_doctor_healing
+#				}
+#				clear_global_event_target = treatment_2
+#				remove_country_flag = ark_treatment_2_ruler_flag
+#			}
+#			if = {
+#				limit = {
+#					exists = event_target:treatment_3
+#					has_country_flag = ark_treatment_3_ruler_flag
+#				}
+#				event_target:treatment_3 = {
+#					remove_trait = trait_ruler_doctor_healing
+#				}
+#				clear_global_event_target = treatment_3
+#				remove_country_flag = ark_treatment_3_ruler_flag
+#			}
+#		}
+#	}
+#}
 
 # 骑士精神
 country_event = {
@@ -1036,25 +1035,11 @@ country_event = {
 
 	immediate = {
 		from = {
-			if = {
+			every_owned_leader = {
 				limit = {
-					leader_class = admiral
-					NOT = {
-						has_trait = leader_trait_admiral_chivalry
-						species = { is_species_class = ROBOT }
-					}
+					leader_class = commander
 				}
-				add_trait_no_notify = leader_trait_admiral_chivalry
-			}
-			if = {
-				limit = {
-					leader_class = general
-					NOT = {
-						has_trait = leader_trait_general_chivalry
-						species = { is_species_class = ROBOT }
-					}
-				}
-				add_trait_no_notify = leader_trait_general_chivalry
+				add_trait_no_notify = leader_trait_commander_chivalry
 			}
 		}
 		set_country_flag = ark_civic_4_flag
@@ -1071,17 +1056,9 @@ country_event = {
 	immediate = {
 		every_owned_leader = {
 			limit = {
-				leader_class = admiral
-				NOT = { has_trait = leader_trait_admiral_chivalry }
+				leader_class = commander
 			}
-			add_trait_no_notify = leader_trait_admiral_chivalry
-		}
-		every_owned_leader = {
-			limit = {
-				leader_class = general
-				NOT = { has_trait = leader_trait_general_chivalry }
-			}
-			add_trait_no_notify = leader_trait_general_chivalry
+			add_trait_no_notify = leader_trait_commander_chivalry
 		}
 	}
 }
