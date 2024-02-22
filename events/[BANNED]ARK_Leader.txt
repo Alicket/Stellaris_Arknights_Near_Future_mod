@@ -1,0 +1,148 @@
+#
+#
+#### 因为新版本的更改，本文件所有事件的触发已经全部禁用
+#
+#
+#namespace = ark_leader
+#
+## 巴别塔的恶灵W→R
+#country_event = {
+#	id = ark_leader.1
+#	title = "ark_leader.1.name"
+#	desc = "ark_leader.1.desc"
+#	picture = no_video_feed_room
+#	location = ROOT
+#
+#	trigger = {
+#		is_at_war = yes
+#		any_owned_leader = {
+#			has_trait = trait_ruler_babel_evil_spirit_w
+#		}
+#		NOT = { has_country_flag = doctor_r_flag }
+#	}
+#
+#	mean_time_to_happen = { days = 360 }
+#
+#	immediate = {
+#		every_owned_leader = {
+#			limit = { has_trait = trait_ruler_babel_evil_spirit_w }
+#			remove_ruler_trait = trait_ruler_babel_evil_spirit_w
+#			add_ruler_trait = trait_ruler_babel_evil_spirit_r
+#			change_leader_portrait = ARK001_R
+#		}
+#		set_country_flag = doctor_r_flag
+#	}
+#
+#	option = {
+#		name = ark_leader.1.a
+#	}
+#}
+#
+## 巴别塔的恶灵R→W
+#country_event = {
+#	id = ark_leader.11
+#	title = "ark_leader.11.name"
+#	desc = "ark_leader.11.desc"
+#	picture = no_video_feed_room
+#	location = ROOT
+#
+#	trigger = {
+#		is_at_war = no
+#		any_owned_leader = {
+#			has_trait = trait_ruler_babel_evil_spirit_r
+#		}
+#		has_country_flag = doctor_r_flag
+#	}
+#
+#	mean_time_to_happen = { days = 360 }
+#
+#	immediate = {
+#		every_owned_leader = {
+#			limit = { has_trait = trait_ruler_babel_evil_spirit_r }
+#			remove_ruler_trait = trait_ruler_babel_evil_spirit_r
+#			add_ruler_trait = trait_ruler_babel_evil_spirit_w
+#			change_leader_portrait = ARK001_W
+#		}
+#		remove_country_flag = doctor_r_flag
+#	}
+#
+#	option = {
+#		name = ark_leader.11.a
+#	}
+#}
+#
+## 坚雷的零食网络→零件网络
+#country_event = {
+#	id = ark_leader.2
+#	hide_window = yes
+#
+#	fire_only_once = yes
+#
+#	trigger = {
+#		has_country_flag = ark_synthetic_evolution	# 已经机飞变泰拉小车
+#		any_owned_leader = {
+#			has_trait = leader_trait_snacks_network
+#		}
+#	}
+#
+#	immediate = {
+#		every_owned_leader = {
+#			limit = { has_trait = leader_trait_snacks_network }
+#			remove_trait = leader_trait_snacks_network
+#			add_trait = leader_trait_parts_network
+#		}
+#	}
+#}
+#
+## 坚雷的零食网络（帝国效果）
+#country_event = {
+#	id = ark_leader.21
+#	hide_window = yes
+#
+#	fire_only_once = yes
+#
+#	trigger = {
+#		any_owned_leader = {
+#			has_trait = leader_trait_snacks_network
+#		}
+#	}
+#
+#	immediate = {
+#		every_owned_leader = {
+#			limit = { has_trait = leader_trait_snacks_network }
+#			owner = {
+#				add_modifier = {
+#					modifier = "snacks_network"	# 零食网络
+#					days = -1
+#				}
+#			}
+#		}
+#	}
+#}
+#
+## 坚雷的零件网络（帝国效果）
+#country_event = {
+#	id = ark_leader.22
+#	hide_window = yes
+#
+#	fire_only_once = yes
+#
+#	trigger = {
+#		any_owned_leader = {
+#			has_trait = leader_trait_parts_network
+#		}
+#	}
+#
+#	immediate = {
+#		every_owned_leader = {
+#			limit = { has_trait = leader_trait_parts_network }
+#			owner = {
+#				remove_modifier = snacks_network
+#				add_modifier = {
+#					modifier = "parts_network"	# 零件网络
+#					days = -1
+#				}
+#			}
+#		}
+#	}
+#}

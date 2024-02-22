@@ -4,7 +4,7 @@ d_ark_frozen_planet_deposit = {
 		produces = {
 			originiums = 0.33
 			rare_crystals = 0.5
-			minerals = 8
+			minerals = 4
 		}
 	}
 	station = shipclass_mining_station

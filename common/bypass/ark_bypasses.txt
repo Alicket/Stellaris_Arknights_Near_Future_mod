@@ -1,0 +1,27 @@
+ark_ground_star_gate = {
+	name = ark_ground_star_gate
+	is_pathfind = yes
+	uses_action = no
+	always_active = yes
+	windup_time = 3
+	winddown_time = 3
+	extends_sensors = no
+	ftl_multiplier = 0			# 0 means instant
+	icon_frame = 17
+	remember_instances = no	# whether countries remember meeting a specific instance of that type, or if they just remember seeing the type in general
+	galactic_map_tooltip_header = ark_ground_star_gate
+	galactic_map_tooltip_desc = ark_ground_star_gate_desc
+	connection_type = any_other
+	animation_time = 3
+	ftl_ship_effect = "gateway_ftl_ship_effect_entity"
+	ftl_bypass_effect = "gateway_ftl_bypass_effect_entity"
+	can_bypass_be_locked = yes
+
+	country_can_use = {
+		OR = {
+			any_owned_planet = { has_planet_flag = planet_talos }
+			any_controlled_planet = { has_planet_flag = planet_talos }
+		}
+	}
+	on_action = "on_entering_ark_ground_star_gate"
+}

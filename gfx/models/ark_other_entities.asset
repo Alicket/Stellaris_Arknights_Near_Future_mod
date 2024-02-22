@@ -1,0 +1,4 @@
+entity = {
+	name = "ark_null_entity"
+	pdxmesh = "locator_mesh"
+}

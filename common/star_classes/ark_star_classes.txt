@@ -1,0 +1,5 @@
+sc_ark_a = {
+	class = ark_a_star
+	planet = { key = pc_a_star }
+	spawn_odds = 0
+}

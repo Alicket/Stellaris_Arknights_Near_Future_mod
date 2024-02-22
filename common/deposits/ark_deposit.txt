@@ -46,11 +46,12 @@ d_originiums_mine = {
 	resources = {
 		produces = {
 			originiums = 2
+			minerals = 5
 		}
 	}
 
 	planet_modifier = {
-		building_originiums_mining_plant_max = 2
+		building_originiums_mining_plant_1_max = 2
 	}
 	
 	drop_weight = {
@@ -102,6 +103,11 @@ d_sargon_rainforest = {
 	
 	planet_modifier = {
 		district_farming_max = 2
+	}
+	resources = {
+		produces = {
+			food = 10
+		}
 	}
 	
 	drop_weight = {

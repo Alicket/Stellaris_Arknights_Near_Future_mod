@@ -26,7 +26,7 @@ leader_trait_meet_at_the_end = {
 	}
 	immortal_leaders = yes
 	councilor_modifier = {
-		country_base_unity_produces_add = 16
+		country_base_unity_produces_add = 24
 		planet_jobs_unity_produces_mult = 0.10
 		country_base_influence_produces_add = 1
 	}
@@ -152,8 +152,8 @@ leader_trait_rhine_lab_3 = {
 	modifier = {
 		science_ship_survey_speed = 0.50
 		ship_anomaly_research_speed_mult = 0.30
-		ship_anomaly_generation_chance_mult = 0.10
-		ship_archaeological_site_excavation_speed_mult = 0.33
+		ship_anomaly_generation_chance_mult = 0.15
+		ship_archaeological_site_excavation_speed_mult = 0.50
 	}
 	self_modifier = {
 		leader_lifespan_add = 30

@@ -10,28 +10,6 @@ country_event = {
 	}
 
 	immediate = {
-		#initialize_ark_tragedy_birth_fleet = {
-		#	ICON_FILE = flag_victoria
-		#	COUNTRY_NAME = NAME_Victoria
-		#	FLEET_NAME = NAME_Victoria_fleet
-		#	DISTANCE = 180
-		#	ANGLE = 45
-		#}
-		#initialize_ark_tragedy_birth_fleet = {
-		#	ICON_FILE = flag_ursus
-		#	COUNTRY_NAME = NAME_Ursus
-		#	FLEET_NAME = NAME_Ursus_fleet
-		#	FLEET_FLAG = ursus_fleet_flag
-		#	DISTANCE = 200
-		#	ANGLE = 105
-		#}
-		#initialize_ark_tragedy_birth_fleet = {
-		#	ICON_FILE = flag_columbia
-		#	COUNTRY_NAME = NAME_Columbia
-		#	FLEET_NAME = NAME_Columbia_fleet
-		#	DISTANCE = 150
-		#	ANGLE = 250
-		#}
 		create_species = {
 			name = "NAME_Robot"
 			plural = "NAME_Robots"

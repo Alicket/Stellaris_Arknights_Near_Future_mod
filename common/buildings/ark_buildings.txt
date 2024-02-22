@@ -836,10 +836,10 @@ building_ark_energy_well1 = {
 		 planet_jobs_society_research_produces_mult = 0.05
 		 job_researcher_add = 1
 		 job_culture_worker_add = 1
+		 trade_value_mult = -0.1
 	 }
 	 country_modifier = {
-		 trade_value_mult = -0.35
-		 empire_size_penalty_mult = 0.25
+		 empire_size_penalty_mult = 0.05
 	 }
 	 resources = {
 		 category = planet_buildings

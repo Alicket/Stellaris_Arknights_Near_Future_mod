@@ -17,7 +17,7 @@ origin_ark_tragedy_birth = {
 	traits = {
 		trait = trait_latent_oripathy
 	}
-	initializers = { Tyra_system }
+	initializers = { Chaos_system }
 
 
 	flags = { origin_ark_tragedy_birth_flag }

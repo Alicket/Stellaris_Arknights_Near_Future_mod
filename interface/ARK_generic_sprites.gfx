@@ -1,0 +1,12 @@
+spriteTypes = {
+	#spriteType = {
+	#	name = "GFX_ark_mod_check_conflict"
+	#	textureFile = "gfx/event_pictures/ark_mod_check.dds"
+	#	masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	#	alwaystransparent = yes
+	#}
+	spriteType = {
+		name = "GFX_ark_ground_star_gate_planetview"
+		textureFile = "gfx/interface/planet_view/ark_ground_star_gate.dds"
+	}
+}
