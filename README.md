@@ -14,7 +14,6 @@
 
 ## 都有啥？
 
-> *前往[WIKI页面](https://github.com/Alicket/Stellaris_Arknights_Near_Future_mod/wiki)获取详细内容。*
 + 新的政体、种族特质、国民理念、科技、母星系、起源等基础内容。  
 + 四款物种肖像：三种泰拉人肖像（依次为**全部NPC**、**领袖精英一+人口NPC**、**领袖精英一/二+人口NPC**）、一种海嗣肖像（七彩美丽哥，动态肖像）。
 + 新的[舰船模型](https://steamcommunity.com/sharedfiles/filedetails/?id=2667143039)。
@@ -58,5 +57,5 @@
 ## **圆粥率制作组**
 
 制作：衡菌 | 光圈辞职员工<br>
-内容贡献：Fen'sorbed | KBIAstecepes | Pride of Terra | 雪风为您护航 | 蜜瓜Yubari | 活在梦里 | 黎明的刻痕 | 劳伦斯 | 妈妈咪呀马切诺 | 加持西瓜专卖店<br>
-特别感谢：无言Infinite | 小伞
+内容贡献：Fen'sorbed | KBIAstecepes | Pride of Terra | Anvasi·Villant | 雪风为您护航 | 蜜瓜Yubari | 活在梦里 | 黎明的刻痕 | 劳伦斯 | 妈妈咪呀马切诺 | 加持西瓜专卖店 <br>
+特别感谢：无言Infinite | 小伞 | 地砖
