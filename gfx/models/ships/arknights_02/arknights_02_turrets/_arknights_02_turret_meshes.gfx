@@ -1,0 +1,55 @@
+objectTypes = {
+
+#炮管
+	pdxmesh = {
+		name = "arknights_02_turret_kinetic_gun_mesh"
+		file = "gfx/models/ships/arknights_02/arknights_02_turrets/arknights_02_turret_k_gun.mesh"
+		scale = 0.9
+	}
+	pdxmesh = {
+		name = "arknights_02_turret_energy_gun_mesh"
+		file = "gfx/models/ships/arknights_02/arknights_02_turrets/arknights_02_turret_e_gun.mesh"
+		scale = 0.9
+	}
+
+
+#普通炮塔#
+
+	pdxmesh = {
+		name = "arknights_02_turret_small_kinetic_mesh"
+		file = "gfx/models/ships/arknights_02/arknights_02_turrets/arknights_02_turret_k_s.mesh"
+		scale = 0.6
+	}
+
+	pdxmesh = {
+		name = "arknights_02_turret_medium_kinetic_mesh"
+		file = "gfx/models/ships/arknights_02/arknights_02_turrets/arknights_02_turret_k_m.mesh"
+		scale = 1
+	}
+
+	pdxmesh = {
+		name = "arknights_02_turret_large_mesh"
+		file = "gfx/models/ships/arknights_02/arknights_02_turrets/arknights_02_turret_k_l.mesh"
+		scale = 0.9
+	}
+
+	pdxmesh = {
+		name = "arknights_02_turret_xl_mesh"
+		file = "gfx/models/ships/arknights_02/arknights_02_turrets/arknights_02_turret_xl.mesh"
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "arknights_02_turret_point_defence_mesh"
+		file = "gfx/models/ships/arknights_02/arknights_02_turrets/arknights_02_turret_pd.mesh"
+		scale = 1
+	}
+
+
+# #导弹
+		pdxmesh = {
+		name = "arknights_02_turret_missile_mesh"
+		file = "gfx/models/ships/arknights_02/arknights_02_turrets/arknights_02_turret_rocket.mesh"
+		scale = 0.9
+	}
+}

@@ -1,0 +1,5 @@
+#炮座与炮管分开，能量/动能共用炮座，炮管attach到炮座上
+
+#炮管：
+#arknights_02_turret_e_gun.mesh
+#arknights_02_turret_k_gun.mesh
