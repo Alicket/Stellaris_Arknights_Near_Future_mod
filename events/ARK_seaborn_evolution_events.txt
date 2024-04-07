@@ -32,6 +32,9 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 	custom_gui = "arkocean_gui_settings"
+	option = {
+		name = option
+	}
 }
 country_event = {
 	id = ark_seaborn_evo.1002
@@ -44,7 +47,11 @@ country_event = {
 			}
 			set_country_flag = arkocean_option_disable_planet_evolution
 		}
-		else = {  }
+		else = {
+			country_event = {
+				id = ark_seaborn_base.221
+			}
+		}
 	}
 }
 
@@ -150,7 +157,7 @@ country_event = {
 	}
 	immediate = {
 		add_resource = { #基础每月产出
-			arkseaborn_cells = 0.0834
+			arkseaborn_cells = 0.0626
 		}
 		export_trigger_value_to_variable = {
 			trigger = num_owned_planets
@@ -238,25 +245,25 @@ country_event = {
 		last_created_country = {
 			save_global_event_target_as = arkocean_Isharmla_pad
 			establish_communications_no_message = root
-			#create_fleet = {
-			#	name = NAME_arkocean_Isharmla_antenna
-			#	effect = {
-			#		set_owner = prev
-			#		create_ship = {
-			#			name = NAME_arkocean_Isharmla_antenna_desc
-			#			design = NAME_arkocean_Isharmla_antenna
-			#			graphical_culture = aquatic_01
-			#		}
-			#		set_location = {
-			#			target = root.capital_scope
-			#			distance = 0
-			#		}
-			#	}
-			#}
-			#last_created_fleet = {
-			#	set_event_locked = yes
-			#	save_global_event_target_as = arkocean_isharmla_antenna_station
-			#}
+			create_fleet = {
+				name = NAME_arkocean_Isharmla_antenna
+				effect = {
+					set_owner = prev
+					create_ship = {
+						name = NAME_arkocean_Isharmla_antenna_desc
+						design = NAME_arkocean_Isharmla_antenna
+						graphical_culture = aquatic_01
+					}
+					set_location = {
+						target = root.capital_scope
+						distance = 0
+					}
+				}
+			}
+			last_created_fleet = {
+				set_event_locked = yes
+				save_global_event_target_as = arkocean_isharmla_antenna_station
+			}
 		}
 		save_global_event_target_as = arkocean_isharmla_me
 
@@ -282,41 +289,44 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 	custom_gui = "arkocean_gui_main"
+	option = {
+		name = option
+	}
 }
 
-#重置空间站位置(已废弃)
-#country_event = {
-#	id = ark_seaborn_evo.15
-#	hide_window = yes
-#	is_triggered_only = yes
-#	immediate = {
-#		event_target:arkocean_isharmla_antenna_station = {
-#			dismantle = yes
-#		}
-#		clear_global_event_target = arkocean_isharmla_antenna_station
-#		event_target:arkocean_Isharmla_pad = {
-#			create_fleet = {
-#				name = NAME_arkocean_Isharmla_antenna
-#				effect = {
-#					set_owner = event_target:arkocean_Isharmla_pad
-#					create_ship = {
-#						name = NAME_arkocean_Isharmla_antenna_desc
-#						design = NAME_arkocean_Isharmla_antenna
-#						graphical_culture = aquatic_01
-#					}
-#					set_location = {
-#						target = event_target:arkocean_isharmla_me.capital_scope
-#						distance = 0
-#					}
-#				}
-#			}
-#			last_created_fleet = {
-#				set_event_locked = yes
-#				save_global_event_target_as = arkocean_isharmla_antenna_station
-#			}
-#		}
-#	}
-#}
+#重置空间站位置
+country_event = {
+	id = ark_seaborn_evo.15
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		event_target:arkocean_isharmla_antenna_station = {
+			dismantle = yes
+		}
+		clear_global_event_target = arkocean_isharmla_antenna_station
+		event_target:arkocean_Isharmla_pad = {
+			create_fleet = {
+				name = NAME_arkocean_Isharmla_antenna
+				effect = {
+					set_owner = event_target:arkocean_Isharmla_pad
+					create_ship = {
+						name = NAME_arkocean_Isharmla_antenna_desc
+						design = NAME_arkocean_Isharmla_antenna
+						graphical_culture = aquatic_01
+					}
+					set_location = {
+						target = event_target:arkocean_isharmla_me.capital_scope
+						distance = 0
+					}
+				}
+			}
+			last_created_fleet = {
+				set_event_locked = yes
+				save_global_event_target_as = arkocean_isharmla_antenna_station
+			}
+		}
+	}
+}
 #3_6战略思维
 country_event = {
 	id = ark_seaborn_evo.16
@@ -324,11 +334,11 @@ country_event = {
 	hide_window = yes
 	immediate = {
 		every_owned_leader = {
-			limit = { leader_class = general }
+			limit = { leader_class = commander }
 			add_trait = leader_trait_seaborn_arm_strategic_mind
 		}
 		every_pool_leader = {
-			limit = { leader_class = general }
+			limit = { leader_class = commander }
 			add_trait = leader_trait_seaborn_arm_strategic_mind
 		}
 	}
@@ -345,7 +355,7 @@ country_event = {
 		from = {
 			if = {
 				limit = {
-					leader_class = general
+					leader_class = commander
 				}
 				add_trait = leader_trait_seaborn_arm_strategic_mind
 			}

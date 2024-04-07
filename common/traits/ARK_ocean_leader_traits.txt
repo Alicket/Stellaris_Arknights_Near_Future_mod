@@ -69,7 +69,7 @@ leader_trait_seaborn_arm_strategic_mind = {#战略思维
 		army_morale_damage_mult = 0.10
 		army_collateral_damage_mult = -0.33
 	}
-	leader_class = { scientist }
+	leader_class = { commander }
 	initial = no
 	randomized = no
 }

@@ -508,10 +508,10 @@ country_event = {
 	is_triggered_only = yes
 	hide_window = yes
 	trigger = {
+		has_origin = origin_ark_tragedy_birth
 		event_target:ark_planet_terra = {
 			has_building = building_ark_energy_well3
 		}
-		has_origin = origin_ark_tragedy_birth
 		NOT = { has_country_flag = arclight23_happened }
 	}
 	immediate = {

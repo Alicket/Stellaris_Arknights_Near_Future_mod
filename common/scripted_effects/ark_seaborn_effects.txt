@@ -17,12 +17,11 @@ ark_seaborn_assimilation = {
 						NOT = { has_country_flag = arkocean_option_disable_mould }
 					}
 					add_resource = {
-						arkseaborn_cells = 0.08
+						arkseaborn_cells = 0.04
 					}
 					change_variable = {
 						which = var_ark_seaborn_evolution_cell
-						value = 0.08
-					}
+						value = 0.04
 				}
 				change_variable = {
 					which = var_ark_seaborn_evolution_assimilation

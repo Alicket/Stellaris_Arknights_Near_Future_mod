@@ -36,7 +36,7 @@ Tyra_system_ocean = {
 
 	planet = {
 		name = "NAME_Tyra2"
-		class = "pc_desert"
+		class = "pc_continental"
 		entity = "ark_desert_planet_Talos_II"
 		orbit_distance = 25
 		orbit_angle = 125
@@ -59,7 +59,7 @@ Tyra_system_ocean = {
 		class = "pc_continental"
 		orbit_distance = 25
 		orbit_angle = 120
-		size = 25
+		size = 22
 		starting_planet = yes
 		has_ring = yes
 		entity = "ark_planet_terra_ocean_entity"

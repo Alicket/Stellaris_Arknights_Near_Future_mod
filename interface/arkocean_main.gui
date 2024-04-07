@@ -18,7 +18,8 @@ guiTypes = {
 			clicksound = "back_click"
 			actionShortcut = "cancel"
 		}
-		effectButtonType = {#设置
+		effectButtonType = {
+            multiline = yes#设置
 			spriteType = GFX_arkocean_settings_open
 			name = "arkocean_settings"
 			position = { x = 191 y = 61 }
@@ -53,7 +54,8 @@ guiTypes = {
 			position = { x= 68 y = 413 }
 			Orientation = "UPPER_LEFT"
 		}
-		effectButtonType = {#information内容1
+		effectButtonType = {
+            multiline = yes#information内容1
 			spriteType = GFX_arkocean_information_text
 			name = "information_text1"
 			font = "cg_16b"
@@ -62,7 +64,8 @@ guiTypes = {
 			alwaysTransparent = yes
 			effect = beffect_no_effect
 		}
-		effectButtonType = {#information内容2
+		effectButtonType = {
+            multiline = yes#information内容2
 			spriteType = GFX_arkocean_information_text
 			name = "information_text2"
 			font = "cg_16b"
@@ -71,7 +74,8 @@ guiTypes = {
 			alwaysTransparent = yes
 			effect = beffect_no_effect
 		}
-		effectButtonType = {#information内容3
+		effectButtonType = {
+            multiline = yes#information内容3
 			spriteType = GFX_arkocean_information_text
 			name = "information_text3"
 			font = "cg_16b"
@@ -80,7 +84,8 @@ guiTypes = {
 			alwaysTransparent = yes
 			effect = beffect_no_effect
 		}
-		effectButtonType = {#information内容4
+		effectButtonType = {
+            multiline = yes#information内容4
 			spriteType = GFX_arkocean_information_text
 			name = "information_text4"
 			font = "cg_16b"
@@ -89,7 +94,8 @@ guiTypes = {
 			alwaysTransparent = yes
 			effect = beffect_no_effect
 		}
-		effectButtonType = {#information内容5
+		effectButtonType = {
+            multiline = yes#information内容5
 			spriteType = GFX_arkocean_information_text
 			name = "information_text5"
 			font = "cg_16b"
@@ -98,7 +104,8 @@ guiTypes = {
 			alwaysTransparent = yes
 			effect = beffect_no_effect
 		}
-		effectButtonType = {#information内容6
+		effectButtonType = {
+            multiline = yes#information内容6
 			spriteType = GFX_arkocean_information_text
 			name = "information_text6"
 			font = "cg_16b"
@@ -113,7 +120,8 @@ guiTypes = {
 			position = { x= 292 y = 413 }
 			Orientation = "UPPER_LEFT"
 		}
-		effectButtonType = {#stock内容
+		effectButtonType = {
+            multiline = yes#stock内容
 			alwaysTransparent = yes
 			name = stock_text
 			font = "large_title_font"
@@ -128,7 +136,8 @@ guiTypes = {
 			position = { x= 317 y = 450 }
 			Orientation = "UPPER_LEFT"
 		}
-		effectButtonType = {#更换统治者肖像
+		effectButtonType = {
+            multiline = yes#更换统治者肖像
 			name = "arkocean_reset_ruler"
 			effect = beffect_arkocean_reset_ruler
 			spriteType = GFX_arkocean_button_332_26
@@ -140,19 +149,21 @@ guiTypes = {
 			text = ARKOCEAN_GUI_RESET_RULER
 			text_color_code = "W"
 		}
-		#effectButtonType = {#重置空间站位置
-		#	name = "arkocean_reset_station"
-		#	effect = beffect_arkocean_reset_station
-		#	spriteType = GFX_arkocean_button_332_26
-		#
-		#	position = { x= 75 y= 662 }
-		#	orientation = upper_left
-		#
-		#	font = "cg_16b"
-		#	text = ARKOCEAN_GUI_RESET_STATION
-		#	text_color_code = "W"
-		#}
-		effectButtonType = {#进行科学研究
+		effectButtonType = {
+           multiline = yes#重置空间站位置
+			name = "arkocean_reset_station"
+			effect = beffect_arkocean_reset_station
+			spriteType = GFX_arkocean_button_332_26
+
+			position = { x= 75 y= 662 }
+			orientation = upper_left
+
+			font = "cg_16b"
+			text = ARKOCEAN_GUI_RESET_STATION
+			text_color_code = "W"
+		}
+		effectButtonType = {
+            multiline = yes#进行科学研究
 			name = "arkocean_call_message"
 			effect = beffect_arkocean_exchange_research
 			spriteType = GFX_arkocean_button_332_26
@@ -163,7 +174,8 @@ guiTypes = {
 			text = ARKOCEAN_GUI_CALL_MESSAGE
 			text_color_code = "W"
 		}
-		effectButtonType = {#上 点
+		effectButtonType = {
+            multiline = yes#上 点
 			name = "lrsap_up_dot"
 			spriteType = "GFX_arkocean_lrsap_upd"
 			position = { x= 461 y = 109 }
@@ -171,7 +183,8 @@ guiTypes = {
 			alwaysTransparent = yes
 			effect = beffect_no_effect
 		}
-		effectButtonType = {#下 点
+		effectButtonType = {
+            multiline = yes#下 点
 			name = "lrsap_down_dot"
 			spriteType = "GFX_arkocean_lrsap_downd"
 			position = { x= 461 y = 394 }
@@ -179,7 +192,8 @@ guiTypes = {
 			alwaysTransparent = yes
 			effect = beffect_no_effect
 		}
-		effectButtonType = {#上 线
+		effectButtonType = {
+            multiline = yes#上 线
 			name = "lrsap_up_line"
 			spriteType = "GFX_arkocean_lrsap_upl"
 			position = { x= 467 y = 47 }
@@ -187,7 +201,8 @@ guiTypes = {
 			alwaysTransparent = yes
 			effect = beffect_no_effect
 		}
-		effectButtonType = {#下 线
+		effectButtonType = {
+            multiline = yes#下 线
 			name = "lrsap_down_line"
 			spriteType = "GFX_arkocean_lrsap_downl"
 			position = { x= 467 y = 451 }
@@ -196,6 +211,7 @@ guiTypes = {
 			effect = beffect_no_effect
 		}
 		effectButtonType = {
+            multiline = yes
 			spriteType = GFX_arkocean_button_disable_message_disable
 			name = "disable_message_disable"
 			position = { x = 377 y = 418 }
@@ -203,6 +219,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			spriteType = GFX_arkocean_button_disable_message_enable
 			name = "disable_message_enable"
 			position = { x = 377 y = 418 }
@@ -221,6 +238,7 @@ guiTypes = {
 
 		#待完成状态
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_1_1_d1"
 			effect = beffect_arkocean_mould_1_1_d1
 			spriteType = GFX_arkocean_button_mould_1_1
@@ -228,6 +246,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_1_1_d2"
 			effect = beffect_arkocean_mould_1_1_d2
 			spriteType = GFX_arkocean_button_mould_1_1
@@ -235,6 +254,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_1_1_d3"
 			effect = beffect_arkocean_mould_1_1_d3
 			spriteType = GFX_arkocean_button_mould_1_1
@@ -242,6 +262,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_1_1_d4"
 			effect = beffect_arkocean_mould_1_1_d4
 			spriteType = GFX_arkocean_button_mould_1_1
@@ -249,6 +270,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_1_1_d5"
 			effect = beffect_arkocean_mould_1_1_d5
 			spriteType = GFX_arkocean_button_mould_1_1
@@ -258,6 +280,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_1_2_d1"
 			effect = beffect_arkocean_mould_1_2_d1
 			spriteType = GFX_arkocean_button_mould_1_2
@@ -265,6 +288,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_1_2_d2"
 			effect = beffect_arkocean_mould_1_2_d2
 			spriteType = GFX_arkocean_button_mould_1_2
@@ -272,6 +296,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_1_2_d3"
 			effect = beffect_arkocean_mould_1_2_d3
 			spriteType = GFX_arkocean_button_mould_1_2
@@ -279,6 +304,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_1_2_d4"
 			effect = beffect_arkocean_mould_1_2_d4
 			spriteType = GFX_arkocean_button_mould_1_2
@@ -286,6 +312,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_1_2_d5"
 			effect = beffect_arkocean_mould_1_2_d5
 			spriteType = GFX_arkocean_button_mould_1_2
@@ -293,6 +320,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_1_2_d6"
 			effect = beffect_arkocean_mould_1_2_d6
 			spriteType = GFX_arkocean_button_mould_1_2
@@ -303,6 +331,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_1_3_d1"
 			effect = beffect_arkocean_mould_1_3_d1
 			spriteType = GFX_arkocean_button_mould_1_3
@@ -310,6 +339,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_1_3_d2"
 			effect = beffect_arkocean_mould_1_3_d2
 			spriteType = GFX_arkocean_button_mould_1_3
@@ -317,6 +347,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_1_3_d3"
 			effect = beffect_arkocean_mould_1_3_d3
 			spriteType = GFX_arkocean_button_mould_1_3
@@ -324,6 +355,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_1_3_d4"
 			effect = beffect_arkocean_mould_1_3_d4
 			spriteType = GFX_arkocean_button_mould_1_3
@@ -331,6 +363,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_1_3_d5"
 			effect = beffect_arkocean_mould_1_3_d5
 			spriteType = GFX_arkocean_button_mould_1_3
@@ -338,6 +371,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_1_3_d6"
 			effect = beffect_arkocean_mould_1_3_d6
 			spriteType = GFX_arkocean_button_mould_1_3
@@ -350,6 +384,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_1_4_d1"
 			effect = beffect_arkocean_mould_1_4_d1
 			spriteType = GFX_arkocean_button_mould_1_4
@@ -357,6 +392,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_1_4_d2"
 			effect = beffect_arkocean_mould_1_4_d2
 			spriteType = GFX_arkocean_button_mould_1_4
@@ -364,6 +400,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_1_4_d3"
 			effect = beffect_arkocean_mould_1_4_d3
 			spriteType = GFX_arkocean_button_mould_1_4
@@ -371,6 +408,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_1_4_d4"
 			effect = beffect_arkocean_mould_1_4_d4
 			spriteType = GFX_arkocean_button_mould_1_4
@@ -378,6 +416,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_1_4_d5"
 			effect = beffect_arkocean_mould_1_4_d5
 			spriteType = GFX_arkocean_button_mould_1_4
@@ -389,6 +428,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_1_6"
 			effect = beffect_arkocean_mould_1_6
 			spriteType = GFX_arkocean_button_mould_1_6
@@ -400,6 +440,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_2_1_d1"
 			effect = beffect_arkocean_mould_2_1_d1
 			spriteType = GFX_arkocean_button_mould_2_1
@@ -407,6 +448,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_2_1_d2"
 			effect = beffect_arkocean_mould_2_1_d2
 			spriteType = GFX_arkocean_button_mould_2_1
@@ -414,6 +456,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_2_1_d3"
 			effect = beffect_arkocean_mould_2_1_d3
 			spriteType = GFX_arkocean_button_mould_2_1
@@ -425,6 +468,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_2_2_d1"
 			effect = beffect_arkocean_mould_2_2_d1
 			spriteType = GFX_arkocean_button_mould_2_2
@@ -432,6 +476,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_2_2_d2"
 			effect = beffect_arkocean_mould_2_2_d2
 			spriteType = GFX_arkocean_button_mould_2_2
@@ -439,6 +484,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_2_2_d3"
 			effect = beffect_arkocean_mould_2_2_d3
 			spriteType = GFX_arkocean_button_mould_2_2
@@ -450,6 +496,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_2_3_d1"
 			effect = beffect_arkocean_mould_2_3_d1
 			spriteType = GFX_arkocean_button_mould_2_3
@@ -457,6 +504,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_2_3_d2"
 			effect = beffect_arkocean_mould_2_3_d2
 			spriteType = GFX_arkocean_button_mould_2_3
@@ -464,6 +512,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_2_3_d3"
 			effect = beffect_arkocean_mould_2_3_d3
 			spriteType = GFX_arkocean_button_mould_2_3
@@ -475,6 +524,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_2_5_d1"
 			effect = beffect_arkocean_mould_2_5_d1
 			spriteType = GFX_arkocean_button_mould_2_5
@@ -482,6 +532,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_2_5_d2"
 			effect = beffect_arkocean_mould_2_5_d2
 			spriteType = GFX_arkocean_button_mould_2_5
@@ -489,6 +540,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_2_5_d3"
 			effect = beffect_arkocean_mould_2_5_d3
 			spriteType = GFX_arkocean_button_mould_2_5
@@ -500,6 +552,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_2_6_d1"
 			effect = beffect_arkocean_mould_2_6_d1
 			spriteType = GFX_arkocean_button_mould_2_6
@@ -507,6 +560,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_2_6_d2"
 			effect = beffect_arkocean_mould_2_6_d2
 			spriteType = GFX_arkocean_button_mould_2_6
@@ -514,6 +568,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_2_6_d3"
 			effect = beffect_arkocean_mould_2_6_d3
 			spriteType = GFX_arkocean_button_mould_2_6
@@ -521,6 +576,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_2_6_d4"
 			effect = beffect_arkocean_mould_2_6_d4
 			spriteType = GFX_arkocean_button_mould_2_6
@@ -528,6 +584,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_2_6_d5"
 			effect = beffect_arkocean_mould_2_6_d5
 			spriteType = GFX_arkocean_button_mould_2_6
@@ -539,6 +596,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_3_1_d1"
 			effect = beffect_arkocean_mould_3_1_d1
 			spriteType = GFX_arkocean_button_mould_3_1
@@ -546,6 +604,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_3_1_d2"
 			effect = beffect_arkocean_mould_3_1_d2
 			spriteType = GFX_arkocean_button_mould_3_1
@@ -553,6 +612,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_3_1_d3"
 			effect = beffect_arkocean_mould_3_1_d3
 			spriteType = GFX_arkocean_button_mould_3_1
@@ -560,6 +620,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_3_1_d4"
 			effect = beffect_arkocean_mould_3_1_d4
 			spriteType = GFX_arkocean_button_mould_3_1
@@ -571,6 +632,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_3_2_d1"
 			effect = beffect_arkocean_mould_3_2_d1
 			spriteType = GFX_arkocean_button_mould_3_2
@@ -578,6 +640,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_3_2_d2"
 			effect = beffect_arkocean_mould_3_2_d2
 			spriteType = GFX_arkocean_button_mould_3_2
@@ -585,6 +648,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_3_2_d3"
 			effect = beffect_arkocean_mould_3_2_d3
 			spriteType = GFX_arkocean_button_mould_3_2
@@ -592,6 +656,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_3_2_d4"
 			effect = beffect_arkocean_mould_3_2_d4
 			spriteType = GFX_arkocean_button_mould_3_2
@@ -603,6 +668,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_3_4_d1"
 			effect = beffect_arkocean_mould_3_4_d1
 			spriteType = GFX_arkocean_button_mould_3_4
@@ -610,6 +676,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_3_4_d2"
 			effect = beffect_arkocean_mould_3_4_d2
 			spriteType = GFX_arkocean_button_mould_3_4
@@ -617,6 +684,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_3_4_d3"
 			effect = beffect_arkocean_mould_3_4_d3
 			spriteType = GFX_arkocean_button_mould_3_4
@@ -624,6 +692,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_3_4_d4"
 			effect = beffect_arkocean_mould_3_4_d4
 			spriteType = GFX_arkocean_button_mould_3_4
@@ -635,6 +704,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_3_6"
 			effect = beffect_arkocean_mould_3_6
 			spriteType = GFX_arkocean_button_mould_3_6
@@ -646,6 +716,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_4_1_d1"
 			effect = beffect_arkocean_mould_4_1_d1
 			spriteType = GFX_arkocean_button_mould_4_1
@@ -653,6 +724,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_4_1_d2"
 			effect = beffect_arkocean_mould_4_1_d2
 			spriteType = GFX_arkocean_button_mould_4_1
@@ -664,6 +736,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_4_2_d1"
 			effect = beffect_arkocean_mould_4_2_d1
 			spriteType = GFX_arkocean_button_mould_4_2
@@ -671,6 +744,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_4_2_d2"
 			effect = beffect_arkocean_mould_4_2_d2
 			spriteType = GFX_arkocean_button_mould_4_2
@@ -678,6 +752,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_4_2_d3"
 			effect = beffect_arkocean_mould_4_2_d3
 			spriteType = GFX_arkocean_button_mould_4_2
@@ -685,6 +760,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_4_2_d4"
 			effect = beffect_arkocean_mould_4_2_d4
 			spriteType = GFX_arkocean_button_mould_4_2
@@ -692,6 +768,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_4_2_d5"
 			effect = beffect_arkocean_mould_4_2_d5
 			spriteType = GFX_arkocean_button_mould_4_2
@@ -703,6 +780,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_4_3_d1"
 			effect = beffect_arkocean_mould_4_3_d1
 			spriteType = GFX_arkocean_button_mould_4_3
@@ -710,6 +788,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_4_3_d2"
 			effect = beffect_arkocean_mould_4_3_d2
 			spriteType = GFX_arkocean_button_mould_4_3
@@ -717,6 +796,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_4_3_d3"
 			effect = beffect_arkocean_mould_4_3_d3
 			spriteType = GFX_arkocean_button_mould_4_3
@@ -724,6 +804,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_4_3_d4"
 			effect = beffect_arkocean_mould_4_3_d4
 			spriteType = GFX_arkocean_button_mould_4_3
@@ -731,6 +812,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_4_3_d5"
 			effect = beffect_arkocean_mould_4_3_d5
 			spriteType = GFX_arkocean_button_mould_4_3
@@ -742,6 +824,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_4_4_d1"
 			effect = beffect_arkocean_mould_4_4_d1
 			spriteType = GFX_arkocean_button_mould_4_4
@@ -749,6 +832,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_4_4_d2"
 			effect = beffect_arkocean_mould_4_4_d2
 			spriteType = GFX_arkocean_button_mould_4_4
@@ -756,6 +840,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_4_4_d3"
 			effect = beffect_arkocean_mould_4_4_d3
 			spriteType = GFX_arkocean_button_mould_4_4
@@ -763,6 +848,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_4_4_d4"
 			effect = beffect_arkocean_mould_4_4_d4
 			spriteType = GFX_arkocean_button_mould_4_4
@@ -774,6 +860,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_4_5_d1"
 			effect = beffect_arkocean_mould_4_5_d1
 			spriteType = GFX_arkocean_button_mould_4_5
@@ -781,6 +868,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_4_5_d2"
 			effect = beffect_arkocean_mould_4_5_d2
 			spriteType = GFX_arkocean_button_mould_4_5
@@ -788,6 +876,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_4_5_d3"
 			effect = beffect_arkocean_mould_4_5_d3
 			spriteType = GFX_arkocean_button_mould_4_5
@@ -795,6 +884,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_4_5_d4"
 			effect = beffect_arkocean_mould_4_5_d4
 			spriteType = GFX_arkocean_button_mould_4_5
@@ -802,6 +892,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_4_5_d5"
 			effect = beffect_arkocean_mould_4_5_d5
 			spriteType = GFX_arkocean_button_mould_4_5
@@ -813,6 +904,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_4_6"
 			effect = beffect_arkocean_mould_4_6
 			spriteType = GFX_arkocean_button_mould_4_6
@@ -824,6 +916,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_5_1"
 			effect = beffect_arkocean_mould_5_1
 			spriteType = GFX_arkocean_button_mould_5_1
@@ -831,6 +924,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_5_2"
 			effect = beffect_arkocean_mould_5_2
 			spriteType = GFX_arkocean_button_mould_5_2
@@ -838,6 +932,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_5_3"
 			effect = beffect_arkocean_mould_5_3
 			spriteType = GFX_arkocean_button_mould_5_3
@@ -845,6 +940,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_5_4"
 			effect = beffect_arkocean_mould_5_4
 			spriteType = GFX_arkocean_button_mould_5_4
@@ -852,6 +948,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_5_5"
 			effect = beffect_arkocean_mould_5_5
 			spriteType = GFX_arkocean_button_mould_5_5
@@ -859,6 +956,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_5_6"
 			effect = beffect_arkocean_mould_5_6
 			spriteType = GFX_arkocean_button_mould_5_6
@@ -867,6 +965,7 @@ guiTypes = {
 		}
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_6_1"
 			effect = beffect_arkocean_mould_6_1
 			spriteType = GFX_arkocean_button_mould_6_1
@@ -874,6 +973,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_6_2"
 			effect = beffect_arkocean_mould_6_2
 			spriteType = GFX_arkocean_button_mould_6_2
@@ -881,6 +981,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_6_3"
 			effect = beffect_arkocean_mould_6_3
 			spriteType = GFX_arkocean_button_mould_6_3
@@ -888,6 +989,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_6_4"
 			effect = beffect_arkocean_mould_6_4
 			spriteType = GFX_arkocean_button_mould_6_4
@@ -895,6 +997,7 @@ guiTypes = {
 			orientation = upper_left
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_6_5"
 			effect = beffect_arkocean_mould_6_5
 			spriteType = GFX_arkocean_button_mould_6_5
@@ -934,6 +1037,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_done_1_1"
 			effect = beffect_arkocean_mould_done_1_1
 			spriteType = GFX_arkocean_mould_1_1_done
@@ -943,6 +1047,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_done_1_2"
 			effect = beffect_arkocean_mould_done_1_2
 			spriteType = GFX_arkocean_mould_1_2_done
@@ -952,6 +1057,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_done_1_3"
 			effect = beffect_arkocean_mould_done_1_3
 			spriteType = GFX_arkocean_mould_1_3_done
@@ -961,6 +1067,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_done_1_4"
 			effect = beffect_arkocean_mould_done_1_4
 			spriteType = GFX_arkocean_mould_1_4_done
@@ -970,6 +1077,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_done_1_6"
 			effect = beffect_arkocean_mould_done_1_6
 			spriteType = GFX_arkocean_mould_1_6_done
@@ -979,6 +1087,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_done_2_1"
 			effect = beffect_arkocean_mould_done_2_1
 			spriteType = GFX_arkocean_mould_2_1_done
@@ -988,6 +1097,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_done_2_2"
 			effect = beffect_arkocean_mould_done_2_2
 			spriteType = GFX_arkocean_mould_2_2_done
@@ -997,6 +1107,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_done_2_3"
 			effect = beffect_arkocean_mould_done_2_3
 			spriteType = GFX_arkocean_mould_2_3_done
@@ -1006,6 +1117,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_done_2_5"
 			effect = beffect_arkocean_mould_done_2_5
 			spriteType = GFX_arkocean_mould_2_5_done
@@ -1015,6 +1127,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_done_2_6"
 			effect = beffect_arkocean_mould_done_2_6
 			spriteType = GFX_arkocean_mould_2_6_done
@@ -1025,6 +1138,7 @@ guiTypes = {
 		}
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_done_3_1"
 			effect = beffect_arkocean_mould_done_3_1
 			spriteType = GFX_arkocean_mould_3_1_done
@@ -1034,6 +1148,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_done_3_2"
 			effect = beffect_arkocean_mould_done_3_2
 			spriteType = GFX_arkocean_mould_3_2_done
@@ -1043,6 +1158,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_done_3_4"
 			effect = beffect_arkocean_mould_done_3_4
 			spriteType = GFX_arkocean_mould_3_4_done
@@ -1052,6 +1168,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_done_3_6"
 			effect = beffect_arkocean_mould_done_3_6
 			spriteType = GFX_arkocean_mould_3_6_done
@@ -1062,6 +1179,7 @@ guiTypes = {
 		}
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_done_4_1"
 			effect = beffect_arkocean_mould_done_4_1
 			spriteType = GFX_arkocean_mould_4_1_done
@@ -1071,6 +1189,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_done_4_2"
 			effect = beffect_arkocean_mould_done_4_2
 			spriteType = GFX_arkocean_mould_4_2_done
@@ -1080,6 +1199,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_done_4_3"
 			effect = beffect_arkocean_mould_done_4_3
 			spriteType = GFX_arkocean_mould_4_3_done
@@ -1089,6 +1209,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_done_4_4"
 			effect = beffect_arkocean_mould_done_4_4
 			spriteType = GFX_arkocean_mould_4_4_done
@@ -1098,6 +1219,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_done_4_5"
 			effect = beffect_arkocean_mould_done_4_5
 			spriteType = GFX_arkocean_mould_4_5_done
@@ -1107,6 +1229,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_done_4_6"
 			effect = beffect_arkocean_mould_done_4_6
 			spriteType = GFX_arkocean_mould_4_6_done
@@ -1117,6 +1240,7 @@ guiTypes = {
 		}
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_done_5_1"
 			effect = beffect_arkocean_mould_done_5_1
 			spriteType = GFX_arkocean_mould_5_1_done
@@ -1126,6 +1250,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_done_5_2"
 			effect = beffect_arkocean_mould_done_5_2
 			spriteType = GFX_arkocean_mould_5_2_done
@@ -1135,6 +1260,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_done_5_3"
 			effect = beffect_arkocean_mould_done_5_3
 			spriteType = GFX_arkocean_mould_5_3_done
@@ -1144,6 +1270,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_done_5_4"
 			effect = beffect_arkocean_mould_done_5_4
 			spriteType = GFX_arkocean_mould_5_4_done
@@ -1153,6 +1280,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_done_5_5"
 			effect = beffect_arkocean_mould_done_5_5
 			spriteType = GFX_arkocean_mould_5_5_done
@@ -1162,6 +1290,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_done_5_6"
 			effect = beffect_arkocean_mould_done_5_6
 			spriteType = GFX_arkocean_mould_5_6_done
@@ -1172,6 +1301,7 @@ guiTypes = {
 		}
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_done_6_1"
 			effect = beffect_arkocean_mould_done_6_1
 			spriteType = GFX_arkocean_mould_6_1_done
@@ -1181,6 +1311,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_done_6_2"
 			effect = beffect_arkocean_mould_done_6_2
 			spriteType = GFX_arkocean_mould_6_2_done
@@ -1190,6 +1321,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_done_6_3"
 			effect = beffect_arkocean_mould_done_6_3
 			spriteType = GFX_arkocean_mould_6_3_done
@@ -1199,6 +1331,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_done_6_4"
 			effect = beffect_arkocean_mould_done_6_4
 			spriteType = GFX_arkocean_mould_6_4_done
@@ -1208,6 +1341,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_done_6_5"
 			effect = beffect_arkocean_mould_done_6_5
 			spriteType = GFX_arkocean_mould_6_5_done
@@ -1247,6 +1381,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_waiting_1_1"
 			effect = beffect_arkocean_mould_1_1_waiting
 			spriteType = GFX_arkocean_mould_1_1_waiting
@@ -1256,6 +1391,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_waiting_1_2"
 			effect = beffect_arkocean_mould_1_2_waiting
 			spriteType = GFX_arkocean_mould_1_2_waiting
@@ -1265,6 +1401,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_waiting_1_3"
 			effect = beffect_arkocean_mould_1_3_waiting
 			spriteType = GFX_arkocean_mould_1_3_waiting
@@ -1274,6 +1411,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_waiting_1_4"
 			effect = beffect_arkocean_mould_1_4_waiting
 			spriteType = GFX_arkocean_mould_1_4_waiting
@@ -1283,6 +1421,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_waiting_1_6"
 			effect = beffect_arkocean_mould_1_6_waiting
 			spriteType = GFX_arkocean_mould_1_6_waiting
@@ -1292,6 +1431,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_waiting_2_1"
 			effect = beffect_arkocean_mould_2_1_waiting
 			spriteType = GFX_arkocean_mould_2_1_waiting
@@ -1301,6 +1441,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_waiting_2_2"
 			effect = beffect_arkocean_mould_2_2_waiting
 			spriteType = GFX_arkocean_mould_2_2_waiting
@@ -1310,6 +1451,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_waiting_2_3"
 			effect = beffect_arkocean_mould_2_3_waiting
 			spriteType = GFX_arkocean_mould_2_3_waiting
@@ -1319,6 +1461,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_waiting_2_5"
 			effect = beffect_arkocean_mould_2_5_waiting
 			spriteType = GFX_arkocean_mould_2_5_waiting
@@ -1328,6 +1471,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_waiting_2_6"
 			effect = beffect_arkocean_mould_2_6_waiting
 			spriteType = GFX_arkocean_mould_2_6_waiting
@@ -1338,6 +1482,7 @@ guiTypes = {
 		}
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_waiting_3_1"
 			effect = beffect_arkocean_mould_3_1_waiting
 			spriteType = GFX_arkocean_mould_3_1_waiting
@@ -1347,6 +1492,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_waiting_3_2"
 			effect = beffect_arkocean_mould_3_2_waiting
 			spriteType = GFX_arkocean_mould_3_2_waiting
@@ -1356,6 +1502,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_waiting_3_4"
 			effect = beffect_arkocean_mould_3_4_waiting
 			spriteType = GFX_arkocean_mould_3_4_waiting
@@ -1365,6 +1512,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_waiting_3_6"
 			effect = beffect_arkocean_mould_3_6_waiting
 			spriteType = GFX_arkocean_mould_3_6_waiting
@@ -1375,6 +1523,7 @@ guiTypes = {
 		}
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_waiting_4_1"
 			effect = beffect_arkocean_mould_4_1_waiting
 			spriteType = GFX_arkocean_mould_4_1_waiting
@@ -1384,6 +1533,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_waiting_4_2"
 			effect = beffect_arkocean_mould_4_2_waiting
 			spriteType = GFX_arkocean_mould_4_2_waiting
@@ -1393,6 +1543,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_waiting_4_3"
 			effect = beffect_arkocean_mould_4_3_waiting
 			spriteType = GFX_arkocean_mould_4_3_waiting
@@ -1402,6 +1553,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_waiting_4_4"
 			effect = beffect_arkocean_mould_4_4_waiting
 			spriteType = GFX_arkocean_mould_4_4_waiting
@@ -1411,6 +1563,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_waiting_4_5"
 			effect = beffect_arkocean_mould_4_5_waiting
 			spriteType = GFX_arkocean_mould_4_5_waiting
@@ -1420,6 +1573,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_waiting_4_6"
 			effect = beffect_arkocean_mould_4_6_waiting
 			spriteType = GFX_arkocean_mould_4_6_waiting
@@ -1430,6 +1584,7 @@ guiTypes = {
 		}
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_waiting_5_1"
 			effect = beffect_arkocean_mould_5_1_waiting
 			spriteType = GFX_arkocean_mould_5_1_waiting
@@ -1439,6 +1594,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_waiting_5_2"
 			effect = beffect_arkocean_mould_5_2_waiting
 			spriteType = GFX_arkocean_mould_5_2_waiting
@@ -1448,6 +1604,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_waiting_5_3"
 			effect = beffect_arkocean_mould_5_3_waiting
 			spriteType = GFX_arkocean_mould_5_3_waiting
@@ -1457,6 +1614,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_waiting_5_4"
 			effect = beffect_arkocean_mould_5_4_waiting
 			spriteType = GFX_arkocean_mould_5_4_waiting
@@ -1466,6 +1624,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_waiting_5_5"
 			effect = beffect_arkocean_mould_5_5_waiting
 			spriteType = GFX_arkocean_mould_5_5_waiting
@@ -1475,6 +1634,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_waiting_5_6"
 			effect = beffect_arkocean_mould_5_6_waiting
 			spriteType = GFX_arkocean_mould_5_6_waiting
@@ -1485,6 +1645,7 @@ guiTypes = {
 		}
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_waiting_6_1"
 			effect = beffect_arkocean_mould_6_1_waiting
 			spriteType = GFX_arkocean_mould_6_1_waiting
@@ -1494,6 +1655,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_waiting_6_2"
 			effect = beffect_arkocean_mould_6_2_waiting
 			spriteType = GFX_arkocean_mould_6_2_waiting
@@ -1503,6 +1665,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_waiting_6_3"
 			effect = beffect_arkocean_mould_6_3_waiting
 			spriteType = GFX_arkocean_mould_6_3_waiting
@@ -1512,6 +1675,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_waiting_6_4"
 			effect = beffect_arkocean_mould_6_4_waiting
 			spriteType = GFX_arkocean_mould_6_4_waiting
@@ -1521,6 +1685,7 @@ guiTypes = {
 			no_clicksound = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_waiting_6_5"
 			effect = beffect_arkocean_mould_6_5_waiting
 			spriteType = GFX_arkocean_mould_6_5_waiting
@@ -1543,6 +1708,7 @@ guiTypes = {
 		#连接线
 		#正在进行
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_1_12a"
 			effect = beffect_arkocean_mould_connect_doing_1_12
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1551,6 +1717,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_1_12b"
 			effect = beffect_arkocean_mould_connect_doing_1_12
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1559,6 +1726,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_1_12c"
 			effect = beffect_arkocean_mould_connect_doing_1_12
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1567,6 +1735,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_1_23a"
 			effect = beffect_arkocean_mould_connect_doing_1_23
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1575,6 +1744,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_1_23b"
 			effect = beffect_arkocean_mould_connect_doing_1_23
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1583,6 +1753,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_1_23c"
 			effect = beffect_arkocean_mould_connect_doing_1_23
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1591,6 +1762,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_1_34a"
 			effect = beffect_arkocean_mould_connect_doing_1_34
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1599,6 +1771,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_1_34b"
 			effect = beffect_arkocean_mould_connect_doing_1_34
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1607,6 +1780,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_1_34c"
 			effect = beffect_arkocean_mould_connect_doing_1_34
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1615,6 +1789,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_1_46a"
 			effect = beffect_arkocean_mould_connect_doing_1_46
 			spriteType = GFX_arkocean_progress_doing_long
@@ -1623,6 +1798,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_1_46b"
 			effect = beffect_arkocean_mould_connect_doing_1_46
 			spriteType = GFX_arkocean_progress_doing_long
@@ -1631,6 +1807,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_1_46c"
 			effect = beffect_arkocean_mould_connect_doing_1_46
 			spriteType = GFX_arkocean_progress_doing_long
@@ -1640,6 +1817,7 @@ guiTypes = {
 		}
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_2_12a"
 			effect = beffect_arkocean_mould_connect_doing_2_12
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1648,6 +1826,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_2_12b"
 			effect = beffect_arkocean_mould_connect_doing_2_12
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1656,6 +1835,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_2_12c"
 			effect = beffect_arkocean_mould_connect_doing_2_12
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1664,6 +1844,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_2_23a"
 			effect = beffect_arkocean_mould_connect_doing_2_23
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1672,6 +1853,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_2_23b"
 			effect = beffect_arkocean_mould_connect_doing_2_23
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1680,6 +1862,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_2_23c"
 			effect = beffect_arkocean_mould_connect_doing_2_23
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1688,6 +1871,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_2_35a"
 			effect = beffect_arkocean_mould_connect_doing_2_35
 			spriteType = GFX_arkocean_progress_doing_long
@@ -1696,6 +1880,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_2_35b"
 			effect = beffect_arkocean_mould_connect_doing_2_35
 			spriteType = GFX_arkocean_progress_doing_long
@@ -1704,6 +1889,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_2_35c"
 			effect = beffect_arkocean_mould_connect_doing_2_35
 			spriteType = GFX_arkocean_progress_doing_long
@@ -1712,6 +1898,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_2_56a"
 			effect = beffect_arkocean_mould_connect_doing_2_56
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1720,6 +1907,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_2_56b"
 			effect = beffect_arkocean_mould_connect_doing_2_56
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1728,6 +1916,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_2_56c"
 			effect = beffect_arkocean_mould_connect_doing_2_56
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1737,6 +1926,7 @@ guiTypes = {
 		}
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_3_12a"
 			effect = beffect_arkocean_mould_connect_doing_3_12
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1745,6 +1935,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_3_12b"
 			effect = beffect_arkocean_mould_connect_doing_3_12
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1753,6 +1944,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_3_12c"
 			effect = beffect_arkocean_mould_connect_doing_3_12
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1761,6 +1953,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_3_24a"
 			effect = beffect_arkocean_mould_connect_doing_3_24
 			spriteType = GFX_arkocean_progress_doing_long
@@ -1769,6 +1962,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_3_24b"
 			effect = beffect_arkocean_mould_connect_doing_3_24
 			spriteType = GFX_arkocean_progress_doing_long
@@ -1777,6 +1971,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_3_24c"
 			effect = beffect_arkocean_mould_connect_doing_3_24
 			spriteType = GFX_arkocean_progress_doing_long
@@ -1785,6 +1980,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_3_46a"
 			effect = beffect_arkocean_mould_connect_doing_3_46
 			spriteType = GFX_arkocean_progress_doing_long
@@ -1793,6 +1989,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_3_46b"
 			effect = beffect_arkocean_mould_connect_doing_3_46
 			spriteType = GFX_arkocean_progress_doing_long
@@ -1801,6 +1998,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_3_46c"
 			effect = beffect_arkocean_mould_connect_doing_3_46
 			spriteType = GFX_arkocean_progress_doing_long
@@ -1810,6 +2008,7 @@ guiTypes = {
 		}
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_4_12a"
 			effect = beffect_arkocean_mould_connect_doing_4_12
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1818,6 +2017,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_4_12b"
 			effect = beffect_arkocean_mould_connect_doing_4_12
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1826,6 +2026,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_4_12c"
 			effect = beffect_arkocean_mould_connect_doing_4_12
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1834,6 +2035,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_4_23a"
 			effect = beffect_arkocean_mould_connect_doing_4_23
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1842,6 +2044,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_4_23b"
 			effect = beffect_arkocean_mould_connect_doing_4_23
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1850,6 +2053,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_4_23c"
 			effect = beffect_arkocean_mould_connect_doing_4_23
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1858,6 +2062,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_4_34a"
 			effect = beffect_arkocean_mould_connect_doing_4_34
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1866,6 +2071,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_4_34b"
 			effect = beffect_arkocean_mould_connect_doing_4_34
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1874,6 +2080,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_4_34c"
 			effect = beffect_arkocean_mould_connect_doing_4_34
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1882,6 +2089,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_4_45a"
 			effect = beffect_arkocean_mould_connect_doing_4_45
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1890,6 +2098,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_4_45b"
 			effect = beffect_arkocean_mould_connect_doing_4_45
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1898,6 +2107,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_4_45c"
 			effect = beffect_arkocean_mould_connect_doing_4_45
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1906,6 +2116,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_4_56a"
 			effect = beffect_arkocean_mould_connect_doing_4_56
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1914,6 +2125,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_4_56b"
 			effect = beffect_arkocean_mould_connect_doing_4_56
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1922,6 +2134,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_4_56c"
 			effect = beffect_arkocean_mould_connect_doing_4_56
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1930,6 +2143,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_5_12a"
 			effect = beffect_arkocean_mould_connect_doing_5_12
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1938,6 +2152,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_5_12b"
 			effect = beffect_arkocean_mould_connect_doing_5_12
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1946,6 +2161,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_5_12c"
 			effect = beffect_arkocean_mould_connect_doing_5_12
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1954,6 +2170,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_5_23a"
 			effect = beffect_arkocean_mould_connect_doing_5_23
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1962,6 +2179,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_5_23b"
 			effect = beffect_arkocean_mould_connect_doing_5_23
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1970,6 +2188,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_5_23c"
 			effect = beffect_arkocean_mould_connect_doing_5_23
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1978,6 +2197,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_5_34a"
 			effect = beffect_arkocean_mould_connect_doing_5_34
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1986,6 +2206,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_5_34b"
 			effect = beffect_arkocean_mould_connect_doing_5_34
 			spriteType = GFX_arkocean_progress_doing_short
@@ -1994,6 +2215,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_5_34c"
 			effect = beffect_arkocean_mould_connect_doing_5_34
 			spriteType = GFX_arkocean_progress_doing_short
@@ -2002,6 +2224,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_5_45a"
 			effect = beffect_arkocean_mould_connect_doing_5_45
 			spriteType = GFX_arkocean_progress_doing_short
@@ -2010,6 +2233,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_5_45b"
 			effect = beffect_arkocean_mould_connect_doing_5_45
 			spriteType = GFX_arkocean_progress_doing_short
@@ -2018,6 +2242,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_5_45c"
 			effect = beffect_arkocean_mould_connect_doing_5_45
 			spriteType = GFX_arkocean_progress_doing_short
@@ -2026,6 +2251,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_5_56a"
 			effect = beffect_arkocean_mould_connect_doing_5_56
 			spriteType = GFX_arkocean_progress_doing_short
@@ -2034,6 +2260,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_5_56b"
 			effect = beffect_arkocean_mould_connect_doing_5_56
 			spriteType = GFX_arkocean_progress_doing_short
@@ -2042,6 +2269,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_5_56c"
 			effect = beffect_arkocean_mould_connect_doing_5_56
 			spriteType = GFX_arkocean_progress_doing_short
@@ -2050,6 +2278,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_6_12a"
 			effect = beffect_arkocean_mould_connect_doing_6_12
 			spriteType = GFX_arkocean_progress_doing_short
@@ -2058,6 +2287,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_6_12b"
 			effect = beffect_arkocean_mould_connect_doing_6_12
 			spriteType = GFX_arkocean_progress_doing_short
@@ -2066,6 +2296,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_6_12c"
 			effect = beffect_arkocean_mould_connect_doing_6_12
 			spriteType = GFX_arkocean_progress_doing_short
@@ -2074,6 +2305,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_6_23a"
 			effect = beffect_arkocean_mould_connect_doing_6_23
 			spriteType = GFX_arkocean_progress_doing_short
@@ -2082,6 +2314,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_6_23b"
 			effect = beffect_arkocean_mould_connect_doing_6_23
 			spriteType = GFX_arkocean_progress_doing_short
@@ -2090,6 +2323,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_6_23c"
 			effect = beffect_arkocean_mould_connect_doing_6_23
 			spriteType = GFX_arkocean_progress_doing_short
@@ -2098,6 +2332,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_6_34a"
 			effect = beffect_arkocean_mould_connect_doing_6_34
 			spriteType = GFX_arkocean_progress_doing_short
@@ -2106,6 +2341,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_6_34b"
 			effect = beffect_arkocean_mould_connect_doing_6_34
 			spriteType = GFX_arkocean_progress_doing_short
@@ -2114,6 +2350,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_6_34c"
 			effect = beffect_arkocean_mould_connect_doing_6_34
 			spriteType = GFX_arkocean_progress_doing_short
@@ -2122,6 +2359,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_6_45a"
 			effect = beffect_arkocean_mould_connect_doing_6_45
 			spriteType = GFX_arkocean_progress_doing_short
@@ -2130,6 +2368,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_6_45b"
 			effect = beffect_arkocean_mould_connect_doing_6_45
 			spriteType = GFX_arkocean_progress_doing_short
@@ -2138,6 +2377,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_doing_6_45c"
 			effect = beffect_arkocean_mould_connect_doing_6_45
 			spriteType = GFX_arkocean_progress_doing_short
@@ -2151,6 +2391,7 @@ guiTypes = {
 
 		#已完成
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_1_12a"
 			effect = beffect_arkocean_mould_done_1_2
 			spriteType = GFX_arkocean_progress_done_short
@@ -2159,6 +2400,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_1_12b"
 			effect = beffect_arkocean_mould_done_1_2
 			spriteType = GFX_arkocean_progress_done_short
@@ -2167,6 +2409,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_1_12c"
 			effect = beffect_arkocean_mould_done_1_2
 			spriteType = GFX_arkocean_progress_done_short
@@ -2175,6 +2418,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_1_23a"
 			effect = beffect_arkocean_mould_done_1_3
 			spriteType = GFX_arkocean_progress_done_short
@@ -2183,6 +2427,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_1_23b"
 			effect = beffect_arkocean_mould_done_1_3
 			spriteType = GFX_arkocean_progress_done_short
@@ -2191,6 +2436,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_1_23c"
 			effect = beffect_arkocean_mould_done_1_3
 			spriteType = GFX_arkocean_progress_done_short
@@ -2199,6 +2445,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_1_34a"
 			effect = beffect_arkocean_mould_done_1_4
 			spriteType = GFX_arkocean_progress_done_short
@@ -2207,6 +2454,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_1_34b"
 			effect = beffect_arkocean_mould_done_1_4
 			spriteType = GFX_arkocean_progress_done_short
@@ -2215,6 +2463,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_1_34c"
 			effect = beffect_arkocean_mould_done_1_4
 			spriteType = GFX_arkocean_progress_done_short
@@ -2223,6 +2472,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_1_46a"
 			effect = beffect_arkocean_mould_done_1_6
 			spriteType = GFX_arkocean_progress_done_long
@@ -2231,6 +2481,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_1_46b"
 			effect = beffect_arkocean_mould_done_1_6
 			spriteType = GFX_arkocean_progress_done_long
@@ -2239,6 +2490,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_1_46c"
 			effect = beffect_arkocean_mould_done_1_6
 			spriteType = GFX_arkocean_progress_done_long
@@ -2248,6 +2500,7 @@ guiTypes = {
 		}
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_2_12a"
 			effect = beffect_arkocean_mould_done_2_2
 			spriteType = GFX_arkocean_progress_done_short
@@ -2256,6 +2509,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_2_12b"
 			effect = beffect_arkocean_mould_done_2_2
 			spriteType = GFX_arkocean_progress_done_short
@@ -2264,6 +2518,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_2_12c"
 			effect = beffect_arkocean_mould_done_2_2
 			spriteType = GFX_arkocean_progress_done_short
@@ -2272,6 +2527,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_2_23a"
 			effect = beffect_arkocean_mould_done_2_3
 			spriteType = GFX_arkocean_progress_done_short
@@ -2280,6 +2536,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_2_23b"
 			effect = beffect_arkocean_mould_done_2_3
 			spriteType = GFX_arkocean_progress_done_short
@@ -2288,6 +2545,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_2_23c"
 			effect = beffect_arkocean_mould_done_2_3
 			spriteType = GFX_arkocean_progress_done_short
@@ -2296,6 +2554,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_2_35a"
 			effect = beffect_arkocean_mould_done_2_5
 			spriteType = GFX_arkocean_progress_done_long
@@ -2304,6 +2563,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_2_35b"
 			effect = beffect_arkocean_mould_done_2_5
 			spriteType = GFX_arkocean_progress_done_long
@@ -2312,6 +2572,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_2_35c"
 			effect = beffect_arkocean_mould_done_2_5
 			spriteType = GFX_arkocean_progress_done_long
@@ -2320,6 +2581,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_2_56a"
 			effect = beffect_arkocean_mould_done_2_6
 			spriteType = GFX_arkocean_progress_done_short
@@ -2328,6 +2590,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_2_56b"
 			effect = beffect_arkocean_mould_done_2_6
 			spriteType = GFX_arkocean_progress_done_short
@@ -2336,6 +2599,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_2_56c"
 			effect = beffect_arkocean_mould_done_2_6
 			spriteType = GFX_arkocean_progress_done_short
@@ -2345,6 +2609,7 @@ guiTypes = {
 		}
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_3_12a"
 			effect = beffect_arkocean_mould_done_3_2
 			spriteType = GFX_arkocean_progress_done_short
@@ -2353,6 +2618,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_3_12b"
 			effect = beffect_arkocean_mould_done_3_2
 			spriteType = GFX_arkocean_progress_done_short
@@ -2361,6 +2627,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_3_12c"
 			effect = beffect_arkocean_mould_done_3_2
 			spriteType = GFX_arkocean_progress_done_short
@@ -2369,6 +2636,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_3_24a"
 			effect = beffect_arkocean_mould_done_3_4
 			spriteType = GFX_arkocean_progress_done_long
@@ -2377,6 +2645,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_3_24b"
 			effect = beffect_arkocean_mould_done_3_4
 			spriteType = GFX_arkocean_progress_done_long
@@ -2385,6 +2654,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_3_24c"
 			effect = beffect_arkocean_mould_done_3_4
 			spriteType = GFX_arkocean_progress_done_long
@@ -2393,6 +2663,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_3_46a"
 			effect = beffect_arkocean_mould_done_3_6
 			spriteType = GFX_arkocean_progress_done_long
@@ -2401,6 +2672,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_3_46b"
 			effect = beffect_arkocean_mould_done_3_6
 			spriteType = GFX_arkocean_progress_done_long
@@ -2409,6 +2681,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_3_46c"
 			effect = beffect_arkocean_mould_done_3_6
 			spriteType = GFX_arkocean_progress_done_long
@@ -2418,6 +2691,7 @@ guiTypes = {
 		}
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_4_12a"
 			effect = beffect_arkocean_mould_done_4_2
 			spriteType = GFX_arkocean_progress_done_short
@@ -2426,6 +2700,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_4_12b"
 			effect = beffect_arkocean_mould_done_4_2
 			spriteType = GFX_arkocean_progress_done_short
@@ -2434,6 +2709,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_4_12c"
 			effect = beffect_arkocean_mould_done_4_2
 			spriteType = GFX_arkocean_progress_done_short
@@ -2442,6 +2718,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_4_23a"
 			effect = beffect_arkocean_mould_done_4_3
 			spriteType = GFX_arkocean_progress_done_short
@@ -2450,6 +2727,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_4_23b"
 			effect = beffect_arkocean_mould_done_4_3
 			spriteType = GFX_arkocean_progress_done_short
@@ -2458,6 +2736,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_4_23c"
 			effect = beffect_arkocean_mould_done_4_3
 			spriteType = GFX_arkocean_progress_done_short
@@ -2466,6 +2745,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_4_34a"
 			effect = beffect_arkocean_mould_done_4_4
 			spriteType = GFX_arkocean_progress_done_short
@@ -2474,6 +2754,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_4_34b"
 			effect = beffect_arkocean_mould_done_4_4
 			spriteType = GFX_arkocean_progress_done_short
@@ -2482,6 +2763,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_4_34c"
 			effect = beffect_arkocean_mould_done_4_4
 			spriteType = GFX_arkocean_progress_done_short
@@ -2490,6 +2772,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_4_45a"
 			effect = beffect_arkocean_mould_done_4_5
 			spriteType = GFX_arkocean_progress_done_short
@@ -2498,6 +2781,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_4_45b"
 			effect = beffect_arkocean_mould_done_4_5
 			spriteType = GFX_arkocean_progress_done_short
@@ -2506,6 +2790,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_4_45c"
 			effect = beffect_arkocean_mould_done_4_5
 			spriteType = GFX_arkocean_progress_done_short
@@ -2514,6 +2799,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_4_56a"
 			effect = beffect_arkocean_mould_done_4_6
 			spriteType = GFX_arkocean_progress_done_short
@@ -2522,6 +2808,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_4_56b"
 			effect = beffect_arkocean_mould_done_4_6
 			spriteType = GFX_arkocean_progress_done_short
@@ -2530,6 +2817,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_4_56c"
 			effect = beffect_arkocean_mould_done_4_6
 			spriteType = GFX_arkocean_progress_done_short
@@ -2538,6 +2826,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_5_12a"
 			effect = beffect_arkocean_mould_done_5_2
 			spriteType = GFX_arkocean_progress_done_short
@@ -2546,6 +2835,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_5_12b"
 			effect = beffect_arkocean_mould_done_5_2
 			spriteType = GFX_arkocean_progress_done_short
@@ -2554,6 +2844,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_5_12c"
 			effect = beffect_arkocean_mould_done_5_2
 			spriteType = GFX_arkocean_progress_done_short
@@ -2562,6 +2853,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_5_23a"
 			effect = beffect_arkocean_mould_done_5_3
 			spriteType = GFX_arkocean_progress_done_short
@@ -2570,6 +2862,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_5_23b"
 			effect = beffect_arkocean_mould_done_5_3
 			spriteType = GFX_arkocean_progress_done_short
@@ -2578,6 +2871,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_5_23c"
 			effect = beffect_arkocean_mould_done_5_3
 			spriteType = GFX_arkocean_progress_done_short
@@ -2586,6 +2880,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_5_34a"
 			effect = beffect_arkocean_mould_done_5_4
 			spriteType = GFX_arkocean_progress_done_short
@@ -2594,6 +2889,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_5_34b"
 			effect = beffect_arkocean_mould_done_5_4
 			spriteType = GFX_arkocean_progress_done_short
@@ -2602,6 +2898,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_5_34c"
 			effect = beffect_arkocean_mould_done_5_4
 			spriteType = GFX_arkocean_progress_done_short
@@ -2610,6 +2907,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_5_45a"
 			effect = beffect_arkocean_mould_done_5_5
 			spriteType = GFX_arkocean_progress_done_short
@@ -2618,6 +2916,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_5_45b"
 			effect = beffect_arkocean_mould_done_5_5
 			spriteType = GFX_arkocean_progress_done_short
@@ -2626,6 +2925,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_5_45c"
 			effect = beffect_arkocean_mould_done_5_5
 			spriteType = GFX_arkocean_progress_done_short
@@ -2634,6 +2934,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_5_56a"
 			effect = beffect_arkocean_mould_done_5_6
 			spriteType = GFX_arkocean_progress_done_short
@@ -2642,6 +2943,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_5_56b"
 			effect = beffect_arkocean_mould_done_5_6
 			spriteType = GFX_arkocean_progress_done_short
@@ -2650,6 +2952,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_5_56c"
 			effect = beffect_arkocean_mould_done_5_6
 			spriteType = GFX_arkocean_progress_done_short
@@ -2658,6 +2961,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_6_12a"
 			effect = beffect_arkocean_mould_done_6_2
 			spriteType = GFX_arkocean_progress_done_short
@@ -2666,6 +2970,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_6_12b"
 			effect = beffect_arkocean_mould_done_6_2
 			spriteType = GFX_arkocean_progress_done_short
@@ -2674,6 +2979,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_6_12c"
 			effect = beffect_arkocean_mould_done_6_2
 			spriteType = GFX_arkocean_progress_done_short
@@ -2682,6 +2988,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_6_23a"
 			effect = beffect_arkocean_mould_done_6_3
 			spriteType = GFX_arkocean_progress_done_short
@@ -2690,6 +2997,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_6_23b"
 			effect = beffect_arkocean_mould_done_6_3
 			spriteType = GFX_arkocean_progress_done_short
@@ -2698,6 +3006,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_6_23c"
 			effect = beffect_arkocean_mould_done_6_3
 			spriteType = GFX_arkocean_progress_done_short
@@ -2706,6 +3015,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_6_34a"
 			effect = beffect_arkocean_mould_done_6_4
 			spriteType = GFX_arkocean_progress_done_short
@@ -2714,6 +3024,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_6_34b"
 			effect = beffect_arkocean_mould_done_6_4
 			spriteType = GFX_arkocean_progress_done_short
@@ -2722,6 +3033,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_6_34c"
 			effect = beffect_arkocean_mould_done_6_4
 			spriteType = GFX_arkocean_progress_done_short
@@ -2730,6 +3042,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_6_45a"
 			effect = beffect_arkocean_mould_done_6_5
 			spriteType = GFX_arkocean_progress_done_short
@@ -2738,6 +3051,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_6_45b"
 			effect = beffect_arkocean_mould_done_6_5
 			spriteType = GFX_arkocean_progress_done_short
@@ -2746,6 +3060,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_done_6_45c"
 			effect = beffect_arkocean_mould_done_6_5
 			spriteType = GFX_arkocean_progress_done_short
@@ -2757,6 +3072,7 @@ guiTypes = {
 
 		#未解锁
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_1_12a"
 			effect = beffect_arkocean_mould_connect_waiting_1_12
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -2765,6 +3081,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_1_12b"
 			effect = beffect_arkocean_mould_connect_waiting_1_12
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -2773,6 +3090,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_1_12c"
 			effect = beffect_arkocean_mould_connect_waiting_1_12
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -2781,6 +3099,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_1_23a"
 			effect = beffect_arkocean_mould_connect_waiting_1_23
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -2789,6 +3108,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_1_23b"
 			effect = beffect_arkocean_mould_connect_waiting_1_23
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -2797,6 +3117,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_1_23c"
 			effect = beffect_arkocean_mould_connect_waiting_1_23
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -2805,6 +3126,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_1_34a"
 			effect = beffect_arkocean_mould_connect_waiting_1_34
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -2813,6 +3135,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_1_34b"
 			effect = beffect_arkocean_mould_connect_waiting_1_34
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -2821,6 +3144,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_1_34c"
 			effect = beffect_arkocean_mould_connect_waiting_1_34
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -2829,6 +3153,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_1_46a"
 			effect = beffect_arkocean_mould_connect_waiting_1_46
 			spriteType = GFX_arkocean_progress_waiting_long
@@ -2837,6 +3162,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_1_46b"
 			effect = beffect_arkocean_mould_connect_waiting_1_46
 			spriteType = GFX_arkocean_progress_waiting_long
@@ -2845,6 +3171,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_1_46c"
 			effect = beffect_arkocean_mould_connect_waiting_1_46
 			spriteType = GFX_arkocean_progress_waiting_long
@@ -2854,6 +3181,7 @@ guiTypes = {
 		}
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_2_12a"
 			effect = beffect_arkocean_mould_connect_waiting_2_12
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -2862,6 +3190,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_2_12b"
 			effect = beffect_arkocean_mould_connect_waiting_2_12
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -2870,6 +3199,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_2_12c"
 			effect = beffect_arkocean_mould_connect_waiting_2_12
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -2878,6 +3208,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_2_23a"
 			effect = beffect_arkocean_mould_connect_waiting_2_23
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -2886,6 +3217,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_2_23b"
 			effect = beffect_arkocean_mould_connect_waiting_2_23
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -2894,6 +3226,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_2_23c"
 			effect = beffect_arkocean_mould_connect_waiting_2_23
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -2902,6 +3235,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_2_35a"
 			effect = beffect_arkocean_mould_connect_waiting_2_35
 			spriteType = GFX_arkocean_progress_waiting_long
@@ -2910,6 +3244,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_2_35b"
 			effect = beffect_arkocean_mould_connect_waiting_2_35
 			spriteType = GFX_arkocean_progress_waiting_long
@@ -2918,6 +3253,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_2_35c"
 			effect = beffect_arkocean_mould_connect_waiting_2_35
 			spriteType = GFX_arkocean_progress_waiting_long
@@ -2926,6 +3262,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_2_56a"
 			effect = beffect_arkocean_mould_connect_waiting_2_56
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -2934,6 +3271,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_2_56b"
 			effect = beffect_arkocean_mould_connect_waiting_2_56
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -2942,6 +3280,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_2_56c"
 			effect = beffect_arkocean_mould_connect_waiting_2_56
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -2951,6 +3290,7 @@ guiTypes = {
 		}
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_3_12a"
 			effect = beffect_arkocean_mould_connect_waiting_3_12
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -2959,6 +3299,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_3_12b"
 			effect = beffect_arkocean_mould_connect_waiting_3_12
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -2967,6 +3308,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_3_12c"
 			effect = beffect_arkocean_mould_connect_waiting_3_12
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -2975,6 +3317,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_3_24a"
 			effect = beffect_arkocean_mould_connect_waiting_3_24
 			spriteType = GFX_arkocean_progress_waiting_long
@@ -2983,6 +3326,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_3_24b"
 			effect = beffect_arkocean_mould_connect_waiting_3_24
 			spriteType = GFX_arkocean_progress_waiting_long
@@ -2991,6 +3335,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_3_24c"
 			effect = beffect_arkocean_mould_connect_waiting_3_24
 			spriteType = GFX_arkocean_progress_waiting_long
@@ -2999,6 +3344,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_3_46a"
 			effect = beffect_arkocean_mould_connect_waiting_3_46
 			spriteType = GFX_arkocean_progress_waiting_long
@@ -3007,6 +3353,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_3_46b"
 			effect = beffect_arkocean_mould_connect_waiting_3_46
 			spriteType = GFX_arkocean_progress_waiting_long
@@ -3015,6 +3362,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_3_46c"
 			effect = beffect_arkocean_mould_connect_waiting_3_46
 			spriteType = GFX_arkocean_progress_waiting_long
@@ -3024,6 +3372,7 @@ guiTypes = {
 		}
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_4_12a"
 			effect = beffect_arkocean_mould_connect_waiting_4_12
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3032,6 +3381,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_4_12b"
 			effect = beffect_arkocean_mould_connect_waiting_4_12
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3040,6 +3390,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_4_12c"
 			effect = beffect_arkocean_mould_connect_waiting_4_12
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3048,6 +3399,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_4_23a"
 			effect = beffect_arkocean_mould_connect_waiting_4_23
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3056,6 +3408,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_4_23b"
 			effect = beffect_arkocean_mould_connect_waiting_4_23
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3064,6 +3417,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_4_23c"
 			effect = beffect_arkocean_mould_connect_waiting_4_23
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3072,6 +3426,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_4_34a"
 			effect = beffect_arkocean_mould_connect_waiting_4_34
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3080,6 +3435,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_4_34b"
 			effect = beffect_arkocean_mould_connect_waiting_4_34
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3088,6 +3444,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_4_34c"
 			effect = beffect_arkocean_mould_connect_waiting_4_34
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3096,6 +3453,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_4_45a"
 			effect = beffect_arkocean_mould_connect_waiting_4_45
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3104,6 +3462,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_4_45b"
 			effect = beffect_arkocean_mould_connect_waiting_4_45
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3112,6 +3471,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_4_45c"
 			effect = beffect_arkocean_mould_connect_waiting_4_45
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3120,6 +3480,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_4_56a"
 			effect = beffect_arkocean_mould_connect_waiting_4_56
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3128,6 +3489,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_4_56b"
 			effect = beffect_arkocean_mould_connect_waiting_4_56
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3136,6 +3498,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_4_56c"
 			effect = beffect_arkocean_mould_connect_waiting_4_56
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3144,6 +3507,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_5_12a"
 			effect = beffect_arkocean_mould_connect_waiting_5_12
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3152,6 +3516,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_5_12b"
 			effect = beffect_arkocean_mould_connect_waiting_5_12
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3160,6 +3525,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_5_12c"
 			effect = beffect_arkocean_mould_connect_waiting_5_12
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3168,6 +3534,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_5_23a"
 			effect = beffect_arkocean_mould_connect_waiting_5_23
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3176,6 +3543,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_5_23b"
 			effect = beffect_arkocean_mould_connect_waiting_5_23
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3184,6 +3552,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_5_23c"
 			effect = beffect_arkocean_mould_connect_waiting_5_23
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3192,6 +3561,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_5_34a"
 			effect = beffect_arkocean_mould_connect_waiting_5_34
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3200,6 +3570,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_5_34b"
 			effect = beffect_arkocean_mould_connect_waiting_5_34
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3208,6 +3579,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_5_34c"
 			effect = beffect_arkocean_mould_connect_waiting_5_34
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3216,6 +3588,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_5_45a"
 			effect = beffect_arkocean_mould_connect_waiting_5_45
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3224,6 +3597,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_5_45b"
 			effect = beffect_arkocean_mould_connect_waiting_5_45
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3232,6 +3606,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_5_45c"
 			effect = beffect_arkocean_mould_connect_waiting_5_45
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3240,6 +3615,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_5_56a"
 			effect = beffect_arkocean_mould_connect_waiting_5_56
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3248,6 +3624,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_5_56b"
 			effect = beffect_arkocean_mould_connect_waiting_5_56
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3256,6 +3633,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_5_56c"
 			effect = beffect_arkocean_mould_connect_waiting_5_56
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3264,6 +3642,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_6_12a"
 			effect = beffect_arkocean_mould_connect_waiting_6_12
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3272,6 +3651,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_6_12b"
 			effect = beffect_arkocean_mould_connect_waiting_6_12
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3280,6 +3660,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_6_12c"
 			effect = beffect_arkocean_mould_connect_waiting_6_12
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3288,6 +3669,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_6_23a"
 			effect = beffect_arkocean_mould_connect_waiting_6_23
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3296,6 +3678,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_6_23b"
 			effect = beffect_arkocean_mould_connect_waiting_6_23
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3304,6 +3687,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_6_23c"
 			effect = beffect_arkocean_mould_connect_waiting_6_23
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3312,6 +3696,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_6_34a"
 			effect = beffect_arkocean_mould_connect_waiting_6_34
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3320,6 +3705,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_6_34b"
 			effect = beffect_arkocean_mould_connect_waiting_6_34
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3328,6 +3714,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_6_34c"
 			effect = beffect_arkocean_mould_connect_waiting_6_34
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3336,6 +3723,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_6_45a"
 			effect = beffect_arkocean_mould_connect_waiting_6_45
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3344,6 +3732,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_6_45b"
 			effect = beffect_arkocean_mould_connect_waiting_6_45
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3352,6 +3741,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_progress_waiting_6_45c"
 			effect = beffect_arkocean_mould_connect_waiting_6_45
 			spriteType = GFX_arkocean_progress_waiting_short
@@ -3386,6 +3776,7 @@ guiTypes = {
 
 		#等级
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level2_41_base"
 			effect = beffect_no_effect
 			spriteType = GFX_arkocean_level_base_2
@@ -3394,6 +3785,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level2_41_l1"
 			effect = beffect_arkocean_mould_level_4_1_d1
 			spriteType = GFX_arkocean_level_done_2_blue
@@ -3402,6 +3794,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level2_41_l2"
 			effect = beffect_arkocean_mould_level_4_1_d2
 			spriteType = GFX_arkocean_level_done_2_blue
@@ -3414,6 +3807,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level3_21_base"
 			effect = beffect_no_effect
 			spriteType = GFX_arkocean_level_base_3
@@ -3422,6 +3816,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level3_21_l1"
 			effect = beffect_arkocean_mould_level_2_1_d1
 			spriteType = GFX_arkocean_level_done_3_blue
@@ -3430,6 +3825,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level3_21_l2"
 			effect = beffect_arkocean_mould_level_2_1_d2
 			spriteType = GFX_arkocean_level_done_3_blue
@@ -3438,6 +3834,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level3_21_l3"
 			effect = beffect_arkocean_mould_level_2_1_d3
 			spriteType = GFX_arkocean_level_done_3_blue
@@ -3450,6 +3847,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level3_22_base"
 			effect = beffect_no_effect
 			spriteType = GFX_arkocean_level_base_3
@@ -3458,6 +3856,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level3_22_l1"
 			effect = beffect_arkocean_mould_level_2_2_d1
 			spriteType = GFX_arkocean_level_done_3_blue
@@ -3466,6 +3865,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level3_22_l2"
 			effect = beffect_arkocean_mould_level_2_2_d2
 			spriteType = GFX_arkocean_level_done_3_blue
@@ -3474,6 +3874,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level3_22_l3"
 			effect = beffect_arkocean_mould_level_2_2_d3
 			spriteType = GFX_arkocean_level_done_3_blue
@@ -3486,6 +3887,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level3_23_base"
 			effect = beffect_no_effect
 			spriteType = GFX_arkocean_level_base_3
@@ -3494,6 +3896,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level3_23_l1"
 			effect = beffect_arkocean_mould_level_2_3_d1
 			spriteType = GFX_arkocean_level_done_3_blue
@@ -3502,6 +3905,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level3_23_l2"
 			effect = beffect_arkocean_mould_level_2_3_d2
 			spriteType = GFX_arkocean_level_done_3_blue
@@ -3510,6 +3914,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level3_23_l3"
 			effect = beffect_arkocean_mould_level_2_3_d3
 			spriteType = GFX_arkocean_level_done_3_blue
@@ -3522,6 +3927,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level3_25_base"
 			effect = beffect_no_effect
 			spriteType = GFX_arkocean_level_base_3
@@ -3530,6 +3936,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level3_25_l1"
 			effect = beffect_arkocean_mould_level_2_5_d1
 			spriteType = GFX_arkocean_level_done_3_blue
@@ -3538,6 +3945,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level3_25_l2"
 			effect = beffect_arkocean_mould_level_2_5_d2
 			spriteType = GFX_arkocean_level_done_3_blue
@@ -3546,6 +3954,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level3_25_l3"
 			effect = beffect_arkocean_mould_level_2_5_d3
 			spriteType = GFX_arkocean_level_done_3_blue
@@ -3559,6 +3968,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level4_31_base"
 			effect = beffect_no_effect
 			spriteType = GFX_arkocean_level_base_4
@@ -3567,6 +3977,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level4_31_l1"
 			effect = beffect_arkocean_mould_level_3_1_d1
 			spriteType = GFX_arkocean_level_done_4_blue
@@ -3575,6 +3986,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level4_31_l2"
 			effect = beffect_arkocean_mould_level_3_1_d2
 			spriteType = GFX_arkocean_level_done_4_blue
@@ -3583,6 +3995,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level4_31_l3"
 			effect = beffect_arkocean_mould_level_3_1_d3
 			spriteType = GFX_arkocean_level_done_4_blue
@@ -3591,6 +4004,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level4_31_l4"
 			effect = beffect_arkocean_mould_level_3_1_d4
 			spriteType = GFX_arkocean_level_done_4_blue
@@ -3603,6 +4017,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level4_32_base"
 			effect = beffect_no_effect
 			spriteType = GFX_arkocean_level_base_4
@@ -3611,6 +4026,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level4_32_l1"
 			effect = beffect_arkocean_mould_level_3_2_d1
 			spriteType = GFX_arkocean_level_done_4_blue
@@ -3619,6 +4035,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level4_32_l2"
 			effect = beffect_arkocean_mould_level_3_2_d2
 			spriteType = GFX_arkocean_level_done_4_blue
@@ -3627,6 +4044,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level4_32_l3"
 			effect = beffect_arkocean_mould_level_3_2_d3
 			spriteType = GFX_arkocean_level_done_4_blue
@@ -3635,6 +4053,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level4_32_l4"
 			effect = beffect_arkocean_mould_level_3_2_d4
 			spriteType = GFX_arkocean_level_done_4_blue
@@ -3647,6 +4066,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level4_34_base"
 			effect = beffect_no_effect
 			spriteType = GFX_arkocean_level_base_4
@@ -3655,6 +4075,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level4_34_l1"
 			effect = beffect_arkocean_mould_level_3_4_d1
 			spriteType = GFX_arkocean_level_done_4_blue
@@ -3663,6 +4084,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level4_34_l2"
 			effect = beffect_arkocean_mould_level_3_4_d2
 			spriteType = GFX_arkocean_level_done_4_blue
@@ -3671,6 +4093,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level4_34_l3"
 			effect = beffect_arkocean_mould_level_3_4_d3
 			spriteType = GFX_arkocean_level_done_4_blue
@@ -3679,6 +4102,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level4_34_l4"
 			effect = beffect_arkocean_mould_level_3_4_d4
 			spriteType = GFX_arkocean_level_done_4_blue
@@ -3691,6 +4115,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level4_44_base"
 			effect = beffect_no_effect
 			spriteType = GFX_arkocean_level_base_4
@@ -3699,6 +4124,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level4_44_l1"
 			effect = beffect_arkocean_mould_level_4_4_d1
 			spriteType = GFX_arkocean_level_done_4_blue
@@ -3707,6 +4133,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level4_44_l2"
 			effect = beffect_arkocean_mould_level_4_4_d2
 			spriteType = GFX_arkocean_level_done_4_blue
@@ -3715,6 +4142,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level4_44_l3"
 			effect = beffect_arkocean_mould_level_4_4_d3
 			spriteType = GFX_arkocean_level_done_4_blue
@@ -3723,6 +4151,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level4_44_l4"
 			effect = beffect_arkocean_mould_level_4_4_d4
 			spriteType = GFX_arkocean_level_done_4_blue
@@ -3736,6 +4165,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_11_base"
 			effect = beffect_no_effect
 			spriteType = GFX_arkocean_level_base_5
@@ -3744,6 +4174,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_11_l1"
 			effect = beffect_arkocean_mould_level_1_1_d1
 			spriteType = GFX_arkocean_level_done_5a_blue
@@ -3752,6 +4183,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_11_l2"
 			effect = beffect_arkocean_mould_level_1_1_d2
 			spriteType = GFX_arkocean_level_done_5a_blue
@@ -3760,6 +4192,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_11_l3"
 			effect = beffect_arkocean_mould_level_1_1_d3
 			spriteType = GFX_arkocean_level_done_5b_blue
@@ -3768,6 +4201,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_11_l4"
 			effect = beffect_arkocean_mould_level_1_1_d4
 			spriteType = GFX_arkocean_level_done_5a_blue
@@ -3776,6 +4210,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_11_l5"
 			effect = beffect_arkocean_mould_level_1_1_d5
 			spriteType = GFX_arkocean_level_done_5a_blue
@@ -3788,6 +4223,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_14_base"
 			effect = beffect_no_effect
 			spriteType = GFX_arkocean_level_base_5
@@ -3796,6 +4232,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_14_l1"
 			effect = beffect_arkocean_mould_level_1_4_d1
 			spriteType = GFX_arkocean_level_done_5a_blue
@@ -3804,6 +4241,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_14_l2"
 			effect = beffect_arkocean_mould_level_1_4_d2
 			spriteType = GFX_arkocean_level_done_5a_blue
@@ -3812,6 +4250,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_14_l3"
 			effect = beffect_arkocean_mould_level_1_4_d3
 			spriteType = GFX_arkocean_level_done_5b_blue
@@ -3820,6 +4259,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_14_l4"
 			effect = beffect_arkocean_mould_level_1_4_d4
 			spriteType = GFX_arkocean_level_done_5a_blue
@@ -3828,6 +4268,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_14_l5"
 			effect = beffect_arkocean_mould_level_1_4_d5
 			spriteType = GFX_arkocean_level_done_5a_blue
@@ -3840,6 +4281,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_26_base"
 			effect = beffect_no_effect
 			spriteType = GFX_arkocean_level_base_5
@@ -3848,6 +4290,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_26_l1"
 			effect = beffect_arkocean_mould_level_2_6_d1
 			spriteType = GFX_arkocean_level_done_5a_blue
@@ -3856,6 +4299,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_26_l2"
 			effect = beffect_arkocean_mould_level_2_6_d2
 			spriteType = GFX_arkocean_level_done_5a_blue
@@ -3864,6 +4308,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_26_l3"
 			effect = beffect_arkocean_mould_level_2_6_d3
 			spriteType = GFX_arkocean_level_done_5b_blue
@@ -3872,6 +4317,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_26_l4"
 			effect = beffect_arkocean_mould_level_2_6_d4
 			spriteType = GFX_arkocean_level_done_5a_blue
@@ -3880,6 +4326,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_26_l5"
 			effect = beffect_arkocean_mould_level_2_6_d5
 			spriteType = GFX_arkocean_level_done_5a_blue
@@ -3893,6 +4340,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_42_base"
 			effect = beffect_no_effect
 			spriteType = GFX_arkocean_level_base_5
@@ -3901,6 +4349,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_42_l1"
 			effect = beffect_arkocean_mould_level_4_2_d1
 			spriteType = GFX_arkocean_level_done_5a_blue
@@ -3909,6 +4358,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_42_l2"
 			effect = beffect_arkocean_mould_level_4_2_d2
 			spriteType = GFX_arkocean_level_done_5a_blue
@@ -3917,6 +4367,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_42_l3"
 			effect = beffect_arkocean_mould_level_4_2_d3
 			spriteType = GFX_arkocean_level_done_5b_blue
@@ -3925,6 +4376,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_42_l4"
 			effect = beffect_arkocean_mould_level_4_2_d4
 			spriteType = GFX_arkocean_level_done_5a_blue
@@ -3933,6 +4385,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_42_l5"
 			effect = beffect_arkocean_mould_level_4_2_d5
 			spriteType = GFX_arkocean_level_done_5a_blue
@@ -3945,6 +4398,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_43_base"
 			effect = beffect_no_effect
 			spriteType = GFX_arkocean_level_base_5
@@ -3953,6 +4407,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_43_l1"
 			effect = beffect_arkocean_mould_level_4_3_d1
 			spriteType = GFX_arkocean_level_done_5a_blue
@@ -3961,6 +4416,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_43_l2"
 			effect = beffect_arkocean_mould_level_4_3_d2
 			spriteType = GFX_arkocean_level_done_5a_blue
@@ -3969,6 +4425,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_43_l3"
 			effect = beffect_arkocean_mould_level_4_3_d3
 			spriteType = GFX_arkocean_level_done_5b_blue
@@ -3977,6 +4434,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_43_l4"
 			effect = beffect_arkocean_mould_level_4_3_d4
 			spriteType = GFX_arkocean_level_done_5a_blue
@@ -3985,6 +4443,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_43_l5"
 			effect = beffect_arkocean_mould_level_4_3_d5
 			spriteType = GFX_arkocean_level_done_5a_blue
@@ -3997,6 +4456,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_45_base"
 			effect = beffect_no_effect
 			spriteType = GFX_arkocean_level_base_5
@@ -4005,6 +4465,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_45_l1"
 			effect = beffect_arkocean_mould_level_4_5_d1
 			spriteType = GFX_arkocean_level_done_5a_blue
@@ -4013,6 +4474,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_45_l2"
 			effect = beffect_arkocean_mould_level_4_5_d2
 			spriteType = GFX_arkocean_level_done_5a_blue
@@ -4021,6 +4483,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_45_l3"
 			effect = beffect_arkocean_mould_level_4_5_d3
 			spriteType = GFX_arkocean_level_done_5b_blue
@@ -4029,6 +4492,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_45_l4"
 			effect = beffect_arkocean_mould_level_4_5_d4
 			spriteType = GFX_arkocean_level_done_5a_blue
@@ -4037,6 +4501,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5_45_l5"
 			effect = beffect_arkocean_mould_level_4_5_d5
 			spriteType = GFX_arkocean_level_done_5a_blue
@@ -4050,6 +4515,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5p1_12_base"
 			effect = beffect_no_effect
 			spriteType = GFX_arkocean_level_base_5p1
@@ -4058,6 +4524,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5p1_12_l1"
 			effect = beffect_arkocean_mould_level_1_2_d1
 			spriteType = GFX_arkocean_level_done_6_blue
@@ -4066,6 +4533,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5p1_12_l2"
 			effect = beffect_arkocean_mould_level_1_2_d2
 			spriteType = GFX_arkocean_level_done_6_blue
@@ -4074,6 +4542,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5p1_12_l3"
 			effect = beffect_arkocean_mould_level_1_2_d3
 			spriteType = GFX_arkocean_level_done_6_blue
@@ -4082,6 +4551,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5p1_12_l4"
 			effect = beffect_arkocean_mould_level_1_2_d4
 			spriteType = GFX_arkocean_level_done_6_blue
@@ -4090,6 +4560,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5p1_12_l5"
 			effect = beffect_arkocean_mould_level_1_2_d5
 			spriteType = GFX_arkocean_level_done_6_blue
@@ -4098,6 +4569,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5p1_12_l6"
 			effect = beffect_arkocean_mould_level_1_2_d6
 			spriteType = GFX_arkocean_level_done_5p1_purple
@@ -4110,6 +4582,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5p1_13_base"
 			effect = beffect_no_effect
 			spriteType = GFX_arkocean_level_base_5p1
@@ -4118,6 +4591,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5p1_13_l1"
 			effect = beffect_arkocean_mould_level_1_3_d1
 			spriteType = GFX_arkocean_level_done_6_blue
@@ -4126,6 +4600,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5p1_13_l2"
 			effect = beffect_arkocean_mould_level_1_3_d2
 			spriteType = GFX_arkocean_level_done_6_blue
@@ -4134,6 +4609,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5p1_13_l3"
 			effect = beffect_arkocean_mould_level_1_3_d3
 			spriteType = GFX_arkocean_level_done_6_blue
@@ -4142,6 +4618,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5p1_13_l4"
 			effect = beffect_arkocean_mould_level_1_3_d4
 			spriteType = GFX_arkocean_level_done_6_blue
@@ -4150,6 +4627,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5p1_13_l5"
 			effect = beffect_arkocean_mould_level_1_3_d5
 			spriteType = GFX_arkocean_level_done_6_blue
@@ -4158,6 +4636,7 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		effectButtonType = {
+            multiline = yes
 			name = "arkocean_mould_level5p1_13_l6"
 			effect = beffect_arkocean_mould_level_1_3_d6
 			spriteType = GFX_arkocean_level_done_5p1_purple
