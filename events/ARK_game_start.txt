@@ -43,7 +43,7 @@ country_event = { #选择苦难摇篮起源
 		event_target:ark_planet_terra = {
 			set_owner = root
 			while = {
-				count = 28
+				count = 32
 				create_pop = { species = root }
 			}
 		}
@@ -57,7 +57,7 @@ country_event = { #选择苦难摇篮起源
 			add_district = district_industrial
 			add_district = district_industrial
 			while = {
-				count = 17
+				count = 23
 				random_owned_pop = { kill_pop = yes }
 			}
 			every_owned_pop = {
@@ -97,7 +97,7 @@ country_event = { #选择苦难摇篮起源
 			add_building = building_ark_energy_well1
 			add_deposit = d_ark_aegir_generator
 			add_building = building_bureaucratic_1
-			add_building = building_commercial_zone
+			add_building = building_holo_theatres
 			if = {
 				limit = {
 					root = {
@@ -140,8 +140,24 @@ country_event = { #选择苦难摇篮起源
 			days = 7200
 			random = 720
 		}
+		country_event = { #重置泰拉模型
+			id = ark_game_start.10
+			days = 2
+		}
 	}
 }
+ country_event = {
+	 id = ark_game_start.10
+	 hide_window = yes
+	 is_triggered_only = yes
+	 immediate = {
+		 event_target:ark_planet_terra = {
+			 set_planet_entity = {
+				 entity = "continental_planet_terra_entity"
+			 }
+		 }
+	 }
+ }
 
 country_event = { #选择海嗣特质
 	id = ark_game_start.1000

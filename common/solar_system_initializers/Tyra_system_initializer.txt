@@ -38,6 +38,7 @@ Tyra_system = {
 
 		init_effect = {
 			prevent_anomaly = yes
+			clear_planet_modifiers = yes
 			add_modifier = {
 				modifier = "catastrophe"
 				days = -1
@@ -124,7 +125,7 @@ Chaos_system = {
 		orbit_distance = 25
 		orbit_angle = -210
 		size = 27
-		has_ring = no
+		has_ring = yes
 
 		moon = {
 			name = "NAME_Chaos4_1"

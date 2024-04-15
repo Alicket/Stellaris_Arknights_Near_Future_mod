@@ -2,6 +2,10 @@ entity = { #冰箱里的克丽丝滕
 	name = "ark_arclight1_entity"
 	pdxmesh = "ark_arclight1_mesh"
 	scale = 1.0
+	game_data = {
+		size = 1.0
+		emissive_recolor_crunch = 5.0
+	}
 }
 
 entity = {

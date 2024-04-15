@@ -87,7 +87,6 @@ leader_trait_unstopable_pioneer = {
 
 leader_trait_rhine_lab = {
 	#councilor_trait = yes
-	veteran_class_locked_trait = yes
 	inline_script = {
 		script = trait/icon
 		ICON = "GFX_ark_leader_trait_rhine_lab"
@@ -113,7 +112,6 @@ leader_trait_rhine_lab = {
 
 leader_trait_rhine_lab_2 = {
 	replace_traits = { "leader_trait_rhine_lab" }
-	veteran_class_locked_trait = yes
 	#councilor_trait = yes
 	inline_script = {
 		script = trait/icon
@@ -139,7 +137,6 @@ leader_trait_rhine_lab_2 = {
 
 leader_trait_rhine_lab_3 = {
 	replace_traits = { "leader_trait_rhine_lab_2" }
-	veteran_class_locked_trait = yes
 	#councilor_trait = yes
 	inline_script = {
 		script = trait/icon
