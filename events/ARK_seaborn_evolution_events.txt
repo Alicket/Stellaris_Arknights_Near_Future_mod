@@ -420,6 +420,10 @@ country_event = {
 				which = var_ark_seaborn_evolution_cell
 				value = 5
 			}
+			change_variable = {
+				which = var_ark_seaborn_evolution_winning_war
+				value = 1
+			}
 		}
 	}
 }

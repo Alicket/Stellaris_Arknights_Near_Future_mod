@@ -2,8 +2,8 @@
 #起源
 origin_ark_stella_caerula:0 "深蓝之星"
 origin_ark_stella_caerula_desc:0 "扮演强大的海嗣物种，不断进化，将整个星系化为血亲。"
-origin_tooltip_ark_stella_caerula_effects:0 "不管拥有何种公民权，所有未拥有§B海嗣§!特质的有机人口每年会以一定速率被强制同化为拥有§B海嗣§!特质的主体物种，同化人口会获得生机细胞与少量凝聚力。\n开启独特的进化路线。\n殖民地会被逐渐转化为§B溟海星球§!，提供生产力加成。"
-#origin_tooltip_ark_stella_caerula_effects:0 "目前版本此起源没有任何内容，仅作为占位符使用，所有海嗣相关内容与特质绑定！\n这也意味着可以随意选择其他起源或将海嗣特质视为类似§B水生§!、§G剧毒§!等带有附加内容的特质，不做特别限制。"
+#origin_tooltip_ark_stella_caerula_effects:0 "不管拥有何种公民权，所有未拥有§B海嗣§!特质的有机人口每年会以一定速率被强制同化为拥有§B海嗣§!特质的主体物种，同化人口会获得生机细胞与少量凝聚力。\n开启独特的进化路线。\n殖民地会被逐渐转化为§B溟海星球§!，提供生产力加成。"
+origin_tooltip_ark_stella_caerula_effects:0 "目前版本此起源没有任何内容，仅作为占位符使用，所有海嗣相关内容选择§B海嗣§!特质后即可体验全部！\n这也意味着可以随意选择其他起源或将海嗣特质视为类似§B水生§!、§G剧毒§!等带有附加内容的特质，不做特别限制。\n§g比如，海嗣泰拉人§!"
 
 #资源
 arkseaborn_cells:0 "生机细胞"
@@ -72,7 +72,7 @@ arkocean_disable_message_disable_tooltip:0 "点击以禁用生机细胞消息提
 arkocean_disable_message_enable_tooltip:0 "点击以启用生机细胞消息提示\n\n§g将会在拥有生机细胞大于等于5.0000时提示§!"
 #种族特质
 trait_ARK_ocean_seaborn:0 "海嗣"
-trait_ARK_ocean_seaborn_desc:0 "祂只说千万鳞片将汇成一体，飞向深空。只说大海将被光芒涂抹，此消彼长，永不干涸。"
+trait_ARK_ocean_seaborn_desc:0 "§B祂只说千万鳞片将汇成一体，飞向深空。只说大海将被光芒涂抹，此消彼长，永不干涸。§!\n不管拥有何种公民权，所有未拥有§B海嗣§!特质的有机人口每年会以一定速率被强制转化为拥有§B海嗣§!特质的主体物种，同化人口会获得少量£arkseaborn_cells£§Y生机细胞§!与£unity£§Y凝聚力§!。\n开启认知塑造面板。\n进行独特的殖民地进化路线。\n§R暂不兼容合成进化路线§!"
 
 #领袖特质
 leader_trait_ruler_seaborn:0 "海嗣"
@@ -305,6 +305,7 @@ arkocean_mould_modifier_1_6_tooltip_base:0 "不断摸索有机体与时空的交
 beffect_arkocean_mould_1_6_waiting_tooltip:0 "$arkocean_mould_modifier_1_6$\n$arkocean_mould_modifier_1_6_tooltip_base$\n增加跃迁距离，减少跃迁冷却时间\n\n需要£physics_research£§Y$tech_jump_drive_1$§!科技及完成$arkocean_mould_modifier_1_4a$"
 beffect_arkocean_mould_1_6_tooltip:0 "$arkocean_mould_modifier_1_6$\n$arkocean_mould_modifier_1_6_tooltip_base$\n\n£arkocean_cells_small£§Y-1.00§!\n跃迁距离:§G+2%§!\n跃迁冷却时间:§G-2%§!\n>共§Y25§!次<"
 beffect_arkocean_mould_1_6_done_tooltip:0 "$arkocean_mould_modifier_1_6$\n§G已完成！§!\n$arkocean_mould_modifier_1_6_tooltip_base$\n\n效果：\n跃迁距离:§G+50%§!\n跃迁冷却时间:§G-50%§!"
+var_ark_seaborn_mould_1_6_times:0 "§B有机体维度适应§!升级次数"
 
 arkocean_mould_modifier_2_1:0 "§B聚焦晶状体§!"
 arkocean_mould_modifier_2_1_tooltip_base:0 "视觉器官定向进化出了可以汇集能量的组织，同时特殊的晶状体也可以承受激光带来的高温。"

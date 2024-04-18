@@ -22,6 +22,7 @@ ark_seaborn_assimilation = {
 					change_variable = {
 						which = var_ark_seaborn_evolution_cell
 						value = 0.04
+					}
 				}
 				change_variable = {
 					which = var_ark_seaborn_evolution_assimilation

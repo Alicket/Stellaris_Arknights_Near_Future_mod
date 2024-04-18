@@ -449,8 +449,19 @@ planet_event = { #每月变量增加，并检测变量数值添加或删除flag/
 				days = -1
 				mult = value:ark_ocean_evolution_variable
 			}
-			set_planet_entity = {
-				entity = ark_continental_ocean_01_entity
+			if = {
+				limit = {
+					OR = {
+						is_planet_class = pc_continental
+						is_planet_class = pc_alpine
+						is_planet_class = pc_savannah
+						is_planet_class = pc_ocean
+						is_planet_class = pc_tropical
+					}
+				}
+				set_planet_entity = {
+					entity = ark_continental_ocean_01_entity
+				}
 			}
 			owner = {
 				add_resource = {
@@ -458,6 +469,10 @@ planet_event = { #每月变量增加，并检测变量数值添加或删除flag/
 				}
 				change_variable = {
 					which = var_ark_seaborn_evolution_cell
+					value = 1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_terraform
 					value = 1
 				}
 			}
@@ -484,15 +499,31 @@ planet_event = { #每月变量增加，并检测变量数值添加或删除flag/
 				days = -1
 				mult = value:ark_ocean_evolution_variable
 			}
-			set_planet_entity = {
-				entity = ark_continental_ocean_01_entity
+			if = {
+				limit = {
+					OR = {
+						is_planet_class = pc_continental
+						is_planet_class = pc_alpine
+						is_planet_class = pc_savannah
+						is_planet_class = pc_ocean
+						is_planet_class = pc_tropical
+					}
+				}
+				set_planet_entity = {
+					entity = ark_continental_ocean_01_entity
+				}
 			}
+
 			owner = {
 				add_resource = {
 					arkseaborn_cells = 1
 				}
 				change_variable = {
 					which = var_ark_seaborn_evolution_cell
+					value = 1
+				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_terraform
 					value = 1
 				}
 			}
@@ -531,16 +562,26 @@ planet_event = {
 	is_triggered_only = yes
 	hide_window = yes
 	trigger = {
-		OR = {
-			has_planet_flag = ark_ocean_col_evo_start
-			has_planet_flag = ark_ocean_col_evo_mid	
+		owner = {
+			NOT = { has_country_flag = arkocean_option_disable_planet_evolution }
+			has_trait = trait_ARK_ocean_seaborn
 		}
 		NOT = {
 			has_planet_flag = ark_seaborn_anomaly_happened
 		}
-		owner = {
-			NOT = { has_country_flag = arkocean_option_disable_planet_evolution }
-			has_trait = trait_ARK_ocean_seaborn
+		OR = {
+			has_planet_flag = ark_ocean_col_evo_start
+			has_planet_flag = ark_ocean_col_evo_mid	
+		}
+		NOR = {
+			is_planet_class = pc_city
+			is_planet_class = pc_hive
+			is_planet_class = pc_machine
+			is_planet_class = pc_ringworld_habitable
+			is_planet_class = pc_shattered_ring_habitable
+			is_planet_class = pc_habitat
+			is_planet_class = pc_crystal_habitat
+			is_planet_class = pc_relic
 		}
 	}
 	immediate = {
@@ -568,11 +609,23 @@ planet_event = {
 						}
 					}
 					2 = {	#-20
+						modifier = {
+							add = -2
+							OR = {
+								is_planet_class = pc_gaia
+								is_planet_class = pc_tropical
+								is_planet_class = pc_ocean
+							}
+						}
 						planet_event = {
 							id = ark_seaborn_base.2304
 						}
 					}
 					4 = {	#-10
+						modifier = {
+							add = -4
+							is_planet_class = pc_alpine
+						}
 						planet_event = {
 							id = ark_seaborn_base.2305
 						}
@@ -583,6 +636,18 @@ planet_event = {
 						}
 					}
 					3 = {	#+30
+						modifier = {
+							add = 10
+							is_planet_class = pc_gaia
+						}
+						modifier = {
+							add = -3
+							OR = {
+								is_planet_class = pc_desert
+								is_planet_class = pc_arid
+								is_planet_class = pc_alpine
+							}
+						}
 						planet_event = {
 							id = ark_seaborn_base.2307
 						}

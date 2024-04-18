@@ -18,26 +18,29 @@ country_event = { #选择苦难摇篮起源
 			spawn_system = {
 				min_distance = 7
 				max_distance = 12
+				max_orientation_angle = 0
+				min_orientation_angle = 0
 				max_jumps = 0
+
 				initializer = "Tyra_system"
-				hyperlane = no
+				hyperlane = yes
 			}
-			spawn_megastructure = {
-				type = ark_ground_star_gate
-				planet = event_target:ark_planet_talos
-			}
+			#spawn_megastructure = {
+			#	type = ark_ground_star_gate
+			#	planet = event_target:ark_planet_talos
+			#}
 		}
 		event_target:ARK_TYRA_HOME_SYSTEM = {
+			#spawn_megastructure = {
+			#	type = ark_ground_star_gate
+			#	planet = event_target:ark_planet_terra
+			#}
 			set_surveyed = { surveyed = yes	}
 			star = {
 				create_starbase = {
 					size = starbase_ark_arclight
 					owner = root
 				}
-			}
-			spawn_megastructure = {
-				type = ark_ground_star_gate
-				planet = event_target:ark_planet_terra
 			}
 		}
 		event_target:ark_planet_terra = {
