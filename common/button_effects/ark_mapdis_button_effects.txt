@@ -291,20 +291,20 @@ beffect_arkocean_set32b = {
 
 
 #左下
-#beffect_arkocean_reset_station = {
-#	potential = {always = yes}
-#	allow = {always = yes}
-#	effect = {
-#		custom_tooltip = arkocean_reset_station_tooltip
-#		hidden_effect = {
-#			from = {
-#				country_event = {
-#					id = ark_seaborn_evo.15
-#				}
-#			}
-#		}
-#	}
-#}
+beffect_arkocean_reset_station = {
+	potential = {always = yes}
+	allow = {always = yes}
+	effect = {
+		custom_tooltip = arkocean_reset_station_tooltip
+		hidden_effect = {
+			from = {
+				country_event = {
+					id = ark_seaborn_evo.15
+				}
+			}
+		}
+	}
+}
 beffect_arkocean_reset_ruler = {
 	potential = {always = yes}
 	allow = {always = yes}

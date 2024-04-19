@@ -1,33 +1,90 @@
 leader_trait_biaozhunhua = {	# 标准化
-	cost = 1
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_ark_leader_trait_biaozhunhua"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	sector_modifier = {
+		planet_jobs_produces_mult = 0.01
+	}
+	planet_modifier = {
+		planet_jobs_produces_mult = 0.05
+	}
+	background_planet_modifier = {
+		job_government_employee_add = 1
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		OR = {
+			from = { species = { has_trait = trait_latent_oripathy } }
+			from = { species = { has_trait = trait_Originium_Arts } }
+		}
+	}
 	
-	icon = "gfx/interface/icons/traits/leader_trait_biaozhunhua.dds"
-	modifier = {
+	leader_class = { official }
+	opposites = {  "leader_trait_mafanzhizaozhe" "leader_trait_shihuangzhe"  }
+	selectable_weight = {
+		weight = @class_trait_weight
+		inline_script = paragon/governor_weight_mult
+	}
+
+}
+leader_trait_biaozhunhua_2 = {	# 标准化2
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_ark_leader_trait_biaozhunhua"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	sector_modifier = {
+		planet_jobs_produces_mult = 0.015
+	}
+	planet_modifier = {
+		planet_jobs_produces_mult = 0.10
+	}
+	background_planet_modifier = {
+		job_government_employee_add = 1
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		OR = {
+			from = { species = { has_trait = trait_latent_oripathy } }
+			from = { species = { has_trait = trait_Originium_Arts } }
+		}
+	}
+	replace_traits = { leader_trait_biaozhunhua }
+	leader_class = { official }
+	opposites = {  "leader_trait_mafanzhizaozhe" "leader_trait_shihuangzhe"  }
+	selectable_weight = {
+		weight = @class_trait_weight
+		inline_script = paragon/governor_weight_mult
+	}
+}
+leader_trait_biaozhunhua_3 = {	# 标准化3
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_ark_leader_trait_biaozhunhua"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 3
+	}
+	sector_modifier = {
+		planet_jobs_produces_mult = 0.02
+	}
+	planet_modifier = {
 		planet_jobs_produces_mult = 0.15
 	}
-	leader_potential_add = {
-		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
-		OR = {
-			from = { species = { has_trait = trait_latent_oripathy } }
-			from = { species = { has_trait = trait_Originium_Arts } }
-		}
-	}
-	
-	leader_class = { official }
-	opposites = { "leader_trait_dizhixuejia" "leader_trait_jinshugongyi" "leader_trait_jixingzi" "leader_trait_manxingzi" "leader_trait_mafanzhizaozhe" "leader_trait_shihuangzhe" "leader_trait_zuozhanzhidaoluxiang" "leader_trait_jiaoji"  "leader_trait_wuliuzhuanjia" }
-
-	ai_weight = {
-		weight = 200
-	}
-}
-
-leader_trait_dizhixuejia = {	# 地质学家
-	cost = 1
-	
-	icon = "gfx/interface/icons/traits/leader_trait_dizhixuejia.dds"
-	modifier = {
-		planet_jobs_minerals_produces_mult = 0.15
-		planet_jobs_originiums_produces_mult = 0.2
+	background_planet_modifier = {
+		job_government_employee_add = 1
 	}
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -36,21 +93,39 @@ leader_trait_dizhixuejia = {	# 地质学家
 			from = { species = { has_trait = trait_Originium_Arts } }
 		}
 	}
-	
+	replace_traits = { leader_trait_biaozhunhua_2 }
 	leader_class = { official }
-	opposites = { "leader_trait_biaozhunhua" "leader_trait_jinshugongyi" "leader_trait_jixingzi" "leader_trait_manxingzi" "leader_trait_mafanzhizaozhe" "leader_trait_shihuangzhe" "leader_trait_zuozhanzhidaoluxiang" "leader_trait_jiaoji"  "leader_trait_wuliuzhuanjia" }
-
-	ai_weight = {
-		weight = 100
+	opposites = {  "leader_trait_mafanzhizaozhe" "leader_trait_shihuangzhe"  }
+	selectable_weight = {
+		weight = @class_trait_weight
+		inline_script = paragon/governor_weight_mult
 	}
 }
 
-leader_trait_jinshugongyi = {	# 金属工艺
-	cost = 1
-	
-	icon = "gfx/interface/icons/traits/leader_trait_jinshugongyi.dds"
-	modifier = {
-		planet_jobs_alloys_produces_mult = 0.3
+
+
+
+
+
+leader_trait_dizhixuejia = {	# 地质学家1
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_ark_leader_trait_dizhixuejia"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	sector_modifier = {
+		planet_jobs_minerals_produces_mult = 0.01
+	}
+	planet_modifier = {
+		planet_jobs_minerals_produces_mult = 0.05
+		planet_jobs_originiums_produces_mult = 0.15
+	}
+	background_planet_modifier = {
+		job_miner_add = 1
 	}
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -59,20 +134,191 @@ leader_trait_jinshugongyi = {	# 金属工艺
 			from = { species = { has_trait = trait_Originium_Arts } }
 		}
 	}
-	
 	leader_class = { official }
-	opposites = { "leader_trait_biaozhunhua" "leader_trait_dizhixuejia" "leader_trait_jixingzi" "leader_trait_manxingzi" "leader_trait_mafanzhizaozhe" "leader_trait_shihuangzhe" "leader_trait_zuozhanzhidaoluxiang" "leader_trait_jiaoji"  "leader_trait_wuliuzhuanjia" }
-
-	ai_weight = {
-		weight = 200
+	opposites = {  "leader_trait_jiaoji"  "leader_trait_wuliuzhuanjia" }
+	selectable_weight = {
+		weight = @class_trait_weight
+		inline_script = paragon/governor_weight_mult
+	}
+}
+leader_trait_dizhixuejia_2 = {	# 地质学家2
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_ark_leader_trait_dizhixuejia"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	sector_modifier = {
+		planet_jobs_minerals_produces_mult = 0.02
+	}
+	planet_modifier = {
+		planet_jobs_minerals_produces_mult = 0.10
+		planet_jobs_originiums_produces_mult = 0.25
+	}
+	background_planet_modifier = {
+		job_miner_add = 1
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		OR = {
+			from = { species = { has_trait = trait_latent_oripathy } }
+			from = { species = { has_trait = trait_Originium_Arts } }
+		}
+	}
+	replace_traits = { leader_trait_dizhixuejia }
+	leader_class = { official }
+	opposites = {  "leader_trait_jiaoji"  "leader_trait_wuliuzhuanjia" }
+	selectable_weight = {
+		weight = @class_trait_weight
+		inline_script = paragon/governor_weight_mult
 	}
 }
 
-leader_trait_jixingzi = {	# 急性子
-	cost = 1
-	
-	icon = "gfx/interface/icons/traits/leader_trait_jixingzi.dds"
-	modifier = {
+
+
+
+
+leader_trait_jinshugongyi = {	# 金属工艺1
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_ark_leader_trait_jinshugongyi"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	sector_modifier = {
+		planet_jobs_alloys_produces_mult = 0.01
+	}
+	planet_modifier = {
+		planet_jobs_alloys_produces_mult = 0.10
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		OR = {
+			from = { species = { has_trait = trait_latent_oripathy } }
+			from = { species = { has_trait = trait_Originium_Arts } }
+		}
+	}
+	leader_class = { official }
+	opposites = {  "leader_trait_jiaoji"  "leader_trait_wuliuzhuanjia" }
+	selectable_weight = {
+		weight = @class_trait_weight
+		inline_script = paragon/governor_weight_mult
+	}
+}
+leader_trait_jinshugongyi_2 = {	# 金属工艺2
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_ark_leader_trait_jinshugongyi"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	sector_modifier = {
+		planet_jobs_alloys_produces_mult = 0.02
+	}
+	planet_modifier = {
+		planet_jobs_alloys_produces_mult = 0.15
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		OR = {
+			from = { species = { has_trait = trait_latent_oripathy } }
+			from = { species = { has_trait = trait_Originium_Arts } }
+		}
+	}
+	replace_traits = { leader_trait_jinshugongyi }
+	leader_class = { official }
+	opposites = {  "leader_trait_jiaoji"  "leader_trait_wuliuzhuanjia" }
+	selectable_weight = {
+		weight = @class_trait_weight
+		inline_script = paragon/governor_weight_mult
+	}
+}
+leader_trait_jinshugongyi_3 = {	# 金属工艺1
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_ark_leader_trait_jinshugongyi"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 3
+	}
+	sector_modifier = {
+		planet_jobs_alloys_produces_mult = 0.03
+	}
+	planet_modifier = {
+		planet_jobs_alloys_produces_mult = 0.20
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		OR = {
+			from = { species = { has_trait = trait_latent_oripathy } }
+			from = { species = { has_trait = trait_Originium_Arts } }
+		}
+	}
+	replace_traits = { leader_trait_jinshugongyi_2 }
+	leader_class = { official }
+	opposites = {  "leader_trait_jiaoji"  "leader_trait_wuliuzhuanjia" }
+	selectable_weight = {
+		weight = @class_trait_weight
+		inline_script = paragon/governor_weight_mult
+	}
+}
+
+
+
+
+
+
+leader_trait_jixingzi = {	# 急性子1
+	leader_trait_type = basic
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_ark_leader_trait_jixingzi"
+		RARITY = common
+		COUNCIL = no
+		TIER = 1
+	}
+	planet_modifier = {
+		planet_building_build_speed_mult = 0.15
+		planet_structures_cost_mult = 0.1
+	}
+
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		OR = {
+			from = { species = { has_trait = trait_latent_oripathy } }
+			from = { species = { has_trait = trait_Originium_Arts } }
+		}
+	}
+	leader_class = { official }
+	opposites = {  "leader_trait_jinshugongyi" "leader_trait_manxingzi" "leader_trait_mafanzhizaozhe"  }
+	selectable_weight = {
+		weight = @class_trait_weight
+		inline_script = paragon/governor_weight_mult
+	}
+}
+leader_trait_jixingzi_2 = {	# 急性子2
+	leader_trait_type = basic
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_ark_leader_trait_jixingzi"
+		RARITY = common
+		COUNCIL = no
+		TIER = 2
+	}
+	planet_modifier = {
 		planet_building_build_speed_mult = 0.25
 		planet_structures_cost_mult = 0.1
 	}
@@ -83,20 +329,59 @@ leader_trait_jixingzi = {	# 急性子
 			from = { species = { has_trait = trait_Originium_Arts } }
 		}
 	}
-	
+	replace_traits = { leader_trait_jixingzi }
 	leader_class = { official }
-	opposites = { "leader_trait_biaozhunhua" "leader_trait_dizhixuejia" "leader_trait_jinshugongyi" "leader_trait_manxingzi" "leader_trait_mafanzhizaozhe" "leader_trait_shihuangzhe" "leader_trait_zuozhanzhidaoluxiang" "leader_trait_jiaoji"  "leader_trait_wuliuzhuanjia" }
-
-	ai_weight = {
-		weight = 200
+	opposites = {  "leader_trait_jinshugongyi" "leader_trait_manxingzi" "leader_trait_mafanzhizaozhe"  }
+	selectable_weight = {
+		weight = @class_trait_weight
+		inline_script = paragon/governor_weight_mult
 	}
 }
 
-leader_trait_manxingzi = {	# 慢性子
-	cost = 1
-	
-	icon = "gfx/interface/icons/traits/leader_trait_manxingzi.dds"
-	modifier = {
+
+
+
+
+
+leader_trait_manxingzi = {	# 慢性子1
+	leader_trait_type = basic
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_ark_leader_trait_manxingzi"
+		RARITY = common
+		COUNCIL = no
+		TIER = 1
+	}
+	planet_modifier = {
+		planet_building_build_speed_mult = -0.1
+		planet_structures_cost_mult = -0.15
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		OR = {
+			from = { species = { has_trait = trait_latent_oripathy } }
+			from = { species = { has_trait = trait_Originium_Arts } }
+		}
+	}
+	leader_class = { official }
+	opposites = {  "leader_trait_jinshugongyi" "leader_trait_jixingzi" "leader_trait_mafanzhizaozhe"  }
+	selectable_weight = {
+		weight = @class_trait_weight
+		inline_script = paragon/governor_weight_mult
+	}
+}
+leader_trait_manxingzi_2 = {	# 慢性子1
+	leader_trait_type = basic
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_ark_leader_trait_manxingzi"
+		RARITY = common
+		COUNCIL = no
+		TIER = 2
+	}
+	planet_modifier = {
 		planet_building_build_speed_mult = -0.1
 		planet_structures_cost_mult = -0.25
 	}
@@ -107,22 +392,33 @@ leader_trait_manxingzi = {	# 慢性子
 			from = { species = { has_trait = trait_Originium_Arts } }
 		}
 	}
-	
+	replace_traits = { leader_trait_manxingzi }
 	leader_class = { official }
-	opposites = { "leader_trait_biaozhunhua" "leader_trait_dizhixuejia" "leader_trait_jinshugongyi" "leader_trait_jixingzi" "leader_trait_mafanzhizaozhe" "leader_trait_shihuangzhe" "leader_trait_zuozhanzhidaoluxiang" "leader_trait_jiaoji"  "leader_trait_wuliuzhuanjia" }
-
-	ai_weight = {
-		weight = 200
+	opposites = {  "leader_trait_jinshugongyi" "leader_trait_jixingzi" "leader_trait_mafanzhizaozhe"  }
+	selectable_weight = {
+		weight = @class_trait_weight
+		inline_script = paragon/governor_weight_mult
 	}
 }
 
-leader_trait_mafanzhizaozhe = {	# 麻烦制造者
-	cost = 1
-	
-	icon = "gfx/interface/icons/traits/leader_trait_mafanzhizaozhe.dds"
-	modifier = {
-		planet_jobs_produces_mult = 0.25
-		planet_jobs_unity_produces_mult = -0.12
+
+
+
+
+
+leader_trait_mafanzhizaozhe = {	# 麻烦制造者1
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_ark_leader_trait_mafanzhizaozhe"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	planet_modifier = {
+		planet_jobs_produces_mult = 0.10
+		planet_jobs_unity_produces_mult = -0.25
 	}
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -131,19 +427,58 @@ leader_trait_mafanzhizaozhe = {	# 麻烦制造者
 			from = { species = { has_trait = trait_Originium_Arts } }
 		}
 	}
-	
+
 	leader_class = { official }
 	opposites = { "leader_trait_biaozhunhua" "leader_trait_dizhixuejia" "leader_trait_jinshugongyi" "leader_trait_jixingzi" "leader_trait_manxingzi" "leader_trait_shihuangzhe" "leader_trait_zuozhanzhidaoluxiang" "leader_trait_jiaoji"  "leader_trait_wuliuzhuanjia" }
-
-	ai_weight = {
-		weight = 200
+	selectable_weight = {
+		weight = @class_trait_weight
+		inline_script = paragon/governor_weight_mult
+	}
+}
+leader_trait_mafanzhizaozhe_2 = {	# 麻烦制造者2
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_ark_leader_trait_mafanzhizaozhe"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	planet_modifier = {
+		planet_jobs_produces_mult = 0.15
+		planet_jobs_unity_produces_mult = -0.45
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		OR = {
+			from = { species = { has_trait = trait_latent_oripathy } }
+			from = { species = { has_trait = trait_Originium_Arts } }
+		}
+	}
+	replace_traits = { leader_trait_mafanzhizaozhe }
+	leader_class = { official }
+	opposites = { "leader_trait_biaozhunhua" "leader_trait_dizhixuejia" "leader_trait_jinshugongyi" "leader_trait_jixingzi" "leader_trait_manxingzi" "leader_trait_shihuangzhe" "leader_trait_zuozhanzhidaoluxiang" "leader_trait_jiaoji"  "leader_trait_wuliuzhuanjia" }
+	selectable_weight = {
+		weight = @class_trait_weight
+		inline_script = paragon/governor_weight_mult
 	}
 }
 
-leader_trait_shihuangzhe = {	# 拾荒者
-	cost = 1
-	
-	icon = "gfx/interface/icons/traits/leader_trait_shihuangzhe.dds"
+
+
+
+
+leader_trait_shihuangzhe = {	# 拾荒者1
+	leader_trait_type = basic
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_ark_leader_trait_shihuangzhe"
+		RARITY = common
+		COUNCIL = no
+		TIER = 1
+	}
 	modifier = {
 		planet_structures_cost_mult = -0.08
 		planet_structures_upkeep_mult = -0.16
@@ -155,21 +490,119 @@ leader_trait_shihuangzhe = {	# 拾荒者
 			from = { species = { has_trait = trait_Originium_Arts } }
 		}
 	}
-	
 	leader_class = { official }
-	opposites = { "leader_trait_biaozhunhua" "leader_trait_dizhixuejia" "leader_trait_jinshugongyi" "leader_trait_jixingzi" "leader_trait_manxingzi" "leader_trait_mafanzhizaozhe" "leader_trait_zuozhanzhidaoluxiang" "leader_trait_jiaoji"  "leader_trait_wuliuzhuanjia" }
-
-	ai_weight = {
-		weight = 200
+	opposites = {  "leader_trait_jinshugongyi" "leader_trait_jixingzi" "leader_trait_manxingzi" "leader_trait_mafanzhizaozhe"   }
+	selectable_weight = {
+		weight = @class_trait_weight
+		inline_script = paragon/governor_weight_mult
+	}
+}
+leader_trait_shihuangzhe_2 = {	# 拾荒者2
+	leader_trait_type = basic
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_ark_leader_trait_shihuangzhe"
+		RARITY = common
+		COUNCIL = no
+		TIER = 2
+	}
+	modifier = {
+		planet_structures_cost_mult = -0.15
+		planet_structures_upkeep_mult = -0.25
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		OR = {
+			from = { species = { has_trait = trait_latent_oripathy } }
+			from = { species = { has_trait = trait_Originium_Arts } }
+		}
+	}
+	replace_traits = { leader_trait_shihuangzhe }
+	leader_class = { official }
+	opposites = {  "leader_trait_jinshugongyi" "leader_trait_jixingzi" "leader_trait_manxingzi" "leader_trait_mafanzhizaozhe"   }
+	selectable_weight = {
+		weight = @class_trait_weight
+		inline_script = paragon/governor_weight_mult
 	}
 }
 
-leader_trait_zuozhanzhidaoluxiang = {	# 作战指导录像
-	cost = 1
-	
-	icon = "gfx/interface/icons/traits/leader_trait_zuozhanzhidaoluxiang.dds"
+
+
+
+
+leader_trait_zuozhanzhidaoluxiang = {	# 作战指导录像1
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_ark_leader_trait_shihuangzhe"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	self_modifier = {
+		official_exp_gain = 0.15
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		OR = {
+			from = { species = { has_trait = trait_latent_oripathy } }
+			from = { species = { has_trait = trait_Originium_Arts } }
+		}
+	}
+	leader_class = { official }
+	opposites = {  "leader_trait_mafanzhizaozhe"    }
+	selectable_weight = {
+		weight = @class_trait_weight
+		inline_script = paragon/governor_weight_mult
+	}
+}
+leader_trait_zuozhanzhidaoluxiang_2 = {	# 作战指导录像1
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_ark_leader_trait_shihuangzhe"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	self_modifier = {
+		official_exp_gain = 0.30
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		OR = {
+			from = { species = { has_trait = trait_latent_oripathy } }
+			from = { species = { has_trait = trait_Originium_Arts } }
+		}
+	}
+	replace_traits = { leader_trait_zuozhanzhidaoluxiang }
+	leader_class = { official }
+	opposites = {  "leader_trait_mafanzhizaozhe"    }
+	selectable_weight = {
+		weight = @class_trait_weight
+		inline_script = paragon/governor_weight_mult
+	}
+}
+
+
+
+
+
+leader_trait_jiaoji = {	# 交际1
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_ark_leader_trait_shihuangzhe"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
 	modifier = {
-		species_leader_exp_gain = 0.3
+		trade_value_mult = 0.10
 	}
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -180,19 +613,24 @@ leader_trait_zuozhanzhidaoluxiang = {	# 作战指导录像
 	}
 	
 	leader_class = { official }
-	opposites = { "leader_trait_biaozhunhua" "leader_trait_dizhixuejia" "leader_trait_jinshugongyi" "leader_trait_jixingzi" "leader_trait_manxingzi" "leader_trait_mafanzhizaozhe" "leader_trait_shihuangzhe" "leader_trait_jiaoji"  "leader_trait_wuliuzhuanjia" "leader_trait_stubborn" }
-
-	ai_weight = {
-		weight = 200
+	opposites = {  }
+	selectable_weight = {
+		weight = @class_trait_weight
+		inline_script = paragon/governor_weight_mult
 	}
 }
-
-leader_trait_jiaoji = {	# 交际
-	cost = 1
-	
-	icon = "gfx/interface/icons/traits/leader_trait_jiaoji.dds"
+leader_trait_jiaoji_2 = {	# 交际2
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_ark_leader_trait_shihuangzhe"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
 	modifier = {
-		trade_value_mult = 0.3
+		trade_value_mult = 0.20
 	}
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -201,12 +639,68 @@ leader_trait_jiaoji = {	# 交际
 			from = { species = { has_trait = trait_Originium_Arts } }
 		}
 	}
-	
+	replace_traits = { leader_trait_jiaoji }
 	leader_class = { official }
-	opposites = { "leader_trait_biaozhunhua" "leader_trait_dizhixuejia" "leader_trait_jinshugongyi" "leader_trait_jixingzi" "leader_trait_manxingzi" "leader_trait_mafanzhizaozhe" "leader_trait_shihuangzhe" "leader_trait_zuozhanzhidaoluxiang"  "leader_trait_wuliuzhuanjia" }
+	opposites = {  }
+	selectable_weight = {
+		weight = @class_trait_weight
+		inline_script = paragon/governor_weight_mult
+	}
+}
+leader_trait_jiaoji_3 = {	# 交际3
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_ark_leader_trait_shihuangzhe"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 3
+	}
+	modifier = {
+		trade_value_mult = 0.30
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		OR = {
+			from = { species = { has_trait = trait_latent_oripathy } }
+			from = { species = { has_trait = trait_Originium_Arts } }
+		}
+	}
+	replace_traits = { leader_trait_jiaoji_2 }
+	leader_class = { official }
+	opposites = {  }
+	selectable_weight = {
+		weight = @class_trait_weight
+		inline_script = paragon/governor_weight_mult
+	}
+}
 
-	ai_weight = {
-		weight = 200
+
+
+
+leader_trait_wuliuzhuanjia = {	# 物流专家
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_ark_leader_trait_wuliuzhuanjia"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	modifier = {
+		trade_value_mult = 0.35
+	}
+	leader_potential_add = {
+		always = no
+	}
+
+	leader_class = { official }
+	opposites = { "leader_trait_biaozhunhua" "leader_trait_dizhixuejia" "leader_trait_jinshugongyi" "leader_trait_jixingzi" "leader_trait_manxingzi" "leader_trait_mafanzhizaozhe" "leader_trait_shihuangzhe" "leader_trait_zuozhanzhidaoluxiang" "leader_trait_jiaoji"  }
+	selectable_weight = {
+		weight = @class_trait_weight
+		inline_script = paragon/governor_weight_mult
 	}
 }
 
@@ -235,28 +729,7 @@ leader_trait_jiaoji = {	# 交际
 #	}
 #}
 
-leader_trait_wuliuzhuanjia = {	# 物流专家
-	cost = 1
-	
-	icon = "gfx/interface/icons/traits/leader_trait_wuliuzhuanjia.dds"
-	modifier = {
-		trade_value_mult = 0.35
-	}
-	leader_potential_add = {
-		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
-		OR = {
-			from = { species = { has_trait = trait_latent_oripathy } }
-			from = { species = { has_trait = trait_Originium_Arts } }
-		}
-	}
-	
-	leader_class = { official }
-	opposites = { "leader_trait_biaozhunhua" "leader_trait_dizhixuejia" "leader_trait_jinshugongyi" "leader_trait_jixingzi" "leader_trait_manxingzi" "leader_trait_mafanzhizaozhe" "leader_trait_shihuangzhe" "leader_trait_zuozhanzhidaoluxiang" "leader_trait_jiaoji"  }
 
-	ai_weight = {
-		weight = 100
-	}
-}
 
 # 前警司
 leader_trait_superintendent = {

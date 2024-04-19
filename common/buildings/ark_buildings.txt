@@ -274,6 +274,8 @@ building_originiums_mining_plant_1 = {
 building_originiums_mining_plant_2 = {
 	base_buildtime = @b2_time
 	can_build = no
+	is_capped_by_modifier = yes
+
 	category = resource
 
 	potential = {
@@ -326,6 +328,8 @@ building_originiums_mining_plant_2 = {
 building_originiums_mining_plant_3 = {
 	base_buildtime = @b3_time
 	can_build = no
+	is_capped_by_modifier = yes
+
 	category = resource
 
 	potential = {
@@ -378,6 +382,8 @@ building_originiums_mining_plant_3 = {
 building_originiums_mining_plant_4 = {
 	base_buildtime = @b4_time
 	can_build = no
+	is_capped_by_modifier = yes
+
 	category = resource
 
 	potential = {
@@ -695,26 +701,29 @@ building_military_enterprises = {
 	planet_modifier = {
 		planet_metallurgists_produces_mult = 0.30
 	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = no }
-		}
-		modifier = {
-			job_foundry_add = 2
-		}
+	inline_script = {
+		script = jobs/foundry_add
+		AMOUNT = 2
 	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		modifier = {
-			job_alloy_drone_add = 2
-		}
-	}
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_gestalt = no }
+#		}
+#		modifier = {
+#
+#		}
+#	}
+#
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_gestalt = yes }
+#		}
+#		modifier = {
+#			job_alloy_drone_add = 2
+#		}
+#	}
 
 	resources = {
 		category = planet_buildings
@@ -732,9 +741,9 @@ building_military_enterprises = {
 		"tech_originiums_mining"
 	}
 
-	triggered_desc = {
-		text = job_foundry_effect_desc
-	}
+#	triggered_desc = {
+#		text = job_foundry_effect_desc
+#	}
 }
 
 # 元件装配厂
@@ -770,26 +779,29 @@ building_component_assembly_plant = {
 	planet_modifier = {
 		planet_artisans_produces_mult = 0.30
 	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = no }
-		}
-		modifier = {
-			job_artisan_add = 2
-		}
+	inline_script = {
+		script = jobs/factory_add
+		AMOUNT = 2
 	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		modifier = {
-			job_artisan_drone_add = 2
-		}
-	}
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_gestalt = no }
+#		}
+#		modifier = {
+#			job_artisan_add = 2
+#		}
+#	}
+#
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_gestalt = yes }
+#		}
+#		modifier = {
+#			job_artisan_drone_add = 2
+#		}
+#	}
 
 	resources = {
 		category = planet_buildings
@@ -807,9 +819,9 @@ building_component_assembly_plant = {
 		"tech_originiums_mining"
 	}
 
-	triggered_desc = {
-		text = job_artisan_effect_desc
-	}
+#	triggered_desc = {
+#		text = job_artisan_effect_desc
+#	}
 }
 
 building_ark_energy_well1 = {
@@ -830,10 +842,10 @@ building_ark_energy_well1 = {
 		 planet_jobs_society_research_produces_mult = 0.05
 		 job_researcher_add = 1
 		 job_culture_worker_add = 1
+		 trade_value_mult = -0.1
 	 }
 	 country_modifier = {
-		 trade_value_mult = -0.35
-		 empire_size_penalty_mult = 0.25
+		 empire_size_penalty_mult = 0.05
 	 }
 	 resources = {
 		 category = planet_buildings

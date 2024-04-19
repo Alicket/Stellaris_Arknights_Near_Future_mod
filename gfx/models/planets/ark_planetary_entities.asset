@@ -31,9 +31,9 @@ entity = {
 	##pole texture override
 	meshsettings = {
 		name = "polesShape"
-		texture_diffuse = "poles_barren_1_diffuse"
-		texture_normal = "poles_barren_1_normal"
-		texture_specular = "poles_barren_1_specular"
+		texture_diffuse = "poles_1_diffuse.dds"
+		texture_normal = "poles_1_normal.dds"
+		texture_specular = "poles_1_specular.dds"
 	}
 
 	default_state = "idle"
@@ -81,9 +81,9 @@ entity = {
 	##pole texture override
 	meshsettings = {
 		name = "polesShape"
-		texture_diffuse = "poles_barren_1_diffuse"
-		texture_normal = "poles_barren_1_normal"
-		texture_specular = "poles_barren_1_specular"
+		texture_diffuse = "poles_1_diffuse.dds"
+		texture_normal = "poles_1_normal.dds"
+		texture_specular = "poles_1_specular.dds"
 	}
 
 	default_state = "idle"
@@ -133,9 +133,9 @@ entity = {
 	##pole texture override
 	meshsettings = {
 		name = "polesShape"
-		texture_diffuse = "poles_barren_1_diffuse"
-		texture_normal = "poles_barren_1_normal"
-		texture_specular = "poles_barren_1_specular"
+		texture_diffuse = "poles_1_diffuse.dds"
+		texture_normal = "poles_1_normal.dds"
+		texture_specular = "poles_1_specular.dds"
 	}
 
 	default_state = "idle"
@@ -185,9 +185,9 @@ entity = {
 	##pole texture override
 	meshsettings = {
 		name = "polesShape"
-		texture_diffuse = "poles_barren_1_diffuse"
-		texture_normal = "poles_barren_1_normal"
-		texture_specular = "poles_barren_1_specular"
+		texture_diffuse = "poles_1_diffuse.dds"
+		texture_normal = "poles_1_normal.dds"
+		texture_specular = "poles_1_specular.dds"
 	}
 
 	default_state = "idle"
@@ -203,9 +203,9 @@ entity = {
 	
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "desert_01_diffuse.dds"
-	texture_normal = "desert_01_normal.dds"
-	texture_specular = "desert_01_spec.dds"
+	texture_diffuse = "continental_01_diffuse.dds"
+	texture_normal = "continental_01_normals.dds"
+	texture_specular = "continental_01_spec.dds"
 	}
 	
 	#
@@ -227,10 +227,10 @@ entity = {
 	#
 	##pole texture override
 	meshsettings = {
-	name = "poles"
-	texture_diffuse = "desert_03_diffuse.dds"
-	texture_normal = "desert_03_normal.dds"
-	texture_specular = "desert_03_spec.dds"
+		name = "poles"
+		texture_diffuse = "poles_1_diffuse.dds"
+		texture_normal = "poles_1_normal.dds"
+		texture_specular = "poles_1_specular.dds"
 	}
 	locator = {
 		name = locator_aurora
@@ -291,9 +291,9 @@ entity = {
 	##pole texture override
 	meshsettings = {
 		name = "polesShape"
-		texture_diffuse = "poles_barren_1_diffuse"
-		texture_normal = "poles_barren_1_normal"
-		texture_specular = "poles_barren_1_specular"
+		texture_diffuse = "poles_1_diffuse.dds"
+		texture_normal = "poles_1_normal.dds"
+		texture_specular = "poles_1_specular.dds"
 	}
 
 	default_state = "idle"
@@ -336,9 +336,9 @@ entity = {
 	##pole texture override
 	meshsettings = {
 		name = "polesShape"
-		texture_diffuse = "poles_barren_1_diffuse"
-		texture_normal = "poles_barren_1_normal"
-		texture_specular = "poles_barren_1_specular"
+		texture_diffuse = "poles_1_diffuse.dds"
+		texture_normal = "poles_1_normal.dds"
+		texture_specular = "poles_1_specular.dds"
 	}
 
 	default_state = "idle"

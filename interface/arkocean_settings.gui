@@ -20,7 +20,6 @@ guiTypes = {
 			actionShortcut = "cancel"
 			font = "cg_16b"
 			text = "ARKOCEAN_SET_CLOSE"
-
 		}
 		buttonType = {
 			name = "close_button"
@@ -80,6 +79,7 @@ guiTypes = {
 		}
 
 		effectButtonType = {
+            multiline = yes
 			spriteType = GFX_arkocean_settings_button_small_not_activated
 			name = "set11a"
 			font = "cg_16b"
@@ -88,6 +88,7 @@ guiTypes = {
 			effect = beffect_arkocean_set11a
 		}
 		effectButtonType = {
+            multiline = yes
 			spriteType = GFX_arkocean_settings_button_small_activated
 			name = "set11b"
 			font = "cg_16b"
@@ -96,6 +97,7 @@ guiTypes = {
 			effect = beffect_arkocean_set11b
 		}
 		effectButtonType = {
+            multiline = yes
 			spriteType = GFX_arkocean_settings_button_small_not_activated
 			name = "set12a"
 			font = "cg_16b"
@@ -104,6 +106,7 @@ guiTypes = {
 			effect = beffect_arkocean_set12a
 		}
 		effectButtonType = {
+            multiline = yes
 			spriteType = GFX_arkocean_settings_button_small_activated
 			name = "set12b"
 			font = "cg_16b"
@@ -115,6 +118,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			spriteType = GFX_arkocean_settings_button_small_not_activated
 			name = "set21a"
 			font = "cg_16b"
@@ -123,6 +127,7 @@ guiTypes = {
 			effect = beffect_arkocean_set21a
 		}
 		effectButtonType = {
+            multiline = yes
 			spriteType = GFX_arkocean_settings_button_small_activated
 			name = "set21b"
 			font = "cg_16b"
@@ -131,6 +136,7 @@ guiTypes = {
 			effect = beffect_arkocean_set21b
 		}
 		effectButtonType = {
+            multiline = yes
 			spriteType = GFX_arkocean_settings_button_small_not_activated
 			name = "set22a"
 			font = "cg_16b"
@@ -139,6 +145,7 @@ guiTypes = {
 			effect = beffect_arkocean_set22a
 		}
 		effectButtonType = {
+            multiline = yes
 			spriteType = GFX_arkocean_settings_button_small_activated
 			name = "set22b"
 			font = "cg_16b"
@@ -150,6 +157,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			spriteType = GFX_arkocean_settings_button_small_not_activated
 			name = "set31a"
 			font = "cg_16b"
@@ -158,6 +166,7 @@ guiTypes = {
 			effect = beffect_arkocean_set31a
 		}
 		effectButtonType = {
+            multiline = yes
 			spriteType = GFX_arkocean_settings_button_small_activated
 			name = "set31b"
 			font = "cg_16b"
@@ -166,6 +175,7 @@ guiTypes = {
 			effect = beffect_arkocean_set31b
 		}
 		effectButtonType = {
+            multiline = yes
 			spriteType = GFX_arkocean_settings_button_small_not_activated
 			name = "set32a"
 			font = "cg_16b"
@@ -174,6 +184,7 @@ guiTypes = {
 			effect = beffect_arkocean_set32a
 		}
 		effectButtonType = {
+            multiline = yes
 			spriteType = GFX_arkocean_settings_button_small_activated
 			name = "set32b"
 			font = "cg_16b"
@@ -185,6 +196,7 @@ guiTypes = {
 
 
 		effectButtonType = {
+            multiline = yes
 			spriteType = GFX_arkocean_settings_button_small_not_activated
 			name = "set41a"
 			font = "cg_16b"
@@ -193,6 +205,7 @@ guiTypes = {
 			effect = beffect_no_effect
 		}
 		effectButtonType = {
+            multiline = yes
 			spriteType = GFX_arkocean_settings_button_small_not_activated
 			name = "set42a"
 			font = "cg_16b"

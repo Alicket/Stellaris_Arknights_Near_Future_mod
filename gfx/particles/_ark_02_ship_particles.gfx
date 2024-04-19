@@ -1,0 +1,43 @@
+ObjectTypes = {
+	pdxparticle = {
+		name = "ark_02_exhaust_moving_long_1"
+		type = "ark_02_exhaust_moving_long_file"
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "arknightssec_titan_exhaust_moving"
+		type = "ark_02_exhaust_moving_long_file"
+		scale = 1.5
+	}
+	pdxparticle = {
+		name="arknights2_flat1_exhaust_moving"
+		type = "arknights2_flat1_exhaust_moving_file"
+
+		scale = 0.8
+	}
+	pdxparticle = {
+		name="arknights2_flat1_exhaust_idle"
+		type = "arknights2_flat1_exhaust_idle_file"
+
+		scale = 0.6
+	}
+
+	pdxparticle = {
+		name="arknights2_flat1_colo_exhaust_moving"
+		type = "arknights2_flat1_exhaust_moving_file"
+
+		scale = 3.5
+	}
+	pdxparticle = {
+		name="arknights2_flat1_colo_exhaust_idle"
+		type = "arknights2_flat1_exhaust_idle_file"
+
+		scale = 2.5
+	}
+	pdxparticle = {
+		name = "arknightssec_colo_side_exhaust_moving"
+		type = "ark_02_exhaust_moving_long_file"
+		scale = 1.0
+	}
+}

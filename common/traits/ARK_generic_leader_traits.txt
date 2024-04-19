@@ -21,7 +21,7 @@
 #	}
 #}
 leader_trait_oripathy = {
-	negative = yes
+	leader_trait_type = negative
 	inline_script = {
 		script = trait/icon_negative
 		ICON = "GFX_leader_trait_substance_abuser"

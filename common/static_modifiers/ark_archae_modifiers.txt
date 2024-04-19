@@ -85,7 +85,7 @@ arkocean_mould_modifier_2_5 = {
 	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_2_5.dds"
 }
 arkocean_mould_modifier_2_6 = {
-	command_limit_add = 10
+	command_limit_add = 1
 	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_2_6.dds"
 }
 arkocean_mould_modifier_3_1 = {

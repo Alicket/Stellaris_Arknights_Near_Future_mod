@@ -20,36 +20,36 @@ catastrophe = {	# 天灾
 	icon_frame = 2
 }
 nomadic_city = {	# 移动城邦
-	planet_structures_cost_mult = 0.3
+	planet_structures_cost_mult = 0.15
 	planet_structures_upkeep_mult = 0.1
 	planet_building_build_speed_mult = 0.5
 	icon = "gfx/interface/icons/planet_modifiers/pm_nomadic_city.dds"
 	icon_frame = 2
 }
 barbarian_growth = {	# 野蛮生长
-	planet_crime_add = 50
-	planet_pops_upkeep_mult = -0.5
-	planet_jobs_produces_mult = -0.5
+	planet_crime_add = 25
+	#planet_pops_upkeep_mult = -0.5
+	planet_jobs_produces_mult = -0.15
 	icon = "gfx/interface/icons/planet_modifiers/pm_barbarian_growth.dds"
 	icon_frame = 2
 }
 wheels_motion = {	# 发轫之始
-	planet_crime_add = 30
-	planet_pops_upkeep_mult = -0.3
-	planet_jobs_produces_mult = -0.3
+	planet_crime_add = 20
+	#planet_pops_upkeep_mult = -0.3
+	planet_jobs_produces_mult = -0.1
 	icon = "gfx/interface/icons/planet_modifiers/pm_barbarian_growth.dds"
 	icon_frame = 2
 }
 strewn_thorns = {	# 荆棘丛生
 	planet_crime_add = 10
-	planet_pops_upkeep_mult = -0.1
-	planet_jobs_produces_mult = -0.1
+	#planet_pops_upkeep_mult = -0.1
+	planet_jobs_produces_mult = -0.05
 	icon = "gfx/interface/icons/planet_modifiers/pm_barbarian_growth.dds"
 	icon_frame = 2
 }
 autumn_sea = {	# 层林尽染
-	planet_crime_add = -10
-	planet_jobs_produces_mult = 0.2
+	#planet_crime_add = -10
+	planet_jobs_produces_mult = 0.05
 	planet_jobs_unity_produces_mult = 0.1
 	icon = "gfx/interface/icons/planet_modifiers/pm_barbarian_growth.dds"
 	icon_frame = 1
@@ -85,10 +85,9 @@ catastrophe_panic = {	# 天灾恐慌
 	icon_frame = 3
 }
 corrosion = {	# 侵蚀
-	pop_environment_tolerance = -0.5
-	planet_building_build_speed_mult = -0.25
+	planet_building_build_speed_mult = -0.15
 	planet_jobs_physics_research_produces_mult = 0.20
-	planet_jobs_produces_mult = -0.25
+	planet_jobs_produces_mult = -0.05
 	icon = "gfx/interface/icons/planet_modifiers/pm_corrosion.dds"
 }
 ark_ocean_evolution_start = {	#海嗣进化开始阶段

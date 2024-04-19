@@ -20,6 +20,49 @@ spriteTypes = {
 		name = "GFX_ark_leader_trait_ishar_mla"
 		texturefile = "gfx/interface/icons/traits/leader_trait_icons/leader_traits_ishar_mla.dds"
 	}
+	spriteType = {
+		name = "GFX_ark_leader_trait_biaozhunhua"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_biaozhunhua.dds"
+	}
+	spriteType = {
+		name = "GFX_ark_leader_trait_shihuangzhe"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_shihuangzhe.dds"
+	}
+	spriteType = {
+		name = "GFX_ark_leader_trait_zuozhanzhidaoluxiang"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_zuozhanzhidaoluxiang.dds"
+	}
+	spriteType = {
+		name = "GFX_ark_leader_trait_dizhixuejia"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_dizhixuejia.dds"
+	}
+	spriteType = {
+		name = "GFX_ark_leader_trait_jinshugongyi"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_jinshugongyi.dds"
+	}
+	spriteType = {
+		name = "GFX_ark_leader_trait_jixingzi"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_jixingzi.dds"
+	}
+	spriteType = {
+		name = "GFX_ark_leader_trait_mafanzhizaozhe"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_mafanzhizaozhe.dds"
+	}
+	spriteType = {
+		name = "GFX_ark_leader_trait_manxingzi"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_manxingzi.dds"
+	}
+	spriteType = {
+		name = "GFX_ark_leader_trait_jiaoji"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_jiaoji.dds"
+	}
+	spriteType = {
+		name = "GFX_ark_leader_trait_wuliuzhuanjia"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/leader_trait_wuliuzhuanjia.dds"
+	}
+
+
+
 
 
 

@@ -1,0 +1,32 @@
+namespace = ark_check    #各种用于确保内容正确的事件
+
+country_event = {  #检测明日方舟mod：[Arknights]The Crusade to Stellaris  (AKS寰宇方舟)  by:Pathfinder开拓者 制作组
+	id = ark_check.1
+	title = "ark_mod_check.1.name"
+	desc = "ark_mod_check.1.desc"
+	picture = GFX_ark_mod_check_conflict
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = has_acts_mod
+	}
+
+	option = {
+		name = ark_mod_check.1.a
+	}
+}
+
+#检测博士立绘并修正
+country_event = {
+	id = ark_check.2
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_origin = origin_ark_tragedy_birth
+	}
+	immediate = {
+		event_target:ark_ruler_doctor = {
+			change_leader_portrait = ARK_N_Doctor_N
+		}
+	}
+}

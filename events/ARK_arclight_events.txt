@@ -35,21 +35,7 @@ country_event = {
 	option = {
 		name = ark_arclight.11.a
 		hidden_effect = {
-			create_ambient_object = {
-				type = ark_arclight_one_object
-				use_3d_location = yes
-				entity_offset_height = -15
-				scale = 0.6
-			}
-			last_created_ambient_object = {
-				set_location = {
-					target = event_target:ark_planet_terra
-					distance = 8
-					angle = random
-				}
-				save_global_event_target_as = arclight_1
-			}
-			event_target:arclight_1 = {
+			event_target:ARK_TYRA_HOME_SYSTEM.starbase = {
 				enable_special_project = {
 					name = OPENING_ARCLIGHT1_PROJECT
 					location = this
@@ -237,14 +223,15 @@ country_event = {
 				event_leader = no # Leader is allowed to lead factions and win elections
 				background_ethic = ethic_materialist
 				skip_background_generation = yes
+				background_planet = event_target:ark_planet_terra
 				custom_description = kristen_description
 				custom_catch_phrase = kristen_catch_phrase
 				immortal = no
 				hide_age = no # Right now it will always match immortal
-	
+				background_job = head_researcher
 				randomize_traits = no
 				effect = {
-					set_skill = 2
+					add_experience = 200
 					save_global_event_target_as = ark_leader_kristen_spawning
 					set_leader_flag = legendary_leader
 					set_leader_flag = is_in_recruit_window
@@ -300,36 +287,6 @@ country_event = {
 			country_event = {
 				id = ark_arclight.121
 			}
-		# 	set_country_flag = spawning_renowned_leader
-
-		# 	clone_leader = {
-		# 		target = event_target:ethic_leader
-		# 	}
-		# 	last_created_leader = {
-		# 		save_global_event_target_as = ark_kristen
-		# 		set_leader_flag = ark_kristen
-		# 		set_leader_flag = legendary_leader
-		# 		set_leader_flag = leader_death_events_blocked
-		# 		set_leader_flag = immune_to_negative_traits
-		# 	}
-		
-		# 	remove_country_flag = spawning_renowned_leader
-		
-		# 	create_message = {
-		# 		type = MESSAGE_RECRUITED_LEADER
-		# 		localization =  MESSAGE_RECRUITED_LEADER_DESC
-		# 		days = @toast_message_days
-		# 		target = event_target:ethic_leader
-		# 		variable = {
-		# 			type = name
-		# 			localization = LEADER
-		# 			scope = event_target:ethic_leader
-		# 		}
-		# 		variable = {
-		# 				key = "border"
-		# 				value = "GFX_border_veteran"
-		# 		}
-		# 	}
 		 }
 	}
 }
@@ -551,10 +508,10 @@ country_event = {
 	is_triggered_only = yes
 	hide_window = yes
 	trigger = {
+		has_origin = origin_ark_tragedy_birth
 		event_target:ark_planet_terra = {
 			has_building = building_ark_energy_well3
 		}
-		has_origin = origin_ark_tragedy_birth
 		NOT = { has_country_flag = arclight23_happened }
 	}
 	immediate = {

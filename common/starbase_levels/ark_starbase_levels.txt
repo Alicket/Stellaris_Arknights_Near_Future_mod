@@ -1,0 +1,10 @@
+starbase_level_arclight = {
+	ship_size = starbase_ark_arclight		# Required
+	show_in_outliner = no			# Default yes, if yes starbase will be shown in outliner
+	display_empire_shield = no		# Default no, if yes empire shield will be shown even if there's no colony
+	display_map_icon = yes			# Default yes, if yes starbase map icon will be shown even if there's no colony
+	level_weight = 1				# Default 0, used for claim cost and required module/building level
+	ai_weight = { weight = 0 }	# Default 0, THIS = Starbase, FROM = Country - determines which levels are more important to upgrade from
+	collects_trade = yes			# Default yes, if no then starbase_trade_collection_range_add and starbase_trade_protection_range_add will have no effect on starbases of this level
+	potential_home_base = no		# Default no, if yes starbase may be used as homebase for fleets
+}

@@ -199,3 +199,17 @@ ship_section_template = {
 	#large_utility_slots = 20
 	aux_utility_slots = 5
 }
+
+ship_section_template = {
+	key = "STARBASE_ARCLIGHT_SECTION"
+	ship_size = starbase_ark_arclight
+
+	fits_on_slot = "core"
+	entity = "ark_arclight1_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	small_utility_slots = 0
+	medium_utility_slots = 0
+	large_utility_slots = 0
+	aux_utility_slots = 0
+}

@@ -9,24 +9,26 @@ on_game_start_country = {
 	events = {
 		ark_seaborn_base.10
 		ark_seaborn_base.3
-		#ark_seaborn_evo.1
-		#ark_seaborn_evo.12 #ui
-		#ark_seaborn_evo.10
-		#ark_seaborn_evo.1000
+
+
+		ark_seaborn_evo.1
+		ark_seaborn_evo.12 #ui
+		ark_seaborn_evo.10
+		ark_seaborn_evo.1000
 	}
 }
 
 on_colonized = {
 	events = {
-		#ark_seaborn_base.20
+		ark_seaborn_base.20
 	}
 }
 
 on_monthly_pulse_country = {
 	events = {
-		#ark_seaborn_base.22
-		#ark_seaborn_evo.10
-		#ark_seaborn_evo.111
+		ark_seaborn_base.22
+		ark_seaborn_evo.10
+		ark_seaborn_evo.111
 	}
 }
 
@@ -39,7 +41,7 @@ on_yearly_pulse_country = {
 
 on_planet_class_changed = {
 	events = {
-		ark_seaborn_base.24
+		#ark_seaborn_base.24	#转化溟海星球
 	}
 }
 
@@ -61,5 +63,11 @@ on_custom_diplomacy = {
 on_war_won = {
 	events = {
 		ark_seaborn_evo.19
+	}
+}
+
+on_colony_monthly_pulse = {
+	events = {
+		ark_seaborn_base.2300
 	}
 }

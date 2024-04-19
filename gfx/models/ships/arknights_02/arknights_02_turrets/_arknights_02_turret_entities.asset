@@ -1,0 +1,428 @@
+#####炮塔Turrets#####
+
+
+
+#s#
+entity = {
+	name = "arknights_02_turret_energy_s_gun_entity"
+	pdxmesh = "arknights_02_turret_energy_gun_mesh"
+	scale = 0.7
+}
+entity = {
+	name = "arknights_02_turret_kinetic_s_gun_entity"
+	pdxmesh = "arknights_02_turret_kinetic_gun_mesh"
+	scale = 0.7
+}
+entity = {
+	name = "arknights_02_small_kinetic_gun_entity"
+	pdxmesh = "arknights_02_turret_small_kinetic_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+	attach = { gun_01 = "arknights_02_turret_kinetic_s_gun_entity" }
+	attach = { gun_02 = "arknights_02_turret_kinetic_s_gun_entity" }
+
+}
+
+entity = {
+	name = "arknights_02_small_laser_gun_entity"
+	pdxmesh = "arknights_02_turret_small_kinetic_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+	attach = { gun_01 = "arknights_02_turret_energy_s_gun_entity" }
+	attach = { gun_02 = "arknights_02_turret_energy_s_gun_entity" }
+
+}
+
+# #m#
+entity = {
+	name = "arknights_02_turret_energy_m_gun_entity"
+	pdxmesh = "arknights_02_turret_energy_gun_mesh"
+	scale = 0.8
+}
+entity = {
+	name = "arknights_02_turret_kinetic_m_gun_entity"
+	pdxmesh = "arknights_02_turret_kinetic_gun_mesh"
+	scale = 0.8
+}
+entity = {
+	name = "arknights_02_medium_kinetic_gun_entity"
+	pdxmesh = "arknights_02_turret_medium_kinetic_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+	attach = { gun_01 = "arknights_02_turret_kinetic_m_gun_entity" }
+	attach = { gun_02 = "arknights_02_turret_kinetic_m_gun_entity" }
+	attach = { gun_03 = "arknights_02_turret_kinetic_m_gun_entity" }
+
+}
+
+entity = {
+	name = "arknights_02_medium_laser_gun_entity"
+	pdxmesh = "arknights_02_turret_medium_kinetic_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+	attach = { gun_01 = "arknights_02_turret_energy_m_gun_entity" }
+	attach = { gun_02 = "arknights_02_turret_energy_m_gun_entity" }
+	attach = { gun_03 = "arknights_02_turret_energy_m_gun_entity" }
+
+}
+
+# #l#
+entity = {
+	name = "arknights_02_turret_kinetic_gun_entity"
+	pdxmesh = "arknights_02_turret_kinetic_gun_mesh"
+	scale = 1.0
+}
+entity = {
+	name = "arknights_02_turret_energy_gun_entity"
+	pdxmesh = "arknights_02_turret_energy_gun_mesh"
+	scale = 1.0
+}
+entity = {
+	name = "arknights_02_large_kinetic_gun_entity"
+	pdxmesh = "arknights_02_turret_large_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+	attach = { gun_01 = "arknights_02_turret_kinetic_gun_entity" }
+	attach = { gun_02 = "arknights_02_turret_kinetic_gun_entity" }
+	attach = { gun_03 = "arknights_02_turret_kinetic_gun_entity" }
+	attach = { gun_04 = "arknights_02_turret_kinetic_gun_entity" }
+
+}
+
+entity = {
+	name = "arknights_02_large_laser_gun_entity"
+	pdxmesh = "arknights_02_turret_large_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+	attach = { gun_01 = "arknights_02_turret_energy_gun_entity" }
+	attach = { gun_02 = "arknights_02_turret_energy_gun_entity" }
+	attach = { gun_03 = "arknights_02_turret_energy_gun_entity" }
+	attach = { gun_04 = "arknights_02_turret_energy_gun_entity" }
+
+}
+# #中子雷
+entity = {
+	name = "arknights_02_turret_energy_torpedo_entity"
+	pdxmesh = "arknights_02_turret_large_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+	attach = { gun_01 = "arknights_02_turret_energy_gun_entity" }
+	attach = { gun_02 = "arknights_02_turret_energy_gun_entity" }
+	attach = { gun_03 = "arknights_02_turret_energy_gun_entity" }
+	attach = { gun_04 = "arknights_02_turret_energy_gun_entity" }
+}
+
+# #xl#
+
+entity = {
+	name = "arknights_02_turret_xl_entity"
+	pdxmesh = "arknights_02_turret_xl_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+}
+
+# #pd#
+
+entity = {
+	name = "arknights_02_turret_point_defence_entity"
+	pdxmesh = "arknights_02_turret_point_defence_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+}
+
+# #导弹#
+
+entity = {
+	name = "arknights_02_turret_missile_large_entity"
+	pdxmesh = "arknights_02_turret_missile_mesh"
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+}
+
+entity = {
+	name = "arknights_02_turret_missile_medium_entity"
+	pdxmesh = "arknights_02_turret_missile_mesh"
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+}
+
+entity = {
+	name = "arknights_02_turret_missile_small_entity"
+	pdxmesh = "arknights_02_turret_missile_mesh"
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+}
+
+entity = {
+	name = "arknights_02_turret_torpedo_entity"
+	pdxmesh = "arknights_02_turret_missile_mesh"
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 0.85
+}
+
+
+
+# ##################
+# Critter Weapons
+# ##################
+
+
+# Amoeba Weapons
+
+entity = {
+	name = "arknights_02_small_space_amoeba_weapon_entity"
+	pdxmesh = "arknights_02_turret_small_kinetic_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+	attach = { gun_01 = "arknights_02_turret_kinetic_s_gun_entity" }
+	attach = { gun_02 = "arknights_02_turret_kinetic_s_gun_entity" }
+
+}
+
+entity = {
+	name = "arknights_02_medium_space_amoeba_weapon_entity"
+	pdxmesh = "arknights_02_turret_medium_kinetic_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+	attach = { gun_01 = "arknights_02_turret_kinetic_m_gun_entity" }
+	attach = { gun_02 = "arknights_02_turret_kinetic_m_gun_entity" }
+	attach = { gun_03 = "arknights_02_turret_kinetic_m_gun_entity" }
+
+}
+
+entity = {
+	name = "arknights_02_large_space_amoeba_weapon_entity"
+	pdxmesh = "arknights_02_turret_large_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+	attach = { gun_01 = "arknights_02_turret_kinetic_gun_entity" }
+	attach = { gun_02 = "arknights_02_turret_kinetic_gun_entity" }
+	attach = { gun_03 = "arknights_02_turret_kinetic_gun_entity" }
+	attach = { gun_04 = "arknights_02_turret_kinetic_gun_entity" }
+
+}
+
+# Space Cloud Weapons
+
+entity = {
+	name = "arknights_02_small_space_cloud_weapon_entity"
+	pdxmesh = "arknights_02_turret_small_kinetic_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+	attach = { gun_01 = "arknights_02_turret_energy_s_gun_entity" }
+	attach = { gun_02 = "arknights_02_turret_energy_s_gun_entity" }
+
+}
+
+entity = {
+	name = "arknights_02_large_space_cloud_weapon_entity"
+	pdxmesh = "arknights_02_turret_large_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+	attach = { gun_01 = "arknights_02_turret_energy_gun_entity" }
+	attach = { gun_02 = "arknights_02_turret_energy_gun_entity" }
+	attach = { gun_03 = "arknights_02_turret_energy_gun_entity" }
+	attach = { gun_04 = "arknights_02_turret_energy_gun_entity" }
+
+}
+
+# Crystal Weapons
+
+entity = {
+	name = "arknights_02_small_crystal_ship_weapon_entity"
+	pdxmesh = "arknights_02_turret_small_kinetic_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+	attach = { gun_01 = "arknights_02_turret_kinetic_s_gun_entity" }
+	attach = { gun_02 = "arknights_02_turret_kinetic_s_gun_entity" }
+
+}
+
+entity = {
+	name = "arknights_02_medium_crystal_ship_weapon_entity"
+	pdxmesh = "arknights_02_turret_medium_kinetic_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+	attach = { gun_01 = "arknights_02_turret_kinetic_m_gun_entity" }
+	attach = { gun_02 = "arknights_02_turret_kinetic_m_gun_entity" }
+	attach = { gun_03 = "arknights_02_turret_kinetic_m_gun_entity" }
+
+}
+
+entity = {
+	name = "arknights_02_large_crystal_ship_weapon_entity"
+	pdxmesh = "arknights_02_turret_large_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+	attach = { gun_01 = "arknights_02_turret_kinetic_gun_entity" }
+	attach = { gun_02 = "arknights_02_turret_kinetic_gun_entity" }
+	attach = { gun_03 = "arknights_02_turret_kinetic_gun_entity" }
+	attach = { gun_04 = "arknights_02_turret_kinetic_gun_entity" }
+
+}
+
+# Mining Drone Weapons
+
+entity = {
+	name = "arknights_02_small_mining_drone_weapon_entity"
+	pdxmesh = "arknights_02_turret_small_kinetic_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+	attach = { gun_01 = "arknights_02_turret_energy_s_gun_entity" }
+	attach = { gun_02 = "arknights_02_turret_energy_s_gun_entity" }
+
+}
+
+entity = {
+	name = "arknights_02_medium_mining_drone_weapon_entity"
+	pdxmesh = "arknights_02_turret_medium_kinetic_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+	attach = { gun_01 = "arknights_02_turret_energy_m_gun_entity" }
+	attach = { gun_02 = "arknights_02_turret_energy_m_gun_entity" }
+	attach = { gun_03 = "arknights_02_turret_energy_m_gun_entity" }
+
+}
+
+# Space Whale Weapons
+
+entity = {
+	name = "arknights_02_small_space_whale_weapon_entity"
+	pdxmesh = "arknights_02_turret_small_kinetic_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+	attach = { gun_01 = "arknights_02_turret_energy_s_gun_entity" }
+	attach = { gun_02 = "arknights_02_turret_energy_s_gun_entity" }
+
+}
+
+entity = {
+	name = "arknights_02_medium_space_whale_weapon_entity"
+	pdxmesh = "arknights_02_turret_medium_kinetic_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+	attach = { gun_01 = "arknights_02_turret_energy_m_gun_entity" }
+	attach = { gun_02 = "arknights_02_turret_energy_m_gun_entity" }
+	attach = { gun_03 = "arknights_02_turret_energy_m_gun_entity" }
+
+}
+
+entity = {
+	name = "arknights_02_large_space_whale_weapon_entity"
+	pdxmesh = "arknights_02_turret_large_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+	attach = { gun_01 = "arknights_02_turret_energy_gun_entity" }
+	attach = { gun_02 = "arknights_02_turret_energy_gun_entity" }
+	attach = { gun_03 = "arknights_02_turret_energy_gun_entity" }
+	attach = { gun_04 = "arknights_02_turret_energy_gun_entity" }
+
+}
+
+# Swarm Weapons
+
+entity = {
+	name = "arknights_02_small_scourge_projectile_weapon_entity"
+	pdxmesh = "arknights_02_turret_small_kinetic_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+	attach = { gun_01 = "arknights_02_turret_kinetic_s_gun_entity" }
+	attach = { gun_02 = "arknights_02_turret_kinetic_s_gun_entity" }
+
+}
+
+entity = {
+	name = "arknights_02_medium_scourge_projectile_weapon_entity"
+	pdxmesh = "arknights_02_turret_medium_kinetic_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+	attach = { gun_01 = "arknights_02_turret_kinetic_m_gun_entity" }
+	attach = { gun_02 = "arknights_02_turret_kinetic_m_gun_entity" }
+	attach = { gun_03 = "arknights_02_turret_kinetic_m_gun_entity" }
+
+}
+

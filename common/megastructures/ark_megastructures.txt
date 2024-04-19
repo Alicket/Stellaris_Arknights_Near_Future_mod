@@ -1,0 +1,10 @@
+ark_ground_star_gate = {
+	entity = "ark_null_entity"
+	portrait = "GFX_ark_ground_star_gate_planetview"
+	place_entity_on_planet_plane = yes
+	show_galactic_map_icon = no
+	show_in_outliner = no
+	potential = { always = no }
+	construction_blocks_and_blocked_by = none
+	bypass_type = ark_ground_star_gate
+}

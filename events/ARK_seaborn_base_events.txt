@@ -284,6 +284,31 @@ country_event = {#每月触发，跳板到planet_event，已完成进化或手�
 	}
 }
 
+country_event = {#开局向首都添加进化修正
+	id = ark_seaborn_base.221
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		NOT = { has_country_flag = synthetic_empire }
+		has_trait = trait_ARK_ocean_seaborn
+		NOT = { has_country_flag = arkocean_option_disable_planet_evolution }
+	}
+	immediate = {
+		capital_scope = {
+			set_planet_flag = ark_ocean_col_evo_end
+			set_variable = {
+				which = var_ark_ocean_colony_evolution
+				value = 150
+			}
+			add_modifier = {
+				modifier = ark_ocean_evolution_end
+				days = -1
+				mult = value:ark_ocean_evolution_variable
+			}
+		}
+	}
+}
+
  #############################################################################
 ####								核心事件									####
  #############################################################################
@@ -381,7 +406,7 @@ planet_event = { #每月变量增加，并检测变量数值添加或删除flag/
 			}
 			remove_modifier = ark_ocean_evolution_start
 		}
-		if = { #检测变量从[<0]增长到[0]-[200] flag替换：start → mid
+		if = { #检测变量从[<0]增长到[0]-[100] flag替换：start → mid
 			limit = {
 				check_variable = {
 					which = var_ark_ocean_colony_evolution
@@ -389,7 +414,7 @@ planet_event = { #每月变量增加，并检测变量数值添加或删除flag/
 				}
 				check_variable = {
 					which = var_ark_ocean_colony_evolution
-					value < 200
+					value < 100
 				}
 				has_planet_flag = ark_ocean_col_evo_start
 			}
@@ -402,11 +427,11 @@ planet_event = { #每月变量增加，并检测变量数值添加或删除flag/
 				target = THIS
 			}
 		}
-		if = { #检测变量从[<0]增长到[>=200] flag替换：start → end
+		if = { #检测变量从[<0]增长到[>=100] flag替换：start → end
 			limit = {
 				check_variable = {
 					which = var_ark_ocean_colony_evolution
-					value >= 200
+					value >= 100
 				}
 				has_planet_flag = ark_ocean_col_evo_start
 			}
@@ -424,7 +449,20 @@ planet_event = { #每月变量增加，并检测变量数值添加或删除flag/
 				days = -1
 				mult = value:ark_ocean_evolution_variable
 			}
-			change_pc = pc_ark_continental_ocean
+			if = {
+				limit = {
+					OR = {
+						is_planet_class = pc_continental
+						is_planet_class = pc_alpine
+						is_planet_class = pc_savannah
+						is_planet_class = pc_ocean
+						is_planet_class = pc_tropical
+					}
+				}
+				set_planet_entity = {
+					entity = ark_continental_ocean_01_entity
+				}
+			}
 			owner = {
 				add_resource = {
 					arkseaborn_cells = 1
@@ -433,13 +471,17 @@ planet_event = { #每月变量增加，并检测变量数值添加或删除flag/
 					which = var_ark_seaborn_evolution_cell
 					value = 1
 				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_terraform
+					value = 1
+				}
 			}
 		}
-		if = { #检测变量[>=200] flag替换：mid → end
+		if = { #检测变量[>=100] flag替换：mid → end
 			limit = {
 				check_variable = {
 					which = var_ark_ocean_colony_evolution
-					value >= 200
+					value >= 100
 				}
 				has_planet_flag = ark_ocean_col_evo_mid
 			}
@@ -457,7 +499,21 @@ planet_event = { #每月变量增加，并检测变量数值添加或删除flag/
 				days = -1
 				mult = value:ark_ocean_evolution_variable
 			}
-			change_pc = pc_ark_continental_ocean
+			if = {
+				limit = {
+					OR = {
+						is_planet_class = pc_continental
+						is_planet_class = pc_alpine
+						is_planet_class = pc_savannah
+						is_planet_class = pc_ocean
+						is_planet_class = pc_tropical
+					}
+				}
+				set_planet_entity = {
+					entity = ark_continental_ocean_01_entity
+				}
+			}
+
 			owner = {
 				add_resource = {
 					arkseaborn_cells = 1
@@ -466,9 +522,13 @@ planet_event = { #每月变量增加，并检测变量数值添加或删除flag/
 					which = var_ark_seaborn_evolution_cell
 					value = 1
 				}
+				change_variable = {
+					which = var_ark_seaborn_evolution_terraform
+					value = 1
+				}
 			}
 		}
-		if = { #检测变量从[0]-[200]降低到[<0] flag替换：mid → start
+		if = { #检测变量从[0]-[100]降低到[<0] flag替换：mid → start
 			limit = {
 				check_variable = {
 					which = var_ark_ocean_colony_evolution
@@ -502,15 +562,26 @@ planet_event = {
 	is_triggered_only = yes
 	hide_window = yes
 	trigger = {
-		OR = {
-			has_planet_flag = ark_ocean_col_evo_start
-			has_planet_flag = ark_ocean_col_evo_mid	
+		owner = {
+			NOT = { has_country_flag = arkocean_option_disable_planet_evolution }
+			has_trait = trait_ARK_ocean_seaborn
 		}
 		NOT = {
 			has_planet_flag = ark_seaborn_anomaly_happened
 		}
-		owner = {
-			NOT = { has_country_flag = arkocean_option_disable_planet_evolution }
+		OR = {
+			has_planet_flag = ark_ocean_col_evo_start
+			has_planet_flag = ark_ocean_col_evo_mid	
+		}
+		NOR = {
+			is_planet_class = pc_city
+			is_planet_class = pc_hive
+			is_planet_class = pc_machine
+			is_planet_class = pc_ringworld_habitable
+			is_planet_class = pc_shattered_ring_habitable
+			is_planet_class = pc_habitat
+			is_planet_class = pc_crystal_habitat
+			is_planet_class = pc_relic
 		}
 	}
 	immediate = {
@@ -538,11 +609,23 @@ planet_event = {
 						}
 					}
 					2 = {	#-20
+						modifier = {
+							add = -2
+							OR = {
+								is_planet_class = pc_gaia
+								is_planet_class = pc_tropical
+								is_planet_class = pc_ocean
+							}
+						}
 						planet_event = {
 							id = ark_seaborn_base.2304
 						}
 					}
 					4 = {	#-10
+						modifier = {
+							add = -4
+							is_planet_class = pc_alpine
+						}
 						planet_event = {
 							id = ark_seaborn_base.2305
 						}
@@ -553,6 +636,18 @@ planet_event = {
 						}
 					}
 					3 = {	#+30
+						modifier = {
+							add = 10
+							is_planet_class = pc_gaia
+						}
+						modifier = {
+							add = -3
+							OR = {
+								is_planet_class = pc_desert
+								is_planet_class = pc_arid
+								is_planet_class = pc_alpine
+							}
+						}
 						planet_event = {
 							id = ark_seaborn_base.2307
 						}
@@ -567,6 +662,7 @@ planet_event = { #莫测无常的气候
 	title = ark_seaborn_base.2301.title
 	desc =  ark_seaborn_base.2301.desc
 	is_triggered_only = yes
+	picture = GFX_evt_astral_rift_windswept_planet
 	trigger = {
 		NOT = {
 			has_planet_flag = ark_seaborn_anomaly_happened
@@ -592,6 +688,7 @@ planet_event = { #狂暴的巨兽
 	title = ark_seaborn_base.2302.title
 	desc =  ark_seaborn_base.2302.desc
 	is_triggered_only = yes
+	picture = GFX_evt_zro_1
 	trigger = {
 		NOT = {
 			has_planet_flag = ark_seaborn_anomaly_happened
@@ -616,6 +713,7 @@ planet_event = { #温顺的食物
 	title = ark_seaborn_base.2303.title
 	desc =  ark_seaborn_base.2303.desc
 	is_triggered_only = yes
+	picture = GFX_evt_astral_rift_garden_1
 	trigger = {
 		NOT = {
 			has_planet_flag = ark_seaborn_anomaly_happened
@@ -640,6 +738,7 @@ planet_event = { #贫瘠的资源
 	title = ark_seaborn_base.2304.title
 	desc =  ark_seaborn_base.2304.desc
 	is_triggered_only = yes
+	picture = GFX_evt_arid
 	trigger = {
 		NOT = {
 			has_planet_flag = ark_seaborn_anomaly_happened
@@ -664,6 +763,7 @@ planet_event = { #寒潮
 	title = ark_seaborn_base.2305.title
 	desc =  ark_seaborn_base.2305.desc
 	is_triggered_only = yes
+	picture = GFX_evt_arctic
 	trigger = {
 		NOT = {
 			has_planet_flag = ark_seaborn_anomaly_happened
@@ -688,6 +788,7 @@ planet_event = { #岩层下的水源
 	title = ark_seaborn_base.2306.title
 	desc =  ark_seaborn_base.2306.desc
 	is_triggered_only = yes
+	picture = GFX_evt_arctic
 	trigger = {
 		NOT = {
 			has_planet_flag = ark_seaborn_anomaly_happened
@@ -712,6 +813,7 @@ planet_event = { #春满嗣间
 	title = ark_seaborn_base.2307.title
 	desc =  ark_seaborn_base.2307.desc
 	is_triggered_only = yes
+	picture = GFX_evt_ark_rainfrost
 	trigger = {
 		NOT = {
 			has_planet_flag = ark_seaborn_anomaly_happened
@@ -735,45 +837,45 @@ planet_event = { #春满嗣间
 ####								检测事件								####
  #############################################################################
 
-planet_event = { #检测到已经完成进化或正在进化过程中但不是溟海星球或特殊星球时重新进化
-	id = ark_seaborn_base.24
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		exists = owner
-		owner = {
-			has_trait = trait_ARK_ocean_seaborn
-			NOT = { has_country_flag = arkocean_option_disable_planet_evolution }
-		}
-		OR = {
-			has_planet_flag = ark_ocean_col_evo_end
-			has_planet_flag = ark_ocean_col_evo_mid
-			has_planet_flag = ark_ocean_col_evo_start
-		}
-		NOT = {
-			OR = {
-				is_planet_class = pc_ark_continental_ocean
-				has_planet_flag = ark_ocean_col_evo_disabled
-				has_planet_flag = ark_ocean_col_evo_special
-			}
-		}
-	}
-	immediate = {
-		remove_planet_flag = ark_ocean_col_evo_end
-		remove_planet_flag = ark_ocean_col_evo_mid
-		set_planet_flag = ark_ocean_col_evo_start
-		set_variable = {
-			which = var_ark_ocean_colony_evolution
-			value = -200
-		}
-		create_message = {
-			type = MESSAGE_ARK_OCEAN_EVOLUTION_REDUCE_TERRAFORM
-			localization = MESSAGE_ARK_OCEAN_EVOLUTION_REDUCE_TERRAFORM_LOC
-			days = 30
-			target = THIS
-		}
-	}
-}
+#planet_event = { #检测到已经完成进化或正在进化过程中但不是溟海星球或特殊星球时重新进化
+#	id = ark_seaborn_base.24
+#	is_triggered_only = yes
+#	hide_window = yes
+#	trigger = {
+#		exists = owner
+#		owner = {
+#			has_trait = trait_ARK_ocean_seaborn
+#			NOT = { has_country_flag = arkocean_option_disable_planet_evolution }
+#		}
+#		OR = {
+#			has_planet_flag = ark_ocean_col_evo_end
+#			has_planet_flag = ark_ocean_col_evo_mid
+#			has_planet_flag = ark_ocean_col_evo_start
+#		}
+#		NOT = {
+#			OR = {
+#				is_planet_class = pc_ark_continental_ocean
+#				has_planet_flag = ark_ocean_col_evo_disabled
+#				has_planet_flag = ark_ocean_col_evo_special
+#			}
+#		}
+#	}
+#	immediate = {
+#		remove_planet_flag = ark_ocean_col_evo_end
+#		remove_planet_flag = ark_ocean_col_evo_mid
+#		set_planet_flag = ark_ocean_col_evo_start
+#		set_variable = {
+#			which = var_ark_ocean_colony_evolution
+#			value = -100
+#		}
+#		create_message = {
+#			type = MESSAGE_ARK_OCEAN_EVOLUTION_REDUCE_TERRAFORM
+#			localization = MESSAGE_ARK_OCEAN_EVOLUTION_REDUCE_TERRAFORM_LOC
+#			days = 30
+#			target = THIS
+#		}
+#	}
+#}
 
 # planet_event = { #debug
 # 	id = ark_seaborn_base.25
@@ -807,10 +909,6 @@ country_event = {
 		has_trait = trait_ARK_ocean_seaborn
 	}
 	immediate = {
-
-		set_country_flag = arkocean_option_disable_planet_evolution
-
-
 		capital_scope = {
 			clear_blockers = yes
 			clear_deposits = yes

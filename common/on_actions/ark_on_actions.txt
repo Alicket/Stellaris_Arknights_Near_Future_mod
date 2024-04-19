@@ -3,7 +3,6 @@ on_game_start = {
 }
 on_planet_class_changed = {
 	events = {
-		#ark_archae.13	#禁止地貌改造
 	}
 }
 on_game_start_country = {
@@ -11,12 +10,9 @@ on_game_start_country = {
 		ark_origins.0		# 起源效果（明日方舟）
 		ark_civic.1		# 商业联合（第一个国民理念）
 		ark_civic.2		# 联合峰会（第一个国民理念）
-		#ark_set.5		#创建泰拉造物
-		#ark_mod_check.0	#检测mod冲突（测试用）
-		ark_mod_check.1	#检测mod冲突
+		ark_check.1	#检测mod冲突
 		ark_game_start.1
 		ark_game_start.11
-		ark_game_start.10
 		ark_game_start.1000
 	}
 }
@@ -52,10 +48,9 @@ on_planet_bombarded = {
 
 on_monthly_pulse_country = {
 	events = {
-		#ark_set.4
 		ark_civic.3
 		ark_civic.41
-		#ark_set.52
+		ark_check.2
 	}
 }
 
@@ -79,20 +74,6 @@ on_leader_death = {
 	}
 }
 
-# Executed as new ruler has been set
-# This = Country
-on_ruler_set = {
-	events = {
-	}
-}
-
-# Executed when the ruler is ousted and goes back to their pre-ruler class
-# From = Previous Ruler, already has the new class
-# This = Country
-on_ruler_back_to_pre_ruler_class = {
-	events = {
-	}
-}
 
 # A pop has finished assembling
 # This = Planet scope
@@ -100,7 +81,6 @@ on_ruler_back_to_pre_ruler_class = {
 # FromFrom = Pop
 on_pop_assembled = {
 	events = {
-		#ark_set.51	# 将组建的机器/机械人修改立绘为泰拉小车
 	}
 }
 
@@ -133,7 +113,6 @@ on_destroy_planet_with_PLANET_KILLER_ARK_FROSTNOVA = {
 # FromFrom = Country
 on_entering_system_first_time = {
 	events = {
-		#ark_archae.2111
 	}
 }
 
@@ -152,11 +131,12 @@ on_tech_increased = {
 # FromFrom = Fleet of the science ship that surveyed it, if any
 on_planet_surveyed = {
 	events = {
-		#ark_arclight.142
 	}
 }
 
+on_entering_ark_ground_star_gate = {
 
+}
 
 
 

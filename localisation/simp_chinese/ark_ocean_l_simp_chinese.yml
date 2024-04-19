@@ -2,8 +2,8 @@
 #起源
 origin_ark_stella_caerula:0 "深蓝之星"
 origin_ark_stella_caerula_desc:0 "扮演强大的海嗣物种，不断进化，将整个星系化为血亲。"
-#origin_tooltip_ark_stella_caerula_effects:0 "不管拥有何种公民权，所有未拥有§B海嗣§!特质的外族有机人口每年会以一定速率被强制同化为主体物种，同化人口会获得生机细胞与少量凝聚力。\n开启独特的进化路线。\n殖民地会被逐渐转化为§B溟海星球§!，提供生产力加成。"
-origin_tooltip_ark_stella_caerula_effects:0 "目前版本此起源没有任何内容，仅作为占位符使用，所有海嗣相关内容与特质绑定！\n这也意味着可以随意选择其他起源或将海嗣特质视为类似§B水生§!、§G剧毒§!等带有附加内容的特质，不做特别限制。"
+#origin_tooltip_ark_stella_caerula_effects:0 "不管拥有何种公民权，所有未拥有§B海嗣§!特质的有机人口每年会以一定速率被强制同化为拥有§B海嗣§!特质的主体物种，同化人口会获得生机细胞与少量凝聚力。\n开启独特的进化路线。\n殖民地会被逐渐转化为§B溟海星球§!，提供生产力加成。"
+origin_tooltip_ark_stella_caerula_effects:0 "目前版本此起源没有任何内容，仅作为占位符使用，所有海嗣相关内容选择§B海嗣§!特质后即可体验全部！\n这也意味着可以随意选择其他起源或将海嗣特质视为类似§B水生§!、§G剧毒§!等带有附加内容的特质，不做特别限制。\n§g比如，海嗣泰拉人§!"
 
 #资源
 arkseaborn_cells:0 "生机细胞"
@@ -17,6 +17,15 @@ mod_planet_jobs_arkseaborn_cells_produces_mult:0 "£job£ 岗位生产的£arkse
 #auth_arkocean_seaborn_desc:0 "更为高效而神秘的蜂巢思维，听从于族群的唯一意志，每个个体都得以发挥最大的潜力。"
 
 #物种
+NAME_Tyra_system:0 "Talos"
+NAME_Tyra_Sol:0 "Talos"
+NAME_Tyra1:0 "Talos-I"
+NAME_Tyra2:0 "Talos-II"
+NAME_Tyra4:0 "Talos-IV"
+NAME_Tyra5:0 "Talos-V"
+NAME_Tyra5_1:0 "Talos-Va"
+NAME_Tyra5_2:0 "Talos-Vb"
+NAME_Tyra6:0 "Talos-VI"
 CLASS_Arknights_ocean:0 "海嗣"
 CLASS_Arknights_ocean_desc:0 "$trait_ARK_ocean_seaborn_desc$"
 CLASS_Arknights_ocean_plural:0 "海嗣"
@@ -63,7 +72,7 @@ arkocean_disable_message_disable_tooltip:0 "点击以禁用生机细胞消息提
 arkocean_disable_message_enable_tooltip:0 "点击以启用生机细胞消息提示\n\n§g将会在拥有生机细胞大于等于5.0000时提示§!"
 #种族特质
 trait_ARK_ocean_seaborn:0 "海嗣"
-trait_ARK_ocean_seaborn_desc:0 "祂只说千万鳞片将汇成一体，飞向深空。只说大海将被光芒涂抹，此消彼长，永不干涸。"
+trait_ARK_ocean_seaborn_desc:0 "§B祂只说千万鳞片将汇成一体，飞向深空。只说大海将被光芒涂抹，此消彼长，永不干涸。§!\n不管拥有何种公民权，所有未拥有§B海嗣§!特质的有机人口每年会以一定速率被强制转化为拥有§B海嗣§!特质的主体物种，同化人口会获得少量£arkseaborn_cells£§Y生机细胞§!与£unity£§Y凝聚力§!。\n开启认知塑造面板。\n进行独特的殖民地进化路线。\n§R暂不兼容合成进化路线§!"
 
 #领袖特质
 leader_trait_ruler_seaborn:0 "海嗣"
@@ -141,7 +150,7 @@ ark_seaborn_base.21.desc:0 "这是我们第一次在母星以外的全新环境�
 ark_seaborn_base.21.a:0 "那么开始吧。"
 ark_seaborn_base.21.a.tooltip:0 "在行星决议中开启进化过程，这颗星球最终会变成溟海星球，提供一定量的加成。进化度位于§R-200§!至§Y0§!之间时可以通过行星决议暂停进化过程"
 decision_ark_seaborn_start_evolution:0 "§B<海嗣>§!开始行星进化"
-decision_ark_seaborn_start_evolution_desc:0 "不断地进化、同化，这是海嗣的基本繁衍之道，初来乍到一颗陌生的星球，我们可以先站稳脚跟。等时机成熟，同胞们将尽全力将整颗星球将变为海洋的天堂。\n§g开启同化进程，一开始会有§!§R严重的减益§g，随时间最终会将这颗星球变为§!§B溟海星球§g，并提供大量加成。§!"
+decision_ark_seaborn_start_evolution_desc:0 "不断地进化、同化，这是海嗣的基本繁衍之道，初来乍到一颗陌生的星球，我们可以先站稳脚跟。等时机成熟，同胞们将尽全力将整颗星球将变为海洋的天堂。\n§g开启同化进程，一开始会有§!§R严重的减益§g，随时间最终会将这颗星球§!§B布满溟痕§g，提供大量加成。§!"
 
 #暂时没什么用
 #ark_seaborn_base.25.title:0 "海嗣殖民进化可能出现问题！"
@@ -188,15 +197,15 @@ ARKOCEAN_GUI_CALL_MESSAGE:0 "将细胞用于科学研究"
 arkocean_call_message_tooltip:0 "§Y这与你的科研月收入有关！§!\n"
 ARKOCEAN_GUI_TIPS:0 ">深海研究中心\n>——连接中——\n>...\n§R>警告！不明有机体入侵！正在启]]]§!\n§R>§!\n§G>已接入！§![管理员：§l!未识别§!]\n>>通过消耗生机细胞完成定向进化\n>>通过首都轨道内的研究站快速访问本面板\n>>此面板也可以通过首都星球决议开启\n>>_"
 #用loc是因为之前测试时的操作，懒得改了
-ARKOCEAN_GUI_INFORMATION1:0 "§g每月基础+0.0834§!"
-ARKOCEAN_GUI_INFORMATION2:0 "同化人口：[from.arkocean_mould_var_assimilation_loc]§g|+0.08§!"
+ARKOCEAN_GUI_INFORMATION1:0 "§g每月基础+0.0626§!"
+ARKOCEAN_GUI_INFORMATION2:0 "同化人口：[from.arkocean_mould_var_assimilation_loc]§g|+0.04§!"
 ARKOCEAN_GUI_INFORMATION3:0 "同化星球：[from.arkocean_mould_var_terraform_loc]§g|+1§!"
 ARKOCEAN_GUI_INFORMATION4:0 "赢得战争：[from.arkocean_mould_var_winning_war_loc]§g|+3§!"
 ARKOCEAN_GUI_INFORMATION5:0 ""
 ARKOCEAN_GUI_INFORMATION6:0 "" #留空
 ARKOCEAN_GUI_STOCK:0 "§E[from.var_ark_seaborn_evolution_cell]§!"
 MESSAGE_ARK_OCEAN_MOULD_INFORMATION_LIST_TITLE:0 "$NAME_arkocean_Isharmla_antenna$"
-MESSAGE_ARK_OCEAN_MOULD_INFORMATION_LIST_DESC:0 "现有生机细胞：[arkocean_isharmla_me.arkocean_mould_var_cells_loc]\n数量已足够进行下一步进化。\n\n§g每当拥有生机细胞大于等于3时此条消息会出现§!"
+MESSAGE_ARK_OCEAN_MOULD_INFORMATION_LIST_DESC:0 "现有生机细胞：[arkocean_isharmla_me.arkocean_mould_var_cells_loc]\n数量已足够进行下一步进化。\n\n§g每当拥有生机细胞大于等于5.0时此条消息会出现§!"
 var_ark_seaborn_evolution_cell:0 "生机细胞库存"
 
 
@@ -296,6 +305,7 @@ arkocean_mould_modifier_1_6_tooltip_base:0 "不断摸索有机体与时空的交
 beffect_arkocean_mould_1_6_waiting_tooltip:0 "$arkocean_mould_modifier_1_6$\n$arkocean_mould_modifier_1_6_tooltip_base$\n增加跃迁距离，减少跃迁冷却时间\n\n需要£physics_research£§Y$tech_jump_drive_1$§!科技及完成$arkocean_mould_modifier_1_4a$"
 beffect_arkocean_mould_1_6_tooltip:0 "$arkocean_mould_modifier_1_6$\n$arkocean_mould_modifier_1_6_tooltip_base$\n\n£arkocean_cells_small£§Y-1.00§!\n跃迁距离:§G+2%§!\n跃迁冷却时间:§G-2%§!\n>共§Y25§!次<"
 beffect_arkocean_mould_1_6_done_tooltip:0 "$arkocean_mould_modifier_1_6$\n§G已完成！§!\n$arkocean_mould_modifier_1_6_tooltip_base$\n\n效果：\n跃迁距离:§G+50%§!\n跃迁冷却时间:§G-50%§!"
+var_ark_seaborn_mould_1_6_times:0 "§B有机体维度适应§!升级次数"
 
 arkocean_mould_modifier_2_1:0 "§B聚焦晶状体§!"
 arkocean_mould_modifier_2_1_tooltip_base:0 "视觉器官定向进化出了可以汇集能量的组织，同时特殊的晶状体也可以承受激光带来的高温。"

@@ -6,7 +6,14 @@ ship_design = {
 		slot = "mid"
 	}
 }
-
+ship_design = {
+	name = "NAME_ark_starbase_arclight"
+	ship_size = starbase_ark_arclight
+	section = {
+		template = "STARBASE_ARCLIGHT_SECTION"
+		slot = "core"
+	}
+}
 ship_design = {
 	name = "NAME_ark_high_density_collapsed_body"
 	ship_size = ark_size_demon_cresson

@@ -38,10 +38,10 @@ ARK_country_1 = {
 
 	flags = { custom_start_screen }
 
-	planet_name = "NAME_Terra"
+	planet_name = "NAME_Chaos4_2"
 	planet_class = pc_continental
-	initializer = "Tyra_system"
-	system_name = "NAME_Tyra_system"
+	initializer = "Chaos_system"
+	system_name = "NAME_Chaos"
 
 	graphical_culture = "arknights_01"
 	city_graphical_culture = "arknights_01"

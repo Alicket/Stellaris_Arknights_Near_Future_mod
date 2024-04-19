@@ -11,6 +11,109 @@ country_event = { #选择苦难摇篮起源
 	}
 
 	immediate = {
+
+		create_ship_design = { design = "NAME_ark_starbase_arclight" }
+		add_ship_design = last_created_design
+		solar_system = {
+			spawn_system = {
+				min_distance = 7
+				max_distance = 12
+				max_orientation_angle = 0
+				min_orientation_angle = 0
+				max_jumps = 0
+
+				initializer = "Tyra_system"
+				hyperlane = yes
+			}
+			#spawn_megastructure = {
+			#	type = ark_ground_star_gate
+			#	planet = event_target:ark_planet_talos
+			#}
+		}
+		event_target:ARK_TYRA_HOME_SYSTEM = {
+			#spawn_megastructure = {
+			#	type = ark_ground_star_gate
+			#	planet = event_target:ark_planet_terra
+			#}
+			set_surveyed = { surveyed = yes	}
+			star = {
+				create_starbase = {
+					size = starbase_ark_arclight
+					owner = root
+				}
+			}
+		}
+		event_target:ark_planet_terra = {
+			set_owner = root
+			while = {
+				count = 32
+				create_pop = { species = root }
+			}
+		}
+		event_target:ark_planet_talos = {
+			remove_all_buildings = yes
+			set_colony_type = col_factory
+			add_building = building_colony_shelter
+			remove_all_districts = yes
+			add_district = district_mining
+			add_district = district_generator
+			add_district = district_industrial
+			add_district = district_industrial
+			while = {
+				count = 23
+				random_owned_pop = { kill_pop = yes }
+			}
+			every_owned_pop = {
+				limit = {
+					is_unemployed = yes
+				}
+				kill_pop = yes
+			}
+			leader = {
+				add_trait_no_notify = leader_trait_righteous
+				save_event_target_as = ark_start_official
+			}
+			set_planet_entity = {
+				entity = ark_desert_planet_Talos_II
+			}
+		}
+		event_target:ark_planet_terra = {
+			assign_leader = event_target:ark_start_official
+			set_capital = yes
+			generate_terra_deposits_and_blockers = yes	# 初始地块
+			arknight_start_districts = yes	# 初始区划
+			while = {
+				count = 2
+				add_district = district_city
+			}
+			while = {
+				count = 3
+				add_district = district_mining
+			}
+			while = {
+				count = 2
+				add_district = district_farming
+			}
+			add_building = building_capital
+			add_modifier = { modifier = "barbarian_growth" days = -1 }	# 野蛮生长
+			add_deposit = d_former_countries_controlled	# 分裂各国控制区
+			add_building = building_ark_energy_well1
+			add_deposit = d_ark_aegir_generator
+			add_building = building_bureaucratic_1
+			add_building = building_holo_theatres
+			if = {
+				limit = {
+					root = {
+						OR = {
+							has_ethic = ethic_spiritualist
+							has_ethic = ethic_fanatic_spiritualist
+						}
+					}
+				}
+				add_building = building_temple
+			}
+			remove_building = building_research_lab_1
+		}
 		every_owned_leader = {
 			random_list ={
 				1 = {add_experience = 1600}
@@ -19,24 +122,14 @@ country_event = { #选择苦难摇篮起源
 				4 = {add_experience = 800}
 			}
 		}
-		
 		ruler = {
 			add_trait_no_notify = leader_trait_meet_at_the_end
 			add_trait_no_notify = leader_trait_legendary_great_teacher
-
 			set_leader_flag = leader_death_events_blocked
 			set_leader_flag = immune_to_negative_traits
 			save_global_event_target_as = ark_ruler_doctor
-		}
-		capital_scope = {
-			save_global_event_target_as = ark_planet_terra
-			generate_terra_deposits_and_blockers = yes	# 初始地块
-			arknight_start_districts = yes	# 初始区划
-			add_modifier = { modifier = "barbarian_growth" days = -1 }	# 野蛮生长
-			add_deposit = d_former_countries_controlled	# 分裂各国控制区
-			add_building = building_ark_energy_well1
-			add_deposit = d_ark_aegir_generator
-			remove_building = building_research_lab_1
+			set_age = 13823
+			change_leader_portrait = ARK_N_Doctor_N
 		}
 		add_modifier = { modifier = "terra_council" days = 120 }			# 联合会议准备中
 		country_event = { id = ark_rhodes_island.1 }				# 创建罗德岛
@@ -50,8 +143,24 @@ country_event = { #选择苦难摇篮起源
 			days = 7200
 			random = 720
 		}
+		country_event = { #重置泰拉模型
+			id = ark_game_start.10
+			days = 2
+		}
 	}
 }
+ country_event = {
+	 id = ark_game_start.10
+	 hide_window = yes
+	 is_triggered_only = yes
+	 immediate = {
+		 event_target:ark_planet_terra = {
+			 set_planet_entity = {
+				 entity = "continental_planet_terra_entity"
+			 }
+		 }
+	 }
+ }
 
 country_event = { #选择海嗣特质
 	id = ark_game_start.1000
@@ -144,36 +253,6 @@ country_event = {
 	}
 }
 
-
-
-
-country_event = { #选择统治者
-	id = ark_game_start.10
-	is_triggered_only = yes
-	title = ark_game_start.10.title
-	desc =  ark_game_start.10.desc
-	show_sound = event_default
-	picture = GFX_ark_select_doctor_portrait
-
-	trigger = {
-		has_origin = origin_ark_tragedy_birth
-	}
-	option = {
-		name = ark_game_start.10.a
-		custom_tooltip = "ark_game_start.10.a.tooltip"
-		ruler = {
-			change_leader_portrait = ARK_N_Doctor_N
-			set_age = 13258
-			save_global_event_target_as = ARKNIGHTS_SET_DOCTOR
-		}
-	}
-	option = {
-		name = ark_game_start.10.b
-	}
-}
-
-
-
  country_event = { #选择源石病潜势
 	 id = ark_game_start.11
 	 hide_window = yes
@@ -207,384 +286,3 @@ event = {
 		set_global_flag = arknights_swimming
 	}
 }
-
-# 进行明日方舟国家的区分并添加效果
-#country_event = {
-#	id = ark_game_start.3
-#	title = "ark_game_start.3.name"
-#	desc = {		# 使用了预设/修改的预设
-#		trigger = {
-#			OR = {
-#				has_country_flag = arknight_1
-#				has_country_flag = arknight_2
-#			}
-#		}
-#		text = ark_game_start.3.1.desc
-#	}
-#	desc = {		# 未使用预设/修改的预设
-#		trigger = {
-#			NOR = {
-#				has_country_flag = arknight_1
-#				has_country_flag = arknight_2
-#			}
-#		}
-#		text = ark_game_start.3.2.desc	# 询问是否作为明日方舟国家
-#	}
-#	picture = GFX_evt_arknights_amiya
-#	location = ROOT
-#
-#	is_triggered_only = yes
-#
-#	trigger = {
-#		root = { is_species_class = Arknight }	# 是泰拉人种族
-#		capital_scope = { has_planet_flag = planet_terra }	# 母星是泰拉
-#		owner_species = { has_trait = trait_latent_oripathy }	# 有种族特性"源石病潜势"
-#		NOT = { has_ethic = ethic_gestalt_consciousness }	# 非格式塔
-#	}
-#
-#	immediate = {
-#	}
-#
-#	option = {
-#		name = ark_game_start.3.1.a	# 确认（城邦共和制）
-#		trigger = {
-#			has_authority = auth_city_republic	# 是城邦共和制
-#		}
-#		hidden_effect = {
-#			give_technology = { tech = tech_originiums_mining message = no }	# 初始科技
-#			add_modifier = { modifier = "terra_council" days = 120 }			# 联合会议准备中
-#			country_event = { id = ark_rhodes_island.1 }				# 创建罗德岛
-#			country_event = { id = ark_game_start.31 }				# 初始领袖设定
-#			random_owned_planet = {
-#				limit = { has_planet_flag = planet_terra }
-#				add_modifier = { modifier = "nomadic_city" days = -1 }		# 移动城邦
-#				add_modifier = { modifier = "barbarian_growth" days = -1 }	# 野蛮生长
-#			}
-#		}
-#	}
-#
-#	option = {
-#		name = ark_game_start.3.1.a	# 确认（城邦专制）
-#		trigger = {
-#			has_authority = auth_city_despotism	# 是城邦专制
-#		}
-#		hidden_effect = {
-#			give_technology = { tech = tech_originiums_mining message = no }	# 初始科技
-#			country_event = { id = ark_game_start.31 }				# 初始领袖设定
-#			random_owned_planet = {
-#				limit = { has_planet_flag = planet_terra }
-#				add_modifier = { modifier = "nomadic_city" days = -1 }		# 移动城邦
-#				add_modifier = { modifier = "barbarian_growth" days = -1 }	# 野蛮生长
-#			}
-#		}
-#	}
-#
-#	option = {
-#		name = ark_game_start.3.2.a	# 是的（同意作为明日方舟国家）
-#		trigger = {
-#			NOR = {		# 未使用预设/修改的预设
-#				has_country_flag = arknight_1
-#				has_country_flag = arknight_2
-#			}
-#		}
-#		hidden_effect = {
-#			set_country_flag = arknight_4
-#			give_technology = { tech = tech_originiums_mining message = no }	# 初始科技
-#			country_event = { id = ark_game_start.31 }				# 初始领袖设定
-#			random_owned_planet = {
-#				limit = { has_planet_flag = planet_terra }
-#				add_modifier = { modifier = "nomadic_city" days = -1 }		# 移动城邦
-#			}
-#		}
-#	}
-#
-#	option = {
-#		name = ark_game_start.3.2.b	# 不，我另有打算（不作为明日方舟国家）
-#		trigger = {
-#			NOR = {		# 未使用预设/修改的预设
-#				has_country_flag = arknight_1
-#				has_country_flag = arknight_2
-#			}
-#		}
-#	}
-#}
-#
-## 初始领袖设定（玩家设定的国家名字）
-#country_event = {
-#	id = ark_game_start.31
-#	title = "ark_game_start.31.name"
-#	desc = "ark_game_start.31.desc"
-#	picture = GFX_evt_rhodes_island
-#	location = ROOT
-#
-#	is_triggered_only = yes
-#
-#	immediate = {
-#	}
-#
-#	option = {
-#		name = ark_game_start.31.a	# 凯尔希作为新的ruler开始游戏
-#		trigger = {
-#			has_country_flag = arknight_1	# 预设/修改的泰拉联合世界
-#		}
-#		custom_tooltip = ark_game_start.31.a_tooltip
-#		hidden_effect = {
-#			every_owned_leader = {
-#				kill_leader = { type = ruler show_notification = no }
-#		   	}
-#			create_leader = {
-#				class = scientist
-#				species = owner_main_species
-#				gender = female
-#				name = NAME_Kaltsit
-#				skill = 1
-#				traits = {
-#					add_trait = trait_ruler_walk_in_dust_r
-#					add_trait = trait_ruler_kaltsit_knowledgeable
-#					add_trait = leader_trait_oripathy	# 源石病
-#				}
-#				effect = {
-#					set_leader_flag = ark_leader_kaltsit
-#					save_event_target_as = leader_kaltsit
-#					add_trait = leader_trait_walk_in_dust_s
-#					add_trait = leader_trait_unknown_technology
-#					add_trait = leader_trait_expertise_industry
-#					add_trait = leader_trait_expertise_biology
-#					add_trait = leader_trait_archaeologist
-#					add_ruler_trait = leader_trait_oripathy	# 源石病
-#					add_ruler_trait = trait_ruler_walk_in_dust_r
-#					add_ruler_trait = trait_ruler_kaltsit_knowledgeable
-#				}
-#			}
-#			last_created_leader = {
-#				set_age = 25302
-#				change_leader_portrait = ARK003
-#				set_is_female = yes
-#			}
-#			set_leader = last_created_leader
-#			add_resource = { influence = 100 }
-#			country_event = { id = ark_game_start.311 }
-#		}
-#	}
-#
-#	option = {
-#		name = ark_game_start.31.b	# DOCTOR作为新的ruler开始游戏（蓝）
-#		trigger = {
-#			has_country_flag = arknight_1	# 预设/修改的泰拉联合世界
-#		}
-#		custom_tooltip = ark_game_start.31.b_tooltip
-#		hidden_effect = {
-#			every_owned_leader = {
-#				kill_leader = { type = ruler show_notification = no }
-#		   	}
-#			create_leader = {
-#				class = scientist
-#				species = owner_main_species
-#				gender = male
-#				name = NAME_Doctor
-#				skill = 3
-#				traits = {
-#					add_trait = trait_scientist_meet_end
-#					add_trait = leader_trait_expertise_biology
-#					add_trait = leader_trait_expertise_military_theory
-#				}
-#				effect = {
-#					set_leader_flag = ark_leader_doctor
-#					save_event_target_as = leader_doctor
-#					add_trait = leader_trait_expertise_biology
-#					add_trait = leader_trait_expertise_military_theory
-#					add_ruler_trait = trait_ruler_efficient_infrastructure
-#					add_ruler_trait = trait_ruler_babel_evil_spirit_l
-#					add_ruler_trait = trait_ruler_meet_end
-#				}
-#			}
-#			last_created_leader = {
-#				set_age = 30
-#				change_leader_portrait = ARK001
-#				set_is_female = no
-#			}
-#			set_leader = last_created_leader
-#			add_resource = { influence = 100 }
-#			country_event = { id = ark_game_start.313 }
-#		}
-#	}
-#
-#	option = {
-#		name = ark_game_start.31.c	# DOCTOR作为新的ruler开始游戏（白）
-#		trigger = {
-#			has_country_flag = arknight_2	# 预设/修改的泰拉秩序
-#		}
-#		custom_tooltip = ark_game_start.31.c_tooltip
-#		hidden_effect = {
-#			create_leader = {
-#				class = scientist
-#				species = owner_main_species
-#				gender = male
-#				name = NAME_Doctor
-#				skill = 3
-#				traits = {
-#					add_trait = trait_scientist_meet_end
-#					add_trait = leader_trait_expertise_biology
-#					add_trait = leader_trait_expertise_military_theory
-#				}
-#				effect = {
-#					set_leader_flag = ark_leader_doctor
-#					save_event_target_as = leader_doctor
-#					add_trait = leader_trait_expertise_biology
-#					add_trait = leader_trait_expertise_military_theory
-#					add_ruler_trait = trait_ruler_babel_evil_spirit_w
-#					add_ruler_trait = trait_ruler_meet_end
-#				}
-#			}
-#			last_created_leader = {
-#				set_age = 30
-#				change_leader_portrait = ARK001_W
-#				set_is_female = no
-#			}
-#			set_leader = last_created_leader
-#			country_event = { id = ark_game_start.313 }
-#		}
-#	}
-#
-#	option = {
-#		name = ark_game_start.31.d	# 使用玩家的设定开始游戏
-#		custom_tooltip = ark_game_start.31.d_tooltip
-#	}
-#}
-#
-## 凯尔希作为新的ruler开始游戏
-#country_event = {
-#	id = ark_game_start.311
-#	hide_window = yes
-#	location = ROOT
-#
-#	is_triggered_only = yes
-#
-#	immediate = {
-#		every_owned_leader = {
-#			limit = {
-#				has_leader_flag = ark_leader_kaltsit
-#			}
-#			remove_trait = trait_ruler_corvette_focus
-#			remove_trait = trait_ruler_destroyer_focus
-#			remove_trait = trait_ruler_cruiser_focus
-#			remove_trait = trait_ruler_battleship_focus
-#			remove_trait = trait_ruler_recruiter
-#			remove_trait = trait_ruler_from_the_ranks
-#			remove_trait = trait_ruler_fortifier
-#			remove_trait = trait_ruler_logistic_understanding
-#			remove_trait = trait_ruler_military_pioneer
-#			remove_trait = trait_ruler_warlike
-#			remove_trait = trait_ruler_architectural_sense
-#			remove_trait = trait_ruler_frontier_spirit
-#			remove_trait = trait_ruler_world_shaper
-#			remove_trait = trait_ruler_home_in_the_sky
-#			remove_trait = trait_ruler_industrialist
-#			remove_trait = trait_ruler_eye_for_talent
-#			remove_trait = trait_ruler_deep_connections
-#			remove_trait = trait_ruler_charismatic
-#			remove_trait = trait_ruler_champion_of_the_people
-#			remove_trait = trait_ruler_expansionist
-#			remove_trait = trait_ruler_fertility_preacher
-#			remove_trait = trait_ruler_investor
-#			remove_trait = trait_ruler_space_miner
-#			remove_trait = trait_ruler_explorer
-#			remove_trait = leader_trait_reformer
-#			remove_trait = leader_trait_resilient
-#			remove_trait = leader_trait_tiandaochouqin	# 天道酬勤
-#		}
-#	}
-#}
-#
-## 凯尔希卸任后清除新统治者错误的凯尔希技能
-#country_event = {
-#	id = ark_game_start.312
-#	hide_window = yes
-#	location = ROOT
-#	is_triggered_only = yes
-#	trigger = {
-#		any_owned_leader = {
-#			leader_class = ruler
-#			NOT = { has_leader_flag = ark_leader_kaltsit }
-#		}
-#	}
-#
-#	immediate = {
-#		every_owned_leader = {
-#			limit = { leader_class = ruler }
-#			remove_ruler_trait = trait_ruler_walk_in_dust_r
-#			remove_ruler_trait = trait_ruler_kaltsit_knowledgeable
-#			remove_ruler_trait = leader_trait_oripathy	# 源石病
-#		}
-#	}
-#}
-#
-## DOCTOR作为新的ruler开始游戏
-#country_event = {
-#	id = ark_game_start.313
-#	hide_window = yes
-#	location = ROOT
-#
-#	is_triggered_only = yes
-#
-#	immediate = {
-#		every_owned_leader = {
-#			limit = {
-#				has_leader_flag = ark_leader_doctor
-#			}
-#			remove_trait = leader_trait_oripathy		# 源石病
-#			remove_trait = trait_ruler_corvette_focus
-#			remove_trait = trait_ruler_destroyer_focus
-#			remove_trait = trait_ruler_cruiser_focus
-#			remove_trait = trait_ruler_battleship_focus
-#			remove_trait = trait_ruler_recruiter
-#			remove_trait = trait_ruler_from_the_ranks
-#			remove_trait = trait_ruler_fortifier
-#			remove_trait = trait_ruler_logistic_understanding
-#			remove_trait = trait_ruler_military_pioneer
-#			remove_trait = trait_ruler_warlike
-#			remove_trait = trait_ruler_architectural_sense
-#			remove_trait = trait_ruler_frontier_spirit
-#			remove_trait = trait_ruler_world_shaper
-#			remove_trait = trait_ruler_home_in_the_sky
-#			remove_trait = trait_ruler_industrialist
-#			remove_trait = trait_ruler_eye_for_talent
-#			remove_trait = trait_ruler_deep_connections
-#			remove_trait = trait_ruler_charismatic
-#			remove_trait = trait_ruler_champion_of_the_people
-#			remove_trait = trait_ruler_expansionist
-#			remove_trait = trait_ruler_fertility_preacher
-#			remove_trait = trait_ruler_investor
-#			remove_trait = trait_ruler_space_miner
-#			remove_trait = trait_ruler_explorer
-#			remove_trait = leader_trait_reformer
-#			remove_trait = leader_trait_resilient
-#			remove_trait = leader_trait_tiandaochouqin	# 天道酬勤
-#		}
-#	}
-#}
-#
-## 博士不再是国家领导人(用以清除错误的领袖技能)
-#country_event = {
-#	id = ark_game_start.314
-#	hide_window = yes
-#	location = ROOT
-#	is_triggered_only = yes
-#	trigger = {
-#		any_owned_leader = {
-#			leader_class = ruler
-#			NOT = { has_leader_flag = ark_leader_doctor }
-#		}
-#	}
-#
-#	immediate = {
-#		every_owned_leader = {
-#			limit = { leader_class = ruler }
-#			remove_ruler_trait = trait_ruler_efficient_infrastructure
-#			remove_ruler_trait = trait_ruler_babel_evil_spirit_w
-#			remove_ruler_trait = trait_ruler_babel_evil_spirit_l
-#			remove_ruler_trait = trait_ruler_babel_evil_spirit_r
-#			remove_ruler_trait = trait_ruler_meet_end
-#		}
-#	}
-#}

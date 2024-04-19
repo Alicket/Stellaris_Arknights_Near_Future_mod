@@ -1,25 +1,28 @@
 ﻿l_simp_chinese:
+NAME_Terra:0 "泰拉"#Tyra
+NAME_Terra_1:0 "泰拉之月-I"
+NAME_Terra_2:0 "泰拉之月-II"
+NAME_Chaos:0 "卡俄斯"#Chaos
+NAME_Chaos1:0 "阿索斯"#Athos
+NAME_Chaos2:0 "堤福俄斯"#Typhoeus
+NAME_Chaos3:0 "提堤俄斯"#Tityos
+NAME_Chaos4:0 "塔罗斯"#Talos
+NAME_Chaos4_1:0 "塔罗斯-I"
+NAME_Chaos4_2:0 "塔罗斯-II"
+NAME_Chaos5:0 "俄里翁"#Orion
+NAME_Chaos6:0 "阿洛伊代"#Aloadae
+NAME_Chaos6_1:0 "阿洛伊代-1"
+starbase_ark_arclight:0 "弧光一号"
+NAME_ark_starbase_arclight:0 "$starbase_ark_arclight$"
 
-NAME_Tyra_system:0 "塔罗斯"
+pc_ark_a:0 "$pc_a_star$"
+pc_ark_a_desc:0 "$pc_a_star_desc$"
+sc_ark_a:0 "$pc_a_star$"
+sc_ark_a_desc:0 "$pc_a_star_desc$"
 
-NAME_Tyra_Sol:0 "塔罗斯"
-
-NAME_Tyra1:0 "塔罗斯-I"
-
-NAME_Tyra2:0 "塔罗斯-II"
-
-NAME_Terra:0 "泰拉"
-
-NAME_Terra_1:0 "泰拉之月 I"
-
-NAME_Terra_2:0 "泰拉之月 II"
-
-NAME_Tyra4:0 "塔罗斯-IV"
-
-NAME_Tyra5:0 "塔罗斯-V"
-
-NAME_Tyra5_1:0 "塔罗斯-Va"
-
-NAME_Tyra5_2:0 "塔罗斯-Vb"
-
-NAME_Tyra6:0 "塔罗斯-VI"
+ark_ground_star_gate:0 "地面星门"
+ark_ground_star_gate_DESC:0 "一座神秘的巨型环状设施，流淌着时间与空间。"
+mod_ark_ground_star_gate_empire_windup_mult: "地面星门充能时间"
+mod_ark_ground_star_gate_ship_windup_mult: "舰船通过地面星门充能时间"
+mod_ark_ground_star_gate_megastructure_bypass_windup_mult: "$mod_ark_ground_star_gate_empire_windup_mult$"
+ark_ground_star_gate_desc:0 "该星系中包含一个地面星门"

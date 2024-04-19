@@ -1,0 +1,13 @@
+objectTypes = {
+	pdxmesh = {
+		name = "arknights_02_colossus_mesh"
+		file = "gfx/models/ships/arknights_02/arknights_02_colossus/arknights_02_colossus.mesh"
+
+		animation = { id = "opening"	type = "arknights_02_colossus_opening_animation" }
+		animation = { id = "closing"	type = "arknights_02_colossus_closing_animation" }
+		animation = { id = "idle"	type = "arknights_02_colossus_idle_animation" }
+		animation = { id = "open"	type = "arknights_02_colossus_open_animation" }
+
+		scale = 0.7
+	}
+}

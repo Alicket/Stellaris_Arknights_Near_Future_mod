@@ -22,8 +22,8 @@ trait_ARK_ocean_seaborn = {
 	#allowed_origins = { origin_ark_stella_caerula }
 	#forced_happiness = yes
 	modifier = {
-		pop_environment_tolerance = 0.20
-		leader_lifespan_add = 50
+		pop_environment_tolerance = 0.30
+		leader_lifespan_add = 100
 		army_attack_health_mult = 0.33
 		army_defense_health_mult = 0.33
 	}
