@@ -50,7 +50,7 @@ d_originiums_mine = {
 	}
 
 	planet_modifier = {
-		building_originiums_mining_plant_max = 2
+		building_originiums_mining_plant_1_max = 2
 	}
 	
 	drop_weight = {

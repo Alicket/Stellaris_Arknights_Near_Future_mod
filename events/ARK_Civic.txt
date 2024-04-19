@@ -32,24 +32,24 @@ country_event = {
 	}
 
 	option = {
-		name = ark_civic.1.b	# 物流公司
+		name = ark_civic.1.b	# 仓储物流集团
 		trigger = {
-			NOT = { has_civic = civic_logistics_companies }
+			NOT = { has_civic = civic_warehousing_logistics_groups }
 		}
-		custom_tooltip = logistics_companies
-		force_add_civic = civic_logistics_companies
+		custom_tooltip = warehousing_logistics_groups
+		force_add_civic = civic_warehousing_logistics_groups
 		hidden_effect = {
 			country_event = { id = ark_civic.11 }
 		}
 	}
 
 	option = {
-		name = ark_civic.1.c	# 融资实验室
+		name = ark_civic.1.c	# 投资实验室
 		trigger = {
-			NOT = { has_civic = civic_financing_laboratories }
+			NOT = { has_civic = civic_investment_laboratories }
 		}
-		custom_tooltip = financing_laboratories
-		force_add_civic = civic_financing_laboratories
+		custom_tooltip = investment_laboratories
+		force_add_civic = civic_investment_laboratories
 		hidden_effect = {
 			country_event = { id = ark_civic.11 }
 		}
@@ -121,19 +121,19 @@ country_event = {
 	option = {
 		name = ark_civic.1.b	# 沿用ark_civic.1的本地化
 		trigger = {
-			NOT = { has_civic = civic_logistics_companies }
+			NOT = { has_civic = civic_warehousing_logistics_groups }
 		}
-		custom_tooltip = logistics_companies
-		force_add_civic = civic_logistics_companies
+		custom_tooltip = warehousing_logistics_groups
+		force_add_civic = civic_warehousing_logistics_groups
 	}
 
 	option = {
 		name = ark_civic.1.c	# 沿用ark_civic.1的本地化
 		trigger = {
-			NOT = { has_civic = civic_financing_laboratories }
+			NOT = { has_civic = civic_investment_laboratories }
 		}
-		custom_tooltip = financing_laboratories
-		force_add_civic = civic_financing_laboratories
+		custom_tooltip = investment_laboratories
+		force_add_civic = civic_investment_laboratories
 	}
 
 	option = {

@@ -273,9 +273,7 @@ building_originiums_mining_plant_1 = {
 # 源石矿产园区
 building_originiums_mining_plant_2 = {
 	base_buildtime = @b2_time
-
-	is_capped_by_modifier = yes
-
+	can_build = no
 	category = resource
 
 	potential = {
@@ -327,9 +325,7 @@ building_originiums_mining_plant_2 = {
 # 源石矿业集群
 building_originiums_mining_plant_3 = {
 	base_buildtime = @b3_time
-
-	is_capped_by_modifier = yes
-
+	can_build = no
 	category = resource
 
 	potential = {
@@ -381,9 +377,7 @@ building_originiums_mining_plant_3 = {
 # 源石精炼网络
 building_originiums_mining_plant_4 = {
 	base_buildtime = @b4_time
-
-	is_capped_by_modifier = yes
-
+	can_build = no
 	category = resource
 
 	potential = {

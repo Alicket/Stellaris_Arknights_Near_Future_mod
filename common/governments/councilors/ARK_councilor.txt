@@ -63,21 +63,21 @@ councilor_logistics_companies = {
 			leader_class = official
 		}
 	}
-	civic = civic_logistics_companies
+	civic = civic_warehousing_logistics_groups
 	modifier = {
 		empire_size_systems_mult = -0.02
 		empire_size_colonies_mult = -0.02
 	}
 }
 
-councilor_financing_laboratories = {
+councilor_investment_laboratories = {
 	leader_class = { scientist }
 	is_leader_possible = {
 		OR = {
 			leader_class = scientist
 		}
 	}
-	civic = civic_financing_laboratories
+	civic = civic_investment_laboratories
 	modifier = {
 		planet_jobs_engineering_research_produces_mult = 0.015
 		planet_jobs_physics_research_produces_mult = 0.015

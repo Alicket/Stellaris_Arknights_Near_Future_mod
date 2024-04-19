@@ -57,8 +57,8 @@ ARK_country_1 = {
 		}
 		colors={
 			"sky_blue"
-			"shadow_blue"
 			"black"
+			"null"
 			"null"
 		}
 	}

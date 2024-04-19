@@ -26,47 +26,45 @@ civic_business_union = {
 civic_pharmaceutical_enterprises = {
 	description = "civic_tooltip_pharmaceutical_enterprises_effects"
 	potential = {
-		authority = {
-			OR = {
-				value = auth_city_republic
-			}
-		}
+		authority = { value = auth_city_republic }
+		civics = { value = civic_business_union }
 	}
-	possible = { civics = { value = civic_business_union } }
 	random_weight = { base = 0 }
 	modifier = {
 		leader_lifespan_add = 10
 	}
 }
 
-# 物流公司
-civic_logistics_companies = {
-	description = "civic_tooltip_logistics_companies_effects"
+# 仓储物流集团
+civic_warehousing_logistics_groups = {
 	potential = {
-		authority = {
-			OR = {
-				value = auth_city_republic
-			}
-		}
+		authority = { value = auth_city_republic }
+		civics = { value = civic_business_union }
 	}
-	possible = { civics = { value = civic_business_union } }
 	random_weight = { base = 0 }
 	modifier = {
+		empire_size_colonies_mult = -0.15
+		country_resource_max_add = 1500
 	}
 }
 
-# 融资实验室
-civic_financing_laboratories = {
-	description = "civic_tooltip_financing_laboratories_effects"
+# 投资实验室
+civic_investment_laboratories = {
+	description = "civic_tooltip_investment_laboratories_effects"
 	potential = {
-		authority = {
+		authority = { value = auth_city_republic }
+		civics = { value = civic_business_union }
+	}
+	random_weight = { base = 0 }
+	possible = {
+		ethics = {
 			OR = {
-				value = auth_city_republic
+				text = civic_tooltip_materialist
+				value = ethic_materialist
+				value = ethic_fanatic_materialist
 			}
 		}
 	}
-	possible = { civics = { value = civic_business_union } }
-	random_weight = { base = 0 }
 	modifier = {
 		all_technology_research_speed = 0.05
 	}
@@ -74,49 +72,59 @@ civic_financing_laboratories = {
 
 # 安全承包商
 civic_security_contractors = {
-	description = "civic_tooltip_security_contractors_effects"
 	potential = {
-		authority = {
+		authority = { value = auth_city_republic }
+		civics = { value = civic_business_union }
+	}
+	random_weight = { base = 0 }
+	possible = {
+		ethics = {
 			OR = {
-				value = auth_city_republic
+				text = civic_tooltip_militarist
+				value = ethic_militarist
+				value = ethic_fanatic_militarist
 			}
 		}
+		civics = { NOT = { value = civic_warrior_culture } }
 	}
-	possible = { civics = { value = civic_business_union } }
-	random_weight = { base = 0 }
 	modifier = {
+		army_starting_experience_add = 150
+		army_damage_mult = 0.15
+		armies_upkeep_mult = -0.15
+		planet_army_build_speed_mult = 0.15
+	}
+	swap_type = {
+		trigger = {
+			host_has_dlc = "Overlord"
+		}
+
+		modifier = {
+			country_enclave_capacity_add = 1
+		}
 	}
 }
 
 # 工业制造商
 civic_industry_manufacturers = {
-	description = "civic_tooltip_industry_manufacturers_effects"
 	potential = {
-		authority = {
-			OR = {
-				value = auth_city_republic
-			}
-		}
+		authority = { value = auth_city_republic }
+		civics = { value = civic_business_union }
 	}
-	possible = { civics = { value = civic_business_union } }
 	random_weight = { base = 0 }
 	modifier = {
+		country_alloys_produces_mult = 0.1
 	}
 }
 
 # 流通商业
 civic_circulation_business = {
-	description = "civic_tooltip_circulation_business_effects"
 	potential = {
-		authority = {
-			OR = {
-				value = auth_city_republic
-			}
-		}
+		authority = { value = auth_city_republic }
+		civics = { value = civic_business_union }
 	}
-	possible = { civics = { value = civic_business_union } }
 	random_weight = { base = 0 }
 	modifier = {
+		country_consumer_goods_produces_mult = 0.1
 	}
 }
 
@@ -139,6 +147,19 @@ civic_union_summit = {
 	}
 }
 
+# 健康福祉
+civic_health_welfare = {
+	description = "civic_tooltip_health_welfare_effects"
+	potential = {
+		authority = { value = auth_city_republic }
+		civics = { value = civic_union_summit }
+	}
+	random_weight = { base = 0 }
+	modifier = {
+		leader_lifespan_add = 10
+	}
+}
+
 # 信使网络
 civic_messenger_network = {
 	description = "civic_tooltip_messenger_network_effects"
@@ -151,7 +172,6 @@ civic_messenger_network = {
 	}
 	random_weight = { base = 0 }
 	modifier = {
-		empire_size_systems_mult = -0.1
 		empire_size_colonies_mult = -0.1
 	}
 }

@@ -23,7 +23,7 @@ building_military_enterprises:0 "Military Enterprises"
 building_military_enterprises_desc:0 "Procurement and production by military enterpeises have strongly increased the output of advanced resources."
 building_component_assembly_plant:0 "Component Assembly Plant"
 building_component_assembly_plant_desc:0 "The Component Assembly Plant assembles nanoflake components that are essential for various civil appliances."
-mod_building_originiums_mining_plant_max:0 "Empire limit $building_originiums_mining_plant$"
+mod_building_originiums_mining_plant_1_max:0 "Empire limit $building_originiums_mining_plant$"
 
 ## Occupation ##
 job_originiums_miner:0 "Originium Miner"
