@@ -2,20 +2,20 @@ Arknight = {
 	archetype = BIOLOGICAL
 	randomized = yes
 	possible = {
-		ethics = {
-			NOR = {	# 非格式塔
-				value = ethic_gestalt_consciousness
-				#value = ethic_authoritarian
-				#value = ethic_fanatic_authoritarian
-			}
-		}
+		#ethics = {
+		#	NOR = {	# 非格式塔
+		#		value = ethic_gestalt_consciousness
+		#		#value = ethic_authoritarian
+		#		#value = ethic_fanatic_authoritarian
+		#	}
+		#}
 	}
 
-	portraits = {
-		"arknights_npc"
-		"arknights_s12LEADER_NPCpop"
-		#"arknights_s1LEADER_NPCpop"
-	}
+	#portraits = {
+	#	"arknights_npc"
+	#	"arknights_s12LEADER_NPCpop"
+	#	#"arknights_s1LEADER_NPCpop"
+	#}
 
 	graphical_culture = arknights_01
 	move_pop_sound_effect = "moving_pop_confirmation"

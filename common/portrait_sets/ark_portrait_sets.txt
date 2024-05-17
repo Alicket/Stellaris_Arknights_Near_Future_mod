@@ -1,0 +1,35 @@
+arknights_portrait_set = {
+	species_class = Arknight
+
+	portraits = {
+		"arknights_npc"
+		"arknights_s12LEADER_NPCpop"
+	}
+
+	conditional_portraits = {
+		portraits = {
+		}
+	}
+
+	# These should not be used for randomly generated species
+	non_randomized_portraits = {
+		"arknights_s12LEADER_NPCpop"
+	}
+}
+
+arknights_ocean_portrait_set = {
+	species_class = CLASS_Arknights_ocean
+
+	portraits = {
+		"ark_ocean_anim_portraits"
+	}
+
+	conditional_portraits = {
+		portraits = {
+		}
+	}
+
+	# These should not be used for randomly generated species
+	non_randomized_portraits = {
+	}
+}
