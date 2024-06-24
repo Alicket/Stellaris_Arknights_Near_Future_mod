@@ -274,7 +274,6 @@ building_originiums_mining_plant_1 = {
 building_originiums_mining_plant_2 = {
 	base_buildtime = @b2_time
 	can_build = no
-	is_capped_by_modifier = yes
 
 	category = resource
 
@@ -328,7 +327,6 @@ building_originiums_mining_plant_2 = {
 building_originiums_mining_plant_3 = {
 	base_buildtime = @b3_time
 	can_build = no
-	is_capped_by_modifier = yes
 
 	category = resource
 
@@ -382,7 +380,6 @@ building_originiums_mining_plant_3 = {
 building_originiums_mining_plant_4 = {
 	base_buildtime = @b4_time
 	can_build = no
-	is_capped_by_modifier = yes
 
 	category = resource
 

@@ -1,0 +1,8 @@
+Arknights = {
+	name = Arknights_portrait_categories
+
+	sets = {
+		arknights_portrait_set
+		arknights_ocean_portrait_set
+	}
+}
