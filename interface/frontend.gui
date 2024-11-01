@@ -10,12 +10,6 @@ guiTypes = {
 		}
 	}
 
-################################################################################
-################################################################################
-################################################################################
-################################################################################
-################################################################################
-
 	containerWindowType = {
 		name = "frontend_background"
 		position = { x = 0 y = 0 }
@@ -54,8 +48,6 @@ guiTypes = {
 				position = { x = 350 y = @links_y }
 				pdx_tooltip = "PRIVACY_POLICY"
 			}
-
-
 
 			buttonType = {
 				name = "pi_achievements"
@@ -137,63 +129,22 @@ guiTypes = {
 			}
 		}
 
-
-#######################################################################################################
-#######################################################################################################
-#######################################################################################################
-#######################################################################################################
-#######################################################################################################
-#######################################################################################################
-#######################################################################################################
-
-
 		iconType = {
 			name = "game_logo"
+			
+##########################################################
 			position = { x = 0 y = -50 } # Makes the logo appear to have the same top and left margin as other elements
-			spriteType = "GFX_ark_frontend_ste_logo"
+
+
+
+################################################################################
+			quadTextureSprite = "GFX_ark_frontend_ste_logo"
+
 			Orientation = "UPPER_LEFT"
 		}
 
-#		containerWindowType = {
-#			id = "press_to_continue"
-#			name = "press_to_continue"
-#			position = { x=0 y=0 }
-#			size = { width=1280 height=720 }
-#			orientation = center
-#
-#			instantTextBoxType = {
-#				name = "press"
-#				font = "malgun_goth_24"
-#				text = "PRESS"
-#				position = { x= -100 y = -9  }
-#				maxWidth = 80
-#				maxHeight = 35
-#				fixedSize = yes
-#				format = right
-#			}
-#
-#			iconType = {
-#				name = "button"
-#				position = { x = -13 y = -10 }
-#				quadTextureSprite = "GFX_controller_icon_a"
-#				Orientation = "CENTER_CENTER"
-#			}
-#
-#			instantTextBoxType = {
-#				name = "to_continue"
-#				font = "malgun_goth_24"
-#				text = "TO_CONTINUE"
-#				position = { x= 20 y = -9  }
-#				maxWidth = 400
-#				maxHeight = 35
-#				fixedSize = yes
-#				format = left
-#			}
-#		}
-
 		containerWindowType = {
-			name ="menu"
-			position = { x = 0 y = 0 }
+			name = "menu"
 			size = { width = 100% height = 100% }
 
 			instantTextBoxType = {
@@ -208,7 +159,6 @@ guiTypes = {
 				orientation = lower_left
 			}
 
-
 			buttonType = {
 				name = "version_button"
 				spriteType = "GFX_invisible"
@@ -218,22 +168,9 @@ guiTypes = {
 				no_clicksound = yes
 			}
 
-
-
-######################################################################
-######################################################################
-######################################################################
-######################################################################
-######################################################################
-######################################################################
-######################################################################
-######################################################################
-######################################################################
-
-
-
 			containerWindowType = {
 				name = "buttons"
+###########################################
 				position = { x = 50 y = 0 }
 				# The height here is the Y position of the last button on small resolutions + the height of the last button.
 				size = { width = @button_large_width height = 400 }
@@ -242,15 +179,13 @@ guiTypes = {
 
 				if_scaled_resolution = {
 					min_height = 900
-			
+
 					# The height here is the Y position of the last button on large resolutions + the height of the last button.
 					size = { width = @button_large_width height = 575 }
 				}
 
 				@button_large_width = 340
 				@button_large_height = 49 # Reduced by 1 pixel to avoid overlap
-
-################################################################################
 
 				containerWindowType = {
 					name = "start_game_container"
@@ -266,8 +201,11 @@ guiTypes = {
 					buttonType = {
 						id = "start"
 						name = "button"
+
+##############################################################
 						spriteType = "GFX_ark_frontend_single"
 						position = { x = -65 y = -14 }
+
 						size = { x = @button_large_width y = @button_large_height }
 						oversound = mouse_over
 						defaultSelection = yes
@@ -288,11 +226,12 @@ guiTypes = {
 					}
 				}
 
-#################################################################################
-
 				containerWindowType = {
 					name = "load_game_container"
+
+###############################################
 					position = { x = 0 y = 50 }
+
 					size = { width = @button_large_width height = @button_large_height }
 
 					if_scaled_resolution = {
@@ -304,8 +243,11 @@ guiTypes = {
 					buttonType = {
 						id = "load"
 						name = "button"
+
+############################################################
 						spriteType = "GFX_ark_frontend_load"
 						position = { x = -65 y = -14 }
+
 						size = { x = @button_large_width y = @button_large_height }
 						oversound = mouse_over
 						clicksound = confirm_click
@@ -325,8 +267,6 @@ guiTypes = {
 					}
 				}
 
-#################################################################################
-
 				containerWindowType = {
 					name = "multiplayer_container"
 					position = { x = 0 y = 100 }
@@ -341,8 +281,11 @@ guiTypes = {
 					buttonType = {
 						id = "multiplayer"
 						name = "button"
+
+#############################################################
 						spriteType = "GFX_ark_frontend_multi"
 						position = { x = -65 y = -14 }
+
 						size = { x = @button_large_width y = @button_large_height }
 						oversound = mouse_over
 						clicksound = confirm_click
@@ -362,8 +305,6 @@ guiTypes = {
 					}
 				}
 
-###################################################################################
-
 				containerWindowType = {
 					name = "coop_container"
 					position = { x = 0 y = 150 }
@@ -378,8 +319,11 @@ guiTypes = {
 					buttonType = {
 						id = "coop"
 						name = "button"
+
+############################################################
 						spriteType = "GFX_ark_frontend_coop"
 						position = { x = -65 y = -14 }
+
 						size = { x = @button_large_width y = @button_large_height }
 						oversound = mouse_over
 						clicksound = confirm_click
@@ -400,8 +344,6 @@ guiTypes = {
 					}
 				}
 
-#######################################################################################
-
 				containerWindowType = {
 					name = "additional_content_container"
 					position = { x = 0 y = 200 }
@@ -416,8 +358,11 @@ guiTypes = {
 					buttonType = {
 						id = "additional_content"
 						name = "button"
+
+##################################################################
 						quadTextureSprite = "GFX_ark_frontend_add"
 						position = { x = -65 y = -14 }
+
 						size = { x = @button_large_width y = @button_large_height }
 						oversound = mouse_over
 						clicksound = confirm_click
@@ -437,8 +382,6 @@ guiTypes = {
 					}
 				}
 
-######################################################################################
-
 				containerWindowType = {
 					name = "settings_container"
 					position = { x = 0 y = 250 }
@@ -453,8 +396,11 @@ guiTypes = {
 					buttonType = {
 						id = "settings"
 						name = "button"
+
+################################################################
 						spriteType = "GFX_ark_frontend_settings"
 						position = { x = -65 y = -14 }
+
 						size = { x = @button_large_width y = @button_large_height }
 						oversound = mouse_over
 						clicksound = confirm_click
@@ -474,8 +420,6 @@ guiTypes = {
 					}
 				}
 
-#####################################################################################
-
 				containerWindowType = {
 					name = "credits_container"
 					position = { x = 0 y = 300 }
@@ -490,8 +434,11 @@ guiTypes = {
 					buttonType = {
 						id = "credits"
 						name = "button"
+
+###############################################################
 						spriteType = "GFX_ark_frontend_credits"
 						position = { x = -65 y = -14 }
+
 						size = { x = @button_large_width y = @button_large_height }
 						oversound = mouse_over
 						clicksound = confirm_click
@@ -511,8 +458,6 @@ guiTypes = {
 					}
 				}
 
-#######################################################################################
-
 				containerWindowType = {
 					name = "quit_container"
 					position = { x = 0 y = 350 }
@@ -527,8 +472,11 @@ guiTypes = {
 					buttonType = {
 						id = "quit"
 						name = "button"
+
+############################################################
 						spriteType = "GFX_ark_frontend_exit"
 						position = { x = -65 y = -14 }
+
 						size = { x = @button_large_width y = @button_large_height }
 						oversound = mouse_over
 						clicksound = confirm_click
@@ -571,55 +519,6 @@ guiTypes = {
 			}
 		}
 
-		### load save
-		containerWindowType = {
-			name = "load_save"
-			position = { x = 0 y = 0 }
-			size = { width = 1024 height = 720 }
-			orientation = center
-			origo = center
-
-			instantTextBoxType = {
-				name = "title"
-				position = { x = 180 y = 40 }
-				textureFile = ""
-				font = "cg_16b"
-				borderSize = { x = 4 y = 4 }
-				text = "FRONT_SAVE_GAMES"
-				Orientation = "UPPER_LEFT"
-				format = left
-				maxWidth = 200
-				maxHeight = 100
-			}
-			buttonType = {
-				name = "launch"
-				quadTextureSprite = "GFX_button"
-				position = { x = -200 y = -200 }
-				Orientation = "LOWER_RIGHT"
-				buttonText = "FRONT_LAUNCH"
-				buttonFont = "cg_16b"
-			}
-
-			buttonType = {
-				name = "back"
-				quadTextureSprite = "GFX_button"
-				position = { x = -400 y = -200 }
-				Orientation = "LOWER_RIGHT"
-				buttonText = "FRONT_BACK"
-				buttonFont = "cg_16b"
-			}
-
-			listboxType = {
-				name = "list"
-				position = { x = 100 y = 80 }
-				size = { x = 220 y = 260}
-				horizontal = 0
-				scrollbartype = "standardlistbox_slider"
-				borderSize = { x = 20 y = 20 }
-				Orientation = "UPPER_LEFT"
-			}
-		}
-
 		### Additional content browser "What's new"
 		containerWindowType = {
 			name = "additional_content_whats_new"
@@ -630,7 +529,6 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "title"
-				position = { x = 0 y = 0 }
 				maxWidth = 250
 				format = right
 				font = "large_title_font"
@@ -654,46 +552,45 @@ guiTypes = {
 			Orientation = "CENTER"
 			position = { x = -476 y = -10 }
 		}
-		
+
 		buttonType = {
-			name ="portrait_empty_room"
+			name = "portrait_empty_room"
 			spriteType = "GFX_portrait_gamesetup_mask_empty_room"
 			Orientation = "CENTER"
-			position = { x= -950 y= -700 }
+			position = { x = -950 y = -700 }
 		}
-		
+
 		buttonType = {
-			name ="character_without_room"
+			name = "character_without_room"
 			spriteType = "GFX_portrait_gamesetup_mask_character_without_room"
 			Orientation = "CENTER"
-			position = { x= 50 y= -700 }
+			position = { x = 50 y = -700 }
 		}
-		
+
 		buttonType = {
 			name = "portrait_planet"
 			spriteType = "GFX_portrait_planet_character"
 			Orientation = "CENTER"
-			position = { x= -100 y= -320 }
+			position = { x = -100 y = -320 }
 		}
 
 		buttonType = {
-			name ="portrait_character"
+			name = "portrait_character"
 			spriteType = "GFX_portrait_character"
 			Orientation = "CENTER"
-			position = { x= -500 y= -350 }
+			position = { x = -500 y = -350 }
 		}
 
 		buttonType = {
-			name ="portrait_character_large"
+			name = "portrait_character_large"
 			spriteType = "GFX_portrait_character_large"
 			Orientation = "CENTER"
-			position = { x= -500 y= -350 }
+			position = { x = -500 y = -350 }
 		}
 
 		containerWindowType = {
 			name = "blocker"
-			position = { x= 0 y= 0 }
-			size = { width = 100% height = 100%}
+			size = { width = 100% height = 100% }
 
 			background = {
 				name = "hitbox"
@@ -704,18 +601,13 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "save_item"
-		position = { x=0 y=0 }
-		size = { width=64 height=48 }
+		size = { width = 64 height = 48 }
 
-		buttonType =
-		{
+		buttonType = {
 			name = "button"
 			quadTextureSprite = "GFX_button"
-			position = { x= 0 y = 0  }
 			Orientation = "UPPER_LEFT"
-			buttonText = ""
 			buttonFont = "cg_16b"
 		}
-
 	}
 }
