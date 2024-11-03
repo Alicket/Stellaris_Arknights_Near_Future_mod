@@ -39,8 +39,9 @@ councilor_business_union = {
 	}
 }
 
-councilor_pharmaceutical_enterprises = {
-	leader_class = { scientist official }
+# 医药董事
+councilor_ark_pharmaceutical_enterprises = {
+	leader_class = { official scientist }
 	is_leader_possible = {
 		OR = {
 			leader_class = scientist
@@ -49,8 +50,26 @@ councilor_pharmaceutical_enterprises = {
 	}
 	civic = civic_pharmaceutical_enterprises
 	modifier = {
-		pop_growth_speed = 0.015
-		planet_amenities_mult = 0.02
+		pop_growth_speed = 0.01
+		planet_amenities_mult = 0.01
+		trade_value_mult = 0.01
+	}
+}
+
+# 卫生部长
+councilor_ark_health = {
+	leader_class = { official scientist }
+	is_leader_possible = {
+		OR = {
+			leader_class = scientist
+			leader_class = official
+		}
+	}
+	civic = civic_medical_welfare
+	modifier = {
+		pop_growth_speed = 0.01
+		planet_amenities_mult = 0.01
+		planet_jobs_society_research_produces_mult = 0.01
 	}
 }
 

@@ -342,29 +342,115 @@ country_event = {
 	}
 }
 
-## 医药企业 ##
-# 成立卫生部
-country_event = {
+ # 医药企业 或 医学福祉：开局建筑和科技
+ country_event = {
 	id = ark_civic.3
-	title = "ark_civic.3.name"
-	desc = "ark_civic.3.desc"
-	picture = GFX_evt_metropolis
-	location = ROOT
-	is_triggered_only = yes
+	hide_window = yes
 	trigger = {
-		has_country_flag = originiums_sufferer_end_flag
-		has_civic = civic_pharmaceutical_enterprises
-		NOT = { has_country_flag = ark_hospital123 }
+		OR = {
+			has_civic = civic_pharmaceutical_enterprises
+			has_civic = civic_medical_welfare
+		}
+		is_country_type = default
 	}
-	
+
+	is_triggered_only = yes
+
 	immediate = {
-		set_country_flag = ark_hospital123
+		if = {
+			limit = {
+				has_origin = origin_ark_tragedy_birth
+			}
+			event_target:ark_planet_terra = {
+				if = {
+					limit = {
+						has_building = building_commercial_zone
+					}
+					remove_building = building_commercial_zone
+				}
+				if = {
+					limit = {
+						root = {
+							has_civic = civic_pharmaceutical_enterprises
+						}
+					}
+					add_building = building_ark_corporate_hospital1
+				}
+				if = {
+					limit = {
+						root = {
+							has_civic = civic_medical_welfare
+						}
+					}
+					add_building = building_ark_hospital1
+				}
+				if = {
+					limit = {
+						free_building_slots <= 0
+						has_district = district_city
+					}
+					add_district = district_city
+				}
+			}
+		}
+		else = {
+			capital_scope = {
+				if = {
+					limit = {
+						has_building = building_commercial_zone
+					}
+					remove_building = building_commercial_zone
+				}
+				if = {
+					limit = {
+						root = {
+							has_civic = civic_pharmaceutical_enterprises
+						}
+					}
+					add_building = building_ark_corporate_hospital1
+				}
+				if = {
+					limit = {
+						root = {
+							has_civic = civic_medical_welfare
+						}
+					}
+					add_building = building_ark_hospital1
+				}
+				if = {
+					limit = {
+						free_building_slots <= 0
+						has_district = district_city
+					}
+					add_district = district_city
+				}
+			}
+		}
+		give_technology = { message = no tech = tech_originiums_biology_1 }
 	}
-	
-	option = {
-		name = ark_civic.3.a
-		custom_tooltip = ark_civic.3_tooltip
+}
+
+country_event = {
+	id = gark_civic.31
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				has_civic = civic_pharmaceutical_enterprises
+			}
+			give_technology = { message = no tech = tech_space_trading }
+		}
+		if = {
+			limit = {
+				has_civic = civic_privatized_exploration
+			}
+			give_technology = { message = no tech = tech_starbase_3 }
+		}
 	}
+
+	# Additional resources that may be changed by subspecies are granted in generate_start_buildings_and_districts
 }
 
 

@@ -1,5 +1,67 @@
 # +号的护盾和装甲实质上是下一等级，但沿用上一等级的花费
 
+# 源石生物学：基础理论
+tech_originiums_biology_1 = {
+	cost = @tier1cost2
+	area = society
+	tier = 1
+	category = { biology }
+	prerequisites = { "tech_genome_mapping" }	# 基因图谱
+	weight = @tier1weight2
+
+	potential = {
+		has_originium_traits = yes
+		OR = {
+			has_civic = civic_pharmaceutical_enterprises
+			has_civic = civic_medical_welfare
+		}
+		is_regular_empire = yes
+		is_individual_machine = no
+	}
+
+	weight_modifier = {
+		factor = 2
+	}
+}
+
+# 源石生物学：生态效应
+tech_originiums_biology_2 = {
+	cost = @tier2cost2
+	area = society
+	tier = 2
+	category = { biology }
+	prerequisites = { "tech_originiums_biology_1" }	# 源石生物学：基础理论
+	weight = @tier2weight2
+
+	potential = {
+		is_gestalt = no
+		is_individual_machine = no
+	}
+
+	weight_modifier = {
+		factor = 2
+	}
+}
+
+# 源石生物学：适应进化
+tech_originiums_biology_3 = {
+	cost = @tier3cost2
+	area = society
+	tier = 3
+	category = { biology }
+	prerequisites = { "tech_originiums_biology_2" }	# 源石生物学：生态效应
+	weight = @tier3weight2
+
+	potential = {
+		is_gestalt = no
+		is_individual_machine = no
+	}
+
+	weight_modifier = {
+		factor = 2
+	}
+}
+
 # 先锋陆行舰队
 tech_galaxy_warship_army = {
   	icon = tech_galaxy_warship_army
@@ -41,7 +103,7 @@ tech_originiums_mining = {
 	
 	ai_weight = {
 		weight = 0
-	}	
+	}
 }
 
 # 源岩材料

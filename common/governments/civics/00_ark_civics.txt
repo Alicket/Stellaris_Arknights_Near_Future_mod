@@ -24,12 +24,24 @@ civic_business_union = {
 
 # 医药企业
 civic_pharmaceutical_enterprises = {
+	random_weight = { base = 0 }
 	description = "civic_tooltip_pharmaceutical_enterprises_effects"
 	potential = {
 		authority = { value = auth_city_republic }
 		civics = { value = civic_business_union }
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
 	}
-	random_weight = { base = 0 }
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+	}
 	modifier = {
 		leader_lifespan_add = 10
 	}
@@ -147,14 +159,26 @@ civic_union_summit = {
 	}
 }
 
-# 健康福祉
-civic_health_welfare = {
-	description = "civic_tooltip_health_welfare_effects"
+# 医学福祉
+civic_medical_welfare = {
+	random_weight = { base = 0 }
+	description = "civic_tooltip_medical_welfare_effects"
 	potential = {
 		authority = { value = auth_city_republic }
 		civics = { value = civic_union_summit }
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
 	}
-	random_weight = { base = 0 }
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+	}
 	modifier = {
 		leader_lifespan_add = 10
 	}

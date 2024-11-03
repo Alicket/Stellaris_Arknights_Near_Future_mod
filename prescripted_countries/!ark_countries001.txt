@@ -20,17 +20,16 @@ ARK_country_1 = {
 		trait = "trait_natural_engineers"
 	}
 
-	room = "default_room"
+	room = "pre_ftl_modern_room"
 
 	authority = "auth_city_republic"
 	civics = {
-		"civic_business_union"
-		"civic_pharmaceutical_enterprises"
+		"civic_union_summit"
+		"civic_medical_welfare"
 	}
-	government = gov_ark_commercial_republic
+	government = gov_ark_elite_republic
 
-	ethic="ethic_xenophile"
-	ethic="ethic_militarist"
+	ethic="ethic_fanatic_militarist"
 	ethic="ethic_materialist"
 	advisor_voice_type="l_english"
 
@@ -56,7 +55,7 @@ ARK_country_1 = {
 			file="rounded_middle.dds"
 		}
 		colors={
-			"sky_blue"
+			"light_blue"
 			"black"
 			"null"
 			"null"

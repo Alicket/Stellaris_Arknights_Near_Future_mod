@@ -217,10 +217,6 @@ ark_civic.2.e:0 "课征重税"
 heavy_taxation:0 "公民需要全心全意奉献自己.沉重的赋税是公民对社会理所应当的回馈,也是促进个体向上的强大动力.\n\n岗位生产的资源：§G+10%§!\n幸福度：§R-10%§!\n奴隶人口资源产出：§G+15%§!奴隶幸福度：§R-15%§!"
 
 ## 医药企业 ##
-ark_civic.3.name:0 "成立卫生部"
-ark_civic.3.desc:0 "在攻克源石病的征程中,[Root.GetName]的科研学者和医疗团队曾遭遇了无数的困难险阻.在危机困境的考验和寻常的工作中,我们的团队积累了丰富的经验.现在,一座新的建设规划£building£ §Y$building_ark_hospital1$§!的蓝图已经展现,它将成为这些居功甚伟的顶尖团队进行生命科学研究、制订健康政策的最佳场所."
-ark_civic.3.a:0 "好的."
-ark_civic.3_tooltip:0 "£building£ §Y$building_ark_hospital$§!现在可以升级为£building£ §Y$building_ark_hospital1$§!"
 ark_civic.30.name:0 "医疗会诊"
 ark_civic.30.desc:0 "近期[treatment_1.GetName]的身体状况引起了全社会的关注,人们不能接受为国家做出无数贡献的领袖从此生活在病痛的折磨之中.我们的医疗部门开展了一次医疗会诊,参与会诊的医学专家对[treatment_1.GetName]的康复治疗充满信心,只要进行大约§Y1年§!的调养."
 ark_civic.30.desc2:0 "近期[treatment_2.GetName]的心理状况引起了全社会的关注,人们不能接受为国家做出无数贡献的领袖从此生活在心理创伤的折磨之中.我们的医疗部门开展了一次医疗会诊,参与会诊的医学专家对[treatment_2.GetName]的心理治疗充满信心,只要进行大约§Y1年§!的调养."

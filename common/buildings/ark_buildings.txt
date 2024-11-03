@@ -1,34 +1,38 @@
-# 卫生署
-building_ark_hospital = {
+# 生命科学研究所
+building_ark_hospital1 = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
 
 	category = amenity
-	
-	potential = {
-		owner = { 
-			is_regular_empire = yes
-			has_civic = civic_pharmaceutical_enterprises
-		}
-		NOT = { has_modifier = slave_colony }
-	}
 
-	destroy_trigger = {
+	potential = {
 		exists = owner
-		OR = {
-			owner = { is_regular_empire = no }
-			has_modifier = slave_colony
-			AND = {
-				buildings_stop_pop = yes
-				owner = { is_ai = yes }
+		# check the empire is valid
+		owner = {
+			is_regular_empire = yes
+			OR = {
+				has_valid_civic = civic_medical_welfare	# 医学福祉
 			}
 		}
 	}
-	
+
+	destroy_trigger = {
+		# if the planet is owned by a gestalt society
+		exists = owner
+		owner = {
+			is_regular_empire = no
+		}
+	}
+
 	planet_modifier = {
-		planet_jobs_society_research_produces_mult = 0.1	# 0.15→0.1
-		pop_growth_speed = 0.1								# 0.15→0.1
-		planet_amenities_add = 5
+		job_healthcare_add = 1
+		planet_jobs_society_research_produces_mult = 0.05
+		pop_growth_speed = 0.05
+	}
+
+	inline_script = {
+		script = jobs/researchers_add
+		AMOUNT = 1
 	}
 
 	resources = {
@@ -38,78 +42,27 @@ building_ark_hospital = {
 		}
 		upkeep = {
 			energy = @b1_upkeep
-			
 		}
 	}
 
-	upgrades = {
-		"building_ark_hospital1"
-	}
-}
-
-# 卫生部
-building_ark_hospital1 = {
-	base_buildtime = @b2_time
-	can_build = no
-
-	category = amenity
-	
-	potential = {
-		has_building = building_ark_hospital
-		owner = { has_country_flag = ark_hospital123 }
-	}
-
-	allow = {
-		has_upgraded_capital = yes
-	}
-
-	destroy_trigger = {
-		exists = owner
-		OR = {
-			owner = { is_regular_empire = no }
-			has_modifier = slave_colony
-			AND = {
-				buildings_stop_pop = yes
-				owner = { is_ai = yes }
-			}
-		}
-	}
-	
-	planet_modifier = {
-		planet_jobs_society_research_produces_mult = 0.15	# 0.18→0.15
-		pop_growth_speed = 0.15								# 0.2→0.15
-		planet_amenities_add = 10
-		job_researcher_add = 1
-		job_healthcare_add = 1
-	}
-
-	resources = {
-		category = planet_buildings
-		cost = {
-			minerals = @b2_minerals
-		}
-		upkeep = {
-			energy = @b2_upkeep
-			
-		}
+	prerequisites = {
+		"tech_originiums_biology_1"		# 源石生物学：基础理论
 	}
 
 	upgrades = {
 		"building_ark_hospital2"
-		"building_ark_hospital3"
 	}
 }
 
-# 优生卫生部
+# 生命科学研究院
 building_ark_hospital2 = {
 	base_buildtime = @b2_time
 	can_build = no
 
 	category = amenity
-	
+
 	potential = {
 		has_building = building_ark_hospital1
-		owner = { has_country_flag = ark_hospital123 }
 	}
 
 	allow = {
@@ -118,46 +71,166 @@ building_ark_hospital2 = {
 
 	destroy_trigger = {
 		exists = owner
-		OR = {
-			owner = { is_regular_empire = no }
-			has_modifier = slave_colony
-			AND = {
-				buildings_stop_pop = yes
-				owner = { is_ai = yes }
-			}
+		owner = {
+			is_regular_empire = no
 		}
 	}
-	
+
 	planet_modifier = {
-		planet_jobs_society_research_produces_mult = 0.2	# 0.21→0.2
-		pop_growth_speed = 0.2
-		job_healthcare_per_pop = 0.05						# 每20人+1
-		planet_amenities_add = 10
 		job_healthcare_add = 2
+		planet_jobs_society_research_produces_mult = 0.1
+		pop_growth_speed = 0.1
+	}
+
+	inline_script = {
+		script = jobs/researchers_add
+		AMOUNT = 2
 	}
 
 	resources = {
 		category = planet_buildings
 		cost = {
 			minerals = @b2_minerals
+			originiums = @b2_rare_cost
 		}
 		upkeep = {
 			energy = @b2_upkeep
-			
+			originiums = @b2_rare_upkeep
 		}
+	}
+
+	prerequisites = {
+		"tech_originiums_biology_2"		# 源石生物学：生态效应
+	}
+
+	upgrades = {
+		"building_ark_hospital3"
+	}
+
+	show_tech_unlock_if = {
+		is_regular_empire = yes
 	}
 }
 
-# 科学卫生部
+# 生命科学中心
 building_ark_hospital3 = {
+	base_buildtime = @b3_time
+	can_build = no
+
+	category = amenity
+
+	potential = {
+		has_building = building_ark_hospital2
+	}
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			is_regular_empire = no
+		}
+	}
+
+	planet_modifier = {
+		job_healthcare_add = 3
+		planet_jobs_society_research_produces_mult = 0.15
+		pop_growth_speed = 0.15
+	}
+
+	inline_script = {
+		script = jobs/researchers_add
+		AMOUNT = 3
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			originiums = @b3_rare_cost
+		}
+		upkeep = {
+			energy = @b3_upkeep
+			originiums = @b3_rare_upkeep
+		}
+	}
+
+	prerequisites = {
+		"tech_originiums_biology_3"		# 源石生物学：适应进化
+	}
+
+	show_tech_unlock_if = {
+		is_regular_empire = yes
+	}
+}
+
+# 生物科技公司
+building_ark_corporate_hospital1 = {
+	base_buildtime = @b1_time
+	base_cap_amount = 1
+
+	category = amenity
+
+	potential = {
+		exists = owner
+		# check the empire is valid
+		owner = {
+			is_regular_empire = yes
+			OR = {
+				has_valid_civic = civic_pharmaceutical_enterprises	# 医药企业
+			}
+		}
+	}
+
+	destroy_trigger = {
+		# if the planet is owned by a gestalt society
+		exists = owner
+		owner = {
+			is_regular_empire = no
+		}
+	}
+
+	planet_modifier = {
+		job_healthcare_add = 1
+		trade_value_mult = 0.05
+		pop_growth_speed = 0.05
+	}
+
+	inline_script = {
+		script = jobs/researchers_add
+		AMOUNT = 1
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b1_minerals
+		}
+		upkeep = {
+			energy = @b1_upkeep
+		}
+	}
+
+	prerequisites = {
+		"tech_originiums_biology_1"		# 源石生物学：基础理论
+	}
+
+	upgrades = {
+		"building_ark_corporate_hospital2"
+	}
+}
+
+# 生物科技孵化园
+building_ark_corporate_hospital2 = {
 	base_buildtime = @b2_time
 	can_build = no
 
 	category = amenity
-	
+
 	potential = {
-		has_building = building_ark_hospital1
-		owner = { has_country_flag = ark_hospital123 }
+		has_building = building_ark_corporate_hospital1
 	}
 
 	allow = {
@@ -166,53 +239,98 @@ building_ark_hospital3 = {
 
 	destroy_trigger = {
 		exists = owner
-		OR = {
-			owner = { is_regular_empire = no }
-			has_modifier = slave_colony
-			AND = {
-				buildings_stop_pop = yes
-				owner = { is_ai = yes }
-			}
+		owner = {
+			is_regular_empire = no
 		}
 	}
-	
+
 	planet_modifier = {
-		planet_jobs_society_research_produces_mult = 0.2	# 0.21→0.2
-		pop_growth_speed = 0.2
-		job_researcher_per_pop = 0.05						# 每20人+1
-		planet_amenities_add = 10
-		job_researcher_add = 2
+		job_healthcare_add = 2
+		trade_value_mult = 0.1
+		pop_growth_speed = 0.1
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		modifier = {
-			job_researcher_add = 3
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-		}
-		modifier = {
-			job_brain_drone_add = 3
-		}
+	inline_script = {
+		script = jobs/researchers_add
+		AMOUNT = 2
 	}
 
 	resources = {
 		category = planet_buildings
 		cost = {
 			minerals = @b2_minerals
+			originiums = @b2_rare_cost
 		}
 		upkeep = {
 			energy = @b2_upkeep
-			
+			originiums = @b2_rare_upkeep
 		}
+	}
+
+	prerequisites = {
+		"tech_originiums_biology_2"		# 源石生物学：生态效应
+	}
+
+	upgrades = {
+		"building_ark_corporate_hospital3"
+	}
+
+	show_tech_unlock_if = {
+		is_regular_empire = yes
+	}
+}
+
+# 生物科创产业中心
+building_ark_corporate_hospital3 = {
+	base_buildtime = @b3_time
+	can_build = no
+
+	category = amenity
+
+	potential = {
+		has_building = building_ark_corporate_hospital2
+	}
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			is_regular_empire = no
+		}
+	}
+
+	planet_modifier = {
+		job_healthcare_add = 3
+		trade_value_mult = 0.15
+		pop_growth_speed = 0.15
+	}
+
+	inline_script = {
+		script = jobs/researchers_add
+		AMOUNT = 3
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			originiums = @b3_rare_cost
+		}
+		upkeep = {
+			energy = @b3_upkeep
+			originiums = @b3_rare_upkeep
+		}
+	}
+
+	prerequisites = {
+		"tech_originiums_biology_3"		# 源石生物学：适应进化
+	}
+
+	show_tech_unlock_if = {
+		is_regular_empire = yes
 	}
 }
 

@@ -1,7 +1,14 @@
 ﻿l_simp_chinese:
 
-tech_galaxy_warship_army:0 "陆行舰远征计划" 
-tech_galaxy_warship_army_desc:0 "先进增压器的出现使运输单位载力大幅上升,陆行战舰的星际远征也成为了可能." 
+tech_galaxy_warship_army: "陆行舰远征计划" 
+tech_galaxy_warship_army_desc: "先进增压器的出现使运输单位载力大幅上升,陆行战舰的星际远征也成为了可能." 
+
+tech_originiums_biology_1: "源石生物学：基础理论"
+tech_originiums_biology_1_desc: "探索源石与生物体的基础交互机制，涵盖源石在生物体内的分布模式、代谢途径及其对生物体生理功能的影响，为源石生物学奠定理论基础。"
+tech_originiums_biology_2: "源石生物学：生态效应"
+tech_originiums_biology_2_desc: "分析源石对不同生物种群的影响，揭示其对生物多样性产生与维持的复杂作用，并强调源石在维持生态系统平衡中的核心地位。"
+tech_originiums_biology_3: "源石生物学：适应进化"
+tech_originiums_biology_3_desc: "研究生物在源石环境中的适应性进化策略，探讨源石作为进化驱动力的可能性，以及如何利用源石特性促进生物体的进化进程。"
 tech_originiums_mining:0 "源石开采"
 tech_originiums_mining_desc:0 "对这些宝贵又危险的矿物进行开采,是需要经过仔细讨论并且长期规划的."
 tech_yuanyan_rawmaterial:0 "源岩材料"
