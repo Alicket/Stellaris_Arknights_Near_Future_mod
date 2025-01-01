@@ -298,10 +298,10 @@ former_countries_army_desc:0 "前各国军团的装备和训练和统一前各�
 racists_rebel9_army:0 "萨卡兹雇佣军团"
 racists_rebel9_army_desc:0 "萨卡兹雇佣军军团由常年从事雇佣兵职业的萨卡兹人组成,种族优势和行伍经验使其战斗力非常强悍."
 land_warship_army:0 "陆行舰队"
-land_warship_army_desc:0 "应用移动城邦技术打造的小型城市一般的两栖战舰,拥有极强的火力和投送能力,但因为过于庞大所以无法装进运输舰运送到其它星球."
-landwarship_troop_limit_tooltip:0 "陆行战舰是移动城邦技术在军事上的应用,只能在本地组装建造."
+land_warship_army_desc:0 "应用移动城邦技术打造的小型城市一般的两栖战舰,拥有极强的火力和投送能力。"
+landwarship_troop_limit_tooltip:0 "陆行战舰是移动城邦技术在军事上的应用,是强大的地面移动火力投射平台，也可以通过在轨组装并投放到敌方星球进行突击，但是由于其庞大的身躯，落地之后便无法再次入轨。"
 galaxy_warship_army:0 "先锋陆行舰队"
-galaxy_warship_army_desc:0 "这些小型城市一般的陆行舰通过略微削弱各项属性换取了太空运输和突入大气层的能力."
+galaxy_warship_army_desc:0 "这些小型城市一般的陆行舰通过略微削弱各项属性换取了突入大气层后再重新返回星球轨道的能力."
 galaxywarship_troop_limit_tooltip:0 "先锋陆行战舰是移动城邦技术在军事远征领域中应运而生的创新."
 
 ## 飞升 ##

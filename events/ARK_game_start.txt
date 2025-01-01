@@ -128,8 +128,6 @@ country_event = { #选择苦难摇篮起源
 			set_leader_flag = leader_death_events_blocked
 			set_leader_flag = immune_to_negative_traits
 			save_global_event_target_as = ark_ruler_doctor
-			set_age = 13823
-			change_leader_portrait = ARK_N_Doctor_N
 		}
 		add_modifier = { modifier = "terra_council" days = 120 }			# 联合会议准备中
 		country_event = { id = ark_rhodes_island.1 }				# 创建罗德岛
@@ -143,7 +141,7 @@ country_event = { #选择苦难摇篮起源
 			days = 7200
 			random = 720
 		}
-		country_event = { #重置泰拉模型
+		country_event = { #重置泰拉和塔卫二模型
 			id = ark_game_start.10
 			days = 2
 		}
@@ -157,6 +155,11 @@ country_event = { #选择苦难摇篮起源
 		 event_target:ark_planet_terra = {
 			 set_planet_entity = {
 				 entity = "continental_planet_terra_entity"
+			 }
+		 }
+		 event_target:ark_planet_talos = {
+			 set_planet_entity = {
+				 entity = "ark_desert_planet_Talos_II"
 			 }
 		 }
 	 }

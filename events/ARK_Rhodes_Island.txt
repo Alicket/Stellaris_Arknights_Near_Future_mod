@@ -90,7 +90,7 @@ country_event = {
 		name = ark_rhodes_island.2.c	# 重置肖像
 		custom_tooltip = ark_rhodes_island.2.c_tooltip
 		hidden_effect = {
-			event_target:ARKNIGHTS_SET_DOCTOR = {
+			event_target:ark_ruler_doctor = {
 				change_leader_portrait = ARK_N_Doctor_N
 			}
 		}

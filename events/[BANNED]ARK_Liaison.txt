@@ -1,6 +1,6 @@
-namespace = ark_liasion
+#namespace = ark_liasion
 
-# # Óë¿¨×È´÷¶ûµØÇøÁìµ¼ÈË¶Ô»°
+# # ï¿½ë¿¨ï¿½È´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ìµ¼ï¿½Ë¶Ô»ï¿½
 # planet_event = {
 # 	id = ark_liasion.1
 # 	title = "ark_liasion.1.name"
@@ -24,7 +24,7 @@ namespace = ark_liasion
 # 	}
 # }
 
-# # ¶Ô¿¨×È´÷¶ûÁìµ¼ÈËÏÂ´ïÃüÁî
+# # ï¿½Ô¿ï¿½ï¿½È´ï¿½ï¿½ï¿½ï¿½ìµ¼ï¿½ï¿½ï¿½Â´ï¿½ï¿½ï¿½ï¿½ï¿½
 # planet_event = {
 # 	id = ark_liasion.11
 # 	title = "ark_liasion.1.name"
@@ -41,7 +41,7 @@ namespace = ark_liasion
 # 	}
 	
 # 	option = {
-# 		name = "ark_liasion.11.a"	#´¦Àí¹ÙÔ±:³£Ì¬»¯±©¶¯²»¼ÓÇ¿
+# 		name = "ark_liasion.11.a"	#ï¿½ï¿½ï¿½ï¿½ï¿½Ô±:ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¿
 # 		response_text = "ark_liasion.11.response"
 # 		custom_tooltip = ark_liasion.11.a_tooltip
 # 		owner = {
@@ -53,7 +53,7 @@ namespace = ark_liasion
 # 		}
 # 	}
 # 	option = {
-# 		name = "ark_liasion.11.b"	#´¦Àí±©Í½:³£Ì¬»¯±©¶¯¼ÓÇ¿
+# 		name = "ark_liasion.11.b"	#ï¿½ï¿½ï¿½ï¿½Í½:ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¿
 # 		response_text = "ark_liasion.11.response"
 # 		custom_tooltip = ark_liasion.11.b_tooltip
 # 		owner = {
@@ -65,7 +65,7 @@ namespace = ark_liasion
 # 		}
 # 	}
 # 	option = {
-# 		name = "ark_liasion.11.c"	#³Ã»úÀÌÒ»±Ê:³£Ì¬»¯±©¶¯¼ÓÇ¿
+# 		name = "ark_liasion.11.c"	#ï¿½Ã»ï¿½ï¿½ï¿½Ò»ï¿½ï¿½:ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¿
 # 		response_text = "ark_liasion.11.response"
 # 		custom_tooltip = ark_liasion.11.c_tooltip
 # 		owner = {

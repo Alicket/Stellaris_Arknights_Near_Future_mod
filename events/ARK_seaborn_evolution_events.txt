@@ -208,7 +208,8 @@ country_event = {
 			type = MESSAGE_ARK_OCEAN_MOULD_INFORMATION_LIST
 			localization = MESSAGE_ARK_OCEAN_MOULD_INFORMATION_LIST_DESC
 			days = 30
-			target = event_target:arkocean_isharmla_antenna_station
+			#target = event_target:arkocean_isharmla_antenna_station
+			target = root.capital_scope
 		}
 	}
 }
@@ -245,25 +246,25 @@ country_event = {
 		last_created_country = {
 			save_global_event_target_as = arkocean_Isharmla_pad
 			establish_communications_no_message = root
-			create_fleet = {
-				name = NAME_arkocean_Isharmla_antenna
-				effect = {
-					set_owner = prev
-					create_ship = {
-						name = NAME_arkocean_Isharmla_antenna_desc
-						design = NAME_arkocean_Isharmla_antenna
-						graphical_culture = aquatic_01
-					}
-					set_location = {
-						target = root.capital_scope
-						distance = 0
-					}
-				}
-			}
-			last_created_fleet = {
-				set_event_locked = yes
-				save_global_event_target_as = arkocean_isharmla_antenna_station
-			}
+			#create_fleet = {
+			#	name = NAME_arkocean_Isharmla_antenna
+			#	effect = {
+			#		set_owner = prev
+			#		create_ship = {
+			#			name = NAME_arkocean_Isharmla_antenna_desc
+			#			design = NAME_arkocean_Isharmla_antenna
+			#			graphical_culture = aquatic_01
+			#		}
+			#		set_location = {
+			#			target = root.capital_scope
+			#			distance = 0
+			#		}
+			#	}
+			#}
+			#last_created_fleet = {
+			#	set_event_locked = yes
+			#	save_global_event_target_as = arkocean_isharmla_antenna_station
+			#}
 		}
 		save_global_event_target_as = arkocean_isharmla_me
 
@@ -295,38 +296,38 @@ country_event = {
 }
 
 #重置空间站位置
-country_event = {
-	id = ark_seaborn_evo.15
-	hide_window = yes
-	is_triggered_only = yes
-	immediate = {
-		event_target:arkocean_isharmla_antenna_station = {
-			dismantle = yes
-		}
-		clear_global_event_target = arkocean_isharmla_antenna_station
-		event_target:arkocean_Isharmla_pad = {
-			create_fleet = {
-				name = NAME_arkocean_Isharmla_antenna
-				effect = {
-					set_owner = event_target:arkocean_Isharmla_pad
-					create_ship = {
-						name = NAME_arkocean_Isharmla_antenna_desc
-						design = NAME_arkocean_Isharmla_antenna
-						graphical_culture = aquatic_01
-					}
-					set_location = {
-						target = event_target:arkocean_isharmla_me.capital_scope
-						distance = 0
-					}
-				}
-			}
-			last_created_fleet = {
-				set_event_locked = yes
-				save_global_event_target_as = arkocean_isharmla_antenna_station
-			}
-		}
-	}
-}
+#country_event = {
+#	id = ark_seaborn_evo.15
+#	hide_window = yes
+#	is_triggered_only = yes
+#	immediate = {
+#		event_target:arkocean_isharmla_antenna_station = {
+#			dismantle = yes
+#		}
+#		clear_global_event_target = arkocean_isharmla_antenna_station
+#		event_target:arkocean_Isharmla_pad = {
+#			create_fleet = {
+#				name = NAME_arkocean_Isharmla_antenna
+#				effect = {
+#					set_owner = event_target:arkocean_Isharmla_pad
+#					create_ship = {
+#						name = NAME_arkocean_Isharmla_antenna_desc
+#						design = NAME_arkocean_Isharmla_antenna
+#						graphical_culture = aquatic_01
+#					}
+#					set_location = {
+#						target = event_target:arkocean_isharmla_me.capital_scope
+#						distance = 0
+#					}
+#				}
+#			}
+#			last_created_fleet = {
+#				set_event_locked = yes
+#				save_global_event_target_as = arkocean_isharmla_antenna_station
+#			}
+#		}
+#	}
+#}
 #3_6战略思维
 country_event = {
 	id = ark_seaborn_evo.16

@@ -1,544 +1,363 @@
 portraits = {
 	#特殊
-	ARK_Kristen								= {textureFile = "gfx/models/portraits/Custom/ARK_Kristen.dds"}
+	ARK_Kristen							= {textureFile = "gfx/models/portraits/Custom/ARK_Kristen.dds"}
 	#未确定性别
 	ARK_N_Doctor_N							= {textureFile = "gfx/models/portraits/Custom/ARK_Doctor_N.dds"}
 	ARK_N_Doctor_R							= {textureFile = "gfx/models/portraits/Custom/ARK_Doctor_R.dds"}
 	ARK_N_Doctor_W							= {textureFile = "gfx/models/portraits/Custom/ARK_Doctor_W.dds"}
 	ARK_N_Conviction						= {textureFile = "gfx/models/portraits/Custom/ARK_Conviction.dds"}
-	ARK_N_Conviction_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Conviction_S.dds"}
 	ARK_N_TRC								= {textureFile = "gfx/models/portraits/Custom/ARK_TRC.dds"} #猫车
 	#男
 	ARK_M_Insider							= {textureFile = "gfx/models/portraits/Custom/ARK_Insider.dds"}
 	ARK_M_Executor_G						= {textureFile = "gfx/models/portraits/Custom/ARK_Executor_G.dds"}
-	ARK_M_Bryophyta							= {textureFile = "gfx/models/portraits/Custom/ARK_Bryophyta.dds"}
+	ARK_M_Bryophyta						= {textureFile = "gfx/models/portraits/Custom/ARK_Bryophyta.dds"}
 	ARK_M_Executor							= {textureFile = "gfx/models/portraits/Custom/ARK_Executor.dds"}
-	ARK_M_Executor_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Executor_S.dds"}
 	ARK_M_12F								= {textureFile = "gfx/models/portraits/Custom/ARK_12F.dds"}
 	ARK_M_Flamebringer						= {textureFile = "gfx/models/portraits/Custom/ARK_Flamebringer.dds"}
-	ARK_M_Flamebringer_S					= {textureFile = "gfx/models/portraits/Custom/ARK_Flamebringer_S.dds"}
-	ARK_M_SilverAsh							= {textureFile = "gfx/models/portraits/Custom/ARK_SilverAsh.dds"}
-	ARK_M_SilverAsh_S						= {textureFile = "gfx/models/portraits/Custom/ARK_SilverAsh_S.dds"}
+	ARK_M_SilverAsh						= {textureFile = "gfx/models/portraits/Custom/ARK_SilverAsh.dds"}
 	ARK_M_Hellagur							= {textureFile = "gfx/models/portraits/Custom/ARK_Hellagur.dds"}
-	ARK_M_Hellagur_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Hellagur_S.dds"}
 	ARK_M_Courier							= {textureFile = "gfx/models/portraits/Custom/ARK_Courier.dds"}
-	ARK_M_Courier_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Courier_S.dds"}
 	ARK_M_Matterhorn						= {textureFile = "gfx/models/portraits/Custom/ARK_Matterhorn.dds"}
-	ARK_M_Matterhorn_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Matterhorn_S.dds"}
 	ARK_M_Gnosis							= {textureFile = "gfx/models/portraits/Custom/ARK_Gnosis.dds"}
-	ARK_M_Gnosis_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Gnosis_S.dds"}
 	ARK_M_Steward							= {textureFile = "gfx/models/portraits/Custom/ARK_Steward.dds"}
-	ARK_M_Adnachiel							= {textureFile = "gfx/models/portraits/Custom/ARK_Adnachiel.dds"}
-	ARK_M_Ansel								= {textureFile = "gfx/models/portraits/Custom/ARK_Ansel.dds"}
+	ARK_M_Adnachiel						= {textureFile = "gfx/models/portraits/Custom/ARK_Adnachiel.dds"}
+	ARK_M_Ansel							= {textureFile = "gfx/models/portraits/Custom/ARK_Ansel.dds"}
 	ARK_M_Aak								= {textureFile = "gfx/models/portraits/Custom/ARK_Aak.dds"}
-	ARK_M_Aak_S								= {textureFile = "gfx/models/portraits/Custom/ARK_Aak_S.dds"}
 	ARK_M_Hung								= {textureFile = "gfx/models/portraits/Custom/ARK_Hung.dds"}
-	ARK_M_Hung_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Hung_S.dds"}
 	ARK_M_Phantom							= {textureFile = "gfx/models/portraits/Custom/ARK_Phantom.dds"}
-	ARK_M_Phantom_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Phantom_S.dds"}
-	ARK_M_Greyy								= {textureFile = "gfx/models/portraits/Custom/ARK_Greyy.dds"}
-	ARK_M_Greyy_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Greyy_S.dds"}
+	ARK_M_Greyy							= {textureFile = "gfx/models/portraits/Custom/ARK_Greyy.dds"}
 	ARK_M_Mountain							= {textureFile = "gfx/models/portraits/Custom/ARK_Mountain.dds"}
-	ARK_M_Mountain_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Mountain_S.dds"}
-	ARK_M_Arene								= {textureFile = "gfx/models/portraits/Custom/ARK_Arene.dds"}
-	ARK_M_Arene_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Arene_S.dds"}
+	ARK_M_Arene							= {textureFile = "gfx/models/portraits/Custom/ARK_Arene.dds"}
 	ARK_M_Jaye								= {textureFile = "gfx/models/portraits/Custom/ARK_Jaye.dds"}
-	ARK_M_Jaye_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Jaye_S.dds"}
 	ARK_M_Midnight							= {textureFile = "gfx/models/portraits/Custom/ARK_Midnight.dds"}
 	ARK_M_Spot								= {textureFile = "gfx/models/portraits/Custom/ARK_Spot.dds"}
 	ARK_M_Thorns							= {textureFile = "gfx/models/portraits/Custom/ARK_Thorns.dds"}
-	ARK_M_Thorns_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Thorns_S.dds"}
 	ARK_M_Ayerscarpe						= {textureFile = "gfx/models/portraits/Custom/ARK_Ayerscarpe.dds"}
-	ARK_M_Ayerscarpe_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Ayerscarpe_S.dds"}
-	ARK_M_Bison								= {textureFile = "gfx/models/portraits/Custom/ARK_Bison.dds"}
-	ARK_M_Bison_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Bison_S.dds"}
-	ARK_M_Aosta								= {textureFile = "gfx/models/portraits/Custom/ARK_Aosta.dds"}
-	ARK_M_Aosta_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Aosta_S.dds"}
+	ARK_M_Bison							= {textureFile = "gfx/models/portraits/Custom/ARK_Bison.dds"}
+	ARK_M_Aosta							= {textureFile = "gfx/models/portraits/Custom/ARK_Aosta.dds"}
 	ARK_M_Chiave							= {textureFile = "gfx/models/portraits/Custom/ARK_Chiave.dds"}
-	ARK_M_Chiave_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Chiave_S.dds"}
-	ARK_M_Ethan								= {textureFile = "gfx/models/portraits/Custom/ARK_Ethan.dds"}
-	ARK_M_Ethan_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Ethan_S.dds"}
-	ARK_M_Broca								= {textureFile = "gfx/models/portraits/Custom/ARK_Broca.dds"}
-	ARK_M_Broca_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Broca_S.dds"}
-	ARK_M_Leonhardt							= {textureFile = "gfx/models/portraits/Custom/ARK_Leonhardt.dds"}
-	ARK_M_Leonhardt_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Leonhardt_S.dds"}
+	ARK_M_Ethan							= {textureFile = "gfx/models/portraits/Custom/ARK_Ethan.dds"}
+	ARK_M_Broca							= {textureFile = "gfx/models/portraits/Custom/ARK_Broca.dds"}
+	ARK_M_Leonhardt						= {textureFile = "gfx/models/portraits/Custom/ARK_Leonhardt.dds"}
 	ARK_M_Elysium							= {textureFile = "gfx/models/portraits/Custom/ARK_Elysium.dds"}
-	ARK_M_Elysium_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Elysium_S.dds"}
 	ARK_M_Mizuki							= {textureFile = "gfx/models/portraits/Custom/ARK_Mizuki.dds"}
-	ARK_M_Mizuki_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Mizuki_S.dds"}
-	ARK_M_MrNothing							= {textureFile = "gfx/models/portraits/Custom/ARK_MrNothing.dds"}
-	ARK_M_MrNothing_S						= {textureFile = "gfx/models/portraits/Custom/ARK_MrNothing_S.dds"}
+	ARK_M_MrNothing						= {textureFile = "gfx/models/portraits/Custom/ARK_MrNothing.dds"}
 	ARK_M_Tachanka							= {textureFile = "gfx/models/portraits/Custom/ARK_Tachanka.dds"}
-	ARK_M_Tachanka_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Tachanka_S.dds"}
-	ARK_M_Passenger							= {textureFile = "gfx/models/portraits/Custom/ARK_Passenger.dds"}
-	ARK_M_Passenger_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Passenger_S.dds"}
+	ARK_M_Passenger						= {textureFile = "gfx/models/portraits/Custom/ARK_Passenger.dds"}
 	ARK_M_Tequila							= {textureFile = "gfx/models/portraits/Custom/ARK_Tequila.dds"}
-	ARK_M_Tequila_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Tequila_S.dds"}
 	ARK_M_Corroserum						= {textureFile = "gfx/models/portraits/Custom/ARK_Corroserum.dds"}
-	ARK_M_Corroserum_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Corroserum_S.dds"}
-	ARK_M_NoirCorne							= {textureFile = "gfx/models/portraits/Custom/ARK_NoirCorne.dds"}
+	ARK_M_NoirCorne						= {textureFile = "gfx/models/portraits/Custom/ARK_NoirCorne.dds"}
 	ARK_M_Rangers							= {textureFile = "gfx/models/portraits/Custom/ARK_Rangers.dds"}
 	ARK_M_Ebenholz							= {textureFile = "gfx/models/portraits/Custom/ARK_Ebenholz.dds"}
-	ARK_M_Ebenholz_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Ebenholz_S.dds"}
-	ARK_M_Stainless							= {textureFile = "gfx/models/portraits/Custom/ARK_Stainless.dds"}
-	ARK_M_Stainless_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Stainless_S.dds"}
-	ARK_M_Lumen								= {textureFile = "gfx/models/portraits/Custom/ARK_Lumen.dds"}
-	ARK_M_Lumen_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Lumen_S.dds"}
+	ARK_M_Stainless						= {textureFile = "gfx/models/portraits/Custom/ARK_Stainless.dds"}
+	ARK_M_Lumen							= {textureFile = "gfx/models/portraits/Custom/ARK_Lumen.dds"}
 	ARK_M_Mlynar							= {textureFile = "gfx/models/portraits/Custom/ARK_Mlynar.dds"}
-	ARK_M_Mlynar_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Mlynar_S.dds"}
 	ARK_M_Chongyue							= {textureFile = "gfx/models/portraits/Custom/ARK_Chongyue.dds"}
-	ARK_M_Chongyue_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Chongyue_S.dds"}
-	ARK_M_Vigil								= {textureFile = "gfx/models/portraits/Custom/ARK_Vigil.dds"}
-	ARK_M_Vigil_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Vigil_S.dds"}
+	ARK_M_Vigil							= {textureFile = "gfx/models/portraits/Custom/ARK_Vigil.dds"}
 	ARK_M_Puzzle							= {textureFile = "gfx/models/portraits/Custom/ARK_Puzzle.dds"}
-	ARK_M_Puzzle_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Puzzle_S.dds"}
 	ARK_M_Enforcer							= {textureFile = "gfx/models/portraits/Custom/ARK_Enforcer.dds"}
-	ARK_M_Enforcer_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Enforcer_S.dds"}
 	ARK_M_Noir_G							= {textureFile = "gfx/models/portraits/Custom/ARK_Noir_G.dds"}
-	ARK_M_Noir_G_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Noir_G_S.dds"}
 	ARK_M_Greyy_G							= {textureFile = "gfx/models/portraits/Custom/ARK_Greyy_G.dds"}
-	ARK_M_Greyy_G_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Greyy_G_S.dds"}
 	ARK_M_Shalem							= {textureFile = "gfx/models/portraits/Custom/ARK_Shalem.dds"}
-	ARK_M_Shalem_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Shalem_S.dds"}
 	ARK_M_Czerny							= {textureFile = "gfx/models/portraits/Custom/ARK_Czerny.dds"}
-	ARK_M_Czerny_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Czerny_S.dds"}
 	ARK_M_Windflit							= {textureFile = "gfx/models/portraits/Custom/ARK_Windflit.dds"}
-	ARK_M_Windflit_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Windflit_S.dds"}
 	ARK_M_Minimalist						= {textureFile = "gfx/models/portraits/Custom/ARK_Minimalist.dds"}
-	ARK_M_Minimalist_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Minimalist_S.dds"}
 	ARK_M_Qanipalaat						= {textureFile = "gfx/models/portraits/Custom/ARK_Qanipalaat.dds"}
-	ARK_M_Qanipalaat_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Qanipalaat_S.dds"}
 	ARK_M_LuoXiaohei						= {textureFile = "gfx/models/portraits/Custom/ARK_LuoXiaohei.dds"}
-	ARK_M_LuoXiaohei_S						= {textureFile = "gfx/models/portraits/Custom/ARK_LuoXiaohei_S.dds"}
-	ARK_M_Humus								= {textureFile = "gfx/models/portraits/Custom/ARK_Humus.dds"}
-	ARK_M_Humus_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Humus_S.dds"}
+	ARK_M_Humus							= {textureFile = "gfx/models/portraits/Custom/ARK_Humus.dds"}
 	ARK_M_Totter							= {textureFile = "gfx/models/portraits/Custom/ARK_Totter.dds"}
-	ARK_M_Totter_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Totter_S.dds"}
 	ARK_M_Chestnut							= {textureFile = "gfx/models/portraits/Custom/ARK_Chestnut.dds"}
-	ARK_M_Chestnut_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Chestnut_S.dds"}
-
+	ARK_M_Bryophyta						= {textureFile = "gfx/models/portraits/Custom/ARK_Bryophyta.dds"}
+	ARK_M_Verdant							= {textureFile = "gfx/models/portraits/Custom/ARK_Verdant.dds"}
+	ARK_M_Hoederer							= {textureFile = "gfx/models/portraits/Custom/ARK_Hoederer.dds"}
+	ARK_M_Diamante							= {textureFile = "gfx/models/portraits/Custom/ARK_Diamante.dds"}
+	ARK_M_Bassline							= {textureFile = "gfx/models/portraits/Custom/ARK_Bassline.dds"}
+	ARK_M_Lessing							= {textureFile = "gfx/models/portraits/Custom/ARK_Lessing.dds"}
+	ARK_M_Harold							= {textureFile = "gfx/models/portraits/Custom/ARK_Harold.dds"}
+	ARK_M_Wanqing							= {textureFile = "gfx/models/portraits/Custom/ARK_Wanqing.dds"}
+	ARK_M_ZuoLe							= {textureFile = "gfx/models/portraits/Custom/ARK_ZuoLe.dds"}
+	ARK_M_Fuze								= {textureFile = "gfx/models/portraits/Custom/ARK_Fuze.dds"}
+	ARK_M_Doc								= {textureFile = "gfx/models/portraits/Custom/ARK_Doc.dds"}
+	ARK_M_Odda								= {textureFile = "gfx/models/portraits/Custom/ARK_Odda.dds"}
+	ARK_M_Logos							= {textureFile = "gfx/models/portraits/Custom/ARK_Logos.dds"}
+	ARK_M_Ulpianus							= {textureFile = "gfx/models/portraits/Custom/ARK_Ulpianus.dds"}
+	ARK_M_Mitm								= {textureFile = "gfx/models/portraits/Custom/ARK_Mitm.dds"}
+	ARK_M_TinMan							= {textureFile = "gfx/models/portraits/Custom/ARK_TinMan.dds"}
+	ARK_M_SandReckoner						= {textureFile = "gfx/models/portraits/Custom/ARK_SandReckoner.dds"}
+	ARK_M_Senshi							= {textureFile = "gfx/models/portraits/Custom/ARK_Senshi.dds"}
+	ARK_M_Chilchuck						= {textureFile = "gfx/models/portraits/Custom/ARK_Chilchuck.dds"}
+	ARK_M_Laios							= {textureFile = "gfx/models/portraits/Custom/ARK_Laios.dds"}
+	ARK_M_Bobbing							= {textureFile = "gfx/models/portraits/Custom/ARK_Bobbing.dds"}
+	ARK_M_Figurino							= {textureFile = "gfx/models/portraits/Custom/ARK_Figurino.dds"}
+	ARK_M_Thorns_G							= {textureFile = "gfx/models/portraits/Custom/ARK_Thorns_G.dds"}
 
 	#女
-	ARK_F_Amiya								= {textureFile = "gfx/models/portraits/Custom/ARK_Amiya.dds"}
-	ARK_F_Amiya_S1							= {textureFile = "gfx/models/portraits/Custom/ARK_Amiya_S1.dds"}
-	ARK_F_Amiya_S2							= {textureFile = "gfx/models/portraits/Custom/ARK_Amiya_S2.dds"}
+	ARK_F_Amiya							= {textureFile = "gfx/models/portraits/Custom/ARK_Amiya.dds"}
 	ARK_F_Amiya_G							= {textureFile = "gfx/models/portraits/Custom/ARK_Amiya_G.dds"}
 	ARK_F_Kaltsit							= {textureFile = "gfx/models/portraits/Custom/ARK_Kaltsit.dds"}
-	ARK_F_Kaltsit_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Kaltsit_S.dds"}
 	ARK_F_Closure							= {textureFile = "gfx/models/portraits/Custom/ARK_Closure.dds"}
 	ARK_F_Chen								= {textureFile = "gfx/models/portraits/Custom/ARK_Chen.dds"}
-	ARK_F_Chen_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Chen_S.dds"}
-	ARK_F_Blaze								= {textureFile = "gfx/models/portraits/Custom/ARK_Blaze.dds"}
-	ARK_F_Blaze_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Blaze_S.dds"}
+	ARK_F_Blaze							= {textureFile = "gfx/models/portraits/Custom/ARK_Blaze.dds"}
 	ARK_F_Sora								= {textureFile = "gfx/models/portraits/Custom/ARK_Sora.dds"}
-	ARK_F_Sora_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Sora_S.dds"}
-	ARK_F_Texas								= {textureFile = "gfx/models/portraits/Custom/ARK_Texas.dds"}
-	ARK_F_Texas_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Texas_S.dds"}
+	ARK_F_Texas							= {textureFile = "gfx/models/portraits/Custom/ARK_Texas.dds"}
 	ARK_F_Exusiai							= {textureFile = "gfx/models/portraits/Custom/ARK_Exusiai.dds"}
-	ARK_F_Exusiai_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Exusiai_S.dds"}
 	ARK_F_Franka							= {textureFile = "gfx/models/portraits/Custom/ARK_Franka.dds"}
-	ARK_F_Franka_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Franka_S.dds"}
 	ARK_F_Liskarm							= {textureFile = "gfx/models/portraits/Custom/ARK_Liskarm.dds"}
-	ARK_F_Liskarm_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Liskarm_S.dds"}
 	ARK_F_Silence							= {textureFile = "gfx/models/portraits/Custom/ARK_Silence.dds"}
-	ARK_F_Silence_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Silence_S.dds"}
 	ARK_F_Gitano							= {textureFile = "gfx/models/portraits/Custom/ARK_Gitano.dds"}
-	ARK_F_Gitano_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Gitano_S.dds"}
-	ARK_F_Deepcolor							= {textureFile = "gfx/models/portraits/Custom/ARK_Deepcolor.dds"}
-	ARK_F_Deepcolor_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Deepcolor_S.dds"}
-	ARK_F_Siege								= {textureFile = "gfx/models/portraits/Custom/ARK_Siege.dds"}
-	ARK_F_Siege_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Siege_S.dds"}
-	ARK_F_W									= {textureFile = "gfx/models/portraits/Custom/ARK_W.dds"}
-	ARK_F_W_S								= {textureFile = "gfx/models/portraits/Custom/ARK_W_S.dds"}
-	ARK_F_Myrrh								= {textureFile = "gfx/models/portraits/Custom/ARK_Myrrh.dds"}
-	ARK_F_Myrrh_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Myrrh_S.dds"}
+	ARK_F_Deepcolor						= {textureFile = "gfx/models/portraits/Custom/ARK_Deepcolor.dds"}
+	ARK_F_Siege							= {textureFile = "gfx/models/portraits/Custom/ARK_Siege.dds"}
+	ARK_F_W								= {textureFile = "gfx/models/portraits/Custom/ARK_W.dds"}
+	ARK_F_Myrrh							= {textureFile = "gfx/models/portraits/Custom/ARK_Myrrh.dds"}
 	ARK_F_Winter							= {textureFile = "gfx/models/portraits/Custom/ARK_Winter.dds"}
-	ARK_F_Winter_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Winter_S.dds"}
-	ARK_F_ShiraYuki							= {textureFile = "gfx/models/portraits/Custom/ARK_ShiraYuki.dds"}
-	ARK_F_ShiraYuki_S						= {textureFile = "gfx/models/portraits/Custom/ARK_ShiraYuki_S.dds"}
+	ARK_F_ShiraYuki						= {textureFile = "gfx/models/portraits/Custom/ARK_ShiraYuki.dds"}
 	ARK_F_Hibiscus							= {textureFile = "gfx/models/portraits/Custom/ARK_Hibiscus.dds"}
 	ARK_F_Lava								= {textureFile = "gfx/models/portraits/Custom/ARK_Lava.dds"}
 	ARK_F_Beagle							= {textureFile = "gfx/models/portraits/Custom/ARK_Beagle.dds"}
 	ARK_F_Fen								= {textureFile = "gfx/models/portraits/Custom/ARK_Fen.dds"}
-	ARK_F_Kroos								= {textureFile = "gfx/models/portraits/Custom/ARK_Kroos.dds"}
+	ARK_F_Kroos							= {textureFile = "gfx/models/portraits/Custom/ARK_Kroos.dds"}
 	ARK_F_Meteor							= {textureFile = "gfx/models/portraits/Custom/ARK_Meteor.dds"}
-	ARK_F_Meteor_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Meteor_S.dds"}
 	ARK_F_Estelle							= {textureFile = "gfx/models/portraits/Custom/ARK_Estelle.dds"}
-	ARK_F_Estelle_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Estelle_S.dds"}
-	ARK_F_Ptilopsis							= {textureFile = "gfx/models/portraits/Custom/ARK_Ptilopsis.dds"}
-	ARK_F_Ptilopsis_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Ptilopsis_S.dds"}
+	ARK_F_Ptilopsis						= {textureFile = "gfx/models/portraits/Custom/ARK_Ptilopsis.dds"}
 	ARK_F_BluePoison						= {textureFile = "gfx/models/portraits/Custom/ARK_BluePoison.dds"}
-	ARK_F_BluePoison_S						= {textureFile = "gfx/models/portraits/Custom/ARK_BluePoison_S.dds"}
-	ARK_F_Dobermann							= {textureFile = "gfx/models/portraits/Custom/ARK_Dobermann.dds"}
-	ARK_F_Dobermann_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Dobermann_S.dds"}
+	ARK_F_Dobermann						= {textureFile = "gfx/models/portraits/Custom/ARK_Dobermann.dds"}
 	ARK_F_May								= {textureFile = "gfx/models/portraits/Custom/ARK_May.dds"}
-	ARK_F_May_S								= {textureFile = "gfx/models/portraits/Custom/ARK_May_S.dds"}
-	ARK_F_Ifrit								= {textureFile = "gfx/models/portraits/Custom/ARK_Ifrit.dds"}
-	ARK_F_Ifrit_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Ifrit_S.dds"}
+	ARK_F_Ifrit							= {textureFile = "gfx/models/portraits/Custom/ARK_Ifrit.dds"}
 	ARK_F_Astgenne							= {textureFile = "gfx/models/portraits/Custom/ARK_Astgenne.dds"}
-	ARK_F_Astgenne_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Astgenne_S.dds"}
-	ARK_F_Hoshiguma							= {textureFile = "gfx/models/portraits/Custom/ARK_Hoshiguma.dds"}
-	ARK_F_Hoshiguma_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Hoshiguma_S.dds"}
-	ARK_F_Beehunter							= {textureFile = "gfx/models/portraits/Custom/ARK_Beehunter.dds"}
-	ARK_F_Beehunter_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Beehunter_S.dds"}
+	ARK_F_Hoshiguma						= {textureFile = "gfx/models/portraits/Custom/ARK_Hoshiguma.dds"}
+	ARK_F_Beehunter						= {textureFile = "gfx/models/portraits/Custom/ARK_Beehunter.dds"}
 	ARK_F_Lappland							= {textureFile = "gfx/models/portraits/Custom/ARK_Lappland.dds"}
-	ARK_F_Lappland_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Lappland_S.dds"}
 	ARK_F_Haze								= {textureFile = "gfx/models/portraits/Custom/ARK_Haze.dds"}
-	ARK_F_Haze_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Haze_S.dds"}
 	ARK_F_Specter							= {textureFile = "gfx/models/portraits/Custom/ARK_Specter.dds"}
-	ARK_F_Specter_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Specter_S.dds"}
 	ARK_F_ProjektRed						= {textureFile = "gfx/models/portraits/Custom/ARK_ProjektRed.dds"}
-	ARK_F_ProjektRed_S						= {textureFile = "gfx/models/portraits/Custom/ARK_ProjektRed_S.dds"}
 	ARK_F_Provence							= {textureFile = "gfx/models/portraits/Custom/ARK_Provence.dds"}
-	ARK_F_Provence_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Provence_S.dds"}
 	ARK_F_Shining							= {textureFile = "gfx/models/portraits/Custom/ARK_Shining.dds"}
-	ARK_F_Shining_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Shining_S.dds"}
-	ARK_F_Nearl								= {textureFile = "gfx/models/portraits/Custom/ARK_Nearl.dds"}
-	ARK_F_Nearl_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Nearl_S.dds"}
-	ARK_F_Scavenger							= {textureFile = "gfx/models/portraits/Custom/ARK_Scavenger.dds"}
-	ARK_F_Scavenger_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Scavenger_S.dds"}
-	ARK_F_Cuora								= {textureFile = "gfx/models/portraits/Custom/ARK_Cuora.dds"}
-	ARK_F_Cuora_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Cuora_S.dds"}
+	ARK_F_Nearl							= {textureFile = "gfx/models/portraits/Custom/ARK_Nearl.dds"}
+	ARK_F_Scavenger						= {textureFile = "gfx/models/portraits/Custom/ARK_Scavenger.dds"}
+	ARK_F_Cuora							= {textureFile = "gfx/models/portraits/Custom/ARK_Cuora.dds"}
 	ARK_F_Myrtle							= {textureFile = "gfx/models/portraits/Custom/ARK_Myrtle.dds"}
-	ARK_F_Myrtle_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Myrtle_S.dds"}
-	ARK_F_Indra								= {textureFile = "gfx/models/portraits/Custom/ARK_Indra.dds"}
-	ARK_F_Indra_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Indra_S.dds"}
-	ARK_F_Firewatch							= {textureFile = "gfx/models/portraits/Custom/ARK_Firewatch.dds"}
-	ARK_F_Firewatch_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Firewatch_S.dds"}
+	ARK_F_Indra							= {textureFile = "gfx/models/portraits/Custom/ARK_Indra.dds"}
+	ARK_F_Firewatch						= {textureFile = "gfx/models/portraits/Custom/ARK_Firewatch.dds"}
 	ARK_F_Vulcan							= {textureFile = "gfx/models/portraits/Custom/ARK_Vulcan.dds"}
-	ARK_F_Vulcan_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Vulcan_S.dds"}
-	ARK_F_Nightmare							= {textureFile = "gfx/models/portraits/Custom/ARK_Nightmare.dds"}
-	ARK_F_Nightmare_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Nightmare_S.dds"}
+	ARK_F_Nightmare						= {textureFile = "gfx/models/portraits/Custom/ARK_Nightmare.dds"}
 	ARK_F_Skyfire							= {textureFile = "gfx/models/portraits/Custom/ARK_Skyfire.dds"}
-	ARK_F_Skyfire_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Skyfire_S.dds"}
 	ARK_F_Warfarin							= {textureFile = "gfx/models/portraits/Custom/ARK_Warfarin.dds"}
-	ARK_F_Warfarin_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Warfarin_S.dds"}
 	ARK_F_Cliffheart						= {textureFile = "gfx/models/portraits/Custom/ARK_Cliffheart.dds"}
-	ARK_F_Cliffheart_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Cliffheart_S.dds"}
 	ARK_F_Pramanix							= {textureFile = "gfx/models/portraits/Custom/ARK_Pramanix.dds"}
-	ARK_F_Pramanix_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Pramanix_S.dds"}
 	ARK_F_Nightingale						= {textureFile = "gfx/models/portraits/Custom/ARK_Nightingale.dds"}
-	ARK_F_Nightingale_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Nightingale_S.dds"}
 	ARK_F_Eyjafjalla						= {textureFile = "gfx/models/portraits/Custom/ARK_Eyjafjalla.dds"}
-	ARK_F_Eyjafjalla_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Eyjafjalla_S.dds"}
 	ARK_F_Perfumer							= {textureFile = "gfx/models/portraits/Custom/ARK_Perfumer.dds"}
-	ARK_F_Perfumer_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Perfumer_S.dds"}
 	ARK_F_Earthspirit						= {textureFile = "gfx/models/portraits/Custom/ARK_Earthspirit.dds"}
-	ARK_F_Earthspirit_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Earthspirit_S.dds"}
 	ARK_F_Mousse							= {textureFile = "gfx/models/portraits/Custom/ARK_Mousse.dds"}
-	ARK_F_Mousse_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Mousse_S.dds"}
 	ARK_F_Gavial							= {textureFile = "gfx/models/portraits/Custom/ARK_Gavial.dds"}
-	ARK_F_Gavial_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Gavial_S.dds"}
 	ARK_F_Vermeil							= {textureFile = "gfx/models/portraits/Custom/ARK_Vermeil.dds"}
-	ARK_F_Vermeil_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Vermeil_S.dds"}
-	ARK_F_Plume								= {textureFile = "gfx/models/portraits/Custom/ARK_Plume.dds"}
-	ARK_F_Frostleaf							= {textureFile = "gfx/models/portraits/Custom/ARK_Frostleaf.dds"}
-	ARK_F_Frostleaf_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Frostleaf_S.dds"}
-	ARK_F_Truth								= {textureFile = "gfx/models/portraits/Custom/ARK_Truth.dds"}
-	ARK_F_Truth_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Truth_S.dds"}
+	ARK_F_Plume							= {textureFile = "gfx/models/portraits/Custom/ARK_Plume.dds"}
+	ARK_F_Frostleaf						= {textureFile = "gfx/models/portraits/Custom/ARK_Frostleaf.dds"}
+	ARK_F_Truth							= {textureFile = "gfx/models/portraits/Custom/ARK_Truth.dds"}
 	ARK_F_Gumi								= {textureFile = "gfx/models/portraits/Custom/ARK_Gumi.dds"}
-	ARK_F_Gumi_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Gumi_S.dds"}
 	ARK_F_Poca								= {textureFile = "gfx/models/portraits/Custom/ARK_Poca.dds"}
-	ARK_F_Poca_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Poca_S.dds"}
-	ARK_F_Croissant							= {textureFile = "gfx/models/portraits/Custom/ARK_Croissant.dds"}
-	ARK_F_Croissant_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Croissant_S.dds"}
-	ARK_F_Saria								= {textureFile = "gfx/models/portraits/Custom/ARK_Saria.dds"}
-	ARK_F_Saria_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Saria_S.dds"}
+	ARK_F_Croissant						= {textureFile = "gfx/models/portraits/Custom/ARK_Croissant.dds"}
+	ARK_F_Saria							= {textureFile = "gfx/models/portraits/Custom/ARK_Saria.dds"}
 	ARK_F_Platinum							= {textureFile = "gfx/models/portraits/Custom/ARK_Platinum.dds"}
-	ARK_F_Platinum_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Platinum_S.dds"}
 	ARK_F_Melantha							= {textureFile = "gfx/models/portraits/Custom/ARK_Melantha.dds"}
 	ARK_F_Cardigan							= {textureFile = "gfx/models/portraits/Custom/ARK_Cardigan.dds"}
 	ARK_F_Mostima							= {textureFile = "gfx/models/portraits/Custom/ARK_Mostima.dds"}
-	ARK_F_Mostima_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Mostima_S.dds"}
-	ARK_F_Kafka								= {textureFile = "gfx/models/portraits/Custom/ARK_Kafka.dds"}
-	ARK_F_Kafka_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Kafka_S.dds"}
-	ARK_F_Manticore							= {textureFile = "gfx/models/portraits/Custom/ARK_Manticore.dds"}
-	ARK_F_Manticore_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Manticore_S.dds"}
+	ARK_F_Kafka							= {textureFile = "gfx/models/portraits/Custom/ARK_Kafka.dds"}
+	ARK_F_Manticore						= {textureFile = "gfx/models/portraits/Custom/ARK_Manticore.dds"}
 	ARK_F_Andreana							= {textureFile = "gfx/models/portraits/Custom/ARK_Andreana.dds"}
-	ARK_F_Andreana_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Andreana_S.dds"}
-	ARK_F_Meteorite							= {textureFile = "gfx/models/portraits/Custom/ARK_Meteorite.dds"}
-	ARK_F_Meteorite_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Meteorite_S.dds"}
-	ARK_F_Grani								= {textureFile = "gfx/models/portraits/Custom/ARK_Grani.dds"}
-	ARK_F_Grani_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Grani_S.dds"}
+	ARK_F_Meteorite						= {textureFile = "gfx/models/portraits/Custom/ARK_Meteorite.dds"}
+	ARK_F_Grani							= {textureFile = "gfx/models/portraits/Custom/ARK_Grani.dds"}
 	ARK_F_Bagpipe							= {textureFile = "gfx/models/portraits/Custom/ARK_Bagpipe.dds"}
-	ARK_F_Bagpipe_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Bagpipe_S.dds"}
 	ARK_F_Savage							= {textureFile = "gfx/models/portraits/Custom/ARK_Savage.dds"}
-	ARK_F_Savage_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Savage_S.dds"}
 	ARK_F_Jessica							= {textureFile = "gfx/models/portraits/Custom/ARK_Jessica.dds"}
-	ARK_F_Jessica_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Jessica_S.dds"}
 	ARK_F_Rope								= {textureFile = "gfx/models/portraits/Custom/ARK_Rope.dds"}
-	ARK_F_Rope_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Rope_S.dds"}
 	ARK_F_Gravel							= {textureFile = "gfx/models/portraits/Custom/ARK_Gravel.dds"}
-	ARK_F_Gravel_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Gravel_S.dds"}
 	ARK_F_Vanilla							= {textureFile = "gfx/models/portraits/Custom/ARK_Vanilla.dds"}
 	ARK_F_FEater							= {textureFile = "gfx/models/portraits/Custom/ARK_FEater.dds"}
-	ARK_F_FEater_S							= {textureFile = "gfx/models/portraits/Custom/ARK_FEater_S.dds"}
-	ARK_F_Mayer								= {textureFile = "gfx/models/portraits/Custom/ARK_Mayer.dds"}
-	ARK_F_Mayer_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Mayer_S.dds"}
+	ARK_F_Mayer							= {textureFile = "gfx/models/portraits/Custom/ARK_Mayer.dds"}
 	ARK_F_WaaiFu							= {textureFile = "gfx/models/portraits/Custom/ARK_WaaiFu.dds"}
-	ARK_F_WaaiFu_S							= {textureFile = "gfx/models/portraits/Custom/ARK_WaaiFu_S.dds"}
 	ARK_F_Magallan							= {textureFile = "gfx/models/portraits/Custom/ARK_Magallan.dds"}
-	ARK_F_Magallan_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Magallan_S.dds"}
 	ARK_F_Bibeak							= {textureFile = "gfx/models/portraits/Custom/ARK_Bibeak.dds"}
-	ARK_F_Bibeak_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Bibeak_S.dds"}
 	ARK_F_Shamare							= {textureFile = "gfx/models/portraits/Custom/ARK_Shamare.dds"}
-	ARK_F_Shamare_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Shamare_S.dds"}
 	ARK_F_Podenco							= {textureFile = "gfx/models/portraits/Custom/ARK_Podenco.dds"}
-	ARK_F_Podenco_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Podenco_S.dds"}
 	ARK_F_Durnar							= {textureFile = "gfx/models/portraits/Custom/ARK_Durnar.dds"}
-	ARK_F_Durnar_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Durnar_S.dds"}
 	ARK_F_Reed								= {textureFile = "gfx/models/portraits/Custom/ARK_Reed.dds"}
-	ARK_F_Reed_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Reed_S.dds"}
-	ARK_F_Skadi								= {textureFile = "gfx/models/portraits/Custom/ARK_Skadi.dds"}
-	ARK_F_Skadi_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Skadi_S.dds"}
+	ARK_F_Skadi							= {textureFile = "gfx/models/portraits/Custom/ARK_Skadi.dds"}
 	ARK_F_Whislash							= {textureFile = "gfx/models/portraits/Custom/ARK_Whislash.dds"}
-	ARK_F_Whislash_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Whislash_S.dds"}
 	ARK_F_Astesia							= {textureFile = "gfx/models/portraits/Custom/ARK_Astesia.dds"}
-	ARK_F_Astesia_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Astesia_S.dds"}
 	ARK_F_Breeze							= {textureFile = "gfx/models/portraits/Custom/ARK_Breeze.dds"}
-	ARK_F_Breeze_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Breeze_S.dds"}
 	ARK_F_Shaw								= {textureFile = "gfx/models/portraits/Custom/ARK_Shaw.dds"}
-	ARK_F_Shaw_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Shaw_S.dds"}
 	ARK_F_Orchid							= {textureFile = "gfx/models/portraits/Custom/ARK_Orchid.dds"}
 	ARK_F_Popukar							= {textureFile = "gfx/models/portraits/Custom/ARK_Popukar.dds"}
 	ARK_F_Catapult							= {textureFile = "gfx/models/portraits/Custom/ARK_Catapult.dds"}
-	ARK_F_Matoimaru							= {textureFile = "gfx/models/portraits/Custom/ARK_Matoimaru.dds"}
-	ARK_F_Matoimaru_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Matoimaru_S.dds"}
-	ARK_F_Vigna								= {textureFile = "gfx/models/portraits/Custom/ARK_Vigna.dds"}
-	ARK_F_Vigna_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Vigna_S.dds"}
+	ARK_F_Matoimaru						= {textureFile = "gfx/models/portraits/Custom/ARK_Matoimaru.dds"}
+	ARK_F_Vigna							= {textureFile = "gfx/models/portraits/Custom/ARK_Vigna.dds"}
 	ARK_F_Angelina							= {textureFile = "gfx/models/portraits/Custom/ARK_Angelina.dds"}
-	ARK_F_Angelina_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Angelina_S.dds"}
 	ARK_F_Sussurro							= {textureFile = "gfx/models/portraits/Custom/ARK_Sussurro.dds"}
-	ARK_F_Sussurro_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Sussurro_S.dds"}
 	ARK_F_Cutter							= {textureFile = "gfx/models/portraits/Custom/ARK_Cutter.dds"}
-	ARK_F_Cutter_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Cutter_S.dds"}
 	ARK_F_Ambriel							= {textureFile = "gfx/models/portraits/Custom/ARK_Ambriel.dds"}
-	ARK_F_Ambriel_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Ambriel_S.dds"}
-	ARK_F_Heavyrain							= {textureFile = "gfx/models/portraits/Custom/ARK_Heavyrain.dds"}
-	ARK_F_Heavyrain_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Heavyrain_S.dds"}
-	ARK_F_Leizi								= {textureFile = "gfx/models/portraits/Custom/ARK_Leizi.dds"}
-	ARK_F_Leizi_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Leizi_S.dds"}
-	ARK_F_Swire								= {textureFile = "gfx/models/portraits/Custom/ARK_Swire.dds"}
-	ARK_F_Swire_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Swire_S.dds"}
+	ARK_F_Heavyrain						= {textureFile = "gfx/models/portraits/Custom/ARK_Heavyrain.dds"}
+	ARK_F_Leizi							= {textureFile = "gfx/models/portraits/Custom/ARK_Leizi.dds"}
+	ARK_F_Swire							= {textureFile = "gfx/models/portraits/Custom/ARK_Swire.dds"}
 	ARK_F_Mudrock							= {textureFile = "gfx/models/portraits/Custom/ARK_Mudrock.dds"}
-	ARK_F_Mudrock_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Mudrock_S.dds"}
 	ARK_F_Glaucus							= {textureFile = "gfx/models/portraits/Custom/ARK_Glaucus.dds"}
-	ARK_F_Glaucus_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Glaucus_S.dds"}
-	ARK_F_Click								= {textureFile = "gfx/models/portraits/Custom/ARK_Click.dds"}
-	ARK_F_Click_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Click_S.dds"}
+	ARK_F_Click							= {textureFile = "gfx/models/portraits/Custom/ARK_Click.dds"}
 	ARK_F_Archetto							= {textureFile = "gfx/models/portraits/Custom/ARK_Archetto.dds"}
-	ARK_F_Archetto_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Archetto_S.dds"}
 	ARK_F_Sideroca							= {textureFile = "gfx/models/portraits/Custom/ARK_Sideroca.dds"}
-	ARK_F_Sideroca_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Sideroca_S.dds"}
-	ARK_F_Scene								= {textureFile = "gfx/models/portraits/Custom/ARK_Scene.dds"}
-	ARK_F_Scene_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Scene_S.dds"}
-	ARK_F_Utage								= {textureFile = "gfx/models/portraits/Custom/ARK_Utage.dds"}
-	ARK_F_Utage_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Utage_S.dds"}
+	ARK_F_Scene							= {textureFile = "gfx/models/portraits/Custom/ARK_Scene.dds"}
+	ARK_F_Utage							= {textureFile = "gfx/models/portraits/Custom/ARK_Utage.dds"}
 	ARK_F_Iris								= {textureFile = "gfx/models/portraits/Custom/ARK_Iris.dds"}
-	ARK_F_Iris_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Iris_S.dds"}
 	ARK_F_Schwarz							= {textureFile = "gfx/models/portraits/Custom/ARK_Schwarz.dds"}
-	ARK_F_Schwarz_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Schwarz_S.dds"}
-	ARK_F_Tsukinogi							= {textureFile = "gfx/models/portraits/Custom/ARK_Tsukinogi.dds"}
-	ARK_F_Tsukinogi_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Tsukinogi_S.dds"}
+	ARK_F_Tsukinogi						= {textureFile = "gfx/models/portraits/Custom/ARK_Tsukinogi.dds"}
 	ARK_F_Beeswax							= {textureFile = "gfx/models/portraits/Custom/ARK_Beeswax.dds"}
-	ARK_F_Beeswax_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Beeswax_S.dds"}
 	ARK_F_Folinic							= {textureFile = "gfx/models/portraits/Custom/ARK_Folinic.dds"}
-	ARK_F_Folinic_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Folinic_S.dds"}
 	ARK_F_Jackie							= {textureFile = "gfx/models/portraits/Custom/ARK_Jackie.dds"}
-	ARK_F_Jackie_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Jackie_S.dds"}
 	ARK_F_Ceylon							= {textureFile = "gfx/models/portraits/Custom/ARK_Ceylon.dds"}
-	ARK_F_Ceylon_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Ceylon_S.dds"}
-	ARK_F_Surtr								= {textureFile = "gfx/models/portraits/Custom/ARK_Surtr.dds"}
-	ARK_F_Surtr_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Surtr_S.dds"}
+	ARK_F_Surtr							= {textureFile = "gfx/models/portraits/Custom/ARK_Surtr.dds"}
 	ARK_F_Suzuran							= {textureFile = "gfx/models/portraits/Custom/ARK_Suzuran.dds"}
-	ARK_F_Suzuran_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Suzuran_S.dds"}
 	ARK_F_Saga								= {textureFile = "gfx/models/portraits/Custom/ARK_Saga.dds"}
-	ARK_F_Saga_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Saga_S.dds"}
-	ARK_F_Toddifons							= {textureFile = "gfx/models/portraits/Custom/ARK_Toddifons.dds"}
-	ARK_F_Toddifons_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Toddifons_S.dds"}
-	ARK_F_April								= {textureFile = "gfx/models/portraits/Custom/ARK_April.dds"}
-	ARK_F_April_S							= {textureFile = "gfx/models/portraits/Custom/ARK_April_S.dds"}
+	ARK_F_Toddifons						= {textureFile = "gfx/models/portraits/Custom/ARK_Toddifons.dds"}
+	ARK_F_April							= {textureFile = "gfx/models/portraits/Custom/ARK_April.dds"}
 	ARK_F_Aciddrop							= {textureFile = "gfx/models/portraits/Custom/ARK_Aciddrop.dds"}
-	ARK_F_Aciddrop_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Aciddrop_S.dds"}
 	ARK_F_GreyThroat						= {textureFile = "gfx/models/portraits/Custom/ARK_GreyThroat.dds"}
-	ARK_F_GreyThroat_S						= {textureFile = "gfx/models/portraits/Custom/ARK_GreyThroat_S.dds"}
 	ARK_F_Bena								= {textureFile = "gfx/models/portraits/Custom/ARK_Bena.dds"}
-	ARK_F_Bena_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Bena_S.dds"}
 	ARK_F_Asbestos							= {textureFile = "gfx/models/portraits/Custom/ARK_Asbestos.dds"}
-	ARK_F_Asbestos_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Asbestos_S.dds"}
 	ARK_F_Sesa								= {textureFile = "gfx/models/portraits/Custom/ARK_Sesa.dds"}
-	ARK_F_Sesa_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Sesa_S.dds"}
 	ARK_F_Bubble							= {textureFile = "gfx/models/portraits/Custom/ARK_Bubble.dds"}
-	ARK_F_Bubble_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Bubble_S.dds"}
 	ARK_F_Snowsant							= {textureFile = "gfx/models/portraits/Custom/ARK_Snowsant.dds"}
-	ARK_F_Snowsant_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Snowsant_S.dds"}
 	ARK_F_Purestream						= {textureFile = "gfx/models/portraits/Custom/ARK_Purestream.dds"}
-	ARK_F_Purestream_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Purestream_S.dds"}
 	ARK_F_Mint								= {textureFile = "gfx/models/portraits/Custom/ARK_Mint.dds"}
-	ARK_F_Mint_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Mint_S.dds"}
-	ARK_F_Rosmontis							= {textureFile = "gfx/models/portraits/Custom/ARK_Rosmontis.dds"}
-	ARK_F_Rosmontis_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Rosmontis_S.dds"}
-	ARK_F_Weedy								= {textureFile = "gfx/models/portraits/Custom/ARK_Weedy.dds"}
-	ARK_F_Weedy_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Weedy_S.dds"}
+	ARK_F_Rosmontis						= {textureFile = "gfx/models/portraits/Custom/ARK_Rosmontis.dds"}
+	ARK_F_Weedy							= {textureFile = "gfx/models/portraits/Custom/ARK_Weedy.dds"}
 	ARK_F_Tuye								= {textureFile = "gfx/models/portraits/Custom/ARK_Tuye.dds"}
-	ARK_F_Tuye_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Tuye_S.dds"}
 	ARK_F_Absinthe							= {textureFile = "gfx/models/portraits/Custom/ARK_Absinthe.dds"}
-	ARK_F_Absinthe_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Absinthe_S.dds"}
 	ARK_F_Tomimi							= {textureFile = "gfx/models/portraits/Custom/ARK_Tomimi.dds"}
-	ARK_F_Tomimi_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Tomimi_S.dds"}
-	ARK_F_Flint								= {textureFile = "gfx/models/portraits/Custom/ARK_Flint.dds"}
-	ARK_F_Flint_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Flint_S.dds"}
+	ARK_F_Flint							= {textureFile = "gfx/models/portraits/Custom/ARK_Flint.dds"}
 	ARK_F_Eunectes							= {textureFile = "gfx/models/portraits/Custom/ARK_Eunectes.dds"}
-	ARK_F_Eunectes_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Eunectes_S.dds"}
-	ARK_F_Flametail							= {textureFile = "gfx/models/portraits/Custom/ARK_Flametail.dds"}
-	ARK_F_Flametail_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Flametail_S.dds"}
+	ARK_F_Flametail						= {textureFile = "gfx/models/portraits/Custom/ARK_Flametail.dds"}
 	ARK_F_LaPluma							= {textureFile = "gfx/models/portraits/Custom/ARK_LaPluma.dds"}
-	ARK_F_LaPluma_S							= {textureFile = "gfx/models/portraits/Custom/ARK_LaPluma_S.dds"}
 	ARK_F_Aurora							= {textureFile = "gfx/models/portraits/Custom/ARK_Aurora.dds"}
-	ARK_F_Aurora_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Aurora_S.dds"}
 	ARK_F_Blemishine						= {textureFile = "gfx/models/portraits/Custom/ARK_Blemishine.dds"}
-	ARK_F_Blemishine_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Blemishine_S.dds"}
-	ARK_F_Carnelian							= {textureFile = "gfx/models/portraits/Custom/ARK_Carnelian.dds"}
-	ARK_F_Carnelian_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Carnelian_S.dds"}
+	ARK_F_Carnelian						= {textureFile = "gfx/models/portraits/Custom/ARK_Carnelian.dds"}
 	ARK_F_Fartooth							= {textureFile = "gfx/models/portraits/Custom/ARK_Fartooth.dds"}
-	ARK_F_Fartooth_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Fartooth_S.dds"}
 	ARK_F_Ashlock							= {textureFile = "gfx/models/portraits/Custom/ARK_Ashlock.dds"}
-	ARK_F_Ashlock_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Ashlock_S.dds"}
 	ARK_F_Whisperain						= {textureFile = "gfx/models/portraits/Custom/ARK_Whisperain.dds"}
-	ARK_F_Whisperain_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Whisperain_S.dds"}
 	ARK_F_Pinecone							= {textureFile = "gfx/models/portraits/Custom/ARK_Pinecone.dds"}
-	ARK_F_Pinecone_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Pinecone_S.dds"}
 	ARK_F_Honeyberry						= {textureFile = "gfx/models/portraits/Custom/ARK_Honeyberry.dds"}
-	ARK_F_Honeyberry_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Honeyberry_S.dds"}
-	ARK_F_Robin								= {textureFile = "gfx/models/portraits/Custom/ARK_Robin.dds"}
-	ARK_F_Robin_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Robin_S.dds"}
-	ARK_F_Beanstalk							= {textureFile = "gfx/models/portraits/Custom/ARK_Beanstalk.dds"}
-	ARK_F_Beanstalk_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Beanstalk_S.dds"}
+	ARK_F_Robin							= {textureFile = "gfx/models/portraits/Custom/ARK_Robin.dds"}
+	ARK_F_Beanstalk						= {textureFile = "gfx/models/portraits/Custom/ARK_Beanstalk.dds"}
 	ARK_F_Ash								= {textureFile = "gfx/models/portraits/Custom/ARK_Ash.dds"}
-	ARK_F_Ash_S								= {textureFile = "gfx/models/portraits/Custom/ARK_Ash_S.dds"}
-	ARK_F_Blitz								= {textureFile = "gfx/models/portraits/Custom/ARK_Blitz.dds"}
-	ARK_F_Blitz_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Blitz_S.dds"}
-	ARK_F_Frost								= {textureFile = "gfx/models/portraits/Custom/ARK_Frost.dds"}
-	ARK_F_Frost_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Frost_S.dds"}
+	ARK_F_Blitz							= {textureFile = "gfx/models/portraits/Custom/ARK_Blitz.dds"}
+	ARK_F_Frost							= {textureFile = "gfx/models/portraits/Custom/ARK_Frost.dds"}
 	ARK_F_Indigo							= {textureFile = "gfx/models/portraits/Custom/ARK_Indigo.dds"}
-	ARK_F_Indigo_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Indigo_S.dds"}
 	ARK_F_Mulberry							= {textureFile = "gfx/models/portraits/Custom/ARK_Mulberry.dds"}
-	ARK_F_Mulberry_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Mulberry_S.dds"}
 	ARK_F_Gladiia							= {textureFile = "gfx/models/portraits/Custom/ARK_Gladiia.dds"}
-	ARK_F_Gladiia_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Gladiia_S.dds"}
 	ARK_F_Akafuyu							= {textureFile = "gfx/models/portraits/Custom/ARK_Akafuyu.dds"}
-	ARK_F_Akafuyu_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Akafuyu_S.dds"}
 	ARK_F_Kirara							= {textureFile = "gfx/models/portraits/Custom/ARK_Kirara.dds"}
-	ARK_F_Kirara_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Kirara_S.dds"}
 	ARK_F_Saileach							= {textureFile = "gfx/models/portraits/Custom/ARK_Saileach.dds"}
-	ARK_F_Saileach_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Saileach_S.dds"}
 	ARK_F_Roberta							= {textureFile = "gfx/models/portraits/Custom/ARK_Roberta.dds"}
-	ARK_F_Roberta_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Roberta_S.dds"}
 	ARK_F_Pallas							= {textureFile = "gfx/models/portraits/Custom/ARK_Pallas.dds"}
-	ARK_F_Pallas_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Pallas_S.dds"}
 	ARK_F_WildMane							= {textureFile = "gfx/models/portraits/Custom/ARK_WildMane.dds"}
-	ARK_F_WildMane_S						= {textureFile = "gfx/models/portraits/Custom/ARK_WildMane_S.dds"}
-	ARK_F_Durin								= {textureFile = "gfx/models/portraits/Custom/ARK_Durin.dds"}
+	ARK_F_Durin							= {textureFile = "gfx/models/portraits/Custom/ARK_Durin.dds"}
 	ARK_F_Yato								= {textureFile = "gfx/models/portraits/Custom/ARK_Yato.dds"}
 	ARK_F_Lava_G							= {textureFile = "gfx/models/portraits/Custom/ARK_Lava_G.dds"}
-	ARK_F_Lava_G_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Lava_G_S.dds"}
 	ARK_F_Skadi_G							= {textureFile = "gfx/models/portraits/Custom/ARK_Skadi_G.dds"}
-	ARK_F_Skadi_G_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Skadi_G_S.dds"}
 	ARK_F_Skadi_G_skin						= {textureFile = "gfx/models/portraits/Custom/ARK_Skadi_G_skin.dds"}
 	ARK_F_Chen_G							= {textureFile = "gfx/models/portraits/Custom/ARK_Chen_G.dds"}
-	ARK_F_Chen_G_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Chen_G_S.dds"}
 	ARK_F_Nearl_G							= {textureFile = "gfx/models/portraits/Custom/ARK_Nearl_G.dds"}
-	ARK_F_Nearl_G_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Nearl_G_S.dds"}
-	ARK_F_Ceobe								= {textureFile = "gfx/models/portraits/Custom/ARK_Ceobe.dds"}
-	ARK_F_Ceobe_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Ceobe_S.dds"}
+	ARK_F_Ceobe							= {textureFile = "gfx/models/portraits/Custom/ARK_Ceobe.dds"}
 	ARK_F_Nian								= {textureFile = "gfx/models/portraits/Custom/ARK_Nian.dds"}
-	ARK_F_Nian_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Nian_S.dds"}
 	ARK_F_Dusk								= {textureFile = "gfx/models/portraits/Custom/ARK_Dusk.dds"}
-	ARK_F_Dusk_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Dusk_S.dds"}
 	ARK_F_Pudding							= {textureFile = "gfx/models/portraits/Custom/ARK_Pudding.dds"}
-	ARK_F_Pudding_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Pudding_S.dds"}
-	ARK_F_Kjera								= {textureFile = "gfx/models/portraits/Custom/ARK_Kjera.dds"}
-	ARK_F_Kjera_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Kjera_S.dds"}
+	ARK_F_Kjera							= {textureFile = "gfx/models/portraits/Custom/ARK_Kjera.dds"}
 	ARK_F_Horn								= {textureFile = "gfx/models/portraits/Custom/ARK_Horn.dds"}
-	ARK_F_Horn_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Horn_S.dds"}
 	ARK_F_Dorothy							= {textureFile = "gfx/models/portraits/Custom/ARK_Dorothy.dds"}
-	ARK_F_Dorothy_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Dorothy_S.dds"}
 	ARK_F_Texas_G							= {textureFile = "gfx/models/portraits/Custom/ARK_Texas_G.dds"}
-	ARK_F_Texas_G_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Texas_G_S.dds"}
 	ARK_F_Yato_G							= {textureFile = "gfx/models/portraits/Custom/ARK_Yato_G.dds"}
-	ARK_F_Yato_G_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Yato_G_S.dds"}
 	ARK_F_Goldenglow						= {textureFile = "gfx/models/portraits/Custom/ARK_Goldenglow.dds"}
-	ARK_F_Goldenglow_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Goldenglow_S.dds"}
 	ARK_F_Lin								= {textureFile = "gfx/models/portraits/Custom/ARK_Lin.dds"}
-	ARK_F_Lin_S								= {textureFile = "gfx/models/portraits/Custom/ARK_Lin_S.dds"}
-	ARK_F_Hoolheyak							= {textureFile = "gfx/models/portraits/Custom/ARK_Hoolheyak.dds"}
-	ARK_F_Hoolheyak_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Hoolheyak_S.dds"}
+	ARK_F_Hoolheyak						= {textureFile = "gfx/models/portraits/Custom/ARK_Hoolheyak.dds"}
 	ARK_F_Ling								= {textureFile = "gfx/models/portraits/Custom/ARK_Ling.dds"}
-	ARK_F_Ling_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Ling_S.dds"}
-	ARK_F_Silence_G							= {textureFile = "gfx/models/portraits/Custom/ARK_Silence_G.dds"}
-	ARK_F_Silence_G_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Silence_G_S.dds"}
+	ARK_F_Silence_G						= {textureFile = "gfx/models/portraits/Custom/ARK_Silence_G.dds"}
 	ARK_F_Reed_G							= {textureFile = "gfx/models/portraits/Custom/ARK_Reed_G.dds"}
-	ARK_F_Reed_G_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Reed_G_S.dds"}
 	ARK_F_Penance							= {textureFile = "gfx/models/portraits/Custom/ARK_Penance.dds"}
-	ARK_F_Penance_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Penance_S.dds"}
-	ARK_F_Fiammetta							= {textureFile = "gfx/models/portraits/Custom/ARK_Fiammetta.dds"}
-	ARK_F_Fiammetta_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Fiammetta_S.dds"}
-	ARK_F_Heavysnow							= {textureFile = "gfx/models/portraits/Custom/ARK_Heavysnow.dds"}
-	ARK_F_Heavysnow_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Heavysnow_S.dds"}
-	ARK_F_Irene								= {textureFile = "gfx/models/portraits/Custom/ARK_Irene.dds"}
-	ARK_F_Irene_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Irene_S.dds"}
+	ARK_F_Fiammetta						= {textureFile = "gfx/models/portraits/Custom/ARK_Fiammetta.dds"}
+	ARK_F_Heavysnow						= {textureFile = "gfx/models/portraits/Custom/ARK_Heavysnow.dds"}
+	ARK_F_Irene							= {textureFile = "gfx/models/portraits/Custom/ARK_Irene.dds"}
 	ARK_F_Gavial_G							= {textureFile = "gfx/models/portraits/Custom/ARK_Gavial_G.dds"}
-	ARK_F_Gavial_G_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Gavial_G_S.dds"}
 	ARK_F_Qiubai							= {textureFile = "gfx/models/portraits/Custom/ARK_Qiubai.dds"}
-	ARK_F_Qiubai_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Qiubai_S.dds"}
 	ARK_F_Ines								= {textureFile = "gfx/models/portraits/Custom/ARK_Ines.dds"}
-	ARK_F_Ines_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Ines_S.dds"}
 	ARK_F_Muelsyse							= {textureFile = "gfx/models/portraits/Custom/ARK_Muelsyse.dds"}
-	ARK_F_Muelsyse_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Muelsyse_S.dds"}
 	ARK_F_Blacknight						= {textureFile = "gfx/models/portraits/Custom/ARK_Blacknight.dds"}
-	ARK_F_Blacknight_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Blacknight_S.dds"}
-	ARK_F_Cantabile							= {textureFile = "gfx/models/portraits/Custom/ARK_Cantabile.dds"}
-	ARK_F_Cantabile_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Cantabile_S.dds"}
+	ARK_F_Cantabile						= {textureFile = "gfx/models/portraits/Custom/ARK_Cantabile.dds"}
 	ARK_F_Highmore							= {textureFile = "gfx/models/portraits/Custom/ARK_Highmore.dds"}
-	ARK_F_Highmore_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Highmore_S.dds"}
-	ARK_F_Dagda								= {textureFile = "gfx/models/portraits/Custom/ARK_Dagda.dds"}
-	ARK_F_Dagda_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Dagda_S.dds"}
+	ARK_F_Dagda							= {textureFile = "gfx/models/portraits/Custom/ARK_Dagda.dds"}
 	ARK_F_WindChimes						= {textureFile = "gfx/models/portraits/Custom/ARK_WindChimes.dds"}
-	ARK_F_WindChimes_S						= {textureFile = "gfx/models/portraits/Custom/ARK_WindChimes_S.dds"}
 	ARK_F_Morgan							= {textureFile = "gfx/models/portraits/Custom/ARK_Morgan.dds"}
-	ARK_F_Morgan_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Morgan_S.dds"}
-	ARK_F_Kroos								= {textureFile = "gfx/models/portraits/Custom/ARK_Kroos.dds"}
-	ARK_F_Erato								= {textureFile = "gfx/models/portraits/Custom/ARK_Erato.dds"}
-	ARK_F_Erato_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Erato_S.dds"}
+	ARK_F_Kroos							= {textureFile = "gfx/models/portraits/Custom/ARK_Kroos.dds"}
+	ARK_F_Erato							= {textureFile = "gfx/models/portraits/Custom/ARK_Erato.dds"}
 	ARK_F_Lunacub							= {textureFile = "gfx/models/portraits/Custom/ARK_Lunacub.dds"}
-	ARK_F_Lunacub_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Lunacub_S.dds"}
 	ARK_F_Jieyun							= {textureFile = "gfx/models/portraits/Custom/ARK_Jieyun.dds"}
-	ARK_F_Jieyun_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Jieyun_S.dds"}
 	ARK_F_Melanite							= {textureFile = "gfx/models/portraits/Custom/ARK_Melanite.dds"}
-	ARK_F_Melanite_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Melanite_S.dds"}
 	ARK_F_Firewhistle						= {textureFile = "gfx/models/portraits/Custom/ARK_Firewhistle.dds"}
-	ARK_F_Firewhistle_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Firewhistle_S.dds"}
 	ARK_F_Cement							= {textureFile = "gfx/models/portraits/Custom/ARK_Cement.dds"}
-	ARK_F_Cement_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Cement_S.dds"}
 	ARK_F_Hibiscus_G						= {textureFile = "gfx/models/portraits/Custom/ARK_Hibiscus_G.dds"}
-	ARK_F_Hibiscus_G_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Hibiscus_G_S.dds"}
 	ARK_F_Paprika							= {textureFile = "gfx/models/portraits/Custom/ARK_Paprika.dds"}
-	ARK_F_Paprika_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Paprika_S.dds"}
 	ARK_F_NineColoredDeer					= {textureFile = "gfx/models/portraits/Custom/ARK_NineColoredDeer.dds"}
-	ARK_F_NineColoredDeer_S					= {textureFile = "gfx/models/portraits/Custom/ARK_NineColoredDeer_S.dds"}
 	ARK_F_Quercus							= {textureFile = "gfx/models/portraits/Custom/ARK_Quercus.dds"}
-	ARK_F_Quercus_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Quercus_S.dds"}
-	ARK_F_Heidi								= {textureFile = "gfx/models/portraits/Custom/ARK_Heidi.dds"}
-	ARK_F_Heidi_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Heidi_S.dds"}
+	ARK_F_Heidi							= {textureFile = "gfx/models/portraits/Custom/ARK_Heidi.dds"}
 	ARK_F_Proviso							= {textureFile = "gfx/models/portraits/Custom/ARK_Proviso.dds"}
-	ARK_F_Proviso_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Proviso_S.dds"}
 	ARK_F_Harmonie							= {textureFile = "gfx/models/portraits/Custom/ARK_Harmonie.dds"}
-	ARK_F_Harmonie_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Harmonie_S.dds"}
 	ARK_F_Kazemaru							= {textureFile = "gfx/models/portraits/Custom/ARK_Kazemaru.dds"}
-	ARK_F_Kazemaru_S						= {textureFile = "gfx/models/portraits/Custom/ARK_Kazemaru_S.dds"}
-	ARK_F_UOfficial							= {textureFile = "gfx/models/portraits/Custom/ARK_UOfficial.dds"}
+	ARK_F_UOfficial						= {textureFile = "gfx/models/portraits/Custom/ARK_UOfficial.dds"}
 	ARK_F_Quartz							= {textureFile = "gfx/models/portraits/Custom/ARK_Quartz.dds"}
-	ARK_F_Quartz_S							= {textureFile = "gfx/models/portraits/Custom/ARK_Quartz_S.dds"}
+	ARK_F_Spuria							= {textureFile = "gfx/models/portraits/Custom/ARK_Spuria.dds"}
+	ARK_F_Santalla							= {textureFile = "gfx/models/portraits/Custom/ARK_Santalla.dds"}
+	ARK_F_Typhon							= {textureFile = "gfx/models/portraits/Custom/ARK_Typhon.dds"}
+	ARK_F_Valarqvin						= {textureFile = "gfx/models/portraits/Custom/ARK_Valarqvin.dds"}
+	ARK_F_Poncirus							= {textureFile = "gfx/models/portraits/Custom/ARK_Poncirus.dds"}
+	ARK_F_Swire_G							= {textureFile = "gfx/models/portraits/Custom/ARK_Swire_G.dds"}
+	ARK_F_Eyjafjalla_G						= {textureFile = "gfx/models/portraits/Custom/ARK_Eyjafjalla_G.dds"}
+	ARK_F_Coldshot							= {textureFile = "gfx/models/portraits/Custom/ARK_Coldshot.dds"}
+	ARK_F_Almond							= {textureFile = "gfx/models/portraits/Custom/ARK_Almond.dds"}
+	ARK_F_Jessica_G						= {textureFile = "gfx/models/portraits/Custom/ARK_Jessica_G.dds"}
+	ARK_F_Delphine							= {textureFile = "gfx/models/portraits/Custom/ARK_Delphine.dds"}
+	ARK_F_Vendela							= {textureFile = "gfx/models/portraits/Custom/ARK_Vendela.dds"}
+	ARK_F_Caper							= {textureFile = "gfx/models/portraits/Custom/ARK_Caper.dds"}
+	ARK_F_Viviana							= {textureFile = "gfx/models/portraits/Custom/ARK_Viviana.dds"}
+	ARK_F_Virtuosa							= {textureFile = "gfx/models/portraits/Custom/ARK_Virtuosa.dds"}
+	ARK_F_LieXia							= {textureFile = "gfx/models/portraits/Custom/ARK_LieXia.dds"}
+	ARK_F_Degenbrecher						= {textureFile = "gfx/models/portraits/Custom/ARK_Degenbrecher.dds"}
+	ARK_F_Warmy							= {textureFile = "gfx/models/portraits/Custom/ARK_Warmy.dds"}
+	ARK_F_Ray								= {textureFile = "gfx/models/portraits/Custom/ARK_Ray.dds"}
+	ARK_F_GrainBuds						= {textureFile = "gfx/models/portraits/Custom/ARK_GrainBuds.dds"}
+	ARK_F_Shu								= {textureFile = "gfx/models/portraits/Custom/ARK_Shu.dds"}
+	ARK_F_Kestrel							= {textureFile = "gfx/models/portraits/Custom/ARK_Kestrel.dds"}
+	ARK_F_Iana								= {textureFile = "gfx/models/portraits/Custom/ARK_Iana.dds"}
+	ARK_F_Ela								= {textureFile = "gfx/models/portraits/Custom/ARK_Ela.dds"}
+	ARK_F_Lutonada							= {textureFile = "gfx/models/portraits/Custom/ARK_Lutonada.dds"}
+	ARK_F_Aroma							= {textureFile = "gfx/models/portraits/Custom/ARK_Aroma.dds"}
+	ARK_F_Ascalon							= {textureFile = "gfx/models/portraits/Custom/ARK_Ascalon.dds"}
+	ARK_F_Fen_G							= {textureFile = "gfx/models/portraits/Custom/ARK_Fen_G.dds"}
+	ARK_F_Theresia 						= {textureFile = "gfx/models/portraits/Custom/ARK_Theresia.dds"}
+	ARK_F_Wisadel							= {textureFile = "gfx/models/portraits/Custom/ARK_Wisadel.dds"}
+	ARK_F_Underflow						= {textureFile = "gfx/models/portraits/Custom/ARK_Underflow.dds"}
+	ARK_F_Lucilla							= {textureFile = "gfx/models/portraits/Custom/ARK_Lucilla.dds"}
+	ARK_F_Nymph							= {textureFile = "gfx/models/portraits/Custom/ARK_Nymph.dds"}
+	ARK_F_Papyrus							= {textureFile = "gfx/models/portraits/Custom/ARK_Papyrus.dds"}
+	ARK_F_Narantuya						= {textureFile = "gfx/models/portraits/Custom/ARK_Narantuya.dds"}
+	ARK_F_Pepe								= {textureFile = "gfx/models/portraits/Custom/ARK_Pepe.dds"}
+	ARK_F_Marcille							= {textureFile = "gfx/models/portraits/Custom/ARK_Marcille.dds"}
+	ARK_F_Catherine						= {textureFile = "gfx/models/portraits/Custom/ARK_Catherine.dds"}
+	ARK_F_VinaVictoria						= {textureFile = "gfx/models/portraits/Custom/ARK_VinaVictoria.dds"}
+	ARK_F_Contrail							= {textureFile = "gfx/models/portraits/Custom/ARK_Contrail.dds"}
+	ARK_F_Philae							= {textureFile = "gfx/models/portraits/Custom/ARK_Philae.dds"}
+	ARK_F_Crownslayer						= {textureFile = "gfx/models/portraits/Custom/ARK_Crownslayer.dds"}
+	ARK_F_Vulpisfoglia						= {textureFile = "gfx/models/portraits/Custom/ARK_Vulpisfoglia.dds"}
+	ARK_F_Lappland_G						= {textureFile = "gfx/models/portraits/Custom/ARK_Lappland_G.dds"}
+	ARK_F_RoseSalt							= {textureFile = "gfx/models/portraits/Custom/ARK_RoseSalt.dds"}
+	ARK_F_Tecno							= {textureFile = "gfx/models/portraits/Custom/ARK_Tecno.dds"}
+
 
 	ARK_npc_021								= {textureFile = "gfx/models/portraits/Custom/ARK_npc_021.dds"}
 	ARK_npc_022								= {textureFile = "gfx/models/portraits/Custom/ARK_npc_022.dds"}
@@ -571,6 +390,37 @@ portraits = {
 	ARK_npc_368								= {textureFile = "gfx/models/portraits/Custom/ARK_npc_368.dds"}
 	ARK_npc_460								= {textureFile = "gfx/models/portraits/Custom/ARK_npc_460.dds"}
 	ARK_npc_462								= {textureFile = "gfx/models/portraits/Custom/ARK_npc_462.dds"}
+
+	ARK_npc_F_269								= {textureFile = "gfx/models/portraits/Custom/ARK_npc_F_269.dds"}
+	ARK_npc_F_276								= {textureFile = "gfx/models/portraits/Custom/ARK_npc_F_276.dds"}
+	ARK_npc_F_280								= {textureFile = "gfx/models/portraits/Custom/ARK_npc_F_280.dds"}
+	ARK_npc_F_418								= {textureFile = "gfx/models/portraits/Custom/ARK_npc_F_418.dds"}
+	ARK_npc_F_497								= {textureFile = "gfx/models/portraits/Custom/ARK_npc_F_497.dds"}
+	ARK_npc_F_700								= {textureFile = "gfx/models/portraits/Custom/ARK_npc_F_700.dds"}
+	ARK_npc_F_963								= {textureFile = "gfx/models/portraits/Custom/ARK_npc_F_963.dds"}
+	ARK_npc_F_967								= {textureFile = "gfx/models/portraits/Custom/ARK_npc_F_967.dds"}
+	ARK_npc_F_1043								= {textureFile = "gfx/models/portraits/Custom/ARK_npc_F_1043.dds"}
+	ARK_npc_F_1129								= {textureFile = "gfx/models/portraits/Custom/ARK_npc_F_1129.dds"}
+	ARK_npc_F_1130								= {textureFile = "gfx/models/portraits/Custom/ARK_npc_F_1130.dds"}
+	ARK_npc_F_1186								= {textureFile = "gfx/models/portraits/Custom/ARK_npc_F_1186.dds"}
+	ARK_npc_F_1394								= {textureFile = "gfx/models/portraits/Custom/ARK_npc_F_1394.dds"}
+	ARK_npc_F_1562								= {textureFile = "gfx/models/portraits/Custom/ARK_npc_F_1562.dds"}
+
+	ARK_npc_M_270								= {textureFile = "gfx/models/portraits/Custom/ARK_npc_M_270.dds"}
+	ARK_npc_M_277								= {textureFile = "gfx/models/portraits/Custom/ARK_npc_M_277.dds"}
+	ARK_npc_M_279								= {textureFile = "gfx/models/portraits/Custom/ARK_npc_M_279.dds"}
+	ARK_npc_M_417								= {textureFile = "gfx/models/portraits/Custom/ARK_npc_M_417.dds"}
+	ARK_npc_M_496								= {textureFile = "gfx/models/portraits/Custom/ARK_npc_M_496.dds"}
+	ARK_npc_M_701								= {textureFile = "gfx/models/portraits/Custom/ARK_npc_M_701.dds"}
+	ARK_npc_M_962								= {textureFile = "gfx/models/portraits/Custom/ARK_npc_M_962.dds"}
+	ARK_npc_M_966								= {textureFile = "gfx/models/portraits/Custom/ARK_npc_M_966.dds"}
+	ARK_npc_M_1042								= {textureFile = "gfx/models/portraits/Custom/ARK_npc_M_1042.dds"}
+	ARK_npc_M_1131								= {textureFile = "gfx/models/portraits/Custom/ARK_npc_M_1131.dds"}
+	ARK_npc_M_1132								= {textureFile = "gfx/models/portraits/Custom/ARK_npc_M_1132.dds"}
+	ARK_npc_M_1185								= {textureFile = "gfx/models/portraits/Custom/ARK_npc_M_1185.dds"}
+	ARK_npc_M_1392								= {textureFile = "gfx/models/portraits/Custom/ARK_npc_M_1392.dds"}
+	ARK_npc_M_1563								= {textureFile = "gfx/models/portraits/Custom/ARK_npc_M_1563.dds"}
+
 }
 
 portrait_groups = {
@@ -605,6 +455,20 @@ portrait_groups = {
 					ARK_npc_365
 					ARK_npc_366
 					ARK_npc_460
+					ARK_npc_M_270
+					ARK_npc_M_277
+					ARK_npc_M_279
+					ARK_npc_M_417
+					ARK_npc_M_496
+					ARK_npc_M_701
+					ARK_npc_M_962
+					ARK_npc_M_966
+					ARK_npc_M_1042
+					ARK_npc_M_1131
+					ARK_npc_M_1132
+					ARK_npc_M_1185
+					ARK_npc_M_1392
+					ARK_npc_M_1563
 				}
 			}
 			add = {
@@ -631,6 +495,20 @@ portrait_groups = {
 					ARK_npc_367
 					ARK_npc_368
 					ARK_npc_462
+					ARK_npc_F_269
+					ARK_npc_F_276
+					ARK_npc_F_280
+					ARK_npc_F_418
+					ARK_npc_F_497
+					ARK_npc_F_700
+					ARK_npc_F_963
+					ARK_npc_F_967
+					ARK_npc_F_1043
+					ARK_npc_F_1129
+					ARK_npc_F_1130
+					ARK_npc_F_1186
+					ARK_npc_F_1394
+					ARK_npc_F_1562
 				}
 			}
 		}
@@ -656,6 +534,20 @@ portrait_groups = {
 					ARK_npc_367
 					ARK_npc_368
 					ARK_npc_462
+					ARK_npc_M_270
+					ARK_npc_M_277
+					ARK_npc_M_279
+					ARK_npc_M_417
+					ARK_npc_M_496
+					ARK_npc_M_701
+					ARK_npc_M_962
+					ARK_npc_M_966
+					ARK_npc_M_1042
+					ARK_npc_M_1131
+					ARK_npc_M_1132
+					ARK_npc_M_1185
+					ARK_npc_M_1392
+					ARK_npc_M_1563
 				}
 			}
 			add = {
@@ -681,6 +573,20 @@ portrait_groups = {
 					ARK_npc_365
 					ARK_npc_366
 					ARK_npc_460
+					ARK_npc_F_269
+					ARK_npc_F_276
+					ARK_npc_F_280
+					ARK_npc_F_418
+					ARK_npc_F_497
+					ARK_npc_F_700
+					ARK_npc_F_963
+					ARK_npc_F_967
+					ARK_npc_F_1043
+					ARK_npc_F_1129
+					ARK_npc_F_1130
+					ARK_npc_F_1186
+					ARK_npc_F_1394
+					ARK_npc_F_1562
 				}
 			}
 		}
@@ -705,6 +611,20 @@ portrait_groups = {
 					ARK_npc_367
 					ARK_npc_368
 					ARK_npc_462
+					ARK_npc_M_270
+					ARK_npc_M_277
+					ARK_npc_M_279
+					ARK_npc_M_417
+					ARK_npc_M_496
+					ARK_npc_M_701
+					ARK_npc_M_962
+					ARK_npc_M_966
+					ARK_npc_M_1042
+					ARK_npc_M_1131
+					ARK_npc_M_1132
+					ARK_npc_M_1185
+					ARK_npc_M_1392
+					ARK_npc_M_1563
 				}
 			}
 			add = {
@@ -729,6 +649,20 @@ portrait_groups = {
 					ARK_npc_365
 					ARK_npc_366
 					ARK_npc_460
+					ARK_npc_F_269
+					ARK_npc_F_276
+					ARK_npc_F_280
+					ARK_npc_F_418
+					ARK_npc_F_497
+					ARK_npc_F_700
+					ARK_npc_F_963
+					ARK_npc_F_967
+					ARK_npc_F_1043
+					ARK_npc_F_1129
+					ARK_npc_F_1130
+					ARK_npc_F_1186
+					ARK_npc_F_1394
+					ARK_npc_F_1562
 				}
 			}
 		}
@@ -756,6 +690,20 @@ portrait_groups = {
 					ARK_npc_367
 					ARK_npc_368
 					ARK_npc_462
+					ARK_npc_F_269
+					ARK_npc_F_276
+					ARK_npc_F_280
+					ARK_npc_F_418
+					ARK_npc_F_497
+					ARK_npc_F_700
+					ARK_npc_F_963
+					ARK_npc_F_967
+					ARK_npc_F_1043
+					ARK_npc_F_1129
+					ARK_npc_F_1130
+					ARK_npc_F_1186
+					ARK_npc_F_1394
+					ARK_npc_F_1562
 				}
 			}
 			add = {
@@ -783,6 +731,20 @@ portrait_groups = {
 					ARK_npc_365
 					ARK_npc_366
 					ARK_npc_460
+					ARK_npc_M_270
+					ARK_npc_M_277
+					ARK_npc_M_279
+					ARK_npc_M_417
+					ARK_npc_M_496
+					ARK_npc_M_701
+					ARK_npc_M_962
+					ARK_npc_M_966
+					ARK_npc_M_1042
+					ARK_npc_M_1131
+					ARK_npc_M_1132
+					ARK_npc_M_1185
+					ARK_npc_M_1392
+					ARK_npc_M_1563
 				}
 			}
 		}	
@@ -810,6 +772,20 @@ portrait_groups = {
 					ARK_npc_367
 					ARK_npc_368
 					ARK_npc_462
+					ARK_npc_F_269
+					ARK_npc_F_276
+					ARK_npc_F_280
+					ARK_npc_F_418
+					ARK_npc_F_497
+					ARK_npc_F_700
+					ARK_npc_F_963
+					ARK_npc_F_967
+					ARK_npc_F_1043
+					ARK_npc_F_1129
+					ARK_npc_F_1130
+					ARK_npc_F_1186
+					ARK_npc_F_1394
+					ARK_npc_F_1562
 				}
 			}
 			add = {
@@ -837,6 +813,20 @@ portrait_groups = {
 					ARK_npc_365
 					ARK_npc_366
 					ARK_npc_460
+					ARK_npc_M_270
+					ARK_npc_M_277
+					ARK_npc_M_279
+					ARK_npc_M_417
+					ARK_npc_M_496
+					ARK_npc_M_701
+					ARK_npc_M_962
+					ARK_npc_M_966
+					ARK_npc_M_1042
+					ARK_npc_M_1131
+					ARK_npc_M_1132
+					ARK_npc_M_1185
+					ARK_npc_M_1392
+					ARK_npc_M_1563
 				}
 			}
 		}
@@ -891,7 +881,6 @@ portrait_groups = {
 				portraits = {
 					ARK_N_Doctor_N
 					ARK_N_Conviction
-					ARK_N_Conviction_S
 					ARK_N_TRC
 					ARK_F_Closure
 					ARK_F_Chen
@@ -986,7 +975,6 @@ portrait_groups = {
 					ARK_F_Breeze
 					ARK_F_Shaw
 					ARK_F_Orchid
-
 					ARK_F_Popukar
 					ARK_F_Catapult
 					ARK_F_Matoimaru
@@ -1109,6 +1097,52 @@ portrait_groups = {
 					ARK_F_Kazemaru
 					ARK_F_UOfficial
 					ARK_F_Quartz
+					ARK_F_Spuria
+					ARK_F_Santalla
+					ARK_F_Typhon
+					ARK_F_Valarqvin
+					ARK_F_Poncirus
+					ARK_F_Swire_G
+					ARK_F_Eyjafjalla_G
+					ARK_F_Coldshot
+					ARK_F_Almond
+					ARK_F_Jessica_G
+					ARK_F_Delphine
+					ARK_F_Vendela
+					ARK_F_Caper
+					ARK_F_Viviana
+					ARK_F_Virtuosa
+					ARK_F_LieXia
+					ARK_F_Degenbrecher
+					ARK_F_Warmy
+					ARK_F_Ray
+					ARK_F_GrainBuds
+					ARK_F_Shu
+					ARK_F_Kestrel
+					ARK_F_Iana
+					ARK_F_Ela
+					ARK_F_Lutonada
+					ARK_F_Aroma
+					ARK_F_Ascalon
+					ARK_F_Fen_G
+					ARK_F_Theresia
+					ARK_F_Wisadel
+					ARK_F_Underflow
+					ARK_F_Lucilla
+					ARK_F_Nymph
+					ARK_F_Papyrus
+					ARK_F_Narantuya
+					ARK_F_Pepe
+					ARK_F_Marcille
+					ARK_F_Catherine
+					ARK_F_VinaVictoria
+					ARK_F_Contrail
+					ARK_F_Philae
+					ARK_F_Crownslayer
+					ARK_F_Vulpisfoglia
+					ARK_F_Lappland_G
+					ARK_F_RoseSalt
+					ARK_F_Tecno
 				}
 			}
 			add = {
@@ -1123,7 +1157,6 @@ portrait_groups = {
 				portraits = {
 					ARK_N_Doctor_N
 					ARK_N_Conviction
-					ARK_N_Conviction_S
 					ARK_M_Executor
 					ARK_M_12F
 					ARK_M_Flamebringer
@@ -1180,6 +1213,29 @@ portrait_groups = {
 					ARK_M_Humus
 					ARK_M_Totter
 					ARK_M_Chestnut
+					ARK_M_Bryophyta
+					ARK_M_Verdant
+					ARK_M_Hoederer
+					ARK_M_Diamante
+					ARK_M_Bassline
+					ARK_M_Lessing
+					ARK_M_Harold
+					ARK_M_Wanqing
+					ARK_M_ZuoLe
+					ARK_M_Fuze
+					ARK_M_Doc
+					ARK_M_Odda
+					ARK_M_Logos
+					ARK_M_Ulpianus
+					ARK_M_Mitm
+					ARK_M_TinMan
+					ARK_M_SandReckoner
+					ARK_M_Senshi
+					ARK_M_Chilchuck
+					ARK_M_Laios
+					ARK_M_Bobbing
+					ARK_M_Figurino
+					ARK_M_Thorns_G
 				}
 			}
 		}
@@ -1194,7 +1250,6 @@ portrait_groups = {
 				portraits = {
 					ARK_N_Doctor_N
 					ARK_N_Conviction
-					ARK_N_Conviction_S
 					ARK_F_Closure
 					ARK_F_Chen
 					ARK_F_Blaze
@@ -1410,6 +1465,52 @@ portrait_groups = {
 					ARK_F_Kazemaru
 					ARK_F_UOfficial
 					ARK_F_Quartz
+					ARK_F_Spuria
+					ARK_F_Santalla
+					ARK_F_Typhon
+					ARK_F_Valarqvin
+					ARK_F_Poncirus
+					ARK_F_Swire_G
+					ARK_F_Eyjafjalla_G
+					ARK_F_Coldshot
+					ARK_F_Almond
+					ARK_F_Jessica_G
+					ARK_F_Delphine
+					ARK_F_Vendela
+					ARK_F_Caper
+					ARK_F_Viviana
+					ARK_F_Virtuosa
+					ARK_F_LieXia
+					ARK_F_Degenbrecher
+					ARK_F_Warmy
+					ARK_F_Ray
+					ARK_F_GrainBuds
+					ARK_F_Shu
+					ARK_F_Kestrel
+					ARK_F_Iana
+					ARK_F_Ela
+					ARK_F_Lutonada
+					ARK_F_Aroma
+					ARK_F_Ascalon
+					ARK_F_Fen_G
+					ARK_F_Theresia
+					ARK_F_Wisadel
+					ARK_F_Underflow
+					ARK_F_Lucilla
+					ARK_F_Nymph
+					ARK_F_Papyrus
+					ARK_F_Narantuya
+					ARK_F_Pepe
+					ARK_F_Marcille
+					ARK_F_Catherine
+					ARK_F_VinaVictoria
+					ARK_F_Contrail
+					ARK_F_Philae
+					ARK_F_Crownslayer
+					ARK_F_Vulpisfoglia
+					ARK_F_Lappland_G
+					ARK_F_RoseSalt
+					ARK_F_Tecno
 				}
 			}
 			add = {
@@ -1422,7 +1523,6 @@ portrait_groups = {
 				portraits = {
 					ARK_N_Doctor_N
 					ARK_N_Conviction
-					ARK_N_Conviction_S
 					ARK_M_12F
 					ARK_M_Flamebringer
 					ARK_M_SilverAsh
@@ -1479,6 +1579,29 @@ portrait_groups = {
 					ARK_M_Humus
 					ARK_M_Totter
 					ARK_M_Chestnut
+					ARK_M_Bryophyta
+					ARK_M_Verdant
+					ARK_M_Hoederer
+					ARK_M_Diamante
+					ARK_M_Bassline
+					ARK_M_Lessing
+					ARK_M_Harold
+					ARK_M_Wanqing
+					ARK_M_ZuoLe
+					ARK_M_Fuze
+					ARK_M_Doc
+					ARK_M_Odda
+					ARK_M_Logos
+					ARK_M_Ulpianus
+					ARK_M_Mitm
+					ARK_M_TinMan
+					ARK_M_SandReckoner
+					ARK_M_Senshi
+					ARK_M_Chilchuck
+					ARK_M_Laios
+					ARK_M_Bobbing
+					ARK_M_Figurino
+					ARK_M_Thorns_G
 				}
 			}
 		}
@@ -1493,7 +1616,6 @@ portrait_groups = {
 				portraits = {
 					ARK_N_Doctor_N
 					ARK_N_Conviction
-					ARK_N_Conviction_S
 					ARK_F_Closure
 					ARK_F_Chen
 					ARK_F_Blaze
@@ -1709,6 +1831,52 @@ portrait_groups = {
 					ARK_F_Kazemaru
 					ARK_F_UOfficial
 					ARK_F_Quartz
+					ARK_F_Spuria
+					ARK_F_Santalla
+					ARK_F_Typhon
+					ARK_F_Valarqvin
+					ARK_F_Poncirus
+					ARK_F_Swire_G
+					ARK_F_Eyjafjalla_G
+					ARK_F_Coldshot
+					ARK_F_Almond
+					ARK_F_Jessica_G
+					ARK_F_Delphine
+					ARK_F_Vendela
+					ARK_F_Caper
+					ARK_F_Viviana
+					ARK_F_Virtuosa
+					ARK_F_LieXia
+					ARK_F_Degenbrecher
+					ARK_F_Warmy
+					ARK_F_Ray
+					ARK_F_GrainBuds
+					ARK_F_Shu
+					ARK_F_Kestrel
+					ARK_F_Iana
+					ARK_F_Ela
+					ARK_F_Lutonada
+					ARK_F_Aroma
+					ARK_F_Ascalon
+					ARK_F_Fen_G
+					ARK_F_Theresia
+					ARK_F_Wisadel
+					ARK_F_Underflow
+					ARK_F_Lucilla
+					ARK_F_Nymph
+					ARK_F_Papyrus
+					ARK_F_Narantuya
+					ARK_F_Pepe
+					ARK_F_Marcille
+					ARK_F_Catherine
+					ARK_F_VinaVictoria
+					ARK_F_Contrail
+					ARK_F_Philae
+					ARK_F_Crownslayer
+					ARK_F_Vulpisfoglia
+					ARK_F_Lappland_G
+					ARK_F_RoseSalt
+					ARK_F_Tecno
 				}
 			}
 			add = {
@@ -1721,7 +1889,6 @@ portrait_groups = {
 				portraits = {
 					ARK_N_Doctor_N
 					ARK_N_Conviction
-					ARK_N_Conviction_S
 					ARK_M_12F
 					ARK_M_Flamebringer
 					ARK_M_SilverAsh
@@ -1778,6 +1945,29 @@ portrait_groups = {
 					ARK_M_Humus
 					ARK_M_Totter
 					ARK_M_Chestnut
+					ARK_M_Bryophyta
+					ARK_M_Verdant
+					ARK_M_Hoederer
+					ARK_M_Diamante
+					ARK_M_Bassline
+					ARK_M_Lessing
+					ARK_M_Harold
+					ARK_M_Wanqing
+					ARK_M_ZuoLe
+					ARK_M_Fuze
+					ARK_M_Doc
+					ARK_M_Odda
+					ARK_M_Logos
+					ARK_M_Ulpianus
+					ARK_M_Mitm
+					ARK_M_TinMan
+					ARK_M_SandReckoner
+					ARK_M_Senshi
+					ARK_M_Chilchuck
+					ARK_M_Laios
+					ARK_M_Bobbing
+					ARK_M_Figurino
+					ARK_M_Thorns_G
 				}
 			}
 		}
@@ -1790,7 +1980,6 @@ portrait_groups = {
 				portraits = {
 					ARK_N_Doctor_N
 					ARK_N_Conviction
-					ARK_N_Conviction_S
 					ARK_F_Closure
 					ARK_F_Chen
 					ARK_F_Blaze
@@ -2006,6 +2195,52 @@ portrait_groups = {
 					ARK_F_Kazemaru
 					ARK_F_UOfficial
 					ARK_F_Quartz
+					ARK_F_Spuria
+					ARK_F_Santalla
+					ARK_F_Typhon
+					ARK_F_Valarqvin
+					ARK_F_Poncirus
+					ARK_F_Swire_G
+					ARK_F_Eyjafjalla_G
+					ARK_F_Coldshot
+					ARK_F_Almond
+					ARK_F_Jessica_G
+					ARK_F_Delphine
+					ARK_F_Vendela
+					ARK_F_Caper
+					ARK_F_Viviana
+					ARK_F_Virtuosa
+					ARK_F_LieXia
+					ARK_F_Degenbrecher
+					ARK_F_Warmy
+					ARK_F_Ray
+					ARK_F_GrainBuds
+					ARK_F_Shu
+					ARK_F_Kestrel
+					ARK_F_Iana
+					ARK_F_Ela
+					ARK_F_Lutonada
+					ARK_F_Aroma
+					ARK_F_Ascalon
+					ARK_F_Fen_G
+					ARK_F_Theresia
+					ARK_F_Wisadel
+					ARK_F_Underflow
+					ARK_F_Lucilla
+					ARK_F_Nymph
+					ARK_F_Papyrus
+					ARK_F_Narantuya
+					ARK_F_Pepe
+					ARK_F_Marcille
+					ARK_F_Catherine
+					ARK_F_VinaVictoria
+					ARK_F_Contrail
+					ARK_F_Philae
+					ARK_F_Crownslayer
+					ARK_F_Vulpisfoglia
+					ARK_F_Lappland_G
+					ARK_F_RoseSalt
+					ARK_F_Tecno
 				}
 			}
 			add = {
@@ -2016,7 +2251,6 @@ portrait_groups = {
 				portraits = {
 					ARK_N_Doctor_N
 					ARK_N_Conviction
-					ARK_N_Conviction_S
 					ARK_M_12F
 					ARK_M_Flamebringer
 					ARK_M_SilverAsh
@@ -2073,6 +2307,29 @@ portrait_groups = {
 					ARK_M_Humus
 					ARK_M_Totter
 					ARK_M_Chestnut
+					ARK_M_Bryophyta
+					ARK_M_Verdant
+					ARK_M_Hoederer
+					ARK_M_Diamante
+					ARK_M_Bassline
+					ARK_M_Lessing
+					ARK_M_Harold
+					ARK_M_Wanqing
+					ARK_M_ZuoLe
+					ARK_M_Fuze
+					ARK_M_Doc
+					ARK_M_Odda
+					ARK_M_Logos
+					ARK_M_Ulpianus
+					ARK_M_Mitm
+					ARK_M_TinMan
+					ARK_M_SandReckoner
+					ARK_M_Senshi
+					ARK_M_Chilchuck
+					ARK_M_Laios
+					ARK_M_Bobbing
+					ARK_M_Figurino
+					ARK_M_Thorns_G
 				}
 			}
 		}
@@ -2096,6 +2353,20 @@ portrait_groups = {
 					ARK_npc_367
 					ARK_npc_368
 					ARK_npc_462
+					ARK_npc_M_270
+					ARK_npc_M_277
+					ARK_npc_M_279
+					ARK_npc_M_417
+					ARK_npc_M_496
+					ARK_npc_M_701
+					ARK_npc_M_962
+					ARK_npc_M_966
+					ARK_npc_M_1042
+					ARK_npc_M_1131
+					ARK_npc_M_1132
+					ARK_npc_M_1185
+					ARK_npc_M_1392
+					ARK_npc_M_1563
 				}
 			}
 			add = {
@@ -2120,1769 +2391,20 @@ portrait_groups = {
 					ARK_npc_365
 					ARK_npc_366
 					ARK_npc_460
-				}
-			}
-		}
-	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	#领袖精一精二，人口NPC
-	arknights_s1LEADER_NPCpop = {
-		default = ARK_F_Amiya_S2
-		game_setup = {
-			add = {
-				trigger = {
-					ruler = {
-						OR = {
-							gender = female
-							gender = indeterminable
-						}
-					}
-				}
-				portraits = {
-					ARK_F_Closure
-					ARK_F_Chen
-					ARK_F_Chen_S
-					ARK_F_Blaze
-					ARK_F_Blaze_S
-					ARK_F_Sora
-					ARK_F_Sora_S
-					ARK_F_Texas
-					ARK_F_Texas_S
-					ARK_F_Exusiai
-					ARK_F_Exusiai_S
-					ARK_F_Franka
-					ARK_F_Franka_S
-					ARK_F_Liskarm
-					ARK_F_Liskarm_S
-					ARK_F_Silence
-					ARK_F_Silence_S
-					ARK_F_Gitano
-					ARK_F_Gitano_S
-					ARK_F_Deepcolor
-					ARK_F_Deepcolor_S
-					ARK_F_Siege
-					ARK_F_Siege_S
-					ARK_F_W
-					ARK_F_W_S
-					ARK_F_Myrrh
-					ARK_F_Myrrh_S
-					ARK_F_Winter
-					ARK_F_Winter_S
-					ARK_F_ShiraYuki
-					ARK_F_ShiraYuki_S
-					ARK_F_Hibiscus
-					ARK_F_Lava
-					ARK_F_Beagle
-					ARK_F_Fen
-					ARK_F_Kroos
-					ARK_F_Meteor
-					ARK_F_Meteor_S
-					ARK_F_Estelle
-					ARK_F_Estelle_S
-					ARK_F_Ptilopsis
-					ARK_F_Ptilopsis_S
-					ARK_F_BluePoison
-					ARK_F_BluePoison_S
-					ARK_F_Dobermann
-					ARK_F_Dobermann_S
-					ARK_F_May
-					ARK_F_May_S
-					ARK_F_Ifrit
-					ARK_F_Ifrit_S
-					ARK_F_Astgenne
-					ARK_F_Astgenne_S
-					ARK_F_Hoshiguma
-					ARK_F_Hoshiguma_S
-					ARK_F_Beehunter
-					ARK_F_Beehunter_S
-					ARK_F_Lappland
-					ARK_F_Lappland_S
-					ARK_F_Haze
-					ARK_F_Haze_S
-					ARK_F_Specter
-					ARK_F_Specter_S
-					ARK_F_ProjektRed
-					ARK_F_ProjektRed_S
-					ARK_F_Provence
-					ARK_F_Provence_S
-					ARK_F_Shining
-					ARK_F_Shining_S
-					ARK_F_Nearl
-					ARK_F_Nearl_S
-					ARK_F_Scavenger
-					ARK_F_Scavenger_S
-					ARK_F_Cuora
-					ARK_F_Cuora_S
-					ARK_F_Myrtle
-					ARK_F_Myrtle_S
-					ARK_F_Indra
-					ARK_F_Indra_S
-					ARK_F_Firewatch
-					ARK_F_Firewatch_S
-					ARK_F_Vulcan
-					ARK_F_Vulcan_S
-					ARK_F_Nightmare
-					ARK_F_Nightmare_S
-					ARK_F_Skyfire
-					ARK_F_Skyfire_S
-					ARK_F_Warfarin
-					ARK_F_Warfarin_S
-					ARK_F_Cliffheart
-					ARK_F_Cliffheart_S
-					ARK_F_Pramanix
-					ARK_F_Pramanix_S
-					ARK_F_Nightingale
-					ARK_F_Nightingale_S
-					ARK_F_Eyjafjalla
-					ARK_F_Eyjafjalla_S
-					ARK_F_Perfumer
-					ARK_F_Perfumer_S
-					ARK_F_Earthspirit
-					ARK_F_Earthspirit_S
-					ARK_F_Mousse
-					ARK_F_Mousse_S
-					ARK_F_Gavial
-					ARK_F_Gavial_S
-					ARK_F_Vermeil
-					ARK_F_Vermeil_S
-					ARK_F_Plume
-					ARK_F_Frostleaf
-					ARK_F_Frostleaf_S
-					ARK_F_Truth
-					ARK_F_Truth_S
-					ARK_F_Gumi
-					ARK_F_Gumi_S
-					ARK_F_Poca
-					ARK_F_Poca_S
-					ARK_F_Croissant
-					ARK_F_Croissant_S
-					ARK_F_Saria
-					ARK_F_Saria_S
-					ARK_F_Platinum
-					ARK_F_Platinum_S
-					ARK_F_Melantha
-					ARK_F_Cardigan
-					ARK_F_Mostima
-					ARK_F_Mostima_S
-					ARK_F_Kafka
-					ARK_F_Kafka_S
-					ARK_F_Manticore
-					ARK_F_Manticore_S
-					ARK_F_Andreana
-					ARK_F_Andreana_S
-					ARK_F_Meteorite
-					ARK_F_Meteorite_S
-					ARK_F_Grani
-					ARK_F_Grani_S
-					ARK_F_Bagpipe
-					ARK_F_Bagpipe_S
-					ARK_F_Savage
-					ARK_F_Savage_S
-					ARK_F_Jessica
-					ARK_F_Jessica_S
-					ARK_F_Rope
-					ARK_F_Rope_S
-					ARK_F_Gravel
-					ARK_F_Gravel_S
-					ARK_F_Vanilla
-					ARK_F_FEater
-					ARK_F_FEater_S
-					ARK_F_Mayer
-					ARK_F_Mayer_S
-					ARK_F_WaaiFu
-					ARK_F_WaaiFu_S
-					ARK_F_Magallan
-					ARK_F_Magallan_S
-					ARK_F_Bibeak
-					ARK_F_Bibeak_S
-					ARK_F_Shamare
-					ARK_F_Shamare_S
-					ARK_F_Podenco
-					ARK_F_Podenco_S
-					ARK_F_Durnar
-					ARK_F_Durnar_S
-					ARK_F_Reed
-					ARK_F_Reed_S
-					ARK_F_Skadi
-					ARK_F_Skadi_S
-					ARK_F_Whislash
-					ARK_F_Whislash_S
-					ARK_F_Astesia
-					ARK_F_Astesia_S
-					ARK_F_Breeze
-					ARK_F_Breeze_S
-					ARK_F_Shaw
-					ARK_F_Shaw_S
-					ARK_F_Orchid
-					ARK_F_Popukar
-					ARK_F_Catapult
-					ARK_F_Matoimaru
-					ARK_F_Matoimaru_S
-					ARK_F_Vigna
-					ARK_F_Vigna_S
-					ARK_F_Angelina
-					ARK_F_Angelina_S
-					ARK_F_Sussurro
-					ARK_F_Sussurro_S
-					ARK_F_Cutter
-					ARK_F_Cutter_S
-					ARK_F_Ambriel
-					ARK_F_Ambriel_S
-					ARK_F_Heavyrain
-					ARK_F_Heavyrain_S
-					ARK_F_Leizi
-					ARK_F_Leizi_S
-					ARK_F_Swire
-					ARK_F_Swire_S
-					ARK_F_Mudrock
-					ARK_F_Mudrock_S
-					ARK_F_Glaucus
-					ARK_F_Glaucus_S
-					ARK_F_Click
-					ARK_F_Click_S
-					ARK_F_Archetto
-					ARK_F_Archetto_S
-					ARK_F_Sideroca
-					ARK_F_Sideroca_S
-					ARK_F_Scene
-					ARK_F_Scene_S
-					ARK_F_Utage
-					ARK_F_Utage_S
-					ARK_F_Iris
-					ARK_F_Iris_S
-					ARK_F_Schwarz
-					ARK_F_Schwarz_S
-					ARK_F_Tsukinogi
-					ARK_F_Tsukinogi_S
-					ARK_F_Beeswax
-					ARK_F_Beeswax_S
-					ARK_F_Folinic
-					ARK_F_Folinic_S
-					ARK_F_Jackie
-					ARK_F_Jackie_S
-					ARK_F_Ceylon
-					ARK_F_Ceylon_S
-					ARK_F_Surtr
-					ARK_F_Surtr_S
-					ARK_F_Suzuran
-					ARK_F_Suzuran_S
-					ARK_F_Saga
-					ARK_F_Saga_S
-					ARK_F_Toddifons
-					ARK_F_Toddifons_S
-					ARK_F_April
-					ARK_F_April_S
-					ARK_F_Aciddrop
-					ARK_F_Aciddrop_S
-					ARK_F_GreyThroat
-					ARK_F_GreyThroat_S
-					ARK_F_Bena
-					ARK_F_Bena_S
-					ARK_F_Asbestos
-					ARK_F_Asbestos_S
-					ARK_F_Sesa
-					ARK_F_Sesa_S
-					ARK_F_Bubble
-					ARK_F_Bubble_S
-					ARK_F_Snowsant
-					ARK_F_Snowsant_S
-					ARK_F_Purestream
-					ARK_F_Purestream_S
-					ARK_F_Mint
-					ARK_F_Mint_S
-					ARK_F_Rosmontis
-					ARK_F_Rosmontis_S
-					ARK_F_Weedy
-					ARK_F_Weedy_S
-					ARK_F_Tuye
-					ARK_F_Tuye_S
-					ARK_F_Absinthe
-					ARK_F_Absinthe_S
-					ARK_F_Tomimi
-					ARK_F_Tomimi_S
-					ARK_F_Flint
-					ARK_F_Flint_S
-					ARK_F_Eunectes
-					ARK_F_Eunectes_S
-					ARK_F_Flametail
-					ARK_F_Flametail_S
-					ARK_F_LaPluma
-					ARK_F_LaPluma_S
-					ARK_F_Aurora
-					ARK_F_Aurora_S
-					ARK_F_Blemishine
-					ARK_F_Blemishine_S
-					ARK_F_Carnelian
-					ARK_F_Carnelian_S
-					ARK_F_Fartooth
-					ARK_F_Fartooth_S
-					ARK_F_Ashlock
-					ARK_F_Ashlock_S
-					ARK_F_Whisperain
-					ARK_F_Whisperain_S
-					ARK_F_Pinecone
-					ARK_F_Pinecone_S
-					ARK_F_Honeyberry
-					ARK_F_Honeyberry_S
-					ARK_F_Robin
-					ARK_F_Robin_S
-					ARK_F_Beanstalk
-					ARK_F_Beanstalk_S
-					ARK_F_Ash
-					ARK_F_Ash_S
-					ARK_F_Blitz
-					ARK_F_Blitz_S
-					ARK_F_Frost
-					ARK_F_Frost_S
-					ARK_F_Indigo
-					ARK_F_Indigo_S
-					ARK_F_Mulberry
-					ARK_F_Mulberry_S
-					ARK_F_Gladiia
-					ARK_F_Gladiia_S
-					ARK_F_Akafuyu
-					ARK_F_Akafuyu_S
-					ARK_F_Kirara
-					ARK_F_Kirara_S
-					ARK_F_Saileach
-					ARK_F_Saileach_S
-					ARK_F_Roberta
-					ARK_F_Roberta_S
-					ARK_F_Pallas
-					ARK_F_Pallas_S
-					ARK_F_WildMane
-					ARK_F_WildMane_S
-					ARK_F_Durin
-					ARK_F_Yato
-					ARK_F_Lava_G
-					ARK_F_Lava_G_S
-					ARK_F_Skadi_G
-					ARK_F_Skadi_G_S
-					ARK_F_Skadi_G_skin
-					ARK_F_Chen_G
-					ARK_F_Chen_G_S
-					ARK_F_Nearl_G
-					ARK_F_Nearl_G_S
-					ARK_F_Ceobe
-					ARK_F_Ceobe_S
-					ARK_F_Nian
-					ARK_F_Nian_S
-					ARK_F_Dusk
-					ARK_F_Dusk_S
-					ARK_F_Pudding
-					ARK_F_Pudding_S
-					ARK_F_Kjera
-					ARK_F_Kjera_S
-					ARK_F_Horn
-					ARK_F_Horn_S
-					ARK_F_Dorothy
-					ARK_F_Dorothy_S
-					ARK_F_Texas_G
-					ARK_F_Texas_G_S
-					ARK_F_Yato_G
-					ARK_F_Yato_G_S
-					ARK_F_Goldenglow
-					ARK_F_Goldenglow_S
-					ARK_F_Lin
-					ARK_F_Lin_S
-					ARK_F_Hoolheyak
-					ARK_F_Hoolheyak_S
-					ARK_F_Ling
-					ARK_F_Ling_S
-					ARK_F_Silence_G
-					ARK_F_Silence_G_S
-					ARK_F_Reed_G
-					ARK_F_Reed_G_S
-					ARK_F_Penance
-					ARK_F_Penance_S
-					ARK_F_Fiammetta
-					ARK_F_Fiammetta_S
-					ARK_F_Heavysnow
-					ARK_F_Heavysnow_S
-					ARK_F_Irene
-					ARK_F_Irene_S
-					ARK_F_Gavial_G
-					ARK_F_Gavial_G_S
-					ARK_F_Qiubai
-					ARK_F_Qiubai_S
-					ARK_F_Ines
-					ARK_F_Ines_S
-					ARK_F_Muelsyse
-					ARK_F_Muelsyse_S
-					ARK_F_Blacknight
-					ARK_F_Blacknight_S
-					ARK_F_Cantabile
-					ARK_F_Cantabile_S
-					ARK_F_Highmore
-					ARK_F_Highmore_S
-					ARK_F_Dagda
-					ARK_F_Dagda_S
-					ARK_F_WindChimes
-					ARK_F_WindChimes_S
-					ARK_F_Morgan
-					ARK_F_Morgan_S
-					ARK_F_Kroos
-					ARK_F_Erato
-					ARK_F_Erato_S
-					ARK_F_Lunacub
-					ARK_F_Lunacub_S
-					ARK_F_Jieyun
-					ARK_F_Jieyun_S
-					ARK_F_Melanite
-					ARK_F_Melanite_S
-					ARK_F_Firewhistle
-					ARK_F_Firewhistle_S
-					ARK_F_Cement
-					ARK_F_Cement_S
-					ARK_F_Hibiscus_G
-					ARK_F_Hibiscus_G_S
-					ARK_F_Paprika
-					ARK_F_Paprika_S
-					ARK_F_NineColoredDeer
-					ARK_F_NineColoredDeer_S
-					ARK_F_Quercus
-					ARK_F_Quercus_S
-					ARK_F_Heidi
-					ARK_F_Heidi_S
-					ARK_F_Proviso
-					ARK_F_Proviso_S
-					ARK_F_Harmonie
-					ARK_F_Harmonie_S
-					ARK_F_Kazemaru
-					ARK_F_Kazemaru_S
-					ARK_F_UOfficial
-					ARK_F_Quartz
-					ARK_F_Quartz_S
-				}
-			}
-			add = {
-				trigger = {
-					ruler = {
-						OR = {
-							gender = male
-							gender = indeterminable
-						}
-					}
-				}
-				portraits = {
-					ARK_M_12F
-					ARK_M_Flamebringer
-					ARK_M_Flamebringer_S
-					ARK_M_SilverAsh
-					ARK_M_SilverAsh_S
-					ARK_M_Hellagur
-					ARK_M_Hellagur_S
-					ARK_M_Courier
-					ARK_M_Courier_S
-					ARK_M_Matterhorn
-					ARK_M_Matterhorn_S
-					ARK_M_Gnosis
-					ARK_M_Gnosis_S
-					ARK_M_Steward
-					ARK_M_Adnachiel
-					ARK_M_Ansel
-					ARK_M_Aak
-					ARK_M_Aak_S
-					ARK_M_Hung
-					ARK_M_Hung_S
-					ARK_M_Phantom
-					ARK_M_Phantom_S
-					ARK_M_Greyy
-					ARK_M_Greyy_S
-					ARK_M_Mountain
-					ARK_M_Mountain_S
-					ARK_M_Arene
-					ARK_M_Arene_S
-					ARK_M_Jaye
-					ARK_M_Jaye_S
-					ARK_M_Midnight
-					ARK_M_Spot
-					ARK_M_Thorns
-					ARK_M_Thorns_S
-					ARK_M_Ayerscarpe
-					ARK_M_Ayerscarpe_S
-					ARK_M_Bison
-					ARK_M_Bison_S
-					ARK_M_Aosta
-					ARK_M_Aosta_S
-					ARK_M_Chiave
-					ARK_M_Chiave_S
-					ARK_M_Ethan
-					ARK_M_Ethan_S
-					ARK_M_Broca
-					ARK_M_Broca_S
-					ARK_M_Leonhardt
-					ARK_M_Leonhardt_S
-					ARK_M_Elysium
-					ARK_M_Elysium_S
-					ARK_M_Mizuki
-					ARK_M_Mizuki_S
-					ARK_M_MrNothing
-					ARK_M_MrNothing_S
-					ARK_M_Tachanka
-					ARK_M_Tachanka_S
-					ARK_M_Passenger
-					ARK_M_Passenger_S
-					ARK_M_Tequila
-					ARK_M_Tequila_S
-					ARK_M_Corroserum
-					ARK_M_Corroserum_S
-					ARK_M_NoirCorne
-					ARK_M_Rangers
-					ARK_M_Ebenholz
-					ARK_M_Ebenholz_S
-					ARK_M_Stainless
-					ARK_M_Stainless_S
-					ARK_M_Lumen
-					ARK_M_Lumen_S
-					ARK_M_Mlynar
-					ARK_M_Mlynar_S
-					ARK_M_Chongyue
-					ARK_M_Chongyue_S
-					ARK_M_Vigil
-					ARK_M_Vigil_S
-					ARK_M_Puzzle
-					ARK_M_Puzzle_S
-					ARK_M_Enforcer
-					ARK_M_Enforcer_S
-					ARK_M_Noir_G
-					ARK_M_Noir_G_S
-					ARK_M_Greyy_G
-					ARK_M_Greyy_G_S
-					ARK_M_Shalem
-					ARK_M_Shalem_S
-					ARK_M_Czerny
-					ARK_M_Czerny_S
-					ARK_M_Windflit
-					ARK_M_Windflit_S
-					ARK_M_Minimalist
-					ARK_M_Minimalist_S
-					ARK_M_Qanipalaat
-					ARK_M_Qanipalaat_S
-					ARK_M_LuoXiaohei
-					ARK_M_LuoXiaohei_S
-					ARK_M_Humus
-					ARK_M_Humus_S
-					ARK_M_Totter
-					ARK_M_Totter_S
-					ARK_M_Chestnut
-					ARK_M_Chestnut_S
-				}
-			}
-		}
-		ruler = {
-			add = {
-				trigger = {
-					OR = {
-						gender = female
-						gender = indeterminable
-					}
-				}
-				portraits = {
-					ARK_F_Closure
-					ARK_F_Chen
-					ARK_F_Chen_S
-					ARK_F_Blaze
-					ARK_F_Blaze_S
-					ARK_F_Sora
-					ARK_F_Sora_S
-					ARK_F_Texas
-					ARK_F_Texas_S
-					ARK_F_Exusiai
-					ARK_F_Exusiai_S
-					ARK_F_Franka
-					ARK_F_Franka_S
-					ARK_F_Liskarm
-					ARK_F_Liskarm_S
-					ARK_F_Silence
-					ARK_F_Silence_S
-					ARK_F_Gitano
-					ARK_F_Gitano_S
-					ARK_F_Deepcolor
-					ARK_F_Deepcolor_S
-					ARK_F_Siege
-					ARK_F_Siege_S
-					ARK_F_W
-					ARK_F_W_S
-					ARK_F_Myrrh
-					ARK_F_Myrrh_S
-					ARK_F_Winter
-					ARK_F_Winter_S
-					ARK_F_ShiraYuki
-					ARK_F_ShiraYuki_S
-					ARK_F_Hibiscus
-					ARK_F_Lava
-					ARK_F_Beagle
-					ARK_F_Fen
-					ARK_F_Kroos
-					ARK_F_Meteor
-					ARK_F_Meteor_S
-					ARK_F_Estelle
-					ARK_F_Estelle_S
-					ARK_F_Ptilopsis
-					ARK_F_Ptilopsis_S
-					ARK_F_BluePoison
-					ARK_F_BluePoison_S
-					ARK_F_Dobermann
-					ARK_F_Dobermann_S
-					ARK_F_May
-					ARK_F_May_S
-					ARK_F_Ifrit
-					ARK_F_Ifrit_S
-					ARK_F_Astgenne
-					ARK_F_Astgenne_S
-					ARK_F_Hoshiguma
-					ARK_F_Hoshiguma_S
-					ARK_F_Beehunter
-					ARK_F_Beehunter_S
-					ARK_F_Lappland
-					ARK_F_Lappland_S
-					ARK_F_Haze
-					ARK_F_Haze_S
-					ARK_F_Specter
-					ARK_F_Specter_S
-					ARK_F_ProjektRed
-					ARK_F_ProjektRed_S
-					ARK_F_Provence
-					ARK_F_Provence_S
-					ARK_F_Shining
-					ARK_F_Shining_S
-					ARK_F_Nearl
-					ARK_F_Nearl_S
-					ARK_F_Scavenger
-					ARK_F_Scavenger_S
-					ARK_F_Cuora
-					ARK_F_Cuora_S
-					ARK_F_Myrtle
-					ARK_F_Myrtle_S
-					ARK_F_Indra
-					ARK_F_Indra_S
-					ARK_F_Firewatch
-					ARK_F_Firewatch_S
-					ARK_F_Vulcan
-					ARK_F_Vulcan_S
-					ARK_F_Nightmare
-					ARK_F_Nightmare_S
-					ARK_F_Skyfire
-					ARK_F_Skyfire_S
-					ARK_F_Warfarin
-					ARK_F_Warfarin_S
-					ARK_F_Cliffheart
-					ARK_F_Cliffheart_S
-					ARK_F_Pramanix
-					ARK_F_Pramanix_S
-					ARK_F_Nightingale
-					ARK_F_Nightingale_S
-					ARK_F_Eyjafjalla
-					ARK_F_Eyjafjalla_S
-					ARK_F_Perfumer
-					ARK_F_Perfumer_S
-					ARK_F_Earthspirit
-					ARK_F_Earthspirit_S
-					ARK_F_Mousse
-					ARK_F_Mousse_S
-					ARK_F_Gavial
-					ARK_F_Gavial_S
-					ARK_F_Vermeil
-					ARK_F_Vermeil_S
-					ARK_F_Plume
-					ARK_F_Frostleaf
-					ARK_F_Frostleaf_S
-					ARK_F_Truth
-					ARK_F_Truth_S
-					ARK_F_Gumi
-					ARK_F_Gumi_S
-					ARK_F_Poca
-					ARK_F_Poca_S
-					ARK_F_Croissant
-					ARK_F_Croissant_S
-					ARK_F_Saria
-					ARK_F_Saria_S
-					ARK_F_Platinum
-					ARK_F_Platinum_S
-					ARK_F_Melantha
-					ARK_F_Cardigan
-					ARK_F_Mostima
-					ARK_F_Mostima_S
-					ARK_F_Kafka
-					ARK_F_Kafka_S
-					ARK_F_Manticore
-					ARK_F_Manticore_S
-					ARK_F_Andreana
-					ARK_F_Andreana_S
-					ARK_F_Meteorite
-					ARK_F_Meteorite_S
-					ARK_F_Grani
-					ARK_F_Grani_S
-					ARK_F_Bagpipe
-					ARK_F_Bagpipe_S
-					ARK_F_Savage
-					ARK_F_Savage_S
-					ARK_F_Jessica
-					ARK_F_Jessica_S
-					ARK_F_Rope
-					ARK_F_Rope_S
-					ARK_F_Gravel
-					ARK_F_Gravel_S
-					ARK_F_Vanilla
-					ARK_F_FEater
-					ARK_F_FEater_S
-					ARK_F_Mayer
-					ARK_F_Mayer_S
-					ARK_F_WaaiFu
-					ARK_F_WaaiFu_S
-					ARK_F_Magallan
-					ARK_F_Magallan_S
-					ARK_F_Bibeak
-					ARK_F_Bibeak_S
-					ARK_F_Shamare
-					ARK_F_Shamare_S
-					ARK_F_Podenco
-					ARK_F_Podenco_S
-					ARK_F_Durnar
-					ARK_F_Durnar_S
-					ARK_F_Reed
-					ARK_F_Reed_S
-					ARK_F_Skadi
-					ARK_F_Skadi_S
-					ARK_F_Whislash
-					ARK_F_Whislash_S
-					ARK_F_Astesia
-					ARK_F_Astesia_S
-					ARK_F_Breeze
-					ARK_F_Breeze_S
-					ARK_F_Shaw
-					ARK_F_Shaw_S
-					ARK_F_Orchid
-					ARK_F_Popukar
-					ARK_F_Catapult
-					ARK_F_Matoimaru
-					ARK_F_Matoimaru_S
-					ARK_F_Vigna
-					ARK_F_Vigna_S
-					ARK_F_Angelina
-					ARK_F_Angelina_S
-					ARK_F_Sussurro
-					ARK_F_Sussurro_S
-					ARK_F_Cutter
-					ARK_F_Cutter_S
-					ARK_F_Ambriel
-					ARK_F_Ambriel_S
-					ARK_F_Heavyrain
-					ARK_F_Heavyrain_S
-					ARK_F_Leizi
-					ARK_F_Leizi_S
-					ARK_F_Swire
-					ARK_F_Swire_S
-					ARK_F_Mudrock
-					ARK_F_Mudrock_S
-					ARK_F_Glaucus
-					ARK_F_Glaucus_S
-					ARK_F_Click
-					ARK_F_Click_S
-					ARK_F_Archetto
-					ARK_F_Archetto_S
-					ARK_F_Sideroca
-					ARK_F_Sideroca_S
-					ARK_F_Scene
-					ARK_F_Scene_S
-					ARK_F_Utage
-					ARK_F_Utage_S
-					ARK_F_Iris
-					ARK_F_Iris_S
-					ARK_F_Schwarz
-					ARK_F_Schwarz_S
-					ARK_F_Tsukinogi
-					ARK_F_Tsukinogi_S
-					ARK_F_Beeswax
-					ARK_F_Beeswax_S
-					ARK_F_Folinic
-					ARK_F_Folinic_S
-					ARK_F_Jackie
-					ARK_F_Jackie_S
-					ARK_F_Ceylon
-					ARK_F_Ceylon_S
-					ARK_F_Surtr
-					ARK_F_Surtr_S
-					ARK_F_Suzuran
-					ARK_F_Suzuran_S
-					ARK_F_Saga
-					ARK_F_Saga_S
-					ARK_F_Toddifons
-					ARK_F_Toddifons_S
-					ARK_F_April
-					ARK_F_April_S
-					ARK_F_Aciddrop
-					ARK_F_Aciddrop_S
-					ARK_F_GreyThroat
-					ARK_F_GreyThroat_S
-					ARK_F_Bena
-					ARK_F_Bena_S
-					ARK_F_Asbestos
-					ARK_F_Asbestos_S
-					ARK_F_Sesa
-					ARK_F_Sesa_S
-					ARK_F_Bubble
-					ARK_F_Bubble_S
-					ARK_F_Snowsant
-					ARK_F_Snowsant_S
-					ARK_F_Purestream
-					ARK_F_Purestream_S
-					ARK_F_Mint
-					ARK_F_Mint_S
-					ARK_F_Rosmontis
-					ARK_F_Rosmontis_S
-					ARK_F_Weedy
-					ARK_F_Weedy_S
-					ARK_F_Tuye
-					ARK_F_Tuye_S
-					ARK_F_Absinthe
-					ARK_F_Absinthe_S
-					ARK_F_Tomimi
-					ARK_F_Tomimi_S
-					ARK_F_Flint
-					ARK_F_Flint_S
-					ARK_F_Eunectes
-					ARK_F_Eunectes_S
-					ARK_F_Flametail
-					ARK_F_Flametail_S
-					ARK_F_LaPluma
-					ARK_F_LaPluma_S
-					ARK_F_Aurora
-					ARK_F_Aurora_S
-					ARK_F_Blemishine
-					ARK_F_Blemishine_S
-					ARK_F_Carnelian
-					ARK_F_Carnelian_S
-					ARK_F_Fartooth
-					ARK_F_Fartooth_S
-					ARK_F_Ashlock
-					ARK_F_Ashlock_S
-					ARK_F_Whisperain
-					ARK_F_Whisperain_S
-					ARK_F_Pinecone
-					ARK_F_Pinecone_S
-					ARK_F_Honeyberry
-					ARK_F_Honeyberry_S
-					ARK_F_Robin
-					ARK_F_Robin_S
-					ARK_F_Beanstalk
-					ARK_F_Beanstalk_S
-					ARK_F_Ash
-					ARK_F_Ash_S
-					ARK_F_Blitz
-					ARK_F_Blitz_S
-					ARK_F_Frost
-					ARK_F_Frost_S
-					ARK_F_Indigo
-					ARK_F_Indigo_S
-					ARK_F_Mulberry
-					ARK_F_Mulberry_S
-					ARK_F_Gladiia
-					ARK_F_Gladiia_S
-					ARK_F_Akafuyu
-					ARK_F_Akafuyu_S
-					ARK_F_Kirara
-					ARK_F_Kirara_S
-					ARK_F_Saileach
-					ARK_F_Saileach_S
-					ARK_F_Roberta
-					ARK_F_Roberta_S
-					ARK_F_Pallas
-					ARK_F_Pallas_S
-					ARK_F_WildMane
-					ARK_F_WildMane_S
-					ARK_F_Durin
-					ARK_F_Yato
-					ARK_F_Lava_G
-					ARK_F_Lava_G_S
-					ARK_F_Skadi_G
-					ARK_F_Skadi_G_S
-					ARK_F_Skadi_G_skin
-					ARK_F_Chen_G
-					ARK_F_Chen_G_S
-					ARK_F_Nearl_G
-					ARK_F_Nearl_G_S
-					ARK_F_Ceobe
-					ARK_F_Ceobe_S
-					ARK_F_Nian
-					ARK_F_Nian_S
-					ARK_F_Dusk
-					ARK_F_Dusk_S
-					ARK_F_Pudding
-					ARK_F_Pudding_S
-					ARK_F_Kjera
-					ARK_F_Kjera_S
-					ARK_F_Horn
-					ARK_F_Horn_S
-					ARK_F_Dorothy
-					ARK_F_Dorothy_S
-					ARK_F_Texas_G
-					ARK_F_Texas_G_S
-					ARK_F_Yato_G
-					ARK_F_Yato_G_S
-					ARK_F_Goldenglow
-					ARK_F_Goldenglow_S
-					ARK_F_Lin
-					ARK_F_Lin_S
-					ARK_F_Hoolheyak
-					ARK_F_Hoolheyak_S
-					ARK_F_Ling
-					ARK_F_Ling_S
-					ARK_F_Silence_G
-					ARK_F_Silence_G_S
-					ARK_F_Reed_G
-					ARK_F_Reed_G_S
-					ARK_F_Penance
-					ARK_F_Penance_S
-					ARK_F_Fiammetta
-					ARK_F_Fiammetta_S
-					ARK_F_Heavysnow
-					ARK_F_Heavysnow_S
-					ARK_F_Irene
-					ARK_F_Irene_S
-					ARK_F_Gavial_G
-					ARK_F_Gavial_G_S
-					ARK_F_Qiubai
-					ARK_F_Qiubai_S
-					ARK_F_Ines
-					ARK_F_Ines_S
-					ARK_F_Muelsyse
-					ARK_F_Muelsyse_S
-					ARK_F_Blacknight
-					ARK_F_Blacknight_S
-					ARK_F_Cantabile
-					ARK_F_Cantabile_S
-					ARK_F_Highmore
-					ARK_F_Highmore_S
-					ARK_F_Dagda
-					ARK_F_Dagda_S
-					ARK_F_WindChimes
-					ARK_F_WindChimes_S
-					ARK_F_Morgan
-					ARK_F_Morgan_S
-					ARK_F_Kroos
-					ARK_F_Erato
-					ARK_F_Erato_S
-					ARK_F_Lunacub
-					ARK_F_Lunacub_S
-					ARK_F_Jieyun
-					ARK_F_Jieyun_S
-					ARK_F_Melanite
-					ARK_F_Melanite_S
-					ARK_F_Firewhistle
-					ARK_F_Firewhistle_S
-					ARK_F_Cement
-					ARK_F_Cement_S
-					ARK_F_Hibiscus_G
-					ARK_F_Hibiscus_G_S
-					ARK_F_Paprika
-					ARK_F_Paprika_S
-					ARK_F_NineColoredDeer
-					ARK_F_NineColoredDeer_S
-					ARK_F_Quercus
-					ARK_F_Quercus_S
-					ARK_F_Heidi
-					ARK_F_Heidi_S
-					ARK_F_Proviso
-					ARK_F_Proviso_S
-					ARK_F_Harmonie
-					ARK_F_Harmonie_S
-					ARK_F_Kazemaru
-					ARK_F_Kazemaru_S
-					ARK_F_UOfficial
-					ARK_F_Quartz
-					ARK_F_Quartz_S
-				}
-			}
-			add = {
-				trigger = {
-					OR = {
-						gender = male
-						gender = indeterminable
-					}
-				}
-				portraits = {
-					ARK_M_12F
-					ARK_M_Flamebringer
-					ARK_M_Flamebringer_S
-					ARK_M_SilverAsh
-					ARK_M_SilverAsh_S
-					ARK_M_Hellagur
-					ARK_M_Hellagur_S
-					ARK_M_Courier
-					ARK_M_Courier_S
-					ARK_M_Matterhorn
-					ARK_M_Matterhorn_S
-					ARK_M_Gnosis
-					ARK_M_Gnosis_S
-					ARK_M_Steward
-					ARK_M_Adnachiel
-					ARK_M_Ansel
-					ARK_M_Aak
-					ARK_M_Aak_S
-					ARK_M_Hung
-					ARK_M_Hung_S
-					ARK_M_Phantom
-					ARK_M_Phantom_S
-					ARK_M_Greyy
-					ARK_M_Greyy_S
-					ARK_M_Mountain
-					ARK_M_Mountain_S
-					ARK_M_Arene
-					ARK_M_Arene_S
-					ARK_M_Jaye
-					ARK_M_Jaye_S
-					ARK_M_Midnight
-					ARK_M_Spot
-					ARK_M_Thorns
-					ARK_M_Thorns_S
-					ARK_M_Ayerscarpe
-					ARK_M_Ayerscarpe_S
-					ARK_M_Bison
-					ARK_M_Bison_S
-					ARK_M_Aosta
-					ARK_M_Aosta_S
-					ARK_M_Chiave
-					ARK_M_Chiave_S
-					ARK_M_Ethan
-					ARK_M_Ethan_S
-					ARK_M_Broca
-					ARK_M_Broca_S
-					ARK_M_Leonhardt
-					ARK_M_Leonhardt_S
-					ARK_M_Elysium
-					ARK_M_Elysium_S
-					ARK_M_Mizuki
-					ARK_M_Mizuki_S
-					ARK_M_MrNothing
-					ARK_M_MrNothing_S
-					ARK_M_Tachanka
-					ARK_M_Tachanka_S
-					ARK_M_Passenger
-					ARK_M_Passenger_S
-					ARK_M_Tequila
-					ARK_M_Tequila_S
-					ARK_M_Corroserum
-					ARK_M_Corroserum_S
-					ARK_M_NoirCorne
-					ARK_M_Rangers
-					ARK_M_Ebenholz
-					ARK_M_Ebenholz_S
-					ARK_M_Stainless
-					ARK_M_Stainless_S
-					ARK_M_Lumen
-					ARK_M_Lumen_S
-					ARK_M_Mlynar
-					ARK_M_Mlynar_S
-					ARK_M_Chongyue
-					ARK_M_Chongyue_S
-					ARK_M_Vigil
-					ARK_M_Vigil_S
-					ARK_M_Puzzle
-					ARK_M_Puzzle_S
-					ARK_M_Enforcer
-					ARK_M_Enforcer_S
-					ARK_M_Noir_G
-					ARK_M_Noir_G_S
-					ARK_M_Greyy_G
-					ARK_M_Greyy_G_S
-					ARK_M_Shalem
-					ARK_M_Shalem_S
-					ARK_M_Czerny
-					ARK_M_Czerny_S
-					ARK_M_Windflit
-					ARK_M_Windflit_S
-					ARK_M_Minimalist
-					ARK_M_Minimalist_S
-					ARK_M_Qanipalaat
-					ARK_M_Qanipalaat_S
-					ARK_M_LuoXiaohei
-					ARK_M_LuoXiaohei_S
-					ARK_M_Humus
-					ARK_M_Humus_S
-					ARK_M_Totter
-					ARK_M_Totter_S
-					ARK_M_Chestnut
-					ARK_M_Chestnut_S
-				}
-			}
-		}
-		leader = {
-			add = {
-				trigger = {
-					OR = {
-						gender = female
-						gender = indeterminable
-					}
-				}
-				portraits = {
-					ARK_F_Closure
-					ARK_F_Chen
-					ARK_F_Blaze
-					ARK_F_Sora
-					ARK_F_Texas
-					ARK_F_Exusiai
-					ARK_F_Franka
-					ARK_F_Liskarm
-					ARK_F_Silence
-					ARK_F_Gitano
-					ARK_F_Deepcolor
-					ARK_F_Siege
-					ARK_F_W
-					ARK_F_Myrrh
-					ARK_F_Winter
-					ARK_F_ShiraYuki
-					ARK_F_Hibiscus
-					ARK_F_Lava
-					ARK_F_Beagle
-					ARK_F_Fen
-					ARK_F_Kroos
-					ARK_F_Meteor
-					ARK_F_Estelle
-					ARK_F_Ptilopsis
-					ARK_F_BluePoison
-					ARK_F_Dobermann
-					ARK_F_May
-					ARK_F_Ifrit
-					ARK_F_Astgenne
-					ARK_F_Hoshiguma
-					ARK_F_Beehunter
-					ARK_F_Lappland
-					ARK_F_Haze
-					ARK_F_Specter
-					ARK_F_ProjektRed
-					ARK_F_Provence
-					ARK_F_Shining
-					ARK_F_Nearl
-					ARK_F_Scavenger
-					ARK_F_Cuora
-					ARK_F_Myrtle
-					ARK_F_Indra
-					ARK_F_Firewatch
-					ARK_F_Vulcan
-					ARK_F_Nightmare
-					ARK_F_Skyfire
-					ARK_F_Warfarin
-					ARK_F_Cliffheart
-					ARK_F_Pramanix
-					ARK_F_Nightingale
-					ARK_F_Eyjafjalla
-					ARK_F_Perfumer
-					ARK_F_Earthspirit
-					ARK_F_Mousse
-					ARK_F_Gavial
-					ARK_F_Vermeil
-					ARK_F_Plume
-					ARK_F_Frostleaf
-					ARK_F_Truth
-					ARK_F_Gumi
-					ARK_F_Poca
-					ARK_F_Croissant
-					ARK_F_Saria
-					ARK_F_Platinum
-					ARK_F_Melantha
-					ARK_F_Cardigan
-					ARK_F_Mostima
-					ARK_F_Kafka
-					ARK_F_Manticore
-					ARK_F_Andreana
-					ARK_F_Meteorite
-					ARK_F_Grani
-					ARK_F_Bagpipe
-					ARK_F_Savage
-					ARK_F_Jessica
-					ARK_F_Rope
-					ARK_F_Gravel
-					ARK_F_Vanilla
-					ARK_F_FEater
-					ARK_F_Mayer
-					ARK_F_WaaiFu
-					ARK_F_Magallan
-					ARK_F_Bibeak
-					ARK_F_Shamare
-					ARK_F_Podenco
-					ARK_F_Durnar
-					ARK_F_Reed
-					ARK_F_Skadi
-					ARK_F_Whislash
-					ARK_F_Astesia
-					ARK_F_Breeze
-					ARK_F_Shaw
-					ARK_F_Orchid
-					ARK_F_Popukar
-					ARK_F_Catapult
-					ARK_F_Matoimaru
-					ARK_F_Vigna
-					ARK_F_Angelina
-					ARK_F_Sussurro
-					ARK_F_Cutter
-					ARK_F_Ambriel
-					ARK_F_Heavyrain
-					ARK_F_Leizi
-					ARK_F_Swire
-					ARK_F_Mudrock
-					ARK_F_Glaucus
-					ARK_F_Click
-					ARK_F_Archetto
-					ARK_F_Sideroca
-					ARK_F_Scene
-					ARK_F_Utage
-					ARK_F_Iris
-					ARK_F_Schwarz
-					ARK_F_Tsukinogi
-					ARK_F_Beeswax
-					ARK_F_Folinic
-					ARK_F_Jackie
-					ARK_F_Ceylon
-					ARK_F_Surtr
-					ARK_F_Suzuran
-					ARK_F_Saga
-					ARK_F_Toddifons
-					ARK_F_April
-					ARK_F_Aciddrop
-					ARK_F_GreyThroat
-					ARK_F_Bena
-					ARK_F_Asbestos
-					ARK_F_Sesa
-					ARK_F_Bubble
-					ARK_F_Snowsant
-					ARK_F_Purestream
-					ARK_F_Mint
-					ARK_F_Rosmontis
-					ARK_F_Weedy
-					ARK_F_Tuye
-					ARK_F_Absinthe
-					ARK_F_Tomimi
-					ARK_F_Flint
-					ARK_F_Eunectes
-					ARK_F_Flametail
-					ARK_F_LaPluma
-					ARK_F_Aurora
-					ARK_F_Blemishine
-					ARK_F_Carnelian
-					ARK_F_Fartooth
-					ARK_F_Ashlock
-					ARK_F_Whisperain
-					ARK_F_Pinecone
-					ARK_F_Honeyberry
-					ARK_F_Robin
-					ARK_F_Beanstalk
-					ARK_F_Ash
-					ARK_F_Blitz
-					ARK_F_Frost
-					ARK_F_Indigo
-					ARK_F_Mulberry
-					ARK_F_Gladiia
-					ARK_F_Akafuyu
-					ARK_F_Kirara
-					ARK_F_Saileach
-					ARK_F_Roberta
-					ARK_F_Pallas
-					ARK_F_WildMane
-					ARK_F_Durin
-					ARK_F_Yato
-					ARK_F_Lava_G
-					ARK_F_Skadi_G
-					ARK_F_Chen_G
-					ARK_F_Nearl_G
-					ARK_F_Ceobe
-					ARK_F_Nian
-					ARK_F_Dusk
-					ARK_F_Pudding
-					ARK_F_Kjera
-					ARK_F_Horn
-					ARK_F_Dorothy
-					ARK_F_Texas_G
-					ARK_F_Yato_G
-					ARK_F_Goldenglow
-					ARK_F_Lin
-					ARK_F_Hoolheyak
-					ARK_F_Ling
-					ARK_F_Silence_G
-					ARK_F_Reed_G
-					ARK_F_Penance
-					ARK_F_Fiammetta
-					ARK_F_Heavysnow
-					ARK_F_Irene
-					ARK_F_Gavial_G
-					ARK_F_Qiubai
-					ARK_F_Ines
-					ARK_F_Muelsyse
-					ARK_F_Blacknight
-					ARK_F_Cantabile
-					ARK_F_Highmore
-					ARK_F_Dagda
-					ARK_F_WindChimes
-					ARK_F_Morgan
-					ARK_F_Kroos
-					ARK_F_Erato
-					ARK_F_Lunacub
-					ARK_F_Jieyun
-					ARK_F_Melanite
-					ARK_F_Firewhistle
-					ARK_F_Cement
-					ARK_F_Hibiscus_G
-					ARK_F_Paprika
-					ARK_F_NineColoredDeer
-					ARK_F_Quercus
-					ARK_F_Heidi
-					ARK_F_Proviso
-					ARK_F_Harmonie
-					ARK_F_Kazemaru
-					ARK_F_UOfficial
-					ARK_F_Quartz
-				}
-			}
-			add = {
-				trigger = {
-					OR = {
-						gender = male
-						gender = indeterminable
-					}
-				}
-				portraits = {
-					ARK_M_12F
-					ARK_M_Flamebringer
-					ARK_M_SilverAsh
-					ARK_M_Hellagur
-					ARK_M_Courier
-					ARK_M_Matterhorn
-					ARK_M_Gnosis
-					ARK_M_Steward
-					ARK_M_Adnachiel
-					ARK_M_Ansel
-					ARK_M_Aak
-					ARK_M_Hung
-					ARK_M_Phantom
-					ARK_M_Greyy
-					ARK_M_Mountain
-					ARK_M_Arene
-					ARK_M_Jaye
-					ARK_M_Midnight
-					ARK_M_Spot
-					ARK_M_Thorns
-					ARK_M_Ayerscarpe
-					ARK_M_Bison
-					ARK_M_Aosta
-					ARK_M_Chiave
-					ARK_M_Ethan
-					ARK_M_Broca
-					ARK_M_Leonhardt
-					ARK_M_Elysium
-					ARK_M_Mizuki
-					ARK_M_MrNothing
-					ARK_M_Tachanka
-					ARK_M_Passenger
-					ARK_M_Tequila
-					ARK_M_Corroserum
-					ARK_M_NoirCorne
-					ARK_M_Rangers
-					ARK_M_Ebenholz
-					ARK_M_Stainless
-					ARK_M_Lumen
-					ARK_M_Mlynar
-					ARK_M_Chongyue
-					ARK_M_Vigil
-					ARK_M_Puzzle
-					ARK_M_Enforcer
-					ARK_M_Noir_G
-					ARK_M_Greyy_G
-					ARK_M_Shalem
-					ARK_M_Czerny
-					ARK_M_Windflit
-					ARK_M_Minimalist
-					ARK_M_Qanipalaat
-					ARK_M_LuoXiaohei
-					ARK_M_Humus
-					ARK_M_Totter
-					ARK_M_Chestnut
-				}
-			}
-		}
-		species = { #generic portrait for a species
-			add = {
-				trigger = {
-					OR = {
-						gender = female
-						gender = indeterminable
-					}
-				}
-				portraits = {
-					ARK_F_Closure
-					ARK_F_Chen
-					ARK_F_Blaze
-					ARK_F_Sora
-					ARK_F_Texas
-					ARK_F_Exusiai
-					ARK_F_Franka
-					ARK_F_Liskarm
-					ARK_F_Silence
-					ARK_F_Gitano
-					ARK_F_Deepcolor
-					ARK_F_Siege
-					ARK_F_W
-					ARK_F_Myrrh
-					ARK_F_Winter
-					ARK_F_ShiraYuki
-					ARK_F_Hibiscus
-					ARK_F_Lava
-					ARK_F_Beagle
-					ARK_F_Fen
-					ARK_F_Kroos
-					ARK_F_Meteor
-					ARK_F_Estelle
-					ARK_F_Ptilopsis
-					ARK_F_BluePoison
-					ARK_F_Dobermann
-					ARK_F_May
-					ARK_F_Ifrit
-					ARK_F_Astgenne
-					ARK_F_Hoshiguma
-					ARK_F_Beehunter
-					ARK_F_Lappland
-					ARK_F_Haze
-					ARK_F_Specter
-					ARK_F_ProjektRed
-					ARK_F_Provence
-					ARK_F_Shining
-					ARK_F_Nearl
-					ARK_F_Scavenger
-					ARK_F_Cuora
-					ARK_F_Myrtle
-					ARK_F_Indra
-					ARK_F_Firewatch
-					ARK_F_Vulcan
-					ARK_F_Nightmare
-					ARK_F_Skyfire
-					ARK_F_Warfarin
-					ARK_F_Cliffheart
-					ARK_F_Pramanix
-					ARK_F_Nightingale
-					ARK_F_Eyjafjalla
-					ARK_F_Perfumer
-					ARK_F_Earthspirit
-					ARK_F_Mousse
-					ARK_F_Gavial
-					ARK_F_Vermeil
-					ARK_F_Plume
-					ARK_F_Frostleaf
-					ARK_F_Truth
-					ARK_F_Gumi
-					ARK_F_Poca
-					ARK_F_Croissant
-					ARK_F_Saria
-					ARK_F_Platinum
-					ARK_F_Melantha
-					ARK_F_Cardigan
-					ARK_F_Mostima
-					ARK_F_Kafka
-					ARK_F_Manticore
-					ARK_F_Andreana
-					ARK_F_Meteorite
-					ARK_F_Grani
-					ARK_F_Bagpipe
-					ARK_F_Savage
-					ARK_F_Jessica
-					ARK_F_Rope
-					ARK_F_Gravel
-					ARK_F_Vanilla
-					ARK_F_FEater
-					ARK_F_Mayer
-					ARK_F_WaaiFu
-					ARK_F_Magallan
-					ARK_F_Bibeak
-					ARK_F_Shamare
-					ARK_F_Podenco
-					ARK_F_Durnar
-					ARK_F_Reed
-					ARK_F_Skadi
-					ARK_F_Whislash
-					ARK_F_Astesia
-					ARK_F_Breeze
-					ARK_F_Shaw
-					ARK_F_Orchid
-					ARK_F_Popukar
-					ARK_F_Catapult
-					ARK_F_Matoimaru
-					ARK_F_Vigna
-					ARK_F_Angelina
-					ARK_F_Sussurro
-					ARK_F_Cutter
-					ARK_F_Ambriel
-					ARK_F_Heavyrain
-					ARK_F_Leizi
-					ARK_F_Swire
-					ARK_F_Mudrock
-					ARK_F_Glaucus
-					ARK_F_Click
-					ARK_F_Archetto
-					ARK_F_Sideroca
-					ARK_F_Scene
-					ARK_F_Utage
-					ARK_F_Iris
-					ARK_F_Schwarz
-					ARK_F_Tsukinogi
-					ARK_F_Beeswax
-					ARK_F_Folinic
-					ARK_F_Jackie
-					ARK_F_Ceylon
-					ARK_F_Surtr
-					ARK_F_Suzuran
-					ARK_F_Saga
-					ARK_F_Toddifons
-					ARK_F_April
-					ARK_F_Aciddrop
-					ARK_F_GreyThroat
-					ARK_F_Bena
-					ARK_F_Asbestos
-					ARK_F_Sesa
-					ARK_F_Bubble
-					ARK_F_Snowsant
-					ARK_F_Purestream
-					ARK_F_Mint
-					ARK_F_Rosmontis
-					ARK_F_Weedy
-					ARK_F_Tuye
-					ARK_F_Absinthe
-					ARK_F_Tomimi
-					ARK_F_Flint
-					ARK_F_Eunectes
-					ARK_F_Flametail
-					ARK_F_LaPluma
-					ARK_F_Aurora
-					ARK_F_Blemishine
-					ARK_F_Carnelian
-					ARK_F_Fartooth
-					ARK_F_Ashlock
-					ARK_F_Whisperain
-					ARK_F_Pinecone
-					ARK_F_Honeyberry
-					ARK_F_Robin
-					ARK_F_Beanstalk
-					ARK_F_Ash
-					ARK_F_Blitz
-					ARK_F_Frost
-					ARK_F_Indigo
-					ARK_F_Mulberry
-					ARK_F_Gladiia
-					ARK_F_Akafuyu
-					ARK_F_Kirara
-					ARK_F_Saileach
-					ARK_F_Roberta
-					ARK_F_Pallas
-					ARK_F_WildMane
-					ARK_F_Durin
-					ARK_F_Yato
-					ARK_F_Lava_G
-					ARK_F_Skadi_G
-					ARK_F_Chen_G
-					ARK_F_Nearl_G
-					ARK_F_Ceobe
-					ARK_F_Nian
-					ARK_F_Dusk
-					ARK_F_Pudding
-					ARK_F_Kjera
-					ARK_F_Horn
-					ARK_F_Dorothy
-					ARK_F_Texas_G
-					ARK_F_Yato_G
-					ARK_F_Goldenglow
-					ARK_F_Lin
-					ARK_F_Hoolheyak
-					ARK_F_Ling
-					ARK_F_Silence_G
-					ARK_F_Reed_G
-					ARK_F_Penance
-					ARK_F_Fiammetta
-					ARK_F_Heavysnow
-					ARK_F_Irene
-					ARK_F_Gavial_G
-					ARK_F_Qiubai
-					ARK_F_Ines
-					ARK_F_Muelsyse
-					ARK_F_Blacknight
-					ARK_F_Cantabile
-					ARK_F_Highmore
-					ARK_F_Dagda
-					ARK_F_WindChimes
-					ARK_F_Morgan
-					ARK_F_Kroos
-					ARK_F_Erato
-					ARK_F_Lunacub
-					ARK_F_Jieyun
-					ARK_F_Melanite
-					ARK_F_Firewhistle
-					ARK_F_Cement
-					ARK_F_Hibiscus_G
-					ARK_F_Paprika
-					ARK_F_NineColoredDeer
-					ARK_F_Quercus
-					ARK_F_Heidi
-					ARK_F_Proviso
-					ARK_F_Harmonie
-					ARK_F_Kazemaru
-					ARK_F_UOfficial
-					ARK_F_Quartz
-				}
-			}
-			add = {
-				trigger = {
-					OR = {
-						gender = male
-						gender = indeterminable
-					}
-				}
-				portraits = {
-					ARK_M_12F
-					ARK_M_Flamebringer
-					ARK_M_SilverAsh
-					ARK_M_Hellagur
-					ARK_M_Courier
-					ARK_M_Matterhorn
-					ARK_M_Gnosis
-					ARK_M_Steward
-					ARK_M_Adnachiel
-					ARK_M_Ansel
-					ARK_M_Aak
-					ARK_M_Hung
-					ARK_M_Phantom
-					ARK_M_Greyy
-					ARK_M_Mountain
-					ARK_M_Arene
-					ARK_M_Jaye
-					ARK_M_Midnight
-					ARK_M_Spot
-					ARK_M_Thorns
-					ARK_M_Ayerscarpe
-					ARK_M_Bison
-					ARK_M_Aosta
-					ARK_M_Chiave
-					ARK_M_Ethan
-					ARK_M_Broca
-					ARK_M_Leonhardt
-					ARK_M_Elysium
-					ARK_M_Mizuki
-					ARK_M_MrNothing
-					ARK_M_Tachanka
-					ARK_M_Passenger
-					ARK_M_Tequila
-					ARK_M_Corroserum
-					ARK_M_NoirCorne
-					ARK_M_Rangers
-					ARK_M_Ebenholz
-					ARK_M_Stainless
-					ARK_M_Lumen
-					ARK_M_Mlynar
-					ARK_M_Chongyue
-					ARK_M_Vigil
-					ARK_M_Puzzle
-					ARK_M_Enforcer
-					ARK_M_Noir_G
-					ARK_M_Greyy_G
-					ARK_M_Shalem
-					ARK_M_Czerny
-					ARK_M_Windflit
-					ARK_M_Minimalist
-					ARK_M_Qanipalaat
-					ARK_M_LuoXiaohei
-					ARK_M_Humus
-					ARK_M_Totter
-					ARK_M_Chestnut
-				}
-			}
-		}
-		pop = { #for a specific pop
-			add = {
-				trigger = {
-					NOT = { species = { species_gender = male } }
-				}
-				portraits = {
-					ARK_npc_022
-					ARK_npc_032
-					ARK_npc_065
-					ARK_npc_072
-					ARK_npc_073
-					ARK_npc_141
-					ARK_npc_163
-					ARK_npc_202
-					ARK_npc_243
-					ARK_npc_280
-					ARK_npc_304
-					ARK_npc_367
-					ARK_npc_368
-					ARK_npc_462
-				}
-			}
-			add = {
-				trigger = {
-					NOT = { species = { species_gender = female } }
-				}
-				portraits = {
-					ARK_npc_021
-					ARK_npc_033
-					ARK_npc_068
-					ARK_npc_070
-					ARK_npc_071
-					ARK_npc_140
-					ARK_npc_164
-					ARK_npc_165
-					ARK_npc_201
-					ARK_npc_222
-					ARK_npc_223
-					ARK_npc_242
-					ARK_npc_277
-					ARK_npc_303
-					ARK_npc_365
-					ARK_npc_366
-					ARK_npc_460
+					ARK_npc_F_269
+					ARK_npc_F_276
+					ARK_npc_F_280
+					ARK_npc_F_418
+					ARK_npc_F_497
+					ARK_npc_F_700
+					ARK_npc_F_963
+					ARK_npc_F_967
+					ARK_npc_F_1043
+					ARK_npc_F_1129
+					ARK_npc_F_1130
+					ARK_npc_F_1186
+					ARK_npc_F_1394
+					ARK_npc_F_1562
 				}
 			}
 		}

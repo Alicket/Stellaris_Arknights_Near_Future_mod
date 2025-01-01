@@ -1,4 +1,4 @@
-namespace = ark_set
+#namespace = ark_set
 
 # 强制修改非明日方舟国家选择的mod内容
 #country_event = {

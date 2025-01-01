@@ -149,25 +149,26 @@ guiTypes = {
 			text = ARKOCEAN_GUI_RESET_RULER
 			text_color_code = "W"
 		}
-		effectButtonType = {
-           multiline = yes#重置空间站位置
-			name = "arkocean_reset_station"
-			effect = beffect_arkocean_reset_station
-			spriteType = GFX_arkocean_button_332_26
+		#effectButtonType = {
+        #   multiline = yes#重置空间站位置
+		#	name = "arkocean_reset_station"
+		#	effect = beffect_arkocean_reset_station
+		#	spriteType = GFX_arkocean_button_332_26
 
-			position = { x= 75 y= 662 }
-			orientation = upper_left
+		#	position = { x= 75 y= 662 }
+		#	orientation = upper_left
 
-			font = "cg_16b"
-			text = ARKOCEAN_GUI_RESET_STATION
-			text_color_code = "W"
-		}
+		#	font = "cg_16b"
+		#	text = ARKOCEAN_GUI_RESET_STATION
+		#	text_color_code = "W"
+		#}
 		effectButtonType = {
             multiline = yes#进行科学研究
 			name = "arkocean_call_message"
 			effect = beffect_arkocean_exchange_research
 			spriteType = GFX_arkocean_button_332_26
-			position = { x= 75 y= 705 }
+			#position = { x= 75 y= 705 }
+			position = { x= 75 y= 662 }
 			orientation = upper_left
 
 			font = "cg_16b"
