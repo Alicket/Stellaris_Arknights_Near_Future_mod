@@ -17,16 +17,16 @@ country_event = {  #检测明日方舟mod：[Arknights]The Crusade to Stellaris 
 }
 
 #检测博士立绘并修正
-country_event = {
-	id = ark_check.2
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		has_origin = origin_ark_tragedy_birth
-	}
-	immediate = {
-		event_target:ark_ruler_doctor = {
-			change_leader_portrait = ARK_N_Doctor_N
-		}
-	}
-}
+#country_event = {
+#	id = ark_check.2
+#	hide_window = yes
+#	is_triggered_only = yes
+#	trigger = {
+#		has_country_flag = portrait_auto_change_to_DOC
+#	}
+#	immediate = {
+#		event_target:ark_ruler_doctor = {
+#			change_leader_portrait = ARK_N_Doctor_N
+#		}
+#	}
+#}
