@@ -1484,6 +1484,88 @@ tech_ark_shields_5c = {
 }
 
 
+tech_ark_uav_1 = {
+	cost = @tier2cost3
+	area = engineering
+	tier = 2
+	ai_update_type = military
+	category = { voidcraft }
+	prerequisites = { "tech_strike_craft_1" tech_ark_laser_1 tech_combat_computers_1 }
+	weight = @tier2weight3
+
+	## unlock strike craft 2
+
+	weight_modifier = {
+	}
+
+	ai_weight = {
+
+		modifier = {
+			factor = @favored_weapon_ai_tech_factor
+			is_preferred_weapons = weapon_type_strike_craft
+		}
+		modifier = {
+			factor = @disfavored_weapon_ai_tech_factor
+			NOT = { is_preferred_weapons = weapon_type_strike_craft }
+		}
+	}
+}
+
+tech_ark_uav_2 = {
+	cost = @tier3cost3
+	area = engineering
+	tier = 3
+	ai_update_type = military
+	category = { voidcraft }
+	prerequisites = { "tech_strike_craft_2" tech_combat_computers_2 tech_ark_laser_2 }
+	weight = @tier3weight3
+
+	## unlock strike craft 3
+
+	weight_modifier = {
+	}
+
+	ai_weight = {
+
+		modifier = {
+			factor = @favored_weapon_ai_tech_factor
+			is_preferred_weapons = weapon_type_strike_craft
+		}
+		modifier = {
+			factor = @disfavored_weapon_ai_tech_factor
+			NOT = { is_preferred_weapons = weapon_type_strike_craft }
+		}
+	}
+}
+
+tech_ark_frighter_1 = {
+	cost = @tier4cost2
+	area = engineering
+	tier = 4
+	ai_update_type = military
+	category = { voidcraft }
+	prerequisites = { "tech_strike_craft_3" "tech_ark_space_originium_power" tech_combat_computers_2}
+	weight = @tier3weight3
+
+	## unlock strike craft 3
+
+	weight_modifier = {
+	}
+
+	ai_weight = {
+
+		modifier = {
+			factor = @favored_weapon_ai_tech_factor
+			is_preferred_weapons = weapon_type_strike_craft
+		}
+		modifier = {
+			factor = @disfavored_weapon_ai_tech_factor
+			NOT = { is_preferred_weapons = weapon_type_strike_craft }
+		}
+	}
+}
+
+
 #弧光计划科技
 
 #十二号井前置

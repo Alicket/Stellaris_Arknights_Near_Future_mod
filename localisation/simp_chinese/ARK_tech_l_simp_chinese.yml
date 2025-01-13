@@ -87,6 +87,12 @@ tech_ark_shields_5b:0 "圣域护盾"
 tech_ark_shields_5b_desc:0 "$ARK_SHIELD_5B_DESC$"
 tech_ark_shields_5c:0 "铁御护盾"
 tech_ark_shields_5c_desc:0 "$ARK_SHIELD_5C_DESC$"
+tech_ark_uav_1:0 "$ARK_STRIKE_CRAFT_UAV_1$"
+tech_ark_uav_2:0 "$ARK_STRIKE_CRAFT_UAV_2$"
+tech_ark_frighter_1:0 "$ARK_STRIKE_CRAFT_FRIGHTER_1$"
+tech_ark_uav_1_desc:0 "在发现即使是最优质的太空军战士也无法弥补我们现有舰载机在面对新时代太空作战中的需求时，科研人员建议我们参考泰拉陆军在前太空的结晶时代常用的无人机蜂群战术，开发一种擅长蜂群作战的新型舰载机作为可选项。"
+tech_ark_uav_2_desc:0 "经过长时间的蜂群战术作战后，我们获得了大量战术经验与技术积累。科研人员提议以“妖怪”开发新一代蜂群无人歼击机，该型舰载机除了全面加强机动性与防护之外，还搭载了更为先进的火控系统，特化开发的聚焦技艺镭射炮可以轻易穿透敌人的护盾与装甲并对船体造成伤害。"
+tech_ark_frighter_1_desc:0 "以毁灭性为主要目标而开发的重型无人轰炸机，舍弃了一定的防护和机动，挂载着巨大的坍缩诱导炸弹，力求一发命中并对敌舰造成巨大的破坏。随后，舰载机将尽力在敌舰周围机动以饱和其点防御系统。"
 
 
 #弧光井前置

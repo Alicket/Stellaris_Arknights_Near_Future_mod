@@ -89,6 +89,7 @@ country_event = {
 				id = ark_arclight.122
 				days = 120
 			}
+			set_country_flag = ark_got_kristen
 		}
 	}
 }
@@ -101,6 +102,7 @@ country_event = {
 
 	trigger = {
 	}
+
 	option = {
 		name = ark_arclight.122.a
 		custom_tooltip = ark_arclight.122.a.tooltip
@@ -681,8 +683,34 @@ country_event = {
 
 
 
+## 杂项事件 ##
 
+country_event = {
+	id = ark_arclight.3001
+	is_triggered_only = yes
+	title = ark_arclight.3001.title
+	desc =  ark_arclight.3001.desc
+	picture = GFX_evt_arclight_glow_of_stars
+	show_sound = distance_titan_laser_fire_01
 
+	trigger = {
+		NOT = { has_country_flag = ark_glow_of_stars_given }
+		has_origin = origin_ark_tragedy_birth
+		any_owned_megastructure = {
+			is_megastructure_type = grand_archive_0
+		}
+		has_country_flag = ark_got_kristen
+	}
 
+	specimen = ark_glow_of_stars
+	immediate = {
+		hidden_effect = {
+			set_country_flag = ark_glow_of_stars_given
+		}
+	}
+	option = {
+		name = ark_arclight.3001.a
+	}
+}
 
 

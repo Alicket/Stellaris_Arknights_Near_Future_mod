@@ -137,6 +137,26 @@ spriteTypes = {
 		name = "GFX_ark_ship_part_computer_ghost_4"
 		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_computer_ghost_4.dds"
 	}
+	spriteType = {	# 轻型蜂群无人机“妖怪”
+		name = "GFX_ark_ship_part_uav_1"
+		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_uav_1.dds"
+	}
+	spriteType = {	# 重型蜂群无人机“威龙”
+		name = "GFX_ark_ship_part_uav_2"
+		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_uav_2.dds"
+	}
+	spriteType = {	# 重型无人轰炸机“暴鸰”
+		name = "GFX_ark_ship_part_frighter_1"
+		texturefile = "gfx/interface/icons/ship_parts/ark_ship_part_frighter_1.dds"
+	}
+
+#博物天枢
+
+	spriteType = {	# 万星园之辉
+		name = "GFX_ark_specimen_glow_of_stars"
+		texturefile = "gfx/interface/icons/specimens/ark_glow_of_stars.dds"
+	}
+
 
 
 	spriteType = {	# message:进化增加

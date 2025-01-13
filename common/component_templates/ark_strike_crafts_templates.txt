@@ -1,0 +1,189 @@
+@attack_range = 10
+@engagement_range = 125
+@launch_time = 2
+@speed1 = 550
+@speed2 = 600
+@speed3 = 650
+@speed4 = 700
+@speed5 = 725
+@count = 8
+@regen = 0.5
+
+@power1 = -20
+@power2 = -34
+@power3 = -45
+@power4 = -59
+@power5 = -73
+
+strike_craft_component_template = {
+    key = "ARK_STRIKE_CRAFT_UAV_1"
+    size = LARGE
+    entity = "bomber_entity"
+
+    weapon_type = point_defence
+    projectile_gfx = "strike_craft_laser_2"
+
+    power = @power3
+    resources = {
+        category = ship_components
+        cost = {
+            alloys = 50
+            originiums = 4
+            multipole_nanosheets = 2
+        }
+        upkeep = {
+            energy = @l_t3_upkeep_energy
+            alloys = @l_t3_upkeep_alloys
+        }
+    }
+
+    count = 20
+    regeneration_per_day = 1
+    launch_time = @launch_time
+
+    damage = { min = 3 max = 5 }
+    cooldown = 2.3
+    range = @attack_range
+    engagement_range = @engagement_range
+    accuracy = 1.00
+    tracking = 0.90
+
+    health = 5
+    armor = 0
+    shield = 5
+    evasion = 0.70
+
+    speed = @speed3
+    rotation_speed = 0.8
+    acceleration = 1
+
+    shield_penetration = 1.0
+    armor_damage = 1.5
+
+    ship_behavior = "fighters_behavior"
+
+    icon = "GFX_ark_ship_part_uav_1"
+    icon_frame = 1
+    component_set = "ARK_STRIKE_CRAFT_UAV_1_SET"
+    prerequisites = { "tech_ark_uav_1" }
+    upgrades_to = "ARK_STRIKE_CRAFT_UAV_2"
+
+    tags = { weapon_type_strike_craft }
+    ai_tags = { weapon_role_point_defense carrier }
+    point_defence_targets = { "strike_craft" }
+}
+
+strike_craft_component_template = {
+    key = "ARK_STRIKE_CRAFT_UAV_2"
+    size = LARGE
+    entity = "bomber_entity"
+
+    weapon_type = point_defence
+    projectile_gfx = "strike_craft_laser_2"
+
+    power = @power5
+    resources = {
+        category = ship_components
+        cost = {
+            alloys = 200
+            originiums = 8
+            multipole_nanosheets = 4
+        }
+        upkeep = {
+            energy = @l_t5_upkeep_energy
+            alloys = @l_t5_upkeep_alloys
+        }
+    }
+
+    count = 20
+    regeneration_per_day = 1
+    launch_time = @launch_time
+
+    damage = { min = 5 max = 7 }
+    cooldown = 2.3
+    range = @attack_range
+    engagement_range = @engagement_range
+    accuracy = 1.00
+    tracking = 1.00
+
+    health = 40
+    armor = 0
+    shield = 15
+    evasion = 0.85
+
+    speed = @speed4
+    rotation_speed = 0.8
+    acceleration = 1
+
+    shield_penetration = 1.0
+    armor_penetration = 1.0
+
+    ship_behavior = "fighters_behavior"
+
+    icon = "GFX_ark_ship_part_uav_2"
+    icon_frame = 1
+    component_set = "ARK_STRIKE_CRAFT_UAV_2_SET"
+    prerequisites = { "tech_ark_uav_2" }
+
+    tags = { weapon_type_strike_craft }
+    ai_tags = { weapon_role_point_defense carrier }
+    point_defence_targets = { "strike_craft" }
+}
+
+strike_craft_component_template = {
+    key = "ARK_STRIKE_CRAFT_FRIGHTER_1"
+    size = LARGE
+    entity = "bomber_entity"
+
+    weapon_type = instant
+    projectile_gfx = "small_space_amoeba_weapon"
+
+    power = @power_M6
+    resources = {
+        category = ship_components
+        cost = {
+            alloys = 250
+            originiums = 8
+            multipole_nanosheets = 4
+        }
+        upkeep = {
+            energy = @l_t5_upkeep_energy
+            alloys = @l_t5_upkeep_alloys
+        }
+    }
+
+    count = 6
+    regeneration_per_day = 0.5
+    launch_time = 4
+
+    damage = { min = 900 max = 1000 }
+    cooldown = 90
+    range = 30
+    engagement_range = 200
+    accuracy = 1.00
+    tracking = 0.40
+
+    health = 35
+    armor = 10
+    shield = 10
+    evasion = 0.60
+
+    speed = @speed1
+    rotation_speed = 0.8
+    acceleration = 1
+
+    shield_penetration = 1.0
+    armor_penetration = 1.0
+    hull_damage = 1.50
+
+    ship_behavior = "bombers_behavior"
+
+    icon = "GFX_ark_ship_part_frighter_1"
+    icon_frame = 1
+    component_set = "ARK_STRIKE_CRAFT_FRIGHTER_1_SET"
+    prerequisites = { "tech_ark_frighter_1" }
+
+    tags = { weapon_type_strike_craft }
+    ai_tags = { carrier }
+    point_defence_targets = { "strike_craft" }
+}

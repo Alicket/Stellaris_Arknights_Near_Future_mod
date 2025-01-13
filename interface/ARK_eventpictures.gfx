@@ -231,4 +231,10 @@ spriteTypes = {
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes
 	}
+	spriteType = {	# 万星园之辉
+		name = "GFX_evt_arclight_glow_of_stars"
+		texturefile = "gfx/event_pictures/ark_glow_of_stars.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
 }

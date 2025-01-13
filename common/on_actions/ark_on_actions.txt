@@ -59,6 +59,7 @@ on_yearly_pulse_country = {
 	events = {
 		ark_arclight.22 #快子光矛后允许升级十二号井
 		ark_arclight.23 #十四号井后续
+		ark_arclight.3001 #万星园之辉
 	}
 }
 

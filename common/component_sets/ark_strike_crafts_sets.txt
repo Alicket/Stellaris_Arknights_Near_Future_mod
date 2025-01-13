@@ -1,0 +1,19 @@
+component_set = {
+    key = "ARK_STRIKE_CRAFT_UAV_1_SET"
+
+    icon = "GFX_ark_ship_part_uav_1"
+    icon_frame = 1
+}
+component_set = {
+    key = "ARK_STRIKE_CRAFT_UAV_2_SET"
+
+    icon = "GFX_ark_ship_part_uav_2"
+    icon_frame = 1
+}
+
+component_set = {
+    key = "ARK_STRIKE_CRAFT_FRIGHTER_1_SET"
+
+    icon = "GFX_ark_ship_part_frighter_1"
+    icon_frame = 1
+}

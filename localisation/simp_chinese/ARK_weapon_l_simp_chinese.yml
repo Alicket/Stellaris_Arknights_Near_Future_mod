@@ -127,6 +127,16 @@ ARK_COMPUTER_GHOST_BASIC_DESC:0 "请§Y不要§!在装备有§R基轴武器§!�
 ARK_COMPUTER_GHOST_ADVANCED_DESC:0 "请§Y不要§!在装备有§R基轴武器§!的飞船上使用!"
 ARK_COMPUTER_GHOST_SAPIENT_DESC:0 "请§Y不要§!在装备有§R基轴武器§!的飞船上使用!"
 GHOST_BEHAVIOR_DESC:0 "§H幽灵战术：§!舰船将不受阻挡地移动到要求的部署地点."
+ARK_STRIKE_CRAFT_UAV_1:0 "轻型蜂群歼击机“妖怪”"
+ARK_STRIKE_CRAFT_UAV_2:0 "重型蜂群歼击机“威龙”"
+ARK_STRIKE_CRAFT_FRIGHTER_1:0 "重型轰炸机“暴鸰”"
+ARK_STRIKE_CRAFT_UAV_1_SET:0 "轻型蜂群歼击机“妖怪”"
+ARK_STRIKE_CRAFT_UAV_2_SET:0 "重型蜂群歼击机“威龙”"
+ARK_STRIKE_CRAFT_FRIGHTER_1_SET:0 "重型轰炸机“暴鸰”"
+ARK_STRIKE_CRAFT_UAV_1_SET_DESC:0 "并不算先进的深空作战无人机，但成本低廉，凭借着数量对敌人起着不小的威胁。"
+ARK_STRIKE_CRAFT_UAV_2_SET_DESC:0 "轻型蜂群歼击机的升级版，装备更加完善的智能驾驶AI以及更为先进的武器系统和防御系统。"
+ARK_STRIKE_CRAFT_FRIGHTER_1_SET_DESC:0 "挂载坍缩诱导炸弹的重型无人轰炸机，一击便可穿透敌人的护盾与装甲，有着毁灭性的破坏力。但是弹容量极其有限，攻击完成后的主要任务是过载敌人的点防御系统。"
+
 
 ARK_REALITY_COLLAPSE:0 "现实坍缩"
 ARK_VOID_CONDENSATION:0 "虚空凝聚"

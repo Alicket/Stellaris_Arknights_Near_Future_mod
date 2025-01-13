@@ -372,3 +372,7 @@ ark_arclight.25.desc:0 "经过一年左右的不断冲击，探测器上已经�
 ark_arclight.25.a:0 "这是[root.GetSpeciesName]的一大步。"
 
 
+## 杂项事件 ##
+ ark_arclight.3001.title:0 "万星园之辉"
+ ark_arclight.3001.desc:0 "现在我们有了博物天枢，文化部太空文物回收办递上了一份申请，想要一块专门的展区用来展出从弧光一号驾驶室回收的装饰陀螺仪，用来纪念它跨时代的意义。"
+ ark_arclight.3001.a:0 "当然"

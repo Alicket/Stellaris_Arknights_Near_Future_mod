@@ -370,6 +370,7 @@ MESSAGE_ARK_TRAIT_UPGRADE_TITLE:0 "特质升级"
 MESSAGE_ARK_TRAIT_UPGRADE_KRISTEN_DESC:0 "[ark_leader_kristen.GetName]命定特质升级！"
 MESSAGE_ARK_TRAIT_UPGRADE_DOCTOR_DESC:0 "[ark_ruler_doctor.GetName]命定特质升级！"
 
-
-
-
+## 博物天枢 ##
+ ark_glow_of_stars:0 "万星园之辉"
+ ark_glow_of_stars_desc_short:0 "在那一瞬，真实之光普照大地"
+ ark_glow_of_stars_desc_details:0 "一件从万星园中回收来的装饰品陀螺仪，经过时光的洗礼，已经无法转动自如。它标志着泰拉人第一次冲破天空，触摸繁星。\n§g产出与维护费同样受到帝国规模加成§!"

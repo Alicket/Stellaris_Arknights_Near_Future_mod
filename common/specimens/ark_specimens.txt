@@ -1,0 +1,17 @@
+ark_glow_of_stars = {
+    icon = "GFX_ark_specimen_glow_of_stars"
+    type = historical_item
+
+    inline_script = {
+        script = "grand_archive/set_specimen_rarity"
+        RARITY = exceptional
+    }
+
+    resources = {
+        category = specimens
+        produces = {
+            engineering_research = 15
+            multiplier = value:grand_archive_size_effect
+        }
+    }
+}
