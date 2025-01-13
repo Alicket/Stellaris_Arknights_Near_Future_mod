@@ -1,61 +1,61 @@
-# 生化防护
-decision_biochemical_protection = {
-	owned_planets_only = yes
-	sound = event_air_raid_siren
-	icon = decision_biochemical_protection
-	
-	resources = {
-		category = decisions
-		cost = {
-			energy = 1000
-		}
-	}
-	
-	potential = {
-		owner = { is_regular_empire = yes }
-		owner = { has_country_flag = understood_originium_bombs_flag }
-		has_modifier = originium_bombs_contaminated_0
-		NOT = { has_modifier = biochemical_protection }
-	}
-	
-	effect = {
-		custom_tooltip = decision_biochemical_protection_effects_custom
-		hidden_effect = {
-			add_modifier = { modifier = "biochemical_protection" days = -1 }
-		}
-	}
-	
-	ai_weight = {
-		weight = 0
-	}
-}
-
-# 结束生化防护
-decision_end_biochemical_protection = {
-	owned_planets_only = yes
-	sound = event_administrative_work
-	icon = decision_biochemical_protection
-
-	resources = {
-		category = decisions
-	}
-	
-	potential = {
-		owner = { is_regular_empire = yes }
-		has_modifier = biochemical_protection
-	}
-	
-	effect = {
-		custom_tooltip = decision_end_biochemical_protection_effects_short
-		hidden_effect = {
-			remove_modifier = biochemical_protection
-		}
-	}
-	
-	ai_weight = {
-		weight = 1
-	}
-}
+## 生化防护
+#decision_biochemical_protection = {
+#	owned_planets_only = yes
+#	sound = event_air_raid_siren
+#	icon = decision_biochemical_protection
+#
+#	resources = {
+#		category = decisions
+#		cost = {
+#			energy = 1000
+#		}
+#	}
+#
+#	potential = {
+#		owner = { is_regular_empire = yes }
+#		owner = { has_country_flag = understood_originium_bombs_flag }
+#		has_modifier = originium_bombs_contaminated_0
+#		NOT = { has_modifier = biochemical_protection }
+#	}
+#
+#	effect = {
+#		custom_tooltip = decision_biochemical_protection_effects_custom
+#		hidden_effect = {
+#			add_modifier = { modifier = "biochemical_protection" days = -1 }
+#		}
+#	}
+#
+#	ai_weight = {
+#		weight = 0
+#	}
+#}
+#
+## 结束生化防护
+#decision_end_biochemical_protection = {
+#	owned_planets_only = yes
+#	sound = event_administrative_work
+#	icon = decision_biochemical_protection
+#
+#	resources = {
+#		category = decisions
+#	}
+#
+#	potential = {
+#		owner = { is_regular_empire = yes }
+#		has_modifier = biochemical_protection
+#	}
+#
+#	effect = {
+#		custom_tooltip = decision_end_biochemical_protection_effects_short
+#		hidden_effect = {
+#			remove_modifier = biochemical_protection
+#		}
+#	}
+#
+#	ai_weight = {
+#		weight = 1
+#	}
+#}
 #海嗣：开始殖民地进化
 decision_ark_seaborn_start_evolution = {
 	owned_planets_only = yes

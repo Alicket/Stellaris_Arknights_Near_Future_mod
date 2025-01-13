@@ -270,9 +270,62 @@ country_event = {
 			add_deposit = d_originiums_mine		# 源石开采区
 			add_modifier = { modifier = nomadic_city days = -1 }		# 移动城邦
 			add_modifier = { modifier = catastrophe days = -1 }			#天灾
+			 save_event_target_as = ark_originium_mine_target
 		 }
 		 give_technology = { tech = tech_originiums_mining message = no }	# 初始科技
+		 country_event = {
+			 id = ark_game_start.12
+			 days = 30
+		 }
+	 }
+ }
+ country_event = { #自检上述效果有没有被正确添加
+	 id = ark_game_start.12
+	 hide_window = yes
+	 is_triggered_only = yes
 
+	 trigger = {
+		 has_originium_traits = yes
+	 }
+
+	 immediate = {
+		 if = {
+			 limit = {
+				 event_target:ark_originium_mine_target = {
+					 NOT = { has_deposit = d_originiums_mine }
+			 	 }
+			 }
+			 event_target:ark_originium_mine_target = {
+				 add_deposit = d_originiums_mine
+			 }
+		 }
+		 if = {
+			 limit = {
+				 event_target:ark_originium_mine_target = {
+					 NOT = { has_modifier = nomadic_city }
+				 }
+			 }
+			 event_target:ark_originium_mine_target = {
+				 add_modifier = { modifier = nomadic_city days = -1 }
+			 }
+		 }
+		 if = {
+			 limit = {
+				 event_target:ark_originium_mine_target = {
+					 NOT = { has_modifier = catastrophe }
+				 }
+			 }
+			 event_target:ark_originium_mine_target = {
+				 add_modifier = { modifier = catastrophe days = -1 }
+			 }
+		 }
+		 if = {
+			 limit = { NOT = { has_technology = tech_originiums_mining } }
+			 give_technology = { tech = tech_originiums_mining message = no }
+		 }
+	 }
+	 after = {
+		 clear_global_event_target = ark_originium_mine_target
 	 }
  }
 # 与"Warship Girls R And MIST Species"联动

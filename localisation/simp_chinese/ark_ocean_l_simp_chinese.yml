@@ -539,13 +539,23 @@ beffect_arkocean_mould_6_3_tooltip:0 "$arkocean_mould_modifier_6_3$\n$arkocean_m
 beffect_arkocean_mould_6_3_done_tooltip:0 "$arkocean_mould_modifier_6_3$\n§G已完成！§!\n$arkocean_mould_modifier_6_3_tooltip_base$\n\n效果：\n加密:§G+2§!"
 
 arkocean_mould_modifier_6_4:0 "§B政治参与§!"
+arkocean_mould_modifier_6_4a:0 "§R政治破坏§!"
 arkocean_mould_modifier_6_4_tooltip_base:0 "谁说海嗣只会暴力？当需要纵横捭阖之时，大群优秀的特使也会“折冲光年”。" #exaggeration of ”折冲万里“
+arkocean_mould_modifier_6_4a_tooltip_base:0 "政治？谁有兴趣和一群无趣的外星人坐下来聊天？政治对志在净化一切的海嗣来说只是过家家，我们不会参与那种小儿科一样的行为——正相反，给他们加点猛料！"
 beffect_arkocean_mould_6_4_waiting_tooltip:0 "$arkocean_mould_modifier_6_4$\n$arkocean_mould_modifier_6_4_tooltip_base$\n增加外交权重，增加可派遣特使\n\n需要完成$arkocean_mould_modifier_6_3$"
 beffect_arkocean_mould_6_4_tooltip:0 "$arkocean_mould_modifier_6_4$\n$arkocean_mould_modifier_6_4_tooltip_base$\n\n£arkocean_cells_small£§Y-1.00§!\n外交权重:§G+15%§!\n可派遣特使:§G+1§!"
 beffect_arkocean_mould_6_4_done_tooltip:0 "$arkocean_mould_modifier_6_4$\n§G已完成！§!\n$arkocean_mould_modifier_6_4_tooltip_base$\n\n效果：\n外交权重:§G+15%§!\n可派遣特使:§G+1§!"
+beffect_arkocean_mould_6_4a_waiting_tooltip:0 "$arkocean_mould_modifier_6_4a$\n$arkocean_mould_modifier_6_4a_tooltip_base$\n降低行动难度，增加可派遣特使\n\n需要完成$arkocean_mould_modifier_6_3$"
+beffect_arkocean_mould_6_4a_tooltip:0 "$arkocean_mould_modifier_6_4a$\n$arkocean_mould_modifier_6_4a_tooltip_base$\n\n£arkocean_cells_small£§Y-1.00§!\n行动难度:§G-15%§!\n可派遣特使:§G+1§!"
+beffect_arkocean_mould_6_4a_done_tooltip:0 "$arkocean_mould_modifier_6_4a$\n§G已完成！§!\n$arkocean_mould_modifier_6_4a_tooltip_base$\n\n效果：\n行动难度:§G-15%§!\n可派遣特使:§G+1§!"
 
 arkocean_mould_modifier_6_5:0 "§B$opinion_arkocean_mould_6_5$§!"
+arkocean_mould_modifier_6_5a:0 "§R$opinion_arkocean_mould_6_5$§!"
 arkocean_mould_modifier_6_5_tooltip_base:0 "通过模拟外星人的情感，对症下药，双方之间的信任得以加深。"
+arkocean_mould_modifier_6_5a_tooltip_base:0 "通过模拟外星人的情感，对症下药，双方之间的信任得以加深。\n......真的是信任吗？所谓的信任，只会让渗透子个体花更少的资源达成预定的目标。"
 beffect_arkocean_mould_6_5_waiting_tooltip:0 "$arkocean_mould_modifier_6_5$\n$arkocean_mould_modifier_6_5_tooltip_base$\n增加信任度上限\n\n需要完成$arkocean_mould_modifier_6_4$"
 beffect_arkocean_mould_6_5_tooltip:0 "$arkocean_mould_modifier_6_5$\n$arkocean_mould_modifier_6_5_tooltip_base$\n\n£arkocean_cells_small£§Y-2.00§!\n信任度上限:§G+50§!"
 beffect_arkocean_mould_6_5_done_tooltip:0 "$arkocean_mould_modifier_6_5$\n§G已完成！§!\n$arkocean_mould_modifier_6_5_tooltip_base$\n\n效果：\n信任度上限:§G+50§!"
+beffect_arkocean_mould_6_5a_waiting_tooltip:0 "$arkocean_mould_modifier_6_5a$\n$arkocean_mould_modifier_6_5a_tooltip_base$\n减少行动花费，增加可派遣特使\n\n需要完成$arkocean_mould_modifier_6_4$"
+beffect_arkocean_mould_6_5a_tooltip:0 "$arkocean_mould_modifier_6_5a$\n$arkocean_mould_modifier_6_5a_tooltip_base$\n\n£arkocean_cells_small£§Y-2.00§!\n行动花费:§G-20%§!\n可派遣特使:§G+1§!"
+beffect_arkocean_mould_6_5a_done_tooltip:0 "$arkocean_mould_modifier_6_5a$\n§G已完成！§!\n$arkocean_mould_modifier_6_5a_tooltip_base$\n\n效果：\n行动花费:§G-20%§!\n可派遣特使:§G+1§!"

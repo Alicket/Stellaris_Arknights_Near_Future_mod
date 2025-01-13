@@ -372,7 +372,7 @@ tech_light_building_material = {
 
 	modifier = {
 		planet_structures_upkeep_mult = -0.05
-		planet_max_buildings_add = 1
+		planet_max_buildings_add = 0.5
 	}
 
 	weight_modifier = {
@@ -405,7 +405,7 @@ tech_concrete_building_material = {
 
 	modifier = {
 		planet_structures_upkeep_mult = -0.1
-		planet_max_buildings_add = 1
+		planet_max_buildings_add = 0.5
 	}
 
 	weight_modifier = {

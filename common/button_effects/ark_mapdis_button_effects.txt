@@ -5948,7 +5948,20 @@ beffect_arkocean_mould_6_4_waiting = {
 		}
 	}
 	allow = { always = yes }
-	effect = { custom_tooltip = beffect_arkocean_mould_6_4_waiting_tooltip }
+	effect = {
+		if = {
+			limit = {
+				OR = {
+					has_civic = civic_hive_devouring_swarm
+					has_civic = civic_fanatic_purifiers
+				}
+			}
+			custom_tooltip = beffect_arkocean_mould_6_4a_waiting_tooltip
+		}
+		else = {
+			custom_tooltip = beffect_arkocean_mould_6_4_waiting_tooltip
+		}
+	}
 }
 beffect_arkocean_mould_6_4 = {
 	potential = {
@@ -5967,7 +5980,18 @@ beffect_arkocean_mould_6_4 = {
 		}
 	}
 	effect = {
-		custom_tooltip = beffect_arkocean_mould_6_4_tooltip
+		if = {
+			limit = {
+				OR = {
+					has_civic = civic_hive_devouring_swarm
+					has_civic = civic_fanatic_purifiers
+				}
+			}
+			custom_tooltip = beffect_arkocean_mould_6_4a_tooltip
+		}
+		else = {
+			custom_tooltip = beffect_arkocean_mould_6_4_tooltip
+		}
 		hidden_effect = {
 			from = {
 				add_resource = {
@@ -5977,9 +6001,23 @@ beffect_arkocean_mould_6_4 = {
 					which = var_ark_seaborn_evolution_cell
 					value = -1
 				}
-				add_modifier = {
-					modifier = arkocean_mould_modifier_6_4
-					days = -1
+				if = {
+					limit = {
+						OR = {
+							has_civic = civic_hive_devouring_swarm
+							has_civic = civic_fanatic_purifiers
+						}
+					}
+					add_modifier = {
+						modifier = arkocean_mould_modifier_6_4a
+						days = -1
+					}
+				}
+				else = {
+					add_modifier = {
+						modifier = arkocean_mould_modifier_6_4
+						days = -1
+					}
 				}
 				set_country_flag = arkocean_mould_done_6_4
 			}
@@ -5994,7 +6032,18 @@ beffect_arkocean_mould_done_6_4 = {
 	}
 	allow = { always = yes }
 	effect = {
-		custom_tooltip = beffect_arkocean_mould_6_4_done_tooltip
+		if = {
+			limit = {
+				OR = {
+					has_civic = civic_hive_devouring_swarm
+					has_civic = civic_fanatic_purifiers
+				}
+			}
+			custom_tooltip = beffect_arkocean_mould_6_4a_done_tooltip
+		}
+		else = {
+			custom_tooltip = beffect_arkocean_mould_6_4_done_tooltip
+		}
 	}
 }
 
@@ -6021,7 +6070,6 @@ beffect_arkocean_mould_6_5 = {
 				type = arkseaborn_cells
 				amount >= 1
 			}
-
 		}
 	}
 	effect = {
@@ -6035,9 +6083,23 @@ beffect_arkocean_mould_6_5 = {
 					which = var_ark_seaborn_evolution_cell
 					value = -2
 				}
-				add_modifier = {
-					modifier = arkocean_mould_modifier_6_5
-					days = -1
+				if = {
+					limit = {
+						OR = {
+							has_civic = civic_hive_devouring_swarm
+							has_civic = civic_fanatic_purifiers
+						}
+					}
+					add_modifier = {
+						modifier = arkocean_mould_modifier_6_5a
+						days = -1
+					}
+				}
+				else = {
+					add_modifier = {
+						modifier = arkocean_mould_modifier_6_5
+						days = -1
+					}
 				}
 				set_country_flag = arkocean_mould_done_6_5
 			}
@@ -6052,7 +6114,18 @@ beffect_arkocean_mould_done_6_5 = {
 	}
 	allow = { always = yes }
 	effect = {
-		custom_tooltip = beffect_arkocean_mould_6_5_done_tooltip
+		if = {
+			limit = {
+				OR = {
+					has_civic = civic_hive_devouring_swarm
+					has_civic = civic_fanatic_purifiers
+				}
+			}
+			custom_tooltip = beffect_arkocean_mould_6_5a_done_tooltip
+		}
+		else = {
+			custom_tooltip = beffect_arkocean_mould_6_5_done_tooltip
+		}
 	}
 }
 

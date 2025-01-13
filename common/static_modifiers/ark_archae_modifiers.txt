@@ -165,7 +165,17 @@ arkocean_mould_modifier_6_4 = {
 	envoys_add = 1
 	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_6_4.dds"
 }
+arkocean_mould_modifier_6_4a = {
+	espionage_operation_difficulty_mult = -0.15
+	envoys_add = 1
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_6_4.dds"
+}
 arkocean_mould_modifier_6_5 = {
 	country_trust_cap_add = 50
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_6_5.dds"
+}
+arkocean_mould_modifier_6_5a = {
+	espionage_operation_cost_mult = -0.2
+	envoys_add = 1
 	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_6_5.dds"
 }
