@@ -17,7 +17,7 @@ origin_ark_tragedy_birth = {
 	traits = {
 		trait = trait_latent_oripathy
 	}
-	initializers = { Chaos_system }
+	initializers = { Tyra_system }
 
 
 	flags = { origin_ark_tragedy_birth_flag }
@@ -31,27 +31,27 @@ origin_ark_tragedy_birth = {
 	}
 }
 
-origin_ark_stella_caerula = {
-	is_origin = yes
-	icon = "gfx/interface/icons/origins/origins_ark_stella_caerula.dds"
-	picture = GFX_origin_ark_stella_caerula
-
-	#starting_colony = pc_ark_continental_ocean
-	#habitability_preference = pc_ark_continental_ocean
-	initializers = { Tyra_system_ocean }
-
-	preferred_planet_class_neighbor = no
-
-	possible = {}
-	traits = {
-		trait = trait_ARK_ocean_seaborn
-		trait = trait_hive_mind
-	}
-	advanced_start = yes
-
-	description = "origin_tooltip_ark_stella_caerula_effects"
-
-	random_weight = {
-		base = 0
-	}
-}
+# origin_ark_stella_caerula = {
+# 	is_origin = yes
+# 	icon = "gfx/interface/icons/origins/origins_ark_stella_caerula.dds"
+# 	picture = GFX_origin_ark_stella_caerula
+#
+# 	#starting_colony = pc_ark_continental_ocean
+# 	#habitability_preference = pc_ark_continental_ocean
+# 	initializers = { Tyra_system_ocean }
+#
+# 	preferred_planet_class_neighbor = no
+#
+# 	possible = {}
+# 	traits = {
+# 		trait = trait_ARK_ocean_seaborn
+# 		trait = trait_hive_mind
+# 	}
+# 	advanced_start = yes
+#
+# 	description = "origin_tooltip_ark_stella_caerula_effects"
+#
+# 	random_weight = {
+# 		base = 0
+# 	}
+# }

@@ -11,6 +11,7 @@ parts_network = {	# 零件网络
 
 # 明日方舟星球buff #
 
+Terra_9_modifier = { }
 catastrophe = {	# 天灾
 	pop_environment_tolerance = -0.3
 	planet_jobs_originiums_produces_mult = 0.5
@@ -130,7 +131,7 @@ g_zlzycyzz_modifier = {	# 战略资源产业支持
 	icon_frame = 1
 }
 g_dqmszc_modifier = {	# 地区免税政策
-	trade_value_mult = 0.2
+	trader_jobs_bonus_workforce_mult = 0.20
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
 	icon_frame = 1
 }
@@ -186,7 +187,7 @@ originium_bombs_contaminated_1 = {	# 源石污染
 biochemical_protection = {	# 生化防护
 	planet_stability_add = 10
 	planet_jobs_produces_mult = -0.10
-	pop_growth_speed = -0.5
+	bonus_pop_growth_mult = -0.05
 	planet_pop_assembly_mult = -0.5
 	icon = "gfx/interface/icons/planet_modifiers/pm_biochemical_protection.dds"
 	icon_frame = 2

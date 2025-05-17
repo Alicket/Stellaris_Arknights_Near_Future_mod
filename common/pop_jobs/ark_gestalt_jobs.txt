@@ -1,9 +1,12 @@
 # 源石采矿子个体
 originiums_mining_drone = {	
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	building_icon = building_originiums_mining_plant_1
-	
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+			building_icon = building_originiums_mining_plant_1
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_enslaved = no
@@ -42,9 +45,12 @@ originiums_mining_drone = {
 # D32钢冶炼子个体
 d32steels_smelting_drone = {	
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	building_icon = building_d32steels_smelter
-	
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+			building_icon = building_d32steels_smelter
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_enslaved = no
@@ -113,9 +119,12 @@ d32steels_smelting_drone = {
 # 纳米片制造子个体
 nanosheets_manufacture_drone = {	
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	building_icon = building_nanosheets_production_line
-	
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+			building_icon = building_nanosheets_production_line
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_enslaved = no

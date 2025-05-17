@@ -1,10 +1,13 @@
 # D32钢冶炼师
 d32steels_smelting_expert = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_d32steels_smelter
-	clothes_texture_index = 3
-
+	#clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_d32steels_smelter
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -17,10 +20,11 @@ d32steels_smelting_expert = {
 	resources = {
 		category = planet_d32steels_smelting
 		produces = {
-			d32_steels = 2
+			d32_steels = 3
 		}
 		upkeep = {
 			minerals = 5
+			originiums = 1
 		}
 	}
 	
@@ -35,44 +39,19 @@ d32steels_smelting_expert = {
 			factor = 0.1
 			can_take_servant_job = yes
 		}
-		modifier = {
-			factor = 7
-			has_job = d32steels_smelting_expert
-		}
-		modifier = {
-			factor = 15
-			has_job = d32steels_smelting_expert
-			OR = {
-				has_trait = trait_robust
-				has_trait = trait_robot_efficient_processors
-			}
-		}
-		modifier = {
-			factor = 1.5
-			has_trait = trait_void_dweller_1
-			exists = planet
-			planet = { is_planet_class = pc_habitat }
-		}
-		modifier = {
-			factor = 0.85
-			has_trait = trait_void_dweller_1
-			exists = planet
-			planet = { is_artificial = no }
-		}
-		modifier = {
-			factor = 1.5
-			has_trait = trait_necrophage
-		}
 	}
 }
 
 # 纳米片制造师
 nanosheets_manufacturer = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_nanosheets_production_line
-	clothes_texture_index = 3
-
+	#clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_nanosheets_production_line
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -85,56 +64,24 @@ nanosheets_manufacturer = {
 	resources = {
 		category = planet_nanosheets_manufacturer
 		produces = {
-			multipole_nanosheets = 2
+			multipole_nanosheets = 3
 		}
 		upkeep = {
 			minerals = 5
+			originiums = 1
 		}
 	}
-	
+
 	weight = {
 		weight = @specialist_job_weight
 		modifier = {
 			factor = 0.2
-			has_citizenship_rights = no	
-			NOT = { has_trait = trait_mechanical }	
-		}		
+			has_citizenship_rights = no
+			NOT = { has_trait = trait_mechanical }
+		}
 		modifier = {
 			factor = 0.1
 			can_take_servant_job = yes
-		}
-		modifier = {
-			factor = 7
-			has_job = nanosheets_manufacturer
-		}
-		modifier = {
-			factor = 15
-			has_job = nanosheets_manufacturer
-			OR = {
-				has_trait = trait_robust
-				has_trait = trait_robot_efficient_processors
-			}
-		}
-		modifier = {
-			factor = 1.2
-			is_enslaved = yes
-			has_slavery_type = { type = slavery_indentured }
-		}
-		modifier = {
-			factor = 1.5
-			has_trait = trait_void_dweller_1
-			exists = planet
-			planet = { is_planet_class = pc_habitat }
-		}
-		modifier = {
-			factor = 0.85
-			has_trait = trait_void_dweller_1
-			exists = planet
-			planet = { is_artificial = no }
-		}
-		modifier = {
-			factor = 1.5
-			has_trait = trait_necrophage
 		}
 	}
 }
@@ -142,10 +89,13 @@ nanosheets_manufacturer = {
 # 执行者
 executor = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_capital
-	clothes_texture_index = 5
-
+	#clothes_texture_index = 5
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_capital
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -201,10 +151,6 @@ executor = {
 			can_take_servant_job = yes
 		}
 		modifier = {
-			factor = 10
-			has_job = executor
-		}
-		modifier = {
 			factor = 1.1
 			has_trait = trait_cybernetic
 		}
@@ -231,14 +177,6 @@ executor = {
 			has_trait = trait_presapient_natural_intellectuals
 			exists = owner
 			owner = { has_valid_civic = civic_police_state }
-		}
-		modifier = {
-			factor = 20
-			has_job = executor
-			OR = {
-				has_trait = trait_robust
-				has_trait = trait_robot_efficient_processors
-			}
 		}
 		modifier = {
 			factor = 1.1

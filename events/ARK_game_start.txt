@@ -12,17 +12,16 @@ country_event = { #选择苦难摇篮起源
 
 	immediate = {
 
-		create_ship_design = { design = "NAME_ark_starbase_arclight" }
-		add_ship_design = last_created_design
+		#create_ship_design = { design = "NAME_ark_starbase_arclight" }
+		#add_ship_design = last_created_design
 		solar_system = {
 			spawn_system = {
-				min_distance = 7
-				max_distance = 12
-				max_orientation_angle = 0
-				min_orientation_angle = 0
-				max_jumps = 0
+				min_distance = 30
+				#max_distance = 10
+				max_jumps = 16
+				min_jumps = 8
 
-				initializer = "Tyra_system"
+				initializer = "Chaos_system"
 				hyperlane = yes
 			}
 			#spawn_megastructure = {
@@ -30,56 +29,69 @@ country_event = { #选择苦难摇篮起源
 			#	planet = event_target:ark_planet_talos
 			#}
 		}
+		event_target:ARK_TYRA_CHAOS_SYSTEM = {
+			set_surveyed = { surveyed = yes	}
+			set_owner = root
+			create_starbase = {
+				owner = root
+				size = starbase_starport
+			}
+			starbase = {
+				set_starbase_module = {
+					slot = 1
+					module = shipyard
+				}
+				set_starbase_module = {
+					slot = 2
+					module = manufacturing_station
+				}
+			}
+		}
 		event_target:ARK_TYRA_HOME_SYSTEM = {
 			#spawn_megastructure = {
 			#	type = ark_ground_star_gate
 			#	planet = event_target:ark_planet_terra
 			#}
-			set_surveyed = { surveyed = yes	}
-			star = {
-				create_starbase = {
-					size = starbase_ark_arclight
-					owner = root
-				}
-			}
+			#set_surveyed = { surveyed = yes	}
+			#star = {
+			#	create_starbase = {
+			#		size = starbase_ark_arclight
+			#		owner = root
+			#	}
+			#}
 		}
 		event_target:ark_planet_terra = {
-			set_owner = root
-			while = {
-				count = 32
-				create_pop = { species = root }
-			}
-		}
-		event_target:ark_planet_talos = {
-			remove_all_buildings = yes
-			set_colony_type = col_factory
-			add_building = building_colony_shelter
-			remove_all_districts = yes
-			add_district = district_mining
-			add_district = district_generator
-			add_district = district_industrial
-			add_district = district_industrial
-			while = {
-				count = 23
-				random_owned_pop = { kill_pop = yes }
-			}
-			every_owned_pop = {
-				limit = {
-					is_unemployed = yes
-				}
-				kill_pop = yes
-			}
+			#set_owner = root
+			#while = {
+			#	count = 32
+			#	create_pop = { species = root }
+			#}
 			leader = {
 				add_trait_no_notify = leader_trait_righteous
 				save_event_target_as = ark_start_official
+			}
+		}
+		event_target:ark_planet_talos = {
+			set_owner = root
+			remove_all_buildings = yes
+			set_colony_type = col_industrial
+			add_building = building_capital
+			remove_all_districts = yes
+			add_district = district_mining
+			add_district = district_generator
+
+			while = {
+				count = 8
+				create_pop = { species = root }
 			}
 			set_planet_entity = {
 				entity = ark_desert_planet_Talos_II
 			}
 		}
 		event_target:ark_planet_terra = {
+			clear_deposits = yes
+			remove_all_districts = yes
 			assign_leader = event_target:ark_start_official
-			set_capital = yes
 			generate_terra_deposits_and_blockers = yes	# 初始地块
 			arknight_start_districts = yes	# 初始区划
 			while = {
@@ -94,25 +106,25 @@ country_event = { #选择苦难摇篮起源
 				count = 2
 				add_district = district_farming
 			}
-			add_building = building_capital
+			#add_building = building_capital
 			add_modifier = { modifier = "barbarian_growth" days = -1 }	# 野蛮生长
 			add_deposit = d_former_countries_controlled	# 分裂各国控制区
 			add_building = building_ark_energy_well1
 			add_deposit = d_ark_aegir_generator
-			add_building = building_bureaucratic_1
-			add_building = building_commercial_zone
-			if = {
-				limit = {
-					root = {
-						OR = {
-							has_ethic = ethic_spiritualist
-							has_ethic = ethic_fanatic_spiritualist
-						}
-					}
-				}
-				add_building = building_temple
-			}
-			remove_building = building_research_lab_1
+			#add_building = building_bureaucratic_1
+			#add_building = building_commercial_zone
+			#if = {
+			#	limit = {
+			#		root = {
+			#			OR = {
+			#				has_ethic = ethic_spiritualist
+			#				has_ethic = ethic_fanatic_spiritualist
+			#			}
+			#		}
+			#	}
+			#	add_building = building_temple
+			#}
+			#remove_building = building_research_lab_1
 		}
 		every_owned_leader = {
 			random_list ={

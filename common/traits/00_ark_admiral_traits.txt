@@ -1,7 +1,7 @@
 # 骑士精神
 leader_trait_commander_chivalry = {
-	cost = 0
-	
+	#cost = 0
+
 	icon = "gfx/interface/icons/traits/leader_trait_chivalry.dds"
 	fleet_modifier = {
 		ship_fire_rate_mult = 0.05
@@ -14,7 +14,7 @@ leader_trait_commander_chivalry = {
 }
 # 舰船运维
 leader_trait_ship_operation_maintenance = {
-	cost = 1
+	#cost = 1
 	
 	icon = "gfx/interface/icons/traits/leader_trait_ship_operation_maintenance.dds"
 	fleet_modifier = {
@@ -38,7 +38,7 @@ leader_trait_ship_operation_maintenance = {
 
 # 狙击专精
 leader_trait_jujizhuanjing = {
-	cost = 1
+	#cost = 1
 	
 	icon = "gfx/interface/icons/traits/leader_trait_jujizhuanjing.dds"
 	fleet_modifier = {
@@ -59,7 +59,7 @@ leader_trait_jujizhuanjing = {
 
 # 紧急抽调
 leader_trait_emergency_appointment = {
-	cost = 0
+	#cost = 0
 	initial = no
 	
 	icon = "gfx/interface/icons/traits/leader_trait_emergency_appointment.dds"
@@ -79,7 +79,7 @@ leader_trait_emergency_appointment = {
 
 # 锁与匙（莫斯提马专属）
 leader_trait_lock_keys = {
-	cost = 0
+	#cost = 0
 	initial = no
 	
 	icon = "gfx/interface/icons/traits/leader_trait_lock_keys.dds"
@@ -100,7 +100,7 @@ leader_trait_lock_keys = {
 
 # 零食网络（坚雷专属）
 leader_trait_snacks_network = {
-	cost = 0
+	#cost = 0
 	initial = no
 	
 	icon = "gfx/interface/icons/traits/leader_trait_snacks_network.dds"
@@ -118,7 +118,7 @@ leader_trait_snacks_network = {
 
 # 零件网络（坚雷专属）
 leader_trait_parts_network = {
-	cost = 0
+	#cost = 0
 	initial = no
 	
 	icon = "gfx/interface/icons/traits/leader_trait_parts_network.dds"
@@ -136,7 +136,7 @@ leader_trait_parts_network = {
 
 # 钙质化
 leader_trait_calcium = {
-	cost = 0
+	#cost = 0
 	initial = no
 	
 	icon = "gfx/interface/icons/traits/leader_trait_calcium.dds"

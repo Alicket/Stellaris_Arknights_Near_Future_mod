@@ -24,6 +24,7 @@ d_ark_moist_mys_area = {
 		planet_amenities_add = 5
 	}
 	resources = {
+		category = planet_deposits
 		produces = {
 			physics_research = 10
 			society_research = 10
@@ -83,6 +84,7 @@ d_arkocean_terra_city = {
 		job_soldier_add = 1
 	}
 	resources = {
+		category = planet_deposits
 		produces = {
 			society_research = 15
 		}
@@ -96,6 +98,7 @@ d_ark_aegir_generator = {
 	category = deposit_cat_rare
 	icon = d_station_reactor
 	resources = {
+		category = planet_deposits
 		produces = {
 			energy = 125
 		}
@@ -105,5 +108,15 @@ d_ark_aegir_generator = {
 }
 
 
-
+d_originiums_3 = {
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			originiums = 3
+		}
+	}
+	station = shipclass_mining_station
+	potential = { always = no }
+	drop_weight = { weight = 0 }
+}
 

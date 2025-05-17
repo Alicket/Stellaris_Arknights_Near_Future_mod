@@ -166,7 +166,7 @@ special_project = {
 #十二号井升级
 special_project = {
 	key = "ARCLIGHT_WELL12_UPGRADE_PROJECT"
-	cost = 12000
+	cost = 6000
 	tech_department = engineering_technology
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_arclight_well_project
@@ -176,22 +176,10 @@ special_project = {
 
 	requirements = {
 	}
-	on_progress_50 = {
+	on_success = {
 		owner = {
 			country_event = {
 				id = ark_arclight.222
-			}
-			set_country_flag = well13_happened
-		}
-
-	}
-	on_success = {
-		owner = {
-			if = {
-				limit = { NOT = { has_country_flag = well13_happened } }
-				country_event = {
-					id = ark_arclight.222
-				}
 			}
 		}
 	}

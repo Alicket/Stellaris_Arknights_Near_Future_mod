@@ -431,7 +431,7 @@ country_event = {
 }
 
 country_event = {
-	id = gark_civic.31
+	id = ark_civic.31
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -1152,21 +1152,22 @@ country_event = {
 # 不相容疫苗解析
 country_event = {
 	id = ark_civic.9
+	is_triggered_only = yes
 	title = ark_civic.9.name
 	desc = ark_civic.9.desc
 	picture = GFX_evt_genetic_modification
 	location = ROOT
 
 	trigger = {
-		has_civic = civic_pharmaceutical_enterprises
 		has_modifier = machine_empire_mutations
-		NOT = { has_country_flag = ark_civic_3_flag }
+		has_civic = civic_pharmaceutical_enterprises
+		#NOT = { has_country_flag = ark_civic_3_flag }
 	}
 
-	mean_time_to_happen = { months = 1 }
+	#mean_time_to_happen = { months = 1 }
 
 	immediate = {
-		set_country_flag = ark_civic_3_flag
+		#set_country_flag = ark_civic_3_flag
 	}
 
 	option = {

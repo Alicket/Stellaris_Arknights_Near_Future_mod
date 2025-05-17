@@ -1,5 +1,6 @@
 arknights_01 = {
-        fallback = mammalian_01
+	fallback = mammalian_01
+	ship_kinds = { default_ship }
 	ship_lighting = {
 		cam_light_1_dir = { 0.4 0.0 0.0 }
 		cam_light_2_dir = { -0.5 0.0 0.0 }

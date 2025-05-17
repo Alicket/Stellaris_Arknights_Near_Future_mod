@@ -602,7 +602,7 @@ leader_trait_jiaoji = {	# 交际1
 		TIER = 1
 	}
 	modifier = {
-		trade_value_mult = 0.10
+		planet_traders_produces_mult = 0.1
 	}
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -630,7 +630,7 @@ leader_trait_jiaoji_2 = {	# 交际2
 		TIER = 2
 	}
 	modifier = {
-		trade_value_mult = 0.20
+		planet_traders_produces_mult = 0.20
 	}
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -658,7 +658,7 @@ leader_trait_jiaoji_3 = {	# 交际3
 		TIER = 3
 	}
 	modifier = {
-		trade_value_mult = 0.30
+		planet_traders_produces_mult = 0.30
 	}
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -690,7 +690,7 @@ leader_trait_wuliuzhuanjia = {	# 物流专家
 		TIER = 1
 	}
 	modifier = {
-		trade_value_mult = 0.35
+		planet_traders_produces_mult = 0.35
 	}
 	leader_potential_add = {
 		always = no
@@ -733,7 +733,7 @@ leader_trait_wuliuzhuanjia = {	# 物流专家
 
 # 前警司
 leader_trait_superintendent = {
-	cost = 0
+	#cost = 0
 	initial = no
 	
 	icon = "gfx/interface/icons/traits/leader_trait_superintendent.dds"
@@ -754,7 +754,7 @@ leader_trait_superintendent = {
 
 # 多金
 leader_trait_wealthy = {
-	cost = 0
+	#cost = 0
 	initial = no
 	
 	icon = "gfx/interface/icons/traits/leader_trait_wealthy.dds"
@@ -775,12 +775,12 @@ leader_trait_wealthy = {
 
 # 经济手腕（暂为银灰专属）
 leader_trait_economy_measure = {
-	cost = 0
+	#cost = 0
 	initial = no
 	
 	icon = "gfx/interface/icons/traits/leader_trait_economy_measure.dds"
 	modifier = {
-		trade_value_mult = 0.2
+		planet_traders_produces_mult = 0.2
 	}
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -796,7 +796,7 @@ leader_trait_economy_measure = {
 
 # 旧军阀（银灰专属）
 leader_trait_warlords = {
-	cost = 0
+	#cost = 0
 	initial = no
 	
 	icon = "gfx/interface/icons/traits/leader_trait_warlords.dds"

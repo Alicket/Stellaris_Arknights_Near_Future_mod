@@ -59,7 +59,7 @@ on_yearly_pulse_country = {
 	events = {
 		ark_arclight.22 #快子光矛后允许升级十二号井
 		ark_arclight.23 #十四号井后续
-		ark_arclight.3001 #万星园之辉
+		ark_civic.9 #机械爹不相容疫苗解析
 	}
 }
 
@@ -140,7 +140,16 @@ on_entering_ark_ground_star_gate = {
 
 }
 
-
+# This = owner of fleet 1 (winner)
+# From = owner of fleet 2 (loser)
+# FromFrom = fleet 1
+# FromFromFrom = fleet 2
+# This fires whenever a fleet is finished with a combat through any means (emergency ftl, destroyed, disabled)
+on_space_battle_won = {
+	events = {
+		ark_archive.1
+	}
+}
 
 
 

@@ -89,6 +89,10 @@ country_event = {
 				id = ark_arclight.122
 				days = 120
 			}
+			country_event = {
+				id = ark_arclight.3001
+				days = 30
+			}
 			set_country_flag = ark_got_kristen
 		}
 	}
@@ -475,7 +479,7 @@ country_event = {
 			country_event = {
 				id = ark_arclight.223
 				days = 180
-				random = 35
+				random = 60
 			}
 		}
 	}
@@ -694,12 +698,6 @@ country_event = {
 	show_sound = distance_titan_laser_fire_01
 
 	trigger = {
-		NOT = { has_country_flag = ark_glow_of_stars_given }
-		has_origin = origin_ark_tragedy_birth
-		any_owned_megastructure = {
-			is_megastructure_type = grand_archive_0
-		}
-		has_country_flag = ark_got_kristen
 	}
 
 	specimen = ark_glow_of_stars

@@ -1,5 +1,5 @@
 leader_trait_Ishar_mla = { #回响意志
-	cost = 0
+	#cost = 0
 	inline_script = {
 		script = trait/icon
 		ICON = "GFX_ark_leader_trait_ishar_mla"
@@ -18,7 +18,7 @@ leader_trait_Ishar_mla = { #回响意志
 	randomized = no
 }
 leader_trait_ruler_seaborn = {
-	cost = 0
+	#cost = 0
 	icon = "gfx/interface/icons/traits/trait_ark_ocean_seaborn.dds"
 	modifier = {
 	}
@@ -27,7 +27,7 @@ leader_trait_ruler_seaborn = {
 	randomized = no
 }
 leader_trait_Ishar_mla02 = {#先祖导师
-	cost = 0
+	#cost = 0
 	icon = "gfx/interface/icons/traits/trait_ark_ocean_Ishar_mla02.dds"
 	councilor_modifier = {
 		leader_skill_levels = 1
@@ -40,7 +40,7 @@ leader_trait_Ishar_mla02 = {#先祖导师
 
 
 leader_trait_seaborn_sci_simple_thoughts = {#简易思维
-	cost = 0
+	#cost = 0
 	icon = "gfx/interface/icons/traits/trait_ark_ocean_simple_thought.dds"
 	modifier = {
 		ship_anomaly_research_speed_mult = -0.1
@@ -51,7 +51,7 @@ leader_trait_seaborn_sci_simple_thoughts = {#简易思维
 	randomized = no
 }
 leader_trait_seaborn_sci_complex_thoughts = {#复杂回路
-	cost = 0
+	#cost = 0
 	icon = "gfx/interface/icons/traits/trait_ark_ocean_complex_thought.dds"
 	modifier = {
 		ship_anomaly_research_speed_mult = 0.1
@@ -62,7 +62,7 @@ leader_trait_seaborn_sci_complex_thoughts = {#复杂回路
 	randomized = no
 }
 leader_trait_seaborn_arm_strategic_mind = {#战略思维
-	cost = 0
+	#cost = 0
 	icon = "gfx/interface/icons/traits/trait_ark_ocean_army_stratigic_mind.dds"
 	modifier = {
 		army_morale = 0.33

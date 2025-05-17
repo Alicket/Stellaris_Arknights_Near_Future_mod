@@ -264,7 +264,7 @@ d_former_countries_controlled:0 "分裂各国控制区"
 d_former_countries_controlled_desc:0 "仍被各国残余势力控制的区域,清除它们并非军事打击那样简单."
 d_ark_aegir_generator: "弧光计划能源阵列"
 d_ark_aegir_generator_desc: "基于先进的阿戈尔科技建造的大规模能源设施，计划为位于海洋之上的弧光井提供源源不断的能量。"
-
+ d_originiums_3:0 "£originiums£+3"
 
 
 
@@ -362,6 +362,8 @@ START_SCREEN_ARK_2:0 "先民降临世界,带来了不同的种族和文化.人�
 ## 泰拉星系初始设定 ##
 Tyra_system_NAME:0 "泰拉星系"
 Tyra_system_DESC:0 "泰拉亚人的母星所在的星系.\n\n$system_initializer_DESC$"
+ pc_ark_originium_frozen:0 "冰封源石星球"
+ pc_ark_originium_frozen_desc:0 "星球表面极度低温，冰晶包裹着巨大的源石晶体深深嵌入地表，谁也不知道其地下的根系有多深。大气中充满了挥发性的源石气体和致命的源石粉尘，除了机械体以外可能不会有人愿意下去散步。"
 
 
 
@@ -373,4 +375,21 @@ MESSAGE_ARK_TRAIT_UPGRADE_DOCTOR_DESC:0 "[ark_ruler_doctor.GetName]命定特质�
 ## 博物天枢 ##
  ark_glow_of_stars:0 "万星园之辉"
  ark_glow_of_stars_desc_short:0 "在那一瞬，真实之光普照大地"
- ark_glow_of_stars_desc_details:0 "一件从万星园中回收来的装饰品陀螺仪，经过时光的洗礼，已经无法转动自如。它标志着泰拉人第一次冲破天空，触摸繁星。\n§g产出与维护费同样受到帝国规模加成§!"
+ ark_glow_of_stars_desc_details:0 "一件从万星园中回收来的装饰品陀螺仪，经过时光的洗礼，已经无法转动自如。它标志着泰拉人第一次冲破天空，触摸繁星。\n§g加成与维护费同样受到帝国规模加成§!"
+ ark_resplendent_sob:0 "璀璨悲泣"
+ ark_resplendent_sob_desc_short:0 "他的血液仍在流淌，他从不曾真的自这里离开。"
+ ark_resplendent_sob_desc_details:0 "一块令人眼花缭乱的晶体，颜色鲜红仿佛要滴下血来。靠近它，似乎还能感受到古老的创伤。\n§g加成与维护费同样受到帝国规模加成§!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+

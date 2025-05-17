@@ -59,6 +59,7 @@ d_originiums_mine = {
 	}
 }
 
+
 # 龙门经济特区
 d_lungmen_special_economic_zone = {
 	is_for_colonizable = yes
@@ -221,57 +222,34 @@ d_former_countries_controlled = {
 	on_cleared = {
 		if = {
 			limit = {
-				any_owned_pop = {
+				any_owned_pop_group = {
 					is_gestalt = no
 					is_robot_pop = no
 				}
 			}
 			owner = { country_event = { id = ark_rebellion.4 } }
-			random_owned_pop = {
+			random_owned_pop_group = {
 				limit = {
 					is_gestalt = no
 					is_robot_pop = no
 				}
 				root = {
 					remove_planet_flag = ark_unify_able_flag
-
 					create_pop = {
 						species = prev
-					}
-					create_pop = {
-						species = prev
-					}
-					create_pop = {
-						species = prev
-					}
-					create_pop = {
-						species = prev
-					}
-					create_pop = {
-						species = prev
+						size = 500
 					}
 				}
 			}
 		}
 		else = {
 			owner = { country_event = { id = ark_rebellion.4 } }
-			random_owned_pop = {
+			random_owned_pop_group = {
 				root = {
 					remove_planet_flag = ark_unify_able_flag
 					create_pop = {
 						species = prev
-					}
-					create_pop = {
-						species = prev
-					}
-					create_pop = {
-						species = prev
-					}
-					create_pop = {
-						species = prev
-					}
-					create_pop = {
-						species = prev
+						size = 500
 					}
 				}
 			}

@@ -9,7 +9,7 @@ planet_enforcers = {
 		produces
 		upkeep
 	}
-	modifier_category = pop
+	modifier_category = pop_group
 }
 
 planet_d32steels_smelting = {
@@ -38,7 +38,7 @@ planet_executor = {
 		produces
 		upkeep
 	}
-	modifier_category = pop
+	modifier_category = pop_group
 }
 #从wsg那边抄来的，记得定期检查是否更新
 #兼容舰R、太虚
@@ -849,88 +849,4 @@ ships = {
 			is_ship_size = z_pote_military_station_large
 		}
 	}
-}
-
-pop_category_slave = {
-	parent = planet_pops
-	generate_add_modifiers = {
-		produces
-		upkeep
-	}
-	generate_mult_modifiers = {
-		produces
-		upkeep
-	}
-	modifier_category = pop
-}
-
-pop_category_workers = {
-	parent = planet_pops
-	generate_add_modifiers = {
-		produces
-		upkeep
-	}
-	generate_mult_modifiers = {
-		produces
-		upkeep
-	}
-	modifier_category = pop
-}
-
-pop_category_specialists = {
-	parent = planet_pops
-	generate_add_modifiers = {
-		produces
-		upkeep
-	}
-	generate_mult_modifiers = {
-		produces
-		upkeep
-	}
-}
-
-pop_category_rulers = {
-	parent = planet_pops
-	generate_add_modifiers = {
-		produces
-		upkeep
-	}
-	generate_mult_modifiers = {
-		produces
-		upkeep
-	}
-	modifier_category = pop
-}
-
-pop_category_assimilation = {
-	parent = planet_pops
-	generate_add_modifiers = {
-		produces
-		upkeep
-	}
-	generate_mult_modifiers = {
-		produces
-		upkeep
-	}
-	modifier_category = pop
-}
-
-megastructures = {
-	use_for_ai_budget = yes
-	ai_use_parent_for_resources_upkeep = {
-		energy
-		consumer_goods
-	}
-	parent = country
-	generate_mult_modifiers = {
-		cost
-		produces
-		upkeep
-	}
-	generate_add_modifiers = {
-		cost
-		produces
-		upkeep
-	}
-	modifier_category = megastructure
 }

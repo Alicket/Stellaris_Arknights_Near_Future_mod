@@ -34,7 +34,6 @@ leader_trait_oripathy = {
 	leader_class = { commander scientist  official }
 	opposites = {
 		leader_trait_resilient
-		leader_trait_resilient_2
 	}
 	leader_potential_add = {
 		species = { has_trait = trait_latent_oripathy }
@@ -47,7 +46,7 @@ leader_trait_oripathy = {
 
 
 leader_trait_tiandaochouqin = {	# 天道酬勤
-	cost = 1
+	#cost = 1
 	icon = "gfx/interface/icons/traits/leader_trait_tiandaochouqin.dds"
 	self_modifier = {
 		species_leader_exp_gain = 0.25

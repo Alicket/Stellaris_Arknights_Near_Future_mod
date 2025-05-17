@@ -2,7 +2,12 @@
 building_ark_hospital1 = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
-
+	building_sets = {
+		research
+		urban
+		society
+		government
+	}
 	category = amenity
 
 	potential = {
@@ -25,14 +30,20 @@ building_ark_hospital1 = {
 	}
 
 	planet_modifier = {
-		job_healthcare_add = 1
-		planet_jobs_society_research_produces_mult = 0.05
-		pop_growth_speed = 0.05
+		biologist_jobs_bonus_workforce_mult = 0.05
+		pop_amenities_usage_mult = -0.05
 	}
-
+	country_modifier = {
+		country_society_tech_research_speed = 0.01
+		leader_lifespan_add = 1
+	}
+	inline_script = {
+		script = jobs/healthcare_add
+		AMOUNT = 100
+	}
 	inline_script = {
 		script = jobs/researchers_add
-		AMOUNT = 1
+		AMOUNT = 100
 	}
 
 	resources = {
@@ -58,7 +69,12 @@ building_ark_hospital1 = {
 building_ark_hospital2 = {
 	base_buildtime = @b2_time
 	can_build = no
-
+	building_sets = {
+		research
+		urban
+		society
+		government
+	}
 	category = amenity
 
 	potential = {
@@ -77,14 +93,20 @@ building_ark_hospital2 = {
 	}
 
 	planet_modifier = {
-		job_healthcare_add = 2
-		planet_jobs_society_research_produces_mult = 0.1
-		pop_growth_speed = 0.1
+		biologist_jobs_bonus_workforce_mult = 0.1
+		pop_amenities_usage_mult = -0.075
 	}
-
+	country_modifier = {
+		country_society_tech_research_speed = 0.02
+		leader_lifespan_add = 1
+	}
+	inline_script = {
+		script = jobs/healthcare_add
+		AMOUNT = 200
+	}
 	inline_script = {
 		script = jobs/researchers_add
-		AMOUNT = 2
+		AMOUNT = 200
 	}
 
 	resources = {
@@ -116,7 +138,12 @@ building_ark_hospital2 = {
 building_ark_hospital3 = {
 	base_buildtime = @b3_time
 	can_build = no
-
+	building_sets = {
+		research
+		urban
+		society
+		government
+	}
 	category = amenity
 
 	potential = {
@@ -135,14 +162,20 @@ building_ark_hospital3 = {
 	}
 
 	planet_modifier = {
-		job_healthcare_add = 3
-		planet_jobs_society_research_produces_mult = 0.15
-		pop_growth_speed = 0.15
+		biologist_jobs_bonus_workforce_mult = 0.15
+		pop_amenities_usage_mult = -0.1
 	}
-
+	country_modifier = {
+		country_society_tech_research_speed = 0.03
+		leader_lifespan_add = 2
+	}
+	inline_script = {
+		script = jobs/healthcare_add
+		AMOUNT = 300
+	}
 	inline_script = {
 		script = jobs/researchers_add
-		AMOUNT = 3
+		AMOUNT = 300
 	}
 
 	resources = {
@@ -170,7 +203,12 @@ building_ark_hospital3 = {
 building_ark_corporate_hospital1 = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
-
+	building_sets = {
+		research
+		urban
+		society
+		government
+	}
 	category = amenity
 
 	potential = {
@@ -193,14 +231,25 @@ building_ark_corporate_hospital1 = {
 	}
 
 	planet_modifier = {
-		job_healthcare_add = 1
-		trade_value_mult = 0.05
-		pop_growth_speed = 0.05
+		biologist_jobs_bonus_workforce_mult = 0.025
+		trader_jobs_bonus_workforce_mult = 0.025
+		pop_amenities_usage_mult = -0.05
 	}
-
+	country_modifier = {
+		country_society_tech_research_speed = 0.01
+		country_trade_produces_mult = 0.01
+	}
+	inline_script = {
+		script = jobs/healthcare_add
+		AMOUNT = 100
+	}
 	inline_script = {
 		script = jobs/researchers_add
-		AMOUNT = 1
+		AMOUNT = 50
+	}
+	inline_script = {
+		script = jobs/trader_add
+		AMOUNT = 50
 	}
 
 	resources = {
@@ -226,7 +275,12 @@ building_ark_corporate_hospital1 = {
 building_ark_corporate_hospital2 = {
 	base_buildtime = @b2_time
 	can_build = no
-
+	building_sets = {
+		research
+		urban
+		society
+		government
+	}
 	category = amenity
 
 	potential = {
@@ -245,14 +299,25 @@ building_ark_corporate_hospital2 = {
 	}
 
 	planet_modifier = {
-		job_healthcare_add = 2
-		trade_value_mult = 0.1
-		pop_growth_speed = 0.1
+		biologist_jobs_bonus_workforce_mult = 0.05
+		trader_jobs_bonus_workforce_mult = 0.05
+		pop_amenities_usage_mult = -0.075
 	}
-
+	country_modifier = {
+		country_society_tech_research_speed = 0.02
+		country_trade_produces_mult = 0.02
+	}
+	inline_script = {
+		script = jobs/healthcare_add
+		AMOUNT = 200
+	}
 	inline_script = {
 		script = jobs/researchers_add
-		AMOUNT = 2
+		AMOUNT = 100
+	}
+	inline_script = {
+		script = jobs/trader_add
+		AMOUNT = 100
 	}
 
 	resources = {
@@ -284,7 +349,12 @@ building_ark_corporate_hospital2 = {
 building_ark_corporate_hospital3 = {
 	base_buildtime = @b3_time
 	can_build = no
-
+	building_sets = {
+		research
+		urban
+		society
+		government
+	}
 	category = amenity
 
 	potential = {
@@ -303,14 +373,25 @@ building_ark_corporate_hospital3 = {
 	}
 
 	planet_modifier = {
-		job_healthcare_add = 3
-		trade_value_mult = 0.15
-		pop_growth_speed = 0.15
+		biologist_jobs_bonus_workforce_mult = 0.075
+		trader_jobs_bonus_workforce_mult = 0.075
+		pop_amenities_usage_mult = -0.1
 	}
-
+	country_modifier = {
+		country_society_tech_research_speed = 0.03
+		country_trade_produces_mult = 0.03
+	}
+	inline_script = {
+		script = jobs/healthcare_add
+		AMOUNT = 300
+	}
 	inline_script = {
 		script = jobs/researchers_add
-		AMOUNT = 3
+		AMOUNT = 150
+	}
+	inline_script = {
+		script = jobs/trader_add
+		AMOUNT = 150
 	}
 
 	resources = {
@@ -337,7 +418,10 @@ building_ark_corporate_hospital3 = {
 # 源石开采厂
 building_originiums_mining_plant_1 = {
 	base_buildtime = @b1_time
-
+	building_sets = {
+		mining
+		urban
+	}
 	is_capped_by_modifier = yes
 
 	category = resource
@@ -345,7 +429,7 @@ building_originiums_mining_plant_1 = {
 	potential = {
 		NOR = {
 			has_modifier = resort_colony
-			has_modifier = crucible_colony
+			#has_modifier = crucible_colony
 		}
 	}
 
@@ -355,7 +439,7 @@ building_originiums_mining_plant_1 = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_originiums_miner_add = 2
+			job_originiums_miner_add = 200
 		}
 	}
 
@@ -365,7 +449,7 @@ building_originiums_mining_plant_1 = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_originiums_mining_drone_add = 2
+			job_originiums_mining_drone_add = 200
 		}
 	}
 
@@ -392,13 +476,16 @@ building_originiums_mining_plant_1 = {
 building_originiums_mining_plant_2 = {
 	base_buildtime = @b2_time
 	can_build = no
-
+	building_sets = {
+		mining
+		urban
+	}
 	category = resource
 
 	potential = {
 		NOR = {
 			has_modifier = resort_colony
-			has_modifier = crucible_colony
+			#has_modifier = crucible_colony
 		}
 	}
 
@@ -408,7 +495,7 @@ building_originiums_mining_plant_2 = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_originiums_miner_add = 4
+			job_originiums_miner_add = 400
 		}
 	}
 
@@ -418,7 +505,7 @@ building_originiums_mining_plant_2 = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_originiums_mining_drone_add = 4
+			job_originiums_mining_drone_add = 400
 		}
 	}
 
@@ -445,13 +532,16 @@ building_originiums_mining_plant_2 = {
 building_originiums_mining_plant_3 = {
 	base_buildtime = @b3_time
 	can_build = no
-
+	building_sets = {
+		mining
+		urban
+	}
 	category = resource
 
 	potential = {
 		NOR = {
 			has_modifier = resort_colony
-			has_modifier = crucible_colony
+			#has_modifier = crucible_colony
 		}
 	}
 
@@ -461,7 +551,7 @@ building_originiums_mining_plant_3 = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_originiums_miner_add = 6
+			job_originiums_miner_add = 600
 		}
 	}
 
@@ -471,7 +561,7 @@ building_originiums_mining_plant_3 = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_originiums_mining_drone_add = 6
+			job_originiums_mining_drone_add = 600
 		}
 	}
 
@@ -504,7 +594,7 @@ building_originiums_mining_plant_4 = {
 	potential = {
 		NOR = {
 			has_modifier = resort_colony
-			has_modifier = crucible_colony
+			#has_modifier = crucible_colony
 		}
 	}
 
@@ -514,7 +604,7 @@ building_originiums_mining_plant_4 = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_originiums_miner_add = 8
+			job_originiums_miner_add = 800
 		}
 	}
 
@@ -524,7 +614,7 @@ building_originiums_mining_plant_4 = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_originiums_mining_drone_add = 8
+			job_originiums_mining_drone_add = 800
 		}
 	}
 
@@ -546,13 +636,16 @@ building_originiums_mining_plant_4 = {
 # 源石发电站
 building_originiums_power_plant_1 = {
 	base_buildtime = @b1_time
-
+	building_sets = {
+		generator
+		urban
+	}
 	category = resource
 	
 	potential = {
 		NOR = {
 			has_modifier = resort_colony
-			has_modifier = crucible_colony
+			#has_modifier = crucible_colony
 		}
 	}
 	
@@ -571,7 +664,7 @@ building_originiums_power_plant_1 = {
 
 	inline_script = {
 		script = jobs/technicians_add
-		AMOUNT = 2
+		AMOUNT = 200
 	}
 
 	upgrades = {
@@ -588,11 +681,14 @@ building_originiums_power_plant_2 = {
 	base_buildtime = @b2_time
 	can_build = no
 	category = resource
-	
+	building_sets = {
+		generator
+		urban
+	}
 	potential = {
 		NOR = {
 			has_modifier = resort_colony
-			has_modifier = crucible_colony
+			#has_modifier = crucible_colony
 		}
 	}
 	
@@ -615,7 +711,7 @@ building_originiums_power_plant_2 = {
 
 	inline_script = {
 		script = jobs/technicians_add
-		AMOUNT = 2
+		AMOUNT = 300
 	}
 
 	upgrades = {
@@ -632,11 +728,14 @@ building_originiums_power_plant_3 = {
 	base_buildtime = @b3_time
 	can_build = no
 	category = resource
-	
+	building_sets = {
+		generator
+		urban
+	}
 	potential = {
 		NOR = {
 			has_modifier = resort_colony
-			has_modifier = crucible_colony
+			#has_modifier = crucible_colony
 		}
 	}
 	
@@ -659,7 +758,7 @@ building_originiums_power_plant_3 = {
 
 	inline_script = {
 		script = jobs/technicians_add
-		AMOUNT = 2
+		AMOUNT = 400
 	}
 
 	upgrades = {
@@ -676,11 +775,14 @@ building_originiums_power_plant_4 = {
 	base_buildtime = @b4_time
 	can_build = no
 	category = resource
-	
+	building_sets = {
+		generator
+		urban
+	}
 	potential = {
 		NOR = {
 			has_modifier = resort_colony
-			has_modifier = crucible_colony
+			#has_modifier = crucible_colony
 		}
 	}
 	
@@ -703,7 +805,7 @@ building_originiums_power_plant_4 = {
 
 	inline_script = {
 		script = jobs/technicians_add
-		AMOUNT = 2
+		AMOUNT = 500
 	}
 
 	prerequisites = {
@@ -714,7 +816,12 @@ building_originiums_power_plant_4 = {
 # D32钢冶炼厂
 building_d32steels_smelter = {
 	base_buildtime = @b1_time
-
+	building_sets = {
+		factory
+		foundry
+		industrial
+		urban
+	}
 	exempt_from_ai_planet_specialization = no
 	category = manufacturing
 	
@@ -722,13 +829,13 @@ building_d32steels_smelter = {
 		NOR = {
 			has_modifier = resort_colony
 			has_modifier = slave_colony
-			has_modifier = crucible_colony
+			#has_modifier = crucible_colony
 		}
 	}
 
 	inline_script = {
 		script = jobs/d32steels_smelter_add
-		AMOUNT = 1
+		AMOUNT = 100
 	}
 	
 	resources = {
@@ -738,7 +845,7 @@ building_d32steels_smelter = {
 		}
 		upkeep = {
 			energy = @b1_upkeep
-			originiums = 1
+			#originiums = 1
 		}
 	}
 	
@@ -750,7 +857,12 @@ building_d32steels_smelter = {
 # 纳米片生产线
 building_nanosheets_production_line = {
 	base_buildtime = @b1_time
-
+	building_sets = {
+		factory
+		foundry
+		industrial
+		urban
+	}
 	exempt_from_ai_planet_specialization = no
 	category = manufacturing
 	
@@ -758,13 +870,13 @@ building_nanosheets_production_line = {
 		NOR = {
 			has_modifier = resort_colony
 			has_modifier = slave_colony
-			has_modifier = crucible_colony
+			#has_modifier = crucible_colony
 		}
 	}
 
 	inline_script = {
 		script = jobs/nanosheets_production_add
-		AMOUNT = 1
+		AMOUNT = 100
 	}
 	
 	resources = {
@@ -774,7 +886,7 @@ building_nanosheets_production_line = {
 		}
 		upkeep = {
 			energy = @b1_upkeep
-			originiums = 1
+			#originiums = 1
 		}
 	}
 	
@@ -787,7 +899,11 @@ building_nanosheets_production_line = {
 building_military_enterprises = {
 	base_buildtime = @b2_time
 	base_cap_amount = 1
-
+	building_sets = {
+		foundry
+		industrial
+		urban
+	}
 	category = manufacturing
 
 	potential = {
@@ -814,11 +930,11 @@ building_military_enterprises = {
 	}
 
 	planet_modifier = {
-		planet_metallurgists_produces_mult = 0.30
+		foundry_jobs_bonus_workforce_mult = 0.15
 	}
 	inline_script = {
 		script = jobs/foundry_add
-		AMOUNT = 2
+		AMOUNT = 200
 	}
 #	triggered_planet_modifier = {
 #		potential = {
@@ -865,7 +981,11 @@ building_military_enterprises = {
 building_component_assembly_plant = {
 	base_buildtime = @b2_time
 	base_cap_amount = 1
-
+	building_sets = {
+		factory
+		industrial
+		urban
+	}
 	category = manufacturing
 
 	potential = {
@@ -892,11 +1012,11 @@ building_component_assembly_plant = {
 	}
 
 	planet_modifier = {
-		planet_artisans_produces_mult = 0.30
+		artisan_jobs_bonus_workforce_mult = 0.15
 	}
 	inline_script = {
 		script = jobs/factory_add
-		AMOUNT = 2
+		AMOUNT = 200
 	}
 #	triggered_planet_modifier = {
 #		potential = {
@@ -941,6 +1061,9 @@ building_component_assembly_plant = {
 
 building_ark_energy_well1 = {
 	 can_build = no
+	building_sets = {
+		urban
+	}
 	 can_demolish = no
 	 can_be_ruined = no
 	 can_be_disabled = no
@@ -952,12 +1075,13 @@ building_ark_energy_well1 = {
 		text = building_ark_energy_well1_desc
 	 }
 	 planet_modifier = {
-		 planet_jobs_physics_research_produces_mult = 0.10
-		 planet_jobs_engineering_research_produces_mult = 0.075
-		 planet_jobs_society_research_produces_mult = 0.05
-		 job_researcher_add = 1
-		 job_culture_worker_add = 1
-		 trade_value_mult = -0.1
+		 job_physicist_add = 80
+		 job_biologist_add = 80
+		 job_engineer_add = 80
+		 job_culture_worker_add = 80
+		 trader_jobs_bonus_workforce_mult = -0.075
+		 planet_orbital_bombardment_damage = -2
+		 planet_storm_devastation_mult = -1
 	 }
 	 country_modifier = {
 		 empire_size_penalty_mult = 0.05
@@ -974,6 +1098,9 @@ building_ark_energy_well1 = {
 }
 building_ark_energy_well2 = {
 	can_build = no
+	building_sets = {
+		urban
+	}
 	can_demolish = no
 	can_be_ruined = no
 	can_be_disabled = no
@@ -985,15 +1112,18 @@ building_ark_energy_well2 = {
 		text = building_ark_energy_well2_desc
 	}
 	planet_modifier = {
-		planet_jobs_physics_research_produces_mult = 0.25
-		planet_jobs_engineering_research_produces_mult = 0.1875
-		planet_jobs_society_research_produces_mult = 0.125
-		job_culture_worker_add = 3
-		job_researcher_add = 5
+		researcher_jobs_bonus_workforce_mult = 0.05
+		entertainer_jobs_bonus_workforce_mult = 0.05
+		job_physicist_add = 120
+		job_biologist_add = 120
+		job_engineer_add = 120
+		job_culture_worker_add = 120
+		trader_jobs_bonus_workforce_mult = -0.05
+		planet_orbital_bombardment_damage = -2
+		planet_storm_devastation_mult = -1
 	}
 	country_modifier = {
-		trade_value_mult = -0.20
-		empire_size_penalty_mult = 0.20
+		empire_size_penalty_mult = 0.05
 	}
 	resources = {
 		category = planet_buildings
@@ -1014,6 +1144,9 @@ building_ark_energy_well2 = {
 }
 building_ark_energy_well3 = {
 	can_build = no
+	building_sets = {
+		urban
+	}
 	can_demolish = no
 	can_be_ruined = no
 	can_be_disabled = no
@@ -1025,20 +1158,24 @@ building_ark_energy_well3 = {
 		text = building_ark_energy_well3_desc
 	}
 	planet_modifier = {
-		planet_jobs_physics_research_produces_mult = 0.35
-		planet_jobs_engineering_research_produces_mult = 0.2625
-		planet_jobs_society_research_produces_mult = 0.175
-		job_culture_worker_add = 6
-		job_researcher_add = 6
+		researcher_jobs_bonus_workforce_mult = 0.10
+		entertainer_jobs_bonus_workforce_mult = 0.10
+		job_physicist_add = 200
+		job_biologist_add = 200
+		job_engineer_add = 200
+		job_culture_worker_add = 200
+		trader_jobs_bonus_workforce_mult = -0.025
+		planet_orbital_bombardment_damage = -2
+		planet_storm_devastation_mult = -1
 	}
 	country_modifier = {
-		trade_value_mult = -0.10
-		empire_size_penalty_mult = 0.15
+		empire_size_penalty_mult = 0.05
 	}
 	resources = {
 		category = planet_buildings
 		upkeep = {
 			energy = 80
+			rare_crystals = 2
 		}
 		cost = {
 			alloys = 500
@@ -1053,6 +1190,9 @@ building_ark_energy_well3 = {
 
 building_ark_energy_well4a = {
 	can_build = no
+	building_sets = {
+		urban
+	}
 	can_demolish = no
 	can_be_ruined = no
 	can_be_disabled = no
@@ -1064,20 +1204,24 @@ building_ark_energy_well4a = {
 		text = building_ark_energy_well4a_desc
 	}
 	planet_modifier = {
-		planet_jobs_physics_research_produces_mult = 0.35
-		planet_jobs_engineering_research_produces_mult = 0.2625
-		planet_jobs_society_research_produces_mult = 0.175
-		job_culture_worker_add = 6
-		job_researcher_add = 6
+		researcher_jobs_bonus_workforce_mult = 0.2
+		entertainer_jobs_bonus_workforce_mult = 0.2
+		job_physicist_add = 800
+		job_biologist_add = 800
+		job_engineer_add = 800
+		job_culture_worker_add = 800
+		trader_jobs_bonus_workforce_mult = -0.1
+		planet_orbital_bombardment_damage = -2
+		planet_storm_devastation_mult = -1
 	}
 	country_modifier = {
-		trade_value_mult = -0.10
-		empire_size_penalty_mult = 0.15
+		empire_size_penalty_mult = 0.05
 	}
 	resources = {
 		category = planet_buildings
 		upkeep = {
-			energy = 960
+			energy = 480
+			rare_crystals = 12
 		}
 		cost = {
 		}
@@ -1089,6 +1233,9 @@ building_ark_energy_well4a = {
 }
 building_ark_energy_well4b = {
 	can_build = no
+	building_sets = {
+		urban
+	}
 	can_demolish = no
 	can_be_ruined = no
 	can_be_disabled = no
@@ -1100,14 +1247,18 @@ building_ark_energy_well4b = {
 		text = building_ark_energy_well4b_desc
 	}
 	planet_modifier = {
-		planet_jobs_physics_research_produces_mult = 0.50
-		planet_jobs_engineering_research_produces_mult = 0.375
-		planet_jobs_society_research_produces_mult = 0.25
-		job_culture_worker_add = 8
-		job_researcher_add = 8
-		planet_orbital_bombardment_damage = -1
+		researcher_jobs_bonus_workforce_mult = 0.2
+		entertainer_jobs_bonus_workforce_mult = 0.2
+		job_physicist_add = 800
+		job_biologist_add = 800
+		job_engineer_add = 800
+		job_culture_worker_add = 800
+		trader_jobs_bonus_workforce_mult = -0.025
+		planet_orbital_bombardment_damage = -2
+		planet_storm_devastation_mult = -1
 		planet_stability_add = 10
 	}
+
 	country_modifier = {
 		country_unity_produces_mult = 0.15
 
@@ -1115,7 +1266,8 @@ building_ark_energy_well4b = {
 	resources = {
 		category = planet_buildings
 		upkeep = {
-			energy = 300
+			energy = 240
+			rare_crystals = 8
 		}
 		cost = {
 			alloys = 750
@@ -1131,6 +1283,9 @@ building_ark_energy_well4b = {
 
 building_ark_energy_well5 = {
 	can_build = no
+	building_sets = {
+		urban
+	}
 	can_demolish = yes
 	can_be_ruined = no
 	can_be_disabled = yes
@@ -1142,11 +1297,12 @@ building_ark_energy_well5 = {
 		text = building_ark_energy_well5_desc
 	}
 	planet_modifier = {
-		planet_jobs_physics_research_produces_mult = 0.50
-		planet_jobs_engineering_research_produces_mult = 0.375
-		planet_jobs_society_research_produces_mult = 0.25
-		job_culture_worker_add = 8
-		job_researcher_add = 8
+		researcher_jobs_bonus_workforce_mult = 0.2
+		entertainer_jobs_bonus_workforce_mult = 0.2
+		job_physicist_add = 800
+		job_biologist_add = 800
+		job_engineer_add = 800
+		job_culture_worker_add = 800
 	}
 	country_modifier = {
 		country_unity_produces_mult = 0.15
@@ -1154,7 +1310,7 @@ building_ark_energy_well5 = {
 	resources = {
 		category = planet_buildings
 		upkeep = {
-			energy = 10
+			energy = 32
 		}
 	}
 }

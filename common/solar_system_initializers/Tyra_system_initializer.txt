@@ -7,31 +7,133 @@
 @moon_max_size = 10
 
 
+# Tyra_system = {
+# 	name = "NAME_Terra"
+# 	class = "sc_ark_a"
+# 	flags = { Tyra_system ark_isolated }
+# 	usage = custom_empire
+# 	planet = {
+# 		name = "NAME_Terra"
+# 		class = "pc_a_star"
+# 		orbit_distance = 0
+# 		orbit_angle = 0
+# 		size = 0
+# 		has_ring = no
+# 		init_effect = {
+# 			clear_deposits = yes
+# 			clear_blockers = yes
+# 		}
+# 	}
+# 	planet = { #泰拉
+# 		name = "NAME_Terra"
+# 		class = "pc_continental"
+# 		orbit_distance = 60
+# 		orbit_angle = 180
+# 		has_independent_orbital_line = no
+# 		size = 25
+# 		has_ring = yes
+# 		entity = "continental_planet_terra_entity"
+# 		deposit_blockers = none
+# 		flags = { planet_terra }
+#
+# 		init_effect = {
+# 			prevent_anomaly = yes
+# 			clear_planet_modifiers = yes
+# 			add_modifier = {
+# 				modifier = "catastrophe"
+# 				days = -1
+# 			}
+# 			save_global_event_target_as = ark_planet_terra
+# 		}
+#
+# 		moon = {
+# 			name = "NAME_Terra_1"
+# 			class = "pc_barren_cold"
+# 			size = 5
+# 			orbit_distance = 14
+# 			orbit_angle = 0
+# 			has_ring = no
+# 			deposit_blockers = none
+# 			flags = { planet_terra_moon1 }
+# 		}
+#
+# 		moon = {
+# 			name = "NAME_Terra_2"
+# 			class = "pc_barren_cold"
+# 			size = 7
+# 			orbit_distance = 4
+# 			orbit_angle = 255
+# 			has_ring = no
+# 			deposit_blockers = none
+# 			flags = { planet_terra_moon2 }
+# 		}
+# 	}
+# 	init_effect = {
+# 		save_global_event_target_as = ARK_TYRA_HOME_SYSTEM
+# 	}
+# }
 Tyra_system = {
 	name = "NAME_Terra"
 	class = "sc_ark_a"
 	flags = { Tyra_system ark_isolated }
 	usage = custom_empire
+
+
+
 	planet = {
 		name = "NAME_Terra"
 		class = "pc_a_star"
 		orbit_distance = 0
-		orbit_angle = 0
-		size = 0
+		orbit_angle = 1
+		size = 40
 		has_ring = no
-		init_effect = {
-			clear_deposits = yes
-			clear_blockers = yes
-		}
 	}
+
+	planet = {
+		name = "NAME_Terra_3"
+		class = "pc_molten"
+		orbit_distance = 30
+		orbit_angle = {
+			min = 0
+			max = 360
+		}
+		size = 8
+		has_ring = no
+	}
+
+	planet = {
+		name = "NAME_Terra_4"
+		class = "pc_toxic"
+		init_effect = {
+			set_planet_entity = {
+				entity = toxic_planet_venus_entity
+				atmosphere_color = hsv { 0.854 0.072 0.7 }
+				atmosphere_intensity = 0.2
+				atmosphere_width = 1.0
+			}
+		}
+		orbit_distance = 40
+		orbit_angle = {
+			min = 0
+			max = 360
+		}
+		size = 16
+		has_ring = no
+	}
+
+
 	planet = { #泰拉
 		name = "NAME_Terra"
 		class = "pc_continental"
-		orbit_distance = 60
-		orbit_angle = 180
+		orbit_distance = 50
+		orbit_angle = {
+			min = 0
+			max = 360
+		}
 		has_independent_orbital_line = no
-		size = 25
+		size = 22
 		has_ring = yes
+		starting_planet = yes
 		entity = "continental_planet_terra_entity"
 		deposit_blockers = none
 		flags = { planet_terra }
@@ -50,8 +152,11 @@ Tyra_system = {
 			name = "NAME_Terra_1"
 			class = "pc_barren_cold"
 			size = 5
-			orbit_distance = 14
-			orbit_angle = 0
+			orbit_distance = 8
+			orbit_angle = {
+				min = 0
+				max = 360
+			}
 			has_ring = no
 			deposit_blockers = none
 			flags = { planet_terra_moon1 }
@@ -61,18 +166,135 @@ Tyra_system = {
 			name = "NAME_Terra_2"
 			class = "pc_barren_cold"
 			size = 7
-			orbit_distance = 4
-			orbit_angle = 255
+			orbit_distance = 14
+			orbit_angle = {
+				min = 0
+				max = 360
+			}
 			has_ring = no
 			deposit_blockers = none
 			flags = { planet_terra_moon2 }
 		}
 	}
+
+
+	planet = {
+		name = "NAME_Terra_5"
+		class = "pc_gas_giant"
+		orbit_distance = 75
+		orbit_angle = {
+			min = 0
+			max = 360
+		}
+		size = 32
+		has_ring = yes
+		moon = {
+			name = "NAME_Terra_5a"
+			class = "pc_barren_cold"
+			size = 3
+			orbit_distance = 5
+			orbit_angle = {
+				min = 0
+				max = 360
+			}
+			has_ring = no
+		}
+		moon = {
+			name = "NAME_Terra_5b"
+			class = "pc_barren"
+			size = 5
+			orbit_distance = 8
+			orbit_angle = {
+				min = 0
+				max = 360
+			}
+			has_ring = no
+		}
+		moon = {
+			name = "NAME_Terra_5c"
+			class = "pc_toxic"
+			size = 7
+			orbit_distance = 11
+			orbit_angle = {
+				min = 0
+				max = 360
+			}
+			has_ring = no
+		}
+	}
+
+	planet = {
+		name = "NAME_Terra_6"
+		class = "pc_gas_giant"
+		orbit_distance = 80
+		orbit_angle = {
+			min = 0
+			max = 360
+		}
+		size = 57
+		has_ring = no
+		moon = {
+			name = "NAME_Terra_6a"
+			class = "pc_barren_cold"
+			size = 6
+			orbit_distance = 13
+			orbit_angle = 27
+			has_ring = no
+		}
+	}
+
+
+	planet = {
+		name = "NAME_Terra_7"
+		class = "pc_frozen"
+		orbit_distance = 85
+		orbit_angle = {
+			min = 0
+			max = 360
+		}
+		size = 26
+		has_ring = no
+	}
+
+
+	planet = {
+		name = "NAME_Terra_8"
+		class = "pc_frozen"
+		orbit_distance = 96
+		orbit_angle = {
+			min = 0
+			max = 360
+		}
+		size = 24
+		has_ring = yes
+	}
+
+	planet = {
+		name = "NAME_Terra_9"
+		class = "pc_ark_originium_frozen"
+		orbit_distance = 108
+		orbit_angle = {
+			min = 0
+			max = 360
+		}
+		size = 7
+		has_ring = no
+		init_effect = {
+			add_modifier = {
+				modifier = Terra_9_modifier
+				days = -1
+			}
+			add_deposit = d_minerals_4
+			add_deposit = d_originiums_3
+		}
+	}
+
+
 	init_effect = {
 		save_global_event_target_as = ARK_TYRA_HOME_SYSTEM
+		generate_home_system_resources = yes
 	}
 }
-
 Chaos_system = {
 	name = "NAME_Chaos"
 	class = "sc_f"
@@ -146,7 +368,7 @@ Chaos_system = {
 			orbit_angle = 125
 			size = 12
 			has_ring = yes
-			starting_planet = yes
+
 			flags = { planet_talos }
 			init_effect = {
 				prevent_anomaly = yes

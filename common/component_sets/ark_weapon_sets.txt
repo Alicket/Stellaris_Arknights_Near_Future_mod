@@ -49,12 +49,12 @@ component_set = {		# 量子发射器
 	icon_frame = 1	
 }
 
-component_set = {		# 改良型量子发射器
-	key = "ARK_ENERGY_TORPEDO_2"
-	
-	icon = "GFX_ark_ship_part_energy_torpedo_2"
-	icon_frame = 1	
-}
+#component_set = {		# 改良型量子发射器
+#	key = "ARK_ENERGY_TORPEDO_2"
+#
+#	icon = "GFX_ark_ship_part_energy_torpedo_2"
+#	icon_frame = 1
+#}
 
 
 component_set = {		# 量子二踢脚

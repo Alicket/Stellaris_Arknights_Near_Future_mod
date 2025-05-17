@@ -1,6 +1,6 @@
 # 遗尘漫步（凯尔希专属）
 leader_trait_walk_in_dust_s = {
-	cost = 0
+	#cost = 0
 	initial = no
 	
 	icon = "gfx/interface/icons/traits/trait_walk_in_dust.dds"
@@ -16,7 +16,7 @@ leader_trait_walk_in_dust_s = {
 
 # 未知技术（凯尔希专属）
 leader_trait_unknown_technology = {
-	cost = 0
+	#cost = 0
 	initial = no
 	
 	icon = "gfx/interface/icons/traits/leader_trait_unknown_technology.dds"
@@ -30,7 +30,7 @@ leader_trait_unknown_technology = {
 
 # 在文明尽头相遇
 trait_scientist_meet_end = {
-	cost = 0
+	#cost = 0
 	initial = no
 	
 	icon = "gfx/interface/icons/traits/leader_trait_meet_end.dds"
@@ -42,7 +42,7 @@ trait_scientist_meet_end = {
 
 # 精密计算（暂为灵知专属）
 leader_trait_precise_calculation = {
-	cost = 0
+	#cost = 0
 	initial = no
 	
 	icon = "gfx/interface/icons/traits/leader_trait_precise_calculation.dds"

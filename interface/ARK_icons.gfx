@@ -156,6 +156,10 @@ spriteTypes = {
 		name = "GFX_ark_specimen_glow_of_stars"
 		texturefile = "gfx/interface/icons/specimens/ark_glow_of_stars.dds"
 	}
+	spriteType = {	# 璀璨悲泣
+		name = "GFX_ark_specimen_resplendent_sob"
+		texturefile = "gfx/interface/icons/specimens/ark_resplendent_sob.dds"
+	}
 
 
 

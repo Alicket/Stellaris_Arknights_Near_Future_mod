@@ -19,6 +19,9 @@ civic_business_union = {
 	random_weight = { base = 0 }
 	modifier = {
 		country_government_civic_points_add = 2
+		commercial_pact_mult = 0.20
+		empire_size_colonies_mult = 0.50
+		external_leader_pool_add = 1
 	}
 }
 

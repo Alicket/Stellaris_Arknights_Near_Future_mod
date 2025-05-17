@@ -879,7 +879,6 @@ portrait_groups = {
 					}
 				}
 				portraits = {
-					ARK_N_Doctor_N
 					ARK_N_Conviction
 					ARK_N_TRC
 					ARK_F_Closure
@@ -1155,7 +1154,6 @@ portrait_groups = {
 					}
 				}
 				portraits = {
-					ARK_N_Doctor_N
 					ARK_N_Conviction
 					ARK_M_Executor
 					ARK_M_12F
@@ -1248,7 +1246,6 @@ portrait_groups = {
 					}
 				}
 				portraits = {
-					ARK_N_Doctor_N
 					ARK_N_Conviction
 					ARK_F_Closure
 					ARK_F_Chen
@@ -1521,7 +1518,6 @@ portrait_groups = {
 					}
 				}
 				portraits = {
-					ARK_N_Doctor_N
 					ARK_N_Conviction
 					ARK_M_12F
 					ARK_M_Flamebringer
@@ -1614,7 +1610,6 @@ portrait_groups = {
 					}
 				}
 				portraits = {
-					ARK_N_Doctor_N
 					ARK_N_Conviction
 					ARK_F_Closure
 					ARK_F_Chen
@@ -1887,7 +1882,6 @@ portrait_groups = {
 					}
 				}
 				portraits = {
-					ARK_N_Doctor_N
 					ARK_N_Conviction
 					ARK_M_12F
 					ARK_M_Flamebringer
@@ -1978,7 +1972,6 @@ portrait_groups = {
 					NOT = { species = { species_gender = male } }
 				}
 				portraits = {
-					ARK_N_Doctor_N
 					ARK_N_Conviction
 					ARK_F_Closure
 					ARK_F_Chen
@@ -2249,7 +2242,6 @@ portrait_groups = {
 					NOT = { species = { species_gender = female } }
 				}
 				portraits = {
-					ARK_N_Doctor_N
 					ARK_N_Conviction
 					ARK_M_12F
 					ARK_M_Flamebringer

@@ -1,0 +1,47 @@
+namespace = ark_archive
+
+##万星园之辉：ark_arclight.3001
+
+##璀璨悲泣
+#后续扩写，最好改成一场追逐战
+country_event = {
+    id = ark_archive.1
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        this = {
+            has_origin = origin_ark_tragedy_birth
+        }
+        from = {
+            is_neighbor_of = root
+        }
+        not = { has_country_flag = ark_archive_2_end }
+    }
+    immediate = {
+        random_list = {
+            1 = {
+                country_event = {
+                    id = ark_archive.2
+                    days = 5
+                }
+            }
+            9 = { }
+        }
+    }
+}
+country_event = {
+    id = ark_archive.2
+    title = "ark_archive.2.title"
+    desc = "ark_archive.2.desc"
+    picture = GFX_evt_cargoship_caravan
+    is_triggered_only = yes
+    specimen = ark_resplendent_sob
+    immediate = {
+        hidden_effect = {
+            set_country_flag = ark_archive_2_end
+        }
+    }
+    option = {
+        name = ark_archive.2.a
+    }
+}

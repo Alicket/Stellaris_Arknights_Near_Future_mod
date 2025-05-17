@@ -6,11 +6,27 @@ ark_glow_of_stars = {
         script = "grand_archive/set_specimen_rarity"
         RARITY = exceptional
     }
-
     resources = {
         category = specimens
         produces = {
-            engineering_research = 15
+            unity = 15
+            multiplier = value:grand_archive_size_effect
+        }
+    }
+}
+
+ark_resplendent_sob = {
+    icon = "GFX_ark_specimen_resplendent_sob"
+    type = aesthetic_wonder
+
+    inline_script = {
+        script = "grand_archive/set_specimen_rarity"
+        RARITY = exceptional
+    }
+    resources = {
+        category = specimens
+        produces = {
+            physics_research = 15
             multiplier = value:grand_archive_size_effect
         }
     }

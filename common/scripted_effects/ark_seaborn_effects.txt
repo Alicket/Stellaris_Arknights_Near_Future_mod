@@ -1,37 +1,96 @@
 ark_seaborn_assimilation = {
-	random_owned_pop = {
-		limit =  {
-			NOR = {
-				has_trait = trait_ARK_ocean_seaborn
-				has_trait = trait_machine_unit
+	random_owned_pop_group = {
+		if = {
+			limit =  {
+				NOR = {
+					has_trait = trait_ARK_ocean_seaborn
+					has_trait = trait_machine_unit
+				}
+				pop_amount >= 100
 			}
-		}
-		kill_pop = yes
-		root = {
-			create_pop = {
-				species = root.owner
+			kill_pop_group = {
+				pop_group = this
+				amount = 100
 			}
-			owner = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = arkocean_option_disable_mould }
-					}
-					add_resource = {
-						arkseaborn_cells = 0.04
+			root = {
+				create_pop_group = {
+					species = root.owner
+					size = 100
+				}
+				owner = {
+					if = {
+						limit = {
+							NOT = { has_country_flag = arkocean_option_disable_mould }
+						}
+						add_resource = {
+							arkseaborn_cells = 0.04
+						}
+						change_variable = {
+							which = var_ark_seaborn_evolution_cell
+							value = 0.04
+
+						}
 					}
 					change_variable = {
-						which = var_ark_seaborn_evolution_cell
-						value = 0.04
+						which = var_ark_seaborn_evolution_assimilation
+						value = 100
+					}
+					add_resource = {
+						unity = 10
 					}
 				}
-				change_variable = {
-					which = var_ark_seaborn_evolution_assimilation
-					value = 1
+			}
+			break = yes
+		}
+		else_if = {
+			limit =  {
+				NOR = {
+					has_trait = trait_ARK_ocean_seaborn
+					has_trait = trait_machine_unit
 				}
-				add_resource = {
-					unity = 10
+				pop_amount < 100
+			}
+			change_variable = {
+				which = ark_ocean_assimilation_counter_temp
+				value = 0
+			}
+			export_trigger_value_to_variable = {
+				variable = ark_ocean_assimilation_counter_temp
+				trigger = pop_amount
+			}
+			kill_pop_group = {
+				pop_group = this
+				percentage = 1
+			}
+			root = {
+				create_pop_group = {
+					species = root.owner
+					size = 50
+				}
+				owner = {
+					if = {
+						limit = {
+							NOT = { has_country_flag = arkocean_option_disable_mould }
+						}
+						add_resource = {
+							arkseaborn_cells = 0.04
+						}
+						change_variable = {
+							which = var_ark_seaborn_evolution_cell
+							value = 0.04
+						}
+					}
+					change_variable = {
+						which = var_ark_seaborn_evolution_assimilation
+						value = ark_ocean_assimilation_counter_temp
+					}
+					add_resource = {
+						unity = 10
+					}
 				}
 			}
+			break = yes
 		}
+		else = {  }
 	}
 }

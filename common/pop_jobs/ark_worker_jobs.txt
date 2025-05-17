@@ -1,10 +1,12 @@
 # 源石矿工
 originiums_miner = {
 	category = worker
-	condition_string = WORKER_JOB_TRIGGER
-	building_icon = building_originiums_mining_plant_1
-	clothes_texture_index = 2
-
+	swappable_data = {
+		default = {
+			condition_string = WORKER_JOB_TRIGGER
+			building_icon = building_originiums_mining_plant_1
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no

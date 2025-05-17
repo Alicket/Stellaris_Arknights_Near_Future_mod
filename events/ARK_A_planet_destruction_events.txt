@@ -6,7 +6,12 @@ planet_event = {
 	is_triggered_only = yes
 	immediate = {
 		#效果
-		every_owned_pop = { kill_pop = yes } #鲨人
+		every_owned_pop_group = {
+			kill_pop_group = {
+				pop_group = this
+				percentage = 1
+			}
+		} #鲨人
 		remove_all_buildings = yes #移除建筑
 		if = {
 			limit = { is_planet_class = pc_ringworld_habitable } #环世界

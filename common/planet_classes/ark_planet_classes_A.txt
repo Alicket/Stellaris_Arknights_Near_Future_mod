@@ -18,3 +18,24 @@ pc_ark_frozen = {
 
 	colonizable = no
 }
+
+pc_ark_originium_frozen = {
+	entity = "ark_frozen_planet"		#DONE
+	entity_scale = @planet_standard_scale
+	icon = GFX_planet_type_frozen
+	picture = pc_ark_frozen
+
+	atmosphere_color		= hsv { 0.55 0.15 0.7 }
+	atmosphere_intensity	= 1.0
+	atmosphere_width		= 0.5
+
+	spawn_odds = 0
+
+	extra_orbit_size = 0
+	extra_planet_count = 0
+
+	planet_size = { min = 10 max = 25 }
+	moon_size = { min = 6 max = 10 }
+
+	colonizable = no
+}

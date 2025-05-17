@@ -107,9 +107,9 @@ starbase_ark_arclight = {
 	acceleration = 0.0
 	rotation_speed = 0.0
 	modifier = {
-		starbase_trade_collection_range_add = 1
-		starbase_trade_protection_range_add = 1
-		starbase_trade_protection_add = 8
+		#starbase_trade_collection_range_add = 1
+		#starbase_trade_protection_range_add = 1
+		#starbase_trade_protection_add = 8
 		ship_sensor_range_add = 1
 	}
 	ship_modifier = {

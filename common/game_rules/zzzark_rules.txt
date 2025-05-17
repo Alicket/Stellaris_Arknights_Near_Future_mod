@@ -1,0 +1,352 @@
+# This = country
+can_build_branch_offices = {
+    custom_tooltip = {
+        fail_text = BRANCH_OFFICE_NOT_MEGACORP
+        OR = {
+            is_megacorp = yes
+            has_civic = civic_galactic_sovereign_megacorp
+            has_civic = civic_business_union
+        }
+    }
+}
+
+# This = country
+can_support_branch_offices = {
+    custom_tooltip = {
+        fail_text = BRANCH_OFFICE_NOT_FALLEN_EMPIRES
+        NOR = {
+            is_country_type = fallen_empire
+            is_country_type = awakened_fallen_empire
+        }
+    }
+    custom_tooltip = {
+        fail_text = BRANCH_OFFICE_NOT_ON_MEGACORP_PLANET
+        NOR = {
+            is_megacorp = yes
+            has_civic = civic_galactic_sovereign_megacorp
+            has_civic = civic_business_union
+        }
+    }
+    custom_tooltip = {
+        fail_text = BRANCH_OFFICE_NOT_REGULAR_EMPIRE
+        is_gestalt = no
+    }
+    custom_tooltip = {
+        fail_text = BRANCH_OFFICE_NOT_ADVANCED_PRE_FTL
+        if = {
+            limit = {
+                is_primitive = yes
+                is_gestalt = no
+            }
+            OR = {
+                has_pre_ftl_age = atomic_age
+                has_pre_ftl_age = early_space_age
+            }
+        }
+    }
+}
+
+
+can_build_branch_office_on_planet = {
+    custom_tooltip = {
+        fail_text = requires_recipient_not_fanatic_purifiers
+        exists = owner
+        owner = {
+            OR = {
+                is_same_species = root
+                NOT = { has_civic = civic_fanatic_purifiers }
+            }
+        }
+    }
+    custom_tooltip = {
+        fail_text = BRANCH_OFFICE_NO_OBSERVATION_OUTPOST
+        if = {
+            limit = {
+                root = { is_criminal_syndicate = yes }
+                owner = { is_primitive = yes }
+            }
+            has_observation_outpost = yes
+            observation_outpost_owner = {
+                is_same_value = root
+            }
+        }
+    }
+    custom_tooltip = {
+        fail_text = BRANCH_OFFICE_NOT_COMMERCIAL_PACT
+        exists = owner
+        OR = {
+            root = { is_criminal_syndicate = yes }
+            root = { has_civic = civic_business_union }
+            owner = { has_commercial_pact = root }
+            owner = { is_in_federation_with = root }
+            AND = {
+                has_observation_outpost = yes
+                observation_outpost = {
+                    has_modifier = preftl_action_trade_pact
+                }
+            }
+
+            # allow branch offices in subsidiaries and vice versa (and fellow subjects)
+            root = {
+                is_subject = yes
+                OR = {
+                    is_megacorp = yes
+                    has_civic = civic_galactic_sovereign_megacorp
+                }
+                overlord = {
+                    OR = {
+                        is_same_value = prevprev.owner
+                        is_same_value = prevprev.owner.overlord
+                    }
+                }
+            }
+            owner = {
+                is_subject = yes
+                overlord = {
+                    OR = {
+                        is_same_value = root
+                        is_same_value = root.overlord
+                    }
+                    OR = {
+                        is_megacorp = yes
+                        has_civic = civic_galactic_sovereign_megacorp
+                    }
+                }
+            }
+            AND = {
+                root = { has_civic = civic_galactic_sovereign_megacorp }
+                owner = { is_galactic_community_member = yes }
+            }
+            AND = {
+                root = { has_modifier = imperial_charter }
+                owner = { is_galactic_community_member = yes }
+            }
+        }
+    }
+    custom_tooltip = {
+        fail_text = BRANCH_OFFICE_MEGACORP_OVERLORD
+        exists = owner
+        # failure message for having a corporate overlord
+
+        if = {
+            limit = {
+                OR = {
+                    # Not valid if you aren't a subject.
+                    root = {
+                        is_subject = no
+                    }
+                    # Or if your overlord isn't a megacorp.
+                    root = {
+                        is_subject = yes
+                        overlord = {
+                            NOR = {
+                                is_megacorp = yes
+                                has_civic = civic_galactic_sovereign_megacorp
+                            }
+                        }
+                    }
+                }
+            }
+            always = yes
+        }
+        else = {
+            AND = {
+                root = {
+                    is_subject = yes
+                    overlord = {
+                        OR = {
+                            is_megacorp = yes
+                            has_civic = civic_galactic_sovereign_megacorp
+                        }
+                    }
+                }
+                owner = {
+                    OR = {
+                        is_subject = no
+                        AND = {
+                            is_subject = yes
+                            overlord = { NOT = { is_same_value = root.overlord } }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    custom_tooltip = {
+        fail_text = BRANCH_OFFICE_CRIMINAL_HERITAGE_HAS_TRUCE
+        exists = owner
+        OR = {
+            root = { is_criminal_syndicate = no }
+            owner = {
+                NOR = {
+                    has_truce = root
+                    is_at_war_with = root
+                }
+            }
+        }
+    }
+    custom_tooltip = {
+        fail_text = BRANCH_OFFICE_CRIMINAL_COOLDOWN
+        exists = owner
+        OR = {
+            root = { is_criminal_syndicate = no }
+            AND = {
+                root = { is_criminal_syndicate = yes }
+                NOT = { has_planet_flag = criminal_branch_closed_cooldown_planet@root }
+            }
+        }
+    }
+    custom_tooltip = {
+        fail_text = NO_BRANCH_OFFICE_ON_NANITE_WORLD
+        NOT = { is_planet_class = pc_gray_goo }
+    }
+    custom_tooltip = {
+        fail_text = NO_BRANCH_OFFICE_ON_SYNAPTIC_LATHE
+        NOT = { is_planet_class = pc_cosmogenesis_world }
+    }
+}
+
+
+
+# Checks if a pop can be assembled
+# This = Species
+# Root = Planet
+can_species_be_assembled = {
+    is_sapient = yes
+    NOT = {
+        has_trait = trait_exd
+    }
+    NOT = {
+        AND = {
+            has_trait = trait_mechanical
+            root.owner = { is_individual_machine = yes }
+        }
+    }
+    NOT = {
+        AND = {
+            has_virtual_species_trait = yes
+            root.owner = {
+                is_fallen_empire = no
+                has_active_tradition = tr_virtuality_finish
+            }
+        }
+    }
+    OR = {
+        AND = {
+            has_trait = trait_ARK_ocean_seaborn
+            root.owner = {
+                has_country_flag = arknights_ocean_country
+            }
+        }
+        AND = {
+            is_robotic = yes
+            root = {
+                check_modifier_value = {
+                    modifier = planet_pop_assembly_add
+                    value > 0
+                }
+                owner = {
+                    NOT = { has_country_flag = synth_assembly_stopped }
+                }
+            }
+        }
+        AND = {
+            is_organic_species = yes
+            if = {
+                limit = {
+                    root.owner = { is_hive_empire = yes }
+                }
+                has_trait = trait_hive_mind
+            }
+            else_if = {
+                limit = { has_budding_trait = yes }
+                root = {
+                    any_owned_species = { is_exact_same_species = prevprev }
+                }
+            }
+            else_if = {
+                limit = { has_trait = trait_tiyanki }
+                root = {
+                    any_owned_species = { is_exact_same_species = prevprev }
+                }
+            }
+            else_if = {
+                limit = {
+                    OR = {
+                        has_trait = trait_clone_soldier_infertile
+                        has_trait = trait_clone_soldier_infertile_full_potential
+                    }
+                }
+                root = {
+                    # Event 'clones.3' should cover this, but extra safety check.
+                    has_building = building_clone_army_clone_vat
+                    NOT = {
+                        check_variable = {
+                            which = clone_pops_missing
+                            value = 0
+                        }
+                    }
+                }
+            }
+            else = {
+                root = {
+                    OR = {
+                        has_building = building_clone_vats
+                        has_modifier = tiyanki_trophy
+                        owner = { has_modifier = syamelles_curse }
+                        AND = {
+                            has_building = building_posthumous_employment_center
+                            owner = { has_civic = civic_permanent_employment }
+                        }
+                        has_planet_flag = can_organic_assemble_flag #for mod compatibility
+                    }
+                }
+            }
+        }
+    }
+    has_population_control = {
+        type = no
+        country = root.owner
+    }
+}
+
+
+# this = system
+# root = country
+system_blocks_sensors = {
+    OR = {
+        is_inside_nebula = yes
+        has_modifier = space_storm
+        has_modifier = zroni_storm
+        has_star_flag = lcluster
+        has_star_flag = sealed_system
+        has_star_flag = ark_isolated # Arknights Terra System
+    }
+}
+
+# Root = country attempting to target system for movement
+# This = system being targeted
+can_enter_system_by_jump = {
+    custom_tooltip = {
+        #		success_text = "debug: can jump"
+        fail_text = cannot_jump_to_system
+
+        # Sealed system
+        OR = {
+            NOT = { has_star_flag = sealed_system }
+            AND = {
+                root = { has_country_flag = entered_sealed_system }
+                has_star_flag = sealed_system
+            }
+        }
+
+        # L-Cluster
+        NOT = { has_star_flag = lcluster }
+
+        # Formless system
+        NOT = { has_star_flag = formless_system }
+
+        # Arknights Terra System
+        NOT ={ has_star_flag = ark_isolated }
+    }
+}

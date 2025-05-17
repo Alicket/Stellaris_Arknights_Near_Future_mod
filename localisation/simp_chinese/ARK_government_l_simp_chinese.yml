@@ -107,7 +107,7 @@ personality_medical_council_desc: "医院骑士对异星的各种事物有着很
 ## civic ##
 civic_business_union: "商业联合"
 civic_business_union_desc: "占据社会主导地位的寰宇企业组成的商业组织，这些企业广泛地参与国家的治理并从这一过程中获利。"
-civic_tooltip_business_union_effects: "游戏开始后获得§Y2§!个§Y城邦企业§!类型的国民理念。"
+civic_tooltip_business_union_effects: "游戏开始后获得§Y2§!个§Y城邦企业§!类型的国民理念。\n§Y可以开设企业分部§!"
 civic_pharmaceutical_enterprises: "医药企业"
 civic_pharmaceutical_enterprises_desc: "依靠先进的技术和迅速扩展的其它业务，以罗德岛制药为首的医药集团从纷乱的旧世界中迅速崛起，政府与私人医疗集团有全面和深度的合作。"
 civic_tooltip_pharmaceutical_enterprises_effects: "—可以建造£building£§Y$building_ark_corporate_hospital1$§!系列建筑，提供£job_researcher£§Y$job_researcher$§!和£job_healthcare£§Y$job_healthcare$§!岗位，增加$r_trade_value$，提高$MOD_POP_GROWTH_SPEED$\n—解锁升级£building£§Y$building_ark_corporate_hospital1$§!系列建筑必须的£society£ §Y源石生物学§!科技"

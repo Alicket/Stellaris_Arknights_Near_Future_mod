@@ -106,7 +106,7 @@ arkocean_mould_modifier_4_1 = {
 	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_4_1.dds"
 }
 arkocean_mould_modifier_4_2 = {
-	pop_growth_speed = 0.01
+	bonus_pop_growth_mult = 0.01
 	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_4_2.dds"
 }
 arkocean_mould_modifier_4_3 = {
@@ -144,7 +144,7 @@ arkocean_mould_modifier_5_4 = {
 }
 arkocean_mould_modifier_5_5 = {
 	planet_researchers_produces_mult = 0.15
-	planet_researchers_energy_upkeep_add = 0.15
+	planet_researchers_energy_upkeep_mult = 0.1
 	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_5_5.dds"
 }
 arkocean_mould_modifier_6_1 = {

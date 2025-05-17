@@ -3,4 +3,4 @@
 origin_ark_tragedy_birth:0 "苦难摇篮"
 #origin_ark_tragedy_birth_desc:0 "这一文明尚未进入星际时代,\t\t在磨难中迫不得已走向星海.\t\t尚未完全掌握母星系的他们似乎没有和茫茫星际文明同台竞技的资格.\t\t"
 origin_ark_tragedy_birth_desc:0 "$EMPIRE_DESIGN_arknight1_desc$"
-origin_tooltip_ark_tragedy_birth_effects:0 "将以§H博士§!作为统治者。\n§H领袖§!已有§H一定等级§!。\n将会开启一系列相关事件。\n会为你的物种添加“§H源石病潜势§!”特质。\n母星泰拉位于一处未知的星系中，被阻隔层所困，一座神秘的地面星门通向遥远的塔卫二——前往银河系的渡口。\n§R开局具有挑战性的起源§!"
+origin_tooltip_ark_tragedy_birth_effects:0 "将以§H博士§!作为统治者。\n§H领袖§!已有§H一定等级§!。\n将会开启一系列相关事件。\n会为你的物种添加“§H源石病潜势§!”特质。\n母星系和塔卫二分别处于银河系的不同位置。\n§R开局具有挑战性的起源§!"

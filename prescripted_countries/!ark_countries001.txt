@@ -29,18 +29,19 @@ ARK_country_1 = {
 	}
 	government = gov_ark_elite_republic
 
-	ethic="ethic_fanatic_militarist"
+	ethic="ethic_militarist"
 	ethic="ethic_materialist"
+	ethic = "ethic_egalitarian"
 	advisor_voice_type="l_english"
 
 	origin="origin_ark_tragedy_birth"
 
 	flags = { custom_start_screen }
 
-	planet_name = "NAME_Chaos4_2"
+	planet_name = "NAME_Terra"
 	planet_class = pc_continental
-	initializer = "Chaos_system"
-	system_name = "NAME_Chaos"
+	initializer = "Tyra_system"
+	system_name = "NAME_Terra"
 
 	graphical_culture = "arknights_01"
 	city_graphical_culture = "arknights_01"
@@ -177,7 +178,9 @@ ARK_country_3 = {
 	ethic = ethic_gestalt_consciousness
 	advisor_voice_type="l_hivemind"
 
-	origin = "origin_ark_stella_caerula"
+	#origin = "origin_ark_stella_caerula"
+	origin = "origin_tree_of_life"
+
 
 	flags = { custom_start_screen }
 
