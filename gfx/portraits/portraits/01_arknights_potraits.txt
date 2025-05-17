@@ -591,7 +591,7 @@ portrait_groups = {
 			}
 		}
 		#pop scope
-		pop = { #for a specific pop
+		pop_group = { #for a specific pop
 			add = {
 				trigger = {
 					NOT = { species = { species_gender = male } }
@@ -2325,7 +2325,7 @@ portrait_groups = {
 				}
 			}
 		}
-		pop = { #for a specific pop
+		pop_group = { #for a specific pop
 			add = {
 				trigger = {
 					NOT = { species = { species_gender = male } }

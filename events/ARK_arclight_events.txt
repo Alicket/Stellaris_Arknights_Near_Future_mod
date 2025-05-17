@@ -35,7 +35,28 @@ country_event = {
 	option = {
 		name = ark_arclight.11.a
 		hidden_effect = {
-			event_target:ARK_TYRA_HOME_SYSTEM.starbase = {
+			#event_target:ARK_TYRA_HOME_SYSTEM.starbase = {
+			#	enable_special_project = {
+			#		name = OPENING_ARCLIGHT1_PROJECT
+			#		location = this
+			#		owner = event_target:ark_planet_terra.owner
+			#	}
+			#}
+			create_ambient_object = {
+				type = ark_arclight_one_object
+				use_3d_location = yes
+				entity_offset_height = -15
+				scale = 0.6
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = event_target:ark_planet_terra
+					distance = 8
+					angle = random
+				}
+				save_global_event_target_as = arclight_1
+			}
+			event_target:arclight_1 = {
 				enable_special_project = {
 					name = OPENING_ARCLIGHT1_PROJECT
 					location = this

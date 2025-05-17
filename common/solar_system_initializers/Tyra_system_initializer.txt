@@ -85,14 +85,14 @@ Tyra_system = {
 		class = "pc_a_star"
 		orbit_distance = 0
 		orbit_angle = 1
-		size = 40
+		size = 30
 		has_ring = no
 	}
 
 	planet = {
 		name = "NAME_Terra_3"
 		class = "pc_molten"
-		orbit_distance = 30
+		orbit_distance = 25
 		orbit_angle = {
 			min = 0
 			max = 360
@@ -112,7 +112,7 @@ Tyra_system = {
 				atmosphere_width = 1.0
 			}
 		}
-		orbit_distance = 40
+		orbit_distance = 22
 		orbit_angle = {
 			min = 0
 			max = 360
@@ -125,10 +125,10 @@ Tyra_system = {
 	planet = { #泰拉
 		name = "NAME_Terra"
 		class = "pc_continental"
-		orbit_distance = 50
+		orbit_distance = 25
 		orbit_angle = {
 			min = 0
-			max = 360
+			max = 180
 		}
 		has_independent_orbital_line = no
 		size = 22
@@ -152,7 +152,7 @@ Tyra_system = {
 			name = "NAME_Terra_1"
 			class = "pc_barren_cold"
 			size = 5
-			orbit_distance = 8
+			orbit_distance = 10
 			orbit_angle = {
 				min = 0
 				max = 360
@@ -166,7 +166,7 @@ Tyra_system = {
 			name = "NAME_Terra_2"
 			class = "pc_barren_cold"
 			size = 7
-			orbit_distance = 14
+			orbit_distance = 6
 			orbit_angle = {
 				min = 0
 				max = 360
@@ -181,9 +181,9 @@ Tyra_system = {
 	planet = {
 		name = "NAME_Terra_5"
 		class = "pc_gas_giant"
-		orbit_distance = 75
+		orbit_distance = 37
 		orbit_angle = {
-			min = 0
+			min = 180
 			max = 360
 		}
 		size = 32
@@ -226,12 +226,12 @@ Tyra_system = {
 	planet = {
 		name = "NAME_Terra_6"
 		class = "pc_gas_giant"
-		orbit_distance = 80
+		orbit_distance = 40
 		orbit_angle = {
 			min = 0
 			max = 360
 		}
-		size = 57
+		size = 31
 		has_ring = no
 		moon = {
 			name = "NAME_Terra_6a"
@@ -247,7 +247,7 @@ Tyra_system = {
 	planet = {
 		name = "NAME_Terra_7"
 		class = "pc_frozen"
-		orbit_distance = 85
+		orbit_distance = 48
 		orbit_angle = {
 			min = 0
 			max = 360
@@ -260,39 +260,40 @@ Tyra_system = {
 	planet = {
 		name = "NAME_Terra_8"
 		class = "pc_frozen"
-		orbit_distance = 96
+		orbit_distance = 58
 		orbit_angle = {
 			min = 0
 			max = 360
 		}
-		size = 24
+		size = 25
 		has_ring = yes
 	}
 
 	planet = {
 		name = "NAME_Terra_9"
 		class = "pc_ark_originium_frozen"
-		orbit_distance = 108
+		orbit_distance = 64
 		orbit_angle = {
 			min = 0
 			max = 360
 		}
-		size = 7
+		size = 16
 		has_ring = no
 		init_effect = {
 			add_modifier = {
 				modifier = Terra_9_modifier
 				days = -1
 			}
-			add_deposit = d_minerals_4
-			add_deposit = d_originiums_3
+			save_event_target_as = ark_terra_9
 		}
 	}
-
-
 	init_effect = {
 		save_global_event_target_as = ARK_TYRA_HOME_SYSTEM
 		generate_home_system_resources = yes
+		event_target:ark_terra_9 = {
+			add_deposit = d_minerals_4
+			add_deposit = d_originiums_3
+		}
 	}
 }
 Chaos_system = {
@@ -362,7 +363,7 @@ Chaos_system = {
 
 		moon = {
 			name = "NAME_Chaos4_2"
-			class = "pc_desert"
+			class = "pc_continental"
 			entity = "ark_desert_planet_Talos_II"
 			orbit_distance = 17
 			orbit_angle = 125

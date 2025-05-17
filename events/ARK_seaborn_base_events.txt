@@ -25,10 +25,10 @@ country_event = {#所有领袖添加特殊特质
 				}
 				random_list = {
 					2 = {
-						add_trait = leader_trait_seaborn_sci_complex_thoughts
+						add_trait_no_notify = leader_trait_seaborn_sci_complex_thoughts
 					}
 					98 = {
-						add_trait = leader_trait_seaborn_sci_simple_thoughts
+						add_trait_no_notify = leader_trait_seaborn_sci_simple_thoughts
 						modifier = {
 							add = -98
 							root = { has_country_flag = arkocean_mould_done_5_6 }
@@ -562,6 +562,7 @@ planet_event = {
 	is_triggered_only = yes
 	hide_window = yes
 	trigger = {
+		exists = owner
 		owner = {
 			NOT = { has_country_flag = arkocean_option_disable_planet_evolution }
 			has_trait = trait_ARK_ocean_seaborn
@@ -905,7 +906,7 @@ country_event = {
 	is_triggered_only = yes
 	hide_window = yes
 	trigger = {
-		has_origin = origin_ark_stella_caerula
+		#has_origin = origin_ark_stella_caerula
 		has_trait = trait_ARK_ocean_seaborn
 	}
 	immediate = {
@@ -1025,7 +1026,7 @@ planet_event = {
 				while = {
 					count = 3
 					limit = {
-						any_owned_pop = {
+						any_owned_pop_group = {
 							NOR = {
 								has_trait = trait_ARK_ocean_seaborn
 								has_trait = trait_machine_unit
@@ -1047,7 +1048,7 @@ planet_event = {
 				while = {
 					count = 6
 					limit = {
-						any_owned_pop = {
+						any_owned_pop_group = {
 							NOR = {
 								has_trait = trait_ARK_ocean_seaborn
 								has_trait = trait_machine_unit
@@ -1069,7 +1070,7 @@ planet_event = {
 				while = {
 					count = 12
 					limit = {
-						any_owned_pop = {
+						any_owned_pop_group = {
 							NOR = {
 								has_trait = trait_ARK_ocean_seaborn
 								has_trait = trait_machine_unit

@@ -27,9 +27,9 @@ objectTypes = {
 
 		meshsettings = {
 			index = 0
-			texture_diffuse = "arknights_01_xl_turret_diffuse.dds"
-			texture_normal = "arknights_01_xl_turret_normal.dds"
-			texture_specular = "arknights_01_xl_turret_specular.dds"
+			#texture_diffuse = "arknights_01_xl_turret_diffuse.dds"
+			#texture_normal = "arknights_01_xl_turret_normal.dds"
+			#texture_specular = "arknights_01_xl_turret_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	}
@@ -41,9 +41,9 @@ objectTypes = {
 
 		meshsettings = {
 			index = 0
-			texture_diffuse = "arknights_01_point_defence_R_diffuse.dds"
-			texture_normal = "arknights_01_point_defence_R_normal.dds"
-			texture_specular = "arknights_01_point_defence_R_specular.dds"
+			#texture_diffuse = "arknights_01_point_defence_R_diffuse.dds"
+			#texture_normal = "arknights_01_point_defence_R_normal.dds"
+			#texture_specular = "arknights_01_point_defence_R_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	}

@@ -5982,9 +5982,11 @@ beffect_arkocean_mould_6_4 = {
 	effect = {
 		if = {
 			limit = {
-				OR = {
-					has_civic = civic_hive_devouring_swarm
-					has_civic = civic_fanatic_purifiers
+				from = {
+					OR = {
+						has_civic = civic_hive_devouring_swarm
+						has_civic = civic_fanatic_purifiers
+					}
 				}
 			}
 			custom_tooltip = beffect_arkocean_mould_6_4a_tooltip
@@ -6034,9 +6036,11 @@ beffect_arkocean_mould_done_6_4 = {
 	effect = {
 		if = {
 			limit = {
-				OR = {
-					has_civic = civic_hive_devouring_swarm
-					has_civic = civic_fanatic_purifiers
+				from = {
+					OR = {
+						has_civic = civic_hive_devouring_swarm
+						has_civic = civic_fanatic_purifiers
+					}
 				}
 			}
 			custom_tooltip = beffect_arkocean_mould_6_4a_done_tooltip
@@ -6116,9 +6120,11 @@ beffect_arkocean_mould_done_6_5 = {
 	effect = {
 		if = {
 			limit = {
-				OR = {
-					has_civic = civic_hive_devouring_swarm
-					has_civic = civic_fanatic_purifiers
+				from = {
+					OR = {
+						has_civic = civic_hive_devouring_swarm
+						has_civic = civic_fanatic_purifiers
+					}
 				}
 			}
 			custom_tooltip = beffect_arkocean_mould_6_5a_done_tooltip
@@ -6203,61 +6209,69 @@ beffect_arkocean_mould_connect_waiting_1_46 = {
 
 beffect_arkocean_mould_connect_doing_1_12 = {
 	potential = {
-		OR = {
-			has_country_flag = arkocean_mould_done_1_1_d1
-			has_country_flag = arkocean_mould_done_1_1_d2
-			has_country_flag = arkocean_mould_done_1_1_d3
-			has_country_flag = arkocean_mould_done_1_1_d4
-			has_country_flag = arkocean_mould_done_1_1_d5
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_1_1_d1
+				has_country_flag = arkocean_mould_done_1_1_d2
+				has_country_flag = arkocean_mould_done_1_1_d3
+				has_country_flag = arkocean_mould_done_1_1_d4
+				has_country_flag = arkocean_mould_done_1_1_d5
+			}
+			NOT = { has_country_flag = arkocean_mould_done_1_2_d6 }
 		}
-		NOT = { has_country_flag = arkocean_mould_done_1_2_d6 }
 	}
 	allow = {always = yes}
 	effect = {}
 }
 beffect_arkocean_mould_connect_doing_1_23 = {
 	potential = {
-		OR = {
-			has_country_flag = arkocean_mould_done_1_2_d1
-			has_country_flag = arkocean_mould_done_1_2_d2
-			has_country_flag = arkocean_mould_done_1_2_d3
-			has_country_flag = arkocean_mould_done_1_2_d4
-			has_country_flag = arkocean_mould_done_1_2_d5
-			has_country_flag = arkocean_mould_done_1_2_d6
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_1_2_d1
+				has_country_flag = arkocean_mould_done_1_2_d2
+				has_country_flag = arkocean_mould_done_1_2_d3
+				has_country_flag = arkocean_mould_done_1_2_d4
+				has_country_flag = arkocean_mould_done_1_2_d5
+				has_country_flag = arkocean_mould_done_1_2_d6
+			}
+			NOT = {	has_country_flag = arkocean_mould_done_1_3_d6 }
 		}
-		NOT = {	has_country_flag = arkocean_mould_done_1_3_d6 }
 	}
 	allow = {always = yes}
 	effect = {}
 }
 beffect_arkocean_mould_connect_doing_1_34 = {
 	potential = {
-		OR = {
-			has_country_flag = arkocean_mould_done_1_3_d1
-			has_country_flag = arkocean_mould_done_1_3_d2
-			has_country_flag = arkocean_mould_done_1_3_d3
-			has_country_flag = arkocean_mould_done_1_3_d4
-			has_country_flag = arkocean_mould_done_1_3_d5
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_1_3_d1
+				has_country_flag = arkocean_mould_done_1_3_d2
+				has_country_flag = arkocean_mould_done_1_3_d3
+				has_country_flag = arkocean_mould_done_1_3_d4
+				has_country_flag = arkocean_mould_done_1_3_d5
+			}
+			NOT = {	has_country_flag = arkocean_mould_done_1_4_d5 }
 		}
-		NOT = {	has_country_flag = arkocean_mould_done_1_4_d5 }
 	}
 	allow = {always = yes}
 	effect = {}
 }
 beffect_arkocean_mould_connect_doing_1_46 = {
 	potential = {
-		OR = {
-			has_country_flag = arkocean_mould_done_1_4_d1
-			has_country_flag = arkocean_mould_done_1_4_d2
-			has_country_flag = arkocean_mould_done_1_4_d3
-			has_country_flag = arkocean_mould_done_1_4_d4
-			has_country_flag = arkocean_mould_done_1_4_d5
-		}
-		NAND = {
-			has_country_flag = arkocean_mould_done_1_6
-			check_variable = {
-				which = var_ark_seaborn_mould_1_6_times
-				value >= 25
+		from = {
+			OR = {
+				has_country_flag = arkocean_mould_done_1_4_d1
+				has_country_flag = arkocean_mould_done_1_4_d2
+				has_country_flag = arkocean_mould_done_1_4_d3
+				has_country_flag = arkocean_mould_done_1_4_d4
+				has_country_flag = arkocean_mould_done_1_4_d5
+			}
+			NAND = {
+				has_country_flag = arkocean_mould_done_1_6
+				check_variable = {
+					which = var_ark_seaborn_mould_1_6_times
+					value >= 25
+				}
 			}
 		}
 	}

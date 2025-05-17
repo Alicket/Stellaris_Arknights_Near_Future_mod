@@ -188,6 +188,10 @@ country_event = {
 			remove_country_flag = r_tllhscl
 			remove_country_flag = council_meeting_flag
 			remove_country_flag = interim_council_meeting
+			country_event = {
+				id = ark_rhodes_island.31
+				days = 1801
+			}
 		}
 	}
 	option = {
@@ -219,6 +223,10 @@ country_event = {
 			remove_country_flag = council_meeting_flag
 			remove_country_flag = interim_council_meeting
 		}
+		country_event = {
+			id = ark_rhodes_island.31
+			days = 1801
+		}
 	}
 	option = {
 		name = ark_rhodes_island.3.g3	# 高端装备制造支持（随机重复出现）
@@ -248,6 +256,10 @@ country_event = {
 			remove_country_flag = r_tllhscl
 			remove_country_flag = council_meeting_flag
 			remove_country_flag = interim_council_meeting
+		}
+		country_event = {
+			id = ark_rhodes_island.31
+			days = 1801
 		}
 	}
 	option = {
@@ -279,6 +291,10 @@ country_event = {
 			remove_country_flag = council_meeting_flag
 			remove_country_flag = interim_council_meeting
 		}
+		country_event = {
+			id = ark_rhodes_island.31
+			days = 1801
+		}
 	}
 	option = {
 		name = ark_rhodes_island.3.g5	# 地区免税政策（随机重复出现）
@@ -309,6 +325,10 @@ country_event = {
 			remove_country_flag = council_meeting_flag
 			remove_country_flag = interim_council_meeting
 		}
+		country_event = {
+			id = ark_rhodes_island.31
+			days = 1801
+		}
 	}
 	option = {
 		name = ark_rhodes_island.3.g6	# 就业指导补贴（随机重复出现）
@@ -338,6 +358,10 @@ country_event = {
 			remove_country_flag = r_tllhscl
 			remove_country_flag = council_meeting_flag
 			remove_country_flag = interim_council_meeting
+		}
+		country_event = {
+			id = ark_rhodes_island.31
+			days = 1801
 		}
 	}
 	option = {
@@ -374,6 +398,10 @@ country_event = {
 			remove_country_flag = council_meeting_flag
 			remove_country_flag = interim_council_meeting
 		}
+		country_event = {
+			id = ark_rhodes_island.31
+			days = 1801
+		}
 	}
 	option = {
 		name = ark_rhodes_island.3.y1_2	# 秩序的大地Ⅱ（只有一次，不选可重新出现）
@@ -408,6 +436,10 @@ country_event = {
 			remove_country_flag = r_tllhscl
 			remove_country_flag = council_meeting_flag
 			remove_country_flag = interim_council_meeting
+		}
+		country_event = {
+			id = ark_rhodes_island.31
+			days = 1801
 		}
 	}
 	option = {
@@ -444,6 +476,10 @@ country_event = {
 			remove_country_flag = council_meeting_flag
 			remove_country_flag = interim_council_meeting
 		}
+		country_event = {
+			id = ark_rhodes_island.31
+			days = 1801
+		}
 	}
 	option = {
 		name = ark_rhodes_island.3.y1_4	# 秩序的大地 Ⅳ（只有一次，不选可重新出现）
@@ -479,6 +515,10 @@ country_event = {
 			remove_country_flag = council_meeting_flag
 			remove_country_flag = interim_council_meeting
 		}
+		country_event = {
+			id = ark_rhodes_island.31
+			days = 1801
+		}
 	}
 	option = {
 		name = ark_rhodes_island.3.y2	# 智能机械支持（随机重复出现）
@@ -508,6 +548,10 @@ country_event = {
 			remove_country_flag = r_tllhscl
 			remove_country_flag = council_meeting_flag
 			remove_country_flag = interim_council_meeting
+		}
+		country_event = {
+			id = ark_rhodes_island.31
+			days = 1801
 		}
 	}
 	option = {
@@ -539,6 +583,10 @@ country_event = {
 			remove_country_flag = council_meeting_flag
 			remove_country_flag = interim_council_meeting
 		}
+		country_event = {
+			id = ark_rhodes_island.31
+			days = 1801
+		}
 	}
 	option = {
 		name = ark_rhodes_island.3.y4	# 城邦发展规划（随机重复出现）
@@ -568,6 +616,10 @@ country_event = {
 			remove_country_flag = r_tllhscl
 			remove_country_flag = council_meeting_flag
 			remove_country_flag = interim_council_meeting
+		}
+		country_event = {
+			id = ark_rhodes_island.31
+			days = 1801
 		}
 	}
 	option = {
@@ -599,6 +651,10 @@ country_event = {
 			remove_country_flag = council_meeting_flag
 			remove_country_flag = interim_council_meeting
 		}
+		country_event = {
+			id = ark_rhodes_island.31
+			days = 1801
+		}
 	}
 	option = {
 		name = ark_rhodes_island.3.y6	# ̽探索发现计划（暂无）
@@ -624,6 +680,10 @@ country_event = {
 			remove_country_flag = r_tllhscl
 			remove_country_flag = council_meeting_flag
 			remove_country_flag = interim_council_meeting
+		}
+		country_event = {
+			id = ark_rhodes_island.31
+			days = 1801
 		}
 	}
 	option = {
@@ -659,6 +719,10 @@ country_event = {
 			remove_country_flag = council_meeting_flag
 			remove_country_flag = interim_council_meeting
 		}
+		country_event = {
+			id = ark_rhodes_island.31
+			days = 1801
+		}
 	}
 	option = {
 		name = ark_rhodes_island.3.v	# 召开临时会议
@@ -670,6 +734,10 @@ country_event = {
 		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
 		add_resource = { influence = -25 }
 		hidden_effect = {
+			country_event = {
+				id = ark_rhodes_island.31
+				days = 1801
+			}
 			set_country_flag = council_meeting_flag
 			set_country_flag = interim_council_meeting
 			remove_modifier = terra_council
@@ -750,6 +818,10 @@ country_event = {
 		}
 		default_hide_option = yes
 		hidden_effect = {
+			country_event = {
+				id = ark_rhodes_island.31
+				days = 1801
+			}
 			add_modifier = { modifier = "terra_council" days = 1800 }
 			if = {
 				limit = { OR = { has_country_flag = g_jssjjs } }
@@ -891,8 +963,8 @@ country_event = {
 country_event = {
 	id = ark_rhodes_island.31
 	hide_window = yes
-	location = ROOT
-
+	#location = ROOT
+	is_triggered_only = yes
 	trigger = {
 		NOT = { has_country_flag = council_meeting_flag }
 		NOT = { has_modifier = terra_council }

@@ -1,5 +1,6 @@
 namespace = ark_treatment
 
+#test
 country_event = {
 	id = ark_treatment.1
 	is_triggered_only = yes

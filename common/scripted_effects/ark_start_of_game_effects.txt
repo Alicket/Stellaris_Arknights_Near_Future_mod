@@ -93,10 +93,10 @@ arknight_start_districts = {
 	add_district = district_generator
 	add_district = district_farming
 	add_district = district_mining
-	add_zone = {
-		district = district_city
-		zone = zone_research_unity
-		zone_slot = slot_city_01
-		replace = yes
-	}
+	#add_zone = {
+	#	district = district_city
+	#	zone = zone_research_unity
+	#	zone_slot = slot_city_01
+	#	replace = yes
+	#}
 }

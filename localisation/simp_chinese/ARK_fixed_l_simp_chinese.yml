@@ -215,7 +215,7 @@ biochemical_protection_desc:0 "这颗星球目前正在进行生化防护."
 ## 星球决议 ##
 decision_biochemical_protection:0 "生化防护"
 decision_biochemical_protection_desc:0 "提升整个星球的毒害防护级别,使源石轰炸给行星人口带来的负面效果在破坏度达到100%后才生效."
-decision_biochemical_protection_effects_short:0 "提升£stability£ §G稳定性§!.\n\n减少£job£ §R岗位资源生产§!与£mod_pop_growth_speed£ §R人口增长§!."
+decision_biochemical_protection_effects_short:0 "提升£stability£ §G稳定性§!.\n\n减少£job£ §R岗位资源生产§!与£mod_bonus_pop_growth_mult£ §R人口增长§!."
 decision_biochemical_protection_effects_custom:0 "星球遭受的$bombardment_originium_bombs$将在§Y破坏度§!达到§R100%§!时开始产生污染."
 decision_end_biochemical_protection:0 "结束生化防护"
 decision_end_biochemical_protection_desc:0 "结束当前的生化防护,恢复社会的正常秩序."
@@ -375,10 +375,10 @@ MESSAGE_ARK_TRAIT_UPGRADE_DOCTOR_DESC:0 "[ark_ruler_doctor.GetName]命定特质�
 ## 博物天枢 ##
  ark_glow_of_stars:0 "万星园之辉"
  ark_glow_of_stars_desc_short:0 "在那一瞬，真实之光普照大地"
- ark_glow_of_stars_desc_details:0 "一件从万星园中回收来的装饰品陀螺仪，经过时光的洗礼，已经无法转动自如。它标志着泰拉人第一次冲破天空，触摸繁星。\n§g加成与维护费同样受到帝国规模加成§!"
+ ark_glow_of_stars_desc_details:0 "一件从万星园中回收来的装饰品陀螺仪，经过时光的洗礼，已经无法转动自如。它标志着泰拉人第一次冲破天空，触摸繁星。\n§g产出与维护费同样受到帝国规模加成§!"
  ark_resplendent_sob:0 "璀璨悲泣"
  ark_resplendent_sob_desc_short:0 "他的血液仍在流淌，他从不曾真的自这里离开。"
- ark_resplendent_sob_desc_details:0 "一块令人眼花缭乱的晶体，颜色鲜红仿佛要滴下血来。靠近它，似乎还能感受到古老的创伤。\n§g加成与维护费同样受到帝国规模加成§!"
+ ark_resplendent_sob_desc_details:0 "一块令人眼花缭乱的晶体，颜色鲜红仿佛要滴下血来。靠近它，似乎还能感受到古老的创伤。\n§g产出与维护费同样受到帝国规模加成§!"
 
 
 

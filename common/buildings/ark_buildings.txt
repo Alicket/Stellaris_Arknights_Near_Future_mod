@@ -588,7 +588,10 @@ building_originiums_mining_plant_3 = {
 building_originiums_mining_plant_4 = {
 	base_buildtime = @b4_time
 	can_build = no
-
+	building_sets = {
+		mining
+		urban
+	}
 	category = resource
 
 	potential = {

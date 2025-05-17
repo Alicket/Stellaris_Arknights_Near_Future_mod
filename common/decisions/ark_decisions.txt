@@ -152,12 +152,12 @@ decision_ark_arclight_well4a = {
 	sound = event_administrative_work
 	icon = decision_resources
 	potential = {
-		this = {
-			is_same_value = event_target:ark_planet_terra
-		}
 		owner = {has_origin = origin_ark_tragedy_birth}
 		has_planet_flag = ready_to_build_well4a
 		NOT = { has_planet_flag = well4a_built }
+		this = {
+			is_same_value = event_target:ark_planet_terra
+		}
 	}
 	enactment_time = 1080
 	resources = {
@@ -192,12 +192,12 @@ decision_ark_arclight_well4b = {
 	sound = event_administrative_work
 	icon = decision_resources
 	potential = {
-		this = {
-			is_same_value = event_target:ark_planet_terra
-		}
 		owner = {has_origin = origin_ark_tragedy_birth}
 		has_planet_flag = ready_to_build_well4b
 		NOT = { has_planet_flag = well4b_built }
+		this = {
+			is_same_value = event_target:ark_planet_terra
+		}
 	}
 	enactment_time = 1080
 	resources = {

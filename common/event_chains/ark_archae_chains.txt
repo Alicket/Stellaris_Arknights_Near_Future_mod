@@ -1,0 +1,29 @@
+# ark_archae_main_chain = {
+# 	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+# 	picture = "GFX_evt_archaeological_dig"
+# 	counter = {
+# 		ark_archae_tanoie_counter = {
+# 			max = 4
+# 		}
+# 	}
+# }
+#
+# ark_archae_telescope_observe_chain = {
+# 	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+# 	picture = GFX_evt_satellite_in_orbit
+# 	counter = {
+# 		ark_archae_observe_planet_surveyed = {
+# 			max = 3
+# 		}
+# 	}
+# }
+#
+# ark_archae_kerrolli_homeworld_chain = {
+# 	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+# 	picture = GFX_evt_gas_giant
+# 	counter = {
+# 		ark_archae_kerrolli_homeworld_surveyed = {
+# 			max = 8
+# 		}
+# 	}
+# }

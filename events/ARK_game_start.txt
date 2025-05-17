@@ -11,27 +11,76 @@ country_event = { #选择苦难摇篮起源
 	}
 
 	immediate = {
-
-		#create_ship_design = { design = "NAME_ark_starbase_arclight" }
-		#add_ship_design = last_created_design
-		solar_system = {
+		random_system = {
+			limit = {
+				distance = {
+					source = root.capital_scope.solar_system
+					min_distance >= 200
+					use_bypasses = no
+					min_jumps = 8
+				}
+				any_neighbor_system = {
+					exists = owner
+					owner = {
+						NAND = {
+							is_country_type = fallen_empire
+							is_country_type = marauder_raiders
+							has_civic = civic_fanatic_purifiers
+							has_civic = civic_hive_devouring_swarm
+							has_civic = civic_machine_terminator
+						}
+					}
+					any_neighbor_system = {
+						exists = owner
+						owner = {
+							NAND = {
+								is_country_type = fallen_empire
+								is_country_type = marauder_raiders
+								has_civic = civic_fanatic_purifiers
+								has_civic = civic_hive_devouring_swarm
+								has_civic = civic_machine_terminator
+								has_civic = civic_machine_assimilator
+							}
+						}
+					}
+				}
+			}
 			spawn_system = {
-				min_distance = 30
-				#max_distance = 10
-				max_jumps = 16
-				min_jumps = 8
-
+				min_distance = 10
+				max_distance = 20
+				max_jumps = 1
+				min_jumps = 1
 				initializer = "Chaos_system"
 				hyperlane = yes
 			}
+		}
+		#create_ship_design = { design = "NAME_ark_starbase_arclight" }
+		#add_ship_design = last_created_design
+		#solar_system = {
+
+			#spawn_system = {
+			#	min_distance = 100
+			#	max_distance = 200
+			#	max_jumps = 16
+			#	min_jumps = 8
+			#	initializer = "Chaos_system"
+			#	hyperlane = yes
+			#}
 			#spawn_megastructure = {
 			#	type = ark_ground_star_gate
 			#	planet = event_target:ark_planet_talos
 			#}
+		#}
+		if = {
+			limit = {
+				NOT = {exists = event_target:ARK_TYRA_CHAOS_SYSTEM}
+			}
+			country_event = {
+				id = ark_game_start.100
+			}
 		}
 		event_target:ARK_TYRA_CHAOS_SYSTEM = {
 			set_surveyed = { surveyed = yes	}
-			set_owner = root
 			create_starbase = {
 				owner = root
 				size = starbase_starport
@@ -47,7 +96,7 @@ country_event = { #选择苦难摇篮起源
 				}
 			}
 		}
-		event_target:ARK_TYRA_HOME_SYSTEM = {
+		#event_target:ARK_TYRA_HOME_SYSTEM = {
 			#spawn_megastructure = {
 			#	type = ark_ground_star_gate
 			#	planet = event_target:ark_planet_terra
@@ -59,7 +108,7 @@ country_event = { #选择苦难摇篮起源
 			#		owner = root
 			#	}
 			#}
-		}
+		#}
 		event_target:ark_planet_terra = {
 			#set_owner = root
 			#while = {
@@ -79,10 +128,9 @@ country_event = { #选择苦难摇篮起源
 			remove_all_districts = yes
 			add_district = district_mining
 			add_district = district_generator
-
-			while = {
-				count = 8
-				create_pop = { species = root }
+			create_pop_group = {
+				species = root
+				size = 800
 			}
 			set_planet_entity = {
 				entity = ark_desert_planet_Talos_II
@@ -90,27 +138,28 @@ country_event = { #选择苦难摇篮起源
 		}
 		event_target:ark_planet_terra = {
 			clear_deposits = yes
-			remove_all_districts = yes
+			#remove_all_districts = yes
 			assign_leader = event_target:ark_start_official
 			generate_terra_deposits_and_blockers = yes	# 初始地块
-			arknight_start_districts = yes	# 初始区划
-			while = {
-				count = 2
-				add_district = district_city
-			}
-			while = {
-				count = 3
-				add_district = district_mining
-			}
-			while = {
-				count = 2
-				add_district = district_farming
-			}
+			#arknight_start_districts = yes	# 初始区划
+			#while = {
+			#	count = 2
+			#	add_district = district_city
+			#}
+			#while = {
+			#	count = 3
+			#	add_district = district_mining
+			#}
+			#while = {
+			#	count = 2
+			#	add_district = district_farming
+			#}
 			#add_building = building_capital
 			add_modifier = { modifier = "barbarian_growth" days = -1 }	# 野蛮生长
 			add_deposit = d_former_countries_controlled	# 分裂各国控制区
 			add_building = building_ark_energy_well1
 			add_deposit = d_ark_aegir_generator
+			remove_building = building_fortress
 			#add_building = building_bureaucratic_1
 			#add_building = building_commercial_zone
 			#if = {
@@ -131,7 +180,7 @@ country_event = { #选择苦难摇篮起源
 				1 = {add_experience = 1600}
 				3 = {add_experience = 1300}
 				4 = {add_experience = 1000}
-				4 = {add_experience = 800}
+				5 = {add_experience = 800}
 			}
 		}
 		ruler = {
@@ -174,6 +223,17 @@ country_event = { #选择苦难摇篮起源
 				 entity = "ark_desert_planet_Talos_II"
 			 }
 		 }
+	 }
+ }
+
+ country_event = {
+	 id = ark_game_start.100
+	 title = ark_game_start.100.title
+	 desc =  ark_game_start.100.desc
+	 is_triggered_only = yes
+	 picture = GFX_evt_ark_explosive
+	 option = {
+		 name = ark_game_start.100.a
 	 }
  }
 

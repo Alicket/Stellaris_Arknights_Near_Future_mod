@@ -6,7 +6,7 @@ ark_seaborn_assimilation = {
 					has_trait = trait_ARK_ocean_seaborn
 					has_trait = trait_machine_unit
 				}
-				pop_amount >= 100
+				pop_group_size >= 100
 			}
 			kill_pop_group = {
 				pop_group = this
@@ -48,7 +48,7 @@ ark_seaborn_assimilation = {
 					has_trait = trait_ARK_ocean_seaborn
 					has_trait = trait_machine_unit
 				}
-				pop_amount < 100
+				pop_group_size < 100
 			}
 			change_variable = {
 				which = ark_ocean_assimilation_counter_temp

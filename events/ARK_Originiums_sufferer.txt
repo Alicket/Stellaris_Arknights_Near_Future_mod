@@ -2,25 +2,30 @@ namespace = ark_originiums_sufferer
 
 # 矿石病
 country_event = {
+	is_triggered_only = yes
+	id = ark_originiums_sufferer.0
+	hide_window = yes
+	trigger = {
+		NOT = { has_country_flag = originiums_sufferer_start_flag }
+		owner_species = { has_trait = trait_latent_oripathy }
+	}
+	immediate = {
+		country_event = {
+			id = ark_originiums_sufferer.1
+			days = 360
+			random = 60
+		}
+		set_country_flag = originiums_sufferer_start_flag
+	}
+}
+country_event = {
 	id = ark_originiums_sufferer.1
 	title = "ark_originiums_sufferer.1.name"
 	desc = "ark_originiums_sufferer.1.desc"
 	picture = GFX_evt_treating_oripathy
 	show_sound = event_laboratory_sound
+	is_triggered_only = yes
 	location = ROOT
-
-	trigger = {
-		owner_species = { has_trait = trait_latent_oripathy }
-		NOT = { has_country_flag = originiums_sufferer_start_flag }
-		NOT = { has_country_flag = originiums_sufferer_end_flag }
-	}
-
-	mean_time_to_happen = { days = 360 }
-	
-	immediate = {
-		set_country_flag = originiums_sufferer_start_flag
-	}
-	
 	option = {
 		name = ark_originiums_sufferer.1.a	# 确认
 		custom_tooltip = ark_originiums_sufferer.1_tooltip
@@ -38,315 +43,315 @@ country_event = {
 }
 
 # 矿石病研究简报 1
-country_event = {
-	id = ark_originiums_sufferer.11
-	title = "ark_originiums_sufferer.11.name"
-	desc = "ark_originiums_sufferer.11.desc"
-	picture = GFX_evt_originite_prime
-	location = ROOT
-
-	trigger = {
-		has_country_flag = originiums_sufferer_start_flag
-		NOT = { has_country_flag = originiums_sufferer_bulletin_1_flag }
-	}
-
-	mean_time_to_happen = { months = 18 }
-	
-	immediate = {
-		set_country_flag = originiums_sufferer_bulletin_1_flag
-	}
-	
-	option = {
-		name = ark_originiums_sufferer.11.a	# 归入档案
-		custom_tooltip = ark_originiums_sufferer.uid_tooltip
-		add_monthly_resource_mult = {
-     			resource = society_research
-     			value = @tier1researchreward
-     			min = @tier1researchmin
-     			max = @tier1researchmax
-     		}
-	}
-	option = {
-		name = ark_originiums_sufferer_no_show	# 不再显示此类报告
-		custom_tooltip = ark_originiums_sufferer_no_show_tooltip
-		set_country_flag = originiums_sufferer_bulletin_no_show
-		add_monthly_resource_mult = {
-     			resource = society_research
-     			value = @tier1researchreward
-     			min = @tier1researchmin
-     			max = @tier1researchmax
-     		}
-	}
-}
-
-# 矿石病研究简报 2
-country_event = {
-	id = ark_originiums_sufferer.12
-	title = "ark_originiums_sufferer.12.name"
-	desc = "ark_originiums_sufferer.12.desc"
-	picture = GFX_evt_oripathy_1
-	location = ROOT
-
-	trigger = {
-		has_country_flag = originiums_sufferer_bulletin_1_flag
-		NOT = {
-			has_country_flag = originiums_sufferer_bulletin_no_show
-			has_country_flag = originiums_sufferer_bulletin_2_flag
-		}
-	}
-
-	mean_time_to_happen = { months = 18 }
-	
-	immediate = {
-		set_country_flag = originiums_sufferer_bulletin_2_flag
-	}
-	
-	option = {
-		name = ark_originiums_sufferer.12.a	# 归入档案
-		custom_tooltip = ark_originiums_sufferer.uid_tooltip
-		add_monthly_resource_mult = {
-     			resource = society_research
-     			value = @tier1researchreward
-     			min = @tier1researchmin
-     			max = @tier1researchmax
-     		}
-	}
-	option = {
-		name = ark_originiums_sufferer_no_show	# 不再显示此类报告
-		custom_tooltip = ark_originiums_sufferer_no_show_tooltip
-		set_country_flag = originiums_sufferer_bulletin_no_show
-		add_monthly_resource_mult = {
-     			resource = society_research
-     			value = @tier1researchreward
-     			min = @tier1researchmin
-     			max = @tier1researchmax
-     		}
-	}
-}
-
-# 矿石病研究简报 2（隐藏事件）
-country_event = {
-	id = ark_originiums_sufferer.120
-	hide_window = yes
-	location = ROOT
-
-	trigger = {
-		has_country_flag = originiums_sufferer_bulletin_1_flag
-		has_country_flag = originiums_sufferer_bulletin_no_show
-		NOT = { has_country_flag = originiums_sufferer_bulletin_2_flag }
-	}
-
-	mean_time_to_happen = { months = 18 }
-	
-	immediate = {
-		set_country_flag = originiums_sufferer_bulletin_2_flag
-		add_monthly_resource_mult = {
-     			resource = society_research
-     			value = @tier1researchreward
-     			min = @tier1researchmin
-     			max = @tier1researchmax
-     		}
-	}
-}
-
-# 矿石病研究简报 3
-country_event = {
-	id = ark_originiums_sufferer.13
-	title = "ark_originiums_sufferer.13.name"
-	desc = "ark_originiums_sufferer.13.desc"
-	picture = GFX_evt_ori1
-	location = ROOT
-
-	trigger = {
-		has_country_flag = originiums_sufferer_bulletin_2_flag
-		NOT = {
-			has_country_flag = originiums_sufferer_bulletin_no_show
-			has_country_flag = originiums_sufferer_bulletin_3_flag
-		}
-	}
-
-	mean_time_to_happen = { months = 18 }
-	
-	immediate = {
-		set_country_flag = originiums_sufferer_bulletin_3_flag
-	}
-	
-	option = {
-		name = ark_originiums_sufferer.13.a	# 归入档案
-		custom_tooltip = ark_originiums_sufferer.uid_tooltip
-		add_monthly_resource_mult = {
-     			resource = society_research
-     			value = @tier2researchreward
-     			min = @tier2researchmin
-     			max = @tier2researchmax
-     		}
-	}
-	option = {
-		name = ark_originiums_sufferer_no_show	# 不再显示此类报告
-		custom_tooltip = ark_originiums_sufferer_no_show_tooltip
-		set_country_flag = originiums_sufferer_bulletin_no_show
-		add_monthly_resource_mult = {
-     			resource = society_research
-     			value = @tier2researchreward
-     			min = @tier2researchmin
-     			max = @tier2researchmax
-     		}
-	}
-}
-
-# 矿石病研究简报 3（隐藏事件）
-country_event = {
-	id = ark_originiums_sufferer.130
-	hide_window = yes
-	location = ROOT
-
-	trigger = {
-		has_country_flag = originiums_sufferer_bulletin_2_flag
-		has_country_flag = originiums_sufferer_bulletin_no_show
-		NOT = { has_country_flag = originiums_sufferer_bulletin_3_flag }
-	}
-
-	mean_time_to_happen = { months = 18 }
-	
-	immediate = {
-		set_country_flag = originiums_sufferer_bulletin_3_flag
-		add_monthly_resource_mult = {
-     			resource = society_research
-     			value = @tier2researchreward
-     			min = @tier2researchmin
-     			max = @tier2researchmax
-     		}
-	}
-}
-
-# 矿石病研究简报 4
-country_event = {
-	id = ark_originiums_sufferer.14
-	title = "ark_originiums_sufferer.14.name"
-	desc = "ark_originiums_sufferer.14.desc"
-	picture = GFX_evt_ori1
-	location = ROOT
-
-	trigger = {
-		has_country_flag = originiums_sufferer_bulletin_3_flag
-		NOT = {
-			has_country_flag = originiums_sufferer_bulletin_no_show
-			has_country_flag = originiums_sufferer_bulletin_4_flag
-		}
-	}
-
-	mean_time_to_happen = { months = 18 }
-	
-	immediate = {
-		set_country_flag = originiums_sufferer_bulletin_4_flag
-	}
-	
-	option = {
-		name = ark_originiums_sufferer.14.a	# 归入档案
-		custom_tooltip = ark_originiums_sufferer.uid_tooltip
-		add_monthly_resource_mult = {
-     			resource = society_research
-     			value = @tier2researchreward
-     			min = @tier2researchmin
-     			max = @tier2researchmax
-     		}
-	}
-	option = {
-		name = ark_originiums_sufferer_no_show	# 不再显示此类报告
-		custom_tooltip = ark_originiums_sufferer_no_show_tooltip
-		set_country_flag = originiums_sufferer_bulletin_no_show
-		add_monthly_resource_mult = {
-     			resource = society_research
-     			value = @tier2researchreward
-     			min = @tier2researchmin
-     			max = @tier2researchmax
-     		}
-	}
-}
-
-# 矿石病研究简报 4（隐藏事件）
-country_event = {
-	id = ark_originiums_sufferer.140
-	hide_window = yes
-	location = ROOT
-
-	trigger = {
-		has_country_flag = originiums_sufferer_bulletin_3_flag
-		has_country_flag = originiums_sufferer_bulletin_no_show
-		NOT = { has_country_flag = originiums_sufferer_bulletin_4_flag }
-	}
-
-	mean_time_to_happen = { months = 18 }
-	
-	immediate = {
-		set_country_flag = originiums_sufferer_bulletin_4_flag
-		add_monthly_resource_mult = {
-     			resource = society_research
-     			value = @tier2researchreward
-     			min = @tier2researchmin
-     			max = @tier2researchmax
-     		}
-	}
-}
-
-# 矿石病研究简报 5
-country_event = {
-	id = ark_originiums_sufferer.15
-	title = "ark_originiums_sufferer.15.name"
-	desc = "ark_originiums_sufferer.15.desc"
-	picture = GFX_evt_originite_prime
-	location = ROOT
-
-	trigger = {
-		has_country_flag = originiums_sufferer_bulletin_4_flag
-		NOT = {
-			has_country_flag = originiums_sufferer_bulletin_no_show
-			has_country_flag = originiums_sufferer_bulletin_5_flag
-		}
-	}
-
-	mean_time_to_happen = { months = 18 }
-	
-	immediate = {
-		set_country_flag = originiums_sufferer_bulletin_5_flag
-	}
-	
-	option = {
-		name = ark_originiums_sufferer.15.a	# 归入档案
-		custom_tooltip = ark_originiums_sufferer.uid_tooltip
-		add_monthly_resource_mult = {
-     			resource = society_research
-     			value = @tier3researchreward
-     			min = @tier3researchmin
-     			max = @tier3researchmax
-     		}
-	}
-}
-
-# 矿石病研究简报 5（隐藏事件）
-country_event = {
-	id = ark_originiums_sufferer.150
-	hide_window = yes
-	location = ROOT
-
-	trigger = {
-		has_country_flag = originiums_sufferer_bulletin_4_flag
-		has_country_flag = originiums_sufferer_bulletin_no_show
-		NOT = { has_country_flag = originiums_sufferer_bulletin_5_flag }
-	}
-
-	mean_time_to_happen = { months = 18 }
-	
-	immediate = {
-		set_country_flag = originiums_sufferer_bulletin_5_flag
-		add_monthly_resource_mult = {
-     			resource = society_research
-     			value = @tier3researchreward
-     			min = @tier3researchmin
-     			max = @tier3researchmax
-     		}
-	}
-}
+# country_event = {
+# 	id = ark_originiums_sufferer.11
+# 	title = "ark_originiums_sufferer.11.name"
+# 	desc = "ark_originiums_sufferer.11.desc"
+# 	picture = GFX_evt_originite_prime
+# 	location = ROOT
+#
+# 	trigger = {
+# 		has_country_flag = originiums_sufferer_start_flag
+# 		NOT = { has_country_flag = originiums_sufferer_bulletin_1_flag }
+# 	}
+#
+# 	mean_time_to_happen = { months = 18 }
+#
+# 	immediate = {
+# 		set_country_flag = originiums_sufferer_bulletin_1_flag
+# 	}
+#
+# 	option = {
+# 		name = ark_originiums_sufferer.11.a	# 归入档案
+# 		custom_tooltip = ark_originiums_sufferer.uid_tooltip
+# 		add_monthly_resource_mult = {
+#      			resource = society_research
+#      			value = @tier1researchreward
+#      			min = @tier1researchmin
+#      			max = @tier1researchmax
+#      		}
+# 	}
+# 	option = {
+# 		name = ark_originiums_sufferer_no_show	# 不再显示此类报告
+# 		custom_tooltip = ark_originiums_sufferer_no_show_tooltip
+# 		set_country_flag = originiums_sufferer_bulletin_no_show
+# 		add_monthly_resource_mult = {
+#      			resource = society_research
+#      			value = @tier1researchreward
+#      			min = @tier1researchmin
+#      			max = @tier1researchmax
+#      		}
+# 	}
+# }
+#
+# # 矿石病研究简报 2
+# country_event = {
+# 	id = ark_originiums_sufferer.12
+# 	title = "ark_originiums_sufferer.12.name"
+# 	desc = "ark_originiums_sufferer.12.desc"
+# 	picture = GFX_evt_oripathy_1
+# 	location = ROOT
+#
+# 	trigger = {
+# 		has_country_flag = originiums_sufferer_bulletin_1_flag
+# 		NOT = {
+# 			has_country_flag = originiums_sufferer_bulletin_no_show
+# 			has_country_flag = originiums_sufferer_bulletin_2_flag
+# 		}
+# 	}
+#
+# 	mean_time_to_happen = { months = 18 }
+#
+# 	immediate = {
+# 		set_country_flag = originiums_sufferer_bulletin_2_flag
+# 	}
+#
+# 	option = {
+# 		name = ark_originiums_sufferer.12.a	# 归入档案
+# 		custom_tooltip = ark_originiums_sufferer.uid_tooltip
+# 		add_monthly_resource_mult = {
+#      			resource = society_research
+#      			value = @tier1researchreward
+#      			min = @tier1researchmin
+#      			max = @tier1researchmax
+#      		}
+# 	}
+# 	option = {
+# 		name = ark_originiums_sufferer_no_show	# 不再显示此类报告
+# 		custom_tooltip = ark_originiums_sufferer_no_show_tooltip
+# 		set_country_flag = originiums_sufferer_bulletin_no_show
+# 		add_monthly_resource_mult = {
+#      			resource = society_research
+#      			value = @tier1researchreward
+#      			min = @tier1researchmin
+#      			max = @tier1researchmax
+#      		}
+# 	}
+# }
+#
+# # 矿石病研究简报 2（隐藏事件）
+# country_event = {
+# 	id = ark_originiums_sufferer.120
+# 	hide_window = yes
+# 	location = ROOT
+#
+# 	trigger = {
+# 		has_country_flag = originiums_sufferer_bulletin_1_flag
+# 		has_country_flag = originiums_sufferer_bulletin_no_show
+# 		NOT = { has_country_flag = originiums_sufferer_bulletin_2_flag }
+# 	}
+#
+# 	mean_time_to_happen = { months = 18 }
+#
+# 	immediate = {
+# 		set_country_flag = originiums_sufferer_bulletin_2_flag
+# 		add_monthly_resource_mult = {
+#      			resource = society_research
+#      			value = @tier1researchreward
+#      			min = @tier1researchmin
+#      			max = @tier1researchmax
+#      		}
+# 	}
+# }
+#
+# # 矿石病研究简报 3
+# country_event = {
+# 	id = ark_originiums_sufferer.13
+# 	title = "ark_originiums_sufferer.13.name"
+# 	desc = "ark_originiums_sufferer.13.desc"
+# 	picture = GFX_evt_ori1
+# 	location = ROOT
+#
+# 	trigger = {
+# 		has_country_flag = originiums_sufferer_bulletin_2_flag
+# 		NOT = {
+# 			has_country_flag = originiums_sufferer_bulletin_no_show
+# 			has_country_flag = originiums_sufferer_bulletin_3_flag
+# 		}
+# 	}
+#
+# 	mean_time_to_happen = { months = 18 }
+#
+# 	immediate = {
+# 		set_country_flag = originiums_sufferer_bulletin_3_flag
+# 	}
+#
+# 	option = {
+# 		name = ark_originiums_sufferer.13.a	# 归入档案
+# 		custom_tooltip = ark_originiums_sufferer.uid_tooltip
+# 		add_monthly_resource_mult = {
+#      			resource = society_research
+#      			value = @tier2researchreward
+#      			min = @tier2researchmin
+#      			max = @tier2researchmax
+#      		}
+# 	}
+# 	option = {
+# 		name = ark_originiums_sufferer_no_show	# 不再显示此类报告
+# 		custom_tooltip = ark_originiums_sufferer_no_show_tooltip
+# 		set_country_flag = originiums_sufferer_bulletin_no_show
+# 		add_monthly_resource_mult = {
+#      			resource = society_research
+#      			value = @tier2researchreward
+#      			min = @tier2researchmin
+#      			max = @tier2researchmax
+#      		}
+# 	}
+# }
+#
+# # 矿石病研究简报 3（隐藏事件）
+# country_event = {
+# 	id = ark_originiums_sufferer.130
+# 	hide_window = yes
+# 	location = ROOT
+#
+# 	trigger = {
+# 		has_country_flag = originiums_sufferer_bulletin_2_flag
+# 		has_country_flag = originiums_sufferer_bulletin_no_show
+# 		NOT = { has_country_flag = originiums_sufferer_bulletin_3_flag }
+# 	}
+#
+# 	mean_time_to_happen = { months = 18 }
+#
+# 	immediate = {
+# 		set_country_flag = originiums_sufferer_bulletin_3_flag
+# 		add_monthly_resource_mult = {
+#      			resource = society_research
+#      			value = @tier2researchreward
+#      			min = @tier2researchmin
+#      			max = @tier2researchmax
+#      		}
+# 	}
+# }
+#
+# # 矿石病研究简报 4
+# country_event = {
+# 	id = ark_originiums_sufferer.14
+# 	title = "ark_originiums_sufferer.14.name"
+# 	desc = "ark_originiums_sufferer.14.desc"
+# 	picture = GFX_evt_ori1
+# 	location = ROOT
+#
+# 	trigger = {
+# 		has_country_flag = originiums_sufferer_bulletin_3_flag
+# 		NOT = {
+# 			has_country_flag = originiums_sufferer_bulletin_no_show
+# 			has_country_flag = originiums_sufferer_bulletin_4_flag
+# 		}
+# 	}
+#
+# 	mean_time_to_happen = { months = 18 }
+#
+# 	immediate = {
+# 		set_country_flag = originiums_sufferer_bulletin_4_flag
+# 	}
+#
+# 	option = {
+# 		name = ark_originiums_sufferer.14.a	# 归入档案
+# 		custom_tooltip = ark_originiums_sufferer.uid_tooltip
+# 		add_monthly_resource_mult = {
+#      			resource = society_research
+#      			value = @tier2researchreward
+#      			min = @tier2researchmin
+#      			max = @tier2researchmax
+#      		}
+# 	}
+# 	option = {
+# 		name = ark_originiums_sufferer_no_show	# 不再显示此类报告
+# 		custom_tooltip = ark_originiums_sufferer_no_show_tooltip
+# 		set_country_flag = originiums_sufferer_bulletin_no_show
+# 		add_monthly_resource_mult = {
+#      			resource = society_research
+#      			value = @tier2researchreward
+#      			min = @tier2researchmin
+#      			max = @tier2researchmax
+#      		}
+# 	}
+# }
+#
+# # 矿石病研究简报 4（隐藏事件）
+# country_event = {
+# 	id = ark_originiums_sufferer.140
+# 	hide_window = yes
+# 	location = ROOT
+#
+# 	trigger = {
+# 		has_country_flag = originiums_sufferer_bulletin_3_flag
+# 		has_country_flag = originiums_sufferer_bulletin_no_show
+# 		NOT = { has_country_flag = originiums_sufferer_bulletin_4_flag }
+# 	}
+#
+# 	mean_time_to_happen = { months = 18 }
+#
+# 	immediate = {
+# 		set_country_flag = originiums_sufferer_bulletin_4_flag
+# 		add_monthly_resource_mult = {
+#      			resource = society_research
+#      			value = @tier2researchreward
+#      			min = @tier2researchmin
+#      			max = @tier2researchmax
+#      		}
+# 	}
+# }
+#
+# # 矿石病研究简报 5
+# country_event = {
+# 	id = ark_originiums_sufferer.15
+# 	title = "ark_originiums_sufferer.15.name"
+# 	desc = "ark_originiums_sufferer.15.desc"
+# 	picture = GFX_evt_originite_prime
+# 	location = ROOT
+#
+# 	trigger = {
+# 		has_country_flag = originiums_sufferer_bulletin_4_flag
+# 		NOT = {
+# 			has_country_flag = originiums_sufferer_bulletin_no_show
+# 			has_country_flag = originiums_sufferer_bulletin_5_flag
+# 		}
+# 	}
+#
+# 	mean_time_to_happen = { months = 18 }
+#
+# 	immediate = {
+# 		set_country_flag = originiums_sufferer_bulletin_5_flag
+# 	}
+#
+# 	option = {
+# 		name = ark_originiums_sufferer.15.a	# 归入档案
+# 		custom_tooltip = ark_originiums_sufferer.uid_tooltip
+# 		add_monthly_resource_mult = {
+#      			resource = society_research
+#      			value = @tier3researchreward
+#      			min = @tier3researchmin
+#      			max = @tier3researchmax
+#      		}
+# 	}
+# }
+#
+# # 矿石病研究简报 5（隐藏事件）
+# country_event = {
+# 	id = ark_originiums_sufferer.150
+# 	hide_window = yes
+# 	location = ROOT
+#
+# 	trigger = {
+# 		has_country_flag = originiums_sufferer_bulletin_4_flag
+# 		has_country_flag = originiums_sufferer_bulletin_no_show
+# 		NOT = { has_country_flag = originiums_sufferer_bulletin_5_flag }
+# 	}
+#
+# 	mean_time_to_happen = { months = 18 }
+#
+# 	immediate = {
+# 		set_country_flag = originiums_sufferer_bulletin_5_flag
+# 		add_monthly_resource_mult = {
+#      			resource = society_research
+#      			value = @tier3researchreward
+#      			min = @tier3researchmin
+#      			max = @tier3researchmax
+#      		}
+# 	}
+# }
 
 # 矿石病特效药研发进展迅速
 country_event = {
@@ -379,7 +384,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		every_owned_pop = {
+		every_owned_pop_group = {
 			limit = {
 				is_same_species = root
 				NOT = { species = { has_trait = trait_Originium_Arts } }
@@ -396,7 +401,6 @@ country_event = {
 			remove_trait = leader_trait_oripathy
 		}
 		set_country_flag = originiums_sufferer_end_flag
-		remove_country_flag = originiums_sufferer_start_flag
 	}
 	
 	option = {
@@ -448,26 +452,35 @@ country_event = {
 	
 	option = {
 		name = ark_originiums_sufferer.4.a	# 令人痛心疾首
-		random_owned_pop = {
+		random_owned_pop_group = {
 			limit = {
 				NOT = { species = { has_trait = trait_Originium_Arts } }
 				has_trait = trait_latent_oripathy
 			}
-			kill_pop = yes
+			kill_pop_group = {
+				pop_group = this
+				amount = 100
+			}
 		}
-		random_owned_pop = {
+		random_owned_pop_group = {
 			limit = {
 				NOT = { species = { has_trait = trait_Originium_Arts } }
 				has_trait = trait_latent_oripathy
 			}
-			kill_pop = yes
+			kill_pop_group = {
+				pop_group = this
+				amount = 100
+			}
 		}
-		random_owned_pop = {
+		random_owned_pop_group = {
 			limit = {
 				NOT = { species = { has_trait = trait_Originium_Arts } }
 				has_trait = trait_latent_oripathy
 			}
-			kill_pop = yes
+			kill_pop_group = {
+				pop_group = this
+				amount = 100
+			}
 		}
 		add_modifier = {
 			modifier = "infected_anxious"
@@ -480,26 +493,35 @@ country_event = {
 
 	option = {
 		name = ark_originiums_sufferer.4.b	# 不允许再犯此类工作失误
-		random_owned_pop = {
+		random_owned_pop_group = {
 			limit = {
 				NOT = { species = { has_trait = trait_Originium_Arts } }
 				has_trait = trait_latent_oripathy
 			}
-			kill_pop = yes
+			kill_pop_group = {
+				pop_group = this
+				amount = 100
+			}
 		}
-		random_owned_pop = {
+		random_owned_pop_group = {
 			limit = {
 				NOT = { species = { has_trait = trait_Originium_Arts } }
 				has_trait = trait_latent_oripathy
 			}
-			kill_pop = yes
+			kill_pop_group = {
+				pop_group = this
+				amount = 100
+			}
 		}
-		random_owned_pop = {
+		random_owned_pop_group = {
 			limit = {
 				NOT = { species = { has_trait = trait_Originium_Arts } }
 				has_trait = trait_latent_oripathy
 			}
-			kill_pop = yes
+			kill_pop_group = {
+				pop_group = this
+				amount = 100
+			}
 		}
 		add_modifier = {
 			modifier = "infected_anxious"
@@ -512,26 +534,35 @@ country_event = {
 
 	option = {
 		name = ark_originiums_sufferer.4.c	# 不再显示此类报告
-		random_owned_pop = {
+		random_owned_pop_group = {
 			limit = {
 				NOT = { species = { has_trait = trait_Originium_Arts } }
 				has_trait = trait_latent_oripathy
 			}
-			kill_pop = yes
+			kill_pop_group = {
+				pop_group = this
+				amount = 100
+			}
 		}
-		random_owned_pop = {
+		random_owned_pop_group = {
 			limit = {
 				NOT = { species = { has_trait = trait_Originium_Arts } }
 				has_trait = trait_latent_oripathy
 			}
-			kill_pop = yes
+			kill_pop_group = {
+				pop_group = this
+				amount = 100
+			}
 		}
-		random_owned_pop = {
+		random_owned_pop_group = {
 			limit = {
 				NOT = { species = { has_trait = trait_Originium_Arts } }
 				has_trait = trait_latent_oripathy
 			}
-			kill_pop = yes
+			kill_pop_group = {
+				pop_group = this
+				amount = 100
+			}
 		}
 		add_modifier = {
 			modifier = "infected_anxious"
@@ -560,12 +591,15 @@ country_event = {
 	
 	option = {
 		name = ark_originiums_sufferer.4.a	# 令人痛心疾首
-		random_owned_pop = {
+		random_owned_pop_group = {
 			limit = {
 				NOT = { species = { has_trait = trait_Originium_Arts } }
 				has_trait = trait_latent_oripathy
 			}
-			kill_pop = yes
+			kill_pop_group = {
+				pop_group = this
+				amount = 100
+			}
 		}
 		hidden_effect = {
 			country_event = { id = ark_originiums_sufferer.41 days = 5400 }
@@ -574,12 +608,15 @@ country_event = {
 
 	option = {
 		name = ark_originiums_sufferer.4.c	# 不再显示此类报告
-		random_owned_pop = {
+		random_owned_pop_group = {
 			limit = {
 				NOT = { species = { has_trait = trait_Originium_Arts } }
 				has_trait = trait_latent_oripathy
 			}
-			kill_pop = yes
+			kill_pop_group = {
+				pop_group = this
+				amount = 100
+			}
 		}
 		hidden_effect = {
 			country_event = { id = ark_originiums_sufferer.42 days = 5400 }
@@ -600,12 +637,15 @@ country_event = {
 	}
 	
 	immediate = {
-		random_owned_pop = {
+		random_owned_pop_group = {
 			limit = {
 				NOT = { species = { has_trait = trait_Originium_Arts } }
 				has_trait = trait_latent_oripathy
 			}
-			kill_pop = yes
+			kill_pop_group = {
+				pop_group = this
+				amount = 100
+			}
 		}
 		country_event = { id = ark_originiums_sufferer.42 days = 5400 }
 	}
