@@ -13,17 +13,18 @@ parts_network = {	# 零件网络
 
 Terra_9_modifier = { }
 catastrophe = {	# 天灾
-	pop_environment_tolerance = -0.3
-	planet_jobs_originiums_produces_mult = 0.5
-	planet_jobs_energy_produces_mult = 0.25
-	planet_jobs_minerals_produces_mult = 0.25
+	pop_environment_tolerance = -0.2
+	planet_jobs_originiums_produces_mult = 0.2
+	planet_jobs_energy_produces_mult = 0.2
+	planet_jobs_minerals_produces_mult = 0.2
 	icon = "gfx/interface/icons/planet_modifiers/pm_catastrophe.dds"
 	icon_frame = 2
 }
 nomadic_city = {	# 移动城邦
 	planet_structures_cost_mult = 0.15
-	planet_structures_upkeep_mult = 0.1
-	planet_building_build_speed_mult = 0.5
+	planet_structures_upkeep_mult = 0.15
+	planet_building_build_speed_mult = -0.15
+	planet_orbital_bombardment_damage = -0.3
 	icon = "gfx/interface/icons/planet_modifiers/pm_nomadic_city.dds"
 	icon_frame = 2
 }
