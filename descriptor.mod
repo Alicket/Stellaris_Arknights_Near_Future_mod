@@ -1,4 +1,4 @@
-name="Arknights Near Future"
+name="Stellaris_Arknights_Near_Future_mod"
 tags={
 	"Anime"
 	"Graphics"
@@ -6,6 +6,5 @@ tags={
 	"Species"
 }
 picture="thumbnail.png"
-version="2025.5.17"
-supported_version="v4.0.*"
-remote_file_id="2047260446"
+version="2025.5.19"
+supported_version="4.0.*"

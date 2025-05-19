@@ -10,7 +10,9 @@ country_event = {  #检测明日方舟mod：[Arknights]The Crusade to Stellaris 
 	trigger = {
 		has_global_flag = has_acts_mod
 	}
-
+	immediate = {
+		log = "ARK 检测mod冲突"
+	}
 	option = {
 		name = ark_mod_check.1.a
 	}

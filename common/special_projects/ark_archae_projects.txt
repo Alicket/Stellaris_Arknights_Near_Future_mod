@@ -1,0 +1,202 @@
+# #MOIST#
+# special_project = {
+# 	key = "ARK_ARCHAE_PROJ_MOIST_IN_MAIN"
+# 	event_chain = "ark_archae_main_chain"
+# 	picture = GFX_evt_ark_rainfrost
+# 	event_scope = country_event
+# 	on_success = {}
+# 	on_fail = {}
+# }
+# #TELESCOPE#
+# special_project = {
+# 	key = "ARK_ARCHAE_PROJ_TELESCOPE_IN_MAIN"
+# 	event_chain = "ark_archae_main_chain"
+# 	picture = GFX_evt_ark_archae_telescope
+# 	event_scope = country_event
+# 	on_success = {}
+# 	on_fail = {}
+# }
+#
+# special_project = {
+# 	key = "ARK_ARCHAE_OBSERVE_PROJ_1"
+# 	event_chain = "ark_archae_telescope_observe_chain"
+# 	cost = 0
+# 	days_to_research = 60
+# 	picture = GFX_evt_sapient_AI
+# 	event_scope = ship_event
+# 	requirements = {
+# 		shipclass_science_ship = 1
+# 		leader = scientist
+# 	}
+# 	on_success = {
+# 		ship_event = { id = ark_archae.21011 }
+# 	}
+# 	on_fail = {}
+# }
+# special_project = {
+# 	key = "ARK_ARCHAE_OBSERVE_PROJ_2"
+# 	event_chain = "ark_archae_telescope_observe_chain"
+# 	cost = 0
+# 	days_to_research = 60
+# 	picture = GFX_evt_sapient_AI
+# 	event_scope = ship_event
+# 	requirements = {
+# 		shipclass_science_ship = 1
+# 		leader = scientist
+# 	}
+# 	on_success = {
+# 		ship_event = { id = ark_archae.21012 }
+# 	}
+# 	on_fail = {}
+# }
+# special_project = {
+# 	key = "ARK_ARCHAE_OBSERVE_PROJ_3"
+# 	event_chain = "ark_archae_telescope_observe_chain"
+# 	cost = 0
+# 	days_to_research = 60
+# 	picture = GFX_evt_sapient_AI
+# 	event_scope = ship_event
+# 	requirements = {
+# 		shipclass_science_ship = 1
+# 		leader = scientist
+# 	}
+# 	on_success = {
+# 		ship_event = { id = ark_archae.21013 }
+# 	}
+# 	on_fail = {}
+# }
+#
+#
+#
+# ##############################################################################
+#
+#
+#
+# special_project = {#factory
+# 	key = "ARK_ARCHAE_KER_HOME_PROJ_1"
+# 	event_chain = "ark_archae_kerrolli_homeworld_chain"
+# 	cost = 0
+# 	days_to_research = 60
+# 	picture = GFX_evt_molten
+# 	event_scope = ship_event
+# 	requirements = {
+# 		shipclass_science_ship = 1
+# 		leader = scientist
+# 	}
+# 	on_success = {
+# 		ship_event = { id = ark_archae.21111 }
+# 	}
+# 	on_fail = {}
+# }
+# special_project = {#science
+# 	key = "ARK_ARCHAE_KER_HOME_PROJ_2"
+# 	event_chain = "ark_archae_kerrolli_homeworld_chain"
+# 	cost = 0
+# 	days_to_research = 60
+# 	picture = GFX_evt_barren_dig_site
+# 	event_scope = ship_event
+# 	requirements = {
+# 		shipclass_science_ship = 1
+# 		leader = scientist
+# 	}
+# 	on_success = {
+# 		ship_event = { id = ark_archae.21112 }
+# 	}
+# 	on_fail = {}
+# }
+# special_project = {#major
+# 	key = "ARK_ARCHAE_KER_HOME_PROJ_3"
+# 	event_chain = "ark_archae_kerrolli_homeworld_chain"
+# 	cost = 0
+# 	days_to_research = 180
+# 	picture = GFX_evt_metropolis
+# 	event_scope = ship_event
+# 	requirements = {
+# 		shipclass_science_ship = 1
+# 		leader = scientist
+# 	}
+# 	on_success = {
+# 		ship_event = { id = ark_archae.21113 }
+# 	}
+# 	on_fail = {}
+# }
+# special_project = {#gas
+# 	key = "ARK_ARCHAE_KER_HOME_PROJ_4"
+# 	event_chain = "ark_archae_kerrolli_homeworld_chain"
+# 	cost = 0
+# 	days_to_research = 60
+# 	picture = GFX_evt_gas_giant
+# 	event_scope = ship_event
+# 	requirements = {
+# 		shipclass_science_ship = 1
+# 		leader = scientist
+# 	}
+# 	on_success = {
+# 		ship_event = { id = ark_archae.21114 }
+# 	}
+# 	on_fail = {}
+# }
+# special_project = {#vacation
+# 	key = "ARK_ARCHAE_KER_HOME_PROJ_4a"
+# 	event_chain = "ark_archae_kerrolli_homeworld_chain"
+# 	cost = 0
+# 	days_to_research = 60
+# 	picture = GFX_evt_toxic
+# 	event_scope = ship_event
+# 	requirements = {
+# 		shipclass_science_ship = 1
+# 		leader = scientist
+# 	}
+# 	on_success = {
+# 		ship_event = { id = ark_archae.21117 }
+# 	}
+# 	on_fail = {}
+# }
+# special_project = {#telescope
+# 	key = "ARK_ARCHAE_KER_HOME_PROJ_4b"
+# 	event_chain = "ark_archae_kerrolli_homeworld_chain"
+# 	cost = 0
+# 	days_to_research = 60
+# 	picture = GFX_evt_barren_dig_site
+# 	event_scope = ship_event
+# 	requirements = {
+# 		shipclass_science_ship = 1
+# 		leader = scientist
+# 	}
+# 	on_success = {
+# 		ship_event = { id = ark_archae.21118 }
+# 	}
+# 	on_fail = {}
+# }
+# special_project = {#fleet
+# 	key = "ARK_ARCHAE_KER_HOME_PROJ_5"
+# 	event_chain = "ark_archae_kerrolli_homeworld_chain"
+# 	cost = 0
+# 	days_to_research = 60
+# 	picture = GFX_evt_shattered_planet
+# 	event_scope = ship_event
+# 	requirements = {
+# 		shipclass_science_ship = 1
+# 		leader = scientist
+# 	}
+# 	on_success = {
+# 		ship_event = { id = ark_archae.21115 }
+# 	}
+# 	on_fail = {}
+# }
+# special_project = {#minerals
+# 	key = "ARK_ARCHAE_KER_HOME_PROJ_6"
+# 	event_chain = "ark_archae_kerrolli_homeworld_chain"
+# 	cost = 0
+# 	days_to_research = 60
+# 	picture = GFX_evt_frozen
+# 	event_scope = ship_event
+# 	requirements = {
+# 		shipclass_science_ship = 1
+# 		leader = scientist
+# 	}
+# 	on_success = {
+# 		ship_event = { id = ark_archae.21116 }
+# 	}
+# 	on_fail = {}
+# }

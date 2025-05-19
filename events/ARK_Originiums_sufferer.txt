@@ -10,6 +10,7 @@ country_event = {
 		owner_species = { has_trait = trait_latent_oripathy }
 	}
 	immediate = {
+		log = "ARK 开启源石病事件链"
 		country_event = {
 			id = ark_originiums_sufferer.1
 			days = 360

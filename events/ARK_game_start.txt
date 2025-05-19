@@ -9,8 +9,9 @@ country_event = { #选择苦难摇篮起源
 	trigger = {
 		has_origin = origin_ark_tragedy_birth
 	}
-
 	immediate = {
+		log = "ARK 开始开局效果"
+
 		random_system = {
 			limit = {
 				distance = {
@@ -19,6 +20,7 @@ country_event = { #选择苦难摇篮起源
 					use_bypasses = no
 					min_jumps = 8
 				}
+				has_owner = no
 				any_neighbor_system = {
 					exists = owner
 					owner = {
@@ -30,19 +32,19 @@ country_event = { #选择苦难摇篮起源
 							has_civic = civic_machine_terminator
 						}
 					}
-					any_neighbor_system = {
-						exists = owner
-						owner = {
-							NAND = {
-								is_country_type = fallen_empire
-								is_country_type = marauder_raiders
-								has_civic = civic_fanatic_purifiers
-								has_civic = civic_hive_devouring_swarm
-								has_civic = civic_machine_terminator
-								has_civic = civic_machine_assimilator
-							}
-						}
-					}
+					#any_neighbor_system = {
+					#	exists = owner
+					#	owner = {
+					#		NAND = {
+					#			is_country_type = fallen_empire
+					#			is_country_type = marauder_raiders
+					#			has_civic = civic_fanatic_purifiers
+					#			has_civic = civic_hive_devouring_swarm
+					#			has_civic = civic_machine_terminator
+					#			has_civic = civic_machine_assimilator
+					#		}
+					#	}
+					#}
 				}
 			}
 			spawn_system = {
@@ -53,6 +55,7 @@ country_event = { #选择苦难摇篮起源
 				initializer = "Chaos_system"
 				hyperlane = yes
 			}
+			log = "ARK 卡俄斯已生成"
 		}
 		#create_ship_design = { design = "NAME_ark_starbase_arclight" }
 		#add_ship_design = last_created_design
@@ -90,10 +93,10 @@ country_event = { #选择苦难摇篮起源
 					slot = 1
 					module = shipyard
 				}
-				set_starbase_module = {
-					slot = 2
-					module = manufacturing_station
-				}
+				#set_starbase_module = {
+				#	slot = 2
+				#	module = manufacturing_station
+				#}
 			}
 		}
 		#event_target:ARK_TYRA_HOME_SYSTEM = {
@@ -206,6 +209,7 @@ country_event = { #选择苦难摇篮起源
 			id = ark_game_start.10
 			days = 2
 		}
+		log = "ARK 结束开局事件"
 	}
 }
  country_event = {
@@ -232,6 +236,9 @@ country_event = { #选择苦难摇篮起源
 	 desc =  ark_game_start.100.desc
 	 is_triggered_only = yes
 	 picture = GFX_evt_ark_explosive
+	 immediate = {
+		 log = "ARK 卡俄斯生成失败"
+	 }
 	 option = {
 		 name = ark_game_start.100.a
 	 }
@@ -247,6 +254,7 @@ country_event = { #选择海嗣特质
 	}
 
 	immediate = {
+		log = "ARK 添加海嗣特质效果"
 		random_owned_leader = {
 			limit = {
 				leader_class = scientist
@@ -338,6 +346,7 @@ country_event = {
 	 }
 
 	 immediate = {
+		 log = "ARK 添加源石病潜势效果"
 		 capital_scope = {
 			add_deposit = d_originiums_mine		# 源石开采区
 			add_modifier = { modifier = nomadic_city days = -1 }		# 移动城邦
@@ -412,5 +421,6 @@ event = {
 
 	immediate = {
 		set_global_flag = arknights_swimming
+		log = "ARK 设置模组全局flag"
 	}
 }

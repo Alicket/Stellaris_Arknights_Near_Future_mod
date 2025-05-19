@@ -10,6 +10,7 @@ country_event = {
 	}
 
 	immediate = {
+		log = "ARK 生成泰拉机器人"
 		create_species = {
 			name = "NAME_Robot"
 			plural = "NAME_Robots"

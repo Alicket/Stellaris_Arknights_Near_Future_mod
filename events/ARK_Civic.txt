@@ -17,6 +17,7 @@ country_event = {
 
 	immediate = {
 		set_country_flag = civic_business_union_selected
+		log = "ARK 国民理念事件1"
 	}
 
 	option = {
@@ -107,6 +108,7 @@ country_event = {
 	}
 
 	immediate = {
+		log = "ARK 国民理念事件2"
 	}
 
 	option = {
@@ -357,6 +359,7 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "ARK 生成医药企业、医学福祉效果"
 		if = {
 			limit = {
 				has_origin = origin_ark_tragedy_birth

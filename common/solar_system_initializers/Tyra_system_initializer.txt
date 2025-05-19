@@ -146,6 +146,7 @@ Tyra_system = {
 				days = -1
 			}
 			save_global_event_target_as = ark_planet_terra
+			log = "ARK 开始生成泰拉系"
 		}
 
 		moon = {
@@ -285,6 +286,7 @@ Tyra_system = {
 				days = -1
 			}
 			save_event_target_as = ark_terra_9
+			log = "ARK 泰拉IX生成完毕"
 		}
 	}
 	init_effect = {
@@ -303,6 +305,7 @@ Chaos_system = {
 	usage = custom_empire
 	init_effect = {
 		generate_home_system_resources = yes
+		log = "ARK 开始生成卡俄斯"
 	}
 
 	planet = {
@@ -411,22 +414,25 @@ Chaos_system = {
 				add_deposit = d_minerals_5
 			}
 		}
+		init_effect = {
+			log = "ARK 卡俄斯VI（阿洛伊代）生成完毕"
+		}
 	}
 
 	init_effect = {
 		save_global_event_target_as = ARK_TYRA_CHAOS_SYSTEM
 	}
 
-	neighbor_system = {
-		trigger = { num_guaranteed_colonies >= 2 }
-		distance = { min = 10 max = @distance }
-		initializer = "neighbor_t1"
-	}
-	neighbor_system = {
-		trigger = { num_guaranteed_colonies >= 1 }
-		distance = { min = 10 max = @distance }
-		initializer = "neighbor_t1_first_colony"
-	}
+	#neighbor_system = {
+	#	trigger = { num_guaranteed_colonies >= 2 }
+	#	distance = { min = 10 max = @distance }
+	#	initializer = "neighbor_t1"
+	#}
+	#neighbor_system = {
+	#	trigger = { num_guaranteed_colonies >= 1 }
+	#	distance = { min = 10 max = @distance }
+	#	initializer = "neighbor_t1_first_colony"
+	#}
 }
 #Tyra_system = {
 #	name = "NAME_Tyra_system"
