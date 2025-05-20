@@ -71,6 +71,13 @@ strike_craft_component_template = {
     tags = { weapon_type_strike_craft }
     ai_tags = { weapon_role_point_defense carrier }
     point_defence_targets = { "strike_craft" }
+    ai_weight = {
+        base = 2
+        modifier = {
+            factor = 0
+            is_country_type = fallen_empire
+        }
+    }
 }
 
 strike_craft_component_template = {
@@ -128,6 +135,13 @@ strike_craft_component_template = {
     tags = { weapon_type_strike_craft }
     ai_tags = { weapon_role_point_defense carrier }
     point_defence_targets = { "strike_craft" }
+    ai_weight = {
+        base = 2
+        modifier = {
+            factor = 0
+            is_country_type = fallen_empire
+        }
+    }
 }
 
 strike_craft_component_template = {
@@ -186,4 +200,11 @@ strike_craft_component_template = {
     tags = { weapon_type_strike_craft }
     ai_tags = { carrier }
     point_defence_targets = { "strike_craft" }
+    ai_weight = {
+        base = 2
+        modifier = {
+            factor = 0
+            is_country_type = fallen_empire
+        }
+    }
 }

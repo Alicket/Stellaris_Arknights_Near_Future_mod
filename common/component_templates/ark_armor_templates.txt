@@ -35,6 +35,10 @@ utility_component_template = {
 			is_country_type = default
 			has_monthly_income = { resource = d32_steels value <= 0 }
 		}
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
+		}
 	}
 }
 
@@ -70,6 +74,10 @@ utility_component_template = {
 			is_country_type = default
 			has_monthly_income = { resource = d32_steels value <= 0 }
 		}
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
+		}
 	}
 }
 
@@ -104,6 +112,10 @@ utility_component_template = {
 			factor = 0.0
 			is_country_type = default
 			has_monthly_income = { resource = d32_steels value <= 0 }
+		}
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
 		}
 	}
 }
@@ -141,6 +153,10 @@ utility_component_template = {
 			is_country_type = default
 			has_monthly_income = { resource = d32_steels value <= 0 }
 		}
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
+		}
 	}
 }
 
@@ -176,6 +192,10 @@ utility_component_template = {
 			is_country_type = default
 			has_monthly_income = { resource = d32_steels value <= 0 }
 		}
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
+		}
 	}
 }
 
@@ -210,6 +230,10 @@ utility_component_template = {
 			factor = 0.0
 			is_country_type = default
 			has_monthly_income = { resource = d32_steels value <= 0 }
+		}
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
 		}
 	}
 }
@@ -247,6 +271,10 @@ utility_component_template = {
 			is_country_type = default
 			has_monthly_income = { resource = d32_steels value <= 0 }
 		}
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
+		}
 	}
 }
 
@@ -282,6 +310,10 @@ utility_component_template = {
 			is_country_type = default
 			has_monthly_income = { resource = d32_steels value <= 0 }
 		}
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
+		}
 	}
 }
 
@@ -316,6 +348,10 @@ utility_component_template = {
 			factor = 0.0
 			is_country_type = default
 			has_monthly_income = { resource = d32_steels value <= 0 }
+		}
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
 		}
 	}
 }
@@ -354,6 +390,10 @@ utility_component_template = {
 			is_country_type = default
 			has_monthly_income = { resource = d32_steels value <= 0 }
 		}
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
+		}
 	}
 }
 
@@ -389,6 +429,10 @@ utility_component_template = {
 			factor = 0.0
 			is_country_type = default
 			has_monthly_income = { resource = d32_steels value <= 0 }
+		}
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
 		}
 	}
 }
@@ -426,6 +470,10 @@ utility_component_template = {
 			is_country_type = default
 			has_monthly_income = { resource = d32_steels value <= 0 }
 		}
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
+		}
 	}
 }
 
@@ -462,6 +510,10 @@ utility_component_template = {
 			is_country_type = default
 			has_monthly_income = { resource = d32_steels value <= 0 }
 		}
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
+		}
 	}
 }
 
@@ -497,6 +549,10 @@ utility_component_template = {
 			is_country_type = default
 			has_monthly_income = { resource = d32_steels value <= 0 }
 		}
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
+		}
 	}
 }
 
@@ -531,6 +587,10 @@ utility_component_template = {
 			factor = 0.0
 			is_country_type = default
 			has_monthly_income = { resource = d32_steels value <= 0 }
+		}
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
 		}
 	}
 }

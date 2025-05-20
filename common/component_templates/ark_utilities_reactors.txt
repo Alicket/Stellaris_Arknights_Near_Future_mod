@@ -141,6 +141,10 @@ utility_component_template = {
 				no_resource_for_component = { RESOURCE = multipole_nanosheets }
 			}
 		}
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
+		}
 	}
 }
 
@@ -180,6 +184,10 @@ utility_component_template = {
 				no_resource_for_component = { RESOURCE = originiums }
 				no_resource_for_component = { RESOURCE = multipole_nanosheets }
 			}
+		}
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
 		}
 	}
 }
@@ -221,6 +229,10 @@ utility_component_template = {
 				no_resource_for_component = { RESOURCE = multipole_nanosheets }
 			}
 		}
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
+		}
 	}
 }
 
@@ -260,6 +272,10 @@ utility_component_template = {
 				no_resource_for_component = { RESOURCE = originiums }
 				no_resource_for_component = { RESOURCE = multipole_nanosheets }
 			}
+		}
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
 		}
 	}
 }
@@ -301,6 +317,10 @@ utility_component_template = {
 				no_resource_for_component = { RESOURCE = multipole_nanosheets }
 			}
 		}
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
+		}
 	}
 }
 
@@ -320,6 +340,10 @@ utility_component_template = {
 
 	ai_weight = {
 		weight = 6
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
+		}
 	}
 }
 
@@ -365,6 +389,10 @@ utility_component_template = {
 				no_resource_for_component = { RESOURCE = multipole_nanosheets }
 			}
 		}
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
+		}
 	}
 }
 
@@ -401,6 +429,10 @@ utility_component_template = {
 				no_resource_for_component = { RESOURCE = multipole_nanosheets }
 			}
 		}
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
+		}
 	}
 }
 
@@ -425,5 +457,9 @@ utility_component_template = {
 
 	ai_weight = {
 		weight = 6
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
+		}
 	}
 }

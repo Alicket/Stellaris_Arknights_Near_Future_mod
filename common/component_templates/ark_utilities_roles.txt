@@ -38,6 +38,10 @@ utility_component_template = {
 
 	ai_weight = {
 		weight = 4
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
+		}
 	}
 }
 
@@ -69,6 +73,10 @@ utility_component_template = {
 
 	ai_weight = {
 		weight = 4
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
+		}
 	}
 }
 
@@ -99,6 +107,10 @@ utility_component_template = {
 
 	ai_weight = {
 		weight = 4
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
+		}
 	}
 }
 
@@ -127,5 +139,9 @@ utility_component_template = {
 
 	ai_weight = {
 		weight = 4
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
+		}
 	}
 }

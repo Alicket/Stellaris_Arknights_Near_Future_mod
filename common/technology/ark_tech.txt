@@ -372,7 +372,7 @@ tech_light_building_material = {
 
 	modifier = {
 		planet_structures_upkeep_mult = -0.05
-		planet_max_buildings_add = 0.5
+		#planet_max_buildings_add = 0.5
 	}
 
 	weight_modifier = {
@@ -405,7 +405,7 @@ tech_concrete_building_material = {
 
 	modifier = {
 		planet_structures_upkeep_mult = -0.1
-		planet_max_buildings_add = 0.5
+		#planet_max_buildings_add = 0.5
 	}
 
 	weight_modifier = {
@@ -438,7 +438,7 @@ tech_reinforced_building_material = {
 
 	modifier = {
 		planet_structures_upkeep_mult = -0.15
-		planet_max_buildings_add = 1
+		#planet_max_buildings_add = 1
 	}
 
 	weight_modifier = {
@@ -1335,7 +1335,7 @@ tech_ark_shields_4a = {
 	tier = 3
 	category = { field_manipulation }
 	ai_update_type = all
-	prerequisites = { "tech_originiums_mining" "tech_ark_shields_3" "tech_ark_shields_4a" }
+	prerequisites = { "tech_originiums_mining" "tech_ark_shields_3" }
 	weight = @tier1weight1
 
 	potential = {
@@ -1490,7 +1490,7 @@ tech_ark_uav_1 = {
 	tier = 2
 	ai_update_type = military
 	category = { voidcraft }
-	prerequisites = { "tech_strike_craft_1" tech_ark_laser_1 tech_combat_computers_1 }
+	prerequisites = { "tech_strike_craft_1" "tech_ark_laser_1" }
 	weight = @tier2weight3
 
 	## unlock strike craft 2
@@ -1517,7 +1517,7 @@ tech_ark_uav_2 = {
 	tier = 3
 	ai_update_type = military
 	category = { voidcraft }
-	prerequisites = { "tech_strike_craft_2" tech_combat_computers_2 tech_ark_laser_2 }
+	prerequisites = { "tech_strike_craft_2" "tech_ark_laser_2" }
 	weight = @tier3weight3
 
 	## unlock strike craft 3
@@ -1544,7 +1544,7 @@ tech_ark_frighter_1 = {
 	tier = 4
 	ai_update_type = military
 	category = { voidcraft }
-	prerequisites = { "tech_strike_craft_3" "tech_ark_space_originium_power" tech_combat_computers_2}
+	prerequisites = { "tech_strike_craft_3" "tech_ark_space_originium_power" }
 	weight = @tier3weight3
 
 	## unlock strike craft 3
@@ -1574,7 +1574,7 @@ tech_ark_arclight_12prereq = {
 	cost = @tier5cost3
 	tier = 5
 	category = { field_manipulation }
-	prerequisites = {  }
+	prerequisites = { "tech_space_exploration" }
 	weight = 0
 	potential = {
 	}
@@ -1585,7 +1585,7 @@ tech_ark_arclight_14prereq = {
 	cost = @tier5cost3
 	tier = 5
 	category = { field_manipulation }
-	prerequisites = {  }
+	prerequisites = { "tech_space_exploration" }
 	weight = 0
 	potential = {
 	}

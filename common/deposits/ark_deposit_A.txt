@@ -7,6 +7,7 @@ d_ark_frozen_planet_deposit = {
 			minerals = 4
 		}
 	}
+	icon = d_blue_lava
 	station = shipclass_mining_station
 	is_for_colonizable = no
 
