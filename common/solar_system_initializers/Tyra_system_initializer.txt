@@ -131,7 +131,7 @@ Tyra_system = {
 			max = 180
 		}
 		has_independent_orbital_line = no
-		size = 22
+		size = 24
 		has_ring = yes
 		starting_planet = yes
 		entity = "continental_planet_terra_entity"
@@ -370,7 +370,7 @@ Chaos_system = {
 			entity = "ark_desert_planet_Talos_II"
 			orbit_distance = 17
 			orbit_angle = 125
-			size = 12
+			size = 21
 			has_ring = yes
 
 			flags = { planet_talos }

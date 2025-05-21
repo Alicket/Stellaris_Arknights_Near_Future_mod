@@ -13,8 +13,6 @@ NAME_Terra_2:0 "泰拉之月-II"
  NAME_Terra_7:0 "泰拉-VII"
  NAME_Terra_8:0 "泰拉-VIII"
  NAME_Terra_9:0 "泰拉-IX"
- Terra_9_modifier:0 "源石农场"
- Terra_9_modifier_desc:0 "前文明的一处废弃源石矿场。根据轨道扫描结果来看，地面上的原石矿脉根系走势和开采设施废墟排布十分规整，合理推测这是前文明用来“种植”源石的星球，但由于不知道多久的维护缺失，这颗星球已经完全变成了一团乱麻。3"
 NAME_Chaos:0 "卡俄斯"#Chaos
 NAME_Chaos1:0 "阿索斯"#Athos
 NAME_Chaos2:0 "堤福俄斯"#Typhoeus
@@ -33,9 +31,3 @@ pc_ark_a_desc:0 "$pc_a_star_desc$"
 sc_ark_a:0 "$pc_a_star$"
 sc_ark_a_desc:0 "$pc_a_star_desc$"
 
-ark_ground_star_gate:0 "地面星门"
-ark_ground_star_gate_DESC:0 "一座神秘的巨型环状设施，流淌着时间与空间。"
-mod_ark_ground_star_gate_empire_windup_mult: "地面星门充能时间"
-mod_ark_ground_star_gate_ship_windup_mult: "舰船通过地面星门充能时间"
-mod_ark_ground_star_gate_megastructure_bypass_windup_mult: "$mod_ark_ground_star_gate_empire_windup_mult$"
-ark_ground_star_gate_desc:0 "该星系中包含一个地面星门"

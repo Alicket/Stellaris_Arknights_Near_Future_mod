@@ -195,7 +195,7 @@ ARKOCEAN_GUI_RESET_STATION:0 "重置空间站位置"
 arkocean_reset_station_tooltip:0 "删除之前的空间站，并在你的首都轨道内创建一个新的空间站。"
 ARKOCEAN_GUI_CALL_MESSAGE:0 "将细胞用于科学研究"
 arkocean_call_message_tooltip:0 "§Y这与你的科研月收入有关！§!\n"
-ARKOCEAN_GUI_TIPS:0 ">深海研究中心\n>——连接中——\n>...\n§R>警告！不明有机体入侵！正在启]]]§!\n§R>§!\n§G>已接入！§!\[管理员：§l!未识别§!\]\n>>通过消耗生机细胞完成定向进化\n>>通过首都轨道内的研究站快速访问本面板\n>>此面板也可以通过首都星球决议开启\n>>_"
+ARKOCEAN_GUI_TIPS:0 ">深海研究中心\n>——连接中——\n>...\n§R>警告！不明有机体入侵！正在启]]]§!\n§R>§!\n§G>已接入！§!管理员：§l!未识别§!\n>>通过消耗生机细胞完成定向进化\n>>通过首都轨道内的研究站快速访问本面板\n>>此面板也可以通过首都星球决议开启\n>>_"
 #用loc是因为之前测试时的操作，懒得改了
 ARKOCEAN_GUI_INFORMATION1:0 "§g每月基础+0.0626§!"
 ARKOCEAN_GUI_INFORMATION2:0 "同化人口：[from.arkocean_mould_var_assimilation_loc]§g|+0.04§!"

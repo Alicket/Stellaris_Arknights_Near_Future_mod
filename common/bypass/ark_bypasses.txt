@@ -23,5 +23,7 @@ ark_ground_star_gate = {
 			any_controlled_planet = { has_planet_flag = planet_talos }
 		}
 	}
+	respect_closed_borders = yes
+	block_access_if_hostile = yes
 	on_action = "on_entering_ark_ground_star_gate"
 }

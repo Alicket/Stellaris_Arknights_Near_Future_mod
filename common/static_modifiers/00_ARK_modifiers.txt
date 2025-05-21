@@ -11,7 +11,9 @@ parts_network = {	# 零件网络
 
 # 明日方舟星球buff #
 
-Terra_9_modifier = { }
+Terra_9_modifier = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_obsidian_lakes.dds"
+}
 catastrophe = {	# 天灾
 	pop_environment_tolerance = -0.2
 	planet_jobs_originiums_produces_mult = 0.2
