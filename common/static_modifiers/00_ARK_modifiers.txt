@@ -25,8 +25,9 @@ catastrophe = {	# 天灾
 nomadic_city = {	# 移动城邦
 	planet_structures_cost_mult = 0.15
 	planet_structures_upkeep_mult = 0.15
-	planet_building_build_speed_mult = -0.15
-	planet_orbital_bombardment_damage = -0.3
+	planet_building_build_speed_mult = 0.15
+	engineer_jobs_bonus_workforce_mult = 0.05
+	#planet_orbital_bombardment_damage = -0.3
 	icon = "gfx/interface/icons/planet_modifiers/pm_nomadic_city.dds"
 	icon_frame = 2
 }
