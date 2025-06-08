@@ -366,6 +366,7 @@ beffect_arkocean_mould_1_1_waiting = {
 	potential = {
 		from = {
 			NOT = { has_technology = tech_corvettes }
+			NOT = { has_technology = tech_maulers }
 		}
 	}
 	allow = { always = yes }
@@ -376,7 +377,13 @@ beffect_arkocean_mould_1_1_waiting = {
 beffect_arkocean_mould_1_1_d1 = {
 	potential = {
 		from = {
-			has_technology = tech_corvettes
+			OR = {
+				has_technology = tech_corvettes
+				AND = {
+					country_uses_bio_ships = yes
+					has_technology = tech_maulers
+				}
+			}
 			NOR = {
 				has_country_flag = arkocean_mould_done_1_1_d1
 				has_country_flag = arkocean_mould_done_1_1_d2
@@ -392,16 +399,40 @@ beffect_arkocean_mould_1_1_d1 = {
 				type = arkseaborn_cells
 				amount >= 1
 			}
-			has_technology = tech_corvettes
+			OR = {
+				has_technology = tech_corvettes
+				AND = {
+					country_uses_bio_ships = yes
+					has_technology = tech_maulers
+				}
+			}
 		}
 	}
 	effect = {
-		custom_tooltip = beffect_arkocean_mould_1_1_d1_tooltip
+		if = {
+			limit = { country_uses_bio_ships = yes }
+			custom_tooltip = beffect_arkocean_mould_1_1_d1_tooltip_alt
+		}
+		if = {
+			limit = { country_uses_bio_ships = no }
+			custom_tooltip = beffect_arkocean_mould_1_1_d1_tooltip
+		}
+		#custom_tooltip = beffect_arkocean_mould_1_1_d1_tooltip
 		hidden_effect = {
 			from = {
-				add_modifier = {
-					modifier = arkocean_mould_modifier_1_1a
-					days = -1
+				if = {
+					limit = { country_uses_bio_ships = yes }
+					add_modifier = {
+						modifier = arkocean_mould_modifier_1_1a_alt
+						days = -1
+					}
+				}
+				if = {
+					limit = { country_uses_bio_ships = no }
+					add_modifier = {
+						modifier = arkocean_mould_modifier_1_1a
+						days = -1
+					}
 				}
 				add_resource = {
 					arkseaborn_cells = -1
@@ -433,16 +464,39 @@ beffect_arkocean_mould_1_1_d2 = {
 				type = arkseaborn_cells
 				amount >= 1
 			}
-			has_technology = tech_destroyers
+			OR = {
+				has_technology = tech_destroyers
+				AND = {
+					has_technology = tech_weavers
+					country_uses_bio_ships = yes
+				}
+			}
 		}
 	}
 	effect = {
-		custom_tooltip = beffect_arkocean_mould_1_1_d2_tooltip
+		if = {
+			limit = { country_uses_bio_ships = yes }
+			custom_tooltip = beffect_arkocean_mould_1_1_d2_tooltip_alt
+		}
+		if = {
+			limit = { country_uses_bio_ships = no }
+			custom_tooltip = beffect_arkocean_mould_1_1_d2_tooltip
+		}
 		hidden_effect = {
 			from = {
-				add_modifier = {
-					modifier = arkocean_mould_modifier_1_1b
-					days = -1
+				if = {
+					limit = { country_uses_bio_ships = yes }
+					add_modifier = {
+						modifier = arkocean_mould_modifier_1_1b_alt
+						days = -1
+					}
+				}
+				if = {
+					limit = { country_uses_bio_ships = no }
+					add_modifier = {
+						modifier = arkocean_mould_modifier_1_1b
+						days = -1
+					}
 				}
 				add_resource = {
 					arkseaborn_cells = -1
@@ -475,16 +529,39 @@ beffect_arkocean_mould_1_1_d3 = {
 				type = arkseaborn_cells
 				amount >= 1
 			}
-			has_technology = tech_cruisers
+			OR = {
+				has_technology = tech_cruisers
+				AND = {
+					has_technology = tech_harbingers
+					country_uses_bio_ships = yes
+				}
+			}
 		}
 	}
 	effect = {
-		custom_tooltip = beffect_arkocean_mould_1_1_d3_tooltip
+		if = {
+			limit = { country_uses_bio_ships = yes }
+			custom_tooltip = beffect_arkocean_mould_1_1_d3_tooltip_alt
+		}
+		if = {
+			limit = { country_uses_bio_ships = no }
+			custom_tooltip = beffect_arkocean_mould_1_1_d3_tooltip
+		}
 		hidden_effect = {
 			from = {
-				add_modifier = {
-					modifier = arkocean_mould_modifier_1_1c
-					days = -1
+				if = {
+					limit = { country_uses_bio_ships = yes }
+					add_modifier = {
+						modifier = arkocean_mould_modifier_1_1c_alt
+						days = -1
+					}
+				}
+				if = {
+					limit = { country_uses_bio_ships = no }
+					add_modifier = {
+						modifier = arkocean_mould_modifier_1_1c
+						days = -1
+					}
 				}
 				add_resource = {
 					arkseaborn_cells = -1
@@ -517,16 +594,39 @@ beffect_arkocean_mould_1_1_d4 = {
 				type = arkseaborn_cells
 				amount >= 1
 			}
-			has_technology = tech_battleships
+			OR = {
+				has_technology = tech_battleships
+				AND = {
+					has_technology = tech_stingers
+					country_uses_bio_ships = yes
+				}
+			}
 		}
 	}
 	effect = {
-		custom_tooltip = beffect_arkocean_mould_1_1_d4_tooltip
+		if = {
+			limit = { country_uses_bio_ships = yes }
+			custom_tooltip = beffect_arkocean_mould_1_1_d4_tooltip_alt
+		}
+		if = {
+			limit = { country_uses_bio_ships = no }
+			custom_tooltip = beffect_arkocean_mould_1_1_d4_tooltip
+		}
 		hidden_effect = {
 			from = {
-				add_modifier = {
-					modifier = arkocean_mould_modifier_1_1d
-					days = -1
+				if = {
+					limit = { country_uses_bio_ships = yes }
+					add_modifier = {
+						modifier = arkocean_mould_modifier_1_1d_alt
+						days = -1
+					}
+				}
+				if = {
+					limit = { country_uses_bio_ships = no }
+					add_modifier = {
+						modifier = arkocean_mould_modifier_1_1d
+						days = -1
+					}
 				}
 				add_resource = {
 					arkseaborn_cells = -1
@@ -559,16 +659,39 @@ beffect_arkocean_mould_1_1_d5 = {
 				type = arkseaborn_cells
 				amount >= 1
 			}
-			has_technology = tech_titans
+			OR = {
+				has_technology = tech_titans
+				AND = {
+					has_technology = tech_titans
+					country_uses_bio_ships = yes
+				}
+			}
 		}
 	}
 	effect = {
-		custom_tooltip = beffect_arkocean_mould_1_1_d5_tooltip
+		if = {
+			limit = { country_uses_bio_ships = yes }
+			custom_tooltip = beffect_arkocean_mould_1_1_d5_tooltip_alt
+		}
+		if = {
+			limit = { country_uses_bio_ships = no }
+			custom_tooltip = beffect_arkocean_mould_1_1_d5_tooltip
+		}
 		hidden_effect = {
 			from = {
-				add_modifier = {
-					modifier = arkocean_mould_modifier_1_1e
-					days = -1
+				if = {
+					limit = { country_uses_bio_ships = yes }
+					add_modifier = {
+						modifier = arkocean_mould_modifier_1_1e_alt
+						days = -1
+					}
+				}
+				if = {
+					limit = { country_uses_bio_ships = no }
+					add_modifier = {
+						modifier = arkocean_mould_modifier_1_1e
+						days = -1
+					}
 				}
 				add_resource = {
 					arkseaborn_cells = -1

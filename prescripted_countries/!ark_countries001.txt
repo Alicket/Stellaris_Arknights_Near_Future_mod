@@ -36,7 +36,7 @@ ARK_country_1 = {
 
 	origin="origin_ark_tragedy_birth"
 
-	flags = { custom_start_screen }
+	#flags = { custom_start_screen }
 
 	planet_name = "NAME_Terra"
 	planet_class = pc_continental
@@ -163,7 +163,10 @@ ARK_country_3 = {
 		name_list = "HIVE1"
 		trait = "trait_ARK_ocean_seaborn"
 		trait = "trait_hive_mind"
+		trait = "trait_malleable_genes"
+		trait = "trait_quarrelsome"
 		trait = "trait_sedentary"
+		trait = "trait_repugnant"
 	}
 
 	room = "default_room"
@@ -171,7 +174,7 @@ ARK_country_3 = {
 	authority = "auth_hive_mind"
 	civics = {
 		"civic_hive_strength_of_legions"
-		"civic_hive_one_mind"
+		"civic_hive_subsumed_will"
 	}
 	government = gov_hive_mind
 
@@ -179,17 +182,17 @@ ARK_country_3 = {
 	advisor_voice_type="l_hivemind"
 
 	#origin = "origin_ark_stella_caerula"
-	origin = "origin_tree_of_life"
+	origin = "origin_evolutionary_predators"
 
 
-	flags = { custom_start_screen }
+	#flags = { custom_start_screen }
 
 	planet_name = "NAME_Terra_ocean"
 	planet_class = pc_continental
 	initializer = "Tyra_system_ocean"
 	system_name = "NAME_Tyra_system"
 
-	graphical_culture = "aquatic_01"
+	graphical_culture = "biogenesis_02"
 	city_graphical_culture = "aquatic_01"
 
 	empire_flag = {

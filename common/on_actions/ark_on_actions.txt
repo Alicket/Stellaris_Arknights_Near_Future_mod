@@ -119,6 +119,25 @@ on_entering_system_first_time = {
 	}
 }
 
+# A fleet has entered a system | See also: on_fleet_auto_move_arrival
+# Scope = Fleet
+# From = System
+on_entering_system_fleet = {
+	events = {
+		ark_gateway.13
+	}
+}
+
+# This = owner of fleet
+# From = fleet
+# FromFrom = planet (if any)
+on_fleet_auto_move_arrival = {
+	events = {
+		ark_gateway.11
+		ark_gateway.12
+	}
+}
+
 # A country has increased the level of a tech, use last_increased_tech trigger to check tech and level.
 # This = Country
 on_tech_increased = {
@@ -152,7 +171,13 @@ on_space_battle_won = {
 	}
 }
 
+# Called upon entering FTL (on-action name scripted on the Bypass type)
+# THIS = Fleet
+# FROM = System jumping to
+# FROMFROM = System jumped from
+on_entering_gateway = {
 
+}
 
 
 

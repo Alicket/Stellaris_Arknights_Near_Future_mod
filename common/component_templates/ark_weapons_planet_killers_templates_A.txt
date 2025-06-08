@@ -22,7 +22,9 @@ weapon_component_template = { # FROSTNOVA
 	icon = GFX_ship_part_ark_pk_frostnova
 	icon_frame = 1
 
-	size_restriction = { colossus }
+	potential = {
+		is_ship_size = colossus
+	}
 	component_set = "PLANET_KILLER_ARK_FROSTNOVA"
 
 	planet_destruction_gfx = "neutron_planet_gfx"

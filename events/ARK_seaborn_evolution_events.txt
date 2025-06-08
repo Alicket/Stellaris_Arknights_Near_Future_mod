@@ -336,11 +336,19 @@ country_event = {
 	immediate = {
 		every_owned_leader = {
 			limit = { leader_class = commander }
-			add_trait = leader_trait_seaborn_arm_strategic_mind
+			add_trait = {
+				trait = leader_trait_seaborn_arm_strategic_mind
+				show_message = yes
+			}
+			#add_trait = leader_trait_seaborn_arm_strategic_mind
 		}
 		every_pool_leader = {
 			limit = { leader_class = commander }
-			add_trait = leader_trait_seaborn_arm_strategic_mind
+			add_trait = {
+				trait = leader_trait_seaborn_arm_strategic_mind
+				show_message = no
+			}
+			#add_trait = leader_trait_seaborn_arm_strategic_mind
 		}
 	}
 }
@@ -358,7 +366,11 @@ country_event = {
 				limit = {
 					leader_class = commander
 				}
-				add_trait = leader_trait_seaborn_arm_strategic_mind
+				add_trait = {
+					trait = leader_trait_seaborn_arm_strategic_mind
+					show_message = yes
+				}
+				#add_trait = leader_trait_seaborn_arm_strategic_mind
 			}
 		}
 	}
@@ -375,21 +387,33 @@ country_event = {
 				has_trait = leader_trait_seaborn_sci_simple_thoughts
 			}
 			remove_trait = leader_trait_seaborn_sci_simple_thoughts
-			add_trait = leader_trait_seaborn_sci_complex_thoughts
+			add_trait = {
+				trait = leader_trait_seaborn_sci_complex_thoughts
+				show_message = yes
+			}
+			#add_trait = leader_trait_seaborn_sci_complex_thoughts
 		}
 		every_owned_leader = {
 			limit = {
 				leader_class = scientist
 				NOT = { has_trait = leader_trait_seaborn_sci_simple_thoughts }
 			}
-			add_trait = leader_trait_seaborn_sci_complex_thoughts
+			add_trait = {
+				trait = leader_trait_seaborn_sci_complex_thoughts
+				show_message = yes
+			}
+			#add_trait = leader_trait_seaborn_sci_complex_thoughts
 		}
 		every_pool_leader = {
 			limit = {
 				leader_class = scientist
 				NOT = { has_trait = leader_trait_seaborn_sci_simple_thoughts }
 			}
-			add_trait = leader_trait_seaborn_sci_complex_thoughts
+			add_trait = {
+				trait = leader_trait_seaborn_sci_complex_thoughts
+				show_message = no
+			}
+			#add_trait = leader_trait_seaborn_sci_complex_thoughts
 		}
 		every_pool_leader = {
 			limit = {
@@ -397,7 +421,11 @@ country_event = {
 				has_trait = leader_trait_seaborn_sci_simple_thoughts
 			}
 			remove_trait = leader_trait_seaborn_sci_simple_thoughts
-			add_trait = leader_trait_seaborn_sci_complex_thoughts
+			add_trait = {
+				trait = leader_trait_seaborn_sci_complex_thoughts
+				show_message = no
+			}
+			#add_trait = leader_trait_seaborn_sci_complex_thoughts
 		}
 	}
 }

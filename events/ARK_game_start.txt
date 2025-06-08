@@ -100,7 +100,11 @@ country_event = { #选择苦难摇篮起源
 		}
 		event_target:ark_planet_terra = {
 			leader = {
-				add_trait_no_notify = leader_trait_righteous
+				#add_trait_no_notify = leader_trait_righteous
+				add_trait = {
+					trait = leader_trait_righteous
+					show_message = no
+				}
 				save_event_target_as = ark_start_official
 			}
 			every_owned_pop_group = {
@@ -135,8 +139,27 @@ country_event = { #选择苦难摇篮起源
 			}
 		}
 		ruler = {
-			add_trait_no_notify = leader_trait_meet_at_the_end
-			add_trait_no_notify = leader_trait_legendary_great_teacher
+			add_trait = {
+				trait = leader_trait_meet_at_the_end
+				show_message = no
+			}
+			if = {
+				limit = { has_trait = leader_trait_legendary_great_teacher }
+				remove_trait = leader_trait_legendary_great_teacher
+				add_trait = {
+					trait = leader_trait_legendary_great_teacher_2
+					show_message = no
+				}
+			}
+			if = {
+				limit = { NOT = { has_trait = leader_trait_legendary_great_teacher } }
+				add_trait = {
+					trait = leader_trait_legendary_great_teacher
+					show_message = no
+				}
+			}
+			#add_trait_no_notify = leader_trait_meet_at_the_end
+			#add_trait_no_notify = leader_trait_legendary_great_teacher
 			set_leader_flag = leader_death_events_blocked
 			set_leader_flag = immune_to_negative_traits
 			save_global_event_target_as = ark_ruler_doctor
@@ -208,11 +231,23 @@ country_event = { #选择海嗣特质
 				leader_class = scientist
 			}
 			remove_trait = leader_trait_seaborn_sci_simple_thoughts
-			add_trait_no_notify = leader_trait_seaborn_sci_complex_thoughts
+			add_trait = {
+				trait = leader_trait_seaborn_sci_complex_thoughts
+				show_message = no
+			}
+			#add_trait_no_notify = leader_trait_seaborn_sci_complex_thoughts
 		}
 		ruler = {
-			add_trait_no_notify = leader_trait_Ishar_mla
-			add_trait_no_notify = leader_trait_Ishar_mla02
+			add_trait = {
+				trait = leader_trait_Ishar_mla
+				show_message = no
+			}
+			add_trait = {
+				trait = leader_trait_Ishar_mla02
+				show_message = no
+			}
+			#add_trait_no_notify = leader_trait_Ishar_mla
+			#add_trait_no_notify = leader_trait_Ishar_mla02
 			set_leader_flag = leader_death_events_blocked
 			set_leader_flag = immune_to_negative_traits
 		}

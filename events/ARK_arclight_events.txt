@@ -271,7 +271,11 @@ country_event = {
 			exile_leader_as = ethic_leader_exile
 		}
 		last_created_leader = {
-			add_trait = leader_trait_rhine_lab
+			add_trait = {
+				trait = leader_trait_rhine_lab
+				show_message = yes
+			}
+			#add_trait = leader_trait_rhine_lab
 			#add_trait = leader_trait_unstopable_pioneer
 
 			set_age = 34
@@ -337,7 +341,10 @@ country_event = {
 		custom_tooltip = ark_arclight.141.a.tooltip
 		hidden_effect = {
 			event_target:ark_leader_kristen = {
-				add_trait = leader_trait_unstopable_pioneer
+				add_trait = {
+					trait = leader_trait_unstopable_pioneer
+					show_message = yes
+				}
 			}
 			country_event = {
 				id = ark_arclight.15

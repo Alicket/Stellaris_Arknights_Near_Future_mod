@@ -26,10 +26,24 @@ arkocean_mould_modifier_1_1a = {
 	shipsize_frigate_hull_mult = 0.25
 	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_1_1a.dds"
 }
+#颚蚁
+arkocean_mould_modifier_1_1a_alt = {
+	shipsize_mauler_stage_1_hull_mult = 0.25
+	shipsize_mauler_stage_2_hull_mult = 0.20
+	shipsize_mauler_stage_3_hull_mult = 0.15
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_1_1a.dds"
+}
 arkocean_mould_modifier_1_1b = {
 	ship_destroyer_food_cost_add = 90
 	ship_destroyer_alloys_cost_mult = -0.2
 	shipsize_destroyer_hull_mult = 0.20
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_1_1b.dds"
+}
+#织蛛
+arkocean_mould_modifier_1_1b_alt = {
+	shipsize_weaver_stage_1_hull_mult = 0.20
+	shipsize_weaver_stage_2_hull_mult = 0.15
+	shipsize_weaver_stage_3_hull_mult = 0.10
 	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_1_1b.dds"
 }
 arkocean_mould_modifier_1_1c = {
@@ -38,16 +52,37 @@ arkocean_mould_modifier_1_1c = {
 	shipsize_cruiser_hull_mult = 0.15
 	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_1_1c.dds"
 }
+#孵后
+arkocean_mould_modifier_1_1c_alt = {
+	shipsize_harbinger_stage_1_hull_mult = 0.20
+	shipsize_harbinger_stage_2_hull_mult = 0.15
+	shipsize_harbinger_stage_3_hull_mult = 0.10
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_1_1c.dds"
+}
 arkocean_mould_modifier_1_1d = {
 	ship_battleship_food_cost_add = 460
 	ship_battleship_alloys_cost_mult = -0.2
 	shipsize_battleship_hull_mult = 0.10
 	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_1_1d.dds"
 }
+#刺蜂
+arkocean_mould_modifier_1_1d_alt = {
+	shipsize_stinger_stage_1_hull_mult = 0.20
+	shipsize_stinger_stage_2_hull_mult = 0.15
+	shipsize_stinger_stage_3_hull_mult = 0.10
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_1_1d.dds"
+}
 arkocean_mould_modifier_1_1e = {
 	ship_titan_food_cost_add = 1080
 	ship_titan_alloys_cost_mult = -0.2
 	shipsize_titan_hull_mult = 0.05
+	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_1_1e.dds"
+}
+#（生物）泰坦
+arkocean_mould_modifier_1_1e_alt = {
+	ship_titan_alloys_cost_mult = -0.15
+	ship_titan_food_cost_mult = 0.15
+	shipsize_bio_titan_hull_mult = 0.10
 	icon = "gfx/interface/icons/modifiers/ark_mould_modifier_1_1e.dds"
 }
 arkocean_mould_modifier_1_2 = {

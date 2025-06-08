@@ -1,0 +1,248 @@
+# 路网 #
+# 克莱门莎 两位，请看我们身后的信标塔。曾经，它是前人所构想的星际征途的重要一环。
+# 克莱门莎 塔内孕育了数以亿计的浮游机械。最先突破电子云层的阿戈尔城市会将它们播撒在星海之间。
+# 克莱门莎 它们将自我增殖、自我修复，串联成长明不熄的路网。借助路网，我们的舰队将实现星际层面的自由跃迁。
+
+###注意：允许建造巨构的星系必须所有临近星系都由我方控制，且临近星系没有正在建设的路网中枢
+namespace = ark_gateway
+# 路网运输锚定在泰拉恒星轨道
+country_event = {
+        id = ark_gateway.1
+    hide_window = yes
+    is_triggered_only = yes
+    immediate = {
+        capital_scope = {
+            create_fleet = {
+                name = "NAME_Cosmogenesis_Sphere"
+                settings = {
+                    can_disband = no
+                }
+                effect = {
+                    set_owner = root
+                    set_fleet_flag = ark_gateway_main_fleet
+                    create_ship = {
+                        name = "NAME_Lemniscate"
+                        design = "NAME_Monadic_Qerr"
+                    }
+                    set_location = prev
+
+                    #set_fleet_stance = evasive
+                    #save_global_event_target_as = cosmogenesis_needle
+                    #add_modifier = {
+                    #    modifier = horizon_needle_mod
+                    #    days = -1
+                    #}
+                }
+            }
+        }
+        last_created_fleet = {
+            auto_move_to_planet = {
+                target = root.capital_scope.solar_system.star
+                clear_auto_move_on_arrival = no
+                #destroy_on_arrival = yes
+                #arrival_effect = ark_gateway_arrival_effect
+            }
+        }
+    }
+}
+# This = owner of fleet
+# From = fleet
+# FromFrom = planet (if any)
+#on_fleet_auto_move_arrival
+country_event = {
+    id = ark_gateway.11
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        from = {
+            has_fleet_flag = ark_gateway_main_fleet
+        }
+        solar_system = { NOT = { has_star_flag = ark_gateway_constructing } }
+    }
+
+    immediate = {
+
+        solar_system = {
+            star = {
+                save_global_event_target_as = ark_gateway_source_star
+            }
+            set_star_flag = ark_gateway_constructing
+            spawn_megastructure = {
+                type = mega_shipyard_0
+                planet = star
+            }
+
+            export_trigger_value_to_variable = {
+                trigger = count_neighbor_system
+                variable = var_ark_neighbor_systems
+            }
+
+            while = {
+                count = var_ark_neighbor_systems
+
+                random_neighbor_system = {
+                    limit = {
+                        NOT = { has_star_flag = ark_gateway_target_end }
+                    }
+                    star = {
+                        save_event_target_as = ark_gateway_target_star
+                    }
+                }
+
+                create_fleet = {
+                    name = "NAME_Cosmogenesis_Sphere"
+                    settings = {
+                        can_disband = no
+                    }
+                    effect = {
+                        set_owner = root
+                        create_ship = {
+                            name = "NAME_Lemniscate"
+                            design = "NAME_Monadic_Qerr"
+                        }
+                        set_location = prev
+                    }
+                }
+
+                last_created_fleet = {
+                    auto_move_to_planet = {
+                        target = event_target:ark_gateway_target_star
+                        clear_auto_move_on_arrival = yes
+                        #arrival_effect = ark_gateway_arrival_effect_back
+                    }
+                    set_fleet_flag = ark_gateway_sub_fleet
+                }
+                event_target:ark_gateway_target_star = {
+                    solar_system = { set_star_flag = ark_gateway_target_end }
+                }
+                log = "ARK 探针已出发"
+            }
+            log = "ARK 路网已锚定"
+            #every_neighbor_system = {
+            #    remove_star_flag = ark_gateway_target_end
+            #}
+        }
+    }
+}
+# This = owner of fleet
+# From = fleet
+# FromFrom = planet (if any)
+#on_fleet_auto_move_arrival
+country_event = {
+    id = ark_gateway.12
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        from = {
+            has_fleet_flag = ark_gateway_sub_fleet
+        }
+        from.solar_system = { NOT = { has_star_flag = ark_gateway_sub_system } }
+        from.solar_system = { NOT = { has_star_flag = ark_gateway_constructing } }
+    }
+    immediate = {
+        log = "ARK 探针已到达临近星系"
+        solar_system = {
+            set_star_flag = ark_gateway_sub_system
+        }
+        from = {
+            log = "ARK 探针准备出发返航"
+            auto_move_to_planet = {
+                target = event_target:ark_gateway_source_star
+                clear_auto_move_on_arrival = no
+            }
+            log = "ARK 探针已出发返航"
+        }
+    }
+}
+
+#on_entering_system_fleet
+# A fleet has entered a system | See also: on_fleet_auto_move_arrival
+# Scope = Fleet
+# From = System
+fleet_event = {
+    id = ark_gateway.13
+    is_triggered_only = yes
+    hide_window = yes
+    trigger = {
+        has_fleet_flag = ark_gateway_sub_fleet
+        from = {
+            has_star_flag = ark_gateway_constructing
+        }
+    }
+    immediate = {
+        log = "ARK 探针已返航"
+        destroy_fleet = this
+        create_ambient_object = {
+            type = ark_arclight_one_object
+            location = this
+            scale = 1.0
+            use_3d_location = yes
+            entity_offset = 0
+            entity_offset_angle = 0
+            entity_offset_height = 0
+            base_angle_towards = star
+            #entity_face_object =
+            #entity_scale_to_size =
+            #scripted_scale =
+            #play_animation_once =
+            #duration =
+            #effect =
+        }
+
+        from = {
+            change_variable = {
+                which = var_ark_neighbor_systems
+                value = -1
+            }
+            if = {
+                limit = {
+                    check_variable = {
+                        which = var_ark_neighbor_systems
+                        value = 0
+                    }
+                }
+                every_neighbor_system = {
+                    remove_star_flag = ark_gateway_sub_system
+                    remove_star_flag = ark_gateway_target_end
+                    remove_star_flag = ark_gateway_constructing
+                }
+                remove_star_flag = ark_gateway_sub_system
+                remove_star_flag = ark_gateway_target_end
+                remove_star_flag = ark_gateway_constructing
+                clear_global_event_target = ark_gateway_source_star
+                clear_variable = var_ark_neighbor_systems
+                set_star_flag = ark_gateway_constructed
+                log = "ARK 路网展开完毕"
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

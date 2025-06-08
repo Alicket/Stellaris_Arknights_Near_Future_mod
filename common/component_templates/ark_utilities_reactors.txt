@@ -125,8 +125,21 @@ utility_component_template = {
 
 	prerequisites = { "tech_ark_space_originium_power" }
 	component_set = "power_core"
-	size_restriction = { corvette frigate colonizer lithoid_colonizer sponsored_colonizer constructor science transport crisis_corvette }
-	
+
+
+
+	potential = {
+		ship_uses_corvette_components = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+
+
+
 	modifier = {
 		ship_weapon_damage = 0.2
 		ship_hull_mult = -0.1
@@ -169,8 +182,20 @@ utility_component_template = {
 
 	prerequisites = { "tech_ark_space_originium_power" }
 	component_set = "power_core"
-	size_restriction = { destroyer crisis_destroyer }
-	
+
+
+
+	potential = {
+		ship_uses_destroyer_components = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+
+
 	modifier = {
 		ship_weapon_damage = 0.2
 		ship_hull_mult = -0.1
@@ -213,8 +238,20 @@ utility_component_template = {
 
 	prerequisites = { "tech_ark_space_originium_power" }
 	component_set = "power_core"
-	size_restriction = { cruiser crisis_cruiser }
-	
+
+
+
+	potential = {
+		ship_uses_cruiser_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+
+
 	modifier = {
 		ship_weapon_damage = 0.2
 		ship_hull_mult = -0.1
@@ -257,8 +294,20 @@ utility_component_template = {
 
 	prerequisites = { "tech_ark_space_originium_power" }
 	component_set = "power_core"
-	size_restriction = { battleship }
-	
+
+
+
+	potential = {
+		ship_uses_battleship_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+
+
 	modifier = {
 		ship_weapon_damage = 0.2
 		ship_hull_mult = -0.1
@@ -301,8 +350,20 @@ utility_component_template = {
 
 	prerequisites = { "tech_ark_space_originium_power" }
 	component_set = "power_core"
-	size_restriction = { titan }
-	
+
+
+
+	potential = {
+		ship_uses_titan_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+
+
 	modifier = {
 		ship_weapon_damage = 0.2
 		ship_hull_mult = -0.1
@@ -336,7 +397,15 @@ utility_component_template = {
 
 	prerequisites = { "tech_ark_space_originium_power" }
 	component_set = "power_core"
-	size_restriction = { colossus star_eater }
+
+
+
+	potential = {
+		ship_uses_colossus_components = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
 
 	ai_weight = {
 		weight = 6
@@ -369,10 +438,17 @@ utility_component_template = {
 	prerequisites = { "tech_ark_space_originium_power" }
 	component_set = "power_core"
 	class_restriction = { shipclass_military_station }
-	size_restriction = {
-		military_station_small
-		military_station_medium
-		military_station_large
+
+
+
+	potential = {
+		ship_uses_platform_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
 	}
 	
 	modifier = {
@@ -396,6 +472,9 @@ utility_component_template = {
 	}
 }
 
+
+
+
 utility_component_template = {
 	key = "ION_CANNON_ARK_SPACE_ORIGINIUM_REACTOR"
 	size = small
@@ -413,8 +492,12 @@ utility_component_template = {
 
 	prerequisites = { "tech_ark_space_originium_power" }
 	component_set = "power_core"
-	size_restriction = { ion_cannon }
-	
+	potential = {
+		ship_uses_ion_cannon_components = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
 	modifier = {
 		ship_weapon_damage = 0.2
 		ship_hull_mult = -0.1
@@ -441,18 +524,20 @@ utility_component_template = {
 	size = large
 	icon = "GFX_ark_ship_part_reactor"
 	icon_frame = 1
-	power = @starbase_power_6
+	power = @starbase_reactor_power_6
 
 	prerequisites = { "tech_ark_space_originium_power" }
 	component_set = "power_core"
 	class_restriction = { shipclass_starbase }
-	size_restriction = {
-		starbase_outpost
-		starbase_starport
-		starbase_starhold
-		starbase_starfortress
-		starbase_citadel
-		juggernaut
+	potential = {
+		ship_uses_starbase_components = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
 	}
 
 	ai_weight = {

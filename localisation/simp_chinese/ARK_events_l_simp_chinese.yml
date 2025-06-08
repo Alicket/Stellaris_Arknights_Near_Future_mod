@@ -351,12 +351,12 @@ ark_arclight.231.a:0 "那就撕碎它吧。"
 ark_arclight.231.b:0 "既然能为我所用，那为什么不用呢？"
 
 ark_arclight.2311.title:0 "撕裂天空！"
-ark_arclight.2311.desc:0 "既然已经选定了将其撕碎，工程部门也将可行性调查报告与预算表提交了上来，就差动工了。"
+ark_arclight.2311.desc:0 "既然已经选定了将其撕碎，工程部门也将可行性调查报告与预算表提交了上来，就差动工了。\n§v$ark_arclight.2311.a.tooltip$§!"
 ark_arclight.2311.a:0 "$ark_arclight.211.a$"
 ark_arclight.2311.a.tooltip:0 "在星球决议中执行"
 
 ark_arclight.2312.title:0 "为我所用"
-ark_arclight.2312.desc:0 "为了不打破部分地区的习俗以及避免可能带来的风险，那就在满足自身需求的前提下行动吧。工程部门也将可行性调查报告与预算表提交了上来，就差动工了。"
+ark_arclight.2312.desc:0 "为了不打破部分地区的习俗以及避免可能带来的风险，那就在满足自身需求的前提下行动吧。工程部门也将可行性调查报告与预算表提交了上来，就差动工了。\n§v$ark_arclight.2311.a.tooltip$§!"
 ark_arclight.2312.a:0 "$ark_arclight.211.a$"
 ark_arclight.2312.a.tooltip:0 "$ark_arclight.2311.a.tooltip$"
 

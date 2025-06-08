@@ -244,7 +244,11 @@ country_event = {
 				limit = {
 					leader_class = commander
 				}
-				add_trait_no_notify = leader_trait_commander_chivalry
+				#add_trait_no_notify = leader_trait_commander_chivalry
+				add_trait = {
+					trait = leader_trait_commander_chivalry
+					show_message = no
+				}
 			}
 
 		}
@@ -1128,7 +1132,11 @@ country_event = {
 				limit = {
 					leader_class = commander
 				}
-				add_trait_no_notify = leader_trait_commander_chivalry
+				add_trait = {
+					trait = leader_trait_commander_chivalry
+					show_message = no
+				}
+				#add_trait_no_notify = leader_trait_commander_chivalry
 			}
 		}
 		set_country_flag = ark_civic_4_flag
@@ -1147,7 +1155,11 @@ country_event = {
 			limit = {
 				leader_class = commander
 			}
-			add_trait_no_notify = leader_trait_commander_chivalry
+			add_trait = {
+				trait = leader_trait_commander_chivalry
+				show_message = no
+			}
+			#add_trait_no_notify = leader_trait_commander_chivalry
 		}
 	}
 }

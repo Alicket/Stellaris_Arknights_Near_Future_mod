@@ -24,7 +24,32 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { corvette destroyer cruiser battleship titan juggernaut frigate }
+	potential = {
+		OR = {
+			is_ship_size = corvette
+			is_ship_size = frigate
+			is_ship_size = destroyer
+			is_ship_size = cruiser
+			is_ship_size = battleship
+			is_ship_size = titan
+			is_ship_size = juggernaut
+			is_ship_size = mauler_stage_1
+			is_ship_size = mauler_stage_2
+			is_ship_size = mauler_stage_3
+			is_ship_size = weaver_stage_1
+			is_ship_size = weaver_stage_2
+			is_ship_size = weaver_stage_3
+			is_ship_size = harbinger_stage_1
+			is_ship_size = harbinger_stage_2
+			is_ship_size = harbinger_stage_3
+			is_ship_size = stinger_stage_1
+			is_ship_size = stinger_stage_2
+			is_ship_size = stinger_stage_3
+			is_ship_size = bio_titan
+			is_ship_size = colossus
+		}
+	}
+
 	component_set = "combat_computers"
 	ship_behavior = "ghost"
 	prerequisites = { "tech_originiums_mining" "tech_combat_computers_1" }
@@ -59,7 +84,31 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { corvette destroyer cruiser battleship titan juggernaut frigate }
+	potential = {
+		OR = {
+			is_ship_size = corvette
+			is_ship_size = frigate
+			is_ship_size = destroyer
+			is_ship_size = cruiser
+			is_ship_size = battleship
+			is_ship_size = titan
+			is_ship_size = juggernaut
+			is_ship_size = mauler_stage_1
+			is_ship_size = mauler_stage_2
+			is_ship_size = mauler_stage_3
+			is_ship_size = weaver_stage_1
+			is_ship_size = weaver_stage_2
+			is_ship_size = weaver_stage_3
+			is_ship_size = harbinger_stage_1
+			is_ship_size = harbinger_stage_2
+			is_ship_size = harbinger_stage_3
+			is_ship_size = stinger_stage_1
+			is_ship_size = stinger_stage_2
+			is_ship_size = stinger_stage_3
+			is_ship_size = bio_titan
+			is_ship_size = colossus
+		}
+	}
 	component_set = "combat_computers"
 	ship_behavior = "ghost"
 	prerequisites = { "tech_originiums_mining" "tech_combat_computers_2" }
@@ -94,7 +143,31 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { corvette destroyer cruiser battleship titan juggernaut frigate }
+	potential = {
+		OR = {
+			is_ship_size = corvette
+			is_ship_size = frigate
+			is_ship_size = destroyer
+			is_ship_size = cruiser
+			is_ship_size = battleship
+			is_ship_size = titan
+			is_ship_size = juggernaut
+			is_ship_size = mauler_stage_1
+			is_ship_size = mauler_stage_2
+			is_ship_size = mauler_stage_3
+			is_ship_size = weaver_stage_1
+			is_ship_size = weaver_stage_2
+			is_ship_size = weaver_stage_3
+			is_ship_size = harbinger_stage_1
+			is_ship_size = harbinger_stage_2
+			is_ship_size = harbinger_stage_3
+			is_ship_size = stinger_stage_1
+			is_ship_size = stinger_stage_2
+			is_ship_size = stinger_stage_3
+			is_ship_size = bio_titan
+			is_ship_size = colossus
+		}
+	}
 	component_set = "combat_computers"
 	ship_behavior = "ghost"
 	prerequisites = { "tech_originiums_mining" "tech_combat_computers_3" }
@@ -128,7 +201,31 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { corvette destroyer cruiser battleship titan juggernaut frigate }
+	potential = {
+		OR = {
+			is_ship_size = corvette
+			is_ship_size = frigate
+			is_ship_size = destroyer
+			is_ship_size = cruiser
+			is_ship_size = battleship
+			is_ship_size = titan
+			is_ship_size = juggernaut
+			is_ship_size = mauler_stage_1
+			is_ship_size = mauler_stage_2
+			is_ship_size = mauler_stage_3
+			is_ship_size = weaver_stage_1
+			is_ship_size = weaver_stage_2
+			is_ship_size = weaver_stage_3
+			is_ship_size = harbinger_stage_1
+			is_ship_size = harbinger_stage_2
+			is_ship_size = harbinger_stage_3
+			is_ship_size = stinger_stage_1
+			is_ship_size = stinger_stage_2
+			is_ship_size = stinger_stage_3
+			is_ship_size = bio_titan
+			is_ship_size = colossus
+		}
+	}
 	component_set = "combat_computers"
 	ship_behavior = "ghost"
 	prerequisites = { "tech_originiums_mining" "tech_precognition_interface" }
