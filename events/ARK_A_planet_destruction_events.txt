@@ -1,6 +1,6 @@
 namespace = ark_planet_destruction
 
-planet_event = {
+carrier_event = {
 	id = ark_planet_destruction.100
 	hide_window = yes
 	is_triggered_only = yes
@@ -72,7 +72,7 @@ planet_event = {
 			set_planet_flag = planet_ark_frozen
 			stop_crisis_sound = yes
 			from.owner = { save_event_target_as = final_machine_world_destroyer }
-			planet_event = { id = crisis.2046 } #不用改
+			carrier_event = { id = crisis.2046 } #不用改
 		}
 		# Swarm Situation Log counter 虫灾
 		if = {

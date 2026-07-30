@@ -32,6 +32,8 @@ building_ark_hospital1 = {
 	planet_modifier = {
 		biologist_jobs_bonus_workforce_mult = 0.05
 		pop_amenities_usage_mult = -0.05
+		pop_healthcare_bonus_workforce_mult = 0.1
+		planet_doctors_society_research_produces_add = 0.50
 	}
 	country_modifier = {
 		country_society_tech_research_speed = 0.01
@@ -95,6 +97,8 @@ building_ark_hospital2 = {
 	planet_modifier = {
 		biologist_jobs_bonus_workforce_mult = 0.1
 		pop_amenities_usage_mult = -0.075
+		pop_healthcare_bonus_workforce_mult = 0.2
+		planet_doctors_society_research_produces_add = 1
 	}
 	country_modifier = {
 		country_society_tech_research_speed = 0.02
@@ -164,6 +168,8 @@ building_ark_hospital3 = {
 	planet_modifier = {
 		biologist_jobs_bonus_workforce_mult = 0.15
 		pop_amenities_usage_mult = -0.1
+		pop_healthcare_bonus_workforce_mult = 0.3
+		planet_doctors_society_research_produces_add = 1.50
 	}
 	country_modifier = {
 		country_society_tech_research_speed = 0.03
@@ -233,6 +239,7 @@ building_ark_corporate_hospital1 = {
 	planet_modifier = {
 		biologist_jobs_bonus_workforce_mult = 0.025
 		trader_jobs_bonus_workforce_mult = 0.025
+
 		pop_amenities_usage_mult = -0.05
 	}
 	country_modifier = {
@@ -1025,7 +1032,7 @@ building_ark_energy_well1 = {
 		 job_physicist_add = 80
 		 job_biologist_add = 80
 		 job_engineer_add = 80
-		 job_culture_worker_add = 80
+		 job_bureaucrat_add = 80
 		 trader_jobs_bonus_workforce_mult = -0.075
 		 planet_orbital_bombardment_damage = -2
 		 planet_storm_devastation_mult = -1
@@ -1060,11 +1067,12 @@ building_ark_energy_well2 = {
 	}
 	planet_modifier = {
 		researcher_jobs_bonus_workforce_mult = 0.05
-		entertainer_jobs_bonus_workforce_mult = 0.05
+		#entertainer_jobs_bonus_workforce_mult = 0.05
 		job_physicist_add = 120
 		job_biologist_add = 120
 		job_engineer_add = 120
-		job_culture_worker_add = 120
+		#job_culture_worker_add = 120
+		job_bureaucrat_add = 120
 		trader_jobs_bonus_workforce_mult = -0.05
 		planet_orbital_bombardment_damage = -2
 		planet_storm_devastation_mult = -1
@@ -1106,11 +1114,11 @@ building_ark_energy_well3 = {
 	}
 	planet_modifier = {
 		researcher_jobs_bonus_workforce_mult = 0.10
-		entertainer_jobs_bonus_workforce_mult = 0.10
+		#entertainer_jobs_bonus_workforce_mult = 0.10
 		job_physicist_add = 200
 		job_biologist_add = 200
 		job_engineer_add = 200
-		job_culture_worker_add = 200
+		job_bureaucrat_add = 200
 		trader_jobs_bonus_workforce_mult = -0.025
 		planet_orbital_bombardment_damage = -2
 		planet_storm_devastation_mult = -1
@@ -1152,11 +1160,11 @@ building_ark_energy_well4a = {
 	}
 	planet_modifier = {
 		researcher_jobs_bonus_workforce_mult = 0.2
-		entertainer_jobs_bonus_workforce_mult = 0.2
+		#entertainer_jobs_bonus_workforce_mult = 0.2
 		job_physicist_add = 800
 		job_biologist_add = 800
 		job_engineer_add = 800
-		job_culture_worker_add = 800
+		job_bureaucrat_add = 800
 		trader_jobs_bonus_workforce_mult = -0.1
 		planet_orbital_bombardment_damage = -2
 		planet_storm_devastation_mult = -1
@@ -1195,11 +1203,11 @@ building_ark_energy_well4b = {
 	}
 	planet_modifier = {
 		researcher_jobs_bonus_workforce_mult = 0.2
-		entertainer_jobs_bonus_workforce_mult = 0.2
+		#entertainer_jobs_bonus_workforce_mult = 0.2
 		job_physicist_add = 800
 		job_biologist_add = 800
 		job_engineer_add = 800
-		job_culture_worker_add = 800
+		job_bureaucrat_add = 800
 		trader_jobs_bonus_workforce_mult = -0.025
 		planet_orbital_bombardment_damage = -2
 		planet_storm_devastation_mult = -1
@@ -1245,11 +1253,11 @@ building_ark_energy_well5 = {
 	}
 	planet_modifier = {
 		researcher_jobs_bonus_workforce_mult = 0.2
-		entertainer_jobs_bonus_workforce_mult = 0.2
+		#entertainer_jobs_bonus_workforce_mult = 0.2
 		job_physicist_add = 800
 		job_biologist_add = 800
 		job_engineer_add = 800
-		job_culture_worker_add = 800
+		job_bureaucrat_add = 800
 	}
 	country_modifier = {
 		country_unity_produces_mult = 0.15

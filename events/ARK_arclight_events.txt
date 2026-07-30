@@ -597,7 +597,7 @@ country_event = {
 		custom_tooltip = ark_arclight.2311.a.tooltip
 		hidden_effect = {
 			event_target:ark_planet_terra = {
-				set_planet_flag = ready_to_build_well4a
+				set_carrier_flag = ready_to_build_well4a
 			}
 		}
 	}
@@ -615,7 +615,7 @@ country_event = {
 		custom_tooltip = ark_arclight.2312.a.tooltip
 		hidden_effect = {
 			event_target:ark_planet_terra = {
-				set_planet_flag = ready_to_build_well4b
+				set_carrier_flag = ready_to_build_well4b
 			}
 		}
 	}

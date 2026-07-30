@@ -145,13 +145,13 @@ Tyra_system_ocean = {
 	}
 
 	neighbor_system = {
-	trigger = { num_guaranteed_colonies >= 2 }
-	distance = { min = 10 max = @distance }
-	initializer = "neighbor_t1"
+		trigger = { num_guaranteed_colonies >= 2 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1"
 	}
 	neighbor_system = {
-	trigger = { num_guaranteed_colonies >= 1 }
-	distance = { min = 10 max = @distance }
-	initializer = "neighbor_t1_first_colony"
+		trigger = { num_guaranteed_colonies >= 1 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_first_colony"
 	}
 }

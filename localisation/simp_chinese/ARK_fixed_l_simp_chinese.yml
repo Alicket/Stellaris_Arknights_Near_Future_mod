@@ -150,6 +150,8 @@ terra_council:0 "联合会议准备中"
 terra_council_desc:0 "下一次理事会联合会议正在准备之中."
 peak_plan_training:0 "巅峰计划进行中"
 peak_plan_training_desc:0 "一项为期5年的人才进修计划正在进行."
+ark_eternal_doctor:0 "在星海的尽头相遇"
+ark_eternal_doctor_desc:0 "§R你还会记得我吗§!"
 snacks_network:0 "零食网络"
 snacks_network_desc:0 "坚雷组织了一个遍布全舰队的庞大零食网络，力求给大家供应最美味，最廉价的零食。"
 parts_network:0 "零件网络"
@@ -238,7 +240,8 @@ d32_steels_deficit:0 "D32钢短缺"
 multipole_nanosheets:0 "多极纳米片"
 multipole_nanosheets_desc:0 "现代工艺的创造力结晶,对范围内源石敏感的装置.能提升源能设备对源石的敏感性并存储源石技艺,是源能社会必不可少的材料."
 multipole_nanosheets_deficit:0 "多极纳米片短缺"
-
+ ark_dimensional_fluid:0 "维度流质"
+ ark_dimensional_fluid_warhead:0 "坍缩弹头"
 ## 星球地块 ##
 d_infection_blockade:0 "感染封锁区"
 d_infection_blockade_desc:0 "被封锁的灾后地区,具有极高的感染风险,无数放射性极强的巨型源石矿耸立在地表."
@@ -376,10 +379,10 @@ MESSAGE_ARK_TRAIT_UPGRADE_DOCTOR_DESC:0 "[ark_ruler_doctor.GetName]命定特质�
 ## 博物天枢 ##
  ark_glow_of_stars:0 "万星园之辉"
  ark_glow_of_stars_desc_short:0 "在那一瞬，真实之光普照大地"
- ark_glow_of_stars_desc_details:0 "一件从万星园中回收来的装饰品陀螺仪，经过时光的洗礼，已经无法转动自如。它标志着泰拉人第一次冲破天空，触摸繁星。\n§g产出与维护费同样受到帝国规模加成§!"
+ ark_glow_of_stars_desc_details:0 "一件从万星园中回收来的装饰品陀螺仪，经过时光的洗礼，已经无法转动自如。它标志着泰拉人第一次冲破天空，触摸繁星。\n§g产出与维护费同样受到帝国规模影响§!"
  ark_resplendent_sob:0 "璀璨悲泣"
  ark_resplendent_sob_desc_short:0 "他的血液仍在流淌，他从不曾真的自这里离开。"
- ark_resplendent_sob_desc_details:0 "一块令人眼花缭乱的晶体，颜色鲜红仿佛要滴下血来。靠近它，似乎还能感受到古老的创伤。\n§g产出与维护费同样受到帝国规模加成§!"
+ ark_resplendent_sob_desc_details:0 "一块令人眼花缭乱的晶体，颜色鲜红仿佛要滴下血来。靠近它，似乎还能感受到古老的创伤。\n§g产出与维护费同样受到帝国规模影响§!"
  
 ## 巨构 ##
  ark_ground_star_gate:0 "地面星门"

@@ -15,6 +15,7 @@ ARK_country_1 = {
 		plural = "Terramen"
 		adjective = "Terraman"
 		name_list = "ark_01"
+		trait = "trait_organic"
 		trait = "trait_latent_oripathy"
 		trait = "trait_quarrelsome"
 		trait = "trait_natural_engineers"
@@ -22,12 +23,16 @@ ARK_country_1 = {
 
 	room = "pre_ftl_modern_room"
 
-	authority = "auth_city_republic"
+	#authority = "auth_city_republic"
+	authority = auth_oligarchic
+	#authority = auth_democratic
+
+	government = gov_ARK_terra_oligarchy
 	civics = {
 		"civic_union_summit"
 		"civic_medical_welfare"
 	}
-	government = gov_ark_elite_republic
+	#government = gov_ark_elite_republic
 
 	ethic="ethic_militarist"
 	ethic="ethic_materialist"
@@ -161,6 +166,7 @@ ARK_country_3 = {
 		plural = "PRESCRIPTED_species_plural_arknights_ocean"
 		adjective = "PRESCRIPTED_species_adjective_arknights_ocean"
 		name_list = "HIVE1"
+		trait = "trait_organic"
 		trait = "trait_ARK_ocean_seaborn"
 		trait = "trait_hive_mind"
 		trait = "trait_malleable_genes"

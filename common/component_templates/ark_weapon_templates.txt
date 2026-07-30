@@ -1116,6 +1116,7 @@ weapon_component_template = {
 	projectile_gfx = "adv_kinetic_artillery"
 	tags = { weapon_type_kinetic }
 	ai_tags = { weapon_role_artillery }
+	upgrades_to = "ARK_MASS_ACCELERATOR_2"
 	ai_tag_weight = 0
 	resources = {
 		category = ship_components
@@ -1185,6 +1186,226 @@ weapon_component_template = {
 			energy = @xl_t6_upkeep_energy
 			alloys = @xl_t6_upkeep_alloys
 		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
+		}
+	}
+}
+
+# [实验室]洛夫罗动热换能器（共振弹头）
+weapon_component_template = {
+	key = "ARK_LOVRO_TRANSDUCER_1"
+	size = extra_large
+	type = instant
+
+	icon = "GFX_ark_ship_part_mass_accelerator_2"
+	icon_frame = 1
+
+	power = -300
+	damage = { min = 1200 max = 2200 }
+	hull_damage = 0.75
+	shield_damage = 2.5
+	shield_penetration = 0
+	armor_damage = 0.25
+	armor_penetration = 0
+	windup = { min = 1 max = 19 }
+	total_fire_time = 80
+	range = 250
+	accuracy = 0.90
+	tracking = 0.10
+
+	firing_arc = 25.0
+	min_range = 10.0
+	#use_ship_kill_target = no
+	use_ship_main_target = no
+
+	prerequisites = { tech_ark_lovro_acc_1 }
+	component_set = "ARK_LOVRO_TRANSDUCER_1"
+	projectile_gfx = "ARK_lovro_transducer_projectile_1"
+	tags = { weapon_type_kinetic weapon_role_anti_shield}
+	ai_tags = { weapon_role_artillery weapon_role_anti_shield}
+	ai_tag_weight = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t6_cost
+			volatile_motes = @xl_t6_rare
+			originiums = @xl_t6_rare
+			multipole_nanosheets = @xl_t6_rare
+		}
+		upkeep = {
+			energy = @xl_t6_upkeep_energy
+			alloys = @xl_t6_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
+		}
+	}
+}
+
+# [实验室]洛夫罗动热换能器（碎甲弹头）
+weapon_component_template = {
+	key = "ARK_LOVRO_TRANSDUCER_2"
+	size = extra_large
+	type = instant
+
+	icon = "GFX_ark_ship_part_mass_accelerator_2"
+	icon_frame = 1
+
+	power = -300
+	damage = { min = 1200 max = 2200 }
+	hull_damage = 1
+	shield_damage = 0.25
+	shield_penetration = 0.1
+	armor_damage = 2
+	armor_penetration = 0.05
+	windup = { min = 1 max = 19 }
+	total_fire_time = 80
+	range = 225
+	accuracy = 0.90
+	#tracking = 0.10
+
+	firing_arc = 25.0
+	min_range = 10.0
+	#use_ship_kill_target = no
+	use_ship_main_target = no
+
+	prerequisites = { tech_ark_lovro_acc_1 }
+	component_set = "ARK_LOVRO_TRANSDUCER_2"
+	projectile_gfx = "ARK_lovro_transducer_projectile_2"
+	tags = { weapon_type_kinetic weapon_role_anti_armor}
+	ai_tags = { weapon_role_artillery weapon_role_anti_armor}
+	ai_tag_weight = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t6_cost
+			volatile_motes = @xl_t6_rare
+			originiums = @xl_t6_rare
+			multipole_nanosheets = @xl_t6_rare
+		}
+		upkeep = {
+			energy = @xl_t6_upkeep_energy
+			alloys = @xl_t6_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
+		}
+	}
+}
+
+# [实验室]洛夫罗动热换能器（坍缩弹头）
+weapon_component_template = {
+	key = "ARK_LOVRO_TRANSDUCER_3"
+	size = extra_large
+	type = instant
+
+	icon = "GFX_ark_ship_part_mass_accelerator_2"
+	icon_frame = 1
+
+	power = -300
+	damage = { min = 800 max = 1600 }
+	hull_damage = 2
+	shield_damage = 0.85
+	shield_penetration = 0
+	armor_damage = 0.9
+	armor_penetration = 0
+	windup = { min = 1 max = 19 }
+	total_fire_time = 80
+	range = 200
+	accuracy = 0.90
+	#tracking = 0.10
+
+	firing_arc = 25.0
+	min_range = 10.0
+	#use_ship_kill_target = no
+	use_ship_main_target = no
+
+	prerequisites = { tech_ark_lovro_acc_2 }
+	component_set = "ARK_LOVRO_TRANSDUCER_3"
+	projectile_gfx = "ARK_lovro_transducer_projectile_3"
+	tags = { weapon_type_kinetic weapon_role_anti_hull}
+	ai_tags = { weapon_role_artillery weapon_role_anti_hull}
+	ai_tag_weight = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t6_cost
+			volatile_motes = @xl_t6_rare
+			originiums = @xl_t6_rare
+			multipole_nanosheets = @xl_t6_rare
+		}
+		upkeep = {
+			energy = @xl_t6_upkeep_energy
+			alloys = @xl_t6_upkeep_alloys
+		}
+	}
+
+	on_hit = {
+		if = {
+			limit = {
+				from.owner = {
+					resource_stockpile_compare = {
+						resource = originiums
+						value >= 0.02
+					}
+				}
+			}
+			hidden_effect = {
+				from = {
+					set_variable_to_random_value = {
+						which = var_ark_lovro_3_random_damage
+						min = 200
+						max = 500
+					}
+				}
+				solar_system = {
+					every_ship_in_system = {
+						limit = {
+							controller = {
+								is_hostile = from.controller
+							}
+							distance = {
+								source = root
+								max_distance <= 50
+								same_solar_system = yes
+							}
+						}
+						damage_ship = var_ark_lovro_3_random_damage
+					}
+				}
+			}
+			owner = {
+				add_resource = {
+					originiums = -0.02
+				}
+			}
+		}
+
+		custom_tooltip = "ARK_LOVRO_TRANSDUCER_3_FLEET_EFFECT"
+	}
+
+	target_weights = {
+		titan = 3
+		battleship = 2
+		stinger_stage_1 = 1.5
+		stinger_stage_2 = 2
+		stinger_stage_3 = 2
 	}
 
 	ai_weight = {

@@ -1,0 +1,5 @@
+﻿l_simp_chinese:
+concept_excavate_originiums:0 "开采源石"
+concept_excavate_originiums_desc:0 "开采方法：\n1.母星地块基础产出、在母星系最外围星球上建造轨道开采站。\n2.在拥有§Y$d_originiums_mine$§!地块的星球上（一般只有母星拥有）的三个矿物专精建筑槽中建设§Y$building_originiums_mining_plant_1$§!以获得。(主要获取手段)\n3.使用巨像武器§B$PLANET_KILLER_ARK_FROSTNOVA$§!冻结星球。"
+concept_originiums:0 "源石"
+concept_originiums_desc:0 "神秘的晶体矿物，前文明的杰作。\n\n$concept_excavate_originiums_desc$"

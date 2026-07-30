@@ -1,7 +1,7 @@
 namespace = ark_catastrophes
 
 # 天灾1
-planet_event = {
+carrier_event = {
     id = ark_catastrophes.1
     title = "ark_catastrophes.1.name"
     desc = "ark_catastrophes.1.desc"
@@ -35,7 +35,7 @@ planet_event = {
 }
 
 # 天灾2
-planet_event = {
+carrier_event = {
     id = ark_catastrophes.2
     title = "ark_catastrophes.2.name"
     desc = "ark_catastrophes.2.desc"

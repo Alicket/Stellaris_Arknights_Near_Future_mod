@@ -5,42 +5,102 @@
 
 ###注意：允许建造巨构的星系必须所有临近星系都由我方控制，且临近星系没有正在建设的路网中枢
 namespace = ark_gateway
-# 路网运输锚定在泰拉恒星轨道
+# 路网运输舰启程
 country_event = {
-        id = ark_gateway.1
+    id = ark_gateway.1
     hide_window = yes
     is_triggered_only = yes
     immediate = {
-        capital_scope = {
+        create_country = {
+            name = "NAME_ark_gateway"
+            type = ark_country_type_gateway
+            flag = {
+                icon = {
+                    category = "legion"
+                    file = "flag_mp_beta_05.dds"
+                }
+                background = {
+                    category = "backgrounds"
+                    file = "00_solid.dds"
+                }
+                colors = {
+                    "dark_blue"
+                    "dark_blue"
+                    "null"
+                    "null"
+                }
+            }
+            effect = {
+                save_global_event_target_as = ark_gateway_country
+                set_country_flag = ark_gateway_country
+            }
+        }
+        event_target:ark_gateway_archaeology_location = {
             create_fleet = {
-                name = "NAME_Cosmogenesis_Sphere"
+                name = "NAME_ark_gateway_transporter"
                 settings = {
                     can_disband = no
                 }
                 effect = {
-                    set_owner = root
+                    set_owner = event_target:ark_gateway_country
                     set_fleet_flag = ark_gateway_main_fleet
                     create_ship = {
-                        name = "NAME_Lemniscate"
+                        name = "NAME_ark_gateway_transporter"
                         design = "NAME_Monadic_Qerr"
+                        effect = {
+                            add_modifier = {
+                                modifier = ark_ship_no_damage_received_modifier
+                                days = -1
+                            }
+                        }
                     }
                     set_location = prev
-
-                    #set_fleet_stance = evasive
-                    #save_global_event_target_as = cosmogenesis_needle
-                    #add_modifier = {
-                    #    modifier = horizon_needle_mod
-                    #    days = -1
-                    #}
                 }
             }
+            destroy_ambient_object = this
         }
         last_created_fleet = {
-            auto_move_to_planet = {
-                target = root.capital_scope.solar_system.star
-                clear_auto_move_on_arrival = no
-                #destroy_on_arrival = yes
-                #arrival_effect = ark_gateway_arrival_effect
+            if = {
+                limit = {
+                    event_target:ark_country = {has_country_flag = ark_gateway_arrive_no_hyperlane}
+                }
+                set_fleet_flag = ark_gateway_main_fleet_through_space
+                event_target:ark_gateway_archaeology_system = {
+                    create_ambient_object = {
+                        type = "ark_ambient_null"
+                        location = this.star
+                    }
+                    last_created_ambient_object = {
+                        set_location = {
+                            target = prev
+                            distance = 600
+                            angle = random
+                        }
+                        save_event_target_as = ark_gateway_through_space_target
+                    }
+                }
+
+                auto_move_to_planet = {
+                    target = event_target:ark_gateway_through_space_target
+                    clear_auto_move_on_arrival = no
+                }
+                set_variable = {
+                    which = var_ark_gateway_voyage_ship_accelerate_timer
+                    value = 0
+                }
+                fleet_event = { id = ark_gateway.3231 }
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        event_target:ark_country = {has_country_flag = ark_gateway_arrive_no_hyperlane}
+                    }
+                }
+                auto_move_to_planet = {
+                    target = event_target:ARK_TYRA_HOME_SYSTEM.star
+                    clear_auto_move_on_arrival = no
+                    destroy_on_arrival = yes
+                }
             }
         }
     }
@@ -48,17 +108,20 @@ country_event = {
 # This = owner of fleet
 # From = fleet
 # FromFrom = planet (if any)
-#on_fleet_auto_move_arrival
+#on_fleet_auto_move_arrival  或  手动激活 has_country_flag = ark_gateway_manually_triggered
 country_event = {
     id = ark_gateway.11
     hide_window = yes
     is_triggered_only = yes
 
     trigger = {
-        from = {
-            has_fleet_flag = ark_gateway_main_fleet
+        OR = {
+            AND = {
+                from = { has_fleet_flag = ark_gateway_main_fleet }
+                solar_system = { NOT = { has_star_flag = ark_gateway_constructing } }
+            }
+            AND = { has_country_flag = ark_gateway_manually_triggered }
         }
-        solar_system = { NOT = { has_star_flag = ark_gateway_constructing } }
     }
 
     immediate = {
@@ -71,8 +134,10 @@ country_event = {
             spawn_megastructure = {
                 type = mega_shipyard_0
                 planet = star
+                init_effect = {
+                    set_owner = event_target:ark_country
+                }
             }
-
             export_trigger_value_to_variable = {
                 trigger = count_neighbor_system
                 variable = var_ark_neighbor_systems
@@ -91,15 +156,21 @@ country_event = {
                 }
 
                 create_fleet = {
-                    name = "NAME_Cosmogenesis_Sphere"
+                    name = "NAME_ark_gateway_prospector"
                     settings = {
                         can_disband = no
                     }
                     effect = {
-                        set_owner = root
+                        set_owner = event_target:ark_country
                         create_ship = {
-                            name = "NAME_Lemniscate"
+                            name = "NAME_ark_gateway_prospector"
                             design = "NAME_Monadic_Qerr"
+                            effect = {
+                                add_modifier = {
+                                    modifier = ark_ship_no_damage_received_modifier
+                                    days = -1
+                                }
+                            }
                         }
                         set_location = prev
                     }
@@ -122,7 +193,29 @@ country_event = {
             #every_neighbor_system = {
             #    remove_star_flag = ark_gateway_target_end
             #}
+            if = {
+                limit = { event_target:ark_country = { NOT = { has_country_flag = ark_gateway_communicate_1 } } }
+                event_target:ark_country = {
+                    country_event = {
+                        id = ark_gateway.111
+                    }
+                    set_country_flag = ark_gateway_communicate_1
+                }
+            }
         }
+    }
+}
+country_event = {
+    id = ark_gateway.111
+    is_triggered_only = yes
+    title = ark_gateway.111.title
+    desc =  ark_gateway.111.desc
+    picture = GFX_evt_ship_in_orbit_3
+    show_sound = event_finding_loot
+    trigger = {
+    }
+    option = {
+        name = ark_gateway.111.a
     }
 }
 # This = owner of fleet
@@ -153,9 +246,30 @@ country_event = {
             }
             log = "ARK 探针已出发返航"
         }
+        if = {
+            limit = { event_target:ark_country = { NOT = { has_country_flag = ark_gateway_communicate_2 } } }
+            event_target:ark_country = {
+                country_event = {
+                    id = ark_gateway.121
+                }
+                set_country_flag = ark_gateway_communicate_2
+            }
+        }
     }
 }
-
+country_event = {
+    id = ark_gateway.121
+    is_triggered_only = yes
+    title = ark_gateway.121.title
+    desc =  ark_gateway.121.desc
+    picture = GFX_evt_ship_in_orbit_3
+    show_sound = event_finding_loot
+    trigger = {
+    }
+    option = {
+        name = ark_gateway.121.a
+    }
+}
 #on_entering_system_fleet
 # A fleet has entered a system | See also: on_fleet_auto_move_arrival
 # Scope = Fleet
@@ -189,7 +303,15 @@ fleet_event = {
             #duration =
             #effect =
         }
-
+        if = {
+            limit = { event_target:ark_country = { NOT = { has_country_flag = ark_gateway_communicate_3 } } }
+            event_target:ark_country = {
+                country_event = {
+                    id = ark_gateway.131
+                }
+                set_country_flag = ark_gateway_communicate_3
+            }
+        }
         from = {
             change_variable = {
                 which = var_ark_neighbor_systems
@@ -200,6 +322,15 @@ fleet_event = {
                     check_variable = {
                         which = var_ark_neighbor_systems
                         value = 0
+                    }
+                }
+                if = {
+                    limit = { event_target:ark_country = { NOT = { has_country_flag = ark_gateway_communicate_4 } } }
+                    event_target:ark_country = {
+                        country_event = {
+                            id = ark_gateway.132
+                        }
+                        set_country_flag = ark_gateway_communicate_4
                     }
                 }
                 every_neighbor_system = {
@@ -218,6 +349,37 @@ fleet_event = {
         }
     }
 }
+country_event = {
+    id = ark_gateway.131
+    is_triggered_only = yes
+    title = ark_gateway.131.title
+    desc =  ark_gateway.131.desc
+    picture = GFX_evt_ship_in_orbit_3
+    show_sound = event_finding_loot
+    trigger = {
+    }
+    option = {
+        name = ark_gateway.121.a
+    }
+}
+country_event = {
+    id = ark_gateway.132
+    is_triggered_only = yes
+    title = ark_gateway.132.title
+    desc =  ark_gateway.132.desc
+    picture = GFX_evt_ship_in_orbit_3
+    show_sound = event_finding_loot
+    trigger = {
+    }
+    option = {
+        name = ark_gateway.132.a
+    }
+    after = {
+        hidden_effect = {
+            set_country_flag = ark_gateway_manually_triggered
+        }
+    }
+}
 
 
 
@@ -229,8 +391,369 @@ fleet_event = {
 
 
 
+#########################################
+#on_entering_system_first_time
+# Scope = Ship
+# From = System
+# FromFrom = Country
+ship_event = {
+    id = ark_gateway.20
+    is_triggered_only = yes
+    title = ark_gateway.20.title
+    desc =  ark_gateway.20.desc
+    picture = GFX_evt_megastructure_construction
+    trigger = {
+        from = { has_star_flag = ark_gateway_archaeology_system }
+        fromfrom = { has_origin = origin_ark_tragedy_birth }
+    }
+    option = {
+        name = ark_gateway.20.a
+        event_target:ark_gateway_archaeology_location = {
+            enable_special_project = {
+                name = ARK_GATEWAY_ARCHAEOLOGY_PROJECT
+                owner = prev.owner
+                location = this
+            }
+        }
+    }
+}
+#ARK_GATEWAY_ARCHAEOLOGY_PROJECT → on_success
+ship_event = {
+    id = ark_gateway.21
+    is_triggered_only = yes
+    title = ark_gateway.21.title
+    desc =  ark_gateway.21.desc
+    picture = GFX_evt_megastructure_construction
+    trigger = {
+    }
+    option = {
+        name = ark_gateway.21.a
+        owner = {
+            add_monthly_resource_mult = {
+                resource = engineering_research
+                value = @tier3researchreward
+                min = @tier3researchmin
+                max = @tier3researchmax
+            }
+        }
+    }
+}
+# on_tech_increased
+# This = Country
+country_event = {
+    id = ark_gateway.3
+    is_triggered_only = yes
+    title = ark_gateway.3.title
+    desc =  ark_gateway.3.desc
+    picture = GFX_evt_hyper_relay
+    trigger = {
+        NOT = { has_country_flag = ark_gateway_tech_triggered }
+        has_origin = origin_ark_tragedy_birth
+        has_technology = tech_hyper_relays
+        OR = {
+            has_technology = tech_zero_point_power
+            #has_technology = tech_bio_zero_point_power
+        }
+    }
+    immediate = {
+        set_country_flag = ark_gateway_tech_triggered
+    }
+    option = {
+        name = ark_gateway.3.a
 
+        event_target:ark_gateway_archaeology_location = {
+            enable_special_project = {
+                name = ARK_GATEWAY_ARCHAEOLOGY_PROJECT_2
+                owner = prev
+                location = this
+            }
+        }
+    }
+}
+#ARK_GATEWAY_ARCHAEOLOGY_PROJECT_2 → on_success
+ship_event = {
+    id = ark_gateway.31
+    is_triggered_only = yes
+    title = ark_gateway.31.title
+    desc =  ark_gateway.31.desc
+    picture = GFX_evt_hyper_relay
+    trigger = {
+    }
+    option = {
+        name = ark_gateway.31.a
+        custom_tooltip = ark_gateway.31.tooltip
+        event_target:ark_gateway_archaeology_location = {
+            create_archaeological_site = ark_gateway_archae
+        }
+    }
+}
+# 考古：ark_gateway_archae
+fleet_event = {
+	id = ark_gateway.311
+	title = ark_gateway.311.title
+	desc =  ark_gateway.311.desc
+	picture = GFX_evt_megastructure_construction
+	show_sound = event_big_door_opening
+	location = from
+	archaeology = yes
+	is_triggered_only = yes
+	option = {
+		name = ark_gateway.311.a
+        owner = {
+            add_monthly_resource_mult = {
+                resource = engineering_research
+                value = @tier3researchreward
+                min = @tier3researchmin
+                max = @tier3researchmax
+            }
+        }
+	}
+}
+fleet_event = {
+    id = ark_gateway.312
+    title = ark_gateway.312.title
+    desc =  ark_gateway.312.desc
+    picture = GFX_evt_ancient_databank
+    show_sound = event_wind_ruins
+    location = from
+    archaeology = yes
+    is_triggered_only = yes
+    option = {
+        name = ark_gateway.312.a
+        owner = {
+            add_monthly_resource_mult = {
+                resource = physics_research
+                value = @tier3researchreward
+                min = @tier3researchmin
+                max = @tier3researchmax
+            }
+        }
+    }
+}
+fleet_event = {
+    id = ark_gateway.313
+    title = ark_gateway.313.title
+    desc =  ark_gateway.313.desc
+    picture = GFX_evt_intelligence_report
+    show_sound = event_wind_ruins
+    location = from
+    archaeology = yes
+    is_triggered_only = yes
+    option = {
+        name = ark_gateway.313.a
+        owner = {
+            add_monthly_resource_mult = {
+                resource = society_research
+                value = @tier3researchreward
+                min = @tier3researchmin
+                max = @tier3researchmax
+            }
+        }
+    }
+}
+fleet_event = {
+    id = ark_gateway.314
+    title = ark_gateway.314.title
+    desc =  ark_gateway.314.desc
+    picture = GFX_evt_intelligence_report
+    show_sound = event_wind_ruins
+    location = from
+    archaeology = yes
+    is_triggered_only = yes
+    option = {
+        name = ark_gateway.314.a
+    }
+}
+fleet_event = {
+    id = ark_gateway.315
+    title = ark_gateway.315.title
+    desc =  ark_gateway.315.desc
+    picture = GFX_evt_intelligence_report
+    show_sound = event_wind_ruins
+    location = from
+    archaeology = yes
+    is_triggered_only = yes
+    option = {
+        name = ark_gateway.315.a
+    }
+}
+fleet_event = {
+    id = ark_gateway.316
+    title = ark_gateway.316.title
+    desc =  ark_gateway.316.desc
+    picture = GFX_evt_intelligence_report
+    show_sound = event_wind_ruins
+    location = from
+    archaeology = yes
+    is_triggered_only = yes
+    option = {
+        name = ark_gateway.316.a
+        custom_tooltip = ark_gateway.316.a.tooltip
+    }
+}
+fleet_event = {
+    id = ark_gateway.317
+    title = ark_gateway.317.title
+    desc =  ark_gateway.317.desc
+    picture = GFX_evt_physics_research
+    show_sound = event_wind_ruins
+    location = from
+    archaeology = yes
+    is_triggered_only = yes
+    option = {
+        name = ark_gateway.317.a
+        event_target:ark_gateway_archaeology_location = {
+            enable_special_project = {
+                name = ARK_GATEWAY_ARCHAEOLOGY_PROJECT_3
+                owner = prev.owner
+                location = this
+            }
+        }
+    }
+}
 
+country_event = {
+    id = ark_gateway.32
+    title = ark_gateway.32.title
+    desc =  ark_gateway.32.desc
+    picture = GFX_evt_physics_research
+    show_sound = event_door_opening
+    location = event_target:ark_gateway_archaeology_location
+    is_triggered_only = yes
+    immediate = {}
+    option = {
+        name = ark_gateway.32.a
+        custom_tooltip = ark_gateway.32.a.tooltip
+        event_target:ark_gateway_archaeology_location = {
+            enable_special_project = {
+                name = ARK_GATEWAY_ARCHAEOLOGY_PROJECT_321
+                owner = root
+                location = this
+            }
+        }
+    }
+    option = {
+        name = ark_gateway.32.b
+        custom_tooltip = ark_gateway.32.b.tooltip
+        hidden_effect = {
+            country_event = { id = ark_gateway.322 }
+        }
+    }
+}
+#加装超空间引擎后
+ship_event = {
+    id = ark_gateway.321
+    title = ark_gateway.321.title
+    desc =  ark_gateway.321.desc
+    picture = GFX_evt_physics_research
+    show_sound = event_door_opening
+    location = from
+    is_triggered_only = yes
+    immediate = {
+        event_target:ark_country = {
+            country_event = {
+                id = ark_gateway.1
+            }
+            establish_communications_no_message = root.owner
+        }
+    }
+    option = {
+        name = ark_gateway.321.a
+        custom_tooltip = ark_gateway.321.tooltip
+    }
+}
+#慢慢飞
+country_event = {
+    id = ark_gateway.322
+    title = ark_gateway.322.title
+    desc =  ark_gateway.322.desc
+    picture = GFX_evt_ship_in_orbit
+    show_sound = relic_activation_intact_zro_soulstone
+    location = event_target:ark_gateway_archaeology_location
+    is_triggered_only = yes
+    immediate = {}
+    option = {
+        name = ark_gateway.322.a
+        custom_tooltip = ark_gateway.322.a.tooltip
+        hidden_effect = {
+            set_country_flag = ark_gateway_arrive_no_hyperlane
+            event_target:ark_country = {
+                country_event = {
+                    id = ark_gateway.1
+                }
+                establish_communications_no_message = root.owner
+            }
+        }
+    }
+}
+#递归 加速
+fleet_event = {
+    id = ark_gateway.3231
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        exists = fleet
+        check_variable = {
+            which = var_ark_gateway_voyage_ship_accelerate_timer
+            value <= 20
+        }
+    }
+    immediate = {
+        change_variable = {
+            which = var_ark_gateway_voyage_ship_accelerate_timer
+            value = 1
+        }
+        remove_modifier = ark_gateway_voyage_ship_accelerate_modifier
+        add_modifier = {
+            modifier = ark_gateway_voyage_ship_accelerate_modifier
+            mult = var_ark_gateway_voyage_ship_accelerate_timer
+        }
+        fleet_event = { 
+            id = ark_gateway.3231
+            days = 2
+        }
+        if = {
+            limit = { 
+                check_variable = { 
+                    which = var_ark_gateway_voyage_ship_accelerate_timer
+                    value = 10
+                }
+            }
+            event_target:ark_country = {
+                country_event = { id = ark_gateway.3232 }
+            }
+        }
+    }
+}
+country_event = {
+    id = ark_gateway.3232
+    title = ark_gateway.3232.title
+    desc =  ark_gateway.3232.desc
+    picture = GFX_evt_ship_in_orbit
+    show_sound = relic_activation_intact_zro_soulstone
+    location = event_target:ark_gateway_archaeology_location
+    is_triggered_only = yes
+    immediate = {}
+    option = {
+        name = ark_gateway.3232.a
+        custom_tooltip = ark_gateway.3232.a.tooltip
+    }
+}
+#应该hide wimdow然后给ark_country刷一个country event
+fleet_event = {
+    id = ark_gateway.3233
+    title = ark_gateway.3232.title
+    desc =  ark_gateway.3232.desc
+    picture = GFX_evt_ship_in_orbit
+    show_sound = relic_activation_intact_zro_soulstone
+    location = event_target:ark_gateway_archaeology_location
+    is_triggered_only = yes
+    immediate = {}
+    option = {
+        name = ark_gateway.3232.a
+        custom_tooltip = ark_gateway.3232.a.tooltip
+    }
+}
 
 
 

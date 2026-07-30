@@ -19,6 +19,7 @@ trait_ARK_ocean_seaborn = {
 	opposites = {
 		trait_aquatic trait_lithoid trait_noxious
 	}
+
 	#allowed_origins = { origin_ark_stella_caerula }
 	#forced_happiness = yes
 	#modifier = {

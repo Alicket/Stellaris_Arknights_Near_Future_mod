@@ -2,51 +2,39 @@ Arknight = {
 	archetype = BIOLOGICAL
 	randomized = yes
 	possible = {
-		#ethics = {
-		#	NOR = {	# 非格式塔
-		#		value = ethic_gestalt_consciousness
-		#		#value = ethic_authoritarian
-		#		#value = ethic_fanatic_authoritarian
-		#	}
-		#}
+
 	}
-
-	#portraits = {
-	#	"arknights_npc"
-	#	"arknights_s12LEADER_NPCpop"
-	#	#"arknights_s1LEADER_NPCpop"
-	#}
-
+	trait = "trait_organic"
 	graphical_culture = arknights_01
 	move_pop_sound_effect = "moving_pop_confirmation"
 }
 
-ArkRobot = {
-	archetype = ROBOT
-	
-	playable = { has_global_flag = game_started }
-	randomized = no
-	gender = no
-	use_climate_preference = no
-	portrait_modding = yes
-
-	possible = {
-
-	}
-
-	leader_age_min = 2
-	leader_age_max = 10
-
-	custom_portraits = {
-		randomized = { host_has_dlc = "Synthetic Dawn Story Pack" }
-		playable = { host_has_dlc = "Synthetic Dawn Story Pack" }
-		portraits = {
-			"terra_creation"
-		}
-	}
-
-	graphical_culture = arknights_01
-	move_pop_sound_effect = "robot_pops_move"
-
-	resources = {}
-}
+#ArkRobot = {
+#	archetype = ROBOT
+#
+#	playable = { has_global_flag = game_started }
+#	randomized = no
+#	gender = no
+#	use_climate_preference = no
+#	portrait_modding = yes
+#
+#	possible = {
+#
+#	}
+#
+#	leader_age_min = 2
+#	leader_age_max = 10
+#
+#	custom_portraits = {
+#		randomized = { host_has_dlc = "Synthetic Dawn Story Pack" }
+#		playable = { host_has_dlc = "Synthetic Dawn Story Pack" }
+#		portraits = {
+#			"terra_creation"
+#		}
+#	}
+#
+#	graphical_culture = arknights_01
+#	move_pop_sound_effect = "robot_pops_move"
+#
+#	resources = {}
+#}

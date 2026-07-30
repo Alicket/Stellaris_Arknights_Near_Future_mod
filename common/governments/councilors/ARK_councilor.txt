@@ -35,7 +35,7 @@ councilor_business_union = {
 	civic = civic_business_union
 	modifier = {
 		branch_office_value_mult = 0.02
-		empire_size_branch_office_mult = -0.03
+		empire_size_branch_office_mult = -0.02
 	}
 }
 
@@ -85,7 +85,8 @@ councilor_logistics_companies = {
 	civic = civic_warehousing_logistics_groups
 	modifier = {
 		empire_size_systems_mult = -0.02
-		empire_size_colonies_mult = -0.02
+		empire_size_colonies_mult = -0.01
+		country_trade_produces_mult = 0.01
 	}
 }
 
@@ -101,6 +102,7 @@ councilor_investment_laboratories = {
 		planet_jobs_engineering_research_produces_mult = 0.015
 		planet_jobs_physics_research_produces_mult = 0.015
 		planet_jobs_society_research_produces_mult = 0.015
+		planet_researchers_upkeep_mult = -0.01
 	}
 }
 
@@ -143,7 +145,7 @@ councilor_chivalry = {
 	civic = civic_chivalry
 	modifier = {
 		country_unity_produces_mult = 0.02
-		ship_weapon_damage = 0.02
+		ship_weapon_damage = 0.015
 	}
 }
 
@@ -156,10 +158,10 @@ councilor_heavy_taxation = {
 	}
 	civic = civic_heavy_taxation
 	modifier = {
-		planet_jobs_produces_mult = 0.01
-		planet_jobs_slave_produces_mult = 0.02
+		planet_jobs_produces_mult = 0.02
+		#planet_jobs_slave_produces_mult = 0.02
 		pop_happiness = -0.005
-		pop_cat_slave_happiness = -0.01
+		pop_cat_slave_happiness = -0.005
 	}
 }
 
@@ -174,7 +176,8 @@ councilor_industry_manufacturers = {
 	}
 	civic = civic_industry_manufacturers
 	modifier = {
-		planet_jobs_alloys_produces_mult = 0.02
+		starbase_shipyard_build_speed_mult = 0.03
+		planet_army_build_speed_mult = 0.03
 		planet_building_build_speed_mult = 0.02
 	}
 }

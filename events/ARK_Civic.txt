@@ -258,7 +258,7 @@ country_event = {
 		name = ark_civic.2.e	# 课征重税
 		trigger = {
 			NOT = { has_civic = civic_heavy_taxation }
-			OR = {
+			NOR = {
 				has_ethic = ethic_egalitarian
 				has_ethic = ethic_fanatic_egalitarian
 			}
@@ -338,7 +338,7 @@ country_event = {
 		name = ark_civic.2.e	# 沿用ark_civic.2的本地化
 		trigger = {
 			NOT = { has_civic = civic_heavy_taxation }
-			OR = {
+			NOR = {
 				has_ethic = ethic_egalitarian
 				has_ethic = ethic_fanatic_egalitarian
 			}

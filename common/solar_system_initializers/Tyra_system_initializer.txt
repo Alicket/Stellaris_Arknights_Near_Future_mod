@@ -74,7 +74,7 @@
 # }
 Tyra_system = {
 	name = "NAME_Terra"
-	class = "sc_ark_a"
+	class = sc_a
 	flags = { Tyra_system ark_isolated }
 	usage = custom_empire
 
@@ -297,6 +297,16 @@ Tyra_system = {
 			add_deposit = d_originiums_3
 		}
 	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 2 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_first_colony"
+	}
 }
 Chaos_system = {
 	name = "NAME_Chaos"
@@ -423,16 +433,11 @@ Chaos_system = {
 		save_global_event_target_as = ARK_TYRA_CHAOS_SYSTEM
 	}
 
-	#neighbor_system = {
-	#	trigger = { num_guaranteed_colonies >= 2 }
-	#	distance = { min = 10 max = @distance }
-	#	initializer = "neighbor_t1"
-	#}
-	#neighbor_system = {
-	#	trigger = { num_guaranteed_colonies >= 1 }
-	#	distance = { min = 10 max = @distance }
-	#	initializer = "neighbor_t1_first_colony"
-	#}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
+		distance = { min = 10 max = @distance }
+		initializer = "neighbor_t1_first_colony"
+	}
 }
 #Tyra_system = {
 #	name = "NAME_Tyra_system"

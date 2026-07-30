@@ -6,3 +6,10 @@ ambient_object = {
 	description = ark_arclight_one_object_desc
 	tooltip = ark_arclight_one_object_tooltip
 }
+
+ambient_object = {
+	name = "ark_ambient_null"
+	entity = "ark_null_entity"
+	selectable = no
+	show_name = no
+}

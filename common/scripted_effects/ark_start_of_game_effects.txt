@@ -1,5 +1,6 @@
 # 泰拉初始地块
 generate_terra_deposits_and_blockers = {
+	#optimize_memory
 	clear_deposits = yes
 
 	# 发电区划
@@ -88,6 +89,7 @@ generate_terra_deposits_and_blockers = {
 
 # 明日方舟国家初始区划
 arknight_start_districts = {
+	#optimize_memory
 	add_district = district_generator
 	add_district = district_generator
 	add_district = district_mining

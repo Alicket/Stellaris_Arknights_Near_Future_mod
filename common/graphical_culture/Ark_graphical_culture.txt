@@ -1,6 +1,13 @@
 arknights_01 = {
 	fallback = mammalian_01
-	ship_kinds = { default_ship }
+	ship_kinds = {
+		default_ship
+		space_amoeba
+		tiyanki
+		voidworm
+		cutholoid
+		crystalline_entity
+	}
 	ship_lighting = {
 		cam_light_1_dir = { 0.4 0.0 0.0 }
 		cam_light_2_dir = { -0.5 0.0 0.0 }
@@ -9,7 +16,7 @@ arknights_01 = {
 		#cam_light_1_dir = { 1.0 0.0 0.5 }
 		#cam_light_2_dir = { -0.5 -0.2 0.0 }
 		#cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		intensity_near = 1.0
 		intensity_far = 5.0
 		near_value = 700

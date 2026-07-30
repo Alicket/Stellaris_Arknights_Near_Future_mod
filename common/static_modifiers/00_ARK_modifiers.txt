@@ -140,12 +140,13 @@ g_dqmszc_modifier = {	# 地区免税政策
 	icon_frame = 1
 }
 g_jyzdbt_modifier = {	# 就业指导补贴
-	pop_demotion_time_mult = -0.25
+	worker_and_simple_drone_cat_bonus_workforce_mult = 0.15
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
 	icon_frame = 1
 }
 y_znjxzc_modifier = {	# 智能机械支持
-	planet_pop_assembly_mult = 0.1
+	planet_pop_assembly_mult = 0.25
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
 	icon_frame = 1
 }
@@ -155,18 +156,19 @@ y_xxfyzl_modifier = {	# 行星防御指令
 	icon_frame = 1
 }
 y_cbfzgh_modifier = {	# 城邦发展规划
-	planet_building_build_speed_mult = 0.1
+	planet_building_build_speed_mult = 0.33
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
 	icon_frame = 1
 }
 y_tkjdjs_modifier = {	# 太空舰队建设
-	starbase_shipyard_build_speed_mult = 0.1
+	starbase_shipyard_build_speed_mult = 0.25
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
 	icon_frame = 1
 }
 r_tllhscl_modifier = {	# 泰拉联合搜查令
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
 	planet_jobs_unity_produces_mult = -0.1
+	planet_crime_mult = -0.33
 	icon_frame = 2
 }
 terra_council = {	# 联合会议筹备中
@@ -177,6 +179,10 @@ peak_plan_training = {	# 巅峰计划进行中
 	icon = "gfx/interface/icons/planet_modifiers/pm_peak_plan_training.dds"
 	country_energy_produces_mult = -0.05
 	icon_frame = 1
+}
+ark_eternal_doctor = {	# 在文明的尽头相遇
+	icon = "gfx/interface/icons/planet_modifiers/pm_terra_council.dds"
+	election_term_years_add = 36888
 }
 originium_bombs_contaminated_0 = {	# 遭到源石轰炸
 	icon = "gfx/interface/icons/planet_modifiers/pm_originium_bombs_contaminated_0.dds"
@@ -240,4 +246,25 @@ contingency_contract_5 = {	# 危机合约：部署
 	starbase_shipyard_build_speed_mult = 0.2		  # 舰船建造速度
 	icon = "gfx/interface/icons/modifiers/contingency_contract_5.dds"
 	icon_frame = 1
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ark_gateway_voyage_ship_accelerate_modifier = {
+	ship_base_speed_mult = 1
+}
+ark_ship_no_damage_received_modifier = {
+	ship_damage_reduction_mult = 10
 }

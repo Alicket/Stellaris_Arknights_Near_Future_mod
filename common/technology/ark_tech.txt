@@ -963,6 +963,100 @@ tech_ark_mass_accelerator_2 = {
 	}
 }
 
+# 洛夫罗动热换能器1（共振、熔甲）
+tech_ark_lovro_acc_1 = {
+	area = engineering
+	cost = @tier5cost1
+	tier = 4
+	category = { propulsion }
+	ai_update_type = military
+	prerequisites = { "tech_originiums_mining" "tech_ark_mass_accelerator_2" }
+	#weight = @tier5weight1
+	weight = 0
+
+	potential = {
+		has_originium_traits = yes
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_propulsion }
+		}
+	}
+
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_propulsion }
+		}
+	}
+}
+
+# 洛夫罗动热换能器2（坍缩）
+tech_ark_lovro_acc_2 = {
+	area = engineering
+	cost = @tier5cost3
+	tier = 4
+	category = { propulsion }
+	ai_update_type = military
+	prerequisites = { "tech_originiums_mining" "tech_ark_lovro_acc_1" }
+	#weight = @tier5weight3
+	weight = 0
+
+	potential = {
+		has_originium_traits = yes
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_propulsion }
+		}
+	}
+
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_propulsion }
+		}
+	}
+}
+
 # 源能涨落增压器
 tech_ark_booster = {
 	area = physics

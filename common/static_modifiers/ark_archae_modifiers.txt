@@ -10,12 +10,12 @@ cm_ark_kerrolli_battle_tech = {
 	icon = "gfx/interface/icons/modifiers/mod_damage_vs_country_type.dds"
 	icon_frame = 1
 }
-minus_10_energy_1_food_per_month = {
-	country_base_energy_produces_add = -10
-	country_base_food_produces_add = -1
-	icon = "gfx/interface/icons/modifiers/mod_country_terraforming_cost_mult.dds"
-	icon_frame = 1
-}
+# minus_10_energy_1_food_per_month = {
+# 	country_base_energy_produces_add = -10
+# 	country_base_food_produces_add = -1
+# 	icon = "gfx/interface/icons/modifiers/mod_country_terraforming_cost_mult.dds"
+# 	icon_frame = 1
+# }
 
 arkocean_mould_modifier_1_1a = {
 	ship_corvette_food_cost_add = 50

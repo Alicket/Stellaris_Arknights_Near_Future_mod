@@ -4,11 +4,12 @@ origin_ark_tragedy_birth = {
 	picture = GFX_origin_ark_tragedy_birth
 
 	possible = {
-		authority = {
-			OR = {
-				value = auth_city_republic
-			}
-		}
+		#authority = {
+		#	OR = {
+		#		value = auth_city_republic
+		#	}
+		#}
+		is_nomadic = no
 		ethics = {
 			NOT = { value = ethic_gestalt_consciousness }
 		}

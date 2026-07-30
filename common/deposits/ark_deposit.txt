@@ -8,6 +8,21 @@
 @blocker_high = 10
 @blocker_low = 5
 
+
+
+#########################################################################################################
+
+
+                   ##########  ##########  #########   #########    ########
+                       ##      ##          ##      ##  ##      ##  ##      ##
+                       ##      ######      #########   #########   ##########
+                       ##      ##          ##     ##   ##     ##   ##      ##
+                       ##      ##########  ##      ##  ##      ##  ##      ##
+
+
+#########################################################################################################
+
+
 # 感染封锁区
 d_infection_blockade = {
 	icon = d_originiums_place
@@ -66,7 +81,7 @@ d_lungmen_special_economic_zone = {
 	icon = d_lungmen
 	
 	planet_modifier = { 
-		district_generator_max = 3
+		district_generator_max_add = 3
 	}
 	
 	drop_weight = {
@@ -103,7 +118,7 @@ d_sargon_rainforest = {
 	icon = d_sargon_rainforest
 	
 	planet_modifier = {
-		district_farming_max = 2
+		district_farming_max_add = 4
 	}
 	resources = {
 		produces = {
@@ -124,7 +139,7 @@ d_foehn_hot_earth = {
 	category = deposit_cat_energy
 
 	planet_modifier = {
-		district_generator_max = 2
+		district_generator_max_add = 4
 	}
 	
 	drop_weight = {
@@ -166,7 +181,7 @@ d_ursus_development = {
 	icon = d_ursus_development
 	
 	planet_modifier = {
-		district_mining_max = 2
+		district_mining_max_add = 4
 	}
 	
 	drop_weight = {
@@ -180,7 +195,7 @@ d_rimbilliton_industrial_belt = {
 	icon = d_rimbilliton_industrial_belt
 	
 	planet_modifier = {
-		district_mining_max = 3
+		district_mining_max_add = 4
 	}
 	
 	drop_weight = {
@@ -199,7 +214,7 @@ d_silent_deep_sea = {
 	can_be_cleared = { always = no }
 
 	planet_modifier = {
-		district_farming_max = -1
+		district_farming_max_add = -1
 	}
 }
 
@@ -235,7 +250,7 @@ d_former_countries_controlled = {
 				}
 				root = {
 					remove_planet_flag = ark_unify_able_flag
-					create_pop = {
+					create_pop_group = {
 						species = prev
 						size = 500
 					}
@@ -247,7 +262,7 @@ d_former_countries_controlled = {
 			random_owned_pop_group = {
 				root = {
 					remove_planet_flag = ark_unify_able_flag
-					create_pop = {
+					create_pop_group = {
 						species = prev
 						size = 500
 					}
@@ -265,3 +280,162 @@ d_former_countries_controlled = {
 		}
 	}
 }
+d_ark_aegir_generator = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	icon = d_station_reactor
+	resources = {
+		category = planet_deposits
+		produces = {
+			energy = 125
+		}
+	}
+	potential = { always = no }
+	drop_weight = { weight = 0 }
+}
+
+d_ark_moist_mys_area = {
+	is_for_colonizable = yes
+	potential = { always = no }
+	drop_weight = { weight = 0 }
+	category = deposit_cat_rare
+	icon = d_monument
+	planet_modifier = {
+		planet_amenities_add = 5
+	}
+	resources = {
+		category = planet_deposits
+		produces = {
+			physics_research = 10
+			society_research = 10
+			engineering_research = 10
+		}
+	}
+}
+
+
+
+#########################################################################################################
+
+
+                  ########    #########  ##########   ########   ####    ##
+                 ##      ##  ##          ##          ##      ##  ## ##   ##
+                 ##      ##  ##          ######      ##########  ##  ##  ##
+                 ##      ##  ##          ##          ##      ##  ##   ## ##
+                  ########    #########  ##########  ##      ##  ##    ####
+
+
+#########################################################################################################
+
+
+
+
+
+d_arkocean_deepsea = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	icon = d_silent_deep_sea
+	planet_modifier = {
+		district_farming_max_add = 3
+		planet_housing_add = 5
+	}
+
+	potential = { always = no }
+	drop_weight = { weight = 0 }
+}
+d_arkocean_generator = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	icon = d_reactor
+	planet_modifier = {
+		district_generator_max_add = 2
+	}
+
+	potential = { always = no }
+	drop_weight = { weight = 0 }
+}
+d_arkocean_mine = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	icon = d_prospectorium_strip_mine
+	planet_modifier = {
+		district_mining_max_add = 2
+	}
+
+	potential = { always = no }
+	drop_weight = { weight = 0 }
+}
+d_arkocean_terra_city = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	icon = d_quarantine_zone
+	triggered_planet_modifier = {
+		potential = {
+			owner = { has_country_flag = arkocean_gestalt_country }
+		}
+		job_warrior_drone_add = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			owner = { has_country_flag = arkocean_normal_country }
+		}
+		job_soldier_add = 1
+	}
+	resources = {
+		category = planet_deposits
+		produces = {
+			society_research = 15
+		}
+	}
+
+	potential = { always = no }
+	drop_weight = { weight = 0 }
+}
+
+
+
+
+
+#########################################################################################################
+
+
+                     ########   ##########  ##      ##  ##########  #########
+                    ##      ##      ##      ##      ##  ##          ##      ##
+                    ##      ##      ##      ##########  ######      #########
+                    ##      ##      ##      ##      ##  ##          ##     ##
+                     ########       ##      ##      ##  ##########  ##      ##
+
+
+#########################################################################################################
+
+
+
+
+d_ark_frozen_planet_deposit = {
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			originiums = 1
+			rare_crystals = 1
+			minerals = 6
+		}
+	}
+	icon = d_blue_lava
+	station = shipclass_mining_station
+	is_for_colonizable = no
+
+	potential = { always = no }
+	drop_weight = { weight = 0 }
+}
+d_originiums_3 = {
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			originiums = 3
+		}
+	}
+	station = shipclass_mining_station
+	potential = { always = no }
+	drop_weight = { weight = 0 }
+}
+

@@ -226,3 +226,97 @@ special_project = {
 
 
 
+
+
+
+special_project = {
+	key = "ARK_GATEWAY_ARCHAEOLOGY_PROJECT"
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_megastructure_construction
+	location = yes
+	event_scope = ship_event
+	days_to_research = 60
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+	}
+	on_success = {
+		ship_event = {
+			id = ark_gateway.21
+		}
+	}
+}
+special_project = {
+	key = "ARK_GATEWAY_ARCHAEOLOGY_PROJECT_2"
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_megastructure_construction
+	location = yes
+	event_scope = ship_event
+	days_to_research = 30
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+	}
+	on_success = {
+		ship_event = {
+			id = ark_gateway.31
+		}
+	}
+}
+special_project = {
+	key = "ARK_GATEWAY_ARCHAEOLOGY_PROJECT_3"
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_generator_powerup
+	location = yes
+	cost = @tier4cost3
+	tech_department = engineering_technology
+
+	event_scope = ship_event
+	#days_to_research = 360
+
+	requirements = {
+		shipclass_constructor = 2
+		#leader = scientist
+	}
+
+	on_success = {
+		country_event = {
+			id = ark_gateway.32
+		}
+	}
+}
+special_project = {
+	key = "ARK_GATEWAY_ARCHAEOLOGY_PROJECT_321"
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_generator_powerup
+	location = yes
+	days_to_research = 1800
+	tech_department = engineering_technology
+
+	requirements = {
+		leader = scientist
+	}
+
+	on_success = {
+		ship_event = {
+			id = ark_gateway.321
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

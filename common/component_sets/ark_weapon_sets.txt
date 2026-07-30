@@ -85,6 +85,25 @@ component_set = {		# 源能宏炮
 	icon_frame = 1	
 }
 
+component_set = {		# 洛夫罗动热换能器（共振弹头）
+	key = "ARK_LOVRO_TRANSDUCER_1"
+
+	icon = "GFX_ark_ship_part_mass_accelerator_2"
+	icon_frame = 1
+}
+component_set = {		# 洛夫罗动热换能器（共振弹头）
+	key = "ARK_LOVRO_TRANSDUCER_2"
+
+	icon = "GFX_ark_ship_part_mass_accelerator_2"
+	icon_frame = 1
+}
+component_set = {		# 洛夫罗动热换能器（共振弹头）
+	key = "ARK_LOVRO_TRANSDUCER_3"
+
+	icon = "GFX_ark_ship_part_mass_accelerator_2"
+	icon_frame = 1
+}
+
 component_set = {		# 现实坍缩
 	key = "ARK_REALITY_COLLAPSE"
 

@@ -2,11 +2,12 @@
 civic_business_union = {
 	description = "civic_tooltip_business_union_effects"
 	potential = {
-		authority = {
-			OR = {
-				value = auth_city_republic
-			}
-		}
+		#authority = {
+		#	OR = {
+		#		value = auth_city_republic
+		#	}
+		#}
+		origin = { value = origin_ark_tragedy_birth }
 	}
 	possible = {
 		civics = {
@@ -30,7 +31,8 @@ civic_pharmaceutical_enterprises = {
 	random_weight = { base = 0 }
 	description = "civic_tooltip_pharmaceutical_enterprises_effects"
 	potential = {
-		authority = { value = auth_city_republic }
+		#authority = { value = auth_city_republic }
+		origin = { value = origin_ark_tragedy_birth }
 		civics = { value = civic_business_union }
 		ethics = {
 			NOT = {
@@ -53,7 +55,8 @@ civic_pharmaceutical_enterprises = {
 # 仓储物流集团
 civic_warehousing_logistics_groups = {
 	potential = {
-		authority = { value = auth_city_republic }
+		#authority = { value = auth_city_republic }
+		origin = { value = origin_ark_tragedy_birth }
 		civics = { value = civic_business_union }
 	}
 	random_weight = { base = 0 }
@@ -67,7 +70,8 @@ civic_warehousing_logistics_groups = {
 civic_investment_laboratories = {
 	description = "civic_tooltip_investment_laboratories_effects"
 	potential = {
-		authority = { value = auth_city_republic }
+		#authority = { value = auth_city_republic }
+		origin = { value = origin_ark_tragedy_birth }
 		civics = { value = civic_business_union }
 	}
 	random_weight = { base = 0 }
@@ -88,7 +92,8 @@ civic_investment_laboratories = {
 # 安全承包商
 civic_security_contractors = {
 	potential = {
-		authority = { value = auth_city_republic }
+		#authority = { value = auth_city_republic }
+		origin = { value = origin_ark_tragedy_birth }
 		civics = { value = civic_business_union }
 	}
 	random_weight = { base = 0 }
@@ -103,10 +108,10 @@ civic_security_contractors = {
 		civics = { NOT = { value = civic_warrior_culture } }
 	}
 	modifier = {
-		army_starting_experience_add = 150
-		army_damage_mult = 0.15
-		armies_upkeep_mult = -0.15
-		planet_army_build_speed_mult = 0.15
+		army_starting_experience_add = 100
+		army_damage_mult = 0.1
+		armies_upkeep_mult = -0.1
+		planet_army_build_speed_mult = 0.1
 	}
 	swap_type = {
 		trigger = {
@@ -122,7 +127,8 @@ civic_security_contractors = {
 # 工业制造商
 civic_industry_manufacturers = {
 	potential = {
-		authority = { value = auth_city_republic }
+		#authority = { value = auth_city_republic }
+		origin = { value = origin_ark_tragedy_birth }
 		civics = { value = civic_business_union }
 	}
 	random_weight = { base = 0 }
@@ -134,7 +140,8 @@ civic_industry_manufacturers = {
 # 流通商业
 civic_circulation_business = {
 	potential = {
-		authority = { value = auth_city_republic }
+		#authority = { value = auth_city_republic }
+		origin = { value = origin_ark_tragedy_birth }
 		civics = { value = civic_business_union }
 	}
 	random_weight = { base = 0 }
@@ -147,11 +154,12 @@ civic_circulation_business = {
 civic_union_summit = {
 	description = "civic_tooltip_union_summit_effects"
 	potential = {
-		authority = {
-			OR = {
-				value = auth_city_republic
-			}
-		}
+		#authority = {
+		#	OR = {
+		#		value = auth_city_republic
+		#	}
+		#}
+		origin = { value = origin_ark_tragedy_birth }
 	}
 	possible = {
 		civics = { NOT = { value = civic_business_union } }
@@ -167,7 +175,8 @@ civic_medical_welfare = {
 	random_weight = { base = 0 }
 	description = "civic_tooltip_medical_welfare_effects"
 	potential = {
-		authority = { value = auth_city_republic }
+		#authority = { value = auth_city_republic }
+		origin = { value = origin_ark_tragedy_birth }
 		civics = { value = civic_union_summit }
 		ethics = {
 			NOT = {
@@ -191,15 +200,17 @@ civic_medical_welfare = {
 civic_messenger_network = {
 	description = "civic_tooltip_messenger_network_effects"
 	potential = {
-		authority = {
-			OR = {
-				value = auth_city_republic
-			}
-		}
+		#authority = {
+		#	OR = {
+		#		value = auth_city_republic
+		#	}
+		#}
+		origin = { value = origin_ark_tragedy_birth }
 	}
 	random_weight = { base = 0 }
 	modifier = {
 		empire_size_colonies_mult = -0.1
+		empire_size_systems_mult = -0.1
 	}
 }
 
@@ -207,11 +218,12 @@ civic_messenger_network = {
 civic_security_services = {
 	description = "civic_tooltip_security_services_effects"
 	potential = {
-		authority = {
-			OR = {
-				value = auth_city_republic
-			}
-		}
+		#authority = {
+		#	OR = {
+		#		value = auth_city_republic
+		#	}
+		#}
+		origin = { value = origin_ark_tragedy_birth }
 	}
 	possible = {
 		civics = { NOT = { value = civic_criminal_heritage } }
@@ -227,11 +239,12 @@ civic_security_services = {
 civic_holy_notarial_hall = {
 	description = "civic_tooltip_holy_notarial_hall_effects"
 	potential = {
-		authority = {
-			OR = {
-				value = auth_city_republic
-			}
-		}
+		#authority = {
+		#	OR = {
+		#		value = auth_city_republic
+		#	}
+		#}
+		origin = { value = origin_ark_tragedy_birth }
 	}
 	possible = {
 		ethics = {
@@ -252,11 +265,12 @@ civic_holy_notarial_hall = {
 civic_chivalry = {
 	description = "civic_tooltip_chivalry_effects"
 	potential = {
-		authority = {
-			OR = {
-				value = auth_city_republic
-			}
-		}
+		#authority = {
+		#	OR = {
+		#		value = auth_city_republic
+		#	}
+		#}
+		origin = { value = origin_ark_tragedy_birth }
 	}
 	possible = {
 		ethics = {
@@ -277,11 +291,12 @@ civic_chivalry = {
 civic_heavy_taxation = {
 	description = "civic_tooltip_heavy_taxation_effects"
 	potential = {
-		authority = {
-			OR = {
-				value = auth_city_republic
-			}
-		}
+		#authority = {
+		#	OR = {
+		#		value = auth_city_republic
+		#	}
+		#}
+		origin = { value = origin_ark_tragedy_birth }
 	}
 	possible = {
 		ethics = {

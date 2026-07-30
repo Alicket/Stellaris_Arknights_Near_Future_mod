@@ -166,7 +166,9 @@ country_event = {
 		trigger = { has_country_flag = g_jssjjs }
 		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
 		add_resource = { influence = -25 }
-		add_modifier = { modifier = "terra_council" days = 1800 }
+		hidden_effect = {
+			add_modifier = { modifier = "terra_council" days = 1800 }
+		}
 		add_modifier = { modifier = g_jssjjs_modifier days = 1800 }
 		hidden_effect = {
 			set_country_flag = r_tllhscl_end
@@ -200,7 +202,9 @@ country_event = {
 		trigger = { has_country_flag = g_wzsjjs }
 		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
 		add_resource = { influence = -25 }
-		add_modifier = { modifier = "terra_council" days = 1800 }
+		hidden_effect = {
+			add_modifier = { modifier = "terra_council" days = 1800 }
+		}
 		add_modifier = { modifier = g_wzsjjs_modifier days = 1800 }
 		hidden_effect = {
 			set_country_flag = r_tllhscl_end
@@ -234,7 +238,9 @@ country_event = {
 		trigger = { has_country_flag = g_gdzbzzzc }
 		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
 		add_resource = { influence = -25 }
-		add_modifier = { modifier = "terra_council" days = 1800 }
+		hidden_effect = {
+			add_modifier = { modifier = "terra_council" days = 1800 }
+		}
 		add_modifier = { modifier = g_gdzbzzzc_modifier days = 1800 }
 		hidden_effect = {
 			set_country_flag = r_tllhscl_end
@@ -268,7 +274,9 @@ country_event = {
 		trigger = { has_country_flag = g_zlzycyzz }
 		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
 		add_resource = { influence = -25 }
-		add_modifier = { modifier = "terra_council" days = 1800 }
+		hidden_effect = {
+			add_modifier = { modifier = "terra_council" days = 1800 }
+		}
 		add_modifier = { modifier = g_zlzycyzz_modifier days = 1800 }
 		hidden_effect = {
 			set_country_flag = r_tllhscl_end
@@ -302,7 +310,9 @@ country_event = {
 		trigger = { has_country_flag = g_dqmszc }
 		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
 		add_resource = { influence = -25 }
-		add_modifier = { modifier = "terra_council" days = 1800 }
+		hidden_effect = {
+			add_modifier = { modifier = "terra_council" days = 1800 }
+		}
 		add_modifier = { modifier = g_dqmszc_modifier days = 1800 }
 		hidden_effect = {
 			set_country_flag = r_tllhscl_end
@@ -336,7 +346,9 @@ country_event = {
 		trigger = { has_country_flag = g_jyzdbt }
 		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
 		add_resource = { influence = -25 }
-		add_modifier = { modifier = "terra_council" days = 1800 }
+		hidden_effect = {
+			add_modifier = { modifier = "terra_council" days = 1800 }
+		}
 		add_modifier = { modifier = g_jyzdbt_modifier days = 1800 }
 		hidden_effect = {
 			set_country_flag = r_tllhscl_end
@@ -368,13 +380,17 @@ country_event = {
 		name = ark_rhodes_island.3.y1_1	# 秩序的大地Ⅰ（只有一次，不选可重新出现）
 		custom_tooltip = ark_rhodes_island.3.y1_tooltip
 		trigger = { has_country_flag = y_zxddd_1 }
-		allow = { resource_stockpile_compare = { resource = energy value >= 100 } }
-		allow = { resource_stockpile_compare = { resource = influence value >= 50 } }
+		allow = {
+			resource_stockpile_compare = { resource = energy value >= 100 }
+			resource_stockpile_compare = { resource = influence value >= 50 }
+		}
 		add_resource = {
 			energy = -100
 			influence = -50
 		}
-		add_modifier = { modifier = "terra_council" days = 1800 }
+		hidden_effect = {
+			add_modifier = { modifier = "terra_council" days = 1800 }
+		}
 		hidden_effect = {
 			country_event = { id = ark_rhodes_island.301 }
 			set_country_flag = y_zxddd_1_end
@@ -407,13 +423,17 @@ country_event = {
 		name = ark_rhodes_island.3.y1_2	# 秩序的大地Ⅱ（只有一次，不选可重新出现）
 		custom_tooltip = ark_rhodes_island.3.y1_tooltip
 		trigger = { has_country_flag = y_zxddd_2 }
-		allow = { resource_stockpile_compare = { resource = energy value >= 100 } }
-		allow = { resource_stockpile_compare = { resource = influence value >= 50 } }
+		allow = {
+			resource_stockpile_compare = { resource = energy value >= 100 }
+			resource_stockpile_compare = { resource = influence value >= 50 }
+		}
 		add_resource = {
 			energy = -100
 			influence = -50
 		}
-		add_modifier = { modifier = "terra_council" days = 1800 }
+		hidden_effect = {
+			add_modifier = { modifier = "terra_council" days = 1800 }
+		}
 		hidden_effect = {
 			country_event = { id = ark_rhodes_island.302 }
 			set_country_flag = y_zxddd_2_end
@@ -446,13 +466,17 @@ country_event = {
 		name = ark_rhodes_island.3.y1_3	# 秩序的大地Ⅲ（只有一次，不选可重新出现）
 		custom_tooltip = ark_rhodes_island.3.y1_tooltip
 		trigger = { has_country_flag = y_zxddd_3 }
-		allow = { resource_stockpile_compare = { resource = energy value >= 100 } }
-		allow = { resource_stockpile_compare = { resource = influence value >= 50 } }
+		allow = {
+			resource_stockpile_compare = { resource = energy value >= 100 }
+			resource_stockpile_compare = { resource = influence value >= 50 }
+		}
 		add_resource = {
 			energy = -100
 			influence = -50
 		}
-		add_modifier = { modifier = "terra_council" days = 1800 }
+		hidden_effect = {
+			add_modifier = { modifier = "terra_council" days = 1800 }
+		}
 		hidden_effect = {
 			country_event = { id = ark_rhodes_island.303 }
 			set_country_flag = y_zxddd_3_end
@@ -485,13 +509,17 @@ country_event = {
 		name = ark_rhodes_island.3.y1_4	# 秩序的大地 Ⅳ（只有一次，不选可重新出现）
 		custom_tooltip = ark_rhodes_island.3.y1_tooltip
 		trigger = { has_country_flag = y_zxddd_4 }
-		allow = { resource_stockpile_compare = { resource = energy value >= 100 } }
-		allow = { resource_stockpile_compare = { resource = influence value >= 50 } }
+		allow = {
+			resource_stockpile_compare = { resource = energy value >= 100 }
+			resource_stockpile_compare = { resource = influence value >= 50 }
+		}
 		add_resource = {
 			energy = -100
 			influence = -50
 		}
-		add_modifier = { modifier = "terra_council" days = 1800 }
+		hidden_effect = {
+			add_modifier = { modifier = "terra_council" days = 1800 }
+		}
 		hidden_effect = {
 			country_event = { id = ark_rhodes_island.304 }
 			set_country_flag = y_zxddd_4_end
@@ -526,7 +554,9 @@ country_event = {
 		trigger = { has_country_flag = y_znjxzc }
 		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
 		add_resource = { influence = -25 }
-		add_modifier = { modifier = "terra_council" days = 1800 }
+		hidden_effect = {
+			add_modifier = { modifier = "terra_council" days = 1800 }
+		}
 		add_modifier = { modifier = y_znjxzc_modifier days = 1800 }
 		hidden_effect = {
 			set_country_flag = r_tllhscl_end
@@ -560,7 +590,9 @@ country_event = {
 		trigger = { has_country_flag = y_xxfyzl }
 		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
 		add_resource = { influence = -25 }
-		add_modifier = { modifier = "terra_council" days = 1800 }
+		hidden_effect = {
+			add_modifier = { modifier = "terra_council" days = 1800 }
+		}
 		add_modifier = { modifier = y_xxfyzl_modifier days = 1800 }
 		hidden_effect = {
 			set_country_flag = r_tllhscl_end
@@ -594,7 +626,9 @@ country_event = {
 		trigger = { has_country_flag = y_cbfzgh }
 		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
 		add_resource = { influence = -25 }
-		add_modifier = { modifier = "terra_council" days = 1800 }
+		hidden_effect = {
+			add_modifier = { modifier = "terra_council" days = 1800 }
+		}
 		add_modifier = { modifier = y_cbfzgh_modifier days = 1800 }
 		hidden_effect = {
 			set_country_flag = r_tllhscl_end
@@ -628,7 +662,9 @@ country_event = {
 		trigger = { has_country_flag = y_tkjdjs }
 		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
 		add_resource = { influence = -25 }
-		add_modifier = { modifier = "terra_council" days = 1800 }
+		hidden_effect = {
+			add_modifier = { modifier = "terra_council" days = 1800 }
+		}
 		add_modifier = { modifier = y_tkjdjs_modifier days = 1800 }
 		hidden_effect = {
 			set_country_flag = r_tllhscl_end
@@ -690,13 +726,18 @@ country_event = {
 		name = ark_rhodes_island.3.r1	# ̩泰拉联合搜查令（只有一次，不选即撤销）
 		custom_tooltip = ark_rhodes_island.3.r1_tooltip
 		trigger = { has_country_flag = r_tllhscl }
-		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
-		allow = { resource_stockpile_compare = { resource = unity value >= 25 } }
+		allow = {
+			resource_stockpile_compare = { resource = energy value >= 25 }
+			resource_stockpile_compare = { resource = influence value >= 25 }
+		}
 		add_resource = {
 			influence = -25
 			unity = -25
 		}
-		add_modifier = { modifier = "terra_council" days = 1800 }
+		hidden_effect = {
+			add_modifier = { modifier = "terra_council" days = 1800 }
+		}
+
 		add_modifier = { modifier = r_tllhscl_modifier days = 1800 }
 		hidden_effect = {
 			set_country_flag = r_tllhscl_end
@@ -724,72 +765,72 @@ country_event = {
 			days = 1801
 		}
 	}
-	option = {
-		name = ark_rhodes_island.3.v	# 召开临时会议
-		custom_tooltip = ark_rhodes_island.3.v_tooltip
-		trigger = {
-			has_modifier = terra_council
-			NOT = { has_country_flag = council_meeting_flag }
-		}
-		allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
-		add_resource = { influence = -25 }
-		hidden_effect = {
-			country_event = {
-				id = ark_rhodes_island.31
-				days = 1801
-			}
-			set_country_flag = council_meeting_flag
-			set_country_flag = interim_council_meeting
-			remove_modifier = terra_council
-			remove_modifier = g_jssjjs_modifier
-			remove_modifier = g_wzsjjs_modifier
-			remove_modifier = g_gdzbzzzc_modifier
-			remove_modifier = g_zlzycyzz_modifier
-			remove_modifier = g_dqmszc_modifier
-			remove_modifier = g_jyzdbt_modifier
-			remove_modifier = y_znjxzc_modifier
-			remove_modifier = y_xxfyzl_modifier
-			remove_modifier = y_cbfzgh_modifier
-			remove_modifier = y_tkjdjs_modifier
-			remove_modifier = r_tllhscl_modifier
-			if = {	# 未选 秩序的大地Ⅰ
-				limit = { NOT = { has_country_flag = y_zxddd_1_end } }
-				set_country_flag = y_zxddd_1
-			}
-			if = {	# 未选 秩序的大地Ⅱ
-				limit = {
-					has_country_flag = y_zxddd_1_end
-					NOT = { has_country_flag = y_zxddd_2_end }
-				}
-				set_country_flag = y_zxddd_2
-			}
-			if = {	# 未选 秩序的大地Ⅲ
-				limit = {
-					has_country_flag = y_zxddd_2_end
-					NOT = { has_country_flag = y_zxddd_3_end }
-				}
-				set_country_flag = y_zxddd_3
-			}
-			if = {	# 未选 秩序的大地 Ⅳ
-				limit = {
-					has_country_flag = y_zxddd_3_end
-					NOT = { has_country_flag = y_zxddd_4_end }
-				}
-				set_country_flag = y_zxddd_4
-			}
-			set_country_flag = g_jssjjs
-			set_country_flag = g_wzsjjs
-			set_country_flag = g_gdzbzzzc
-			set_country_flag = g_zlzycyzz
-			set_country_flag = g_dqmszc
-			set_country_flag = g_jyzdbt
-			set_country_flag = y_znjxzc
-			set_country_flag = y_xxfyzl
-			set_country_flag = y_cbfzgh
-			set_country_flag = y_tkjdjs
-			country_event = { id = ark_rhodes_island.3 }
-		}
-	}
+	#option = {
+	#	name = ark_rhodes_island.3.v	# 召开临时会议
+	#	custom_tooltip = ark_rhodes_island.3.v_tooltip
+	#	trigger = {
+	#		has_modifier = terra_council
+	#		NOT = { has_country_flag = council_meeting_flag }
+	#	}
+	#	allow = { resource_stockpile_compare = { resource = influence value >= 25 } }
+	#	add_resource = { influence = -25 }
+	#	hidden_effect = {
+	#		country_event = {
+	#			id = ark_rhodes_island.31
+	#			days = 1801
+	#		}
+	#		set_country_flag = council_meeting_flag
+	#		set_country_flag = interim_council_meeting
+	#		remove_modifier = terra_council
+	#		remove_modifier = g_jssjjs_modifier
+	#		remove_modifier = g_wzsjjs_modifier
+	#		remove_modifier = g_gdzbzzzc_modifier
+	#		remove_modifier = g_zlzycyzz_modifier
+	#		remove_modifier = g_dqmszc_modifier
+	#		remove_modifier = g_jyzdbt_modifier
+	#		remove_modifier = y_znjxzc_modifier
+	#		remove_modifier = y_xxfyzl_modifier
+	#		remove_modifier = y_cbfzgh_modifier
+	#		remove_modifier = y_tkjdjs_modifier
+	#		remove_modifier = r_tllhscl_modifier
+	#		if = {	# 未选 秩序的大地Ⅰ
+	#			limit = { NOT = { has_country_flag = y_zxddd_1_end } }
+	#			set_country_flag = y_zxddd_1
+	#		}
+	#		if = {	# 未选 秩序的大地Ⅱ
+	#			limit = {
+	#				has_country_flag = y_zxddd_1_end
+	#				NOT = { has_country_flag = y_zxddd_2_end }
+	#			}
+	#			set_country_flag = y_zxddd_2
+	#		}
+	#		if = {	# 未选 秩序的大地Ⅲ
+	#			limit = {
+	#				has_country_flag = y_zxddd_2_end
+	#				NOT = { has_country_flag = y_zxddd_3_end }
+	#			}
+	#			set_country_flag = y_zxddd_3
+	#		}
+	#		if = {	# 未选 秩序的大地 Ⅳ
+	#			limit = {
+	#				has_country_flag = y_zxddd_3_end
+	#				NOT = { has_country_flag = y_zxddd_4_end }
+	#			}
+	#			set_country_flag = y_zxddd_4
+	#		}
+	#		set_country_flag = g_jssjjs
+	#		set_country_flag = g_wzsjjs
+	#		set_country_flag = g_gdzbzzzc
+	#		set_country_flag = g_zlzycyzz
+	#		set_country_flag = g_dqmszc
+	#		set_country_flag = g_jyzdbt
+	#		set_country_flag = y_znjxzc
+	#		set_country_flag = y_xxfyzl
+	#		set_country_flag = y_cbfzgh
+	#		set_country_flag = y_tkjdjs
+	#		country_event = { id = ark_rhodes_island.3 }
+	#	}
+	#}
 	option = {
 		name = {
 			text = ark_rhodes_island.3.w	# 确认
@@ -822,7 +863,9 @@ country_event = {
 				id = ark_rhodes_island.31
 				days = 1801
 			}
+		hidden_effect = {
 			add_modifier = { modifier = "terra_council" days = 1800 }
+		}
 			if = {
 				limit = { OR = { has_country_flag = g_jssjjs } }
 				add_modifier = { modifier = g_jssjjs_modifier days = 1800 }
@@ -1091,7 +1134,10 @@ country_event = {
 			capital_scope = {
 				while = {
 					count = 1
-					create_pop = { species = owner_main_species }
+					create_pop_group = {
+						species = this.owner
+						size = 100
+					}
 				}
 			}
 		}
@@ -1123,8 +1169,11 @@ country_event = {
 		hidden_effect = {
 			capital_scope = {
 				while = {
-					count = 1
-					create_pop = { species = owner_main_species }
+					count = 2
+					create_pop_group = {
+						species = this.owner
+						size = 100
+					}
 				}
 			}
 		}
@@ -1162,8 +1211,11 @@ country_event = {
 		hidden_effect = {
 			capital_scope = {
 				while = {
-					count = 1
-					create_pop = { species = owner_main_species }
+					count = 3
+					create_pop_group = {
+						species = this.owner
+						size = 100
+					}
 				}
 			}
 		}

@@ -69,7 +69,7 @@ decision_ark_seaborn_start_evolution = {
 	}
 	effect = {
 		hidden_effect = {
-			planet_event = {
+			carrier_event = {
 				id = ark_seaborn_base.20
 			}
 		}
@@ -91,14 +91,14 @@ decision_ark_seaborn_disable_evolution = {
 			has_trait = trait_ARK_ocean_seaborn
 			NOT = { has_country_flag = arkocean_option_disable_planet_evolution }
 		}
-		has_planet_flag = ark_ocean_col_evo_start
+		has_carrier_flag = ark_ocean_col_evo_start
 		NOR = {
-			has_planet_flag = ark_ocean_col_evo_disabled
-			has_planet_flag = ark_ocean_col_evo_special
+			has_carrier_flag = ark_ocean_col_evo_disabled
+			has_carrier_flag = ark_ocean_col_evo_special
 		}
 	}
 	effect = {
-		set_planet_flag = ark_ocean_col_evo_disabled
+		set_carrier_flag = ark_ocean_col_evo_disabled
 		remove_modifier = ark_ocean_evolution_start
 	}
 }
@@ -113,12 +113,12 @@ decision_ark_seaborn_resume_evolution = {
 			NOT = { has_country_flag = arkocean_option_disable_planet_evolution }
 		}
 		OR = {
-			has_planet_flag = ark_ocean_col_evo_disabled
-			has_planet_flag = ark_ocean_col_evo_special
+			has_carrier_flag = ark_ocean_col_evo_disabled
+			has_carrier_flag = ark_ocean_col_evo_special
 		}
 	}
 	effect = {
-		remove_planet_flag = ark_ocean_col_evo_disabled
+		remove_carrier_flag = ark_ocean_col_evo_disabled
 		hidden_effect = {
 			add_modifier = {
 				modifier = ark_ocean_evolution_start
@@ -153,8 +153,8 @@ decision_ark_arclight_well4a = {
 	icon = decision_resources
 	potential = {
 		owner = {has_origin = origin_ark_tragedy_birth}
-		has_planet_flag = ready_to_build_well4a
-		NOT = { has_planet_flag = well4a_built }
+		has_carrier_flag = ready_to_build_well4a
+		NOT = { has_carrier_flag = well4a_built }
 		this = {
 			is_same_value = event_target:ark_planet_terra
 		}
@@ -173,7 +173,7 @@ decision_ark_arclight_well4a = {
 		hidden_effect = {
 			remove_building = building_ark_energy_well3
 			add_building = building_ark_energy_well4a
-			set_planet_flag = well4a_built
+			set_carrier_flag = well4a_built
 			owner = {
 				country_event = {
 					id = ark_arclight.241
@@ -193,7 +193,7 @@ decision_ark_arclight_well4b = {
 	icon = decision_resources
 	potential = {
 		owner = {has_origin = origin_ark_tragedy_birth}
-		has_planet_flag = ready_to_build_well4b
+		has_carrier_flag = ready_to_build_well4b
 		NOT = { has_planet_flag = well4b_built }
 		this = {
 			is_same_value = event_target:ark_planet_terra
@@ -213,7 +213,7 @@ decision_ark_arclight_well4b = {
 		hidden_effect = {
 			remove_building = building_ark_energy_well3
 			add_building = building_ark_energy_well4b
-			set_planet_flag = well4b_built
+			set_carrier_flag = well4b_built
 			owner = {
 				country_event = {
 					id = ark_arclight.242

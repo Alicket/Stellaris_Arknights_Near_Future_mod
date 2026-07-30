@@ -49,6 +49,12 @@ councilor_union_summit_desc: "峰会话事人负责举办与规划五年一度�
 
 
 ## government ##
+gov_ARK_terra_oligarchy:"精英共和制"
+gov_ARK_terra_oligarchy_desc:0 "精英共和政府是由各界精英组成的联合政府,整个国家由来自各个原国家的杰出精英治理。"
+RT_ARK_DOCTOR:0 "议长"
+RT_ARK_DOCTOR_FEMALE:0 "议长"
+
+#deprecated
 gov_ark_elite_republic: "精英共和制"
 gov_ark_elite_republic_desc: "精英共和政府是由各界精英组成的城邦共和政府,整个国家由来自各城邦的杰出精英治理."
 gov_ark_holy_republic: "神圣共和制"

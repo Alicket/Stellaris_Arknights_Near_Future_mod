@@ -1,62 +1,66 @@
-# 源石矿工
-originiums_miner = {
-	category = worker
-	swappable_data = {
-		default = {
-			condition_string = WORKER_JOB_TRIGGER
-			building_icon = building_originiums_mining_plant_1
-		}
-	}
-	possible_pre_triggers = {
-		has_owner = yes
-		is_being_purged = no
-		is_being_assimilated = no
-		is_sapient = yes
-	}
-
-	possible_precalc = can_fill_worker_job
-	possible = {
-		hidden_trigger = { exists = owner }
-		owner = { is_gestalt = no }
-	}
-
-	resources = {
-		category = planet_miners
-		produces = {
-			originiums = 2
-		}
-	}
-	
-	weight = {
-		weight = @specialist_job_weight # Important job
-		mult = value:job_weights_modifier|JOB|crystal_miner|RESOURCE|rare_crystals|
-		modifier = {
-			factor = 10
-			is_enslaved = yes
-			can_take_servant_job = no
-			NOT = { has_slavery_type = { type = slavery_indentured } }
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				is_non_sapient_robot = yes
-				is_shackled_robot = yes
-			}
-			can_take_servant_job = no
-			owner = { has_technology = tech_droid_workers }
-		}
-		modifier = {
-			factor = 200
-			OR = {
-				is_non_sapient_robot = yes
-				is_shackled_robot = yes
-			}
-			can_take_servant_job = no
-			owner = { NOT = { has_technology = tech_droid_workers } }
-		}
-		modifier = {
-			factor = 0.1
-			can_take_servant_job = yes
-		}
-	}
-}
+# # 源石矿工
+# originiums_miner = {
+# 	category = worker
+# 	swappable_data = {
+# 		default = {
+# 			condition_string = WORKER_JOB_TRIGGER
+# 			building_icon = building_originiums_mining_plant_1
+# 		}
+# 	}
+# 	possible_pre_triggers = {
+# 		has_owner = yes
+# 		is_being_purged = no
+# 		is_being_assimilated = no
+# 		is_sapient = yes
+# 	}
+#
+# 	possible_precalc = can_fill_worker_job
+# 	possible = {
+# 		hidden_trigger = { exists = owner }
+# 		owner = { is_gestalt = no }
+# 	}
+#
+# 	resources = {
+# 		category = planet_miners
+# 		produces = {
+# 			originiums = 2
+# 		}
+# 	}
+#
+# 	weight = {
+# 		weight = @worker_job_weight
+# 		modifier = {
+# 			factor = 10
+# 			is_enslaved = yes
+# 			can_take_servant_job = no
+# 			NOT = { has_slavery_type = { type = slavery_indentured } }
+# 		}
+# 		modifier = {
+# 			factor = 3
+# 			OR = {
+# 				is_non_sapient_robot = yes
+# 				is_shackled_robot = yes
+# 			}
+# 			can_take_servant_job = no
+# 			owner = { has_technology = tech_droid_workers }
+# 		}
+# 		modifier = {
+# 			factor = 200
+# 			OR = {
+# 				is_non_sapient_robot = yes
+# 				is_shackled_robot = yes
+# 			}
+# 			can_take_servant_job = no
+# 			owner = { NOT = { has_technology = tech_droid_workers } }
+# 		}
+# 		modifier = {
+# 			factor = 0.25
+# 			can_take_servant_job = yes
+# 		}
+#
+# 		modifier = {
+# 			factor = 5
+# 			has_trait = trait_cyborg_creed_of_labor
+# 		}
+# 	}
+# }

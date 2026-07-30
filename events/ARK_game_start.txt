@@ -11,7 +11,7 @@ country_event = { #选择苦难摇篮起源
 	}
 	immediate = {
 		log = "ARK 开始开局效果"
-
+		save_global_event_target_as = ark_country
 		random_system = {
 			limit = {
 				distance = {
@@ -68,6 +68,37 @@ country_event = { #选择苦难摇篮起源
 				type = ark_ground_star_gate
 				planet = event_target:ark_planet_terra
 			}
+			#random_system = {
+			#	limit = {
+			#		distance = {
+			#			source = prev
+			#			max_jumps = 4
+			#			min_jumps = 3
+			#		}
+			#		any_system_planet = {
+			#			is_planet_class = pc_barren
+			#		}
+			#	}
+			#	save_global_event_target_as = ark_gateway_archaeology_system
+			#	set_star_flag = ark_gateway_archaeology_system
+			#	random_system_planet = {
+			#		limit = { is_planet_class = pc_barren }
+			#		save_global_event_target_as = ark_gateway_archaeology_planet
+			#		set_planet_flag = ark_gateway_archaeology_planet_flag
+			#		create_ambient_object = {
+			#			type = ark_arclight_one_object
+			#			location = this
+			#		}
+			#		last_created_ambient_object = {
+			#			save_global_event_target_as = ark_gateway_archaeology_location
+			#			set_location = {
+			#				target = prev
+			#				distance = 4
+			#				angle = random
+			#			}
+			#		}
+			#	}
+			#}
 		}
 		event_target:ark_planet_talos = {
 			set_owner = root
@@ -165,6 +196,7 @@ country_event = { #选择苦难摇篮起源
 			save_global_event_target_as = ark_ruler_doctor
 		}
 		add_modifier = { modifier = "terra_council" days = 120 }			# 联合会议准备中
+		add_modifier = { modifier = "ark_eternal_doctor"}
 		country_event = { id = ark_rhodes_island.1 }				# 创建罗德岛
 		country_event = { #克丽丝滕
 			id = ark_arclight.1
@@ -179,6 +211,10 @@ country_event = { #选择苦难摇篮起源
 		country_event = { #重置泰拉和塔卫二模型
 			id = ark_game_start.10
 			days = 2
+		}
+		country_event = { #联合理事会
+			id = ark_rhodes_island.31
+			days = 121
 		}
 		log = "ARK 结束开局事件"
 	}
@@ -389,7 +425,7 @@ country_event = {
 		 }
 	 }
 	 after = {
-		 clear_global_event_target = ark_originium_mine_target
+		 #clear_global_event_target = ark_originium_mine_target
 	 }
  }
 # 与"Warship Girls R And MIST Species"联动

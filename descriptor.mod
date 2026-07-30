@@ -6,5 +6,5 @@ tags={
 	"Species"
 }
 picture="thumbnail.png"
-version="2025.5.19"
-supported_version="4.0.*"
+version="2026.7.1"
+supported_version="4.4.*"

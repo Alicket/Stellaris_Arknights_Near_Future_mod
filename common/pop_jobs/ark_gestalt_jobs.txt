@@ -1,49 +1,49 @@
 # 源石采矿子个体
-originiums_mining_drone = {	
-	category = complex_drone
-	swappable_data = {
-		default = {
-			condition_string = DRONE_JOB_TRIGGER
-			building_icon = building_originiums_mining_plant_1
-		}
-	}
-	possible_pre_triggers = {
-		has_owner = yes
-		is_enslaved = no
-		is_being_purged = no
-		is_being_assimilated = no
-		is_sapient = yes
-	}
-
-	possible_precalc = can_fill_drone_job
-
-	possible = { can_think = yes }
-
-	resources = {
-		category = planet_sr_miners
-		produces = {
-			originiums = 2
-		}
-		upkeep = {
-			energy = 1
-		}
-	}	
-	
-	weight = {
-		weight = @complex_drone_job_weight
-		mult = value:job_weights_modifier|JOB|crystal_mining_drone|RESOURCE|rare_crystals|
-		modifier = {
-			factor = 1.1
-			exists = owner
-			years_passed < 1
-			owner = { has_valid_civic = civic_machine_assimilator }
-			has_trait = trait_cybernetic
-		}
-	}
-}
+# originiums_mining_drone = {
+# 	category = complex_drone
+# 	swappable_data = {
+# 		default = {
+# 			condition_string = DRONE_JOB_TRIGGER
+# 			building_icon = building_originiums_mining_plant_1
+# 		}
+# 	}
+# 	possible_pre_triggers = {
+# 		has_owner = yes
+# 		is_enslaved = no
+# 		is_being_purged = no
+# 		is_being_assimilated = no
+# 		is_sapient = yes
+# 	}
+#
+# 	possible_precalc = can_fill_drone_job
+#
+# 	possible = { can_think = yes }
+#
+# 	resources = {
+# 		category = planet_sr_miners
+# 		produces = {
+# 			originiums = 2
+# 		}
+# 		upkeep = {
+# 			energy = 1
+# 		}
+# 	}
+#
+# 	weight = {
+# 		weight = @complex_drone_job_weight
+# 		mult = value:job_weights_modifier|JOB|crystal_mining_drone|RESOURCE|rare_crystals|
+# 		modifier = {
+# 			factor = 1.1
+# 			exists = owner
+# 			years_passed < 1
+# 			owner = { has_valid_civic = civic_machine_assimilator }
+# 			has_trait = trait_cybernetic
+# 		}
+# 	}
+# }
 
 # D32钢冶炼子个体
-d32steels_smelting_drone = {	
+d32steels_smelting_drone = {
 	category = complex_drone
 	swappable_data = {
 		default = {
@@ -101,8 +101,8 @@ d32steels_smelting_drone = {
 			}
 			food = 15
 		}
-	}	
-	
+	}
+
 	weight = {
 		weight = @complex_drone_job_weight
 		mult = value:job_weights_modifier|JOB|translucer_drone|RESOURCE|rare_crystals|
@@ -117,7 +117,7 @@ d32steels_smelting_drone = {
 }
 
 # 纳米片制造子个体
-nanosheets_manufacture_drone = {	
+nanosheets_manufacture_drone = {
 	category = complex_drone
 	swappable_data = {
 		default = {
@@ -175,8 +175,8 @@ nanosheets_manufacture_drone = {
 			}
 			food = 15
 		}
-	}	
-	
+	}
+
 	weight = {
 		weight = @complex_drone_job_weight
 		mult = value:job_weights_modifier|JOB|translucer_drone|RESOURCE|rare_crystals|

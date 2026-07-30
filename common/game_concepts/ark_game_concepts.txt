@@ -1,0 +1,7 @@
+
+concept_excavate_originiums = {
+}
+
+concept_originiums = {
+	#alias = { concept_excavate_originiums }
+}

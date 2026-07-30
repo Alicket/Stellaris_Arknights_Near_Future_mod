@@ -53,3 +53,16 @@ arkseaborn_cells = {
 		weight = 100
 	}
 }
+
+#维度流质
+arkseaborn_cells = {
+	tradable = no
+
+	prerequisites = {}
+
+	deficit_modifier = seaborn_cells_deficit
+
+	ai_weight = {
+		weight = 100
+	}
+}

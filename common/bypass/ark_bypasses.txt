@@ -19,8 +19,8 @@ ark_ground_star_gate = {
 
 	country_can_use = {
 		OR = {
-			any_owned_planet = { has_planet_flag = planet_talos }
-			any_controlled_planet = { has_planet_flag = planet_talos }
+			any_owned_colony = { has_carrier_flag = planet_talos }
+			any_controlled_colony = { has_carrier_flag = planet_talos }
 		}
 	}
 	respect_closed_borders = yes
