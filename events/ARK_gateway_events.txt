@@ -79,7 +79,6 @@ country_event = {
                         save_event_target_as = ark_gateway_through_space_target
                     }
                 }
-
                 auto_move_to_planet = {
                     target = event_target:ark_gateway_through_space_target
                     clear_auto_move_on_arrival = no

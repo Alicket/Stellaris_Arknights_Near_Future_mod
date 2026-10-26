@@ -45,37 +45,96 @@ can_destroy_planet_with_PLANET_KILLER_ARK_FROSTNOVA = {
 			is_planet_class = pc_machine_broken
 		}
 	}
-	custom_tooltip = {
-		fail_text = is_not_hostile_or_primitive
-		OR = {
-			AND = { # primitive
+#	custom_tooltip = {
+#		fail_text = is_not_hostile_or_primitive
+#		OR = {
+#			AND = { # primitive
+#				exists = owner
+#				owner = {
+#					is_primitive = yes
+#				}
+#			}
+#
+#			has_owner = no
+#
+#			AND = {
+#				exists = space_owner
+#				space_owner = {
+#					OR = {
+#						is_at_war_with = from.owner
+#						is_country_type = swarm
+#						is_country_type = extradimensional
+#						is_country_type = extradimensional_2
+#						is_country_type = extradimensional_3
+#					}
+#				}
+#			}
+#		}
+#	}
+	OR = {
+		custom_tooltip = {
+			text = is_not_hostile
+			OR = {
+				AND = {
+					exists = space_owner
+					space_owner = {
+						OR = {
+							is_at_war_with = from.owner
+							is_country_type = swarm
+							is_country_type = extradimensional
+							is_country_type = extradimensional_2
+							is_country_type = extradimensional_3
+							is_country_type = ai_empire
+						}
+					}
+				}
+				AND = { # colony
+					exists = owner
+					owner = {
+						OR = {
+							is_at_war_with = from.owner
+							is_country_type = swarm
+							is_country_type = extradimensional
+							is_country_type = extradimensional_2
+							is_country_type = extradimensional_3
+							is_country_type = ai_empire
+						}
+					}
+				}
+			}
+		}
+		AND = {
+			# primitive target
+			custom_tooltip = {
+				text = cannot_crack_pre_ftl_planet_ownership
+				exists = space_owner
 				exists = owner
 				owner = {
 					is_primitive = yes
 				}
-			}
-
-			has_owner = no
-
-			AND = {
-				exists = space_owner
 				space_owner = {
 					OR = {
+						is_same_value = from.owner
 						is_at_war_with = from.owner
 						is_country_type = swarm
 						is_country_type = extradimensional
 						is_country_type = extradimensional_2
 						is_country_type = extradimensional_3
+						is_country_type = ai_empire
 					}
+				}
+			}
+			custom_tooltip = {
+				text = cannot_crack_pre_ftl_planet_interference
+				# primitive
+				exists = owner
+				owner = {
+					is_primitive = yes
+				}
+				from.owner = {
+					has_policy_flag = interference_aggressive
 				}
 			}
 		}
 	}
-	#custom_tooltip = {
-	#	fail_text = ark_is_ai_planet
-	#	NOR = {
-	#		is_planet_class = pc_ai
-	#		is_planet_class = pc_machine
-	#	}
-	#}
 }

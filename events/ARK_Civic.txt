@@ -1127,17 +1127,15 @@ country_event = {
 	}
 
 	immediate = {
-		from = {
-			every_owned_leader = {
-				limit = {
-					leader_class = commander
-				}
-				add_trait = {
-					trait = leader_trait_commander_chivalry
-					show_message = no
-				}
-				#add_trait_no_notify = leader_trait_commander_chivalry
+		every_owned_leader = {
+			limit = {
+				leader_class = commander
 			}
+			add_trait = {
+				trait = leader_trait_commander_chivalry
+				show_message = no
+			}
+			#add_trait_no_notify = leader_trait_commander_chivalry
 		}
 		set_country_flag = ark_civic_4_flag
 	}
