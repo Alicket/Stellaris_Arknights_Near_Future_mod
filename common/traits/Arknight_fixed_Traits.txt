@@ -1,7 +1,7 @@
 trait_latent_oripathy = {	# Դʯ��Ǳ��
 	cost = 2
 	allowed_archetypes = { BIOLOGICAL }
-
+	allowed_origins = { origin_ark_tragedy_birth }
 	species_potential_add = {
 		always = no
 	}

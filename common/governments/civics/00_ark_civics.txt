@@ -209,8 +209,10 @@ civic_messenger_network = {
 	}
 	random_weight = { base = 0 }
 	modifier = {
-		empire_size_colonies_mult = -0.1
-		empire_size_systems_mult = -0.1
+		empire_size_colonies_mult = -0.15
+		empire_size_systems_mult = -0.15
+		empire_size_pops_mult = -0.1
+		empire_size_penalty_mult = -0.1
 	}
 }
 

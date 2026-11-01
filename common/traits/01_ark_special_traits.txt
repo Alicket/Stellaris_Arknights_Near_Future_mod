@@ -26,7 +26,7 @@ leader_trait_meet_at_the_end = {
 	}
 	immortal_leaders = yes
 	councilor_modifier = {
-		country_base_unity_produces_add = 24
+		country_base_unity_produces_add = 16
 		planet_jobs_unity_produces_mult = 0.10
 		country_base_influence_produces_add = 1
 	}

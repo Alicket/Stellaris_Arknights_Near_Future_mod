@@ -1,5 +1,6 @@
 # 此处设置的图标是实际插槽中显示的图标。原因是我们可以支持不同大小的不同图标。
-# 目前各级装甲s值:120,150,190,240,310。M为:s×2.5，L为:s×6
+# 目前各级装甲s值:120,150,190,240,310。M为:s×3，L为:s×9
+# 原版各级装甲s值:100,125,160,205,260。M为:s×3，L为:s×9 附带少量装甲硬化
 # cost所需D32钢数：alloys×0.05
 
 # D32钢均质装甲
@@ -49,7 +50,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = 0
 	modifier = {
-		ship_armor_add = 300
+		ship_armor_add = 360
 	}
 	
 	prerequisites = { "tech_ark_ship_armor_1" }
@@ -88,7 +89,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = 0
 	modifier = {
-		ship_armor_add = 720
+		ship_armor_add = 1080
 	}
 	
 	prerequisites = { "tech_ark_ship_armor_1" }
@@ -167,7 +168,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = 0
 	modifier = {
-		ship_armor_add = 375
+		ship_armor_add = 450
 	}
 	
 	prerequisites = { "tech_ark_ship_armor_2" }
@@ -206,7 +207,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = 0
 	modifier = {
-		ship_armor_add = 900
+		ship_armor_add = 1350
 	}
 	
 	prerequisites = { "tech_ark_ship_armor_2" }
@@ -285,7 +286,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = 0
 	modifier = {
-		ship_armor_add = 475
+		ship_armor_add = 570
 	}
 	
 	prerequisites = { "tech_ark_ship_armor_3" }
@@ -324,7 +325,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = 0
 	modifier = {
-		ship_armor_add = 1140
+		ship_armor_add = 1710
 	}
 	
 	prerequisites = { "tech_ark_ship_armor_3" }
@@ -366,6 +367,7 @@ utility_component_template = {
 	modifier = {
 		ship_armor_add = 240
 		ship_armor_regen_add_static = 2.4
+		ship_armor_hardening_add = 0.01
 	}
 	
 	prerequisites = { "tech_ark_ship_armor_4a" }
@@ -404,8 +406,9 @@ utility_component_template = {
 	icon_frame = 1
 	power = 0
 	modifier = {
-		ship_armor_add = 600
-		ship_armor_regen_add_static = 3
+		ship_armor_add = 720
+		ship_armor_regen_add_static = 7.2
+		ship_armor_hardening_add = 0.01
 	}
 	
 	prerequisites = { "tech_ark_ship_armor_4a" }
@@ -444,8 +447,9 @@ utility_component_template = {
 	icon_frame = 1
 	power = 0
 	modifier = {
-		ship_armor_add = 1440
-		ship_armor_regen_add_static = 7.2
+		ship_armor_add = 2160
+		ship_armor_regen_add_static = 21.6
+		ship_armor_hardening_add = 0.01
 	}
 	
 	prerequisites = { "tech_ark_ship_armor_4a" }
@@ -486,7 +490,8 @@ utility_component_template = {
 	power = -25
 	modifier = {
 		ship_armor_add = 310
-		ship_armor_regen_add_static = 1.6
+		ship_armor_regen_add_static = 3.1
+		ship_armor_hardening_add = 0.02
 	}
 	
 	prerequisites = { "tech_ark_ship_armor_4b" }
@@ -524,8 +529,9 @@ utility_component_template = {
 	icon_frame = 1
 	power = -50
 	modifier = {
-		ship_armor_add = 775
-		ship_armor_regen_add_static = 4
+		ship_armor_add = 930
+		ship_armor_regen_add_static = 9.3
+		ship_armor_hardening_add = 0.02
 	}
 	
 	prerequisites = { "tech_ark_ship_armor_4b" }
@@ -563,8 +569,9 @@ utility_component_template = {
 	icon_frame = 1
 	power = -100
 	modifier = {
-		ship_armor_add = 1860
-		ship_armor_regen_add_static = 9.6
+		ship_armor_add = 2790
+		ship_armor_regen_add_static = 27.9
+		ship_armor_hardening_add = 0.02
 	}
 	
 	prerequisites = { "tech_ark_ship_armor_4b" }

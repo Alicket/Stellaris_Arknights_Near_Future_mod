@@ -167,19 +167,19 @@ strike_craft_component_template = {
     }
 
     count = 6
-    regeneration_per_day = 0.5
+    regeneration_per_day = 0.25
     launch_time = 4
 
     damage = { min = 900 max = 1000 }
-    cooldown = 90
+    cooldown = 1800
     range = 30
     engagement_range = 200
     accuracy = 1.00
     tracking = 0.40
 
-    health = 35
-    armor = 10
-    shield = 10
+    health = 80
+    armor = 40
+    shield = 40
     evasion = 0.60
 
     speed = @speed1

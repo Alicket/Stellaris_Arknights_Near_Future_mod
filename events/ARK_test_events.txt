@@ -1,5 +1,6 @@
 namespace = ark_test_evt
 
+#克雷松
 planet_event = {
 	id = ark_test_evt.1
 	is_triggered_only = yes

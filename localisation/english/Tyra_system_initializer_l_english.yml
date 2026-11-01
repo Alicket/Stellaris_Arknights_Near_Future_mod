@@ -1,25 +1,33 @@
 ﻿l_english:
-
-NAME_Tyra_system:0 "Talos"
-
-NAME_Tyra_Sol:0 "Talos"
-
-NAME_Tyra1:0 "Talos-I"
-
-NAME_Tyra2:0 "Talos-II"
-
 NAME_Terra:0 "Terra"
+NAME_Terra_1:0 "Terra's Moon-I"
+NAME_Terra_2:0 "Terra's Moon-II"
+NAME_Terra_3:0 "Terra-I"
+NAME_Terra_4:0 "Terra-II"
+NAME_Terra_5:0 "Terra-IV"
+NAME_Terra_5a:0 "Terra-Va"
+NAME_Terra_5b:0 "Terra-Vb"
+NAME_Terra_5c:0 "Terra-Vc"
+NAME_Terra_6:0 "Terra-VI"
+NAME_Terra_6a:0 "Terra-VIa"
+NAME_Terra_7:0 "Terra-VII"
+NAME_Terra_8:0 "Terra-VIII"
+NAME_Terra_9:0 "Terra-IX"
+NAME_Chaos:0 "Chaos"
+NAME_Chaos1:0 "Athos"
+NAME_Chaos2:0 "Typhoeus"
+NAME_Chaos3:0 "Tityos"
+NAME_Chaos4:0 "Talos"
+NAME_Chaos4_1:0 "Talos-I"
+NAME_Chaos4_2:0 "Talos-II"
+NAME_Chaos5:0 "Orion"
+NAME_Chaos6:0 "Aloadae"
+NAME_Chaos6_1:0 "Aloadae-1"
+starbase_ark_arclight:0 "Arc-I"
+NAME_ark_starbase_arclight:0 "$starbase_ark_arclight$"
 
-NAME_Terra_1:0 "Terra-Ia"
+pc_ark_a:0 "$pc_a_star$"
+pc_ark_a_desc:0 "$pc_a_star_desc$"
+sc_ark_a:0 "$pc_a_star$"
+sc_ark_a_desc:0 "$pc_a_star_desc$"
 
-NAME_Terra_1:0 "Terra-Ib"
-
-NAME_Tyra4:0 "Talos-IV"
-
-NAME_Tyra5:0 "Talos-V"
-
-NAME_Tyra5_1:0 "Talos-Va"
-
-NAME_Tyra5_2:0 "Talos-Vb"
-
-NAME_Tyra6:0 "Talos-VI"

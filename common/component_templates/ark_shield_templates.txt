@@ -1,5 +1,6 @@
 # 此处设置的图标是实际插槽中显示的图标。原因是我们可以支持不同大小的不同图标。
-# 目前各级护盾s值:90,115,140,180,240,320。M为:s×2.5，L为:s×6
+# 目前各级护盾s值:120,150,190,240,310。M为:s×3，L为:s×9
+# 原版各级护盾s值:100,125,160,205,260。M为:s×3，L为:s×9 附带少量护盾硬化
 # cost所需源石数：alloys×0.05
 
 # 骑士护盾
@@ -10,8 +11,8 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_S1
 	modifier = {
-		ship_shield_add = 90
-		ship_shield_regen_add_static = 0.9
+		ship_shield_add = 120
+		ship_shield_regen_add_static = 1.2
 	}
 	
 	prerequisites = { "tech_ark_shields_1" }
@@ -24,8 +25,8 @@ utility_component_template = {
 			originiums = 0.25
 		}	
 		upkeep = {
-			energy = @shield_s_t1_upkeep_energy
-			alloys = @shield_s_t1_upkeep_alloys
+			energy = @defense_s_t1_upkeep_energy
+			alloys = @defense_s_t1_upkeep_alloys
 		}
 	}
 
@@ -50,8 +51,8 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_M1
 	modifier = {
-		ship_shield_add = 225
-		ship_shield_regen_add_static = 2.25
+		ship_shield_add = 360
+		ship_shield_regen_add_static = 3.6
 	}
 	
 	prerequisites = { "tech_ark_shields_1" }
@@ -64,8 +65,8 @@ utility_component_template = {
 			originiums = 0.50
 		}
 		upkeep = {
-			energy = @shield_m_t1_upkeep_energy
-			alloys = @shield_m_t1_upkeep_alloys
+			energy = @defense_m_t1_upkeep_energy
+			alloys =  @defense_m_t1_upkeep_alloys
 		}
 	}
 
@@ -90,8 +91,8 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_L1
 	modifier = {
-		ship_shield_add = 540
-		ship_shield_regen_add_static = 5.4
+		ship_shield_add = 1080
+		ship_shield_regen_add_static = 10.8
 	}
 	
 	prerequisites = { "tech_ark_shields_1" }
@@ -104,8 +105,8 @@ utility_component_template = {
 			originiums = 1
 		}
 		upkeep = {
-			energy = @shield_l_t1_upkeep_energy
-			alloys = @shield_l_t1_upkeep_alloys
+			energy = @defense_l_t1_upkeep_energy
+			alloys = @defense_l_t1_upkeep_alloys
 		}
 	}
 
@@ -131,8 +132,8 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_S2
 	modifier = {
-		ship_shield_add = 115
-		ship_shield_regen_add_static = 1.15
+		ship_shield_add = 150
+		ship_shield_regen_add_static = 1.5
 	}
 	
 	prerequisites = { "tech_ark_shields_2" }
@@ -145,8 +146,8 @@ utility_component_template = {
 			originiums = 0.35
 		}	
 		upkeep = {
-			energy = @shield_s_t2_upkeep_energy
-			alloys = @shield_s_t2_upkeep_alloys
+			energy = @defense_s_t2_upkeep_energy
+			alloys = @defense_s_t2_upkeep_alloys
 		}
 	}
 
@@ -171,8 +172,8 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_M2
 	modifier = {
-		ship_shield_add = 290
-		ship_shield_regen_add_static = 2.9
+		ship_shield_add = 450
+		ship_shield_regen_add_static = 4.5
 	}
 	
 	prerequisites = { "tech_ark_shields_2" }
@@ -185,8 +186,8 @@ utility_component_template = {
 			originiums = 0.65
 		}
 		upkeep = {
-			energy = @shield_m_t2_upkeep_energy
-			alloys = @shield_m_t2_upkeep_alloys
+			energy = @defense_m_t2_upkeep_energy
+			alloys = @defense_m_t2_upkeep_alloys
 		}
 	}
 
@@ -211,8 +212,8 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_L2
 	modifier = {
-		ship_shield_add = 690
-		ship_shield_regen_add_static = 6.9
+		ship_shield_add = 1350
+		ship_shield_regen_add_static = 13.5
 	}
 	
 	prerequisites = { "tech_ark_shields_2" }
@@ -225,8 +226,8 @@ utility_component_template = {
 			originiums = 1.3
 		}
 		upkeep = {
-			energy = @shield_l_t2_upkeep_energy
-			alloys = @shield_l_t2_upkeep_alloys
+			energy = @defense_l_t2_upkeep_energy
+			alloys = @defense_l_t2_upkeep_alloys
 		}
 	}
 
@@ -252,8 +253,8 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_S3
 	modifier = {
-		ship_shield_add = 140
-		ship_shield_regen_add_static = 1.4
+		ship_shield_add = 190
+		ship_shield_regen_add_static = 1.9
 	}
 	
 	prerequisites = { "tech_ark_shields_3" }
@@ -266,8 +267,8 @@ utility_component_template = {
 			originiums = 0.45
 		}	
 		upkeep = {
-			energy = @shield_s_t3_upkeep_energy
-			alloys = @shield_s_t3_upkeep_alloys
+			energy = @defense_s_t3_upkeep_energy
+			alloys = @defense_s_t3_upkeep_alloys
 		}
 	}
 
@@ -292,8 +293,8 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_M3
 	modifier = {
-		ship_shield_add = 350
-		ship_shield_regen_add_static = 3.5
+		ship_shield_add = 570
+		ship_shield_regen_add_static = 5.7
 	}
 	
 	prerequisites = { "tech_ark_shields_3" }
@@ -306,8 +307,8 @@ utility_component_template = {
 			originiums = 0.85
 		}
 		upkeep = {
-			energy = @shield_m_t3_upkeep_energy
-			alloys = @shield_m_t3_upkeep_alloys
+			energy = @defense_m_t3_upkeep_energy
+			alloys = @defense_m_t3_upkeep_alloys
 		}
 	}
 
@@ -332,8 +333,8 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_L3
 	modifier = {
-		ship_shield_add = 840
-		ship_shield_regen_add_static = 8.4
+		ship_shield_add = 1710
+		ship_shield_regen_add_static = 17.1
 	}
 	
 	prerequisites = { "tech_ark_shields_3" }
@@ -346,8 +347,8 @@ utility_component_template = {
 			originiums = 1.7
 		}
 		upkeep = {
-			energy = @shield_l_t3_upkeep_energy
-			alloys = @shield_l_t3_upkeep_alloys
+			energy = @defense_l_t3_upkeep_energy
+			alloys = @defense_l_t3_upkeep_alloys
 		}
 	}
 
@@ -373,8 +374,8 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_S4
 	modifier = {
-		ship_shield_add = 180
-		ship_shield_regen_add_static = 1.8
+		ship_shield_add = 240
+		ship_shield_regen_add_static = 2.4
 		ship_shield_mult = 0.05
 	}
 	
@@ -388,8 +389,8 @@ utility_component_template = {
 			originiums = 0.6
 		}	
 		upkeep = {
-			energy = @shield_s_t4_upkeep_energy
-			alloys = @shield_s_t4_upkeep_alloys
+			energy = @defense_s_t4_upkeep_energy
+			alloys = @defense_s_t4_upkeep_alloys
 		}
 	}
 
@@ -414,8 +415,8 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_M4
 	modifier = {
-		ship_shield_add = 450
-		ship_shield_regen_add_static = 4.5
+		ship_shield_add = 720
+		ship_shield_regen_add_static = 7.2
 		ship_shield_mult = 0.075
 	}
 	
@@ -429,8 +430,8 @@ utility_component_template = {
 			originiums = 1.1
 		}
 		upkeep = {
-			energy = @shield_m_t4_upkeep_energy
-			alloys = @shield_m_t4_upkeep_alloys
+			energy = @defense_m_t4_upkeep_energy
+			alloys = @defense_m_t4_upkeep_alloys
 		}
 	}
 
@@ -455,8 +456,8 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_L4
 	modifier = {
-		ship_shield_add = 1080
-		ship_shield_regen_add_static = 10.8
+		ship_shield_add = 2160
+		ship_shield_regen_add_static = 21.6
 		ship_shield_mult = 0.10
 	}
 	
@@ -470,8 +471,8 @@ utility_component_template = {
 			originiums = 2.2
 		}
 		upkeep = {
-			energy = @shield_l_t4_upkeep_energy
-			alloys = @shield_l_t4_upkeep_alloys
+			energy = @defense_l_t4_upkeep_energy
+			alloys = @defense_l_t4_upkeep_alloys
 		}
 	}
 
@@ -497,8 +498,8 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_S4
 	modifier = {
-		ship_shield_add = 180
-		ship_shield_regen_add_static = 1.8
+		ship_shield_add = 310
+		ship_shield_regen_add_static = 3.1
 		ship_evasion_mult = 0.05
 	}
 	
@@ -512,8 +513,8 @@ utility_component_template = {
 			originiums = 0.6
 		}	
 		upkeep = {
-			energy = @shield_s_t4_upkeep_energy
-			alloys = @shield_s_t4_upkeep_alloys
+			energy = @defense_s_t4_upkeep_energy
+			alloys = @defense_s_t4_upkeep_alloys
 		}
 	}
 
@@ -538,8 +539,8 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_M4
 	modifier = {
-		ship_shield_add = 450
-		ship_shield_regen_add_static = 4.5
+		ship_shield_add = 930
+		ship_shield_regen_add_static = 9.3
 		ship_evasion_mult = 0.075
 	}
 	
@@ -553,8 +554,8 @@ utility_component_template = {
 			originiums = 1.1
 		}
 		upkeep = {
-			energy = @shield_m_t4_upkeep_energy
-			alloys = @shield_m_t4_upkeep_alloys
+			energy = @defense_m_t4_upkeep_energy
+			alloys = @defense_m_t4_upkeep_alloys
 		}
 	}
 
@@ -579,8 +580,8 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_L4
 	modifier = {
-		ship_shield_add = 1080
-		ship_shield_regen_add_static = 10.8
+		ship_shield_add = 2790
+		ship_shield_regen_add_static = 27.9
 		ship_evasion_mult = 0.10
 	}
 	
@@ -594,8 +595,8 @@ utility_component_template = {
 			originiums = 2.2
 		}
 		upkeep = {
-			energy = @shield_l_t4_upkeep_energy
-			alloys = @shield_l_t4_upkeep_alloys
+			energy = @defense_l_t4_upkeep_energy
+			alloys = @defense_l_t4_upkeep_alloys
 		}
 	}
 
@@ -621,9 +622,9 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_S5
 	modifier = {
-		ship_shield_add = 240
-		ship_shield_regen_add_static = 2.4
-		ship_shield_mult = 0.075
+		ship_shield_add = 310
+		ship_shield_regen_add_static = 3.1
+		ship_shield_mult = 0.15
 	}
 	
 	prerequisites = { "tech_ark_shields_5a" }
@@ -635,8 +636,8 @@ utility_component_template = {
 			originiums = 0.8
 		}	
 		upkeep = {
-			energy = @shield_s_t5_upkeep_energy
-			alloys = @shield_s_t5_upkeep_alloys
+			energy = @defense_s_t5_upkeep_energy
+			alloys = @defense_s_t5_upkeep_alloys
 		}
 	}
 
@@ -661,9 +662,9 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_M5
 	modifier = {
-		ship_shield_add = 600
-		ship_shield_regen_add_static = 6
-		ship_shield_mult = 0.10
+		ship_shield_add = 930
+		ship_shield_regen_add_static = 9.3
+		ship_shield_mult = 0.15
 	}
 	
 	prerequisites = { "tech_ark_shields_5a" }
@@ -675,8 +676,8 @@ utility_component_template = {
 			originiums = 1.45
 		}
 		upkeep = {
-			energy = @shield_m_t5_upkeep_energy
-			alloys = @shield_m_t5_upkeep_alloys
+			energy = @defense_m_t5_upkeep_energy
+			alloys = @defense_m_t5_upkeep_alloys
 		}
 	}
 
@@ -701,9 +702,9 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_L5
 	modifier = {
-		ship_shield_add = 1440
-		ship_shield_regen_add_static = 14.4
-		ship_shield_mult = 0.125
+		ship_shield_add = 2790
+		ship_shield_regen_add_static = 27.9
+		ship_shield_mult = 0.15
 	}
 	
 	prerequisites = { "tech_ark_shields_5a" }
@@ -715,8 +716,8 @@ utility_component_template = {
 			originiums = 2.85
 		}
 		upkeep = {
-			energy = @shield_l_t5_upkeep_energy
-			alloys = @shield_l_t5_upkeep_alloys
+			energy = @defense_l_t5_upkeep_energy
+			alloys = @defense_l_t5_upkeep_alloys
 		}
 	}
 
@@ -742,9 +743,10 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_S5
 	modifier = {
-		ship_shield_add = 240
-		ship_shield_regen_add_static = 2.4
-		ship_evasion_mult = 0.075
+		ship_shield_add = 310
+		ship_shield_regen_add_static = 3.1
+		ship_evasion_mult = 0.1
+		ship_shield_hardening_add = 0.02
 	}
 	
 	prerequisites = { "tech_ark_shields_5b" }
@@ -756,8 +758,8 @@ utility_component_template = {
 			originiums = 0.8
 		}	
 		upkeep = {
-			energy = @shield_s_t5_upkeep_energy
-			alloys = @shield_s_t5_upkeep_alloys
+			energy = @defense_s_t5_upkeep_energy
+			alloys = @defense_s_t5_upkeep_alloys
 		}
 	}
 
@@ -782,9 +784,10 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_M5
 	modifier = {
-		ship_shield_add = 600
-		ship_shield_regen_add_static = 6
-		ship_evasion_mult = 0.10
+		ship_shield_add = 930
+		ship_shield_regen_add_static = 9.3
+		ship_evasion_mult = 0.1
+		ship_shield_hardening_add = 0.02
 	}
 	
 	prerequisites = { "tech_ark_shields_5b" }
@@ -796,8 +799,8 @@ utility_component_template = {
 			originiums = 1.45
 		}
 		upkeep = {
-			energy = @shield_m_t5_upkeep_energy
-			alloys = @shield_m_t5_upkeep_alloys
+			energy = @defense_m_t5_upkeep_energy
+			alloys = @defense_m_t5_upkeep_alloys
 		}
 	}
 
@@ -822,9 +825,10 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_L5
 	modifier = {
-		ship_shield_add = 1440
-		ship_shield_regen_add_static = 14.4
-		ship_evasion_mult = 0.125
+		ship_shield_add = 2790
+		ship_shield_regen_add_static = 27.9
+		ship_evasion_mult = 0.1
+		ship_shield_hardening_add = 0.02
 	}
 	
 	prerequisites = { "tech_ark_shields_5b" }
@@ -836,8 +840,8 @@ utility_component_template = {
 			originiums = 2.85
 		}
 		upkeep = {
-			energy = @shield_l_t5_upkeep_energy
-			alloys = @shield_l_t5_upkeep_alloys
+			energy = @defense_l_t5_upkeep_energy
+			alloys = @defense_l_t5_upkeep_alloys
 		}
 	}
 
@@ -863,10 +867,9 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_S5
 	modifier = {
-		ship_shield_add = 320
-		ship_shield_regen_add_static = 3.2
-		ship_hull_mult = 0.05
-		ship_armor_mult = 0.05
+		ship_shield_add = 310
+		ship_shield_regen_add_static = 3.1
+		ship_hull_mult = 0.15
 	}
 	
 	prerequisites = { "tech_ark_shields_5c" }
@@ -878,8 +881,8 @@ utility_component_template = {
 			originiums = 1.05		# 铁御护盾所需源石是第6级值
 		}	
 		upkeep = {
-			energy = @shield_s_t5_upkeep_energy
-			alloys = @shield_s_t5_upkeep_alloys
+			energy = @defense_s_t5_upkeep_energy
+			alloys = @defense_s_t5_upkeep_alloys
 		}
 	}
 
@@ -904,10 +907,9 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_M5
 	modifier = {
-		ship_shield_add = 800
-		ship_shield_regen_add_static = 8
-		ship_hull_mult = 0.075
-		ship_armor_mult = 0.075
+		ship_shield_add = 930
+		ship_shield_regen_add_static = 9.3
+		ship_hull_mult = 0.15
 	}
 	
 	prerequisites = { "tech_ark_shields_5c" }
@@ -919,8 +921,8 @@ utility_component_template = {
 			originiums = 1.9
 		}
 		upkeep = {
-			energy = @shield_m_t5_upkeep_energy
-			alloys = @shield_m_t5_upkeep_alloys
+			energy = @defense_m_t5_upkeep_energy
+			alloys = @defense_m_t5_upkeep_alloys
 		}
 	}
 
@@ -945,10 +947,9 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power_L5
 	modifier = {
-		ship_shield_add = 1920
-		ship_shield_regen_add_static = 19.2
-		ship_hull_mult = 0.10
-		ship_armor_mult = 0.10
+		ship_shield_add = 2790
+		ship_shield_regen_add_static = 27.9
+		ship_hull_mult = 0.15
 	}
 	
 	prerequisites = { "tech_ark_shields_5c" }
@@ -960,8 +961,8 @@ utility_component_template = {
 			originiums = 3.7
 		}
 		upkeep = {
-			energy = @shield_l_t5_upkeep_energy
-			alloys = @shield_l_t5_upkeep_alloys
+			energy = @defense_l_t5_upkeep_energy
+			alloys = @defense_l_t5_upkeep_alloys
 		}
 	}
 

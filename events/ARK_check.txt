@@ -32,3 +32,19 @@ country_event = {  #检测明日方舟mod：[Arknights]The Crusade to Stellaris 
 #		}
 #	}
 #}
+
+country_event = {  #检测科技并提示如何获取源石
+	id = ark_check.3
+	title = ark_mod_check.3.name
+	desc =  ark_mod_check.3.desc
+	picture = GFX_evt_catastrophes_originiums
+	is_triggered_only = yes
+
+	trigger = {
+		last_increased_tech = tech_mineral_purification_1
+	}
+
+	option = {
+		name = ark_mod_check.1.a
+	}
+}

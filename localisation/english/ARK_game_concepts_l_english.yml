@@ -1,0 +1,6 @@
+﻿l_english:
+
+concept_excavate_originiums: "Excavating Originium"
+concept_excavate_originiums_desc: "Extraction methods:\n1. Base district output on the homeworld, and orbital mining stations built on the outermost planets of the home system.\n2. Build §Y$building_originiums_mining_plant_1$§! in the three mining district specialization building slots of a planet that has the §Y$d_originiums_mine$§! deposit (usually only the homeworld has one). This is the main method of acquiring it.\n3. Freeze planets with the Colossus weapon §B$PLANET_KILLER_ARK_FROSTNOVA$§!."
+concept_originiums: "Originium"
+concept_originiums_desc: "A mysterious crystalline mineral, the masterpiece of a previous civilization.\n\n$concept_excavate_originiums_desc$"

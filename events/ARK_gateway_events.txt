@@ -62,10 +62,10 @@ country_event = {
         last_created_fleet = {
             if = {
                 limit = {
-                    event_target:ark_country = {has_country_flag = ark_gateway_arrive_no_hyperlane}
+                    event_target:ark_country = {has_country_flag = ark_gateway_arrive_no_hyperlane} #用于判断是否进行过常规宇宙航行
                 }
-                set_fleet_flag = ark_gateway_main_fleet_through_space
-                event_target:ark_gateway_archaeology_system = {
+                set_fleet_flag = ark_gateway_main_fleet_through_space #不通过超空间，通过常规宇宙航行向深空某处
+                event_target:ark_gateway_archaeology_system = { #在很远处生成一个AO
                     create_ambient_object = {
                         type = "ark_ambient_null"
                         location = this.star
@@ -89,7 +89,7 @@ country_event = {
                 }
                 fleet_event = { id = ark_gateway.3231 }
             }
-            if = {
+            if = { #这些是不是没用
                 limit = {
                     NOT = {
                         event_target:ark_country = {has_country_flag = ark_gateway_arrive_no_hyperlane}

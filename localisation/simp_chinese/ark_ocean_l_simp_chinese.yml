@@ -210,7 +210,7 @@ var_ark_seaborn_evolution_cell:0 "生机细胞库存"
 
 
 #to translators: SORRY!!! XD
-ARKOCEAN_SET_CLOSE:0 "退出设置"
+ARKOCEAN_SET_CLOSE:0 "完成设置"
 ARKOCEAN_SETTINGS_INFO:0 "这里是海嗣机制设置面板，当你开局选择了§B海嗣§!特质之后可以在这里进行功能开关。\n本面板也可以从认知塑造面板左上角开启。"
 arkocean_settings_enable:0 "开"
 arkocean_settings_disable:0 "关"

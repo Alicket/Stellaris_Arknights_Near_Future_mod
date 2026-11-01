@@ -95,7 +95,15 @@ country_event = {
 			}
 		}
 	}
-
+	option = {
+		name = ark_rhodes_island.3.c	# 重置肖像
+		custom_tooltip = ark_rhodes_island.3.c_tooltip
+		hidden_effect = {
+			event_target:ark_leader_kristen = {
+				change_leader_portrait = ARK_Kristen
+			}
+		}
+	}
 	option = {
 		name = ark_rhodes_island.2.g	# 确认对话
 		default_hide_option = yes

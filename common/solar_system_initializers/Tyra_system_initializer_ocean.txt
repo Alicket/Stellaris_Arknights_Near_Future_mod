@@ -48,8 +48,6 @@ Tyra_system_ocean = {
 				modifier = "corrosion"
 				days = -1
 			}
-			set_planet_flag = arkocean_planet_talos
-			save_global_event_target_as = arkocean_planet_talos
 		}
 	}
 
@@ -64,7 +62,6 @@ Tyra_system_ocean = {
 		has_ring = yes
 		entity = "ark_planet_terra_ocean_entity"
 		deposit_blockers = none
-		flags = { planet_terra_ocean }
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -138,10 +135,6 @@ Tyra_system_ocean = {
 		orbit_angle = -160
 		size = 17
 		has_ring = no
-	}
-
-	init_effect = {
-		save_global_event_target_as = ARK_TYRA_HOME_SYSTEM
 	}
 
 	neighbor_system = {

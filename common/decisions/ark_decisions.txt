@@ -66,6 +66,7 @@ decision_ark_seaborn_start_evolution = {
 			has_trait = trait_ARK_ocean_seaborn
 			NOT = { has_country_flag = arkocean_option_disable_planet_evolution }
 		}
+		NOT = {has_carrier_flag = arkocean_planet_started_evolution_first_time}
 	}
 	effect = {
 		hidden_effect = {
@@ -73,6 +74,7 @@ decision_ark_seaborn_start_evolution = {
 				id = ark_seaborn_base.20
 			}
 		}
+		set_carrier_flag = arkocean_planet_started_evolution_first_time
 	}
 	resources = {
 		category = decisions
@@ -119,11 +121,9 @@ decision_ark_seaborn_resume_evolution = {
 	}
 	effect = {
 		remove_carrier_flag = ark_ocean_col_evo_disabled
-		hidden_effect = {
-			add_modifier = {
-				modifier = ark_ocean_evolution_start
-				days = -1
-			}
+		add_modifier = {
+			modifier = ark_ocean_evolution_start
+			days = -1
 		}
 	}
 }

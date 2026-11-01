@@ -1,4 +1,4 @@
-namespace = ark_rebellion
+#namespace = ark_rebellion
 #
 ## ��������
 #country_event = {

@@ -522,7 +522,6 @@ tech_ark_laser_1 = {
 	cost = @tier4cost1
 	tier = 4
 	category = { particles }
-	ai_update_type = military
 	prerequisites = { "tech_originiums_mining" "tech_lasers_5" }
 	weight = @tier4weight1
 
@@ -570,7 +569,6 @@ tech_ark_laser_2 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { particles }
-	ai_update_type = military
 	prerequisites = { "tech_originiums_mining" "tech_ark_laser_1" }
 	weight = @tier2weight1
 
@@ -618,7 +616,6 @@ tech_ark_polymer = {
 	cost = @tier4cost1
 	tier = 4
 	category = { particles }
-	ai_update_type = military	
 	prerequisites = { "tech_originiums_mining" "tech_plasma_3" }
 	weight = @tier4weight1
 
@@ -664,7 +661,6 @@ tech_ark_disruptors = {
 	cost = @tier4cost1
 	tier = 4
 	category = { particles }
-	ai_update_type = military
 	prerequisites = { "tech_originiums_mining" "tech_disruptors_3" }
 	weight = @tier4weight1
 
@@ -710,7 +706,6 @@ tech_ark_point_defence = {
 	tier = 4
 	cost = @tier4cost1
 	category = { computing }
-	ai_update_type = military
 	prerequisites = { "tech_originiums_mining" "tech_pd_tracking_3" }
 	weight = @tier4weight1
 
@@ -739,7 +734,6 @@ tech_ark_energy_torpedoes_1 = {
 	cost = @tier3cost3
 	tier = 3
 	category = { particles }
-	ai_update_type = military	
 	prerequisites = { "tech_originiums_mining" "tech_energy_torpedoes_1" }
 	weight = @tier3weight3
 
@@ -785,7 +779,6 @@ tech_ark_missiles_1 = {
 	cost = @tier4cost2
 	tier = 4
 	category = { propulsion }
-	ai_update_type = military
 	prerequisites = { "tech_originiums_mining" "tech_missiles_5" }
 	weight = @tier4weight2
 
@@ -831,7 +824,6 @@ tech_ark_missiles_2 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { propulsion }
-	ai_update_type = military
 	prerequisites = { "tech_ark_missiles_1" }
 	weight = @tier2weight1
 
@@ -877,7 +869,6 @@ tech_ark_mass_accelerator_1 = {
 	cost = @tier4cost2
 	tier = 4
 	category = { propulsion }
-	ai_update_type = military
 	prerequisites = { "tech_originiums_mining" "tech_mass_accelerator_1" }
 	weight = @tier4weight2
 
@@ -923,7 +914,6 @@ tech_ark_mass_accelerator_2 = {
 	cost = @tier4cost3
 	tier = 4
 	category = { propulsion }
-	ai_update_type = military
 	prerequisites = { "tech_originiums_mining" "tech_ark_mass_accelerator_1" }
 	weight = @tier4weight3
 
@@ -969,7 +959,6 @@ tech_ark_lovro_acc_1 = {
 	cost = @tier5cost1
 	tier = 4
 	category = { propulsion }
-	ai_update_type = military
 	prerequisites = { "tech_originiums_mining" "tech_ark_mass_accelerator_2" }
 	#weight = @tier5weight1
 	weight = 0
@@ -1016,7 +1005,6 @@ tech_ark_lovro_acc_2 = {
 	cost = @tier5cost3
 	tier = 4
 	category = { propulsion }
-	ai_update_type = military
 	prerequisites = { "tech_originiums_mining" "tech_ark_lovro_acc_1" }
 	#weight = @tier5weight3
 	weight = 0
@@ -1063,7 +1051,6 @@ tech_ark_booster = {
 	cost = @tier3cost3
 	tier = 3
 	category = { particles }
-	ai_update_type = all
 	prerequisites = { "tech_originiums_mining" "tech_reactor_boosters_3" "tech_basic_science_lab_3" }
 	weight = @tier3weight3
 
@@ -1094,7 +1081,6 @@ tech_ark_mass_sensing_ammo = {
 	icon = tech_ark_mass_sensing_ammo
 	tier = 3
 	category = { propulsion }
-	ai_update_type = military
 	prerequisites = { "tech_originiums_mining" "tech_mass_accelerator_1" }
 	weight = @tier3weight1
 
@@ -1140,7 +1126,6 @@ tech_ark_space_originium_power = {
 	cost = @tier4cost2
 	tier = 4
 	category = { particles }
-	ai_update_type = all
 	prerequisites = { "tech_originiums_mining" "tech_basic_science_lab_3" "tech_zero_point_power" }
 	weight = @tier4weight2
 
@@ -1185,7 +1170,6 @@ tech_ark_ship_armor_1 = {
 	cost = @tier1cost1
 	tier = 0
 	category = { materials }
-	ai_update_type = all
 	prerequisites = { "tech_originiums_mining" "tech_ship_armor_1" }
 	weight = @tier1weight1
 
@@ -1215,7 +1199,6 @@ tech_ark_ship_armor_2 = {
 	cost = @tier1cost2
 	tier = 1
 	category = { materials }
-	ai_update_type = all
 	prerequisites = { "tech_originiums_mining" "tech_ark_ship_armor_1" "tech_ship_armor_2" }
 	weight = @tier1weight1
 
@@ -1245,7 +1228,6 @@ tech_ark_ship_armor_3 = {
 	cost = @tier2cost2
 	tier = 2
 	category = { materials }
-	ai_update_type = all
 	prerequisites = { "tech_originiums_mining" "tech_ark_ship_armor_2" "tech_ship_armor_3" }
 	weight = @tier1weight1
 
@@ -1275,7 +1257,6 @@ tech_ark_ship_armor_4a = {
 	cost = @tier3cost2
 	tier = 3
 	category = { materials }
-	ai_update_type = all
 	prerequisites = { "tech_originiums_mining" "tech_ark_ship_armor_3" "tech_ship_armor_4" }
 	weight = @tier1weight1
 
@@ -1305,7 +1286,6 @@ tech_ark_ship_armor_4b = {
 	cost = @tier3cost2
 	tier = 3
 	category = { materials }
-	ai_update_type = all
 	prerequisites = { "tech_originiums_mining" "tech_ark_ship_armor_4a" "tech_ship_armor_5" }
 	weight = @tier1weight1
 
@@ -1335,7 +1315,6 @@ tech_ark_shields_1 = {
 	cost = @tier1cost1
 	tier = 0
 	category = { field_manipulation }
-	ai_update_type = all
 	prerequisites = { "tech_originiums_mining" "tech_shields_1" }
 	weight = @tier1weight1
 
@@ -1366,7 +1345,6 @@ tech_ark_shields_2 = {
 	cost = @tier1cost3
 	tier = 1
 	category = { field_manipulation }
-	ai_update_type = all
 	prerequisites = { "tech_originiums_mining" "tech_ark_shields_1" "tech_shields_2" }
 	weight = @tier1weight1
 
@@ -1397,7 +1375,6 @@ tech_ark_shields_3 = {
 	cost = @tier2cost3
 	tier = 2
 	category = { field_manipulation }
-	ai_update_type = all
 	prerequisites = { "tech_originiums_mining" "tech_ark_shields_2" "tech_shields_3" }
 	weight = @tier1weight1
 
@@ -1428,7 +1405,6 @@ tech_ark_shields_4a = {
 	cost = @tier3cost3
 	tier = 3
 	category = { field_manipulation }
-	ai_update_type = all
 	prerequisites = { "tech_originiums_mining" "tech_ark_shields_3" }
 	weight = @tier1weight1
 
@@ -1459,7 +1435,6 @@ tech_ark_shields_4b = {
 	cost = @tier3cost3
 	tier = 3
 	category = { field_manipulation }
-	ai_update_type = all
 	prerequisites = { "tech_originiums_mining" "tech_ark_shields_4a" "tech_shields_5" }
 	weight = @tier1weight1
 
@@ -1490,7 +1465,6 @@ tech_ark_shields_5a = {
 	cost = @tier4cost3
 	tier = 4
 	category = { field_manipulation }
-	ai_update_type = all
 	prerequisites = { "tech_originiums_mining" "tech_ark_shields_4b" }
 	weight = @tier1weight1
 
@@ -1521,7 +1495,6 @@ tech_ark_shields_5b = {
 	cost = @tier4cost3
 	tier = 4
 	category = { field_manipulation }
-	ai_update_type = all
 	prerequisites = { "tech_originiums_mining" "tech_ark_shields_4b" }
 	weight = @tier1weight1
 
@@ -1552,7 +1525,6 @@ tech_ark_shields_5c = {
 	cost = @tier5cost3
 	tier = 5
 	category = { field_manipulation }
-	ai_update_type = all
 	prerequisites = { "tech_originiums_mining" "tech_ark_shields_4b" }
 	weight = @tier1weight1
 
@@ -1582,7 +1554,6 @@ tech_ark_uav_1 = {
 	cost = @tier2cost3
 	area = engineering
 	tier = 2
-	ai_update_type = military
 	category = { voidcraft }
 	prerequisites = { "tech_strike_craft_1" "tech_ark_laser_1" }
 	weight = @tier2weight3
@@ -1609,7 +1580,6 @@ tech_ark_uav_2 = {
 	cost = @tier3cost3
 	area = engineering
 	tier = 3
-	ai_update_type = military
 	category = { voidcraft }
 	prerequisites = { "tech_strike_craft_2" "tech_ark_laser_2" }
 	weight = @tier3weight3
@@ -1636,7 +1606,6 @@ tech_ark_frighter_1 = {
 	cost = @tier4cost2
 	area = engineering
 	tier = 4
-	ai_update_type = military
 	category = { voidcraft }
 	prerequisites = { "tech_strike_craft_3" "tech_ark_space_originium_power" }
 	weight = @tier3weight3

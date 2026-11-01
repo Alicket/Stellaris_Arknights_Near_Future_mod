@@ -3,3 +3,8 @@
 ark_mod_check.1.name:0 "明日方舟mod冲突警告"
 ark_mod_check.1.desc:0 "由于检测到您同时开启了 §B明日方舟：不远的未来§! 与 §B寰宇方舟§!,为避免冲突造成的§R恶性bug§!以及设定与故事线上的冲突,强烈建议关闭其中之一,以获得最佳游玩体验,感谢您的配合."
 ark_mod_check.1.a:0 "确认"
+
+ark_mod_check.3.name:0 "开采源石"
+ark_mod_check.3.desc:0 "在后续的生产和战争中，您会需要用到大量的['concept_originiums']，以下是所有['concept_excavate_originiums']的方法：\n- 在泰拉和泰拉-IX上有少量自然生成的源石。\n- 您刚刚研究完成了£engineering_research£§Y$tech_mineral_purification_1$§!，可以在泰拉的矿物专精建筑格中建造£building£§Y$building_originiums_mining_plant_1$§!及其后续升级来产出大量源石。这也是源石最主要的获取途径。\n- 利用巨像武器£engineering_research£§Y$PLANET_KILLER_ARK_FROSTNOVA$§!冻结星球可以产出极少量的源石。"
+
+

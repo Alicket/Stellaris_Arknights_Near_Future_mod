@@ -1,29 +1,29 @@
-namespace = ark_origins
-
-country_event = {
-	id = ark_origins.0
-	is_triggered_only = yes
-	hide_window = yes
-
-	trigger = {
-		has_origin = origin_ark_tragedy_birth
-	}
-
-	immediate = {
-		log = "ARK 生成泰拉机器人"
-		create_species = {
-			name = "NAME_Robot"
-			plural = "NAME_Robots"
-			class = ROBOT
-			namelist = this
-			portrait = "default_robot"
-			traits = {
-				trait = trait_machine_unit
-			}
-			effect = {
-				save_event_target_as = ark_robot
-			}
-		}
+#namespace = ark_origins
+#
+#country_event = {
+#	id = ark_origins.0
+#	is_triggered_only = yes
+#	hide_window = yes
+#
+#	trigger = {
+#		has_origin = origin_ark_tragedy_birth
+#	}
+#
+#	immediate = {
+#		log = "ARK 生成泰拉机器人"
+#		create_species = {
+#			name = "NAME_Robot"
+#			plural = "NAME_Robots"
+#			class = ROBOT
+#			namelist = this
+#			portrait = "default_robot"
+#			traits = {
+#				trait = trait_machine_unit
+#			}
+#			effect = {
+#				save_event_target_as = ark_robot
+#			}
+#		}
 		#capital_scope.solar_system = {
 		#	random_fleet_in_system = {
 		#		limit = { has_fleet_flag = ursus_fleet_flag }
@@ -379,5 +379,5 @@ country_event = {
 		# 		}
 		# 	}
 		# }
-	}
-}
+#	}
+#}

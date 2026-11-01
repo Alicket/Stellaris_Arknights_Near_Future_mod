@@ -10,7 +10,7 @@ portraits = {
 	ARK_N_MissChristine					= {textureFile = "gfx/models/portraits/Custom/ARK_MissChristine.dds"}
 	ARK_N_Gallus2							= {textureFile = "gfx/models/portraits/Custom/ARK_Gallus2.dds"}
 	ARK_N_RIR								= {textureFile = "gfx/models/portraits/Custom/ARK_RIR.dds"}#呆猫
-
+	ARK_N_Koromaru							= {textureFile = "gfx/models/portraits/Custom/ARK_Koromaru.dds"}#虎狼丸
 
 
 	#男
@@ -113,6 +113,20 @@ portraits = {
 	ARK_M_Wang								= {textureFile = "gfx/models/portraits/Custom/ARK_Wang.dds"}
 	ARK_M_Bellone							= {textureFile = "gfx/models/portraits/Custom/ARK_Bellone.dds"}
 	ARK_M_Weiyi							= {textureFile = "gfx/models/portraits/Custom/ARK_Weiyi.dds"}
+
+	ARK_M_Mechanist						= {textureFile = "gfx/models/portraits/Custom/ARK_Mechanist.dds"}
+	ARK_M_Pedro							= {textureFile = "gfx/models/portraits/Custom/ARK_Pedro.dds"}
+	ARK_M_MakotoYuki						= {textureFile = "gfx/models/portraits/Custom/ARK_MakotoYuki.dds"}
+	ARK_M_FrozenRiver						= {textureFile = "gfx/models/portraits/Custom/ARK_FrozenRiver.dds"}
+	ARK_M_Ursus							= {textureFile = "gfx/models/portraits/Custom/ARK_Ursus.dds"}
+	ARK_M_Homebound						= {textureFile = "gfx/models/portraits/Custom/ARK_Homebound.dds"}
+	ARK_M_Herdbells						= {textureFile = "gfx/models/portraits/Custom/ARK_Herdbells.dds"}
+
+
+
+
+
+
 
 
 
@@ -423,6 +437,20 @@ portraits = {
 	ARK_F_Zinogre							= {textureFile = "gfx/models/portraits/Custom/ARK_Zinogre_G.dds"}
 	ARK_F_Crackborne						= {textureFile = "gfx/models/portraits/Custom/ARK_Crackborne.dds"}
 	ARK_F_Violet_G							= {textureFile = "gfx/models/portraits/Custom/ARK_Violet_G.dds"}
+	#谬因，后面要做特殊领袖，不会在普池刷出
+	ARK_F_Aphrissa							= {textureFile = "gfx/models/portraits/Custom/ARK_Aphrissa.dds"}
+
+	ARK_F_Jacinta							= {textureFile = "gfx/models/portraits/Custom/ARK_Jacinta.dds"}
+	ARK_F_Timeslot							= {textureFile = "gfx/models/portraits/Custom/ARK_Timeslot.dds"}
+	ARK_F_Aegis							= {textureFile = "gfx/models/portraits/Custom/ARK_Aegis.dds"}
+	ARK_F_Thumpy							= {textureFile = "gfx/models/portraits/Custom/ARK_Thumpy.dds"}
+	ARK_F_Angelina_G						= {textureFile = "gfx/models/portraits/Custom/ARK_Angelina_G.dds"}
+	ARK_F_YukariTakeba						= {textureFile = "gfx/models/portraits/Custom/ARK_YukariTakeba.dds"}
+	ARK_M_Orga								= {textureFile = "gfx/models/portraits/Custom/ARK_Orga.dds"}
+	ARK_F_deToledo							= {textureFile = "gfx/models/portraits/Custom/ARK_deToledo.dds"}
+	ARK_F_Caleido							= {textureFile = "gfx/models/portraits/Custom/ARK_Caleido.dds"}
+	ARK_F_Clementia						= {textureFile = "gfx/models/portraits/Custom/ARK_Clementia.dds"}
+	ARK_F_Talulah							= {textureFile = "gfx/models/portraits/Custom/ARK_Talulah.dds"}
 
 
 
@@ -1255,6 +1283,17 @@ portrait_groups = {
 					ARK_F_Zinogre
 					ARK_F_Crackborne
 					ARK_F_Violet_G
+					ARK_F_Jacinta
+					ARK_F_Timeslot
+					ARK_F_Aegis
+					ARK_F_Thumpy
+					ARK_F_Angelina_G
+					ARK_F_YukariTakeba
+					ARK_M_Orga
+					ARK_F_deToledo
+					ARK_F_Caleido
+					ARK_F_Clementia
+					ARK_F_Talulah
 				}
 			}
 			add = {
@@ -1365,6 +1404,13 @@ portrait_groups = {
 					ARK_M_Wang
 					ARK_M_Bellone
 					ARK_M_Weiyi
+					ARK_M_Mechanist
+					ARK_M_Pedro
+					ARK_M_MakotoYuki
+					ARK_M_FrozenRiver
+					ARK_M_Ursus
+					ARK_M_Homebound
+					ARK_M_Herdbells
 				}
 			}
 		}
@@ -1680,6 +1726,17 @@ portrait_groups = {
 					ARK_F_Zinogre
 					ARK_F_Crackborne
 					ARK_F_Violet_G
+					ARK_F_Jacinta
+					ARK_F_Timeslot
+					ARK_F_Aegis
+					ARK_F_Thumpy
+					ARK_F_Angelina_G
+					ARK_F_YukariTakeba
+					ARK_M_Orga
+					ARK_F_deToledo
+					ARK_F_Caleido
+					ARK_F_Clementia
+					ARK_F_Talulah
 				}
 			}
 			add = {
@@ -1788,6 +1845,13 @@ portrait_groups = {
 					ARK_M_Wang
 					ARK_M_Bellone
 					ARK_M_Weiyi
+					ARK_M_Mechanist
+					ARK_M_Pedro
+					ARK_M_MakotoYuki
+					ARK_M_FrozenRiver
+					ARK_M_Ursus
+					ARK_M_Homebound
+					ARK_M_Herdbells
 				}
 			}
 		}
@@ -2103,6 +2167,17 @@ portrait_groups = {
 					ARK_F_Zinogre
 					ARK_F_Crackborne
 					ARK_F_Violet_G
+					ARK_F_Jacinta
+					ARK_F_Timeslot
+					ARK_F_Aegis
+					ARK_F_Thumpy
+					ARK_F_Angelina_G
+					ARK_F_YukariTakeba
+					ARK_M_Orga
+					ARK_F_deToledo
+					ARK_F_Caleido
+					ARK_F_Clementia
+					ARK_F_Talulah
 				}
 			}
 			add = {
@@ -2211,6 +2286,13 @@ portrait_groups = {
 					ARK_M_Wang
 					ARK_M_Bellone
 					ARK_M_Weiyi
+					ARK_M_Mechanist
+					ARK_M_Pedro
+					ARK_M_MakotoYuki
+					ARK_M_FrozenRiver
+					ARK_M_Ursus
+					ARK_M_Homebound
+					ARK_M_Herdbells
 				}
 			}
 		}
@@ -2524,6 +2606,17 @@ portrait_groups = {
 					ARK_F_Zinogre
 					ARK_F_Crackborne
 					ARK_F_Violet_G
+					ARK_F_Jacinta
+					ARK_F_Timeslot
+					ARK_F_Aegis
+					ARK_F_Thumpy
+					ARK_F_Angelina_G
+					ARK_F_YukariTakeba
+					ARK_M_Orga
+					ARK_F_deToledo
+					ARK_F_Caleido
+					ARK_F_Clementia
+					ARK_F_Talulah
 				}
 			}
 			add = {
@@ -2630,6 +2723,13 @@ portrait_groups = {
 					ARK_M_Wang
 					ARK_M_Bellone
 					ARK_M_Weiyi
+					ARK_M_Mechanist
+					ARK_M_Pedro
+					ARK_M_MakotoYuki
+					ARK_M_FrozenRiver
+					ARK_M_Ursus
+					ARK_M_Homebound
+					ARK_M_Herdbells
 				}
 			}
 		}

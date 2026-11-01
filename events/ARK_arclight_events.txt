@@ -228,22 +228,22 @@ country_event = {
 			}
 		}
 		event_target:leader_country = {
-			create_species = {
-				name = UNKNOWN
-				class = Arknight
-				name_list = ark_01
-				portrait = ARK_Kristen
-				traits = {
-					trait = "trait_enduring"
-				}
-				allow_negative_traits = no
-				effect = {
-					save_event_target_as = leader_species
-				}
-			}
+			#create_species = {
+			#	name = UNKNOWN
+			#	class = Arknight
+			#	name_list = ark_01
+			#	portrait = ARK_Kristen
+			#	traits = {
+			#		trait = "trait_enduring"
+			#	}
+			#	allow_negative_traits = no
+			#	effect = {
+			#		save_event_target_as = leader_species
+			#	}
+			#}
 			create_leader = {
 				class = scientist
-				species = event_target:leader_species
+				species = event_target:ark_country.species
 				name = NAME_Kristen
 				skill = 2
 				gender = female
@@ -258,6 +258,8 @@ country_event = {
 				background_job = head_researcher
 				randomize_traits = no
 				effect = {
+					change_leader_portrait = ARK_Kristen
+					add_trait = { trait = leader_trait_maniacal }
 					add_experience = 200
 					save_global_event_target_as = ark_leader_kristen_spawning
 					set_leader_flag = legendary_leader
